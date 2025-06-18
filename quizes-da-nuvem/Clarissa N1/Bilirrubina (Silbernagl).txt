@@ -1,0 +1,70 @@
+Q:Sobre o metabolismo da bilirrubina, é correto afirmar que:
+A) A bilirrubina direta é lipossolúvel e circula ligada à albumina.
+B) A bilirrubina não sofre transformação ao passar pelo intestino.
+C) A conjugação da bilirrubina no fígado ocorre com ácido glicurônico, formando bilirrubina-bisglicuronídea.
+D) Toda a bilirrubina formada é eliminada exclusivamente pelas fezes.
+G: C
+C: A enzima glucuronil‑transferase no hepatócito utiliza UDP‑ácido glucurônico (originado de glicose + UTP) para conjugar a bilirrubina, formando a bilirrubina‑bisglicuronídeo (bili‑D) solúvel em água.
+
+Q: Com relação à excreção da bilirrubina, assinale a alternativa INCORRETA:
+A) Cerca de 85% da bilirrubina é eliminada nas fezes.
+B) A estercobilina é responsável pela coloração marrom das fezes.
+C) Aproximadamente 15% da bilirrubina retorna ao fígado pela circulação entero-hepática.
+D) Toda a bilirrubina conjugada é excretada pelos rins.
+G: D
+C: A alternativa errada afirma que “toda a bilirrubina conjugada é excretada pelos rins”, mas apenas cerca de 1% da bilirrubina (na forma de urobilinogênio/urobilina) é eliminada na urina; 85% sai nas fezes e o restante participa da circulação entero‑hepática.
+
+Q: Sobre os tipos de icterícia, é incorreto afirmar que:
+A) A icterícia pré-hepática está relacionada ao aumento da hemólise.
+B) Na icterícia intra-hepática, não há produção de bilirrubina pelos macrófagos.
+C) A icterícia pós-hepática pode ocorrer por obstrução dos ductos biliares.
+D) A bilirrubina conjugada pode ser encontrada na urina em alguns tipos de icterícia.
+G: B
+C: A alternativa errada diz que “na icterícia intra‑hepática não há produção de bilirrubina pelos macrófagos”. Na verdade, a produção de bilirrubina a partir da degradação da hemoglobina pelo SRE (macrófagos) continua ocorrendo, mas é a conjugação ou o transporte intra‑hepático que está prejudicado.
+
+Q: A bilirrubina indireta é pouco hidrossolúvel e, por isso, se liga à albumina no sangue.
+G: V
+C: A bilirrubina livre (indireta) é lipossolúvel e “combina‑se à albumina no sangue” para ser transportada ao fígado.
+
+Q: A glucuroniltransferase é a enzima responsável por conjugar a bilirrubina no fígado.
+G: V
+C: A UDP‑glucuroniltransferase promove a conjunção da bilirrubina com ácido glucurônico, formando a bilirrubina‑bisglicuronídeo
+
+Q: A bilirrubina direta é formada sem necessidade de ATP ou UTP na célula hepática.
+G: F
+C: A conjugação requer UTP para gerar UDP‑ácido glucurônico (pré‑requisito) e o transporte para o canalículo biliar é ATP‑dependente (cMOAT/hBSEP). 
+
+Q: Cerca de 1% da bilirrubina é excretada pela urina na forma de urobilinogênio ou urobilina.
+G: V
+C:‎‎ 
+
+Q: A bilirrubina conjugada é eliminada no intestino delgado, onde é transformada por bactérias.
+G: F
+C: No intestino grosso a bilirrubina‑bisglicuronídeo é deconjugada e convertida por bactérias anaeróbias em urobilinogênio e depois em estercobilina.
+
+Q: A concentração plasmática normal de bilirrubina não deve ultrapassar 25 µmol/L. Causando icterícia se acima de 30 µmol/L
+G: F
+C: A concentração plasmática normal de bilirrubina é de, no máximo, 17 µmol/L (1 mg/dL).
+
+Q: Na icterícia pré-hepática, há aumento de bilirrubina conjugada no sangue
+G: F
+C: Na icterícia pré‑hepática (hemólise aumentada), o que se eleva é a bilirrubina não‑conjugada (indireta), pois o fígado não consegue acompanhar o excesso que chega.
+
+Q: A excreção de bilirrubina coma bile é de cerca de 200 a 250 mg/dia, dos quais 85% são eliminados com as fezes.
+G: V
+C:‎‎ 
+
+Q: Na icterícia pós-hepática ocorre redução principalmente da bilirrubina conjugada (direta) e dafosfatase alcalina, que normalmente faz parte da composição da bile.
+G: F
+C: Na icterícia pós-hepática, a obstrução dos canais biliares (em razão de cálculos biliares ou tumores) provocam a retenção da bile. Dessa forma, ocorre AUMENTO principalmente da bilirrubina conjugada (direta) e dafosfatase alcalina, que normalmente faz parte da composição da bile.
+
+Q: A despigmentação das fezes ocorre principalmente na ictéricia pós-hepática.
+G: V
+C: Pois a bilirrubina não chega mais ao intestino e, portanto, não pode haver formação de estercobilina.
+
+Q: Bilirrubina direta alta → problema pré-hepático (antes do processamento hepático)
+Bilirrubina indireta alta → problema hepático (no fígado) ou pós-hepático (vias biliares)
+G: F
+C: A afirmação está invertida.
+- Bilirrubina indireta (não conjugada) alta está associada a problemas pré-hepáticos, ou seja, antes do fígado conseguir processá-la. Isso acontece, por exemplo, em hemólise intensa, onde há produção excessiva de bilirrubina a partir da degradação dos glóbulos vermelhos.
+- Bilirrubina direta (conjugada) alta ocorre quando o fígado conjuga normalmente, mas há falha na excreção dessa bilirrubina, indicando problema intra-hepático (como hepatites) ou pós-hepático (como obstruções biliares – por cálculos ou tumores).

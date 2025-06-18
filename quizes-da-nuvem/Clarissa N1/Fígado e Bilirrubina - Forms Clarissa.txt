@@ -1,0 +1,88 @@
+Q: Com relação à patologia do fígado, assinale a alternativa INCORRETA:
+A) A doença hepática gordurosa não alcoólica (DHGNA) inclui esteatose hepática e esteato-hepatite não alcoólica (EHNA).
+B) Cirrose biliar primária (CBP) é uma doença colestática crônica caracterizada por inflamação e destruição do ducto hepático comum e do ducto colédoco.
+C) Colestase é definida como interrupção do fluxo biliar para o intestino, com refluxo de todos os componentes da bile para a corrente sanguínea.
+D) A colestase pode dever-se à obstrução do ducto hepático comum, por atresia, cálculos ou tumores, ou a bloqueio dos delicados mecanismos intra-hepatocitários de secreção biliar.
+G: B
+C: A cirrose biliar primária (atualmente chamada de colangite biliar primária) é caracterizada por inflamação e destruição dos pequenos colédocos intra-hepáticos, e não do ducto hepático comum ou do ducto colédoco extra-hepático. As demais afirmativas estão corretas.
+
+Q: A cirrose hepática é uma condição patológica associada à destruição progressiva do fígado e substituição do tecido normal por fibrose. Entre as seguintes complicações, qual é comumente encontrada em pacientes com cirrose avançada?
+A) Aneurisma de aorta.
+B) Hemotórax.
+C) Pneumotórax.
+D) Ascite.
+G: D
+C: Em pacientes com cirrose avançada, a ascite é a complicação mais comum, resultante da hipertensão porta e da retenção de sódio e água. As demais (aneurisma de aorta, hemotórax, pneumotórax) não são complicações típicas da cirrose hepática.
+
+Q: Ao se abrir a cavidade abdominal, as vísceras ocas se protraem para fora da cavidade. O fígado, órgão frequentemente acometido por inúmeras doenças, pode ter sua cor e consistência alterada. Assinale a alternativa correta:
+A) O fígado está localizado no hipocôndrio direito, pesa 1200 a 1500 gramas no adulto e tem cor vinhosa.
+B) O fígado está localizado no hipocôndrio esquerdo, pesa 120 a 150 gramas no adulto e tem cor vinhosa.
+C) O fígado está localizado no retroperitônio, pesa 1200 a 1500 gramas no adulto e tem cor vinhosa.
+D) O fígado está localizado no retroperitônio direito, pesa 120 a 150 gramas no adulto e tem cor amarelada.
+E) O fígado está localizado no retroperitônio esquerdo, pesa 120 a 150 gramas no adulto e tem cor vinhosa.
+G: A
+C: O fígado normal situa-se principalmente no hipocôndrio direito, pesa em torno de 1.200–1.500 g no adulto e apresenta coloração pardo-avermelhada, descrita classicamente como “vinhosa”. As outras opções descrevem peso, localização ou cor incorretos.
+
+Q: A função por demais importante do fígado nos processos digestivos e em outras partes da fisiologia do corpo humano é bem conhecida. No entanto, a perfusão deste órgão, inicialmente, se dá por meio da:
+A) artéria mesentérica e da veia hepática
+B) artéria hepática e veia hepática
+C) artéria hepática e veia porta
+D) artéria mesentérica superior e veia hepática
+G: C
+C: A perfusão hepática é dual: chega ao fígado pela artéria hepática (25% do fluxo, oxigênio arterial) e, principalmente, pela veia porta (75% do fluxo, nutrientes vindos do trato gastrointestinal).
+
+Q: Quando os níveis de glicose estão altos, o fígado capta a glicose através de um processo de difusão facilitada, um mecanismo independente da regulação pela insulina e que ocorre através do(a):
+A) UDP.
+B) citocromo P-450.
+C) enzima HMG-CoA.
+D) transportador GLUT-2.
+E) glucuronosiltransferase.
+G: D
+C: A captação de glicose pelo hepatócito em situações de glicemia alta ocorre por difusão facilitada através do transportador GLUT-2, que funciona independentemente da insulina.
+
+Q: A icterícia ocorre quando o fígado não consegue eliminar bilirrubina suficiente do plasma. Quando ocorre formação excessiva de bilirrubina ou captação e conjugação limitadas, verifica-se o aparecimento de bilirrubina não conjugada no sangue. Em geral, presume-se que, para atravessar as barreiras das membranas celulares intactas, a bilirrubina precisa estar livre, ou dissociada, de sua ligação à:
+A) Albumina.
+B) Creatina.
+C) Glutamina.
+D) Queratina.
+G: A
+C: A bilirrubina não conjugada circula fortemente ligada à albumina. Para atravessar membranas celulares intactas e chegar ao fígado, ela deve estar livre (não ligada à albumina).
+
+Q: No diagnóstico de insuficiência hepática aguda, o exame laboratorial que fornece uma medida direta da capacidade sintética do fígado e é fundamental para avaliar o prognóstico é:
+A) Dosagem do tempo de protrombina (TP) e cálculo do INR.
+B) Dosagem de bilirrubina direta e indireta.
+C) Níveis séricos de aspartato aminotransferase (AST) e alanina aminotransferase (ALT).
+D) Albumina sérica.
+E) Ultrassonografia abdominal com Doppler de vasos hepáticos.
+G: A
+C: O tempo de protrombina (TP)—e o INR correspondente—é o melhor marcador da capacidade sintética hepática e é crucial no prognóstico da insuficiência hepática aguda. Bilirrubinas e enzimas refletem colestase ou necrose, e a albumina, embora também sintética, varia lentamente e não reflete bem a fase aguda.
+
+Q: Quanto à icterícia, é correto afirmar que:
+A) na colestase, a hiperbilirrubinemia é principalmente às custas de bilirrubina indireta.
+B) na hemólise intravascular, a hiperbilirrubinemia acontece devido ao aumento da bilirrubina direta.
+C) quando a hiperbilirrubinemia é da forma indireta, costuma ser acompanhada de prurido cutâneo generalizado.
+D) neoplasia de cabeça de pâncreas pode causar hiperbilirrubinemia predominantemente por aumento da bilirrubina direta.
+E) a acolia geralmente está associada com hiperbilirrubinemia indireta.
+G: D
+C: Neoplasias da cabeça do pâncreas podem obstruir o ducto colédoco distal, causando colestase extra‐hepática e aumento predominante da bilirrubina direta. Nas outras situações:
+Colestase → bilirrubina direta ↑
+Hemólise → bilirrubina indireta ↑
+Prurido → mais comum em colestase (direta)
+Acolia (fezes claras) → também em colestase (direta)
+
+Q: “É a distorção disseminada da estrutura interna do fígado que ocorre quando uma grande quantidade de tecido hepático normal é permanentemente substituída por tecido cicatricial não funcional. O tecido cicatricial se desenvolve quando o fígado é danificado repetida ou continuamente.” Pode-se afirmar que o trecho acima diz respeito a(o):
+A) Esteatose hepática.
+B) Câncer no fígado.
+C) Cirrose.
+D) Hepatite B.
+G: C
+C: A descrição refere-se à cirrose, caracterizada por fibrose difusa e formação de nódulos que substituem permanentemente o parênquima hepático normal.
+
+Q: A cirrose está entre as dez maiores causas de morte no mundo ocidental. Embora resulte principalmente do alcoolismo, outros fatores contributivos importantes são a hepatite crônica, doença biliar e sobrecarga de ferro. Macroscopicamente, o aspecto de um fígado em fase final de cirrose é:
+A) aumentado de volume, com superfície lisa e brilhante, com parênquima castanho-amarelado, homogêneo, macio e untoso.
+B) diminuído de volume, com superfície lisa e brilhante, com parênquima castanho-amarelado, homogêneo, macio e untoso.
+C) aumentado de volume, com cápsula membranácea avermelhada e, aos cortes, parênquima castanho intenso, homogêneo e fosco.
+D) aumentado de volume, com cápsula membranácea acastanhada, com parênquima castanho-amarelado, homogêneo, macio e untoso.
+E) diminuído de volume, com superfície grosseiramente nodular e, aos cortes, acastanhado, com nodulações, traves fibrosas, fosco e firme.
+G: E
+C: No estágio final da cirrose, o fígado costuma estar diminuído de volume, com superfície grosseiramente nodular e, ao corte, apresentação de traves fibrosas e nódulos, parênquima fosco e firme. As demais descrições não correspondem ao aspecto clássico da cirrose avançada.

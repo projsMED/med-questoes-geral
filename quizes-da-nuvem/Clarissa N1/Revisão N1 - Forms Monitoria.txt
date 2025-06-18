@@ -1,0 +1,151 @@
+Q: Qual dos seguintes processos do sistema digestório está corretamente relacionado com sua função principal?
+A) Digestão – remoção de resíduos não digeríveis do organismo.
+B) Ingestão – absorção de nutrientes no intestino delgado.
+C) Absorção – passagem de moléculas digeridas para o sangue ou linfa.
+D) Eliminação – mistura dos alimentos com enzimas digestivas.
+G: C
+C: A alternativa {C} está correta, pois a absorção corresponde à passagem de moléculas digeridas para o sangue ou linfa, diferentemente da digestão ({A}) que envolve a quebra do alimento, da ingestão ({B}) que se refere à entrada de alimentos no trato e da eliminação ({D}) que trata da expulsão de resíduos.
+
+Q: O sistema nervoso entérico é conhecido como o “segundo cérebro” do corpo humano. Isso se deve principalmente ao fato de:
+A) Controlar exclusivamente a secreção de hormônios digestivos.
+B) Regular a motilidade, secreção e absorção de forma independente.
+C) Promover o relaxamento dos esfíncteres voluntariamente.
+D) Ser formado por fibras exclusivamente simpáticas.
+G: B
+C: A alternativa {B} está correta, pois o sistema nervoso entérico regula de forma autônoma a motilidade intestinal, a secreção de enzimas e a absorção de nutrientes, sem depender exclusivamente do sistema nervoso central.
+
+Q: Entre os efeitos do sistema nervoso parassimpático sobre o trato gastrointestinal, NÃO se inclui:
+A) Estímulo à secreção de enzimas digestivas.
+B) Diminuição da motilidade intestinal.
+C) Relaxamento de esfíncteres.
+D) Aumento do fluxo sanguíneo para o trato digestório.
+G: B
+C: A alternativa {B} está correta, pois o parassimpático aumenta a motilidade intestinal (portanto, a diminuição da motilidade não ocorre), estimula a secreção de enzimas digestivas ({A}), relaxa esfíncteres ({C}) e eleva o fluxo sanguíneo para o trato digestório ({D}).
+
+Q: As contrações peristálticas do trato gastrointestinal têm como principal função:
+A) Relaxar os esfíncteres e liberar enzimas gástricas
+B) Promover a absorção de nutrientes no intestino grosso.
+C) Misturar o alimento com enzimas no estômago.
+D) Empurrar o alimento ao longo do tubo digestório.
+G: D
+C: A alternativa {D} está correta, pois as contrações peristálticas têm como principal função deslocar (empurrar) o bolo alimentar ao longo do tubo digestório.
+
+Q: O muco secretado pelas células da parede gástrica tem como função principal:
+A) Ativar a pepsina em meio ácido.
+B) Promover a absorção de ácidos graxos.
+C) Proteger o epitélio gástrico contra o HCl e enzimas.
+D) Estimular a secreção de gastrina
+G: C
+C: A alternativa {C} está correta, pois o muco secretado pelas células da parede gástrica forma uma barreira protetora que evita o contato direto do HCl e das enzimas digestivas com o epitélio, prevenindo lesões.
+
+Q: A secreção ácida gástrica é controlada por estímulos:
+A) Apenas hormonais, como a somatostatina.
+B) Exclusivamente neurais, via sistema simpático.
+C) Neurais e hormonais, incluindo acetilcolina e gastrina.
+D) Quimicamente inibidos pela bile pancreática.
+G: C
+C: A alternativa {C} está correta, pois a secreção ácida gástrica é controlada tanto por estímulos neurais (via acetilcolina) quanto hormonais (por gastrina), e não apenas por fatores exclusivos ou inibidores da bile.
+
+Q: A inibição da enzima ciclooxigenase (COX) pelos anti-inflamatórios não esteroidais (AINEs) pode levar à formação de úlceras gástricas porque:
+A) Estimula a secreção de ácido clorídrico.
+B) Aumenta a secreção de muco e bicarbonato.
+C) Reduz a síntese de prostaglandinas protetoras.
+D) Inibe diretamente a produção de gastrina.
+G: C
+C: A alternativa {C} está correta, pois a inibição da COX pelos AINEs reduz a produção de prostaglandinas protetoras da mucosa gástrica, favorecendo a formação de úlceras.
+
+Q: O omeprazol atua na célula parietal gástrica inibindo:
+A) A bomba de sódio-potássio.
+B) O receptor H2 da histamina.
+C) A enzima H+/K+-ATPase, inibindo a secreção ácida.
+D) A liberação de gastrina pelo duodeno.
+G: C
+C: A alternativa {C} está correta, pois o omeprazol atua inibindo a enzima H+/K+-ATPase (bomba de prótons) das células parietais, bloqueando a secreção de ácido clorídrico.
+
+Q: O bloqueio dos receptores H2 pelas drogas antiácidas leva à:
+A) Inibição da motilidade intestinal.
+B) Redução da secreção de muco gástrico.
+C) Inibição da secreção ácida gástrica mediada por histamina.
+D) Aumento da secreção de ácido gástrico por estímulo colinérgico.
+G: C
+C: A alternativa {C} está correta, pois o bloqueio dos receptores H2 da histamina impede a secreção ácida mediada por esse receptor, reduzindo a produção de HCl.
+
+Q: Sobre o reflexo do vômito, assinale a alternativa correta:
+A) O centro do vômito está localizado no cerebelo.
+B) O estímulo periférico é exclusivo do sistema respiratório.
+C) Estímulos labirínticos podem ativar o centro do vômito.
+D) A distensão gástrica inibe o centro do vômito no tronco cerebral
+G: C
+C: A alternativa {C} está correta, pois estímulos provenientes do aparelho vestibular (labirínticos) podem ativar o centro do vômito localizado no tronco cerebral, ao contrário do sugerido em outras opções.
+
+Q: Qual das alternativas melhor descreve a origem da bilirrubina no organismo?
+A) Degradação de proteínas hepáticas
+B) Conversão da bile em pigmentos biliares
+C) Degradação do grupamento heme da hemoglobina
+D) Catabolismo de ácidos graxos insaturados
+E) Conversão de colesterol em sais biliares
+G: C
+C: A alternativa {C} está correta, pois a bilirrubina origina-se da degradação do grupamento heme da hemoglobina liberada pelos eritrócitos senescentes.
+
+Q: A bilirrubina indireta é:
+A) Solúvel em água e excretada na urina
+B) Conjugada no fígado com ácido glicurônico
+C) Produzida no intestino por bactérias
+D) Derivada da bilirrubina direta na vesícula biliar
+E) A forma encontrada exclusivamente nas fezes
+G: B
+C: A alternativa {B} está correta, pois a bilirrubina indireta é o substrato que é conjugado no fígado com ácido glicurônico para ser transformada em bilirrubina direta.
+
+Q: Qual das condições abaixo está associada predominantemente à elevação de bilirrubina indireta?
+A) Colangite esclerosante primária
+B) Síndrome de Gilbert
+C) Hepatite viral aguda
+D) Obstrução biliar extra-hepática
+E) Cirrose alcoólica avançada
+G: B
+C: A alternativa {B} está correta, pois a síndrome de Gilbert é caracterizada pelo aumento de bilirrubina indireta no sangue devido à redução da atividade da UDP-glucuroniltransferase.
+
+Q: No intestino, a bilirrubina conjugada é convertida em:
+A) Ureia
+B) Urobilinogênio
+C) Amônia
+D) Creatinina
+E) Biliverdina
+G: B
+C: A alternativa {B} está correta, pois no intestino a bilirrubina conjugada é convertida em urobilinogênio pelas bactérias da flora intestinal.
+
+Q: Qual é a principal causa de cirrose hepática no Brasil?
+A) Hepatite autoimune
+B) Hepatite viral B
+C) Alcoolismo crônico
+D) Doença hepática gordurosa não alcoólica (DHGNA)
+E) Hemocromatose
+G: C
+C: A alternativa {C} está correta, pois o alcoolismo crônico é a causa mais prevalente de cirrose hepática no Brasil.
+
+Q: Qual marcador laboratorial é esperado estar diminuído na cirrose descompensada?
+A) ALT
+B) Bilirrubina total
+C) Albumina sérica
+D) INR
+E) Amônio 
+G: C
+C: A alternativa {C} está correta, pois a albumina sérica diminui em estágios avançados da cirrose devido à perda da função de síntese hepática.
+
+Q: Paciente com cirrose apresenta confusão mental e hálito fétido. O diagnóstico mais provável é:
+A) Peritonite bacteriana espontânea
+B) Síndrome hepatorrenal
+C) Encefalopatia hepática
+D) Hipertensão portal
+E) Hemorragia digestiva alta
+G: C
+C: A alternativa {C} está correta, pois confusão mental e hálito fétido são sinais característicos de encefalopatia hepática, resultante da acumulação de toxinas no SNC.
+
+Q: A hipertensão portal decorre principalmente de:
+A) Diminuição da síntese de albumina hepática
+B) Aumento da resistência ao fluxo sanguíneo intra-hepático
+C) Acúmulo de bilirrubina conjugada
+D) Redução da secreção de bile
+E) Perda da função exócrina do fígado
+G: B
+C: A alternativa {B} está correta, pois a hipertensão portal ocorre principalmente pelo aumento da resistência ao fluxo sanguíneo dentro do fígado, em decorrência de fibrose e alterações vasculares.

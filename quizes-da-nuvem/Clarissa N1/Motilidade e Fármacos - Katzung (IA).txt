@@ -1,0 +1,219 @@
+Q: Qual o principal mecanismo de ação pelo qual a metoclopramida e a domperidona exercem seu efeito procinético (estimulante da motilidade)?
+A) Ativação de receptores 5-HT4 da serotonina
+B) Bloqueio de receptores D2 de dopamina
+C) Inibição da enzima acetilcolinesterase
+D) Estímulo direto de receptores de motilina
+G: B
+C: Esses fármacos são antagonistas dos receptores D2 de dopamina. No trato gastrointestinal, a dopamina normalmente inibe a motilidade mediada pela acetilcolina; ao bloquear essa ação inibitória da dopamina, a metoclopramida e a domperidona promovem a motilidade. As outras opções descrevem mecanismos de outros fármacos: prucaloprida (A), neostigmina (C) e eritromicina (D).
+
+Q: Qual tipo de laxativo funciona primariamente através da absorção de água, formando um gel volumoso que distende o cólon e estimula a peristalse?
+A) Laxativos osmóticos
+B) Laxativos estimulantes
+C) Laxativos formadores de massa
+D) Fármacos surfactantes fecais
+G: C
+C: Laxativos formadores de massa (como psílio e metilcelulose) são constituídos por polímeros não digeríveis que retêm água no lúmen intestinal. Isso aumenta o volume e a maciez do bolo fecal, estimulando mecanicamente a atividade peristáltica do cólon. Os outros tipos agem por mecanismos distintos: osmóticos atraem água por gradiente de concentração, estimulantes agem nos nervos e na secreção intestinal, e surfactantes facilitam a mistura de água e gordura nas fezes.
+
+Q: Para qual condição específica em pacientes hospitalizados a neostigmina intravenosa é particularmente utilizada, devido à sua capacidade de estimular a motilidade gastrointestinal?
+A) Tratamento de rotina da constipação crônica.
+B) Prevenção de náuseas e vômitos pós-operatórios.
+C) Resolução da pseudo-obstrução colônica aguda (Síndrome de Ogilvie).
+D) Aceleração do esvaziamento gástrico em gastroparesia leve.
+G: C
+C: A neostigmina, um inibidor da acetilcolinesterase, aumenta os níveis de acetilcolina nas sinapses neuromusculares, incluindo as do TGI. Sua administração intravenosa é um tratamento eficaz para a pseudo-obstrução colônica aguda, uma condição de dilatação maciça do cólon sem obstrução mecânica, frequentemente vista em pacientes hospitalizados e debilitados. As outras opções não representam a principal indicação ou contexto de uso da neostigmina IV para motilidade.
+
+Q: Qual fármaco, um análogo sintético da somatostatina, é empregado no tratamento da diarreia secretora grave, como a associada a certos tumores neuroendócrinos (carcinoides, VIPomas)?
+A) Loperamida
+B) Colestiramina
+C) Octreotida
+D) Eluxadolina
+G: C
+C: A octreotida mimetiza as ações inibitórias da somatostatina no TGI, reduzindo a secreção de diversos hormônios gastrointestinais (como VIP) e diminuindo a secreção intestinal de fluidos e eletrólitos. Isso a torna eficaz no controle da diarreia secretora severa associada a tumores como VIPomas e carcinoides, além de outras causas de diarreia. Loperamida e eluxadolina são agonistas opioides, e colestiramina liga-se a sais biliares.
+
+Q: A alosetrona, um fármaco para a Síndrome do Intestino Irritável (SII), possui um mecanismo de ação e uma indicação clínica bem definidos e restritos. Qual opção descreve corretamente essa combinação?
+A) Agonista 5-HT4; indicado para SII com constipação em ambos os sexos.
+B) Antagonista D2; indicado para SII com diarreia em ambos os sexos.
+C) Antagonista 5-HT3; indicado para SII grave com diarreia predominante em mulheres.
+D) Ativador de canal de cloreto; indicado para SII grave com constipação em mulheres.
+G: C
+C: A alosetrona é um potente antagonista dos receptores 5-HT3. Esses receptores estão envolvidos na modulação da motilidade colônica e na percepção da dor visceral. Ao bloqueá-los, a alosetrona reduz a motilidade e a sensibilidade visceral, sendo eficaz na SII com diarreia predominante. Devido a riscos de eventos adversos graves (constipação severa, colite isquêmica), seu uso é restrito a mulheres com quadros graves e refratários a outras terapias.
+
+Q: Considerando os mecanismos de ação distintos de fármacos utilizados no tratamento da constipação, qual das seguintes afirmações descreve CORRETAMENTE a ação de um deles?
+A) A lubiprostona aumenta o GMPc intracelular ao ativar a guanililciclase C na superfície luminal das células intestinais.
+B) A linaclotida estimula diretamente o canal de cloreto tipo 2 (ClC-2) localizado na membrana apical dos enterócitos.
+C) A prucaloprida funciona como um antagonista seletivo dos receptores opioides mu (µ) localizados perifericamente no intestino.
+D) A prucaloprida atua como agonista de alta afinidade do receptor 5-HT4, promovendo a liberação de acetilcolina e estimulando a motilidade colônica.
+G: D
+C: Esta questão compara mecanismos específicos. A prucaloprida é um agonista dos receptores serotoninérgicos 5-HT4, cuja ativação nos neurônios entéricos facilita a liberação de acetilcolina, um neurotransmissor excitatório chave para a peristalse, especialmente no cólon. As outras opções estão incorretas: a ativação da guanililciclase C é o mecanismo da linaclotida (A); a estimulação do canal ClC-2 é o mecanismo da lubiprostona (B); e o antagonismo opioide periférico é o mecanismo de fármacos como naloxegol ou metilnaltrexona (C).
+
+Q: Qual classe de fármacos procinéticos atua estimulando diretamente os receptores de motilina no músculo liso gastrointestinal?
+A) Antagonistas dopaminérgicos D2 (Ex: Metoclopramida)
+B) Inibidores da acetilcolinesterase (Ex: Neostigmina)
+C) Antibióticos macrolídeos (Ex: Eritromicina)
+D) Agonistas serotoninérgicos 5-HT4 (Ex: Prucaloprida)
+G: C
+C: Os antibióticos macrolídeos, como a eritromicina, possuem uma estrutura que lhes permite ligar-se e ativar os receptores de motilina endógenos presentes no TGI. A motilina é um hormônio que normalmente induz contrações gástricas e do intestino delgado durante o jejum (complexo motor migratório). As outras classes atuam por mecanismos diferentes: bloqueio D2, aumento de ACh, e ativação de receptores 5-HT4, respectivamente.
+
+Q: O mecanismo de ação predominante dos laxativos osmóticos, como lactulose, sorbitol e polietilenoglicol (PEG), envolve:
+A) Estimulação direta dos plexos nervosos entéricos para aumentar a peristalse.
+B) Amolecimento das fezes pela incorporação de lipídeos e água (ação surfactante).
+C) Retenção de água no lúmen intestinal devido à presença de solutos pouco absorvíveis, aumentando o volume fecal.
+D) Inibição da absorção de água e eletrólitos no cólon.
+G: C
+C: Os laxativos osmóticos são substâncias que são pouco ou não absorvidas no intestino. Sua presença no lúmen cria um gradiente osmótico que atrai e retém água, aumentando o volume do conteúdo intestinal, amolecendo as fezes e estimulando a motilidade por distensão. A estimulação nervosa direta é característica dos laxativos estimulantes (A), a ação surfactante é dos amolecedores fecais (B), e a inibição da absorção é um dos possíveis mecanismos dos estimulantes (D).
+
+Q: A linaclotida e a plecanatida são fármacos utilizados no tratamento da constipação crônica e da SII com constipação. Seu mecanismo de ação envolve a ativação de qual alvo molecular na superfície luminal dos enterócitos?
+A) Canal de cloreto tipo 2 (ClC-2)
+B) Receptor 5-HT4 da serotonina
+C) Guanililciclase C (GC-C)
+D) Receptor opioide mu (µ)
+G: C
+C: Estes fármacos são peptídeos que se ligam e ativam a guanililciclase C (GC-C) na membrana apical das células epiteliais intestinais. A ativação da GC-C leva a um aumento nos níveis intracelulares de GMP cíclico (GMPc), que por sua vez ativa o regulador de condutância transmembrana da fibrose cística (CFTR), resultando em secreção de cloreto e bicarbonato (seguidos por água) para o lúmen intestinal, acelerando o trânsito. A lubiprostona ativa o ClC-2 (A), a prucaloprida ativa o 5-HT4 (B), e antagonistas do receptor mu são usados para constipação induzida por opioides (D).
+
+Q: O principal mecanismo pelo qual os agonistas opioides, como a loperamida, atuam como antidiarreicos é:
+A) Bloqueio da secreção de cloreto mediada pelo CFTR.
+B) Ligação e neutralização de toxinas bacterianas no lúmen intestinal.
+C) Aumento da atividade segmentar não propulsiva do cólon e inibição da peristalse propulsiva.
+D) Estimulação direta da absorção de sódio e água pelos enterócitos.
+G: C
+C: Os opioides atuam nos receptores opioides (principalmente µ) presentes nos plexos nervosos entéricos. Sua ativação inibe a liberação de neurotransmissores excitatórios (como acetilcolina), o que resulta em diminuição da peristalse propulsiva (movimentos de massa) e aumento das contrações segmentares (não propulsivas). Isso prolonga o tempo de trânsito do conteúdo intestinal, permitindo maior absorção de água e eletrólitos, e levando à formação de fezes mais consistentes.
+
+Q: A lubiprostona, utilizada para constipação crônica e SII com constipação, promove a secreção de fluidos no intestino delgado através da ativação de qual estrutura?
+A) Guanililciclase C (GC-C)
+B) Canais de cloreto tipo 2 (ClC-2)
+C) Receptores de motilina
+D) Plexo mioentérico via receptores 5-HT4
+G: B
+C: A lubiprostona é um derivado do ácido prostanoico que atua como um ativador seletivo dos canais de cloreto tipo 2 (ClC-2) na membrana apical das células epiteliais do intestino delgado. A abertura desses canais promove um efluxo de íons cloreto para o lúmen, o que, por sua vez, leva à secreção passiva de sódio e água, aumentando a fluidez do conteúdo intestinal e facilitando o trânsito.
+
+Q: A eritromicina, um antibiótico macrolídeo, estimula a motilidade gástrica por antagonizar os receptores de dopamina D2.
+G: F
+C: Falso. A eritromicina exerce seu efeito procinético ao mimetizar a ação do hormônio motilina, ligando-se e ativando os receptores de motilina no músculo liso gastrointestinal. O antagonismo D2 é o mecanismo da metoclopramida e domperidona.
+
+Q: O uso crônico de laxativos derivados da antraquinona (como sene e cáscara sagrada) pode causar uma pigmentação acastanhada característica na mucosa do cólon, denominada melanose do cólon.
+G: V
+C: Verdadeiro. A melanose do cólon é uma condição benigna e reversível associada ao uso prolongado desses laxativos estimulantes, resultante do acúmulo de pigmentos (lipofuscina) em macrófagos na lâmina própria da mucosa colônica.
+
+Q: A loperamida, um fármaco antidiarreico, é um agonista opioide que atravessa facilmente a barreira hematoencefálica, possuindo alto potencial de abuso e dependência.
+G: F
+C: Falso. A loperamida é um agonista opioide que atua predominantemente nos receptores opioides periféricos do intestino. Ela tem penetração muito limitada no sistema nervoso central em doses terapêuticas, devido à sua estrutura química e à ação da P-glicoproteína na barreira hematoencefálica, resultando em baixo potencial de efeitos centrais e de abuso.
+
+Q: O bisacodil, um laxativo estimulante, apresenta mínima absorção sistêmica após administração oral ou retal e é considerado seguro para uso tanto agudo quanto em longo prazo.
+G: V
+C: Verdadeiro. O bisacodil pertence à classe dos derivados do difenilmetano. Ele é ativado por hidrólise no intestino e age localmente estimulando a motilidade e a secreção. Sua absorção para a corrente sanguínea é insignificante, contribuindo para seu perfil de segurança favorável.
+
+Q: Os fármacos antiespasmódicos, como a dicicloverina e a hiosciamina, aliviam a dor abdominal na SII principalmente por bloquearem os receptores serotoninérgicos 5-HT3 no intestino.
+G: F
+C: Falso. Esses fármacos são agentes anticolinérgicos (ou antimuscarínicos). Eles atuam bloqueando os receptores muscarínicos da acetilcolina no músculo liso gastrointestinal e nos plexos nervosos, o que reduz os espasmos musculares. O bloqueio de receptores 5-HT3 é o mecanismo de outra classe de fármacos, como a alosetrona.
+
+Q: As resinas de ligação de sais biliares, como a colestiramina, são úteis no manejo da diarreia por aumentarem ativamente a secreção de cloreto e água para o lúmen intestinal.
+G: F
+C: Falso. O mecanismo dessas resinas é físico: elas se ligam aos ácidos biliares no lúmen intestinal, formando complexos insolúveis que são excretados nas fezes. Isso impede que o excesso de ácidos biliares irrite a mucosa do cólon e induza a secreção de água e eletrólitos. Elas não estimulam a secreção de cloreto; pelo contrário, ajudam a reduzir a diarreia causada pela má absorção de sais biliares.
+
+
+Q: Qual das alternativas descreve corretamente o mecanismo de ação da metoclopramida como fármaco procinético?
+A) Estimula receptores de motilina diretamente no músculo liso.
+B) Inibe receptores 5-HT3, reduzindo náuseas e diarreias.
+C) Bloqueia receptores dopaminérgicos D2, promovendo liberação de acetilcolina.
+D) Ativa diretamente receptores M3 nas células musculares lisas.
+G: C
+C: A metoclopramida é um antagonista D2 dopaminérgico, e a dopamina atua como inibidora da atividade colinérgica no trato GI. Ao bloquear os receptores D2, a metoclopramida promove liberação de acetilcolina, aumentando a motilidade gástrica e esofágica. Isso não ocorre por ativação direta de receptores colinérgicos (M3) nem de motilina.
+
+Q: Sobre os laxativos osmóticos, qual alternativa está CORRETA?
+A) São lipofílicos e atravessam livremente a barreira hematoencefálica.
+B) Aumentam a absorção de água no cólon, endurecendo o bolo fecal.
+C) São compostos não absorvíveis que promovem a retenção de água no lúmen intestinal.
+D) Atuam como antagonistas do receptor 5-HT4, promovendo esvaziamento intestinal.
+G: C
+C: Laxativos osmóticos, como o lactulose e o PEG, não são absorvidos e permanecem no lúmen intestinal, onde promovem retenção osmótica de água, facilitando o trânsito intestinal e amolecendo as fezes. Eles não têm relação com receptores serotoninérgicos nem endurecem fezes.
+
+Q: Qual fármaco é um agonista do receptor 5-HT4 utilizado na constipação crônica?
+A) Loperamida
+B) Prucaloprida
+C) Octreotida
+D) Ondansetrona
+G: B
+C: A prucaloprida é um agonista seletivo dos receptores 5-HT4 que aumenta a liberação de acetilcolina no plexo mioentérico, estimulando a motilidade intestinal. Loperamida é antidiarreico, octreotida é análogo de somatostatina, e ondansetrona é antagonista 5-HT3.
+
+Q: Qual das seguintes substâncias estimula receptores de motilina, promovendo contrações gastrointestinais?
+A) Domperidona
+B) Eritromicina
+C) Betanecol
+D) Docusato
+G: B
+C: A eritromicina, um antibiótico macrolídeo, atua como agonista dos receptores de motilina, promovendo o complexo motor migratório e estimulando contrações GI — especialmente útil na gastroparesia. Os demais fármacos têm ações distintas.
+
+Q: Sobre a octreotida, é CORRETO afirmar que:
+A) Estimula secreção de líquido intestinal em altas doses.
+B) É indicada apenas para SII com constipação.
+C) Atua como agonista dopaminérgico para melhorar a motilidade.
+D) Reduz a secreção hormonal em tumores gastroenteropancreáticos.
+E) Não causa efeitos adversos relacionados à vesícula biliar.
+G: D
+C: A octreotida inibe a secreção de hormônios e é usada em tumores como carcinoides e VIPomas. Em altas doses, inibe a motilidade intestinal e a secreção. Pode causar lama biliar e colelitíase. Não é agonista dopaminérgico nem indicada para constipação.
+
+Q: Assinale a alternativa que NÃO representa corretamente a ação de um fármaco usado na síndrome do intestino irritável (SII):
+A) Loperamida atua como agonista opioide reduzindo motilidade intestinal.
+B) Linaclotida estimula a secreção de cloreto ativando a guanililciclase C.
+C) Alosetrona aumenta a motilidade colônica promovendo evacuações rápidas.
+D) Antidepressivos tricíclicos podem modular vias viscerais de dor.
+E) Lubiprostona atua ativando canais de cloreto tipo CIC-2.
+G: C
+C: A alosetrona, antagonista 5-HT3, reduz a motilidade colônica e é usada na SII com diarreia predominante, diminuindo evacuações. As demais alternativas descrevem corretamente os mecanismos de seus respectivos fármacos.
+
+
+Q: A domperidona atravessa a barreira hematoencefálica com facilidade, causando reações extrapiramidais frequentes.
+G: F
+C: Não atravessa a barreira hematoencefálica em grau significativo; efeitos extrapiramidais são raros.
+
+Q: A prucaloprida é um agonista 5-HT4 que estimula a motilidade do trato GI inteiro, inclusive o cólon.
+G: V
+C: Atua como agonista 5-HT4, estimulando motilidade em todo o trato GI.
+
+Q: A lubiprostona atua como agonista dos receptores opioides para promover a secreção intestinal.
+G: F
+C: Não é agonista opioide; estimula canais CIC-2 para aumentar a secreção de cloreto.
+
+Q: A loperamida é um agonista opioide periférico que retarda o trânsito intestinal, reduzindo a motilidade e aumentando a absorção de água fecal.
+G: V
+C: Atua em receptores µ periféricos, reduzindo motilidade e prolongando o trânsito intestinal.
+
+Q: A metoclopramida aumenta a motilidade intestinal por meio do aumento da atividade dopaminérgica central.
+G: F
+C: Atua bloqueando receptores D2 (inibitórios), aumentando acetilcolina e motilidade.
+
+Q: A linaclotida promove a secreção de cloreto no lúmen intestinal ao ativar a guanililciclase C.
+G: V
+C: Ativa a guanililciclase C, aumentando GMPc e estimulando o canal CFTR.
+
+Q: Qual fármaco procinético atua primariamente através da estimulação direta de receptores muscarínicos M3 nas células musculares lisas e no plexo mioentérico, embora seu uso seja raro atualmente devido a efeitos colaterais e disponibilidade de alternativas?
+A) Metoclopramida
+B) Eritromicina
+C) Neostigmina
+D) Betanecol
+G: D
+C: O betanecol é um agonista colinérgico que atua diretamente nos receptores muscarínicos M3, presentes nas células musculares lisas e nos neurônios do plexo mioentérico. Essa estimulação direta imita a ação da acetilcolina, aumentando a contração muscular e, consequentemente, a motilidade gastrointestinal. Em contraste, a metoclopramida bloqueia receptores D2 (liberando a ação da acetilcolina), a eritromicina ativa receptores de motilina (um hormônio diferente) e a neostigmina aumenta a acetilcolina indiretamente ao inibir sua enzima de degradação (acetilcolinesterase).
+
+Q: Fármacos como a naldemedina, naloxegol e metilnaltrexona são utilizados especificamente para tratar a constipação induzida por opioides (CIO). Qual é o mecanismo fundamental que explica sua eficácia nesta condição sem reverter a analgesia central?
+A) Ativação da guanililciclase C, aumentando a secreção de fluidos.
+B) Antagonismo competitivo dos receptores opioides mu (µ) predominantemente no trato gastrointestinal.
+C) Estímulo direto dos receptores de motilina, mimetizando a ação hormonal endógena.
+D) Bloqueio dos canais de cloreto tipo 2 (ClC-2), reduzindo a absorção de água.
+G: B
+C: O mecanismo chave desses fármacos é o antagonismo competitivo dos receptores opioides mu (µ) localizados predominantemente no intestino. Como eles têm dificuldade em atravessar a barreira hematoencefálica para chegar ao cérebro, conseguem reverter a constipação causada pelos opioides (um efeito periférico no intestino) sem interferir significativamente na analgesia (um efeito central no cérebro). Os outros mecanismos pertencem a diferentes classes: ativação da guanililciclase C (como a linaclotida), estímulo de receptores de motilina (como a eritromicina) e ativação de canais ClC-2 (como a lubiprostona).
+
+Q: Os fármacos antiespasmódicos, como a dicicloverina e a hiosciamina, são por vezes utilizados para aliviar a dor abdominal na Síndrome do Intestino Irritável (SII). Qual classe farmacológica e mecanismo de ação primário descrevem corretamente esses agentes?
+A) Antagonistas 5-HT3; bloqueiam a sinalização serotoninérgica aferente visceral.
+B) Agonistas opioides delta; modulam a percepção da dor intestinal.
+C) Anticolinérgicos (Antimuscarínicos); inibem a ação da acetilcolina no músculo liso e plexos entéricos.
+D) Ativadores de canais de potássio; hiperpolarizam as células musculares lisas, causando relaxamento.
+G: C
+C: Estes fármacos pertencem à classe dos anticolinérgicos (ou antimuscarínicos). Seu mecanismo primário é bloquear os receptores muscarínicos da acetilcolina no músculo liso e nos plexos nervosos do intestino. Ao inibir a ação contrátil da acetilcolina, eles reduzem as contrações musculares (espasmos) e podem aliviar a dor abdominal associada a esses espasmos. Isso difere fundamentalmente do bloqueio de receptores 5-HT3 (como a alosetrona, que modula dor e motilidade por outra via) ou da modulação direta de receptores opioides.
+
+Q: O óleo mineral é classificado como um laxativo surfactante fecal (amolecedor). Além de lubrificar as fezes, qual é um risco potencial significativo associado ao seu uso, particularmente em pacientes com risco de aspiração ou em uso prolongado?
+A) Desenvolvimento de dependência e atonia colônica.
+B) Indução de colite isquêmica.
+C) Pneumonite lipídica por aspiração e má absorção de vitaminas lipossolúveis.
+D) Hiperfosfatemia e nefrocalcinose.
+G: C
+C: Os riscos mais importantes associados ao óleo mineral incluem a possibilidade de aspiração acidental para os pulmões, causando pneumonite lipídica (uma inflamação pulmonar grave devido ao óleo), e a má absorção das vitaminas lipossolúveis (A, D, E, K). A má absorção ocorre porque o óleo mineral, sendo um lipídeo não absorvível que reveste o interior do intestino, pode dissolver essas vitaminas que também são lipossolúveis. Ao ficarem dissolvidas no óleo que não é absorvido, as vitaminas acabam sendo eliminadas nas fezes em vez de serem absorvidas pela parede intestinal para o corpo. Os outros riscos mencionados pertencem a outras classes de fármacos (risco de dependência com estimulantes, colite isquêmica com alosetrona, distúrbios eletrolíticos com fosfato de sódio).

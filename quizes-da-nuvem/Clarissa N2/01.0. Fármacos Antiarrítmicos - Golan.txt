@@ -1,0 +1,267 @@
+Q: Qual classe de antiarrítmicos prolonga predominantemente a duração do potencial de ação ventricular ao bloquear canais de K⁺?
+A) Classe I
+B) Classe II
+C) Classe III
+D) Classe IV
+G: C
+C: Os antiarrítmicos de classe III atuam bloqueando canais de K⁺ responsáveis pela repolarização (fase 3), prolongando o período refratário e a duração do potencial de ação ventricular.
+
+Q: Qual classe de antiarrítmicos reduz principalmente a inclinação da fase 4 do potencial de ação nas células do nó sinoatrial?
+A) Classe I
+B) Classe II
+C) Classe III
+D) Classe IV
+G: B
+C: Os antagonistas β-adrenérgicos (classe II) diminuem a entrada de Ca²⁺ e Na⁺ durante a fase 4, reduzindo a “inclinação” da despolarização espontânea e, assim, a frequência cardíaca.
+
+Q: Qual fármaco pertence à classe IC de bloqueadores de canais de Na⁺?
+A) Quinidina
+B) Lidocaína
+C) Flecainida
+D) Verapamil
+G: C
+C: A flecainida é um potente bloqueador dos canais rápidos de Na⁺ com dissociação lenta (classe IC). Quinidina é IA, lidocaína é IB e verapamil é IV.
+
+Q: Qual fármaco é exemplo de antiarrítmico de classe IA?
+A) Lidocaína
+B) Sotalol
+C) Procainamida
+D) Amiodarona
+E) Verapamil
+G: C
+C: Procainamida exerce bloqueio moderado de canais de Na⁺ e também de canais de K⁺, caracterizando-se como classe IA.
+
+Q: Qual fármaco bloqueia canais de Ca²⁺ do tipo L e é usado para controle da frequência ventricular em fibrilação atrial?
+A) Procainamida
+B) Metoprolol
+C) Diltiazem
+D) Flecainida
+E) Ibutilida
+G: C
+C: O diltiazem (classe IV) bloqueia canais de Ca²⁺ tipo L, atrasando a condução no nó AV e reduzindo a resposta ventricular.
+
+Q: Qual dos seguintes é um antiarrítmico de classe III?
+A) Lidocaína
+B) Amiodarona
+C) Quinidina
+D) Propranolol
+E) Disopiramida
+G: B
+C: A amiodarona bloqueia canais de K⁺ (classe III) e prolonga o período refratário. Lidocaína é IB; quinidina e disopiramida são IA; propranolol é II.
+
+Q: Qual fármaco é exemplar de antiarrítmico de classe IB?
+A) Propafenona
+B) Mexiletina
+C) Sotalol
+D) Verapamil
+E) Atenolol
+G: B
+C: A mexiletina é análogo oral da lidocaína e pertence à classe IB, com dissociação rápida dos canais de Na⁺.
+
+Q: Qual antagonista β-adrenérgico é usado como antiarrítmico de classe II?
+A) Esmolol
+B) Dofetilida
+C) Ibutilida
+D) Flecainida
+E) Digoxina
+G: A
+C: O esmolol é um β-bloqueador de ação rápida (classe II). Dofetilida e ibutilida são classe III, flecainida é IC e digoxina não pertence às classes tradicionais I–IV.
+
+Q: A classe IA exerce bloqueio moderado de canais de Na⁺ e prolonga a repolarização do potencial de ação.
+G: V
+C: Além de bloquear Na⁺, esses fármacos também inibem canais de K⁺, estendendo o período refratário.
+
+Q: A lidocaína é eficaz no tratamento de arritmias supraventriculares.
+G: F
+C: A lidocaína (classe IB) atua preferencialmente em arritmias ventriculares e tem pouco efeito em arritmias supraventriculares.
+
+Q: A amiodarona bloqueia canais de K⁺ e prolonga o período refratário eficaz.
+G: V
+C: Esse é o principal mecanismo antiarrítmico de classe III, embora a amiodarona também bloqueie múltiplos outros canais.
+
+Q: O verapamil pertence à classe I de antiarrítmicos.
+G: F
+C: O verapamil é um bloqueador dos canais de Ca²⁺ (classe IV).
+
+Q: O propranolol diminui a inclinação da fase 4 do potencial de ação do nó SA.
+G: V
+C: Como antagonista β, o propranolol reduz a entrada de Ca²⁺ e Na⁺ na fase 4, retardando a despolarização espontânea.
+
+QCH: Sobre os antiarrítmicos da classe IA, assinale todas as assertivas corretas:
+NO-RANDOM: TRUE
+A1: Prolongam a duração do potencial de ação ventricular.
+G: V
+A2: São exemplos a lidocaína e a mexiletina.
+G: F
+A3: Bloqueiam canais de Na⁺ de forma moderada.
+G: V
+A4: Pertencem a essa classe sotalol e amiodarona.
+G: F
+A5: Têm dissociação rápida dos canais de Na⁺.
+G: F
+A6: São contraindicados em pacientes com prolongamento de QT.
+G: F
+C: A classe IA bloqueia moderadamente canais de Na⁺ e de K⁺ (prolongando QT). Lidocaína e mexiletina são IB; sotalol e amiodarona são III; a dissociação rápida caracteriza a IB; o risco de prolongar QT exige cautela, mas a contraindicação primária nesse contexto são as torsades.
+
+QCH: Sobre os antiarrítmicos da classe III, assinale todas as assertivas corretas:
+NO-RANDOM: TRUE
+A1: Bloqueiam canais de Na⁺.
+G: F
+A2: Prolongam a fase 3 do potencial de ação.
+G: V
+A3: Pertencem a essa classe verapamil e diltiazem.
+G: F
+A4: Exemplos incluem amiodarona e sotalol.
+G: V
+A5: Reduzem a inclinação da fase 4 do nó SA.
+G: F
+A6: Podem predispor a torsades de pointes.
+G: V
+C: Classe III bloqueia canais de K⁺, estendendo a fase 3; inclui amiodarona e sotalol; o prolongamento excessivo do QT pode levar a torsades. Verapamil/diltiazem são IV.
+
+QCH: Sobre os antagonistas β-adrenérgicos (classe II), assinale todas as assertivas corretas:
+NO-RANDOM: TRUE
+A1: Bloqueiam canais de K⁺.
+G: F
+A2: Prolongam o potencial de ação ventricular.
+G: F
+A3: Diminuem a condução atrioventricular.
+G: V
+A4: São contraindicados em asma brônquica.
+G: F
+A5: Aceleram a fase 4 do nó SA.
+G: F
+A6: Exemplos: propranolol e metoprolol.
+G: V
+C: β-bloqueadores retardam a condução no nó AV e incluem propranolol/metoprolol; são cautelosos na asma por risco broncoespasmo (mas não bloqueiam K⁺ nem aceleram a fase 4).
+
+Q: Qual fármaco antiarrítmico bloqueia canais de Na⁺ com dissociação rápida, encurtando a repolarização sem prolongar o intervalo QT, sendo preferencialmente usado em arritmias ventriculares no contexto de infarto?
+A) Quinidina
+B) Lidocaína
+C) Diltiazem
+D) Sotalol
+G: B
+C: A lidocaína é um bloqueador dependente do uso dos canais de Na⁺ com dissociação rápida, que encurta a repolarização ao inibir canais de Na⁺ de inativação tardia na fase 2, sem prolongar o QT .
+
+Q: Qual agente antiarrítmico exerce seu principal efeito terapêutico ao tornar mais lenta a ascensão do potencial de ação nas células do nó AV, bloqueando preferencialmente canais de Ca²⁺ tipo L?
+A) Verapamil
+B) Mexiletina
+C) Amiodarona
+D) Propranolol
+G: A
+C: Verapamil bloqueia canais de Ca²⁺ do tipo L nos tecidos nodais, diminuindo a velocidade de condução pelo nó AV e prolongando o período refratário .
+
+Q: Qual fármaco antiarrítmico prolonga o potencial de ação e o período refratário efetivo através do bloqueio de canais de K⁺, podendo, entretanto, induzir torsades de pointes?
+A) Amiodarona
+B) Flecainida
+C) Lidocaína
+D) Adenosina
+G: A
+C: A amiodarona, principalmente classe III, bloqueia canais de K⁺ responsáveis pela repolarização (fase 3), prolongando o potencial de ação e o refratário, com risco de torsades .
+
+Q: <i>“Este fármaco abre canais de K⁺ acoplados à proteína G (IKACh) e inibe a potencialização de canais de Ca²⁺, com meia-vida plasmática inferior a 10 segundos, sendo de primeira linha na conversão de taquicardia supraventricular paroxística.”</i>
+A) Amiodarona
+B) Sotalol
+C) Adenosina
+D) Verapamil
+E) Quinidina
+G: C
+C: A adenosina ativa receptores P1 purinérgicos, abrindo canais de K⁺ G-acoplados e inibindo correntes de Ca²⁺, bloqueando a condução nodal AV em segundos .
+
+Q: <i>“Este agente é um bloqueador acentuado de canais de Na⁺ de fase 0 com dissociação lenta (‘dependente do uso’), usado em arritmias supraventriculares refratárias, mas contraindicado em cardiopatia isquêmica por risco pró-arrítmico.”</i>
+A) Mexiletina
+B) Flecainida
+C) Lidocaína
+D) Procainamida
+E) Adenosina
+G: B
+C: A flecainida (classe IC) bloqueia fortemente canais de Na⁺ com dissociação lenta, reduzindo a velocidade da fase 0, porém pode agravar arritmias em cardiopatas isquêmicos .
+
+Q: <i>“Este fármaco combina bloqueio não seletivo de receptores β-adrenérgicos e bloqueio de canais de K⁺, sendo eficaz na prevenção de recidiva de fibrilação atrial, mas exige monitorização do QT.”</i>
+A) Propranolol
+B) Sotalol
+C) Diltiazem
+D) Quinidina
+E) Dronedarona
+G: B
+C: O sotalol é um antiarrítmico misto (classes II e III), antagonizando β-receptores e bloqueando canais de K⁺, prolongando o QT e requerendo vigilância de torsades .
+
+Q: <i>“Este agente atua alterando a membrana lipídica dos miócitos, bloqueando canais de Na⁺, K⁺, Ca²⁺ e receptores α/β-adrenérgicos, com amplo espectro antiarrítmico, mas apresenta toxicidade pulmonar e tireoidiana em uso crônico.”</i>
+A) Amiodarona
+B) Diltiazem
+C) Flecainida
+D) Propafenona
+E) Lidocaína
+G: A
+C: A amiodarona modifica as características da membrana lipídica, bloqueando múltiplos canais iônicos e receptores, o que explica seu amplo espectro e seus efeitos adversos crônicos .
+
+Q: <i>“Inibe exclusivamente o componente rápido da corrente retificadora de K⁺ tardia, prolongando o intervalo QT de forma dependente da dose; disponível apenas por via oral; não tem efeito inotrópico negativo.”</i>
+A) Ibutilida
+B) Dofetilida
+C) Amiodarona
+D) Sotalol
+E) Procainamida
+G: B
+C: A dofetilida bloqueia seletivamente a corrente IKr, prolonga o QT de maneira dose-dependente e, por não afetar a contratilidade, pode ser usada em disfunção de ejeção .
+
+Q: <i>“Semelhante estruturalmente à amiodarona, mas menos lipofílico e sem átomos de iodo, possui meia-vida mais curta e requer monitoramento periódico da função hepática.”</i>
+A) Dronedarona
+B) Disopiramida
+C) Propafenona
+D) Dofetilida
+E) Mexiletina
+G: A
+C: A dronedarona foi desenvolvida para manter o perfil antiarrítmico da amiodarona com menor toxicidade tireoidiana, apresentando meia-vida reduzida e exigir testes de função hepática periódicos .
+
+Q: <i>“Agente antianginoso de mecanismo incerto que pode inibir a corrente de Na⁺ tardia e a corrente de K⁺ tardia, prolongando o potencial de ação e usado no tratamento da angina de peito crônica.”</i>
+A) Ranolazina
+B) Digoxina
+C) Adenosina
+D) Lidocaína
+E) Sotalol
+G: A
+C: A ranolazina atua inibindo a corrente lenta de Na⁺ e possivelmente a corrente de K⁺ tardia, prolongando o potencial de ação, sendo indicada para angina crônica .
+
+Q: <i>“Concentra-se nas terminações nervosas simpáticas, causando liberação inicial de noradrenalina seguida de inibição adicional, funcionando como ‘simpatectomia química’ e prolongando o potencial de ação cardíaco.”</i>
+A) Bretílio
+B) Esmolol
+C) Ibutilida
+D) Verapamil
+E) Procainamida
+G: A
+C: O bretílio libera inicialmente noradrenalina e depois bloqueia sua liberação, promovendo efeito simpaticolítico e prolongando a repolarização ventricular .
+
+Q: <i>“Assemelha-se eletrofisiologicamente à quinidina (classe IA) mas exerce efeitos anticolinérgicos mais profundos, sendo contraindicado em glaucoma e uropatia obstrutiva.”</i>
+A) Quinidina
+B) Disopiramida
+C) Procainamida
+D) Moricizina
+E) Flecainida
+G: B
+C: A disopiramida bloqueia canais de Na⁺ e prolonga o QT como a quinidina, porém seus intensos efeitos anticolinérgicos (xerostomia, retenção urinária) limitam seu uso em glaucoma ou obstrução urinária .
+
+Q: Qual dos seguintes fármacos é um exemplo de antiarrítmico da Classe IA, conhecido por bloquear canais de Na⁺ e também canais de K⁺?
+A) Metoprolol
+B) Amiodarona
+C) Quinidina
+D) Diltiazem
+G: C
+C: A quinidina é um exemplo clássico de antiarrítmico da Classe IA, com ação bloqueadora sobre os canais de Na⁺ e também sobre canais de K⁺, prolongando a repolarização.
+
+Q: Uma característica dos antiarrítmicos da Classe IB, como a lidocaína, é sua lenta associação e dissociação dos canais de Na⁺.
+G: F
+C: Falso. Os antiarrítmicos da Classe IB, como a lidocaína, exibem uma cinética de associação e dissociação <b>rápida</b> dos canais de Na⁺, o que contribui para sua maior eficácia em tecidos com alta frequência de disparo.
+
+Q: Os fármacos da Classe IC são considerados os bloqueadores de canais de Na⁺ mais potentes entre os antiarrítmicos da Classe I.
+G: V
+C: Falso. Os antiarrítmicos da Classe IC são os <b>mais potentes</b> bloqueadores dos canais de Na⁺ entre as subclasses da Classe I, causando uma acentuada diminuição na velocidade de ascensão da fase 0.
+
+Q: Os antiarrítmicos da Classe II exercem seus efeitos primariamente através do bloqueio dos canais de Ca²⁺ no nódulo AV.
+G: F
+C: Falso. Os antiarrítmicos da Classe II são antagonistas dos receptores β-adrenérgicos. Embora modularem indiretamente as correntes de Ca²⁺ no nó AV, o bloqueio direto de canais de Ca²⁺ é característico da Classe IV.
+
+Q: O sotalol é um exemplo de fármaco antiarrítmico que possui exclusivamente propriedades da Classe III.
+G: F
+C: Falso. O sotalol é um agente antiarrítmico com propriedades <b>mistas</b> das Classes II (antagonismo β-adrenérgico) e III (bloqueio de canais de K⁺).
+
+

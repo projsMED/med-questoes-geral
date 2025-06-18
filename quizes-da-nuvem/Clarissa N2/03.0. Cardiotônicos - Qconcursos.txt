@@ -1,0 +1,97 @@
+Q: A digoxina é um fármaco utilizado para tratar a insuficiência cardíaca congestiva, que apresentam dois efeitos no coração com insuficiência, que são o aumento do volume sistólico e aumento do débito cardíaco. Estes efeitos estão relacionados à classe farmacológica de medicamentos que atuam no aparelho circulatório e dentro desta classe são definidos como:
+A) Antianginosos.
+B) Catecolaminas.
+C) Digitálicos.
+D) Anti-hipertensivos
+G: C
+
+Q: A digoxina é um medicamento que aumenta a força de contração do músculo cardíaco. Assinale a alternativa que corresponde corretamente a que tipo de classe pertence esse medicamento.
+A) Anti-inflamatório
+B) Inibidores da ECA
+C) Digitálico
+D) Corticoide
+E) Betabloqueador 
+G: C
+
+Q: A digoxina é um fármaco cardiotônico com estreita faixa terapêutica, o que exige monitorização terapêutica e farmacológica. A respeito da digoxina, assinale a alternativa correta.
+A) A digoxina, ao se ligar à bomba Na+/K+-ATPase das células cardíacas, aumenta os níveis intracelulares de potássio e extracelulares de sódio.
+B) A digoxina aumenta tanto o cronotropismo cardíaco quanto o inotropismo.
+C) A digoxina aumenta o inotropismo e o débito cardíaco, o que resulta em ativação do barorreflexo. Com isso, há menor ativação simpática, ocorrendo a bradicardia.
+D) A hipercalemia induzida pelos inibidores da ECA pode aumentar os efeitos da digoxina, causando uma intoxicação digitálica.
+E) A intoxicação digitálica é uma condição clínica cuja manifestação é aguda e de curta duração, uma vez que a meia-vida da digoxina é inferior a 12 horas.
+G: C
+
+Q: Alguns esteróides presentes na natureza, caracterizam-se pela grande especificidade pelo miocárdio e pela poderosa ação que exercem sobre este. Estes esteróides ocorrem como glicosídeos ligados na posição 3 do núcleo esteroidal e podem ser extraídos de plantas como a Digitalis purpurea ou Digitalis lanata. Devido a sua ação sobre o miocárdio, chamam-se glicosídeos cardiotônicos e entre eles estão a digoxina e a digitoxina. Sobre a digoxina assinale a alternativa correta:
+A) A digoxina é utilizada para o tratamento da hipertensão.
+B) A digoxina excerce sua ação farmacológica na célula miocárdica através da inibição da bomba trocadora de Na+ /K+ dependente de ATP, aumentando Ca2+ intracelular.
+C) A digoxina apresenta uma hidroxila no núcleo esteroidal, que a torna mais lipossolúvel, aumentando seu tempo de ação e seu efeito farmacológico.
+D) A digoxina apresenta ampla janela terapêutica.
+E) A digoxina promove liberação periférica de noradrenalina, que contribui com seu efeito cronotrópico positivo.
+G: B
+
+Q: Dobutamina é uma catecolamina utilizada clinicamente no tratamento agudo da insuficiência cardíaca e choque.
+
+Quanto ao seu efeito farmacológico, assinale a opção correta.
+A) Agonista adrenérgico não seletivo, atuando nos receptores a e β1 cardíacos.
+B) Agonista α1-adrenérgico, proporcionando aumento da resistência vascular periférica.
+C) Agonista α2-adrenérgico, causando bradicardia e sedação.
+D) Agonista β1 e β2-adrenérgico não seletivo, causando vasodilatação esquelética.
+E) Forte efeito inotrópico β1, discreto efeito β2 e vasoconstritor periférico.
+G: E
+
+Q: Assinale a opção em que é apresentado um agonista seletivo dos receptores adrenérgicos α1 e α2.
+A) sabutamol
+B) oximetazolina
+C) epinefrina
+D) efedrina
+E) dobutamina
+G: B
+
+Q: As drogas vasoativas, comumente empregadas nos pacientes críticos atendidos nas emergências, apresentam efeitos vasculares periféricos, pulmonares ou cardíacos, sejam eles diretos ou indiretos. A dobutamina é uma droga simpatomimética sintética, com ação predominantemente no receptor:
+A) beta 1 agonista
+B) dopaminérgicos
+C) alfa 2 agonistas
+D) beta 2 agonistas
+G: A
+
+Q: A levosimendana é medicamento que vem sendo recentemente utilizado no tratamento da insuficiência cardíaca congestiva. O principal efeito farmacológico desse fármaco é
+A) o alfa e betabloqueio dos receptores adrenérgicos.
+B) a potente excreção urinária de sódio.
+C) a venodilatação sistêmica.
+D) a ação inotrópica positiva.
+E) o bloqueio dos receptores de angiontensina II.
+G: D
+C: Mecanismo –– Aumenta a sensibilidade da troponina C ao cálcio, o que aumenta a extensão das interações actina-miosina, sem aumento substancial no consumo de oxigênio do miocárdio
+
+Q: A milrinona é um fármaco que pode ser empregado em procedimentos cardiovasculares, sobretudo naqueles com saída de circulação extracorpórea difícil, cujo mecanismo de ação e efeitos, respectivamente, são: 
+A) inibidor da Fosfodiesterase-3 / aumenta o AMPc intracelular, causa inotropismo positivo e queda da resistência vascular sistêmica 
+B) inibidor da Fosfodiesterase-3 / diminui o AMPc intracelular, causa inotropismo positivo e queda da resistência vascular sistêmica
+C) ativador da Proteína Gqs / aumenta o AMPc intracelular, causa inotropismo positivo e aumento da resistência vascular sistêmica 
+D) ativador da Fosfodiesterase-3 / aumenta o AMPc intracelular, causa inotropismo negativo e aumento da resistência vascular sistêmica
+G: A
+C: Mecanismo – Aumentam o AMPc ao inibir as enzimas PDE que o hidrolisam; nos miócitos cardíacos, os inibidores da PDE exercem efeitos inotrópicos e lusitrópicos positivos; os inibidores da PDE também relaxam o músculo liso vascular e diminuem, portanto, a pré-carga (venodilatação) e a pós-carga (dilatação arterial)
+
+Q: A milrinona, inibidora da fosfodiesterase-3 dos cardiomiócitos, é a droga usada com frequência no pós-operatório de cirurgias cardíacas. Sobre ela, assinale a afirmativa correta. 
+A) Promove aumento da pós-carga dos ventrículos direito e esquerdo. 
+B) Ativa os receptores beta-1 no coração, aumentando de forma significativa a frequência cardíaca. 
+C) Tem efeito inotrópico positivo no coração e vasodilatador periférico.
+D) Promove elevação da resistência vascular pulmonar.
+E) Induz tolerância, assim como as simpaticomiméticas.
+G: C
+
+Q: Qual das listagens a seguir apresenta somente medicamentos cardiotônicos?
+A) Anlodipino, Nimodipino e Solatol.
+B) Digoxina, Levosimendana e Milrinona.
+C) Amiodarona, Adenosina e Diltiazem.
+D) Efedrina, Isoprenalina e Cumarina.
+G: B
+
+Q: O isoproterenol é um fármaco que tem como uma de suas funções tratar bloqueios cardíacos. O enfermeiro deve ficar na cabeceira do paciente durante todo tempo em que o isoproterenol estiver sendo infundido, pois o mesmo pode ocasionar
+A) taquicardia ou fibrilação ventricular.
+B) elevação da pressão intraocular.
+C) retenção urinária importante.
+D) acentuada resistência ao fluxo do ar.
+E) sonolência e desorientação por toxidade.
+G: A
+C: Agonistas β-adrenérgicos:
+Mecanismo –– Aumentam o AMPc ao ativar os receptores adrenérgicos acoplados à proteína G; os agonistas, que atuam nos receptores β1-adrenérgicos cardíacos, exercem efeitos inotrópicos, cronotrópicos e lusitrópicos positivos

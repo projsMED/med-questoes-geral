@@ -1,0 +1,365 @@
+QCH: Assinale todos os tipos de amostragem que são probabilísticos (aleatórios)
+A1: Aleatória Simples
+G: V
+C: Todos os indivíduos da população são numerados e um subconjunto é sorteado, como em uma loteria.
+A2: Por Conveniência
+G: F
+C: É não probabilística. Seleciona-se os indivíduos de mais fácil acesso (ex: pacientes atendidos na própria clínica do pesquisador).
+A3: Estratificada
+G: V
+C: A população é dividida em subgrupos homogêneos (estratos) com base em uma característica (ex: por faixa etária, sexo). Em seguida, uma amostra aleatória é retirada de cada estrato. Isso garante a representatividade de todos os subgrupos.
+A4: Sistemática
+G: V
+C: Os indivíduos são numerados e, a partir de um ponto de partida aleatório, seleciona-se um a cada "k" indivíduos (ex: a cada 10 prontuários, um é selecionado).
+A5: Consecutiva
+G: F
+C: É não probabilística. Arrolam-se consecutivamente todos os sujeitos que atendem aos critérios de inclusão e que se apresentam para o serviço durante o período da pesquisa. É uma forma de reduzir o voluntarismo presente na amostragem por conveniência.
+A6: Por Conglomerado
+G: V
+C: A população é dividida em agrupamentos naturais (conglomerados), como bairros, escolas ou Unidades Básicas de Saúde (UBSs). Sorteiam-se alguns conglomerados e todos os indivíduos dentro dos conglomerados sorteados são incluídos no estudo.
+
+---
+
+Q: Cite o TIPO DE AMOSTRAGEM de cada proposta de estudo a seguir.
+Opções para citar nas respostas:
+-> Amostragem Sistemática
+-> Amostragem por Conglomerado
+-> Amostragem Aleatória Simples
+-> Amostragem Consecutiva
+-> Amostragem Estratificada Proporcional
+-> Amostragem por Conveniência
+I_A) Um estudo planeja aplicar um questionário a 404 mães de recém-nascidos acompanhadas nas Unidades Básicas de Saúde (UBSs) do município de Araguaína-TO. Neste município há 10 UBSs e, para ter uma amostra mais representativa desta população, os pesquisadores decidiram selecionar um certo número de indivíduos (subgrupos) de cada unidade. Esta quantidade foi proporcional ao número de mães acompanhadas em cada UBS.
+GABARITO: <b>Tipo de Amostragem: Amostragem Estratificada Proporcional.</b> A população foi dividida em estratos (as UBSs) e a seleção dentro de cada estrato foi feita de forma proporcional ao tamanho do estrato na população.
+I_B) Um total de 48 pacientes atendidos num ambulatório de geriatria em Araguaína-TO foram selecionados à critério do pesquisador para participar de um estudo que avaliou a qualidade de vida em idosos residentes neste município.
+GABARITO: <b>Tipo de Amostragem: Amostragem Não-Probabilística por Conveniência.</b> A seleção foi baseada na facilidade de acesso e no critério do pesquisador, sem um processo aleatório.
+I_C) Um estudo pretende avaliar a eficiência de um novo procedimento cirúrgico para catarata frente a um procedimento tido como convencional. De uma lista de 126 pacientes que agendaram a realização desta cirurgia num hospital de referência em Araguaína-TO, 30 foram selecionados aleatoriamente por meio de uma ferramenta computacional.
+GABARITO: <b>Tipo de Amostragem: Amostragem Aleatória Simples.</b> Todos os indivíduos da população acessível (a lista de 126 pacientes) tiveram a mesma chance de serem sorteados.
+I_D) Um grupo de pesquisadores realizou um estudo sobre comportamento de risco em adolescentes do ensino médio matriculados em escolas públicas no município de Araguaína-TO. Das 27 escolas públicas existentes no município, 6 foram escolhidas aleatoriamente. Todos os estudantes do ensino médio em cada uma das escolas foram selecionados para participar do estudo.
+GABARITO: <b>Tipo de Amostragem: Amostragem por Conglomerado.</b> Os grupos (escolas) foram sorteados aleatoriamente e todos os indivíduos dentro dos grupos sorteados foram incluídos na amostra.
+I_E) Um estudo avaliou se o uso de hidroxicloroquina é eficiente em reduzir a carga viral nas vias respiratórias superiores de pacientes diagnosticados com covid-19. Os pesquisadores selecionaram os primeiros 44 pacientes que deram entrada num hospital privado em Marselle, na França.
+GABARITO: <b>Tipo de Amostragem: Amostragem Não-Probabilística Consecutiva.</b> Os participantes foram arrolados na ordem em que chegaram, desde que atendessem aos critérios de inclusão.
+I_F) Um grupo de pesquisadores avaliou as características sociodemográficas e clínicas de pacientes com paracoccidioidomicose atendidos no Hospital de Doenças Tropicais em Araguaína-TO no período de 2000 a 2020. De uma lista ordenada de 1.000 pacientes (prontuários), 100 foram selecionados de 10 em 10.
+GABARITO: <b>Tipo de Amostragem: Amostragem Sistemática.</b> A seleção foi feita a partir de um intervalo fixo (k=10) em uma lista ordenada.
+
+---
+
+QCH: Sobre amostras, assinale TODAS as assertivas VERDADEIRAS.
+A1: Toda pesquisa busca entender características de um grupo grande, a população-alvo (ex: todos os pacientes com diabetes em Araguaína-TO). No entanto, por razões de custo, tempo e logística, é quase sempre inviável estudar todos os indivíduos. A solução é selecionar um subconjunto desse grupo, chamado de população.
+G: F
+C: A solução é selecionar um subconjunto desse grupo, chamado de <b>amostra</b>.
+A2: O grande objetivo é que os resultados encontrados na amostra possam ser generalizados para a população-alvo. Esse processo de generalização é chamado de inferência estatística.
+G: V
+C: ​‎ 
+A3: A amostra precisa ser representativa, ou seja, ela deve espelhar as características da população da forma o menos fiel possível.
+G: F
+C: De forma o mais fiel possível.
+A4: A representatividade é alcançada por dois pilares:
+1. Amostragem Adequada: O método de seleção dos participantes.
+2. Tamanho da Amostra: O número de participantes.
+G: V
+C: ​‎ 
+A5: A escolha do cálculo do tamanho da amostra dependerá apenas do objetivo da pesquisa.
+G: F
+C: Dependerá do objetivo da pesquisa e do tipo de variável considerada.
+A6: Nos estudos analíticos o objetivo é estimar um parâmetro na população. Queremos saber "qual é" a média de glicemia, ou "qual é" a proporção de hipertensos.
+G: F
+C: Isso se refere a estudos <b>descritivos</b>.
+A7: Nos estudos descritivos o objetivo é comparar grupos ou testar hipóteses. Queremos saber se a média de glicemia do Grupo A é diferente da do Grupo B, ou se a proporção de cura com a Droga X é maior que com aN Droga Y.
+G: F
+C: Isso se refere a estudos <b>analíticos</b>.
+A8: Variáveis numéricas (Quantitativas): Medem quantidades (ex: pressão arterial, glicemia, IMC, QI). O parâmetro de interesse geralmente é a média (μ).
+Variáveis categóricas (Qualitativas): Classificam em categorias (ex: tem ou não a doença, AVC, toxoplasmose, invalidez; sim/não). O parâmetro de interesse é a proporção ou porcentagem (%).
+G: V
+C: ​‎ 
+A9: Em geral, estudos que lidam com proporção tendem a exigir um tamanho amostral maior que estudos que lidam com médias.
+G: V
+C: ​‎ 
+A10: O desvio-padrão (s) é a principal medida de variabilidade populacional utilizada no cálculo de tamanho amostral para variáveis categóricas.
+G: F
+C: Para variáveis <b>numéricas</b>.
+A11: A maneira mais eficaz de se obter uma amostra representativa é utilizando um procedimento de amostragem não-probabilística.
+G: F
+C: A melhor maneira de se obter uma amostra representativa é através de um procedimento aleatório de seleção, conhecido como amostragem probabilística.
+A12: Na amostragem aleatória simples, cada indivíduo da população possui a mesma probabilidade de ser selecionado para compor a amostra.
+G: V
+C: ​‎ 
+A13: A amostragem não-probabilística se caracteriza pela ausência de influência do pesquisador na seleção dos participantes.
+G: F
+C: A amostragem não-probabilística é caracterizada por haver influência do pesquisador na seleção das unidades da população, em contraste com a amostragem probabilística.
+A14: Detectar uma pequena diferença entre dois grupos requer um tamanho de amostra menor do que detectar uma grande diferença.
+G: F
+C: A magnitude da diferença que se deseja detectar é inversamente proporcional ao tamanho da amostra. Diferenças menores exigem amostras maiores para serem detectadas com significância estatística.
+A15: Para comparar as médias de dois grupos independentes, os graus de liberdade (gl) são calculados como (nA + nB - 2).
+G: V
+C: ​‎ 
+A16: A escolha de um nível de confiança mais alto (ex: 99% em vez de 95%) para uma estimativa resultará em um tamanho de amostra maior.
+G: V
+C: ​‎ 
+
+---
+
+QCH: Assinale TODAS as assertivas que definem CORRETAMENTE cada parâmetro citado.
+A1: Variabilidade do desfecho: Mede o quão dispersos são os dados na população. Para variáveis numéricas, é o desvio-padrão (s). Para categóricas, é a proporção esperada (P).
+G: V
+C: Quanto MAIOR a variabilidade (dados mais espalhados), MAIOR será o n necessário.
+A2: Margem de Erro (Precisão): Define a diferença mínima aceitável entre o valor encontrado na sua amostra e o valor verdadeiro na população.
+G: F
+C: Define a diferença <b>máxima</b> aceitável entre o valor encontrado na sua amostra e o valor verdadeiro na população.
+​‎ 
+Quanto MENOR a margem de erro (mais precisão você quer), MAIOR será o n. Reduzir o erro pela metade quadruplica o tamanho da amostra.
+A3: Nível de Confiança: É a probabilidade de que a sua estimativa (considerando a margem de erro) contenha o verdadeiro valor da população. Geralmente é 95% (1−α, onde α=0,05).
+G: V
+C: Quanto MAIOR o nível de confiança (mais certeza você quer), MAIOR será o n.
+A4: Magnitude do Efeito: É a menor diferença entre os grupos que o pesquisador considera clinicamente ou biologicamente relevante e que ele deseja ser capaz de detectar. (Ex: "quero ser capaz de detectar uma diferença de pelo menos 5 mmHg na pressão arterial").
+G: V
+C: Quanto MENOR a diferença que se quer detectar (efeito menor), MAIOR será o n. É mais difícil encontrar diferenças pequenas.
+A5: Nível de Significância Estatística: Erro Tipo II (β): A probabilidade de concluir que não existe diferença quando, na verdade, ela existe (um "falso negativo"). A significância é a capacidade do estudo de detectar uma diferença real. Geralmente fixado em 80% ou 90%.
+G: F
+C: A probabilidade de concluir que não existe diferença quando, na verdade, ela existe (um "falso negativo") -> Se refere ao conceito de poder estatístico.
+​‎ 
+A significância é a capacidade do estudo de detectar uma diferença real. Geralmente fixado em 80% ou 90%. -> Não é a significância e sim o <b>poder</b>.
+A6: Poder Estatístico: Erro Tipo I: A probabilidade de concluir que existe uma diferença entre os grupos quando, na verdade, não existe (um "falso positivo"). Geralmente fixado em 5% (α=0,05) ou 1% (α=0,01).
+G: F
+C: Isso se refere a definição de nível de significância estatística.
+
+---
+
+QCH: Sobre o cálculo de amostra de estudos descritivos, assinale TODAS as assertivas VERDADEIRAS.
+A1: Estudos Descritivos: O objetivo é estimar um parâmetro na população. Queremos saber "qual é" a média de glicemia, ou "qual é" a proporção de hipertensos.
+G: V
+C: ​‎ 
+A2: Para estimar uma média ou proporção, precisamos definir o quão boa queremos que nossa estimativa seja. Para isso, nos estudos descritivos, são necessários esses parâmetros:
+- Proporção esperada (P) no caso de variáveis categóricas.
+- Desvio-padrão (S) no caso de variáveis numéricas.
+- Margem de erro.
+- Magnitude do efeito.
+G: F
+C: são necessários esses parâmetros:
+- Proporção esperada (P) no caso de variáveis categóricas.
+- Desvio-padrão (S) no caso de variáveis numéricas.
+- Margem de erro.
+<b>- Nível de confiança.</b>
+​‎ 
+Magnitude do efeito é para estudos analíticos (estudos que comparam grupos).
+A3: Quanto MAIOR a variabilidade (dados mais espalhados), MAIOR será o tamanho da amostra necessário.
+G: V
+C: ​‎ 
+A4: Quanto MENOR a margem de erro (mais precisão você quer), MENOR será o tamanho da amostra necessário.
+G: F
+C: Quanto MENOR a margem de erro (mais precisão você quer), <b>MAIOR</b> será o tamanho da amostra necessário. Ex: Reduzir o erro pela metade quadruplica o tamanho da amostra.
+A5: O valor do parâmetro margem de erro (precisão) é arbitrado pelo pesquisador.
+G: V
+C: ​‎ 
+A6: Quanto MAIOR o nível de confiança (mais certeza você quer de que não será um falso positivo), MAIOR será o tamanho da amostra.
+G: V
+C: ​‎ 
+A7: O nível de confiança é arbitrado pelo pesquisador. O padrão ouro na área da saúde é 99%.
+G: F
+C: O nível de confiança é arbitrado pelo pesquisador. O padrão ouro na área da saúde é <b>95%</b>.
+A8: A proporção esperada (P) ou o desvio-padrão (S) são valores arbitrados pelo pesquisador.
+G: F
+C: São obtidos através da <b>Literatura</b> (estudos prévios) ou um <b>estudo-piloto</b>.
+Se a proporção (P) for desconhecida, usa-se P = 0,5 (50%), que representa a máxima variabilidade
+A9: Se a proporção (P) for desconhecida, usa-se P = 0,5 (50%), que representa a máxima variabilidade. A desvantagem de fazer isso é que o tamanho da amostra costuma ser bem maior.
+G: V
+C: ​‎ 
+
+---
+
+<variantes>
+Q: As fórmulas padrão assumem uma população "infinita" (muito grande). No entanto, se o tamanho da amostra calculado (n) for uma fração considerável do tamanho total da população-alvo (N), geralmente maior ou igual a 5% (n/N >= 0,05), é necessário aplicar um fator de correção para populações finitas.
+G: V
+C: ​‎ 
+
+Q: As fórmulas padrão assumem uma população "infinita" (muito grande). No entanto, se o tamanho da amostra calculado (n) for uma fração considerável do tamanho total da população-alvo (N), geralmente maior ou igual a 10% (n/N >= 0,10), é necessário aplicar um fator de correção para populações finitas.
+G: F
+C: Geralmente maior ou igual a 5% (n/N >= 0,05)
+
+</variantes>
+
+---
+
+<variantes>
+Q: Quando a amostra representa uma grande parte da população, cada indivíduo selecionado remove uma porção significativa de variabilidade. Isso significa que você precisa de menos pessoas para atingir a mesma precisão do que precisaria em uma população infinitamente grande. A correção para populações finitas, portanto, reduz o tamanho final da amostra.
+G: V
+C: ​‎ 
+
+Q: Quando a amostra representa uma grande parte da população, cada indivíduo selecionado remove uma porção significativa de variabilidade. Isso significa que você precisa de mais pessoas para atingir a mesma precisão do que precisaria em uma população infinitamente grande. A correção para populações finitas, portanto, aumenta o tamanho final da amostra.
+G: F
+C: Quando a amostra representa uma grande parte da população, cada indivíduo selecionado remove uma porção significativa de variabilidade. Isso significa que você precisa de <b>menos</b> pessoas para atingir a mesma precisão do que precisaria em uma população infinitamente grande. A correção para populações finitas, portanto, <b>reduz</b> o tamanho final da amostra.
+
+</variantes>
+
+---
+
+QCH: Sobre o cálculo de amostra de estudos analíticos, assinale TODAS as assertivas VERDADEIRAS.
+A1: Estudos Analíticos: O objetivo é comparar grupos ou testar hipóteses. Queremos saber se a média de glicemia do Grupo A é diferente da do Grupo B, ou se a proporção de cura com a Droga X é maior que com a Droga Y.
+G: V
+C: ​‎ 
+A2: Para comparar grupos precisamos definir o que constitui uma "diferença real" e qual a nossa capacidade de detectá-la.
+- Proporção esperada (P) no caso de variáveis categóricas.
+- Desvio-padrão (S) no caso de variáveis numéricas.
+- Magnitude do efeito.
+- Nível de significância estatística.
+- Poder estatístico.
+G: V
+C: ​‎ 
+A3: Quanto MENOR o α (menos chance de falso positivo), MENOR o tamanho da amostra.
+G: F
+C: Quanto MENOR o α (menos chance de falso positivo), <b>MAIOR</b> o tamanho da amostra.
+A4: Quanto MENOR a diferença que se quer detectar (efeito menor), MAIOR será o tamanho da amostra. É mais difícil encontrar diferenças pequenas.
+G: V
+C: Esse é o efeito da magnitude do efeito.
+A5: Quanto MAIOR o valor P ou S, MENOR será o tamanho da amostra.
+G: F
+C: Quanto MAIOR o valor P ou S, <b>MAIOR</b> será o tamanho da amostra, pois há mais variabilidade dos dados (estão mais espalhados).
+A6: Quanto MAIOR o poder estatístico B (1−β), menos chance de falso positivo, logo MAIOR o tamanho da amostra.
+G: F
+C: Quanto MAIOR o poder estatístico (1−β), menos chance de falso <b>negativo</b>, logo MAIOR o tamanho da amostra.
+A7: O poder estatístico (1-β) é arbitrado pelo pesquisador. No entanto geralmente escolhe-se geralmente 80% (1 - 0,20) ou 90% (1 - 0,10)
+G: V
+C: ​‎ 
+A8: Um estudo com o objetivo de descrever a média de IMC (Índice de Massa Corporal) dos idosos de um município é classificado como um estudo analítico.
+G: F
+C: O objetivo de "descrever" uma média caracteriza um estudo descritivo.
+A9: Para ser mais rigoroso e diminuir a chance de um falso positivo, um pesquisador pode diminuir o nível de significância α (ex: de 0,05 para 0,01), o que exigirá um tamanho de amostra maior.
+G: V
+C: ​‎ 
+A10: O erro tipo II (β) ocorre quando um pesquisador conclui que existe uma diferença significativa entre dois grupos, quando na verdade essa diferença não existe.
+G: F
+C: Essa descrição é do erro tipo I (falso positivo).
+
+---
+
+Q: Escreva qual cálculo do tamanho amostral é necessário ser feito para cada proposta de estudo dos itens a seguir. Use essas respostas:
+-> Cálculo do tamanho amostral para comparar médias entre duas amostras.
+-> Cálculo do tamanho amostral para estimativa da proporção populacional.
+-> Cálculo do tamanho amostral para comparar proporções entre duas amostras
+-> Cálculo do tamanho amostral para estimativa da média populacional.
+-> Cálculo do tamanho amostral para comparar a média de uma amostra com a de uma
+população de referência.
+-> Cálculo do tamanho amostral para comparar a proporção de uma amostra com a de uma
+população de referência.
+​‎ 
+Além disso, indique também se o estudo proposto é <b>analítico ou descritivo</b>.
+​‎ 
+I_A) A síndrome metabólica é caracterizada por um conjunto de fatores de risco cardiovasculares relacionados com resistência à insulina e com a obesidade abdominal. Quantos pacientes devem ser avaliados para se conhecer a média dos valores dos triglicerídeos séricos em pacientes portadores desta síndrome com um nível de confiança de 95%? Suponha que o pesquisador realizou um estudo piloto com 30 pacientes e encontrou uma taxa de triglicerídeos igual a 170 ± 31 mg/dL (média ± desvio padrão). Para realizar esta estimativa, o pesquisador considerou uma margem de erro (diferença entre a média da amostra e a verdadeira média na população) como sendo de ±10 mg/dl.
+GABARITO: Tipo de Cálculo: Cálculo do tamanho amostral para estimativa da média populacional.
+Tipo de Estudo: Descritivo.
+​‎ 
+<b>Justificativa:</b> O objetivo é "conhecer a média" de uma variável numérica (triglicerídeos) em uma única população, caracterizando uma estimativa, não uma comparação entre grupos.
+I_B) Um grupo de pesquisadores deseja conhecer, numa dada população, a proporção de sobreviventes depois de transcorridos cinco anos do diagnóstico de uma determinada doença. Com base em estudos na literatura científica, os pesquisadores acreditam que esta proporção é de aproximadamente 40%. Considerando um nível de confiança de 95% e uma margem de erro de estimação de 5%, qual deve ser o tamanho da amostra para esta estimativa?
+GABARITO: Tipo de Cálculo: Cálculo do tamanho amostral para estimativa da proporção populacional.
+Tipo de Estudo: Descritivo.
+​‎ 
+<b>Justificativa:</b> O objetivo é "conhecer a proporção" de uma variável categórica (sobrevivente: sim/não) em um único grupo, o que define um estudo descritivo de estimativa.
+I_C) Sabe-se que a média de peso dos recém-nascidos numa dada região do país é de 3500 g. Considerando as condições socioeconômicas desfavoráveis das parturientes atendidas no hospital H nesta mesma região, uma pediatra suspeita que o peso médio das crianças nascidas é menor que aquela relatada na região. Uma amostra piloto com 10 recém-nascidos mostrou que a média e desvio-padrão do peso foram de 3300 g e 220 g, respectivamente. Qual deve ser o tamanho da amostra para que ela possa testar se a diferença encontrada é estatisticamente significante, considerando um α = 0,05 e poder do teste igual à 0,90.
+GABARITO: Tipo de Cálculo: Cálculo do tamanho amostral para comparar a média de uma amostra com a de uma população de referência.
+Tipo de Estudo: Analítico.
+​‎ 
+<b>Justificativa:</b> O estudo visa "testar" uma hipótese, comparando a média de uma variável numérica (peso) de uma amostra (hospital H) com um valor conhecido de uma população de referência (a região).
+I_D) Evidências preliminares sugerem que a perda de força muscular com o aumento da idade se deve à deficiência progressiva de deidroepiandrosterona (DHEA). Um grupo de pesquisadores planejam um ensaio clínico randomizado com a administração de DHEA ou placebo idêntico em indivíduos idosos por 6 meses, com medição subsequente da força muscular. Estudos prévios mostraram uma força de preensão média em idosos de 20 kg, com um desvio padrão de 8 kg. Para um α = 0,05 e um β = 0,10, quantos sujeitos seriam necessários para demonstrar uma diferença de 10% ou mais na força dos grupos tratado e placebo?
+GABARITO: Tipo de Cálculo: Cálculo do tamanho amostral para comparar médias entre duas amostras.
+Tipo de Estudo: Analítico.
+​‎ 
+<b>Justificativa:</b> O objetivo é "demonstrar uma diferença" na média de uma variável numérica (força) entre dois grupos independentes (DHEA vs. Placebo), o que caracteriza um ensaio clínico analítico.
+I_E) Um pesquisador deseja estimar a proporção de bovinos acometidos por uma doença que pode ser transmitida aos seres humanos numa determinada região do município de Araguaína-TO. Com base na literatura, sabe-se que a prevalência da doença no município é algo em torno de 12%. Um estudo piloto realizado na região investigada revelou que 18% dos animais selecionados estavam acometidos pela doença. Qual deve ser o tamanho da amostra para que ele possa testar se a diferença encontrada é estatisticamente significante, considerando um α = 0,05 e poder do teste igual à 0,90.
+GABARITO: Tipo de Cálculo: Cálculo do tamanho amostral para comparar a proporção de uma amostra com a de uma população de referência.
+Tipo de Estudo: Analítico.
+​‎ 
+<b>Justificativa:</b> O estudo visa "testar se a diferença é significante" entre a proporção de uma variável categórica (doença: sim/não) de uma amostra (região investigada) e a proporção conhecida de uma população de referência (o município).
+I_F) Certo oftalmologista costuma realizar dois tipos de cirurgias para correção de descolamento de retina e tem observado que a técnica A cura aproximadamente 40% dos pacientes, enquanto a técnica B determina cura em cerca de 80% das vezes. Esse médico deseja planejar uma investigação para comprar as duas técnicas. Quais devem ser os tamanhos amostrais para que o pesquisador possa demonstrar que esta diferença é estatisticamente significativa, para um α = 0,05 e poder igual a 0,90?
+GABARITO: Tipo de Cálculo: Cálculo do tamanho amostral para comparar proporções entre duas amostras.
+Tipo de Estudo: Analítico.
+​‎ 
+<b>Justificativa:</b> O objetivo é "comparar as duas técnicas" em relação a uma variável categórica (cura: sim/não) para "demonstrar que a diferença é significativa", comparando dois grupos independentes.
+
+---
+
+QCH: Um grupo de pesquisadores está planejando um ensaio clínico randomizado para comparar a eficácia de um novo broncodilatador (Droga A) com um tratamento placebo em pacientes com Doença Pulmonar Obstrutiva Crônica (DPOC). O desfecho primário do estudo será a variação no Volume Expiratório Forçado no primeiro segundo (VEF1), medido em litros (L), após 6 meses de intervenção.
+​‎ 
+Dados de um estudo-piloto prévio indicam que o desvio-padrão (s) da variação do VEF1 pode ser estimado em 0,5 L para ambos os grupos. Os pesquisadores definiram que uma diferença mínima de 0,2 L na melhora média do VEF1 entre o grupo da Droga A e o grupo placebo seria clinicamente significativa. Para garantir a robustez do estudo, eles decidiram utilizar um nível de significância (α) de 0,05 e um poder estatístico de 90% (β = 0,10).
+​‎ 
+Assinale TODAS as assertivas VERDADEIRAS:
+A1: A magnitude do efeito (diferença mínima a ser detectada) no estudo é de 0,5 L.
+G: F
+C: A magnitude do efeito é a diferença mínima considerada clinicamente relevante que o estudo pretende detectar, que, neste caso, foi definida como 0,2 L. O valor de 0,5 L corresponde ao desvio-padrão.
+A2: O desvio-padrão (s) a ser utilizado no cálculo do tamanho amostral, com base no estudo-piloto, é de 0,5 L.
+G: V
+C: ​‎ 
+A3: O poder estatístico de 90% significa que o estudo tem 90% de chance de cometer um erro do Tipo II (β)
+G: F
+C: O poder estatístico é a probabilidade de detectar um efeito quando ele realmente existe, e é calculado como 1 - β. Se o poder é de 90%, então a probabilidade de cometer um erro do Tipo II (β) é de 10% ou 0,10.
+A4: O nível de significância (α) de 0,05 indica que os pesquisadores aceitam uma probabilidade de 5% de concluir que a Droga A é eficaz quando, na verdade, ela não é (cometer um erro do Tipo I).
+G: V
+C: O nível de significância (α) é a probabilidade de cometer um erro do Tipo I, que consiste em rejeitar a hipótese nula incorretamente (um "falso positivo").
+A5: Se os pesquisadores decidissem detectar uma diferença maior (ex: 0,3 L) entre os grupos, mantendo os outros parâmetros, o tamanho da amostra necessário seria maior.
+G: F
+C: A relação entre a magnitude do efeito e o tamanho da amostra é inversa. Para detectar uma diferença maior (um efeito mais forte), é necessário um tamanho de amostra menor.
+A6: A diminuição do nível de significância para α = 0,01, visando um teste mais rigoroso, exigiria um número menor de participantes.
+G: F
+C: Um nível de significância mais rigoroso (um α menor) aumenta o valor crítico do teste estatístico, o que exige um tamanho de amostra maior para se atingir o mesmo poder.
+A7: O desfecho principal do estudo, a variação do VEF1, é uma variável quantitativa (numérica).
+G: V
+C: O VEF1 é medido em litros, representando uma quantidade. Portanto, é uma variável quantitativa, o que determina a escolha da fórmula de cálculo amostral para comparação de médias.
+A8: O objetivo deste estudo analítico é estimar um único parâmetro populacional.
+G: F
+C: O objetivo do estudo é comparar as médias de dois grupos independentes (Droga A vs. Placebo) para verificar a existência de uma diferença, e não simplesmente estimar um único parâmetro (como a média geral de VEF1 na população). Este é um estudo analítico de comparação.
+
+---
+
+QCH: A Secretaria de Saúde de um estado informou que o tempo médio de internação hospitalar por uma determinada condição clínica é de 12 dias. O diretor de um grande hospital em Araguaína suspeita que, devido a um novo protocolo de tratamento adotado em sua instituição, o tempo médio de internação de seus pacientes seja menor que a média estadual.
+​‎ 
+Um levantamento piloto com 15 pacientes do hospital revelou um desvio-padrão (s) de 4 dias no tempo de internação. O diretor deseja planejar um estudo para testar sua hipótese e considera que uma redução de pelo menos 2 dias no tempo médio de internação (ou seja, uma média de 10 dias ou menos) seria uma evidência importante da eficácia do novo protocolo. O estudo será conduzido com um nível de significância (α) de 0,05 e um poder de 90% (β = 0,10).
+​‎ 
+Sobre esse estudo, assinale TODAS as assertivas VERDADEIRAS.
+A1: A média populacional de referência neste estudo é de 10 dias.
+G: F
+C: A média populacional de referência (μ0) é o valor conhecido com o qual a amostra será comparada, que no caso é a média estadual de 12 dias. O valor de 10 dias representa a média que o pesquisador gostaria de encontrar na sua amostra (μA) para que a diferença de 2 dias seja detectada.
+A2: O valor do desvio-padrão da amostra (s) a ser utilizado no cálculo, com base no estudo-piloto, é de 4 dias.
+G: V
+C: ​‎ 
+A3: magnitude do efeito a ser detectada, ou a diferença mínima entre a média da amostra e a média da população (μA ​− μ0), é de 2 dias.
+G: V
+C: ​‎ 
+A4: O poder do teste foi definido em 10%, o que significa que há 90% de chance de cometer um erro do Tipo II (β).
+G: F
+C: O poder do teste foi definido em 90%. O poder representa a probabilidade de detectar um efeito que realmente existe (1 - β). Portanto, a probabilidade de cometer um erro do Tipo II (β) é de 10% (ou 0,10), e não 90%.
+A5: A fórmula de cálculo amostral a ser usada é a de comparação de proporções, pois o estudo envolve dados de saúde.
+G: F
+C: O desfecho "tempo de internação" é uma variável numérica (quantitativa). Portanto, a fórmula correta é a de comparação de uma média amostral com uma média populacional, e não a de proporções.
+A6: Se o diretor do hospital desejasse aumentar o poder do estudo para 95%, mantendo os outros parâmetros, o tamanho da amostra necessário aumentaria.
+G: V
+C:  Aumentar o poder do teste significa diminuir a chance de um erro tipo II, o que exige maior robustez estatística. Para alcançar um poder maior, o tamanho da amostra deve ser aumentado.
+A7: Como o desvio-padrão da população é desconhecido, o cálculo do tamanho da amostra envolverá um processo iterativo usando a distribuição t de Student.
+G: V
+C: Quando o desvio-padrão da população (σ) é desconhecido e se usa uma estimativa da amostra (s), o cálculo do tamanho amostral depende do valor de t, que por sua vez depende dos graus de liberdade (n-1). Isso cria uma interdependência que é resolvida por meio de cálculos iterativos até que o valor de 'n' se estabilize. 
+
+---
+
+QCH: A gerência de uma grande rede de supermercados em Araguaína deseja estimar a proporção de seus clientes que utilizam sacolas reutilizáveis. Uma pesquisa nacional do setor indicou que essa proporção (P) é de aproximadamente 25%. A empresa quer realizar sua própria pesquisa para entender o perfil do cliente local.
+​‎ 
+O objetivo é estimar a proporção real de clientes que usam sacolas reutilizáveis na cidade com um nível de confiança de 95% e uma margem de erro de, no máximo, 3% (para mais ou para menos).
+​‎ 
+Sobre o estudo, assinale TODAS as assertivas VERDADEIRAS.
+A1: O desfecho em estudo (uso ou não de sacolas reutilizáveis) é uma variável quantitativa contínua.
+G: F
+C: O desfecho é binário (o cliente usa ou não usa a sacola), o que o caracteriza como uma variável categórica (ou qualitativa).
+A2: A proporção esperada do desfecho (P), baseada na pesquisa nacional, a ser utilizada no cálculo amostral é de 0,25.
+G: V
+C: ​‎ 
+A3: A margem de erro aceitável para a estimativa (p−P) neste estudo é de 0,30.
+G: F
+C: A margem de erro, que define a precisão da estimativa, foi estabelecida em 3%, o que corresponde a um valor de 0,03.
+A4: Se a gerência optasse por uma precisão maior, com margem de erro de 1,5%, o tamanho da amostra necessário seria menor.
+G: F
+C: Existe uma relação inversa entre a margem de erro e o tamanho da amostra. Uma precisão maior (ou seja, uma margem de erro menor) exige um tamanho amostral maior para ser alcançada.
+A5: Se não houvesse nenhuma informação prévia sobre a proporção de uso de sacolas reutilizáveis, os pesquisadores deveriam assumir P = 0,50 para o cálculo.
+G: V
+C: ​‎ 
+A6: O objetivo deste estudo é comparar dois grupos de clientes, caracterizando-o como um estudo analítico.
+G: F
+C: O objetivo é estimar um parâmetro (a proporção) em uma única população.  Trata-se, portanto, de um estudo descritivo, e não de um estudo analítico de comparação. 
+A7: O cálculo do tamanho da amostra para estimar uma proporção, diferente do cálculo para uma média com desvio padrão desconhecido, não necessita de um processo iterativo.
+G: V
+C: ​‎ 

@@ -1,0 +1,200 @@
+Q: Captopril é um medicamento anti-hipertensivo. Ele auxilia no tratamento de diversas doenças, reduzindo a pressão sanguínea de forma rápida. Esse medicamento está circunscrito no rol dos:
+A) diuréticos tiazídicos ou do tipo tiazida.
+B) betabloqueadores.
+C) diuréticos de alça.
+D) inibidores da enzima conversora de angiotensina (ECA).
+G: D
+
+Q: O captopril é utilizado como hipotensor e está em qual classe farmacológica?
+A) diurético
+B) betabloqueador seletivo
+C) antiadrenérgico
+D) inibidor da enzima conversora de angiotensina
+G: D
+
+Q: Quanto à enzima conversora da angiotensina(ECA) é correto afirmar que
+A) degrada e consequentemente inativa a bradicinina e converte a agiotensina I em angiotensina II.
+B) drogas denominadas inibidores da ECA, que reduzem a pressão sanguínea sistêmica em pacientes com hipertensão, aumentam os níveis de angiotensina II e de bradicinina.
+C) a redução dos níveis de bradicininas e o aumento da angiotensina II, resultam em aumento da resistência vascular sistêmica e da resistência vascular renal
+D) os inibidores da ECA, consequentemente, diminuem o fluxo sanguíneo renal e a taxa de filtração glomerular.
+E) degrada e converte angiotensina II em angiotensina I, aumentando o nível de bradicininas.
+G: A
+
+Q: Os fármacos inibidores da Enzima Conversora de Angiotensina (ECA) são anti-hipertensivos muito utilizados na prática clínica. Assinale, a seguir, um fármaco inibidor da enzima conversora de angiotensina, com meia-vida de, aproximadamente, duas horas, devendo ser administrado 2 a 3 vezes ao dia.
+A) Enalapril.
+B) Lisinopril.
+C) Captopril.
+D) Anlodipino.
+G: C
+
+Q: Qual é o principal mecanismo de ação dos inibidores da enzima conversora de angiotensina (ECA) na redução da pressão arterial? 
+A) Bloqueio dos receptores de angiotensina II.
+B) Bloqueio dos canais de cálcio nos vasos sanguíneos.
+C) Inibição da reabsorção de sódio nos rins.
+D) Inibição da conversão de angiotensina I em angiotensina II.
+G: D
+
+Q: Sobre os fármacos inibidores da ECA (enzima conversora da angiotensina) é correto afirmar:
+A) Os inibidores da ECA previnem completamente a formação de angiotensina II, pois inibem a única via de formação de angiotensina.
+B) Exercem seus efeitos na angiotensina II, bradicinina, óxido nítrico e prostaglandinas, reduzindo a pressão arterial e promovendo efeito antiproliferativo nos vasos, no coração e nos rins.
+C) Quando associados a diurético, os inibidores da ECA tem sua eficácia reduzida.
+D) A inibição da ECA determina maior destruição de algumas cininas, principalmente da bradicinina.
+G: B
+
+Q: Sobre o anti-hipertensivo losartana, é correto afirmar que
+A) liga-se seletivamente ao receptor AT1 de angiotensina.
+B) inibe a conversão de angiotensina I e Angiotensina II. 
+C) liga-se seletivamente a receptores alfa 2 e beta I.
+D) inibe a ação da acetilcolina nos receptores nicotínicos.
+E) promove bloqueio da recaptação de sódio, cálcio e magnésio.
+G: A
+
+Q: A losartana é um vasodilatador muito usado no controle da pressão arterial. Ela age
+A) como antagonista de cálcio, bloqueando sua entrada em resposta à despolarização.
+B) como um antagonista do receptor das endotelinas.
+C) inibindo a atividade da fosfodiesterase e aumentando a concentração de nucleotídeos cíclicos citoplasmáticos.
+D) bloqueando o sistema renina-angiotensina, por ser um antagonista dos receptores AT1.
+E) ativando os canais KATP, causando hiperpolarização.
+G: D
+
+Q: A losartana potássica é indicada para o tratamento da hipertensão e para o tratamento da insuficiência cardíaca. Seus efeitos farmacológicos incluem vasoconstrição, proteção renal em pacientes com Diabetes Tipo 2 e Proteinúria. Assinale a alternativa CORRETA sobre a losartana potássica.
+A) É um anti-hipertensivo antagonista do receptor da angiotensina II.
+B) É um anti-hipertensivo agonista do receptor da angiotensina I.
+C) Interage de forma irreversível com os receptores angiotensina I.
+D) Nenhuma das alternativas.
+G: A
+
+Q: O alisquireno é um medicamento utilizado no tratamento da hipertensão arterial. Qual é o seu mecanismo de ação primário?
+A) Inibição direta da renina.
+B) Bloqueio dos canais de cálcio.
+C) Antagonismo dos receptores da angiotensina II.
+D) Inibição da enzima conversora da angiotensina (ECA).
+E) Aumento da excreção de sódio e água pelos rins.
+G: A
+
+Q: O alisquireno é um fármaco anti-hipertensivo que atua inibindo a renina, uma enzima chave no sistema renina-angiotensina-aldosterona (SRAA). Considerando o mecanismo de ação do alisquireno, qual das seguintes alternativas descreve CORRETAMENTE o efeito resultante da inibição da renina?
+A) Aumento da produção de angiotensina I e angiotensina II.
+B) Diminuição da produção de angiotensina I e angiotensina II.
+C) Aumento da produção de aldosterona.
+D) Vasoconstrição periférica e aumento da pressão arterial.
+G: B
+
+Q: Dentre as indicações de uso da espironolactona está:
+A) Distúrbios hemorrágicos do sangue.
+B) Inibidor de apetite.
+C) Edema idiopático.
+D) Infecção bacteriana do sistema respiratório.
+G: C
+
+Q: Dos fármacos que atuam sobre o rim, qual o representante dos diuréticos que realiza sua função sobre o túbulo distal, sendo considerado um diurético tiazídico: 
+A) Furosemida 
+B) Bumetanida 
+C) Espironolactona
+D) Hidroclorotiazida
+G: D
+
+Q: Um fármaco diurético pertencente aos mineralocorticoides é:
+A) Clortalidona
+B) Furosemida
+C) Hidroclorotiazida
+D) Amilorida
+E) Espirinolactona
+G: E
+
+Q: Os bloqueadores dos canais de cálcio são fármacos utilizados em arritmias. Entre eles, é possível afirmar que o verapamil possui principal indicação arrítmica para:
+A) Taquicardia supraventricular.
+B) Reversão do potencial de ação cardíaco.
+C) Diminuição da taxa de filtração glomerular.
+D) Conversão de flutter e fibrilação atrial para o ritmo sinusal.
+G: A
+
+Q: O verapamil e o diltiazem são exemplos de fármacos da classe dos vasodilatadores. Em relação ao mecanismo de ação deles, assinalar a alternativa CORRETA:
+A) Esses fármacos atuam bloqueando os canais de cálcio, reduzindo a corrente de cálcio transmembrana.
+B) A atividade desses fármacos ocorre pela inibição da enzima conversora de angiotensina, promovendo assim o relaxamento do músculo liso.
+C) Esses fármacos atuam inibindo a síntese de óxido nítrico pelas células musculares lisas, promovendo um efeito de relaxamento das mesmas.
+D) O mecanismo de ação dos fármacos citados baseia-se na sua capacidade de bloquear os receptores β-adrenérgicos.
+G: A
+
+Q: Doxazosina, Prazosina, Terazosina são exemplos de medicamentos anti-hipertensivos do tipo.
+A) Alfabloqueadores.
+B) Betabloqueadores.
+C) Di-idropiridinas.
+D) Não di-idropiridinas.
+G: A
+
+Q: Sobre o medicamento hidralazina é correto afirmar que, EXCETO:
+A) Analgésicos anti-inflamatórios não esteroides, especialmente indometacina, podem reduzir seus efeitos anti-hipertensivos.
+B) É contraindicado em casos de aneurisma dissecante da aorta e taquicardia. 
+C) É um anti-hipertensivo, vasodilatador utilizado na insuficiência cardíaca congestiva.
+D) Sua atividade anti-hipertensiva se deve ao metabólito nordefrina, que diminui a pressão arterial ativando os receptores alfa-adrenérgicos inibitórios no sistema nervoso central, reduzindo assim, o fluxo simpático para o coração, rins e vasculatura periférica. 
+G: D
+C: Sua atividade anti-hipertensiva se deve ao relaxamento direto sobre a musculatura lisa vascular causando vasodilatação periférica
+
+Q: O fármaco agonista adrenérgico alfa-2 seletivo utilizado primariamente no tratamento da hipertensão sistêmica é a: 
+A) Hidralazina;
+B) Prazosina;
+C) Ioimbina;
+D) Clonidina
+G: D
+
+Q: A valsartana é um fármaco utilizado no tratamento da hipertensão arterial sistêmica e exerce seus efeitos hipotensores
+A) bloqueando os canais de cálcio presentes nas células do músculo cardíaco.
+B) bloqueando os receptores de angiotensina II presentes na musculatura lisa vascular.
+C) inibindo a conversão de angiotensina I em angiotensina II.
+D) agindo como agonistas de receptores alfa-2 adrenérgicos no sistema nervoso central.
+E) promovendo efeito diurético sem perda de potássio pela urina.
+G: B
+
+Q: O principal objetivo da terapia da hipertensão arterial é a redução da morbidade e da mortalidade e escolha de uma classe de anti-hipertensivos não deve somente basear-se no nível da pressão arterial, mas também levar em conta os riscos de eventos cardiovasculares fatais e não fatais, considerar a presença de fatores de riscos e lesão a órgãos-alvos (Barroso et al., 2020). Os fármacos vasodilatadores são clinicamente importantes no tratamento dos distúrbios cardíacos, como a angina, a insuficiência cardíaca e da hipertensão (BRUNTON; HILAL-DANDAN; KNOLLMAN, 2019). A respeito do mecanismo de ação de fármacos anti-hipertensivos classificados como vasodilatadores assinale a afirmativa incorreta.
+A) O verapamil bloqueia os canais de cálcio do tipo L tanto ativos quanto inativos e tem efeitos que são equipotentes nos tecidos cardíaco e periférico.
+B) A metildopa atua como agonista dos receptores do tipo alfa-2 adrenérgico no centro vasomotor do bulbo, diminuindo o fluxo de saída simpático, e consequentemente o tônus vascular e o débito cardíaco.
+C) O minoxidil pode aumentar a produção de óxido nítrico e também aumenta o efluxo de potássio, levando a hiperpolarização e uma redução da atividade do canal de cálcio do tipo L com efeito predominante nas arteríolas.
+D) A losartana é um bloqueador dos receptores do tipo AT-2 inibindo a atividade da renina, o que leva à um aumento na síntese de angiotensina II com consequente aumento na vasoconstrição no músculo liso vascular.
+G: D
+C: A losartana bloqueia receptores AT-1 (não AT-2)
+Ela não inibe diretamente a atividade da renina
+O bloqueio dos receptores AT-1 impede a ação da angiotensina II, causando vasodilatação (não vasoconstrição)
+
+Q: As drogas vasoativas (DVA) são muito utilizadas na Unidade de Terapia Intensiva em pacientes com choque séptico e hipovolêmico. Assinale a alternativa que corresponde a drogas vasoativas vasopressoras. 
+A) Norepnefrina, dobutamina e clonidina.
+B) Norepnefrina, vasopressina e epinefrina. 
+C) Norepnefrina, nitroglicerina e nitroprusseto de sódio.
+D) Dopamina, nitroglicerina e nitroprusseto de sódio. 
+E) Norepnefrina, nitroglicerina e etomidato.
+G: B
+
+Q: Os principais mecanismos efetores renais de defesa contra alterações no status de volume são o sistema renina-angiotensina-aldosterona (SRAA), o sistema nervoso simpático, os peptídeos natriuréticos e os fatores intrarrenais (feedback túbulo-glomerular). Acerca desse assunto, julgue o item subsecutivo. 
+O peptídeo natriurético atrial (PNA) é liberado em resposta ao estiramento atrial que ocorre em uma situação de sobrecarga de volume.
+G: V
+
+Q: A liberação de qual substância abaixo na corrente sanguínea está associada à redução da pressão arterial?
+A) Peptídeo natriurético atrial.
+B) Aldosterona.
+C) Cortisol.
+D) Noradrenalina.
+G: A
+
+Q: O óxido nítrico (NO) é produzido naturalmente pelas células endoteliais e age localmente sobre a musculatura lisa vascular levando:
+A) A seu relaxamento e consequente vasodilatação.
+B) A seu relaxamento e consequente vasoconstrição
+C) A seu tensionamento e consequente vasodilatação
+D) A seu tensionamento e consequente vasoconstrição.
+G: A
+
+Q: A Hidralazina é a droga preferida para o tratamento agudo da hipertensão arterial grave na gestação, pois:
+A) é um relaxante direto da musculatura arterial lisa.
+B) como um bloqueador dos canais de cálcio têm seu uso indicado para tratamento de manutenção na hipertensão arterial.
+C) é uma benzotiazida, sem efeito diurético, que atua diretamente no capilar arteriolar.
+D) é uma benzotiazida, com efeito diurético, que atua diminuindo o débito cardíaco.
+E) é um poderoso vasodilatador tanto para os vasos sanguíneos de resistência como de capacitância.
+G: A
+C: Causa a liberação de óxido nítrico
+
+Q: O fármaco de ação anti-hipertensiva, bloqueador dos canais de cálcio, que exerce efeito relaxante na musculatura vascular lisa, denomina-se:
+A) anlodipino.
+B) captopril.
+C) minoxidil.
+D) hidralazina.
+E) metildopa.
+G: A
+C: Nifedipino, anlodipino, outras di-hidropiridinas: Bloqueiam os canais de cálcio vasculares > canais de cálcio cardíacos.

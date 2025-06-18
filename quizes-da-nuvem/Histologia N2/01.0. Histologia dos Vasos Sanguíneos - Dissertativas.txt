@@ -1,0 +1,115 @@
+Q: Qual é a camada mais interna dos vasos sanguíneos, composta por um epitélio simples pavimentoso?
+GABARITO: Túnica Íntima (Endotélio)
+
+Q: As ______ são responsáveis por regular o volume do fluxo sanguíneo para os leitos capilares.
+GABARITO: Arteríolas
+
+Q: Cite as três camadas ou túnicas principais que compõem a parede da maioria dos vasos sanguíneos.
+GABARITO: Túnica Íntima, Túnica Média e Túnica Adventícia.
+
+Q: A Túnica Média das artérias é predominantemente composta por tecido ______ liso com disposição ______.
+GABARITO: muscular; circular
+
+Q: O que são os "vasa vasorum" e qual sua principal função?
+GABARITO: São pequenos vasos sanguíneos ("vasos dos vasos") que fornecem suprimento sanguíneo para as paredes dos vasos maiores, principalmente veias e artérias de grande calibre.
+
+Q: Em qual tipo de vaso sanguíneo a túnica adventícia é geralmente a camada mais espessa?
+GABARITO: Veias (especialmente as de médio e grande calibre).
+
+Q: As artérias de grande calibre, como a aorta, são também conhecidas como artérias ______ devido à grande quantidade de ______ ______ em sua túnica média.
+GABARITO: elásticas; lâminas elásticas (ou fibras elásticas)
+
+Q: Qual estrutura, presente apenas nas artérias, separa a túnica íntima da túnica média?
+GABARITO: Membrana (ou Lâmina) Limitante Elástica Interna.
+
+Q: Os ______ são os vasos de menor calibre do organismo, onde ocorrem as trocas de nutrientes, gases e metabólitos.
+GABARITO: Capilares
+
+Q: Qual tipo de capilar é encontrado na medula óssea, caracterizado por espaços alongados e luz bastante larga?
+GABARITO: Capilares sinusoides.
+
+Q: As veias, diferentemente das artérias, podem possuir ______ que evitam o refluxo do sangue.
+GABARITO: Válvulas
+
+Q: Qual é a principal característica diferencial das artérias de pequeno calibre em relação às arteríolas, no que diz respeito à túnica média?
+GABARITO: Apresentam de 5 a 10 camadas de células musculares lisas na túnica média (enquanto arteríolas têm de 1 a 5).
+
+Q: A ______ ______ é a camada mais espessa nas artérias de médio calibre (musculares).
+GABARITO: Túnica Média
+
+Q: Células localizadas ao longo da superfície dos capilares ou vênulas, relacionadas à contração e que, após lesão, podem dar origem a outras células, são chamadas de:
+GABARITO: Pericitos.
+
+Q: O estreitamento, completo ou parcial, dos lúmens dos vasos é conhecido como ______.
+GABARITO: Estenose
+
+Q: Comunicações anormais entre o sistema arterial e venoso sem a intervenção de um leito capilar são denominadas ______.
+GABARITO: Fístulas Arteriovenosas (FAV)
+
+Q: A ______ ______ é caracterizada pelo espessamento focal irregular das paredes das artérias musculares devido à hiperplasia da média e íntima com fibrose.
+GABARITO: Displasia fibromuscular
+
+Q: O endotélio é essencial para manter a ______ da parede do vaso e a função circulatória.
+GABARITO: homeostasia
+
+Q: No processo conhecido como ______ ______, as células endoteliais expressam moléculas de adesão e produzem citocinas, quimiocinas e fatores de crescimento.
+GABARITO: ativação endotelial
+
+Q: Qual substância, produzida pelas células endoteliais, é um importante fator relaxante vascular?
+GABARITO: Óxido Nítrico (NO). Mas também prostaciclina, embora óxido nítrico seja o mais importante.
+
+Q: As células musculares lisas vasculares são o elemento celular predominante da túnica ______.
+GABARITO: média
+
+Q: A lesão vascular com perda de células endoteliais estimula o crescimento das células ______ ______ e a síntese da matriz, espessando a túnica ______.
+GABARITO: musculares lisas; íntima
+
+Q: Qual é a principal diferença estrutural entre as paredes das artérias e das veias que explica a maior capacidade das artérias de suportar fluxo pulsátil e alta pressão?
+GABARITO: As paredes musculares (túnica média) das artérias são mais espessas.
+
+Q: Os capilares ______ possuem poros no endotélio e membrana basal contínua, sendo encontrados no rim e intestino.
+GABARITO: fenestrados (com diafragma)
+
+Q: Sobre as artérias, responda:
+I_A) Quais são os três tipos gerais de artérias, classificados com base no seu calibre e características histológicas?
+GABARITO: Artérias de grande calibre (elásticas), artérias de médio calibre (musculares) e artérias de pequeno calibre/arteríolas.
+I_B) Qual tipo de artéria é primariamente responsável pela distribuição de sangue aos diferentes órgãos e possui uma túnica média rica em músculo liso?
+GABARITO: Artérias de médio calibre (musculares).
+I_C) Qual a principal função das fibras elásticas na túnica média das grandes artérias elásticas?
+GABARITO: Permitir a distensão da artéria durante a sístole cardíaca e o retorno elástico (recolhimento) durante a diástole, ajudando a propelir o sangue e a manter o fluxo sanguíneo contínuo.
+
+Q: Acerca dos capilares, responda:
+I_A) Além dos capilares contínuos e sinusoides, qual é o terceiro tipo principal de capilar, caracterizado por apresentar poros ou fenestras em suas células endoteliais?
+GABARITO: Capilares fenestrados.
+I_B) Em quais locais do corpo os capilares fenestrados são tipicamente encontrados, facilitando trocas rápidas?
+GABARITO: Rim (glomérulos), intestino, glândulas endócrinas.
+I_C) Qual o diâmetro aproximado de um capilar e por que essa dimensão é significativa para sua função?
+GABARITO: Aproximadamente 7-8 micrômetros (semelhante ao diâmetro de uma hemácia). Essa dimensão é significativa porque permite a passagem das hemácias em fila única, otimizando as trocas gasosas e de substâncias com os tecidos.
+
+Q: Sobre as estruturas venosas, responda:
+I_A) Qual a principal diferença histológica na túnica média de uma veia de grande calibre quando comparada a uma artéria de grande calibre?
+GABARITO: A túnica média das veias de grande calibre é consideravelmente mais delgada e com menos músculo liso e fibras elásticas em comparação com a das artérias de grande calibre.
+I_B) Qual a importância funcional das válvulas encontradas em muitas veias, especialmente nos membros inferiores?
+GABARITO: Impedir o refluxo do sangue, auxiliando no retorno venoso contra a gravidade.
+I_C) Qual túnica é tipicamente a mais desenvolvida e espessa nas veias de grande calibre, como as veias cavas?
+GABARITO: Túnica Adventícia.
+
+Q: Referente à resposta da parede vascular à lesão, responda:
+I_A) O que é uma "neoíntima"?
+GABARITO: É uma nova camada íntima formada como resultado da restauração de vasos lesados, caracterizada pelo espessamento da túnica íntima.
+I_B) Quais os dois principais tipos celulares envolvidos na formação de uma neoíntima após uma lesão vascular?
+GABARITO: Células musculares lisas (que migram da túnica média ou de precursoras) e células endoteliais (que recobrem a neoíntima).
+I_C) O que é "disfunção endotelial" e quais algumas de suas consequências?
+GABARITO: É um fenótipo alterado do endotélio que compromete a vasorreatividade ou induz uma superfície trombogênica ou anormalmente adesiva. Suas consequências incluem o início da formação de trombos, aterosclerose e lesões vasculares da hipertensão.
+
+Q: Sobre as túnicas vasculares, responda:
+I_A) Descreva brevemente a composição da túnica íntima.
+GABARITO: É composta por uma monocamada de células endoteliais apoiada em uma lâmina basal, e uma camada subendotelial de tecido conjuntivo frouxo. Nas artérias, é separada da túnica média pela lâmina elástica interna.
+I_B) Qual o papel dos vasa vasorum localizados na túnica adventícia?
+GABARITO: Nutrir as porções mais externas da túnica média e a própria túnica adventícia em vasos de maior calibre, cujas paredes são muito espessas para serem nutridas apenas por difusão a partir do lúmen.
+
+Q: Sobre condições vasculares específicas, responda:
+I_A) O que são aneurismas saculares e onde comumente ocorrem?
+GABARITO: São dilatações arteriais focais com paredes delgadas que ocorrem em vasos cerebrais, comumente em pontos de ramificação do Polígono de Willis, onde a camada média pode ser congenitamente enfraquecida.
+I_B) Qual é uma característica chave da displasia fibromuscular e qual grupo de indivíduos é mais frequentemente acometido?
+GABARITO: Caracteriza-se por espessamento focal irregular das paredes de artérias musculares de médio e grande calibre devido à hiperplasia da média e íntima com fibrose. É mais observada em mulheres jovens.

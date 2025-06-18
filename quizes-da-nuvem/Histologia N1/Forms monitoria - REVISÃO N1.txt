@@ -1,0 +1,96 @@
+Q: A respeito da epiderme, responda:
+I_A) Quais as células presentes na epiderme e suas funções?
+GABARITO: Células:
+  1. Queratinócitos (produzem queratina, conferindo resistência e impermeabilidade, contendo 4 camadas distintas).
+  2. Melanócitos (estão presentes no estrato mais basal e apresentam prolongamentos longos que se estendem entre os queratinócitos para dentro do estrato espinhoso, produzem melanina, pigmento que protege o DNA dos queratinócitos das lesões causadas pelos raios UV).
+  3. Células de Langerhans (células dendríticas com função imune).
+  4. Células de Merkel (mecanorreceptores, transmitem informações sensoriais).
+I_B) Quais os estratos da pele fina e suas principais características?
+GABARITO: Estratos:
+ 1. Basal (células basais mitoticamente ativas, fixadas por desmossomos e hemidesmossomos)
+ 2. Espinhosa (começam a produzir queratina e tem aspecto espinhoso por causa dos desmossomos)
+ 3. Granulosa (preenchidos com grânulos de querato-hialina)
+ 4. Córnea (camada mais superficial, é a terminação final, não possuem núcleo, e estão totalmente preenchidas com filamentos de queratina)
+I_C) Qual tipo de tecido caracteriza a Epiderme?
+GABARITO:
+Epitélio estratificado pavimentoso queratinizado.
+
+Q: A respeito da derme, responda:
+I_A)  Quais camadas compõe a derme?
+GABARITO:
+É composta por:
+  1. <b>Camada papilar</b> (superficial, contendo colágenos tipo I e III).
+  2. <b>Camada reticular</b> (profunda, contendo colágeno de tipo I).
+I_B) Quais os tipos de tecido que caracterizam a derme?
+GABARITO:
+A camada papilar consiste em <b>tecido conjuntivo frouxo</b> e a camada reticular de <b>tecido conjuntivo denso não modelado</b>.
+
+Q: Qual tipo de pele é apresentada (espessa ou fina)? Justifique.
+https://andrehero007.github.io/quiz-images/laminas-histo/imgx4000.png
+GABARITO:
+Pele fina, pois há pelos nesse tipo de pele, ou seja, há folículo piloso (produtor do pelos), o que não é encontrado na pele espessa.
+
+Q: Considerando o canal alimentar, desde o esôfago até a porção distal do canal anal, quais camadas da parede apresentam a mesma organização estrutural ao longo de toda sua extensão? Descreva a estrutura básica dessas camadas.
+GABARITO:
+Do lúmen para fora, são: 
+1. Mucosa, que consiste em
+  • Um epitélio de revestimento.
+  • Um tecido conjuntivo subjacente, denominado lâmina própria.
+  • E na muscular da mucosa, composta de músculo liso.
+2. Submucosa, que consiste em tecido conjuntivo denso não modelado. 
+3. Muscular externa, que consiste, em sua maior parte, em duas camadas de músculo liso
+4. Serosa, uma membrana serosa que consiste em epitélio simples pavimentoso, o mesotélio, e em uma pequena quantidade de tecido conjuntivo subjacente.
+‎ 
+OBS: A adventícia, constituída apenas de tecido conjuntivo, é encontrada nos locais em que a parede do tubo está diretamente aderida a estruturas adjacentes. 
+
+Q: Identifique todos os números.
+https://andrehero007.github.io/quiz-images/laminas-histo/imgx4001.png
+GABARITO:
+1 - Lúmen;
+2 - Epitélio da mucosa (camada mais superficial da mucosa);
+3 - Submucosa; 
+4 - Glândulas mucosas;
+5 - Muscular externa;
+6 - Camada circular;
+7 - Camada longitudinal;
+8 - Adventícia.
+
+Q: Identifique as seguintes letras: 
+https://andrehero007.github.io/quiz-images/laminas-histo/imgx4002.png
+GABARITO: Corte do fígado.
+A - Célula de Kupffer.
+B - Núcleo de hepatócito.
+
+Q:  Identifique as seguintes letras A, B e C.
+https://andrehero007.github.io/quiz-images/laminas-histo/imgx4003.png
+GABARITO: Legenda:
+J7 - ESTÔMAGO, FUNDO E CORPO - HE
+<b>MUCOSA: - (A)</b>
+FOVÉOLAS, FOSSETAS OU CRIPTAS GÁSTRICAS (1) REVESTIDAS POR EPITÉLIO SIMPLES CILINDRICO (2)
+MUSCULAR DA MUCOSA - (3)
+LÂMINA PRÓPRIA (4)
+GLÂNDULAS FÚNDICAS (GLÂNDULA TUBULAR) (5)
+CÉLULAS PRINCIPAIS OU ZIMOGÊNICAS (BASÓFILAS) - (SETA GRANDE)
+CÉLULAS PARIETAIS OU OXÍNTICAS (ACIDÓFILAS) - (SETA CURTA)
+<b>SUBMUCOSA (TEC. CONJ. AUSÊNCIA DE GLÂNDULAS) - (B)</b>
+<b>MUSCULAR (MÚSCULO LISO) - (C)</b>
+CAMADA OBLÍQUA INTERNA - (7)
+CAMADA CIRCULAR MÉDIA - (8)
+CAMADA LONGITUDINAL EXTERNA - (9)
+SEROSA - (D) MESOTÉLIO CAMADA SUBMESOTELIAL
+
+Q: Dê o nome da célula apontada e o nome da substância secretada por ela.
+https://andrehero007.github.io/quiz-images/laminas-histo/imgx4004.png
+GABARITO:
+<b>Célula caliciforme</b> é uma célula colunar encontrada nos epitélios das mucosas dos tratos respiratório e digestivo. São células glandulares polarizadas (apenas secretam numa porção da membrana celular) do tipo mucoso. Elas <b>secretam mucina</b>, que se dissolve na água formando <b>muco</b>.
+
+Q: Dê o nome da estrutura marcada com * e em qual órgão ela é encontrada.  
+https://andrehero007.github.io/quiz-images/laminas-histo/imgx4005.png
+GABARITO:
+<b>Placa de Peyer</b>. Encontrada no <b>intestino delgado</b> na porção do íleo. 
+
+Q: Dê o nome da estrutura abaixo e qual a sua importância.
+https://andrehero007.github.io/quiz-images/laminas-histo/imgx4006.png
+GABARITO:
+As <b>vilosidades intestinais no intestino delgado</b> são projeções digitiformes da mucosa que <b>aumentam a superfície de absorção</b>, permitindo que o intestino <b>absorva mais nutrientes</b>. 
+

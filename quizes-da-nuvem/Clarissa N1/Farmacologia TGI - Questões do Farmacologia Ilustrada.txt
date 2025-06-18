@@ -1,0 +1,72 @@
+Q: Uma paciente de 68 anos com insuficiência cardíaca apresenta câncer ovariano. Ela inicia o tratamento com cisplatina, mas apresenta náuseas e êmese intensas. Qual dos seguintes fármacos deve ser o mais eficaz contra a êmese dessa paciente, sem agravar o seu problema cardíaco?
+A) Droperidol.
+B) Dolasetrona.
+C) Proclorperazina.
+D) Dronabinol.
+E) Palonosetrona.
+G: E
+C: A palonosetrona é um antagonista da 5-HT3 efi caz contra fármacos com alta atividade emetogênica, como a cispla tina. Embora a dolasetrona também esteja nessa classe, a sua pro pensão a apresentar efeitos no coração a torna uma má escolha para essa paciente. O droperidol também tem efeitos no coração e hoje é considerado um fármaco de segunda escolha, usado em associação com opioides ou benzodiazepínicos. O efeito antiemético da proclorperazina, um fenotiazínico, é melhor contra fármacos antineoplásicos com propriedades emetogênicas de baixa a moderada
+
+Q: Uma mulher de 45 anos queixa-se de azia persistente e gosto desagradável e ácido na boca. O clínico suspeita de refluxo gastresofágico e recomenda elevar a cabeceira da cama em 15-20 cm, não comer por várias horas antes de ir deitar e ingerir sempre pequenas porções. Duas semanas depois, ela retorna dizendo que os sinto mas diminuíram um pouco, mas continuam incomodando. Qual dos seguintes fármacos o clínico provavelmen te prescreverá?
+A) Um antiácido como o hidróxido de alumínio.
+B) Diciclomina.
+C) Um fármaco ansiolítico como o alprazolam
+D) Esomeprazol.
+G: D
+C: É apropriado tratar essa paciente com um IBP que reduz a produção de ácido e promove a cicatrização. Um antago nista do receptor H2 também pode ser útil, mas os IBPs são os prefe ridos. Um antiácido diminuiria a produção de ácido gástrico, mas seu efeito é de curta duração se comparado ao dos inibidores do receptor H2 . A diciclomina é um fármaco antimuscarínico e diminui a produção de ácido, mas não é tão eficaz como os IBPs ou os inibidores do re ceptor H2 . Um fármaco ansiolítico pode ter ação antiemética, mas não terá efeito na produção de ácido.
+
+Q: Um casal celebrando o 40° aniversário de casamento viajará ao Peru para visitar Machu Picchu. Devido às experiências em viagens no passado, eles pedem ao médico para prescrever um fármaco contra diarreia. Qual dos seguintes fármacos será eficaz?
+A) Omeprazol
+B) Loperamida
+C) Famotidina
+D) Lorazepam
+G: B
+C: A loperamida é o único fármaco dessa série que tem atividade antidiarreica. O omeprazol é um IBP, a famotidina antagoniza o receptor H2 , e o lorazepam é um benzodiazepínico sedativo e ansiolítico.
+
+Q: Uma mulher de 27 anos que está na 34ª semana de gra videz em repouso no leito consulta o seu obstetra. Duran te a visita, ela relata constipação leve. Qual das seguintes medicações seria recomendável?
+A) Óleo de rícino.
+B) Docusato.
+C) Óleo mineral.
+D) Loperamida
+G: B
+C: Embora seu efeito não seja imediato, o docusato pode ser usado contra constipação leve e é considerado geralmente seguro na gravidez. O óleo de rícino não deve ser usado na gravidez porque pode provocar contrações do útero. O óleo mineral não deve ser usado em pacientes acamados devido à possibilidade de aspira ção. A loperamida é usada contra a diarreia, não contra constipação.
+
+Q: Qual dos seguintes fármacos causa coloração da língua?
+A) Amoxicilina
+B) Omeprazol 
+C) Compostos de bismuto
+D) Lubiprostona
+G: C
+C: Os compostos de bismuto podem causar coloração preta na língua. Os outros fármacos não estão associados com esse efeito.
+
+Q: Um paciente está recebendo lorazepam antes da quimioterapia para diminuir náuseas e êmese por antecipação. Qual dos seguintes fármacos deve ser evitado nesse paciente
+A) Docusato.
+B) Ondansetrona.
+C) Polietilenoglicol.
+D) Etanol.
+G: D
+C: O etanol combinado com benzodiazepínico, particularmente em doses elevadas, pode produzir inconsciência, depressão respiratória e mesmo a morte. Os outros fármacos relacionados não têm uma interação demonstrada específica com benzodiazepínicos.
+
+Q: Todos os seguintes fármacos são bem tolerados, em geral, para o tratamento da constipação, EXCETO:
+A) Óleo de rícino.
+B) Metilcelulose.
+C) PEG.
+D) Docusato.
+G: A
+C: O óleo de rícino pode produzir cólicas fortes que o tornam difícil de tolerar para muitos pacientes, sobretudo os idosos. As outras três opções geralmente são bem toleradas.
+
+Q: Sintomas extrapiramidais são associados a qual dos seguintes fármacos?
+A) Metoclopramida
+B) Alprazolam
+C) Aprepitanto
+D) Loperamina
+G: A
+C: Somente a metoclopramida está associada com sintomas extrapiramidais. Isso se deve à sua ação inibidora da atividade da dopamina.
+
+Q: Qual das seguintes medicações contra problemas gastrintestinais é contraindicada na gravidez?
+A) Carbonato de cálcio.
+B) Famotidina.
+C) Lansoprazol.
+D) Misoprostol.
+G: D
+C: O misoprostol é contraindicado na gravidez por que pode estimular as contrações do útero. As outras medicações po dem ser usadas durante a gravidez para tratamento da azia (comum na gestação) ou úlcera péptica.

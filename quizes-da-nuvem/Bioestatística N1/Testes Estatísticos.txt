@@ -1,0 +1,387 @@
+q-random: false;
+
+Q: Um estudo comparou a proporção amostal de doenças autossômicas recessivas em lactentes com doenças com componente genético com aquela obtida na população, assumindo que a proporção populacional conhecida é de 9,1%. Os resultados do testes estatístico estão na imagem abaixo:
+https://andrehero007.github.io/quiz-images/propor%C3%A7%C3%A3o%20amostral%20de%20doen%C3%A7as%20autoss%C3%B4micas%20recessivas%20em%20lactentes-323h.png
+Sobre esse estudo e o teste estatístico realizado, julge a afirmativa a seguir e as afirmativas das questões <strong>2 a 5</strong>.
+"O testa estatístico realizado pelo pesquisador foi o teste para uma proporção"
+G: V
+C: Pois ele compara uma proporção amostral como uma proporção conhecida (proporção populacional)
+
+Q: Para um alfa de 5% e considerando o resultado do teste estatístico, podemos afirmar que na amostra recolhida a proporção de doenças autossômicas recessivas em lactentes com doenças com componente genético (13,2%) é maior que a proporção populacional (9,1%).
+G: F
+C: Correção:
+O valor-p calculado pelo Minitab é, de acordo com a imagem é <b>0,173</b>. E o alfa atribuído pelo pesquisador é de <b>5% (0,05)</b>. A análise estatística pelo Minitab é feita seguindo essa lógica: <br>
+Se valor P < 0,05 --> Rejeita-se a hipótese nula e aceita-se a hipótese alternativa de que existe diferença.
+Se valor P > 0,05 --> Aceita-se a hipótese nula de que não existe diferença. <br>
+Então:
+0,173 > 0,05 --> Logo, aceita-se a hipótese nula de que não existe diferença entre a proporção amostral e a proporção populacional. Então a conclusão correta é: <br>
+Para um alfa de 5% e considerando o resultado do teste estatístico, podemos afirmar que na amostra recolhida a proporção de doenças autossômicas recessivas em lactentes com doenças com componente genético (13,2%) NÃO é de forma estatisticamente significativa maior que a proporção populacional (9,1%), visto que o valor p é maior que 0,05, logo aceita-se a hipótese nula e rejeita-se a hipótese alternativa.<br>
+Observação: O "p=0,091" presente no resultado da imagem não é o valor p, é a proporção populacional conhecida (9,1%) convertida em decimal.
+
+Q: Se o valor p fosse 0,03 e o alfa fosse de 1%, a conclusão do pesquisador seria diferente.
+G: F
+C: A conclusão seria a mesma (de que não há diferença estatisticamente significativa entre as proporções), pois o valor p 0,03 é maior que 0,01. Logo, também rejeita-se a hipótese alternativa e aceita-se a hipótese nula.
+
+Q: Os pressupostos para o teste estatístico realizado pelo pesquisador são:
+https://andrehero007.github.io/quiz-images/pressupostos%201%20proporçãos.png
+G: V
+C: Esses são os pressupostos para a realização do teste para 1 proporção.
+ 
+Q: O teste estatístico realizado pelo pesquisador lida com variáveis dicotômicas e politômicas.
+G: F
+C: O teste para uma proporção é usado em uma amostra com uma variável dicotômica, ou seja, que pode assumir apenas 2 categorias. No caso desse estudo há a categoria lactentes com doenças com componente genético e a categoria lactentes sem doenças com componente genético.
+
+Q: Um estudo realizado com trabalhadores de câmaras frigoríficas avaliou o efeito da vitamina C na prevenção de doenças do trato respiratório. Nesta pesquisa, 407 trabalhadores foram selecionados aleatoriamente para receber doses altas de vitamina C, enquanto outros 411 trabalhadores (também selecionados aleatoriamente) receberam somente placebo. Após acompanhá-los por um determinado período de tempo, verificou-se que 105 participantes do grupo experimental não desenvolveram doenças do trato respiratório, enquanto no grupo placebo, esse número foi de 76 participantes. A amostra selecionada pelos pesquisadores é representativa da população. Abaixo estão os dados organizados em uma tabela de contingência e também o resultado do teste estatístico.
+https://andrehero007.github.io/quiz-images/teste%202%20proporcao%20efeito%20da%20vitamina%20C%20na%20preven%C3%A7%C3%A3o%20de%20doen%C3%A7as%20do%20trato%20respirat%C3%B3rio-23.png
+Resultado do teste estatístico:
+Valor-p = 0,012
+Sobre esse estudo e o teste estatístico realizado, julge a afirmativa a seguir e as afirmativas das questões <strong>7 a 12</strong>.
+"O teste realizado realizado pelo pesquisador foi o teste para duas proporções de amostras dependentes"
+G: F
+C: É o teste para duas proporções de amostras <b>independentes</b>.
+As amostras são independentes, porque: Um grupo recebeu vitamina C e outro grupo recebeu placebo. Não houve pareamento entre os indivíduos, cada um pertence apenas a um grupo.
+Quando as mesmas pessoas são medidas duas vezes (antes/depois), aí sim falamos de amostras dependentes.
+No caso desse estudo, são dois grupos distintos, então o correto é dizer que são amostras independentes.
+
+Q: A tabela contém dados classificados como médias.
+G: F
+C: A tabela mostra contagens absolutas (frequências), ou seja, o número de pessoas em cada grupo que desenvolveram ou não a doença.
+
+Q: Com base nos resultados, a proporção de não desenvolvimento 
+de doenças do trato respiratório em trabalhadores de câmaras frigoríficas que tomaram vitamina C é de cerca de 26%, enquanto a proporção no grupo placebo é de cerca de 18%.
+G: V
+C: Cálculo:
+https://andrehero007.github.io/quiz-images/Dados%20propor%C3%A7%C3%A3o%2023casd.png
+
+Q: Considerando um alfa de 5%, a diferença de proporção entre o grupo que tomou placebo e o grupo que tomou vitamina C não é estatisticamente significativo.
+G: F
+C: Foi dado que o valor-p = 0,012.
+Comparando com α = 5% (0,05):
+0,012 < 0,05
+Então rejeitamos a H₀ → a diferença é estatisticamente significativa.
+Conclusão: A diferença é significativa ao nível de 5%.
+
+Q: Considerando um alfa de 1%, a diferença de proporção entre o grupo que tomou placebo e o grupo que tomou vitamina C não é estatisticamente significativo.
+G: V
+C: Comparando com α = 1% (0,01):
+0,012 > 0,01
+Então não rejeitamos H₀ → não há diferença significativa.
+Conclusão: A diferença não é significativa ao nível de 1%.
+
+Q: Os pressupostos para o teste estatístico realizado pelo pesquisador são:
+https://andrehero007.github.io/quiz-images/pressupostos%202%20propor%C3%A7%C3%A3os%20dsadd.png
+G: V
+C: Esses são os pressupostos para a realização do teste para 2 proporção de amostras indepedentes.
+
+Q: Se as amostras dos grupos que receberam vitamina C e placebo tivessem, cada uma, apenas 20 indivíduos, os pressupostos para a aplicação do teste estatístico seriam violados, considerando as proporções de 0,25 e 0,18, respectivamente.
+G: V
+C: Cálculo:
+https://andrehero007.github.io/quiz-images/calculo-pressupostos-3232fcvv.png
+Com apenas 20 indivíduos por grupo, os pressupostos seriam violados, principalmente no grupo placebo (onde 𝑛 × 𝑝 ficou menor que 5). Então se a amostra fosse de 20 indivíduos em cada grupo esse teste estatístico não poderia ser realizado.
+
+Q: Sobre os testes de Qui-quadrado, julgue a afirmativa a seguir e as afirmativas das questões <strong>14 a 21</strong>.
+"Os testes de qui-quadrado podem ser usados quando os pressupostos do teste de comparação de proporções não forem atendidos"
+G: V
+
+Q: No cálculo de X² (qui-quadrado) é necessário, além dos valores observados (O), calcular o valor esperado de cada célula da tabela que contenha um dado de frequência, com exceção das células com valores somados (como população total ou total exposto ao fator de risco).
+G: V
+C: Lembrando do que é valor observado (O) e valor esperado (E):
+  -> <b>Valor observado (O):</b> é o número que realmente aconteceu na coleta de dados (o que você viu ou mediu).
+  -> <b>Valor esperado (E):</b> é o número que você esperaria encontrar se não houvesse nenhuma diferença ou relação entre as categorias.
+  
+Q: O valor esperado pode ser calculado multiplicando o <b>total da linha</b> onde a célula está pelo <b>total da coluna</b> onde a célula está. Depois, o resultado é dividido pelo <b>total geral</b>.
+G: V
+C:
+Aqui está um exemplo que ilustra:
+https://andrehero007.github.io/quiz-images/calculo-valor-esperado-2312321.png
+
+Q: A curva de distribuição qui-quadrado começa no 1 e só tem valores positivos.
+G: F
+C: Começa no zero e só tem valores positivos. Isso porque o qui-quadrado será zero quando não houver diferença entre os números observados e os esperados, ficando maior à medida que aumentam as discrepâncias entre O e E.
+<p><strong>Por que a curva de distribuição qui-quadrado começa em 0?</strong></p>
+<p><strong>Fórmula do qui-quadrado:</strong><br>
+<code>&chi;<sup>2</sup> = &sum;<sub>i</sub> <span style="white-space: nowrap;">((O<sub>i</sub> - E<sub>i</sub>)<sup>2</sup> / E<sub>i</sub>)</span></code>
+</p>
+<p><strong>1. Começo em zero:</strong><br>
+Na fórmula, o numerador <code>(O - E)<sup>2</sup></code> representa a diferença ao quadrado entre o valor observado e o valor esperado. Se <strong>O = E</strong>, então:<br>
+<code>(O - E)<sup>2</sup> = 0</code>.<br>
+Exemplo:<br>
+<code>O = 5, E = 5 ⇒ (5 - 5)<sup>2</sup> = 0 ⇒ 0 / 5 = 0</code><br>
+É por isso que a curva começa em <strong>0</strong>.</p>
+<p><strong>2. Por que não pode ser negativo:</strong><br>
+Como elevamos <code>(O - E)</code> ao quadrado, mesmo que <strong>O &lt; E</strong> e assim <code>(O - E)</code> seja negativo, o quadrado torna o valor positivo.  
+Exemplo:<br>
+<code>O = 5, E = 7 ⇒ χ<sup>2</sup> = (5 - 7)<sup>2</sup> / 7 = (-2)<sup>2</sup> / 7 = 4 / 7 ≈ 0,5714</code><br>
+Portanto, χ<sup>2</sup> é sempre ≥ 0.</p>
+
+Q: A curva de distribuição qui-quadrado é assimétrica e se torna menos assimétrica à medidas que se aumenta o número de categorias das variáveis (graus de liberdade).
+G: V
+C: 
+Quanto maior os graus de liberdade, menos assimétrica a curva se torna, como mostra a imagem abaixo:
+https://andrehero007.github.io/quiz-images/distribuicao-qui-quadrado-3nmcs6.png
+
+Q: Um estudo mede a relação entre tipos sanguíneos (do sistema ABO) e três cores de pele. Os graus de liberdade são 2.
+G: F
+C: Temos:
+ -> Tipos sanguíneos (A, B, AB, O) = 4 categorias.
+ -> Cores de pele = 3 categorias.<br>
+Como se trata de um estudo de relação (tabela de contingência) a fórmula para calcular graus de liberdade é essa:
+GL = (nº de linhas − 1)×(nº de colunas − 1)
+Então:
+GL = (4 − 1)×(3 − 1)= 3×2 = 6
+Conclusão: O grau de liberdade não é 2 e sim 6.
+
+Q: Um estudo que compara a proporção de tipos sanguíneos de uma amostra de uma população com a proporção esperada pela genética os graus de liberdade são 3.
+G: V
+C: Temos:
+ -> Apenas UMA variável, que é tipo sanguíneo = 4 categorias.<br>
+Como se trata de um teste de comparação de proporções observadas vs esperadas, se trata de um teste de ajustamento, não sendo então uma tabela de contingência e sim de frequências observadas e frequências esperadas.
+Para qui-quadrado de ajustamento se calcula graus de liberdade dessa forma:
+GL = número de categorias - 1
+Então:
+GL = 4 - 1 = 3
+Conclusão: Realmente são 3 graus de liberdade.
+
+Q: No estudo citado na <strong>questão 18</strong>, a curva de distribuição qui-quadrado é menos assimétrica do que no estudo citado na <strong>questão 19</strong>.
+G: V
+C: No estudo da questão 18, a curva é menos assimétrica que no da questão 19, porque tem mais graus de liberdade (6 > 3).
+
+Q: Na hipótese nula do teste de qui-quadrado, não há diferença significativa entre o que foi observado e o que era esperado. Enquanto na alternativa é o contrário.
+G: V
+C: Na hipótese nula, não há diferença e na alternativa, há diferença.
+
+Q: Há três principais tipos de teste qui-quadrado. Analise as assertivas a seguir e assinale a alternativa correta.
+I - Teste X² de aderência ou ajustamento: Verifica se UMA distribuição observada de dados ajusta-se a uma distribui ção esperada (teórica).
+II - Teste X² de comparação de proporções ou de heterogeneidade: Compara DUAS ou MAIS populações com relação a UMA variável categórica.
+III - Teste X² de associação: Verifica, em UMA amostra, se existe associação entre duas variáveis qualitativas.
+A) Apenas I está correta.
+B) Apenas II está correta.
+C) Apenas II e III estão corretas.
+D) Apenas I e II estão corretas.
+E) Todas estão corretas.
+G: E
+
+Q: No teste X² de comparação, o pesquisador escolhe o tamanho de cada uma das duas ou mais amostras, definindo ele mesmo quantas pessoas ou quantos elementos haverá em cada grupo. Sendo elas amostras dependentes.
+G: F
+C: Toda a assertiva é verdadeira, exceto a parte que fala que são amostras dependentes. São amostras independentes. Destacado em vermelho está os valores que o próprio pesquisador decide, que é o tamanho de cada amostra:
+https://andrehero007.github.io/quiz-images/teste-comparacao-exemplo02232.png
+91 de Porto Alegre, 116 de São Leopoldo e 35 de Caxias do Sul são tamanhos amostrais escolhidos (fixados) pelo próprio pesquisador.
+
+Q: No teste X² de associação, o pesquisador escolhe apenas o tamanho de uma única amostra e verifica como ela se distribui em duas variáveis qualitativas.
+G: V
+C: Nesse tipo de estudo há duas variáveis com duas ou mais categorias, o total de cada categoria não é escolhido pelo pesquisador, é simplesmente o valor observado (e não um valor fixado) após ele avaliar todos os indivíduos da amostra quanto a cada variável. No exemplo abaixo, está estacado em vermelho o único valor que o pesquisador escolheu:
+https://andrehero007.github.io/quiz-images/teste-associacao-exemplo03fvb2232.png
+Isso significa que ele não escolheu que o estudo teria 228 pessoas com eosinófilos no escarro e 156 pessoas sem eosinófilos no escarro. Ele escolheu apenas o total de indivíduos (384) e avaliou cada um deles quanto a presença de eosinófilos (2 categorias) e o tipo de pneumopatia (4 categorias) e organizou os dados na tabela.
+Se ele tivesse escolhido o total com e sem eosinófilos no escarro, o teste apropriado seria X² de comparação, pois assim a presença ou ausência de eosinófilos passariam a ser cada um uma amostra em vez de categorias.
+Então:
+--> Associação: 1 amostra. Pesquisador escolhe apenas o total geral da tabela.
+--> Comparação: 2 ou mais amostras. Pesquisador escolhe o total de cada amostra.
+
+Q: O teste X² de ajustamento só pode ser feito com uma amostra dicotômica.
+G: F
+C: O teste χ² de ajustamento pode ser aplicado tanto a variáveis dicotômicas (exemplo: presença ou ausência doença) quanto politômicas (exemplo: tipo sanguíneo do sistema ABO). A exigência é que a variável seja categórica e que se tenha uma frequência esperada para cada categoria.
+Um exemplo de tabela para X² de ajustamento para a frequência de atendimentos em uma clinica em cada dia da semana.
+https://andrehero007.github.io/quiz-images/teste-ajustament-exemplo-3232db6l.png
+Repare que os valores esperados são iguais, pois se não houvesse diferença na frequência de atendimentos entre os dias da semana, esperaríamos o mesmo número de atendimentos em cada dia. Mas nem sempre os valores vão ser iguais, por exemplo, na genética de Mendel, se cruzarmos duas plantas heterozigóticas (Aa × Aa), a proporção esperada na descendência seria:
+25% homozigóticos dominantes (AA)
+50% heterozigóticos (Aa)
+25% homozigóticos recessivos (aa)
+Se tivermos 400 plantas descendentes, os valores esperados seriam:
+AA: 100 plantas (25% de 400)
+Aa: 200 plantas (50% de 400)
+aa: 100 plantas (25% de 400)
+Nesse caso, os valores esperados não são iguais entre todas as categorias, mas seguem a proporção mendeliana 1:2:1. Exemplo de tabela:
+https://andrehero007.github.io/quiz-images/teste-ajustament-exemplo2-3232dsddb6l.png
+
+Q: Sobre as condições para o uso dos teste X² de associação e comparação, analise as assertivas a seguir e assinale a alternativa correta.<br>
+I - Em tabelas 2x2 (duas linhas e duas colunas) nenhum E pode ser menor do que 5.<br>
+II - Em tabelas 2xC (duas linhas e mais de duas colunas) todos os valores de E devem maiores ou iguais 1.<br>
+III - Em tabelas LxC (mais de duas linhas e mais de duas colunas) o número esperado médio deve ser maior ou igual a 6 para testes com alfa de 1% e maior ou igual a 10 para testes com alfa igual a 5%.<br>
+IV - O valor esperado médio é o número total de indivíduos dividido pelo número de caselas.<br>
+V - Para uma tabela de 3 linhas e 4 colunas o número de caselas é igual a 7. <br>
+Alternativas:
+A) Apenas I, II e III estão corretos.
+B) Apenas II, III e IV estão corretos.
+C) Apenas I, II, IV e V estão corretos.
+D) Apenas I, II e IV estão corretos.
+E) Todos estão corretos.
+G: D
+C:
+Incorretos: III e V.
+III -> Valores de alfa trocados. O certo é:
+Em tabelas LxC (mais de duas linhas e mais de duas colunas) o número esperado médio deve ser maior ou igual a 6 para testes com alfa de 5% e maior ou igual a 10 para testes com alfa igual a 1%.
+V -> Número de caselas calculado incorretamente. O certo é multiplicar o número de linhas pelo número de colunas em vez de somar. Então:
+3×4 = 12 caselas.
+
+Q: Sobre o teste exato de Fisher, analise a assertiva a seguir e as assertivas das questões <strong>28 a 30</strong>.
+"O teste exato de Fisher só pode ser realizado em tabelas (2x2)"
+G: V
+
+Q: O de teste exato de Fisher só pode ser realizado se as duas variáveis forem do tipo politômica.
+G: F
+C: Apenas se as duras forem <b>dicotômicas</b>, ou seja, cada uma com 2 categorias. Exemplo: Sexo (masculino/feminino), doença (presente/ausente).
+
+Q: Ele é uma alternativa ao teste X² de comparação e ajustamento para tabelas 2x2 (contingência), quando os pressupostos para a utilização do teste qui-quadrado não forem satisfeitos.
+G: F
+C: Ele é uma alternativa para o teste X² de comparação e X² de <b>ASSOCIAÇÃO</b>. O teste X² de aderência nem sequer usa tabelas de contingência.
+Resumindo, as situações de uso são:
+  1. Quando se deseja comparar duas populações em relação a uma variável de desfecho categórica do tipo dicotômica (tabela 2x2).
+  2. Quando se deseja verificar a associação entre duas variáveis categóricas do tipo dicotômicas (tabela 2x2) 
+  3. Quando os pressupostos para utilização do teste qui-quadrado não forem satisfeitos para uma tabela 2x2.
+	Revisando, os pressupostos para X² 2x2 são: Nenhum valor esperado (E) ser menor que 5
+	
+Q: O teste de Fisher geralmente é usado quando o tamanho da amostra é pequeno (usualmente < 25 indivíduos), pois nesse caso os pressupostos para X² costumam não ser atendidos.
+G: V
+C: Ou então quando pelo menos um valor esperado é menor que 5.
+
+Q: Sobre o teste de McNemar, analise a assertiva a seguir e as assertivas das questões <strong>32 e 33</strong>.
+"Ele é utilizado quando se deseja avaliar um desfecho categórico dicotômico entre duas amostras independentes"
+G: F
+C: Entre duas amostras DEPENDENTES. Correção:
+Ele é utilizado quando se deseja avaliar um desfecho categórico dicotômico entre duas amostras dependentes.
+
+Q: São casos de uso para o teste de McNemar:
+I - Ensaios clínicos com pareamento: neste estudos, o mesmo paciente é avaliado antes e depois de um tratamento ou experimenta dois tratamentos (em sequência), de tal modo que cada paciente é controle de si mesmo. 
+II - Estudos de coorte com pareamento: neste estudos, para cada indivíduo exposto ao fator de risco é selecionado um outro indivíduos não-exposto com características comuns (como idade, sexo, comorbidade, etc.).
+III - Estudos de caso-controle com pareamento: neste estudos, para cada caso é selecionado um outro indivíduo sem o desfecho (controle) com características comuns (como idade, sexo, comorbidade, etc.).
+A) Apenas I e II está correto.
+B) Apenas I e III está correto.
+C) Apenas II e III está correto.
+D) Todos estão corretos.
+G: D
+
+Q: "Quando a variável em estudo é dicotômica (do tipo sucesso/fracasso), a comparação entre duas amostras pode ser feita pelo teste z para proporções ou pelo teste qui—quadrado para tabelas 2x2, mas tais testes são válidos somente na condição de que as amostras sejam independentes. Se os dados das duas amostras forem dependentes entre si, não é lícito utilizar tais testes."
+G: V
+C: E quando os dados dependentes, em vez desses teste, se usa o teste McNemar. Há dependência entre as amostras em dois casos:
+  1. Quando o sujeito é o controle de si mesmo.
+  2. Quando foi realizado um pareamento indivíduo a indivíduo entre os membros das duas amostras.
+
+Q: Sobre os testes estatísticos: Para uma proporção, duas proporções, qui-quadrado, Fisher e McNemar, analise a assertiva a seguir:
+"Nenhum desses testes estatísticos é usado em tabelas contendo dados quantitativos como médias, medianas e modas ou ordinais como postos. São utilizados apenas para medidas de frequência."
+G: V
+C: Todos são usados para dados categóricos (frequências: presença/ausência, sim/não etc).
+
+Q: O estudo a seguir é sobre dois tratamentos usados para controlar a hemorragia em 24 pacientes hemofílicos submetidos a uma cirurgia.
+Qual o teste estatístico mais adequado para o estudo da imagem?
+https://andrehero007.github.io/quiz-images/N%C3%BAmero%20de%20complica%20devidas%20a%20hemorragia%20em%20pacientes%20submetidos%20ao%20tratamento%20A%20ou%20B.png
+A) Teste de qui-quadrado.
+B) Teste de comparação para uma proporção.
+C) Teste de comparação para duas proporções.
+D) Teste Exato de Fisher.
+E) Teste de McNemar.
+G: D
+C:
+--> Tabela de contingência. Com isso já eliminamos comparação para uma proporção.
+--> Variáveis independentes, não tá comparando antes e depois e os dados não são pareados. Então já eliminamos McNemar.
+--> Pressupostos do teste de duas proporções violados, por exemplo, quantidade de expostos vezes proporção de expostos tem que ser um valor maior ou igual a 5. Mas no tratamento A: Ne​ × Pe​ = 12 × 0 = 0
+--> Tamanho da amostra menor que 25: Eliminamos qui-quadrado. Ou então ir pelo valor esperado, o valor esperado para presença de complicações no tratamento A é:
+12*7 / 24 = 3.5. Que é um valor menor que 5.
+
+Q: Para uma alfa de 5% e valor-p igual a 0,0046 a conclusão do pesquisador sobre o estudo anterior é: Pode-se afirmar que o tratamento A é significativamente mais eficaz do que o Tratamento B na prevenção de complicações hemorrágicas em pacientes hemofílicos submetidos à cirurgia.
+G: V
+C: Obteve-se um valor de p = 0,0046, que é menor que o alfa atribuído de 5% (0,05). Esse resultado indica que a diferença observada entre os dois grupos é estatisticamente significativa ao nível de 5% (α = 0,05). Assim, rejeita-se a hipótese nula de que os dois tratamentos tenham eficácia semelhante no controle de hemorragias pós-cirúrgicas e aceita-se a hipótese alternativa.
+
+Q: Os dados na tabela são referente a um estudo que avaliou a associação entre o diagnóstico clínico de dor no peito e os resultados do exame angiográfico das artérias coronárias. Nesse estudo os pressupostos para o teste X² são satisfeitos. Sobre ele julgue a afirmativa a seguir e as afirmativas das questões <strong>38 e 39</strong>.
+https://raw.githubusercontent.com/AndreHero007/quiz-images/main/Pacientes%20classificados%20de%20acordo%20com%20o%20diagn%C3%B3stico%20cl%C3%ADnico%20de%20dor%20no%20peito%20e%20exame%20angiogr%C3%A1fico%20das%20art%C3%A9rias%20coron%C3%A1rias.png
+"Se, nesse estudo, o pesquisador coletou uma única amostra de 1465 indivíduos e classificou cada indivíduo quanto a duas variáveis qualitativas, o teste estatístico mais adequado é x² de comparação."
+G: F
+C: É X² de associação, pois é uma ÚNICA amostra em que é verificado se existe associação entre duas variáveis qualitativas, com cada indivíduo analisado em duas variáveis ao mesmo tempo.
+
+Q: Para uma alfa de 5% e valor-p inferior a 0,001 a conclusão do pesquisador sobre o estudo anterior é: Não existe uma associação estatisticamente significativa entre o nível de dor no peito relatado pelos pacientes e os achados angiográficos nas artérias coronárias.
+G: F
+C: Existe associação significativa, pois o valor-p foi inferir a 0,001, o que é muito menor que o nível de significância (α = 0,05). Portanto, rejeitamos a hipótese nula de não relação entre o diagnóstico clínico de dor no peito e os resultados do exame angiográfico e aceitamos a hipótese alternativa de que existe alguma diferença.
+
+Q: Para esse estudo, no teste estatístico considera-se os graus de liberdade como sendo 5.
+G: F
+C: Se trata de uma tabela de contingência 3x3. Em tabelas de contingência se calcula GL assim:
+Gl = (número de linhas − 1) × (número de colunas − 1)
+Gl = (3-1) × (3-1) = 2×2 = 4
+
+Q: O estudo da tabela a seguir avaliou o nível da dor em 79 jogadores profissionais do futebol antes e 24 h após de uso de um medicamento. Estes jogadores apresentavam problemas musculoesqueléticos diversos (principalmente entorse e contusão, mas também distensão muscular, tendinite, lombalgia e sinfisite púbica).
+https://andrehero007.github.io/quiz-images/dor-antes-depois-jogador-232323sdac.png
+Qual dos testes estatísticos a seguir é mais apropriado?
+A) Teste de qui-quadrado.
+B) Teste de comparação para uma proporção.
+C) Teste de comparação para duas proporções.
+D) Teste Exato de Fisher.
+E) Teste de McNemar.
+G: E
+C: Pois se trata de duas amostras dependentes, os MESMOS INDIVÍDUOS antes e depois da intervenção (tratamento).
+
+Q: Sobre o estudo anterior, 44 representa o número de pessoas que tinham muita dor antes do tratamento e continuaram com muita dor depois de 24 horas.
+G: V
+C: Representa a ausência de mudança.
+
+Q: Sobre o estudo anterior, apenas o número 26 representa o desfecho desejado pelo pesquisador, ou seja, pacientes que tinha muita dor antes e melhoraram (passaram a ter pouca dor) depois do tratamento.
+G: V
+C: O que representa cada número:
+ -> 44: Muita dor antes → Muita dor depois. Representa os que não tiveram mudança.
+ -> 4: Pouca dor antes -> Pouca dor depois. Representa também os que não tiveram mudança.
+ -> 5: Pouca dor antes -> Muita dor depois. Representa os que pioraram.
+<b> -> 26: Muita dor antes -> Pouca dor depois. Representam os que melhoraram.</b>
+
+Q: Sobre o estudo anterior, o teste de McNemar baseia-se na diferença entre os valores em que ocorreu alguma MUDANÇA, ou seja, 5 e 44.
+G: F
+C: A mudança ocorreu nos valores 5 e 26.
+-> 5: Pouca dor antes -> Pouca dor depois. Representa os que pioraram.
+-> 26: Muita dor antes -> Pouca dor depois. Representam os que melhoraram.
+No valor 44 não ocorreu mudança antes e depois da intervenção.
+
+Q: Sobre o estudo anterior, caso não haja nenhuma diferença entre antes e depois do uso do medicamento, o valor que corresponde a muita dor antes e pouca dor depois (melhora) seria igual ao valor que corresponde a pouco dor antes e muita dor depois (piora).
+G: V
+C: Verdadeiro, se fossem iguais o resultado seria 0, o que indicaria que melhorou uma mesma quantidade de pessoas que piorou, indicando que o estudo não constatou nenhuma eficácia para o medicamento.
+
+Q: Sobre o estudo anterior, para um alfa de 5% e valor p menor que 0,001, o pesquisador pode afirmar que: A diferença observada entre os relatos de dor antes e 24 horas após o uso do medicamento é estatisticamente significativa ao nível de 5% (α = 0,05).
+G: V
+C: Se o valor-p é menor que o nível de significância (0,05), rejeitamos a hipótese nula. Ou seja, consideramos que há diferença estatisticamente significativa.
+
+Q: Sobre o estudo anterior, com base na análise do valor p, pode-se concluir que a proporção de indivíduos que melhoraram a dor após o tratamento (26/79 ≈ 32,9%) é maior do que a proporção de indivíduos que pioraram após o tratamento (5/79 ≈ 6,3%).
+G: V
+C: Realmente a proporção de melhora é calculada dividindo os casos de melhora pelo total de participantes, enquanto a proporção de piora os casos de piora pelo total de participantes.
+
+Q: No teste de McNemar os valores que servem para indicar melhora ou piora são sempre os das células A e D da tabela de contingência.
+https://andrehero007.github.io/quiz-images/mcnemardsa2332.png
+G: F
+C: Em tabelas para McNemar, o formato sempre organiza:
+	- Diagonal principal (células A e D): representam os indivíduos que não mudaram (permaneceram iguais antes e depois).
+	- Fora da diagonal (<b>células B e C)</b>: representam os indivíduos que mudaram de situação (melhoraram ou pioraram).
+
+Q: O estudo representado na tabela a seguir comparou a frequência de recém-nascidos com baixo peso ao nascer (< 2.500 g) entre duas amostras de mães, uma amostra com idade menor que 20 anos e outra com 20 anos ou mais.
+https://andrehero007.github.io/quiz-images/idade%20materna%20dsda23.png
+Considere que todos os valores esperados sejam maiores ou iguais a 5, o teste X² mais adequado é
+A) X² de comparação.
+B) X² de ajustamento.
+C) X² de associação.
+G: A
+C: Pois é usado quando comparamos DUAS ou mais amostras em relação a UMA variável categórica.
+
+Q: Sobre o estudo anterior, para um alfa de 5% e valor p menor que 0,001 o pesquisador pode afirmar que: A frequência de recém-nascidos com baixo peso (<2500 g) difere entre mães com menos de 20 anos e aquelas om 20 anos ou mais.
+G: V
+C: Com base no teste qui-quadrado de comparação, observamos um valor-p de 0,006, que é estatisticamente significativo ao nível de 5% (α = 0,05), já que é muito menor que 0,05. Portanto, rejeitamos a hipótese nula e aceitamos a hipótese alternativa.
+
+Q: A tabela abaixo é referente a um estudo que avaliou se o número de acidentes em uma determinada cidade muda conforme o dia da semana.
+https://andrehero007.github.io/quiz-images/acidentes-dia-semana-232asdfl0.png
+Qual o teste estatístico mais adequado?
+A) Teste de 1 proporção.
+B) X² de comparação.
+C) X² de ajustamento.
+D) X² de associação.
+G: C
+C:
+  -> Não é tabela de contingência: Logo, não é X² de comparação e nem de associação.
+  -> Tem 7 categorias (dias da semana), então não pode ser teste de 1 proporção, o teste para uma proporção é usado em uma amostra com uma variável dicotômica, ou seja, que pode assumir apenas 2 categorias. A variável "dia da semana" é politômica.
+  
+Q: Sobre o estudo anterior, para um alfa de 1% e valor p menor que 0,001 o pesquisador pode afirmar que: Não há evidência estatisticamente significativa de que a frequência de acidentes varia conforme o dia da semana.
+G: F
+C: Como o valor-p é menor do que 0,001, que é menor que o 
+nível de significância de 5% (0,05), rejeita-se a hipótese nula e aceita-se a alternativa de que entre alguma das variáveis existe diferença entre os valores observados e os valores esperados.
+
+Q: Em estudos envolvendo três ou mais categorias (tabelas 2x3, 1x7 etc) e em que se constata significância estatística, é necessário realizar um análise post-hoc, como a correção de Bonferroni para identificar quais grupos diferem entre si.
+G: V
+C: Sempre que você tem ≥ 3 categorias e obtém χ² significativo, só sabe que alguma categoria foge do esperado, não sabe quais. Para descobrir quais pares de categorias são responsáveis por essa diferença, faz-se comparações post-hoc com ajuste (como a de Bonferroni).
+
+
+
+
+
+

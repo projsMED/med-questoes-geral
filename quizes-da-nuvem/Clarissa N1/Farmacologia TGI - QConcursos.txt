@@ -1,0 +1,99 @@
+Q: Todos os medicamentos indicados abaixo atuam no aparelho gastrointestinal. Assinale a alternativa que apresenta os purgativos.
+A) Elixir paregórico, difenoxilato.
+B) Hidróxido de magnésio, óleo de rícino, óleo mineral.
+C) Carvão ativado, carbonato de cálcio, caulim.
+D) Cimetidina, ranitidina, omeprazol.
+E) Sene em pó + tamarindus, plantago
+G: B
+C: A) Elixir paregórico, difenoxilato.
+São fármacos antidiarreicos (opióides e seus derivados). Inibem o peristaltismo intestinal, retardando o trânsito e reduzindo perda de líquidos, não promovem evacuação → não são purgativos.
+‎ 
+B) Hidróxido de magnésio, óleo de rícino, óleo mineral.
+• Hidróxido de magnésio: laxante osmótico, retém água no lúmen intestinal.
+• Óleo de rícino: laxante estimulante, irrita a mucosa e aumenta o peristaltismo.
+• Óleo mineral: laxante lubrificante, facilita a evacuação.
+Todos atuam promovendo efeito purgativo → correta.
+‎ 
+C) Carvão ativado, carbonato de cálcio, caulim.
+São adsorventes e antiácidos/antidiarreicos (retêm toxinas e gases), não têm ação laxativa → não.
+‎ 
+D) Cimetidina, ranitidina, omeprazol.
+São bloqueadores de receptores H₂ ou inibidores de bomba de prótons: antiácidos/antiulcerosos, reduzem secreção de ácido gástrico → não.
+‎ 
+E) Sene em pó + Tamarindus, Plantago.
+• Sene (folhas de senna): laxante estimulante (irritante).
+• Tamarindus indica (tâmaras/tamarindo): possui ação osmótica e estimulante leve.
+• Plantago (psyllium): laxante formador de massa.
+Tecnical­mente, também são purgativos, mas a prova costuma considerar como “purgativos clássicos” os da alternativa {B}.
+
+Q: As doenças acidopépticas são aquelas em que o ácido gástrico e a pepsina constituem fatores patogênicos necessários. Muitos tratamentos visam à diminuição da acidez gástrica. Sobre os fármacos utilizados nesse tratamento, é correto afirmar:
+A) Os antagonistas do receptor H2 inibem a produção de ácido por competir reversivelmente com a dopamina pela ligação com os receptores na membrana basal das células parietais.  
+B) A Ranitidina e a Famotidina são exemplos de antagonistas do receptor H2 e são mais potentes que os inibidores da bomba de prótons. 
+C) A Cimetidina e a Ranitidina são exemplos de fármacos que inibem a produção de ácido por competir reversivelmente com a histamina pela ligação com os receptores H2 na membrana basal das células parietais.
+D) Os antagonistas do receptor H2 são pró-fármacos que requerem ativação em um ambiente ácido e inativam irreversivelmente os receptores H2.
+G: C
+
+Q: Dentre os fármacos que afetam a função gastrointestinal estão
+A) atropina e loperamida, que aumentam a velocidade de esvaziamento gástrico.
+B) metoclopramida e cisaprida, que aumentam a velocidade de esvaziamento gástrico.
+C) codeína e morfina, que aumentam a velocidade de esvaziamento gástrico.
+D) atropina e loperamida, que aumentam a motilidade intestinal.
+E) bisacodil e docusato, que aumentam a velocidade de esvaziamento gástrico.
+G: B
+C: {A} -> Incorreta.
+  • Atropina é anticolinérgica e reduz a motilidade gastrointestinal (inclusive diminui o esvaziamento gástrico).
+  • Loperamida é agonista opioide que retarda o trânsito intestinal (não aumenta o esvaziamento gástrico).
+‎ 
+{B} -> Correta.
+  • Metoclopramida é um antagonista D₂ que aumenta o esvaziamento gástrico ao remover a inibição dopaminérgica sobre o plexo entérico.
+  • Cisaprida (agonista 5-HT₄) intensifica a liberação de acetilcolina pelo plexo mioentérico, aumentando a motilidade e o esvaziamento gástrico.
+‎ 
+{C} -> Incorreta.
+  • Codeína e morfina (opioides) diminuem o esvaziamento gástrico e retardam o trânsito intestinal, pela ação sobre receptores μ no plexo entérico.
+‎ 
+{D} -> Incorreta.
+  • Atropina, como antimuscarínico, reduz a motilidade intestinal.
+  • Loperamida retarda o trânsito intestinal (embora o faça por ação opioide), não o acelera.
+‎ 
+{E} -> Incorreta.
+  • Bisacodil é laxativo estimulante e não afeta diretamente o esvaziamento gástrico, atuando sobretudo no cólon.
+  • Docusato é surfactante fecal (amolecedor) e não altera a taxa de esvaziamento gástrico.
+
+Q: Assinalar a alternativa que apresenta corretamente o mecanismo de ação de escopolamina (Buscopan®): 
+A) Age bloqueando os receptores muscarínicos da acetilcolina da musculatura lisa, impedindo a sua contração, diminuindo dor e desconforto gástrico.
+B) É uma pró-droga que, quando chega ao intestino, libera dois compostos que atuam na parede intestinal como um anti-inflamatório local.
+C) Age estimulando os receptores muscarínicos da acetilcolina da musculatura lisa, impedindo a sua contração, diminuindo dor e desconforto gástrico.
+D) Atua inibindo a enzima encefalinase, controlando os espasmos e diminuindo a dor e desconforto gástrico.
+G: A
+C: escopolamina (Buscopan®) é um anticolinérgico que atua como um antagonista competitivo nos receptores muscarínicos. Seu mecanismo de ação impede que a acetilcolina se ligue aos receptores muscarínicos presentes na musculatura lisa, o que reduz a contração muscular e alivia os espasmos, a dor e o desconforto gástrico associados a condições como cólicas intestinais ou uterinas.
+
+Q: Em geral, os antieméticos são classificados de acordo com os receptores predominantes nos quais provavelmente atuam. Assinale a opção que apresenta o antiemético classificado como antagonista do receptor da neurocinina.
+A) Ondasetrona.
+B) Metoclopramida.
+C) Ciclizina.
+D) Hioscina.
+E) Aprepitanto.
+G: E
+C: Os antagonistas dos receptores de neurocinina 1 (NK1) têm propriedades antieméticas, mediadas por meio do bloqueio central na área postrema. <b>Aprepitanto, netupitanto e rolapitanto</b> (não disponível no Brasil) (uso oral) são antagonistas altamente seletivos do receptor NK1, cruzam a barreira hematencefálica e atuam sobre o centro do vômito. Eles não têm afinidade para receptores de serotonina, dopamina ou corticosteroides. O netupitanto (300 mg) está disponível apenas em associação à palonosetrona (0,5 mg). O fosaprepitanto é um fármaco administrado por via intravenosa e convertido em aprepitanto após 30 minutos de sua infusão.
+‎ 
+Fonte: Katzung
+
+Q: Os anti-histamínicos podem ser clinicamente utilizados como antiemético, assim como para sedação e para o tratamento de reações alérgicas. Assinale a alternativa incorreta sobre o assunto.
+A) Fexofenadina
+B) Prometazina
+C) Cinarizina
+D) Bromoprida
+G: D
+C: A bromoprida estimula a motilidade do trato gastrintestinal aumentando o índice de esvaziamento gástrico. Possui também reconhecidas propriedades antieméticas. A principal ação da bromoprida está relacionada ao bloqueio dos receptores da dopamina-2 (D2) no sistema nervoso central e no trato gastrintestinal.
+
+Q: A metoclopramida é um antagonista do receptor D2 da dopamina e pode ser utilizada em pacientes que apresentam sintomas associados à alterações na motilidade gastrointestinal decorrentes da neuropatia autonômica que são frequentes em pacientes com diabetes mellitus tipo II mal controlado, e se constituem em importante causa de morbidade, uma vez que, os distúrbios da motilidade esofágica, gástrica ou intestinal levam a sintomas como por exemplo, náuseas, vômito e inchaço abdominal, característicos da gastroparesia diabética. Baseado no seu mecanismo de ação a metoclopramida é classificada como um:
+A) Agente alquilante. 
+B) Agente antimetabólito.
+C) Agente procinéticoe e agente antiemético.
+G: C
+
+Q: Um paciente apresentando dificuldade para deglutir, dores no peito e náuseas foi diagnosticado com esofagite de refluxo leve.
+Considerando essa situação hipotética, julgue o item que se segue em relação ao tratamento medicamentoso para esse tipo de doença.
+A domperidona é um fármaco antidopaminérgico que modifica a motilidade gastrointestinal e pode ser utilizado no tratamento da condição descrita acima.
+G: V
+C: A domperidona é um composto que torna mais rápida a movimentação do alimento através do esôfago, estômago e intestinos, de forma a que este não fique parado por muito tempo no mesmo local, o que evita assim o refluxo.

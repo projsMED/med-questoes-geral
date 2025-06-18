@@ -1,0 +1,207 @@
+Q: Qual das seguintes substâncias é liberada pelos neurônios no sistema GI e produz relaxamento da musculatura lisa?
+A) Secretina
+B) Gastrina
+C) Colecistoquinina (CCK)
+D) Peptídio intestinal vasoativo (VIP)
+E) Peptídio inibidor gástrico (GIP)
+G: D
+C: O peptídio intestinal vasoativo (PIV) é uma substância neurócrina GI que produz relaxamento da musculatura lisa GI. Por exemplo, o VIP medeia a resposta de relaxamento do esfíncter esofágico inferior quando um bolo alimentar se aproxima dele, permitindo a passagem do bolo para o estômago.
+
+Q: Qual o local de secreção do fator intrínseco?
+A) Antro gástrico
+B) Fundo gástrico
+C) Duodeno
+D) Íleo
+E) Cólon
+G: B
+C: O fator intrínseco é secretado pelas células parietais do fundo gástrico (assim como o HCl). Ele é absorvido, juntamente com a vitamina B12, no íleo.
+
+Q: Vibrio cholerae provoca diarreia, visto que:
+A) aumenta os canais secretores de HCO3 nas células epiteliais intestinais
+B) aumenta os canais secretores de Cl nas células das criptas
+C) impede a absorção de glicose e causa retenção isosmótica de água no lúmen intestinal
+D) inibe a produção de monofosfato cíclico de adenosina (cAMP) nas células epiteliais intestinais
+E) inibe a produção de inositol 1,4,5-trifosfato (IP3) nas células epiteliais intestinais
+G: B
+C: A toxina do cólera ativa a adenilato ciclase e aumenta os níveis de monofosfato cíclico de adenosina (cAMP) nas células das criptas intestinais. Nas células das criptas, o cAMP ativa os canais secretores de Cl e produz secreção primária de Cl , seguida do Na+ e da H2O.
+
+Q: A colecistoquinina (CCK) tem algumas propriedades semelhantes às da gastrina, visto que tanto a CCK quanto a gastrina:
+A) são liberadas pelas células G no estômago
+B) são liberadas pelas células I no duodeno
+C) são membros da família homóloga à secretina
+D) apresentam cinco aminoácidos C-terminais idênticos
+E) exibem 90% de homologia de seus aminoácidos
+G: D
+C: Os dois hormônios têm cinco aminoá cidos idênticos na extremidade C-ter-minal. A atividade biológica da colecistoquinina (CCK) está associada aos sete aminoácidos C-termi-nais, enquanto a da gastrina está associada aos quatro aminoá cidos C-terminais. Como esse heptapeptídio da CCK contém os cinco aminoácidos comuns, é lógico que a CCK deva ter algumas propriedades semelhantes às da gastrina. As células G secretam gastrina. As células I secretam CCK. A família da secretina inclui o glucagon.
+
+Q: Qual dos seguintes compostos é transportado nas células epiteliais intestinais por um processo de cotransporte dependente de Na+?
+A) Ácidos graxos
+B) Triglicerídios
+C) Frutose
+D) Alanina
+E) Oligopeptídios
+G: D
+C: A frutose é o único monossacarídio que não é absorvido por cotransporte dependente de Na+; ela é transportada por difusão facilitada. Os aminoá cidos são absorvidos por cotransporte dependente de Na+, mas não os oligopeptídios (unidades peptídicas maiores). Os triglicerídios não são absorvidos se não houver digestão adicional. Os produtos da digestão dos lipídios, como os ácidos graxos, são absorvidos por difusão simples.
+
+Q: Um paciente de 49 anos de idade com doen ça de Crohn grave não respondeu à terapia farmacológica e foi submetido à ressecção ileal. Depois da cirurgia, ele apresentará esteatorreia, pois:
+A) o reservatório hepático de ácidos biliares aumenta
+B) não há formação de quilomícrons no lúmen intestinal
+C) não há formação de micelas no lúmen intestinal
+D) os triglicerídios da dieta não podem ser digeridos
+E) o pâncreas não secreta lipase
+G: C
+C: A ressecção ileal remove a porção do intestino delgado que normalmente transporta os ácidos biliares a partir do lúmen intestinal, fazendo sua recirculação para o fígado. Como esse processo mantém o reservatório de ácidos biliares, a síntese de novos ácidos biliares só é necessária para repor aqueles que são perdidos nas fezes. Na ressecção ileal, os ácidos biliares secretados são, em sua maior parte, excretados nas fezes, e o reservatório hepático diminui significativamente. Os ácidos biliares são necessários para a formação das micelas no lúmen intestinal a fim de solubilizar os produtos da digestão dos lipídios, de modo que possam ser absorvidos. Os quilomícrons são formados dentro das células epiteliais intestinais e transportados até os vasos linfáticos.
+
+Q: A colecistoquinina (CCK) inibe:
+A) o esvaziamento gástrico
+B) a secreção pancreática de HCO3
+C) a secreção pancreática de enzimas
+D) a contração da vesícula biliar
+E) o relaxamento do esfíncter de Oddi
+G: A
+C: A colecistoquinina (CCK) inibe o esvaziamento gástrico e, portanto, ajuda a retardar a passagem do alimento do estômago para o intestino durante períodos de alta atividade digestiva. A CCK estimula ambas as funções do pâncreas exócrino: secreção de HCO3 e secreção de enzimas digestivas. Além disso, estimula a liberação de bile da ve sícula biliar para o lúmen do intestino delgado, causando contração da ve sícula biliar, enquanto relaxa o esfíncter de Oddi.
+
+Q: Qual dos seguintes itens abole o “relaxamento receptivo” do estômago?
+A) Estimulação parassimpática
+B) Estimulação simpática
+C) Vagotomia
+D) Administração de gastrina
+E) Administração de peptídio intestinal vasoativo (VIP)
+F) Administração de colecistoquinina (CCK)
+G: C
+C: O “relaxamento receptivo” da região cefálica do estômago é iniciado quando o alimento passa do esôfago para o estômago. Esse reflexo parassimpático (vagovagal) é abolido pela vagotomia.
+
+Q: Qual das seguintes substâncias tem sua secreção inibida por um pH baixo?
+A) Secretina
+B) Gastrina
+C) Colecistoquinina (CCK)
+D) Peptídio intestinal vasoativo (VIP)
+E) Peptídio inibidor gástrico (GIP)
+G: B
+C: A principal ação fisiológica da gastrina consiste em aumentar a secreção de H+. A secreção de H+ diminui o pH do conteú do gástrico. Por sua vez, a redução do pH inibe a secreção adicional de gastrina – um exemplo clássico de retroalimentação negativa.
+
+Q: Qual dos seguintes é o local de secreção da gastrina?
+A) Antro gástrico
+B) Fundo gástrico
+C) Duodeno
+D) Íleo
+E) Cólon
+G: A
+C: A gastrina é secretada pelas células G do antro gástrico. O HCl e o fator intrínseco são secretados pelo fundo gástrico.
+
+Q: A formação de micelas é necessária para a absorção intestinal de:
+A) glicerol
+B) galactose
+C) leucina
+D) ácidos biliares
+E) vitamina D
+G: E
+C: As micelas proporcionam um mecanismo para a solubilização dos nutrientes lipossolúveis na solução aquosa do lúmen intestinal até que os nutrientes possam entrar em contato com as células epiteliais intestinais e ser absorvidos por elas. Como a vitamina D é lipossolúvel, ela é absorvida da mesma forma que os outros lipídios da dieta. O glicerol é um produto da digestão dos lipídios, que é hidrossolúvel e que não é incluído nas micelas. A galactose e a leucina são absorvidas por cotransporte dependente de Na+. Embora os ácidos biliares sejam ingredientes essenciais das micelas, eles são absorvidos por um cotransportador específico dependente de Na+ no íleo. A vitamina B12 é hidrossolúvel; portanto, sua absorção não requer micelas.
+
+Q: Qual das seguintes alterações ocorre durante a defecação?
+A) Relaxamento do esfíncter interno do ânus
+B) Contração do esfíncter externo do ânus
+C) Relaxamento da musculatura lisa retal
+D) Pressão intra-abdominal mais baixa do que em repouso
+E) Predomínio das contrações segmentares
+G: A
+C: Tanto o esfíncter interno quanto o esfíncter externo do ânus precisam estar relaxados para que as fezes sejam expulsas do corpo. O músculo liso retal se contrai e a pressão intra-abdominal é elevada pela expiração contra a glote fechada (manobra de Valsalva). As contrações segmentares são proeminentes no intestino delgado durante a digestão e a absorção.
+
+Q: Qual das seguintes opções é característica da saliva?
+A) Hipotonicidade em relação ao plasma
+B) Concentração de HCO3 mais baixa que a do plasma
+C) Presença de proteases
+D) Aumento da taxa de secreção pela vagotomia
+E) A modificação pelas células ductais salivares envolve a reabsorção de K+ e HCO3
+G: A
+C: A saliva caracteriza-se por sua hipotonicidade e concentração elevada de HCO3 (em relação ao plasma) e pela presença de α-amilase e lipase lingual (mas não de proteases). A concentração elevada de HCO3 é alcançada por meio da secreção de HCO3 na saliva pelas células ductais (e não pela reabsorção de HCO3 ). Como o controle da produção de saliva é parassimpático, ele é abolido pela vagotomia.
+
+Q: Qual das seguintes substâncias é secretada em resposta a uma carga de glicose oral?
+A) Secretina
+B) Gastrina
+C) Colecistoquinina (CCK)
+D) Peptídio intestinal vasoativo (VIP)
+E) Peptídio insulinotrópico dependente de glicose (GIP)
+G: E
+C: O peptídio insulinotrópico dependente de glicose (GIP) é o único hormônio GI liberado em resposta a todas as três categorias de nutrientes (lipídios, proteí nas e carboidratos). A glicose oral libera GIP, que, por sua vez, causa a liberação de insulina pelo pâncreas endócrino. Essa ação do GIP explica por que a glicose oral é mais efetiva do que a intravenosa na liberação de insulina.
+
+Q: Qual das seguintes afirmações é verdadeira no que concerne à secreção do pân creas exócrino?
+A) Apresenta uma concentração de Cl mais alta que a do plasma
+B) É estimulada pela presença de HCO3 no duodeno
+C) A secreção pancreática de HCO3 é aumentada pela gastrina
+D) A secreção de enzimas pancreáticas é aumentada pela colecistoquinina (CCK)
+E) É hipotônica
+G: D
+C: O principal ânion das secreções pancreáticas é o HCO3 (encontrado em concentrações mais altas do que no plasma), enquanto a concentração de Cl é menor que a do plasma. A secreção pancreá tica é estimulada pela presença de ácidos graxos no duodeno. A secretina (mas não a gastrina) estimula a secreção pancreá tica de HCO3 , enquanto a colecistoquinina (CCK) estimula a secreção de enzimas pancreáticas. As secreções pancreáticas são sempre isotônicas, qualquer que seja a intensidade do fluxo.
+
+Q: Qual das seguintes substâncias deve ser digerida antes que possa ser absorvida por carreadores específicos nas células intestinais?
+A) Frutose
+B) Sacarose
+C) Alanina
+D) Dipeptídios
+E) Tripeptídios
+G: B
+C: Apenas os monossacarídios podem ser absorvidos pelas células epiteliais intestinais. Os dissacarídios, como a sacarose, precisam ser digeridos em monossacarídios antes de sua absorção. Por outro lado, as proteí nas são hidrolisadas em aminoá cidos, dipeptídios ou tripeptídios, e todas essas três formas são transportadas nas células intestinais para serem absorvidas.
+
+Q: As ondas lentas nas células musculares lisas do intestino delgado são:
+A) potenciais de ação
+B) contrações fásicas
+C) contrações tônicas
+D) potenciais de membrana de repouso oscilantes
+E) liberação oscilante de colecistoquinina (CCK)
+G: D
+C: As ondas lentas são potenciais de repouso da membrana oscilante do músculo liso GI. As ondas lentas fazem com que o potencial de membrana se aproxime ou alcance o limiar, mas elas próprias não são potenciais de ação. Se o potencial de membrana atingir o limiar por meio de uma onda lenta, então ocorrem potenciais de ação, seguidos de contração.
+
+Q: Um estudante universitário de 24 anos de idade participa de um estudo de pesquisa clínica sobre motilidade intestinal. A peristalse do intestino delgado:
+A) mistura o bolo alimentar
+B) é coordenada pelo sistema nervoso central (SNC)
+C) envolve a contração do músculo liso atrás e na frente do bolo alimentar
+D) envolve a contração do músculo liso atrás do bolo alimentar e o relaxamento do músculo liso na frente do bolo
+E) envolve o relaxamento simultâneo do músculo liso em todo o intestino delgado
+G: D
+C: A peristalse é a atividade contrátil coordenada pelo sistema nervoso entérico (mas não pelo sistema nervoso central [SNC]) e que impulsiona o conteúdo intestinal para a frente. Normalmente, ocorre após haver mistura, digestão e absorção suficientes. Para impulsionar o bolo alimentar para a frente, é preciso que haja contração simultânea do músculo liso atrás do bolo alimentar e relaxamento na sua frente.
+
+Q: Um paciente com úlcera duodenal é tratado com sucesso com o fármaco cimetidina. A base da inibição da secreção gástrica de H+ pela cimetidina é que ela:
+A) bloqueia os receptores muscarínicos nas células parietais
+B) bloqueia os receptores H2 nas células parietais
+C) aumenta os níveis intracelulares de monofosfato cíclico de adenosina (cAMP)
+D) bloqueia a H+/K+-adenosina trifosfatase (ATPase)
+E) intensifica a ação da acetilcolina (ACh) sobre as células parietais
+G: B
+C: A cimetidina é um inibidor reversível dos receptores H2 nas células parietais e bloqueia a secreção de H+. Seria esperada uma diminuição, e não um aumento, do monofosfato cíclico de adenosina (cAMP) (o segundo mensageiro da histamina). A cimetidina também bloqueia a ação da acetilcolina (ACh) para estimular a secreção de H+. O omeprazol bloqueia diretamente a H+/K+-adenosina trifosfatase (ATPase).
+
+Q: Qual das seguintes substâncias inibe o esvaziamento gástrico?
+A) Secretina
+B) Gastrina
+C) Colecistoquinina (CCK)
+D) Peptídio intestinal vasoativo (VIP)
+E) Peptídio inibidor gástrico (GIP)
+G: C
+C: A colecistoquinina (CCK) é o hormônio mais importante para a digestão e a absorção da gordura da dieta. Além de causar a contração da ve sícula biliar, ela inibe o esvaziamento gástrico. Consequentemente, o quimo passa mais lentamente do estômago para o intestino delgado, proporcionando, dessa maneira, mais tempo para a digestão e a absorção das gorduras.
+
+Q: Quando estimuladas, as células parietais secretam:
+A) HCl e fator intrínseco
+B) HCl e pepsinogênio
+C) HCl e HCO3
+D) HCO3 e fator intrínseco
+E) Muco e pepsinogênio
+G: A
+C: As células parietais gástricas secretam HCl e fator intrínseco. As células principais secretam pepsinogênio.
+
+Q: Uma mulher de 44 anos de idade é diagnosticada com síndrome de Zollinger-Ellison. Qual das seguintes alterações é consistente com o diagnóstico?
+A) Diminuição dos níveis séricos de gastrina
+B) Aumento dos níveis séricos de insulina
+C) Aumento da absorção dos lipídios da dieta
+D) Diminuição da massa de células parietais
+E) Doença ulcerosa péptica
+G: E
+C: A síndrome de Zollinger-Ellison (gastrinoma) é um tumor de células não β do pân creas. O tumor secreta gastrina, que circula até as células parietais gástricas para provocar aumento da secreção de H+, úlcera péptica e crescimento das células parietais (efeito trófico da gastrina). Como o tumor não acomete as células β pancreáticas, os níveis de insulina não são afetados. A absorção dos lipídios diminui (e não aumenta), visto que a secreção aumentada de H+ diminui o pH do lúmen intestinal e inativa as lipases pancreá ticas.
+
+Q: Em qual dos seguintes locais ocorre o cotransporte de Na+-ácidos biliares?
+A) Antro gástrico
+B) Fundo gástrico
+C) Duodeno
+D) Íleo
+E) Cólon
+G: D
+C: Os sais biliares recirculam para o fígado na circulação êntero-hepática por meio de um cotransportador de Na+- ácidos biliares no íleo do intestino delgado.

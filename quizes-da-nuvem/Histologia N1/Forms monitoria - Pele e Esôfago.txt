@@ -1,0 +1,209 @@
+Q: Assinale a alternativa INCORETA. 
+A) A epiderme é uma camada densa de fibras colágenas e elásticas entrelaçadas que proporcionam o tônus cutâneo e são responsáveis pela resistência e firmeza da pele.
+B) A contração dos músculos eretores dos pelos causa ereção dos pelos, deixando a pele arrepiada
+C) A pele é o maior órgão do corpo, formada pela epiderme, derme e uma camada profunda de tecido conjuntivo.
+D) A tela subcutânea está situada entre a derme e a fáscia muscular, e é formada por tecido conjuntivo frouxo e depósito de gordura, contém glândulas sudoríferas, vasos sanguíneos, linfáticos e nervos cutâneos.
+G: A
+C: Esse conceito é da DERME, e não da epiderme. A epiderme é a camada mais superficial da pele. É composta, principalmente, de um epitélio escamoso estratificado, ceratinizado que se renova continuamente. Além dos queratinócitos, outras células estão presentes na epiderme, como os melanócitos, células de Langerhans e células de Merkel. Já a derme é dividida em derme papilar (mais superficial) e derme reticular (mais profundA). Ela é composta de colágeno, fibras elásticas e substância fundamental (glicosaminoglicanos e ácido hialurônico).
+
+Q: O albinismo é causado por defeito na biossíntese e distribuição da melanina e pode estar associado à deficiência de:
+A) Sulfito oxidase
+B) Tirosinase
+C) Cistationina sintase
+D) Diidrolipoil desidrogenase
+G: B
+C: O albinismo oculocutâneo consiste em um grupo de distúrbios genéticos, caracterizado pela ausência parcial ou total de melanina no interior dos melanócitos da pele, folículos pilosos e olhos. São distúrbios autossômicos recessivos, classificados, atualmente, em quatro tipos. São decorrentes da ação ausente, reduzida ou defeituosa da tirosinase, enzima chave na síntese da melanina.
+
+Q: Assinale a alternativa INCORRETA:
+A) A epiderme é um tecido composto que consiste principalmente em epitélio escamoso estratificado, ceratinizado, que se renova continuamente.
+B) Os melanócitos são células derivadas da crista neural formadoras de pigmento melanina e estão presentes na epiderme e seus apêndices.
+C) A epiderme pode ser dividida em duas zonas, uma camada papilar superficial estreita e uma camada reticular mais profunda; o limite entre elas é indistinto.
+D) O bulbo piloso forma a porção mais inferior do epitélio folicular e encerra a papila pilosa dérmica de células de tecido conjuntivo.
+G: C
+C: A epiderme é dividida em 5 camadas: córnea, lúcida (região palmoplantar), granulosa, espinhosa e camada basal. A derme (região abaixo da epidermE) que é dividida em derme papilar (mais superficial) e derme reticular (mais profundA).
+
+Q: O esôfago possui 25 cm de comprimento e é órgão responsável por conectar a boca ao estômago. Acerca da histologia de suas camadas, assinale a alternativa correta:
+A) A mucosa esofágica é formada por epitélio pavimentoso queratinizado
+B) A submucosa é formado de tecido conjuntivo denso não modelado e contém fibras nervosas e células ganglionares que compõe o plexo de Auerbach
+C) A muscular externa consiste em duas camadas musculares: uma circular interna e uma longitudinal externa. Essa última, varia ao longo do esôfago, sendo formado de músculo estriado no terço superior, músculo estriado e liso no terço médio, e músculo liso no terço distal.
+D) O plexo de Meissner inerva a muscular externa e tem papel no peristaltismo
+E) Como só possui a função de transferir o alimento, o esôfago não secreta muco.
+G: C
+C: A <b>mucosa esofágica</b> é formado por epitélio estratificado parenquimatoso não queratinizado, possuindo também lâmina própria subjacente, semelhante às demais porções do canal alimentar.
+A <b>muscular da mucosa</b> é composta por músculo liso longitudinal que se inicia ao nível da cartilagem cricoidea e auxilia na deglutição. 
+A <b>submucosa</b> é formado de tecido conjuntivo denso não modelado e contém vasos sanguíneos e linfáticos, bem como fibras nervosas e células ganglionares (células nervosas) que compõe o plexo submucoso de Meissner. 
+A <b>muscular externa</b> é constituída de duas camadas: uma circular interna e uma longitudinal externa. A segunda difere do restante o trato digestório, pois o tipo de músculo varia ao longo do trajeto do esôfago. No terço proximal, ela é formada de músculo estriado; no terço médio, o músculo estriado e liso estão entremeados; enquanto no terço distal possui apenas músculo liso, como no restante do trato gastrointestinal. O plexo de Auerbach inerva a muscular externa, promovendo peristaltismo.
+A <b>camada adventícia</b> fixa o esôfago às estruturas ao longo da sua extensão e ao entrar na cavidade abdominal, ele é recoberta por serosa.
+O esôfago possui <b>glândulas produtoras de muco</b>: as glândulas esofágicas próprias da submucosa e as glândulas cárdicas esofágicas, estas últimas na lâmina própria da mucosa. Elas têm como função reduzir o pH alimentar e lubrificar o alimento para facilitar seu trânsito.
+
+Q: Quanto à epiderme, assinale a alternativa correta: 
+A) Na pele delgada, há abundante camada lúcida e camada córnea escassa.
+B) A camada basal possui queratinócitos, que também são conhecidos como células prismáticas ou cubóides, presentes na membrana basal entre a epiderme e a derme.
+C) Na camada espinhosa as células apresentam o formato achatado e com núcleo periférico e expansões citoplasmáticas que se unem através de desmossomas e dão à célula o aspecto espinhoso.
+D) As células da camada lúcida contém grânulos de querato-hialina, e secretam uma substância fosfolipídica que cria uma barreira impermeável.
+E) Na camada córnea há células-tronco responsáveis pela renovação epitelial, que dura em torno de 21 dias.
+G: B
+C:
+{A}) Errada. A pele delgada geralmente não possui camada lúcida e apresenta camada córnea muito delgada ou reduzida. A camada lúcida é característica da pele espessa, como na palma das mãos e planta dos pés.
+‎ 
+{B}) Correta. A camada basal realmente contém queratinócitos prismáticos ou cuboides, que ficam aderidos à membrana basal separando a epiderme da derme. Eles são responsáveis pela proliferação celular e renovação da epiderme.
+‎ 
+{C}) Errada. As células da camada espinhosa têm núcleo central, não periférico, e não são achatadas. São células maiores do que as da basal, com tonofilamentos e junções do tipo desmossomo, que dão o aspecto espinhoso visível nas lâminas histológicas.
+‎ 
+{D}) Errada. Os grânulos de querato-hialina estão presentes na camada granulosa, não na camada lúcida. A barreira lipídica que impede a perda de água é criada pelos grânulos lamelares, também presentes na camada granulosa.
+‎ 
+{E}) Errada. As células-tronco estão na camada basal (também chamada de camada germinativa), e não na camada córnea. A camada córnea é composta por células mortas, anucleadas, cheias de queratina. Além disso, o ciclo de renovação da epiderme dura de 15 a 30 dias, dependendo da região e da idade.
+
+Q: Assinale a alternativa que indica as sentenças FALSAS.
+I. O esôfago é um órgão tubular que conecta a laringe ao estômago;
+II. O lúmen esofágico tem aspecto irregular devido às pregas da mucosa e da submucosa, as quais se distendem enquanto o bolo alimentar atravessa o esôfago;
+III. O esôfago não se localiza, em nenhum segmento, na cavidade peritoneal;
+IV. A túnica adventícia reveste inteiramente o esôfago;
+V. Uma característica comum ao esôfago e ao duodeno e exclusiva em relação ao restante do trato digestório é a presença de glândulas na submucosa;
+A) I, II e III;
+B) I, II, III e V;
+C) II e V;
+D) I, III e IV;
+E) Todas são verdadeiras.
+G: D
+C:
+I. O esôfago é um órgão tubular que conecta a laringe ao estômago.
+❌ FALSA — O esôfago conecta a faringe, e não a laringe, ao estômago. A laringe faz parte do sistema respiratório.
+IV. ❌ FALSA — Isso é falso porque o esôfago possui adventícia em sua maior parte, mas no trecho intra-abdominal (curto segmento antes de entrar no estômago), ele é revestido por serosa, que é peritoneal.
+
+Q: Com relação à estrutura da pele, analise as afirmativas a seguir.
+I. A camada basal é composta por uma única fileira de queratinócitos justapostos lado a lado.
+II. A zona da membrana basal não possui componentes de origem dérmica.
+III. A derme reticular é composta principalmente por feixes densos de fibras colágenas do tipo I.
+Está(ão) correta(s) a(s) afirmativa(s):
+A) I, apenas.
+B) I e III, apenas.
+C) I e II, apenas.
+D) II e III, apenas.
+G: B
+C:
+I. A camada basal é composta por uma única fileira de queratinócitos justapostos lado a lado. VERDADEIRA. A camada basal é a estrutura composta por fila única que queratinócitos enfileirados. 
+II. A zona da membrana basal não possui componentes de origem dérmica. FALSA. A zona da membrana basal tem componentes tanto da epiderme quanto da derme. 
+III. A derme reticular é composta principalmente por feixes densos de fibras colágenas do tipo I. VERDADEIRA. A derme reticular é constituída de tecido conjuntivo denso. A derme é constituída das fibras colágenas e elásticas e da substância fundamental, sintetizada pelos f ibroblastos.  O predomínio, de fato, é de fibras colagenas do tipo I.
+
+Q: Sobre a pele, assinale a alternativa correta:
+A) A hipoderme é conhecida como tecido subcutâneo e possui grande quantidade de adipócitos. Suas principais funções são reservar energia, proteger contra choques e ser um isolante térmico.
+B) Além da pele espessa, também há pele delgada, presente na palma da mão e na planta dos pés.
+C) A derme está apoiada sobre a epiderme e é composta de tecido conjuntivo.
+D) Os pêlos são estruturas não queratinizadas que se originam no folículo piloso.
+E) O pigmento da tatuagem fica alojado na epiderme.
+G: A
+
+Q: Quanto às glândulas sebáceas, assinale a alternativa correta:
+A) Este tipo de glândula está presente apenas na palma das mãos e na planta dos pés.
+B) Estão situadas na derme e seus ductos, que são revestidos por epitélio estratificado, desembocam nos folículos pilosos. Em locais específicos, como lábios, glande e mamilos, os ductos se abrem na superfície da pele.
+C) Os ácinos produzem secreção de natureza proteica.
+D) São glândulas de secreção merócrina, pois suas células liberam apenas o produto de secreção de natureza lipídica.
+E) São responsáveis pela secreção apócrina rica em proteína, que se desenvolve durante a puberdade, presentes na axila, mamilo e região perineal.
+G: B
+C: 
+A alternativa {B} está correta. As glândulas sebáceas estão localizadas na derme, geralmente associadas a folículos pilosos, e liberam sua secreção oleosa (sebo) dentro do folículo piloso, que depois chega à superfície da pele. Porém, em algumas regiões sem pelos (como lábios, glande, mamilos), os ductos das glândulas sebáceas desembocam diretamente na superfície da pele. O ducto é, de fato, revestido por epitélio estratificado.
+A alternativa {A} está errada. Glândulas sebáceas não estão presentes na palma das mãos e planta dos pés. Essas regiões possuem glândulas sudoríparas écrinas, não sebáceas.
+A alternativa {C} está errada. As glândulas sebáceas não produzem secreção proteica, mas sim lipídica (o sebo, composto por triglicerídeos, ésteres de cera, esqualeno, entre outros lipídios).
+A alternativa {D} está errada. As glândulas sebáceas são de secreção holócrina, ou seja, a célula inteira se desintegra para liberar seu conteúdo (sebo). A secreção merócrina é típica das glândulas sudoríparas écrinas, não das sebáceas.
+A alternativa {E} está errada. A descrição é compatível com glândulas sudoríparas apócrinas, não com as sebáceas. As apócrinas também se desenvolvem na puberdade e estão presentes em axilas, mamilos e períneo, mas sua secreção é rica em proteínas, enquanto as sebáceas produzem sebo (lipídico).
+
+Q: Quanto aos melanócitos e doenças relacionadas à função dessas células, assinale a alternativa incorreta:
+A) Os melanócitos sintetizam melanina, um pigmento de cor marrom escura.
+B) O albinismo resulta da incapacidade dos melanócitos de produzirem melanina, causada pela ausência da atividade da tirosinase ou falha no transporte de tirosina. Essa é uma condição hereditária.
+C) Tumores de pele são mais frequentes em indivíduos que possuem albinismo do que em pessoas normais.
+D) As vesículas nas quais a melanina se acumula são chamadas de melanossomas.
+E) O vitiligo é causado pela degeneração dos melanócitos, o que leva a uma hiperpigmentação da pele.
+G: E
+C: O vitiligo é causado pela degeneração ou destruição dos melanócitos, mas isso resulta em <b>áreas de despigmentação</b> (hipopigmentação), e não hiperpigmentação da pele.
+
+Q: No início do esôfago, a muscular externa é constituída por músculo estriado. No terço médio do esôfago, este músculo é gradativamente substituído por músculo liso, que também está presente nas demais partes do tubo digestório.
+Responda corretamente de acordo com a numeração.
+https://andrehero007.github.io/quiz-images/laminas-histo/img3000.png
+A) 3) Epitélio estratificado pavimentoso
+B) 4) células musculares lisas dispostas transversalmente
+C) 5) Submucosa
+D) 2) Papilas do tecido conectivo
+G: C
+C:
+O epitélio (1)  
+Papilas do tecido conectivo (2) 
+Lâmina própria subjacente (3) 
+A muscular da mucosa (4) 
+A submucosa (5)  
+Glândulas submucosas (6)  
+Parte da glândula com seus alvéolos (7)  
+O ducto menor (epitélio simples cúbico) (8) 
+O ducto maior (epitélio estratificado cúbico) (9) 
+As células musculares lisas da camada circular dispostas longitudinalmente (10) 
+As células musculares lisas da camada longitudinal dispostas transversalmente (11)
+
+Q: O esôfago, o primeiro segmento do tubo digestório, se estende da orofaringe até o estômago. Não apresenta outra função principal além de servir como um canal.  
+Sabendo disso, marque a alternativa que corresponde a numeração correta:
+https://andrehero007.github.io/quiz-images/laminas-histo/img3001.png
+A) 3) Lúmen
+B) 2) Epitélio estratificado pavimentoso
+C) 6) Camada externa longitudinal de músculo liso
+D) 7) Camada interna circular de músculo liso
+G: B
+C:
+lúmen (1)  
+epitélio da mucosa (2)
+submucosa (3) 
+glândulas mucosas (4) 
+a muscular externa (5) 
+camada interna circular de músculo liso (6) 
+camada longitudinal externa (7) 
+a adventícia (8) 
+
+QCH: A pele ou tegumento recobre a superfície externa do corpo. É composta de duas camadas principais:
+• Epiderme, um epitélio estratificado pavimentoso queratinizado.
+• Derme, o tecido conectivo subjacente.  
+Sabendo disso, marque a(s) alternativa(s) que corresponde(m) a numeração correta:
+https://andrehero007.github.io/quiz-images/laminas-histo/img3002.png
+NO-RANDOM: TRUE
+A1: 1) Epiderme
+G: V
+A2: 2) Hipoderme
+G: F
+A3: 3) Derme
+G: F
+A4: 4) Corpúsculos de Vater-Pacini
+G: V
+C: <br> <br>
+GABARITO:
+epiderme (1).  
+derme (2)  
+hipoderme (3) 
+corpúsculos de Vater-Pacini (4) 
+tecido adiposo (5). 
+
+Q: A pele (cútis ou tegumento) e seus derivados constituem o sistema tegumentar. A pele forma a cobertura externa do corpo e representa externa do corpo e representa o seu maior órgão, constituindo 15 a 20% da massa total.
+Sabendo disso, marque a alternativa que corresponde a numeração correta:
+https://andrehero007.github.io/quiz-images/laminas-histo/img3003.png
+A) 2) cone epidérmico
+B) 3) tecido adiposo
+C) 5) cristas epidérmicas
+D) 8) corpúsculos de Vater-Pacini
+G: D
+C:
+epiderme (1) 
+derme (2) 
+hipoderme (3) 
+cristas epidérmicas (4) 
+cone epidérmico (5) 
+glândulas sebáceas (6) 
+tecido adiposo (7) 
+corpúsculo de Vater-Pacini (8)
+
+Q: O esôfago de Barret é uma condição pré-maligna associada à doença do refluxo gastroesofágico (DRGE), que se define como a presença de epitélio colunar no esôfago distal. Essa alteração é conhecida por:
+A) Metaplasia intestinal.
+B) metaplastia esofágica.
+C) Displasia esofágica.
+D) Displasia intestinal.
+G: A
+C: 
+{A}) CORRETA: Trata-se da metaplasia intestinal, ou seja, a transformação do epitélio escamoso nativo do esôfago por epitélio glandular do tipo intestinal, rico em células caliciformes. E esse “novo” epitélio glandular consegue se defender melhor do estímulo inflamatório proveniente do refluxo, porém é mais susceptível a falhas de replicação celular, com o surgimento de displasias, lesões precursoras do adenocarcinoma esofágico. 
+{B}) INCORRETA: Metaplasia é a troca de um epitélio por outro e normalmente indicamos qual o t ipo de epitélio “novo” encontrado no tecido logo após a palavra “metaplasia”. Exemplo, metaplasia “intestinal”, então o tecido original agora se transformou em tecido intestinal. Metaplasia “gástrica”: subentende-se que estamos num órgão que não é o estômago e o tecido original daquele órgão agora se aparece com o tecido gástrico. Por isso, essa alternativa está errada. Não faz nenhum sentido que ocorra uma metaplasia “esofágica” dentro do esôfago. 
+{C}) INCORRETA: Displasia não faz parte da definição do Esôfago de Barrett, mas é um achado que pode estar presente nesse epitélio, sinalizando que a via carcinogênica já foi ativada e devemos optar por alguma técnica para erradicar a área metaplásica. 
+{D}) INCORRETA: Displasia intestinal, como o próprio nome diz, ocorre no intestino, aumentando o risco de adenocarcinoma e não tem nada a ver com essa questão atual.

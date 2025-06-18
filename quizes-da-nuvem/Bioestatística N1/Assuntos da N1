@@ -1,0 +1,282 @@
+Q: Sobre a organização de dados qualitativos, assinale V ou F para a assertiva a seguir e as assertivas da questão <strong>2 a 9</strong>.
+"Gráficos são úteis quando se deseja destacar uma tendência ou comportamento de uma dada variável"
+G: V
+
+Q: O gráfico de barras expressa a frequência de ocorrência de cada categoria de uma variável categórica ou numérica contínua.
+G: F
+C: O gráfico de barras <b>não é usado para variáveis numéricas contínuas</b>. Ele é usado para <b>variáveis categóricas (nominais ou ordinais)</b>. Dados contínuos geralmente usam histogramas (representam distribuições de variáveis contínuas com barras adjacentes (sem espaços), onde cada barra representa um intervalo de valores).
+
+Q: O gráfico de setores é utilizado para avaliar a frequência de ocorrência das categorias de uma variável categórica (geralmente nominal).
+G: V
+
+Q: Tabelas de frequência simples são usadas em variáveis quantitativa numéricas ou qualitativa categóricas. Já tabelas de contingência são usadas em variáveis qualitativas categóricas.
+G: V
+C: As tabelas de frequência simples são adequadas tanto para variáveis quantitativas numéricas (contínuas ou discretas) quanto para variáveis qualitativas categóricas (nominais ou ordinais), organizando os dados em uma única dimensão. Já as tabelas de contingência são específicas para analisar relações entre duas ou mais variáveis qualitativas categóricas.
+Exemplos:
+Tabela de frequência simples para variável quantitativa numérica: Distribuição de pacientes por idade: 0-20 anos (15 pacientes), 21-40 anos (45 pacientes), etc.
+Tabela de frequência simples para variável qualitativa categórica: Distribuição de pacientes por tipo sanguíneo: A (120), B (80), AB (30), O (170).
+Tabela de contingência (para duas variáveis qualitativas categóricas): Relação entre gênero (masculino/feminino) e diagnóstico (positivo/negativo), mostrando a frequência em cada combiação de categorias.
+
+Q: Uma tabela que expressa, em escala Likert de 5 categorias, a frequência de dor de cabeça em mulheres é uma tabela de contingência.
+G: F
+C: Essa é uma tabela de frequência simples, não de contingência, porque só há uma variável (a dor de cabeça em escala Likert) não cruzada com nenhuma outra. Uma tabela de contingência é usada para mostrar a relação entre duas ou mais variáveis categóricas. Por exemplo, poderia mostrar a relação entre "Frequência de Dor de Cabeça" (escala Likert de 5 categorias) e "Faixa Etária". A tabela que a assertiva descreve é de frequência simples com uma variavel, um exemplo:
+https://AndreHero007.github.io/quiz-images/Frequencia-simples-tabela.png
+Se fosse de contingência, poderia ser desse jeito:
+https://AndreHero007.github.io/quiz-images/contingencia2323.png
+Lembre-se também que tabelas de frequência simples podem ter mais de uma variavel, mas nesse caso não vão estar associadas e sim apenas listadas, como no exemplo abaixo:
+https://AndreHero007.github.io/quiz-images/Fsimplesmaisvariavel.jpg
+
+Q: Uma tabela que expressa a relação entre presença ou ausência de câncer de pulmão e tabagismo é uma tabela de contingência 2x2.
+G: V
+C: Pois relaciona duas variáveis em formato cruzado. Exemplo:
+https://AndreHero007.github.io/quiz-images/presen%C3%A7a%20ou%20aus%C3%AAncia%20de%20c%C3%A2ncer%20de%20pulm%C3%A3o%20e%20tabagismo.png
+
+Q: Uma tabela que expressa a relação entre a presença ou ausência de determinada doença e o tipo sanguíneo (A, B, AB e O) é uma tabela de contingência 2x4.
+G: V
+C: Exemplo: Uma tabela de contingência 2x4 é aquela que cruza duas variáveis categóricas, sendo que uma variável tem 2 categorias e a outra tem 4 categorias. No caso da assertiva:
+- A primeira variável tem 2 categorias: presença ou ausência da doença
+- A segunda variável tem 4 categorias: tipos sanguíneos A, B, AB e O.
+Exemplo:
+https://AndreHero007.github.io/quiz-images/presen%C3%A7a%20ou%20aus%C3%AAncia%20de%20determinada%20doen%C3%A7a%20e%20o%20tipo%20sangu%C3%ADneo.png
+
+Q: Uma tabela que expressa a relação entre a variável <b>estado de infecção</b> de categorias "sintomática", "assintomática" e "sem infecção" com a variável <b>tipo sanguíneo</b> de categorias A, B, AB e O é uma tabela de contingência 2x4
+G: F
+C: Uma tabela que relaciona o estado de infecção (com 3 categorias: "sintomática", "assintomática" e "sem infecção") com o tipo sanguíneo (com 4 categorias: A, B, AB e O) seria uma tabela de contingência 3×4, não 2×4.
+Para ser uma tabela de contingência 2×4, a primeira variável precisaria ter apenas 2 categorias, não 3. Exemplo da tabela citada na assertiva:
+https://AndreHero007.github.io/quiz-images/conting%C3%AAncia-3%C3%974-2323.png
+
+Q: A tabela de frequência simples é o tipo de tabela mais útil para analisar os efeitos de um fator de risco na incidência de uma doença.
+G: F
+C: A tabela de contingência é o tipo mais útil para analisar os efeitos de um fator de risco na incidência de uma doença, pois ela permite relacionar variáveis categóricas (doença e fator de risco), enquanto a tabela de frequência simples apenas mostra categorias de uma mesma variável (exemplo: número de hipertensos por faixa etária doentes)
+
+Q: A tabela a seguir mostra a densidade de incidência de AVC em três grupos de pessoas: Que nunca fumaram, ex-fumantes e fumantes, juntamente com o IC95% de cada densidade de incidência. Com base nos valores de IC95%, interprete a tabela e assinale V ou F para a afirmativa abaixo e para as afirmativas da questão <strong>11 e 12</strong>.
+https://AndreHero007.github.io/quiz-images/densidade%20de%20incid%C3%AAncia%20de%20AVC%20em%20tr%C3%AAs%20grupos%20de%20pessoas.png
+Assertiva:
+"Entre não fumantes ("nunca fumou") e ex-fumantes, há diferença estatisticamente significativa na incidência de AVC"
+G: F
+C: Para analisar se existe uma diferença estatisticamente significativa entre duas incidências é necessário verificar se os valores dos intervalos de confiança delas se soprepõe. No caso dessa assertiva, os intervalos se sobrepõem (O valor 2,11 do IC do grupo ex-fumante está contido no intervalo “1,36;2,18” do grupo que nunca fumou), portanto não há diferença estatisticamente significativa entre não fumantes e ex‑fumantes.
+
+Q: Entre ex-fumantes e fumantes, não há diferença estatisticamente significativa na incidência de AVC.
+G: F
+C: Os intervalos para ex-fumantes e fumantes não se sobrepõem, logo existe diferença estatisticamente significativa.
+
+Q: Entre não fumantes ("nunca fumou") e fumantes há diferença estatisticamente significativa na incidência de AVC.
+G: V
+C: Sem sobreposição, indicando diferença estatisticamente significativa entre não fumantes e fumantes.
+
+Q: Um estudo observacional cujo objetivo foi avaliar se a ocorrência de osteoporose está relacionada com o sexo do indivíduo. Para este estudo, os pesquisadores selecionaram uma amostra de 100 homens com mais de 50 anos e uma amostra de 200 mulheres com as mesmas características. Observou-se que 10 homens e 40 mulheres tinham algum grau de osteoporose. O pesquisador criou uma tabela e calculou o IC95% para a incidência em cada sexo. Sobre os resultados mostrados na tabela, julgue como V ou F a assertiva a seguir e as assertivas das questões <strong>14 a 16</strong>.
+https://AndreHero007.github.io/quiz-images/ocorr%C3%AAncia%20de%20osteoporose%20est%C3%A1%20relacionada%20com%20o%20sexo%20do%20indiv%C3%ADduo.png
+Assertiva:
+"A variável “osteoporose” na tabela é do tipo dicotômica"
+G: V
+C: Pois a variável osteoporose possui apenas duas categorias: Sim ou não.
+
+Q: Nesse estudo, o dado de incidência de osteoporose em homens é mais estatisticamente preciso/confiável que o dado de incidência de osteoporose em mulheres.
+G: F
+C: Para julgar essa precisamos calcular a largura do IC em homens e a largura do IC em mulheres:
+-> Homens: IC95% 15,88 menos 4,12 → largura ≈ 11,76
+-> Mulheres: IC95% 25,54 menos 14,46 → largura ≈ 11,08
+Como o IC das mulheres é ligeiramente mais estreito, é essa estimativa que é mais precisa. Isso é devido ao tamanho amostral, pois nesse estudo a amostra de mulheres é de 200, enquanto a de homens é de 100. O tamanho amostral feminino ser maior resulta em maior precisão no dado de incidência de osteoporose em mulheres.
+
+Q: A tabela é uma tabela de contingência 2x2.
+G: V
+C: Temos duas variáveis dicotômicas (sexo e osteoporose), cruzadas em uma tabela com 2 linhas × 2 colunas.
+
+Q: Com base na tabela, pode-se afirmar que a incidência de osteoporose em homens é estatisticamente diferente da incidência de osteoporose em mulheres.
+G: F
+C: Há sobreposição entre os dois intervalos, portanto não podemos afirmar que há diferença estatisticamente significativa entre os sexos.
+
+Q: A tabela a seguir representa um estudo que analisa a relação entre o fator de risco obesidade e a presença de diabetes tipo 2. Sobre os dados da tabela, responda a pergunta abaixo e as perguntas <strong>18 a 20</strong> sobre medidas de frequência e calcule-as.
+https://AndreHero007.github.io/quiz-images/rela%C3%A7%C3%A3o%20entre%20o%20fator%20de%20risco%20obesidade%20e%20a%20presen%C3%A7a%20de%20diabetes%20tipo%202.png
+Pergunta:
+O pesquisador deseja saber a diferença de risco entre expostos e não expostos em pontos percentuais. Qual das medidas de frequência absolutas a seguir ele deve calcular?
+A) Risco atribuível.
+B) Risco atribuível na população.
+C) Porcentagem de risco atribuível.
+D) Porcentagem de risco atribuível na população.
+E) População exposta.
+G: A
+C: A diferença de risco entre expostos e não expostos (em pontos percentuais) é exatamente o que define o risco atribuível (AR). Ele mostra o quanto maior é o risco entre os expostos em comparação aos não expostos, de forma absoluta. No caso da tabela, matematicamente o risco atribuível é <b>a diferença entre a incidência de diabetes entre expostos (com obesidade) e entre não expostos (sem obesidade)</b>. Vamos calcular:
+Incidência em expostos (pessoas com obesidade e diabetes): 320 / 1120 = 0,2857 ou 28,5%
+Incidência em não expostos (pessoas sem obesidade e com diabetes): 220 / 1170 = 0,1880 ou 18,8%
+Risco atribuível: 0,2857 - 0,1880 = 0,0977 ou 9,7%
+Então pessoas com obesidade tem 9,7% mais pontos percentuais de incidência de diabates do que não expostos.
+
+Q: O pesquisador deseja saber qual a porcentagem de diabetes pode ser atribuída a obesidade entre obesos com diabetes. Qual das medidas de frequência absolutas a seguir ele deve calcular?
+A) Risco atribuível.
+B) Risco atribuível na população.
+C) Porcentagem de risco atribuível.
+D) Porcentagem de risco atribuível na população.
+E) População exposta.
+G: C
+C: Essa é a definição da porcentagem de risco atribuível (AR%), que mostra a proporção dos casos (diabetes) entre os expostos (obesos) que podem ser atribuídos ao fator de risco (obesidade). Ou seja, “entre os obesos com diabetes, que porcentagem teve a diabetes por causa da obesidade?”. No caso da tabela, matematicamente a porcentagem de risco atribuível é simplesmente o <b>risco atribuível dividido pela incidência de diabetes entre expostos ao fator de risco (obesos)</b>. Vamos calcular:
+Risco atribuível: 9,7%.
+Incidência de diabetes entre obesos: 28,5%.
+Porcentagem de risco atribuível: 9,7 / 28,5 = 0,34 ou 34%
+O que isso signitiva? Que 34% das pessoas obesas com diabates (320 pessoas no estudo) tem diabates POR CAUSA da obesidade.
+
+Q: O pesquisador deseja saber quanto do risco total de diabetes na população total se deve a obesidade. Qual das medidas de frequência absolutas a seguir ele deve calcular?
+A) Risco atribuível.
+B) Risco atribuível na população.
+C) Porcentagem de risco atribuível.
+D) Porcentagem de risco atribuível na população.
+E) População exposta.
+G: B
+C: O risco atribuível na população (PAR) mede quanto do risco total da população é causado pelo fator de risco (obesidade). Ele é a diferença da incidência total de diabates na população com a incidência de diabates entre não expostos. No caso da tabela, matematicamente é <b>a diferença entre a incidência de diabetes na população total e a incidência entre não obesos</b>. Vamos calcular:
+	Incidência na população total: 540 / 2290 = 0,2358 ou 23,6%.
+	Incidência entre não expostos (não obesos): 220 / 1170 = 0,1880 ou 18,8%.
+	Risco atribuível na população: 23,6% - 18,8% = 4,8%.
+O que isso signitiva? Significa que 4.8% da população do estudo (2290 pessoas) tem diabetes por causa da obesidade.
+
+Q: O pesquisador deseja saber qual porcentagem dos casos de diabetes na população total poderia ser evitada se ninguém fosse obeso. Qual das medidas de frequência absolutas a seguir ele deve calcular?
+A) Risco atribuível.
+B) Risco atribuível na população.
+C) Porcentagem de risco atribuível.
+D) Porcentagem de risco atribuível na população.
+E) População exposta.
+G: D
+C: A porcentagem de risco atribuível na população (PAR%) mostra a fração dos casos de doença (diabates) que poderiam ser evitados se o fator de risco (obesidade) fosse eliminado. No caso da tabela, matematicamente é o <b>risco atribuível na população dividido pela incidência total na população</b>. Vamos calcular:
+Risco atribuível na população: 4,8%.
+Incidência de diabetes na população total: 540 / 2290 = 0,2358 ou 23,5%.
+Porcentagem de risco atribuível na população: 4,8 / 23,5 = 0,2042 ou 20,4%.
+O que isso signitiva? Significa que se não houvesse obesidade, 20,4% dos casos de diabates na população (540 casos no estudo) seriam evitados. Podemos até calcular a quantidade desses casos, basta multiplicar 0,204 pela população com diabates (540) pessoas:
+0,204 * 540 = Aproximadamente 110 pessoas.
+Então se não houvesse obesidade, 110 pessoas dessa população não teriam diabates.
+
+Q: A tabela a seguir possuí dados da associação entre apneia obstrutiva do sono (AOS) e hipertensão arterial. O pesquisador também calculou várias medidas de risco absolutas. Com base na tabela e nos resultados dos cálculos, julgue a assertiva a seguir como V ou F e também as assertivas das questões <strong>22 a 32</strong>.
+https://AndreHero007.github.io/quiz-images/associa%C3%A7%C3%A3o%20entre%20apneia%20obstrutiva%20do%20sono%20(AOS)%20e%20hipertens%C3%A3o%20arterial.png
+Assertiva:
+"Hipertensão arterial é o fator de risco analisado"
+G: F
+C: "Hipertensão arterial" é o desfecho (doença), e não o fator de risco. Aqui o fator de risco é a apneia obstrutiva do sono (AOS), e a hipertensão é o evento que se quer explicar pela AOS.
+
+Q: O risco atribuído de “0,14712” indica que há uma diferença bruta de cerca de 14% entre a incidência de hipertensão em pessoas com o fator de risco e a incidência de hipertensão entre pessoas sem o fator de risco.
+G: V
+C: O “risco atribuível” de 0,14712 é a diferença absoluta entre as incidências de hipertensão em expostos e não expostos.
+Incidência em expostos (AOS): 63 / 158 ≈ 0,3987
+Incidência em não expostos (sem AOS): 78 / 310 ≈ 0,2516
+Diferença (AR): 0,3987 − 0,2516 = 0,1471 ≈ 14,7 pontos percentuais
+
+Q: Se o limite inferior do intervalo de confiança do risco atribuível fosse 0, isso significaria que o risco não é estatisticamente significativo.
+G: V
+C: Se o limite inferior do intervalo de confiança (IC) do risco atribuível fosse igual a 0, isso implicaria que o IC inclui zero, ou seja, não há diferença estatisticamente significativa entre expostos e não expostos.
+
+Q: Se o limite inferior do intervalo de confiança do risco atribuível fosse menor que 0, isso significa que a associação é máxima.
+G: F
+C: Um limite inferior do IC menor que 0 não significa que a associação é máxima, mas sim que pode haver efeito protetor ou que não se consegue descartar até mesmo risco negativo (ausência de associação positiva). Então, devido a essa incerteza, <b>a conclusão continuaria sendo de que não há diferença estatisticamente significativa.</b>
+
+Q: A população exposta representa o percentual da população total exposta ao fator de risco.
+G: V
+C: "População exposta" = 33,76068% é justamente o percentual da população total (158 / 468 × 100) que está exposta ao fator de risco (AOS).
+
+Q: Em termos práticos, de cada 158 indivíduos com AOS, aproximadamente 23 casos de hipertensão podem ser atribuídos diretamente à presença da AOS.
+G: V
+C: Se queremos saber quantas pessoas do grupo expostos (grupo com AOS) tem a doença (hipertensão) por causa do AOS, podemos calcular usando o risco atribuído. De acordo com os resultados mostrados na imagem, o risco atribuído é 0,14712 (14,71%). Então para saber a quantidade de casos de hipertensão em pessoas com AOS causados pela presenção de AOS, basta multiplicar essa porcentagem pela quantidade de pessoas com AOS (158):
+0,14712 × 158 ≈ 23 casos.
+Então <b>23 das 158 pessoas expostas ao fator de risco (AOS) tem hipertensão por causa do AOS</b>.
+
+Q: A porcentagem de risco atribuível na população (16,49%) mostra que, se ninguém tivesse AOS, aproximadamente 16% dos casos de hipertensão na população com diabetes (16% de 141 casos) poderiam ser evitados.
+G: V
+C: A porcentagem de risco atribuível na população (PAF) de 16,49% indica que, se ninguém tivesse AOS, poderíamos evitar cerca de 16% dos casos de hipertensão na população que tem hipertensão (141 pessoas).
+
+Q: O risco atribuível da população de 0.04967 indica que cerca de 5% dos casos de hipertensão em expostos é devido a AOS.
+G: F
+C: O valor 0,04967 corresponde ao risco atribuível na população (PAR), que representa a diferença entre a incidência total na população e a incidência nos não expostos. Ele mede o impacto do fator de risco na população como um todo, não apenas nos expostos. Então o certo seria dizer: <b>O risco atribuível da população de 0,04967 indica que cerca de 5% dos casos de hipertensão na população total (468 indivíduos) são devidos à AOS</b>.
+
+Q: Como se trata de um estudo observacional em vez de caso controle, o valor calculado de risco relativo não pode ser usado pelo pesquisador, em vez disso a medida mais adequada seria razão de chance (odds ratio).
+G: F
+C: Explicação do gabarito:
+Em estudos observacionais do tipo coorte, como é o caso apresentado no enunciado, a medida adequada para comparar a ocorrência da doença entre expostos e não expostos é o risco relativo (RR). O risco relativo mede a probabilidade de ocorrência do desfecho nos expostos em relação aos não expostos ao longo do tempo. Já a razão de chances (odds ratio) é a medida mais apropriada para estudos do tipo caso-controle, nos quais os participantes são selecionados com base na presença ou ausência do desfecho, impossibilitando o cálculo direto de riscos. No enunciado da questão, foi informado que o estudo é observacional, mas não se trata de um caso-controle, pois não houve seleção dos participantes a partir do status da doença (hipertensão). Em vez disso, o pesquisador observou ao longo do tempo se quem tinha apneia obstrutiva do sono (AOS) desenvolveria ou não hipertensão. Portanto, o cálculo do risco relativo é adequado nesta situação.
+Revisão:
+<b> 1. Existem três principais tipos de estudos observacionais: coorte, caso-controle e transversal.</b> Em estudos de <b>coorte</b>, os indivíduos são acompanhados ao longo do tempo a partir da exposição, para verificar a ocorrência do desfecho (doença). No <b>caso-controle</b>, a seleção dos participantes ocorre com base no desfecho já ocorrido, ou seja, parte-se de quem já tem e quem não tem a doença, para então investigar exposições passadas. Já no estudo <b>transversal</b>, tanto a exposição quanto o desfecho são avaliados simultaneamente em um único momento, sem acompanhamento no tempo, oferecendo um retrato da situação naquele instante.
+<b> 2. Cada tipo de estudo está associado a uma medida de associação mais adequada.</b> Em estudos de <b>coorte</b>, utiliza-se preferencialmente o <b>risco relativo (RR)</b>, que compara o risco de desfecho entre expostos e não expostos ao longo do tempo. Em estudos de <b>caso-controle</b>, a medida adequada é a <b>razão de chances (odds ratio, OR)</b>, já que o risco absoluto não pode ser calculado diretamente. Por fim, nos estudos <b>transversais</b>, como a coleta é feita em um único momento, a medida mais apropriada é a <b>razão de prevalência (RP)</b>, que compara a prevalência da doença entre os grupos expostos e não expostos.
+<b> 3. O modo como o pesquisador seleciona os participantes também varia conforme o tipo de estudo.</b> Nos estudos de <b>coorte</b>, como o descrito no enunciado, o pesquisador selecionou os participantes com base na <b>exposição</b>: ele escolheu <b>158 indivíduos com apneia obstrutiva do sono (AOS)</b> e <b>310 indivíduos sem AOS</b>, e acompanhou ambos os grupos ao longo do tempo para observar quem desenvolveria hipertensão. Se o estudo fosse do tipo <b>caso-controle</b>, o pesquisador teria selecionado os participantes com base no <b>desfecho</b>: teria começado pelos <b>141 hipertensos (casos)</b> e pelos <b>327 não hipertensos (controles)</b> da tabela, investigando depois a presença ou ausência de AOS no passado. Já se fosse um estudo <b>transversal</b>, o pesquisador teria selecionado <b>todos os 468 indivíduos</b> da amostra ao mesmo tempo, <b>sem se importar previamente</b> com a exposição ou com o desfecho, avaliando em um único momento quem tinha AOS e quem tinha hipertensão.
+
+Q: O risco relativo de 1.58 significa que pessoas com apneia obstrutiva do sono tem cerca de 1.6 vezes mais chances de ter hipertensão do que pessoas sem apenia obstrutiva do sono.
+G: V
+C: Lembre-se:
+<b>Risco relativo maior que 1:</b> É de fato fator de risco. Exemplo: AOS é um fator de risco para hipertensão. Essa é a conclusão do estudo.
+<b>Risco relativo igual a 1:</b> Não tem relação. Exemplo: Não há associação entre o fator de risco (AOS) e o desfecho (hipertensão). Não é o caso do estudo.
+<b>Risco relativo menor que 1:</b> É, na verdade, fator de proteção. Exemplo: AOS é fator de proteção para hipertensão. Não é o caso do estudo.
+Lembrando que para decidir qual dessas três conclusões é a correta é sempre mais preciso analisar o intervalo de confiança do risco relativo, para verificar se ele inclui ou não o valor 1.
+
+Q: O intervalo de confiança do risco relativo é de 1.20 a 2.07, o que indica que AOS não é um risco estatisticamente significativo para hipertensão.
+G: F
+C: Quando analisamos um intervalo de confiança para determinar significância estatística, observamos se o valor 1 (que representa ausência de associação) está incluído neste intervalo.
+Neste caso, como o intervalo de confiança (1,20 a 2,07) não inclui o valor 1, isso indica que o risco relativo é estatisticamente significativo. Ou seja, podemos afirmar com confiança estatística que existe sim uma associação positiva entre apneia obstrutiva do sono (AOS) e hipertensão arterial.
+
+Q: Neste estudo, o pesquisador selecionou indivíduos com e sem hipertensão arterial e, a partir disso, investigou a presença prévia de apneia obstrutiva do sono.
+G: F
+C: No estudo apresentado, o pesquisador não selecionou participantes com base na presença ou ausência de hipertensão arterial para depois investigar a exposição à apneia obstrutiva do sono. Pelo contrário, o delineamento descrito é característico de um <b>estudo de coorte</b>(repare que o enunciado da questão cita OBSERVACIONAL), no qual os indivíduos foram classificados inicialmente com base na presença ou ausência de apneia obstrutiva do sono (exposição) e, em seguida, foi avaliada a ocorrência da hipertensão arterial (desfecho). Em estudos de coorte, a análise parte da exposição em direção ao desfecho, enquanto nos estudos caso-controle parte-se do desfecho para buscar exposições anteriores. Por isso a descrição feita pela assertiva se refere incorretamente a um tipo de estudo diferente do que foi realizado.
+
+Q: A tabela abaixo é sobre uma pesquisa que avaliou a associação entre fumo passivo e o desenvolvimento de câncer de pulmão. Neste estudo, os pesquisadores mediram a frequência de câncer de pulmão em mulheres não-fumantes com maridos fumantes e não-fumantes. O resultado do estudo está apresentado na tabela abaixo:
+https://andrehero007.github.io/quiz-images/Dados%20para%20a%20associa%C3%A7%C3%A3o%20entre%20o%20fumo%20passivo%20e%20c%C3%A2ncer%20de%20pulm%C3%A3o%202333.png
+Sobre esse estudo, avalie a assertiva abaixo e respondaa as questões <strong>34 e 35</strong>.
+"Se trata de um estudo caso-controle"
+G: V
+C: O estudo comparou mulheres com câncer de pulmão (casos) e sem câncer (controles). Depois, observou a exposição: se os maridos eram fumantes ou não-fumantes. Ou seja, o ponto de partida foi o desfecho (ter ou não câncer), e só depois investigaram a exposição ao fumo passivo. Isso é o que caracteriza um estudo caso-controle. Repare também que a tabela tem até a coluna "controles", essa é uma dica importante.
+
+Q: Se o pesquisador quiser saber quantas vezes a chance de desenvolver câncer de pulmão é maior entre mulheres com maridos fumantes em comparação àquelas com maridos não fumantes, ele deve calcular:
+A) Razão de prevalência.
+B) Risco atribuído.
+C) Razão de chance.
+D) Risco relativo.
+G: C
+C: Deve calcular a razão de chances (odds ratio), pois se trata de um estudo caso-controle. Se fosse um estudo de coorte, o correto seria calcular o risco relativo. Já a razão de prevalência seria utilizada em estudos transversais.
+
+Q: Considerando que, sobre esse estudo, a razão de chances é 9, o IC95% é 4.1368 a 19.9186 e o valor de p é muito menor que 0,05. Considere um alfa de 5%. Escreva na caixa de texto abaixo as respostas para as perguntas a seguir:
+A) O que significa a razão de chances ser 9?
+B) Qual é o significado do intervalo de confiança ser 4.1368 a 19.9186 e o valor de p estar abaixo de 0,05?
+GABARITO:
+A) Como o valor da razão de chances é igual a 9, as mulheres expostas ao fumo passivo apresentaram cerca de 9 vezes mais <b>chances</b> de desenvolver câncer de pulmão em comparação àquelas não expostas.
+B) Como o intervalo de confiança (4,13; 19,91) não inclui o valor 1,0 e o p-valor é inferior a 0,05, conclui-se que existe uma associação estatisticamente significativa entre a exposição ao fumo passivo e o aumento do risco de câncer de pulmão em mulheres.
+
+Q: Os dados da tabela do estudo abaixo referem-se a um estudo que avaliou o efeito protetivo de uma vacina contra pneumonia em trabalhadores de câmaras frigoríficas. Nesta pesquisa, os trabalhadores foram selecionados aleatoriamente para receber a vacina ou um placebo e então acompanhados por um determinado período de tempo para verificar a ocorrência da doença.
+https://andrehero007.github.io/quiz-images/efeito%20protetivo%20de%20uma%20vacina%20contra%20pneumonia%20em%20trabalhadores%20de%20c%C3%A2maras%20frigor%C3%ADficas%202bgs.png
+Sobre esse estudo, responda a questão abaixo e as questões <strong>37 e 38</strong>.
+Se trata de um estudo do tipo:
+A) Caso-controle: Ensaio clínico randomizado.
+B) Coorte: Ensaio clínico randomizado.
+C) Transversal.
+D) Nenhuma das alternativas.
+G: B
+C: O estudo é fundamentalmente um <b>Ensaio Clínico Randomizado</b>. Como envolve o acompanhamento de grupos (coortes) ao longo do tempo a partir de uma intervenção aplicada de forma randomizada, ele pode ser considerado um tipo específico (experimental) de estudo de coorte. 
+<b>É importante lembrar que, entre os tipos de estudos citados (coorte, caso-controle e transversal), apenas o estudo de coorte realiza o acompanhamento dos indivíduos ao longo de um período de tempo.</b>
+
+Q: O pesquisador deve calcular o risco relativo.
+G: V
+C: Pois se trata de um estudo coorte.
+
+Q: Considere que o software estatístico retornou os seguintes resultados sobre o estudo (Risco Relativo = 0,2000; IC95%: 0,1247 a 0,3206; p < 0,0001; NNT = 12,5). <b>Com base nesses dados e na análise da tabela da questão, julgue as afirmativas a seguir:</b>
+‎ 
+I. O risco relativo indica que o grupo intervenção (vacinado) teve risco 80% menor de desenvolver o desfecho (pneumonia) em comparação ao grupo controle (não vacinados)
+‎ 
+II. Como o intervalo de confiança não inclui o valor 1, considera-se que há significância estatística para o efeito da intervenção.
+‎ 
+III. O p-valor inferior a 0,05 reforça que o resultado é estatisticamente significativo.
+‎ 
+IV. A vacina é um fator de proteção.
+‎ 
+V. Se trata de uma tabela de contingência 2x2 com duas variáveis de 1 categoria cada.
+‎ 
+Alternativas:
+A) Apenas as afirmativas I, II e III estão corretas.
+B) Apenas as afirmativas I, II, III e IV estão corretas.
+C) Apenas as afirmativas II, IV e V estão corretas.
+D) Apenas as afirmativas III e V estão corretas.
+G: B
+C: I – Correta:
+O risco relativo de 0,2 mostra que o grupo intervenção (vacinados) teve 80% menos risco de desenvolver pneumonia em relação aos não vacinados. (100% - 20% = 80%).
+‎ 
+II – Correta:
+O intervalo de confiança de 0,1247 a 0,3206 não inclui o valor 1, portanto, há significância estatística para o efeito da vacina.
+‎ 
+III – Correta:
+O p-valor < 0,0001 é muito menor que 0,05, o que confirma a significância estatística.
+‎ 
+IV – Correta:
+Como o risco relativo é menor que 1 e a intervenção reduz a chance do desfecho (pneumonia), a vacina é sim um fator de proteção.
+‎ 
+V – <b>Incorreta</b>:
+A tabela apresentada é de duas variáveis com 2 categorias cada.
+(Exposição: vacinado/não vacinado; Desfecho: pneumonia/sim ou não), ou seja, uma clássica tabela 2x2.

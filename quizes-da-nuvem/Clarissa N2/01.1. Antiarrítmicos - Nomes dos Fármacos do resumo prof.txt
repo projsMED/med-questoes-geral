@@ -1,0 +1,39 @@
+Q: Escreva o nome dos fármacos <b>antiarrítmicos de Classe I</b> pedidos nos itens abaixo.
+I_A) Classe IA - Bloqueio <b>moderado</b> canal NA e também bloqueia canal de potássio.  (2 fármacos):
+GABARITO: <b>Procainamida, disopiramina.</b>
+​‎
+Outros: Quinidina.
+I_B) Classe IB - Bloqueio <b>leve</b> canal NA (2 fármacos):
+GABARITO: <b>Lidocaína, mexiletina (análogo oral de lidocaína).</b>
+​‎ 
+Outro: Fenitoína.
+I_C) Classe IC - Bloqueio <b>forte</b> canal NA (2 fármacos):
+GABARITO: <b>Propafenona, flecainida.</b>
+​‎
+Outro: Encainida, moricizina.
+
+---
+
+Q: Cite o nome de 5 fármacos antiarrítmicos de <b>Classe II - Bloqueio Beta adrenérgico</b>.
+GABARITO: <b>Propranolol, atenolol, metoprolol, betaxolol, bisoprolol.</b>
+​‎ 
+Outros: Labetalol, carvedilol, pindolol, acebutolol.
+​‎ 
+<b>Dica:</b> Todos terminam em <b>lol</b>.
+
+---
+
+Q: Cite o nome de 5 fármacos antiarrítmicos de <b>Classe III - Bloqueio do canal de potássio</b>.
+GABARITO: <b>Amiodarona, ibutilida, dofetilida, sotalol, dronedarona.</b>
+​‎ 
+Outros: Vernacalanto, 
+
+---
+
+Q: Cite o nome de 2 fármacos antiarrítmicos de <b>Classe IV - Bloqueio do canal de cálcio</b>.
+GABARITO: <b>Verapamil, diltiazem.</b>
+
+---
+
+Q: Cite o nome de 2 fármacos antiarrítmicos que <b>não se encaixam nas classes convencionais</b>.
+GABARITO: <b>Adenosina, digoxina.</b>

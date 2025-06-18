@@ -1,0 +1,171 @@
+Q: A composição histológica presente no TGI é bastante variada devido ao fato de que há regiões especializadas em secretar, em contrapartida a regiões cuja especialização é absorver. Sobre a histologia do estômago, assinale a alternativa correta:
+A) Na região do fundo gástrico, a superfície da mucosa é rugosa e apresenta reentrâncias denominadas fossetas gástricas.
+B) Na região do corpo gástrico observa-se epitélio colunar estratificado.
+C) A lâmina própria da camada mucosa apresenta glândulas gástricas, na região do fundo gástrico.
+D) As células principais, que são secretoras de HCl, estão localizadas acima das glândulas gástricas.
+E) As glândulas cárdicas são compostas por células secretoras de HCl.
+G: C
+C: Histologicamente o estômago é divido em três regiões: a região cárdica (que apresenta as glândulas cárdicas); a região pilórica (que apresenta as glândulas pilóricas); a região fúndica (que apresenta as glândulas fúndicas ou gástricas).
+
+Q: A mucosa, é constituída por tecido epitelial colunar simples, abaixo do qual estão as respectivas glândulas. As demais constituições seguem o mesmo padrão do TGI: abaixo do tecido epitelial fica a lâmina própria da mucosa e a muscular da mucosa, constituída por músculo liso. A camada epitelial se invagina na lâmina própria formando as fossas gástricas e as glândulas. As glândulas são revestidas por 4 células especializadas: células foveolares, células parietais, células principais e células neuroendócrinas (células G ou enterocromafins). As células foveolares (mucosas superficiais) são produtoras de muco e revestem a mucosa gástrica, com o muco atuando como protetor em relação ao ácido gástrico. O restante das células são encontradas nas glândulas ou fossas gástricas. <br>
+Descreva a função das células abaixo: 
+A- Células parietais
+B- células principais
+C- células G
+D- Células D
+GABARITO:
+- Células parietais: secretam ácido gástrico e fator intrínseco (para absorção de vitamina B12);
+- Células principais: secretam pepsinogênio - forma inativa da enzima pepsina responsável por quebrar proteínas para digestão das mesmas;
+- Células G (secretam gastrina - estimula secreção de ácido gástrico)
+- Células D (secretam somatostatina - que atua suprimindo a secreção de gastrina e, portanto, reduzindo a produção de ácido gástrico).
+
+Q: A divisão histológica do estômago difere da sua divisão anatômica. Sobre essa diferença, julgue as alternativas em verdadeiro ou falso, e em seguida, assinale a alternativa correta: <br>
+I) A divisão histológica do estômago é feita em três partes: a cárdia, o piloro e o fundo; <br>
+II) A divisão anatômica do estômago é feita em quatro partes: a cárdia, o fundo, o corpo e a porção pilórica; <br>
+III) A divisão histológica do estômago não é baseada em localização, e sim, nos tipos de glândulas que de distribuem na mucosa gástrica. <br>
+A) V-V-V
+B) V-V-F
+C) F-V-V
+D) F-V-F
+E) V-F-V
+G: A
+C: Anatomicamente, o estômago é dividido em quatro ou cinco porções, sendo elas: a cárdia, o fundo, o corpo e a porção pilórica, sendo que a porção pilórica ainda pode ser subdivida em antro e piloro. Essa divisão leva em consideração os formatos das porções do estômago.
+Já com relação à histologia, essa divisão é feita de acordo com a distribuição dos tipos de glândulas na mucosa gástrica, sendo elas em número de três: a região cárdica, a região pilórica e a região fúndica.
+A região cárdica (cárdiA), é a parte próxima ao óstio cárdico e contém as glândulas cárdicas. Já a região pilórica (piloro) está na parte proximal do esfíncter pilórico, e contém as glândulas pilóricas. Enquanto a região fúndica (fundo) contempla a maior parte do estômago e está localizada entre a cárdia e o piloro, contendo as glândulas fúndicas ou glândulas gástricas.
+
+Q: As regiões do corpo e fundo do estômago são histologicamente idênticas. Acerca disso, assinale a alternativa correta: 
+A) As glândulas fúndicas possuem diferentes regiões. O istmo e o colo apresentam células-tronco indiferenciadas e células parietais, enquanto a base representa a maior parte da glândula e possui células zimogênicas, predominantemente;
+B) Pode-se observar glândulas cardioesofágicas na região fúndica;
+C) A porção superior das glândulas fúndicas possuem muitas células gastroenteroendócrinas se comparada com a porção inferior;
+D) A distribuição dos tipos celulares nas glândulas fúndicas é uniforme, caso contrário, indica patologias do estômago;
+E) Entre três a sete fossetas gástricas se abrem em uma glândula fúndica.
+G: A
+C: Istmo e colo: Contêm células-tronco indiferenciadas (capazes de se diferenciar em outros tipos celulares) e células parietais (responsáveis pela produção de ácido clorídrico).
+Base: A maior parte da glândula é composta por células zimogênicas (ou principais), que secretam pepsinogênio, uma enzima precursora da pepsina, essencial para a digestão.
+
+Q: Sobre as células encontradas no estômago, é incorreto afirmar que:
+A) As células principais ou zimogênicas são cilíndricas e produzem as enzimas pepsinogênio e lipase gástrica.
+B) As células-tronco são indiferenciadas, sendo responsáveis pela renovação do epitélio estomacal.
+C) Células parietais ou oxínticas são piramidais e produzem H+, Cl- e fator intrínseco. Cria um ambiente ácido que ativa a lipase gástrica.
+D) A gastrina, a grelina e a bombesina são produzidas pelas células enteroendócrinas, nas glândulas pilóricas.
+E) As células mucosas têm a função de produzir o muco que protegerá a parede estomacal.
+G: C
+C: A lipase gástrica é ativada em um ambiente ácido, mas não é as células parietais que a ativam diretamente. A lipase gástrica é produzida pelas células principais, e não pelas células parietais.
+
+Q: Acerca da histologia do intestino delgado, assinale a alternativa correta.
+A) As pregas circulares, as vilosidades e as microvilosidades são as estruturas responsáveis por aumentar a área absortiva do intestino delgado.
+B) A muscular da mucosa do intestino possui uma camada de células muscular lisa, com distribuição longitudinal.
+C) As glândulas intestinais são compostas por epitélio pavimentoso não queratinizado.
+D) Na submucosa, encontram-se nódulos linfáticos do tecido linfático associado ao intestino, chamado de GALT.
+E) As placas de Peyer não podem ser vistas macroscopicamente.
+G: A
+C: O intestino delgado é o principal local de absorção dos alimentos, contendo enzimas nos glicocálices dos enterócitos, que são as células absortivas do intestino.
+E como sua função é absorver, a área absortiva do intestino é ampliada por ação das pregas circulares, as vilosidades e as microvilosidades. A pregas circulares, chamadas de válvulas de Kerckring são pregas circulares que contém um eixo de submucosa e estão em maior número na parte distal o íleo. As vilosidades são projeções que se estendem para dentro do lúmen e cobrem por completo a luz do delgado. As microvilosidades são as principais estruturas para ampliação da luz luminal.
+
+Q: Sobre a mucosa do intestino grosso, em comparação com a mucosa do intestino delgado, assinale a alternativa correta:
+A) A principal função das células secretivas intestinais é a secreção de água e eletrólitos.
+B) A mucosa do cólon apresenta uma superfície lisa, desprovida de pregas circulares e vilosidades.
+C) As células caliciformes estão em menor número no intestino grosso, do que no intestino delgado.
+D) As células que compõem o intestino grosso são as mesmas que compõem o intestino delgado.
+E) As vilosidades são mais proeminentes no intestino delgado do que no intestino grosso, ao passo que o primeiro é principal ponto de absorção do bolo alimentar.
+G: B
+C: 
+A mucosa do cólon é formado por um superfície lisa, desprovida de pregas circulares e vilosidades, e contém glândulas intestinais tubulares retas, chamadas criptas de Liberkühn, que se estendem por toda mucosa. Elas são formadas de epitélio colunar simples.
+A principal função do intestino grosso é a absorção de água e eletrólitos, o que ocorre através das células absortivas colunares, a qual a morfologia é idêntica a dos enterócitos. O processo de absorção é mediado por atuação da bomba sódio-potássio ativada por ATPase, da mesma forma que no delgado.
+As células que compõem a mucosa do cólon são as mesmas que estão no delgado, exceto que pelas células de Paneth, que não são encontradas no cólon de seres humanos.
+Um dado interessante é que as células caliciformes são mais abundantes no intestino grosso do que do delgado. Isso é lógico quando pensamos que no cólon a massa fecal se torna “mais sólida” devido a maior reabsorção de água nessa região. Justamente por isso, precisamos de maior secreção e muco, o que gera uma maior facilidade na passagem da massa fecal por essa região.
+
+Q: Em relação à camada muscular da mucosa do intestino, qual a característica correta?
+A) A camada muscular da mucosa é formada por fibras musculares estriadas e está localizada sob a camada submucosa.
+B) A camada muscular da mucosa é composta por músculo liso e auxilia na movimentação da mucosa, facilitando a absorção.
+C) A camada muscular da mucosa é composta por músculo cardíaco e é responsável pela motilidade peristáltica.
+D) A camada muscular da mucosa é formada por fibras musculares esqueléticas, necessárias para a digestão de proteínas.
+G: B
+C:
+A mucosa do cólon é formado por um superfície lisa, desprovida de pregas circulares e vilosidades, e contém glândulas intestinais tubulares retas, chamadas criptas de Liberkühn, que se estendem por toda mucosa. Elas são formadas de epitélio colunar simples.
+A principal função do intestino grosso é a absorção de água e eletrólitos, o que ocorre através das células absortivas colunares, a qual a morfologia é idêntica a dos enterócitos. O processo de absorção é mediado por atuação da bomba sódio-potássio ativada por ATPase, da mesma forma que no delgado.
+As células que compõem a mucosa do cólon são as mesmas que estão no delgado, exceto que pelas células de Paneth, que não são encontradas no cólon de seres humanos.
+Um dado interessante é que as células caliciformes são mais abundantes no intestino grosso do que do delgado. Isso é lógico quando pensamos que no cólon a massa fecal se torna “mais sólida” devido a maior reabsorção de água nessa região. Justamente por isso, precisamos de maior secreção e muco, o que gera uma maior facilidade na passagem da massa fecal por essa região.
+
+Q: Qual das alternativas descreve corretamente a função das células enteroendócrinas encontradas na mucosa intestinal?
+A) As células enteroendócrinas são responsáveis pela secreção de enzimas digestivas, facilitando a quebra de carboidratos no intestino.
+B) As células enteroendócrinas liberam hormônios que regulam a motilidade intestinal e a secreção de ácido gástrico.
+C) As células enteroendócrinas são envolvidas na absorção de lipídios e são localizadas apenas no cólon.
+D) As células enteroendócrinas secretam muco para proteger o epitélio intestinal da ação de enzimas digestivas.
+G: B
+C:
+As células enteroendócrinas estão localizadas na mucosa intestinal e têm a função de secretar hormônios que desempenham um papel importante na regulação do sistema digestivo, incluindo a motilidade intestinal, a secreção de enzimas digestivas e a liberação de ácido gástrico. Esses hormônios, como a gastrina, secretina, colecistocinina (CCK) e peptídeo YY (PYY), ajudam a coordenar a digestão e a absorção dos nutrientes.
+
+Q: Um paciente de 45 anos chega à emergência com dor abdominal, sensação de plenitude e náuseas persistentes. O exame físico revela dor à palpação no epigástrio, sem sinais de peritonite. Exames laboratoriais mostram aumento dos níveis de gastrina. Uma endoscopia revela erosões superficiais na mucosa gástrica e presença de pólipos em algumas áreas. Baseado na histologia do estômago, qual das seguintes alternativas está mais relacionada ao quadro clínico apresentado?
+A) As células parietais da mucosa gástrica estão hiperativas, produzindo quantidade excessiva de ácido gástrico, o que pode causar úlceras gástricas e elevação da gastrina.
+B) O aumento da gastrina é causado pela hiperplasia das células G, que estimulam a produção excessiva de muco para proteger a mucosa gástrica.
+C) O paciente apresenta uma disfunção nas células caliciformes, que resultam em uma secreção inadequada de muco gástrico, aumentando o risco de úlceras.
+D) A alteração histológica do paciente é devido à falha das células endócrinas no estômago em produzir pepsina, dificultando a digestão das proteínas e provocando irritação gástrica.
+G: A
+C: A síndrome de Zollinger-Ellison é associada à produção excessiva de gastrina pelas células G, o que estimula as células parietais da mucosa gástrica a produzirem grandes quantidades de ácido gástrico, podendo levar à formação de úlceras gástricas e erosões na mucosa, como descrito no caso do paciente. O aumento da gastrina é uma consequência direta da hipersecreção de ácido gástrico, e a gastrina elevada serve como um marcador importante da doença.
+
+Q: A região fúndica do estômago localiza-se entre a cárdia, adjacente ao esôfago, e a região pilórica do estômago, mais distal. Assim, compreende a maior parte do estômago. O interior do estômago vazio apresenta uma série de dobras ou cristas longitudinais, exceto na parte superior expandida, que é relativamente lisa. Essas cristas, chamadas de pregas, são formadas pela mucosa e submucosa. Elas desaparecem com o enchimento e a distensão do estômago.
+Sabendo disso, marque a alternativa correta:
+https://andrehero007.github.io/quiz-images/laminas-histo/img2334x.png
+A) 1) prega
+B) 2) mucosa
+C) 3) área gástrica
+D) 4) muscular externa
+E) 5) vasos sanguíneos
+G: A
+C: 
+1) prega
+2) áreas gástricas
+3) mucosa
+4) submucosa
+5) muscular externa
+6) vasos sanguíneos
+Lembre-se que as pregas são dobraduras (elevações) na parede interna do estômago
+
+Q: Assim como em outras partes do trato gastrintestinal, a parede do estômago consiste em quatro camadas: a mucosa (mais internA), a submucosa, a muscular externa e a serosa (mais externA).
+Sabendo disso, marque a alternativa que corresponde a numeração correta:
+https://andrehero007.github.io/quiz-images/laminas-histo/img2313fx.png
+A) 1) muscular da mucosa
+B) 3) sulco circundante
+C) 5) glândulas fúndicas
+D) 6) lúmen do estômago
+G: C
+C:
+1) lúmen do estômago
+2) sulco circundante, que é contínuo com o lúmen, aumenta a área total da superfície do estômago. Note as
+3) fossetas gástricas
+4) células mucosas superficiais
+5) glândulas fúndicas, ocupam a maior parte da mucosa
+6) muscular da mucosa
+
+Q: As pregas circulares são mais numerosas na metade distal do duodeno e na parte proximal do jejuno. Na metade distal do jejuno elas se tornam menores e menos numerosas e, praticamente, desaparecem na metade do íleo. Embora as vilosidades normalmente tenham uma configuração em forma de folha, elas tornam-se mais digitiformes conforme o íleo se aproxima. No íleo, a maior parte das vilosidades é digitiforme. As glândulas de Brünner estão ausentes no jejuno e no íleo. O número destas glândulas diminui gradativamente até desaparecerem no terço final do duodeno. O tipo de células epiteliais que reveste as criptas e as vilosidades no jejuno e no íleo, na sua maior parte, é o mesmo do encontrado no duodeno.   
+Sabendo disso, marque a alternativa que corresponde a numeração correta:
+https://andrehero007.github.io/quiz-images/laminas-histo/img2000.png
+A) 1 - Mucosa.
+B) 2 - Serosa.
+C) 3 - Camada longitudinal da muscular externa.
+D) 4 - Camada circular da muscular externa.
+G: C
+C:
+1) pregas circulares (as vilosidades projetam-se a partir das pregas) O centro de cada prega consiste em tecido conectivo denso. A prega comporta a maior parte da submucosa.
+2) camada circular da muscular externa;
+3) camada longitudinal da muscular externa;
+4) serosa = tecido conectivo denso + superfície epitelial (mesotélio)
+
+Q: Da mesma forma que o intestino delgado, o colo apresenta uma mucosa, uma submucosa, uma muscular externa e sobre a sua superfície livre exterior, uma serosa. Uma característica incomum da muscular do colo, bem como do ceco, é uma expansão de partes da camada longitudinal externa da muscular externa. Uma modificação na espessura desta camada muscular forma três estruturas uniformemente espaçadas, similares a faixas (teniae coli), presentes ao longo do comprimento do colo.
+Sabendo disso, marque a alternativa que corresponde a numeração correta:
+https://andrehero007.github.io/quiz-images/laminas-histo/img2001.png
+A) 1) submucosa
+B) 2) mucosa
+C) 5) camada longitudinal externa da muscular externa
+D) 6) camada circular interna da muscular externa
+E) 7) teniae coli
+G: E
+C: 
+1) mucosa
+2) submucosa, formada em grande parte de tecido conectivo denso não modelado vasos
+3) sanguíneos
+4) placas de tecido adiposo e o plexo nervoso submucoso (plexo de Meissner).
+5) camada circular interna da muscular externa
+6) camada longitudinal externa da muscular externa
+7) teniae coli

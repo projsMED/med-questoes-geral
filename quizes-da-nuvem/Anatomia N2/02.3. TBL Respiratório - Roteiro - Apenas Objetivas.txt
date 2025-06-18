@@ -1,0 +1,401 @@
+Q: Sobre o sistema respiratório humano, assinale a alternativa correta:
+A) A principal função do sistema respiratório é a digestão de oxigênio e sua transformação em ATP.
+B) A parte respiratória do trato respiratório é formada apenas pelos brônquios e bronquíolos.
+C) O processo de hematose ocorre nos alvéolos, onde há troca de gases entre o ar e o sangue.
+D) A fonação depende unicamente das cavidades nasal e oral, sem envolvimento da passagem do ar.
+G: C
+C: 
+A alternativa {C} está correta. A hematose é a troca gasosa que ocorre nos alvéolos, onde o oxigênio do ar difunde-se para o sangue e o gás carbônico do sangue difunde-se para os alvéolos.
+As demais alternativas estão incorretas:
+{A}) A produção de ATP ocorre na respiração celular, não é função direta do sistema respiratório.
+{B}) A parte respiratória inclui bronquíolos respiratórios, ductos alveolares e alvéolos, não apenas brônquios e bronquíolos.
+{D}) A fonação depende da passagem do ar pelas cordas vocais, além das cavidades nasal e oral.
+
+Q: Assinale a alternativa que descreve corretamente a divisão funcional do trato respiratório:
+A) O trato respiratório é composto exclusivamente pela traqueia e pelos pulmões.
+B) A parte condutora termina nos ductos alveolares, onde ocorrem as trocas gasosas.
+C) A parte condutora vai desde o nariz até os bronquíolos terminais.
+D) A parte respiratória é formada por faringe, laringe e traqueia.
+G: C
+C: 
+A alternativa {C} está correta. A parte condutora do sistema respiratório compreende as estruturas que conduzem o ar, desde a cavidade nasal até os bronquíolos terminais.
+As demais estão incorretas:
+{A}) O trato respiratório é mais extenso e inclui várias outras estruturas além da traqueia e dos pulmões.
+{B}) Os ductos alveolares fazem parte da porção respiratória, não da condutora.
+{D}) Faringe, laringe e traqueia pertencem à parte condutora.
+
+QCH: Assinale as assertivas verdadeiras sobre o sistema respiratório:
+A1: A respiração pulmonar tem como função captar oxigênio e eliminar o gás carbônico.
+G: V
+C: Essa é a função básica da respiração pulmonar.
+A2: As trocas gasosas ocorrem exclusivamente na laringe, onde o ar se encontra com o sangue.
+G: F
+C: As trocas gasosas ocorrem nos alvéolos, não na laringe.
+A3: A fonação ocorre pela vibração das cordas vocais com a passagem do ar expirado.
+G: V
+C: A fonação ocorre com a vibração das cordas vocais durante a passagem do ar.
+A4: O oxigênio difunde-se para o sangue através das hemácias presentes nos capilares.
+G: V
+C: O oxigênio se difunde para o sangue e é transportado pelas hemácias.
+A5: O trato respiratório é formado apenas pela parte respiratória, já que a parte condutora não participa da respiração.
+G: F
+C: A parte condutora tem papel essencial na condução do ar, embora não realize trocas gasosas.
+
+Q: Sobre o nariz externo, assinale a alternativa correta:
+A) A base do nariz externo é formada apenas pela raiz e pelo dorso.
+B) O ápice do nariz é a região mais recuada do dorso nasal.
+C) A columela separa as asas do nariz na base e delimita as narinas.
+D) A raiz do nariz está localizada na porção inferior do ápice nasal.
+G: C
+C: A columela é uma estrutura anatômica que separa as narinas, sendo delimitada pelas asas do nariz e localizada na base nasal. As demais alternativas apresentam confusões de localização:<br><br>{A}) A base do nariz é a parte inferior, onde ficam as narinas, não a raiz nem o dorso.<br><br>{B}) O ápice é a parte mais anterior e projetada, não a mais recuada.<br><br>{D}) A raiz é a porção mais superior do nariz, junto à fronte.
+
+Q: Em relação às funções da cavidade nasal, é incorreto afirmar que:
+A) Atua na umidificação e aquecimento do ar inspirado.
+B) Possui epitélio olfatório no teto, responsável pelo olfato.
+C) Atua apenas como conduto do ar, sem função na fonação.
+D) Filtra impurezas do ar inspirado por meio da mucosa.
+G: C
+C: A cavidade nasal não atua apenas como um conduto de ar. Ela participa da fonação, funcionando como caixa de ressonância, o que contribui para a qualidade e timbre da voz.<br><br>{A}), {B}) e {D}) estão corretas e refletem funções reais da cavidade nasal.
+
+Q: Sobre a anatomia das paredes da cavidade nasal, marque a correta:
+A) A parede medial é irregular e formada por conchas nasais.
+B) O vômer participa da formação do septo nasal.
+C) A parede lateral é reta e lisa, formada pelo septo nasal.
+D) O teto da cavidade nasal é formado pelo vômer.
+G: B
+C: O vômer é um osso que forma parte da parede medial da cavidade nasal, compondo o septo nasal, junto à lâmina perpendicular do etmoide e à cartilagem do septo.<br><br>{A}) e {C}) estão trocando as paredes: as conchas estão na parede lateral, e o septo está na medial.<br><br>{D}) está errada porque o teto é formado principalmente pelo osso etmoide, e não pelo vômer.
+
+Q: Assinale a alternativa que apresenta somente cartilagens que compõem o nariz externo:
+A) Cartilagens alares menores, vômer e cartilagem do septo.
+B) Cartilagens laterais, osso nasal e cartilagens alares maiores.
+C) Cartilagens laterais, cartilagens alares maiores, cartilagem do septo nasal.
+D) Cartilagem do septo nasal, osso etmoide e cartilagens alares menores.
+E) Cartilagens alares menores, cartilagens alares maiores e osso maxilar.
+G: C
+C: A alternativa {C} apresenta apenas os elementos cartilaginosos do nariz externo.<br><br>As outras alternativas misturam ossos, como o vômer, osso nasal, etmoide ou maxila, que não fazem parte do esqueleto cartilaginoso, e sim do ósseo.
+
+Q: Assinale a alternativa que corretamente relaciona conchas nasais e seus respectivos ossos:
+A) A concha nasal superior pertence ao osso maxilar.
+B) A concha nasal inferior é parte do osso etmoide.
+C) A concha nasal média pertence ao osso etmoide.
+D) A concha nasal inferior é uma saliência do vômer.
+E) A concha nasal superior é formada pelo osso frontal.
+G: C
+C: A concha nasal média é uma estrutura do osso etmoide, assim como a superior. Já a concha inferior é um osso independente, e não pertence ao etmoide nem ao vômer.<br>As demais alternativas atribuem as conchas a ossos incorretos.
+
+Q: A mucosa da parede lateral da cavidade nasal é responsável por umedecer e aquecer o ar inspirado.
+G: V
+C: A mucosa que reveste as conchas nasais tem função essencial na purificação, umidificação e aquecimento do ar.
+
+Q: A cartilagem do septo nasal compõe exclusivamente o teto da cavidade nasal.
+G: F
+C: A cartilagem do septo nasal está na parede medial, formando parte do septo, e não do teto.
+
+Q: O meato nasal superior se localiza entre a concha nasal inferior e o assoalho da cavidade.
+G: F
+C: O meato superior fica abaixo da concha nasal superior, e não próximo à concha inferior nem ao assoalho.
+
+Q: A cavidade nasal está situada superiormente à caixa craniana e inferiormente à cavidade oral.
+G: F
+C: A cavidade nasal está inferior à caixa craniana e superior à cavidade oral — o enunciado inverteu as posições.
+
+QCH: Assinale as assertivas verdadeiras sobre o nariz:
+A1: O músculo nasal é formado por uma parte frontal e uma parte oblíqua.
+G: F
+C: O músculo nasal possui duas partes: transversa e alar, responsáveis por controlar o formato das narinas.
+A2: O meato nasal inferior é o mais amplo dos meatos e abriga a abertura do ducto nasolacrimal.
+G: V
+C: Correto. O ducto nasolacrimal desemboca no meato inferior, facilitando o escoamento de lágrimas para o nariz.
+A3: A concha nasal inferior é um osso autônomo e se articula com outros ossos do crânio.
+G: V
+C: A concha nasal inferior é um osso próprio, e articula-se com a maxila, etmoide, palatino e lacrimal.
+A4: O ápice nasal encontra-se na base, entre as asas do nariz.
+G: F
+C: O ápice está na parte mais anterior e projetada do nariz, não entre as asas na base.
+A5: O recesso esfenoetmoidal está acima da concha nasal superior e abriga a abertura do seio esfenoidal.
+G: V
+C: Correto. O recesso esfenoetmoidal é uma pequena depressão acima da concha superior, onde se localiza a abertura para o seio esfenoidal.
+
+Q: Sobre as conchas nasais, é correto afirmar que:
+A) Todas as três conchas nasais (superior, média e inferior) são partes do osso etmoide.
+B) A concha nasal inferior é um osso independente que se articula com a maxila, etmoide, palatino e lacrimal.
+C) A principal função das conchas nasais é abrigar os receptores do olfato.
+D) São estruturas retas e lisas que direcionam o ar diretamente para a nasofaringe.
+E) A concha nasal média é a maior e mais ampla de todas as conchas.
+G: B
+C: As conchas superior e média são projeções do osso etmoide, mas a concha nasal inferior é um osso próprio. Sua função é aumentar a superfície da mucosa para aquecer, umidificar e limpar o ar, e não primariamente para o olfato. Elas são irregulares, e não retas.
+
+Q: Os meatos são espaços localizados sob as conchas nasais onde se abrem importantes canais e seios paranasais. O ducto nasolacrimal, responsável pela drenagem da lágrima, abre-se no:
+A) Meato nasal superior.
+B) Recesso esfenoetmoidal.
+C) Meato nasal médio.
+D) Teto da cavidade nasal.
+E) Meato nasal inferior.
+G: E
+C: O meato nasal inferior, o mais amplo dos três, está localizado inferiormente à concha nasal inferior e contém a abertura do ducto nasolacrimal. O meato superior e o médio recebem a drenagem de outros seios paranasais.
+
+Q: Qual das seguintes opções descreve corretamente uma das principais funções dos seios paranasais?
+A) Produção de células de defesa do sistema imunológico.
+B) Atuar como caixas de ressonância durante a fonação e auxiliar no aquecimento do ar.
+C) Armazenar ar para ser utilizado durante a apneia.
+D) Secretar hormônios que regulam a pressão arterial.
+G: B
+C: Os seios paranasais são cavidades aéreas que, além de auxiliarem na umidificação, aquecimento e filtragem do ar, funcionam como espaços de ressonância, que ajudam a dar timbre à voz.
+
+Q: O seio esfenoidal, conhecido por suas variações de forma e tamanho, comunica-se com a cavidade nasal através de uma abertura localizada no:
+A) Meato nasal inferior.
+B) Meato nasal médio.
+C) Meato nasal superior.
+D) Recesso esfenoetmoidal.
+G: D
+C: O seio esfenoidal está localizado no corpo do osso esfenoide e sua comunicação com as vias nasais ocorre em uma fenda específica, o recesso esfenoetmoidal, que fica superiormente à concha nasal superior.
+
+Q: Dentre os quatro seios paranasais listados, qual é considerado o maior em volume e ocupa grande parte do osso da maxila?
+A) Seio frontal.
+B) Seio etmoidal.
+C) Seio maxilar.
+D) Seio esfenoidal.
+G: C
+C: O seio maxilar é o mais volumoso dos seios paranasais. Ele possui um formato piramidal e se localiza dentro do osso da maxila, tendo seu assoalho próximo às raízes dos dentes superiores.
+
+Q: Os seios paranasais são cavidades preenchidas por líquido, localizadas apenas no osso da maxila e do frontal.
+G: F
+C: Os seios paranasais são cavidades aéreas (preenchidas por ar, não líquido) e estão presentes em quatro ossos do crânio: frontal, etmoide, esfenoide e maxila.
+
+Q: O seio maxilar se comunica com a cavidade nasal através de uma abertura no meato nasal superior.
+G: F
+C: A comunicação do seio maxilar ocorre no meato nasal médio, especificamente no hiato semilunar.
+
+
+Q: O seio etmoidal é uma cavidade única e ampla, localizada medialmente à órbita.
+G: F
+C: O seio etmoidal é composto por múltiplas células aéreas, não sendo uma cavidade única. Elas se localizam entre a órbita (lateralmente) e a cavidade nasal (medialmente).
+
+Q: Uma das relações anatômicas importantes do seio esfenoidal é com a glândula hipófise, que se localiza superiormente a ele, na fossa hipofisária.
+G: V
+C: O teto do seio esfenoidal forma o assoalho da sela túrcica, onde se aloja a glândula hipófise (ou pituitária), tornando essa uma relação anatômica de grande importância clínica.
+
+Q: A respeito da anatomia da faringe, assinale a alternativa correta:
+A) A orofaringe está localizada superiormente à nasofaringe e é responsável apenas pela condução de ar.
+B) A laringofaringe comunica-se superiormente com a cavidade nasal e inferiormente com o esôfago.
+C) A nasofaringe está situada posteriormente à cavidade nasal, sendo separada desta pelas coanas.
+D) A parede posterior da faringe é formada apenas pelo músculo constritor superior.
+G: C
+C: A nasofaringe realmente está situada posteriormente à cavidade nasal e é separada desta pelas coanas. As demais alternativas contêm informações incorretas: a orofaringe não está superiormente à nasofaringe, a laringofaringe não se comunica com a cavidade nasal, e a parede posterior da faringe é composta por três músculos constritores.
+
+Q: Sobre as estruturas relacionadas à faringe, marque a alternativa INCORRETA:
+A) A tonsila faríngea está localizada no teto da nasofaringe.
+B) Entre o arco palatoglosso e o arco palatofaríngeo encontra-se a tonsila palatina.
+C) A fossa piriforme auxilia a passagem de líquidos diretamente para a laringe.
+D) O óstio da tuba auditiva está presente na parede lateral da nasofaringe.
+G: C
+C: A fossa piriforme auxilia na condução de líquidos em direção ao esôfago, impedindo que eles entrem nas vias aéreas (laringe). As demais alternativas estão corretas.
+
+QCH: Sobre a faringe, assinale as assertivas verdadeiras:
+A1: A faringe é responsável por conduzir tanto o ar quanto o alimento, integrando os sistemas respiratório e digestório.
+G: V
+C: Correto, pois a faringe faz parte dos dois sistemas.
+A2: O limite inferior da nasofaringe é uma linha imaginária que passa pela úvula.
+G: V
+C: Correto, a linha imaginária que passa pela úvula delimita a nasofaringe inferiormente.
+A3: O arco palatoglosso está localizado posteriormente ao arco palatofaríngeo.
+G: F
+C: Incorreto, o arco palatoglosso está anteriormente ao palatofaríngeo.
+A4: As valéculas estão situadas lateralmente à epiglote e têm papel fundamental na deglutição.
+G: F
+C: Incorreto, as valéculas estão entre a epiglote e a raiz da língua, não lateralmente, e têm papel auxiliar na passagem de líquidos.
+A5: Os músculos constritores da faringe atuam diminuindo o seu diâmetro durante a deglutição.
+G: V
+C: Correto, esses músculos são responsáveis por diminuir o diâmetro da faringe durante a deglutição.
+A6: A orofaringe é utilizada exclusivamente pelo sistema respiratório.
+G: F
+C: Incorreto, a orofaringe participa tanto do sistema digestório quanto do respiratório.
+
+Q: Complete corretamente o trecho a seguir:<br>
+"A _________ é a porção da faringe localizada posteriormente à cavidade nasal, separada desta pelas coanas, e é utilizada exclusivamente pelo sistema respiratório."
+A) orofaringe
+B) laringofaringe
+C) nasofaringe
+D) tonsila palatina
+E) valécula
+G: C
+C: A nasofaringe está posteriormente à cavidade nasal, separada pelas coanas, e participa apenas do sistema respiratório.
+
+Q: Sobre as cartilagens da laringe, assinale a alternativa correta:
+A) A cartilagem cricóide possui formato de ferradura e está localizada superiormente à cartilagem tireoide.
+B) A cartilagem tireoide é formada por duas lâminas que se unem no plano mediano, formando o pomo de Adão.
+C) As cartilagens aritenoides são estruturas únicas, não articuladas com outras cartilagens.
+D) A cartilagem epiglótica é formada por cartilagem hialina, tornando-a rígida.
+G: B
+C: A cartilagem tireoide é realmente formada por duas lâminas que se unem no plano mediano, formando a proeminência laríngea ou pomo de Adão. As demais alternativas estão incorretas quanto à localização, articulações ou tipo de cartilagem.
+
+Q: Em relação aos músculos da laringe, marque a alternativa INCORRETA:
+A) Os músculos extrínsecos da laringe promovem a movimentação da laringe como um todo.
+B) O músculo cricoaritenoideo posterior é responsável pela abdução das pregas vocais.
+C) O músculo cricotireóideo atua como tensor das pregas vocais.
+D) O músculo aritenoideo transverso é um relaxador das pregas vocais.
+G: D
+C: O músculo aritenoideo transverso é adutor, não relaxador. As demais estão corretas.
+
+Q: Em relação às pregas vocais e suas funções, assinale a alternativa correta:
+A) As pregas vestibulares participam ativamente da produção da voz.
+B) As pregas vocais verdadeiras são responsáveis pela vibração que produz o som.
+C) O espaço entre as pregas vestibulares chama-se rima da glote.
+D) O músculo vocal localiza-se externamente às pregas vocais verdadeiras.
+G: B
+C: As pregas vocais verdadeiras vibram para produzir o som. As pregas vestibulares não têm função na fonação e a rima da glote é o espaço entre as pregas vocais, não vestibulares.
+
+Q: Assinale a alternativa que preenche corretamente a lacuna:
+"O/A _____________ liga a borda superior da cartilagem tireoide ao osso hioide."
+A) ligamento cricoteireoideo
+B) membrana tireohioidea
+C) ligamento tireoepiglótico
+D) membrana quadrangular
+E) ligamento hioepiglótico
+G: B
+C: A membrana tireohioidea liga a cartilagem tireoide ao osso hioide.
+
+Q: Complete corretamente:
+"Durante a deglutição, a epiglote se dobra para fechar o/a _____________, impedindo a passagem do bolo alimentar para as vias aéreas."
+A) ventrículo da laringe
+B) ádito da laringe
+C) vestíbulo da laringe
+D) rima do vestíbulo
+E) cartilagem aritenoide
+G: B
+C: O ádito da laringe é fechado pela epiglote durante a deglutição.
+
+QCH: Assinale as assertivas verdadeiras sobre a laringe:
+A1: A cartilagem epiglótica é formada por fibrocartilagem, o que lhe confere flexibilidade.
+G: V
+C: A cartilagem epiglótica é formada por fibrocartilagem.
+A2: O ligamento hioepiglótico conecta a epiglote ao osso hioide.
+G: V
+C: O ligamento hioepiglótico conecta a epiglote ao osso hioide (V).
+A3: As cartilagens cuneiformes se articulam diretamente com a cartilagem cricóide.
+G: F
+C: As cartilagens cuneiformes não se articulam com nenhuma outra cartilagem.
+A4: O músculo cricotireóideo atua relaxando as pregas vocais.
+G: F
+C: O músculo cricotireóideo é tensor, não relaxador das pregas vocais.
+A5: A articulação cricotireoidea permite movimento entre a cartilagem cricóide e a tireoide.
+G: V
+C: A articulação cricotireoidea realmente permite o movimento entre cricóide e tireoide (V).
+
+QCH: Assinale as assertivas verdadeiras sobre a laringe:
+A1: As pregas vestibulares são responsáveis pela produção do som.
+G: F
+C: Não são responsáveis pela produção do som.
+A2: A parte supraglótica da laringe está situada acima das pregas vestibulares.
+G: V
+C: A parte supraglótica está acima das pregas vestibulares.
+A3: O ventrículo da laringe está entre a prega vestibular e a prega vocal.
+G: V
+C: O ventrículo da laringe está entre as pregas vestibular e vocal (V).
+A4: As cartilagens aritenoides não possuem relação com a fixação das pregas vocais.
+G: F
+C: As cartilagens aritenoides têm relação direta com a fixação das pregas vocais.
+A5: O sáculo é uma extensão anterior do ventrículo da laringe.
+G: V
+C: O sáculo é uma extensão anterior do ventrículo da laringe
+
+Q: Analise as assertivas e assinale a alternativa correta:
+( ) O arco da cartilagem cricóide está voltado posteriormente.
+( ) As pregas vocais verdadeiras estendem-se entre as cartilagens aritenoides e a tireoide.
+( ) O músculo tireoaritenoideo atua como relaxador das pregas vocais.
+( ) O espaço entre as pregas vestibulares é chamado de rima da glote.
+A) V, V, V, F
+B) F, V, F, V
+C) V, F, V, F
+D) F, V, V, F
+E) V, V, F, V
+G: D
+C: O arco da cartilagem cricóide na verdade está voltado anteriormente (F). As pregas vocais verdadeiras realmente se estendem entre aritenoides e tireoide (V). O músculo tireoaritenoideo é relaxador (V). O espaço entre as pregas vestibulares é chamado de rima do vestíbulo, não da glote (F).
+
+QCH: Assinale as assertivas verdadeiras sobre a traqueia:
+A1: A traqueia é uma estrutura cilindroide com cerca de 9-15 cm comprimento e 25 mm de diâmetro.
+G: V
+A2: É formada por 15-20 anéis de cartilagem elástica.
+G: F
+C: Cartilagem hialina.
+A3: Os anéis cartilaginosos são em formato de "C" sobrepostos e unidos entre si através dos ligamentos anulares.
+G: V
+A4: Está localizada no plano mediano, se estendendo de C6 até de T5, inferiormente à laringe, posteriormente ao esôfago e posteriormente ao arco aórtico e aorta torácica.
+G: F
+C: Anteriormente ao esôfago.
+A5: Segue direção inferior pelo pescoço até entrar no mediastino, onde sofre um pequeno desvio à direita próximo de sua extremidade anterior para se dividir nos brônquios principais direito e esquerdo. Em sua superfície interna, esta bifurcação forma uma crista denominada de curva traqueal.
+G: F
+C: Forma uma crista denominada de carina.
+
+QCH: Assinale as assertivas verdadeiras sobre os brônquios:
+A1: Ao contrário da traqueia, não possuem em suas paredes placas de cartilagem e responsáveis por impedir que os brônquios de colabar e fechar as vias aéreas.
+G: F
+C: Possuem.
+A2: A traqueia se divide no brônquio principal direito, com menor diâmetro e mais longo, que entra no pulmão na altura de T5; e no brônquio principal esquerdo, mais calibroso, curto e verticalizado, que entra no pulmão na altura de T6.
+G: F
+C: A traqueia se divide no brônquio principal direito, mais calibroso, curto e verticalizado, que entra no pulmão na altura de T5; e no brônquio principal esquerdo, com menor diâmetro e mais longo, entra no pulmão na altura de T6.
+A3: Os brônquios principais de dividem em brônquios lobares, ou brônquios secundários, que seguem para cada lobo pulmonar. O brônquio principal direito dá origem a dois brônquios lobares, enquanto que o brônquio principal esquerdo, a três brônquios lobares.
+G: F
+C: O brônquio principal direito dá origem a três brônquios lobares, enquanto que o brônquio principal esquerdo, a dois brônquios lobares.
+A4: Brônquios lobares se dividem em dezoito brônquios segmentares, ou brônquios terciários, que 
+se dirigem para cada um dos segmentos pulmonares.
+G: V
+A5: O pulmão direito é formado por dez segmentos (3 no lobo superior, 2 no lobo médio e 5 no lobo inferior) e o pulmão esquerdo é formado por 8 segmentos (4 no lobo superior e 4 no lobo inferior).
+G: V
+A6: À medida que os brônquios segmentares se dividem em ramos menos calibrosos, as placas de cartilagem vão se tornando gradativamente menores e em menor número, até que desaparecem, se tornando os bronquíolos, tubos com cerca de 1 mm de diâmetro e com as paredes formadas por tecido muscular e mucosa, desprovidas de placas de cartilagem.
+G: V
+A7: Os bronquíolos se dividem nos bronquíolos respiratórios, que se dividem para formar os bronquíolos terminais, que já fazem as trocas gasosas e formam cerca de 2 a 11 ductos alveolares, que por sua vez são constituídos por 5 ou 6 sacos alveolares.
+G: F
+C: Os bronquíolos se dividem nos bronquíolos terminais, que se dividem para formar os bronquíolos respiratórios, que já fazem as trocas gasosas e formam cerca de 2 a 11 ductos alveolares, que por sua vez são constituídos por 5 ou 6 sacos alveolares.
+A8: Os alvéolos são a porção final dos brônquios, estão em íntima relação com capilares sanguíneos e são responsáveis pelas trocas gasosas.
+G: V
+
+QCH: Assinale as assertivas verdadeiras sobre os pulmões:
+A1: Os pulmões são órgãos de consistência esponjosa, com cerca de 25 cm de comprimento, localizados na caixa torácica, inferiormente ao diafragma.
+G: F
+C: Os pulmões estão localizados superiormente ao diafragma.
+A2: A pleura é uma membrana dupla que reveste os pulmões, sendo a pleura visceral a camada mais externa, fixada à parede torácica.
+G: F
+C: A pleura visceral é a camada mais interna, aderida ao pulmão. A pleura parietal é a camada externa, fixada à parede torácica.
+A3: A cavidade pleural, localizada entre as duas camadas da pleura, contém o líquido pleural, que tem como função diminuir o atrito durante a respiração.
+G: V
+A4: A cúpula da pleura é a porção da pleura parietal que recobre a base do pulmão, na região do diafragma.
+G: F
+C: A cúpula da pleura é a porção que recobre o ápice do pulmão. A parte que recobre o diafragma é a parte diafragmática.
+A5: Na região do hilo pulmonar, a pleura visceral se reflete e se continua com a pleura parietal.
+G: V
+A6: O pulmão possui uma base superior, que se projeta acima da primeira costela, e um ápice inferior, que repousa sobre o diafragma.
+G: F
+C: O pulmão possui um ápice superior e uma base inferior.
+A7: A face mediastinal do pulmão é voltada medialmente e possui uma depressão chamada impressão cardíaca.
+G: V
+A8: O pulmão esquerdo possui uma face diafragmática mais profunda devido à posição do fígado na cavidade abdominal.
+G: F
+C: É o pulmão direito que possui a face diafragmática mais profunda devido à posição do fígado.
+A9: Na margem anterior do pulmão esquerdo, encontram-se a incisura cardíaca e, logo abaixo, um processo denominado língula.
+G: V
+A10: O pulmão direito é dividido em três lobos (superior, médio e inferior) pelas fissuras oblíqua e horizontal.
+G: V
+A11: O pulmão esquerdo é dividido em dois lobos (superior e inferior), separados pela fissura horizontal.
+G: F
+C: Os lobos do pulmão esquerdo são separados pela fissura oblíqua.
+A12: A segmentação pulmonar, diferente da de outros órgãos, não segue a irrigação sanguínea, mas sim as divisões da árvore brônquica.
+G: V
+A13: O pulmão direito é formado por 8 segmentos broncopulmonares, enquanto o esquerdo é formado por 10.
+G: F
+C: O pulmão direito é formado por 10 segmentos e o esquerdo por 8.
+A14: Os alvéolos possuem paredes compostas por múltiplas camadas de células, garantindo sua resistência.
+G: F
+C: As paredes dos alvéolos são compostas por uma única camada de células epiteliais planas para facilitar a difusão de gases.
+A15: A vascularização pulmonar é dividida em funcional (artérias e veias pulmonares para a hematose) e nutritiva (artérias e veias brônquicas para o tecido pulmonar).
+G: V
+A16: A face costal do pulmão é grande, convexa e, por seu contato com a superfície interna da caixa torácica, possui impressões das costelas em sua superfície.
+G: V
+A17: A pleura parietal está intimamente fixada à superfície do pulmão, inclusive adentrando as fissuras que separam os lobos pulmonares.
+G: F
+C: Pleural visceral.
+A18: As artérias brônquicas, responsáveis pela vascularização nutritiva do pulmão, são ramos da aorta ascendente.
+G: F
+C: Ramos da aorta descendente.
+
+

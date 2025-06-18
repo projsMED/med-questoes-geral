@@ -1,0 +1,120 @@
+Q: A cirrose hepática é considerada a principal doença crônica do fígado e é caracterizada pela substituição difusa da estrutura hepática por nódulos de estrutura anormais circundados por fibrose. A principal etiologia da cirrose hepática é:
+A) Diabetes Mellitus.
+B) Obstrução biliar.
+C) Carcinoma hepático.
+D) Refluxo hepatojugular.
+E) Alcoolismo.
+G: E
+
+Q: A cirrose consiste numa doença crônica do fígado. São achados que podem caracterizar a cirrose:
+‎ 
+I. acentuada deformação da arquitetura hepática;
+‎ 
+II. fibrose devido ao depósito de tecido fibroso e de colágeno;
+‎ 
+III. nódulos regenerativos circundados por tecido cicatricial.
+‎ 
+Dos itens, verifica-se que está/ão correto/s
+A) I, apenas. 
+B) III, apenas. 
+C) I e II, apenas. 
+D) II e III, apenas. 
+E) I, II e III.  
+G: E
+
+Q: A cirrose hepática é caracterizada por:
+A) necrose das células hepáticas, rapidamente progressiva, que pode levar à falência hepática e morte.
+B) fibrose, poupando as veias centrais.
+C) nódulos de regeneração, resultado da hiperplasia dos hepatócitos residuais.
+D) preservação da arquitetura lobular do fígado.
+E) envolvimento focal do parênquima hepático.
+G: C
+C:
+Justificativa:
+A característica definidora da cirrose é a presença de nódulos de regeneração, que se formam quando os hepatócitos sobreviventes tentam regenerar-se para compensar a perda de função hepática.
+Estes nódulos são circundados por tecido fibroso cicatricial.
+As outras alternativas estão incorretas porque:
+{A}: Descreve hepatite fulminante, não cirrose (que é uma condição crônica, não rapidamente progressiva).
+{B}: Na cirrose, a fibrose não poupa as veias centrais; ao contrário, há distorção da vasculatura hepática.
+{D}: A cirrose altera significativamente a arquitetura lobular do fígado, não a preserva.
+{E}: A cirrose é uma doença difusa do fígado, não focal.
+
+Q: São sinais e sintomas da cirrose compensada, EXCETO:
+A) Hipotensão.
+B) Eritema palmar.
+C) Indigestão matinal vaga.
+D) Edema de tornozelo.
+E) Esplenomegalia.
+G: A
+C: Hipotensão e Taquicardia: sinais de choque na cirrose descompensada.
+
+Q: Cirrose hepática é uma doença caracterizada pela desordem da arquitetura hepática, definida histologicamente por fibrose e nódulos regenerativos. Sobre essa condição clínica, é correto afirmar que
+A) embora tenha múltiplas etiologias o tratamento curativo se instalado precocemente tem bom resultado na reversão da fibrose hepática.
+B) a fisiopatologia da ascite está na ativação do sistema renina angiotensina aldosterona.
+C) os distúrbios de hemostasia na cirrose ocorrem por deficiência dos fatores de coagulação do fígado e alterações quantitativas e qualitativas das plaquetas, com tendência apenas a sangramentos.
+D) hemocromatose é etiologia de cirrose mais comum em mulheres acima de 50 anos com história familiar de cirrose e histórico de múltiplas doações de sangue.
+E) ligadura de varizes esofágicas só têm indicação após o primeiro episódio de hemorragia.
+G: B
+
+Q: A icterícia pode ser causada por um aumento predominantemente da bilirrubina conjugada (direta) ou não conjugada (indireta). A causa de icterícia por acúmulo predominante de bilirrubina conjugada (direta) é:
+A) Síndrome de Gilbert;
+B) Infarto Pulmonar;
+C) Anemias hemolíticas;
+D) Hepatite Autoimune;
+E) Síndrome de Crigler-Najjar.
+G: D
+
+Q: Uma criança de 5 anos é levada ao pronto-socorro com icterícia, urina escura e hepatomegalia. Os exames laboratoriais mostram bilirrubina total de 15 mg/dL, com 12 mg/dL de bilirrubina direta. As transaminases estão elevadas (ALT 350 U/L, AST 400 U/L), e a fosfatase alcalina está dentro dos limites normais.
+Qual é a causa mais provável da icterícia nesta criança?
+A) Hepatite viral aguda.
+B) Atresia biliar.
+C) Doença hemolítica do recém-nascido. 
+D) Síndrome de Gilbert.
+E) Obstrução do ducto biliar comum.
+G: A
+
+Q: Analise as afirmativas abaixo e dê valores Verdadeiro (V) ou Falso (F). 
+( ) A icterícia pré-hepática resulta da presença excessiva de bilirrubina conjugada (direta) no sangue circulante.
+( ) A icterícia de origem hemolítica ocorre por aumento da concentração de bilirrubina indireta no sangue, decorrente de doenças que aumentam excessivamente a destruição de hemácias.
+( ) Em casos de hiperbilirrubinemia predominantemente não-conjugada, a bilirrubina indireta também pode ser detectada na urina.
+( ) No fígado, ao ser conjugada por enzimas microssomais dos hepatócitos, a bilirrubina se liga a albumina plasmática para ser excretada. Assinale a alternativa que apresenta a sequência correta de cima para baixo.
+A) F, V, F, F
+B) F, V, V, V
+C) V, F, V, F
+D) V, V, F, V
+G: A
+C: Gabarito:
+( ) A icterícia pré-hepática resulta da presença excessiva de bilirrubina indireta
+( ) A icterícia de origem hemolítica ocorre por aumento da concentração de bilirrubina indireta no sangue, decorrente de doenças que aumentam excessivamente a destruição de hemácias.
+( ) Em casos de hiperbilirrubinemia predominantemente não-conjugada, a bilirrubina indireta Não pode ser detectada na urina. 
+( ) No fígado, ao ser conjugada por enzimas microssomais dos hepatócitos, a bilirrubina se liga a ácido glicurônico
+
+Q: A icterícia reflete perturbações na produção, no metabolismo e na excreção da bilirrubina. Assinale a alternativa INCORRETA.
+A) A colúria e a acolia fecal são causadas tanto pela hiperbilirrubinemia direta (conjugada) quanto pela indireta (não conjugada).
+B) A obstrução mecânica da via biliar é causa de hiperbilirrubinemia direta e pode ser originada por cálculo, estenose ou tumores.
+C) O prurido cutâneo é manifestação comum em doenças hepáticas colestáticas.
+D) A presença da tríade de Charcot evidencia complicação da obstrução da via biliar, levando à suspeita diagnóstica de colangite.
+E) Na cirrose, todas as etapas do metabolismo da bilirrubina estão comprometidas.
+G: A
+C:
+A alternativa INCORRETA é a {A}: A colúria e a acolia fecal são causadas tanto pela hiperbilirrubinemia direta (conjugada) quanto pela indireta (não conjugada).
+Esta afirmação é incorreta porque:
+  • Colúria (urina escura) ocorre apenas na hiperbilirrubinemia direta/conjugada, pois somente a bilirrubina conjugada é hidrossolúvel e pode ser excretada pelos rins
+  • Acolia fecal (fezes esbranquiçadas) ocorre nas obstruções biliares que impedem a excreção da bilirrubina conjugada para o intestino, também relacionada à hiperbilirrubinemia direta/conjugada
+‎ 
+A hiperbilirrubinemia indireta/não conjugada não causa colúria nem acolia fecal, pois a bilirrubina não conjugada não é excretada na urina (não é hidrossolúvel) e não interfere na coloração das fezes.
+
+Q: As icterícias podem ser classificadas pelo predomínio de bilirrubina indireta (não conjugada) e direta (conjugada), podendo ter a sua origem pré, intra ou extra-hepática. Sobre o assunto, é correto afirmar que 
+A) a icterícia é considerada pré-hepática, quando o distúrbio antecede a entrada da bilirrubina direta no hepatócito. 
+B) nas hepatopatias por vírus, álcool, medicamentos e autoimunidade, as lesões são de causa pré, intra ou pós-hepáticas. 
+C) são causas de icterícia pré-hepática: colelitíase, pancreatite aguda ou crônica, colangiopatia da AIDS e colangiopatia pós COVID-19. 
+D) a anemia hemolítica, quando se manifesta com icterícia, é considerada pré-hepática, pois acomete a bilirrubina indireta antes da entrada no hepatócito. 
+G: D
+C: Justificativa:
+  • <b>Pré-hepática</b> (hemolítica): ocorre aumento de bilirrubina indireta (não conjugada) antes de seu processamento no hepatócito, como na anemia hemolítica, em que há destruição excessiva de hemácias e liberação de hemoglobina que gera bilirrubina indireta em excesso → {D} está correta.
+‎ 
+  • <b>Intra-hepática:</b> comprometimento do hepatócito (hepatites virais, alcoólicas, medicamentosas, autoimunes) leva a acúmulo tanto de bilirrubina direta quanto indireta, mas a lesão está dentro do fígado.
+‎ 
+  • <b>Pós-hepática</b> (obstrutiva): obstrução das vias biliares extra-hepáticas (litíase biliar, tumores de cabeça de pâncreas, colangiopatias) impede a excreção da bilirrubina conjugada.
+‎ 
+As demais opções se equivocam ao classificar a fase de ocorrência ({A} fala de “bilirrubina direta” em vez de indireta; {B} confunde causas exclusivamente intra-hepáticas com pré ou pós; {C} lista causas de obstrução biliar, que são pós-hepáticas).

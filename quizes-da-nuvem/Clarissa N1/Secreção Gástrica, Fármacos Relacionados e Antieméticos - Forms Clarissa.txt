@@ -1,0 +1,99 @@
+Q: Um fármaco como o omeprazol age especificamente:
+A) Nas células semelhantes a enterocromafins, inibindo a histamina que diminui a acidez.
+B) Nas células G, inibindo a produção de ácido.
+C) Nas células parietais, bloqueando as bombas de prótons (H+), diminuindo a acidez.
+D) No aumento da produção de muco pelas células mucosas que protege a mucosa gástrica dos ácidos.
+E) Nas células parietais, bloqueando a histamina que diminui a acidez.
+G: C
+C: O omeprazol é um pró-fármaco que se ativa no interior dos túbulos secretores das células parietais do estômago e forma derivados sulfidrílicos que se ligam de forma covalente à subunidade H⁺/K⁺-ATPase (bomba de prótons), inibindo-a de modo irreversível e reduzindo drasticamente a secreção de ácido clorídrico.
+
+Q: Os antiácidos são substâncias químicas que exercem efeitos paliativos no estômago, pois:
+A) Inibem a produção de ácido gástrico.
+B) Bloqueiam a produção de ácido e histamina.
+C) Aumentam a produção de muco e bicarbonato.
+D) Agem como tampão a curto prazo.
+E) Aliviam a dor por meio do bloqueio de terminações nervosas livres da dor.
+G: D
+C: Antiácidos (como hidróxido de alumínio, hidróxido de magnésio ou carbonato de cálcio) neutralizam quimicamente o ácido gástrico já secretado, elevando imediatamente o pH estomacal, mas sem interferir na produção de ácido, por isso seu efeito é apenas de alívio sintomático e de curta duração.
+
+Q: Homem, 65 anos, em uso de omeprazol e metformina, inicia investigação de déficit cognitivo, adinamia e sonolência. Apresenta Hb 9,0 g/dL; Ht 27%; VCM 122fl, sendo indicada hematoscopia, que revela macrocitose importante, macroovalócitos e neutrófilos plurisegmentados.  A etiologia mais provável é:
+A) mielodisplasia;
+B) hipotireoidismo primário;
+C) deficiência de ácido fólico;
+D) deficiência de vitamina B12;
+E) infiltração medular.
+G: D
+C: O paciente, idoso e em uso prolongado de omeprazol (que reduz a clivagem de complexo B₁₂–fator intrínseco) e metformina (associada à má absorção de B₁₂), desenvolveu anemia macrocítica com VCM elevado e sinais clássicos de megaloblastose (macroovalócitos e neutrófilos hipersegmentados). Além disso, quadro de déficit cognitivo e sonolência reforça o comprometimento neurológico típico da carência de cobalamina.
+
+Q: Um homem de 49 anos possui história de úlcera e também sofre de artrite reumatóide. Recentemente este senhor apresentou inchaço e dor nas articulações das mãos. Foi então prescrito para ele um antiinflamatório não-esteróide (AINE). Dias depois o paciente percebeu um desconforto epigástrico significativo e teve de ser internado. Qual dos seguintes fármacos, mais se aproxima de uma substância endógena e que poderia ser prescrito juntamente com o AINE a fim de reduzir o risco de reativação da úlcera desse paciente?
+A) Cimetidina
+B) Omeprazol
+C) Misoprostol
+D) Probenecida
+E) Ranitidina
+G: C
+C: O misoprostol é um análogo sintético de prostaglandina E₁, estruturalmente similar a um mediador endógeno, que protege a mucosa gástrica estimulando a produção de muco e bicarbonato e melhorando a perfusão sanguínea local. Sua administração conjunta com AINEs neutraliza parcialmente a inibição das prostaglandinas endógenas, reduzindo o risco de úlcera ou de reativação de lesões causadas por antiinflamatórios.
+
+Q: Existe um grupo de células na parede do estômago que produz duas substâncias responsáveis, respectivamente, pela barreira física e química contra a ação nociva dos ácidos. Quais são essas células e essas substâncias?
+A) Células parietais, histamina e lipase.
+B) Células G, histamina e gastrina.
+C) Células D, muco e gastrina.
+D) Células mucosas, muco e bicarbonato.
+E) Células principais, somatostatina e bicarbonato.
+G: D
+C: As células epiteliais mucosas do estômago secretam continuamente uma camada de muco rico em bicarbonato que forma a principal barreira física e química contra a agressão do ácido clorídrico e das enzimas digestivas. Nenhum outro tipo celular gástrico reúne essa dupla função protetora: as células parietais produzem ácido e fator intrínseco, as células G secretam gastrina, as células D liberam somatostatina e as células principais expelem pepsinogênio, mas nenhuma delas gera muco nem bicarbonato.
+
+Q: A ranitidina e a cimetidina são fármacos que atuam em células específicas do epitélio gástrico, modulando a produção de hormônios e, consequentemente, a acidez gástrica. De que modo essas substâncias agem?
+A) Inativam os neurônios do sistema nervoso parassimpático por meio do nervo vago, com bloqueio da liberação de gastrina pelas células G.
+B) Inibem a produção de gastrina, que age nas células semelhantes às enterocromafins.
+C) Bloqueiam os receptores de histamina do tipo H2.
+D) Inibem ou bloqueiam a bomba de prótons.
+E) Ativam os receptores de histamina do tipo H2.
+G: C
+C: Tanto a ranitidina quanto a cimetidina são antagonistas competitivos dos receptores H₂ localizados na membrana das células parietais, reduzindo a resposta secretória à histamina e, assim, diminuindo a produção de ácido. Elas não interferem no nervo vago nem inibem diretamente a gastrina, não atuam sobre a bomba de prótons e não ativam receptores H₂.
+
+Q: As ulcerações gástricas são comuns e induzem a dor em muitos pacientes que possuem algum distúrbio que aumente, por exemplo, a secreção de ácido clorídrico. Vários fármacos podem ser empregados para o tratamento dos sintomas observados. Nem todas as moléculas, entretanto, possuem mecanismos que atuem em receptores específicos. Marque o item em que há um exemplo de fármaco que não age em um receptor específico.
+A) Omeprazol
+B) Prometazina
+C) Sucralfato
+D) Ranitidina
+E) Metoclopramida
+G: C
+C: O sucralfato não age em nenhum receptor específico; ao entrar em contato com o suco gástrico, forma um gel aderente que recobre mecanicamente a úlcera e protege a mucosa. Já o omeprazol inibe a bomba de prótons, a prometazina bloqueia receptores H₁, a ranitidina antagoniza receptores H₂ e a metoclopramida antagoniza receptores D₂ — todos alvos moleculares definidos.
+
+Q: O mecanismo de ação da metoclopramida é:
+A) Ativação de receptores D3.
+B) Bloqueio de receptores 5HT1.
+C) Ativação de receptores beta-1.
+D) Antagonismo de receptores D2.
+E) Bloqueio de receptores colinérgicos.
+G: D
+C: A metoclopramida exerce sua ação pró-cinética e antiemética principalmente ao bloquear de modo competitivo os receptores de dopamina D₂ presentes no plexo mientérico do trato gastrointestinal e na zona de gatilho quimiorreceptora do tronco encefálico. No nível entérico, esse bloqueio libera a inibição dopaminérgica sobre as terminações colinérgicas, resultando em maior liberação de acetilcolina, aumento do peristaltismo gástrico e aceleração do esvaziamento. No sistema nervoso central, o antagonismo de D₂ na zona de gatilho reduz a ativação do centro do vômito, conferindo-lhe também efeito antiemético.
+
+Q: Sobre náuseas e vômitos pós-operatórios, é correto afirmar que:
+A) A zona quimiorreceptora do gatilho das náuseas e vômitos encontra-se no núcleo do trato solitário, no teto do terceiro ventrículo.
+B) Apesar de residir no sistema nervoso central a zona quimiorreceptora não possui barreira hematoencefálica, permitindo a detecção de substâncias emetogênicas.
+C) Náuseas e vômitos pós-operatórios ocorrem em apenas 2% dos pacientes.
+D) A dexametasona não apresenta eficácia na prevenção de náuseas pós-operatórias.
+E) A ondansetrona tem ação antagonista dopaminérgica e apresenta eficácia superior à dexametasona.
+G: B
+
+Q: O centro do vômito, localizado na formação reticular do tronco encefálico, coordena e controla o complexo processo do vômito. Qual das drogas abaixo bloqueia os receptores 5-HT3 periféricos nos aferentes vagais intestinais?
+A) Metoclopramida
+B) Bromoprida
+C) Domperidona
+D) Dimenidrinato
+E) Ondansetrona
+G: E
+C: A ondansetrona é um antagonista seletivo dos receptores 5-HT₃ localizada nos aferentes vagais do trato gastrointestinal e nos núcleos do tronco encefálico envolvidos no reflexo do vômito. Ao impedir a ligação da serotonina nesses receptores, bloqueia o estímulo emético gerado por irritação ou distensão intestinal, sendo extremamente eficaz na prevenção de náuseas e vômitos induzidos por quimioterapia, radioterapia e pelo pós-operatório.
+
+
+
+Q: O fármaco que possui efeito sedativo acentuado, anticolinérgico, adrenolítico periférico e atividade antiemética, da classe dos anti-histamínicos, denomina-se:
+A) budesonida.
+B) prometazina.
+C) dexametazona.
+D) cetirizina.
+E) loratadina.
+G: B
+C: A prometazina faz parte da primeira geração de anti-histamínicos H₁ e destaca-se por quatro propriedades: forte sedação (devido à penetração no SNC), ação anticolinérgica (bloqueio de receptores muscarínicos), adrenolítico periférico (antagonismo parcial de receptores α₁) e potente efeito antiemético. Essas características a tornam útil tanto no controle de náuseas e vômitos quanto na necessidade de sedação leve ou alívio de sintomas vestibulares.

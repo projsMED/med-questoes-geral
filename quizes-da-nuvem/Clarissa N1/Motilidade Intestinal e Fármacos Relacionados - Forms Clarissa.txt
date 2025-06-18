@@ -1,0 +1,152 @@
+Q: Um paciente de 49 anos de idade com doença de Crohn grave não respondeu à terapia farmacológica e foi submetido à ressecção ileal. Depois da cirurgia, ele apresentará esteatorreia, pois:
+A) o reservatório hepático de ácidos biliares aumenta
+B) não há formação de quilomícrons no lúmen intestinal
+C) não há formação de micelas no lúmen intestinal
+D) os triglicerídios da dieta não podem ser digeridos
+E) o pâncreas não secreta lipase
+G: C
+C: A ressecção ileal remove a porção do intestino delgado que normalmente transporta os ácidos biliares a partir do lúmen intestinal, fazendo sua recirculação para o fígado. Como esse processo mantém o reservatório de ácidos biliares, a síntese de novos ácidos biliares só é necessária para repor aqueles que são perdidos nas fezes. Na ressecção ileal, os ácidos biliares secretados são, em sua maior parte, excretados nas fezes, e o reservatório hepático diminui significativamente. Os ácidos biliares são necessários para a formação das micelas no lúmen intestinal a fim de solubilizar os produtos da digestão dos lipídios, de modo que possam ser absorvidos. Os quilomícrons são formados dentro das células epiteliais intestinais e transportados até os vasos linfáticos.
+
+Q: Um estudante universitário de 24 anos de idade participa de um estudo de pesquisa clínica sobre motilidade intestinal. A peristalse do intestino delgado:
+A) mistura o bolo alimentar
+B) é coordenada pelo sistema nervoso central (SNC)
+C) envolve a contração do músculo liso atrás e na frente do bolo alimentar
+D) envolve a contração do músculo liso atrás do bolo alimentar e o relaxamento do músculo liso na frente do bolo
+E) envolve o relaxamento simultâneo do músculo liso em todo o intestino delgado
+G: D
+C: A peristalse é a atividade contrátil coordenada pelo sistema nervoso entérico (mas não pelo sistema nervoso central [SNC]) e que impulsiona o conteúdo intestinal para a frente. Normalmente, ocorre após haver mistura, digestão e absorção suficientes. Para impulsionar o bolo alimentar para a frente, é preciso que haja contração simultânea do músculo liso atrás do bolo alimentar e relaxamento na sua frente.
+
+Q: Uma mulher de 44 anos de idade é diagnosticada com síndrome de Zollinger-Ellison. Qual das seguintes alterações é consistente com o diagnóstico?
+A) Diminuição dos níveis séricos de gastrina
+B) Aumento dos níveis séricos de insulina
+C) Aumento da absorção dos lipídios da dieta
+D) Diminuição da massa de células parietais
+E) Doença ulcerosa péptica
+G: E
+C: A síndrome de Zollinger-Ellison (gastrinoma) é um tumor de células não β do pân creas. O tumor secreta gastrina, que circula até as células parietais gástricas para provocar aumento da secreção de H+, úlcera péptica e crescimento das células parietais (efeito trófico da gastrina). Como o tumor não acomete as células β pancreáticas, os níveis de insulina não são afetados. A absorção dos lipídios diminui (e não aumenta), visto que a secreção aumentada de H+ diminui o pH do lúmen intestinal e inativa as lipases pancreáticas.
+
+Q: O Trato Gastrointestinal (TGI) pode ser considerado o maior órgão endócrino do corpo humano, capaz de produzir hormônios que atuam no próprio TGI e que também integram e facilitam a comunicação entre o sistema digestório, o sistema nervoso central e o sistema nervoso entérico. Dentre eles, podemos citar os secretados no intestino:
+A) Secretina, Colescistocinina e Incretinas.
+B) Histamina, Acetilcolina e Gastrina.
+C) Secretina, Histamina e Pepsina.
+D) Grelina, Acetilcolina e Incretinas.
+E) Colescistocinina, Incretinas e Histamina.
+G: A
+C: Todas as três substâncias são hormônios secretados pelas células do intestino delgado:
+Secretina
+– Secretada pelas células S do duodeno (porção inicial do intestino delgado) em resposta ao quimo ácido.
+– Estimula o pâncreas exócrino a liberar bicarbonato e a inibir a secreção gástrica.
+Colecistocinina (CCK)
+– Produzida pelas células I do duodeno e jejuno em resposta à presença de ácidos graxos e aminoácidos no quimo.
+– Estimula a contração da vesícula biliar (liberação de bile) e a secreção de enzimas pancreáticas.
+Incretinas
+– Principalmente GLP-1 (péptido‐like glucagon-1) e GIP (péptido inibidor gástrico), secretados pelas células L e K do intestino delgado.
+– Aumentam a secreção de insulina pelas células β-pancreáticas em presença de glicose e reduzem o esvaziamento gástrico.
+Para as outras alternativas:
+Histamina → liberada pelas células ECL (entero­cromafins-like) do estômago, não do intestino; potencia a produção de ácido pelas células parietais gástricas.
+Acetilcolina → neurotransmissor liberado pelos neurônios colinérgicos do sistema nervoso entérico e parassimpático, não é um hormônio gastrointestinal endócrino.
+Gastrina → secretada pelas células G do antro pilórico (estômago), estimula a secreção de suco gástrico.
+Pepsina → enzima digestiva (zimogênio pepsinogênio → pepsina pelas células principais gástricas), não é hormônio.
+Grelina → hormônio da “fome”, secretado pelas células P/D1 do fundo gástrico (estômago).
+
+Q: As ondas lentas nas células musculares lisas do intestino delgado são:
+A) potenciais de ação
+B) contrações fásicas
+C) contrações tônicas
+D) potenciais de membrana de repouso oscilantes
+E) liberação oscilante de colecistoquinina (CCK)
+G: D
+C: As ondas lentas são potenciais de repouso da membrana oscilante do músculo liso GI. As ondas lentas fazem com que o potencial de membrana se aproxime ou alcance o limiar, mas elas próprias não são potenciais de ação. Se o potencial de membrana atingir o limiar por meio de uma onda lenta, então ocorrem potenciais de ação, seguidos de contração.
+
+Q: Qual dos seguintes compostos é transportado nas células epiteliais intestinais por um processo de cotransporte dependente de Na+?
+A) Ácidos graxos
+B) Triglicerídios
+C) Frutose
+D) Alanina
+E) Oligopeptídios
+G: D
+C: A frutose é o único monossacarídio que não é absorvido por cotransporte dependente de Na+; ela é transportada por difusão facilitada. Os aminoá cidos são absorvidos por cotransporte dependente de Na+, mas não os oligopeptídios (unidades peptídicas maiores). Os triglicerídios não são absorvidos se não houver digestão adicional. Os produtos da digestão dos lipídios, como os ácidos graxos, são absorvidos por difusão simples.
+
+Q: Os antidiarreicos representam uma classe farmacológica de uso em situações de urgência como nos casos de diarréia aguda. Assinale a alternativa que apresenta um fármaco que pertence a esta classe.
+A) Loperamida.
+B) Salbutamol.
+C) Hidrocortisona.
+D) Dimeticona.
+G: A
+C: Lomperamida é um opióides que atua sobre os receptores mu, inibe liberação de prostaglandinas e acetilcolina, retardando a motilidade gastrointestinal e tem como principal indicação a diarreia crônica.
+Salbutamol: é um agonista B-2 adrenérgico, um broncodilatador utilizados no quadro clínico de asma e outras doenças respiratórias.
+Hidroxortisona: é um AIE muito indicado para dermatites tópicas.
+Dimeticona: atua no estômago e intestino diminuindo a tensão superficial dos líquidos digestivos, é indicadas para desconforto gastrointestinais como flatulências e cólicas abdominais.
+
+Q: Um grupo de pessoas, que havia almoçado em um mesmo restaurante e ingerido o mesmo alimento, apresentou sintomas em comum de diarreia, fortes cólicas abdominais, náuseas e vômitos. Foi diagnosticado um caso de intoxicação alimentar. No pronto atendimento, foi administrada uma ampola (i.v.) de um antiespasmódico e soro para reidratação. Considerando os antiespasmódicos no geral, assinale a alternativa que corresponde ao sistema em atividade e a classe do fármaco escolhido.
+A) Estímulo parassimpático e fármaco bloqueador muscarínico.
+B) Estímulo simpático e fármaco estimulante colinérgico.
+C) Estímulo parassimpático e fármaco bloqueador alfa.
+D) Estímulo simpático e fármaco bloqueador beta.
+E) Estímulo simpático e fármaco bloqueador alfa.
+G: A
+C: Sistema em atividade: o trato gastrointestinal é principalmente estimulado pelo nervo vago (parassimpático), que, via receptores muscarínicos M₃, promove aumento do tônus e das contrações da musculatura lisa intestinal.
+Classe de fármaco escolhido: antimuscarínicos (bloqueadores muscarínicos), por exemplo o butilbrometo de escopolamina (Buscopan®), que antagoniza M₃ e reduz espasmos e contrações abdominais.
+
+Q: Enema é a introdução de solução laxativa no intestino. Tem como indicações:
+I - Ativar funcionamento intestinal melhorando constipação;
+II - Preparar paciente para cirurgias e exames;
+III - Para fins terapêuticos.
+Dos itens acima:
+A) Apenas os itens I e II estão corretos.
+B) Apenas os itens I e III estão corretos.
+C) Apenas os itens II e III estão corretos.
+D) Todos os itens estão corretos.
+G: D
+
+Q: Dentre os fármacos que afetam a função gastrointestinal estão:
+A) Atropina e loperamida, que aumentam a velocidade de esvaziamento gástrico.
+B) Metoclopramida e cisaprida, que aumentam a velocidade de esvaziamento gástrico.
+C) Codeína e morfina, que aumentam a velocidade de esvaziamento gástrico.
+D) Atropina e loperamida, que aumentam a motilidade intestinal.
+E) Bisacodil e docusato, que aumentam a velocidade de esvaziamento gástrico.
+G: B
+C: A alternativa correta indica a metoclopramida e a cisaprida como fármacos que aumentam a velocidade de esvaziamento gástrico. Tanto a metoclopramida quanto a cisaprida atuam por estimular a liberação de acetilcolina no plexo mientérico do trato digestório, resultando em aumento do peristaltismo gástrico e, consequentemente, em aceleração do esvaziamento do estômago para o duodeno.
+A metoclopramida é um antagonista dos receptores D₂ e agonista dos receptores 5-HT₄, o que eleva a liberação de acetilcolina pelas terminações nervosas entéricas. Na prática, isso se traduz em maior motilidade gástrica e em reforço do tônus do esfíncter esofágico inferior, benefícios usados no tratamento de refluxo e gastroparesia. Já a cisaprida, embora hoje pouco utilizada devido a efeitos adversos cardíacos, age de modo seletivo nos receptores 5-HT₄, promovendo também liberação de acetilcolina e aumento das contrações coordenadas do estômago.
+A atropina e loperamida não aceleram o esvaziamento gástrico. A atropina, sendo antimuscarínico, reduz a motilidade e retarda o esvaziamento. A loperamida, agonista opioide mu, diminui o peristaltismo intestinal e aumenta o tempo de trânsito, usado para tratar diarreia, não para acelerar o esvaziamento.
+Sobre codeína e morfina como aceleradores do esvaziamento gástrico. Na realidade, esses opioides inibem a motilidade tanto no estômago quanto no intestino grosso, promovendo constipação e retardo do trânsito digestivo.
+A combinação de atropina e loperamida é descrita como promotora de motilidade intestinal, o que é justamente o oposto do efeito real desses fármacos: ambos diminuem a atividade muscular do trato gastrointestinal, sendo utilizados para aliviar espasmos (atropina) ou diarreia (loperamida).
+É mencionado bisacodil e docusato como aceleradores do esvaziamento gástrico, mas isso não procede. O bisacodil é um laxante estimulante que age no cólon, não no estômago, e o docusato é um surfactante fecal que amolece as fezes sem alterar o esvaziamento gástrico.
+
+Q: Qual dos seguintes medicamentos é utilizado para diminuir a frequência e a força de contração da musculatura lisa, aliviando assim a dor?
+A) Escopolamina.
+B) Dimeticona.
+C) Bisacodil.
+D) Hidróxido de alumínio.
+E) Indometacina.
+G: A
+C: Escopolamina está presente no buscopan, muito usado para alívio de dores de cólicas menstruais. Ele bloqueia a ligação da acetil colina nos recepctores muscarínicos, inibindo a contração da musculatura lisa.
+Dimeticona: Este medicamento é utilizado principalmente como um antiflatulento, ajudando a reduzir gases no trato gastrointestinal. Não possui ação antiespasmódica para aliviar dor causada por contrações da musculatura lisa.
+Bisacodil: O Bisacodil é um laxante que atua diretamente no intestino grosso aumentando a motilidade intestinal. Não tem a função de relaxar a musculatura lisa para alívio da dor.
+Hidróxido de alumínio: Este composto é um antiácido usado para neutralizar a acidez estomacal. Ele não possui efeito antiespasmódico e, portanto, não é utilizado para aliviar a dor associada a contrações da musculatura lisa.
+Indometacina: A Indometacina é um anti-inflamatório não esteroidal (AINE). Embora tenha propriedades analgésicas, seu mecanismo de ação não inclui o relaxamento da musculatura lisa para reduzir dor causada por espasmos.
+
+Q: No tratamento da constipação intestinal, pode-se usar diversas modalidades de laxativos. Dentre eles, existem os laxantes osmóticos, também usados no preparo para exames colônicos. Assinale a alternativa a seguir que apresenta um laxativo osmótico.
+A) Plantago ovata.
+B) Cáscara sagrada.
+C) Sene.
+D) Bisacodil.
+E) Macrogol.
+G: E
+C: Laxantes osmóticos: lactulose, sorbitol, macrogol e leite de magnésia.
+
+Q: Os medicamentos procinéticos têm uso frequente nas dismotilidades do trato diegestivo, doença do refluxo gastroesofágico e distúrbios funcionais. São medicamentos procinéticos:
+A) bromoprida, tegaserode, neostigmina.
+B) omeprazol, domperidona, prostigmina.
+C) tegaserode, ranitidina, domperidona.
+D) neostigmina, domperidona, omeprazol.
+E) ranitidina, domperidona, cefalexina.
+G: A
+C: Bromoprida é um antagonista dos receptores D₂ que, ao bloquear a ação da dopamina inibidora no plexo mientérico, facilita a liberação de acetilcolina e acelera o trânsito gástrico e intestinal.
+Tegaserode age como agonista seletivo de receptores 5-HT₄, promovendo liberação de acetilcolina nas terminações nervosas entéricas e, assim, reforçando o peristaltismo, sobretudo no intestino delgado e cólon proximal.
+Neostigmina (ou prostigmina) é um inibidor da acetilcolinesterase, que prolonga a ação da acetilcolina nas junções neuromusculares do TGI, resultando em aumento de força e frequência das contrações.
+As demais alternativas incluem fármacos sem ação pró-cinética:
+Omeprazol, domperidona e prostigmina: embora domperidona e prostigmina (neostigmina) sejam pró-cinéticos, o omeprazol é um inibidor de bomba de prótons focado na redução de ácido gástrico, sem efeito direto sobre motilidade.
+Tegaserode, ranitidina e domperidona: tegaserode e domperidona são pró-cinéticos, mas a ranitidina é antagonista dos receptores H₂, utilizada para reduzir secreção ácida, sem ação de estímulo motor.
+Neostigmina, domperidona e omeprazol: aqui apenas neostigmina e domperidona aceleram o trânsito, enquanto omeprazol atua na secreção ácida.
+Ranitidina, domperidona e cefalexina: domperidona é o único agente pró-cinético; ranitidina (anti-H₂) e cefalexina (antibiótico) não influenciam a motilidade gastrointestinal.
