@@ -126,7 +126,7 @@ A) Acidose, hipertermia, hipercapnia e aumento de 2,3-difosfoglicerato.
 B) Acidose, hipertermia, hipercapnia e diminuição de 2,3-difosfoglicerato.
 C) Alcalose, hipotermia, hipocapnia e diminuição de 2,3-difosfoglicerato.
 D) Alcalose, hipertermia, hipocapnia e aumento de 2,3-difosfoglicerato.
-G: D
+G: A
 C: Deslocamento para a esquerda:<br>Aumenta a afinidade da hemoglobina pelo oxigênio, dificultando a liberação do oxigênio nos tecidos.<br>Deslocamento para a direita:<br>Diminui a afinidade da hemoglobina pelo oxigênio, facilitando a liberação do oxigênio nos tecidos. <br>Fatores que Afetam a Curva: <br>Temperatura:<br>Aumento da temperatura desloca a curva para a direita, facilitando a liberação de oxigênio. <br>pH:<br>Diminuição do pH (aumento da acidez) desloca a curva para a direita, facilitando a liberação de oxigênio. <br>Pressão parcial de CO2 (PCO2):<br>Aumento da PCO2 desloca a curva para a direita, facilitando a liberação de oxigênio. <br>2,3-difosfoglicerato (DPG):<br>Aumento do DPG desloca a curva para a direita, facilitando a liberação de
 
 Q: De acordo com este gráfico, a temperatura corpórea altera a disponibilidade de oxigênio e o ph. Assim, quando o corpo do ser humano fica exposto a alterações de temperatura pelo ambiente ou em razão de alteração do metabolismo, essas alterações afetam a taxa de disponibilidade de oxigênio (O2). Para tecidos que estão metabolicamente ativos, como os músculos durante o exercício, a taxa de respiração celular aumenta resultando em aumento da liberação de gás carbônico, o qual reage com a água formando ácido carbônico que se difunde e causa redução do pH.
