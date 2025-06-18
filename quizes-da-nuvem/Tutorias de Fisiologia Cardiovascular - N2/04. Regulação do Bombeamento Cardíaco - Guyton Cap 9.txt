@@ -1,0 +1,122 @@
+Q: Qual das alternativas melhor descreve o mecanismo de Frank-Starling?
+A) Aumento da frequência cardíaca provocado por estímulo parassimpático.
+B) Aumento da força de contração em resposta ao alongamento das fibras cardíacas pelo enchimento ventricular.
+C) Redução da força de contração com aumento da pressão arterial.
+D) Diminuição do débito cardíaco em resposta ao aumento da temperatura corporal.
+G: B
+C: O mecanismo de Frank-Starling explica que quanto mais o músculo cardíaco é alongado pelo volume de sangue (pré-carga), maior será a força de contração, aumentando o volume ejetado. Isso ocorre devido à otimização da sobreposição entre actina e miosina.
+
+Q: A estimulação simpática tem como efeito principal:
+A) Diminuição da frequência cardíaca e da força contrátil.
+B) Redução do potencial de ação nos miócitos cardíacos.
+C) Aumento da frequência cardíaca e da força de contração.
+D) Bloqueio da condução elétrica no nó atrioventricular.
+G: C
+C: O sistema simpático eleva a frequência cardíaca e aumenta a força de contração, podendo dobrar o débito cardíaco em situações de alta demanda, como no exercício físico.
+
+Q: Sobre os efeitos dos íons potássio e cálcio na função cardíaca, assinale a alternativa correta:
+A) O excesso de potássio aumenta a frequência e a força de contração cardíaca.
+B) O excesso de cálcio causa dilatação e flacidez do coração.
+C) O excesso de potássio pode causar fraqueza cardíaca e morte.
+D) A deficiência de cálcio não afeta a função cardíaca.
+G: C
+C: Altas concentrações de potássio reduzem o potencial de membrana em repouso, comprometendo os potenciais de ação e levando à fraqueza cardíaca, arritmias e risco de morte. Já o cálcio em excesso aumenta a contratilidade.
+
+QCH: Sobre o mecanismo de Frank-Starling, analise tudo o que for correto:
+NO-RANDOM: TRUE
+A1: A força de contração aumenta com o maior alongamento das fibras cardíacas.
+G: V
+A2: É um mecanismo exclusivo do coração, sem paralelo em outros músculos.
+G: F
+A3: O retorno venoso influencia diretamente a quantidade de sangue bombeada.
+G: V
+A4: Pressões atriais maiores resultam em maiores volumes de ejeção ventricular.
+G: V
+A5: É mediado principalmente pela ação do sistema nervoso autônomo.
+G: F
+C: <br> <br> GABARITO: O mecanismo é intrínseco ao músculo estriado, não exclusivo do coração. Ele não depende diretamente do sistema nervoso, e sim da resposta mecânica do miocárdio ao volume de sangue recebido.
+
+
+QCH: Sobre a ação do sistema nervoso autônomo no coração, assinale as afirmativas verdadeiras:
+NO-RANDOM: TRUE
+A1: A estimulação simpática pode aumentar o débito cardíaco em até mais de 100%.
+G: V
+A2: A estimulação parassimpática atua principalmente reduzindo a força contrátil ventricular.
+G: F
+A3: A estimulação simpática aumenta tanto a frequência quanto a força de contração.
+G: V
+A4: A estimulação vagal pode interromper temporariamente os batimentos cardíacos.
+G: V
+A5: A inibição simpática aumenta o bombeamento cardíaco em cerca de 30%.
+G: F
+C: <br> <br> GABARITO: A ação simpática aumenta significativamente a frequência e a força de contração. A ação parassimpática afeta principalmente a frequência, pois as fibras vagais se concentram nos átrios. A inibição simpática reduz o bombeamento cardíaco em cerca de 30%.
+
+
+QCH: Com relação aos efeitos da temperatura sobre a função cardíaca, assinale o que for CORRETO:
+NO-RANDOM: TRUE
+A1: O aumento da temperatura acelera a frequência cardíaca.
+G: V
+A2: A hipotermia pode levar à frequência cardíaca extremamente baixa.
+G: V
+A3: A temperatura não tem influência sobre o processo de autoexcitação cardíaca.
+G: F
+A4: Febre pode reduzir a frequência cardíaca pela metade.
+G: F
+A5: Elevação prolongada da temperatura pode enfraquecer o coração.
+G: V
+C: <br> <br> GABARITO: A temperatura corporal influencia diretamente a excitabilidade e contratilidade cardíaca. O calor aumenta a permeabilidade iônica, acelerando a autoexcitação, enquanto o frio extremo reduz drasticamente a FC. A febre pode duplicar a frequência cardíaca.
+
+
+Q: Explique como a atividade do sistema nervoso simpático influencia a regulação do bombeamento cardíaco.
+GABARITO: O sistema simpático atua diretamente sobre o coração, aumentando a frequência cardíaca (cronotropismo positivo) e a força de contração (inotropismo positivo). Isso ocorre por meio da liberação de noradrenalina, que se liga a receptores beta-adrenérgicos no miocárdio. O efeito final é o aumento do débito cardíaco, podendo ser ampliado em até três vezes em relação ao normal. Essa ação complementa o mecanismo de Frank-Starling e é crucial durante situações de estresse ou exercício.
+
+Q: Sobre o papel dos íons na função cardíaca, responda:
+A) Como o potássio afeta a função cardíaca em concentrações elevadas?
+B) Qual o efeito do cálcio sobre a contratilidade do coração?
+GABARITO: A) Altas concentrações de potássio despolarizam parcialmente a membrana celular, tornando o potencial de ação menos eficaz. Isso leva à fraqueza muscular, ritmo cardíaco anormal e, em casos graves, à morte.
+B) O cálcio é fundamental para o processo de contração muscular. Seu excesso pode induzir contrações espásticas e aumentar a força de ejeção. Já sua deficiência reduz a contratilidade, prejudicando a função do coração.
+
+Q: A elevação da pressão arterial até 160 mmHg reduz proporcionalmente o débito cardíaco.
+G: F
+C: O débito cardíaco permanece constante mesmo com aumento da pressão arterial até cerca de 160 mmHg. Apenas acima desse valor é que há queda significativa, pois o fator determinante é o retorno venoso, não a pós-carga.
+
+Q: A estimulação parassimpática intensa pode reduzir o débito cardíaco em mais de 50%.
+G: V
+C: Embora atue principalmente sobre os átrios, a forte ação vagal pode reduzir a frequência cardíaca drasticamente, com pequena redução na contratilidade, o que resulta em queda expressiva no débito cardíaco total.
+
+QCH: Sobre os efeitos dos íons e da temperatura sobre o coração, assinale a alternativa correta:
+A1: A hipotermia moderada acelera o batimento cardíaco.
+G: F
+C: A hipotermia diminui (não acelera) a frequência cardíaca, podendo levá-la a níveis extremamente baixos.
+A2: O excesso de potássio hiperpolariza a membrana cardíaca, aumentando a contratilidade.
+G: F
+C: O excesso de potássio despolariza (não hiperpolariza) a membrana, enfraquecendo a contração do coração.
+A3: Altas concentrações de cálcio podem gerar contrações cardíacas espásticas.
+G: V
+C: O excesso de cálcio aumenta a excitabilidade do músculo cardíaco, provocando contrações espásticas.
+A4: O excesso de potássio pode levar à flacidez do coração e bloqueio da condução elétrica.
+G: V
+C: Altas concentrações de potássio diminuem o potencial de ação, levando à flacidez do coração e bloqueios no feixe AV.
+A5: A febre diminui a frequência cardíaca.
+G: F
+C: A febre aumenta a frequência cardíaca, acelerando o metabolismo e o ritmo de autoexcitação do coração.
+
+QCH: Sobre o controle neural do coração, é correto afirmar:
+A1: A estimulação simpática reduz o volume de ejeção ventricular.
+G: F
+C: A estimulação simpática aumenta (não reduz) o volume de ejeção ao fortalecer a contração ventricular.
+A2: A estimulação simpática aumenta a força de contração do ventrículo esquerdo.
+G: V
+C: O simpático aumenta tanto a frequência quanto a força contrátil dos ventrículos, inclusive o esquerdo.
+A3: O parassimpático atua principalmente reduzindo a frequência cardíaca.
+G: V
+C: A principal ação do parassimpático (via nervo vago) é diminuir a frequência cardíaca, agindo majoritariamente nos átrios.
+A4: A ausência completa de estímulo parassimpático torna a frequência cardíaca mais elevada.
+G: V
+C: Sem o tônus parassimpático normal, o coração bate mais rápido, pois a inibição vagal está ausente.
+A5: A estimulação simpática diminui a frequência cardíaca de repouso.
+G: F
+C: A estimulação simpática aumenta a frequência cardíaca, elevando o ritmo mesmo em repouso.
+
+Q: Descreva o reflexo de Bainbridge e seu impacto sobre a frequência cardíaca. Explique também a diferença desse reflexo para a regulação via mecanismo de Frank-Starling.
+GABARITO: O reflexo de Bainbridge é um reflexo nervoso provocado pelo estiramento dos átrios devido ao aumento do retorno venoso. Ele ativa receptores de estiramento nos átrios, que enviam impulsos aferentes pelo nervo vago ao centro cardiovascular no bulbo. Como resposta, há um aumento reflexo da frequência cardíaca para evitar sobrecarga de volume.<br>Em contraste, o mecanismo de Frank-Starling é puramente mecânico: o aumento do volume ventricular gera maior força de contração, sem envolvimento neural, para bombear o volume adicional. Assim, Bainbridge atua via estímulo nervoso, enquanto Frank-Starling atua via resposta miofibrilar direta.

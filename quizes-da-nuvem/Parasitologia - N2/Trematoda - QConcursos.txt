@@ -1,0 +1,144 @@
+Q: Na classe Trematoda encontra-se a família Schitomatidae, que apresenta sexos separados. Um de seus representantes, o Schistosoma mansoni, é o agente da esquistosomose intestinal humana ou doença de Pirajá da Silva, ocorrendo na África, Antilhas e América do Sul. Esse verme apresenta complexo ciclo biológico, com notável interação adaptativa entre o parasito e seus hospedeiros e com o ambiente natural onde o ciclo ocorre. Em relação ao ciclo biológico e a aspectos patológicos, é INCORRETO afirmar:
+A) Em geral mais intensa na re-infecção, a dermatite cercariana é um processo inflamatório importante na imunidade concomitante.
+B) Os vermes adultos são dióicos e habitam a luz do jejuno-íleo, onde as fêmeas fazem a postura dos ovos com miracídios embrionados.
+C) Os vermes mortos podem provocar lesões extensas, embora circunscritas, principalmente no fígado do hospedeiro definitivo.
+D) Ao alcançarem a água, os ovos liberam os miracídio sob o estímulo de temperaturas mais altas, luz intensa e oxigenação da água.
+G: B
+C: Na fase parasitária, o esquistossomo vive geralmente nas veias que ligam o intestino ao fígado das pessoas.
+
+Q: Considerando os ciclos de vida dos parasitas invertebrados causadores de doenças e as formas de prevenção que devem ser adotadas pela população para evitar a contaminação por esses parasitas, julgue o item a seguir:
+A esquistossomose é causada por platelmintos da classe Trematoda. As larvas desses platelmintos liberadas pelo hospedeiro intermediário penetram ativamente no homem pela pele e chegam aos seus vasos sanguíneos, instalando-se nas veias do intestino e fígado.
+G: V
+
+Q: Sobre a esquistossomose, marque a alternativa CORRETA.
+A) Deve-se evitar beber água contaminada contendo o helminto, sendo que a esquistossomose é uma doença de veiculação hídrica.
+B) Conhecida como a doença do caramujo devido ao fato de o caramujo ser o hospedeiro definitivo (infectado pelo miracídio), e o homem o hospedeiro intermediário, ao defecar próximo às águas onde ocorre o ciclo.
+C) Estão envolvidos, no ciclo da doença, o hospedeiro intermediário, que pode ser o homem, que elimina os ovos do Schistosoma mansoni no ambiente, e o caramujo é o hospedeiro definitivo, infectado pelas cercarias.
+D) A prevenção contra a esquistossomose é evitar comer carnes malpassadas, principalmente a do porco, que contenha o Schistosoma mansoni.
+E) O agente etiológico da doença é o Schistosoma mansoni, e uma das formas de prevenção é evitar o contato com as águas infectadas pelas cercarias, sendo que a infecção ocorre pela penetração das larvas na pele dos humanos.
+G: E
+C: O caramujo é o hospedeiro intermediário, não o definitivo. O homem é o hospedeiro definitivo onde o verme adulto vive e se reproduz.
+
+Q: A esquistossomose é uma doença parasitária causada pelo Schistosoma mansoni. Inicialmente a doença é assintomática, mas pode evoluir e causar graves problemas de saúde crônicos, podendo haver internação ou levar à morte. A quimioterapia específica está indicada para os indivíduos com infecção confirmada. Sobre o fármaco de escolha para o tratamento da esquistossomose humana, assinale a alternativa correta.
+A) Albendazol
+B) Ivermectina
+C) Metronidazol
+D) Praziquantel
+E) Quinolonas
+G: D
+
+Q: Sobre a Esquistossomose Mansônica, assinale V para as afirmativas verdadeiras, F para as falsas.
+( ) O homem é o principal hospedeiro definitivo e nele o parasita apresenta a forma adulta, reproduz-se sexuadamente e possibilita a eliminação dos ovos do S. mansoni no ambiente, pelas fezes.
+( ) O homem adquire a esquistossomose por meio da penetração ativa do miracídio na pele.
+( ) O homem infectado pode eliminar ovos viáveis de S. mansoni a partir de 5 semanas após a infecção e por um período de 6 a 10 anos, podendo chegar até mais de 20 anos.
+( ) O contato com águas contaminadas por cercárias utilizadas para atividades profissionais ou de lazer, como banhos, pescas, lavagem de roupa e louça ou plantio de culturas irrigadas, com presença de caramujos infectados pelo S. mansoni, constitui risco para se adquirir a esquistossomose.
+Assinale a alternativa que apresenta a sequência CORRETA.
+A) V F V F
+B) V V F V
+C) F V V F
+D) V F V V
+G: D
+C: Na verdade, é a cercária que penetra ativamente na pele do indivíduo durante o contato com água contaminada.
+
+Q: A esquistossomose, também conhecida popularmente como xistose, barriga d’água ou doença dos caramujos, é uma doença parasitária, diretamente relacionada ao saneamento básico precário ou inexistente, causada pelo Schistosoma mansoni.O ser humano adquire tal infecção quando entra em contato com água doce contaminada por caramujos infectados pelos vermes causadores da esquistossomose. O diagnóstico da esquistossomose é feito por meio de exames laboratoriais que consistem na coleta de 
+A) fezes.
+B) sangue.
+C) escarro.
+D) secreção nasal.
+G: A
+C: O diagnóstico da esquistossomose é feito por meio de exames laboratoriais de fezes, através do qual é possível detectar os ovos do parasita causador da doença. Pode ser solicitado também, teste de anticorpos para verificar sinais de infecção.
+
+Q: A esquistossomose é uma doença de veiculação hídrica, causada pelo verme Schistosoma mansoni.
+Analise as afirmações sobre esse ciclo:
+I - O caramujo é um hospedeiro intermediário onde os esporocistos se multiplicam, amadurecem e transformamse em cercárias.
+II - O miracídio, ao encontrar o ser humano, entra pela pele ou mucosas e viaja pelas veias até o coração, passa para os pulmões e fixa-se.
+III - O caramujo é o parasita causador da doença. Ele vive em ambientes de água salgada, infectando o ser humano ao penetrar pela pele.
+IV - As cercárias, após alguns dias, desenvolvem-se em sua forma jovem e depois se alojam no fígado, amadurecendo para as formas sexuais – masculina e feminina.
+Estão CORRETAS as afirmações
+A) I e II, apenas.
+B) II e III, apenas.
+C) III e IV, apenas.
+D) II e IV, apenas.
+E) I e IV, apenas.
+G: E
+C: II - ERRADA. O verme habita, preferencialmente, os vasos sanguíneos do fígado e intestino humano, mas pode atingir outros órgãos.
+III- ERRADA. O caramujo não é o parasita causador da doença, mas sim o verme Schistosoma mansoni.
+
+Q: A esquistossomose é uma doença parasitária causada pelo Schistosoma mansoni. Inicialmente a doença é assintomática, mas pode evoluir e causar graves problemas de saúde crônicos, podendo exigir internação ou levar à morte. No Brasil, a esquistossomose é conh cida popu a n co o “ is os ”, “ba iga d’ gua” ou “do nça dos ca a ujos” C inica n , a esquistossomose pode ser classificada em fase inicial e fase tardia. Qual das afirmações é a que está de acordo com a fase tardia Hepatoesplênica descompensada?
+A) I - Considerada uma das formas mais graves da esquistossomose mansoni, responsável por óbitos por essa causa específica. Caracteriza-se por diminuição acentuada do estado funcional do fígado. Essa descompensação relaciona-se à ação de vários fatores, tais como os surtos de hemorragia digestiva e consequente isquemia hepática, e fatores associados (hepatite viral, alcoolismo)
+B) II - A característica fundamental desta forma é a presença de hipertensão portal, levando à esplenomegalia e ao aparecimento de varizes no esôfago. Os pacientes costumam apresentar sinais e sintomas gerais inespecíficos, como dores abdominais atípicas, alterações das funções intestinais e sensação de peso ou desconforto no hipocôndrio esquerdo, devido ao crescimento do baço
+C) III - A apresentação clínica dos pacientes pode ser assintomática ou com sintomas da forma hepatointestinal. Ao exame físico, o fígado é palpável e endurecido, à semelhança do que acontece na forma hepatoesplênica. Na ultrassonografia, verifica-se a presença de fibrose hepática, moderada ou intensa
+D) IV - Em geral, nesta forma da doença as pessoas não apresentam sintomas, e o diagnóstico torna-se acidental, quando o médico se depara com a presença de ovos viáveis de S. mansoni no exame de fezes de rotina. Nas pessoas com queixas clínicas, a sintomatologia é variável e inespecífica: desânimo, indisposição para o trabalho, tonturas, cefaleia e sintomas distônicos. Os sintomas digestivos podem predominar: sensação de plenitude, flatulência, dor epigástrica e hiporexia
+E) V - A dermatite cercariana corresponde à fase de penetração das larvas (cercárias) através da pele. Caracteriza-se por micropápulas eritematosas e pruriginosas, semelhantes a picadas de inseto e eczema de contato, com duração de até 5 dias após a infecção. Pode ocorrer a febre de Katayama após 3 a 7 semanas de exposição. É caracterizada por alterações gerais que compreendem: linfodenopatia, febre, cefaléia, anorexia, dor abdominal e, com menor frequência, o paciente pode referir diarréia, náuseas, vômitos e tosse seca
+G: A
+C: I) Hepatoesplênica descompensada
+II) - Hepatoesplênica compensada
+III) - Forma aguda Assintomática
+IV) - Forma aguda Sintomática
+
+Q: “A Esquistossomose, também conhecida popularmente como xistosa, xistossomose, doença dos caramujos e barriga d’água, tem como agente etiológico o Schistosoma mansoni. O parasito necessita de dois hospedeiros de espécies diferentes, um vertebrado e outro invertebrado, para completar o seu ciclo evolutivo. O homem, quando infectado pelo S. mansoni, elimina ovos do verme nas fezes, que em contato com a água rompem-se liberando larvas ciliadas, denominadas miracídios. O miracídio penetra em caramujos aquáticos, desenvolve-se, e é eliminado na água sob uma nova forma de larva, flagelada, denominada cercária. Esta, ao penetrar na pele ou mucosa das pessoas, inicia nova fase do seu ciclo. A doença pode simular outras patologias, sendo o diagnóstico laboratorial feito pelo exame parasitológico das fezes.” Nos casos de inquéritos populacionais e investigações epidemiológicas da incidência e prevalência da doença, é correto afirmar que a OMS recomenda, para o diagnóstico laboratorial da Esquistossomose:  
+A) o método de sedimentação espontânea, que permite quantificar a quantidade de ovos nas fezes.
+B) é preconizada a aplicação do método KatoKatz, que é uma adaptação do método de eclosão miracidiana.
+C) os métodos sorológicos associados aos parasitológicos, que já se encontram disponíveis na rotina, dos laboratórios da rede básica.
+D) não há método preconizado como ideal para avaliação e diagnóstico da Esquistossomose, tornando-a uma patologia endêmica de difícil controle.
+E) método de Berman, pelo qual se visualiza os cistos por grama de fezes.
+G: B
+C: O Kato-Katz é o método laboratorial adotado pelo Ministério da Saúde (MS) e pela Organização Mundial da Saúde (OMS) como padrão-ouro para o diagnóstico da infecção humana pelo Schistosoma mansoni, sendo uma ferramenta de relevância clínica e epidemiológica, visto que permite classificar a carga parasitária do indivíduo infectado pelo cálculo de ovos por grama de fezes (OPG).
+
+Q: A esquistossomose é uma doença que atinge principalmente os países tropicais, e das espécies de Schistosoma que parasitam o homem, somente o S. mansoni é encontrado no Brasil. As formas do S. mansoni que são infectantes para o homem denominam-se:
+A) Miracídios.
+B) Cercárias.
+C) Esporocistos.
+D) Biomphalarias.
+G: B
+C: Penetram na pele.
+
+Q: A esquistossomose é endêmica em vasta extensão do território nacional, considerada ainda um grave problema de saúde pública no Brasil porque acomete milhões de pessoas, provocando um número expressivo de formas graves e óbitos. Uma das dificuldades para detecção precoce dos portadores do S. mansoni é que a infecção pode evoluir de maneira silenciosa até a instalação das formas graves da doença. Cabe aos municípios realizar regularmente busca ativa e tratamento dos portadores.
+A esquistossomose é doença de veiculação hídrica cuja transmissão ocorre quando
+A) o indivíduo suscetível entra em contato com águas onde existem cercárias livres.
+B) há o contato direto, homem doente – homem suscetível.
+C) ocorre “autoinfecção”, como na estrongiloidíase e em outras verminoses.
+D) hospedeiros definitivos, os caramujos de água doce, contaminam a água pela urina.
+G: A
+
+Q: A esquistossomose é a doença causada pelo Schistosoma mansoni, o agente etiológico pertence a classe Trematoda e apresenta algumas características importantes, vermes foliáceos, não segmentados que apresentam ventosas. O método considerado como padrão ouro para o diagnóstico da esquistossomose é:
+A) Kato-Katz.
+B) Hoffman.
+C) Faust e cols.
+D) Lutz.
+E) Basermasnn-Moraes.
+G: A
+C: A técnica de Kato-Katz é um método de diagnóstico parasitológico que consiste em examinar uma amostra de fezes para detectar ovos do Schistosoma mansoni. A técnica envolve a utilização de uma lâmina de microscópio e uma substância química que ajuda a realçar a visualização dos ovos.
+
+Q: Com relação à Esquistossomose, avalie as afirmativas dispostas abaixo e assinale a INCORRETA.
+A) O agente etiológico da esquistossomose é o S. mansoni, um helminto pertencente à classe dos Trematoda, família Schistossomatidae e gênero Schistosoma, sendo o homem o principal hospedeiro definitivo.
+B) É uma doença de evolução crônica, de gravidade variada, cujo verme, no homem, habita os vasos sanguíneos do fígado e intestino, sendo que evolução clínica depende da resposta imunológica do hospedeiro à invasão, ao amadurecimento e à oviposição do verme.
+C) A fase crônica da esquistossomose é caracterizada por três formas clínicas: intestinal, hepatointestinal e hepatoesplênica.
+D) O diagnóstico laboratorial é feito pela pesquisa de ovos nas fezes pelo método de Baermann- Moraes após 40 dias de contato com água suspeita.
+E) O prazinquantel é o medicamento preferencial para o tratamento da esquistossomose em todas as suas formas clínicas, respeitados os casos de contraindicação.
+G: D
+C: É Kato-Katz.
+
+Q: A esquistossomose é uma doença parasitária que pode acometer as crianças nas várias fases de sua vida. Essa doença:
+A) É transmitida por meio de alimentos crus mal-lavados.
+B) É caracterizada pelo depósito dos ovos das cercárias no intestino das crianças.
+C) Pode apresentar, inicialmente, pruridos na pele.
+D) É tratada com mebendazol, duas vezes ao dia, por sete dias.
+G: C
+C: Na fase aguda pode ocorrer a dermatite cercariana, caracterizada por micropápulas eritematosas e pruriginosas decorrentes da penetração de cercárias pela pele.
+
+Q: A fasciolose é uma doença parasitária causada pela Fasciola hepatica, conhecida popularmente como “baratinha do fígado” ou “saguaipé”. O parasita, para completar seu ciclo, precisa de dois hospedeiros: um intermediário e outro definitivo. A forma larval do parasita se desenvolve:
+A) No interior de caramujos do gênero Lymnaea.
+B) No interior de caramujos do gênero Biomphalaria.
+C) No intestino de peixes contaminados com larvas de Diphyllobothrium.
+D) No respiráculo das larvas de mosquitos do gênero Culex.
+E) Junto aos flagelos dos miracídeos.
+G: A
+
+Q: A Fasciola hepática Lineu, é um parasita dos canais biliares de ovinos, bovinos, caprinos, suínos e vários mamíferos silvestres, e o homem. O ciclo biológico é heteroxênico. O diagnóstico laboratorial é realizado através:
+A) A pesquisa por vermes adultos nas fezes recém colhidas através de sedimentação espontânea ou por centrifugação permite o diagnóstico de certeza desta parasitose.
+B) Pesquisa de proglote e mais raramente de ovos das tênias nas fezes por métodos rotineiros ou pelo método da fita gomada. Pode ser necessário fazer tamização (lavagem em peneira fina) de todo bolo fecal.
+C) O encontro dos ovos no exame de fezes de cães possibilita o diagnóstico de certeza da infecção humana por F. hepática.
+D) Pesquisa de ovos nas fezes ou na bile (tubagem). Como a produção de ovos no homem é pequena, pode acontecer resultados negativos, mas com a presença do parasita. Portanto, métodos como a intradermorreação, imunofluorescência, reação de fixação de complemento e ELISA são mais indicados.
+E) Anamnese do paciente e na associação de sintomas cutâneos, pulmonares e intestinais, seguidos ou não de anemia. O aspecto dermatológico da lesão, caracterizada por erupção linear e tortuosa da pele é fundamental para o diagnóstico de certeza.
+G: D

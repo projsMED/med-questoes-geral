@@ -1,0 +1,226 @@
+Q: Observa a imagem abaixo e responda as perguntas a seguir.
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img1.png
+I_A) Nome da doença da imagem:
+GABARITO: Pitiríase vesicolor.
+I_B) Causador dela:
+GABARITO: Levedura lipofílica do complexo <i>malassezia furfur</i>.
+I_C) É uma infecção fúngica superficial ou cutânea?
+GABARITO: Superficial.
+I_D) A doença é mais prevalente em quais climas?
+GABARITO: Tropical e subtropical, mas pode ocorrer em todo o mundo.
+I_E) Como ocorre a transmissão humana?
+GABARITO: Da transferência direta ou indireta de material queratinizado infectado de uma pessoa para outra.
+I_F) Característica da lesão:
+GABARITO: Pequenas máculas hipopigmentadas ou hiperpigmentadas.
+​‎ 
+Obs: Máculas são lesões de pele que são planas, sem revelo, com alteração de coloração
+I_G) Locais do corpo mais comumente afetados:
+GABARITO: Parte superior do tronco, os braços, tórax, ombros, rosto e pescoço. Mas qualquer parte do corpo pode ser afetada.
+I_H) Diagnóstico laboratorial:
+GABARITO: Visualização direta dos elementos fúngicos ao exame microscópico das escamas epidérmicas em hidróxido de potássio a 10% com ou sem calcoflúor branco. As lesões também apresentam fluorescência com uma cor amarelada quando expostas à lâmpada de Wood.
+---
+
+Q: Observe a imagem abaixo e responda as perguntas a seguir.
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img2.png
+I_A) ​‎ Nome da doença da imagem:
+GABARITO: Tinha negra.
+I_B) Causador dela:
+GABARITO: ​‎Hortaea werneckii.
+I_C) É uma infecção fúngica superficial ou cutânea?
+GABARITO: Superficial.
+I_D) A doença é prevalente em quais climas e regiões?
+GABARITO: Tropical ou subtropical.
+Regiões de maior frequência: África, Ásia, Américas Central e do Sul.
+I_E) Quem são os mais afetados?
+GABARITO: Criança e adultos jovens, com maior incidência em mulheres.
+I_F) Como ocorrer a transmissão humana?
+GABARITO: Inoculação traumática (com algumas lesão) do fungos nas camadas superficiais da epiderme.
+I_G) Características clínica e visual e principal local do corpo em que aparece:
+GABARITO: Mácula solitária, irregular, pigmentada (marrom a preta).
+Local: Em geral, nas palmas das mãos ou plantas dos pés.
+I_H) Como passa de pessoa para pessoa?
+GABARITO: Não passa, pois não é contagiosa.
+I_I) Qual o diagnóstico laboratorial?
+GABARITO: Exame microscópico de raspados de pele colocados em solução de KOH 10 a 20%.
+
+---
+
+Q: Observa a imagem abaixo e responda as perguntas a seguir.
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img3.png
+I_A) Nome da doença da imagem:
+GABARITO: Piedra branca.
+I_B) Causador dela:
+GABARITO: Fungos leveduriformes do gênero <i>Trichosporon</i>.
+I_C) É uma infecção fúngica superficial ou cutânea?
+GABARITO: Superficial.
+I_D) A doença é mais prevalente em quais climas? Está relacionada com algumas condição?
+GABARITO: Tropical e subtropical. Relacionada com a falta de higiene.
+I_E) Característica clínica (incluindo coloração e local de infecção):
+GABARITO: ​‎Afeta os pelos da virilha e das axilas, na haste do pelo. Forma uma tumefação de coloração branca e marrom ao longo dos fios capilares.
+I_F) O fungos pode ser manualmente removido da área de infecção? Explique.
+GABARITO: Sim, pois as tumefações são macias e pastosas e podem ser facilmente removidas esfregando-se parte dos pelos entre o polegas e o indicador.
+I_G) Qual o diagnóstico laboratorial?
+GABARITO: Quando o exame microscópico revela elementos fúngicos como hífas, artroconídios e/ou células de leveduras em brotamento, <b>os pelos infectados devem ser colocados em meios micológicos sem cicloheximida</b> (porque ela pode inibir o fungos).
+
+---
+
+Q: Observe a imagem abaixo e responda as perguntas a seguir.
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img4.png
+I_A) Nome da doença da imagem.
+GABARITO: Piedra preta.
+I_B) Causador dela:
+GABARITO: Piedraia hortae.
+I_C) É uma infecção fúngica superficial ou cutânea?
+GABARITO: Superficial.
+I_D) A doença é mais prevalente em quais climas e locais? Está relacionada com algumas condição?
+GABARITO: Regiões tropicais, em áre na África, Ásia e Américas Central e do Sul. Relacionada a condição de higiene deficiente.
+I_E) Característica clínicas e local de infecção:
+GABARITO: Pequenas nódulos escuros que circundam os fios de cabelo. Geralmente envolve o couro cabeludo.
+I_F) Diagnóstico laboratorial:
+GABARITO: O exame do nódulo vai revelar hifas ramificadas, pigmentadas, mantidas unidas por uma substância semelhante a cimento.
+
+---
+
+Q: Sobre as <b>micoses cutâneas</b>, responda as perguntas a seguir.
+I_A) O que são micoses <b>cutâneas</b>?
+GABARITO: São as infecções que se estendem mais profundamente na epiderme, incluindo doenças invasivas dos pelos, cabelos e das unhas.
+I_B) Quais são os três grandes gêneros de fungos <b>dermatófitos</b>?
+GABARITO: <i>Thichophyton</i>, <i>Epidermophyton</i> e <i>Microsporum</i>.
+I_C) O que são <b>dermatofitoses</b> (tíneas)?
+GABARITO: São micoses ocasionadas pelos dermatófitos, os quais têm como fator de crescimento a queratina. São queratinolíticos, colagenolíticos e elastinolíticos.
+I_D) No caso de infecções de pele, os dermatófitos invadem apenas <b>qual camada</b>?
+GABARITO: Apenas a camada superior externa da epiderme, que é o estrato córneo. A penetração abaixo da camada granulosa da epiderme é bem rara.
+I_E) ​Cite <b>sintomas comuns</b> que podem ocorrer nas tíneas.
+GABARITO: ​Prurido, vermelhidão e erupção cutânea circular.
+I_F) Com base em seu hábitat natural, os dermatófitos podem ser classificados em três categorias diferentes. O que são os geofílicos?
+GABARITO: São os que vivem no solo e são patógenos ocasionais de animais e seres humanos.
+I_G) O que são os zoofílicos?
+GABARITO: São os que normalmente parasitam o pelo e a pele dos animais, mas podem ser transmitidos aos seres humanos.
+I_H) O que são os antropofílicos?
+GABARITO: São os que geralmente infectam seres humanos e podem ser transmitidos direta ou indiretamente de pessoa para pessoa.
+
+---
+
+Q: Sobre os <b>dermatófitos</b>, responda:
+I_A) Complete as <b>lacunas</b> do trecho abaixo:
+​‎ 
+"Espécies de dermatófitos considerados __________ tendem a causar infecções crônicas, relativamente não inflamatórias, de difícil cura. Por outro lado, os dermatófitos __________ e __________ tendem a ocasionar uma reação profunda do hospedeiro, gerando lesões que são extremamente inflamatórias e respondem bem à terapia. Em alguns casos, essas infecções podem cicatrizar espontaneamente."
+GABARITO: Espécies de dermatófitos considerados <b>antropofílicos</b> tendem a causar infecções crônicas, relativamente não inflamatórias, de difícil cura. Por outro lado, os dermatófitos <b>zoofílicos</b> e <b>geofílicos</b> tendem a ocasionar uma reação profunda do hospedeiro, gerando lesões que são extremamente inflamatórias e respondem bem à terapia. Em alguns casos, essas infecções podem cicatrizar espontaneamente.
+I_B) Como a <b>infecção</b> por dermatófitos pode ser adquirida?
+GABARITO: A partir da transferência de artroconídios ou hifas, ou material queratinizado contendo esses elementos, de um hospedeiro infectado para um hospedeiro suscetível não infectado.
+I_C) "Os dermatófitos podem permanecer viáveis na pele descamada ou em fios de cabelo por longos períodos e a infecção pode ser por contato direto ou indireto via fômites."
+​‎ 
+O que são fômites?
+GABARITO: Qualquer objeto capaz de transportar micro-organismos que podem causar doenças. São exemplos de fômites: sapatos, toalhas, talheres, celulares.
+I_D) Complete as <b>lacunas</b> do trecho abaixo:
+​‎ 
+Indivíduos de ambos os gêneros e de todas as idades são suscetíveis à dermatofitose; no entanto, tinha da cabeça é mais comum em __________ e tinha inguinal, bem como tinha dos pés, são doenças principalmente de __________.
+GABARITO: Indivíduos de ambos os gêneros e de todas as idades são suscetíveis à dermatofitose; no entanto, tinha da cabeça é mais comum em <b>crianças pré-púberes</b> e tinha inguinal, bem como tinha dos pés, são doenças principalmente de <b>homens adultos</b>.
+
+---
+
+Q: Sobre a <b>dermatofitose</b>, responda:
+I_A) Complete a <b>lacuna</b> do trecho abaixo:
+​‎ 
+"O padrão clássico de dermatofitose é o padrão de um anel de _______________ com _______________ da inflamação em direção _______________ da lesão."
+GABARITO: O padrão clássico de dermatofitose é o padrão de um anel de <b>descamação inflamatória</b> com <b>diminuição</b> da inflamação em direção ao <b>centro</b> da lesão.
+I_B) Como é o <b>diagnóstico laboratorial</b> das dermatofitoses?
+GABARITO: Depende da demonstração de hifas fúngicas por <b>microscopia direta</b> de amostras da pele, cabelo ou unha e o isolamento de microrganismos em cultura. As amostras são colocadas em uma gota de 10 a 20% de KOH em uma lâmina de vidro e examinadas microscopicamente
+
+---
+
+Q: Qual a <b>dermatofitose</b> da imagem abaixo?
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img5.png
+GABARITO: Tinea pedis
+
+---
+
+Q: Qual a <b>dermatofitose</b> da imagem abaixo?
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img6.png
+GABARITO: Tinea unguium
+
+---
+
+Q: Qual a <b>dermatofitose</b> da imagem abaixo?
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img7.png
+GABARITO: Tinea cruris.
+​‎ 
+Sinônimo: Tinea inguinal.
+
+---
+
+Q: Qual a <b>dermatofitose</b> da imagem abaixo?
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img8.png
+GABARITO: Tinea barbae
+
+---
+
+Q: Qual a <b>dermatofitose</b> da imagem abaixo?
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img9.png
+GABARITO: Tinea imbricata
+
+---
+
+Q: Qual a <b>dermatofitose</b> da imagem abaixo?
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img10.png
+GABARITO: Tinea corporis ou herpes circunado.
+
+---
+
+Q: Qual a <b>dermatofitose</b> da imagem abaixo?
+https://AndreHero007.github.io/quiz-images/superficialcutanea_img11.png
+GABARITO: Tinea capitis
+
+---
+
+Q: Com base nas <b>características de lesão</b> a seguir, cite o nome de cada provável dermatofitose.
+I_A) <b>Lesão:</b> Eritemato descamativa, de localização plantar ou espaços interdigitais, com fissuras e acúmulo de material macerado (escamas umedecidas) com mau cheiro. Pode se localizar ainda no dorso do pé. Em pacientes mais sensíveis pode causar prurido, o qual pode ocasionar infecção secundária por bactérias.
+​‎ 
+Glossário:
+<b>Eritemato:</b> Refere-se à presença de eritema, que é a vermelhidão da pele. 
+Material macerado: "material macerado" seria o tecido cutâneo (como escamas) que se tornou úmido, amolecido e fragmentado, como as "escamas umedecidas"
+GABARITO: Tinea pedis.
+I_B) <b>Lesão:</b> Eritemato-descamatória, de bordos ativos, localização inguinal, pode aparecer em um ou ambos os lados.
+​‎ 
+Glossário:
+<b>Inguinal:</b> Região da virilha. A área entre a parte inferior do abdômen e a parte superior da coxa
+Bordos ativos: Bordos ativos descrevem as margens da lesão de pele que estão inflamadas, avermelhadas, elevadas e com descamação, indicando atividade da infecção fúngica naquela área. Ou seja, é onde o fungo está se multiplicando mais intensamente.
+GABARITO: Tinea cruris.
+I_C) <b>Lesão:</b> Localiza-se no bordo livre da unha, a qual apresenta-se serrilhada, com acúmulo de material córneo, espessa e descolada, com sulcos longitudinais ou transversais, sem brilho, que arrebenta facilmente. Na lesão por Candida albicans aparece reação inflamatória perioníquia (ao redor da base da unha), com dor.
+​‎ 
+Glossário:
+<b>Bordo livre da unha:</b> É a ponta da unha que se projeta além do dedo – ou seja, a parte da unha que normalmente se corta com um cortador ou lixa.
+É chamada de “livre” porque não está aderida à pele abaixo dela (ao contrário da parte próxima à base da unha, que está fixada ao leito ungueal).
+<b>Perioníquia:</b> Perioníquia é a inflamação da pele ao redor da base da unha, especialmente ao redor da cutícula e das pregas ungueais laterais (os "cantinhos" da unha).
+GABARITO: Tinea unguium.
+​‎ 
+Sinônimo: Tinea inguinal.
+I_D) <b>Lesão:</b> Descamativa e com queda do pelo da barba, pode haver prurido.
+GABARITO: Tinea barbae.
+I_E) <b>Lesão:</b> As lesões iniciais típicas consistem em múltiplas pápulas pruriginosas, escamosas, vermelho-acastanhadas. As pápulas então se espalham centrífugamente para formar anéis anulares e/ou concêntricos que podem se estender para formar placas serpinginosas ou policíclicas com ou sem eritema. 
+GABARITO: Tinea imbricata.
+I_F) <b>Lesão:</b> Circular, de bordos ativos, eritemato-descamativa, pode ser única ou várias que se uniram e formaram uma lesão maior.
+GABARITO: Tinea corporis ou herpes circunado.
+I_G) <b>Lesão:</b> No couro cabeludo apresenta forma de cratera de lua, com cheiro de ninho de rato. Pode se estender pelo corpo da pessoa. Atinge o folículo piloso ocasionando a queda definitiva do cabelo.
+GABARITO: Tinea capitis.
+
+---
+
+Q: Associe cada manifestação clínica abaixo com a <b>doença</b> e o <b>fungo causador</b>.
+I_A) Máculas hipo ou hiperpigmentadas, na parte superior do tronco, braços, tórax, ombros, face e pescoço
+GABARITO: Pitiríase versicolor ou tinea versicolor
+Malassezia furfur.
+I_B) Nódulos pequenos e escuros em torno dos fios de cabelo
+GABARITO: Piedra preta.
+Piedraia hortae.
+I_C) Mácula isolada, irregular, pigmentada variando de marrom a preto, geralmente na palma das mãos ou planta dos pés (aparência de um melanoma)
+GABARITO: Tinea nigra.
+Hortaea werneckii.
+I_D) Nódulos com cor variando de branca a marrom nos pelos das virilhas e axilas
+GABARITO: Piedra branca.
+Trichosporon spp.
+
+---
+
+Q: Qual tinea, com lesão circular de bordos ativos, o <b>contágio</b> é do <b>cão ou gato</b> para o homem?
+GABARITO: Tinea corporis ou herpes circunado.

@@ -1,0 +1,83 @@
+Q: O que é <b>dextrocardia</b>?
+GABARITO: A dextrocardia é uma malformação congênita em que <b>o coração está posicionado no lado direito do tórax, em vez do esquerdo, devido à inclinação anormal do tubo cardíaco embrionário para a esquerda durante o desenvolvimento</b>. Pode ocorrer com situs inversus, onde as demais vísceras também estão invertidas (geralmente sem consequências graves), ou de forma isolada, onde o coração está anormalmente posicionado, mas os demais órgãos permanecem em seus locais habituais. A forma isolada frequentemente está associada a defeitos cardíacos graves, como ventrículo único ou transposição dos grandes vasos.
+
+---
+
+Q: O que é <b>ectopia cardíaca</b>? Qual sua causa mais comum?
+GABARITO: Ectopia cardíaca é uma condição rara em que <b>o coração está localizado fora da cavidade torácica normal</b>. Pode estar parcialmente ou completamente exposto fora do tórax. A forma torácica é a mais comum e geralmente está associada a defeitos na formação da parede torácica, <b>como a não fusão das dobras laterais do embrião durante a 4ª semana de desenvolvimento</b>, levando à separação do esterno e ausência do saco pericárdico. A maioria dos casos é fatal nos primeiros dias de vida devido a infecções, insuficiência cardíaca ou hipoxemia, embora casos de sobrevida até a vida adulta existam.
+
+---
+
+Q: O que é a <b>persistência do forame oval</b> e quais suas consequências?
+GABARITO: O forame oval é uma comunicação normal entre os átrios durante a vida fetal. A persistência do forame oval ocorre <b>quando essa comunicação não se fecha completamente após o nascimento</b>. Em muitos casos, essa condição é clinicamente insignificante e assintomática, sendo detectada apenas por sondagem. No entanto, <b>em presença de outras anomalias, como estenose ou atresia pulmonar, o sangue pode ser desviado do átrio direito para o esquerdo, levando à cianose</b>. Pode também estar associado a comunicação interatrial (CIA) quando há reabsorção excessiva do septum primum.
+
+---
+
+Q: O que é a <b>ausência do septo interventricular</b>? O que ela causa?
+GABARITO: A ausência do septo interventricular é uma condição extremamente rara em que <b>não há separação entre os ventrículos direito e esquerdo, resultando em um ventrículo único ou comum</b>. O coração apresenta apenas três câmaras (cor triloculare biatriatum), com ambos os átrios drenando para um único ventrículo. Frequentemente está associada a transposição das grandes artérias e <b>causa insuficiência cardíaca precoce</b>, com alta mortalidade no primeiro ano de vida.
+
+---
+
+Q: O que é <b>Tetralogia de Fallot</b>? Quais seus quatro defeitos cardíacos clássicos? O que a causa? Quais suas consequências?
+GABARITO: A Tetralogia de Fallot é uma cardiopatia congênita complexa que inclui quatro defeitos principais:
+1. Estenose da artéria pulmonar: o caminho que leva o sangue do ventrículo direito aos pulmões está estreitado, dificultando a passagem do sangue para oxigenação.
+2. Defeito do septo interventricular (CIV): existe uma abertura anormal entre os dois ventrículos.
+3. Dextroposição da aorta (aorta cavalgando a CIV): a aorta está deslocada e recebe sangue dos dois ventrículos, em vez de só do esquerdo.
+4. Hipertrofia do ventrículo direito: o ventrículo direito fica espesso e mais forte por fazer força extra para bombear sangue através da artéria pulmonar estreitada.
+​‎ 
+É causada por uma divisão desigual do tronco arterial, que resulta em um tronco pulmonar estreito e um septo aorticopulmonar mal alinhado. Como a artéria pulmonar está estreita, pouco sangue vai aos pulmões para ser oxigenado. E parte do sangue venoso (sem oxigênio) passa do ventrículo direito para o esquerdo através da CIV e vai direto para o corpo pela aorta sem passar pelos pulmões. A consequência principal disso é a cianose. A gravidade dos sintomas depende do grau de estenose pulmonar. Em casos severos, o tratamento cirúrgico é necessário nos primeiros meses de vida.
+​‎ 
+Mais resumido:
+A Tetralogia de Fallot é causada por um erro no desenvolvimento do septo aorticopulmonar, que resulta em: Fluxo de sangue reduzido para os pulmões e mistura de sangue rico e pobre em oxigênio dos ventrículos. Esses fatores resultam em cianose.
+
+---
+
+Q: Para que serve o <b>ducto arterioso</b>?
+GABARITO: Durante a vida fetal, os pulmões não funcionam para respirar — o feto recebe oxigênio do sangue da placenta da mãe. Como os pulmões estão colapsados e cheios de líquido, o corpo fetal "desvia" o sangue para não passar pelos pulmões desnecessariamente.
+O ducto arterioso é esse atalho temporário que permite que o sangue pule os pulmões:
+Ele liga a artéria pulmonar (que levaria o sangue aos pulmões) diretamente à aorta (que leva sangue para o corpo).
+Assim, o sangue que vem do coração vai direto para o corpo sem passar pelos pulmões.
+
+---
+
+Q: O que ocorre com o <b>ducto arterioso</b> após o nascimento?
+GABARITO: Após o nascimento:
+1. Os pulmões começam a funcionar com a respiração.
+2. O sangue passa a ser oxigenado nos pulmões, e o ducto arterioso não é mais necessário.
+3. O ducto arterioso se contrai e se fecha, primeiro funcionalmente (em horas) e depois anatomically (em dias/semanas), formando uma estrutura fibrosa chamada ligamento arterioso.
+
+---
+
+Q: O que é a <b>persistência do ducto arterioso</b>? O que a causa e quais suas consequências?
+GABARITO: O ducto arterioso é uma estrutura fetal que <b>conecta a aorta ao tronco pulmonar e que normalmente se fecha após o nascimento</b>. Sua persistência após o nascimento é chamada de persistência do ducto arterioso (PDA). Ocorre com maior frequência em <b>prematuros</b>, em crianças que vivem em altitudes elevadas ou em recém-nascidos cujas mães tiveram infecção por rubéola na gravidez. Pode resultar da <b>falha da contração muscular do ducto após o nascimento</b>, geralmente influenciada por hipóxia ou baixa maturidade pulmonar.
+​‎ 
+As consequências incluem o <b>desvio de sangue da aorta para os pulmões, sobrecarregando a circulação pulmonar, podendo causar hipertensão pulmonar, insuficiência cardíaca e dificuldade respiratória</b>. Em certos casos, como em algumas cardiopatias congênitas, a persistência do ducto pode temporariamente ajudar na oxigenação do sangue.
+
+---
+
+Q: Que substância <b>mantém o ducto arterioso</b> na vida fetal e qual o faz se <b>fechar após o nascimento</b>?
+GABARITO: Na vida fetal, o ducto arterioso permanece aberto (pérvio) devido à ação de prostaglandinas, principalmente:
+ • Prostaglandina E2 (PGE2)
+ • Prostaciclina (PGI2)
+Essas substâncias são produzidas localmente e relaxam o músculo liso da parede do ducto, mantendo-o aberto, junto com o baixo nível de oxigênio (hipóxia) no sangue fetal.
+​‎ 
+Após o nascimento, com a aeração dos pulmões e aumento do nível de oxigênio (PO₂ ≥ 50 mmHg) no sangue:
+ • A substância bradicinina é liberada pelos pulmões e induz contração do músculo liso do 
+   ducto.
+ • O aumento da oxigenação também reduz a produção de prostaglandinas, favorecendo o 
+   fechamento.
+ • O TGF-β contribui para o fechamento anatômico do ducto, transformando-o em ligamento arterioso.
+
+---
+
+Q: O que se faz para <b>induzir o fechamento do ducto arterioso</b> caso não tenha fechado? E para <b>mantê-lo aberto</b> após o nascimento por alguma razão clínica?
+GABARITO: Para induzir o fechamento do ducto arterioso persistente: Administração de inibidores da síntese de prostaglandinas, principalmente:
+ • Ibuprofeno (primeira escolha atual)
+ • Indometacina.
+Estes medicamentos inibem a enzima ciclo-oxigenase (COX), responsável pela produção de prostaglandinas. Mas pode ser necessário o fechamento cirúrgico caso eles não sejam eficazes.
+​‎ 
+Para manter o ducto arterioso aberto (quando clinicamente necessário):
+Em algumas cardiopatias congênitas graves (como transposição das grandes artérias, atresia pulmonar ou coarctação crítica da aorta), manter o ducto aberto é essencial para garantir mistura de sangue oxigenado e desoxigenado, permitindo a sobrevivência até a cirurgia corretiva.
+Usa-se prostaglandina E1 (PGE1) administrada por via intravenosa para:
+ • Impedir a contração do ducto.
+ • Manter o fluxo de sangue entre a aorta e a artéria pulmonar.

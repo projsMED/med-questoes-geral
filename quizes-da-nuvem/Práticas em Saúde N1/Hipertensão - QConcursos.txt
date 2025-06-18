@@ -1,0 +1,226 @@
+Q: Sobre o programa HIPERDIA, assinale a alternativa CORRETA.
+A) É um programa para acompanhamento de usuários hipertensos e/ou diabéticos que ocorre em todos os níveis de atenção à saúde, visando garantir acompanhamento e tratamento sistemático, mediante ações de capacitação dos profissionais e reorganização dos serviços.
+B) Compreende o cadastramento de portadores de hipertensão arterial e/ou diabetes mellitus atendidos com sintomas graves, permitindo acompanhamento dos casos e distribuição de medicamentos de alto custo.
+C) Constitui como uma estratégia do Ministério da Saúde de acompanhamento de usuários hipertensos e/ ou diabéticos e ocorre no nível primário de atenção à saúde, visando, além de acompanhar e tratar, recuperar a autonomia do usuário, e a sua responsabilidade em seu processo de saúde.
+D) É uma estratégia de acesso a medicamentos, cuja principal meta é ofertar de maneira contínua os medicamentos para hipertensão e diabetes definidos pelo Ministério da Saúde para pacientes graves.
+E) Integra a principal ação de redução de doenças crônicas no país através do cadastramento e acompanhamento de portadores de hipertensão arterial e/ou diabetes mellitus atendidos nas unidades de pronto atendimento no SUS.
+G: C
+
+Q: Sobre a hipertensão arterial sistêmica e o diabetes mellitus, verifique as assertivas e assinale a INCORRETA.
+A) O programa HIPERDIA do Ministério da Saúde envolve a hipertensão arterial sistêmica e o diabetes, uma vez que a possibilidade de associação das duas doenças é da ordem de 50%, o que requer, na grande maioria dos casos, o manejo das duas patologias num mesmo paciente.
+B) A hipertensão arterial é definida como uma pressão arterial sistólica maior ou igual a 140 mmHg e uma pressão arterial diastólica maior ou igual a 90 mmHg, em indivíduos que não estão fazendo uso de medicação anti-hipertensiva.
+C) A hipertensão arterial sistêmica é uma síndrome de etiologia múltipla, decorrente da falta de insulina e/ou da incapacidade de a insulina exercer adequadamente seus efeitos.
+D) Um dos trabalhos dos profissionais da saúde - e recomendação do HIPERDIA - consiste em orientar e sistematizar medidas de prevenção, detecção, controle e vinculação dos hipertensos e diabéticos inseridos na atenção básica.
+G: C
+C: Essa é a definição de diabates, não de hipertensão.
+
+Q: Sobre a Hipertensão Arterial Sistêmica (HAS) verifique as assertivas e assinale a correta.
+I. A hipertensão arterial ou pressão alta é uma doença crônica caracterizada pelos níveis elevados da pressão sanguínea nas artérias. Ela acontece quando os valores das pressões máxima e mínima são iguais ou ultrapassam os 140/90 mmHg (ou 14 por 9).
+II. A pressão alta faz com que o coração tenha que exercer um esforço maior do que o normal para fazer com que o sangue seja distribuído corretamente no corpo.
+III. A pressão alta é um dos principais fatores de risco para a ocorrência de acidente vascular cerebral, enfarte, aneurisma arterial e insuficiência renal e cardíaca.
+IV. O problema é herdado dos pais em 90% dos casos, mas há vários fatores que influenciam nos níveis de pressão arterial, como os hábitos de vida do indivíduo.
+A) Apenas as assertivas I, II e III são corretas.
+B) Apenas as assertivas I e IV são corretas.
+C) Apenas as assertivas II e III são corretas.
+D) As assertivas I, II, III e IV são corretas.
+G: D
+C: Todas estão corretas.
+
+Q: A hipertensão arterial (HA) se caracteriza como doença crônica e está associada a outros agravos, como doença renal crônica, infarto agudo do miocárdio e acidente vascular encefálico. Seu diagnóstico deve ser preciso e seu controle exige atuação multiprofissional e tratamento medicamentoso e não medicamentoso. Com relação ao assunto, identifique como verdadeiras (V) ou falsas (F) as seguintes afirmativas:
+( ) A HA é definida quando pressão arterial sistólica ≥150 mmHg e/ou diastólica ≥90 mmHg for detectada em pelo menos duas ocasiões diferentes.
+( ) Manguito pequeno em relação à circunferência do braço pode subestimar a pressão arterial.
+( ) É indicado realizar pelo menos duas aferições da pressão arterial, com intervalo em torno de um minuto entre cada verificação.
+( ) O profissional deve informar ao paciente o valor da pressão arterial aferida.
+Assinale a alternativa que apresenta a sequência correta, de cima para baixo.
+A) F – F – V – V.
+B) V – F – V – F.
+C) F – V – F – V.
+D) V – V – F – F.
+E) F – V – V – V.
+G: A
+C: Os valores de 140 mmHg para a PS e de 90 mmHg para a PD, empregados para diagnóstico de HAS Quando se aferir a pressão arterial de indivíduos com braço de maior circunferência do que a indicada para o manguito, a tendência será a de superestimar os valores pressóricos e vice-versa. A primeira verificação deve ser realizada em ambos os braços.Com intervalo de um minuto, no mínimo, uma segunda medida dever ser realizada.
+
+Q: De acordo com as definições de Hipertensão Arterial Resistente e Refratária, previstas nas Diretrizes Brasileiras de Hipertensão Arterial, analise as afirmativas a seguir e assinale (V) para a verdadeira e (F) para a falsa.
+( ) Hipertensão Arterial Resistente (HAR) é definida como a PA de consultório que permanece com valores ≥139/90mmHg, com o uso de duas ou mais classes de fármacos anti-hipertensivos.
+( ) Quando o paciente necessita do uso de quatro ou mais fármacos anti-hipertensivos para alcançar o controle da PA, ele também é considerado um hipertenso resistente, porém controlado.
+( ) Para definir a Hipertensão Arterial como Refratária é necessário que o paciente esteja em uso de três ou mais fármacos anti-hipertensivos com ações sinérgicas e em doses máximas preconizadas.
+As afirmativas são, respectivamente,
+A) V – V – V. 
+B) F – F – F.
+C) V – F – V. 
+D) F – V – F.
+E) V – V – F.
+G: D
+C: Item I - Falso
+Justificativa:
+Define-se hipertensão arterial resistente (HAR) como a PA de consultório que permanece com valores ≥140/90 mmHg, com o uso de três ou mais classes de fármacos anti-hipertensivos com ações sinérgicas, em doses máximas preconizadas ou toleradas, sendo um deles preferencialmente um diurético tiazídico. 
+Item II- Verdadeiro
+Quando o paciente necessita do uso de quatro ou mais fármacos anti-hipertensivos para alcançar o controle da PA, ele também é considerado um hipertenso resistente, porém controlado.
+Item III - Falso
+Justificativa:
+Já a hipertensão refratária (HARf) é definida como um subgrupo de pacientes com HAR verdadeira, que mantém a PA não controlada (PA ≥ 140/90 mmHg), mesmo estando em uso de cinco ou mais fármacos anti-hipertensivos, incluindo a espironolactona e um diurético de longa ação.
+
+Q: A hipertensão é a doença crônica mais comum no mundo. Em gestantes, o controle da hipertensão é essencial, pois na gravidez a pressão alta está relacionada ao risco de:
+A) Eclampsia.
+B) Arritmias fetal.
+C) Obesidade congênita.
+D) Câncer gestacional.
+E) Defeitos congênitos cardíacos.
+G: A
+C: A eclampsia é uma complicação severa da pré-eclampsia, uma condição hipertensiva que pode se desenvolver durante a gravidez. A eclampsia é caracterizada por uma ou mais convulsões durante a gravidez ou no pós-parto, geralmente acompanhadas por hipertensão.
+
+Q: Quanto à hipertensão do avental branco (HAB) e à hipertensão mascarada (HM), julgue os seguintes itens.
+I A HAB será considerada quando a pressão arterial estiver normal na monitorização ambulatorial da pressão arterial (MAPA), porém elevada no consultório.
+II A HM será considerada quando a pressão arterial estiver elevada na MAPA, porém normal no consultório.
+III Na HAB, o risco cardiovascular supera o da hipertensão, indicando-se o uso de medicações anti-hipertensivas.
+IV Na HM, há aumento do risco cardiovascular, indicando-se o uso de medicações anti-hipertensivas e(ou) mudanças no estilo de vida.
+A quantidade de itens certos é igual a 
+A) 0.
+B) 1.
+C) 2.
+D) 3.
+E) 4.
+G: D
+C: I, II e IV estão corretos.
+
+Q: A hipertensão arterial ou pressão alta é uma doença que ataca os vasos sanguíneos, o coração, o cérebro, os olhos e pode causar paralisação dos rins. Ocorre quando a medida da pressão se mantém frequentemente acima de 140 por 90 mmHg. Sobre a medida da pressão arterial, assinale a alternativa CORRETA.
+A) A posição recomendada para a medida da pressão arterial (PA) é de pé. Entretanto, a medida da PA na posição ortostática deve ser feita pelo menos na primeira avaliação, especialmente em idosos, diabéticos, alcoólicos e pacientes em uso de medicação anti-hipertensiva
+B) Para aferir a PA, é importante certificar-se de que o paciente não está com a bexiga cheia; não praticou exercícios físicos há 60/90 minutos; não ingeriu bebidas alcoólicas, café, alimentos, ou fumou até 30 minutos antes; e não está com as pernas cruzadas
+C) Para aferir a PA, devemos utilizar manguito de tamanho adequado ao braço do paciente, cerca de 10 cm acima da fossa antecubital, centralizando a bolsa de borracha sobre a artéria braquial.
+D) No procedimento de aferição da PA, devemos manter o braço do paciente na altura do coração, colocar o aparelho por cima da roupa, com a palma da mão voltada para cima e cotovelo ligeiramente fletido.
+E) Deve-se esperar 10 a 20 minutos antes de realizar novas medidas de pressão arterial.
+G: B
+C: A posição recomendada na verdade é a com o paciente sentado. O manguito fica cerca de 2 cm da fossa antecubital. Não se deve instalar por cima da roupa, isso irá interferir na aferição. Deve-se esperar pelo menos 1 minuto entre as aferições.
+
+Q: Na suspeita de “Hipertensão do Avental Branco” ou “Hipertensão Mascarada”, recomenda-se:
+A) monitorização ambulatorial da pressão arterial (MAPA).
+B) ecocardiograma transesofágico.
+C) teste ergométrico.
+D) cintilografia do miocárdio.
+G: A
+C: A recomendação para identificar esses tipos de hipertensão é a monitorização ambulatorial da pressão arterial (MAPA), que é um exame que mede a pressão arterial do paciente a cada 15 ou 30 minutos durante 24 horas, permitindo uma avaliação mais precisa e detalhada do comportamento da pressão arterial ao longo do dia e da noite.
+
+Q: De acordo com a 7ª Diretriz de Hipertensão Brasileira, assinale a alternativa que apresenta a condição caracterizada por valores normais da pressão arterial (PA) no consultório, porém com valores de PA elevados pela medida ambulatorial ou medida residencial.
+A) Hipertensão do avental branco.
+B) Hipertensão não controlada.
+C) Pré-hipertensão.
+D) Hipertensão mascarada.
+G: D
+C: A hipertensão mascarada é aquela que apresenta níveis pressóricos normais nas consultas ambulatoriais, mas pressão arterial elevada na monitorização ambulatorial (MAPA). Está associada com risco cardiovascular aumentado. É uma condição de difícil diagnóstico, já que poucas vezes se pede MAPA para pacientes com PA normal no consultório, pois são em geral considerados “normotensos”.
+
+Q: Acerca da hipertensão arterial mascarada podemos afirmar que é a
+A) situação na qual a média da pressão arterial determinada através da MAPA ou MRPA está elevada e a medida de pressão arterial em consulta médica está normal.
+B) situação na qual a média da pressão arterial determinada através de MAPA ou MRPA está normal e a medida de pressão arterial no consultório está elevada.
+C) situação na qual a média da pressão arterial determinada através da MAPA está normal e na MRPA está elevada.
+D) situação na qual a média da pressão arterial determinada através da MAPA está elevada e na MRPA está normal.
+G: A
+
+Q: A medição residencial da pressão arterial (MRPA) é uma modalidade de medição realizada com protocolo específico, consistindo na obtenção de três medições pela manhã̃, antes do desjejum e da tomada da medicação, e três à noite, antes do jantar, durante cinco dias. Outra opção é realizar duas medições em cada uma dessas duas sessões, durante sete dias. De acordo com a 7ª Diretriz Brasileira de Hipertensão Arterial, são considerados valores anormais de MRPA maiores ou iguais a
+A) 135/85 mmHg.
+B) 130/80 mmHg.
+C) 140/85 mmHg.
+D) 120/75 mmHg.
+G: A
+C: São considerados valores anormais de MRPA (Monitorização Residencial da Pressão Arterial) quando a média das medidas é maior ou igual a 135/85 mmHg
+
+Q: Sobre a classificação de Hipertensão estágio 3, da 7º Diretriz Brasileira de Hipertensão Arterial, de acordo com a medição casual ou no consultório a partir de 18 anos de idade, é CORRETO afirmar:
+A) É considerada Hipertensão estágio 3 se pressão arterial sistólica ≥ 180 mm Hg e/ou pressão arterial diastólica ≥ 110 mmHg.
+B) É considerada Hipertensão estágio 3 se pressão arterial sistólica entre 160 – 179 mm Hg e/ou pressão arterial diastólica entre 100 - 109 mmHg.
+C) É considerada Hipertensão estágio 3 se pressão arterial sistólica ≤ 120 mm Hg e/ou pressão arterial diastólica ≤ 80 mmHg.
+D) É considerada Hipertensão estágio 3 se pressão arterial sistólica entre 140 – 159 mm Hg e/ou pressão arterial diastólica entre 90 – 99 mmHg. 
+E) Todas as alternativas estão incorretas.
+G: A
+
+Q: Considerando os critérios usados para a classificação da pressão arterial (PA), um paciente adulto com PA de 165 x 100 mmHg apresenta
+A) pressão limítrofe.
+B) hipertensão estágio 1. 
+C) hipertensão estágio 2. 
+D) hipertensão estágio 3. 
+E) hipertensão estágio 4. 
+G: C
+
+Q: Pré-hipertensão (PH) é uma condição caracterizada por:
+A) PA sistólica (PAS) entre 111 e 139 mmHg e/ou PA diastólica (PAD) entre 81 e 99 mmHg.
+B) PA sistólica (PAS) entre 121 e 139 mmHg e PA diastólica (PAD) entre 81 e 89 mmHg.
+C) PA sistólica (PAS) entre 121 e 139 mmHg e/ou PA diastólica (PAD) entre 81 e 89 mmHg.
+D) PA sistólica (PAS) entre 111 e 139 mmHg e PA diastólica (PAD) entre 81 e 99 mmHg.
+G: C
+
+Q: A crise hipertensiva é caracterizada pela elevação aguda da pressão arterial (PA) sistólica ≥ 180 mmHg e/ou PA diastólica ≥ 120 mmHg que pode resultar ou não em lesões de órgãos-alvo.
+(Sociedade Brasileira de Cardiologia, 2020.)
+Considerando tal assunto, assinale a afirmativa correta.
+A) A emergência hipertensiva é definida pelo valor da pressão arterial.
+B) É classificada em: quadro hipertensivo, urgência hipertensiva e emergência hipertensiva.
+C) As urgências hipertensivas são situações clínicas assintomáticas em que ocorre a crise hipertensiva; porém, com risco iminente de morte.
+D) As emergências hipertensivas são situações clínicas sintomáticas em que ocorre a crise hipertensiva, com lesão de órgão-alvo aguda e progressiva, com risco iminente de morte.
+G: D
+C: As emergências hipertensivas são situações clínicas sintomáticas em que ocorre a crise hipertensiva com lesão de órgão-alvo aguda e progressiva, com risco iminente de morte. É importante ressaltar que a emergência hipertensiva não é definida apenas pelo valor da pressão arterial, mas sim pela presença de sintomas e lesões em órgãos-alvo, como infarto do miocárdio, acidente vascular cerebral (AVC) e insuficiência renal, por exemplo. 
+
+Q: A crise hipertensiva é uma situação grave que exige medidas imediatas do profissional de saúde. Para uma boa avaliação do paciente, é importante que o técnico de enfermagem conheça os valores normais e os sinais de alerta que indicam a necessidade de encaminhamento. De acordo com o Caderno de Atenção Básica no 37, o valor da pressão arterial (PA) aferido no consultório que indica hipertensão é:
+A) ≥ 130/85.
+B) < 140/90.
+C) ≥ 140/80.
+D) ≥ 130/90.
+E) ≥ 140/90.
+G: E
+C: A hipertensão arterial sistêmica (HAS) é uma condição clínica multifatorial caracterizada por níveis elevados e sustentados de pressão arterial – PA (PA ≥140 x 90mmHg).
+
+Q: Qual fármaco abaixo é de primeira escolha para um idoso que apresenta hipertensão arterial?
+A) Atenolol.
+B) Propanolol.
+C) Captopril.
+D) Enalapril.
+E) Indapamina.
+G: E
+C: Os tiazídicos são os fármacos de primeira escolha nos idosos. A indapamida age no controle da pressão arterial, através de um mecanismo vascular, com sua manutenção dentro dos limites fisiológicos. A atividade anti-hipertensiva de indapamida é máxima na primeira hora após a administração de uma dose única e é mantida por no mínimo 24 horas.
+
+Q: Em relação à hipertensão secundária, assinale a alternativa CORRETA.
+A) É uma forma de hipertensão arterial incurável.
+B) A prevalência na população hipertensa é de aproximadamente 50%.
+C) As formas mais prevalentes ocorrem devido à doença renovascular por aterosclerose e hiperaldosteronismo primário.
+D) Apneia obstrutiva do sono não é causa de hipertensão secundária.
+G: C
+
+Q: O dano vascular ocorre apenas em hipertensos, não podendo estar presente nos pré-hipertensos.
+G: F
+C: De acordo com as diretrizes brasileiras "O dano vascular ocorre não apenas em hipertensos, mas pode estar presente também nos pré-hipertensos."
+
+Q: Indivíduos com PAS ≥ 140 mmHg e PAD < 90 mmHg são definidos como portadores de HA sistólica isolada, enquanto a presença de níveis de PAS < 140 mmHg e PAD ≥ 90 mmHg caracteriza a HA diastólica isolada.
+G: V
+
+Q: Na medição de consultório a partir de 18 anos de idade, HA estágio 1 tem PAS de 140-159 e/ou PAD de 90-99.
+G: V
+C: Valores para "Classificação da pressão arterial de acordo com a medição no consultório a partir de 18 anos de idade" segundo as diretrizes:
+Pré-hipertensão: 130-139 e/ou 85-89
+HA estágio 1: 140-159 e/ou 90-99
+HA Estágio 2: 160-179 e/ou 100-10
+HA Estágio 3: ≥ 180 e/ou ≥ 110
+
+Q: A hipertrofia ventricular direita é uma complicação da HAS.
+G: F
+C: Na verdade, a HAS está mais frequentemente associada à hipertrofia ventricular esquerda, e não à direita. Isso ocorre porque:
+Na hipertensão arterial sistêmica, o ventrículo esquerdo precisa trabalhar contra uma maior resistência na circulação sistêmica, o que leva ao aumento de sua massa muscular (hipertrofia).
+
+Q: Segundo as diretrizes, define-se hipertensão gestacional como: PAS ≥140 mmHg ou PAD ≥90 mmHg, ou ambas, em mulher com PA previamente normal, após 20 semanas de gestação, medida em duas ocasiões com, pelo menos, 4 horas de intervalo, sem proteinúria ou sinais de gravidade, e que retorna ao normal no período pós-parto.
+G: V
+
+Q: A hipertensão arterial terciária é a forma de hipertensão arterial (HA) decorrente de uma causa identificável, que pode ser tratada com uma intervenção específica, a qual determina a cura ou a melhora do controle pressórico.
+G: F
+C: A definição dada se refere a hipertensão arterial SECUNDÁRIA.
+
+Q: Um indício de hipertensão arterial secundária é hipertensão estágio 3 antes dos 30 anos ou após os 55 anos
+G: V
+
+Q: A hipertensão arterial secundária pode ter várias causas, como:
+- Não endócrinas: Doença renal crônica, apneia obstrutiva do sono, acromegalia etc.
+- Endócrinas: Hiperaldosteronismo primário, feocromicotoma, síndrome de Cushing, obesidade etc.
+- Hormônios exógenes, medicamentos, drogas ou substâncias exógenas: Corticosteroides, anticoncepcionais hormonais orais, imunosuprresores, anti-inflamatórios não esteroides etc.
+G: F
+C: A acromegalia é considerada uma causa endócrina, todas as demais estão listadas corretamente de acordo com as diretrizes.
+
+Q: De acordo com as diretrizes brasileiras de hipertensão arterial, os hipertensos refratários são os aderentes não controlados com 5 ou mais classes de fármacos anti-hipertensivos em doses otimizadas.
+G: V
+
+Q: De acordo com as diretrizes brasileiras de hipertensão arterial, são considerados hipertensos resistentes os indivíduos aderentes ao tratamento em uso de cinco ou mais classes de fármacos anti-hipertensivos em doses otimizadas que não apresentam pressão arterial controlada.
+G: F
+C: TRÊS OU MAIS CLASSES DE FÁRMACOS.

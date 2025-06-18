@@ -1,0 +1,128 @@
+
+QCH: Sobre a estrutura e função dos brônquios intrapulmonares, assinale TUDO o que for CORRETO:
+A1: São revestidos por epitélio pseudoestratificado colunar ciliado com células caliciformes.
+G: V
+C: Correto. Este é o epitélio respiratório típico.
+A2: Possuem uma camada contínua de cartilagem hialina em forma de anel completo.
+G: F
+C: Incorreto. Nos brônquios intrapulmonares, a cartilagem hialina está presente na forma de placas irregulares, não anéis completos.
+A3: Contêm glândulas seromucosas na submucosa que secretam para o lúmen.
+G: V
+C: Correto. Essas glândulas contribuem para a produção de muco.
+A4: Apresentam uma camada de músculo liso entre a mucosa e as placas de cartilagem.
+G: V
+C: Correto. A camada de músculo liso (músculo de Reisseisen) circunda a mucosa e é importante para regular o diâmetro brônquico.
+A5: Não possuem capacidade de regeneração epitelial.
+G: F
+C: Incorreto. O epitélio respiratório possui células basais com capacidade de regeneração.
+
+QCH: Em relação aos pneumócitos tipo II, assinale TUDO o que for CORRETO:
+A1: São células pavimentosas que cobrem a maior parte da superfície alveolar.
+G: F
+C: Incorreto. Esta descrição corresponde aos pneumócitos tipo I. Os pneumócitos tipo II são cúbicos.
+A2: Possuem corpos lamelares em seu citoplasma, que são precursores do surfactante.
+G: V
+C: Correto. Os corpos lamelares são organelas características que armazenam e secretam o surfactante.
+A3: São capazes de se diferenciar em pneumócitos tipo I após lesão alveolar.
+G: V
+C: Correto. Atuam como células progenitoras para a reposição dos pneumócitos tipo I.
+A4: Sua principal função é a fagocitose de partículas estranhas.
+G: F
+C: Incorreto. A fagocitose é função dos macrófagos alveolares.
+A5: Secretam surfactante, que aumenta a tensão superficial dos alvéolos.
+G: F
+C: Incorreto. O surfactante REDUZ a tensão superficial dos alvéolos, prevenindo o colapso.
+
+QCH: Sobre a defesa pulmonar, assinale TUDO o que for CORRETO:
+A1: O muco produzido pelas células caliciformes e glândulas aprisiona partículas e patógenos.
+G: V
+C: Correto. O muco forma uma barreira física e adesiva.
+A2: Os cílios do epitélio respiratório batem em direção aos alvéolos para limpar as vias aéreas superiores.
+G: F
+C: Incorreto. Os cílios batem em direção à faringe (para cima), no mecanismo conhecido como "escalador mucociliar", para remover o muco e as partículas aprisionadas das vias aéreas inferiores e médias.
+A3: Os macrófagos alveolares fagocitam detritos e microrganismos no interior dos alvéolos.
+G: V
+C: Correto. São a principal linha de defesa fagocitária nos alvéolos.
+A4: As células em clava (de Clara) nos bronquíolos secretam enzimas com função detoxificante.
+G: V
+C: Correto. Além de secretar componentes do surfactante, as células em clava têm função protetora e detoxificante.
+A5: A barreira hematoaérea é impermeável a todos os tipos de microrganismos.
+G: F
+C: Incorreto. Embora seja uma barreira eficiente, alguns microrganismos podem atravessá-la ou danificá-la, causando infecções.
+
+Q: O epitélio que reveste a traqueia é classificado como pseudoestratificado colunar __________.
+GABARITO: ciliado
+
+Q: A principal função dos __________ tipo II é a produção de surfactante pulmonar.
+GABARITO: pneumócitos
+
+Q: Nos bronquíolos, diferentemente dos brônquios, não há presença de placas de __________.
+GABARITO: cartilagem
+
+Q: As células responsáveis pela percepção dos odores nas fossas nasais são os neurônios __________.
+GABARITO: olfatórios
+
+Q: A estrutura que impede a entrada de alimentos na laringe durante a deglutição é a __________.
+GABARITO: epiglote
+
+Q: A porção condutora do sistema respiratório é responsável por aquecer, umedecer e __________ o ar inspirado, enquanto a porção __________ é onde ocorrem as trocas gasosas.
+GABARITO: filtrar; respiratória
+
+Q: As pregas vocais verdadeiras são revestidas por epitélio estratificado __________ e contêm o __________ vocal, que é um músculo estriado esquelético.
+GABARITO: pavimentoso; músculo
+
+Q: Os macrófagos alveolares, também conhecidos como células de __________, são responsáveis pela __________ de partículas e patógenos nos alvéolos.
+GABARITO: poeira; fagocitose
+
+Q: O sistema respiratório pode ser dividido com base em suas funções principais.
+I_A) Quais são as duas porções funcionais distintas do sistema respiratório?
+GABARITO: Porção condutora e porção respiratória.
+I_B) Qual é a função primordial da porção respiratória?
+GABARITO: Realizar a troca de CO2 do plasma por O2 do ar inspirado através das paredes delgadas dos alvéolos.
+
+Q: O epitélio respiratório é composto por diversos tipos celulares com funções específicas.
+I_A) Cite os três tipos celulares predominantes identificáveis ao microscópio óptico no epitélio respiratório.
+GABARITO: Células colunares ciliadas, células caliciformes e células basais.
+I_B) Qual é a principal função das células basais presentes nesse epitélio?
+GABARITO: Atuar como células-tronco, multiplicando-se continuamente por mitose para originar os demais tipos celulares do epitélio respiratório.
+
+Q: Os alvéolos possuem mecanismos de defesa celular importantes.
+I_A) Como são denominados os macrófagos localizados nas paredes e no interior dos alvéolos pulmonares?
+GABARITO: Macrófagos alveolares.
+I_B) Qual a implicação funcional da presença de material fagocitado, como partículas de carbono, no citoplasma dessas células, levando à denominação de "células de poeira"?
+GABARITO: Indica sua função de fagocitar partículas inaladas e detritos, limpando a superfície alveolar.
+
+Q: As vias aéreas sofrem modificações estruturais à medida que se ramificam.
+I_A) Cite uma característica histológica fundamental presente na parede dos brônquios que está ausente na parede dos bronquíolos.
+GABARITO: Presença de cartilagem (ou glândulas).
+I_B) Qual o nome dado às células secretoras não ciliadas, com superfície apical em forma de abóbada, encontradas no epitélio dos bronquíolos terminais?
+GABARITO: Células em clava (ou células bronquiolares secretoras não ciliadas, anteriormente células de Clara).
+
+Q: O revestimento epitelial da laringe varia em diferentes regiões, adaptando-se às funções locais.
+I_A) Qual tipo de epitélio reveste as pregas vocais verdadeiras?
+GABARITO: Epitélio estratificado pavimentoso não queratinizado.
+I_B) Qual tipo de epitélio reveste a maior parte das demais regiões da laringe?
+GABARITO: Epitélio do tipo respiratório (pseudoestratificado colunar ciliado).
+
+Q: A traqueia possui uma estrutura de parede característica que garante sua função.
+I_A) Qual tipo de cartilagem forma os anéis incompletos na parede da traqueia?
+GABARITO: Cartilagem hialina.
+I_B) Qual estrutura fecha a porção dorsal aberta desses anéis cartilaginosos?
+GABARITO: Ligamentos fibroelásticos e feixes de músculo liso.
+
+Q: A troca gasosa eficiente depende de uma barreira especializada entre o ar e o sangue.
+I_A) Cite os dois tipos celulares principais que formam a delgada camada epitelial de revestimento dos alvéolos.
+GABARITO: Pneumócito tipo I e pneumócito tipo II.
+I_B) Qual o nome da estrutura formada pelo citoplasma do pneumócito tipo I, sua lâmina basal, a lâmina basal do capilar e o citoplasma da célula endotelial?
+GABARITO: Barreira hematoaérea.
+I_C) Qual a importância da fusão frequente das lâminas basais do pneumócito e do capilar nessa barreira?
+GABARITO: Diminuir a distância pela qual os gases devem se difundir.
+
+Q: O epitélio olfatório é um neuroepitélio especializado.
+I_A) Quais são os três tipos celulares que formam o epitélio olfatório?
+GABARITO: Células de sustentação, células basais e células olfatórias.
+I_B) Qual desses tipos celulares é um neurônio bipolar responsável pela detecção de odores?
+GABARITO: Células olfatórias.
+I_C) Qual a função das glândulas de Bowman presentes na lâmina própria da mucosa olfatória?
+GABARITO: Sua secreção cria uma corrente líquida contínua que remove constantemente o muco superficial, permitindo o acesso de novas substâncias odoríferas aos cílios.
+

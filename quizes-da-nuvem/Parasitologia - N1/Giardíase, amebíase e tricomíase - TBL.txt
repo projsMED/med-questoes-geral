@@ -1,0 +1,94 @@
+Q: A disenteria amebiana é uma inflamação do intestino grosso manifestada por cólicas e fezes liquefeitas, geralmente com muco e sangue. É uma doença causada pela ameba, por isso esse tipo de disenteria é conhecido como amebíase. Das alternativas descritas a seguir, assinale a que se caracteriza por ser o modo de transmissão da amebíase:
+A) Ingestão de cistos do parasita presentes em fezes de gato
+B) Ingestão de alimentos ou água contaminados com fezes que contenham cistos do ciliado
+C) Ingestão de alimentos ou água contaminados com fezes que contenham cistos do parasito
+D) Ingestão de alimentos ou água contaminados com fezes que contenham cistos do flagelado
+G: C
+
+Q: A amebíase é uma doença comum no Brasil, causada pelo protozoário <i>Entamoeba histolytica</i>. São características desse parasita:
+A) Locomoção por cílios
+B) Exoesqueleto de carbonato de cálcio
+C) Infecção de células sanguíneas
+D) Provocar a lise de enterócitos
+G: D
+C: O protozoário adere à mucosa intestinal e secreta enzimas proteolíticas que causam a lise (destruição) dos enterócitos (células intestinais). Esta lise celular permite a invasão tecidual e formação de úlceras características da doença.
+
+Q: A espécie <i>Giardia lamblia</i> pode ser responsável por um quadro de enterite, geralmente benigno, que recebe o nome de giardíase. Sobre esse parasita intestinal julgue os itens a seguir e marque a alternativa correta:
+‎ 
+I. É um protozoário ciliado que durante seu ciclo de vida apresenta duas formas: trofozoíto e cisto  
+II. Quando infectam o ser humano os trofozoítos vivem no intestino grosso.
+III. Em contato com a água os cistos morrem dentro de algumas horas.
+IV. A reprodução é assexuada por divisão binária longitudinal.
+‎ 
+A) I e III corretos
+B) I e II corretos
+C) IV correta
+D) II, III e IV corretos
+G: C
+C:
+<b>I. INCORRETO.</b> A Giardia lamblia é um protozoário <b>flagelado</b>, não ciliado. Ela pertence ao grupo dos Mastigophora (flagelados). É verdade que durante seu ciclo de vida apresenta duas formas: trofozoíto (forma móvel) e cisto (forma de resistência), mas a classificação como ciliado está incorreta.
+<b>II. INCORRETO.</b> Os trofozoítos de Giardia lamblia habitam principalmente o <b>intestino delgado</b>, mais especificamente no duodeno e jejuno, onde se fixam à mucosa intestinal através de seus discos adesivos ventrais. Não é no intestino grosso como afirmado.
+<b>III. INCORRETO.</b> Os cistos de Giardia lamblia são justamente <b>formas de resistência</b> que podem sobreviver por longos períodos no ambiente, inclusive na água. Eles podem permanecer viáveis em água fria por semanas ou até meses, o que contribui para sua alta transmissibilidade através de água contaminada.
+<b>IV. CORRETO.</b> A Giardia lamblia se reproduz de forma assexuada por divisão binária longitudinal, onde o trofozoíto se divide ao longo do seu eixo longitudinal, formando duas células-filhas.
+
+Q: A respeito da <i>Giardia lamblia</i> marque a alternativa correta:
+A) Apresenta três formas morfológicas: trofozoítos, esporozoítos e cistos
+B) É um parasita monoxênio de ciclo biológico direto
+C) Transmissão é feita pela ingestão de ovos que se transmitem através de água sem tratamento
+D) Apresenta duas formas morfológicas: esporozoíto e cistos
+G: B
+C: A giardíase é causada por Giardia lamblia, um parasita <b>monoxeno</b> (apenas um hospedeiro) e com <b>ciclo direto</b> (sem hospedeiro intermediário). Apresenta duas formas: <b>trofozoíto e cisto</b>.
+
+Q: Os protozoários que parasitam o homem podem habitar diferentes tecidos e órgãos, como <i>Entamoeba histolytica</i> e <i>Giardia lamblia</i> que habitam o intestino e <i>Trichomonas</i> que habitam vias geniturinárias.
+G: V
+
+Q: O <i>Trichomonas vaginalis</i> (protozoário anaeróbio, tetraflagelado, móvel) causa corrimento vaginal:
+A) Grumoso, branco e inodoro
+B) Bolhoso, esverdeado, com odor fétido característico
+C) Grumoso, branco com odor fétido
+D) Bolhoso, branco, com odor fétido característico
+G: B
+
+Q: Na tricomoníase, a interação entre o <i>Trichomonas vaginalis</i> e o hospedeiro é um processo complexo, no qual estão envolvidos componentes associados à superfície celular do parasita, células epiteliais do hospedeiro e também componentes solúveis encontrados nas secreções vaginal e uretral. Em relação à parasitose em questão, analise as assertivas a seguir e julgue em V (verdadeiro) ou F (falso):
+( ) A infecção por T. vaginalis tipicamente faz surgir uma agressiva resposta imune celular local com inflamação do epitélio vaginal e da exocérvice em mulheres e a uretra em homens.
+( ) A elevação do pH vaginal na tricomoníase é evidente, com redução concomitante de Lactobacillus acidophilus e aumento na proporção de bactérias anaeróbias.
+( ) O mecanismo de contágio da tricomoníase é a relação sexual, portanto o seu controle é constituído pelas mesmas medidas preventivas tomadas no combate a IST.
+A) VFV
+B) VVV
+C) FFF
+D) FVF
+G: B
+
+Q: Durante uma consulta médica em um serviço de atenção secundária, uma mulher de 29 anos, sem filhos e profissional do sexo, queixa-se de corrimento com odor forte, que se acentua no final do período menstrual e após os coitos. Relata fazer uso de contraceptivo hormonal injetável e um ou dois programas ao dia, usando preservativo. Ao exame, o corrimento vaginal é bolhoso e não há sinais inflamatórios no colo. O pH vaginal é 5,5 e o teste de KOH é positivo.<br>
+Em relação ao raciocínio clínico para orientar a melhor abordagem diagnóstica e terapêutica para a queixa de corrimento, assinale com V as afirmativas verdadeiras e com F as falsas:
+( ) A ausência de sinais de cervicite ao exame não afasta a possibilidade de existir uma infecção sexualmente transmissível.
+( ) A história e os achados de exame clínico são evidências suficientes de que há uma infecção por <i>Trichomonas vaginalis</i>.
+( ) O valor de pH vaginal, o resultado do teste de KOH e o relato de odor da mulher são característicos de vaginose bacteriana.
+Assina a sequência correta:
+A) F F V
+B) F V F
+C) V F V
+D) V V F
+G: C
+C:  Apesar do corrimento bolhoso e do pH aumentado sugerirem tricomoníase, é necessário exame laboratorial (p. ex. exame direto em fresco) para confirmação; o quadro clínico isolado não é suficiente para diagnóstico definitivo.
+
+Q: Sobre a amebíase é INCORRETO afirmar que:
+A) Dentre as espécies que vivem no intestino grosso somente a <i>E. histolytica</i> tem atividade patogênica no homem.
+B) Os trofozoítos parasitam usualmente o intestino grosso, mas podem ultrapassar a mucosa intestinal e se estabelecer em outros órgãos como o fígado, pulmão e o cérebro.
+C) Embora o parasita possa infectar outros mamíferos, o homem é o principal hospedeiro e reservatório.
+D) Os trofozoítos podem permanecer viáveis e infectantes por alguns dias nas fezes no meio exterior e, se ingeridos, são resistentes ao pH ácido do estômago e se tornam infectantes.
+G: D
+C: Não são os trofozoitos e sim os cistos.
+
+Q: Em relação à giardíase é CORRETO afirmar que:
+A) A maioria dos casos da doença é assintomática, porém, quando sintomática, a diarreia do tipo aquosa e explosiva é um sintoma clínico característico.
+B) O ciclo biológico do parasita <i>Giardia lamblia</i> é do tipo heteroxeno.
+C) Na coleta de uma amostra fecal em fezes diarreicas, um paciente desenvolvendo giardíase elimina cistos continuamente nas fezes, que são detectados.
+D) Os cistos possuem formato de pêra, simetria bilateral e quatro pares de flagelos.
+G: A
+C: O ciclo é <b>monoxeno</b>, e os <b>trofozoítos</b>, não os cistos, são eliminados nas fezes diarreicas.
+
+Q: Quais os fatores de virulência da <i>E. histolytica</i>?
+GABARITO: 
+- Lectina de galactose/N-acetilgalactosamina: Proteína de superfície essencial para a adesão às células epiteliais intestinais.
+- Cisteína proteases: Enzimas que degradam proteínas do hospedeiro.

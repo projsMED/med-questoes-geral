@@ -1,0 +1,277 @@
+Q: Onde estão localizados os principais grupos de neurônios que formam o centro respiratório?
+A) Apenas no bulbo
+B) No bulbo e na ponte do tronco encefálico
+C) Apenas na ponte
+D) No cerebelo e no bulbo
+G: B
+C: O centro respiratório é composto por diversos grupos de neurônios localizados <b>bilateralmente no bulbo e na ponte do tronco encefálico</b>. Os três grandes grupos são: grupo respiratório dorsal (bulbo), grupo respiratório ventral (bulbo) e centro pneumotáxico (ponte).
+
+Q: Qual é a principal função do grupo respiratório dorsal de neurônios?
+A) Controlar principalmente a expiração
+B) Controlar principalmente a inspiração
+C) Controlar apenas a frequência respiratória
+D) Controlar apenas os músculos abdominais
+G: B
+C: O grupo respiratório dorsal, localizado na porção dorsal do bulbo, <b>promove principalmente a inspiração</b> e exerce papel fundamental no controle da respiração, sendo responsável pelo ritmo básico respiratório.
+
+Q: Durante a respiração normal de repouso, qual grupo de neurônios permanece quase totalmente inativo?
+A) Grupo respiratório dorsal
+B) Centro pneumotáxico
+C) Grupo respiratório ventral
+D) Núcleo do trato solitário
+G: C
+C: Os neurônios do grupo respiratório ventral <b>permanecem quase totalmente inativos durante a respiração normal de repouso</b>. A respiração de repouso é promovida somente pelos sinais inspiratórios do grupo respiratório dorsal.
+
+Q: O sinal nervoso transmitido aos músculos da inspiração tem qual característica?
+A) É um disparo instantâneo de potenciais de ação
+B) É um sinal em rampa que aumenta gradualmente
+C) É um sinal constante e uniforme
+D) É um sinal intermitente e irregular
+G: B
+C: O sinal inspiratório <b>não é um disparo instantâneo, mas sim um sinal em rampa</b> que começa fraco e aumenta estavelmente por cerca de 2 segundos, promovendo aumento estável do volume pulmonar durante a inspiração.
+
+Q: Qual é o efeito primário do centro pneumotáxico sobre o controle respiratório?
+A) Iniciar a inspiração
+B) Controlar o ponto de "desligamento" da rampa inspiratória
+C) Promover a expiração forçada
+D) Estimular os quimiorreceptores periféricos
+G: B
+C: O centro pneumotáxico, situado no núcleo parabraquial da ponte, tem como <b>efeito primário controlar o ponto de "desligamento" da rampa inspiratória</b>, limitando a duração da inspiração e secundariamente aumentando a frequência respiratória.
+
+Q: Em que condições o grupo respiratório ventral se torna mais ativo?
+A) Durante o sono profundo
+B) Apenas durante a respiração normal
+C) Quando há necessidade de maior ventilação pulmonar
+D) Apenas durante a inspiração
+G: C
+C: O grupo respiratório ventral torna-se ativo <b>quando o estímulo respiratório para aumento da ventilação pulmonar se torna maior que o normal</b>, funcionando como mecanismo de potencialização especialmente durante exercício intenso, contribuindo tanto para inspiração quanto expiração forçada.
+
+Q: O reflexo de insuflação de Hering-Breuer é ativado por receptores localizados em qual estrutura?
+A) Alvéolos pulmonares
+B) Diafragma
+C) Porções musculares da parede dos brônquios e bronquíolos
+D) Pleura parietal
+G: C
+C: O reflexo de Hering-Breuer é ativado por <b>receptores de estiramento localizados nas porções musculares da parede dos brônquios e bronquíolos</b>, que transmitem sinais pelo nervo vago quando os pulmões são excessivamente estirados, desligando a rampa inspiratória.
+
+Q: Qual é a relação entre a intensidade do sinal pneumotáxico e a duração da inspiração em condições extremas?
+A) Sinal forte pode limitar a inspiração a 0,5s, sinal fraco pode estendê-la por 5s ou mais
+B) Sinal forte estende a inspiração, sinal fraco a encurta
+C) A intensidade do sinal não afeta a duração da inspiração
+D) Sinal forte causa inspiração de 5s, sinal fraco de 0,5s
+G: A
+C: A intensidade do sinal pneumotáxico tem <b>relação inversa com a duração da inspiração</b>: quando o sinal é forte, a inspiração pode durar apenas 0,5s causando enchimento discreto dos pulmões, mas quando é fraco, pode continuar por 5 ou mais segundos, preenchendo os pulmões com muito mais ar, demonstrando seu papel crucial no controle temporal da respiração.
+
+Q: Complete a lacuna no trecho a seguir:<br>
+"O sinal nervoso que é transmitido aos músculos da inspiração, principalmente o diafragma, não se trata de um disparo instantâneo de potenciais de ação. Na realidade, ele começa de maneira fraca e _________________ por cerca de 2 segundos na respiração normal. Em seguida, ele cessa repentinamente pelos próximos 3 segundos, o que interrompe a excitação do diafragma e permite o retorno elástico dos pulmões e da parede torácica para promover a expiração."
+GABARITO: aumenta estavelmente como uma rampa
+
+Q: Complete a lacuna no trecho a seguir:<br>
+"O centro pneumotáxico, situado dorsalmente no núcleo parabraquial da parte superior da ponte, transmite sinais para a área inspiratória. O efeito primário desse centro é de controlar o ponto de _________________ da rampa inspiratória, controlando a duração da fase de enchimento do ciclo pulmonar."
+GABARITO: "desligamento"
+
+Q: Complete as lacunas no trecho a seguir:<br>
+"O reflexo de insuflação de Hering-Breuer advém de receptores de estiramento, localizados nas porções musculares da parede dos _________________ ao longo dos pulmões, transmitindo sinais por meio do nervo vago até o grupo respiratório dorsal de neurônios quando os pulmões são estirados excessivamente. Em humanos, esse reflexo provavelmente não é ativado até que o volume corrente aumente para mais do que _________________ acima do normal."
+GABARITO: brônquios e dos bronquíolos; 3 vezes (ou > aproximadamente 1,5 ℓ/respiração)
+
+Q: Qual é o principal objetivo da respiração no organismo humano?
+A) Eliminar apenas o CO2 dos tecidos
+B) Manter concentrações adequadas de O2, CO2 e H+ nos tecidos
+C) Fornecer energia diretamente às células
+D) Regular exclusivamente a temperatura corporal
+E) Controlar apenas a concentração de oxigênio no sangue
+G: B
+C: <b>O principal objetivo da respiração é manter concentrações adequadas de O2, CO2 e H+ nos tecidos.</b> A respiração não tem como função apenas eliminar CO2 ou fornecer energia diretamente, mas sim manter o equilíbrio químico adequado para o funcionamento celular.
+
+Q: Onde está localizada a área quimiossensível do centro respiratório?
+A) Na superfície dorsal do bulbo
+B) No centro pneumotáxico
+C) Bilateralmente, 0,2 milímetro abaixo da superfície ventral do bulbo
+D) No grupo respiratório dorsal de neurônios
+E) Na medula espinhal
+G: C
+C: <b>A área quimiossensível situa-se bilateralmente a apenas 0,2 milímetro abaixo da superfície ventral do bulbo.</b> Esta área é distinta das outras três áreas do centro respiratório e é altamente sensível a alterações da PCO2 ou da concentração de H+.
+
+Q: O que acontece com o efeito estimulante do CO2 após 1 a 2 dias de exposição contínua?
+A) Aumenta progressivamente
+B) Permanece constante
+C) Fica atenuado, reduzindo para cerca de um quinto do efeito inicial
+D) Desaparece completamente
+E) Aumenta em 5 vezes
+G: C
+C: <b>A excitação do centro respiratório causada pelo CO2 diminui gradativamente ao longo de 1 a 2 dias, até atingir um quinto do efeito inicial.</b> Isso ocorre devido ao reajuste renal da concentração de H+ e à difusão lenta de HCO3- através da barreira hematencefálica.
+
+Q: Em condições normais, qual substância tem maior efeito direto sobre o centro respiratório?
+A) Oxigênio (O2)
+B) Dióxido de carbono (CO2) e íons hidrogênio (H+)
+C) Apenas íons hidrogênio (H+)
+D) Apenas dióxido de carbono (CO2)
+E) Hemoglobina
+G: B
+C: <b>O excesso de CO2 ou de H+ do sangue atua diretamente sobre o centro respiratório, causando aumento significativo da força dos sinais motores respiratórios.</b> O oxigênio, em contrapartida, não apresenta grande efeito direto sobre o centro respiratório, atuando principalmente através de quimiorreceptores periféricos.
+
+Q: Por que o CO2 do sangue tem efeito mais potente em estimular neurônios quimiossensíveis do que o H+ diretamente?
+A) Porque o CO2 é mais tóxico que o H+
+B) Porque a barreira hematencefálica é impermeável ao CO2
+C) Porque a barreira hematencefálica não é muito permeável ao H+, mas é muito permeável ao CO2
+D) Porque o H+ não afeta os neurônios quimiossensíveis
+E) Porque o CO2 estimula diretamente os neurônios
+G: C
+C: <b>A barreira hematencefálica não é muito permeável ao H+, porém é tão permeável ao CO2 que sua passagem ocorre como se nem existisse uma barreira.</b> Quando a PCO2 aumenta, o CO2 atravessa facilmente a barreira e reage com água, formando H+ diretamente na área quimiossensível, resultando em maior liberação de H+ local do que quando a concentração sanguínea de H+ aumenta diretamente.
+
+Q: Considerando a faixa normal de PCO2 (35-75 mmHg) e pH sanguíneo (7,3-7,5), qual a relação entre os efeitos dessas variáveis na ventilação alveolar?
+A) O efeito do pH é 10 vezes maior que o do CO2
+B) O efeito do CO2 é aproximadamente 10 vezes maior que o do pH
+C) Ambos têm efeitos equivalentes
+D) O pH não afeta a ventilação alveolar
+E) Apenas o CO2 acima de 100 mmHg afeta a ventilação
+G: B
+C: <b>A alteração da respiração com a faixa normal de pH do sangue tem intensidade equivalente a 10% da causada pelo CO2.</b> Isso demonstra que o CO2 é aproximadamente 10 vezes mais potente que as alterações de pH na faixa fisiológica normal para controlar a ventilação alveolar.
+
+Q: Analise as afirmações sobre o controle químico da respiração e assinale a alternativa correta:
+I. O H+ é provavelmente o estímulo primário direto dos neurônios quimiossensíveis
+II. O sistema tampão hemoglobina-oxigênio permite transporte adequado de O2 mesmo com PO2 pulmonar variando de 60 a 1.000 mmHg
+III. Os quimiorreceptores periféricos respondem principalmente quando a PO2 cai abaixo de 70 mmHg
+IV. O CO2 estimula diretamente os neurônios quimiossensíveis sem necessidade de conversão
+A) Apenas I e II estão corretas
+B) Apenas I, II e III estão corretas
+C) Apenas II e III estão corretas
+D) Apenas I, III e IV estão corretas
+E) Todas as afirmações estão corretas
+G: B
+C: <b>As afirmações I, II e III estão corretas.</b> O H+ é o estímulo primário direto dos neurônios quimiossensíveis; o sistema tampão hemoglobina-oxigênio realmente permite transporte adequado numa ampla faixa de PO2; e os quimiorreceptores periféricos respondem quando PO2 < 70 mmHg. A afirmação IV está incorreta porque o CO2 estimula indiretamente através da formação de H+ após reagir com água.
+
+Q: Onde estão localizados a maioria dos quimiorreceptores periféricos?
+A) Nos pulmões
+B) Nos corpos carotídeos
+C) No centro respiratório do bulbo
+D) Na medula espinhal
+E) No coração
+G: B
+C: <b>A maioria dos quimiorreceptores se encontra nos corpos carotídeos.</b> Alguns também estão presentes nos corpos aórticos e poucos em outros locais associados a outras artérias da região torácica e abdominal.
+
+Q: Qual é a principal função dos quimiorreceptores periféricos?
+A) Detectar alterações na temperatura corporal
+B) Detectar alterações do O2 sanguíneo
+C) Controlar a frequência cardíaca
+D) Regular a pressão arterial
+E) Filtrar o sangue
+G: B
+C: <b>Os quimiorreceptores periféricos são especialmente importantes na detecção de alterações do O2 sanguíneo.</b> Embora também respondam em menor grau às mudanças do CO2 e da concentração de H+, sua função principal é detectar variações na oxigenação sanguínea.
+
+Q: A partir de qual valor de PO2 arterial os quimiorreceptores começam a ser significativamente estimulados?
+A) 120 mmHg
+B) 100 mmHg
+C) 80 mmHg
+D) 60 mmHg
+E) 40 mmHg
+G: B
+C: <b>A figura demonstra quase nenhum efeito sobre a ventilação contanto que a PO2 arterial permaneça acima de 100 mmHg.</b> Com pressões menores do que 100 mmHg, a ventilação aproximadamente dobra quando a PO2 arterial cai para 60 mmHg.
+
+Q: Como é o fluxo sanguíneo nos corpos carotídeos e aórticos em relação ao seu peso?
+A) 2 vezes maior que seu próprio peso por minuto
+B) 5 vezes maior que seu próprio peso por minuto
+C) 10 vezes maior que seu próprio peso por minuto
+D) 20 vezes maior que seu próprio peso por minuto
+E) 50 vezes maior que seu próprio peso por minuto
+G: D
+C: <b>O fluxo sanguíneo dos corpos é muito alto: 20 vezes maior do que seu próprio peso a cada minuto.</b> Isso garante que a porcentagem de O2 removido do fluxo sanguíneo se aproxime de zero, mantendo os quimiorreceptores expostos ao sangue arterial.
+
+Q: Qual é o mecanismo celular básico de estimulação dos quimiorreceptores pela deficiência de O2?
+A) Abertura de canais de sódio nas células glomosas
+B) Fechamento de canais de potássio sensíveis a O2, causando despolarização
+C) Ativação direta de canais de cálcio
+D) Liberação imediata de dopamina
+E) Hiperpolarização das células glomosas
+G: B
+C: <b>Células glomosas possuem canais de potássio sensíveis a O2 que são inativados quando a PO2 sofre uma queda significativa, o que causa a despolarização da célula.</b> Isso abre canais de cálcio voltagem-dependentes, aumenta a concentração de cálcio intracelular e estimula a liberação de neurotransmissor.
+
+Q: Compare os efeitos diretos do CO2 e H+ sobre o centro respiratório versus seus efeitos mediados pelos quimiorreceptores periféricos. Qual é a diferença temporal entre essas respostas?
+A) Os efeitos periféricos são 7 vezes mais potentes, mas 5 vezes mais lentos
+B) Os efeitos centrais são 7 vezes mais potentes, mas os periféricos são 5 vezes mais rápidos
+C) Ambos têm a mesma potência e velocidade
+D) Os efeitos periféricos são mais potentes e mais rápidos
+E) Os efeitos centrais são mais rápidos, mas menos potentes
+G: B
+C: <b>Os efeitos diretos de CO2 e H+ sobre o centro respiratório são cerca de 7 vezes mais potentes do que seus efeitos mediados pelos quimiorreceptores, porém a estimulação por meio dos quimiorreceptores periféricos ocorre cerca de 5 vezes mais rapidamente.</b> Isso torna os quimiorreceptores especialmente importantes para resposta rápida ao CO2 durante o exercício físico.
+
+Q: Analise o fenômeno da aclimatação em alpinistas e suas bases fisiológicas. Considere os seguintes aspectos:
+I. Tempo necessário para aclimatação completa
+II. Alteração na sensibilidade do centro respiratório ao CO2 e H+
+III. Magnitude do aumento da ventilação alveolar após aclimatação
+IV. Mecanismo pelo qual isso beneficia o alpinista
+Assinale a alternativa que apresenta a análise correta:
+A) 5-7 dias; redução de 50% da sensibilidade; aumento de 200% na ventilação; melhor oxigenação
+B) 2-3 dias; redução de 80% da sensibilidade; aumento de 400-500% na ventilação; melhor suprimento de O2
+C) 1-2 dias; redução de 60% da sensibilidade; aumento de 300% na ventilação; redução do CO2
+D) 7-10 dias; redução de 90% da sensibilidade; aumento de 600% na ventilação; adaptação metabólica
+E) 2-3 dias; aumento de 80% da sensibilidade; redução de 50% na ventilação; conservação de energia
+G: B
+C: <b>A aclimatação ocorre dentro de 2 a 3 dias, quando o centro respiratório perde aproximadamente 80% de sua sensibilidade às alterações da PCO2 e do H+.</b> Isso faz com que a ventilação alveolar aumente em 400 a 500% (em vez dos 70% da exposição aguda), auxiliando imensamente o suprimento adicional de O2 ao alpinista, pois a expiração excessiva de CO2 que normalmente inibiria a elevação da respiração deixa de acontecer.
+
+Q: Sobre o Sistema quimiorreceptor periférico, responda as perguntas a seguir.
+I_A) Explique o mecanismo molecular pelo qual as células glomosas dos corpos carotídeos detectam a hipóxia e transmitem essa informação ao sistema nervoso central.
+GABARITO: O mecanismo ocorre da seguinte forma:
+1. Uma queda significativa na pressão parcial de oxigênio (PO2​) no sangue arterial (hipóxia) inativa canais de potássio (K+) sensíveis ao O2​ presentes nas células glomosas.
+2. O fechamento desses canais de potássio causa a despolarização da membrana celular.
+3. Essa despolarização abre canais de cálcio (Ca++) dependentes de voltagem, resultando em um aumento da concentração de Ca++ dentro do citosol da célula.
+4. O nível elevado de cálcio estimula a liberação de um neurotransmissor, provavelmente o trifosfato de adenosina (ATP).
+5. O neurotransmissor ativa fibras nervosas aferentes, que enviam sinais ao sistema nervoso central para estimular a respiração.
+I_B) Discuta por que os quimiorreceptores periféricos são expostos ao sangue arterial e não ao sangue venoso, e qual a importância fisiológica dessa característica.
+GABARITO:
+<b>Motivo da Exposição ao Sangue Arterial:</b> Os quimiorreceptores periféricos são expostos ao sangue arterial porque recebem um fluxo sanguíneo próprio e extremamente alto (cerca de 20 vezes seu peso por minuto) diretamente de uma artéria adjacente. Devido a esse fluxo intenso, a quantidade de oxigênio removida pelo tecido do quimiorreceptor é praticamente zero. Isso garante que a pressão parcial de gases no sangue que banha as células seja idêntica à do sangue arterial, e não à do venoso
+<b>Importância Fisiológica:</b> A principal função da respiração é manter as concentrações de O2​, CO2​ e H+ adequadas no sangue que será distribuído para os tecidos do corpo. Ao monitorar a composição do sangue arterial, os quimiorreceptores fornecem ao sistema nervoso central uma medição precisa e em tempo real da qualidade do sangue que está sendo enviado para o resto do corpo, incluindo o cérebro. Isso permite que o sistema respiratório faça ajustes rápidos e precisos na ventilação para corrigir qualquer desvio, garantindo a homeostase e a adequada oxigenação dos órgãos vitais.
+
+Q: Durante o exercício intenso, o consumo de O2 e a produção de CO2 podem aumentar em até quantas vezes?
+A) 5 vezes
+B) 10 vezes
+C) 15 vezes
+D) 20 vezes
+E) 25 vezes
+G: D
+C: <b>Durante o exercício intenso, o consumo de O2 e a produção de CO2 podem aumentar em até 20 vezes.</b> Mesmo com esse aumento dramático no metabolismo, a ventilação alveolar normalmente aumenta em proporção quase exata.
+
+Q: Como se comportam a PO2, PCO2 e pH do sangue arterial durante o exercício em atletas saudáveis?
+A) Aumentam significativamente
+B) Diminuem drasticamente
+C) Permanecem praticamente normais
+D) Oscilam constantemente
+E) Alteram-se apenas a PO2
+G: C
+C: <b>A PO2, a PCO2 e o pH do sangue arterial permanecem praticamente normais durante o exercício.</b> Isso ocorre porque a ventilação alveolar aumenta em proporção quase exata ao nível de metabolismo aumentado.
+
+Q: Qual é o principal mecanismo proposto para explicar o aumento da ventilação durante o exercício?
+A) Aumento dos níveis de CO2 no sangue
+B) Diminuição dos níveis de O2 no sangue
+C) Estímulo neurogênico direto do centro respiratório pelo cérebro
+D) Acidose metabólica
+E) Aumento da temperatura corporal
+G: C
+C: <b>Acredita-se que, ao transmitir impulsos motores aos músculos em exercício, o cérebro também transmita impulsos colaterais ao tronco encefálico, excitando ao mesmo tempo o centro respiratório.</b> Isso ocorre porque as alterações químicas não são suficientes para explicar o aumento ventilatório observado.
+
+Q: O que acontece com a PCO2 arterial no início do exercício e qual é a explicação para esse fenômeno?
+A) Aumenta imediatamente devido ao aumento da produção de CO2
+B) Permanece inalterada durante todo o exercício
+C) Diminui inicialmente em relação ao normal devido ao estímulo antecipatório
+D) Oscila constantemente durante os primeiros minutos
+E) Aumenta apenas após 1 hora de exercício
+G: C
+C: <b>No início do exercício, a ventilação alveolar aumenta quase instantaneamente, sendo geralmente suficiente para causar diminuição da PCO2 arterial em relação ao normal.</b> O motivo é que o encéfalo fornece um estímulo "antecipatório" da respiração, promovendo ventilação alveolar extra antes mesmo do necessário.
+
+Q: Após quanto tempo do início do exercício a PCO2 arterial retorna aproximadamente ao valor normal?
+A) 10 a 15 segundos
+B) 20 a 25 segundos
+C) 30 a 40 segundos
+D) 1 a 2 minutos
+E) 5 a 10 minutos
+G: C
+C: <b>Após 30 a 40 segundos, a quantidade de CO2 liberada no sangue pelos músculos ativos aproximadamente se equipara ao aumento da ventilação, devolvendo a PCO2 arterial essencialmente a seu valor normal.</b> Isso demonstra o ajuste temporal entre o estímulo neurogênico inicial e o equilíbrio metabólico.
+
+Q: Como o fator neurogênico modifica a curva de resposta ventilatória ao CO2 durante o exercício máximo, e qual é a importância fisiológica dessa modificação?
+A) Desloca a curva 5 vezes para cima, mantendo a PCO2 em 35 mmHg
+B) Desloca a curva 10 vezes para baixo, reduzindo a PCO2 para 30 mmHg
+C) Desloca a curva cerca de 20 vezes para cima, mantendo a PCO2 normal em 40 mmHg
+D) Não altera a curva, apenas modifica a sensibilidade
+E) Inverte a curva, tornando-a negativa
+G: C
+C: <b>O fator neurogênico desvia a curva cerca de 20 vezes para cima, equiparando a ventilação com a taxa de liberação de CO2, o que mantém a PCO2 arterial próxima de seu valor normal de 40 mmHg.</b> Isso é essencial para manter a homeostase química durante o exercício intenso, permitindo que a ventilação seja adequada sem alterar significativamente os parâmetros sanguíneos.

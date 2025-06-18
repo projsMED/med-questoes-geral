@@ -1,0 +1,172 @@
+QCH: Sobre vasos sanguíneos, assinale todas as assertivas VERDADEIRAS:
+A1: As artérias possuem paredes mais espessas que as veias e apresentam três túnicas, sendo a túnica média responsável por sua elasticidade e contratilidade.
+G: V
+C: As artérias realmente possuem três túnicas, e a túnica média é a principal responsável por elasticidade e contratilidade.
+A2: As veias não possuem válvulas em nenhuma parte do corpo humano.
+G: F
+C: As veias, especialmente dos membros, possuem válvulas para impedir o refluxo do sangue.
+A3: As arteríolas são responsáveis por regular o fluxo sanguíneo para os capilares por meio de constrição e dilatação.
+G: V
+C: As arteríolas regulam o fluxo sanguíneo para os capilares por meio de constrição/dilatação.
+A4: Os capilares são vasos sanguíneos microscópicos onde ocorre a troca de substâncias entre o sangue e as células teciduais.
+G: V
+C: A principal função dos capilares é a troca de substâncias entre o sangue e os tecidos.
+A5: O lúmen das veias é normalmente menor do que o das artérias de mesmo calibre.
+G: F
+C: O lúmen das veias é geralmente maior do que o das artérias de mesmo calibre.
+
+QCH: Sobre hemodinâmica e pressão arterial, assinale todas as assertivas VERDADEIRAS:
+A1: O sangue sempre flui das regiões de menor para as de maior pressão.
+G: F
+C: O sangue flui das regiões de maior para as de menor pressão.
+A2: O retorno venoso é favorecido por contrações dos músculos esqueléticos e pelas válvulas presentes nas veias.
+G: V
+C: Tanto as válvulas quanto a contração dos músculos esqueléticos auxiliam o retorno venoso.
+A3: A pressão arterial sistólica corresponde à pressão exercida nas artérias durante a contração ventricular.
+G: V
+C: A pressão sistólica ocorre durante a sístole ventricular.
+A4: A pressão arterial diminui progressivamente da aorta até chegar ao ventrículo direito.
+G: V
+C: A pressão cai conforme o sangue percorre a circulação sistêmica.
+A5: O débito cardíaco é calculado pela divisão da resistência total pela pressão arterial média.
+G: F
+C: O débito cardíaco é igual à pressão arterial média dividida pela resistência total (DC = PAM ÷ R).
+
+Q: Os seios vasculares são artérias de paredes espessas e grande elasticidade.
+G: F
+C: Seios vasculares são <b>veias</b> de paredes muito finas.
+
+Q: O principal estímulo para a autorregulação local do fluxo sanguíneo é o nível de oxigênio no tecido.
+G: V
+C: O nível de O2 realmente é o principal fator para autorregulação do fluxo sanguíneo.
+
+Q: As artérias terminais são aquelas que se anastomosam com outros vasos.
+G: F
+C: Artérias terminais <b>não</b> se anastomosam. As artérias terminais são definidas justamente pelo fato de NÃO formarem anastomoses (conexões) com outros vasos. Elas são consideradas "terminais" porque representam o único suprimento sanguíneo para uma determinada região, sem vias colaterais alternativas.
+Quando uma artéria terminal é obstruída, a área suprida por ela sofre isquemia e potencial necrose, pois não há rotas alternativas para o sangue chegar àquela região. Em contraste, as artérias que formam anastomoses são chamadas de artérias colaterais, que possuem conexões com outros vasos, permitindo suprimento sanguíneo alternativo em caso de obstrução.
+
+Q: O edema ocorre quando há aumento anormal do líquido intersticial devido ao desequilíbrio entre filtração e reabsorção capilar.
+G: V
+C: O edema é justamente esse acúmulo anormal de líquido intersticial.
+
+Q: Um paciente apresenta varizes nos membros inferiores. Sobre as características das veias, assinale a alternativa INCORRETA:
+A) As veias apresentam válvulas que impedem o refluxo de sangue.
+B) O lúmen das veias costuma ser maior do que o das artérias de mesmo calibre.
+C) As veias possuem paredes mais espessas que as artérias, com uma túnica média bem desenvolvida.
+D) O enfraquecimento das válvulas venosas pode contribuir para a formação de varizes.
+G: C
+C: <b>INCORRETA</b>. As veias têm paredes mais <b>finas</b> e não mais espessas que as artérias.
+
+Q: Durante a avaliação da pressão arterial de um paciente, o profissional de saúde utiliza um esfigmomanômetro para aferir os valores pressóricos. Em relação à pressão arterial, marque a alternativa INCORRETA:
+A) A pressão sistólica é a pressão durante a contração ventricular.
+B) A pressão arterial é normalmente menor na aorta e maior no ventrículo direito.
+C) A pressão de pulso é a diferença entre pressão sistólica e diastólica.
+D) A pressão arterial normal é inferior a 120/80 mmHg.
+G: B
+C: A pressão arterial é <b>maior na aorta</b> e diminui progressivamente até o ventrículo direito.
+
+Q: Sobre a troca de substâncias nos capilares, assinale a alternativa CORRETA:
+A) O movimento de proteínas e água através das paredes capilares é determinado unicamente pela pressão hidrostática.
+B) O edema ocorre quando há diminuição anormal do líquido intersticial.
+C) A principal via de passagem de substâncias através dos capilares é a difusão, transcitose e fluxo de massa.
+D) A lei de Starling não se aplica aos capilares sanguíneos.
+E) A troca capilar ocorre exclusivamente por filtração.
+G: C
+C: As principais vias são difusão, transcitose e fluxo de massa.
+{A}) Errada (não é apenas pressão hidrostática).
+{B}) Errada (edema = aumento).
+{D}) Errada (lei de Starling se aplica sim).
+{E}) Errada (ocorre por outros mecanismos também).
+
+Q: Qual das alternativas a seguir representa corretamente a ordem de passagem do sangue ao sair do coração até seu retorno?
+A) Artérias → arteríolas → capilares → vênulas → veias
+B) Veias → arteríolas → capilares → artérias → vênulas
+C) Capilares → arteríolas → artérias → veias → vênulas
+D) Vênulas → artérias → capilares → arteríolas → veias
+G: A
+C: O sangue sai do coração pelas artérias, passa para arteríolas, depois para capilares, vênulas e retorna ao coração pelas veias.
+
+Q: O que é responsável por impedir o refluxo do sangue dentro das veias, principalmente nos membros?
+A) Esfíncteres pré-capilares
+B) Túnica externa
+C) Válvulas
+D) Lâmina elástica interna
+G: C
+C: As válvulas das veias são essenciais para impedir o refluxo do sangue, especialmente nos membros inferiores.
+
+Q: O processo de crescimento de novos vasos sanguíneos, que ocorre tanto no desenvolvimento embrionário quanto em situações como cicatrização, é chamado de:
+A) Angina
+B) Arteriosclerose
+C) Angiogênese
+D) Apoptose
+G: C
+C: Angiogênese é o nome dado ao processo de formação de novos vasos sanguíneos.
+
+Q: Em relação à estrutura dos vasos sanguíneos, marque a alternativa CORRETA:
+A) As artérias têm túnica média mais fina que as veias.
+B) Os capilares possuem todas as três túnicas, assim como artérias e veias.
+C) A túnica externa das artérias elásticas é composta principalmente por fibras colágenas e elásticas.
+D) As veias apresentam lâmina elástica interna semelhante à das artérias.
+G: C
+C: A túnica externa (adventícia) é formada principalmente por fibras colágenas e elásticas, especialmente evidente em artérias de grande calibre.
+
+Q: Sobre a distribuição do sangue no corpo humano em repouso, é correto afirmar:
+A) A maior parte do sangue encontra-se nas artérias e arteríolas sistêmicas.
+B) O coração armazena cerca de 50% do sangue total.
+C) Veias e vênulas sistêmicas funcionam como reservatórios, armazenando a maior parte do volume sanguíneo.
+D) O volume de sangue nos capilares sistêmicos corresponde a aproximadamente metade do total.
+G: C
+C: Veias e vênulas sistêmicas armazenam cerca de 64% do volume sanguíneo em repouso, funcionando como reservatórios de sangue.
+
+Q: Sobre as anastomoses vasculares e suas consequências clínicas, assinale a alternativa CORRETA:
+A) A obstrução de uma artéria terminal sempre pode ser compensada por vias colaterais.
+B) As anastomoses entre artérias garantem que nenhum tecido sofra necrose em caso de obstrução arterial.
+C) Anastomoses permitem circulação colateral, mas a obstrução de artérias terminais pode causar necrose em segmentos do órgão afetado.
+D) Anastomoses são exclusivas das artérias e nunca ocorrem entre veias ou arteríolas.
+G: C
+C: A presença de anastomoses permite circulação colateral; já artérias terminais, se obstruídas, podem causar necrose por falta de vias alternativas de irrigação.
+
+QCH: Sobre a estrutura e função das artérias elásticas e musculares, assinale todas as assertivas CORRETAS:
+A1: As artérias elásticas atuam como reservatórios de pressão, ajudando a manter o fluxo sanguíneo durante o relaxamento ventricular.
+G: V
+C: Está correta, pois as artérias elásticas funcionam como reservatórios de pressão.
+A2: As artérias musculares possuem uma túnica média espessa, com grande quantidade de músculo liso, responsável por regular o fluxo sanguíneo nos órgãos.
+G: V
+C: Está correta, pois a túnica média das artérias musculares é espessa e regula o fluxo.
+A3: As artérias elásticas possuem uma túnica média composta principalmente por tecido conjuntivo fibroso, sem fibras elásticas.
+G: F
+C: Está errada, pois a túnica média das artérias elásticas é rica em fibras elásticas.
+A4: As artérias musculares são também chamadas de artérias distribuidoras.
+G: V
+C: Está correta, pois as artérias musculares realmente recebem o nome de “distribuidoras”.
+
+QCH: Sobre os capilares sanguíneos e suas especializações, assinale todas as assertivas CORRETAS:
+A1: Os capilares contínuos apresentam uma barreira relativamente seletiva, sendo encontrados em tecidos como SNC, músculos e pele.
+G: V
+C: Correta: capilares contínuos são seletivos e presentes em SNC, músculo, pele.
+A2: Os capilares fenestrados possuem poros em suas células endoteliais, facilitando a troca rápida de substâncias, e são comuns nos rins e glândulas endócrinas.
+G: V
+C: Correta: fenestrados têm poros e estão nos rins, intestinos, glândulas.
+A3: Os vasos sinusoides apresentam grandes aberturas e membrana basal incompleta, permitindo a passagem de células e proteínas, como ocorre no fígado e medula óssea.
+G: V
+C: Correta: sinusoides têm grandes aberturas, facilitando passagem de células e proteínas.
+A4: Todos os tipos de capilares possuem túnica média e externa bem desenvolvidas.
+G: F
+C: Errada: capilares não possuem túnica média nem externa, apenas endotélio e membrana basal.
+
+QCH: Sobre a circulação venosa e as características das veias, assinale tudo que for CORRETO:
+A1: As veias possuem túnica média mais espessa e mais músculo liso do que as artérias de mesmo calibre.
+G: F
+C: Está errada: as veias têm túnica média mais fina.
+A2: O lúmen das veias costuma ser maior do que o das artérias de diâmetro semelhante.
+G: V
+C: Está correta: o lúmen das veias realmente é maior que o das artérias de mesmo calibre.
+A3: As veias, ao contrário das artérias, não apresentam válvulas em nenhum segmento do corpo.
+G: F
+C: Está errada: veias dos membros apresentam válvulas.
+A4: A pressão sanguínea nas veias é geralmente maior do que nas artérias, favorecendo o retorno rápido do sangue ao coração.
+G: F
+C: Está errada: a pressão nas veias é menor do que nas artérias.
+
+
+

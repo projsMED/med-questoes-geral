@@ -1,0 +1,268 @@
+Q: Durante uma aula prática, estudantes observam ao microscópio dois espécimes parasitários: um apresenta escólex com ventosas e ganchos, corpo segmentado e ausência de trato digestivo; o outro possui corpo foliáceo, ventosas e trato digestivo incompleto.
+Com base nas características morfológicas, é correto afirmar que:
+A) Ambos pertencem à classe Cestoda e compartilham a mesma forma de reprodução.
+B) O primeiro pertence à classe Trematoda, e o segundo, à Cestoda.
+C) O primeiro pertence à classe Cestoda (possivelmente Taenia solium) e o segundo, à classe Trematoda (Schistosoma mansoni).
+D) Ambos são formas larvais de helmintos e causam cisticercose humana.
+E) O segundo parasita apresenta ciclo direto, sem necessidade de hospedeiro intermediário.
+G: C
+C: O primeiro parasita descrito (com escólex e proglotes) é uma Taenia sp., pertencente à classe Cestoda. O segundo (corpo foliáceo com ventosas e trato digestivo incompleto) é um trematódeo, como o Schistosoma mansoni. Essa questão cobra conhecimentos de morfologia e taxonomia.
+
+Q: Analise a seguinte sequência de eventos:
+Humanos ingerem ovos eliminados nas fezes de indivíduos com teníase.
+Embriões eclodem, penetram a mucosa intestinal e migram por via sanguínea.
+Cisticercos se alojam em tecidos, incluindo o sistema nervoso central.
+Essa sequência descreve a infecção por Taenia solium, caracterizando:
+A) O ser humano como hospedeiro definitivo e o porco como paratênico.
+B) O porco como hospedeiro definitivo e o ser humano como intermediário acidental.
+C) O ser humano como hospedeiro intermediário e definitivo ao mesmo tempo, dependendo da via de infecção.
+D) O ciclo biológico da esquistossomose com múltiplos hospedeiros.
+E) Um ciclo heteroxeno envolvendo artrópodes vetores.
+G: C
+C: Na cisticercose humana, a pessoa se infecta ingerindo ovos da Taenia solium. Nesse caso, o ser humano assume um papel de hospedeiro intermediário acidental (as larvas se alojam em tecidos), mas também pode ser o hospedeiro definitivo na teníase (verme adulto no intestino).
+
+Q: Em relação ao ciclo de vida de Taenia saginata e Taenia solium, é correto afirmar:
+A) Ambos os parasitas se reproduzem exclusivamente por partenogênese.
+B) A reprodução ocorre no hospedeiro intermediário, onde o verme atinge a forma adulta.
+C) As tênias adultas vivem no intestino humano, onde realizam reprodução sexuada, originando proglotes com ovos.
+D) A reprodução larval ocorre no sistema nervoso central, gerando sintomas neurológicos.
+E) A reprodução ocorre somente em porcos, que atuam como hospedeiros definitivos.
+G: C
+C: As tênias adultas vivem no intestino humano e realizam reprodução sexuada, gerando proglotes que contêm ovos. O ciclo inclui um estágio larval no hospedeiro intermediário (boi ou porco).
+
+Q: Sobre o ciclo biológico do Schistosoma mansoni, é correto afirmar que:
+A) A infecção se dá pela ingestão de carne bovina contaminada com ovos do parasito.
+B) A forma infectante para o homem é a larva miracídio.
+C) As formas adultas do verme vivem nos caramujos aquáticos.
+D) A penetração ativa da cercária pela pele humana inicia a infecção.
+E) O ovo é a forma infectante tanto para o caramujo quanto para o ser humano.
+G: D
+C: A cercária, liberada pelos caramujos, é a forma infectante para o ser humano no ciclo do Schistosoma mansoni. Ela penetra ativamente pela pele.
+
+Q: Em uma comunidade ribeirinha, foram identificados vários casos de dor abdominal crônica, diarreia e aumento do fígado e baço. A equipe de saúde descobriu que a população utiliza o rio local para banho e outras atividades higiênicas.
+Com base nas informações, assinale a alternativa correta:
+A) A contaminação ocorre pela ingestão de carne suína mal cozida contendo larvas de Taenia solium.
+B) A infecção ocorre pela ingestão de ovos do parasito presentes na água.
+C) O contato com água contaminada com cercárias é a provável forma de infecção, caracterizando esquistossomose.
+D) A infecção é transmitida por mosquitos vetores que habitam áreas alagadas.
+E) Os sintomas indicam infecção por Taenia saginata em sua forma larval.
+G: C
+C: Os sintomas (aumento abdominal, hepatoesplenomegalia) e o uso de água doce sem tratamento indicam esquistossomose, transmitida por cercárias que entram na pele durante o contato com água contaminada.
+
+Q: A cisticercose humana ocorre quando:
+A) O ser humano ingere carne bovina contendo cisticercos viáveis.
+B) O porco é infectado por ovos de Taenia saginata, que se desenvolvem no sistema nervoso.
+C) Humanos ingerem ovos de Taenia solium, que originam larvas migratórias nos tecidos.
+D) A forma adulta da tênia migra para o cérebro, provocando convulsões.
+E) O cisticerco é transmitido por meio de picada de inseto vetorial.
+G: C
+C: A cisticercose humana ocorre pela ingestão de ovos da Taenia solium (e não de carne com cisticercos). Esses ovos liberam embriões que migram pelo corpo, formando cisticercos em diversos tecidos, como o cérebro (neurocisticercose).
+
+Q: A profilaxia da teníase e da cisticercose inclui todas as medidas abaixo, exceto:
+A) Inspeção e cozimento adequado de carnes.
+B) Controle do saneamento básico.
+C) Vacinação dos suínos contra Taenia solium.
+D) Educação alimentar e higiênica da população.
+E) Higiene pessoal, especialmente das mãos.
+G: C
+C: Não existe vacina disponível para suínos contra Taenia solium em programas de saúde pública (embora haja pesquisas nesse sentido). Todas as outras medidas fazem parte da profilaxia efetiva.
+
+Q: Durante uma campanha de conscientização sobre parasitoses, um agente de saúde afirma que o ser humano pode se tornar hospedeiro intermediário ao ingerir ovos de um parasita que normalmente atinge a forma adulta em seu intestino.
+Essa situação descreve:
+A) A teníase causada por Taenia saginata.
+B) A cisticercose causada por Taenia solium.
+C) A esquistossomose hepatoesplênica.
+D) A ascaridíase com migração larval pulmonar.
+E) A ancilostomíase, causada por larvas penetrantes da pele.
+G: B
+C: A cisticercose humana ocorre quando a pessoa ingere ovos de Taenia solium, transformando-se em hospedeiro intermediário acidental. A larva (cisticerco) migra e se aloja nos tecidos, inclusive no cérebro.
+
+Q: Na teníase, os proglotes grávidos liberados nas fezes humanas têm papel importante no ciclo do parasito porque:
+A) Carregam larvas infectantes que atingem o cérebro humano.
+B) Contêm ovos que serão ingeridos por hospedeiros intermediários.
+C) São responsáveis pela reprodução no hospedeiro intermediário.
+D) Realizam reprodução assexuada em tecidos musculares.
+E) Infectam diretamente o ser humano via pele.
+G: B
+C: As proglotes eliminadas pelas fezes contêm ovos, que, ao serem ingeridos por hospedeiros intermediários (boi ou porco), dão início à fase larval do parasito.
+
+Q: Analise as seguintes medidas:
+I. Tratamento de indivíduos infectados.
+II. Controle de moluscos vetores.
+III. Uso de calçados fechados.
+IV. Cozimento adequado da carne.
+Dentre essas, quais são eficazes na profilaxia da esquistossomose?
+A) Apenas I e II.
+B) Apenas I, II e IV.
+C) Apenas II e III.
+D) Apenas I, II e III.
+E) Apenas I, II, III e IV.
+G: A
+C: Medidas efetivas contra a esquistossomose incluem o tratamento de infectados (evita liberação de ovos no ambiente) e o controle de caramujos (impede liberação de cercárias). Cozinhar carne e uso de calçado não são eficazes nesse contexto.
+
+Q: A respeito da Taenia saginata, é correto afirmar:
+A) O ser humano pode desenvolver neurocisticercose ao ingerir seus ovos.
+B) Os bovinos são hospedeiros definitivos.
+C) Sua infecção é adquirida por meio da ingestão de carne suína mal cozida.
+D) Os cisticercos se desenvolvem nos músculos dos bovinos.
+E) Ela exige obrigatoriamente dois hospedeiros humanos em seu ciclo.
+G: D
+C: Na infecção por Taenia saginata, o boi é o hospedeiro intermediário e desenvolve cisticercos nos músculos. A infecção humana ocorre pelo consumo de carne bovina mal cozida.
+
+Q: Um paciente apresenta aumento do fígado, baço e veias dilatadas na região abdominal. Relata uso frequente de água de rio para higiene e lazer.
+A doença mais compatível com esse quadro é:
+A) Ancilostomíase.
+B) Toxoplasmose.
+C) Esquistossomose.
+D) Cisticercose.
+E) Teníase.
+G: C
+C: O quadro clínico descrito (hepatomegalia, esplenomegalia, circulação colateral) é típico de esquistossomose hepatoesplênica, relacionada ao uso de água contaminada com cercárias.
+
+Q: No ciclo do Schistosoma mansoni, o caramujo aquático do gênero Biomphalaria atua como:
+A) Hospedeiro definitivo.
+B) Vetor mecânico.
+C) Hospedeiro intermediário.
+D) Reservatório natural.
+E) Transmissor biológico acidental.
+G: C
+C: No ciclo do Schistosoma mansoni, o caramujo do gênero Biomphalaria é o hospedeiro intermediário, onde ocorre parte do desenvolvimento larval do parasito (liberação das cercárias).
+
+Q: Assinale a alternativa que apresenta corretamente a forma infectante da teníase para o ser humano:
+A) Ovos de Taenia solium.
+B) Proglotes imaturos.
+C) Cisticercos em carne mal cozida.
+D) Larvas migratórias liberadas no solo.
+E) Cercárias presentes na água.
+G: C
+C: A forma infectante da teníase é o cisticerco, encontrado em carne mal cozida de porco (T. solium) ou de boi (T. saginata).
+
+Q: Considere as afirmações:
+I. A ingestão de ovos de Taenia solium pode causar cisticercose.
+II. A ingestão de carne suína com cisticercos pode causar teníase.
+III. A penetração de cercárias causa teníase.
+Está(ão) correta(s):
+A) Apenas I.
+B) Apenas II.
+C) I e II.
+D) II e III.
+E) I, II e III.
+G: C
+C: Tanto a ingestão de ovos de T. solium (cisticercose) quanto de carne suína com cisticercos (teníase) são meios válidos de infecção. A cercária está ligada à esquistossomose, não à teníase.
+
+Q: Qual das seguintes doenças é causada por um verme dioico, ou seja, com sexos separados?
+A) Teníase
+B) Cisticercose
+C) Esquistossomose
+D) Ancilostomíase
+E) Ascaridíase
+G: C
+C: O Schistosoma mansoni é um verme dioico (possui machos e fêmeas separados), diferentemente das tênias, que são hermafroditas.
+
+Q: O desenvolvimento de cisticercos no cérebro humano pode causar sintomas graves, como convulsões, desmaios e alterações neurológicas. Isso ocorre porque:
+A) O ovo ingerido se transforma diretamente em verme adulto no cérebro.
+B) As proglotes sobem do intestino até o sistema nervoso central.
+C) As larvas originadas dos ovos atingem tecidos, incluindo o cérebro.
+D) Os cisticercos se desenvolvem no sangue e se alojam no fígado.
+E) A carne contaminada contém larvas já maduras que invadem o encéfalo.
+G: C
+C: Na cisticercose, os ovos ingeridos eclodem, e as larvas migram pelo corpo até se alojarem em órgãos, como o cérebro, causando neurocisticercose, com sintomas neurológicos graves.
+
+Q: Paciente de 32 anos, residente de zona urbana, procura o serviço de saúde com queixas de emagrecimento, náuseas, dor abdominal e relato de ter observado segmentos esbranquiçados móveis em suas fezes. Refere consumo frequente de carne bovina mal passada.
+Com base nos sintomas e contexto, o parasita mais provável é:
+A) Ascaris lumbricoides
+B) Taenia solium
+C) Taenia saginata
+D) Schistosoma mansoni
+E) Giardia lamblia
+G: C
+C: Os sintomas descritos (emagrecimento, náuseas, dor abdominal e proglotes nas fezes) indicam teníase causada por Taenia saginata, que é transmitida pela ingestão de carne bovina mal passada contendo cisticercos. Taenia solium também pode causar sintomas semelhantes, mas o agente aqui é mais provável por conta do consumo de carne bovina.
+
+Q: Criança de 10 anos, moradora de área com deficiência de saneamento básico, apresenta dor de cabeça, convulsões e estrabismo súbito. A tomografia revela lesões císticas no cérebro.
+O quadro clínico é compatível com infecção por:
+A) Taenia saginata
+B) Schistosoma mansoni
+C) Taenia solium (larvas)
+D) Toxoplasma gondii
+E) Echinococcus granulosus
+G: C
+C: Os sintomas de dor de cabeça, convulsões, estrabismo e lesões císticas no cérebro são característicos da neurocisticercose, causada pela ingestão dos ovos de Taenia solium. A infecção ocorre quando a pessoa ingere ovos de tênia de alimentos contaminados.
+
+Q: Homem de 45 anos, pescador, relata dor abdominal crônica, aumento do volume abdominal e presença de circulação colateral na parede abdominal. Mora em região ribeirinha e costuma tomar banho em rios locais.
+Qual o parasita mais provável responsável pelo quadro?
+A) Taenia solium
+B) Ancylostoma duodenale
+C) Schistosoma mansoni
+D) Strongyloides stercoralis
+E) Entamoeba histolytica
+G: C
+C: A história de tomar banho em rios com caramujos e os sintomas de dor abdominal e aumento abdominal com circulação colateral sugerem esquistossomose causada por Schistosoma mansoni. Esse parasita é transmitido por cercárias que penetram a pele em contato com água doce contaminada.
+
+Q: Mulher de 38 anos apresenta diarreia crônica, perda de peso, fraqueza e dor abdominal. Ela mora em zona rural e afirma consumir com frequência carne suína de criação caseira, às vezes mal cozida.
+O quadro clínico é mais compatível com:
+A) Taenia saginata
+B) Taenia solium (verme adulto)
+C) Trichuris trichiura
+D) Fasciola hepatica
+E) Schistosoma mansoni
+G: B
+C: A paciente tem sintomas clássicos de teníase por Taenia solium (verme adulto), devido ao consumo de carne suína mal cozida. Este tipo de infecção é associado à ingestão de carne com cisticercos que se transformam em vermes adultos no intestino.
+
+Q: Paciente relata início recente de tosse, febre baixa, urticária e dor abdominal. Refere contato com água parada em região de brejo onde há presença de caramujos.
+O agente etiológico mais provável é:
+A) Toxocara canis
+B) Taenia solium
+C) Schistosoma mansoni
+D) Trichinella spiralis
+E) Echinococcus granulosus
+G: C
+C: Os sintomas de tosse, febre, urticária, dor abdominal e contato com água parada indicam esquistossomose causada por Schistosoma mansoni. A infecção ocorre pela penetração de cercárias na pele ao tomar banho em águas contaminadas.
+
+Q: Um jovem adulto apresenta perda de peso acentuada, aumento de apetite, náuseas, dor abdominal e fezes amolecidas. Exame parasitológico revela proglotes móveis. O paciente relata consumo de carne crua em churrascarias.
+Qual o parasita mais provável envolvido?
+A) Taenia saginata
+B) Taenia solium
+C) Hymenolepis nana
+D) Enterobius vermicularis
+E) Schistosoma mansoni
+G: A
+C: O quadro de perda de peso, aumento de apetite, náuseas, dor abdominal e proglotes móveis nas fezes é característico de teníase por Taenia saginata, causada pela ingestão de carne bovina mal cozida. A presença de proglotes móveis confirma a infecção por tênia.
+
+Q: Paciente com histórico de saneamento precário desenvolve sintomas neurológicos graves. Tomografia revela múltiplos cistos intracerebrais. A suspeita é de ingestão acidental de ovos eliminados nas fezes de pessoa com infecção intestinal por tênia.
+O diagnóstico mais provável é:
+A) Teníase por T. saginata
+B) Neurotoxoplasmose
+C) Esquistossomose hepática
+D) Neurocisticercose por T. solium
+E) Estrongiloidíase disseminada
+G: D
+C: A descrição dos sintomas neurológicos graves, como convulsões e lesões císticas no cérebro, é típica de neurocisticercose por Taenia solium. Os ovos da tênia ingeridos migram para o cérebro e formam cistos.
+
+Q: Paciente do sexo masculino apresenta icterícia, edema e ascite. Ele vive em área onde é comum a prática de banho em represas. Exames laboratoriais mostram eosinofilia e alterações hepáticas importantes.
+O parasita associado mais provavelmente a esse quadro é:
+A) Ascaris lumbricoides
+B) Strongyloides stercoralis
+C) Schistosoma mansoni
+D) Taenia saginata
+E) Trichuris trichiura
+G: C
+C: A icterícia, edema e ascite, associada à história de contato com águas de represas, sugerem esquistossomose hepática causada por Schistosoma mansoni. O parasita causa fibrose hepática e hipertensão portal, levando a esses sintomas.
+
+Q: Uma criança apresenta diarreia prolongada, distensão abdominal, inapetência e fezes gordurosas. Vive em área com água potável precária.
+O agente etiológico mais provável é:
+A) Entamoeba histolytica
+B) Giardia lamblia
+C) Taenia solium
+D) Fasciola hepatica
+E) Schistosoma mansoni
+G: B
+C: Diarreia crônica, distensão abdominal e fezes gordurosas são características de giardíase, causada por Giardia lamblia, um protozoário transmitido principalmente por água contaminada. A região com água potável precária aumenta o risco.
+
+Q: Em inspeção sanitária, um frigorífico detecta cisticercos em músculos de bovinos. Qual parasita está envolvido nesse achado e qual risco isso representa ao ser humano?
+A) Taenia saginata – risco de teníase
+B) Taenia solium – risco de cisticercose
+C) Schistosoma mansoni – risco de esquistossomose
+D) Giardia lamblia – risco de giardíase
+E) Echinococcus granulosus – risco de hidatidose
+G: A
+C: A teníase por Taenia saginata é causada pela ingestão de carne bovina contendo cisticercos. Se a carne não for bem cozida, os cisticercos se desenvolvem em vermes adultos no intestino humano, causando os sintomas característicos da doença.

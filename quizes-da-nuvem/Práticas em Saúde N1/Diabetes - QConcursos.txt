@@ -1,0 +1,144 @@
+Q: O critério diagnóstico para diabetes mellitus com base em glicemia de jejum é
+A) ≥ 100 mg/dL.
+B) ≥ 110 mg/dL.
+C) ≥ 140 mg/dL.
+D) ≥ 200 mg/dL.
+E) ≥ 126 mg/dL.
+G: E
+C:‎ 
+
+Q: Com relação ao diabetes Mellitus, assinale a alternativa correta.
+A) O diabetes gestacional é definido como tolerância à glicose, com início ou primeiro diagnóstico durante a gravidez.
+B) O estágio pré-diabetes ocorre quando o paciente apresenta glicemia em jejum alterada com valores glicêmicos entre 125 e 140 mg/dL.
+C) O tratamento do pré-diabetes baseia-se somente em terapia medicamentosa.
+D) A hemoglobina glicada pode ser utilizada como único critério para diagnóstico da diabetes.
+E) O estágio pré-diabetes ocorre quando o paciente apresenta glicemia em jejum alterada com valores glicêmicos entre 100 e 125 mg/dL.
+G: E
+C: O diabetes gestacional é definido como intolerância à glicose, com início ou primeiro diagnóstico durante a gravidez. 
+
+Q: Leia as afirmativas sobre os métodos laboratoriais para o diagnóstico de diabetes mellitus e marque V para verdadeiro e F para falso:
+( ) A dosagem da hemoglobina glicada (HbA1c) reflete a média da glicemia dos últimos 2 a 3 meses, sendo útil para o diagnóstico e monitoramento do diabetes.
+( ) O teste oral de tolerância à glicose (TOTG) avalia a resposta glicêmica após a ingestão de glicose e pode ser utilizado para diagnóstico de diabetes gestacional.
+( ) A glicemia de jejum isolada é suficiente para diagnosticar diabetes em qualquer contexto clínico, independentemente de outros critérios.
+( ) A presença de glicosúria é um critério diagnóstico definitivo para diabetes, pois indica hiperglicemia não controlada.
+A sequência correta é:
+A) V – F – V – F 
+B) V – V – F – F
+C) F – V – F – V 
+D) V – V – V – F 
+G: B
+C: A glicemia de jejum isolada não basta em todos os contextos sem confirmação ou outros critérios diagnósticos. Glicosúria, por si só, não é critério diagnóstico definitivo.
+
+Q: Assinale a alternativa correta com relação ao rastreamento de diabetes (DM), segundo a Sociedade Brasileira de Diabetes.
+A) O rastreamento com dosagem de autoanticorpos pode ser considerado em familiares de segundo grau de pessoas com DM1, visando reduzir o risco de cetoacidose ao diagnóstico.
+B) É recomendado realizar triagem de DM2 em crianças e adolescentes a partir de 9 anos de idade ou após o início da puberdade, com sobrepeso/obesidade e pelo menos um fator de risco para DM2.
+C) Após o rastreamento inicial para DM2, é recomendado que pessoas com apenas um exame laboratorial com critério para DM, sem outros exames alterados, sejam reavaliadas em 1 ano.
+D) É recomendado o rastreamento de DM2 para todos os indivíduos com idade ≥ 35 anos.
+E) No rastreamento do DM2, se houver glicemia de jejum < 100 mg/dL e HbA1c < 5,7% em pessoas com 2 fatores de risco, é recomendado realizar o teste oral de tolerância à glicose de 1 hora para complementar a investigação de DM e pré-diabetes.
+G: D
+C: A recomendação R18 prevê rastreamento de autoanticorpos em familiares de primeiro grau de pessoas com DM1, não em segundo grau.
+A recomendação R17 estabelece triagem em crianças e adolescentes a partir de 10 anos de idade (ou após início da puberdade), e não a partir de 9 anos.
+A recomendação R14 determina reavaliação em 6 meses (semestral) para pessoas com apenas um exame laboratorial com critério para DM, não em 1 ano.
+A recomendação R6 indica rastreamento de DM2 de forma universal em todos os indivíduos com idade ≥ 35 anos.
+A recomendação R9 recomenda TTGO‑1h para complementar investigação apenas em pessoas com GJ<100 mg/dL e HbA1c<5,7% e ≥ 3 fatores de risco (ou FINDRISC alto/muito alto), não em quem tiver apenas 2 fatores.
+
+Q: O uso da dosagem da HbA1c para o diagnóstico de Diabetes Mellitus aumentou muito na última década, especialmente por dispensar o jejum. A HbA1c deve ser medida no início do tratamento e a cada 3 meses, enquanto o controle estiver inadequado, ou quando houver ajuste ou troca de medicamento. Quando o controle se encontrar dentro do alvo estabelecido e com tratamento estabilizado, as medições podem ser realizadas semestralmente.
+O diagnóstico de DM é feito a partir de uma HbA1c ≥ que: 
+A) 4,5 % 
+B) 5,5 % 
+C) 6,5 % 
+D) 7,5 % 
+E) 8,5 % 
+G: C
+C: É RECOMENDADO utilizar, como critérios de diagnóstico de DM, a glicemia de jejum maior ou igual a 126 mg/dl, a HbA1c maior ou igual a 6,5%, a glicemia no TTGO-1h maior ou igual a 209 mg/dl ou a glicemia no TTGO- 2h maior ou igual a 200 mg/dl. Se somente um exame estiver alterado, este deverá ser repetido para confirmação.
+
+Q: Com base nas recomendações da Sociedade Brasileira de Diabetes (SBD) 2024, analise as afirmativas a seguir e assinale a alternativa CORRETA:
+A) Glicemia de jejum, HbA1c e TTGO são os primeiros testes de rastreamento de DM2.
+B) É recomendado utilizar como ponto de corte de glicemia no teste de tolerância à glicose oral (TTGO) de 1h ≥ 209 mg/dl para diagnóstico de DM2 e ≥ 155 mg/dl para detecção de prédiabetes.
+C) O teste de tolerância à glicose oral (TTGO) com glicemia de 1h ≥ 200 mg/dL é recomendado para diagnóstico de diabetes mellitus e é superior ao teste de tolerância à glicose oral (TTGO) de 2h em termos de praticidade e desempenho.
+D) Para diagnóstico de diabetes mellitus, é suficiente a presença de glicemia de jejum ≥ 126 mg/dL em apenas uma amostra de sangue, sem necessidade de confirmação, na presença de sintomas típicos de hiperglicemia.
+G: B
+C: Há duas possibilidades para o rastreamento inicial segundo as diretrizes:
+- Locais com viabilidade financeira e disponibilidade técnica total: Medida simultânea da glicemia plasmática e HbA1c em amostra de sangue obtida em jejum de 8 a 12 horas.
+- Locais com viabilidade financeira e disponibilidade técnica parciais: Medida da glicemia plasmática em amostra de sangue obtida em jejum de 8 a 12 horas.
+TTGO não está incluso no rastreamento inicial.
+
+Q: O rastreamento de DM2 é indicado para todos os adultos abaixo de 35 anos, independentemente da presença de fatores de risco.
+G: F
+C: Não há recomendação de rastreamento universal para pessoas abaixo de 35 anos. Para indivíduos abaixo de 35 anos, o rastreamento só é recomendado na presença de sobrepeso ou obesidade, acompanhados de pelo menos um fator de risco adicional.
+
+Q: A síndrome de ovários policísticos é um fator de risco que indica rastreamento de DM2 em indivíduos com idade abaixo de 35 anos com sobrepeso ou obesidade.
+G: V
+C: A síndrome de ovários policísticos é um fator de risco que indica rastreamento nessa faixa etária.
+
+Q: História familiar de DM2 em parente de segundo grau é considerada fator de risco que justifica o rastreamento de DM2 em indivíduos com idade abaixo de 35 anos com sobrepeso ou obesidade.
+G: F
+C: A diretriz diz "História familiar de DM2 em parente de primeiro grau" como fator de risco, não de segundo grau. Apenas parentes de primeiro grau (pais, irmãos, filhos) são considerados neste critério.
+
+Q: Em relação aos fatores de risco para rastreamento de DM2 em adultos assintomáticos com menos de 35 anos que apresentam sobrepeso ou obesidade, a hipertensão arterial é um critério válido para indicação do rastreamento, enquanto níveis de HDL abaixo de 50 mg/dl são considerados fator de risco significativo.
+G: F
+C: HDL abaixo de 35 mg/dl e não de 50.
+
+Q: Na presença de sintomas típicos de hiperglicemia, É RECOMENDADO que o diagnóstico seja estabelecido quando houver glicemia plasmática ao acaso maior ou igual a 200 mg/dl.
+G: V
+C:‎ 
+
+Q: No TTGO de 2 horas a faixa de pré-diabates é de 155 a 208, enquanto no TTGO de 1 hora é de 140-199.
+G: F
+C: Está trocado. No TTGO de 1 hora a faixa de pré-diabates é de 155 a 208, enquanto no TTGO de 2 horas é de 140-199.
+
+Q: No HbA1c o indivíduo é considerado pré-diabético se estiver na faixa 5,7-6,4 e diabético se estiver maior ou igual a 6.5.
+G: V
+C:‎‎ 
+
+Q: A glicemia ao acaso é útil para diagnosticar diabetes quando o paciente apresenta sintomas típicos de hiperglicemia, sendo útil para não postergar o início do tratamento em situações agudas.
+G: V
+C: Na presença de sintomas típicos de hiperglicemia, É RECOMENDADO que o diagnóstico seja estabelecido quando houver glicemia plasmática ao acaso maior ou igual a 200 mg/dl.
+
+Q: São sinais e sintomas típicos de hiperglicemia: Poliúria, Polidipsia, Polifagia Perda de peso inexplicada e Desidratação.
+G: V
+C: Todos são sinais típicos.
+
+Q: São sinais e sintomas sugestivos de hiperglicemia: Noctúria. Visão turva. Cansaço. Infecções recorrentes (Candidíase e Periodontite), Má cicatrização de feridas e Poliúria.
+G: F
+C: Todos são sinais sugestivos, com exceção de poliúria, que é um sinal TÍPICO.
+
+Q: Em adultos com pré-diabetes, definido previamente por glicemia de jejum e HbA1c, É RECOMENDADO a realização adicional do TTGO-1h para diagnóstico de casos de DM2 não anteriormente detectados (se maior ou igual a 209 mg/dl) ou para predizer risco futuro de DM2 (se maior ou igual a 155 mg/dl e menor do que 209 mg/dl).
+G: V
+C: Afirmativa idêntica a diretriz.
+
+Q: No rastreamento do DM2, se houver glicemia de jejum menor a 100 mg/dl e HbA1c menor que 5,7% em pessoas com 3 ou mais fatores de risco ou FINDRISC alto/muito alto, É RECOMENDADO realizar o novamente a hbA1c para complementar a investigação de DM e pré-diabetes. 
+G: F
+C: É RECOMENDADO realizar o TTGO-1h para complementar a investigação de DM e pré-diabetes e não hbA1c novamente.
+
+Q: No rastreamento inicial do DM2, caso haja glicemia de jejum menor que 100 mg/dl e HbA1c menor que 5,7%, em pessoas com menos de 3 fatores de risco, e com FINDRISC baixo a moderado, É RECOMENDADO realizar testes adicionais para detecção de DM2 ou pré-diabetes.
+G: F
+C: NÃO É RECOMENDADO realizar testes adicionais para detecção de DM2 ou pré-diabetes. Apenas é recomendado se tiver 3 ou mais fatores de risco.
+
+Q: Após o rastreamento inicial para DM2, É RECOMENDADO que pessoas com glicemia de jejum e HbA1c normais, e menos de 3 fatores de risco, ou FINDRISC baixo a moderado, sejam reavaliadas após 3 anos.
+G: V
+C: Trianual.
+
+Q: Pessoas com exames normais e ≥ 3 fatores de risco tem frequência de rastreamento de DM2 semestral.
+G: F
+C: É anual.
+
+Q: Pessoas com pré-diabetes confirmada tem frequência de rastreamento de DM2 anual.
+G: V
+C: Anual.
+
+Q: Pessoas sem sintomas e com apenas um exame preenchendo critérios para DM tem frequência de rastreamento de DM2 anual.
+G: F
+C: Semestral.
+
+Q: É RECOMENDADO que pacientes que irão iniciar medicações com potencial efeito hiperglicemiante, como glicocorticoides ou antipsicóticos, sejam rastreados para DM antes e após o início do tratamento.
+G: V
+C: Verdadeiro.
+
+Q: É RECOMENDADO realizar triagem de DM2 em crianças e adolescentes a partir de 12 anos de idade ou após o início da puberdade, quando houver sobrepeso/obesidade e pelo menos um fator de risco adicional para DM2
+G: F
+C: A partir dos 10 anos.
+
+Q: O rastreamento com dosagem de autoanticorpos PODE SER CONSIDERADO em familiares de primeiro grau de pessoas com DM1, visando reduzir o risco de cetoacidose ao diagnóstico, fornecer educação em diabetes, selecionar candidatos para participação em protocolos de pesquisa para prevenção do DM1 fase 3 e para início do uso de medicações imunomoduladoras aprovadas por agências reguladoras com objetivo de atrasar DM1 fase 3.
+G: V
+C:‎ 

@@ -1,0 +1,69 @@
+Q: Quais são as três etapas básicas envolvidas na respiração?
+GABARITO: As três etapas básicas envolvidas na respiração são: ventilação pulmonar, respiração externa (pulmonar) e respiração interna (tecidual).
+
+Q: Quais são os componentes do sistema respiratório?
+GABARITO: O sistema respiratório é formado por nariz, faringe, laringe, traqueia, brônquios e pulmões.
+
+Q: Por que a parte respiratória é importante?
+GABARITO: A parte respiratória é importante porque é onde ocorre a troca gasosa entre o ar e o sangue.
+
+Q: Quais são as diferenças entre a respiração externa e a respiração interna?
+GABARITO: A respiração externa envolve a troca de O2 e CO2 entre os alvéolos pulmonares e o sangue nos capilares pulmonares; em contrapartida, a respiração interna envolve a troca de O2 e CO2 entre o sangue nos capilares sistêmicos e as células dos tecidos corporais.
+
+Q: Quais estruturas pertencem à zona de condução (ou de transporte) do sistema respiratório?
+GABARITO: A parte condutora do sistema respiratório inclui o nariz, a faringe, a laringe, a traqueia, os brônquios e os bronquíolos (exceto os bronquíolos respiratórios).
+
+Q: Compare a estrutura e as funções das partes externa e interna do nariz.
+GABARITO: 
+<b>Parte externa do nariz:</b> Estrutura visível na face, formada por osso e cartilagem hialina, recoberta por músculo e pele, e com revestimento de mucosa. Sua função principal é ser a entrada de ar e dar forma ao nariz.
+<b>Parte interna do nariz (cavidade nasal):</b> Espaço grande na parte anterior do crânio, revestida com músculo e mucosa, dividida pelo septo nasal. Suas funções são: (1) aquecimento, umidificação e filtração do ar inspirado; (2) detecção de estímulos olfatórios; e (3) modificação das vibrações da fala.
+
+Q: Quais são as funções das três subdivisões da faringe?
+GABARITO: 
+<b>Parte nasal da faringe (nasofaringe):</b> Passagem de ar, recebe muco rico em poeira da cavidade nasal, troca pequenos volumes de ar com as tubas auditivas para igualar a pressão do ar.
+<b>Parte oral da faringe (orofaringe):</b> Passagem comum para ar, alimentos sólidos e líquidos.
+<b>Parte laríngea da faringe (laringofaringe):</b> Passagem comum para ar, alimentos sólidos e líquidos; conecta-se ao esôfago posteriormente e à laringe anteriormente.
+
+Q: Qual é o trajeto das moléculas de ar para dentro e no interior do nariz?
+GABARITO: O trajeto do ar é: narinas → vestíbulo do nariz → cavidade nasal → cóanos.
+
+Q: Qual parte do nariz está inserida no osso frontal?
+GABARITO: A raiz do nariz está inserida no osso frontal.
+
+Q: Como a laringe atua na respiração e na produção da voz?
+GABARITO: 
+<b>Respiração:</b> A laringe é uma via respiratória que conecta a parte laríngea da faringe à traqueia. A epiglote, uma cartilagem da laringe, fecha a glote durante a deglutição para impedir que alimentos e líquidos entrem nas vias aéreas inferiores.
+<b>Produção da voz:</b> As pregas vocais na laringe vibram quando o ar passa por elas, produzindo som (fonação). A tensão e o comprimento das pregas vocais, controlados por músculos intrínsecos, determinam o tom do som.
+
+Q: Descreva a localização, a estrutura e a função da traqueia.
+GABARITO: 
+<b>Localização:</b> Anterior ao esôfago, estende-se da laringe até a altura da margem superior da quinta vértebra torácica.
+<b>Estrutura:</b> Via respiratória tubular com aproximadamente 12 cm de comprimento e 2,5 cm de diâmetro. Sua parede é composta por mucosa (epitélio pseudoestratificado colunar ciliado), submucosa, cartilagem hialina (16-20 anéis incompletos em formato de C) e adventícia. A parte posterior contém o músculo traqueal.
+<b>Função:</b> Conduzir o ar para os brônquios. Os anéis cartilaginosos mantêm a patência da traqueia, e os cílios da mucosa removem partículas de poeira.
+
+Q: Descreva a estrutura da árvore bronquial.
+GABARITO: A árvore bronquial começa na traqueia, que se divide em brônquios principais direito e esquerdo. Os brônquios principais entram nos pulmões e se dividem em brônquios lobares (secundários), um para cada lobo pulmonar. Os brônquios lobares se ramificam em brônquios segmentares (terciários), que suprem segmentos broncopulmonares. Os brônquios segmentares dividem-se em bronquíolos, que se ramificam repetidamente até se tornarem bronquíolos terminais. Esta é a zona de condução. Após os bronquíolos terminais, começam os bronquíolos respiratórios (início da zona respiratória), que se subdividem em ductos alveolares, terminando em sacos alveolares e alvéolos. À medida que a ramificação ocorre, a quantidade de cartilagem diminui e a de músculo liso aumenta; o tipo de epitélio também muda.
+
+Q: Como a epiglote impede a aspiração de alimentos líquidos e sólidos?
+GABARITO: Durante a deglutição, a epiglote fecha-se sobre a rima da glote, o acesso para a traqueia, a fim de evitar aspiração de alimentos sólidos e líquidos para dentro dos pulmões.
+
+Q: Qual é a principal função das pregas vocais?
+GABARITO: A principal função das pregas vocais é a produção da voz.
+
+Q: Qual é a vantagem dos anéis cartilaginosos traqueais serem incompletos na porção posterior (entre a traqueia e o esôfago)?
+GABARITO: Como os tecidos entre o esôfago e a traqueia são moles, o esôfago pode se tornar abaulado e comprimir a traqueia durante a deglutição.
+
+Q: Quantos lobos e brônquios lobares correspondentes existem em cada pulmão?
+GABARITO: O pulmão esquerdo tem dois lobos e dois brônquios lobares, já o pulmão direito apresenta três lobos e três brônquios lobares.
+
+Q: Que tipo de membrana é a pleura?
+GABARITO: A pleura é uma membrana serosa.
+
+Q: Por que os pulmões direito e esquerdo apresentam discretas diferenças de tamanho e formato?
+GABARITO: Como dois terços do coração estão à esquerda da linha mediana, o pulmão esquerdo apresenta uma incisura para acomodar o coração (a incisura cardíaca do pulmão esquerdo). O pulmão direito é mais curto do que o pulmão esquerdo porque o hemidiafragma direito é mais alto por causa do fígado.
+
+Q: Quais tipos de células compõem a parede de um alvéolo pulmonar?
+GABARITO: A parede de um alvéolo pulmonar é constituída por pneumócitos dos tipos I e II, bem como por macrófagos alveolares associados.
+
+Q: Qual é a espessura da membrana respiratória?
+GABARITO: A membrana respiratória tem, em média, 0,5 μm de espessura.

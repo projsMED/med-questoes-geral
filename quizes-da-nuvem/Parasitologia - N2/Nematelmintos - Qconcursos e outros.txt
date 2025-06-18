@@ -1,0 +1,253 @@
+Q: (Q Concursos) O Ancylostoma duodenale é uma espécie de nematódeo do gênero Ancylostoma que pode causar a ancilostomíase, uma doença que, sem tratamento, pode levar à morte. Em via cutânea, as larvas de terceiro instar de A. duodenale, após liberação da cutícula externa no meio ambiente, migram pela circulação sanguínea ou linfática até alcançarem os pulmões, enquanto na via oral as larvas de terceiro instar deglutidas perdem a cutícula no estômago e migram para a (o):
+A) Intestino grosso.
+B) Intestino delgado.
+C) Circulação sanguínea.
+D) Circulação linfática.
+E) Sistema hepático.
+G: B
+
+Q: (Q Concursos) O Ancylostoma duodenale, helminto que parasita o intestino humano, é transmitido principalmente
+A) pelo solo
+B) por ingestão de alimentos contaminados
+C) por veiculação hídrica
+D) por contato direto
+G: A
+C: O ciclo de transmissão acontece da seguinte maneira:<br> <ol><li>Os ovos são eliminados nas fezes de pessoas infectadas</li><li>Em solos quentes e úmidos, os ovos eclodem e liberam larvas</li><li>Estas larvas se desenvolvem no solo até atingirem o estágio infectante (larva filariforme)</li><li>A infecção ocorre quando estas larvas penetram ativamente na pele humana (geralmente dos pés) quando a pessoa caminha descalça em solo contaminado</li></ol><br> Esta é a característica clássica da ancilostomíase (ou ancilostomose), também conhecida como "amarelão", onde a transmissão ocorre principalmente pelo contato da pele com o solo contaminado, e não por ingestão de alimentos, água ou contato direto pessoa-pessoa.
+
+Q: (Q Concursos) Analise as afirmativas a seguir:
+‎ 
+I. As infecções parasitárias são comuns nos trópicos e subtrópicos do mundo, com maior prevalência nas áreas rurais. A ancilostomíase é classificada como uma parasitose intestinal causada por parasitas platelmintos. 
+‎ 
+II. Existem duas espécies principais de ancilostomídeos que causam infecção humana: Ancylostoma duodenale e Necator americanus. 
+‎ 
+III. As estimativas sugerem que mais de 500 milhões de pessoas estão infectadas com ancilostomíase. As manifestações clínicas incluem penetração dérmica por infecção larval, passagem transpulmonar, sintomas gastrointestinais agudos e comprometimento nutricional crônico. 
+‎ 
+Marque a alternativa CORRETA: 
+A) Todas as afirmativas estão corretas. 
+B) Nenhuma afirmativa está correta. 
+C) Apenas uma afirmativa está correta. 
+D) Apenas duas afirmativas estão corretas.  
+G: D
+C: A primeira afirmativa (I) possui uma incorreção quanto à classificação dos parasitas que causam a ancilostomíase. Os ancilostomídeos não são platelmintos; na verdade, são nematelmintos, ou seja, nemátodos (vermes redondos). Portanto, a afirmativa I é incorreta.
+
+Q: (Q Concursos) A diferenciação morfológica entre larvas filarióides do Ancylostoma duodenale e do Strongyloides stercoralis se faz por meio do(s) ou da(as) 
+A) sintomatologia do hospedeiro.
+B) cauda e cápsula bucal.
+C) movimentos larvários.
+D) tamanho e da cor das larvas.
+G: B
+C: Ancylostoma duodenale --> Cauda afilada<br>Strongyloides stercoralis --> Cauda entalhada
+
+Q: (Q Concursos) Sobre os diversos parasitos e parasitoses humanas, marque a alternativa CORRETA.
+A) No Ciclo de vida da Ascaridíase, antes de atingir a fase adulta no intestino humano, a larva da Ascaris lumbricoides penetra no revestimento intestinal, caindo na corrente sanguínea e atingindo fígado, coração ou pulmões.
+B) O Ancylostoma duodenale é o Platelminto responsável pelo amarelão, uma doença caudada por vermes que vivem no intestino delgado, se alimentando do sangue extraído com suas placas cortantes, que rasgam as paredes intestinais e provocam hemorragias e anemia.
+C) O Enterobius vermicularis é o Nematelminto responsável pela Filaríose (elefantíase), uma doença que causa o inchaço dos valos linfático. Esse parasito tem como hospedeiros intermediários os mosquitos Culex, Aedes ou Anopheles.
+D) O Schistossoma mansoni, causador da barriga d'água, tem o homem como hospedeiro intermediário, enquanto que seus hospedeiros definitivos são os caracóis do gênero Biomphalaria, pois são neles que ocorrem os processos de reprodução sexuada.
+G: A
+C: Comentário:<br>A alternativa {A} está correta. O ciclo de vida da Ascaris lumbricoides (causador da ascaridíase) inclui uma fase migratória onde as larvas, após eclodirem dos ovos no intestino, penetram na mucosa intestinal, caem na circulação sanguínea e migram para o fígado, coração e depois pulmões. Nos pulmões, sobem pela árvore brônquica até a faringe, são deglutidas e retornam ao intestino delgado, onde se tornam adultas.<br>As demais alternativas contêm erros:<br>{B} - O Ancylostoma duodenale é um Nematelminto (não um Platelminto) responsável pelo amarelão. Apesar de corretamente descrever que vivem no intestino delgado e causam hemorragias e anemia, esses vermes possuem dentes (não placas cortantes) para se fixar na mucosa intestinal.<br>{C} - O Enterobius vermicularis é o causador da enterobíase ou oxiurose (não da filariose). A filariose ou elefantíase é causada por filárias como Wuchereria bancrofti.<br>{D} - No ciclo do Schistosoma mansoni (causador da esquistossomose), o ser humano é o hospedeiro definitivo (não intermediário) onde ocorre a reprodução sexuada, enquanto o caracol Biomphalaria é o hospedeiro intermediário.
+
+Q: (Q Concursos) O diagnóstico etiológico de larvas rabditoides encontradas no exame parasitológico de fezes é feito por meio da observação da cavidade bucal e do primórdio genital. Quais são os helmintos que podem ser diferenciados por esses dois caracteres?
+A) Schistosoma mansoni e Fasciola hepática.
+B) Strongyloides stercoralis e Ancylostoma duodenale.
+C) Ancylostoma duodenale e Necator americanus.
+D) Ascaris lumbricoides e Enterobius vermicularis.
+E) Strongyloides stercoralis e Ascaris lumbricoides.
+G: B
+C: <b>Strongyloides stercoralis</b> apresenta cavidade bucal curta e do primórdio genital proeminente, enquanto que o <b>Ancylostoma duodenale</b> apresenta cavidade bucal longa e do primórdio genital discreto.
+
+QCH: Sobre os ancilostomídeos assinale TODAS as assertivas VERDADEIRAS (Dica: Corte as falsas com a tesoura):
+A1: As larvas rabditóides são o primeiro estágio larval que eclode do ovo, enquanto as filarióides são o terceiro estágio larval.
+G: V
+A2: As larvas rabtidóides são o estágio infectante.
+G: F
+C: As filarióides são o estágio infectante.
+A3: As larvas filarióides não se alimentam.
+G: V
+C: Não se alimentam, nutrindo-se exclusivamente de suas reservas energéticas acumuladas nos estágios anteriores.
+A4: Após penetração da mucosa gástrica, a larva infectante do ancilostomídeo faz a seguinte rota: Migração para os pulmões -> árvore brônquica -> traqueia -> faringe -> deglutição -> intestino delgado (duodeno/jejuno).
+G: F
+C: Após penetração da <b>PELE</b> através do solo. O resto está certo.
+A5: No caso de infecção oral (Ancylostoma) pela larva, o desenvolvimento ocorre diretamente na mucosa intestinal.
+G: V
+A6: Na fase intestinal da doença há a fixação do verme com cápsula bucal potente (placas cortantes em Necator, dentes em Ancylostoma) na mucosa intestinal.
+G: V
+A7: Apesar de não se alimentar de sangue, o verme de Necator americanus e Ancylostoma duodenale causa sangramento na mucosa intestinal (facilitado por antioagulantes do verme), o que pode causar anemia.
+G: F
+C: Os ancilostomídeos efetivamente <b>se alimentam de sangue</b>, e esta hematofagia, junto com a ação dos anticoagulantes que secretam, é a causa principal da anemia observada na ancilostomíase.
+
+Q: (Q Concursos) A larva migrans cutânea, conhecida popularmente como bicho-geográfico, é causada pela penetração de larvas na pele humana, que causam uma lesão serpetiginosa. O nematóide que ocasiona esta lesão denomina-se:
+A) Necator americanus
+B) Ancilostoma brasilienses
+C) Ascaris lumbricódes
+D) Hymenolepis nana
+E) Enterobius vermiculares
+G: B
+
+Q: (Q Concursos) Larva migrans é mais frequentemente relatada em países de clima tropical ou subtropical, embora seja uma doença mundialmente relatada. É uma zoonose parasitária que envolve a migração de larvas de alguns helmintos em diferentes órgãos do ser humano e são classificadas como larva migrans cutânea (LMC) e larva migrans visceral (LMV). Em relação à essa zoonose, analise as assertivas abaixo:
+
+I. Larva migrans cutânea, também conhecida como “bicho geográfico”, é o resultado da penetração das larvas de algumas espécies de parasitos do gênero Ancylostoma spp. no ser humano.
+
+II. As larvas desse parasito (Ancylostoma) realizam migração pelo tecido subcutâneo, porém não atingem o intestino humano.
+
+III. Larva migrans visceral ocorre quando as larvas de parasitos do gênero Toxocara, principalmente T. canis e/ou T. cati, são ingeridas e migram pelos órgãos internos do hospedeiro humano.
+
+IV. Transmissão transplacentária ou transmamária aos filhotes de cães pode ocorrer nos casos de parasitismo das cadelas por Toxocara canis.
+
+Quais estão corretas?
+A) Apenas IV.
+B) Apenas I e II.
+C) Apenas I e III.
+D) Apenas II e III. 
+E) I, II, III e IV.
+G: E
+
+Q: (Q Concursos) “Bicho geográfico” é um nome popular para a doença larva migrans cutânea. Sobre essa doença, marque V, para as alternativas verdadeiras, e F, para as falsas:
+A) V, V, F, V
+B) F, V, V, V
+C) F, F, V, F
+D) V, V, V, V
+E) V, F, V, F
+G: D
+
+Q: (Q Concursos) Larva migrans cutânea, também conhecida como bicho geográfico, é um termo clínico que designa uma erupção dérmica de caráter linear e serpiginoso, produzida por larvas de alguns Nemathelminthes. Essa é uma zoonose transmitida para o homem pelas fezes de
+A) ratos e camundongos.
+B) bois e ovelhas.
+C) cavalos e burros.
+D) cães e gatos.
+G: D
+
+Q: (Q Concursos) Larva Migrans Visceral (LMV) é a síndrome determinada por migrações prolongadas de larvas de nematoides, no organismo humano, que estão condenadas a morrer depois de longa permanência nas vísceras, sem chegar ao estágio adulto. A gravidade do quadro clínico depende da quantidade de larvas presentes no organismo, do órgão invadido e da resposta imunológica do paciente. A maioria dos casos caracteriza-se por um quadro subclínico e sem diagnóstico. O quadro clássico de LMV caracteriza-se por leucocitose, hipereosinofilia sanguínea, hepatomegalia e linfadenite. Quando ocorre envolvimento do sistema nervoso, devido à migração das larvas e à presença de granulomas ricos em eosinófilos provocadas por elas, o paciente pode apresentar manifestações neurológicas variadas, incluindo ataques epileptiformes, meningite e encefalite. Qual das larvas abaixo é a causa de LMV?
+A) Toxocara canis.
+B) Strongyloides stercoralis.
+C) Ancylostoma duodenale.
+D) Necator americanus.
+G: A
+
+Q: (Q Concursos) A Larva migrans cutânea está associada às seguintes patologias, EXCETO:
+A) Bicho geográfico.
+B) Dermatite serpiginosa.
+C) Dermatite linear serpiginosa.
+D) Granulomatose larval.
+G: D
+
+Q: (Q Concursos) Em relação a larva migrans cutânea, assinale a alternativa correta.
+A) A doença é adquirida pelo contato com areia ou solo contaminados com urina de gatos ou cães
+B) O agente etiológico mais frequente é o Ancylostoma duodenale 
+C) Em casos de lesões múltiplas, pode ocorrer e invasão da corrente sanguínea pelo agente etiológico, e desenvolver a síndrome de Loffler
+D) O tratamento de primeira escolha para lesões múltiplas é tiabendazol tópico
+E) A ivermectina sistêmica não é opção terapêutica
+G: C
+C: A doença é adquirida pelo contato com areia ou solo contaminados com FEZES de gatos ou cães.
+
+Q: (Q Concursos) A estrongiloidíase, causada por Strongyloides stercoralis, tem a autoinfecção interna e externa como agravantes para seu controle. O diagnóstico laboratorial baseia-se, principalmente, no termo-hidrotropismo positivo que suas larvas apresentam quando eliminadas para o meio externo. Para isso, indica-se o método de
+A) Rugai.
+B) Direto.
+C) Kato-Katz.
+D) Faust e cols.
+E) Lutz.
+G: A
+C: Outro método usado para esse diagnóstico poderia ser o Baerman-Moraes ( muito cobrado em provas )
+
+Q: (Q Concursos) A elevada prevalência de Strongyloides stercoralis em regiões tropicais e subtropicais, a facilidade de transmissão, o caráter de cronicidade e auto-infecção, originando formas graves de hiperinfecção e disseminação, além da possibilidade da reagudização em indivíduos imunodeprimidos, evoluindo muitas vezes para óbito, tomam a estrongiloidíase um importante problema médico e social. Frente a isso é de relevada importância o diagnóstico correto e tratamento adequado.
+Assinale a alternativa correta quanto ao método e princípio indicados para a pesquisa parasitológica do Strongyloides stercoralis.
+A) Métodos de Baermann-Moraes baseado no principio do hidro e termotropismo das larvas
+B) Métodos de Faust e cols baseado no principio da centrífugo-futuação em sulfato de zinco
+C) Métodos de Rugai baseado no principio da sedimentação espontânea
+D) Método de Hoffman, Pons e Janer baseado no principio da sedimentação espontânea
+E) Método de Ritchie modificado ou formol-éter baseado no princípio centrifugo-sedimentação em água morna saponificada
+G: A
+
+QCH: Sobre o Strongyloides stercoralis assinale TODAS as assertivas VERDADEIRAS (Dica: Corte as falsas com a tesoura):
+A1: As larvas rabditoides eclodem dos ovos ainda dentro do hospedeiro humano e são eliminadas junto com as fezes.
+G: V
+C: No ciclo do S. stercoralis, os ovos liberam rapidamente as larvas rabditoides ainda no intestino, sendo estas formas que são eliminadas nas fezes.
+A2: A fêmea do S. stercoralis realiza reprodução sexuada dentro do hospedeiro humano, necessitando da presença de vermes machos no intestino.
+G: F
+C: As fêmeas são <b>partenogenéticas</b>, ou seja, produzem ovos férteis sem necessidade de fecundação, não existindo machos na fase parasitária intestinal.
+A3: O ciclo de vida do S. stercoralis inclui obrigatoriamente uma fase de vida livre no solo com reprodução sexuada entre machos e fêmeas adultos.
+G: F
+C: O ciclo pode ser direto (sem fase de vida livre) ou indireto (com fase de vida livre). No ciclo direto, as larvas rabditoides se transformam diretamente em filarióides infectantes sem geração de adultos de vida livre.
+A4: A autoinfecção externa ocorre quando larvas rabditoides eliminadas nas fezes se transformam em filarióides e penetram pela pele da região perianal do mesmo hospedeiro.
+G: V
+A5: A autoinfecção interna, fenômeno exclusivo do S. stercoralis entre os helmintos intestinais humanos, permite que o parasita permaneça no hospedeiro por décadas sem reinfecção.
+G: V
+C: Na autoinfecção interna, larvas rabditoides se transformam em filarióides ainda dentro do intestino do hospedeiro, permitindo um novo ciclo sem passagem pelo ambiente externo.
+A6: O habitat das fêmeas parasitas de S. stercoralis é a luz intestinal, onde se fixam através de estruturas bucais semelhantes às dos ancilostomídeos.
+G: F
+C: As fêmeas parasitas vivem <b>dentro da mucosa intestinal</b> (intraepiteliais), perfurando o epitélio e alojando-se na espessura da mucosa, onde se movem, alimentam-se e fazem suas desovas.
+A7: Em pacientes imunodeprimidos, especialmente em uso de corticosteroides, pode ocorrer a síndrome de hiperinfecção por S. stercoralis, potencialmente fatal.
+G: V
+C: A imunossupressão, particularmente por corticosteroides, pode estimular a transformação acelerada de larvas rabditoides em filarióides dentro do hospedeiro, levando à invasão maciça de órgãos.
+A8: O hormônio 20-hidroxiecdisona, produzido pelo próprio helminto, tem estrutura similar aos glicocorticoides e influencia a transformação de larvas rabditoides em filarióides.
+G: V
+
+Q: Sobre a autoinfecção por Strongyloides stercoralis, julgue:
+A autoinfecção externa ocorre quando larvas rabditoides eliminadas nas fezes se transformam em filarióides infectantes na região perianal e penetram novamente através da pele ou mucosa retal do mesmo hospedeiro, reiniciando o ciclo parasitário.
+G: V
+C: Este mecanismo permite a reinfecção do hospedeiro sem necessidade de contaminação ambiental externa, sendo uma característica importante que explica a cronicidade da estrongiloidíase.
+
+Q: Sobre a autoinfecção por Strongyloides stercoralis, julgue:
+A endoinfecção (autoinfecção interna) ocorre apenas em pacientes imunodeprimidos, não sendo observada em indivíduos imunocompetentes, e requer a presença de vermes adultos machos e fêmeas na luz intestinal para que novas larvas sejam produzidas.
+G: F
+C: A endoinfecção pode ocorrer também em indivíduos imunocompetentes, embora seja mais comum em imunodeprimidos, e não requer vermes machos, pois as fêmeas partenogenéticas produzem ovos férteis sem necessidade de fecundação. Além disso, ocorre pela transformação de larvas rabditoides em filarióides ainda dentro do intestino, que penetram diretamente na mucosa intestinal sem sair para o meio exterior.
+
+Q: (QConcursos) “Um parasita do intestino chamado Enterobius vermicularis é o responsável pela infecção conhecida por enterobiose. O tratamento dos doentes é feito com o uso de vermífugo e deve ser estendido para toda a família”.
+O Enterobius vermicularis pertence ao Filo
+A) Nematoda, que compreende animais diblásticos, celomados, de corpo alongado, cilíndrico e fino.
+B) Platyhelminthes, que compreende animais triblásticos, celomados e de corpo achatado dorsoventralmente.
+C) Nematoda, que compreende animais triblásticos, pseudocelomados, de corpo alongado, cilíndrico e fino.
+D) Platyhelminthes, que compreende animais triblásticos, pseudocelomados e de corpo achatado dorsoventralmente. 
+E) Nematoda, que compreende animais triblásticos, celomados, de corpo alongado, cilíndrico e fino. 
+G: C
+
+Q: (QConcursos) A infecção por Enterobius vermicularis (oxiúros) é adquirida pela ingestão dos ovos do verme. A técnica utilizada para o diagnóstico laboratorial da enterobíase é o(a): 
+A) Biópsia muscular.
+B) Microscopia a partir da detecção dos ovos nas fezes. 
+C) Esfregaço espesso de sangue, coletado do paciente à noite. 
+D) Fita adesiva com ovos visíveis.
+E) Visualização das microfilárias em um esfregaço de sangue
+G: D
+
+Q: (QConcursos) Enterobius vermicularis é um parasito monóxeno e estenóxeno. A passagem do parasito de uma pessoa para outra faz-se pela transferência dos ovos, que devem permanecer pelo menos algumas horas no meio exterior para tornarem-se infectantes. Sobre as formas de transmissão de E. vermicularis, está correto afirmar que:
+A) a heteroinfecção dá-se geralmente pela inalação ou ingestão dos ovos disseminados por via aérea.
+B) a transmissão indireta da região anal para a boca, através das mãos contaminadas, não ocorre com frequência.
+C) a taxa de auto-infecção é muito baixa devido aos anti-corpos formados.
+D) os ovos que ficam retidos na região perianal não desenvolvem sua capacidade infectante.
+E) a forma de infecção mais frequente é por meio da ingestão de carne de boi ou porco mal cozidas.
+G: A
+C: 
+{A} - Correto, "hétero" em doenças como prefixo você interpreta como externo, que é a infecção mais comum pelo E. vermicularis, seja pelo ar (poeira) ou junto de água/alimentos contaminados.
+{B} - Errado, a autoinfecção da mão com ânus para a boca é o tipo mais comum, principalmente em crianças, que automaticamente coçam a região perianal e depois põem na boca.
+{C} - Errado, como dito na B a taxa de autoinfecção é altíssima, sendo comum em crianças.
+{D} - Errado, pois na literatura existe referências para que o ovos na região perianal consigam eclodir e subir para o intestino para se desenvolverem.
+{E} - Errado, esse tipo de contaminação existe na teníase, verminose diferente causada por platelmintos.
+
+Q: (Q concursos) O ovo de Enterobius vermicularis apresenta as seguintes características: 
+A) Ovo em forma de barril, com casca externa espessa e interna hialina.
+B) Ovo claro, arredondado, com 3 pares de acúleos no interior da casca interna. 
+C) Ovo arredondado ou ligeiramente oval, com membrana interna grossa e mamilonada.
+D) Ovo alongado, achatado em um dos lados, com casca incolor e fina. 
+E) Ovo com formato oval apresentando um espículo voltado para trás na parte mais larga.
+G: D
+C: 
+Ovo em forma de barril, com casca externa espessa e interna hialina --> Ovo de Trichuris trichiura
+Ovo claro, arredondado, com 3 pares de acúleos no interior da casca interna --> Ovo de Taenia spp.
+Ovo arredondado ou ligeiramente oval, com membrana interna grossa e mamilonada --> Ovo de Ascaris lumbricoides
+Ovo alongado, achatado em um dos lados, com casca incolor e fina --> Ovo de Enterobius vermicularis
+Ovo com formato oval apresentando um espículo voltado para trás na parte mais larga --> Ovo de Schistossoma mansoni
+
+Q: (QConcursos) Em relação ao parasita Enterobius vermiculares e à parasitose causada por ele, é INCORRETO afirmar que:
+A) o método diagnóstico laboratorial mais indicado é a pesquisa de ovos nas fezes.
+B) esse parasita é popularmente conhecido como oxiúros .
+C) as fêmeas do parasita, quando repletas de ovos, são encontradas na região perianal.
+D) os ovos são eliminados já embrionados e tornam-se infectantes em poucas horas.
+E) a alteração clínica mais frequente é o prurido anal.
+G: A
+C: É o da fita adesiva.
+
+Q: (QConcursos) Enterobius vermicularis é um nematódeo intestinal, associado à Enterobíase, uma infecção intestinal. A característica principal dessa infecção é:
+A) Diarreia aquosa.
+B) Emagrecimento rápido.
+C) Melena.
+D) Prurido anal.
+G: D

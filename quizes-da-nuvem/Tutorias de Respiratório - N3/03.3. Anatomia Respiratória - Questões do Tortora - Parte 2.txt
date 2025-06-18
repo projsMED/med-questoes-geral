@@ -1,0 +1,117 @@
+
+Q: Cada lobo pulmonar recebe um brônquio segmentar.
+G: F
+C: Cada lobo pulmonar recebe um brônquio lobar (secundário). Os brônquios segmentares (terciários) suprem os segmentos broncopulmonares dentro dos lobos.
+
+Q: Os bronquíolos terminais representam o final da zona de condução do sistema respiratório.
+G: V
+C: A zona de condução inclui estruturas desde o nariz até os bronquíolos terminais. A zona respiratória inicia-se com os bronquíolos respiratórios.
+
+Q: A base do pulmão é sua porção superior estreita.
+G: F
+C: A base do pulmão é sua porção inferior larga, enquanto o ápice é a porção superior estreita.
+
+Q: Tema: Nariz e Cavidade Nasal
+I_A) Quais são as três principais funções das estruturas internas do nariz?
+GABARITO: (1) Aquecimento, umidificação e filtração do ar inspirado; (2) detecção de estímulos olfatórios; e (3) modificação das vibrações da fala (ressonância).
+I_B) O que é o septo nasal e quais são seus principais componentes constituintes (anterior e restante)?
+GABARITO: O septo nasal é uma divisão vertical que separa a cavidade nasal em metades direita e esquerda. A parte anterior é constituída primariamente por cartilagem hialina; o restante é formado pelo osso vômer, lâmina perpendicular do osso etmoide, maxilas e osso palatino.
+I_C) Cite duas estruturas que se abrem na cavidade nasal além da comunicação com o exterior (narinas) e com a faringe (cóanos).
+GABARITO: Ductos provenientes dos seios paranasais e os ductos lacrimonasais.
+
+Q: Tema: Laringe
+I_A) Cite as três cartilagens ímpares que compõem a parede da laringe.
+GABARITO: Cartilagem tireóidea, cartilagem epiglótica (ou epiglote) e cartilagem cricóidea.
+I_B) Qual é a função da epiglote durante a deglutição?
+GABARITO: Durante a deglutição, a elevação da laringe desloca a epiglote para baixo, cobrindo a glote e direcionando alimentos e líquidos para o esôfago, impedindo que entrem na laringe e vias aéreas inferiores.
+I_C) O que constitui a glote?
+GABARITO: A glote é constituída por um par de pregas de mucosa, as pregas vocais ("pregas vocais verdadeiras"), mais o espaço entre essas pregas (a rima da glote).
+
+Q: Tema: Traqueia e Brônquios
+I_A) Descreva a principal característica estrutural dos anéis cartilaginosos da traqueia e qual sua importância.
+GABARITO: São anéis horizontais e incompletos de cartilagem hialina, em formato de "C", com a parte aberta voltada posteriormente. Sua importância é manter a patência da traqueia, propiciando um suporte semirrígido para que a parede traqueal não colapse e obstrua a via respiratória.
+I_B) O que é a carina e qual sua relevância clínica?
+GABARITO: A carina é uma crista interna formada por uma projeção posterior e inferior da última cartilagem traqueal, localizada no ponto onde a traqueia se divide em brônquios principais. Sua relevância clínica está no fato de que o alargamento e a distorção da carina podem indicar invasão por carcinoma dos linfonodos adjacentes.
+I_C) Qual a diferença fundamental na ramificação dos brônquios principais direito e esquerdo em relação ao número de brônquios lobares que originam?
+GABARITO: O brônquio principal direito divide-se em três brônquios lobares (superior, médio e inferior), um para cada lobo do pulmão direito. O brônquio principal esquerdo divide-se em dois brônquios lobares (superior e inferior), um para cada lobo do pulmão esquerdo.
+
+Q: Tema: Pulmões
+I_A) O que são as fissuras pulmonares e qual sua função na divisão dos pulmões?
+GABARITO: As fissuras pulmonares são invaginações profundas que dividem os pulmões em lobos. O pulmão esquerdo possui uma fissura oblíqua que o divide em lobo superior e inferior. O pulmão direito possui uma fissura oblíqua e uma fissura horizontal, que o dividem em lobos superior, médio e inferior.
+I_B) Descreva a localização e a função da pleura parietal e da pleura visceral.
+GABARITO: A pleura parietal é a camada superficial que reveste a parede da cavidade torácica. A pleura visceral é a camada profunda que recobre os pulmões. Entre elas existe a cavidade pleural com líquido pleural, que reduz o atrito durante a ventilação e permite a adesão das pleuras.
+I_C) O que é um segmento broncopulmonar?
+GABARITO: É a fração de tecido pulmonar suprida por cada brônquio segmentar (terciário). Cada segmento broncopulmonar possui seu próprio brônquio segmentar e seu suprimento vascular, sendo uma unidade funcional e anatômica do pulmão.
+
+Q: Qual é o nome da região funcional do sistema respiratório onde ocorre efetivamente a troca gasosa entre alvéolos pulmonares e capilares sanguíneos?
+GABARITO: Zona respiratória.
+
+Q: Como se chama o tipo de célula alveolar que produz o surfactante pulmonar e atua como célula-tronco para o epitélio alveolar?
+GABARITO: Pneumócito do tipo II.
+
+Q: Qual é o nome do último ramo da zona de condução, que não participa da troca gasosa e apresenta epitélio simples cúbico não ciliado?
+GABARITO: Bronquíolo terminal.
+
+Q: Como se denomina o pequeno recesso lateral situado entre pregas vocais verdadeiras e falsas, que também pode acumular muco ou outras secreções?
+GABARITO: Ventrículo laríngeo (ou sáculo laríngeo).
+
+Q: Qual é o nome do músculo liso que fecha a parte posterior dos anéis cartilaginosos da traqueia, permitindo variações sutis de diâmetro durante a ventilação?
+GABARITO: Músculo traqueal (ou músculo liso traqueal).
+
+Q: Quais projeções ósseas das paredes laterais da cavidade nasal têm a função de aumentar a área de superfície para aquecimento, filtração e umidificação do ar?
+GABARITO: Conchas nasais (ou conchas turbinais).
+
+Q: A cartilagem _________ forma a parede anterior da laringe, conferindo o “pomo de Adão”, enquanto a cartilagem _________ forma a parede inferior da laringe e conecta-se ao primeiro anel traqueal.
+GABARITO: tireóidea ; cricóidea
+
+Q: Os _________ do tipo I cobrem a maior parte da superfície alveolar e são responsáveis pela troca gasosa, ao passo que os _________ produzem o surfactante pulmonar.
+GABARITO: pneumócitos do tipo I ; pneumócitos do tipo II
+
+Q: As aberturas posteriores da cavidade nasal que a comunicam com a faringe recebem o nome de _________, enquanto as aberturas anteriores que se ligam ao meio externo são as _________.
+GABARITO: cóanos ; narinas
+
+Q: A porção do sistema respiratório responsável apenas pelo transporte de ar, sem realizar trocas gasosas, é chamada de _________, e as estruturas nas quais ocorre efetivamente a troca de O₂ e CO₂ constituem a _________.
+GABARITO: zona de condução ; zona respiratória
+
+Q: O estreitamento excessivo dos bronquíolos, causado pela contração acentuada do músculo liso bronquiolar, é denominado _________.
+GABARITO: broncoconstrição (ou constrição bronquiolar)
+
+Q: A concavidade presente na face medial do pulmão esquerdo para acomodar o coração recebe o nome de _________.
+GABARITO: incisura cardíaca
+
+Q: A pleura parietal é subdividida em pleura _________, pleura _________ e pleura _________.
+GABARITO: costal ; mediastínica ; diafragmática
+
+Q: As artérias _________ conduzem sangue venoso do ventrículo direito aos pulmões, enquanto as veias _________ trazem sangue arterial de volta ao átrio esquerdo, e as artérias _________ irrigam o parênquima pulmonar.
+GABARITO: pulmonares ; pulmonares ; brônquicas
+
+Q: O ápice pulmonar projeta-se acima do primeiro arco costal, encontrando-se recoberto pela _________ e localizado na região _________ do pescoço.
+GABARITO: pleura cervical ; supraclavicular
+
+Q: Cada segmento broncopulmonar é suprido por um brônquio _________ e por uma artéria _________.
+GABARITO: segmentar ; segmentar
+
+Q: O _________ é a porção superior estreita do pulmão que se projeta acima da cúpula pleural.
+GABARITO: ápice pulmonar
+
+Q: O espaço que fica entre as camadas pleurais contém o líquido pleural e é denominado _________.
+GABARITO: cavidade pleural
+
+Q: Um recém-nascido prematuro de 28 semanas de gestação é internado na UTI neonatal com quadro de desconforto respiratório progressivo, incluindo retrações intercostais, gemência e cianose. A gasometria arterial revela hipoxemia e hipercapnia. A radiografia torácica mostra pulmões com opacificação difusa e padrão em "vidro fosco".<br>
+Com base no caso clínico e no conhecimento da histologia alveolar, analise as afirmativas a seguir:<br>
+I. O comprometimento da função de pneumócitos tipo II nesse recém-nascido prejudica a produção de surfactante pulmonar, levando à instabilidade alveolar e colapso das vias respiratórias terminais.
+II. Pneumócitos tipo I são os principais responsáveis pela secreção de líquido alveolar e pela síntese do surfactante que reduz a tensão superficial.
+III. A barreira hematoalveolar é composta pelo epitélio alveolar, membrana basal compartilhada e endotélio capilar, sendo os pneumócitos tipo I essenciais para as trocas gasosas.
+IV. O tratamento dessa condição frequentemente inclui suporte ventilatório e administração exógena de surfactante pulmonar.<br>
+Quais estão corretas?
+A) Apenas I e III
+B) Apenas II e IV
+C) Apenas I, III e IV
+D) Apenas III e IV
+E) I, II, III e IV
+G: C
+C: Afirmativa I – Correta: Pneumócitos tipo II são os responsáveis pela produção de surfactante. A ausência desse fator em prematuros leva à doença da membrana hialina, caracterizada por colapso alveolar e dificuldade respiratória.
+Afirmativa II – Incorreta: Pneumócitos tipo I não secretam surfactante; sua função principal é estrutural e de troca gasosa. O surfactante é produzido exclusivamente pelos pneumócitos tipo II.
+Afirmativa III – Correta: A barreira hematoalveolar é composta pelos pneumócitos tipo I, membrana basal e endotélio capilar. Ela permite trocas gasosas eficientes.
+Afirmativa IV – Correta: O tratamento padrão para prematuros com deficiência de surfactante inclui administração exógena de surfactante e suporte ventilatório.
+

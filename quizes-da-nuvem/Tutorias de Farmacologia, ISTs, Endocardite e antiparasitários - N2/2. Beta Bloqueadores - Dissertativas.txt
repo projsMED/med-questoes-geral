@@ -1,0 +1,68 @@
+Q: Explique o papel dos receptores β1-adrenérgicos no coração e descreva os principais efeitos fisiológicos e terapêuticos decorrentes do uso de antagonistas desses receptores (betabloqueadores).
+GABARITO: Os receptores β1-adrenérgicos estão localizados predominantemente no coração e são ativados pelas catecolaminas adrenalina e noradrenalina. Sua ativação leva a:
+‎ ‎ 
+- Aumento da frequência cardíaca (efeito cronotrópico positivo),
+- Aumento da força de contração do miocárdio (efeito inotrópico positivo),
+- Aumento da velocidade de condução no sistema de condução cardíaco (efeito dromotrópico positivo),
+- Estímulo à liberação de renina pelos rins (participando da regulação da pressão arterial).
+‎ 
+Os betabloqueadores que antagonizam esses receptores — especialmente os β1-seletivos — reduzem esses efeitos simpáticos no coração, promovendo:
+‎ 
+- Redução da frequência cardíaca,
+- Diminuição da contratilidade cardíaca,
+- Redução da pressão arterial,
+- Diminuição da demanda de oxigênio do miocárdio,
+- Redução da liberação de renina.
+‎ 
+Esses efeitos são úteis no tratamento da hipertensão, angina, insuficiência cardíaca e arritmias cardíacas. Os betabloqueadores β1-seletivos são preferidos em pacientes com asma, DPOC ou diabetes, pois causam menos efeitos adversos relacionados à inibição dos receptores β2.
+
+
+
+Q: O Sr. João levou seu filho, de 17 anos, ao cardiologista após episódios frequentes de taquicardia. O adolescente tem histórico de asma e diabetes tipo 1, ambos controlados com tratamento regular. Após a avaliação, o médico decidiu prescrever <b>metoprolol</b> em vez de <b>propranolol</b> para controle da frequência cardíaca.<br>
+<b>Explique por que o médico optou por metoprolol em vez de propranolol.</b>
+GABARITO:
+<p>O médico optou por <b>metoprolol</b>, um <b>betabloqueador β1-seletivo</b>, porque ele age predominantemente nos receptores β1 do coração, <b>minimizando os efeitos adversos nos receptores β2</b> localizados nos brônquios e no fígado.</p>
+<ul>
+  <li> O receptor B2 tem a característica de broncodilatação, útil no tratamento de asma. </li>
+  <li> O B2 também está presente no fígado, com sua ativação no fígado aumenta a glicogenólise (quebra de glicogênio hepático em glicose) e gliconeogênese (produção de glicose a partir de precursores não-carboidratos).</li>
+  <li>Em pacientes com <b>asma</b>, o bloqueio de receptores <b>β2</b> pode causar <b>broncoespasmo</b>, agravando os sintomas respiratórios. O propranolol, por ser <b>não seletivo</b> (bloqueia β1 e β2), tem maior risco de induzir crises asmáticas.</li>
+  <li>Em pacientes com <b>diabetes</b>, especialmente tipo 1, o bloqueio de receptores β2 pode:
+    <ul>
+      <li><b>Mascarar os sintomas adrenérgicos da hipoglicemia</b> (como taquicardia e tremores),</li>
+      <li><b>Prejudicar a liberação de glicose hepática</b> (glicogenólise e gliconeogênese), dificultando a recuperação da hipoglicemia.</li>
+    </ul>
+  </li>
+</ul>
+<p>Portanto, <b>metoprolol</b> é mais seguro para pacientes com <b>asma e diabetes</b>, pois oferece controle cardíaco eficaz com menor risco de efeitos colaterais respiratórios e metabólicos.</p>
+
+Q: Os antagonistas dos receptores β-adrenérgicos (betabloqueadores) desempenham papel fundamental no tratamento da cardiopatia isquêmica. Com base nos conhecimentos farmacológicos e clínicos, responda:
+<b>A)</b> Explique o <b>mecanismo de ação</b> dos betabloqueadores no alívio dos sintomas da angina estável crônica.
+<b>B)</b> Cite <b>dois benefícios prognósticos</b> comprovados dos betabloqueadores em pacientes com infarto agudo do miocárdio ou insuficiência cardíaca.
+<b>C)</b> Aponte <b>três contraindicações relativas</b> ao uso de betabloqueadores em pacientes com infarto do miocárdio.
+GABARITO:
+A) Angina estável é um tipo de dor ou desconforto no peito que ocorre de forma previsível e consistente com o esforço físico ou estresse emocional. Os betabloqueadores bloqueiam os receptores β1-adrenérgicos no coração, o que reduz a frequência cardíaca e a contratilidade miocárdica. Isso leva à diminuição do trabalho cardíaco e da demanda de oxigênio pelo miocárdio, aliviando os sintomas da angina estável.
+‎ 
+B)
+‎ 1. Redução da mortalidade quando administrados no início do infarto agudo do miocárdio.
+‎ 2. Melhora da sobrevida a longo prazo em pacientes com infarto prévio ou com insuficiência cardíaca com fração de ejeção reduzida.
+‎ 
+C)
+‎ 1. Bradicardia significativa,
+‎ 2. Hipotensão arterial,
+‎ 3. Insuficiência ventricular esquerda moderada a grave,
+‎ 4. (Aceitável também: choque cardiogênico, bloqueio cardíaco, asma ou doença reativa das vias respiratórias — qualquer três dessas são válidas.)
+
+Q: Os antagonistas dos receptores β-adrenérgicos interferem na condução elétrica cardíaca, especialmente no nó atrioventricular (AV). Com base nesse conhecimento, responda:
+<b>A)</b> O que é o nó atrioventricular e qual sua função na condução elétrica do coração?
+<b>B)</b> O que se entende por “período refratário” do nó AV?
+<b>C)</b> Explique como os β-bloqueadores afetam esse período e qual o benefício terapêutico desse efeito no tratamento de arritmias.
+GABARITO:
+<b>A)</b> O nó atrioventricular é uma estrutura localizada entre os átrios e os ventrículos que retarda a condução dos impulsos elétricos vindos dos átrios, permitindo o tempo necessário para o esvaziamento atrial completo antes da contração ventricular.
+‎ 
+<b>B)</b> O período refratário é o intervalo após um impulso elétrico durante o qual o nó AV não pode conduzir um novo impulso. É um mecanismo fisiológico que evita conduções rápidas e desorganizadas aos ventrículos.
+‎ 
+<b>C)</b> Os β-bloqueadores aumentam o período refratário do nó AV, tornando-o menos responsivo a impulsos rápidos vindos dos átrios. Isso reduz a frequência ventricular em arritmias como o flutter e a fibrilação atrial, prevenindo respostas ventriculares excessivas e melhorando a estabilidade hemodinâmica do paciente.
+
+Q: Explique os riscos associados à <b>interrupção abrupta do uso prolongado de betabloqueadores</b> e discuta os mecanismos fisiológicos envolvidos nessa reação de abstinência.
+GABARITO:
+A interrupção abrupta dos betabloqueadores após uso prolongado pode desencadear uma <b>síndrome de abstinência</b> caracterizada por <b>nervosismo, taquicardia, recrudescimento da angina, elevação da pressão arterial</b> e, em casos mais graves, <b>infarto do miocárdio</b>. Esses efeitos são atribuídos à chamada <b>regulação para cima (upregulation)</b> ou à <b>supersensibilidade dos receptores β-adrenérgicos</b>, que ocorre devido ao bloqueio crônico desses receptores. Como o organismo compensa a presença contínua do bloqueio aumentando o número ou a sensibilidade dos receptores β, a retirada súbita do fármaco leva a uma <b>resposta adrenérgica exagerada</b>, com consequências potencialmente graves. Por isso, recomenda-se que a descontinuação dos betabloqueadores seja feita de forma <b>gradual</b>, com redução progressiva da dose.

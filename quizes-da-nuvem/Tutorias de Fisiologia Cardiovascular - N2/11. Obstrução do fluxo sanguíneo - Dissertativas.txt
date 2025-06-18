@@ -1,0 +1,31 @@
+Q: Sobre a <b>isquemia</b>, responda:
+I_A) O que é <b>isquemia cardíaca</b>?
+GABARITO: Isquemia cardíaca é uma condição em que há uma redução do fluxo sanguíneo para o miocárdio, geralmente causada por obstrução parcial das artérias coronárias. Isso leva à diminuição do suprimento de oxigênio para as células do músculo cardíaco, o que provoca hipoxia, enfraquecendo as células sem necessariamente destruí-las.
+I_B) O que é <b>angina do peito</b>? O que é <b>isquemia silenciosa</b> e seus riscos?
+GABARITO: Angina do peito é uma dor intensa no tórax que acontece normalmente quando o fluxo de sangue para o músculo cardíaco está reduzido, como acontece na isquemia miocárdica. A pessoa sente uma sensação de aperto ou constrição no peito, que pode irradiar para o pescoço, para o queixo ou para o braço esquerdo.
+​‎ 
+Já a isquemia silenciosa é um episódio em que ocorre redução do fluxo de sangue para o miocárdio, mas sem a presença de dor ou sintomas perceptíveis. O grande risco da isquemia silenciosa é que a pessoa não percebe que o coração está sofrendo por falta de oxigênio, o que pode levar a um infarto do miocárdio sem aviso prévio, tornando a situação ainda mais perigosa.
+I_C) O que pode causar o <b>infarto agudo do miocárdio</b>? Quais suas consequências?
+GABARITO: O infarto agudo do miocárdio é causado pela obstrução completa do fluxo sanguíneo em uma artéria coronária. Essa interrupção leva à morte de uma área do tecido cardíaco, que é substituída por tecido cicatricial incapaz de se contrair. As consequências podem ser a perda da força do músculo cardíaco e, dependendo da extensão e localização, pode comprometer o sistema de condução do coração, podendo até causar morte súbita por fibrilação ventricular.
+
+---
+
+Q: O que é <b>cardiopatia isquêmica</b> e qual sua principal causa?
+GABARITO: A cardiopatia isquêmica é uma doença caracterizada pela insuficiência do fluxo sanguíneo nas artérias coronárias, o que resulta em suprimento inadequado de oxigênio e nutrientes ao músculo cardíaco (miocárdio).
+A principal causa da cardiopatia isquêmica é a aterosclerose, um processo degenerativo em que ocorre o acúmulo de placas de colesterol sob o endotélio das artérias coronárias, levando ao estreitamento ou mesmo obstrução do fluxo sanguíneo.
+Esse processo é favorecido por fatores genéticos, obesidade, sedentarismo, hipertensão arterial e lesão endotelial, tornando o desenvolvimento de placas ateroscleróticas progressivo ao longo do tempo e predispondo o indivíduo a episódios agudos, como infarto do miocárdio, ou à insuficiência cardíaca crônica devido ao enfraquecimento do músculo cardíaco.
+
+---
+
+Q: Como a <b>circulação colateral</b> ajuda a compensar a obstrução coronariana?
+GABARITO: Em situações de oclusão súbita de uma artéria coronária, pequenas anastomoses existentes entre os ramos menores das artérias coronárias começam a se dilatar quase imediatamente, permitindo que algum fluxo sanguíneo seja redirecionado para a região isquêmica. Inicialmente, esse fluxo colateral é insuficiente para suprir completamente as necessidades do tecido cardíaco, mas, ao longo de dias a semanas, os vasos colaterais podem aumentar seu calibre e capacidade de perfusão, chegando, em alguns casos, a suprir quase totalmente a demanda daquela região. Nos casos em que o estreitamento das artérias coronárias ocorre de maneira lenta e progressiva, a circulação colateral tem mais tempo para se desenvolver, o que pode proteger o músculo cardíaco contra infartos extensos e sintomas agudos. Dessa forma, a presença e o desenvolvimento de circulação colateral podem determinar a extensão do dano tecidual e o prognóstico dos pacientes com cardiopatia isquêmica.
+
+---
+
+Q: Quais as principais <b>causas de morte após oclusão coronariana aguda</b>?
+GABARITO: Após uma oclusão coronariana aguda, como ocorre no infarto agudo do miocárdio, as principais causas de morte são diminuição crítica do débito cardíaco, edema pulmonar, fibrilação ventricular e, menos frequentemente, ruptura cardíaca. A diminuição do débito cardíaco ocorre porque a área infartada do miocárdio perde sua capacidade de contração, comprometendo a força de bombeamento do coração; quando essa perda envolve mais de 40% do ventrículo esquerdo, pode haver choque cardiogênico, que frequentemente leva à morte. O represamento de sangue nos vasos pulmonares, em consequência da insuficiência do bombeamento, pode resultar em edema pulmonar agudo e morte rápida. Além disso, a fibrilação ventricular, que é uma arritmia grave desencadeada pela irritabilidade elétrica do tecido isquêmico, ocorre com frequência logo após o infarto ou nas primeiras horas, sendo responsável por mortes súbitas. Finalmente, a ruptura do coração pode acontecer alguns dias após o infarto, quando a área enfraquecida e necrosada do músculo cardíaco não resiste à pressão interna, levando ao tamponamento cardíaco e morte súbita.
+
+---
+
+Q: Quais os <b>estágios da recuperação</b> de um infarto agudo do miocárdio?
+GABARITO: A recuperação de um infarto agudo do miocárdio passa por vários estágios. Inicialmente, logo após a oclusão da artéria coronária, há uma área central de necrose, onde as fibras musculares morrem rapidamente, cercada por uma região de músculo disfuncional devido à isquemia, mas ainda viável. Nos primeiros dias, essa área de fibras mortas pode se expandir, à medida que células marginais sucumbem à falta de oxigênio. Em paralelo, há um aumento progressivo do fluxo sanguíneo colateral nas bordas da área isquêmica, o que pode permitir a recuperação parcial do músculo que estava apenas disfuncional. A partir do segundo ou terceiro dia, inicia-se o processo de cicatrização, em que o tecido muscular necrosado é gradualmente substituído por tecido fibroso, formando uma cicatriz. Esse processo pode durar de semanas a meses, sendo que o tecido fibroso também pode diminuir de tamanho ao longo do tempo. Por fim, as áreas saudáveis do miocárdio podem sofrer hipertrofia compensatória para tentar suprir a perda funcional, permitindo uma recuperação parcial ou quase total da função cardíaca, dependendo da extensão do infarto e da quantidade de tecido viável remanescente.

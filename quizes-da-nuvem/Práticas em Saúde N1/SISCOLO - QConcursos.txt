@@ -1,0 +1,131 @@
+Q: O Sistema de Informação do Câncer (SISCAN) é a versão numa plataforma web que integra os Sistemas de Informação do Câncer de Colo do Útero (SISCOLO) e do Câncer de Mama (SISMAMA), implantada em 2012, que tem o objetivo de:
+A) garantir o cumprimento dos prazos máximos para início do tratamento nos novos casos de câncer.
+B) aumentar a rede de atendimento de pacientes com câncer no SUS.
+C) padronizar o tratamento desses cânceres na rede de atenção oncológica do SUS.
+D) fortalecer as ações de prevenção, diagnóstico e tratamento do câncer do colo do útero e de mama.
+E) padronizar o tratamento de todos os cânceres na rede de atenção oncológica do SUS.
+G: D
+C: .
+
+Q: Para o aprimoramento dos programas de rastreamento e diagnóstico precoce do câncer de colo de útero e mama, é fundamental a estruturação de um sistema de informação que possibilite o diálogo entre os diversos serviços. O sistema que consiste em uma plataforma web que integra os Sistemas de Informação do Câncer do Colo do Útero (Siscolo) e do Câncer de Mama (Sismama) é denominado:
+A) Sistema de Informação do Câncer (SISCAN).
+B) Sistema Integrado do Câncer (SICAN).
+C) Sistema Anual do Câncer (SISACAN).
+D) Sistema Federal do Câncer (SIFCAN).
+E) Sistema Público do Câncer (SIPCAN).
+G: A
+C: Para o aprimoramento dos programas de rastreamento e diagnóstico precoce é fundamental a estruturação de um sistema de informação que possibilite o diálogo entre os diversos serviços. Está em desenvolvimento o Sistema de Informação do Câncer (Siscan), que é a versão em plataforma web que integra os Sistemas de Informação do Câncer do Colo do Útero (Siscolo) e do Câncer de Mama (Sismama).
+
+Q: A importância da detecção precoce das neoplasias foi reafirmada no Pacto pela Saúde, por meio da inclusão de indicadores e metas definidas em estados e municípios. Mesmo com todos os esforços, a cobertura de exames de Papanicolau ainda é significativamente baixa em muitos lugares do país. Escolha a alternativa correta dentre as descritas abaixo:
+A) coleta e a interpretação do exame não são atividades preconizadas para atuação pelo enfermeiro, pois trata-se de atividades privativas aos médicos.
+B) após a realização de dois exames anuais com resultados negativos o exame pode ser realizado a cada 3 anos.
+C) no Brasil, o exame citopatológico deve ser priorizado para mulheres de 25 (independente de terem iniciado atividade sexual) a 60 anos.
+D) a coleta do exame é um ato privativo ao enfermeiro, não sendo preconizada sua realização pelos demais membros da equipe de APS.
+E) o SISCOLO é sistema disponível que permite identificar as mulheres que estão em falta com o rastreamento para chamá-las a repetir ou fazer pela primeira vez os exames.
+G: B
+C: O método de rastreamento do câncer do colo do útero e de suas lesões precursoras é o exame citopatológico. Os dois primeiros exames devem ser realizados com intervalo anual e, se ambos os resultados forem negativos, os próximos devem ser realizados a cada 3 anos. O início da coleta deve ser aos 25 anos de idade para as mulheres que já tiveram ou têm atividade sexual. O rastreamento antes dos 25 anos deve ser evitado. Os exames periódicos devem seguir até os 64 anos de idade e, naquelas mulheres sem história prévia de doença neoplásica pré-invasiva, interrompidos quando essas mulheres tiverem pelo menos dois exames negativos consecutivos nos últimos cinco anos. Para mulheres com mais 64 anos de idade e que nunca se submeteram ao exame citopatológico, deve-se realizar dois exames com intervalo de um a três anos. Se ambos os exames forem negativos, essas mulheres podem ser dispensadas de exames adicionais. A coleta do exame citopatológico deve ser realizada por enfermeiro ou médico capacitados. Atualmente o SISCOLO está integrado ao SISCAN, onde os dados dos rastreamentos para câncer de colo de útero e mama são lançados.
+
+Q: O Papanicolau é um exame realizado para detectar alterações nas células do colo do útero; de acordo com o Ministério da Saúde, ele também pode ser chamado de esfregaço cervicovaginal e colpocitologia oncótica-cervical. Em relação a tal exame e ao câncer do colo do útero, assinale a afirmativa INCORRETA.
+A) As mulheres sem história de atividade sexual não devem ser submetidas ao rastreamento do câncer do colo do útero.
+B) As mulheres estejam gestantes têm risco diminuído de apresentar câncer do colo do útero ou suas lesões precursoras.
+C) As mulheres na pós-menopausa, sem história de diagnóstico, ou tratamento de lesões precursoras do câncer de colo uterino apresentam baixo risco para o desenvolvimento de câncer.
+D) As mulheres submetidas à histerectomia total por lesões benignas, sem história prévia de diagnóstico ou tratamento de lesões cervicais de alto grau podem ser excluídas do rastreamento, desde que apresentem exames anteriores normais.
+G: B
+C: Gestantes têm o mesmo risco que não gestantes de apresentarem câncer do colo do útero ou suas lesões precursoras.
+
+Q: Sobre o exame citopatológico em gestantes, assinale a alternativa INCORRETA.
+A) Têm o mesmo risco que não gestantes de apresentarem câncer do colo do útero ou suas lesões precursoras. O achado dessas alterações durante o ciclo grávido puerperal reflete a oportunidade do rastreamento durante o pré-natal.
+B) Apesar de a JEC no ciclo gravídico-puerperal encontrar-se interiorizada na ectocérvice na maioria das vezes, o que dispensaria a coleta endocervical, a coleta de espécime endocervical não parece aumentar o risco sobre a gestação quando utilizada uma técnica adequada.
+C) O rastreamento deve seguir as recomendações de periodicidade e faixa etária como para as demais mulheres.
+D) Deve-se sempre ser considerada uma oportunidade a procura ao serviço de saúde para realização de pré-natal.
+G: B
+C: .
+
+Q: A citologia cervicovaginal de Papanicolau é um exame:
+A) preventivo, ou de rastreamento, de câncer do colo do útero por pesquisa de atipia, ou seja, maturação anormal, em células do epitélio.
+B) indolor, pois é realizado com células epiteliais coletadas da parte mais externa do conduto vaginal.
+C) das células do epitélio vaginal, epitélio externo dos ovários e mucosa do colo do útero, resultando na coleta tríplice.
+D) das atipias celulares das duas camadas da pele: derme e epiderme.
+E) da uretra e do canal uretral para detecção precoce de câncer de bexiga.
+G: A
+C: .
+
+Q: O exame citopatológico, também conhecido como Papanicolau, é o método de identificação mais eficaz para o reconhecimento de infecções, viabilizando seu tratamento e seu acompanhamento. Considerando-se o câncer de colo do útero e da mama, assinalar a alternativa que preenche as lacunas abaixo CORRETAMENTE:
+O câncer de colo do útero é causado pela infecção por alguns tipos de ________. Em relação à mamografia de rastreamento em mulheres de 50 a 69 anos, após dois exames consecutivos normais, a recomendação de periodicidade é a cada ________ anos.
+A) Herpes | cinco
+B) HPV | dois
+C) Herpes | dois
+D) HPV | quatro
+E) HIV | dois
+G: B
+C: A questão está relacionada à saúde da mulher, especificamente ao câncer de colo de útero e câncer de mama. O câncer de colo de útero é causado pela infecção por alguns tipos de HPV (Papilomavírus Humano), e não por herpes ou HIV. Em relação à periodicidade da mamografia de rastreamento para mulheres de 50 a 69 anos, após dois exames consecutivos normais, a recomendação é de que seja feita a cada dois anos, e não a cada quatro ou cinco anos. Portanto, a alternativa correta é HPV | dois. Este período de tempo é recomendado para permitir a detecção precoce de qualquer alteração, maximizando as chances de tratamento eficaz caso haja alguma alteração.
+
+Q: O exame preventivo do câncer do colo do útero (Papanicolau) é a principal estratégia para detectar lesões precursoras e fazer o diagnóstico da doença. O exame pode ser feito em postos ou unidades de saúde da rede pública que tenham profissionais capacitados. É fundamental que os serviços de saúde orientem sobre o que é e qual a importância do exame preventivo, pois sua realização periódica permite reduzir a mortalidade pela doença. Toda mulher que tem ou já teve vida sexual e que estão entre 25 e 64 anos de idade deve realizar o exame. Devido à longa evolução da doença, o exame pode ser realizado a cada ________. Para maior segurança do diagnóstico, os dois primeiros exames devem ser ___________. Complete a frase acima com a alternativa CORRETA:
+A) Dois anos / Quatro anos.
+B) Três anos / Anuais.
+C) Cinco anos / Dois anos.
+D) Um ano / Seis meses.
+E) Dois anos / Cinco anos.
+G: B
+C: O exame pode ser realizado a cada 3 anos. Para maior segurança do diagnóstico, os dois primeiros exames devem ser anuais.
+
+Q: O exame Papanicolau é um teste realizado para detectar alterações nas células do colo do útero que possam predizer a presença de lesões precursoras do câncer ou o próprio câncer. É a principal estratégia para detectar lesões precocemente. O rastreamento é uma tecnologia da atenção primária, e os profissionais atuantes nesse nível de atenção devem conhecer o método, a periodicidade e a população-alvo recomendados, sabendo ainda orientar e encaminhar para tratamento as mulheres de acordo com os resultados dos exames e garantir seu seguimento. Sobre o exame, é correto afirmar que:
+A) o rastreamento em gestantes deve ser evitado pelo risco de manipulação do colo uterino.
+B) após dois exames com resultados negativos, é considerado seguro realizar um exame a cada três anos.
+C) mulheres com menos de 25 anos sexualmente ativas, além de orientadas sobre anticoncepção e práticas de sexo seguro, devem ser incluídas no programa de rastreamento do câncer do colo do útero.
+D) para coletar exame, as mulheres devem comparecer à unidade de APS, prioritariamente, por demanda espontânea tendo em vista que o agendamento para tal procedimento pode restringir o acesso, prejudicando seu rastreio.
+E) mulheres sem história de atividade sexual devem ser submetidas ao rastreamento do câncer do colo do útero.
+G: B
+C: Após 2 resultados consecutivos negativos, com periodicidade de 1 ano, o exame pode ser realizado de 3 em 3 anos.
+
+Q: O Papanicolau reduz em torno de 80% o câncer do colo do útero e, portanto, deve ser oferecido às mulheres ou qualquer pessoa com colo do útero, na faixa etária de ______________ e que já tiveram atividade sexual, incluindo homens trans e pessoas não binárias designadas mulheres ao nascer. A repetição do exame Papanicolau deve ser feita a cada ______________, após dois exames normais consecutivos realizados com um intervalo de um ano. Para as mulheres portadoras do vírus HIV ou imunodeprimidas, o exame deve ser realizado logo após o início da atividade sexual anualmente, após dois exames normais consecutivos realizados com intervalo de 6 meses. A coleta de citologia pode ser interrompida aos___________, se há exames anteriores normais. Mulheres que não tiveram atividade sexual não estão sob risco para câncer de colo e por isso não há necessidade de rastreamento para este grupo. Complete as lacunas com a alternativa correta:
+A) 20 a 67 anos; 2 anos; 68 anos.
+B) 25 a 64 anos; 3 anos; 65 anos.
+C) 22 a 68 anos; 1 ano; 69 anos.
+D) 21 a 60 anos; 1 ano; 60 anos.
+E) Nenhuma das alternativas acima.
+G: B
+C: De acordo com o Ministério da Saúde e o Instituto Nacional de Câncer (INCA), o rastreamento do câncer do colo do útero por meio do exame Papanicolau deve seguir as seguintes diretrizes:
+- O exame é recomendado para mulheres e qualquer pessoa com colo do útero na faixa etária de 25 a 64 anos, que já tenham tido atividade sexual.
+- Após dois exames normais consecutivos realizados com intervalo de um ano, a repetição do exame deve ser feita a cada três anos.
+- Para pessoas imunossuprimidas ou vivendo com HIV, o exame deve ser realizado anualmente, após dois exames normais consecutivos feitos com intervalo de seis meses.
+- A coleta pode ser interrompida aos 65 anos, se os exames anteriores forem normais.
+
+Q: O exame colpocitológico, ou teste de Papanicolau, traz o diagnóstico precoce do câncer de colo do útero. O êxito na descoberta dessa doença dependerá, além de outros fatores, da acuidade diagnóstica do referido exame. A citologia tradicional realiza a análise de células em laboratório, permitindo diagnóstico de lesão prévia, assim como o câncer de colo de útero. Sobre o tema, é correto afirmar que:
+A) É ideal que, a partir dos 40 anos, a mulher realize este exame a cada 2 anos.
+B) Na fase de coleta, são utilizados um esfregaço e uma escova com cerdas macias.
+C) Após a coleta, o material deverá ser conservado por 7 dias em refrigeração de 8 graus.
+D) A citologia convencional possui como principal benefício a vantagem da simplicidade da estrutura necessária para a realização da análise, o que permite a realização do exame até mesmo em locais precários, com infraestrutura básica.
+G: D
+C: .
+
+Q: Na coleta tríplice para o exame de Papanicolau, são coletadas amostras das seguintes regiões:
+A) ectocérvice, fundo de saco vaginal e do canal cervical.
+B) vagina, útero e trompas.
+C) grandes lábios, pequenos lábios e vagina.
+D) útero, pequenos lábios e ectocérvice.
+E) fundo do saco vaginal, colo uterino e útero.
+G: A
+C: Na coleta tríplice para o exame de Papanicolau (também conhecido como exame preventivo ou citopatológico do colo do útero), são colhidas amostras de três regiões específicas:
+  - Ectocérvice – parte externa do colo do útero.
+  - Endocérvice (canal cervical) – parte interna do colo do útero.
+  - Fundo de saco vaginal (ou terço superior da vagina) – área próxima ao colo do útero.
+Essas amostras aumentam a chance de detectar lesões precursoras do câncer do colo do útero, infecções e outras alterações celulares.
+
+Q: Se o diagnóstico citopatológico constatar lesão de baixo grau (LSIL) e a faixa etária for menor que 25 anos, a conduta inicial é repetir a citologia em 3 anos.
+G: V
+
+Q: Se o diagnóstico citopatológico constatar lesão de baixo grau (LSIL) e a faixa etária for maior que 25 anos, a conduta inicial é repetir a citologia em 1 ano.
+G: F
+C: Repetir a citologia em 6 meses.
+
+Q: Se o diagnóstico citopatológico constatar lesão de alto grau (HSIL) e a faixa etária for menor que 25 anos, a conduta inicial é repetir a citologia em 1 ano.
+G: F
+C: Se for constatado lesão de alto grau, a conduta inicial é encaminhar para colposcopia, INDEPENDENTE da faixa etária.
+
+Q: Mulheres submetidas à histerectomia total por lesões benignas, sem história prévia de diagnóstico ou tratamento de lesões cervicais de alto grau, podem ser excluídas do rastreamento, desde que apresentem exames anteriores normais.
+G: V
+
+Q: Se a mulher até 24 anos tiver sido submetida ao exame citopatológico e apresentar ASC-US, a citologia deverá ser repetida em dois anos. Para as de 25 a 29 anos repetir a citologia em 12 meses e para as de 30 anos ou mais repetir a citologia em 6 meses.
+G: F
+C: Se a mulher até 24 anos tiver sido submetida ao exame citopatológico e apresentar ASC-US, a citologia deverá ser repetida em TRÊS ANOS. As demais recomendações da assertiva estão corretas.

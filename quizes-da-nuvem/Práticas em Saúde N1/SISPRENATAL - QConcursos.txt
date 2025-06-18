@@ -1,0 +1,409 @@
+Q: O SISPRENATAL é um sistema informatizado criado pelo DATASUS para acompanhar e monitorar a atenção pré-natal e puerperal das gestantes inseridas no Programa de Humanização no Pré-Natal e Nascimento (PHPN) do Sistema Único de Saúde.
+São considerados como indicadores do processo, resultado ou do impacto do Programa de Humanização no Pré-Natal e Nascimento (PHPN), por localidade e período:
+A) o percentual de gestantes inscritas no PHPN que realizaram, no mínimo, nove consultas de pré-natal e coeficiente de mortalidade infantil total no município, comparado com o do ano anterior;
+B) o percentual de gestantes inscritas no PHPN que realizaram, no mínimo, nove consultas de pré- natal e razão de mortalidade materna no município, comparada com a do ano anterior;
+C) o percentual de gestantes inscritas no PHPN que realizaram, no mínimo, seis consultas de pré-natal e coeficiente de mortalidade infantil total no município, comparado com o do ano anterior;
+D) o percentual de gestantes inscritas no PHPN que realizaram, no mínimo, seis consultas de pré-natal e razão de mortalidade materna no município, comparada com a do ano anterior;
+E) o percentual de gestantes inscritas no PHPN que realizaram todos os exames básicos, o teste anti- HIV e a imunização antitetânica.
+G: D
+C: .
+
+Q: A Regra de Naegele é uma forma padronizada de calcular a data provável do parto de uma gestante (conhecida como DPP). Com base na data da última menstruação (DUM), é uma maneira relativamente simples, bastante utilizada para estimar a DPP. Durante uma consulta de enfermagem, a gestante informa que a DUM foi dia 15/09/2021, qual será a DPP? 
+A) 22/06/2022.
+B) 15/06/2022.
+C) 15/05/2022.
+D) 22/05/2022.
+E) 07/06/2022. 
+G: A
+C: Na regra de Naegele SOMA 7 dias ao dia informado no DUM, em relação aos meses de Janeiro a Março SOMA 9 meses e nos meses de Abril a Dezembro SUBTRAI 3 meses.
+exemplo: DUM 15/09/2021
+dia 15 + 7 dias = 22 dias
+mês 9, ou seja, subtrai 3 = 6
+DPP: 22/06/2022
+exemplo: DUM 15/02/2021
+dia 15 + 7 dias = 22 dias
+mês 2, ou seja, soma 9 = 11
+DPP: 22/11/2022
+
+Q: Em 15.06.2019, R.O.S., 26 anos, primigesta, DUM 30.11.2018, compareceu à consulta de Enfermagem para início do seu pré-natal. Ao questionar sobre a situação vacinal, o Enfermeiro foi informado que a gestante não recordava de ter tomado essa vacina e não tinha carteira de vacinação.
+Aplicando a Regra de Naegele, o cálculo da data provável do parto (DPP) e a idade gestacional (IG) no dia da consulta são, respectivamente:
+A) DPP=07.08.2019; IG= 28 1/7 semanas.
+B) DPP=08.09.2019; IG= 28 2/7 semanas.
+C) DPP=22.03.2020; IG= 27 1/7 semanas.
+D) DPP=07.09.2019; IG= 28 1/7 semanas.
+E) DPP=22.03.2020; IG= 28 2/7 semanas.
+G: D
+C: DUM 30/11/2018
+DC 15/06/3019
+Nov 01 (referente ao último dia do mês)
+Dez 31
+Jan 31
+Fev 28
+Mar 31
+Abr 30
+Maio 31
+Jun 15
+Total = 198 dias
+198÷7 = 28,2 (28 semanas e 2 dias)
+DPP
+30/11/2018
++7 -3 +1
+37/08/2019
+Como novembro já termina com 30 então lançamos os 7 dias restantes pro próximo mês. Como tiramos 3 então por conta disso acrescentamos +1 nessa conta
+DPP = 07/09/2019
+
+Q: De acordo com a regra de Naegele, qual será a data provável do parto de uma gestante cuja data da última menstruação foi 13/09/2013?
+A) 20/05/2014
+B) 20/06/2014
+C) 21/06/2014
+D) 20/07/2014
+E) 21/07/2014
+G: B
+C: Lembrem-se da regrinha;  
++ 7 (dias)  
+-3 (jan, fev, mar)  
++9 (abr, mai, jun, jul, ago, set, out, nov, dez)  
+=13.09.2013  
+=+7. +9  
+=20.18  
+Logo, a DPP será 20. jun. 2014.
+
+Q: No dia 24/08/14, compareceu na Unidade Básica de Saúde, para realizar sua primeira consulta de prénatal a adolescente Juliana Santos de 16 anos, considerando a DUM em 15/06/14. Calcule a Idade Gestacional e data provável do parto de acordo com a Regra de Naegele, e assinale a alternativa que apresenta a resposta correta, respectivamente.
+A) 10 semanas e 22/03/15.
+B) 11 semanas e 20/02/15.
+C) 12 semanas e 22/03/15.
+D) 10 semanas e 20/03/15.
+E) 12 semanas e 23/03/15.
+G: A
+C: Cálculo da Idade Gestacional  
+Pegamos a soma do número de dias entre a DUM e a data da consulta e dividimos por 7.  
+DUM = 15/06/2014  Data da consulta = 24/08/2014  
+Teremos que saber quantos dias os meses dentro do intervalo DUM e data da consulta.  
+Junho = 30 dias  
+Julho = 31 dias  
+Agosto = 31 dias  
+Soma do intervalo 15/06/2014 a 24/08/2014 = 15 dias de junho + 31 dias de julho + 24 dias de agosto = 70  
+70 dias /7 = 10 semanas, Logo Idade Gestacional é igual a 10 semanas de gestação.  
+Cálculo da Data Provável do Parto  
+Somar 7 dias ao dia da última menstruação.  
+Meses de janeiro a março, eu somo 9 meses sem alterar o ano.  
+Meses de abril a dezembro, subtraio 3 meses e aumento 1 na contagem do ano.  
+DUM = 15/06/2014  
+15 dias + 7 dias = 22 dias  
+6 meses - 3 meses = 3 meses  
+2014 + 1 = 2015  
+A data provável do parto será no dia 22/03/2015.  
+
+Q: Considerando o Calendário Nacional de Vacinação da Gestante (2023), assinale a alternativa INCORRETA.
+A) A vacina dTpa – acelular deve ser administrada a partir da 20ª semana de gravidez, com 1 dose de reforço a cada 5 anos. 
+B) Deve-se iniciar ou completar o esquema de 3 doses, de acordo com o histórico vacinal, da vacina hepatite B em qualquer tempo no pré-natal.
+C) A vacina da febre amarela é contraindicada para as gestantes. No entanto, na impossibilidade de adiar a vacinação, como em situações de emergência epidemiológica, vigência de surtos ou epidemias, o serviço de saúde deverá avaliar o risco-benefício da vacinação.
+D) A vacina tríplice viral é contraindicada para gestantes. As gestantes vacinadas inadvertidamente com a vacina tríplice viral deverão ser acompanhadas durante o pré-natal para identificar possíveis intercorrências.
+E) Mesmo com esquema completo (3 doses de dT ou dTpa) e/ou reforço com dT ou dTpa, a gestante deverá receber sempre 1 dose de dTpa a cada gestação.
+G: A
+C: DTPA , uma dose a cada gestação, a partir da 20 semana, não tem esse reforço de 5 anos, é a cada gestação.
+
+Q: No Calendário Nacional de Vacinação da Gestante do Ministério da Saúde, está prevista a vacina dTpa – acelular, que protege contra difteria, tétano e coqueluche e pode ser administrada também a puérperas até 45 dias após o parto. A vacina dTpa – acelular é recomendada a gestantes a partir da
+A) 14ª semana de gravidez.
+B) 20ª semana de gravidez.
+C) 27ª semana de gravidez.
+D) 37ª semana de gravidez.
+G: B
+C: .
+
+Q: No que se refere ao esquema de vacinação para a gestante, consta, no Calendário de vacinação para o estado de São Paulo, entre outras recomendações, que
+A) o intervalo mínimo entre a primeira e a segunda dose da vacina hepatite B é de 2 semanas.
+B) o intervalo para a terceira dose da vacina hepatite B pode ser de dois meses após a segunda, desde que o intervalo de tempo decorrido da primeira dose seja, no mínimo, de quatro meses.
+C) caso a gestante tenha recebido duas ou mais doses das vacinas tetravalente, DTP, dTpa, dT, aplicar uma dose de reforço, com a vacina dTpa.
+D) caso a gestante apresente documentação com registro de uma dose da vacina SCR, aplicar a segunda dose até no máximo 28 semanas de gestação.
+E) a vacina dTpa deve ser administrada preferencialmente entre a 20ª e 24ª semana, a cada gestação.
+G: B
+C: O intervalo mínimo entre a primeira e a segunda dose da vacina hepatite B é de 2 meses. Caso a gestante tenha recebido 3 ou mais doses das vacinas tetravalente, DTP, dTpa, dT, aplicar uma dose de reforço, com a vacina dTpa. Gestante não pode receber a vacina SCR. Apenas puerperas. A vacina dTpa deve ser administrada preferencialmente entre a 20ª e 36ª semana, a cada gestação.
+
+Q: No atendimento à gestante, o enfermeiro deve ficar atento ao calendário nacional de vacinação para conduzir o cuidado voltado à prevenção de doenças.
+Sobre as vacinas indicadas à mulher grávida, é correto afirmar que
+A) a vacina hepatite B recombinante (HB) pode ser tomada a qualquer tempo no pré-natal.
+B) a vacina difteria e tétano (dT) está contraindicada a partir do segundo trimestre de gestação.
+C) a vacina difteria, tétano, pertussis (dTpa - acelular) não pode ser tomada no período do puerpério.
+D) a vacina hepatite B recombinante (HB) somente pode ser administrada na gestação para complemento de esquema iniciado antes da mulher engravidar.
+E) a vacina difteria, tétano, pertussis (dTpa - acelular) somente pode ser administrada até a 19ª semana de gravidez.
+G: A
+C: Sobre hepatite: Para gestantes em qualquer idade gestacional e faixa etária: administrar 3 (três) doses da vacina hepatite B, considerando o histórico de vacinação anterior e os intervalos preconizados entre as doses. Caso não seja possível completar o esquema durante a gestação, deverá concluir após o parto oportunamente. 
+Sobre dt: Em gestantes, - com o objetivo de promover a imunização passiva (transferência placentária de anticorpos da mãe para o feto) do récem-nascido contra o tétano neonatal, que pode ocorrer nos primeiros 28 dias -, a vacina difteria e tétano (dT) pode ser administrada a partir da comprovação da gravidez, em qualquer período gestacional, considerando o histórico vacinal para difteria e tétano (03 doses de vacias contendo os toxoides diftérico tetânico). Completar o esquema vacinal, preferencialmente, antes da data provável do parto. Verificar o período da gestação e a indicação da vacina dTpa a partir da 20ª (vigésima semana de gestação), considerando que toda gestante deve receber pelo menos 1 (uma) dose de dTpa durante o período gestacional, a cada gestação, para imunização passiva do lactente contra a coqueluche, nos primeiros meses de vida, até que o esquema primário deste possa ser iniciado com a vacina penta (aos 2, 4 e 6 meses). Se não aplicada, oportunamente, durante o período gestacional, a vacina dTpa deve ser administrada no puerpério (até 45 dias pós-parto).
+
+Q: São vacinas que compõem o calendário nacional para gestante, EXCETO:
+A) dupla adulto
+B) Hepatite B
+C) vacina dTpa
+D) febre amarela.
+G: D
+C: VÍRUS VIVO (ATENUADO : enfraquecido ) : VÍRUS VIVO representa uma ameaça para pessoas imunossuprimidas e gestantes .
+GESTANTE : maior risco de apresentar efeitos colaterais graves da vacina :
+Há, por exemplo, uma maior possibilidade de aborto, assim como um pequeno risco de passar a enfermidade para o bebê na fase final da gestação ou nos primeiros dias de vida .
+
+Q: A gestante não deve tomar nenhuma vacina sem o conhecimento médico. A maioria das vacinas é contraindicada à gestante, por conterem vírus ativos em sua constituição, o que não é aconselhável para o desenvolvimento do feto. Sobre o esquema de vacinação da gestante, assinalar a alternativa CORRETA.
+A) A vacina para rubéola deve ser tomada obrigatoriamente durante a gravidez.
+B) A vacina contra influenza pode ser tomada em qualquer fase da gestação, em uma dose única.
+C) A vacina contra hepatite não pode ser aplicada em gestantes em hipótese alguma.
+D) A vacina de HPV é obrigatória, pois é composta por vírus atenuado.
+G: B
+C: A vacina para rubéola não deve ser aplicada durante a gravidez, pois é uma vacina de vírus vivo atenuado, o que pode representar risco para o feto.
+
+Q: A vacina para gestantes é essencial para prevenir doenças para a gestante e para o bebê. “Vacina indicada para prevenir difteria, tétano e coqueluche, ministrada uma dose a cada gestação a partir da 20ª semana de gestação ou no puerpério.” A afirmativa se refere a:
+A) dTpa.
+B) Dupla Adulto (dT).
+C) Pneumocócica 23 Valente.
+D) Vacina Inativada Poliomielite.
+G: A
+C: .
+
+Q: De acordo com o Calendário Nacional de Vacinação da Gestante, a vacina difteria e tétano dT é realizada em um esquema de 3 doses, de acordo com o histórico vacinal, sendo recomendado um intervalo entre as doses de ______ ou, no mínimo, de ________________. O reforço deve ser feito a cada 10 anos ou, em situações de ferimentos graves, 5 anos.
+Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima. 
+A) 30 dias – 4 meses após a primeira dose
+B) 30 dias – 6 meses após a primeira dose 
+C) 60 dias – 30 dias
+D) 120 dias – 30 dias
+E) 180 dias – 60 dias 
+G: C
+C: .
+
+Q: O Pré-natal é um acompanhamento de saúde multiprofissional que a gestante recebe durante a gravidez. Para direcionar as ações voltadas para esse público, o Ministério da Saúde disponibilizou o Carderno de Atenção ao Pré-natal de baixo risco, que descreve ações que devem ser realizadas durante um Pré-natal de baixo risco de qualidade na Atenção Básica. Sobre as consultas de pré-natal, é correto afirmar:
+A) O mínimo de consultas de Pré-natal estipuladas pelo Ministério da Saúde é de 6 consultas. Dessas, 4 consultas com acompanhamento pelo enfermeiro e 2 pelo médico.
+B) As consultas de Pré-natal devem ser iniciadas no primeiro trimestre de gravidez e podem ser realizadas na unidade de saúde ou durante visitas domiciliares.
+C) As consultas de Pré-natal devem ocorrer mensalmente até a 30º semana.
+D) A partir da 30ª semana de gestação, as consultas de Pré-natal devem ocorrer quinzenalmente.
+G: B
+C: O mínimo de consultas de Pré-natal estipuladas pelo Ministério da Saúde é de 6 consultas, intercaladas entre Enfermeiro e Médico.
+As consultas de Pré-natal devem ocorrer mensalmente até a 28º semana.
+A partir da 28ª semana de gestação, as consultas de Pré-natal devem ocorrer quinzenalmente e semanalmente após 36 semanas.
+
+Q: As gestantes têm direito a consulta e exames pelo Sistema Único de Saúde (SUS) durante o pré-natal, sendo elas realizadas tanto por médicos(as) quanto por enfermeiros (as). A cada consulta o profissional deverá indagar a gestante, de como ela está se sentido e ouvir suas dúvidas. Em relação aos procedimentos efetuados na consulta do pré-natal, assinale a alternativa correta.
+A) Prescrever ácido fólico, sulfato ferroso e tratamentos, quando houver necessidade.
+B) Solicitar o exame de ultrassonografia em todas as consultas.
+C) Prescrever o exame de mamografia para a prevenção do câncer de mama durante a gravidez.
+D) No caso de inchaço nas pernas efetuar a prescrição de meias de compressão de acordo com as medidas da perna.
+G: A
+C: .
+
+Q: Na assistência pré-natal, recomenda-se a investigação da presença de anticorpos contra o fator Rh no sangue da gestante, assim como o conhecimento acerca do Rh do pai, de modo a identificar e intervir precocemente em casos nos quais há risco de doença hemolítica neonatal. A análise laboratorial que traz esse achado chama-se:
+A) coombs indireto
+B) teste de FTA-ABS
+C) hemograma completo
+D) IgG e IgM para citomegalovírus
+G: A
+C: "Detecte a mulher com risco de desenvolver isoimunização maternofetal, pela solicitação da tipagem sanguínea com definição do fator Rh. Caso se identifique fator Rh negativo, deve-se pesquisar a presença do anticorpo anti-D, por meio do teste de Coombs indireto"
+
+Q: A estratificação de risco gestacional tem como o objetivo principal a vigilância contínua sobre o desenvolvimento da gestação, identificando precocemente fatores de risco relacionados às características individuais de cada gestante. Neste contexto, são considerados fatores de risco intermediários, EXCETO: 
+A) idade menor que 15 anos ou maior que 35 anos. 
+B) situação conjugal insegura. 
+C) baixa escolaridade (<5 anos de estudo). 
+D) diabetes mellitus 1 e 2. 
+G: D
+C: É de alto risco.
+
+Q: A estratificação de risco gestacional cumpre, antes de tudo, o objetivo de vigilância contínua sobre o desenvolvimento da gestação, identificando precocemente fatores de risco relacionados às características individuais da gestante, morbidades crônicas e agudas presentes, história reprodutiva e contexto familiar e comunitário, e direcionando as intervenções preventivas ou de cuidado necessárias para a proteção da mulher e da criança. A estratificação de risco gestacional é definida a partir de diferentes níveis de fatores de risco. Conforme o Ministério da Saúde, são fatores de risco intermediário, EXCETO:
+A) Tabagismo ativo ou passivo.
+B) Idade menor que 15 anos ou maior que 35 anos.
+C) Cirurgia bariátrica.
+D) Uso de medicamentos teratogênicos.
+E) Altura menor que 1,45 m.
+G: C
+C: Tabagismo ativo ou passivo: O tabagismo durante a gravidez está associado a diversos problemas, como baixo peso ao nascer, parto prematuro e morte súbita do lactente.
+Idade menor que 15 anos ou maior que 35 anos: A gravidez na adolescência e na idade avançada aumenta o risco de complicações, como pré-eclâmpsia, parto prematuro e baixo peso ao nascer.
+Uso de medicamentos teratogênicos: Alguns medicamentos podem causar malformações no feto, por isso é importante que a gestante informe o médico sobre todos os medicamentos que está usando.
+Altura menor que 1,45 m: A baixa estatura pode estar associada a complicações na gestação, como descolamento prematuro de placenta e parto prematuro.
+
+Q: A gestação é um fenômeno fisiológico e deve ser vista pelas gestantes e equipes de saúde como parte de uma experiência de vida saudável. Com o objetivo de reduzir a morbimortalidade materno-infantil e ampliar o acesso com qualidade, é necessário que se identifiquem os fatores de risco gestacional. São fatores que indicam o encaminhamento da gestante para o pré-natal de alto risco 
+A) cardiopatias e nefropatias graves.
+B) infecção urinária e anemia.
+C) síndromes hemorrágicas e suspeita de pré-eclâmpsia.
+D) situação familiar insegura e não aceitação da gravidez.
+G: A
+C: Síndromes hemorrágicas e suspeita de pré-eclâmpsia são sinais indicativos de encaminhamento à urgência /emergência obstétrica.
+
+Q: Algumas gestantes podem apresentar maior probabilidade para uma evolução desfavorável durante a gravidez. Dessa forma, é importante identificar os fatores de risco gestacional o mais precocemente possível. Considerando esses aspectos, marque V para as afirmativas verdadeiras e F para as falsas.
+( ) Toda gestante que apresenta algum fator de risco na sua classificação deve ser referenciada para acompanhamento de pré-natal de alto risco.
+( ) Idade menor de 18 anos classifica a mulher como gestante de risco e deve ser referenciada para o serviço especializado de pré-natal.
+( ) A gestante que apresenta distúrbio psiquiátrico e que necessita de acompanhamento, como as psicoses, por exemplo, deve ser encaminhada para o acompanhamento pré-natal de alto risco.
+( ) Desde que não apresente outros fatores que podem indicar encaminhamento ao pré-natal de alto risco, a gestante com história de três ou mais cesarianas pode ser acompanhada na atenção básica.
+A sequência está correta em
+A) V, V, V, F.
+B) V, V, F, F.
+C) F, F, V, V.
+D) F, F, F, V. 
+G: C
+C: Idade menor do que 15 e maior do que 35 anos. Nem todo fator de risco resulta em classificação de alto risco.
+
+Q: São exames que devem ser solicitados na primeira consulta ou primeiro trimestre no pré-natal de baixo risco:
+I. Hemograma e tipagem sanguínea e fator Rh.
+II. Anti-HIV, toxoplasmose IgM e IgG.
+III. Sorologia para hepatite B.
+IV. Glicemia de jejum.
+São CORRETAS:
+A) apenas uma afirmativa está correta.
+B) duas afirmativas estão corretas.
+C) três afirmativas estão corretas.
+D) todas afirmativas estão corretas.
+G: D
+C: Devem ser solicitados na primeira consulta os seguintes exames complementares:
+Hemograma;
+Tipagem sanguínea e fator Rh;
+Coombs indireto (se for Rh negativo);
+Glicemia de jejum;
+Teste rápido de triagem para sífilis e/ou VDRL/RPR;
+Teste rápido diagnóstico anti-HIV;
+Anti-HIV;
+Toxoplasmose IgM e IgG;
+Sorologia para hepatite B (HbsAg);
+Exame de urina e urocultura;
+Ultrassonografia obstétrica (não é obrigatório), com a função de verificar a idade gestacional;
+Citopatológico de colo de útero (se necessário);
+Exame da secreção vaginal (se houver indicação clínica);
+Parasitológico de fezes (se houver indicação clínica);
+Eletroforese de hemoglobina (se a gestante for negra, tiver antecedentes familiares de
+anemia falciforme ou apresentar história de anemia crônica)
+
+Q: No planejamento da assistência ao pré-natal de baixo risco, um dos exames fundamentais preconizados pelo Ministério da Saúde, a ser solicitado na rotina do terceiro trimestre da gestação é o(a)
+A) hemograma
+B) tipagem sanguínea
+C) translucência nucal
+D) pelvimetria por radiografia
+E) ressonância nuclear magnética fetal
+G: A
+C: Terceiro trimestre:
+Hemograma
+Glicemia em jejum
+Coombs indireto (se for Rh negativo)
+VDRL
+Anti-HIV
+Sorologia para hepatite B (HbsAg)
+Repita o exame de toxoplasmose se o IgG não for reagente
+Urocultura + urina tipo I (sumário de urina – SU)
+Bacterioscopia de secreção vaginal (a partir de 37 semanas de gestação)
+
+Q: Assinale a opção que indica o exame de rotina que deve ser solicitado no segundo trimestre de gestação em um pré-natal de baixo risco.
+A) Hemograma.
+B) Toxoplasmose IgM e IgG.
+C) Tipagem sanguínea e fator Rh.
+D) Exame da secreção vaginal, se houver indicação clínica.
+E) Teste de tolerância para glicose com 75g, se houver fator de risco materno.
+G: E
+C: Segundo trimestre:
+- Teste de tolerância para glicose com 75g, se a glicemia estiver 
+acima de 85mg/dl ou se houver fator de risco (realize este exame 
+preferencialmente entre a 24ª e a 28ª semana)
+- Coombs indireto (se for Rh negativo
+
+Q: São considerados sinais de presunção da gravidez:
+A) Amolecimento da cérvice uterina, com posterior aumento do seu volume.
+B) Paredes vaginais aumentadas, com aumento da vascularização
+C) Positividade da fração beta do HCG no soro materno a partir do oitavo ou nono dia após a fertilização.
+D) Percepção dos movimentos fetais.
+E) Atraso menstrual, náuseas, vômitos, tontura, salivação excessiva, aumento da frequência urinária.
+G: E
+C: Sinais de presunção de gravidez:
+- Atraso menstrual;
+- Manifestações clínicas (náuseas, vômitos, tonturas, salivação excessiva, mudança de apetite, 
+aumento da frequência urinária e sonolência);
+- Modificações anatômicas (aumento do volume das mamas, hipersensibilidade nos mamilos, 
+tubérculos de Montgomery, saída de colostro pelo mamilo, coloração violácea vulvar, 
+cianose vaginal e cervical, aumento do volume abdominal)
+
+Q: O diagnóstico da gravidez pode ser efetuado em 90% das pacientes por intermédio dos sinais clínicos, dos sintomas e do exame físico em gestações mais avançadas. Assinale a alternativa correta:
+I - Sinais de presunção de gravidez: Amolecimento da cérvice uterina, com posterior aumento do seu volume; Paredes vaginais aumentadas, com aumento da vascularização (pode-se observar pulsação da artéria vaginal nos fundos de sacos laterais); Positividade da fração beta do HCG no soro materno a partir do oitavo ou nono dia após a fertilização.
+II - Sinais de probabilidade: Atraso menstrual; Manifestações clínicas (náuseas, vômitos, tonturas, salivação excessiva, mudança de apetite, aumento da frequência urinária e sonolência); Modificações anatômicas (aumento do volume das mamas, hipersensibilidade nos mamilos, tubérculos de Montgomery, saída de colostro pelo mamilo, coloração violácea vulvar, cianose vaginal e cervical, aumento do volume abdominal).
+III - Sinais de certeza: Presença dos batimentos cardíacos fetais (BCF), que são detectados pelo sonar a partir de 12 semanas e pelo Pinard, a partir de 20 semanas; Percepção dos movimentos fetais (de 18 a 20 semanas); Ultrassonografia: o saco gestacional pode ser observado por via transvaginal com apenas 4 a 5 semanas gestacionais e a atividade cardíaca é a primeira manifestação do embrião com 6 semanas gestacionais.
+A) Somente a afirmativa III está correta
+B) Estão corretas as afirmativas I e III
+C) Somente a afirmativa I está correta
+D) Somente a afirmativa II está correta
+E) Estão corretas as afirmativas II e III
+G: A
+C: Item I e II estão trocados.
+
+Q: Leia o fragmento a seguir.
+Os batimentos cardíacos fetais são detectados pelo sonar a partir de _____ de gestação e pelo Pinard a partir de _____, considerando-se normal a frequência cardíaca fetal entre _____.
+Assinale a opção cujos termos completam corretamente as lacunas do fragmento acima.
+A) 8 semanas – 15 semanas – 90 a 120 bpm.
+B) 9 semanas – 18 semanas – 100 a 140 bpm.
+C) 10 semanas – 22 semanas – 140 a 170 bpm.
+D) 12 semanas – 20 semanas – 120 a 160 bpm.  
+E) 15 semanas – 24 semanas – 130 a 180 bpm. 
+G: D
+C: Conforme o manual técnico de Pré Natal e Puerperio de 2006 - ausculta dos batimentos cardíacos fetais (com sonar, após 12 semanas, e com estetoscópio de Pinard, após 20 semanas);
+É considerada normal a freqüência cardíaca fetal entre 120 e 160 batimentos por minuto.
+Mas em 2018 houve uma mudança de parametros de BCF de 110 a 160, conforme o manual do boas praticas, mas creio que ainda não houve a mudança no protocolo do Ministerio da Saude.
+
+Q: A Síndrome Hipertensiva Gestacional é uma importante complicação da gestação, estando entre as principais causas de morbimortalidade materna e fetal em especial em países em desenvolvimento. Dados do Ministério da Saúde mostram a hipertensão na gestação como a maior causa de morte materna no país, sendo responsável por cerca de 35% dos óbitos. Sobre síndrome hipertensiva gestacional, assinale a alternativa CORRETA.
+A) Hipertensão arterial crônica na gestante é aquela observada antes da gravidez, ou antes de 10 semanas de gestação, ou diagnosticada pela primeira vez durante a gravidez e se resolve até 12 semanas após o parto.
+B) A pré eclampsia é quando a hipertensão ocorre após 26 semanas de gestação (ou antes, em casos de doença trofoblástica gestacional ou hidrópsia fetal) acompanhada ou não de proteinúria, com desaparecimento até 12 semanas pós-parto.
+C) A eclâmpsia caracteriza-se pela presença de convulsões tônico-clônicas generalizadas ou coma em mulher com qualquer quadro hipertensivo, não causadas por epilepsia ou qualquer outra doença convulsiva. Pode ocorrer na gravidez, no parto e no puerpério imediato.
+D) As gestantes com diagnóstico de pré-eclâmpsia grave deverão ser internadas, solicitados os exames de rotina e avaliadas as condições maternas e fetais. A interrupção de gestação deve ser realizada em qualquer idade gestacional, uma vez que a mãe corre risco de morte.
+G: C
+C: Hipertensão arterial sistêmica crônica: é definida por hipertensão registrada antes da gestação, no período que precede à 20ª semana de gravidez OU além de 12 (doze) semanas após o parto. Pré-eclâmpsia: caracterizada pelo aparecimento de HAS e proteinúria (> 300 mg/24h) após a 20ª semana de gestação em mulheres previamente normotensas; Paciente com suspeita de pré-eclâmpsia grave:
+• Deve-se referir imediatamente a gestante ao pré-natal de alto risco e/ou à unidade de referência hospitalar.
+
+Q: Segundo o Ministério da Saúde (2012), pode-se utilizar a altura uterina e o toque vaginal quando a data e o período da última menstruação da gestante são desconhecidos. Considerando essa possibilidade,
+A) até a 12ª semana, não ocorre alteração do tamanho uterino, embora haja volume aumentado.
+B) na 20ª semana, o fundo do útero encontra-se na altura da cicatriz umbilical.
+C) na 16ª semana, o útero enche a pelve, de modo que é palpável na sínfise púbica.
+D) a partir da 8ª semana, existe relação direta entre as semanas da gestação e a medida da altura.
+G: B
+C: Dados:
+- Até a sexta semana, não ocorre alteração do tamanho uterino;
+– Na oitava semana, o útero corresponde ao dobro do tamanho normal;
+– Na décima semana, o útero corresponde a três vezes o tamanho habitual;
+– Na 12ª semana, enche a pelve de modo que é palpável na sínfise púbica;
+– Na 16ª semana, o fundo uterino encontra-se entre a sínfise púbica e a cicatriz umbilical;
+– Na 20ª SEMANA, o fundo do útero encontra-se na altura da CICATRIZ UMBILICAL;
+– A partir da 20ª semana, existe relação direta entre as semanas da gestação e a medida da altura uterina. Porém, esse parâmetro torna-se menos fiel a partir da 30ª semana de idade gestacional.
+
+Q: Após confirmação da gravidez, dá-se o início ao acompanhamento da gestante. Um aspecto importante a ser identificado, durante consulta pré-natal, é a Idade Gestacional (IG). Analise as assertivas a seguir sobre os métodos para cálculo da IG:
+I. Para o cálculo da IG, pode-se utilizar o calendário, quando a data da última menstruação é conhecida, somando o número de dias do intervalo entre a data da última menstruação e a data da consulta, dividindo o total por sete.
+II. Se a data da última menstruação é desconhecida, mas se conhece o período do mês em que ela ocorreu, início, meio ou final do mês, pode-se considerar como data da última menstruação os dias 5, 15 ou 25, respectivamente.
+III. A medida da altura uterina é a melhor forma de calcular a IG por ser precisa e de baixo custo.
+IV. A partir de 20 semanas de gestação, existe uma relação aproximada entre as semanas de gestação e a medida da altura uterina, porém esse parâmetro torna-se menos fiel à medida que se aproxima o termo.
+Quais estão corretas?
+A) Apenas I e III.
+B) Apenas II e IV.
+C) Apenas I, II e IV.
+D) Apenas II, III e IV.
+E) I, II, III e IV.
+G: C
+C: CORREÇÃO III - A medida da altura uterina pode ser utilizada como parâmetro para calcular a idade gestacional, mas NÃO é fidedigna é menos fiel a partir da 30ª semana de idade gestacional.
+
+Q: O exame anti-HIV deve ser solicitado no primeiro e segundo trimestre.
+G: F
+C: No primeiro e terceiro trimestre.
+
+Q: Caso no teste de tipagem sanguínea o resultado seja "Rh negativo e parceiro Rh positivo ou fator Rh desconhecido", deve-se solicitar o exame de Coombs indireto:
+- Se for negativo, deve-se repeti-lo a cada 4 semanas, a partir da 24ª semana.
+- Quando for positivo, deve-se referir a gestante ao pré-natal de baixo risco.
+G: F
+C: Quando for positivo, deve-se referir a gestante ao pré-natal de alto risco.
+
+Q: Se no teste de glicemia em jejum o resultado for "85 – 119mg/dl", deve realizar TTG de 24 a 28 semanas de gestação. Se o resultado for maior que 110mg/dl, deve-se repetir o exame de glicemia em jejum e se ainda persistir como maior que 110mg/dl, o diagnóstico será de Diabetes Mellitus gestacional.
+G: V
+
+Q: Na primeira consulta deve-se prescrever suplementação de sulfato ferroso (40mg de ferro elementar/dia) e ácido fólico (5mg/dia) para profilaxia da anemia.
+G: V
+
+Q: É recomendado a vacina contra hepatite B para gestantes após o primeiro trimestre de gestação, sendo o esquema:
+- Três doses com intervalo de 90 dias entre a primeira e a segunda e de 180 dias entre a primeira e a terceira.
+G: F
+C: Três doses com intervalo de 30 dias entre a primeira e a segunda e de 180 dias entre a primeira e a terceira.
+
+Q: Estudos clínicos randomizados demonstram que a conduta de induzir o trabalho de parto em todas as gestantes com 41 semanas de gravidez é preferível à avaliação seriada do bem-estar fetal, pois se observou menor risco de morte neonatal e perinatal e menor chance de cesariana no grupo submetido à indução do parto com 41 semanas.
+G: V
+
+Q: O acompanhamento da mulher no ciclo grávido-puerperal deve ser iniciado o mais precocemente possível e só se encerra após o 42º dia de puerpério, período em que a consulta de puerpério deverá ter sido realizada.
+G: V
+
+Q: A hipertensão arterial sistêmica (HAS) na gestação é classificada nas seguintes categorias principais:
+I - Pré-eclâmpsia: caracterizada pelo aparecimento de HAS e proteinúria (> 300 mg/24h) após a 20ª semana de gestação em mulheres previamente normotensas.
+II - Eclâmpsia: corresponde à pré-eclâmpsia complicada por convulsões que não podem ser atribuídas a outras causas.
+III - Pré-eclâmpsia superposta à HAS crônica: definida pela elevação aguda da PA, à qual se agregam proteinúria, trombocitopenia ou anormalidades da função hepática, em gestantes portadoras de HAS crônica com idade gestacional superior a 20 semanas.
+IV - Hipertensão arterial sistêmica crônica: caracterizada por HAS detectada após a 20ª semana, sem proteinúria, podendo ser definida como “transitória” (quando ocorre normalização após o parto) ou “crônica” (quando persistir a hipertensão).
+V - Hipertensão gestacional: É definida por hipertensão registrada antes da gestação, no período que precede à 20ª semana de gravidez ou além de doze semanas após o parto
+G: F
+C: A definição de hipertensão arterial sistêmica crônica (Item IV) está trocada com a de hipertensão gestacional (Item V). Os demais itens estão corretos.

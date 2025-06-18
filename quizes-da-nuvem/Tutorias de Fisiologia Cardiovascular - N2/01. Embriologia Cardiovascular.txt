@@ -1,0 +1,172 @@
+Q: Qual estrutura é incorporada à parede do átrio direito, formando a região lisa chamada de sinus venarum?
+A) Átrio primitivo  
+B) Veia pulmonar primitiva  
+C) Corno direito do seio venoso  
+D) Tronco arterial  
+G: C
+C: Durante o desenvolvimento cardíaco, o seio venoso se comunica com o átrio primitivo. Com a reorganização do retorno venoso, o corno direito do seio venoso dilata-se progressivamente e é incorporado à parede do átrio direito. Essa incorporação dá origem à porção lisa da parede interna do átrio direito, chamada sinus venarum. Em contraste, a porção trabeculada do átrio direito deriva do próprio átrio primitivo.
+
+Q: Sobre a origem do ducto venoso, é correto afirmar que ele:
+A) Se desenvolve diretamente a partir das veias umbilicais esquerda e direita.  
+B) Surge para desviar o sangue da placenta diretamente para o coração, evitando o fígado.  
+C) Conecta a veia pulmonar à veia cava superior.  
+D) Desaparece na 7ª semana de desenvolvimento embrionário.  
+G: B
+C: O ducto venoso forma-se como uma estrutura funcional essencial no período fetal. Ele permite que a maior parte do sangue rico em oxigênio proveniente da veia umbilical esquerda bypass o fígado em desenvolvimento e vá direto à veia cava inferior, otimizando a entrega de oxigênio ao coração e ao cérebro do embrião. Essa adaptação hemodinâmica fetal é vital enquanto o sistema hepático ainda está em desenvolvimento.
+
+Q: As cristas bulbares e truncais se formam majoritariamente a partir de qual origem embrionária?
+A) Mesoderma esplâncnico  
+B) Epiblasto  
+C) Crista neural  
+D) Mesoderma somático  
+G: C
+C: As cristas bulbares e truncais são elevações de mesênquima nas paredes internas do bulbo cardíaco e do tronco arterial, e elas desempenham papel fundamental na formação do septo aorticopulmonar, que separa a aorta do tronco pulmonar. Essas cristas são formadas principalmente por células da crista neural, que migram através dos arcos faríngeos até o coração. Alterações nesse processo estão associadas a malformações congênitas do coração, como a transposição das grandes artérias.
+
+Q: Sobre as artérias do arco faríngeo, marque a alternativa INCORRETA:
+A) O quarto arco à direita contribui para a artéria subclávia direita.  
+B) A artéria subclávia esquerda origina-se da sétima artéria intersegmentar esquerda.  
+C) A parte distal da sexta artéria esquerda forma o ducto arterioso.  
+D) O quinto par de artérias do arco faríngeo dá origem às artérias vertebrais.  
+G: D
+C: O quinto par de artérias do arco faríngeo geralmente não se desenvolve ou forma vasos rudimentares que logo desaparecem, sem deixar estruturas derivadas significativas. Por outro lado, as artérias vertebrais derivam das artérias intersegmentares cervicais, que se fundem longitudinalmente para formar esses vasos. Assim, essa alternativa está incorreta por atribuir uma origem incorreta às artérias vertebrais.
+
+Q: O coração começa a bater entre o 22º e o 23º dia de desenvolvimento embrionário.
+G: V
+C: O coração é o primeiro órgão funcional do embrião. Por volta do 22º ou 23º dia de desenvolvimento, o coração tubular começa a apresentar contrações miogênicas espontâneas, essenciais para iniciar a circulação sanguínea, mesmo antes da formação completa de câmaras ou válvulas.
+
+Q: O ducto arterioso conecta o átrio direito ao átrio esquerdo no período pré-natal.
+G: F
+C: Essa descrição corresponde ao forame oval, e não ao ducto arterioso. O ducto arterioso conecta o tronco pulmonar à aorta descendente, desviando o sangue dos pulmões (ainda não funcionais) para a circulação sistêmica. Já o forame oval permite que o sangue passe diretamente do átrio direito ao esquerdo.
+
+Q: A crista terminal separa internamente a parte lisa da parte trabeculada do átrio direito.
+G: V
+C: A crista terminal é uma estrutura anatômica interna do átrio direito, que separa a região lisa (derivada do seio venoso) da região trabeculada (derivada do átrio primitivo). Essa delimitação é observada tanto na anatomia interna quanto externamente, onde se nota o sulco terminal.
+
+Q: As veias vitelinas drenam sangue rico em oxigênio da vesícula umbilical para o coração.
+G: F
+C: As veias vitelinas transportam sangue pobre em oxigênio da vesícula umbilical (estrutura relacionada à nutrição embrionária inicial). Em contraste, as veias umbilicais são responsáveis por levar sangue oxigenado da placenta até o embrião.
+
+Q: As valvas semilunares se desenvolvem a partir de tumefações de tecido subendocárdico.
+G: V
+C: As valvas aórtica e pulmonar surgem a partir de três tumefações simétricas de tecido subendocárdico em torno das aberturas do tronco arterial. Essas estruturas são posteriormente escavadas e remodeladas, formando as valvas semilunares. As células da crista neural também contribuem para essa formação.
+
+Q: O septo interventricular é formado apenas pelo crescimento da parte muscular do miocárdio.
+G: F
+C: A parte muscular do septo interventricular se desenvolve a partir do miocárdio em crescimento, porém a parte membranácea — essencial para o fechamento do forame interventricular — deriva da fusão de cristas bulbares, coxins endocárdicos e células da crista neural. A participação dessas estruturas é crucial para o correto isolamento das cavidades ventriculares.
+
+Q: Explique a função do forame oval durante o desenvolvimento embrionário.
+GABARITO: O forame oval atua como um importante shunt fetal, permitindo que o sangue rico em oxigênio, vindo da veia cava inferior, passe do átrio direito diretamente para o átrio esquerdo. Isso permite que o sangue oxigenado chegue rapidamente à circulação sistêmica, especialmente ao cérebro, evitando os pulmões, que ainda não estão funcionais.
+
+Q: Quais estruturas derivam das artérias vitelinas no adulto e que regiões elas suprem?
+GABARITO: As artérias vitelinas originam três ramos ventrais não pareados da aorta no adulto:  
+- Tronco celíaco, que irriga o intestino anterior  
+- Artéria mesentérica superior, que irriga o intestino médio  
+- Artéria mesentérica inferior, que irriga o intestino posterior  
+Essas artérias suprem o sistema digestório e suas glândulas anexas em suas respectivas porções.
+
+Q: Durante a circulação fetal, a maior parte do sangue rico em oxigênio vindo da veia umbilical:
+A) Passa pelo fígado e é direcionada à veia cava superior.
+B) Vai diretamente para o átrio esquerdo pelas veias hepáticas.
+C) Atravessa o ducto arterioso e alcança o átrio esquerdo.
+D) Passa pelo ducto venoso para alcançar a veia cava inferior.
+E) Entra diretamente nos pulmões por meio das artérias pulmonares.
+G: D
+C: Durante a circulação fetal, cerca de metade do sangue oxigenado da veia umbilical bypassa o fígado através do ducto venoso, chegando à veia cava inferior, que então leva esse sangue ao átrio direito. A outra metade entra nos sinusoides hepáticos. Essa adaptação permite que o sangue ricamente oxigenado alcance rapidamente o cérebro e o coração.
+
+Q: Em relação ao fechamento do ducto arterioso após o nascimento, assinale a alternativa CORRETA:
+A) O fechamento funcional é completado até o terceiro mês de vida.
+B) A parede do ducto arterioso relaxa com o aumento da PO₂.
+C) A prostaglandina E₂ promove constrição do ducto.
+D) A bradicinina contribui para a contração da musculatura lisa do ducto.
+E) O fechamento funcional depende unicamente da maturidade cardíaca.
+G: D
+C: A bradicinina é liberada pelos pulmões ao se expandirem e tem ação vasoconstritora sobre a musculatura lisa do ducto arterioso. Esse efeito, aliado ao aumento da oxigenação, favorece o fechamento funcional do ducto nas primeiras 24 a 96 horas após o nascimento. A prostaglandina E₂, ao contrário, mantém o ducto aberto durante a vida fetal. 
+
+Q: Com relação às transformações pós-natais das estruturas fetais, assinale a associação correta:
+A) Veia umbilical → Ligamento venoso
+B) Ducto arterioso → Ligamento redondo do fígado
+C) Ducto venoso → Ligamento arterial
+D) Forame oval → Ligamento umbilical medial
+E) Artérias umbilicais → Artérias vesicais superiores (parte proximal)
+G: E
+C: As partes proximais das artérias umbilicais persistem no recém-nascido como as artérias vesicais superiores, que irrigam a bexiga urinária. Já as partes distais se transformam nos ligamentos umbilicais mediais. Correção das demais alternativas:
+- Ducto arterioso → torna-se o ligamento arterial, que liga a artéria pulmonar ao arco da aorta.
+- Ducto venoso → torna-se o ligamento venoso, que conecta o ramo esquerdo da veia porta à veia cava inferior, passando pelo fígado.
+- Veia umbilical → torna-se o ligamento redondo do fígado, que vai do umbigo até o hilo hepático.
+- Forame oval → fecha-se e forma a fossa oval, uma depressão no septo interatrial.
+
+Q: A veia umbilical é o principal vaso responsável por retirar sangue do recém-nascido para a placenta após o nascimento.
+G: F
+C: Na verdade, são as artérias umbilicais que conduzem sangue pobre em oxigênio de volta à placenta. A veia umbilical traz sangue rico em oxigênio da placenta para o feto.
+
+Q: O forame oval permanece funcionalmente aberto até a puberdade em todos os indivíduos saudáveis.
+G: F
+C: Em recém-nascidos a termo, o forame oval fecha funcionalmente logo após o nascimento, devido ao aumento da pressão no átrio esquerdo. O fechamento anatômico ocorre por volta do terceiro mês de vida.
+
+Q: O ducto arterioso se mantém aberto no pós-natal devido à ação da prostaglandina E₂ e da hipoxia.
+G: F
+C: Essa afirmação está incorreta porque se refere à fase fetal. Após o nascimento, com o aumento da PO₂ e a ação da bradicinina, o ducto arterioso se fecha. Na vida fetal, sim, a prostaglandina E₂ e a hipoxia mantêm o ducto aberto.
+
+Q: A circulação pulmonar aumenta significativamente após o nascimento devido à redução da resistência vascular pulmonar.
+G: V
+C: Ao nascimento, com a expansão pulmonar e oxigenação, ocorre uma queda abrupta da resistência vascular pulmonar, permitindo maior fluxo sanguíneo aos pulmões, essencial para a troca gasosa. Esse é um marco fundamental da transição fetal–neonatal.
+
+Q: Explique por que a parede do ventrículo direito é mais espessa que a do esquerdo durante a vida fetal, e o que acontece após o nascimento.
+GABARITO: Durante a vida fetal, a resistência vascular pulmonar é alta, exigindo que o ventrículo direito bombeie sangue com mais força através do ducto arterioso para a aorta. Isso faz com que sua parede seja mais espessa. Após o nascimento, com a redução da resistência pulmonar, o ventrículo esquerdo passa a trabalhar mais, e sua parede se torna mais espessa do que a do ventrículo direito, que se atrofia gradualmente.
+
+Q: Descreva brevemente os seguintes derivados de estruturas fetais:
+A) O que a veia umbilical forma após o nascimento?
+B) O que o ducto venoso se torna após o nascimento?
+GABARITO: A) A veia umbilical transforma-se no ligamento redondo do fígado, que conecta o umbigo ao hilo hepático.
+B) O ducto venoso torna-se o ligamento venoso, que liga o ramo esquerdo da veia porta à veia cava inferior, passando pelo fígado.
+
+Q: O encurtamento do endoderma participa mecanicamente na fusão dos tubos cardíacos durante o desenvolvimento embrionário.
+G: V
+C: O encurtamento do endoderma tem papel mecânico importante no processo de formação do tubo cardíaco único, promovendo a fusão dos tubos cardíacos pareados conforme o embrião sofre dobramento lateral.
+
+Q: As veias cardinais posteriores persistem como principal sistema venoso do corpo adulto.
+G: F
+C: As veias cardinais posteriores estão relacionadas ao sistema venoso embrionário e desaparecem em grande parte, sendo substituídas pelas veias subcardinais e supracardinais. Seus remanescentes formam apenas partes específicas, como a raiz da veia ázigo e as veias ilíacas comuns.
+
+Q: As artérias intersegmentares do embrião originam as artérias ilíacas comuns a partir do quinto par lombar.
+G: V
+C: O quinto par de artérias intersegmentares lombares persiste como as artérias ilíacas comuns, enquanto os demais pares dão origem às artérias intercostais, lombares e sacrais.
+
+Q: O coração em desenvolvimento é inicialmente suspenso pela parede ventral do embrião através do mesocárdio ventral.
+G: F
+C: O mesocárdio que inicialmente suspende o coração é dorsal, e não ventral. Esse mesentério posteriormente degenera parcialmente, formando o seio pericárdico transverso entre os lados direito e esquerdo da cavidade pericárdica.
+
+Q: Qual das alternativas descreve corretamente uma contribuição do segundo campo cardíaco no desenvolvimento do coração?
+A) Formação da aurícula direita
+B) Desenvolvimento do seio coronário
+C) Formação do miocárdio do ventrículo esquerdo e da via de saída cardíaca
+D) Formação dos coxins endocárdicos
+G: C
+C: O segundo campo cardíaco, derivado do mesoderma faríngeo, contribui para o miocárdio do ventrículo esquerdo e para o polo anterior do tubo cardíaco, incluindo a via de saída. É essencial para o alongamento e crescimento do tubo cardíaco.
+
+Q: As veias subcardinais embrionárias contribuem diretamente para a formação de:
+A) Tronco da veia porta
+B) Veias pulmonares
+C) Veia cava superior
+D) Veias gonadais e suprarrenais
+G: D
+C: As veias subcardinais originam estruturas como as veias gonadais (testicular/ovariana), veias suprarrenais, o tronco da veia renal esquerda e parte da veia cava inferior, principalmente o segmento pré-renal.
+
+Q: Qual das opções está relacionada à origem e formação das artérias vitelinas?
+A) São ramos dorsais pareados da aorta que originam as artérias vertebrais
+B) São artérias que suprem a vesícula umbilical e contribuem para artérias do intestino primitivo
+C) Originam-se da alça do intestino médio e formam artérias do mesentério parietal
+G: B
+C: As artérias vitelinas são ramos ventrais e não pareados da aorta dorsal que inicialmente irrigam a vesícula umbilical e depois formam artérias que suprem o intestino primitivo, como o tronco celíaco, a artéria mesentérica superior e a mesentérica inferior.
+
+Q: Sobre o dobramento do coração primitivo:
+A) Explique o que é a alça bulboventricular.
+B) O que determina a orientação dessa alça e qual a consequência do seu padrão normal?
+GABARITO: A) A alça bulboventricular é a curvatura em forma de "U" que o tubo cardíaco primitivo sofre durante o processo de dobramento, entre os dias 23 e 28, deslocando o bulbo cardíaco e o ventrículo para uma posição anterior e inferior.
+B) A orientação correta da alça para a direita (dextro-looping) é determinada pela expressão de genes como Pitx2c e vias de sinalização como BMP, Notch e SHH. Esse padrão garante que o ápice do coração fique voltado para a esquerda, estabelecendo corretamente a morfologia cardíaca.
+
+Q: Sobre a formação do septo atrial:
+A) Descreva o papel do forame primário e como ele é substituído.
+B) Explique o mecanismo que permite o desvio de sangue entre os átrios durante a vida fetal.
+GABARITO: A) O forame primário é a abertura inicial entre o septum primum e os coxins endocárdicos, permitindo a passagem de sangue do átrio direito para o esquerdo. Ele é obliterado quando o septo primum se une aos coxins, mas antes disso, surgem perfurações apoptóticas no septo, que se fundem formando o forame secundário.
+B) O desvio de sangue ocorre pelo forame secundário no septum primum, que é parcialmente coberto pelo septum secundum. Essa sobreposição forma uma válvula funcional chamada forame oval, permitindo o fluxo da direita para a esquerda sem refluxo, essencial para a circulação fetal.

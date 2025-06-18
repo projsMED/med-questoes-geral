@@ -1,0 +1,188 @@
+Q: O que dá origem aos pulmões direito e esquerdo no embrião?
+A) Septo traqueoesofágico
+B) Bolsa amniótica
+C) Bolsas externas laterais do intestino anterior
+D) Cristas neurais
+G: C
+C: Os pulmões direito e esquerdo surgem inicialmente como bolsas externas laterais do intestino anterior, localizadas de cada lado do primórdio da traqueia.
+
+Q: O que separa o tubo laringotraqueal da faringe primitiva?
+A) Divertículo broncopulmonar
+B) Septo traqueoesofágico
+C) Canal laríngeo primitivo
+D) Pregas faríngeas
+G: B
+C: O septo traqueoesofágico é a estrutura que divide o intestino anterior em duas porções: a ventral (respiratória) e a dorsal (digestiva), separando o tubo laringotraqueal da faringe primitiva.
+
+Q: O tubo laringotraqueal dará origem a todas as estruturas a seguir, EXCETO:
+A) Laringe
+B) Traqueia
+C) Brônquios
+D) Esôfago
+G: D
+C: O esôfago se origina da parte dorsal do intestino anterior, enquanto o tubo laringotraqueal, da parte ventral, dá origem à laringe, traqueia e brônquios.
+
+Q: Em que semana o septo traqueoesofágico está formado?
+A) 3ª semana
+B) 4ª semana
+C) 5ª semana
+D) 6ª semana
+G: C
+C: O septo traqueoesofágico se forma ao final da 5ª semana do desenvolvimento embrionário, dividindo o intestino anterior em duas porções distintas.
+
+Q: Explique o papel do canal laríngeo primitivo durante o desenvolvimento embrionário do sistema respiratório.
+GABARITO: O canal laríngeo primitivo mantém a comunicação entre o tubo laringotraqueal e a faringe primitiva, permitindo o desenvolvimento contínuo das vias aéreas superiores até que ocorra sua separação final.
+<b>Resposta mais longa:</b>
+O tubo laringotraqueal é uma estrutura embrionária que se forma a partir da porção ventral do intestino anterior e dará origem à laringe, traqueia, brônquios e pulmões. Já a faringe primitiva é a parte superior do intestino anterior embrionário que dará origem às porções iniciais do trato respiratório e digestivo. O canal laríngeo primitivo representa uma abertura temporária que mantém a conexão entre essas duas estruturas enquanto o sistema respiratório se forma e se diferencia. Essa comunicação é essencial para a correta modelagem da laringe e das vias aéreas superiores antes da separação definitiva.
+
+Q: Descreva como ocorre a separação entre o tubo digestivo e o tubo respiratório no embrião.
+GABARITO: A separação ocorre por meio das pregas traqueoesofágicas, que se aproximam e se fundem formando o septo traqueoesofágico, dividindo o intestino anterior em uma porção ventral (respiratória) e outra dorsal (digestiva).
+
+Q: Qual é a importância das pregas traqueoesofágicas no desenvolvimento embrionário?
+GABARITO: As pregas traqueoesofágicas são essenciais para a formação do septo traqueoesofágico, que separa a traqueia do esôfago e garante o desenvolvimento independente das vias respiratórias e do trato digestivo.
+
+Q: Quais estruturas se originam da parte ventral do intestino anterior após a formação do septo traqueoesofágico?
+GABARITO: Da parte ventral do intestino anterior originam-se o tubo laringotraqueal, que posteriormente formará a laringe, a traqueia, os brônquios e os pulmões.
+
+Q: O divertículo laringotraqueal mantém-se permanentemente em comunicação com a faringe primitiva.
+G: F
+C: O divertículo laringotraqueal é uma estrutura embrionária formada como uma protrusão (evaginação) ventral do intestino anterior, que dará origem ao sistema respiratório inferior (laringe, traqueia, brônquios e pulmões). Inicialmente, esse divertículo mantém comunicação direta com a faringe primitiva, permitindo a continuidade entre o futuro sistema digestório e respiratório. No entanto, essa comunicação é apenas temporária e é interrompida com a formação do septo traqueoesofágico, que separa definitivamente a via respiratória (anterior/ventral) da via digestiva (posterior/dorsal).
+
+Q: A separação entre esôfago e traqueia envolve múltiplas vias de sinalização e fatores de transcrição.
+G: V
+C: Esse processo é complexo e coordenado por diversas vias moleculares e fatores de transcrição que regulam a diferenciação e separação das estruturas digestiva e respiratória.
+
+Q: Durante o desenvolvimento embrionário, o septo traqueoesofágico divide o intestino anterior em uma parte ventral, que dá origem ao(a) _________.
+A) esôfago
+B) traqueia
+C) intestino médio
+D) faringe primitiva
+G: B
+C: A parte ventral do intestino anterior origina o tubo laringotraqueal, que dará origem à traqueia.
+
+Q: As pregas traqueoesofágicas se fundem para formar o _________, que separa o intestino anterior em uma porção _________ (digestiva).
+A) canal laríngeo primitivo – ventral
+B) divertículo laringotraqueal – dorsal
+C) septo traqueoesofágico – dorsal
+D) tubo laringotraqueal – ventral
+G: C
+C: O septo traqueoesofágico separa o tubo respiratório (ventral) do tubo digestivo (dorsal).
+
+Q: O tubo laringotraqueal se mantém temporariamente em comunicação com a faringe primitiva através do _________ e posteriormente dá origem aos _________.
+A) canal laríngeo primitivo – rins
+B) canal laríngeo primitivo – pulmões
+C) septo traqueoesofágico – intestino grosso
+D) intestino médio – alvéolos
+G: B
+C: O canal laríngeo primitivo mantém a conexão entre tubo respiratório e faringe, e o tubo laringotraqueal origina os pulmões.
+
+QCH: Sobre o desenvolvimento embrionário do sistema respiratório, assinale todas as assertivas verdadeiras:
+A1: O septo traqueoesofágico é responsável por manter a comunicação entre a traqueia e o esôfago durante toda a vida fetal.
+G: F
+C: O septo traqueoesofágico tem justamente a função de separar a traqueia do esôfago, e não de manter comunicação entre eles.
+A2: Os pulmões se desenvolvem a partir de bolsas laterais que surgem do intestino anterior.
+G: V
+C: Os pulmões direito e esquerdo surgem como evaginações laterais (bolsas) do intestino anterior, ao lado do primórdio da traqueia.
+A3: O canal laríngeo primitivo é permanente e permite a passagem de ar direto da boca para os pulmões no feto.
+G: F
+C: O canal laríngeo primitivo é temporário e representa apenas uma fase do desenvolvimento embrionário. Ele não tem função de conduzir ar, pois a respiração pulmonar ainda não ocorre nessa fase.
+A4: A faringe primitiva origina o sistema respiratório inferior, incluindo brônquios e pulmões.
+G: F
+C: Quem origina essas estruturas é o tubo laringotraqueal, e não a faringe primitiva.
+A5: A formação do septo traqueoesofágico ocorre por volta da 5ª semana do desenvolvimento embrionário.
+G: V
+C: A formação do septo, que separa o tubo respiratório do digestivo, se completa ao final da 5ª semana.
+A6: Após o desenvolvimento do septo traqueoesofágico, o esôfago e a traqueia permanecem como um único canal até o nascimento.
+G: F
+C: O septo traqueoesofágico separa definitivamente as vias digestiva (esôfago) e respiratória (traqueia) no início da gestação.
+
+
+Q: O epitélio de revestimento da laringe origina-se de qual camada germinativa embrionária?
+A) Ectoderma
+B) Mesoderma
+C) Endoderma
+D) Ectomesênquima
+G: C
+C: O epitélio de revestimento da laringe se desenvolve a partir do endoderma da extremidade cranial do tubo laringotraqueal.
+
+Q: As cartilagens da laringe desenvolvem-se dos _____ pares de arcos faríngeos a partir de mesênquima derivado das __________.
+GABARITO: quarto e sexto; células da crista neural
+C: As cartilagens surgem especificamente dos arcos faríngeos IV e VI, e o mesênquima tem origem nas células da crista neural.
+
+Q: O processo de recanalização da laringe, formando os ventrículos e pregas vocais, ocorre normalmente na 10ª semana de desenvolvimento.
+G: V
+C: A recanalização da laringe ocorre normalmente na 10ª semana, permitindo a formação das estruturas internas da laringe.
+
+Q: De onde se desenvolve a epiglote no embrião?
+GABARITO: Da parte caudal da eminência hipofaríngea, formada pelo mesênquima dos arcos faríngeos terceiro e quarto.
+
+Q: Associe as estruturas embrionárias à sua contribuição para a laringe:
+(1) Endoderma
+(2) Mesênquima dos arcos faríngeos IV e VI
+(3) Eminência hipofaríngea
+a. Cartilagens laríngeas
+b. Epitélio de revestimento da laringe
+c. Epiglote
+GABARITO: 1 - b 2 - a 3 - c
+<b>Comentário extra:</b>
+Cada estrutura embrionária tem papel específico no desenvolvimento da laringe: endoderma para epitélio, mesênquima para cartilagens, eminência hipofaríngea para epiglote.
+
+Q: Coloque em ordem cronológica os seguintes eventos do desenvolvimento da laringe:
+(1) Proliferação do epitélio e oclusão do lúmen
+(2) Formação dos brotos aritenoides
+(3) Recanalização da laringe
+(4) Formação das pregas vocais e vestibulares
+GABARITO: 2 → 1 → 3 → 4
+<b>Comentário extra:</b>
+Primeiro, formam-se os brotos aritenoides, depois há proliferação epitelial e oclusão, seguida de recanalização e, finalmente, formação das pregas.
+
+Q: Explique a importância do posicionamento alto da laringe no recém-nascido.
+GABARITO: O posicionamento alto da laringe permite que a epiglote entre em contato com o palato mole, separando quase completamente as vias respiratórias e digestivas. Isso facilita a amamentação sem o risco de aspiração, embora obrigue o recém-nascido a respirar pelo nariz. Essa característica é essencial para a alimentação segura do bebê, especialmente durante a amamentação.
+
+Q: Quais nervos suprem os músculos da laringe em desenvolvimento?
+A) Nervo glossofaríngeo (IX)
+B) Ramos laríngeos do nervo vago (X)
+C) Nervo facial (VII)
+D) Nervo hipoglosso (XII)
+G: B
+C: Os músculos laríngeos derivam de mioblastos dos arcos IV e VI, sendo inervados pelos ramos laríngeos do nervo vago (X).
+
+Q: A descida estrutural da laringe ocorre aproximadamente ao redor dos primeiros __________ anos de vida.
+GABARITO: 2
+C: Por volta dos dois primeiros anos, a laringe desce, permitindo o desenvolvimento normal das funções respiratória e fonatória.
+
+Q: Após o nascimento, a posição da laringe permite ao recém-nascido respirar simultaneamente pela boca e pelo nariz durante a amamentação.
+G: F
+C: O posicionamento alto da laringe obriga o recém-nascido a respirar exclusivamente pelo nariz durante a amamentação, impedindo a respiração simultânea pela boca.
+
+QCH: Sobre o desenvolvimento da laringe, assinale todas as assertivas <b>verdadeiras</b>:
+A1: A cartilagem da laringe se desenvolve principalmente do mesênquima derivado dos arcos faríngeos quarto e sexto.
+G: V
+C: As cartilagens laríngeas derivam do mesênquima proveniente dos arcos faríngeos IV e VI, que são originados das células da crista neural.
+A2: A recanalização do lúmen da laringe ocorre tipicamente na 10ª semana do desenvolvimento embrionário.
+G: V
+C: A recanalização é o processo que reabre o lúmen laríngeo, normalmente por volta da décima semana, formando ventrículos e pregas.
+A3: O epitélio da laringe origina-se do ectoderma das bolsas faríngeas.
+G: F
+C: O epitélio laríngeo vem do endoderma do tubo laringotraqueal, não do ectoderma.
+A4: A epiglote se desenvolve da parte caudal da eminência hipofaríngea, associada aos arcos faríngeos terceiro e quarto.
+G: V
+C: A epiglote tem essa origem específica, mostrando a complexidade morfogenética da laringe.
+A5: A inervação dos músculos da laringe é feita principalmente pelo nervo hipoglosso (XII par craniano).
+G: F
+C: A inervação dos músculos laríngeos provém dos ramos laríngeos do nervo vago (X), não do hipoglosso.
+A6: No recém-nascido, a laringe já está em sua posição adulta, próxima ao nível da vértebra C6.
+G: F
+C: Em recém-nascidos, a laringe está em posição alta, só descendo aos poucos nos primeiros anos de vida.
+
+Q: Durante a separação do intestino anterior, o divertículo laringotraqueal forma a traqueia e duas evaginações laterais, os brotos brônquicos secundários.
+G: F
+C: Brotos brônquicos <b>primários</b>.
+
+Q: Complete a lacuna:
+O revestimento endodérmico do tubo laringotraqueal distal à laringe se diferencia no epitélio e nas glândulas da _____ e no epitélio _____.
+GABARITO: Traqueia; Pulmonar.
+
+Q: A cartilagem, o tecido conjuntivo e os músculos da traqueia são derivados do mesênquima esplâncnico que envolve o tubo laringotraqueal
+G: V
+

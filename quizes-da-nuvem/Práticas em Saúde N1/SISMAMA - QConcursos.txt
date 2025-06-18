@@ -1,0 +1,149 @@
+Q: O câncer de mama é o segundo tipo de câncer mais frequente no mundo e o mais frequente entre as mulheres, respondendo por 22% do total de casos novos a cada ano, apresentando um prognóstico relativamente bom, caso seja diagnosticado e tratado oportunamente. Em relação a esse tipo de câncer, assinale a afirmativa correta.
+A) O câncer de mama apresenta uma incidência relativamente alta antes dos 35 anos que cai progressiva e rapidamente à medida que essa faixa etária aumenta.
+B) Evidências científicas sugerem que o autoexame das mamas não é eficiente para a detecção precoce e não contribui para a redução da mortalidade por esse tipo de câncer.
+C) As taxas de mortalidade por câncer de mama, no Brasil, têm caído consideravelmente, o que se deve ao aumento do diagnóstico e ao tratamento precoce.
+D) A mamografia, como forma de detecção precoce do câncer de mama, deve ser realizada anualmente por mulheres entre 30 e 40 anos, não sendo recomendada após os 50 anos.
+E) A hereditariedade é o principal fator de risco para o câncer de mama, sendo responsável por cerca de 40% do total de casos.
+G: B
+C: O INCA contraindica o autoexame para detecção precoce do câncer de mama, por não ser eficiente. A mamografia é recomendada a partir dos 50 anos. Hereditariedade --> 5 a 10% do total dos casos
+
+Q: O câncer de mama é o que mais acomete mulheres em todo o mundo, constituindo a maior causa de morte por câncer nos países em desenvolvimento. No Brasil, é o segundo tipo mais incidente na população feminina. O país ainda apresenta falhas na abordagem dessa importante morbidade e seu diagnóstico e tratamento, muitas vezes, não são realizados em tempo oportuno, gerando menor sobrevida (em cinco anos) das pessoas diagnosticadas, em comparação com países desenvolvidos (50%-60% contra 85%). Em relação às ações de prevenção e detecção precoce ao câncer de mama, assinale a afirmativa correta
+A) A estratégia preconizada para o rastreamento de câncer de mama é a mamografia anual para mulheres entre 50 e 69 anos.
+B) São fatores de risco modificáveis para o câncer de mama: história familiar de câncer, tabagismo, inatividade física e excesso de peso.
+C) A estratégia preconizada para o rastreamento de câncer de mama é a mamografia a cada dois anos para mulheres entre 40 e 69 anos.
+D) O autoexame das mamas, que foi muito estimulado no passado, não provou ser benéfico para a detecção precoce de tumores, portanto, não deve ser orientado.
+G: D
+C: Mamografia cada DOIS anos para 50-69 anos. História familiar não é fator modificável e tabagismo não é fator de risco para CA de Mama.
+
+Q: O câncer de mama representa a principal causa de morte por câncer em mulheres brasileiras, e em nível mundial cede o lugar apenas para o câncer de pulmão, representando um grande problema de saúde pública em todo o mundo. A respeito esse tipo de câncer, assinale a alternativa CORRETA.
+A) Os cânceres de mama localizam-se, principalmente, no quadrante inferior externo.
+B) As características reprodutivas como fatores risco se dão porque a doença é estrogênio-dependente.
+C) A mamografia é um exame radiológico dos tecidos moles das mamas, que permite a identificação de alterações não perceptíveis ao exame clínico das mamas, e por isso o substitui o referido exame.
+D) A incidência do câncer de mama é frequente antes dos 35 anos, crescendo rápida e progressivamente com a idade.
+E) O uso regular de álcool não é comprovadamente um fator de risco para o câncer de mama.
+G: B
+C: O estrogênio é um hormônio feminino que é produzido pelo ovário, e a exposição prolongada a esse hormônio pode aumentar o risco de desenvolvimento de câncer de mama.
+
+Q: O Câncer de mama é provavelmente o mais temido pelas mulheres devido a sua alta frequência e, sobretudo, pelos seus efeitos psicológicos. Com isso, é necessária uma atenção especial no planejamento de estratégias de intervenção, no processo da doença. Leia as sentenças abaixo e marque a alternativa INCORRETA.
+A) São fatores de risco para o câncer de mama: menarca precoce, menopausa tardia e nuliparidade.
+B) A história familiar é um importante fator de risco para o câncer de mama, principalmente se um ou mais parentes de primeiro grau forem acometidos antes dos 50 anos de idade.
+C) O câncer de mama é a neoplasia maligna de menor ocorrência na mulher brasileira, e a ausência do AEM não chama a atenção para adequação das estratégias de prevenção da doença.
+D) Quanto mais cedo for o diagnóstico de câncer, maior a probabilidade de cura.
+E) Deverá ser realizado exame clínico das mamas e mamografia anualmente em mulheres a partir de 35 anos de idade, pertencentes a grupos populacionais com riscos elevados de desenvolver câncer de mama.
+G: C
+C: O câncer de mama é a neoplasia maligna de MAIOR ocorrência na mulher brasileira, seguido do câncer do colo de útero.
+
+Q: Em relação ao câncer de mama, leia as frases abaixo e a seguir assinale a alternativa que corresponde à resposta correta.
+I. Dentre os fatores de risco, a idade constitui o fator mais importante. O risco de câncer de mama aumenta com a idade, com cerca de 70 a 80% dos tumores diagnosticados a partir dos 50 anos de idade.
+II. O tabagismo é considerado um dos principais fatores de risco para câncer de mama; e a prática de atividade física é considerada um fator protetor.
+III. O sintoma mais comum de câncer de mama é o aparecimento de um nódulo, geralmente indolor, duro e irregular, mas há tumores que são de consistência branda, globosos e bem definidos.
+IV. A mamografia é o único exame utilizado para rastreamento, com capacidade de detectar lesões não palpáveis e causar impacto na mortalidade por câncer de mama.
+Estão corretas as frases:
+A) Apenas I, II e III.
+B) Apenas II e III.
+C) Apenas I, III e IV.
+D) Apenas II e IV.
+G: C
+C: - A mamografia é o único exame utilizado para rastreamento, com capacidade de detectar lesões não palpáveis e causar impacto na mortalidade por câncer de mama, sendo por isso o exame de imagem recomendado para o rastreamento do câncer de mama no Brasil.
+- Segundo o “Documento de Consenso do Câncer de Mama” de 2004, são definidos como grupos populacionais com risco muito elevado para o desenvolvimento do câncer de mama:
+• Mulheres com história familiar de, pelo menos, um parente de primeiro grau (mãe, irmã ou filha) com diagnóstico de câncer de mama, abaixo dos 50 anos de idade.
+• Mulheres com história familiar de pelo menos um parente de primeiro grau (mãe, irmã ou filha) com diagnóstico de câncer de mama bilateral ou câncer de ovário, em qualquer faixa etária.
+• Mulheres com história familiar de câncer de mama masculino.
+• Mulheres com diagnóstico histopatológico de lesão mamária proliferativa com atipia ou neoplasia lobular in situ.
+
+Q: O câncer de mama é o mais incidente em mulheres no mundo. No Brasil, ele é também o tipo de câncer mais incidente em mulheres de todas as regiões após o câncer de pele não melanoma. Sobre o tema, analise as assertivas abaixo, assinalando V, se verdadeiras, ou F, se falsas.
+( ) Os fatores endócrinos e a história reprodutiva estão relacionados principalmente ao estímulo estrogênico, seja endógeno ou exógeno, com aumento do risco quanto maior for a exposição.
+( ) A mamografia de rotina é recomendada para as mulheres de 45 a 69 anos, uma vez a cada dois anos.
+( ) É considerado um sinal suspeito de câncer de mama nódulo mamário em mulheres com mais de  30 anos e que persiste por mais de um ciclo menstrual.
+( ) Amamentar é uma prática que oferece riscos para a doença e que deve ser evitada ou realizada pelo menor tempo possível.
+A) F – F – V – F.
+B) F – V – F – V.
+C) F – F – F – V.
+D) V – F – V – F.
+E) V – V – F – F.
+G: D
+C: A mamografia está indicada a cada dois anos para mulheres com idade entre 50 e 69 anos; A amamentação é considerado um fator protetor com relação ao câncer de mama.
+
+Q: O câncer de mama, assim como outras neoplasias malignas, resulta de uma proliferação incontrolável de células anormais, que surgem em função de alterações genéticas, sejam elas hereditárias ou adquiridas por exposição a fatores ambientais ou fisiológicos. De acordo com o Caderno de Atenção Básica, Controle dos Cânceres do Colo do Útero e da Mama segunda edição, são considerados fatores de risco para o câncer de mama:
+I. Idade.
+II. Menarca precoce.
+III. Menopausa tardia.
+IV. Primeira gravidez após os 20 anos.
+Estão corretas:
+A) I, II e IV apenas.
+B) I, II e III apenas.
+C) III e IV apenas.
+D) I, II, III e IV.
+E) II e III apenas.
+G: B
+C: Fatores de Risco: • Idade • Menarca precoce • Menopausa tardia • Primeira gravidez após os 30 anos • Nuliparidade • Exposição à radiação • Terapia de reposição hormonal • Obesidade • Ingestão regular de álcool • Sedentarismo • História familiar A idade constitui o mais importante fator de risco para câncer de mama.
+
+Q: O tripé para o diagnóstico do câncer de mama é:
+A) auto exame das mamas sugestivo, exame de imagem sugestivo (mamografia) e a confirmação diagnóstica, por meio da citologia;
+B) exame clínico sugestivo, exame de imagem sugestivo (ultrassom) e a confirmação diagnóstica, por meio da citologia;
+C) exame clínico sugestivo, exame de imagem sugestivo (mamografia ou ultrassom) e a confirmação diagnóstica, por meio da citologia;
+D) exame clínico sugestivo, exame de imagem sugestivo (mamografia ou ultrassom) e a confirmação diagnóstica, por meio da biópsia.
+E) auto exame das mamas sugestivo, exame de imagem sugestivo (mamografia e ultrassom) e a confirmação diagnóstica, por meio da citologia.
+G: D
+C: .
+
+Q: O câncer de mama é uma doença causada pela multiplicação desordenada de células anormais da mama, que forma um tumor com potencial de invadir outros órgãos. É o câncer mais incidente na população feminina mundial e brasileira, excetuando-se os casos de câncer de pele não melanoma. Em relação às ações de rastreamento do câncer de mama, assinale a alternativa INCORRETA.
+A) Rastreamento viabiliza a identificação de indivíduos que têm a doença, mas ainda não apresentam sintomas.
+B) O exame clínico das mamas não tem benefício bem estabelecido como rastreamento, devendo ser realizado no caso de queixas mamárias, como parte inicial da investigação.
+C) Pode ser considerada uma ação de prevenção quaternária a não solicitação de mamografia de rastreamento na população maior de 70 anos.
+D) O autoexame das mamas, que foi muito estimulado no passado, não provou ser benéfico para a detecção precoce de tumores por trazer falsa segurança, dúvida e excesso de exames invasivos.
+E) Para o rastreamento do câncer de mama, a mamografia é recomendada para as mulheres de 40 a 59 anos uma vez a cada dois anos.
+G: E
+C: A recomendação atual para o rastreamento do câncer de mama é realizar a mamografia a cada dois anos para mulheres com 50 a 69 anos, conforme as diretrizes do Ministério da Saúde e de organizações internacionais como a Sociedade Brasileira de Mastologia.
+
+Q: O câncer de mama é a primeira causa de morte por câncer em mulheres no Brasil. Nesse sentido, é incorreto afirmar:
+A) É recomendado que, mulheres entre 50 e 69 anos, realizem a mamografia de rotina a cada ano;
+B) A descoberta precoce é fundamental para o bom controle da doença.
+C) O câncer de mama que já se encontra com manifestações clínicas, apresenta: nódulo, retração da pele e mamilo, secreção e vermelhidão na pele.
+D) Mulheres e homens devem ser estimulados a conhecer o próprio corpo para saber o que é, e o que não é normal.
+E) Não ter tido filhos, sedentarismo, uso de anticoncepcional por tempo prolongado e obesidade, são alguns fatores de risco para o câncer de mama.
+G: A
+C: .
+
+Q: O câncer de mama é uma doença resultante da multiplicação de células anormais da mama que forma um tumor com potencial de invadir outros órgãos. A maioria dos casos tem boa resposta ao tratamento, principalmente quando diagnosticado e tratado no início. Entre as manifestações clínicas observadas para detecção precoce do câncer de mama, estão
+A) calafrios, febre alta e cansaço.
+B) nódulo endurecido, fixo e geralmente indolor na mama e pequenos nódulos na região axilar.
+C) sangramento vaginal, dor pélvica e leucorreia.
+D) perda de peso, desconforto abdominal e desorientação.
+G: B
+C: .
+
+Q: O câncer de mama é uma doença causada pela multiplicação desordenada de células da mama esse processo gera células anormais que se multiplicam, formando um tumor, há vários tipos de câncer de mama por isso, a doença pode evoluir de diferentes formas alguns tipos têm desenvolvimento rápido, enquanto outros crescem mais lentamente. Sobre o câncer de mama assinale a alternativa CORRETA:
+A) Mamografia é uma radiografia das mamas feita por um equipamento de raios X chamado mamógrafo, capaz de identificar alterações suspeitas de câncer antes do surgimento dos sintomas, ou seja, antes que seja palpada qualquer alteração nas mamas.
+B) O câncer de mama não pode ser detectado em fases iniciais, em grande parte dos casos, aumentando assim a possibilidade de tratamentos agressivos e com taxas de sucesso insatisfatórias.
+C) O Ministério da Saúde recomenda que a mamografia de rastreamento (exame realizado quando não há sinais nem sintomas suspeitos) seja ofertada para mulheres entre 25 e 40 anos, anualmente.
+D) Nenhuma das alternativas.
+G: A
+C: A mamografia é uma importante ferramenta de diagnóstico precoce do câncer de mama, capaz de identificar alterações suspeitas antes mesmo do surgimento de sintomas ou da percepção de alguma anormalidade nas mamas. Por meio da mamografia, é possível detectar tumores ainda em fase inicial, quando o tratamento é mais eficaz e as chances de cura são maiores. Por isso, a realização regular desse exame é fundamental para a prevenção e o diagnóstico precoce do câncer de mama.
+
+Q: O câncer de mama é o mais incidente em mulheres no mundo. Quanto ao rastreamento do câncer de mama nas mulheres com risco habitual para a enfermidade, assinale a alternativa correta.
+A) Indica-se ultrassonografia dos 20 anos aos 40 anos de idade e mamografia a partir dos 40 anos de idade.
+B) A alta densidade mamária pode diminuir a sensibilidade da mamografia; nesses casos, indica-se ultrassonografia complementar à mamografia.
+C) O autoexame das mamas é efetivo para detecção precoce de lesões palpáveis, com redução de mortalidade.
+D) A ressonância nuclear magnética é superior à mamografia convencional ou digital para o rastreio do câncer de mama.
+E) A mamografia é dispensável e pode ser substituída pela ultrassonografia no rastreio do câncer de mama.
+G: B
+C: A alta densidade mamária pode diminuir a sensibilidade da mamografia; nesses casos, indica-se ultrassonografia complementar à mamografia. A ultrassonografia não é indicada para o rastreamento do câncer de mama, e sim como exame complementar nos casos de mamografia inconclusivas. Não se faz rastreamento do câncer de mama nas mulheres com menos de 40 anos devido a baixa incidência da doença nessa faixa etária. O autoexame não é efetivo para detecção precoce de lesões palpáveis e os estudos mostraram que a sua aplicação não levou a diminuição da mortalidade pela doença, não sendo indicado como forma de rastreamento do câncer de mama. A ressonância magnética apresenta alta sensibilidade, mas baixa especificidade, apresentando uma alta de taxa de resultados falso positivos, e, por isso, não é indicada para o rastreamento do câncer de mama nas mulheres de baixo risco (população geral). A mamografia é o exame de rastreamento para o câncer de mama, sendo o exame que quando realizado de rotina levou a diminuição da mortalidade pela doença em cerca de 30%. A ultrassonografia não pode substituir a mamografia, sendo considerada um exame complementar.
+
+Q: O câncer de mama ainda se caracteriza como o câncer ginecológico mais prevalente em todo mundo. Assim sendo, a propedêutica é fundamental para o tratamento precoce. Assinale a alternativa que contém o método de maior sensibilidade para o rastreamento do câncer de mamas.
+A) Ressonância magnética.
+B) Mamografia.
+C) Ultrassonografia mamária.
+D) Auto-exame das mamas.
+E) Exame clínico realizado por especialista.
+G: A
+C: A ressonância magnética é o exame com maior sensibilidade para o câncer de mama. Isso parece ótimo, não é? Mas existe uma desvantagem. A ressonância magnética tem uma especificidade relativamente baixa. Por ser muito sensível (cerca de 90%), mas pouco específica (entre 50% e 70%), apresenta muitos resultados falso positivos, ou seja, o exame mostra uma suspeita de câncer, mas a paciente não tem câncer.
+
+Q: O câncer de mama é o tumor que possui a maior incidência e a maior mortalidade na população feminina em todo mundo. O estabelecimento de programas nacionais de rastreamento busca a redução da mortalidade e da morbidade causadas por esta doença. O exame ideal para o diagnóstico precoce ainda não foi perfeitamente desenvolvido, porém, em todo mundo, a mamografia permanece como método escolhido. De todas as afirmativas abaixo, marque a FALSA.
+A) Revisões sistemáticas demonstraram que a utilização da mamografia como método de rastreio apresentou eficácia (embora pequena na redução da mortalidade, graças à identificação de lesões pré-invasivas e das lesões invasivas nas formas subclínicas.
+B) A detecção precoce do câncer de mama compreende duas estratégias: abordagem individual de paciente com sinal/sintoma da doença e rastreamento adequado em população assintomática, que justifique seu custo-benefício. O autoexame das mamas se encaixa nas duas estratégias citadas, sendo uma forma de rastreio populacional eficaz.
+C) As mamas densas diminuem significativamente a acurácia da mamografia como método de rastreio, causando aumento dos índices de falsos-negativos. Nestes casos, a associação com a ultrassonografia, ressonância magnética ou mesmo tomossíntese aumentam a acurácia do rastreamento.
+D) Os estudos mostraram que a mamografia digital só tem maior acurácia que a mamografia convencional em mulheres com menos de 50 anos, naquelas que possuem as mamas densas e nos períodos de pré e peri-menopausa.
+G: B
+C: O autoexame não é considerado uma forma de rastreamento populacional. O autoexame não apresentou diminuição da mortalidade pelo câncer de mama quando utilizado como forma de rastreamento. As revisões sistemáticas mostraram que o rastreamento mamográfico reduziu a mortalidade pelo câncer de mama em cerca de 30%. A sensibilidade da mamografia é diminuída nas mamas densas. A associação com outros exames pode aumentar a acurácia do rastreamento. A mamografia digital mostrou melhor acurácia somente nas mulheres perimenopausa ou com mamas densas.
+

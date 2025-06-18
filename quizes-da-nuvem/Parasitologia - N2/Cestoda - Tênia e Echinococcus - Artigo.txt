@@ -1,0 +1,77 @@
+Q: Tênia Solium e Saginata são popularmente conhecidas como “solitárias” porque geralmente observa-se apenas um ﻿ parasito em cada hospedeiro, podendo ser encontrado, no entanto, em imunossuprimidos, ﻿ pessoas albergando mais de um parasito em seu intestino.
+G: V
+
+
+Q: T. solium e T. saginata são hermafroditas e parasitas do intestino grosso, onde se fixam ﻿ através de suas estruturas de fixação.
+G: F
+C: São parasitas do intestino delgado.
+
+
+Q: Na T. solium e T. saginata a absorção dos alimentos é feita por ﻿ difusão através do tegumento em estruturas denominadas escólex, aproveitando o ﻿ material ingerido pelo hospedeiro e já parcialmente digerido.
+G: F
+C: As estruturas se chamam microtríquias, o escólex é o órgão de fixação do helminto.
+
+
+Q: Os ovos de T. solium e T. saginata medem cerca de 30 µ e são constituídos por casca protetora ou membrana ﻿ radiada (embrióforo) e oncosfera (embrião hexacanto com 3 pares de acúleos).
+G: V
+
+
+Q: O ﻿ cisto da tênia ao chegar ao duodeno, estimulado pela bile, liberta o escólex, que adere à mucosa e ﻿ começa a desenvolver-se, originando a Taenia adulta.
+G: V
+
+
+Q: Cerca de três meses após a pessoa ingerir da larva, o parasito adulto começa a eliminar as proglotes. As proglotes da T. solium a tem maior atividade locomotora e são liberadas de forma ativa geralmente isoladas ﻿ nos intervalos das defecações. As proglotes da T. saginata desprendem-se unidas (3 a 6) e ﻿ são expulsas durante ou após a evacuação.
+G: F
+C: As proglotes da T. ﻿SAGINATA tem maior atividade locomotora e são liberadas de forma ativa geralmente isoladas ﻿ nos intervalos das defecações. As proglotes da T. SOLIUM desprendem-se unidas (3 a 6) e ﻿ são expulsas durante ou após a evacuação.
+
+Q: O homem também pode servir como hospedeiro intermediário da Taenia solium, contraindo a cisticercose pela ingestão de larvas do parasita adulto.
+G: F
+C: Embora o homem possa sim funcionar como hospedeiro intermediário da Taenia solium (desenvolvendo cisticercose), isso acontece pela ingestão dos ovos do parasita — não das larvas livres do verme adulto. Quem ingere as larvas (cisticerco) contidas em carne de porco mal cozida desenvolve teníase (o verme adulto no intestino), e não cisticercose.
+
+Q: O homem pode contrair cisticercose ingerindo ovos do parasita adulto de T. solium, por uma das seguintes vias:
+- Heteroinfeção: ingestão de água e alimentos contaminados com ovos de Taenia solium (T. ﻿ solium). O portador da forma adulta representa ameaça constante para os que convivem ﻿ com ele.
+- Autoinfecção externa: ingestão dos ovos pelo indivíduo portador de teníase, por maus ﻿ hábitos higiênicos ou coprofagia.
+- Autoinfeção interna: pela eclosão dos ovos no duodeno, ou primeiras porções do jejuno.
+G: V
+
+Q: Após 24 a 72h da ingestão dos ovos de T. solium, as oncosferas abandonariam o embrióforo e ativadas pela ação dos sucos digestivos, penetrariam através da mucosa intestinal, fazendo ﻿ uso de seus acúleos e de secreção das glândulas de penetração. Alcançando os vasos ﻿ intestinais, seriam arrastados pela corrente circulatória e levadas a diversos pontos do ﻿ organismo, parando onde a corrente é mais rápida e os vasos tem maior calibre (os da ﻿ retina, cérebro e músculos). Aí evoluem para a fase de larva, onde são encontrados com ﻿ maior frequência.
+G: F
+C: Parando onde a corrente é mais LENTA e os vasos tem MENOR calibre.
+
+Q: A forma mais grave de cisticercose é a nervosa.
+G: V.
+
+Q: A hidatidose humana é doença causada pela presença da larva do Echinicoccus granulosus (E. granulosus), o cisto hidático, no organismo do homem. Suas principais localizações são: medula, pulmão e peritônio.
+G: F.
+C: Suas principais localizações são: FÍGADO, pulmão e peritônio.
+
+Q: Os vermes adultos de Echinococcus granulosus vivem no intestino grosso dos cães.
+G: F
+C: No intestino DELGADO dos cães.
+
+Q: As proglotes gravídicas de Echinococcus granulosus no cão, à medida em que se desprendem do estróbilo (corpo), são eliminadas com as fezes do animal e vão poluir o solo dos campos de pastagens, do peridomicílio, ou mesmo o chão das casas.
+G: V.
+
+Q: Sobre a hidatidose, analise as afirmativas a seguir:
+I - Hidatidose hepática: Pode ser primitiva ou secundária à ruptura de cistos hepáticos. Pode curar-se espontaneamente ou causar infecção, com formação de processo supurativo crônico.
+II - Hidatidose pulmonar: Os cistos localizados em profundidade comprimem o parênquima, os vasos e as vias biliares, produzindo congestão, necrose ou fibrose hepática e estase biliar. Daí podem resultar icterícia ou hipertensão portal, segundo o caso.
+III - Hidatidose óssea: Ocorre apenas em 1-2% dos casos. As lesões são de evolução muito lenta e não raro se complicam devido a uma infecção ou a uma fratura espontânea.
+G: F
+C: A definição de hidatidose hepática (item I) está trocada com a definição de hidatidose pulmonar (item II). O item III está correto.
+
+Q: Sobre a cisticercose, responda:
+A) Explique de forma resumida como ocorre a cisticercose humana.
+B) Explique porque a cirticercose humana é um "beco sem saída" para o ciclo do parasita
+GABARITO: 
+A)Primeiramente, o ser humano deve ter os ovos da tênia solium dentro do próprio TGI, isso pode ser através de autoinfecção externa, autoinfecção interna ou heteroinfecção. Cerca de 1 a 3 dias depois da ingestão, as oncosferas abandonam o embrióforo e ativadas pela ação dos sucos digestivos penetram a mucosa intestinal (em vez de se desenvolverem em vermes adultos no TGI), elas fazem essa penetração com ajuda de seus acúleos e secreção das glândulas de penetração.
+Quando alcançam os vasos intestinais as oncosferas são arrascada pela corrente circulatória e lavadas para vários pontos do organismo e vão parar por uma questão mecânica, em locais onde a corrente é mais lenta e os vasos tem menor calibre, como a retina, o cérebro e os músculos. Então daí evoluem para a fase de larva.
+B) Diz-se que a cisticercose humana é um “beco sem saída” porque, nesses casos, o ser humano comporta-se como hospedeiro intermediário – papel que normalmente cabe ao porco. Para que o ciclo do parasita se complete, seria preciso que um humano (único hospedeiro definitivo) consumisse carne humana contendo cisticercos, o que praticamente nunca ocorre. Além disso, a cisticercose não leva à formação de tênias adultas nem à liberação de novos ovos pelas fezes humanas, interrompendo ali o ciclo de Taenia solium.
+
+Q: Sobre a teníase, explique como ocorre:
+A) O ciclo no porco (hospedeiro intermediário)
+B) O ciclo no ser humano (hospedeiro definitivo) a partir da ingestão de carne de porco crua ou mal cozida.
+GABARITO:
+A) O ciclo no porco (hospedeiro intermediário)
+O ciclo da teníase no porco se inicia quando o animal ingere ovos do parasita presentes no ambiente, geralmente por meio de água ou alimentos contaminados com fezes humanas. No estômago do suíno, as enzimas digestivas atuam sobre o embrióforo, e, ao chegar ao intestino delgado, em presença do suco gástrico alcalino, a casca do ovo se rompe, liberando a oncosfera, que é o embrião com seis ganchos (hexacanto). Utilizando esses ganchos, a oncosfera perfura a parede intestinal e entra na corrente sanguínea, sendo levada primeiramente ao fígado pela circulação porta, depois ao coração e, em seguida, distribuída para todo o organismo. A oncosfera tende a se alojar nos músculos mais ativos e bem oxigenados, como os da mastigação, da língua, do coração e do diafragma. Nessas regiões, ela perde os ganchos e se transforma em um cisto (cisticerco), com cerca de 10 a 12 mm de diâmetro, podendo permanecer viável por vários meses.
+B) O ciclo no ser humano a partir da ingestão de carne de porco crua ou mal cozida
+O ser humano adquire a teníase ao ingerir carne suína crua ou mal cozida contendo cisticercos viáveis (Cysticercus cellulosae). Quando essa carne contaminada chega ao intestino delgado, a bile presente no duodeno estimula a liberação do escólex, que se fixa à mucosa intestinal por meio de ventosas e ganchos. A partir do escólex, o verme começa a crescer e se desenvolver, formando um corpo segmentado. Após cerca de três meses, o parasita atinge sua forma adulta e inicia a liberação de proglotes grávidas.

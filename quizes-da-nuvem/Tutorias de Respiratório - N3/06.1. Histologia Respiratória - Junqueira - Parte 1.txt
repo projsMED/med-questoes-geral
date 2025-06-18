@@ -1,0 +1,96 @@
+Q: Qual é o tipo de epitélio predominante que reveste a maior parte da porção condutora do sistema respiratório, como a traqueia e os brônquios?
+A) Epitélio pavimentoso simples
+B) Epitélio cúbico simples
+C) Epitélio pseudoestratificado colunar ciliado
+D) Epitélio estratificado pavimentoso
+G: C
+C: Este tipo de epitélio, também conhecido como epitélio respiratório, é especializado em aquecer, umedecer e filtrar o ar inspirado, graças à presença de cílios e células caliciformes produtoras de muco.
+
+Q: Qual estrutura é responsável por impedir que o alimento entre nas vias aéreas inferiores durante a deglutição?
+A) Traqueia
+B) Epiglote
+C) Brônquios
+D) Alvéolos
+G: B
+C: A epiglote é uma estrutura cartilaginosa localizada na entrada da laringe. Durante a deglutição, ela se move para fechar a abertura da laringe, direcionando o alimento para o esôfago.
+
+Q: As trocas gasosas no pulmão ocorrem primariamente em qual estrutura?
+A) Brônquios
+B) Bronquíolos terminais
+C) Alvéolos
+D) Traqueia
+G: C
+C: Os alvéolos são pequenas bolsas de ar com paredes extremamente finas, ricas em capilares sanguíneos, onde ocorre a difusão do oxigênio do ar para o sangue e do dióxido de carbono do sangue para o ar.
+
+Q: Qual tipo celular presente no epitélio respiratório é responsável pela produção de muco?
+A) Células ciliadas
+B) Células basais
+C) Células caliciformes
+D) Pneumócitos tipo I
+G: C
+C: As células caliciformes são glândulas unicelulares que secretam muco, uma substância viscosa que aprisiona partículas e patógenos, auxiliando na limpeza das vias aéreas.
+
+Q: A traqueia é mantida aberta por anéis incompletos de qual tipo de cartilagem?
+A) Cartilagem elástica
+B) Cartilagem fibrosa
+C) Cartilagem hialina
+D) Tecido ósseo
+G: C
+C: Os anéis de cartilagem hialina em forma de "C" fornecem suporte estrutural à traqueia, impedindo seu colapso durante a respiração. A parte aberta do "C" é voltada para o esôfago, permitindo sua expansão durante a passagem do alimento.
+
+Q: Qual das seguintes células é a principal responsável pela estrutura da parede alveolar e participa diretamente da barreira hematoaérea?
+A) Pneumócito tipo II
+B) Macrófago alveolar
+C) Célula em clava (de Clara)
+D) Pneumócito tipo I
+G: D
+C: Os pneumócitos tipo I são células epiteliais pavimentosas extremamente delgadas que revestem a maior parte da superfície alveolar. Seu citoplasma fino minimiza a distância para a difusão dos gases entre o alvéolo e o capilar sanguíneo.
+
+Q: A síndrome do desconforto respiratório do recém-nascido (doença da membrana hialina) está associada à deficiência de qual substância produzida pelos pneumócitos tipo II?
+A) Muco
+B) Surfactante
+C) Elastina
+D) Colágeno
+G: B
+C: O surfactante é uma mistura de lipídios e proteínas que reduz a tensão superficial nos alvéolos, impedindo seu colapso durante a expiração. Sua deficiência em recém-nascidos prematuros leva a dificuldades respiratórias graves.
+
+Q: Nos bronquíolos, em comparação com os brônquios, observa-se histologicamente:
+A) Aumento da quantidade de cartilagem e glândulas.
+B) Presença de epitélio estratificado pavimentoso e ausência de músculo liso.
+C) Ausência de cartilagem e glândulas, e uma camada muscular lisa relativamente mais espessa.
+D) Predomínio de células caliciformes e ausência de cílios.
+G: C
+C: À medida que as vias aéreas se ramificam e diminuem de calibre, a cartilagem e as glândulas desaparecem. Nos bronquíolos, a parede é sustentada principalmente por músculo liso e fibras elásticas, e o epitélio torna-se mais simples.
+
+Q: As células em clava (anteriormente células de Clara) são encontradas predominantemente em qual porção do sistema respiratório e qual sua principal função?
+A) Traqueia; produção de muco espesso.
+B) Alvéolos; fagocitose de partículas.
+C) Bronquíolos; secreção de componentes do surfactante e detoxificação.
+D) Fossas nasais; percepção de odores.
+G: C
+C: As células em clava são células não ciliadas encontradas no epitélio dos bronquíolos. Elas secretam proteínas protetoras, componentes do surfactante e enzimas que participam da detoxificação de substâncias inaladas.
+
+Q: A barreira hematoaérea é a estrutura através da qual ocorrem as trocas gasosas. Qual das seguintes sequências descreve corretamente os componentes dessa barreira, do lúmen alveolar para o lúmen capilar?
+A) Citoplasma do pneumócito tipo II, sua lâmina basal, citoplasma da célula endotelial, sua lâmina basal.
+B) Surfactante, citoplasma do pneumócito tipo I, lâmina basal fusionada (do pneumócito e da célula endotelial), citoplasma da célula endotelial.
+C) Citoplasma do macrófago alveolar, surfactante, citoplasma do pneumócito tipo I, lâmina basal do capilar.
+D) Muco, citoplasma da célula ciliada, sua lâmina basal, citoplasma da célula endotelial.
+G: B
+C: A barreira hematoaérea é extremamente fina para otimizar a difusão gasosa. Ela é composta pela fina camada de surfactante, o citoplasma delgado do pneumócito tipo I, a lâmina basal deste (frequentemente fusionada com a lâmina basal da célula endotelial) e o citoplasma da célula endotelial do capilar.
+
+Q: Os corpos neuroepiteliais são agrupamentos de células endócrinas presentes na mucosa das vias aéreas. Qual é a principal função atribuída a essas estruturas?
+A) Produção de muco para lubrificação.
+B) Quimiorrecepção, detectando mudanças na composição do ar, como níveis de oxigênio e dióxido de carbono.
+C) Defesa imunológica, apresentando antígenos aos linfócitos.
+D) Regeneração do epitélio respiratório após lesões.
+G: B
+C: Os corpos neuroepiteliais contêm células granulares que liberam peptídeos e aminas bioativas em resposta a estímulos, como hipóxia. Acredita-se que atuem como quimiorreceptores, modulando a ventilação e o fluxo sanguíneo pulmonar local.
+
+Q: A metaplasia escamosa no epitélio brônquico é uma alteração histopatológica comum em fumantes crônicos. Esta alteração envolve a substituição do epitélio respiratório normal por qual tipo de epitélio, e qual a principal consequência funcional dessa mudança?
+A) Epitélio simples cúbico; aumento da capacidade de secreção de surfactante.
+B) Epitélio estratificado pavimentoso; perda da função mucociliar e maior susceptibilidade a infecções.
+C) Epitélio glandular simples; aumento da produção de muco e obstrução das vias aéreas.
+D) Epitélio de transição; maior capacidade de distensão das vias aéreas.
+G: B
+C: A irritação crônica causada pela fumaça do cigarro pode levar à substituição do epitélio pseudoestratificado colunar ciliado por epitélio estratificado pavimentoso, que é mais resistente ao dano físico, mas não possui cílios nem células caliciformes em quantidade adequada. Isso compromete o mecanismo de limpeza mucociliar, tornando as vias aéreas mais vulneráveis a infecções e acúmulo de secreções.
+

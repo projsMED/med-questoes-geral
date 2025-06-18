@@ -1,0 +1,87 @@
+Q: A toxoplasmose é causada pelo Toxoplasma gondii, que é um _____ e tem sua formação exclusivamente no _____. 
+Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima:
+A) protozoário – sistema reprodutor de felino
+B) nematódeo – intestino de felinos
+C) vírus – estômago de gatos
+D) protozoário – intestino de felinos
+G: D
+C: O Toxoplasma gondii é um protozoário cujo ciclo sexuado ocorre exclusivamente no intestino dos felinos, seus hospedeiros definitivos.
+
+Q: Sobre a toxoplasmose é correto afirmar:
+A) Possui como hospedeiro definitivo o homem e outros mamíferos e como hospedeiro intermediário felinos.
+B) Os cistos formados nos tecidos dos hospedeiros intermediários são compostos de diversos taquizoítas.
+C) A forma responsável pela infecção transplacentária é o bradizoíto.
+D) O taquizoíto é a forma evolutiva que possui rápida multiplicação, sendo responsável pela fase aguda da toxoplasmose no homem.
+G: D
+C:
+{A}) Possui como hospedeiro definitivo o homem e outros mamíferos e como hospedeiro intermediário felinos.
+<b>INCORRETO.</b> Na verdade, é o contrário: os felinos (como gatos) são os hospedeiros definitivos onde ocorre a reprodução sexuada do parasita. O homem e outros mamíferos são hospedeiros intermediários.
+{B}) Os cistos formados nos tecidos dos hospedeiros intermediários são compostos de diversos taquizoítas.
+<b>INCORRETO.</b> Os cistos teciduais contêm bradizoítos (forma de multiplicação lenta), não taquizoítos. Esta é uma distinção importante na biologia do parasita.
+{C}) A forma responsável pela infecção transplacentária é o bradizoíto.
+<b>INCORRETO.</b> A infecção transplacentária (de mãe para feto) ocorre por meio dos taquizoítos, que são capazes de atravessar a barreira placentária durante a fase aguda da infecção materna.
+{D}) O taquizoíto é a forma evolutiva que possui rápida multiplicação, sendo responsável pela fase aguda da toxoplasmose no homem.
+<b>CORRETO.</b> Os taquizoítos são formas de multiplicação rápida ("taqui" = rápido) que se disseminam pelo organismo durante a fase aguda da infecção, causando danos aos tecidos.
+
+Q: Analise o esquema abaixo e interprete os possíveis resultados de uma sorologia para toxoplasmose. (Significado clínico e conduta)<br>
+IgM– / IgG+ → _______________________________
+IgM– / IgG– → _______________________________
+IgM+ / IgG– → _______________________________
+IgM+ / IgG+ → _______________________________
+GABARITO: 
+– <b>IgM– / IgG+</b>:
+  • Significado clínico: Indica que a pessoa teve contato com o Toxoplasma gondii no passado      (meses ou anos atrás) e desenvolveu imunidade.
+  • Conduta: Não há necessidade de tratamento. A pessoa está protegida contra novas infecções. Em gestantes, indica proteção contra toxoplasmose congênita.
+– <b>IgM– / IgG–</b>:
+  • Significado clínico: A pessoa nunca teve contato com o parasita.
+  • Conduta: Orientação preventiva, especialmente importante para gestantes susceptíveis que devem adotar medidas para evitar a infecção (evitar carne crua, higienizar bem vegetais, evitar contato com fezes de gatos, etc.).
+– <b>IgM+ / IgG–</b> → toxoplasmose aguda → medicação
+  • Significado clínico: Sugere infecção muito recente, na fase inicial (primeiros dias).
+  • Conduta: Confirmação diagnóstica com nova amostra em 2-3 semanas. Início de tratamento específico, especialmente em gestantes ou pacientes imunocomprometidos. Acompanhamento clínico rigoroso.
+– <b>IgM+ / IgG+</b>:
+  • Significado clínico: Sugere infecção recente (semanas a meses), mas já com produção de anticorpos IgG.
+  • Conduta: Avaliar teste de avidez de IgG para determinar o tempo de infecção. Em gestantes, é crucial determinar se a infecção ocorreu antes ou durante a gravidez atravez do teste de avidez. Tratamento específico pode ser necessário dependendo do contexto clínico.
+
+Q: A toxoplasmose é uma zoonose cosmopolita causada por protozoário. Apresenta quadro clínico variado, desde infecção assintomática a manifestações sistêmicas extremamente graves. Sobre a toxoplasmose, assinale a alternativa INCORRETA:
+A) O período de incubação da doença é de 10 a 23 dias, quando a fonte de ingestão for carne, e de 5 a 20 dias após a ingestão de oocistos de fezes de gatos.
+B) A infecção, também conhecida como “doença do gato”, chega até o homem por três vias: ingestão de oocistos provenientes de resíduos contaminados com fezes de gatos infectados; ingestão de carne crua infectada com cisto; e infecção transplacentária.
+C) O agente etiológico é o protozoário coccídio intracelular Toxoplasma gondii. Seus hospedeiros definitivos são o homem e aves, e seu hospedeiro intermediário é o gato.
+D) A toxoplasmose representa sérios riscos às mulheres grávidas, podendo ocasionar deformidades nos bebês e aborto.
+G: C
+C: Na verdade, <b>os felinos (gatos) são os hospedeiros definitivos</b> do Toxoplasma gondii, onde ocorre a reprodução sexuada do parasita. O homem, outros mamíferos e aves são hospedeiros intermediários, onde ocorre apenas a reprodução assexuada.
+
+Q: A toxoplasmose é uma infecção parasitária causada pelo Toxoplasma gondii. Em relação ao diagnóstico da toxoplasmose, analise as assertivas abaixo:
+I. A identificação dos taquizoítos de Toxoplasma gondii pode ser realizada a partir da avaliação histopatológica.
+II. O teste de reação de imunofluorescência indireta permite a identificação dos anticorpos segundo as classes de imunoglobulinas.
+III. O diagnóstico da toxoplasmose é feito por sorologia e, na mulher grávida, é importante a realização do teste de avidez ou IgM, que definem a data da infecção e o risco de transmissão conforme o período gestacional.
+Quais estão corretas?
+A) Apenas I.
+B) Apenas II.
+C) Apenas II e III.
+D) I, II e III.
+G: D
+
+Q: Quais são as formas de vida apresentadas pelo *Toxoplasma gondii* e sua localização?
+GABARITO: 
+– <b>Bradizoíto</b> – Cistos teciduais (músculos/cérebro) do hospedeiro intermediário (felino).
+– <b>Taquizoíto</b> – Fase intracelular em células teciduais
+– <b>Esporozoíto</b> – Dentro de oocistos; liberado no intestino após ingestão
+– <b>Oocisto</b> - Fezes do felino
+
+Q: Caso clínico:
+JKOB, masculino, branco, 23 anos, estudante e natural de Caputira – MG. Atualmente reside em Manhuaçu – MG. É portador de toxoplasmose crônica. Foi contaminado aos 16 anos, durante seu trabalho como servente em uma reforma de telhado, suspeitando de contágio por fezes de gato presentes no local. Um mês após o contato, apresentou uveíte ocular com visão turva e manchas pretas no campo visual do olho esquerdo. Não procurou ajuda médica, supôs conjuntivite. Quinze dias após o início dos sintomas, a visão voltou gradativamente, mas persistiram algumas moscas volantes no campo visual, que, com o tempo, também apareceram no olho direito. Iniciou tratamento com antibiótico (Bactrim 800 mg a cada 12 h) e corticoide (prednisona 20 mg a cada 24 h) em doses elevadas. Após três meses, recuperou 95 % da visão, sem manchas. Relatou que, se tratado mais cedo, talvez a melhora tivesse sido de 100 %.<br>
+I_A) Qual o agente etiológico da toxoplasmose?
+GABARITO: *Toxoplasma gondii* – protozoário
+I_B) Qual a provável forma infectante responsável pela transmissão nesse caso?
+GABARITO: oocisto contendo esporozoítos proveniente de fezes de felino.
+I_C) Após entrada da forma infectante da resposta da letra b, como o ciclo continua no homem?
+GABARITO: 
+1. Oocisto libera esporozoítos no intestino
+2. Esporozoítos viram taquizoítos, invadem células e se multiplicam, causando lise celular
+3. Sistema imune controla a infecção → alguns taquizoítos viram bradizoítos e formam cistos teciduais (músculo, cérebro)
+I_D) Cite algumas medidas profiláticas da doença.
+GABARITO: 
+– Lavar e/ou cozinhar bem carnes; evitar consumo cru/ mal passado
+– Lavar frutas, verduras e beber água filtrada/ferveção
+– Usar luvas ao jardinagem ou manipular solo
+– Limpar a caixa de areia de gatos diariamente (antes da esporulação) e lavar mãos em seguida

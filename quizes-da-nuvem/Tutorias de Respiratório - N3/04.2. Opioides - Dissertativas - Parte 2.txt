@@ -1,0 +1,74 @@
+Q: Fernanda, 25 anos, foi admitida na emergência após uma superdosagem de <b>metadona</b>. Ela apresentava depressão respiratória grave (frequência respiratória de 5 irpm), miose e estava irresponsiva. Foi administrada naloxona intravenosa, com pronta melhora do nível de consciência e da frequência respiratória, que subiu para 14 irpm. Contudo, cerca de 90 minutos após a administração da dose de naloxona, a equipe de enfermagem observou que Fernanda começou a apresentar sonolência progressiva, e sua frequência respiratória diminuiu novamente para 6 incursões por minuto, com a saturação de oxigênio caindo para 89%.
+​‎ 
+<b>Qual fenômeno farmacológico explica o retorno da depressão respiratória e dos outros sintomas de overdose em Fernanda, mesmo após uma resposta inicial positiva à naloxona?</b>
+GABARITO: <b>Resposta curta:</b>
+O fenômeno é a renarcotização. Isso acontece porque a naloxona tem uma meia-vida curta (cerca de 1 hora) e é eliminada do corpo mais rapidamente do que o opioide de ação prolongada (metadona) que Fernanda usou. Conforme os níveis de naloxona diminuem, o opioide ainda presente no sistema volta a se ligar aos receptores, causando o retorno da depressão respiratória e outros sintomas. Por isso, podem ser necessárias doses repetidas de naloxona ou monitoramento prolongado.
+​‎ 
+<b>Resposta longa:</b>
+O fenômeno farmacológico que explica o retorno dos sintomas de overdose em Fernanda é a renarcotização. Isso ocorre porque a naloxona, o antagonista opioide administrado, possui uma duração de ação (meia-vida de aproximadamente 1 hora) significativamente mais curta do que muitos opioides agonistas, especialmente os de ação prolongada como a metadona, ou quando grandes doses de qualquer opioide são consumidas. Inicialmente, a naloxona desloca o opioide dos seus receptores, revertendo a depressão respiratória e outros sintomas. No entanto, à medida que a naloxona é metabolizada e eliminada do organismo, sua concentração nos receptores diminui. Se o opioide agonista ainda estiver presente no corpo em concentrações significativas (pois sua eliminação é mais lenta), ele volta a se ligar aos receptores opioides que ficam desocupados pela naloxona. Essa religação do agonista aos receptores resulta no reaparecimento dos efeitos da overdose, como a depressão respiratória. Por isso, pacientes que recebem naloxona para overdose de opioides, particularmente os de longa duração, necessitam de monitoramento contínuo e, frequentemente, de doses repetidas de naloxona ou de uma infusão contínua para manter a reversão dos efeitos até que o opioide agonista seja eliminado do organismo.
+
+---
+
+Q: Sr. Antônio, 68 anos, está internado há uma semana para tratamento de dor intensa devido a uma fratura patológica de fêmur secundária a metástases ósseas. Ele vem recebendo morfina por via oral em doses otimizadas, o que tem proporcionado bom controle da dor. No entanto, nos últimos dias, Sr. Antônio desenvolveu constipação severa, distensão e desconforto abdominal significativos, refratários às medidas laxativas convencionais. A equipe médica considera que a analgesia com morfina é essencial para o seu conforto e qualidade de vida.
+​‎ 
+<b>Considerando que a analgesia com morfina é essencial para o Sr. Antônio, existe alguma classe de medicamento que poderia ser utilizada para antagonizar os efeitos gastrointestinais da morfina sem reverter sua ação analgésica central? Se sim, cite um exemplo de fármaco dessa classe.</b>
+GABARITO: <b>Resposta curta:</b>
+Sim, existem os antagonistas de receptores opioides de ação periférica (PAMORAs). Esses fármacos, como a metilnaltrexona, atuam bloqueando os receptores opioides no trato gastrointestinal, aliviando a constipação induzida pela morfina. Eles têm penetração limitada no sistema nervoso central, o que permite que o efeito analgésico da morfina seja mantido.
+​‎ 
+<b>Resposta longa:</b>
+Sim, existe uma classe de medicamentos que pode ser utilizada para antagonizar os efeitos gastrointestinais da morfina sem reverter sua ação analgésica central. São os antagonistas de receptores opioides de ação periférica (PAMORAs, do inglês Peripherally Acting Mu-Opioid Receptor Antagonists). Esses fármacos são projetados para atuar seletivamente nos receptores opioides mu localizados no trato gastrointestinal. Eles possuem características farmacocinéticas, como baixa lipossolubilidade ou serem substratos de transportadores de efluxo na barreira hematoencefálica, que restringem significativamente sua capacidade de cruzar essa barreira e atingir o sistema nervoso central (SNC) em concentrações que afetariam a analgesia. Ao bloquear os receptores opioides no intestino, os PAMORAs revertem a diminuição da motilidade e das secreções intestinais induzidas pela morfina, aliviando a constipação induzida por opioides (CIO). Como não interferem significativamente com os receptores opioides no SNC, a analgesia proporcionada pela morfina é preservada. Um exemplo de fármaco dessa classe é a metilnaltrexona, que é administrada por via subcutânea para o tratamento da CIO em pacientes com dor crônica recebendo opioides. Outros exemplos incluem o naloxegol e a alvimopana (esta última com uso mais restrito).
+
+---
+
+Q: Cite brevemente os principais tipos de fármacos que interagem com os receptores opioides. Para cada tipo, descreva sucintamente seu mecanismo de ação geral em relação a esses receptores e forneça dois exemplos de fármacos.
+GABARITO: 1. Agonistas Fortes (ou Totais) de Receptores Mu-Opioides:
+Mecanismo: Ativam plenamente os receptores mu-opioides, gerando forte analgesia e outros efeitos opioides. 
+Exemplos: Morfina, Fentanila.
+​‎ 
+2. Agonistas Parciais de Receptores Opioides:
+Mecanismo: Ligam-se aos receptores opioides (frequentemente mu) mas os ativam com menor eficácia que os agonistas totais ("efeito teto"); podem antagonizar agonistas de maior eficácia. 
+Exemplos: Buprenorfina, Pentazocina.
+​‎ 
+3. Antagonistas Opioides (Gerais):
+Mecanismo: Ligam-se competitivamente aos receptores opioides (mu, delta, kappa) sem ativá-los, bloqueando ou revertendo os efeitos dos agonistas. 
+Exemplos: Naloxona, Naltrexona.
+​‎ 
+4. Antagonistas Opioides de Ação Periférica (PAMORAs):
+Mecanismo: Antagonizam receptores mu-opioides no trato gastrointestinal, com mínima penetração no SNC, aliviando a constipação induzida por opioides sem afetar a analgesia central. 
+Exemplos: Metilnaltrexona, Alvimopana.
+​‎ 
+5. Opioides Atípicos (com múltiplos mecanismos):
+Mecanismo: Fraca atividade agonista em receptores mu-opioides combinada com inibição da recaptação de norepinefrina e/ou serotonina, contribuindo para a analgesia. 
+Exemplos: Tramadol, Tapentadol.
+​‎ 
+6. Agonistas Tendenciosos (Biased Agonists):
+Mecanismo: Ligam-se ao receptor opioide ativando preferencialmente uma via de sinalização intracelular (e.g., via da proteína G) em detrimento de outras (e.g., via da β-arrestina). 
+Exemplos: Oliceridina.
+​‎ 
+7. Antitussígenos Relacionados a Opioides:
+Mecanismo: Suprimem o reflexo da tosse por ação no centro bulbar da tosse; alguns, como o dextrometorfano, não atuam via receptores mu-opioides para este efeito. 
+Exemplos: Codeína, Dextrometorfano.
+​‎ 
+8. Moduladores Alostéricos:
+Mecanismo: Ligam-se a um sítio distinto do ortostérico no receptor opioide, alterando a ação dos opioides que se ligam ao sítio principal. 
+Exemplos: (Ainda em estágios pré-clínicos de investigação).
+
+---
+
+Q: Sra. Helena, 55 anos, faz tratamento contínuo para depressão com escitalopram 20mg/dia há seis meses, com bom controle dos sintomas depressivos. Recentemente, ela foi submetida a uma colecistectomia videolaparoscópica devido a colelitíase sintomática. No período pós-operatório, para manejo da dor moderada, o médico plantonista prescreveu tramadol por via oral. Algumas horas após a administração da primeira dose de tramadol, Sra. Helena começou a apresentar um quadro de agitação psicomotora, confusão mental, taquicardia (frequência cardíaca de 115 bpm), hipertermia (temperatura axilar de 38.5°C), tremores intensos e rigidez muscular notável nos membros inferiores.
+I_A) Considerando o histórico medicamentoso da Sra. Helena e o fármaco opioide administrado no pós-operatório, qual é a possível razão farmacológica para o desenvolvimento do conjunto de sinais e sintomas apresentados por ela?
+GABARITO: <b>Resposta curta:</b>
+A Sra. Helena provavelmente desenvolveu Síndrome Serotoninérgica. Isso ocorreu devido à interação medicamentosa entre o escitalopram (um ISRS que aumenta a serotonina) e o tramadol. O tramadol também aumenta os níveis de serotonina ao inibir sua recaptação. A combinação desses dois fármacos levou a um excesso de atividade serotoninérgica no sistema nervoso central, resultando nos sintomas observados. O uso concomitante de tramadol e ISRSs é desaconselhado por este risco.
+​‎ 
+<b>Resposta longa:</b>
+A possível razão farmacológica para os sintomas apresentados pela Sra. Helena é o desenvolvimento da Síndrome Serotoninérgica. Esta síndrome é uma condição potencialmente grave causada pelo excesso de atividade serotoninérgica no sistema nervoso central e periférico. O escitalopram, que a Sra. Helena utiliza cronicamente, é um Inibidor Seletivo da Recaptação de Serotonina (ISRS), que funciona aumentando a disponibilidade de serotonina na fenda sináptica. O tramadol, o opioide administrado, além de sua fraca atividade no receptor mu-opioide, também possui como mecanismo de ação a inibição da recaptação de serotonina (5-HT) e norepinefrina (NE). Especificamente, o (+)-enantiômero do tramadol inibe a captação de 5-HT. A administração concomitante de dois ou mais fármacos com propriedades serotoninérgicas, como um ISRS (escitalopram) e um inibidor da recaptação de serotonina (tramadol), aumenta sinergicamente os níveis de serotonina no cérebro. Esse excesso de estimulação serotoninérgica pode levar à tríade característica de sintomas da síndrome: alterações do estado mental (agitação, confusão), hiperatividade autonômica (taquicardia, hipertermia) e anormalidades neuromusculares (tremores, rigidez muscular, mioclonia, hiperreflexia). O texto fonte adverte que o tramadol não deve ser usado em pacientes que tomam inibidores seletivos da recaptação da serotonina devido ao risco de interações adversas como esta e convulsões.
+I_B) Algum tempo após a recuperação do quadro descrito no item A, Sra. Helena desenvolve uma tosse seca persistente, acompanhada de dor torácica de intensidade moderada. O médico assistente considera prescrever um antitussígeno de ação central e está em dúvida entre codeína e dextrometorfano. Considerando o histórico médico da Sra. Helena, incluindo o episódio anterior de Síndrome Serotoninérgica e sua medicação de uso contínuo (escitalopram), qual dos dois antitussígenos seria a escolha mais prudente e por quê?
+GABARITO: <b>Resposta curta:</b>
+A codeína seria a escolha mais prudente para Sra. Helena. O dextrometorfano inibe a recaptação de serotonina, o que, combinado com o escitalopram (um ISRS), aumentaria substancialmente o risco de uma nova Síndrome Serotoninérgica, dado seu histórico. A codeína atua principalmente como um opioide para suprimir a tosse e aliviar a dor, não possuindo o mesmo risco direto de interação serotoninérgica com o escitalopram, embora ainda requeira cautela devido aos seus efeitos opioides.
+​‎ 
+<b>Resposta longa:</b>
+Considerando o histórico da Sra. Helena, especialmente o episódio prévio de Síndrome Serotoninérgica enquanto em uso de escitalopram e a introdução de um fármaco com propriedades serotoninérgicas (tramadol), a codeína seria a escolha mais prudente entre as duas opções para tratar a tosse seca e a dor moderada.
+​‎ 
+A principal razão para evitar o dextrometorfano é o seu mecanismo de ação. O dextrometorfano, embora eficaz como antitussígeno, inibe a recaptação neuronal de serotonina. A Sra. Helena já utiliza escitalopram, um Inibidor Seletivo da Recaptação de Serotonina (ISRS), que aumenta a disponibilidade de serotonina. A combinação de dextrometorfano com escitalopram aumentaria aditivamente os níveis de serotonina, elevando significativamente o risco de recorrência da Síndrome Serotoninérgica, uma condição que ela já experimentou e que pode ser grave.
+​‎ 
+A codeína, por outro lado, exerce seu efeito antitussígeno primariamente através de sua ação como agonista nos receptores opioides no centro da tosse. Embora seja um opioide e possua seus próprios riscos e efeitos colaterais (como sedação, constipação e potencial de dependência), ela não possui o mesmo mecanismo de inibição da recaptação de serotonina que o dextrometorfano. Portanto, o risco direto de precipitar uma Síndrome Serotoninérgica pela combinação com o escitalopram é consideravelmente menor com a codeína do que com o dextrometorfano. Além disso, a codeína também possui propriedades analgésicas que poderiam auxiliar no alívio da dor torácica moderada referida pela paciente, enquanto o dextrometorfano não tem propriedades analgésicas significativas. No entanto, a codeína deve ser usada com cautela, na menor dose eficaz e pelo menor tempo necessário, e a paciente monitorada para quaisquer interações ou efeitos adversos.

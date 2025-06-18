@@ -1,0 +1,61 @@
+Q: Sobre a sífilis, responda as perguntas a seguir.
+I_A) Qual é o <b>agente causador</b> da sífilis?
+GABARITO: Treponema pallidum, que é uma bactéria Gram-negativa, do grupo das espiroquetas.
+I_B) Como se pode <b>prevenir</b> a sífilis?
+GABARITO: Por meio da prática de técnicas sexuais seguras, além do contato adequado e tratamento de parceiros sexuais de pacientes que tenham sido documentados com infecção.
+I_C) Para o diagnóstico da sífilis são utilizados a combinação de resultados entre os testes <b>treponêmicos</b> e <b>não treponêmicos</b>, qual a diferença entre eles?
+GABARITO: Os <b>testes não treponêmicos</b> (como o VDRL e o RPR) detectam anticorpos reagínicos (IgG e IgM) que são produzidos contra componentes lipídicos liberados de células humanas danificadas, e não contra a bactéria Treponema pallidum em si. Esses testes são úteis para triagem e, especialmente, para monitorar a resposta ao tratamento, pois os títulos de anticorpos diminuem com a cura da doença. No entanto, esses testes são menos sensíveis na sífilis primária precoce e na sífilis tardia, além de estarem sujeitos a resultados falso-positivos, especialmente em casos de doenças autoimunes, infecções agudas, gravidez ou vacinação recente.
+​‎ 
+Já os <b>testes treponêmicos</b> (como o FTA-ABS, TP-PA e imunoensaios enzimáticos) detectam anticorpos específicos contra o Treponema pallidum. Esses testes são mais específicos e sensíveis, inclusive nas fases iniciais da doença, e são utilizados para confirmar o diagnóstico após um teste não treponêmico positivo. Entretanto, como os anticorpos treponêmicos tendem a permanecer detectáveis por toda a vida, mesmo após o tratamento, esses testes não servem para monitorar a resposta terapêutica.
+I_D) Qual é o <b>fármaco</b> indicado para a <b>gestante</b> com diagnóstico de sífilis?
+GABARITO: ​A <b>benzilpenicilina benzatina</b> é o medicamento de escolha para o tratamento da sífilis adquirida e em gestantes, sendo a única opção segura e eficaz para o tratamento adequado das gestantes
+I_E) Qual é o fármaco indicado quando há <b>neurossífilis</b>?
+GABARITO: Penicilina G cristalina.
+I_F) Qual é a principal <b>manifestação clínica</b> inicial da <b>sífilis primária</b>?
+GABARITO: A primeira manifestação é caracterizada por úlcera (denominada “cancro duro”) rica em treponemas, geralmente única e indolor, com borda bem definida e regular, base endurecida e fundo limpo, que ocorre no local de entrada da bactéria
+
+---
+
+Q: Sobre a gonorreia, responda as perguntas a seguir.
+I_A) Qual é o <b>agente causador</b> da gonorreia? Quais as características dele quanto a catalase e oxidase?
+GABARITO: <i>NEISSERIA GONORRHOEAE</i>, um diplococo gram-negativo oxidase positivo e catalase positivo.
+I_B) Qual o principal <b>local de infecção em homens</b>? E a principal manifestação clínica?
+GABARITO: A infecção em homens é principalmente restrita a <b>uretra</b>. 
+A principal manifestação clínica da gonorreia em homens é <b>uretrite purulenta com disúria</b> (dor, ardência ou desconforto ao urinar)
+I_C) Qual o principal <b>local de infecção em mulheres</b>? E a principal manifestação clínica?
+GABARITO: O principal local de infecção na mulher é o <b>colo uterino</b>, porque as bactérias infectam as células do epitélio colunar endocervical.
+Pacientes sintomáticas costumam ter <b>corrimento vaginal</b>, disúria e dor abdominal.
+I_D) Quais são métodos <b>diagnósticos</b> de gonorreia?
+GABARITO: Coloração de gram pode ser útil, mas o principal são testes moleculares como o <b>teste de amplificação de ácidos nucleicos (TAAN)</b>
+I_E) Qual é o <b>tratamento</b> de gonorreia?
+GABARITO: Ciprofloxacina + azitromicina.
+No entanto, caso seja gestante:
+Ceftriaxona + azitromicina.
+I_F) O que é <b>oftalmia neonatal</b> e como <b>prevenir</b> quando a gestante tem gonorreia?
+GABARITO: Oftalmia neonatal é uma infecção ocular aguda que ocorre nos primeiros dias de vida do recém-nascido, podendo ser causada por transmissão de gonorreia durante o parto vaginal.
+A prevenção pode ser realizada com <b>nitrato de prata a 1%</b> na primeira hora após o nascimento ou então <b>tetraciclina a 1% (colírio)</b> também na primeira hora após o nascimento. Ambos em aplicação única.
+I_G) Como ocorre a <b>transmissão</b> de gonorreia? Como pode ser feita a <b>prevenção</b>?
+GABARITO: A transmissão ocorre principalmente por contato sexual, com o risco de infecção aumentando quando a pessoa tem mais encontros sexuais com parceiros infectados.
+I_H) Qual é o maior <b>reservatório</b> de gonorreia? Em qual <b>sexo</b> é mais comum?
+GABARITO: O maior reservatório são os indivíduos infectados de maneira assintomática, pois eles também podem transmitir. Sendo o carreamento assintomático mais comum em mulheres do que em homens.
+
+---
+
+Q: A endocardite infecciosa (EI) é uma condição infecciosa grave que acomete as estruturas internas do coração, especialmente as válvulas cardíacas. O conhecimento de suas características clínicas, etiológicas, diagnósticas e preventivas é fundamental para o adequado manejo do paciente.
+I_A) O que é <b>endocardite</b>?
+GABARITO: A endocardite é uma inflamação do endocárdio, geralmente de origem infecciosa, que acomete preferencialmente as válvulas cardíacas. Ela é caracterizada pela presença de vegetações e pode levar a complicações locais e sistêmicas se não tratada adequadamente.
+I_B) Quais são as <b>principais causas</b> da endocardite infecciosa e quais <b>microrganismos</b> estão mais frequentemente envolvidos?
+GABARITO: A endocardite infecciosa é causada pela colonização do endocárdio por microrganismos, principalmente após uma bacteriemia transitória. Os agentes mais comuns incluem Staphylococcus aureus, estreptococos do grupo viridans, enterococos e, menos frequentemente, microrganismos do grupo HACEK, fungos e bacilos Gram-negativos.
+I_C) Quais medidas podem ser adotadas para <b>prevenir</b> a endocardite infecciosa, especialmente em grupos de risco?
+GABARITO: A prevenção da endocardite envolve principalmente a manutenção de boa higiene oral, tratamento de infecções antes de procedimentos invasivos e, em grupos de alto risco, o uso de antibióticos profiláticos antes de procedimentos dentários ou cirurgias envolvendo mucosas.
+I_D) Qual é a <b>lesão típica</b> observada na endocardite infecciosa e qual é a sua composição?
+GABARITO: A lesão típica da endocardite infecciosa é a vegetação, composta por uma massa de plaquetas, fibrina, microrganismos e escassas células inflamatórias, localizada geralmente nas válvulas cardíacas ou em áreas de lesão endotelial.
+I_E) Cite duas <b>manifestações cardíacas</b> e duas <b>não cardíacas</b> frequentemente observadas na endocardite infecciosa.
+GABARITO: Entre as manifestações cardíacas estão o surgimento ou agravamento de sopros e a insuficiência cardíaca congestiva. Manifestações não cardíacas incluem febre persistente, petéquias, nódulos de Osler, embolias arteriais e sinais neurológicos como acidente vascular cerebral.
+I_F) Explique como é feito o <b>diagnóstico clínico da endocardite infecciosa</b> com base nos Critérios de Duke Modificados, indicando os critérios maiores e menores.
+GABARITO: O diagnóstico segundo os Critérios de Duke Modificados é baseado em achados clínicos, microbiológicos e ecocardiográficos. Critérios maiores incluem hemoculturas positivas com microrganismos típicos e evidência de comprometimento endocárdico por ecocardiografia. Critérios menores incluem febre, predisposição cardíaca, fenômenos vasculares, imunológicos e achados microbiológicos que não atendem aos critérios maiores.
+I_G) Cite um <b>tratamento de endocardite</b> causada por <b>Estreptococos</b> e um tratamento para causada por <b>Enterococos</b>.
+GABARITO: Para estreptococos uma possibilidade é o tratamento triplo com Penicilina G, Ceftriaxona e Vancomicina.
+No caso de enterococos substitui-se Ceftriaxona por Ampicilina.
+I_H) Cite um <b>tratamento</b> de endocardite causada por <b>Estafilococos</b> (S. aureus e coagulase-negativos).
+GABARITO: Oxacilina, Cefazolina e Vancomicina.

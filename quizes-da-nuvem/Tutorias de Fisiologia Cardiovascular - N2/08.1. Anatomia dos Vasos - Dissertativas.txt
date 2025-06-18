@@ -1,0 +1,35 @@
+Q: Quais as diferenças <b>histológicas</b> entre artérias e veias?
+GABARITO: As <b>artérias</b> e as <b>veias</b> apresentam diferenças histológicas e funcionais significativas, refletindo suas distintas funções no sistema circulatório. Histologicamente, as artérias possuem uma <b>túnica média muito mais espessa</b>, composta por várias camadas de <b>músculo liso e fibras elásticas</b>, o que permite que suportem e regulem as altas pressões com que o sangue é bombeado pelo coração. Essa espessura também confere maior resistência e elasticidade, permitindo <b>vasoconstrição e vasodilatação</b>, essenciais para a regulação do fluxo sanguíneo e da pressão arterial. Em contraste, as veias têm uma túnica média mais delgada, com menos músculo liso e fibras elásticas, mas uma <b>túnica externa (adventícia) mais espessa</b>, composta por tecido conjuntivo, o que garante suporte estrutural, mas não resistência à pressão elevada.
+
+---
+
+Q: Quais as diferenças <b>funcionais</b> entre artérias e veias?
+GABARITO: As artérias atuam como <b>reservatórios de pressão</b>, impulsionando o sangue do coração para os tecidos com alta pressão e velocidade. Já as veias funcionam como <b>reservatórios de volume</b>, armazenando até dois terços do sangue total do corpo em repouso, e retornam o sangue dos tecidos ao coração sob <b>baixa pressão</b>. Para compensar essa baixa pressão e evitar refluxo, especialmente nos membros inferiores, as veias possuem <b>válvulas internas</b> unidirecionais — estruturas ausentes nas artérias — que auxiliam o retorno venoso, junto com a contração da musculatura esquelética. Outra diferença marcante é que, ao corte transversal, as artérias mantêm sua forma circular devido à sua parede espessa e elástica, enquanto as veias frequentemente colabam, apresentando-se achatadas devido às suas paredes mais finas.
+
+---
+
+Q: Quais são os cinco <b>tipos principais de vasos sanguíneos</b> e suas funções gerais?
+GABARITO: Os cinco tipos principais de vasos sanguíneos são: <b>artérias, arteríolas, capilares, vênulas e veias</b>. As artérias transportam o sangue do coração para outros órgãos, ramificando-se progressivamente em vasos menores. As arteríolas regulam o fluxo sanguíneo para as redes capilares. Os capilares, que possuem paredes finas, são os vasos sanguíneos onde ocorrem as trocas de substâncias entre o sangue e os tecidos do corpo. As vênulas recebem o sangue dos capilares. Por fim, as veias transportam o sangue dos tecidos de volta para o coração, sendo formadas pela fusão de vênulas progressivamente maiores.
+
+---
+
+Q: Sobre as <b>túnicas</b>, responda os itens a seguir.
+I_A) Quais são as <b>três camadas ou túnicas</b> que compõem a parede de um vaso sanguíneo típico?
+GABARITO: A parede de um vaso sanguíneo padrão é formada por três camadas de tecidos: a túnica íntima (a camada interna epitelial), a túnica média (composta por músculo liso e tecido conjuntivo elástico) e a túnica externa (o revestimento externo de tecido conjuntivo).
+I_B) Qual a função da <b>túnica íntima</b> e o que a compõe?
+GABARITO: A túnica íntima forma o revestimento interno de um vaso sanguíneo e está em contato direto com o sangue. É composta por uma camada mais interna chamada endotélio, que é uma lâmina fina de células planas contínua com o revestimento endocárdico do coração. Abaixo do endotélio está a membrana basal, que fornece suporte físico. A parte mais externa da túnica íntima é a lâmina elástica interna, uma lâmina fina de fibras elásticas com aberturas. O endotélio, além de ser uma barreira, influencia o fluxo sanguíneo, secreta mediadores químicos que afetam o músculo liso e auxilia na permeabilidade capilar.
+I_C) Descreva a <b>túnica média</b> e suas funções.
+GABARITO: A túnica média é a camada de tecido muscular e conjuntivo, com as maiores variações entre os diferentes tipos de vasos. É geralmente espessa e composta principalmente por células musculares lisas e fibras elásticas. A função principal das células musculares lisas é regular o diâmetro do lúmen do vaso através da vasoconstrição (estreitamento) e vasodilatação (aumento do diâmetro), o que regula o fluxo sanguíneo e a pressão arterial. As células musculares lisas também auxiliam na produção de fibras elásticas e podem se contrair em caso de lesão do vaso (vasospasmo) para limitar a perda de sangue.
+I_D) Qual a função da <b>túnica externa</b> e o que a compõe?
+GABARITO: A túnica externa, também conhecida como adventícia, é o revestimento externo de um vaso sanguíneo. Consiste em fibras elásticas e colágenas. Contém numerosos nervos e, em vasos de maior calibre, vasos sanguíneos minúsculos chamados vasa vasorum que irrigam a parede do vaso. A túnica externa ajuda a ancorar os vasos aos tecidos circundantes.
+
+---
+
+Q: Onde a maior parte do <b>volume sanguíneo em repouso</b> é encontrada no corpo e qual a importância dessa distribuição?
+GABARITO: A maior parte do volume sanguíneo em repouso, cerca de 64%, encontra-se nas <b>veias e vênulas sistêmicas</b>. As veias e vênulas sistêmicas atuam como reservatórios de sangue. Essa distribuição é importante porque permite que o sangue seja deslocado rapidamente desses reservatórios para outras partes do corpo em caso de necessidade, como durante o aumento da atividade muscular ou em situações de hemorragia, através de um processo chamado venoconstrição.
+
+Q: Explique as principais diferenças estruturais e funcionais entre as <b>artérias elásticas e as artérias musculares</b>. Em sua resposta, comente sobre a composição da parede dos vasos, sua localização no sistema circulatório e o papel que desempenham na hemodinâmica.
+GABARITO: As artérias elásticas e musculares diferem em sua estrutura e função, refletindo os papéis distintos que desempenham na circulação sanguínea.
+As artérias elásticas, como a aorta e o tronco pulmonar, são os maiores vasos arteriais e estão localizadas próximas ao coração. Sua túnica média é rica em fibras elásticas (lamelas elásticas) e menos em músculo liso. Essa estrutura permite que suas paredes se distendam com facilidade durante a sístole (contração ventricular), armazenando energia mecânica, e depois recuem durante a diástole, ajudando a manter o fluxo sanguíneo contínuo — por isso, são consideradas reservatórios de pressão.
+Já as artérias musculares, como a artéria braquial ou radial, têm túnica média predominante em músculo liso, com menos fibras elásticas. Estão mais distantes do coração e se ramificam para distribuir o sangue aos órgãos e tecidos. Sua principal função é regular o fluxo sanguíneo e a pressão arterial local, por meio de vasoconstrição e vasodilatação — sendo, por isso, chamadas de artérias distribuidoras.
+Em resumo, enquanto as artérias elásticas amortecem as variações de pressão e mantêm o fluxo sanguíneo entre os batimentos cardíacos, as musculares controlam a distribuição do sangue e participam da regulação hemodinâmica periférica.

@@ -1,0 +1,95 @@
+Q: O que define o ciclo cardíaco?
+A) Apenas a contração dos ventrículos (sístole).
+B) Apenas o relaxamento e enchimento do coração (diástole).
+C) Os eventos elétricos registrados no eletrocardiograma.
+D) Os eventos cardíacos desde o início de um batimento até o início do próximo.
+G: D
+C: O ciclo cardíaco abrange a sequência completa de eventos mecânicos e elétricos que ocorrem durante um único batimento cardíaco, incluindo tanto a contração (sístole) quanto o relaxamento (diástole) das câmaras cardíacas. As opções {A} e {B} descrevem apenas fases parciais do ciclo, e a opção {C} descreve o registro elétrico, que acompanha, mas não define completamente, os eventos mecânicos do ciclo.
+
+Q: Qual onda do eletrocardiograma (ECG) está associada à despolarização dos átrios, precedendo sua contração?
+A) Complexo QRS
+B) Onda T
+C) Onda P
+D) Onda U
+G: C
+C: A onda P representa a ativação elétrica (despolarização) dos átrios. Essa despolarização inicia a contração atrial, que contribui para o enchimento final dos ventrículos. O complexo QRS representa a despolarização ventricular, e a onda T representa a repolarização ventricular. A onda U não é consistentemente vista e sua origem exata é debatida, mas não está relacionada à despolarização atrial.
+
+Q: Qual é a principal função das valvas cardíacas durante o ciclo cardíaco?
+A) Gerar a pressão sanguínea.
+B) Iniciar o impulso elétrico.
+C) Impedir o refluxo (fluxo retrógrado) de sangue.
+D) Acelerar o fluxo sanguíneo.
+G: C
+C: As valvas atrioventriculares (mitral e tricúspide) impedem o refluxo dos ventrículos para os átrios durante a sístole ventricular. As valvas semilunares (aórtica e pulmonar) impedem o refluxo das grandes artérias (aorta e tronco pulmonar) para os ventrículos durante a diástole ventricular. Elas se abrem e fecham passivamente devido a gradientes de pressão, garantindo o fluxo unidirecional do sangue.
+
+Q: O primeiro som cardíaco (B1) está associado principalmente ao fechamento de quais valvas?
+A) Valvas semilunares (aórtica e pulmonar).
+B) Valvas atrioventriculares (mitral e tricúspide).
+C) Apenas a valva aórtica.
+D) Apenas a valva mitral.
+G: B
+C: O primeiro som cardíaco (B1) é um som de tom mais baixo e mais longo que ocorre no início da sístole ventricular. Ele é gerado pela vibração do sangue e das paredes cardíacas associada ao fechamento abrupto das valvas atrioventriculares (mitral e tricúspide) quando a pressão nos ventrículos excede a pressão nos átrios.
+
+Q: Qual a porcentagem aproximada do enchimento ventricular que ocorre devido à contração atrial em um coração normal em repouso?
+A) 5%
+B) 20%
+C) 50%
+D) 80%
+G: B
+C: Em condições normais, a maior parte do enchimento ventricular (cerca de 80%) ocorre passivamente durante a diástole, conforme o sangue flui das veias, através dos átrios, para os ventrículos. A contração atrial (sístole atrial), que ocorre no final da diástole, contribui com os 20% finais do enchimento ventricular, otimizando o volume diastólico final.
+
+Q: Como a duração total do ciclo cardíaco se relaciona com a frequência cardíaca?
+A) É diretamente proporcional à frequência cardíaca.
+B) É o inverso (recíproco) da frequência cardíaca.
+C) Não há relação entre a duração do ciclo e a frequência cardíaca.
+D) É igual ao quadrado da frequência cardíaca.
+G: B
+C: A frequência cardíaca é medida em batimentos por minuto (bpm). A duração do ciclo cardíaco é o tempo que leva para completar um batimento. Portanto, se a frequência cardíaca aumenta (mais batimentos por minuto), o tempo disponível para cada batimento (duração do ciclo) diminui. Matematicamente, Duração do Ciclo (em minutos/batimento) = 1 / Frequência Cardíaca (em batimentos/minuto).
+
+Q: Durante a fase de contração isovolumétrica do ciclo cardíaco ventricular, qual é o estado das valvas cardíacas?
+A) As valvas AV estão abertas e as semilunares estão fechadas.
+B) As valvas AV estão fechadas e as semilunares estão abertas.
+C) Todas as valvas (AV e semilunares) estão abertas.
+D) Todas as valvas (AV e semilunares) estão fechadas.
+G: D
+C: A contração isovolumétrica ocorre no início da sístole ventricular. Após o fechamento das valvas AV (causado pelo aumento da pressão ventricular acima da atrial), a pressão ventricular continua a subir, mas ainda não é suficiente para abrir as valvas semilunares (aórtica e pulmonar). Como todas as valvas estão fechadas, o ventrículo se contrai, aumentando a tensão em suas paredes, mas o volume de sangue dentro dele permanece constante (isovolumétrico).
+
+Q: Quando a frequência cardíaca aumenta significativamente, qual fase do ciclo cardíaco é proporcionalmente mais encurtada, podendo comprometer o enchimento ventricular?
+A) Sístole ventricular.
+B) Diástole (período de relaxamento e enchimento).
+C) Contração isovolumétrica.
+D) Período de ejeção.
+G: B
+C: Embora todas as fases do ciclo cardíaco se encurtem com o aumento da frequência cardíaca, a diástole (o tempo disponível para o relaxamento e enchimento ventricular) diminui em uma porcentagem maior do que a sístole. Em frequências muito altas, esse encurtamento desproporcional da diástole pode não permitir tempo suficiente para que os ventrículos se encham completamente antes da próxima contração, potencialmente limitando o débito cardíaco.
+
+Q: A incisura (ou nó dicrótico) observada na curva de pressão aórtica está mais diretamente relacionada a qual evento do ciclo cardíaco?
+A) Abertura da valva aórtica.
+B) Fechamento da valva aórtica.
+C) Fechamento da valva mitral.
+D) Pico da pressão sistólica ventricular.
+G: B
+C: A incisura na curva de pressão aórtica ocorre logo após o final da ejeção ventricular. Quando o ventrículo começa a relaxar (início da diástole), a pressão ventricular cai abaixo da pressão na aorta. Isso causa um breve refluxo de sangue da aorta de volta para o ventrículo, o que "bate" e fecha a valva aórtica. Essa interrupção súbita do refluxo e o fechamento da valva causam uma pequena oscilação ou "entalhe" (a incisura) na curva de pressão aórtica, seguida pela queda gradual da pressão durante a diástole.
+
+Q: No contexto da função ventricular, o que representa a 'pré-carga'?
+A) A pressão na aorta contra a qual o ventrículo ejeta o sangue.
+B) O volume de sangue restante no ventrículo após a sístole.
+C) A pressão ou volume no ventrículo no final da diástole, antes da contração.
+D) A força de contração do músculo cardíaco.
+G: C
+C: Pré-carga refere-se ao grau de estiramento das fibras musculares cardíacas no final do enchimento ventricular (diástole), imediatamente antes do início da contração (sístole). Clinicamente, é frequentemente associada à pressão diastólica final ou ao volume diastólico final (EDV). Representa a carga imposta ao músculo antes que ele comece a se contrair. A opção {A} descreve a pós-carga, a opção {B} o volume sistólico final, e a opção {D} a contratilidade.
+
+Q: Analisando o diagrama de pressão-volume do ventrículo esquerdo, a fase que representa o período de ejeção ventricular é caracterizada por:
+A) Aumento rápido da pressão com volume constante, seguido por queda da pressão.
+B) Aumento do volume ventricular com pressão diastólica relativamente baixa.
+C) Diminuição do volume ventricular enquanto a pressão intraventricular primeiro sobe e depois começa a cair.
+D) Diminuição da pressão ventricular com volume constante.
+G: C
+C: No diagrama pressão-volume, o ciclo forma uma alça. A fase de ejeção (Fase III) começa após a abertura da valva aórtica (quando a pressão ventricular excede a aórtica). Durante esta fase, o sangue é ejetado, então o volume ventricular diminui significativamente. Simultaneamente, a pressão ventricular continua a subir até atingir um pico (pico sistólico) e depois começa a cair ligeiramente na parte final da ejeção, enquanto o ventrículo começa a relaxar, mas ainda ejeta sangue. A opção {A} descreve parcialmente a contração isovolumétrica. A opção {B} descreve o enchimento ventricular (diástole). A opção {D} descreve o relaxamento isovolumétrico.
+
+Q: Considerando a relação entre o consumo de oxigênio do miocárdio e o trabalho cardíaco, em qual das seguintes situações o coração provavelmente consumiria MAIS energia química (oxigênio) para realizar uma determinada quantidade de trabalho externo (bombeamento de sangue)?
+A) Em um coração normal com pressão arterial normal.
+B) Em um coração que desenvolveu hipertrofia concêntrica devido à hipertensão crônica.
+C) Em um coração que está significativamente dilatado (como na insuficiência cardíaca com hipertrofia excêntrica).
+D) Em um coração batendo em frequência muito baixa.
+G: C
+C: O consumo de oxigênio do miocárdio está relacionado à tensão desenvolvida na parede ventricular durante a sístole (índice tensão-tempo). De acordo com a lei de Laplace, a tensão na parede (T) é proporcional ao produto da pressão intraventricular (P) e o raio da câmara (r) (T ≈ P × r). Em um coração dilatado, o raio (r) é aumentado. Portanto, mesmo para gerar uma pressão sistólica normal (P), a tensão na parede (T) será significativamente maior. Isso exige que o músculo cardíaco gaste muito mais energia química (consuma mais oxigênio) para realizar o mesmo trabalho externo (ou até menos trabalho, em caso de falência), tornando o coração dilatado metabolicamente ineficiente. A hipertrofia concêntrica ({B}) pode, até certo ponto, normalizar a tensão na parede ao espessá-la, apesar da alta pressão. Frequência baixa ({D}) diminuiria o tempo total sob tensão por minuto.

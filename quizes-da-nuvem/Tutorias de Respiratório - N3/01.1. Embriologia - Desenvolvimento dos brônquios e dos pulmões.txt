@@ -1,0 +1,168 @@
+Q: Em que semana o broto respiratório começa a se desenvolver?
+A) 2ª semana
+B) 3ª semana
+C) 4ª semana
+D) 6ª semana
+G: C
+C: O broto respiratório se desenvolve na extremidade caudal do divertículo laringotraqueal durante a <b>quarta semana</b> de desenvolvimento.
+
+Q: Qual brônquio principal tem maior tendência a receber corpos estranhos?
+A) Direito
+B) Esquerdo
+C) Ambos igualmente
+D) Nenhum dos dois
+G: A
+C: O <b>brônquio principal direito</b> é mais vertical e mais largo, o que facilita a entrada acidental de corpos estranhos, tanto no feto quanto no adulto.
+
+Q: Qual é a principal função do surfactante pulmonar?
+A) Facilitar a contração muscular dos pulmões
+B) Aumentar a pressão alveolar
+C) Reduzir a tensão superficial nos alvéolos
+D) Estimular os pneumócitos tipo I
+G: C
+C: O surfactante é responsável por <b>diminuir a tensão superficial</b>, permitindo a <b>expansão adequada dos sacos terminais</b> e evitando seu colapso (atelectasia).
+
+Q: Qual célula é responsável pela produção do surfactante?
+A) Pneumócito tipo I
+B) Hemácia
+C) Macrófago alveolar
+D) Pneumócito tipo II
+G: D
+C: Os pneumócitos do tipo II, de origem endodérmica, <b>produzem surfactante pulmonar</b>, essencial para a função respiratória pós-natal.
+
+Q: Quando a respiração se torna possível para o feto, ainda que com suporte intensivo?
+A) Ao final do estágio pseudoglandular
+B) Ao início do estágio canalicular
+C) Ao final do estágio canalicular
+D) No início do estágio alveolar
+G: C
+C: A <b>respiração se torna possível por volta da 26ª semana</b>, quando surgem <b>sacos terminais com parede delgada</b> e há <b>boa vascularização pulmonar</b>, mesmo que ainda precária.
+
+Q: Qual é o principal mecanismo pelo qual o número de alvéolos aumenta após o nascimento?
+A) Aumento do tamanho dos alvéolos primitivos
+B) Formação de septos secundários que dividem alvéolos existentes
+C) Multiplicação dos pneumócitos tipo I
+D) Fusão dos ductos alveolares
+G: B
+C: O principal mecanismo de aumento do número de alvéolos após o nascimento é a formação de <b>septos secundários</b> que subdividem os alvéolos primitivos, aumentando a área de troca gasosa.
+
+Q: Qual fator de sinalização regula a diferenciação do músculo liso e a ramificação dos brônquios?
+A) FGF10
+B) Wnt7b
+C) SOX17
+D) Shh–Gli
+G: A
+C: O <b>fator de crescimento de fibroblasto 10 (FGF10)</b> é um regulador essencial para a <b>diferenciação do músculo liso</b> e para <b>controlar a ramificação dos brotos brônquicos</b>.
+
+Q: Qual evento marca o início da capacidade funcional pulmonar ao nascimento?
+A) Diminuição do volume de líquido amniótico
+B) Abertura dos alvéolos pelos movimentos respiratórios fetais
+C) Substituição do líquido intra-alveolar por ar
+D) Fechamento do canal arterial
+G: C
+C: O início da função pulmonar ao nascimento depende da <b>substituição do líquido intra-alveolar por ar</b>, permitindo as <b>primeiras trocas gasosas efetivas</b>.
+
+Q: Quando os pulmões atingem o número total de alvéolos encontrado em adultos?
+A) Ao nascimento
+B) Aos 3 anos
+C) Aos 5 anos
+D) Aos 8 anos
+G: D
+C: Os <b>300 milhões de alvéolos adultos</b> são geralmente atingidos <b>por volta dos 8 anos de idade</b>, após um processo contínuo de desenvolvimento alveolar iniciado no período fetal.
+
+Q: Sobre o desenvolvimento embrionário dos brônquios e pulmões, assinale a alternativa VERDADEIRA:
+A) O broto pulmonar origina-se da extremidade cranial do intestino médio.
+B) Os brônquios segmentares aparecem na 5ª semana.
+C) Os brônquios lobares originam-se diretamente dos bronquíolos terminais.
+D) O brônquio principal esquerdo é mais vertical que o direito.
+E) O brônquio principal direito é mais largo e mais vertical, favorecendo a entrada de corpos estranhos.
+G: E
+C: <b>{A}:</b> FALSA. O broto pulmonar surge da extremidade caudal do divertículo laringotraqueal, não do intestino médio.
+<b>{B}:</b> FALSA. Os brônquios segmentares se formam a partir da <b>7ª semana</b>.
+<b>{C}:</b> FALSA. Os brônquios lobares derivam dos <b>brônquios principais</b>, não dos bronquíolos terminais.
+<b>{D}:</b> FALSA. É o <b>direito</b> que é mais vertical, não o esquerdo.
+
+Q: Sobre a maturação pulmonar fetal, assinale a alternativa VERDADEIRA:
+A) A produção adequada de surfactante inicia-se por volta da 14ª semana.
+B) O estágio canalicular ocorre entre a 26ª e a 34ª semana.
+C) Os movimentos respiratórios fetais são patológicos se observados no terceiro trimestre.
+D) O estágio alveolar inicia-se ainda no útero e pode estender-se até os 8 anos.
+E) Pneumócitos tipo I são responsáveis pela produção do surfactante pulmonar.
+G: D
+C: <b>{A}:</b> FALSA. A <b>produção inicial de surfactante</b> começa entre a 20ª e a 22ª semana, mas só é adequada mais tarde.
+<b>{B}:</b> FALSA. O estágio <b>canalicular</b> ocorre aproximadamente da <b>16ª à 25ª semana</b>.
+<b>{C}:</b> FALSA. Os <b>movimentos respiratórios fetais (MRFs)</b> são normais e <b>essenciais</b> para o desenvolvimento pulmonar.
+<b>{E}:</b> FALSA. O <b>surfactante é produzido pelos pneumócitos tipo II</b>, não tipo I.
+
+Q: Durante o estágio canalicular, o tecido pulmonar torna-se altamente vascularizado e surgem os primeiros _________, que se ramificam em ductos alveolares primitivos. Esse processo marca o início da formação dos _________.
+GABARITO: 
+1ª lacuna: bronquíolos respiratórios
+2ª lacuna: sacos terminais (ou alvéolos primitivos)
+
+Q: O surfactante pulmonar é produzido pelos _________, e sua principal função é reduzir a _________ nos sacos alveolares, facilitando a respiração.
+GABARITO: 
+1ª lacuna: pneumócitos tipo II
+2ª lacuna: tensão superficial
+
+Q: Durante o desenvolvimento pulmonar, a pleura visceral é derivada do _________, enquanto a pleura parietal origina-se do _________.
+GABARITO: 
+1ª lacuna: mesênquima esplâncnico
+2ª lacuna: mesoderma somático
+
+QCH: Sobre o desenvolvimento pulmonar fetal, analise as afirmativas abaixo e assinale TODAS as assertivas VERDADEIRAS:
+A1: O estágio canalicular é caracterizado por aumento da vascularização pulmonar e início da formação dos bronquíolos respiratórios.
+G: V
+C: O estágio canalicular (16ª–25ª semanas) envolve <b>vascularização intensa</b> e formação dos <b>bronquíolos respiratórios</b>, preparando o pulmão para trocas gasosas.
+A2: O brônquio principal esquerdo é mais vertical, o que facilita a entrada de corpos estranhos em adultos.
+G: F
+C: O <b>brônquio principal direito</b>, e não o esquerdo, é mais <b>vertical e mais largo</b>, facilitando a entrada de corpos estranhos.
+A3: A pleura visceral se origina do mesoderma somático, enquanto a pleura parietal vem do mesoderma esplâncnico.
+G: F
+C: A <b>pleura visceral</b> deriva do <b>mesoderma esplâncnico</b>, e a <b>pleura parietal</b>, do <b>mesoderma somático</b> — está invertido na afirmativa.
+A4: A produção adequada de surfactante pulmonar ocorre já no início do segundo trimestre.
+G: F
+C: A produção de surfactante <b>começa entre a 20ª e 22ª semanas</b>, mas <b>só atinge níveis adequados no final da gestação</b>.
+A5: O líquido nos pulmões fetais é parcialmente eliminado ao nascimento por pressão torácica durante o parto vaginal.
+G: V
+C: Parte do líquido pulmonar é expulsa <b>pela compressão torácica no parto vaginal</b>, além de ser absorvido por capilares e linfáticos.
+A6: Após o nascimento, a maior parte dos alvéolos adultos ainda não está formada.
+G: V
+C: Cerca de <b>95% dos alvéolos maduros se formam após o nascimento</b>, especialmente até os <b>8 anos de idade</b>.
+
+Q: Durante o desenvolvimento pulmonar fetal, diversos processos anatômicos e funcionais são essenciais para garantir a viabilidade respiratória do recém-nascido. Responda aos itens a seguir com base nos conhecimentos embriológicos:
+I_A) Qual é o nome da estrutura embrionária a partir da qual se originam os brotos brônquicos?
+GABARITO: Broto respiratório (ou broto pulmonar)
+I_B) Como é chamada a camada de revestimento que cobre externamente os pulmões em desenvolvimento, derivada do mesoderma esplâncnico?
+GABARITO: Pleura visceral
+I_C) Qual é o tipo celular responsável pela secreção do surfactante pulmonar?
+GABARITO: Pneumócito tipo II
+I_D) Qual estágio da maturação pulmonar é caracterizado por intensa proliferação de sacos terminais e estabelecimento da barreira hematoaérea?
+GABARITO: Estágio sacular (ou estágio de saco terminal)
+
+Q: Sobre o líquido presente nos pulmões fetais antes do nascimento, assinale a alternativa INCORRETA:
+A) Parte do líquido é absorvida pelos capilares sanguíneos dos pulmões.
+B) A maior parte do líquido é absorvida pelos vasos linfáticos após o nascimento.
+C) O líquido pulmonar é eliminado totalmente pela pressão torácica durante o parto.
+D) O líquido pulmonar ajuda a manter os pulmões expandidos durante o desenvolvimento intrauterino.
+G: C
+C: A pressão torácica elimina apenas parte do líquido pulmonar. O restante é reabsorvido por capilares e vasos linfáticos, especialmente nas primeiras horas de vida.
+
+Q: Os movimentos respiratórios fetais exercem um papel essencial no desenvolvimento pulmonar e podem ser detectados pela ultrassonografia em tempo real.
+G: V
+C: Os MRFs são importantes estímulos mecânicos para a formação adequada das estruturas pulmonares e ocorrem de forma intermitente antes do nascimento, sendo detectáveis por ultrassom.
+
+Q: Estrutura que se forma a partir da subdivisão dos canais pericardioperitoneais e reveste a parede torácica interna, sendo derivada do mesoderma somático:
+A) Pleura visceral
+B) Brônquio lobar
+C) Pleura parietal
+D) Alvéolo primitivo
+G: C
+C: A pleura parietal se origina do mesoderma somático e reveste a parte interna da parede torácica, ao contrário da pleura visceral, que cobre o pulmão.
+
+Q: O broto brônquico primário origina qual das estruturas abaixo?
+A) Divertículo laringotraqueal
+B) Brônquios principais
+C) Traqueia
+D) Pleura visceral
+G: B
+C: Os broto(s) brônquico(s) primário(s) se desenvolvem a partir do broto pulmonar e dão origem aos brônquios principais (direito e esquerdo).

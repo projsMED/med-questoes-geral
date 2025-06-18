@@ -1,0 +1,153 @@
+Q: A Classe Cestoda compreende um grupo de parasitos hermafroditas, que apresentam o corpo achatado dorsoventralmente. Dentre eles, os mais encontrados parasitando o homem pertencem à família Taenidae, que causam a teníase e cisticercose. O ciclo das tênias implica dois hospedeiros, um definitivo e um intermediário, e uma fase de vida livre. Medidas de controle da teníase dependem das características epidemiológicas da enfermidade, em uma região, incluindo condições econômicas, sociais e culturais. A principal medida consiste em interromper o ciclo evolutivo do parasita, a fim de evitar a infecção nos animais e na população humana. As estratégias consistem, fundamentalmente, em: melhoramento das condições de saneamento do meio ambiente; tratamento de toda a população; melhoramento da criação de animais (evitar o acesso de animais a fezes humana); incrementar a inspeção veterinária de produtos cárneos; evitar o abate e comércio de produtos clandestinos; educação em saúde enfatizando a adoção de hábitos de higiene.
+Sobre o ciclo de vida da Taenia solium, é CORRETO afirmar:
+A) Os humanos parasitados eliminam cisticercos pelas fezes, estes se rompem no meio externo.
+B) A oncosfera presente no hospedeiro definitivo (homem) penetra nas vênulas e atinge as veias e os vasos linfáticos mesentéricos.
+C) O cisticerco é encontrado no intestino do hospedeiro definitivo (suíno) e forma a oncosfera.
+D) Ao atravessar a parede dos vasos sanguíneos, a oncosfera se instala nos tecidos do hospedeiro intermediário (suíno), geralmente músculos de maior movimentação.
+E) No interior dos tecidos do hospedeiro definitivo (homem) a oncosfera se transforma no verme adulto, tênia, que começa a crescer nos músculos e depois vai para o intestino.
+G: D
+C:  "Os humanos parasitados eliminam cisticercos pelas fezes, estes se rompem no meio externo."
+Incorreta. Os humanos eliminam ovos da tênia nas fezes, não os cisticercos. Cisticercos são a forma larval encontrada nos tecidos dos suínos, não são eliminados nas fezes humanas.
+A oncosfera presente no hospedeiro definitivo (homem) penetra nas vênulas e atinge as veias e os vasos linfáticos mesentéricos."
+Incorreta. A oncosfera, que é a forma larval inicial, penetra nas vênulas e atinge os vasos linfáticos e sanguíneos no hospedeiro intermediário (suíno), não no hospedeiro definitivo (homem).
+"O cisticerco é encontrado no intestino do hospedeiro definitivo (suíno) e forma a oncosfera."
+Incorreta. O cisticerco é encontrado nos tecidos musculares do hospedeiro intermediário (suíno), e não no intestino. No intestino do hospedeiro definitivo (humano) é onde o cisticerco se desenvolve no verme adulto.
+"No interior dos tecidos do hospedeiro definitivo (homem) a oncosfera se transforma no verme adulto, tênia, que começa a crescer nos músculos e depois vai para o intestino."
+Incorreta. No hospedeiro definitivo (homem), a oncosfera não se transforma no verme adulto nos músculos. Os cisticercos ingeridos pelo homem através da carne contaminada se desenvolvem diretamente em vermes adultos no intestino.
+
+Q: A teníase, também conhecida como solitária, é uma verminose intestinal que se caracteriza pela presença da forma adulta dos parasitas da classe Cestoda, que é constituída por animais endoparasitas.
+Existem duas espécies de tênias: a Taenia solium, encontrada na carne de __________ e a Taenia saginata, encontrada na carne de ________.
+Assinale a alternativa que preenche corretamente as lacunas e que apresenta uma medida profilática para essa verminose.
+A) boi – porco – cozimento prolongado da carne suína ou bovina antes da ingestão;
+B) porco – boi – vermifugação de criações de suínos e bovinos; 
+C) boi – porco – vacinação das criações; 
+D) porco – boi – instalação de telas em portas e janelas dos criadouros animais; 
+E) aves – peixes – vermifugação de criações de aves e de peixes.
+G: B
+
+Q: A Taenia solium e a Taenia saginata são vermes platelmintos pertencentes à classe Cestoda que inclui os vermes parasitas de diversos animais vertebrados, inclusive do homem. O homem pode ser tanto o hospedeiro definitivo quanto intermediário, a depender da forma que esses vermes se apresentam em nosso corpo. Sendo assim, complete a frase: “O indivíduo que ingere _______ de T. solium pode apresentar ______”.
+A) Ovos; teníase.
+B) Verme adulto; teníase. 
+C) Larvas; cisticercose.
+D) Ovos; cisticercose.
+G: D
+C: Ingestão de larvas de T. solium ou T. saginata -> teníase
+Ingestão de ovos de T. solium -> cisticercose
+Explicação:
+1. Teníase
+Ocorre quando a pessoa ingere larvas (cisticercos) presentes em carne mal cozida de porco (Taenia solium) ou boi (Taenia saginata).
+Essas larvas se desenvolvem no intestino humano, virando a forma adulta da tênia.
+Resultado: a pessoa fica com a tênia no intestino — isso é a teníase.
+2. Cisticercose
+Acontece somente com a Taenia solium.
+Quando uma pessoa ingere os ovos da tênia (por exemplo, por água ou alimentos contaminados com fezes), as larvas eclodem no intestino, perfuram a parede e vão parar em outros órgãos como músculos, olhos, cérebro.
+Resultado: formam cistos — isso é a cisticercose, que pode ser grave, principalmente se afetar o sistema nervoso central (neurocisticercose).
+
+Q: Um parasito da classe Cestoda é caracterizado pela ausência completa de aparelho digestivo, segmentação do corpo em proglotes, dotadas cada qual de um sistema reprodutor hermafrodita e presença de quatro ventosas no escólex. Este parasita, na sua fase adulta, tem o ser humano como único hospedeiro e na fase larvária deve parasitar obrigatoriamente os bovídeos, para completar seu ciclo de vida. A caracterização morfológica e o ciclo de vida considerados são do parasita denominado:
+A) Taenia saginata .
+B) Taenia solium.
+C) Ascaris lumbricoides.
+D) Ancylostoma duodenale.
+E) Ancylostoma braziliensis.
+G: A
+
+Q: A classe Cestoda constitue animais acelomados do filo Platyhelminthes conhecidos como tênias ou solitárias, possuem o corpo achatado semelhante a uma fita, escólex com ventosas ou ganchos para fixarem-se ao trato digestório dos hospedeiros e uma série de segmentos reprodutivos denominados proglótides. Assinale a alternativa CORRETA. Sobre estes vermes, podemos afirmar que:  
+A) a Taenia solium tem como hospedeiro intermediário o boi e hospedeiro definitivo o ser humano. 
+B) a Taenia saginata tem como hospedeiro definitivo o porco e hospedeiro intermediário o ser humano.
+C) a ingestão acidental de ovos de Taenia solium pode causar cisticercose cerebral e morte.  
+D) larvas de Taenia saginata penetram pela pele, entram na circulação e migram para o fígado.  
+E) solitárias são dióicas com machos representados por Taenia solium cujas fêmeas são Taenia saginata. 
+G: C
+C: Taenia solium tem como hospedeiro intermediário o porco, não o boi. O ser humano é o hospedeiro definitivo. Taenia saginata tem como hospedeiro definitivo o ser humano e como hospedeiro intermediário o boi, não o porco. As larvas de Taenia saginata não penetram pela pele. Elas são ingeridas através do consumo de carne bovina mal cozida ou crua que contém cisticercos. As solitárias são monóicas (hermafroditas), ou seja, possuem ambos os sexos em um único indivíduo. Não há uma diferenciação de machos e fêmeas entre Taenia solium e Taenia saginata.
+
+Q: A hidatidose, também conhecida como equinococose, é uma doença parasitária, em que os cães, raposas e outros carnívoros abrigam os vermes adultos no intestino e evacuam os ovos do parasita nas fezes. Se os ovos são ingeridos por humanos, eles se desenvolvem em larvas em vários órgãos, principalmente no fígado e nos pulmões. Ocorrem em duas formas principais: hidatidose cística e hidatidose policística, causadas, respectivamente, por
+A) Echinococcus granulosus e Echinococcus vogeli.
+B) Echinococcus oligarthrus e Echinococcus granulosus.
+C) Echinococcus canadensis e Echinococcus felidis.
+D) Echinococcus multilocularis e Echinococcus oligarthrus.
+E) Echinococcus shiquicus e Echinococcus granulosus.
+G: A
+
+Q: O ciclo de vida do Echinococcus granulosus envolve a presença de dois hospedeiros de espécies diferentes. O mais frequente hospedeiro que abriga a forma adulta do parasito e que é responsável pela manutenção dessa parasitose entre os animais na fazenda é o:
+A) Suíno.
+B) Ovino.
+C)  Bovino.
+D) Equino.
+E) Canino.
+G: E
+
+Q: Em relação ao cisto hidático, é correto dizer que:
+A) Acomete bovinos, ovinos, caprinos, suínos e o homem, que são hospedeiros definitivos, formando cistos, principalmente no fígado e no pulmão. 
+B) O homem é o único hospedeiro definitivo.
+C) Completa seu ciclo quando o cão ingere o cisto, que dá origem à forma adulta que irá parasitar o intestino delgado, liberando ovos nas fezes.
+D) É causado pelo Echinococcus granulosus, que é a forma larval que infecta o homem.
+E) É assintomático nos hospedeiros intermediários.
+G: C
+
+Q: O cisto hidático, estágio larval do gênero Echinococcus, agente da hidatidose cística nos humanos, pertence ao filo Plathyhelminthe: são conhecidas quatro espécies desse gênero, cujo estágio larval pode parasitar humanos. “Dessas espécies, uma tem como forma larval hidátide e se apresenta com uma só cavidade, responsável pela hidatidose cística ou unilocular.” Trata‐se de:
+A) Echinococcus vogeli.
+B) Echinococcus oligarthus.
+C) Echinococcus granulosus.
+D) Echinococcus multilocularis.
+G: C
+
+Q: A hidatidose cística é uma verminose provocada pelo Echinococcus granu/osus, verme chamado popularmente de "tênia-anã", enquanto a teníase tem como organismo causador a Taenia so/ium ou "tênia".
+Em relação às tênias, é correto afirmar que
+A) a Taenia solium desenvolve os cisticercos nos músculos do boi, que é seu hospedeiro intermediário.
+B) a Taenia so/ium e o Echinococcus granu/osus são vermes com sistema digestório completo.
+C) a Taenia so/ium desenvolve a fase larval em ambientes de água doce.
+D) a Taenia solium e o Echinococcus granulosus pertencem ao ·grupo dos platelmintos, que engloba também espécies de vida livre.
+E) a Taenia solium adulta realiza a reprodução no intestino do hospedeiro intermediário.
+G: D
+
+Q: Assinale a alternativa correta sobre a doença hidática do fígado.
+A) É causada pelo Echinococcus granulosus.
+B) A ovelha é o hospedeiro definitivo mais comum.
+C) Tratamento cirúrgico não é uma boa opção pelo risco de contaminação de toda a cavidade abdominal.
+D) A droga de escolha para o tratamento do cisto hidático é o metronidazol.
+E) Pacientes que serão submetidos a cirurgia não precisam de tratamento medicamentoso antes do procedimento.
+G: A
+C: Os cistos hidáticos são causados pelo Echinococcus granulosus. São estruturas cheias de líquidos envolvidas por uma membrana derivada de parasitas que contêm epitélio germinativo. Os pacientes geralmente são assintomáticos.
+Os cistos maiores (> 10 cm) podem causar sintomas e obstrução dos ductos biliares. A obstrução desses ductos pode causar uma síndrome colestática, com aumento da fosfatase alcalina, Gama-GT e bilirrubina direta.
+Esses cistos maiores podem causar dor abdominal, hepatomegalia e colangite. Podem obstruir as veias portais, veias portais e veia cava inferior, causando a síndrome de Budd-Chiari, com consequente aumento da pressão portal. O rompimento desses cistos para o peritônio pode causar peritonite.
+Durante o tratamento cirúrgico desses cistos deve-se ter o cuidado de evitar a sua ruptura, para evitar a contaminação da cavidade peritoneal, e a ocorrência de peritonite.
+O tratamento é feito com albendazol e cirurgia. 
+O medicamento de primeira escolha é o albendazol, que deve ser feito até a realização da cirurgia.
+
+Q: Sobre a teníase/cisticercose, informe se é verdadeiro (V) ou falso (F) para o que se afirma e assinale a alternativa que apresenta a sequência correta.
+( ) O complexo teníase/cisticercose constitui-se de duas entidades mórbidas distintas, causadas pela mesma espécie de cestódeo, em fases diferentes do seu ciclo de vida. A teníase é provocada pela presença da forma adulta da Taenia solium ou da Taenia saginata, no intestino delgado do homem. A cisticercose é causada pela larva da Taenia solium nos tecidos, ou seja, é uma enfermidade somática. A teníase é uma parasitose intestinal que pode causar dores abdominais, náuseas, debilidade, perda de peso, flatulência, diarréia ou constipação.
+( ) Taenia saginata é a tênia da carne de porco e a Taenia solium é a da carne bovina. Esses dois cestódeos causam doença intestinal (teníase) e os ovos da T. solium desenvolvem infecções somáticas (cisticercose).
+( ) A teníase é adquirida através da ingesta de carne de boi ou de porco mal cozida, que contém as larvas. Quando o homem ingere, acidentalmente, os ovos de T. solium, adquire a cisticercose.
+( ) O homem é o único hospedeiro definitivo da forma adulta da Taenia solium e da Taenia saginata. O suíno ou o bovino são os hospedeiros intermediários, por apresentarem a forma larvária nos seus tecidos. 
+( ) As complicações da cisticercose é obstrução do apêndice, colédoco, ducto pancreático. E da teníase é deficiência visual, loucura, epilepsia, entre outros. 
+A) V – F – F – V – V.
+B) F – V – F – F – V.
+C) V – F – V – V – F.
+D) F – V – V – F – F.
+G: C
+C: ASPECTOS CLÍNICOS E EPIDEMIOLÓGICOS
+Descrição - O complexo teníase/cisticercose constitui-se de duas entidades mórbidas distintas, causadas pela mesma espécie de cestódio, em fases diferentes do seu ciclo de vida. A TENÍASE é provocada pela presença da forma adulta da Taenia solium ou da Taenia saginata, no intestino delgado do homem. A CISTICERCOSE é causada pela larva da Taenia solium nos tecidos, ou seja, é uma enfermidade somática.
+A TENÍASE é uma parasitose intestinal que pode causar dores abdominais, náuseas, debilidade, perda de peso, flatulência, diarreia ou constipação. Quando o parasita permanece na luz intestinal o parasitismo pode ser considerado benigno e só, excepcionalmente, requer intervenção cirúrgica por penetração em apêndice, colédoco, ducto pancreático, devido ao crescimento exagerado do parasita. A infestação pode ser percebida pela eliminação espontânea nas fezes de proglotes do verme. Em alguns casos, podem causar retardo no crescimento e no desenvolvimento das crianças, e baixa produtividade no adulto. As manifestações clínicas da CISTICERCOSE (larvas da Taenia solium) dependem da localização, tipo morfológico, número de larvas que infectaram o indivíduo, da fase de desenvolvimento dos cisticercos e da resposta imunológica do hospedeiro. As formas graves estão localizadas no sistema nervoso central e apresentam sintomas neuropsiquiátricos (convulsões, distúrbio de comportamento, hipertensão intracraniana) e oftálmicos.
+Agente etiológico - Taenia solium é a tênia da carne de PORCO e a Taenia saginata é a da carne BOVINA. Esses dois cestódeos causam doença intestinal (teníase) e os ovos da T. solium desenvolvem infecções somáticas (cisticercose)
+Reservatório - O HOMEM é o único HOSPEDEIRO DEFINITIVO da forma adulta da Taenia solium e da Taenia saginata.
+O suíno doméstico ou javali é o HOSPEDEIRO INTERMEDIÁRIO da T. solium e o bovino é o HOSPEDEIRO INTERMEDIÁRIO da T. saginata, por apresentarem a forma larvária (Cysticercus cellulosae e C. bovis, respectivamente) nos seus tecidos.
+Modo de transmissão - A TENÍSAE adquirida através da ingesta de carne de boi ou de porco mal cozida, que contém as LARVAS. Quando o homem ingere, acidentalmente, os OVOS de T. solium, adquire a CISTICERCOSE. A cisticercose humana por ingestão de ovos de T. saginata não ocorre ou é extremamente rara.
+
+Q: A cisticercose é produzida pelo desenvolvimento da forma larval da Taenia, o Cysticercus, nos tecidos, sendo transmitida pela ingestão de ovos de Tênia. A cisticercose humana e a animal são consideradas um grande problema socioeconômico em muitos países. A cisticercose é a zoonose mais frequentemente diagnosticada em abatedouros, assim como a principal causa de condenação de carcaças de bovinos abatidos, causando perdas econômicas associadas à produção de alimentos. Humanos adquirem a teníase através do consumo de carne crua ou malpassada.
+Em relação aos hospedeiros do complexo teníase-cisticercose, assinale a alternativa CORRETA. 
+A) Taenia saginata e Taenia solium têm como hospedeiro definitivo exclusivamente os suínos. 
+B) Suínos são os hospedeiros intermediários, infectados por meio da ingestão de cisticercos de Taenia saginata. 
+C) Os suínos são os hospedeiros intermediários, infectados por meio da ingestão de ovos da Taenia solium. 
+D) Bovinos são os hospedeiros intermediários, infectados por meio da ingestão de cisticercos de Taenia solium. 
+E) Os humanos são os hospedeiros intermediários, infectados por meio da ingestão de ovos da Taenia saginata.
+G: C
+
+Q: Muitas helmintíases são problemas de saúde pública e diretamente relacionadas a falta de saneamento básico e educação sanitária. Os platelmintos são responsáveis pela etiologia de algumas verminoses que afetam à saúde humana e causam prejuízos econômicos na atividade agropecuária, dentre eles várias espécies de tênias. Na família Taeniidae, dois cestodeos importantes que têm o homem como hospedeiro definitivo e obrigatório são: Taenia saginata e Taenia solium, conhecidas popularmente como “solitárias", cujos hospedeiros intermediários são, respectivamente, o boi e o porco. Estes cestodas podem causar doenças como teníase e cisticercose. A teníase é uma alteração provocada pela presença do verme adulto, tanto a Taenia saginata quanto a Taenia solium, no intestino delgado humano, já a cisticercose é uma alteração provocada pela presença da larva da T. solium em hospedeiros intermediários anômalos como homem e cão. Sobre estas doenças, assinale a alternativa correta.
+A) O homem adquire a teníase ingerindo ovos de Taenia solium ou de Taenia saginata presentes em carnes mal passadas ou mal cozidas de origem suína ou bovina, respectivamente. A profilaxia neste caso é ingerir somente carnes bem passadas.
+B) O homem adquire a cisticercose ingerindo larvas de Taenia solium (“canjiquinhas") presentes em carnes mal passadas ou mal cozidas de origem suína. A profilaxia neste caso é ingerir somente carnes bem passadas.
+C) A cisticercose é adquirida por humanos através da ingestão acidental de ovos viáveis de Taenia solium através da autoinfecção externa, autoinfecção interna e heteroinfecção.
+D) A teníase é adquirida por humanos através da ingestão acidental de ovos viáveis de Taenia solium ou Taenia saginata através da coprofagia (crianças) e da ingestão de Cysticercus cellulosae nos alimentos em geral (adultos e crianças).
+E) A teníase e a cisticercose apresentam as mesmas vias de transmissão, ou seja, através da ingestão de larvas e ovos de Taenia solium ou de T. saginata presentes nos alimentos em geral.
+G: A
+C: Teniase: ingestão direta da larva que se transforma na solitária.
+Cisticercose: ingestão dos ovos que se transformarao no embriao e depois na larva.

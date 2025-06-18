@@ -1,0 +1,184 @@
+Q: Em todo o território nacional, os casos de violência contra a mulher atendidos em serviços de saúde públicos e privados constituem objeto de
+A) notificação facultativa de caráter público.
+B) notificação facultativa de caráter sigiloso.
+C) notificação compulsória de caráter sigiloso.
+D) notificação compulsória de caráter público.
+E) relatório‐padrão das autoridades sanitárias, detalhado com a identificação da vítima e o contexto da violência.
+G: C
+C: Art. 1º Constituem objeto de notificação compulsória, em todo o território nacional, os casos em que houver indícios ou confirmação de violência contra a mulher atendida em serviços de saúde públicos e privados.       
+Art. 3 A notificação compulsória dos casos de violência de que trata esta Lei tem caráter sigiloso, obrigando nesse sentido as autoridades sanitárias que a tenham recebido.
+Parágrafo único. A identificação da vítima de violência referida nesta Lei, fora do âmbito dos serviços de saúde, somente poderá efetivar-se, em caráter excepcional, em caso de risco à comunidade ou à vítima, a juízo da autoridade sanitária e com conhecimento prévio da vítima ou do seu responsável.
+
+Q: De acordo com o art. 19 do Estatuto do Idoso, os casos de suspeita ou confirmação de violência praticada contra pessoas idosas devem ser notificados compulsoriamente.
+Analise as afirmativas abaixo em relação ao tema.
+1. A notificação compulsória de violência contra pessoas idosas deve ser realizada pelos serviços de saúde públicos e privados à autoridade sanitária.
+2. Os serviços de saúde são obrigados a comunicar os casos de violência contra pessoas idosas a quaisquer dos seguintes órgãos: autoridade policial, Ministério Público, Conselho Municipal da Pessoa Idosa, Conselho Estadual da Pessoa Idosa e Conselho Nacional da Pessoa Idosa.
+3. A comunicação obrigatória de casos de violência contra pessoas idosas inclui a notificação ao Ministério Público.
+4. Apenas os serviços de saúde públicos têm a obrigação de notificar os casos de violência contra pessoas idosas.
+Assinale a alternativa que indica todas as afirmativas corretas.
+A) São corretas apenas as afirmativas 1 e 4.
+B) São corretas apenas as afirmativas 1, 2 e 3.
+C) São corretas apenas as afirmativas 1, 2 e 4.
+D) São corretas apenas as afirmativas 2, 3 e 4.
+E) São corretas as afirmativas 1, 2, 3 e 4.
+G: B
+C: Art. 19. Os casos de suspeita ou confirmação de violência praticada contra pessoas idosas serão objeto de notificação compulsória pelos serviços de saúde públicos e privados à autoridade sanitária, bem como serão obrigatoriamente comunicados por eles a quaisquer dos seguintes órgãos: 
+I – autoridade policial;
+II – Ministério Público;
+III – Conselho Municipal da Pessoa Idosa;   
+IV – Conselho Estadual da Pessoa Idosa;   
+V – Conselho Nacional da Pessoa Idosa.    
+§ 1º Para os efeitos desta Lei, considera-se violência contra a pessoa idosa qualquer ação ou omissão praticada em local público ou privado que lhe cause morte, dano ou sofrimento físico ou psicológico.  
+
+Q: O Código de Ética Médica e de outras profissões da saúde impõe o sigilo das informações do paciente, mas há exceções em situações de violência, quando a lei obriga a notificação compulsória (por exemplo, casos de violência sexual, maus-tratos contra menor de idade ou incapaz), visando proteger a vítima e envolver instâncias legais. Sobre a obrigatoriedade de notificação em casos de violência, assinale a alternativa correta.
+A) Em casos de violência contra adultos conscientes, a notificação compulsória depende do consentimento do paciente, mesmo que a situação esteja prevista como obrigatória por Lei.
+B) A comunicação às autoridades deve ser feita exclusivamente pelo médico responsável pelo atendimento, sem envolver outros profissionais de saúde.
+C) A notificação compulsória deve ser realizada apenas com autorização judicial, mesmo em casos previstos em lei como violência sexual ou maus-tratos.
+D) A notificação compulsória é obrigatória em casos de violência contra crianças, adolescentes e idosos, mesmo sem o consentimento da vítima ou de seus responsáveis.
+G: D
+
+Q: A notificação de violências contra crianças, adolescentes, mulheres e pessoas idosas é uma exigência legal, sendo uma dimensão da linha de cuidado para a Atenção Integral à Saúde de Crianças, Adolescentes e suas famílias em situação de violência. Dentre outras políticas, a notificação está também priorizada na Política Nacional de Saúde Integral de Lésbicas, Gays, Bissexuais, Travestis e Transexuais. Dentro desse contexto e entendendo a notificação como uma ação de cuidado, é correto afirmar que:
+A) Deve ser realizada apenas por médicos.
+B) Após o seu preenchimento, a ficha de notificação deve ser encaminhada para as autoridades policiais locais.
+C) A notificação integra a lista de notificação compulsória do Sistema de Informação de Agravos de Notificação (SINAN).
+D) Deve ser compreendida dentro de uma lógica burocrática e com o objetivo de quantificar tal agravo para a criação das políticas públicas.
+G: C
+
+Q: Eventualmente ocorre a resistência dos profissionais de Unidades de Saúde em fazer a notificação diante de uma situação de violência contra a infância ou adolescência. Contudo, é importante destacar que a notificação é uma das dimensões da linha de cuidado e proteção, sendo a Saúde um setor que favorece o primeiro contato com as pessoas que sofrem violência, cujo fenômeno é complexo. Diante de uma situação na qual a criança sofre violência intrafamiliar, assinale a afirmativa correta. 
+A) O médico deve delegar a outros profissionais, como o assistente social e o psicólogo, a responsabilidade de notificação ao Conselho Tutelar. 
+B) Os casos de suspeita ou confirmação de castigo físico, de tratamento cruel ou degradante e de maus-tratos devem ser, obrigatoriamente, comunicados ao Conselho Tutelar. 
+C) O profissional de saúde não poderá notificar o caso aos órgãos competentes caso a família não queira fazer a notificação, e ele deve esperar até que ela consinta.
+D) A notificação não poderá ser realizada quando houver quebra do sigilo próprio ao atendimento psicoterápico, cuja conservação é garantida pelo Estatuto da Criança e do Adolescente.
+E) O médico, professor ou diretor de estabelecimento de atenção à saúde que não comunicar o caso à autoridade competente, incorrerá em crime. 
+G: B
+C: O profissional de saúde comete infração administrativa e não crime. Sendo a pena uma multa de 3 a 20 salários de referência.
+
+Q: Assinale a alternativa correta sobre a notificação de casos de violência no SINAN. 
+A) A violência sexual, diferentemente da violência doméstica, deve ser notificada imediatamente.
+B) A violência financeira deve ser notificada no período de 24 horas.
+C) O tráfico de seres humanos é uma forma de violência, mas não é de notificação compulsória no SINAN. 
+D) O trabalho infantil é uma forma de violência às crianças, mas a sua notificação deve ser feita à auditoria fiscal do trabalho e não ao SINAN.
+E) As violências de quaisquer tipos ocorridas nas vias públicas não são passíveis de notificação ao SUS, exceto quando resultem em morte.
+G: A
+C: De acordo com a Portaria de Consolidação nº 4, de 28 de setembro de 2017, são objetos de notificação compulsória casos suspeitos ou confirmados de ‘Violência doméstica e/ou outras violências’, e de notificação imediata casos de ‘Violência sexual e tentativa de suicídio’. O instrutivo de notificação de violência interpessoal e autoprovocada, publicado em 2016, define como objetos de notificação (Figura 2):
+“Caso suspeito ou confirmado de violência doméstica/intrafamiliar, sexual, autoprovocada, tráfico de pessoas, trabalho escravo, trabalho infantil, tortura, intervenção legal e violências homofóbicas contra mulheres e homens em todas as idades. No caso de violência extrafamiliar/comunitária, somente serão objetos de notificação as violências contra crianças, adolescentes, mulheres, pessoas idosas, pessoa com deficiência, indígenas e população LGBT.”
+
+Q: Com relação à Lei n.º 10.741/2003, que dispõe sobre o Estatuto do Idoso e dá outras providências, julgue os itens que se seguem.
+I Os casos de suspeita ou confirmação de violência praticada contra idosos serão objeto de notificação compulsória pelos serviços de saúde públicos e privados à autoridade sanitária, bem como serão obrigatoriamente comunicados à autoridade policial.
+II Os casos de suspeita ou confirmação de violência praticada contra idosos serão objeto de notificação compulsória pelos serviços de saúde públicos e privados à autoridade sanitária, bem como serão obrigatoriamente comunicados ao Ministério Público.
+III Os casos de suspeita ou confirmação de violência praticada contra idosos serão objeto de notificação compulsória pelos serviços de saúde públicos e privados à autoridade sanitária, bem como serão obrigatoriamente comunicados ao Conselho Municipal do Idoso.
+IV Os casos de suspeita ou confirmação de violência praticada contra idosos serão objeto de notificação compulsória pelos serviços de saúde públicos e privados à autoridade sanitária, bem como serão obrigatoriamente comunicados ao Conselho Estadual do Idoso.
+V Os casos de suspeita ou confirmação de violência praticada contra idosos serão objeto de notificação compulsória pelos serviços de saúde públicos e privados à autoridade sanitária, bem como serão obrigatoriamente comunicados ao Conselho Nacional do Idoso.
+A quantidade de itens certos é igual a
+A) 1.
+B) 2.
+C) 3.
+D) 4.
+E) 5.
+G: E
+
+Q: A violência homofóbica faz parte da lista nacional de notificação compulsória de doenças, agravos e eventos de saúde pública nos serviços de saúde públicos e privados em todo o território nacional. Essa notificação deve ser feita
+A) no prazo de 24 horas e informar sobre o meio de agressão utilizado, como arma branca e queimadura.
+B) imediatamente e informar o tipo de relação entre o agressor e a pessoa atendida.
+C) imediatamente e informar sobre o sexo e a idade do provável autor da agressão.
+D) no prazo de uma semana e informar sobre o local da agressão, como residência, escola e ambiente de trabalho.
+E) no prazo de 24 horas e informar sobre o tipo de violência, como psicológica/moral e tráfico de seres humanos.
+G: D
+C: No prazo de uma semana e informar sobre o local da agressão, como residência, escola e ambiente de trabalho.
+Violência doméstica e/ou outras violências = semanal
+Violência sexual e tentativa de suicídio = imediata
+SINAN - Sistema de Informação de Agravos e Notificação
+
+Q: Em 2009, o Ministério da Saúde implantou o Sistema de Informação de Agravos de Notificação (SINAN). No processo de atendimento em uma situação de violência sexual cometida contra criança e adolescente, a notificação dever ser feita:
+A) Pelo médico.
+B) Por qualquer profissional que atenda a criança ou adolescente.
+C) Pelo assistente social.
+D) Pelo enfermeiro.
+E) Pelo psicólogo.
+G: B
+
+Q: A Organização Mundial de Saúde (OMS) reconhece a violência como um grave problema de saúde pública e uma violação aos direitos humanos. A respeito desse tema, julgue os seguintes itens.
+I A denúncia de violência é cabível apenas se concretizada a agressão física, evitando-se, assim, eventual calúnia e leviandade do(a) denunciante.
+II Por conta do sigilo, os psicólogos, no exercício da profissão, devem notificar os casos de violência contra criança apenas após terem certeza de que o menor é, de fato, vítima.
+III A notificação de confirmação ou de suspeita de caso de violência é compulsória aos profissionais que atenderem pessoas nessa situação.
+Assinale a opção correta.
+A) Apenas o item II está certo.
+B) Apenas o item III está certo.
+C) Apenas os itens I e II estão certos.
+D) Apenas os itens I e III estão certos.
+E) Todos os itens estão certos.
+G: B
+
+Q: O preenchimento e a notificação de violência contra crianças, adolescentes, mulheres e/ou idosos são obrigatórios apenas pelo fato de
+A) violência física comprovada.
+B) violência física ou verbal testemunhada.
+C) suspeita e/ou confirmação da violência existir.
+D) denúncia formal, pela vítima, da violência sofrida.
+G: C
+
+Q: Mulher de 29 anos de idade, vítima de abuso sexual, dá entrada em uma unidade de pronto atendimento onde é acolhida pelos profissionais e recebe as orientações e cuidados sobre anticoncepção de emergência; apoio psicossocial e profilaxia para infecções sexualmente transmissíveis (IST). 
+Considerando o caso e com base na portaria nº 204, de 17 de fevereiro de 2016, esse tipo de violência deve ser notificada
+A) imediatamente em até 48 horas.
+B) ao fim de cada quinzena epidemiológica.
+C) ao fim de cada semana epidemiológica.
+D) imediatamente em até 24 horas.
+G: D
+C: Violência doméstica É SEMANAL. 
+violência sexual e a tentativa de suicídio SÃO imediata.
+
+Q: No Brasil e no mundo, a violência que vitima as mulheres se constitui em sério problema de saúde pública, por ser uma das principais causas de morbidade e mortalidade feminina. Todo e qualquer ato de violência contra a mulher configura-se como violação de seus direitos. Assim, ao tomar conhecimento da ocorrência de uma violência doméstica, o agente comunitário deve notificar o caso em até 
+A) 24 horas à Secretaria Municipal de Saúde.
+B) 24 horas à Secretaria Estadual de Saúde. 
+C) 7 dias à Secretaria Estadual de Saúde.
+D) 7 dias à Secretaria Municipal de Saúde.
+G: D
+
+Q: De acordo com a Portaria nº 1.271/2014, do Ministério da Saúde, os casos de tentativa de suicídio e de violência sexual passam a ser de notificação
+A) imediata e realizada somente pelo profissional de saúde que prestar o primeiro atendimento ao paciente, em até 48 (quarenta e oito) horas após o atendimento, pelo meio mais rápido disponível.
+B) semanal e realizada pelo profissional de saúde ou responsável pelo serviço assistencial que prestar o primeiro atendimento ao paciente, em até 07(sete) dias após o atendimento, seguindo o fluxo de compartilhamento entre as esferas de gestão do SUS.
+C) semanal e realizada pelo profissional de saúde ou pela autoridade de segurança pública acionada, em até 07(sete) dias após o atendimento, seguindo o fluxo de compartilhamento entre as esferas de gestão do SUS.
+D) imediata e realizada pelo profissional de saúde ou responsável pelo serviço assistencial que prestar o primeiro atendimento ao paciente, em até 24 (vinte e quatro) horas após o atendimento, pelo meio mais rápido disponível.
+G: D
+C: Imediata, em até 24h.
+
+Q: Jovem de 22 anos, chega à UBS com quadro de diagnóstico de depressão há 4 anos, apresentando quadro atual mais intenso sem sintomas psicóticos. Esse ao ser indagado, relata desesperança com sua vida e que pensa em “acabar com tudo isso, mas ainda não teve coragem”. Com relação à ideação suicida, qual a conduta a ser tomada?
+A) O sexo do paciente não deve ser levado em consideração, visto que as estatísticas mostram que o sexo feminino é o mais afetado em casos de suicídio.
+B) O profissional da saúde deve evitar falar sobre suicídio, para não estimular que essa ideação seja concretizada.
+C) São objeto de notificação no SINAN apenas AUTOAGRESSÃO e TENTATIVA DE SUICÍDIO, não se notifica IDEAÇÃO.
+D) Neste caso, o paciente deve ser acompanhado somente pela equipe da UBS, não havendo necessidade de referenciar a outros pontos da Rede de Atenção Psicossocial.
+G: C
+C: São objeto de notificação no SINAN apenas AUTOAGRESSÃO e TENTATIVA DE SUICÍDIO, não se notifica IDEAÇÃO.
+
+Q: Mais de 200 homens contratados para trabalhar na colheita de uva foram resgatados de um alojamento em uma cidade na Serra Gaúcha, onde eram submetidos a condições degradantes e trabalho análogo à escravidão.
+Assinale a alternativa que especifica uma ação de responsabilidade do setor saúde. 
+A) Acomodar os trabalhadores em alojamento temporário e realizar o pagamento de direitos por meio de processo judicial ou de acordo trabalhista.
+B) Adotar medidas visando o regresso dos trabalhadores à sua cidade de origem. 
+C) Auxiliar o Auditor Fiscal do Trabalho na emissão de guias do Seguro Desemprego para os trabalhadores resgatados. 
+D) Notificar os casos de pessoas submetidas ao trabalho escravo no Sinan (Sistema Nacional de Agravos de Notificação), na Ficha de Notificação de Violência. 
+E) Promover a ação civil pública para a defesa de interesses coletivos dos trabalhadores submetidos ao trabalho degradante.
+G: D
+C: “Caso suspeito ou confirmado de violência doméstica/intrafamiliar, sexual, autoprovocada, tráfico de pessoas, trabalho escravo, trabalho infantil, tortura, intervenção legal e violências homofóbicas contra mulheres e homens em todas as idades. No caso de violência extrafamiliar/comunitária, somente serão objetos de notificação: as violências contra crianças, adolescentes, mulheres, pessoas idosas, pessoa com deficiência, indígenas e população LGBT.”
+
+Q: Caso um evento violento envolver mais de uma vítima, para cada uma das vítimas deverá ser preenchida uma ficha de notificação individual.
+G: V
+
+Q: A faixa etária de notificação de violência contra crianças e adolescentes adotada na Vigilância de Violências e Acidentes (VIVA) é definida pelo Estatuto da Criança e do Adolescente (ECA).
+G: F
+C: A faixa etária de notificação de violência contra crianças e adolescentes adotada na Vigilância de Violências e Acidentes é a faixa definida pela Organização Mundial da Saúde (OMS).
+
+Q: Os casos de violência praticados contra indígenas devem ser comunicados à Fundação Nacional do Índio (Funai) e ao Distrito Sanitário Especial Indígena (DSEI).
+G: V
+
+Q: A definição de caso de violência, para fins de notificação, corresponde a:
+Caso suspeito ou confirmado de violência doméstica/intrafamiliar, sexual, autoprovocada, tráfico de pessoas, trabalho escravo, trabalho infantil, tortura, intervenção legal e violências homofóbicas contra mulheres e homens em todas as idades. No caso de violência extrafamiliar/comunitária, somente serão objetos de notificação as violências contra crianças, adolescentes, mulheres, pessoas idosas, pessoas com deficiência, indígenas e população LGBT.
+G: V
+
+Q: Sobre violência contra crianças e adolescente, define-se:
+- Violência contra criança: Ambos os sexos, na faixa etária de zero a 11 anos, independentemente do tipo ou da natureza da violência.
+- Violência contra adolescente – ambos os sexos, na faixa etária de 12 a 18 anos, independentemente do tipo ou da natureza da violência.
+G: F
+C: Embora o Estatuto da Criança e do Adolescente (ECA) defina criança na faixa etária de zero a 11 anos e adolescente na faixa etária de 12 a 18 anos, o Ministério da Saúde adota a faixa etária definida pela OMS, sendo criança a faixa de zero a 9 anos e adolescentes, de 10 a 19 anos.
+
+Q: Quando ocorrerem dois casos distintos de violência com a mesma vítima envolvendo autores diferentes, registrar em uma mesma ficha de notificação.
+G: F
+C: Quando ocorrerem dois casos distintos de violência com a mesma vítima envolvendo autores diferentes, registrar em duas fichas de notificação.

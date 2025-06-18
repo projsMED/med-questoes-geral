@@ -1,0 +1,45 @@
+Q: A leishmaniose visceral (LV) ou calazar é uma zoonose que afeta o homem, além de outros animais. Apresenta-se sob a forma de doença crônica, sistêmica, caracterizada por febre de longa duração, perda de peso, astenia, adinamia, entre outras manifestações. Em relação a essa patologia assinale a alternativa <b>INCORRETA</b>:
+A) A leishmaniose é uma doença grave que, se não for tratada, pode levar à morte até 90% dos casos humanos
+B) Os sinais e os sintomas da doença no homem são: febre irregular de longa duração, falta de apetite, emagrecimento, fraqueza e barriga inchada, pelo aumento do fígado e do baço
+C) Os sinais e os sintomas da doença nos cães são: apatia, lesões na pele, queda de pelos, inicialmente ao redor dos olhos e nas orelhas, emagrecimento, lacrimejamento e crescimento anormal das unhas
+D) A prática da eutanásia canina é deixada de ser recomendada para todos os animais infectados desde 2017 e eles devem ser tratados com medicamentos específicos para cães
+E) A transmissão da doença pode ocorrer diretamente de pessoa para pessoa.
+G: E
+C: A transmissão da leishmaniose visceral (LV) ocorre principalmente pela <b>picada de fêmeas infectadas do mosquito-palha (flebotomíneos)</b>, que se infectam ao picar um reservatório animal (principalmente cães em áreas urbanas, mas também outros mamíferos silvestres) e, posteriormente, picam um ser humano ou outro animal sadio, transmitindo o protozoário Leishmania infantum (ou L. chagasi). Não há transmissão direta significativa de pessoa para pessoa. Casos raros de <b>transmissão vertical (mãe para filho)</b> ou por <b>transfusão sanguínea/transplante de órgãos </b>podem ocorrer, mas não são a forma primária nem "direta de pessoa para pessoa" no sentido epidemiológico usual.
+
+Q: Leia as afirmativas abaixo acerca da Leishmaniose Tegumentar Americana (LTA).
+I – É uma doença infecciosa e contagiosa.
+II – Os vetores da LTA são insetos denominados flebotomíneos, pertencentes à ordem Diptera
+III – Seu modo de transmissão é através da picada de fêmeas de flebotomíneos infectadas.
+IV – Há transmissão de pessoa a pessoa.
+Estão corretas as afirmativas:
+A) I e II, apenas.
+B) II e III, apenas.
+C) II, III e IV, apenas.
+D) I e IV, apenas.
+E) I, II, III e IV.
+G: B
+
+Q: Um destacamento de um batalhão de infantaria deverá cumprir uma missão na região norte, em área em que a leishmaniose tegumentar é endêmica. Frente a essa situação, os militares envolvidos devem ser informados que:
+A) O uso de repelentes, quando houver exposição a ambientes em que os vetores possam ser encontrados habitualmente, constitui uma medida de prevenção eficaz para a doença.
+B) O período de incubação da doença varia entre 7 e 30 dias, sendo, em média, de 15 dias.
+C) O mosquito <i>Aedes aegypti</i> é o vetor responsável pela transmissão da doença.
+D) A úlcera oriunda da forma cutânea da doença é muito dolorosa, apresenta formato arredondado ou ovalado, com bordas delimitadas, e fundo esbranquiçado.
+E) Existe transmissão de pessoa a pessoa, por meio do contato com objetos contaminados com secreção proveniente da ferida.
+G: A
+
+Q: O período de incubação da Leishmaniose Visceral no homem é de:
+A) 2 dias a 1 mês, com média entre 14 a 16 dias.
+B) 10 dias a 24 meses, com média entre 2 a 6 meses
+C) 30 dias a 48 meses, com média entre 1 a 2 anos.
+D) 2 meses a 24 meses, com média entre 1 a 2 anos.
+E) 2 anos a 5 anos, com média entre 2 a 4 anos.
+G: B
+
+Q: A leishmaniose visceral (LV) é uma protozoonose crônica, sistêmica, caracterizada em humanos por febre de longa duração, perda de peso, astenia, adinamia e anemia, entre outras manifestações. O principal reservatório e fonte de infecção no meio urbano é o:
+A) Rato.
+B) Gato.
+C) Cão.
+D) Pombo.
+E) Morcego.
+G: C
