@@ -253,54 +253,71 @@
     "name": "Parasitologia - N2",
     "children": [
       {
-        "type": "file",
-        "name": "Cestoda - QConcursos.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Cestoda - QConcursos.txt"
+        "type": "folder",
+        "name": "Helmintos e Artrópodes",
+        "children": [
+          {
+            "type": "file",
+            "name": "Cestoda - QConcursos.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Helmintos e Artrópodes/Cestoda - QConcursos.txt"
+          },
+          {
+            "type": "file",
+            "name": "Cestoda - Tênia e Echinococcus - Artigo.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Helmintos e Artrópodes/Cestoda - Tênia e Echinococcus - Artigo.txt"
+          },
+          {
+            "type": "file",
+            "name": "Nematelmintos - Qconcursos e outros.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Helmintos e Artrópodes/Nematelmintos - Qconcursos e outros.txt"
+          },
+          {
+            "type": "file",
+            "name": "Teníase, esquistossomose e cisticercose - Baseadas TBL antigo.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Helmintos e Artrópodes/Teníase, esquistossomose e cisticercose - Baseadas TBL antigo.txt"
+          },
+          {
+            "type": "file",
+            "name": "Trematoda - QConcursos.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Helmintos e Artrópodes/Trematoda - QConcursos.txt"
+          }
+        ]
       },
       {
-        "type": "file",
-        "name": "Cestoda - Tênia e Echinococcus - Artigo.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Cestoda - Tênia e Echinococcus - Artigo.txt"
+        "type": "folder",
+        "name": "HIV e HPV",
+        "children": []
       },
       {
-        "type": "file",
-        "name": "Micoses - Oportunistas - Casos Clínicos - Dissertativas.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Micoses - Oportunistas - Casos Clínicos - Dissertativas.txt"
-      },
-      {
-        "type": "file",
-        "name": "Micoses - Oportunistas - Casos Clínicos - Objetivas.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Micoses - Oportunistas - Casos Clínicos - Objetivas.txt"
-      },
-      {
-        "type": "file",
-        "name": "Micoses - Sistêmicas - Dissertativas.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Micoses - Sistêmicas - Dissertativas.txt"
-      },
-      {
-        "type": "file",
-        "name": "Micoses - Subcutâneas - Dissertativas.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Micoses - Subcutâneas - Dissertativas.txt"
-      },
-      {
-        "type": "file",
-        "name": "Micoses - Superficial e Cutânea - Dissertativas.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Micoses - Superficial e Cutânea - Dissertativas.txt"
-      },
-      {
-        "type": "file",
-        "name": "Nematelmintos - Qconcursos e outros.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Nematelmintos - Qconcursos e outros.txt"
-      },
-      {
-        "type": "file",
-        "name": "Teníase, esquistossomose e cisticercose - Baseadas TBL antigo.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Teníase, esquistossomose e cisticercose - Baseadas TBL antigo.txt"
-      },
-      {
-        "type": "file",
-        "name": "Trematoda - QConcursos.txt",
-        "path": "quizes-da-nuvem/Parasitologia - N2/Trematoda - QConcursos.txt"
+        "type": "folder",
+        "name": "Micologia",
+        "children": [
+          {
+            "type": "file",
+            "name": "Micoses - Oportunistas - Casos Clínicos - Dissertativas.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Micologia/Micoses - Oportunistas - Casos Clínicos - Dissertativas.txt"
+          },
+          {
+            "type": "file",
+            "name": "Micoses - Oportunistas - Casos Clínicos - Objetivas.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Micologia/Micoses - Oportunistas - Casos Clínicos - Objetivas.txt"
+          },
+          {
+            "type": "file",
+            "name": "Micoses - Sistêmicas - Dissertativas.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Micologia/Micoses - Sistêmicas - Dissertativas.txt"
+          },
+          {
+            "type": "file",
+            "name": "Micoses - Subcutâneas - Dissertativas.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Micologia/Micoses - Subcutâneas - Dissertativas.txt"
+          },
+          {
+            "type": "file",
+            "name": "Micoses - Superficial e Cutânea - Dissertativas.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Micologia/Micoses - Superficial e Cutânea - Dissertativas.txt"
+          }
+        ]
       }
     ]
   },
