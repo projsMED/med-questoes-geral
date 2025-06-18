@@ -1,0 +1,281 @@
+```
+Q: Um paciente de 42 anos, diagnosticado com AIDS e com contagem de células CD4 de 120/mm³, chega ao pronto-socorro com queixa de dor de cabeça intensa e progressiva há três semanas. Ele relata febre, rigidez na nuca e episódios de confusão mental. Afirma também que sua visão parece "turva" nos últimos dias. Com base neste caso, responda também às questões 2 e 3.
+Com base no quadro clínico-epidemiológico, qual é a principal hipótese diagnóstica de micose oportunista?
+A) Aspergilose cerebral
+B) Candidíase disseminada com acometimento do SNC
+C) Criptococose (Meningite Criptocócica)
+D) Mucormicose rinocerebral
+E) Pneumocistose extrapulmonar
+G: C
+C: A apresentação clássica de meningite subaguda (cefaleia, febre, rigidez nucal) em um paciente com imunossupressão grave por HIV (CD4 < 200/mm³) é altamente sugestiva de neurocriptococose. O <i>Cryptococcus neoformans</i> tem um forte tropismo pelo sistema nervoso central (SNC).
+
+Q: Para investigar a principal suspeita de infecção fúngica do sistema nervoso central no paciente do caso 1, qual o procedimento diagnóstico de maior importância e o principal teste a ser realizado na amostra coletada?
+A) Hemocultura para fungos e pesquisa do antígeno Galactomanana.
+B) Biópsia cerebral para análise histopatológica e cultura.
+C) Tomografia de tórax e exame de escarro induzido.
+D) Punção lombar para análise do líquido cefalorraquidiano (LCR), com pesquisa de antígeno criptocócico (CrAg).
+E) Exame de fundo de olho e raspado de lesões cutâneas.
+G: D
+C: A punção lombar é o procedimento essencial para o diagnóstico de infecções do SNC. No LCR, a pesquisa do antígeno criptocócico (CrAg) é um teste rápido, extremamente sensível e específico, sendo o padrão-ouro para o diagnóstico de meningite criptocócica.
+
+Q: Confirmando-se a hipótese diagnóstica para o caso 1, qual é a abordagem terapêutica padrão, dividida em fases, para esta condição neurológica?
+A) Monoterapia com Sulfametoxazol-trimetoprima por 21 dias.
+B) Terapia de indução com Anfotericina B e Flucitosina, seguida de consolidação e manutenção com Fluconazol.
+C) Desbridamento cirúrgico urgente combinado com Voriconazol.
+D) Terapia de primeira linha com uma Equinocandina (ex: Caspofungina) e remoção de cateter.
+E) Uso de Fluconazol em dose baixa desde o início, mantido por 6 meses.
+G: B
+C: O tratamento da meningite criptocócica é dividido em três fases: 1) Indução, para controle rápido da infecção, com a combinação fungicida de Anfotericina B e Flucitosina; 2) Consolidação, com Fluconazol em altas doses para eliminar o fungo residual; e 3) Manutenção (ou profilaxia secundária), com Fluconazol em doses mais baixas para prevenir a recidiva, especialmente em pacientes com imunossupressão persistente.
+
+Q: Uma paciente de 58 anos, diabética tipo 1 com histórico de mau controle glicêmico, é levada à emergência com cetoacidose diabética. Durante o exame físico, a equipe nota um edema na região direita da face e a presença de uma placa enegrecida e necrótica no palato duro, que se estende para a cavidade nasal. A família relata que a lesão apareceu e evoluiu muito rapidamente, em cerca de 2 dias. Com base neste caso, responda também às questões 5 e 6.
+Qual micose oportunista é a principal suspeita, considerando a rápida progressão da lesão necrótica facial na paciente?
+A) Aspergilose invasiva
+B) Candidíase oral severa
+C) Paracoccidioidomicose juvenil
+D) Criptococose cutânea
+E) Mucormicose rinocerebral
+G: E
+C: A tríade de cetoacidose diabética, lesão facial/palatina de rápida evolução e necrose tecidual (escara preta) é a apresentação clássica da mucormicose rinocerebral, uma emergência médica com alta taxa de mortalidade.
+
+Q: Qual é o procedimento diagnóstico mais urgente e crucial para confirmar a suspeita na paciente do caso 2, e qual o achado histopatológico esperado?
+A) Hemocultura, esperando o crescimento de leveduras.
+B) Pesquisa do antígeno Galactomanana no soro.
+C) Biópsia da lesão necrótica, esperando encontrar hifas largas, cenocíticas (não septadas), com ramificações em ângulo reto (90°).
+D) Exame com Tinta da China no LCR para visualizar leveduras encapsuladas.
+E) Cultura do raspado da lesão, que geralmente apresenta crescimento fúngico abundante em 24 horas.
+G: C
+C: O diagnóstico é uma emergência e depende da demonstração histopatológica da invasão tecidual pelo fungo. A cultura frequentemente resulta negativa. O achado de hifas largas, não septadas e com ramificações em 90° é patognomônico de Mucorales.
+
+Q: Para a condição apresentada no caso 2, qual é a abordagem terapêutica combinada e imediata, essencial para o manejo?
+A) Apenas antibioticoterapia de amplo espectro para cobrir infecção secundária.
+B) Iniciar Voriconazol e aguardar melhora clínica.
+C) Controle da doença de base (cetoacidose), desbridamento cirúrgico agressivo e terapia antifúngica com Anfotericina B.
+D) Terapia com Fluconazol em altas doses e drenagem da secreção nasal.
+E) Excisão da lesão e tratamento com Sulfametoxazol-trimetoprima.
+G: C
+C: O tratamento da mucormicose é uma emergência e baseia-se em três pilares simultâneos e agressivos: 1) Reversão da condição predisponente (controle da cetoacidose/hiperglicemia); 2) Desbridamento cirúrgico radical de todo tecido necrótico; 3) Terapia antifúngica sistêmica com uma formulação de Anfotericina B em altas doses.
+
+Q: Um paciente de 62 anos está em tratamento quimioterápico para leucemia mieloide aguda e desenvolve neutropenia febril. Apesar do uso de antibióticos por 72 horas, a febre persiste. Ele queixa-se de tosse e dor no peito. Uma tomografia de tórax revela múltiplos nódulos pulmonares, alguns apresentando um "sinal do halo". Com base neste caso, responda também às questões 8 e 9.
+Neste contexto, qual é a micose pulmonar invasiva mais provável?
+A) Pneumonia por <i>Pneumocystis jirovecii</i>
+B) Aspergilose Pulmonar Invasiva (API)
+C) Histoplasmose disseminada
+D) Tuberculose miliar
+E) Candidíase pulmonar
+G: B
+C: A API é uma complicação clássica e temida em pacientes com neutropenia prolongada. O "sinal do halo" (opacidade em vidro fosco ao redor de um nódulo) é um achado radiológico precoce e muito sugestivo de angioinvasão por <i>Aspergillus</i>.
+
+Q: Além da tomografia, quais exames são mais úteis para auxiliar no diagnóstico da infecção fúngica pulmonar do paciente no caso 3?
+A) Pesquisa de antígeno criptocócico no soro e LCR.
+B) Coleta de hemoculturas, que são tipicamente positivas.
+C) Teste com Tinta da China no escarro.
+D) Detecção do antígeno Galactomanana (no soro ou lavado broncoalveolar) e/ou biópsia pulmonar.
+E) Exame parasitológico de fezes.
+G: D
+C: O Galactomanana é um polissacarídeo da parede celular do <i>Aspergillus</i> e serve como um importante biomarcador da infecção. A broncoscopia com lavado broncoalveolar permite a coleta direta de material para análise microscópica, cultura e detecção do antígeno. A biópsia é o padrão-ouro para o diagnóstico definitivo.
+
+Q: Para o tratamento da forma de infecção pulmonar invasiva do caso 3, qual é o antifúngico de primeira linha atualmente?
+A) Anfotericina B desoxicolato
+B) Fluconazol
+C) Caspofungina
+D) Voriconazol
+E) Itraconazol oral
+G: D
+C: Estudos clínicos demonstraram que o Voriconazol é superior à Anfotericina B para o tratamento primário da aspergilose invasiva, com melhores taxas de sobrevida e menos efeitos colaterais, sendo a droga de escolha.
+
+Q: Um homem de 70 anos está internado na UTI há 20 dias, em uso de ventilação mecânica, com um cateter venoso central e recebendo múltiplos ciclos de antibióticos. A equipe nota que ele voltou a apresentar picos de febre e calafrios. Durante a aspiração, são visualizadas placas brancas na orofaringe, semelhantes a "queijo cottage". Com base neste caso, responda também às questões 11 e 12.
+Considerando os múltiplos fatores de risco, qual a principal suspeita para o quadro febril e as lesões orais?
+A) Candidíase invasiva (candidemia) e candidíase orofaríngea
+B) Herpes oral e bacteremia por Gram-positivos
+C) Infecção por Citomegalovírus (CMV)
+D) Aspergilose traqueobrônquica
+E) Tuberculose oral
+G: A
+C: Os fatores de risco apresentados são clássicos para o desenvolvimento de candidíase. A febre que não responde a antibióticos sugere uma infecção fúngica na corrente sanguínea (candidemia), provavelmente originada do cateter, e as placas brancas são a manifestação típica da candidíase orofaríngea ("sapinho").
+
+Q: No contexto do caso 4, qual exame é fundamental para o diagnóstico da infecção sistêmica e qual o achado esperado na análise das placas orais?
+A) Punção lombar e pesquisa de antígeno no LCR.
+B) Hemocultura e visualização de leveduras e pseudo-hifas no raspado da lesão oral.
+C) Biópsia de pele, esperando encontrar hifas não septadas.
+D) Tomografia de tórax para visualizar o "sinal do halo".
+E) Sorologia para fungos endêmicos.
+G: B
+C: A hemocultura é o exame padrão-ouro para diagnosticar a presença de <i>Candida</i> no sangue (candidemia). O exame direto do raspado das lesões orais com KOH revelará as estruturas fúngicas características (leveduras e pseudo-hifas), confirmando a candidíase orofaríngea.
+
+Q: Para a forma invasiva da micose do caso 4 em um paciente crítico, qual a classe de antifúngicos de primeira escolha e qual medida é crucial para o controle do foco infeccioso?
+A) Sulfametoxazol-trimetoprima e fisioterapia respiratória.
+B) Fluconazol oral e manter o cateter para acesso venoso.
+C) Anfotericina B em baixas doses e alta hospitalar.
+D) Equinocandinas (ex: Caspofungina) e remoção do cateter venoso central.
+E) Voriconazol e desbridamento cirúrgico da orofaringe.
+G: D
+C: As equinocandinas são a classe de antifúngicos de primeira linha para o tratamento de candidemia em pacientes críticos, especialmente na UTI, devido à sua eficácia e perfil de segurança. A remoção do cateter venoso central é uma medida fundamental, pois ele é frequentemente o foco da infecção e sua permanência dificulta a erradicação do fungo.
+
+Q: Paciente de 38 anos, com diagnóstico de AIDS há 5 anos, mas que abandonou a terapia antirretroviral, procura atendimento com queixa de falta de ar progressiva há dois meses, tosse seca e febre baixa. A radiografia de tórax mostra um infiltrado intersticial difuso bilateral, com aspecto "em vidro fosco". Com base neste caso, responda também às questões 14 e 15.
+Qual micose oportunista é a causa mais comum de pneumonia com este quadro clínico e radiológico neste perfil de paciente?
+A) Aspergilose pulmonar invasiva
+B) Criptococose pulmonar
+C) Tuberculose pulmonar
+D) Pneumonia por <i>Pneumocystis jirovecii</i> (PCP)
+E) Blastomicose
+G: D
+C: A PCP é a infecção oportunista definidora de AIDS mais comum em pacientes com contagem de CD4 baixa (<200). O quadro de pneumonia subaguda com dispneia progressiva, tosse seca e o padrão radiológico de infiltrado intersticial difuso bilateral ("vidro fosco") são altamente característicos.
+
+Q: Qual é o método diagnóstico de escolha para confirmar a presença do agente etiológico da pneumonia descrita no caso 5?
+A) Hemocultura em meio específico para fungos.
+B) Biópsia de linfonodo supraclavicular.
+C) Análise de amostra respiratória, preferencialmente do lavado broncoalveolar (LBA), para visualização dos cistos.
+D) Teste de antígeno criptocócico no soro.
+E) Sorologia com pesquisa de anticorpos IgG e IgM.
+G: C
+C: O diagnóstico da PCP depende da visualização do organismo em amostras respiratórias, já que ele não é cultivável em meios de rotina. O LBA, obtido por broncoscopia, é o método com maior sensibilidade para detectar os cistos de P. <i>jirovecii</i> através de colorações especiais.
+
+Q: Qual é o tratamento de primeira linha para a infecção pulmonar oportunista do caso 5?
+A) Anfotericina B lipossomal
+B) Voriconazol
+C) Fluconazol em altas doses
+D) Equinocandinas (Micafungina)
+E) Sulfametoxazol-trimetoprima
+G: E
+C: A combinação de Sulfametoxazol-trimetoprima (SMX-TMP) é o tratamento de escolha para a PCP, sendo altamente eficaz tanto para o tratamento da doença ativa quanto para a profilaxia em pacientes de risco.
+
+Q: Um paciente de 68 anos, ex-fumante e com história de tuberculose tratada há 15 anos, procura um pneumologista por episódios de tosse com expectoração de sangue (hemoptise). Ele não apresenta febre ou perda de peso. A tomografia de tórax revela a presença de uma massa sólida, móvel, localizada no interior de uma antiga cavidade no ápice do pulmão direito. Com base neste caso, responda também às questões 17 e 18.
+Qual é a forma clínica de infecção fúngica mais provável, considerando o achado de uma massa móvel dentro de uma cavidade pulmonar pré-existente?
+A) Aspergilose pulmonar invasiva
+B) Nódulo pulmonar por Criptococose
+C) Aspergiloma (bola fúngica)
+D) Carcinoma broncogênico cavitado
+E) Abscesso pulmonar por <i>Candida</i>
+G: C
+C: O aspergiloma é caracterizado pelo crescimento de um conglomerado de hifas de <i>Aspergillus</i> dentro de uma cavidade pulmonar pré-formada (sequela de tuberculose, sarcoidose, etc.), sem invasão do tecido pulmonar adjacente. A imagem de uma massa intracavitária que se move com a mudança de decúbito do paciente é patognomônica.
+
+Q: O diagnóstico da condição do paciente do caso 6 é primariamente confirmado por qual método?
+A) Pesquisa de antígeno Galactomanana no soro, que costuma ser muito elevada.
+B) Hemoculturas para <i>Aspergillus</i>.
+C) Exames de imagem, especialmente a Tomografia Computadorizada (TC) de Tórax.
+D) Broncoscopia com biópsia transbrônquica do parênquima pulmonar.
+E) Punção da massa guiada por TC.
+G: C
+C: O diagnóstico do aspergiloma é eminentemente radiológico. A TC de tórax é o melhor método para visualizar a "bola fúngica" dentro da cavidade, muitas vezes com um "sinal do crescente aéreo" (ar entre a massa e a parede da cavidade). Exames sorológicos podem auxiliar (anticorpos IgG contra <i>Aspergillus</i> costumam ser positivos), mas a imagem é fundamental.
+
+Q: Qual é a principal abordagem terapêutica para a condição do caso 6, especialmente na presença de hemoptise significativa?
+A) Terapia antifúngica sistêmica com Voriconazol por tempo indeterminado.
+B) Uso de Corticosteroides para diminuir a inflamação.
+C) Instilação de Anfotericina B diretamente na cavidade.
+D) Remoção cirúrgica da lesão (lobectomia ou segmentectomia).
+E) Observação clínica, pois o tratamento raramente é necessário.
+G: D
+C: Antifúngicos sistêmicos têm pouca penetração e eficácia no aspergiloma. O tratamento definitivo, especialmente quando há sintomas como hemoptise (que pode ser fatal), é a ressecção cirúrgica da área afetada do pulmão.
+
+Q: Um paciente de 25 anos, em tratamento para leucemia, apresenta febre persistente e desenvolve múltiplas lesões de pele dolorosas nos braços e pernas. As lesões são nodulares e algumas apresentam um centro escuro, necrótico. As hemoculturas foram coletadas. Com base neste caso, responda também às questões 20 e 21.
+Qual é a hipótese diagnóstica para esta micose disseminada, sabendo que as hemoculturas frequentemente positivam neste caso?
+A) Criptococose
+B) Esporotricose
+C) Fusariose
+D) Feo-hifomicose
+E) Cromoblastomicose
+G: C
+C: A fusariose disseminada é uma infecção devastadora em pacientes com neutropenia grave. O quadro é caracterizado por febre persistente, fungemia (hemoculturas positivas em até 75% dos casos) e lesões de pele típicas: nódulos ou pápulas eritematosas que evoluem com um centro necrótico ou equimótico.
+
+Q: Quais exames são essenciais para confirmar o diagnóstico da infecção angioinvasiva do caso 7?
+A) Apenas o exame clínico das lesões de pele.
+B) Exame de fezes e urina.
+C) Hemocultura e biópsia de uma lesão de pele para histopatologia e cultura.
+D) Tomografia de crânio e punção lombar.
+E) Sorologia para <i>Aspergillus</i> e <i>Candida</i>.
+G: C
+C: A positividade da hemocultura é um marco da fusariose, diferenciando-a de outras hifalomicoses como a aspergilose. A biópsia da lesão cutânea confirma a invasão tecidual pelo fungo filamentoso hialino e a cultura do fragmento permite a identificação do gênero <i>Fusarium</i>.
+
+Q: Para o paciente do caso 7, qual é a terapia antifúngica de escolha e qual o fator mais determinante para a sua recuperação?
+A) Fluconazol; controle da glicemia.
+B) Voriconazol ou Anfotericina B lipossomal; recuperação da neutropenia.
+C) Itraconazol; excisão cirúrgica das lesões.
+D) Caspofungina; remoção de cateter venoso.
+E) Griseofulvina; hidratação vigorosa.
+G: B
+C: O tratamento requer antifúngicos de amplo espectro ativos contra moldes, como Voriconazol ou formulações lipídicas de Anfotericina B. Contudo, o fator prognóstico mais importante para a sobrevivência é a recuperação da contagem de neutrófilos, restaurando a capacidade do sistema imune de combater a infecção.
+
+Q: Uma paciente de 35 anos, com AIDS e contagem de CD4 de 40 células/mm³, é admitida com diarreia aquosa crônica há mais de um mês, resultando em desidratação e perda de 8 kg. A investigação para patógenos bacterianos e virais foi negativa. Com base neste caso, responda também às questões 23 e 24.
+Qual infecção oportunista, causada por um organismo hoje classificado no reino Fungi, é uma forte suspeita neste cenário?
+A) Candidíase intestinal
+B) Giardíase
+C) Criptococose gastrointestinal
+D) Microsporidiose
+E) Amebíase
+G: D
+C: A microsporidiose intestinal, causada por patógenos como <i>Enterocytozoon bieneusi</i>, é uma causa clássica de diarreia crônica, aquosa e debilitante em pacientes com AIDS e imunodeficiência celular muito grave (CD4 < 100, especialmente < 50).
+
+Q: Como o diagnóstico da infecção intestinal do caso 8 pode ser confirmado laboratorialmente?
+A) Por meio de uma colonoscopia com biópsia, que mostra invasão da mucosa por hifas.
+B) Pela detecção de esporos em amostras de fezes, utilizando colorações especiais como o cromotropo.
+C) Pela positividade da hemocultura para o agente.
+D) Pela sorologia com detecção de anticorpos específicos.
+E) Pelo crescimento do organismo em meios de cultura de rotina para fezes.
+G: B
+C: O diagnóstico é feito pela visualização dos microsporídios (esporos pequenos) em amostras de fezes ou aspirados duodenais. Como eles são muito pequenos e não se coram bem por métodos de rotina, são necessárias técnicas de coloração especiais, como o tricrômio modificado (coloração de cromotropo), para identificá-los.
+
+Q: Qual é o tratamento farmacológico frequentemente utilizado para a condição do caso 8 e qual a intervenção mais fundamental para a resolução do quadro a longo prazo?
+A) Anfotericina B; dieta sem resíduos.
+B) Metronidazol; hidratação oral.
+C) Albendazol; reconstituição imune com a Terapia Antirretroviral (TARV).
+D) Voriconazol; transplante de medula óssea.
+E) Nistatina oral; repouso.
+G: C
+C: O Albendazol é o medicamento de escolha para tratar a microsporidiose. No entanto, em pacientes com AIDS, a medida mais crucial para a cura e prevenção de recorrências de todas as infecções oportunistas é a restauração do sistema imunológico através do início ou otimização da TARV, que levará ao aumento da contagem de células CD4.
+
+Q: Um agricultor de 55 anos, transplantado renal há 3 anos e em uso de imunossupressores, apresenta uma lesão nodular, endurecida e de crescimento lento em seu antebraço, no local onde sofreu um arranhão com um galho há alguns meses. A lesão evoluiu para um pequeno abscesso. Com base neste caso, responda também às questões 26 e 27.
+Dado o histórico de inoculação traumática e o estado de imunossupressão, qual tipo de micose subcutânea deve ser fortemente considerada?
+A) Micetoma
+B) Esporotricose
+C) Lobomicose
+D) Feo-hifomicose
+E) Rinosporidiose
+G: D
+C: A Feo-hifomicose é uma infecção causada por fungos demáceos (pigmentados/escuros). A porta de entrada clássica é a inoculação traumática na pele, geralmente com solo ou material vegetal contaminado. Em pacientes imunossuprimidos, pode se manifestar como uma lesão localizada (nódulo ou abscesso), mas também pode disseminar.
+
+Q: Qual exame é essencial para o diagnóstico da lesão do caso 9 e qual o achado microscópico característico que define este grupo de micoses?
+A) Raspado da lesão com exame a fresco, visualizando "grãos" macroscópicos.
+B) Cultura de sangue em meio Sabouraud.
+C) Sorologia para <i>Sporothrix schenckii</i>.
+D) Biópsia da lesão para histopatologia, com a visualização de hifas ou leveduras de cor escura (demáceas).
+E) Intradermorreação com esporotriquina.
+G: D
+C: O diagnóstico definitivo requer uma biópsia da lesão. O achado que define a feo-hifomicose é a presença de elementos fúngicos (hifas, leveduras) que possuem melanina em sua parede celular, conferindo-lhes uma coloração naturalmente acastanhada ou preta no exame histopatológico. A cultura do tecido confirma o agente etiológico específico.
+
+Q: Qual a abordagem terapêutica geralmente recomendada para a infecção fúngica do caso 9?
+A) Apenas observação, pois a lesão é autolimitada.
+B) Tratamento com Iodeto de Potássio oral.
+C) Combinação de excisão cirúrgica da lesão com terapia antifúngica sistêmica (ex: Voriconazol).
+D) Uso de antibióticos para cobrir contaminação bacteriana.
+E) Terapia exclusiva com Anfotericina B intravenosa por 14 dias.
+G: C
+C: O tratamento ideal para a feo-hifomicose subcutânea, especialmente em imunocomprometidos, é a combinação da remoção cirúrgica do foco infeccioso com o uso de antifúngicos sistêmicos de amplo espectro, como os triazólicos (Voriconazol, Posaconazol, Itraconazol), para prevenir a recidiva local e a disseminação.
+
+Q: Um homem de 48 anos, aparentemente saudável e sem comorbidades, que trabalha como biólogo em áreas de reflorestamento com eucaliptos, procura atendimento por tosse persistente e dor torácica leve há cerca de dois meses. Uma radiografia de tórax revela um nódulo pulmonar solitário de 3 cm, levantando suspeita de neoplasia. Com base neste caso, responda também às questões 29 e 30.
+Qual micose, que pode afetar indivíduos imunocompetentes e está associada a certas árvores, deve entrar no diagnóstico diferencial?
+A) Aspergilose
+B) Histoplasmose
+C) Coccidioidomicose
+D) Criptococose por <i>Cryptococcus gattii</i>
+E) Mucormicose pulmonar
+G: D
+C: Diferente do <i>C. neoformans</i> (associado a fezes de aves e imunossuprimidos), o <i>C. gattii</i> está associado a material orgânico de árvores, como o eucalipto, e é conhecido por causar doença em hospedeiros imunocompetentes. A apresentação pode ser neurológica ou pulmonar, frequentemente como uma massa ou nódulo (criptococoma) que pode mimetizar um tumor.
+
+Q: Para o paciente do caso 10, quais exames podem ser utilizados para investigar esta possibilidade diagnóstica antes de se indicar um procedimento mais invasivo?
+A) Teste tuberculínico (PPD).
+B) Hemoculturas seriadas.
+C) Teste de antígeno criptocócico (CrAg) no soro.
+D) Exame de escarro para pesquisa de <i>Pneumocystis jirovecii</i>.
+E) Detecção do antígeno Galactomanana.
+G: C
+C: O teste de CrAg sérico é um excelente exame de triagem, não invasivo, rápido e de alta sensibilidade e especificidade para criptococose, seja ela causada por <i>C. neoformans</i> ou <i>C. gattii</i>. Um resultado positivo direcionaria fortemente a investigação.
+
+Q: Se a doença do caso 10 for confirmada como uma infecção pulmonar localizada e com sintomas leves em um paciente imunocompetente, qual é o tratamento de escolha?
+A) Anfotericina B com Flucitosina por 2 semanas.
+B) Terapia de supressão com Itraconazol por 3 meses.
+C) Nenhum tratamento, apenas acompanhamento radiológico.
+D) Terapia com Fluconazol oral por um período de 6 a 12 meses.
+E) Excisão cirúrgica do nódulo, sem necessidade de antifúngico.
+G: D
+C: Para a criptococose pulmonar leve a moderada em pacientes imunocompetentes (doença não meníngea e não disseminada), o tratamento de escolha é um curso prolongado de Fluconazol oral, que tem excelente penetração pulmonar e eficácia.
+```
