@@ -7,6 +7,11 @@
         "type": "file",
         "name": "Revisão Cardio e Digestório.txt",
         "path": "quizes-da-nuvem/Anatomia N1/Revisão Cardio e Digestório.txt"
+      },
+      {
+        "type": "file",
+        "name": "testando11.txt",
+        "path": "quizes-da-nuvem/Anatomia N1/testando11.txt"
       }
     ]
   },
@@ -109,13 +114,13 @@
       },
       {
         "type": "file",
-        "name": "Motilidade Intestinal e Fármacos Relacionados - Forms Clarissa.txt",
-        "path": "quizes-da-nuvem/Clarissa N1/Motilidade Intestinal e Fármacos Relacionados - Forms Clarissa.txt"
+        "name": "Motilidade e Fármacos - Katzung (IA).txt",
+        "path": "quizes-da-nuvem/Clarissa N1/Motilidade e Fármacos - Katzung (IA).txt"
       },
       {
         "type": "file",
-        "name": "Motilidade e Fármacos - Katzung (IA).txt",
-        "path": "quizes-da-nuvem/Clarissa N1/Motilidade e Fármacos - Katzung (IA).txt"
+        "name": "Motilidade Intestinal e Fármacos Relacionados - Forms Clarissa.txt",
+        "path": "quizes-da-nuvem/Clarissa N1/Motilidade Intestinal e Fármacos Relacionados - Forms Clarissa.txt"
       },
       {
         "type": "file",
@@ -336,6 +341,11 @@
     ]
   },
   {
+    "type": "file",
+    "name": "test.txt",
+    "path": "quizes-da-nuvem/test.txt"
+  },
+  {
     "type": "folder",
     "name": "Tutorias de Farmacologia, ISTs, Endocardite e antiparasitários - N2",
     "children": [
@@ -363,16 +373,6 @@
         "type": "file",
         "name": "5. Antiparasitários - Dissertativas.txt",
         "path": "quizes-da-nuvem/Tutorias de Farmacologia, ISTs, Endocardite e antiparasitários - N2/5. Antiparasitários - Dissertativas.txt"
-      },
-      {
-        "type": "file",
-        "name": "6. ISTs bacterianas (Sífilis e Gonorreia) e Endocardite - Dissertativas.txt",
-        "path": "quizes-da-nuvem/Tutorias de Farmacologia, ISTs, Endocardite e antiparasitários - N2/6. ISTs bacterianas (Sífilis e Gonorreia) e Endocardite - Dissertativas.txt"
-      },
-      {
-        "type": "file",
-        "name": "7. ISTs virais (HIV e Herpes) - Dissertativas.txt",
-        "path": "quizes-da-nuvem/Tutorias de Farmacologia, ISTs, Endocardite e antiparasitários - N2/7. ISTs virais (HIV e Herpes) - Dissertativas.txt"
       }
     ]
   },
@@ -424,11 +424,6 @@
         "type": "file",
         "name": "05.1. Excitação Rítmica do Coração - Guyton - Dissertativas.txt",
         "path": "quizes-da-nuvem/Tutorias de Fisiologia Cardiovascular - N2/05.1. Excitação Rítmica do Coração - Guyton - Dissertativas.txt"
-      },
-      {
-        "type": "file",
-        "name": "06. Visão Geral da Circulação - Pressão, Fluxo e Resistência - Guyton Cap 14.txt",
-        "path": "quizes-da-nuvem/Tutorias de Fisiologia Cardiovascular - N2/06. Visão Geral da Circulação - Pressão, Fluxo e Resistência - Guyton Cap 14.txt"
       },
       {
         "type": "file",
@@ -505,11 +500,6 @@
         "type": "file",
         "name": "01.1. Embriologia - Desenvolvimento dos brônquios e dos pulmões.txt",
         "path": "quizes-da-nuvem/Tutorias de Respiratório - N3/01.1. Embriologia - Desenvolvimento dos brônquios e dos pulmões.txt"
-      },
-      {
-        "type": "file",
-        "name": "02.0. Corticoides - Dissertativas (Unificado).txt",
-        "path": "quizes-da-nuvem/Tutorias de Respiratório - N3/02.0. Corticoides - Dissertativas (Unificado).txt"
       },
       {
         "type": "file",
