@@ -54,6 +54,10 @@
         "type": "file",
         "name": "Testes Estatísticos.txt",
         "path": "quizes-da-nuvem/Bioestatística N1/Testes Estatísticos.txt"
+      },
+      "type": "file",
+        "name": "TTT.txt",
+        "path": "quizes-da-nuvem/Bioestatística N1/TTT.txt"
       }
     ]
   },
