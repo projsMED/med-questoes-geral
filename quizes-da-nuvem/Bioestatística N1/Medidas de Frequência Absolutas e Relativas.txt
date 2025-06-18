@@ -1,7 +1,7 @@
 q-random: false;
 
 Q: A tabela a seguir mostra a densidade de incidência de AVC em três grupos de pessoas: Que nunca fumaram, ex-fumantes e fumantes, juntamente com o IC95% de cada densidade de incidência. Com base nos valores de IC95%, interprete a tabela e assinale V ou F para a afirmativa abaixo e para as afirmativas da questão <strong>2 e 3</strong>.
-https://AndreHero007.github.io/quiz-images/densidade%20de%20incid%C3%AAncia%20de%20AVC%20em%20tr%C3%AAs%20grupos%20de%20pessoas.png
+https://projsMED.github.io/quiz-images/densidade%20de%20incid%C3%AAncia%20de%20AVC%20em%20tr%C3%AAs%20grupos%20de%20pessoas.png
 Assertiva:
 "Entre não fumantes ("nunca fumou") e ex-fumantes, há diferença estatisticamente significativa na incidência de AVC"
 G: F
@@ -16,7 +16,7 @@ G: V
 C: Sem sobreposição, indicando diferença estatisticamente significativa entre não fumantes e fumantes.
 
 Q: Um estudo observacional cujo objetivo foi avaliar se a ocorrência de osteoporose está relacionada com o sexo do indivíduo. Para este estudo, os pesquisadores selecionaram uma amostra de 100 homens com mais de 50 anos e uma amostra de 200 mulheres com as mesmas características. Observou-se que 10 homens e 40 mulheres tinham algum grau de osteoporose. O pesquisador criou uma tabela e calculou o IC95% para a incidência em cada sexo. Sobre os resultados mostrados na tabela, julgue como V ou F a assertiva a seguir e as assertivas das questões <strong>5 a 7</strong>.
-https://AndreHero007.github.io/quiz-images/ocorr%C3%AAncia%20de%20osteoporose%20est%C3%A1%20relacionada%20com%20o%20sexo%20do%20indiv%C3%ADduo.png
+https://projsMED.github.io/quiz-images/ocorr%C3%AAncia%20de%20osteoporose%20est%C3%A1%20relacionada%20com%20o%20sexo%20do%20indiv%C3%ADduo.png
 Assertiva:
 "A variável “osteoporose” na tabela é do tipo dicotômica"
 G: V
@@ -38,7 +38,7 @@ G: F
 C: Há sobreposição entre os dois intervalos, portanto não podemos afirmar que há diferença estatisticamente significativa entre os sexos.
 
 Q: A tabela a seguir representa um estudo que analisa a relação entre o fator de risco obesidade e a presença de diabetes tipo 2. Sobre os dados da tabela, responda a pergunta abaixo e as perguntas <strong>9 a 11</strong> sobre medidas de frequência e calcule-as.
-https://AndreHero007.github.io/quiz-images/rela%C3%A7%C3%A3o%20entre%20o%20fator%20de%20risco%20obesidade%20e%20a%20presen%C3%A7a%20de%20diabetes%20tipo%202.png
+https://projsMED.github.io/quiz-images/rela%C3%A7%C3%A3o%20entre%20o%20fator%20de%20risco%20obesidade%20e%20a%20presen%C3%A7a%20de%20diabetes%20tipo%202.png
 Pergunta:
 O pesquisador deseja saber a diferença de risco entre expostos e não expostos em pontos percentuais. Qual das medidas de frequência absolutas a seguir ele deve calcular?
 A) Risco atribuível.
@@ -95,7 +95,7 @@ O que isso signitiva? Significa que se não houvesse obesidade, 20,4% dos casos 
 Então se não houvesse obesidade, 110 pessoas dessa população não teriam diabates.
 
 Q: A tabela a seguir possuí dados da associação entre apneia obstrutiva do sono (AOS) e hipertensão arterial. O pesquisador também calculou várias medidas de risco absolutas. Com base na tabela e nos resultados dos cálculos, julgue a assertiva a seguir como V ou F e também as assertivas das questões <strong>13 a 23</strong>.
-https://AndreHero007.github.io/quiz-images/associa%C3%A7%C3%A3o%20entre%20apneia%20obstrutiva%20do%20sono%20(AOS)%20e%20hipertens%C3%A3o%20arterial.png
+https://projsMED.github.io/quiz-images/associa%C3%A7%C3%A3o%20entre%20apneia%20obstrutiva%20do%20sono%20(AOS)%20e%20hipertens%C3%A3o%20arterial.png
 Assertiva:
 "Hipertensão arterial é o fator de risco analisado"
 G: F
@@ -161,7 +161,7 @@ G: F
 C: No estudo apresentado, o pesquisador não selecionou participantes com base na presença ou ausência de hipertensão arterial para depois investigar a exposição à apneia obstrutiva do sono. Pelo contrário, o delineamento descrito é característico de um <b>estudo de coorte</b>(repare que o enunciado da questão cita OBSERVACIONAL), no qual os indivíduos foram classificados inicialmente com base na presença ou ausência de apneia obstrutiva do sono (exposição) e, em seguida, foi avaliada a ocorrência da hipertensão arterial (desfecho). Em estudos de coorte, a análise parte da exposição em direção ao desfecho, enquanto nos estudos caso-controle parte-se do desfecho para buscar exposições anteriores. Por isso a descrição feita pela assertiva se refere incorretamente a um tipo de estudo diferente do que foi realizado.
 
 Q: A tabela abaixo é sobre uma pesquisa que avaliou a associação entre fumo passivo e o desenvolvimento de câncer de pulmão. Neste estudo, os pesquisadores mediram a frequência de câncer de pulmão em mulheres não-fumantes com maridos fumantes e não-fumantes. O resultado do estudo está apresentado na tabela abaixo:
-https://andrehero007.github.io/quiz-images/Dados%20para%20a%20associa%C3%A7%C3%A3o%20entre%20o%20fumo%20passivo%20e%20c%C3%A2ncer%20de%20pulm%C3%A3o%202333.png
+https://projsMED.github.io/quiz-images/Dados%20para%20a%20associa%C3%A7%C3%A3o%20entre%20o%20fumo%20passivo%20e%20c%C3%A2ncer%20de%20pulm%C3%A3o%202333.png
 Sobre esse estudo, avalie a assertiva abaixo e respondaa as questões <strong>25 e 26</strong>.
 "Se trata de um estudo caso-controle"
 G: V
@@ -183,7 +183,7 @@ A) Como o valor da razão de chances é igual a 9, as mulheres expostas ao fumo 
 B) Como o intervalo de confiança (4,13; 19,91) não inclui o valor 1,0 e o p-valor é inferior a 0,05, conclui-se que existe uma associação estatisticamente significativa entre a exposição ao fumo passivo e o aumento do risco de câncer de pulmão em mulheres.
 
 Q: Os dados da tabela do estudo abaixo referem-se a um estudo que avaliou o efeito protetivo de uma vacina contra pneumonia em trabalhadores de câmaras frigoríficas. Nesta pesquisa, os trabalhadores foram selecionados aleatoriamente para receber a vacina ou um placebo e então acompanhados por um determinado período de tempo para verificar a ocorrência da doença.
-https://andrehero007.github.io/quiz-images/efeito%20protetivo%20de%20uma%20vacina%20contra%20pneumonia%20em%20trabalhadores%20de%20c%C3%A2maras%20frigor%C3%ADficas%202bgs.png
+https://projsMED.github.io/quiz-images/efeito%20protetivo%20de%20uma%20vacina%20contra%20pneumonia%20em%20trabalhadores%20de%20c%C3%A2maras%20frigor%C3%ADficas%202bgs.png
 Sobre esse estudo, responda a questão abaixo e as questões <strong>28 e 29</strong>.
 Se trata de um estudo do tipo:
 A) Caso-controle: Ensaio clínico randomizado.

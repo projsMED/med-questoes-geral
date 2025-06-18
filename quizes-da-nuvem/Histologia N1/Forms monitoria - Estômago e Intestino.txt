@@ -106,7 +106,7 @@ C: A síndrome de Zollinger-Ellison é associada à produção excessiva de gast
 
 Q: A região fúndica do estômago localiza-se entre a cárdia, adjacente ao esôfago, e a região pilórica do estômago, mais distal. Assim, compreende a maior parte do estômago. O interior do estômago vazio apresenta uma série de dobras ou cristas longitudinais, exceto na parte superior expandida, que é relativamente lisa. Essas cristas, chamadas de pregas, são formadas pela mucosa e submucosa. Elas desaparecem com o enchimento e a distensão do estômago.
 Sabendo disso, marque a alternativa correta:
-https://andrehero007.github.io/quiz-images/laminas-histo/img2334x.png
+https://projsMED.github.io/quiz-images/laminas-histo/img2334x.png
 A) 1) prega
 B) 2) mucosa
 C) 3) área gástrica
@@ -124,7 +124,7 @@ Lembre-se que as pregas são dobraduras (elevações) na parede interna do estô
 
 Q: Assim como em outras partes do trato gastrintestinal, a parede do estômago consiste em quatro camadas: a mucosa (mais internA), a submucosa, a muscular externa e a serosa (mais externA).
 Sabendo disso, marque a alternativa que corresponde a numeração correta:
-https://andrehero007.github.io/quiz-images/laminas-histo/img2313fx.png
+https://projsMED.github.io/quiz-images/laminas-histo/img2313fx.png
 A) 1) muscular da mucosa
 B) 3) sulco circundante
 C) 5) glândulas fúndicas
@@ -140,7 +140,7 @@ C:
 
 Q: As pregas circulares são mais numerosas na metade distal do duodeno e na parte proximal do jejuno. Na metade distal do jejuno elas se tornam menores e menos numerosas e, praticamente, desaparecem na metade do íleo. Embora as vilosidades normalmente tenham uma configuração em forma de folha, elas tornam-se mais digitiformes conforme o íleo se aproxima. No íleo, a maior parte das vilosidades é digitiforme. As glândulas de Brünner estão ausentes no jejuno e no íleo. O número destas glândulas diminui gradativamente até desaparecerem no terço final do duodeno. O tipo de células epiteliais que reveste as criptas e as vilosidades no jejuno e no íleo, na sua maior parte, é o mesmo do encontrado no duodeno.   
 Sabendo disso, marque a alternativa que corresponde a numeração correta:
-https://andrehero007.github.io/quiz-images/laminas-histo/img2000.png
+https://projsMED.github.io/quiz-images/laminas-histo/img2000.png
 A) 1 - Mucosa.
 B) 2 - Serosa.
 C) 3 - Camada longitudinal da muscular externa.
@@ -154,7 +154,7 @@ C:
 
 Q: Da mesma forma que o intestino delgado, o colo apresenta uma mucosa, uma submucosa, uma muscular externa e sobre a sua superfície livre exterior, uma serosa. Uma característica incomum da muscular do colo, bem como do ceco, é uma expansão de partes da camada longitudinal externa da muscular externa. Uma modificação na espessura desta camada muscular forma três estruturas uniformemente espaçadas, similares a faixas (teniae coli), presentes ao longo do comprimento do colo.
 Sabendo disso, marque a alternativa que corresponde a numeração correta:
-https://andrehero007.github.io/quiz-images/laminas-histo/img2001.png
+https://projsMED.github.io/quiz-images/laminas-histo/img2001.png
 A) 1) submucosa
 B) 2) mucosa
 C) 5) camada longitudinal externa da muscular externa

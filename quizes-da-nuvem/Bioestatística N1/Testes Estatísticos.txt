@@ -1,7 +1,7 @@
 q-random: false;
 
 Q: Um estudo comparou a proporção amostal de doenças autossômicas recessivas em lactentes com doenças com componente genético com aquela obtida na população, assumindo que a proporção populacional conhecida é de 9,1%. Os resultados do testes estatístico estão na imagem abaixo:
-https://andrehero007.github.io/quiz-images/propor%C3%A7%C3%A3o%20amostral%20de%20doen%C3%A7as%20autoss%C3%B4micas%20recessivas%20em%20lactentes-323h.png
+https://projsMED.github.io/quiz-images/propor%C3%A7%C3%A3o%20amostral%20de%20doen%C3%A7as%20autoss%C3%B4micas%20recessivas%20em%20lactentes-323h.png
 Sobre esse estudo e o teste estatístico realizado, julge a afirmativa a seguir e as afirmativas das questões <strong>2 a 5</strong>.
 "O testa estatístico realizado pelo pesquisador foi o teste para uma proporção"
 G: V
@@ -23,7 +23,7 @@ G: F
 C: A conclusão seria a mesma (de que não há diferença estatisticamente significativa entre as proporções), pois o valor p 0,03 é maior que 0,01. Logo, também rejeita-se a hipótese alternativa e aceita-se a hipótese nula.
 
 Q: Os pressupostos para o teste estatístico realizado pelo pesquisador são:
-https://andrehero007.github.io/quiz-images/pressupostos%201%20proporçãos.png
+https://projsMED.github.io/quiz-images/pressupostos%201%20proporçãos.png
 G: V
 C: Esses são os pressupostos para a realização do teste para 1 proporção.
  
@@ -32,7 +32,7 @@ G: F
 C: O teste para uma proporção é usado em uma amostra com uma variável dicotômica, ou seja, que pode assumir apenas 2 categorias. No caso desse estudo há a categoria lactentes com doenças com componente genético e a categoria lactentes sem doenças com componente genético.
 
 Q: Um estudo realizado com trabalhadores de câmaras frigoríficas avaliou o efeito da vitamina C na prevenção de doenças do trato respiratório. Nesta pesquisa, 407 trabalhadores foram selecionados aleatoriamente para receber doses altas de vitamina C, enquanto outros 411 trabalhadores (também selecionados aleatoriamente) receberam somente placebo. Após acompanhá-los por um determinado período de tempo, verificou-se que 105 participantes do grupo experimental não desenvolveram doenças do trato respiratório, enquanto no grupo placebo, esse número foi de 76 participantes. A amostra selecionada pelos pesquisadores é representativa da população. Abaixo estão os dados organizados em uma tabela de contingência e também o resultado do teste estatístico.
-https://andrehero007.github.io/quiz-images/teste%202%20proporcao%20efeito%20da%20vitamina%20C%20na%20preven%C3%A7%C3%A3o%20de%20doen%C3%A7as%20do%20trato%20respirat%C3%B3rio-23.png
+https://projsMED.github.io/quiz-images/teste%202%20proporcao%20efeito%20da%20vitamina%20C%20na%20preven%C3%A7%C3%A3o%20de%20doen%C3%A7as%20do%20trato%20respirat%C3%B3rio-23.png
 Resultado do teste estatístico:
 Valor-p = 0,012
 Sobre esse estudo e o teste estatístico realizado, julge a afirmativa a seguir e as afirmativas das questões <strong>7 a 12</strong>.
@@ -51,7 +51,7 @@ Q: Com base nos resultados, a proporção de não desenvolvimento
 de doenças do trato respiratório em trabalhadores de câmaras frigoríficas que tomaram vitamina C é de cerca de 26%, enquanto a proporção no grupo placebo é de cerca de 18%.
 G: V
 C: Cálculo:
-https://andrehero007.github.io/quiz-images/Dados%20propor%C3%A7%C3%A3o%2023casd.png
+https://projsMED.github.io/quiz-images/Dados%20propor%C3%A7%C3%A3o%2023casd.png
 
 Q: Considerando um alfa de 5%, a diferença de proporção entre o grupo que tomou placebo e o grupo que tomou vitamina C não é estatisticamente significativo.
 G: F
@@ -69,14 +69,14 @@ Então não rejeitamos H₀ → não há diferença significativa.
 Conclusão: A diferença não é significativa ao nível de 1%.
 
 Q: Os pressupostos para o teste estatístico realizado pelo pesquisador são:
-https://andrehero007.github.io/quiz-images/pressupostos%202%20propor%C3%A7%C3%A3os%20dsadd.png
+https://projsMED.github.io/quiz-images/pressupostos%202%20propor%C3%A7%C3%A3os%20dsadd.png
 G: V
 C: Esses são os pressupostos para a realização do teste para 2 proporção de amostras indepedentes.
 
 Q: Se as amostras dos grupos que receberam vitamina C e placebo tivessem, cada uma, apenas 20 indivíduos, os pressupostos para a aplicação do teste estatístico seriam violados, considerando as proporções de 0,25 e 0,18, respectivamente.
 G: V
 C: Cálculo:
-https://andrehero007.github.io/quiz-images/calculo-pressupostos-3232fcvv.png
+https://projsMED.github.io/quiz-images/calculo-pressupostos-3232fcvv.png
 Com apenas 20 indivíduos por grupo, os pressupostos seriam violados, principalmente no grupo placebo (onde 𝑛 × 𝑝 ficou menor que 5). Então se a amostra fosse de 20 indivíduos em cada grupo esse teste estatístico não poderia ser realizado.
 
 Q: Sobre os testes de Qui-quadrado, julgue a afirmativa a seguir e as afirmativas das questões <strong>14 a 21</strong>.
@@ -93,7 +93,7 @@ Q: O valor esperado pode ser calculado multiplicando o <b>total da linha</b> ond
 G: V
 C:
 Aqui está um exemplo que ilustra:
-https://andrehero007.github.io/quiz-images/calculo-valor-esperado-2312321.png
+https://projsMED.github.io/quiz-images/calculo-valor-esperado-2312321.png
 
 Q: A curva de distribuição qui-quadrado começa no 1 e só tem valores positivos.
 G: F
@@ -118,7 +118,7 @@ Q: A curva de distribuição qui-quadrado é assimétrica e se torna menos assim
 G: V
 C: 
 Quanto maior os graus de liberdade, menos assimétrica a curva se torna, como mostra a imagem abaixo:
-https://andrehero007.github.io/quiz-images/distribuicao-qui-quadrado-3nmcs6.png
+https://projsMED.github.io/quiz-images/distribuicao-qui-quadrado-3nmcs6.png
 
 Q: Um estudo mede a relação entre tipos sanguíneos (do sistema ABO) e três cores de pele. Os graus de liberdade são 2.
 G: F
@@ -164,13 +164,13 @@ G: E
 Q: No teste X² de comparação, o pesquisador escolhe o tamanho de cada uma das duas ou mais amostras, definindo ele mesmo quantas pessoas ou quantos elementos haverá em cada grupo. Sendo elas amostras dependentes.
 G: F
 C: Toda a assertiva é verdadeira, exceto a parte que fala que são amostras dependentes. São amostras independentes. Destacado em vermelho está os valores que o próprio pesquisador decide, que é o tamanho de cada amostra:
-https://andrehero007.github.io/quiz-images/teste-comparacao-exemplo02232.png
+https://projsMED.github.io/quiz-images/teste-comparacao-exemplo02232.png
 91 de Porto Alegre, 116 de São Leopoldo e 35 de Caxias do Sul são tamanhos amostrais escolhidos (fixados) pelo próprio pesquisador.
 
 Q: No teste X² de associação, o pesquisador escolhe apenas o tamanho de uma única amostra e verifica como ela se distribui em duas variáveis qualitativas.
 G: V
 C: Nesse tipo de estudo há duas variáveis com duas ou mais categorias, o total de cada categoria não é escolhido pelo pesquisador, é simplesmente o valor observado (e não um valor fixado) após ele avaliar todos os indivíduos da amostra quanto a cada variável. No exemplo abaixo, está estacado em vermelho o único valor que o pesquisador escolheu:
-https://andrehero007.github.io/quiz-images/teste-associacao-exemplo03fvb2232.png
+https://projsMED.github.io/quiz-images/teste-associacao-exemplo03fvb2232.png
 Isso significa que ele não escolheu que o estudo teria 228 pessoas com eosinófilos no escarro e 156 pessoas sem eosinófilos no escarro. Ele escolheu apenas o total de indivíduos (384) e avaliou cada um deles quanto a presença de eosinófilos (2 categorias) e o tipo de pneumopatia (4 categorias) e organizou os dados na tabela.
 Se ele tivesse escolhido o total com e sem eosinófilos no escarro, o teste apropriado seria X² de comparação, pois assim a presença ou ausência de eosinófilos passariam a ser cada um uma amostra em vez de categorias.
 Então:
@@ -181,7 +181,7 @@ Q: O teste X² de ajustamento só pode ser feito com uma amostra dicotômica.
 G: F
 C: O teste χ² de ajustamento pode ser aplicado tanto a variáveis dicotômicas (exemplo: presença ou ausência doença) quanto politômicas (exemplo: tipo sanguíneo do sistema ABO). A exigência é que a variável seja categórica e que se tenha uma frequência esperada para cada categoria.
 Um exemplo de tabela para X² de ajustamento para a frequência de atendimentos em uma clinica em cada dia da semana.
-https://andrehero007.github.io/quiz-images/teste-ajustament-exemplo-3232db6l.png
+https://projsMED.github.io/quiz-images/teste-ajustament-exemplo-3232db6l.png
 Repare que os valores esperados são iguais, pois se não houvesse diferença na frequência de atendimentos entre os dias da semana, esperaríamos o mesmo número de atendimentos em cada dia. Mas nem sempre os valores vão ser iguais, por exemplo, na genética de Mendel, se cruzarmos duas plantas heterozigóticas (Aa × Aa), a proporção esperada na descendência seria:
 25% homozigóticos dominantes (AA)
 50% heterozigóticos (Aa)
@@ -191,7 +191,7 @@ AA: 100 plantas (25% de 400)
 Aa: 200 plantas (50% de 400)
 aa: 100 plantas (25% de 400)
 Nesse caso, os valores esperados não são iguais entre todas as categorias, mas seguem a proporção mendeliana 1:2:1. Exemplo de tabela:
-https://andrehero007.github.io/quiz-images/teste-ajustament-exemplo2-3232dsddb6l.png
+https://projsMED.github.io/quiz-images/teste-ajustament-exemplo2-3232dsddb6l.png
 
 Q: Sobre as condições para o uso dos teste X² de associação e comparação, analise as assertivas a seguir e assinale a alternativa correta.<br>
 I - Em tabelas 2x2 (duas linhas e duas colunas) nenhum E pode ser menor do que 5.<br>
@@ -263,7 +263,7 @@ C: Todos são usados para dados categóricos (frequências: presença/ausência,
 
 Q: O estudo a seguir é sobre dois tratamentos usados para controlar a hemorragia em 24 pacientes hemofílicos submetidos a uma cirurgia.
 Qual o teste estatístico mais adequado para o estudo da imagem?
-https://andrehero007.github.io/quiz-images/N%C3%BAmero%20de%20complica%20devidas%20a%20hemorragia%20em%20pacientes%20submetidos%20ao%20tratamento%20A%20ou%20B.png
+https://projsMED.github.io/quiz-images/N%C3%BAmero%20de%20complica%20devidas%20a%20hemorragia%20em%20pacientes%20submetidos%20ao%20tratamento%20A%20ou%20B.png
 A) Teste de qui-quadrado.
 B) Teste de comparação para uma proporção.
 C) Teste de comparação para duas proporções.
@@ -298,7 +298,7 @@ Gl = (número de linhas − 1) × (número de colunas − 1)
 Gl = (3-1) × (3-1) = 2×2 = 4
 
 Q: O estudo da tabela a seguir avaliou o nível da dor em 79 jogadores profissionais do futebol antes e 24 h após de uso de um medicamento. Estes jogadores apresentavam problemas musculoesqueléticos diversos (principalmente entorse e contusão, mas também distensão muscular, tendinite, lombalgia e sinfisite púbica).
-https://andrehero007.github.io/quiz-images/dor-antes-depois-jogador-232323sdac.png
+https://projsMED.github.io/quiz-images/dor-antes-depois-jogador-232323sdac.png
 Qual dos testes estatísticos a seguir é mais apropriado?
 A) Teste de qui-quadrado.
 B) Teste de comparação para uma proporção.
@@ -340,14 +340,14 @@ G: V
 C: Realmente a proporção de melhora é calculada dividindo os casos de melhora pelo total de participantes, enquanto a proporção de piora os casos de piora pelo total de participantes.
 
 Q: No teste de McNemar os valores que servem para indicar melhora ou piora são sempre os das células A e D da tabela de contingência.
-https://andrehero007.github.io/quiz-images/mcnemardsa2332.png
+https://projsMED.github.io/quiz-images/mcnemardsa2332.png
 G: F
 C: Em tabelas para McNemar, o formato sempre organiza:
 	- Diagonal principal (células A e D): representam os indivíduos que não mudaram (permaneceram iguais antes e depois).
 	- Fora da diagonal (<b>células B e C)</b>: representam os indivíduos que mudaram de situação (melhoraram ou pioraram).
 
 Q: O estudo representado na tabela a seguir comparou a frequência de recém-nascidos com baixo peso ao nascer (< 2.500 g) entre duas amostras de mães, uma amostra com idade menor que 20 anos e outra com 20 anos ou mais.
-https://andrehero007.github.io/quiz-images/idade%20materna%20dsda23.png
+https://projsMED.github.io/quiz-images/idade%20materna%20dsda23.png
 Considere que todos os valores esperados sejam maiores ou iguais a 5, o teste X² mais adequado é
 A) X² de comparação.
 B) X² de ajustamento.
@@ -360,7 +360,7 @@ G: V
 C: Com base no teste qui-quadrado de comparação, observamos um valor-p de 0,006, que é estatisticamente significativo ao nível de 5% (α = 0,05), já que é muito menor que 0,05. Portanto, rejeitamos a hipótese nula e aceitamos a hipótese alternativa.
 
 Q: A tabela abaixo é referente a um estudo que avaliou se o número de acidentes em uma determinada cidade muda conforme o dia da semana.
-https://andrehero007.github.io/quiz-images/acidentes-dia-semana-232asdfl0.png
+https://projsMED.github.io/quiz-images/acidentes-dia-semana-232asdfl0.png
 Qual o teste estatístico mais adequado?
 A) Teste de 1 proporção.
 B) X² de comparação.

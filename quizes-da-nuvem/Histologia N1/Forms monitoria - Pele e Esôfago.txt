@@ -119,7 +119,7 @@ C: O vitiligo é causado pela degeneração ou destruição dos melanócitos, ma
 
 Q: No início do esôfago, a muscular externa é constituída por músculo estriado. No terço médio do esôfago, este músculo é gradativamente substituído por músculo liso, que também está presente nas demais partes do tubo digestório.
 Responda corretamente de acordo com a numeração.
-https://andrehero007.github.io/quiz-images/laminas-histo/img3000.png
+https://projsMED.github.io/quiz-images/laminas-histo/img3000.png
 A) 3) Epitélio estratificado pavimentoso
 B) 4) células musculares lisas dispostas transversalmente
 C) 5) Submucosa
@@ -140,7 +140,7 @@ As células musculares lisas da camada longitudinal dispostas transversalmente (
 
 Q: O esôfago, o primeiro segmento do tubo digestório, se estende da orofaringe até o estômago. Não apresenta outra função principal além de servir como um canal.  
 Sabendo disso, marque a alternativa que corresponde a numeração correta:
-https://andrehero007.github.io/quiz-images/laminas-histo/img3001.png
+https://projsMED.github.io/quiz-images/laminas-histo/img3001.png
 A) 3) Lúmen
 B) 2) Epitélio estratificado pavimentoso
 C) 6) Camada externa longitudinal de músculo liso
@@ -160,7 +160,7 @@ QCH: A pele ou tegumento recobre a superfície externa do corpo. É composta de 
 • Epiderme, um epitélio estratificado pavimentoso queratinizado.
 • Derme, o tecido conectivo subjacente.  
 Sabendo disso, marque a(s) alternativa(s) que corresponde(m) a numeração correta:
-https://andrehero007.github.io/quiz-images/laminas-histo/img3002.png
+https://projsMED.github.io/quiz-images/laminas-histo/img3002.png
 NO-RANDOM: TRUE
 A1: 1) Epiderme
 G: V
@@ -180,7 +180,7 @@ tecido adiposo (5).
 
 Q: A pele (cútis ou tegumento) e seus derivados constituem o sistema tegumentar. A pele forma a cobertura externa do corpo e representa externa do corpo e representa o seu maior órgão, constituindo 15 a 20% da massa total.
 Sabendo disso, marque a alternativa que corresponde a numeração correta:
-https://andrehero007.github.io/quiz-images/laminas-histo/img3003.png
+https://projsMED.github.io/quiz-images/laminas-histo/img3003.png
 A) 2) cone epidérmico
 B) 3) tecido adiposo
 C) 5) cristas epidérmicas

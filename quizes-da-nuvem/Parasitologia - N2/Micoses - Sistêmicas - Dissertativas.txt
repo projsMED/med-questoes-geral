@@ -1,7 +1,7 @@
-https://AndreHero007.github.io/quiz-images/sistemicaimg1.png
+https://projsMED.github.io/quiz-images/sistemicaimg1.png
 
 Q: Sobre a imagem abaixo, responda os itens a seguir.
-https://AndreHero007.github.io/quiz-images/sistemicaimg1.jpg
+https://projsMED.github.io/quiz-images/sistemicaimg1.jpg
 I_A) Qual a doença da imagem?
 GABARITO: Blastomicose, com envolvimento cutâneo.
 I_B) Qual o gênero fúngico causador dela?
@@ -51,7 +51,7 @@ GABARITO: A anfotericina B, de preferência a formulação lipídica.
 ---
 
 Q: Sobre a imagem abaixo, responda os itens a seguir.
-https://AndreHero007.github.io/quiz-images/sistemicaimg2.jpg
+https://projsMED.github.io/quiz-images/sistemicaimg2.jpg
 I_A) Qual a doença da imagem?
 GABARITO: coccidioidomicose
 I_B) Qual o gênero fúngico causador dela?
@@ -89,7 +89,7 @@ GABARITO: -> Azólico por no mínimo 1 ano.
 ---
 
 Q: Sobre a imagem abaixo, responda os itens a seguir.
-https://AndreHero007.github.io/quiz-images/sistemicaimg3.png
+https://projsMED.github.io/quiz-images/sistemicaimg3.png
 I_A) Qual a doença da imagem?
 GABARITO: Paracoccidioidomicose
 I_B) Qual o gênero fúngico causador dela?
@@ -118,7 +118,7 @@ GABARITO: -> Itraconazol.
 ---
 
 Q: Sobre a imagem abaixo, responda os itens a seguir.
-https://AndreHero007.github.io/quiz-images/sistemicaimg4.jpg
+https://projsMED.github.io/quiz-images/sistemicaimg4.jpg
 I_A) Qual a doença da imagem?
 GABARITO: Histoplasmose, forma disseminada na língua, palato duro e pele.
 I_B) Qual o gênero fúngico causador dela?
@@ -152,7 +152,7 @@ GABARITO: Formulação lipídica de anfotericina B seguida por itraconazol.
 ---
 
 Q: Sobre a imagem abaixo, responda os itens a seguir.
-https://AndreHero007.github.io/quiz-images/sistemicaimg5.jpg
+https://projsMED.github.io/quiz-images/sistemicaimg5.jpg
 I_A) Qual a doença da imagem?
 GABARITO: Talaromicose
 I_B) Qual o gênero fúngico causador dela?

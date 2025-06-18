@@ -26,7 +26,7 @@ GABARITO:
 A camada papilar consiste em <b>tecido conjuntivo frouxo</b> e a camada reticular de <b>tecido conjuntivo denso não modelado</b>.
 
 Q: Qual tipo de pele é apresentada (espessa ou fina)? Justifique.
-https://andrehero007.github.io/quiz-images/laminas-histo/imgx4000.png
+https://projsMED.github.io/quiz-images/laminas-histo/imgx4000.png
 GABARITO:
 Pele fina, pois há pelos nesse tipo de pele, ou seja, há folículo piloso (produtor do pelos), o que não é encontrado na pele espessa.
 
@@ -44,7 +44,7 @@ Do lúmen para fora, são:
 OBS: A adventícia, constituída apenas de tecido conjuntivo, é encontrada nos locais em que a parede do tubo está diretamente aderida a estruturas adjacentes. 
 
 Q: Identifique todos os números.
-https://andrehero007.github.io/quiz-images/laminas-histo/imgx4001.png
+https://projsMED.github.io/quiz-images/laminas-histo/imgx4001.png
 GABARITO:
 1 - Lúmen;
 2 - Epitélio da mucosa (camada mais superficial da mucosa);
@@ -56,13 +56,13 @@ GABARITO:
 8 - Adventícia.
 
 Q: Identifique as seguintes letras: 
-https://andrehero007.github.io/quiz-images/laminas-histo/imgx4002.png
+https://projsMED.github.io/quiz-images/laminas-histo/imgx4002.png
 GABARITO: Corte do fígado.
 A - Célula de Kupffer.
 B - Núcleo de hepatócito.
 
 Q:  Identifique as seguintes letras A, B e C.
-https://andrehero007.github.io/quiz-images/laminas-histo/imgx4003.png
+https://projsMED.github.io/quiz-images/laminas-histo/imgx4003.png
 GABARITO: Legenda:
 J7 - ESTÔMAGO, FUNDO E CORPO - HE
 <b>MUCOSA: - (A)</b>
@@ -80,17 +80,17 @@ CAMADA LONGITUDINAL EXTERNA - (9)
 SEROSA - (D) MESOTÉLIO CAMADA SUBMESOTELIAL
 
 Q: Dê o nome da célula apontada e o nome da substância secretada por ela.
-https://andrehero007.github.io/quiz-images/laminas-histo/imgx4004.png
+https://projsMED.github.io/quiz-images/laminas-histo/imgx4004.png
 GABARITO:
 <b>Célula caliciforme</b> é uma célula colunar encontrada nos epitélios das mucosas dos tratos respiratório e digestivo. São células glandulares polarizadas (apenas secretam numa porção da membrana celular) do tipo mucoso. Elas <b>secretam mucina</b>, que se dissolve na água formando <b>muco</b>.
 
 Q: Dê o nome da estrutura marcada com * e em qual órgão ela é encontrada.  
-https://andrehero007.github.io/quiz-images/laminas-histo/imgx4005.png
+https://projsMED.github.io/quiz-images/laminas-histo/imgx4005.png
 GABARITO:
 <b>Placa de Peyer</b>. Encontrada no <b>intestino delgado</b> na porção do íleo. 
 
 Q: Dê o nome da estrutura abaixo e qual a sua importância.
-https://andrehero007.github.io/quiz-images/laminas-histo/imgx4006.png
+https://projsMED.github.io/quiz-images/laminas-histo/imgx4006.png
 GABARITO:
 As <b>vilosidades intestinais no intestino delgado</b> são projeções digitiformes da mucosa que <b>aumentam a superfície de absorção</b>, permitindo que o intestino <b>absorva mais nutrientes</b>. 
 

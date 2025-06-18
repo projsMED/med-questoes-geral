@@ -1,5 +1,5 @@
 Q: Observa a imagem abaixo e responda as perguntas a seguir.
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img1.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img1.png
 I_A) Nome da doença da imagem:
 GABARITO: Pitiríase vesicolor.
 I_B) Causador dela:
@@ -21,7 +21,7 @@ GABARITO: Visualização direta dos elementos fúngicos ao exame microscópico d
 ---
 
 Q: Observe a imagem abaixo e responda as perguntas a seguir.
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img2.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img2.png
 I_A) ​‎ Nome da doença da imagem:
 GABARITO: Tinha negra.
 I_B) Causador dela:
@@ -46,7 +46,7 @@ GABARITO: Exame microscópico de raspados de pele colocados em solução de KOH 
 ---
 
 Q: Observa a imagem abaixo e responda as perguntas a seguir.
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img3.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img3.png
 I_A) Nome da doença da imagem:
 GABARITO: Piedra branca.
 I_B) Causador dela:
@@ -65,7 +65,7 @@ GABARITO: Quando o exame microscópico revela elementos fúngicos como hífas, a
 ---
 
 Q: Observe a imagem abaixo e responda as perguntas a seguir.
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img4.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img4.png
 I_A) Nome da doença da imagem.
 GABARITO: Piedra preta.
 I_B) Causador dela:
@@ -130,19 +130,19 @@ GABARITO: Depende da demonstração de hifas fúngicas por <b>microscopia direta
 ---
 
 Q: Qual a <b>dermatofitose</b> da imagem abaixo?
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img5.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img5.png
 GABARITO: Tinea pedis
 
 ---
 
 Q: Qual a <b>dermatofitose</b> da imagem abaixo?
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img6.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img6.png
 GABARITO: Tinea unguium
 
 ---
 
 Q: Qual a <b>dermatofitose</b> da imagem abaixo?
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img7.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img7.png
 GABARITO: Tinea cruris.
 ​‎ 
 Sinônimo: Tinea inguinal.
@@ -150,25 +150,25 @@ Sinônimo: Tinea inguinal.
 ---
 
 Q: Qual a <b>dermatofitose</b> da imagem abaixo?
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img8.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img8.png
 GABARITO: Tinea barbae
 
 ---
 
 Q: Qual a <b>dermatofitose</b> da imagem abaixo?
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img9.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img9.png
 GABARITO: Tinea imbricata
 
 ---
 
 Q: Qual a <b>dermatofitose</b> da imagem abaixo?
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img10.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img10.png
 GABARITO: Tinea corporis ou herpes circunado.
 
 ---
 
 Q: Qual a <b>dermatofitose</b> da imagem abaixo?
-https://AndreHero007.github.io/quiz-images/superficialcutanea_img11.png
+https://projsMED.github.io/quiz-images/superficialcutanea_img11.png
 GABARITO: Tinea capitis
 
 ---
