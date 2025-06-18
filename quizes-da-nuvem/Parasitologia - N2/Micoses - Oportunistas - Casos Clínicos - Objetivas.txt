@@ -1,4 +1,5 @@
-```
+q-random: false;
+
 Q: Um paciente de 42 anos, diagnosticado com AIDS e com contagem de células CD4 de 120/mm³, chega ao pronto-socorro com queixa de dor de cabeça intensa e progressiva há três semanas. Ele relata febre, rigidez na nuca e episódios de confusão mental. Afirma também que sua visão parece "turva" nos últimos dias. Com base neste caso, responda também às questões 2 e 3.
 Com base no quadro clínico-epidemiológico, qual é a principal hipótese diagnóstica de micose oportunista?
 A) Aspergilose cerebral
@@ -278,4 +279,3 @@ D) Terapia com Fluconazol oral por um período de 6 a 12 meses.
 E) Excisão cirúrgica do nódulo, sem necessidade de antifúngico.
 G: D
 C: Para a criptococose pulmonar leve a moderada em pacientes imunocompetentes (doença não meníngea e não disseminada), o tratamento de escolha é um curso prolongado de Fluconazol oral, que tem excelente penetração pulmonar e eficácia.
-```
