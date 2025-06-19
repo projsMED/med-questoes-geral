@@ -23,7 +23,6 @@ As três classes principais são:
 <b>Inibidores da Fosfodiesterase (PDE)</b>: Inibem a enzima fosfodiesterase, responsável pela degradação do AMPc, resultando em seu acúmulo e promovendo o relaxamento do músculo liso e a inibição de células inflamatórias. Esta classe pode ser dividida em: 
 Não seletivos (Metilxantinas): Como a teofilina, que inibe múltiplas isoformas da PDE.
 Seletivos de PDE4: Como o roflumilaste, que visa predominantemente a isoforma PDE4, expressa em células inflamatórias.
-
 ​‎ 
 <b>Gabarito - Resposta Detalhada</b>
 As três principais classes de fármacos broncodilatadores e seus respectivos mecanismos de ação são:
