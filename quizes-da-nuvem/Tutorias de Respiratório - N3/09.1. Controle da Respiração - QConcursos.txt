@@ -49,8 +49,9 @@ B) O grupo respiratório dorsal localizado na inferior da ponte estimula a inspi
 C) O centro pneumotáxico, localizado no bulbo, regula os movimentos respiratórios na inspiração e inibe a expiração.  
 D) Os quimioceptores localizados no bulbo são responsáveis pela mensuração da pressão do gás carbônico (Pco2) e do oxigênio (Po2).  
 E) O grupo respiratório ventral localizado no bulbo, principal responsável pela expiração, é inativado durante a respiração normal, quando a expiração é passiva.  
-G: E  
-C: {A} - O centro apnêustico localizado na ponte estimula a área respiratória bulbar.  
+G: E
+C: 
+{A} - O centro apnêustico localizado na ponte estimula a área respiratória bulbar.  
 {B} - GRD é localizado no bulbo e não na ponte.  
 {C} - Centro pneumotáxico fica localizado na ponte e não bulbo.  
 {D} - São sensíveis a PCo2 e PH.
@@ -61,7 +62,7 @@ B) A variação na concentração arterial de O2 é percebida pelos quimiorrecep
 C) O controle voluntário depende de estruturas neurais localizadas, principalmente, no bulbo e ponte.  
 D) O nervo frênico emerge dos segmentos cervicais C3 a C5, nos quais os motoneurônios frênicos estão localizados.  
 E) A influência direta de centros controladores no bulbo e na ponte (centros respiratórios) sobre os motoneurônios do nervo frênico é que mantém a sua descarga rítmica, produzindo assim a respiração automática.  
-G: C  
+G: C
 C: Controle involuntário.
 
 Q: Os agrupamentos neurais localizados na porção superior da ponte, responsáveis pelo controle da frequência e padrão respiratório, são denominados  
@@ -70,8 +71,9 @@ B) grupo respiratório dorsal.
 C) centro pneumotáxico.  
 D) centro apnêustico.  
 E) área quimiossensível.  
-G: C  
-C: {A} e {B} Localizados no bulbo, não na ponte  
+G: C
+C:
+{A} e {B} Localizados no bulbo, não na ponte  
 {D} Centro apnêustico fica na ponte inferior  
 {E} Área quimiossensível fica no bulbo
 
@@ -89,7 +91,7 @@ A) grupo respiratório dorsal
 B) grupo respiratório ventral  
 C) centro pneumotáxico  
 D) centro apnêustico  
-G: C  
+G: C
 C: {A} e {B} Localizados no bulbo, não na ponte  
 {D} Centro apnêustico fica na ponte inferior, não superior
 
