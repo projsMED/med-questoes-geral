@@ -90,7 +90,7 @@ Q: Os alvéolos possuem mecanismos de defesa celular importantes.
 I_A) Como são denominados os macrófagos localizados nas paredes e no interior dos alvéolos pulmonares?
 GABARITO: Macrófagos alveolares.
 I_B) Qual a implicação funcional da presença de material fagocitado, como partículas de carbono, no citoplasma dessas células, levando à denominação de "células de poeira"?
-GABARITO: Indica sua função de fagocitar partículas inaladas e detritos, limpando a superfície alveolar.
+GABARITO: Indica sua função de fagocitar partículas inaladas e detritos, limpando a superfície alveolar. No entanto, eles podem ficar sobrecarregados com esse processo, sobrando menos macrófagos para fagocitar microrganismos estranhos, além dos já existentes ficarem menos eficientes. Isso favore doenças, como tuberculose.
 
 Q: As vias aéreas sofrem modificações estruturais à medida que se ramificam.
 I_A) Cite uma característica histológica fundamental presente na parede dos brônquios que está ausente na parede dos bronquíolos.
