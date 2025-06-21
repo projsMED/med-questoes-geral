@@ -1,0 +1,242 @@
+<juntas>
+Q: Caracterize qual ou quais camadas da pele cada tipo de micose a seguir envolve:
+I_A) Micoses superficiais.
+GABARITO: Limitadas às camadas mais externas da pele, do pelo, do cabelo e das unhas.
+I_B) Micoses cutâneas.
+GABARITO: Infecções que envolvem as camadas mais profundas da epiderme e seus tegumentos, os pelos/cabelo e as unhas. No caso de infecções de pele, os dermatófitos invadem apenas a camada superior externa da epiderme, que é o estrato córneo, penetração abaixo da camada granulosa da epiderme é rara.
+I_C) Micoses subcutâneas.
+GABARITO: Envolvem a derme, os tecidos subcutâneos, os músculos e a fáscia.
+</juntas>
+
+QCH: Analise as assertivas abaixo sobre a diferença entre micoses superficiais e cutâneas:
+A1: Micoses superficiais envolvem apenas a camada mais externa da epiderme e não causam resposta inflamatória significativa.
+G: V
+C: As micoses superficiais, como pitiríase versicolor e piedra, limitam-se à camada córnea e são geralmente assintomáticas.
+A2: Micoses cutâneas podem invadir a derme e estruturas profundas como músculos e fáscia.
+G: F
+C: Isso caracteriza micoses subcutâneas, não cutâneas.
+A3: Dermatófitos são responsáveis pelas micoses cutâneas e invadem estruturas queratinizadas como pele, pelos e unhas.
+G: V
+C: Dermatófitos têm afinidade por queratina e causam dermatofitoses.
+A4: Micoses superficiais geralmente requerem antifúngicos sistêmicos para tratamento.
+G: F
+C: São tratadas com antifúngicos tópicos; raramente exigem terapia oral.
+A5: A pitiríase versicolor é uma micose superficial causada por fungos do complexo Malassezia furfur.
+G: V
+C: É uma infecção superficial comum, especialmente em climas tropicais.
+A6: Micoses cutâneas são causadas exclusivamente por fungos geofílicos.
+G: F
+C: Podem ser causadas por fungos geofílicos, zoofílicos e antropofílicos.
+
+QCH: Sobre as dermatofitoses, assinale V ou F:
+A1: Dermatófitos invadem apenas as camadas queratinizadas da pele, cabelo e unhas.
+G: V
+C: A invasão ocorre apenas no estrato córneo e estruturas queratinizadas.
+A2: As espécies Trichophyton, Microsporum e Epidermophyton são os principais agentes dermatofíticos.
+G: V
+C: Esses três gêneros causam a maioria das dermatofitoses.
+A3: Trichophyton rubrum é a principal causa de onicomicose em adultos.
+G: V
+C: É o agente mais frequente em infecções fúngicas das unhas.
+A4: As lesões cutâneas causadas por dermatófitos geralmente têm forma irregular, sem padrão definido.
+G: F
+C: Lesões apresentam padrão circular, com centro claro e borda eritematosa-descamativa.
+A5: As dermatofitoses são comuns em climas secos e frios, com baixa prevalência em regiões tropicais.
+G: F
+C: São mais prevalentes em regiões tropicais e subtropicais.
+A6: A lâmpada de Wood pode auxiliar na identificação de certos dermatófitos, como Microsporum canis.
+G: V
+C: Alguns fungos fluorescem com coloração característica sob a lâmpada de Wood.
+
+QCH: Analise as afirmativas sobre a tinha da barba e sua epidemiologia:
+A1: A tinha da barba ocorre frequentemente por contato com animais infectados.
+G: V
+C: Freqüentemente causada por fungos zoofílicos, como Trichophyton verrucosum.
+A2: A infecção é mais comum em mulheres devido ao uso de cosméticos contaminados.
+G: F
+C: A tinha da barba afeta principalmente homens adultos com pelos faciais.
+A3: O agente Trichophyton verrucosum pode ser transmitido por bovinos.
+G: V
+C: É um fungo zoofílico comum em rebanhos bovinos.
+A4: Lesões típicas incluem áreas edemaciadas com pústulas, crostas e alopecia.
+G: V
+C: Lesões inflamatórias e supurativas são comuns em infecções por fungos zoofílicos.
+A5: A tinha da barba responde bem a antifúngicos tópicos, não havendo necessidade de tratamento oral.
+G: F
+C: Por ser profunda e inflamatória, requer tratamento sistêmico.
+A6: A transmissão ocorre exclusivamente por contato direto com animais.
+G: F
+C: Também pode ocorrer por fômites ou contato com humanos infectados.
+
+QCH: Assinale V ou F sobre os métodos diagnósticos:
+A1: A visualização de hifas septadas em raspados cutâneos com KOH é suficiente para diagnóstico inicial.
+G: V
+C: O exame direto com KOH é rápido e útil para triagem.
+A2: O calcoflúor branco melhora a visualização das hifas sob microscopia fluorescente.
+G: V
+C: É uma técnica sensível para detectar elementos fúngicos.
+A3: O crescimento de colônias fúngicas em ágar Sabouraud ocorre entre 1 a 3 dias.
+G: F
+C: Pode levar de 7 a 28 dias, dependendo da espécie.
+A4: A cultura micológica é desnecessária, pois não contribui com a identificação do agente.
+G: F
+C: A cultura é útil para confirmação e identificação da espécie.
+A5: A fluorescência sob lâmpada de Wood é observada em todas as espécies de dermatófitos.
+G: F
+C: Apenas algumas espécies, como Microsporum canis, fluorescem.
+A6: A coloração PAS pode evidenciar elementos fúngicos em tecidos histológicos.
+G: V
+C: PAS é uma coloração útil para hifas e leveduras em biopsias.
+
+QCH: Considere as afirmações a seguir sobre a pitiríase versicolor:
+A1: É causada por fungos leveduriformes lipofílicos do complexo Malassezia furfur.
+G: V
+C: A espécie M. furfur é o principal agente etiológico.
+A2: A infecção é frequentemente adquirida por contato com animais domésticos.
+G: F
+C: A pitiríase versicolor não é uma zoonose.
+A3: As lesões são máculas hipopigmentadas ou hiperpigmentadas, não delimitadas.
+G: F
+C: São bem delimitadas.
+A4: O fungo pode ser observado como uma mistura de leveduras e hifas curtas ao microscópio.
+G: V
+C: Apresenta padrão clássico de "espaguete com almôndegas" em KOH.
+A5: O tratamento padrão inclui antifúngicos orais como primeira escolha, mesmo em casos leves.
+G: F
+C: Casos leves são tratados com agentes tópicos como xampu de sulfeto de selênio.
+A6: A pitiríase versicolor causa inflamação intensa e prurido severo.
+G: F
+C: É geralmente assintomática ou causa leve prurido.
+
+QCH: Em relação às infecções dos pelos por piedra, analise:
+A1: A piedra branca envolve a haste do pelo com nódulos esbranquiçados ou marrons.
+G: V
+C: Os nódulos são moles e podem ser facilmente removidos.
+A2: A piedra preta é causada por Trichosporon asahii.
+G: F
+C: Piedra preta é causada por Piedraia hortae.
+A3: Ambas são mais comuns em regiões tropicais e estão associadas à má higiene.
+G: V
+C: São infecções superficiais relacionadas a fatores ambientais e higiênicos.
+A4: A piedra preta geralmente afeta os pelos pubianos e axilares.
+G: F
+C: Afeta principalmente os cabelos do couro cabeludo.
+A5: O tratamento inclui corte dos pelos infectados e melhora da higiene pessoal.
+G: V
+C: Medidas mecânicas e higiene geralmente são suficientes.
+A6: São infecções invasivas com risco de disseminação sistêmica.
+G: F
+C: São superficiais e não invasivas.
+
+QCH: Assinale V ou F quanto à ecologia dos dermatófitos:
+A1: Dermatófitos geofílicos são encontrados no solo e ocasionalmente infectam humanos.
+G: V
+C: Ex: Microsporum gypseum.
+A2: Dermatófitos zoofílicos causam infecções inflamatórias em humanos.
+G: V
+C: Ex: Microsporum canis, com forte reação imune no homem.
+A3: Dermatófitos antropofílicos raramente causam infecção em humanos.
+G: F
+C: São os mais comuns em humanos; ex: T. rubrum, T. tonsurans.
+A4: Zoofílicos são mais comuns em áreas urbanas, com pouca interação com animais.
+G: F
+C: São mais prevalentes em zonas rurais ou em contato com animais domésticos.
+A5: Infecções por dermatófitos zoofílicos tendem a ser autolimitadas.
+G: V
+C: Reação inflamatória intensa pode levar à cura espontânea.
+A6: Geofílicos não causam infecção humana.
+G: F
+C: Embora raro, podem causar infecção.
+
+QCH: Sobre o tratamento das dermatofitoses, julgue as assertivas:
+A1: Infecções localizadas da pele glabra são tratadas com antifúngicos sistêmicos.
+G: F
+C: Com tópicos. Cremes com azólicos ou terbinafina são geralmente eficazes.
+A2: Onicomicose exige tratamento oral prolongado com terbinafina ou itraconazol.
+G: V
+C: Tratamento tópico isolado não costuma ser suficiente.
+A3: A griseofulvina é eficaz, mas menos utilizada atualmente devido à menor eficácia.
+G: V
+C: Terbinafina e azólicos são preferidos por serem mais eficazes e rápidos.
+A4: Tinha da cabeça pode ser tratada apenas com xampu de cetoconazol.
+G: F
+C: Necessita tratamento oral (griseofulvina, terbinafina).
+A5: Pomadas de corticoide são o tratamento de escolha inicial para lesões fúngicas.
+G: F
+C: Podem mascarar a infecção; antifúngicos são o tratamento adequado.
+A6: A resposta ao tratamento depende do local, espécie fúngica e imunidade do hospedeiro.
+G: V
+C: Fatores individuais influenciam o sucesso terapêutico.
+
+Q: Um menino de 8 anos é levado ao pediatra por apresentar uma lesão anelar (em formato de anel) no braço direito há duas semanas. A lesão é avermelhada, com bordas elevadas e descamativas, e apresenta clareamento na parte central. A criança refere prurido (coceira) no local. A família adotou um gato filhote há cerca de um mês. Qual é o diagnóstico provável?
+A) Pitiríase versicolor
+B) Tinea nigra
+C) Tinea corporis
+D) Piedra branca
+E) Candidíase cutânea
+G: C
+C: A lesão anular com bordas ativas (elevadas e descamativas) e clareamento central é a apresentação clássica da tinea corporis, popularmente conhecida como "impingem". Esta é uma dermatofitose que afeta a pele glabra (sem pelos). A história de contato recente com um animal de estimação, especialmente um gato filhote, sugere fortemente uma transmissão zoofílica, sendo o Microsporum canis um agente etiológico comum nesses casos.
+
+Q: Uma jovem de 25 anos, praticante de atividades físicas regulares, procura um dermatologista devido ao aparecimento de múltiplas manchas pequenas, bem delimitadas e de cor mais clara que sua pele (hipocrômicas) na região superior do tronco, ombros e pescoço. As lesões não coçam e tornaram-se mais evidentes após exposição solar recente. Ao exame, nota-se uma fina descamação quando a pele é esticada. Qual é o diagnóstico mais provável?
+A) Tinea cruris
+B) Tinea corporis
+C) Pitiríase versicolor
+D) Tinea nigra
+E) Piedra preta
+G: C
+C: O quadro clínico de máculas (manchas) hipocrômicas ou hipercrômicas, localizadas predominantemente em áreas seborreicas como o tronco superior, é característico da pitiríase versicolor (também chamada de tinea versicolor). A infecção é causada por leveduras do complexo Malassezia furfur, que interferem na produção de melanina, causando as alterações de cor na pele. A condição é mais comum em adultos jovens e em ambientes quentes e úmidos.
+
+Q: Um paciente do sexo masculino, 65 anos, diabético, queixa-se de alteração na aparência da unha do hálux (dedão do pé) direito há mais de um ano. A unha está espessada, amarelada, opaca e quebradiça, com acúmulo de material sob a borda livre. Ele não sente dor, mas relata desconforto estético. Qual é o diagnóstico mais provável para a alteração ungueal?
+A) Piedra preta
+B) Onicomicose
+C) Tinea barbae
+D) Tinea capitis
+E) Tinea manuum
+G: B
+C: Onicomicose é o termo usado para infecção fúngica das unhas. O quadro descrito, com espessamento (hiperqueratose), descoloração (xantoníquia), perda de brilho e fragilidade da lâmina ungueal, é a apresentação típica. O agente mais comum é o Trichophyton rubrum. A condição é mais prevalente em idosos e em pacientes com comorbidades como diabetes, sendo as unhas dos pés mais afetadas que as das mãos.
+
+Q: Uma menina de 6 anos é levada à consulta com áreas de alopecia (perda de cabelo) no couro cabeludo. As áreas são arredondadas, com descamação e a presença de pontos pretos, que correspondem a cabelos fraturados rente à superfície. A mãe nega o uso de produtos químicos no cabelo da criança. Qual é o diagnóstico provável?
+A) Piedra branca
+B) Dermatite seborreica
+C) Tinea capitis
+D) Foliculite bacteriana
+E) Tinea barbae
+G: C
+C: A tinea capitis é uma dermatofitose que acomete o couro cabeludo e os folículos pilosos, sendo muito comum em crianças em idade escolar. A apresentação com placas de alopecia descamativas e a presença de "pontos pretos" (black dots) é característica da infecção do tipo endotrix, onde o fungo cresce dentro da haste do pelo, como é comum na infecção por Trichophyton tonsurans.
+
+Q: Uma mulher de 30 anos, que retornou de férias em uma região litorânea do Nordeste brasileiro, nota o aparecimento de uma mancha escura, acastanhada, de bordas bem definidas e formato irregular na palma da mão direita. A lesão é totalmente assintomática e não descama. Preocupada com a possibilidade de ser um câncer de pele, ela busca avaliação médica. Qual é o diagnóstico fúngico mais provável?
+A) Melanoma maligno
+B) Tinea nigra
+C) Nevo juncional
+D) Tinea manuum
+E) Pitiríase versicolor
+G: B
+C: A tinea nigra é uma micose superficial causada pelo fungo demáceo (pigmentado) Hortaea werneckii. Caracteriza-se por uma mácula (mancha) de cor marrom a preta, não inflamatória e não descamativa, localizada tipicamente nas palmas das mãos ou plantas dos pés. A infecção é contraída do solo ou de vegetação em decomposição em climas tropicais e subtropicais. É um importante diagnóstico diferencial de lesões pigmentadas, como o melanoma.
+
+Q: Um homem de 28 anos, nadador, queixa-se de coceira intensa, descamação e fissuras entre o 4º e o 5º dedos do pé esquerdo. O local apresenta-se esbranquiçado e úmido (macerado). Ele frequenta piscinas e vestiários públicos diariamente. Qual é a hipótese diagnóstica principal?
+A) Dermatite de contato
+B) Tinea pedis
+C) Psoríase plantar
+D) Pitiríase versicolor
+E) Candidíase interdigital
+G: B
+C: O quadro clínico é clássico da tinea pedis, conhecida como "pé de atleta", na sua forma interdigital. Esta é a forma mais comum de dermatofitose. A maceração, descamação e prurido nos espaços interdigitais são os sinais e sintomas cardinais. O ambiente quente e úmido dos calçados e vestiários favorece o crescimento de dermatófitos como o Trichophyton rubrum e o Trichophyton mentagrophytes.
+
+Q: Um jovem de 19 anos, residente em área rural com saneamento precário, observa a presença de múltiplos nódulos pequenos, de cor esbranquiçada a castanho-claro, aderidos às hastes dos pelos da região pubiana. Os nódulos são macios e podem ser deslocados ao longo do pelo. A condição é assintomática. Qual é o provável diagnóstico?
+A) Pediculose pubiana (ftiríase)
+B) Tinea cruris
+C) Foliculite
+D) Piedra preta
+E) Piedra branca
+G: E
+C: A piedra branca é uma infecção fúngica superficial que afeta a haste do pelo, caracterizada pela formação de nódulos macios, de cor clara, compostos por leveduras do gênero Trichosporon. A infecção não danifica o pelo e é mais comum em áreas de pelos como virilha, axilas e couro cabeludo, estando associada à má higiene e alta umidade.
+
+Q: Um fazendeiro de 45 anos, que trabalha diretamente com gado, desenvolve uma lesão inflamatória na área da barba. A lesão é elevada, com múltiplas pústulas, crostas e áreas de supuração. Os pelos na região afetada soltam-se facilmente. O paciente relata dor e sensibilidade no local. Qual o diagnóstico mais provável?
+A) Foliculite bacteriana (sicose da barba)
+B) Acne vulgar
+C) Herpes simplex
+D) Tinea barbae
+E) Dermatite de contato
+G: D
+C: A tinea barbae é a dermatofitose que acomete a área da barba em homens adultos. A forma inflamatória (cerion), como a descrita no caso, é comum quando a infecção é causada por fungos zoofílicos, como o Trichophyton verrucosum (proveniente do gado) ou o Trichophyton mentagrophytes. O quadro é mais intenso que uma foliculite bacteriana comum e a história ocupacional do paciente é uma pista diagnóstica fundamental.
+
