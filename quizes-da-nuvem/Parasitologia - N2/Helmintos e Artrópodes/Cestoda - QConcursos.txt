@@ -148,6 +148,6 @@ B) O homem adquire a cisticercose ingerindo larvas de Taenia solium (“canjiqui
 C) A cisticercose é adquirida por humanos através da ingestão acidental de ovos viáveis de Taenia solium através da autoinfecção externa, autoinfecção interna e heteroinfecção.
 D) A teníase é adquirida por humanos através da ingestão acidental de ovos viáveis de Taenia solium ou Taenia saginata através da coprofagia (crianças) e da ingestão de Cysticercus cellulosae nos alimentos em geral (adultos e crianças).
 E) A teníase e a cisticercose apresentam as mesmas vias de transmissão, ou seja, através da ingestão de larvas e ovos de Taenia solium ou de T. saginata presentes nos alimentos em geral.
-G: A
+G: C
 C: Teniase: ingestão direta da larva que se transforma na solitária.
 Cisticercose: ingestão dos ovos que se transformarao no embriao e depois na larva.

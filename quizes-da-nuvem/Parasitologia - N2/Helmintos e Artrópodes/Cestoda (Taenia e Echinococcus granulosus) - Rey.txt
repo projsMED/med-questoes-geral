@@ -1,0 +1,184 @@
+Q: Qual das seguintes características morfológicas permite a distinção macroscópica entre as proglotes grávidas de Taenia solium e Taenia saginata?
+A) A presença de um poro genital lateral em Taenia solium e ausente em Taenia saginata.
+B) O número e o padrão das ramificações uterinas.
+C) O tamanho do escólex aderido à primeira proglote.
+D) A cor leitosa em Taenia saginata e transparente em Taenia solium.
+G: B
+C: A principal característica para diferenciar as proglotes grávidas das duas tênias é o útero. Em Taenia saginata, o útero possui de 15 a 30 ramificações de cada lado, com um padrão dicotômico (ramificações que se dividem em duas). Já em Taenia solium, o útero possui menos ramificações, de 7 a 16 de cada lado, com um padrão dendrítico (semelhante aos galhos de uma árvore). As outras opções estão incorretas, pois ambas possuem poro genital lateral ({A}), o escólex não está aderido à proglote ({C}), e a cor não é um critério de distinção confiável ({D}).
+
+Q: No ciclo biológico da Taenia saginata, o ser humano e o bovino atuam, respectivamente, como:
+A) Hospedeiro definitivo e hospedeiro intermediário.
+B) Hospedeiro intermediário e hospedeiro definitivo.
+C) Hospedeiro acidental e hospedeiro definitivo.
+D) Ambos como hospedeiros definitivos.
+G: A
+C: O ser humano é o hospedeiro definitivo da Taenia saginata, pois abriga o verme adulto (tênia) em seu intestino. O bovino é o hospedeiro intermediário, pois abriga a forma larvária do parasito (cisticerco) em seus tecidos musculares. O homem se infecta ao comer carne bovina crua ou malcozida contendo cisticercos.
+
+Q: A hidatidose humana é causada pela ingestão acidental de ovos de Echinococcus granulosus. Qual é a principal fonte de infecção para o ser humano?
+A) Ingestão de carne de carneiro malcozida contendo cistos hidáticos.
+B) Contato direto com cães infectados ou ingestão de água e alimentos contaminados com fezes de cães.
+C) Ingestão de carne de porco crua contendo larvas do parasito.
+D) Contato direto com outros seres humanos que possuem o verme adulto.
+G: B
+C: O hospedeiro definitivo do Echinococcus granulosus é o cão. Ele elimina os ovos do parasito em suas fezes. O ser humano se torna um hospedeiro intermediário acidental ao ingerir esses ovos, seja por contato direto com pelos de cães contaminados, seja pela ingestão de alimentos ou água contaminados com as fezes desses animais. A ingestão do cisto hidático ({A}) infectaria o cão, não o homem. A carne de porco ({C}) está associada à Taenia solium. A transmissão não ocorre entre humanos ({D}).
+
+Q: Qual das seguintes estruturas é encontrada no escólex da Taenia solium mas está ausente no da Taenia saginata?
+A) Quatro ventosas musculares.
+B) Um colo que origina as proglotes.
+C) Um rostro armado com acúleos (ganchos).
+D) Um sistema osmorregulador.
+G: C
+C: O escólex da Taenia solium é dito "armado" porque possui, além das quatro ventosas, uma estrutura central chamada rostro, que contém uma dupla fileira de acúleos ou ganchos para auxiliar na fixação à mucosa intestinal. O escólex da Taenia saginata é "inerme", ou seja, não possui rostro nem acúleos, contando apenas com suas quatro ventosas para fixação.
+
+Q: O verme adulto de Echinococcus granulosus diferencia-se morfologicamente das tênias do homem (Taenia solium e Taenia saginata) principalmente por:
+A) Ser muito maior, podendo atingir 15 metros de comprimento.
+B) Possuir um corpo com mais de 2.000 proglotes.
+C) Ser extremamente pequeno, medindo de 3 a 6 milímetros e possuindo apenas 3 a 4 proglotes.
+D) Não possuir escólex para fixação.
+G: C
+C: Enquanto Taenia solium e Taenia saginata são vermes longos (metros de comprimento e centenas de proglotes), o Echinococcus granulosus adulto é uma tênia minúscula, medindo apenas de 3 a 6 mm de comprimento total e possuindo um estróbilo com apenas 3 ou 4 proglotes (uma jovem, uma madura e uma ou duas grávidas).
+
+Q: Uma medida profilática fundamental e específica para a prevenção da hidatidose (equinococose) em áreas endêmicas é:
+A) Cozinhar bem a carne de porco.
+B) Realizar a inspeção sanitária da carne bovina em matadouros.
+C) Tratar periodicamente os cães com vermífugos e não alimentá-los com vísceras cruas.
+D) Evitar o consumo de peixe cru.
+G: C
+C: O ciclo da hidatidose se mantém pela relação cão-ovelha (ou outro herbívoro). Os cães se infectam ao comer vísceras de ovelhas com cistos hidáticos e contaminam o ambiente com ovos em suas fezes. Portanto, a profilaxia se baseia em quebrar esse ciclo, o que inclui tratar os cães com vermífugos para eliminar o parasito adulto e evitar que eles comam vísceras cruas, prevenindo a infecção. Cozinhar carne de porco ({A}) previne a teníase por T. solium. A inspeção de carne bovina ({B}) previne a teníase por T. saginata.
+
+QCH: Sobre a morfologia e o ciclo biológico da Taenia solium, assinale todas as assertivas corretas.
+A1: Seu escólex é quadrangular e inerme, possuindo apenas quatro ventosas para fixação.
+G: F
+C: Incorreta. O escólex da T. solium é armado, ou seja, possui um rostro com acúleos, além das quatro ventosas. O escólex inerme é da T. saginata.
+A2: O ser humano é o único hospedeiro definitivo, enquanto o porco é o hospedeiro intermediário principal.
+G: V
+C: Correta. O ciclo clássico da T. solium envolve o homem como hospedeiro definitivo (abriga a forma adulta) e o porco como hospedeiro intermediário (abriga a forma de cisticerco).
+A3: Suas proglotes grávidas possuem de 7 a 16 ramificações uterinas de cada lado, com aspecto dendrítico.
+G: V
+C: Correta. Essa é uma característica morfológica chave para a identificação da espécie, diferenciando-a da T. saginata, que tem mais ramificações e de padrão dicotômico.
+A4: A infecção humana ocorre exclusivamente pela ingestão de carne suína malcozida.
+G: F
+C: Incorreta. A infecção para desenvolver a teníase ocorre pela ingestão de carne suína. No entanto, o homem pode ingerir os ovos do parasito, desenvolvendo a cisticercose, o que representa outra forma de infecção.
+A5: O ser humano pode atuar como hospedeiro intermediário, desenvolvendo a cisticercose.
+G: V
+C: Correta. Ao ingerir acidentalmente os ovos da T. solium (presentes em água ou alimentos contaminados, ou por autoinfecção), o ser humano pode desenvolver a forma larvária (cisticercos) em seus tecidos, quadro conhecido como cisticercose, que é a forma mais grave da doença.
+
+QCH: A respeito da Taenia saginata, assinale todas as assertivas corretas.
+A1: Suas proglotes grávidas são eliminadas ativamente, uma a uma, podendo atravessar o esfíncter anal independentemente da defecação.
+G: V
+C: Correta. Devido à sua musculatura mais desenvolvida, as proglotes de T. saginata são mais ativas que as de T. solium e frequentemente são eliminadas de forma isolada e ativa.
+A2: O hospedeiro intermediário é o suíno, que desenvolve cisticercos em sua musculatura.
+G: F
+C: Incorreta. O hospedeiro intermediário da T. saginata é o bovino, não o suíno.
+A3: O escólex possui quatro fortes ventosas, mas é desprovido de rostro e acúleos (ganchos).
+G: V
+C: Correta. Esta é a principal característica do seu escólex, sendo classificado como inerme.
+A4: Uma medida profilática eficaz é o cozimento adequado da carne bovina, pois o cisticerco é sensível a altas temperaturas.
+G: V
+C: Correta. A forma de infecção para o homem é a ingestão de cisticercos viáveis presentes na carne bovina. O calor do cozimento destrói essas larvas, tornando a carne segura para consumo.
+A5: A doença causada no homem é a cisticercose, que afeta principalmente o sistema nervoso central.
+G: F
+C: Incorreta. A Taenia saginata causa a teníase. A cisticercose humana é causada pela forma larvária da Taenia solium.
+
+QCH: Sobre o Echinococcus granulosus e a hidatidose, assinale todas as assertivas corretas.
+A1: O verme adulto é uma tênia de grande porte, comumente encontrada no intestino humano.
+G: F
+C: Incorreta. O verme adulto do E. granulosus é minúsculo (3-6 mm) e vive no intestino de canídeos (cães), não de humanos.
+A2: A fase larvária, conhecida como cisto hidático, é uma vesícula que contém líquido hidático, cápsulas prolígeras e milhares de protoescólices.
+G: V
+C: Correta. Essa é a descrição clássica da estrutura da hidátide fértil, que é a forma larvária do parasito, encontrada nos hospedeiros intermediários (incluindo o homem).
+A3: O ciclo biológico envolve canídeos (como o cão) como hospedeiros intermediários e ovinos (como o carneiro) como hospedeiros definitivos.
+G: F
+C: Incorreta. A relação está invertida. Os canídeos são os hospedeiros definitivos (abrigam o verme adulto) e os ovinos são os hospedeiros intermediários (abrigam o cisto hidático).
+A4: A profilaxia da hidatidose humana inclui a higiene das mãos após o contato com cães e o tratamento anti-helmíntico desses animais.
+G: V
+C: Correta. Como os ovos são eliminados nas fezes dos cães e podem contaminar o pelo do animal e o ambiente, a higiene pessoal e o controle da infecção nos cães são as principais medidas preventivas para o homem.
+A5: O rompimento de um cisto hidático no organismo humano não apresenta risco de reações alérgicas graves, pois o líquido hidático não é alergênico, mas pode levar à disseminação dos protoescólices, gerando uma hidatidose secundária.
+G: F
+C: Incorreta. O líquido hidático é altamente alergênico e seu extravasamento pode causar reações anafiláticas graves, além de disseminar protoescólices, gerando hidatidose secundária.
+
+QCH: Com base nos ciclos biológicos dos três cestoda estudados, assinale todas as assertivas corretas.
+A1: Para Taenia solium e Taenia saginata, o homem é o hospedeiro definitivo obrigatório.
+G: V
+C: Correta. O ser humano é o único hospedeiro que abriga a forma adulta (tênia) de ambas as espécies.
+A2: A cisticercose é uma doença que pode ser adquirida tanto pela ingestão de ovos de Taenia solium quanto de Taenia saginata.
+G: F
+C: Incorreta. A cisticercose humana é causada exclusivamente pela ingestão de ovos de Taenia solium. Não há registro de cisticercose humana por T. saginata.
+A3: O ser humano participa do ciclo de Echinococcus granulosus como hospedeiro definitivo, eliminando ovos do parasito pelas fezes e contribuindo para a perpetuação do ciclo na natureza.
+G: F
+C: Incorreta. O ser humano atua como hospedeiro intermediário acidental e não elimina ovos do parasito, nem contribui para a perpetuação do ciclo na natureza. O ciclo normalmente se completa entre cães (hospedeiros definitivos) e herbívoros (hospedeiros intermediários).
+A4: A ingestão de carne com larvas (cisticerco ou cisto hidático) é a forma de infecção para o hospedeiro definitivo em todos os três ciclos.
+G: F
+C: Incorreta. Esta afirmação é verdadeira para os ciclos das tênias (homem come carne com cisticerco) e do equinococo (cão come vísceras com cisto hidático). No entanto, a frase "em todos os três ciclos" é ambígua. A infecção do hospedeiro intermediário (porco, boi, ovelha, homem) ocorre pela ingestão de ovos, não de larvas.
+A5: O saneamento básico e os hábitos de higiene são medidas profiláticas importantes para a prevenção das três parasitoses.
+G: V
+C: Correta. A destinação adequada das fezes humanas previne a contaminação de porcos e bois (ciclos das tênias). A higiene pessoal (lavar as mãos, alimentos) previne a cisticercose (T. solium) e a hidatidose (E. granulosus).
+
+Q: A cisticercose humana é a forma clínica de maior gravidade associada aos cestoda estudados. Assinale a alternativa que descreve corretamente a sua causa e principal forma de prevenção.
+A) Causada pela ingestão de cisticercos de Taenia saginata presentes em carne bovina crua; prevenção através do cozimento da carne.
+B) Causada pela ingestão de ovos de Taenia solium eliminados nas fezes humanas; prevenção através de saneamento básico e higiene pessoal.
+C) Causada pela ruptura de um cisto hidático de Echinococcus granulosus; prevenção através do tratamento cirúrgico cuidadoso da hidatidose.
+D) Causada pela ingestão de proglotes de Taenia solium; prevenção através de medicamentos tenicidas.
+E) Causada pela ingestão de ovos de Echinococcus granulosus; prevenção através da vermifugação de cães.
+G: B
+C: A cisticercose humana ocorre quando o homem acidentalmente ingere os ovos da Taenia solium, funcionando como hospedeiro intermediário. Esses ovos são liberados nas fezes de uma pessoa com teníase. Portanto, a prevenção está diretamente ligada a medidas que evitem a contaminação fecal-oral, como saneamento básico para o destino correto dos dejetos e higiene pessoal e de alimentos. As outras opções descrevem a prevenção da teníase ({A}), a hidatidose secundária ({C}), ou estão incorretas ({D}, {E}).
+
+Q: A respeito da morfologia do cisto hidático de Echinococcus granulosus, é incorreto afirmar que:
+A) É uma estrutura vesicular que se desenvolve nos órgãos do hospedeiro intermediário, como fígado e pulmões.
+B) Possui uma membrana externa, fibrosa, chamada de adventícia, que é produzida pelo próprio hospedeiro.
+C) Internamente, é revestido por uma membrana germinativa, da qual brotam as cápsulas prolígeras.
+D) No seu interior encontra-se o verme adulto de Echinococcus granulosus, que se reproduz sexuadamente.
+E) Contém a areia hidática, um conjunto de protoescólices e cápsulas prolígeras livres no líquido hidático.
+G: D
+C: O cisto hidático é a forma larvária do parasito. Ele contém milhares de protoescólices, que são as larvas que darão origem aos vermes adultos se ingeridas pelo hospedeiro definitivo (cão). O verme adulto não se encontra dentro do cisto; ele vive no intestino do cão. Todas as outras afirmativas descrevem corretamente a estrutura do cisto hidático e a reação do hospedeiro a ele.
+
+Q: Assinale a alternativa que correlaciona corretamente o parasito, seu hospedeiro intermediário (HI) principal e a forma de infecção para o hospedeiro definitivo (HD).
+A) Taenia solium; HI: Bovino; Infecção do HD: Ingestão de ovos.
+B) Taenia saginata; HI: Bovino; Infecção do HD: Ingestão de cisticercos em carne crua/malcozida.
+C) Echinococcus granulosus; HI: Cão; Infecção do HD: Ingestão de vísceras com cistos hidáticos.
+D) Taenia solium; HI: Homem; Infecção do HD: Ingestão de cisticercos em carne suína.
+E) Echinococcus granulosus; HI: Ovino; Infecção do HD: Contato com fezes de outros ovinos.
+G: B
+C: A alternativa {B} apresenta a correlação perfeita para a Taenia saginata. O bovino é o hospedeiro intermediário, que abriga o cisticerco. O homem, hospedeiro definitivo, se infecta ao ingerir a carne bovina com esses cisticercos.
+Análise das incorretas:
+({A}) O HI da T. solium é o suíno; a infecção do HD é por ingestão de cisticercos.
+({C}) O HI do E. granulosus é o ovino, o cão é o HD.
+({D}) O HI principal da T. solium é o suíno.
+({E}) O HD do E. granulosus é o cão; ele se infecta ao comer vísceras de ovinos, não por contato com fezes.
+
+Q: Um paciente morador de área rural, com histórico de contato próximo com cães de pastoreio e consumo frequente de carne de ovelha de abates caseiros, apresenta ao exame de imagem um grande cisto unilocular no fígado. O diagnóstico mais provável e a medida profilática que poderia ter evitado sua condição são, respectivamente:
+A) Teníase por Taenia saginata; cozinhar bem a carne bovina.
+B) Cisticercose por Taenia solium; saneamento básico.
+C) Hidatidose por Echinococcus granulosus; não alimentar cães com vísceras cruas e realizar a higiene das mãos.
+D) Teníase por Taenia solium; cozinhar bem a carne de porco.
+E) Hidatidose por Echinococcus granulosus; cozinhar bem a carne de ovelha.
+G: C
+C: O quadro clínico (cisto grande no fígado) e a epidemiologia (contato com cães de pastoreio, criação de ovelhas) são altamente sugestivos de hidatidose, causada pela forma larvária do Echinococcus granulosus. O paciente se infectou ao ingerir ovos do parasito eliminados nas fezes de um cão infectado. A medida profilática principal seria quebrar o ciclo cão-ovelha, não dando vísceras cruas de ovelha aos cães (para que eles não se infectem), e a higiene pessoal (para que o homem não ingira os ovos). Cozinhar a carne de ovelha ({E}) não previne a hidatidose no homem, pois o cisto na ovelha não o infecta diretamente; infecta o cão.
+
+Q: Ao realizar um exame parasitológico de fezes humanas, um analista encontra ovos esféricos, com um embrióforo espesso e raiado, medindo cerca de 35 µm. Com base apenas nessas características morfológicas, qual é a conclusão diagnóstica mais precisa?
+A) Infecção por Taenia solium, pois apenas seus ovos são esféricos.
+B) Infecção por Echinococcus granulosus, pois seus ovos são os únicos com embrióforo raiado.
+C) Infecção por Taenia saginata, pois o tamanho é exclusivo desta espécie.
+D) Infecção por Taenia sp., pois os ovos de T. solium e T. saginata são morfologicamente indistinguíveis entre si.
+G: D
+C: Os ovos das espécies de <b>Taenia (solium e saginata) são morfologicamente semelhantes</b> e não podem ser diferenciados pelo exame microscópico de rotina. A descrição (esférico, embrióforo espesso, tamanho de 30-40 µm) serve para ambas as espécies. Portanto, o diagnóstico correto a ser liberado no laudo é "ovo de <b>Taenia sp.</b>", sendo necessária a análise das proglotes para a identificação da espécie. O ovo de Echinococcus também é muito semelhante, mas não é encontrado em fezes humanas, pois o homem é hospedeiro intermediário.
+
+Q: Os ovos de Taenia solium, Taenia saginata e Echinococcus granulosus, apesar de pertencerem a ciclos distintos, compartilham uma estrutura interna fundamental que é infectante para o hospedeiro intermediário. Que estrutura é essa?
+A) O protoescólex, já com ventosas e ganchos.
+B) O cisticerco, em sua forma vesicular inicial.
+C) O embrião hexacanto, também chamado de oncosfera.
+D) O verme adulto em miniatura.
+G: C
+C: O conteúdo do ovo, que é a forma infectante para o hospedeiro intermediário, é o <b>embrião hexacanto</b> (hexa = seis, canto = gancho) ou <b>oncosfera</b>. Esta estrutura microscópica, ao ser liberada no intestino do hospedeiro intermediário, utiliza seus seis ganchos para penetrar na mucosa e atingir a corrente sanguínea, dando início à fase larvária (cisticerco ou cisto hidático). O protoescólex é a estrutura encontrada dentro da larva já desenvolvida, e o cisticercoé a larva que se forma a partir do embrião.
+
+
+Q: Considerando a biologia e a importância epidemiológica dos ovos dos cestoda estudados, qual das seguintes afirmativas está correta?
+A) Apenas os ovos de Taenia solium são infectantes para o ser humano, causando a teníase.
+B) A principal característica dos ovos que garante a perpetuação da espécie é sua baixa resistência no meio ambiente, necessitando de rápida ingestão.
+C) Os ovos de Echinococcus granulosus são liberados nas fezes dos ovinos, contaminando os cães que os ingerem.
+D) Os ovos de todas as três espécies são imediatamente infectantes ao serem liberados no ambiente e possuem alta resistência às condições ambientais.
+G: D
+C: O desenvolvimento embrionário ocorre ainda dentro do útero da proglote, de modo que os ovos <b>já são infectantes</b> quando eliminados. Além disso, uma característica crucial para sua epidemiologia é a <b>alta resistência no meio externo</b>, podendo sobreviver por semanas ou meses em condições de umidade, frio ou dessecação, o que aumenta a chance de contaminação do hospedeiro intermediário.
+{A}) Os ovos de T. solium causam a <b>cisticercose</b> no homem, não a teníase. Os ovos de E. granulosus também são infectantes para o homem, causando a hidatidose.
+{B}) A característica é a <b>alta resistência</b>, não a baixa.
+{C}) Os ovos de E. granulosus são liberados nas fezes dos <b>cães</b> (hospedeiro definitivo), contaminando os ovinos (hospedeiro intermediário).
