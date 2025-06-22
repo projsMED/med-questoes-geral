@@ -1,0 +1,101 @@
+Q: Dermatofitoses são doenças de pele causadas pela contaminação por três gêneros de fungos.
+Observe as alternativas a seguir e marque o único gênero que não é considerado um dermatófito.
+A) Microsporum.
+B) Saccharomyces
+C) Trichophyton.
+D) Epidermophyton.
+G: B
+
+Q: A doença popularmente conhecida como "pe de atleta" ou "frieira" é uma infecção fúngica que se desenvolve, principalmente, entre os dedos dos pés, mas também acomete a região plantar. A infecção é mais prevalente em homens, porém, pode ocorrer em ambos os sexos. Nesse tipo de dermatofitose, os fungos atingem:
+A) a derme
+B) a hipoderme
+C) o extrato córneo.
+D) a camada basal
+E) o extrato germinativo.
+G: C
+
+Q: Os fungos dermatófitos podem acometer seres humanos e outros animais. Quando uma espécie acomete apenas aniprais domésticos e silvestres, é denominada de
+A) antropofilica.
+B) Coqueratofilica.
+C) zoofilica.
+D) epidermofilico.
+G: C
+
+Q: As dermatofitoses são infecções causadas por fungos conhecidos como queratinofilicos, ou seja:
+A) fungos capazes de utilizar a queratina na produção de uma membrana plasmática.
+B) fungos capazes de degradar a queratina para faciklar a sua entrada na pele.
+C) fungos que removem a queratina de uma região e depositam-na em outra
+D) fungos que estabelecem associação fisica com a queratina.
+E) fungos capazes de utilizar a queratina para a nutrição.
+G: E
+
+Q: Fungos são responsáveis por diversas doenças no homem. A respeito das micoses, marque a alternativa correta:
+A) Algumas podem ser evitadas pela diminição da umidade das áreas afetadas.
+B) São doenças autoimunes, que se manifestam ao longo da vida do individuo.
+C) Podem ser combatidas pela ação de agentes antiretrovirais como o AZT.
+D) São causadas somente por fungos unicelulares, como Candida albicans.
+E) São facilmente tratadas com antibióticos e antifungicos.
+G: A
+
+Q: Qual das opções a seguir é a principal característica clínica da Pitiriase Versicolor, uma micose superficial?
+A) Lesões hipocrômicas ou hipercrômicas em fonco e membros superiores.
+B) Formação de nódulos subcutâneos em membros inferiores
+C) Lesões eritemato-descamativas em áreas interdigitais
+D) Papulas dolorosas com drenagem purulenta
+G: A
+
+Q: Qual agente etiológico mais frequentemente associado à micose subcutânea Esporotricose?
+A) Sporothrix schenckii.
+B) Cryptococcus neoformans.
+C) Histoplasma capsulatum.
+D) Paracoccidioides brasiliensis.
+G: A
+
+Q: Qual das micoses sistêmicas é endêmica no Brasil e causada por um fungo dimórfico?
+A) Candidiase disseminada
+B) Paracoccidioidomicose.
+C) Aspergilose pulmonar.
+D) Mucormicose.
+G: B
+
+Q: Em pacientes imunossuprimidos, a criptococose é frequentemente associada a qual patógeno e manifestação clínica?
+A) Histoplasma capsulatum e linfadenopatia cervical.
+B) Cryptococous neoformans e meningite subaguda
+C) Aspergillus fumigatus e pneumonia necrotizante.
+D) Candida albicans e endocardite.
+G: B
+
+Q: Qual das seguintes micoses é caracterizada pela infecção primária da pele e disseminação linfática, formando nódulos em "cadeia"?
+A) Paracoccidioidomicose.
+B) Cromoblastomicose.
+C) Esporotricore.
+D) Histoplasmose.
+G: C
+
+Q: Em qual das situações abaixo é mais provável o diagnóstico de Paracoccidioidomicose?
+A) Homem de meia-idade, trabalhador rural, com lesões ulcerativas na mucosa oral e linfadenopatia.
+B) Mulher jovem, com febre e pneumonite. residente em área urbana
+C) Criança com lesões cutâneas eritemato- descamativas localizadas em tronco.
+D) Idoso imunossuprimido com meningite subaguda e cefaleia intensa.
+G: A
+
+Q: Um agricultor de 50 anos, residente em área rural, apresenta uma lesão verrucosa e crônica na perna esquerda, que começou após um trauma com um galho há cerca de 8 meses. A lesão progrediu lentamente, formando placas irregulares com aspecto em "couve- flor". Qual é o agente etiológico mais associado a essa condição?
+A) Paracoccidioides brasiliensis.
+B) Aspergillus fumigatus.
+C) Sporothrix schenckii
+D) Fonsecaea pedrosoi
+G: D
+
+Q: A mucormicose é frequentemente observada em pacientes com qual condição predisponente?
+A) Terapia com inibidores da tirosina quinase
+B) Uso prolongado de corticosteroides.
+C) Diabetes mellitus descompensado.
+D) HIV/AIDS não tratado.
+G: C
+
+Q: Um homem de 45 anos, residente no sudoeste dos Estados Unidos, procura atendimento com febre, tosse seca, fadiga e dores no peito há duas semanas. Ele relata que trabalha em construção civil e esteve recentemente exposto a poeira em uma obra. A radiografia de tórax mostra infiltrados pulmonares bilaterais. Qual o diagnóstico mais provável?
+A) Pneumonia por Pneumocystis jirovecii.
+B) Coccidioidomicose primária.
+C) Paracoccidioidomicose.
+D) Tuberculose.
+G: B
