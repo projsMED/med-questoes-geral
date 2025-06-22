@@ -116,7 +116,8 @@ G: F
 C: No caso da mucormicose subcutânea, as lesões geralmente começam como masseiras móveis e elásticas, com características de discos que podem ulcerar, especialmente em infecções causadas por Basidiobolus ranarum. Já o micetoma eumicótico envolve nódulos subcutâneos indolores que crescem lentamente e formam trajetos fistulosos.
 
 Q: A infecção na mucormicose subcutânea comumente rompe os planos do tecido e destrói músculos e ossos localmente.
-G: V
+G: F
+C: Na mucormicose subcutânea (entomoftoromicose), causada por Basidiobolus ranarum e Conidiobolus coronatus, a infecção raramente invade ou destrói estruturas profundas como músculos e ossos. A lesão geralmente permanece restrita ao tecido subcutâneo e não há angioinvasão. O rompimento dos planos teciduais, destruição muscular e óssea são características muito mais comuns dos micetomas eumicóticos, e não das entomoftoromicoses.
 
 <variantes>
 Q: A chave para o diagnóstico de micetoma eumicótico é a demonstração de grãos ou grânulos. Os grãos podem ser visíveis a olho nu nas fístulas de drenagem ou podem ser expressos em uma lâmina de vidro. O material também pode ser obtido por biopsia cirúrgica profunda.
