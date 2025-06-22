@@ -320,6 +320,16 @@
           },
           {
             "type": "file",
+            "name": "Micoses - Sistêmicas - V ou F.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Micologia/Micoses - Sistêmicas - V ou F.txt"
+          },
+          {
+            "type": "file",
+            "name": "Micoses - Sistêmicas e Oportunistas - Parecido com prova antiga - Objetivas.txt",
+            "path": "quizes-da-nuvem/Parasitologia - N2/Micologia/Micoses - Sistêmicas e Oportunistas - Parecido com prova antiga - Objetivas.txt"
+          },
+          {
+            "type": "file",
             "name": "Micoses - Subcutâneas - Dissertativas.txt",
             "path": "quizes-da-nuvem/Parasitologia - N2/Micologia/Micoses - Subcutâneas - Dissertativas.txt"
           },
