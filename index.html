@@ -101,7 +101,7 @@
     .cloud-quiz-list .folder {
       font-weight: bold;
       margin-top: 6px;
-      color: #2a5d91;
+      color: #0d2d48;
     }
     .cloud-quiz-list .quiz-link {
       color: #1a4f7a;
@@ -113,6 +113,7 @@
       padding: 2px 0;
       margin-left: 7px;
       transition: color 0.15s;
+	  text-align: left;
     }
     .cloud-quiz-list .quiz-link:hover {
       color: #0e866a;
@@ -541,6 +542,63 @@
 	  #score-table-container { padding: 14px 3vw 8px 3vw; }
 	  #score-table { font-size: 1em; }
 	  #score-overall-row td { font-size: 1.09em;}
+	}
+	/* --- Linhas de Conexão em Árvore --- */
+
+	/* Ajusta as listas aninhadas para dar espaço às linhas */
+	.cloud-quiz-list .folder > ul {
+	  position: relative;
+	  padding-left: 25px; /* Espaço à esquerda para as linhas */
+	  margin-left: 5px;
+	}
+
+	/* Desenha a linha VERTICAL principal que desce da pasta */
+	.cloud-quiz-list .folder > ul::before {
+	  content: '';
+	  position: absolute;
+	  left: 0;
+	  top: -6px; /* Ajuste para conectar na pasta-pai */
+	  width: 1px;
+	  height: 100%;
+	  background: #c6d7ee; /* Cor suave para a linha */
+	}
+
+	/* Prepara cada item da lista para receber sua linha de conexão */
+	.cloud-quiz-list .folder > ul > li {
+	  position: relative;
+	}
+
+	/* Desenha a linha HORIZONTAL (o "traço" do "├") para cada item */
+	.cloud-quiz-list .folder > ul > li::before {
+	  content: '';
+	  position: absolute;
+	  left: -25px; /* Puxa a linha para a área do padding */
+	  top: 16px;   /* Alinhamento vertical da linha. Ajuste se necessário */
+	  width: 25px;
+	  height: 1px;
+	  background: #c6d7ee;
+	}
+
+	/* Truque para o ÚLTIMO item da lista: apaga a linha vertical para criar o "└" */
+	.cloud-quiz-list .folder > ul > li:last-child::after {
+	  content: '';
+	  position: absolute;
+	  left: 0px;
+	  top: 17px; /* Posição para começar a "apagar" */
+	  width: 1px;
+	  height: 100%;
+	  background: #f9fcff; /* Cor de fundo da lista, para "esconder" a linha vertical */
+	}
+	/* --- Ajuste Fino de Alinhamento para Subpastas --- */
+
+	/* Move a linha de conexão para CIMA quando o item é uma SUBPASTA */
+	.cloud-quiz-list .folder > ul > li.folder::before {
+	  top: 12px; /* Valor menor para alinhar ao centro do texto da pasta */
+	}
+
+	/* Ajusta o "corte" da linha para o caso de o ÚLTIMO item ser também uma SUBPASTA */
+	.cloud-quiz-list .folder > ul > li.folder:last-child::after {
+	  top: 13px; /* Posição correspondente para iniciar o "corte" */
 	}
   </style>
 </head>
