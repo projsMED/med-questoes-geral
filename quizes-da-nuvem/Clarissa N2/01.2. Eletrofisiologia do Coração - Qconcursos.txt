@@ -14,10 +14,10 @@ As células marca-passo são definidas por sua capacidade de se despolarizarem s
 ‎ 
  2.  <b>Fase 0: O Disparo (Despolarização Rápida)</b>
       ◦ Quando a lenta despolarização da Fase 4 atinge um determinado limiar de voltagem, ela dispara a Fase 0.
-      ◦ Esta é a fase de ascensão rápida do potencial de ação. Nas células do nó SA, ela é mediada principalmente pela entrada de íons de cálcio ($Ca^{2+}$).
+      ◦ Esta é a fase de ascensão rápida do potencial de ação. Nas células do nó SA, ela é mediada principalmente pela entrada de íons de cálcio (Ca2+).
 ‎ 
  3.  <b>Fase 3: O "Reset" (Repolarização)</b>
-      ◦ Após o pico da Fase 0, a célula precisa se "resetar" para poder iniciar um novo ciclo. A Fase 3 é a repolarização, onde os canais de cálcio se fecham e os canais de potássio ($K^{+}$) se abrem, fazendo com que o potencial da membrana retorne a um estado mais negativo.
+      ◦ Após o pico da Fase 0, a célula precisa se "resetar" para poder iniciar um novo ciclo. A Fase 3 é a repolarização, onde os canais de cálcio se fecham e os canais de potássio (K+) se abrem, fazendo com que o potencial da membrana retorne a um estado mais negativo.
       ◦ Assim que a repolarização da Fase 3 termina, a célula entra imediatamente em uma nova Fase 4, começando novamente a despolarização lenta e espontânea.
 
 
