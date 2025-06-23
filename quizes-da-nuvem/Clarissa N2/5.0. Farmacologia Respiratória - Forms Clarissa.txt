@@ -1,0 +1,88 @@
+Q: Na asma, _________________ são os medicamentos de escolha para alívio dos sintomas de broncoespasmo que ocorrem durante as exacerbações agudas de asma e como pré-tratamento do broncoespasmo induzido por exercício.
+A) Xantinas.
+B) Glicocorticoides orais.
+C) Corticosteroide inalatório.
+D) Beta-2 agonistas inalatórios de curta duração.
+E) Beta-2 agonistas inalatórios de duração prolongada.
+G: D
+C: Os <b>beta-2 agonistas inalatórios de curta duração</b> produzem broncodilatação rápida, sendo indicados tanto para alívio imediato das crises asmáticas quanto para prevenir broncoespasmo induzido por exercício. 
+
+Q: Analgésico opioide indicado nos casos de dores leves a moderadas e que tem ação antitussígena:
+A) Morfina
+B) Citrato de fentanila
+C) Codeína
+D) Naloxona
+E) Tramadol
+G: C
+C: A <b>codeína</b> é um opioide fraco usado em dores leves a moderadas e suprime o reflexo da tosse, atuando no centro bulbar da tosse. 
+
+Q: Um médico especialista do serviço de otorrinolaringologia atende um paciente encaminhado por um profissional da Estratégia de Saúde da Família com um quadro de obstrução nasal, espirros, rinorréia e prurido nasal. O usuário refere que trabalha como motorista e, por esse motivo, o especialista prescreve um anti-histamínico de segunda geração. Essa escolha se justifica, pois essa medicação tem:
+A) alta afinidade com o receptor H2 e causa sonolência
+B) alta afinidade com o receptor H1 e não causa sonolência
+C) alta afinidade com o receptor H1 e atravessa a barreira hematoencefálica
+D) alta afinidade com o receptor H2 e com seus efeitos colinérgicos
+E) alta afinidade com o receptor H2 e com seus efeitos adrenérgicos
+G: B
+C: Os anti-histamínicos de segunda geração se ligam seletivamente ao <b>receptor H1 periférico</b> e apresentam mínima penetração na barreira hematoencefálica, reduzindo o risco de sonolência — característica essencial para quem dirige. 
+
+Q: O Brometo de Ipratrópio, conhecido e difundido broncodilatador com ação antagonista muscarínica, desenvolve sua ação por atuar em:
+A) receptores metabotrópicos do tipo beta acoplados à proteína Sq
+B) receptores não metabotrópicos do tipo alfa acoplados à proteína Gi
+C) receptores não metabotrópicos do tipo M2 acoplados à proteína Gs
+D) receptores metabotrópicos do tipo muscarínico M4 acoplados à proteína Gi
+E) receptores metabotrópicos do tipo muscarínico M3 acoplados à proteína Gq
+G: E
+C: O ipratrópio bloqueia os <b>receptores muscarínicos M3</b> acoplados à proteína Gq no músculo liso brônquico, impedindo o efeito constritor da acetilcolina e promovendo broncodilatação. 
+
+
+Q: Pertencem à classe dos anti-histamínicos:
+A) difenidramina, levodopa, brometo de ipratrópio;
+B) itraconazol, brometo de ipratrópio e fexofenadina;
+C) loratadina, diltiazem e cetirizina;
+D) loratadina, cetirizina e fexofenadina;
+E) verapamil, fexofenadina e loratadina.
+G: D
+C: <b>Loratadina, cetirizina e fexofenadina</b> são anti-histamínicos; os demais fármacos listados pertencem a outras classes (antifúngicos, anticolinérgicos, bloqueadores de cálcio). 
+
+Q: Em relação às drogas anti-histamínicas, é correto afirmar que
+A) a fexofenadina é uma droga de primeira geração com atividade antagonista seletiva dos receptores H1 periféricos da histamina.
+B) a hidroxizina é uma droga de segunda geração muito usada e que apresenta, como efeito colateral, apenas leve sedação.
+C) a meclizina apresenta uma atividade significativa contra a cinetose.
+D) derivados da fenotiazida, como a difenidramina, não apresentam atividade anticolinérgica.
+E) a alergia a fármacos H1-antagonistas, de uso tópico, é muito rara.
+G: C
+C: A <b>meclizina</b> é um anti-histamínico de primeira geração amplamente empregado na prevenção e tratamento da cinetose (enjoo de movimento).
+
+Q: O salbutamol é administrado por inalação ou via oral para o alívio sintomático do broncoespasmo. O seu efeito broncodilatador se deve a sua ação:
+A) agonista sobre receptores β1-adrenérgicos
+B) antagonista sobre receptores β2-adrenérgicos
+C) antagonista sobre receptores β1-adrenérgicos
+D) agonista sobre receptores α2-adrenérgicos
+E) agonista sobre receptores β2-adrenérgicos
+G: E
+C: O <b>salbutamol</b> atua como agonista seletivo dos receptores β2-adrenérgicos nas vias aéreas, relaxando o músculo liso brônquico e promovendo broncodilatação rápida. 
+
+Q: Acerca dos fármacos broncodilatadores, é correto afirmar:
+A) em pacientes com asma aguda a aminofilina intravenosa é mais eficaz que inalação por β2-agonistas.
+B) o inalação com β2-agonistas é o tratamento de escolha na asma devido a sua eficácia e efeitos colaterais mínimos.
+C) a teofilina é amplamente utilizada, pois apresenta baixo custo e sua eficácia e segurança são comparáveis a dos β2-agonistas.
+D) a inalação com β2-agonistas é preferível à administração oral por ser mais eficaz em casos agudos; no entanto, os efeitos colaterais sistêmicos são maiores.
+E) na Doença Pulmonar Obstrutiva Crônica, a teofilina é o fármaco de escolha porque sua administração sistêmica pode ter efeito nas pequenas vias respiratórias, resultando em redução da hiperinflação e consequentemente redução da dispneia.
+G: B
+C: A inalação de <b>β2-agonistas</b> é a primeira escolha para crises de asma, pois oferece broncodilatação rápida, alto índice terapêutico e poucos efeitos sistêmicos.
+
+Q: As Metilxantinas são broncodilatadores efetivos dotados de propriedades
+A) analgésicas.
+B) anestésicas.
+C) antibióticas.
+D) anti-inflamatórias.
+G: D
+C: Além de dilatar os brônquios, as <b>metilxantinas</b> apresentam efeito anti-inflamatório moderado, ajudando a reduzir a resposta inflamatória nas vias aéreas. 
+
+Q: São anti-histamínicos de terceira geração:
+A) Hidroxizina, Dexclorfeniramina.
+B) Levocetirizina, Fexofenadina.
+C) Loratadina, Cetirizina.
+D) Ebastina, Bilastina.
+E) Desloratadina, Epinastina.
+G: D
