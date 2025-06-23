@@ -1,0 +1,95 @@
+Q: Assinale a alternativa que apresenta os dois componentes da distensibilidade pulmonar.
+A) Pressão de distensão e resistência.
+B) Pressão alveolar e pressão atmosférica.
+C) Complacência e resistência.
+D) Pressão alveolar e elastância.
+E) Complacência e elastância.
+G: C
+C: b>Distensibilidade pulmonar</b> é determinada pela <b>complacência</b> (facilidade de expansão) e pela <b>elastância</b> (tendência de retração), grandezas inversas que, juntas, descrevem como o pulmão se distende; pressão e resistência não fazem parte dessa definição.
+
+Q: Os volumes pulmonares são convencionalmente divididos em volumes primários e capacidades pulmonares. Marque a alternativa que indica os volumes pulmonares.
+A) Volume corrente, volume de reserva inspiratório, volume de reserva expiratório, volume residual.
+B) Volume de reserva inspiratório, volume de reserva expiratório, volume vital, volume residual funcional.
+C) Volume total, volume residual e volume corrente.
+D) Volume residual funcional, volume total, volume corrente.
+E) Volume vital, volume de reserva corrente, volume capacitivo.
+G: A
+C: <b>Os quatro volumes primários</b> são volume corrente (VT), volume de reserva inspiratório (IRV), volume de reserva expiratório (ERV) e volume residual (RV); quaisquer combinações desses volumes formam capacidades pulmonares.
+
+Q: A respeito da fisiologia respiratória, assinale a alternativa que preencha correta e respectivamente as lacunas.
+Surfactante pulmonar _______ tensão superficial nos pulmões e torna os alvéolos mais _______. Sem sua existência, os alvéolos seriam instáveis e os pulmões seriam muito mais _______.
+A) eleva / resistentes / complacentes
+B) reduz / complacentes / rígidos
+C) reduz / resistentes / rígidos
+D) eleva / complacentes / resistentes
+E) reduz / resistentes / complacentes
+G: B
+C: <b>O surfactante</b> reduz a tensão superficial, deixando os alvéolos mais <b>complacentes</b>; sem ele, a tensão sobe, os alvéolos colapsam e o pulmão torna-se <b>rígido</b>, exigindo trabalho inspiratório muito maior.
+
+Q: Em fisiologia respiratória, o volume de ar que permanece nos pulmões ao final de uma expiração normal é denominado:
+A) capacidade residual funcional.
+B) capacidade pulmonar total.
+C) volume de reserva expiratório.
+D) volume residual.
+E) volume de reserva inspiratório.
+G: A
+C: <b>Capacidade residual funcional (CRF)</b> é a soma do volume residual com o volume de reserva expiratório e corresponde ao ar que permanece nos pulmões após uma expiração tranquila.
+
+Q: Com relação à anatomia pulmonar e à fisiologia respiratória, é correto afirmar que:
+A) as vias aéreas superiores incluem a faringe, a laringe e a traqueia.
+B) a membrana respiratória é uma membrana cerosa que circunda os pulmões e consiste numa lâmina parietal e outra visceral.
+C) o pulmão direito possui 2 lobos, e o esquerdo, 3 lobos.
+D) durante a inspiração forçada, os músculos intercostais internos e outros músculos da respiração trabalham com o diafragma para criar um grande aumento no volume da cavidade torácica.
+E) a ventilação pulmonar envolve 3 pressões diferentes. Em repouso, essas pressões são: pressão atmosférica (760 mmHg), pressão intrapleural (756 mmHg) e pressão intrapulmonar (760 mmHg).
+G: E
+C: <b>Na ventilação em repouso</b> coexistem três pressões: atmosférica (760 mmHg), intrapulmonar (760 mmHg no fim das fases) e intrapleural (≈ 756 mmHg); a negativa intrapleural mantém os pulmões aderidos à parede torácica. As demais alternativas contêm dados anatômicos ou funcionais incorretos.
+
+Q: Os mecanismos fisiológicos que favorecem a eliminação de secreções compreendem o transporte __________________, que, com o auxílio e o direcionamento do fluxo aéreo, transporta a secreção para ser eliminada pela tosse ou pela deglutição.
+Assinale a alternativa que preenche corretamente a lacuna do trecho acima. 
+A) aéreo
+B) respiratório
+C) mucociliar
+D) expiratório
+E) gravitacional
+G: C
+C: <b>Transporte mucociliar</b> impulsiona a camada de muco por batimento coordenado dos cílios até a orofaringe, onde tosse ou deglutição completam a remoção das secreções.
+
+Q: O centro respiratório é formado por vários grupos muito diversos de neurônios e é localizado bilateralmente ao bulbo e dividido em 3 grupos principais (grupo respiratório dorsal, grupo respiratório ventral e centro pneumotáxico). O centro pneumotáxico ajuda a controlar:
+A) a frequência e padrões respiratórios
+B) o diafragma e músculos abdominais
+C) o volume residual
+D) a contração dos músculos expiratórios
+E) a contração dos músculos acessórios
+G: A
+C: <b>O centro pneumotáxico</b>, situado na ponte, limita a duração da inspiração (função “off-switch”), modulando frequência e padrão respiratório; não atua diretamente nos músculos expiratórios nem no diafragma.
+
+Q: A síndrome da angústia respiratória neonatal é causada pela ausência de surfactante no pulmão imaturo. O surfactante aparece entre 24 e 35 semanas de gestação. Na ausência desse surfactante, a tensão superficial dos pequenos alvéolos é demasiadamente alta. Isso ocorre devido à grande alteração fisiológica no sistema respiratório do recém-nascido prematuro. As afirmativas a seguir descrevem algumas das possíveis alterações fisiológicas dessa condição clínica, avalie-as e marque a que explica adequadamente o quadro de síndrome da angústia respiratória neonatal.
+A) O aumento da pressão nos pequenos alvéolos leva ao seu colapso, desequilíbrio da ventilação/perfusão e hipoxemia.
+B) A produção diminuída de surfactante dificulta a insuflação pulmonar e aumenta sua complacência, provocando aumento do trabalho respiratório.
+C) A síndrome da angústia respiratória pode ser explicada pela dispneia, aumento da troca gasosa e alcalose respiratória.
+D) O trabalho respiratório diminuído pode ser explicado pela inversão da relação ventilação/perfusão e dispneia, quadro irreversível que leva ao óbito do recém-nascido prematuro.
+E) A dificuldade de insuflação pulmonar leva ao colapso dos pequenos alvéolos e à produção insuficiente de surfactante.
+G: A
+C: <b>Sem surfactante</b> a alta tensão superficial eleva a pressão nos pequenos alvéolos (Lei de Laplace), eles colapsam, ocorre desequilíbrio ventilação-perfusão, hipoxemia e aumento do trabalho respiratório.
+
+Q: Assinale a alternativa <b>correta</b>. Considerando a fisiologia respiratória, o estímulo mais importante no controle do nível da ventilação em repouso é:
+A) PO₂ nos quimiorreceptores periféricos
+B) PCO₂ nos quimiorreceptores periféricos
+C) PCO₂ nos quimiorreceptores centrais
+D) PO₂ nos quimiorreceptores centrais
+E) PH do Liquido Céfalo Raquidiano (LCR) nos quimiorreceptores centrais
+G: E
+C: 
+• Os quimiorreceptores centrais, localizados na superfície ventrolateral do bulbo, não “sentem” diretamente o PCO₂ arterial. O que eles realmente detectam é principalmente o <b>pH do líquido cefalorraquidiano (LCR)</b>.
+• O CO₂ atravessa rapidamente a barreira hematoencefálica, forma ácido carbônico (H₂CO₃) e dissocia‐se em H⁺ e HCO₃⁻. O aumento desses íons H⁺ baixa o pH do LCR; essa acidificação é o estímulo que excita os quimiorreceptores centrais e eleva a ventilação.
+• Portanto, ainda que o PCO₂ seja o fator que inicia o processo, o sinal efetivamente monitorado é o <b>[H⁺]/pH do LCR</b>
+
+Q: Em acidentes de trânsito, frequentemente, observa-se, como consequência do trauma de órgãos torácicos, a ocorrência de hemotórax e pneumotórax, que consistem no preenchimento do espaço interpleural por sangue e ar, respectivamente.
+Essa alteração pode levar ao óbito, pois a pleura é a:
+A) cavidade onde se localiza o coração, e a presença de sangue ou ar impede os movimentos de sístole e diástole
+B) cavidade onde se localizam os pulmões, e a presença de sangue ou ar reduz a superfície de trocas gasosas
+C) membrana simples que forma os alvéolos, e sua obstrução por sangue ou ar impede a hematose
+D) membrana serosa que envolve o coração, e a presença de sangue ou ar pode causar compressão atrial e redução do retorno venoso
+E) membrana dupla que envolve os pulmões, e a presença de sangue ou ar entre as duas camadas pode causar o colapso pulmonar
+G: E
+C: <b>A pleura</b> é uma membrana dupla (parietal e visceral) que envolve cada pulmão; a entrada de ar ou sangue no espaço pleural elimina a pressão negativa, podendo causar colapso pulmonar e comprometimento ventilatório.
