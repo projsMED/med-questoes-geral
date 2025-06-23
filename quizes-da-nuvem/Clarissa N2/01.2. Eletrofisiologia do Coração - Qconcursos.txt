@@ -1,0 +1,87 @@
+Q: A caracterização da fase 4 do potencial de ação do marcapasso cardíaco é fundamental para a compreensão do automatismo cardíaco. Identifique qual das seguintes afirmações melhor descreve o mecanismo subjacente à fase 4 do potencial de ação em células do nó sinoatrial:
+A) A fase 4 é caracterizada pela rápida entrada de íons sódio, preparando a célula para o próximo potencial de ação. 
+B) Durante a fase 4, a saída de íons potássio é preponderante, estabilizando o potencial de membrana. 
+C) A fase 4 é marcada pela ativação de canais de sódio dependentes de voltagem, que diminuem a polaridade celular. 
+D) A fase 4 deve-se ao lento fechamento de canais de potássio e a uma gradual abertura de canais de sódio ativados por hiperpolarização e canais de cálcio tipo T. 
+E) Esta fase é caracterizada pela inativação dos canais de cálcio tipo L, resultando em um potencial de membrana mais negativo.
+G: D
+C: 
+As células marca-passo são definidas por sua capacidade de se despolarizarem sozinhas, um fenômeno chamado de <b>automaticidade</b>. Elas não possuem um potencial de repouso estável. O ciclo delas é contínuo e auto-iniciado.
+‎ 
+ 1.  <b>Fase 4: O Ponto de Partida (Despolarização Espontânea)</b>
+      ◦ Esta é a fase que define as células marca-passo. Em vez de ser um período de "repouso", a Fase 4 é uma <b>despolarização lenta e espontânea</b>. É o "potencial marca-passo".
+      ◦ É nesta fase que a célula se prepara para disparar por conta própria. Por ser a fase que inicia o ciclo de forma automática, ela é considerada o ponto de partida do ciclo rítmico.
+‎ 
+ 2.  <b>Fase 0: O Disparo (Despolarização Rápida)</b>
+      ◦ Quando a lenta despolarização da Fase 4 atinge um determinado limiar de voltagem, ela dispara a Fase 0.
+      ◦ Esta é a fase de ascensão rápida do potencial de ação. Nas células do nó SA, ela é mediada principalmente pela entrada de íons de cálcio ($Ca^{2+}$).
+‎ 
+ 3.  <b>Fase 3: O "Reset" (Repolarização)</b>
+      ◦ Após o pico da Fase 0, a célula precisa se "resetar" para poder iniciar um novo ciclo. A Fase 3 é a repolarização, onde os canais de cálcio se fecham e os canais de potássio ($K^{+}$) se abrem, fazendo com que o potencial da membrana retorne a um estado mais negativo.
+      ◦ Assim que a repolarização da Fase 3 termina, a célula entra imediatamente em uma nova Fase 4, começando novamente a despolarização lenta e espontânea.
+
+
+Q: Os grandes momentos do potencial de ação no músculo cardíaco estão divididos em fases.
+“Acontece o evento de plateau, onde o potencial elétrico se mantem a 0 mV. Esta fase deve-se à entrada de iões de cálcio e à saída de iões de potássio em simultâneo. Nesta fase, as células mantêm-se no estado de contração. É também nesta altura que as células permanecem no estado de refração absoluta, o quer dizer, que neste estado as células não respondem aos estímulos extenos”.
+O texto refere-se a fase:
+A) 0
+B) 1
+C) 2
+D) 3
+E) 4
+G: C
+C: 
+https://projsmed.github.io/med-questoes-3-periodo/Imagens%20fisiologia/tabela2dasda.png
+
+Q: Leia com atenção as afirmações a seguir:
+I. O potencial de ação da célula muscular cardíaca possui como característica um platô durante seu processo de despolarização. Sabe-se também que tal platô se deve à presença dos canais rápidos de sódio e lentos de cálcio.
+II. Uma vez que o retículo sarcoplasmático do músculo cardíaco não é tão desenvolvido como o do músculo esquelético, os íons de cálcio adicionais se difundem para o sarcoplasma durante o potencial de ação da célula miocárdica. Fato esse que ajuda, consideravelmente, na força de contração da célula muscular cardíaca.
+III. Os chamados “ritmos de escape” geralmente são assumidos pelo coração na ausência do funcionamento no nó sinusal. O ritmo de escape juncional é gerado pelo sistema de purkinje, o qual está presente no septo interventricular e em ambos os ventrículos.
+IV. Durante a estimulação cardíaca pelos nervos simpáticos (T1– L2) observa-se um aumento progressivo do tempo de condução do estímulo elétrico, tanto no nó sinoatrial quanto no nó atrioventricular.
+Estão corretas as afirmativas:
+A) I, II, III e IV.
+B) I, II e IV, apenas.
+C) II e III, apenas.
+D) I e IV, apenas.
+E) I e II, apenas
+G: E
+C: O platô ocorre na repolarização e não na despolarização e os canais responsáveis são de K (potássio) e o de Cálcio, e não de sódio.
+
+Q: Sabe-se que o potencial de ação cardíaco está definido em 5 fases distintas, porém dependentes para que aconteça a contração cardíaca. Sobre a FASE 2 do potencial de ação é CORRETO afirmar que:
+A) A velocidade de repolarização lentifica-se, sendo assim, os íons cálcio entram no espaço intracelular.
+B) É término da repolarização e o retorno da célula para seu estado de repouso.
+C) A repolarização celular precoce começa durante essa fase quando o potássio sai para o espaço intracelular.
+D) Nenhuma das alternativas.
+G: A
+C: <b>Fase 0:</b> a despolarização celular tem início na medida em que íons positivos realizam o influxo para dentro da célula.
+<b>Fase 1:</b> a repolarização celular inicial tem início durante esta fase, na medida em que o potássio sai do espaço intracelular
+<b>Fase 2:</b> esta fase é denominada fase de platô, tendo em vista que a velocidade de repolarização diminui. Os íons cálcio entram no espaço intracelular.
+<b>Fase 3:</b> esta fase marca a conclusão da repolarização e o retorno das células ao seu estado de repouso.
+<b>Fase 4:</b> esta fase é considerada a fase de repouso antes da próxima despolarização.
+
+Q: O feixe AV, ou feixe de His, conduz os impulsos elétricos
+A) para todas as partes do miocárdio. 
+B) do átrio D para o átrio E.
+C) do ventrículo E para o D.
+D) dos átrios para os ventrículos.
+E) dos ventrículos para os átrios.
+G: D
+
+Q: O sistema de geração e condução do sistema elétrico cardíaco é formado por células especializadas que conduzem o estímulo do átrio até os ventrículos. A alternativa que descreve a origem e condução do estímulo elétrico pelo coração é a seguinte:
+A) nó sinusal, nó átrio ventricular, fibra de purkinje, ramos direito e esquerdo e feixe de his.
+B) nó sinusal, feixes internodais, nó atrioventricular, feixe de his, ramos direito e esquerdo e fibra de purkinje.
+C) nó sinusal, nó atrioventricular, válvula tricúspide, feixe de his, ramos direito e esquerdo.
+D) nó atrioventricular, feixes internodais, fibras purkinje, ramos direito e esquerdo, feixe his.
+E) nó sinusal, válvula mitral, feixes internodais, feixe de his, ramos direito e esquerdo e fibra de purkinje.
+G: B
+
+Q: Em relação à origem e propagação do impulso elétrico através do coração, o impulso normalmente começa no nó sinusal e se propaga através dos átrios numa direção inferior e orientada para a esquerda, resultando na despolarização do músculo atrial. Quando o impulso atinge o nó atrioventricular, sua velocidade de condução é retardada antes de prosseguir na direção dos ventrículos. Do nó atrioventricular, o impulso atravessa rapidamente o feixe de His e os ramos direito e esquerdo na rede de Purkinje de ambos os ventrículos, e resulta na despolarização do músculo ventricular. Um paciente numa frequência de 40 a 60 batimentos por minuto tem sua automaticidade induzida.
+A) pelo nó sinusal.
+B) pelo nó atrioventricular.
+C) pelo feixe de His.
+D) pelo ramo direito do feixe.
+E) pela Fibra de Purkinje.
+G: B
+C: <b>Nó sinusal</b> = 60 a 100bpm
+<b>Nó Atrioventricular</b> = 40 a 60 bpm
+<b>Foco ventricular</b> = 30 a 40 bpm
