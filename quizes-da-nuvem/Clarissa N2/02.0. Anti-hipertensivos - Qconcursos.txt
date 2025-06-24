@@ -12,6 +12,13 @@ C) antiadrenérgico
 D) inibidor da enzima conversora de angiotensina
 G: D
 
+Q: A regulação da pressão arterial é vital para manter a homeostase no corpo humano, e o sistema renina-angiotensina-aldosterona desempenha um papel crucial nesse processo. Como o sistema renina-angiotensina-aldosterona regula a pressão arterial e quais são as implicações clínicas quando há disfunção nesse sistema?
+A) Ele modula a pressão arterial através da vasoconstrição e do controle do volume de fluidos, com disfunções relacionadas causando hipertensão e doenças renais.
+B) Esse sistema ajusta a pressão arterial por meio do controle direto dos níveis de sódio, independentemente da função renal ou cardiovascular.
+C) O sistema aumenta os níveis de glicose no sangue para elevar a pressão arterial, raramente afetando a função renal.
+D) Esse sistema regula a pressão arterial principalmente pelo controle do metabolismo de proteínas, e sua disfunção leva a distúrbios nutricionais.
+G: A
+
 Q: Quanto à enzima conversora da angiotensina(ECA) é correto afirmar que
 A) degrada e consequentemente inativa a bradicinina e converte a agiotensina I em angiotensina II.
 B) drogas denominadas inibidores da ECA, que reduzem a pressão sanguínea sistêmica em pacientes com hipertensão, aumentam os níveis de angiotensina II e de bradicinina.

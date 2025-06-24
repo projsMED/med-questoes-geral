@@ -1,0 +1,73 @@
+Q: O peptídeo natriurético atrial (PNA) é liberado em resposta ao estiramento atrial que ocorre em uma situação de sobrecarga de volume.
+G: V
+C:
+
+Q: O peptídeo natriurético atrial (ANP) é um potente hormônio produzido pelos miócitos cardíacos perante uma distensão da parede atrial. Sua liberação é estimulada quando ocorre estiramento cardíaco, promovida, principalmente, por um aumento da pressão arterial.
+G: V
+C:
+
+Q: A fim de manter a homeostase cardiovascular, diversos mecanismos fisiológicos atuam de forma integrada no controle da pressão arterial. Com relação a esses mecanismos, assinale a alternativa correta.
+A) Os barorreceptores arteriais localizados no arco aórtico e no seio carotídeo detectam variações na pressão arterial e ajustam a atividade autonômica para manter a estabilidade hemodinâmica.
+B) O Sistema Renina-Angiotensina-Aldosterona (SRAA) reduz a retenção de sódio e água pelos rins, promovendo a diminuição da pressão arterial.
+C) A liberação do Peptídeo Natriurético Atrial (PNA) ocorre em resposta ao aumento do volume sanguíneo e promove a vasoconstrição para elevar a pressão arterial.
+D) A ativação dos quimiorreceptores periféricos em resposta à hipóxia promove a redução da frequência cardíaca para diminuir o consumo de oxigênio.
+E) A vasopressina (Hormônio Antidiurético - ADH) reduz a reabsorção renal de água, resultando em maior diurese e consequente redução da pressão arterial.
+G: A
+
+Q: A liberação de qual substância abaixo na corrente sanguínea está associada à redução da pressão arterial?
+A) Peptídeo natriurético atrial.
+B) Aldosterona.
+C) Cortisol.
+D) Noradrenalina.
+G: A
+
+Q: O óxido nítrico inalado (iNO) se difunde através da membrana alvéolo-capilar, alcançando a célula muscular lisa vascular onde promove relaxamento.
+Sobre o uso do iNO, assinale a afirmativa incorreta. 
+A) As doses seguras variam de 5 a 80 ppm. 
+B) A reação do iNO com a hemoglobina produz metemoglobina.
+C) A suspensão da iNO deve ser gradual para evitar efeito rebote com aumento da pressão arterial pulmonar.
+D) Mesmo em doses adequadas, sempre ocorrem efeitos sistêmicos na iNO.  
+E) A iNO leva a redução da pós-carga do ventrículo direito. 
+G: D
+
+Q: Sobre o óxido nítrico, é correto afirmar que:
+A) Estimula a adenilciclase.
+B) Aumenta a pré-carga.
+C) Aumenta a pressão diastólica final (pd2).
+D) Diminui o Ca++ intracelular.
+E) Aumenta o GMP cíclico intracelular.
+G: E
+C: NO → ativa guanylate ciclase → ↑ cGMP → ↓ Ca²⁺ intracelular → relaxamento vascular.
+
+Q: Para regulação da pressão arterial em seres humanos, mecanismos de retroalimentação do sistema nervoso autônomo pela ação de terminações nervosas livres e densamente ramificadas na camada adventícia são evidenciadas. Essas terminações são ativadas quando a parede das artérias se deforma por ação mecânica e, dentro de segundos, regulam a frequência cardíaca, débito cardíaco, contratilidade do miocárdio, resistência vascular periférica e fluxo sanguíneo local. A denominação dessas terminações nervosas é:
+A) óxido nítrico
+B) nó sinoatrial
+C) barorreceptor
+D) óxido nitroso
+E) nó sinovial
+G: C
+
+Q: Em relação aos mecanismos reguladores da pressão arterial, assinale a alternativa correta.
+A) Os baroceptores aórticos e carotídeos detectam alterações imediatas na pressão sanguínea. Entretanto, sua resposta não é imediata, já que dependem de mecanismos de compensação renal para promoverem mudanças na pressão arterial.
+B) O sistema renina-angiotensina-aldosterona é um mecanismo de compensação renal ativado no momento de redução da pressão de perfusão renal. E sua ativação resulta no aumento da excreção renal de sódio e água, com consequente redução na pressão arterial e menor sobrecarga cardíaca.
+C) A ativação do sistema arginina-vasopressina resulta na liberação do Hormônio Antidiurético (ADH) pela neuro-hipófise, motivando consequente vasoconstrição e maior reabsorção renal de água, e promovendo aumento da pressão arterial.
+D) A liberação do Peptídeo Natriurético Atrial (PNA) acontece na vigência de distensão da parede atrial, promovendo a inibição da secreção de renina pelas glândulas suprarrenais e a redução da excreção de sódio e água no nível renal, com consequente aumento da pressão arterial.
+E) A norepinefrina atua em conjunto com os receptores alfa e beta, promovendo redução progressiva da pressão arterial, normalização da frequência cardíaca e aumento da força de contractilidade do ventrículo direito.
+G: C
+C: <i>"A ativação do sistema arginina-vasopressina resulta na liberação do Hormônio Antidiurético (ADH) pela neuro-hipófise, motivando consequente vasoconstrição e maior reabsorção renal de água, e promovendo aumento da pressão arterial."</i><br><b>Correto.</b> A vasopressina (ou ADH) é liberada pela neuro-hipófise em resposta a:<br>  • Redução da pressão arterial<br>  • Aumento da osmolaridade plasmática<br><b>Seus efeitos principais:</b><br>  • <b>Reabsorção de água nos túbulos coletores renais</b>, o que aumenta o volume sanguíneo<br>  • <b>Vasoconstrição</b> (via receptores V1), aumentando a resistência periférica<br>  • Ambos levam ao <b>aumento da pressão arterial</b><br><b>Análise das demais alternativas:</b><br>{A}.<br><i>"Os baroceptores aórticos e carotídeos detectam alterações imediatas na pressão sanguínea. Entretanto, sua resposta não é imediata..."</i><br>  • <b>Errado.</b> Barorreceptores têm resposta <b>rápida e imediata</b> (em segundos), regulando a PA a curto prazo via reflexo autonômico (simpático e parassimpático).<br>  • Não dependem de mecanismo renal para agir.<br>{B}.<br><i>"...ativação resulta no aumento da excreção renal de sódio e água, com consequente redução na pressão arterial..."</i><br>  • <b>Incorreto.</b> O sistema renina-angiotensina-aldosterona (<b>SRAA</b>) <b>retém</b> sódio e água, promovendo <b>vasoconstrição</b> e <b>aumento</b> da PA – não redução.<br>{D}.<br><i>"...PNA promove... redução da excreção de sódio e água... com consequente aumento da pressão arterial..."</i><br>  • <b>Incorreto.</b> O PNA tem <b>efeito oposto</b>:<br>     ◦ <b>Aumenta</b> a excreção de sódio e água (natriurese e diurese)<br>     ◦ <b>Inibe</b> a renina (produzida no rim, não na suprarrenal)<br>     ◦ Leva à <b>redução da pressão arterial</b>, não aumento<br>{E}.<br><i>"Norepinefrina... promovendo redução progressiva da pressão arterial..."</i><br>  • <b>Errado.</b> A norepinefrina causa <b>vasoconstrição</b> (receptores alfa) e aumento da contractilidade (receptores beta-1), o que <b>eleva</b> a pressão arterial, não reduz.<br><b>Resumo</b>:<br>  • <b>Correta:</b> <b>C</b><br>  • Mecanismo: Vasopressina (ADH) → Vasoconstrição + Reabsorção de água → Aumento da PA
+
+Q: A regulação da pressão arterial é vital para manter a homeostase no corpo humano, e o sistema reninaangiotensina-aldosterona desempenha um papel crucial nesse processo. Como o sistema renina-angiotensina-aldosterona regula a pressão arterial e quais são as implicações clínicas quando há disfunção nesse sistema?
+A) Ele modula a pressão arterial através da vasoconstrição e do controle do volume de fluidos, com disfunções relacionadas causando hipertensão e doenças renais.
+B) Esse sistema ajusta a pressão arterial por meio do controle direto dos níveis de sódio, independentemente da função renal ou cardiovascular.
+C) O sistema aumenta os níveis de glicose no sangue para elevar a pressão arterial, raramente afetando a função renal.
+D) Esse sistema regula a pressão arterial principalmente pelo controle do metabolismo de proteínas, e sua disfunção leva a distúrbios nutricionais.
+G: A
+
+Q: Os mecanismos de controle por feedback negativo da circulação tendem a normalizar o débito cardíaco e a pressão arterial. Entre esses mecanismos está o reflexo barorreceptor.
+O reflexo barorreceptor, por meio da estimulação simpática da circulação, ocasionará
+A) a diminuição do débito de água e de sal pelos rins.
+B) o aumento da constrição das artérias e veias periféricas.
+C) o aumento da pressão arterial média, restaurando a volemia.
+D) o aumento acentuado da retenção de líquido pelos rins.
+G: C
+C: Os barorreceptores são sensores de pressão, localizados nas paredes do seio carotídeo e do arco aórtico. Eles transmitem informações sobre a pressão arterial aos centros vasomotores cardiovasculares no tronco encefálico.<br>Os barorreceptores do seio carotídeo são reativos aos aumentos ou diminuições da pressão arterial, enquanto os barorreceptores do arco aórtico são principalmente sensíveis aos aumentos da pressão arterial. Eles funcionam como mecanorreceptores, que percebem a variação da pressão arterial por meio do estiramento.<br>Dessa forma, por meio do reflexo barorreceptor, o nosso corpo consegue atuar nas variações agudas da pressão arterial. Vamos analisar a seguinte situação: Imagine uma pessoa que acabou de sofrer um acidente automobilístico e está com um sangramento abdominal importante.<br>A queda da pressão arterial agudamente levará à diminuição do estiramento dos barorreceptores, que por meio da ativação simpática ocasionará aumento da pressão arterial média, visando restaurar a volemia e manter os tecidos perfundidos.
