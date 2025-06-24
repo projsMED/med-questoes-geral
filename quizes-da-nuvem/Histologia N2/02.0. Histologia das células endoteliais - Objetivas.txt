@@ -1,0 +1,300 @@
+QCH: Sobre o papel do endotélio na hemostasia e trombose, assinale todas as assertivas corretas:
+A1: I. Em condições fisiológicas, a superfície endotelial é antitrombótica, principalmente devido à liberação de NO e prostaciclina e à expressão de trombomodulina.
+G: V
+C: O endotélio saudável mantém a fluidez sanguínea por meio da produção de inibidores plaquetários (NO, PGI2) e anticoagulantes (trombomodulina, que altera a função da trombina).
+A2: II. Em resposta à lesão, as células endoteliais liberam o Fator de von Willebrand (FvW) dos corpos de Weibel-Palade, o que é essencial para a adesão plaquetária inicial.
+G: V
+C: O FvW é armazenado no endotélio e sua liberação após uma lesão é um passo crítico para mediar a adesão das plaquetas ao colágeno subendotelial exposto.
+A3: III. O Fator Tecidual (FT) é constitutivamente expresso em alta quantidade na superfície de células endoteliais saudáveis para rapidamente iniciar a coagulação quando necessário.
+G: F
+C: Em vasos saudáveis, o Fator Tecidual (FT) não é expresso pelas células endoteliais, mas sim na matriz subendotelial e em células adventícias. Sua exposição ao sangue após a lesão é o que inicia a via extrínseca da coagulação.
+A4: IV. O endotélio participa ativamente da fibrinólise ao liberar o ativador do plasminogênio tecidual (t-PA), que promove a formação de coágulos.
+G: F
+C: O t-PA é secretado pelo endotélio e é o principal ativador do plasminogênio em plasmina, a enzima que degrada a fibrina, sendo fundamental para o processo de <b>dissolução de coágulos</b>.
+A5: V. A expressão de moléculas de adesão como P-selectina e E-selectina é diminuída em células endoteliais ativadas durante a inflamação, para prevenir a trombose.
+G: F
+C: Durante a inflamação e ativação endotelial, a expressão de moléculas de adesão como as selectinas é aumentada (upregulated), não diminuída, para facilitar o recrutamento de leucócitos e plaquetas ao local.
+
+QCH: Sobre os mecanismos centrais da disfunção endotelial, assinale todas as assertivas corretas:
+A1: I. A disfunção endotelial é caracterizada por uma mudança fenotípica para um estado pró-inflamatório, pró-trombótico e vasoconstritor.
+G: V
+C: A disfunção endotelial representa uma perda do equilíbrio homeostático, com o endotélio adotando um perfil que promove inflamação, coagulação e contração vascular, contribuindo para a patogênese de doenças cardiovasculares.
+A2: II. O aumento do estresse oxidativo, com produção elevada de ânions superóxido (O2•−), é um denominador comum em diversas patologias que cursam com disfunção endotelial.
+G: V
+C: Fatores de risco como hipertensão, diabetes e hipercolesterolemia convergem para um aumento na produção de espécies reativas de oxigênio (ROS), que é um gatilho e perpetuador chave da disfunção endotelial.
+A3: III. O desacoplamento da eNOS, frequentemente causado pela deficiência do cofator BH4, leva a uma produção aumentada de óxido nítrico e melhora da vasodilatação.
+G: F
+C: O desacoplamento da eNOS é um evento patológico onde a enzima, em vez de produzir o vasodilatador NO, passa a produzir o radical livre superóxido, o que agrava a disfunção e reduz, em vez de aumentar, a vasodilatação.
+A4: IV. O peroxinitrito (ONOO-), formado pela reação entre NO e superóxido, é uma molécula altamente reativa que pode oxidar o BH4, perpetuando o desacoplamento da eNOS e o dano celular.
+G: V
+C: O peroxinitrito é um agente oxidante potente que contribui significativamente para o dano vascular. Ao oxidar a tetrahidrobiopterina (BH4), ele cria um ciclo vicioso que mantém a eNOS em seu estado desacoplado e produtor de radicais livres.
+A5: V. Em quadros de disfunção endotelial, a expressão da enzima eNOS é invariavelmente diminuída.
+G: F
+C: Paradoxalmente, em muitas situações de disfunção endotelial, a expressão da proteína eNOS pode estar normal ou até aumentada. O problema não é a quantidade da enzima, mas sua atividade disfuncional (desacoplamento).
+
+QCH: Sobre as principais vias de relaxamento dependente do endotélio, assinale todas as assertivas corretas:
+A1: I. O óxido nítrico (NO) é o principal fator relaxante derivado do endotélio (EDRF), exercendo seu efeito ao ativar a adenilil ciclase nas células musculares lisas.
+G: F
+C: O óxido nítrico é de fato o principal EDRF, mas ele ativa a guanilil ciclase solúvel, levando ao aumento de GMP cíclico (cGMP), não da adenilil ciclase e cAMP.
+A2: II. A prostaciclina (PGI2), um produto da via da ciclooxigenase, causa relaxamento vascular ao ligar-se aos seus receptores IP e aumentar os níveis de AMP cíclico (cAMP).
+G: V
+C: A PGI2 é um importante vasodilatador endotelial que atua via receptores IP, acoplados positivamente à adenilil ciclase, resultando em um aumento de cAMP, que por sua vez ativa a PKA e promove o relaxamento.
+A3: III. A via do fator hiperpolarizante derivado do endotélio (EDHF) depende da abertura de canais de potássio (IKCa e SKCa) na célula endotelial, levando à sua hiperpolarização.
+G: V
+C: A via "clássica" do EDHF é iniciada por um aumento de cálcio no endotélio, que abre os canais IKCa e SKCa, causando efluxo de potássio e hiperpolarização da própria célula endotelial, sinal que é subsequentemente transmitido ao músculo liso.
+A4: IV. O peróxido de hidrogênio (H2O2) pode atuar como um fator relaxante derivado do endotélio em alguns leitos vasculares, muitas vezes ativando canais de potássio no músculo liso.
+G: V
+C: Em certos vasos e condições, o H2O2 demonstrou atuar como um EDHF, causando hiperpolarização e relaxamento ao ativar diferentes tipos de canais de potássio (como BKCa ou Kv) no músculo liso vascular.
+A5: V. A endotelina-1 (ET-1) é um importante mediador do relaxamento dependente do endotélio em todos os vasos sanguíneos.
+G: F
+C: A endotelina-1 (ET-1) é o mais potente vasoconstritor derivado do endotélio. Seu efeito relaxante é indireto e secundário, ocorrendo quando ela ativa receptores ETB no próprio endotélio para liberar NO e PGI2, mas sua ação primária no músculo liso é a contração.
+
+QCH: Sobre os fatores de contração derivados do endotélio (EDCFs) e sua relevância patofisiológica, assinale todas as assertivas corretas:
+A1: I. EDCFs são produzidos em resposta a estímulos que aumentam o cálcio intracelular no endotélio, como a acetilcolina, especialmente em condições patológicas.
+G: V
+C: Estímulos que normalmente causariam relaxamento (como a acetilcolina) podem, na disfunção endotelial, induzir a liberação de EDCFs devido a uma sinalização de cálcio alterada.
+A2: II. A via da ciclooxigenase (COX), principalmente a COX-1, é a principal fonte de EDCFs, gerando prostanoides como PGH2 e tromboxano A2.
+G: V
+C: A via da COX é a origem canônica dos EDCFs. A ativação da COX endotelial (frequentemente a COX-1) leva à produção de endoperóxidos (PGH2) e outras prostaglandinas contráteis.
+A3: III. Os EDCFs exercem seu efeito contrátil ao ativar receptores de prostaciclina (IP) nas células musculares lisas vasculares.
+G: F
+C: Os EDCFs, sendo principalmente PGH2 e tromboxano A2 (e paradoxalmente PGI2 em alguns contextos), exercem sua ação vasoconstritora ao ativar os receptores de tromboxano (TP) no músculo liso, não os receptores IP, que são primariamente relaxantes.
+A4: IV. A produção de EDCFs é uma característica marcante da disfunção endotelial observada na hipertensão e na diabetes, contribuindo para o tônus vascular aumentado.
+G: V
+C: A emergência de respostas mediadas por EDCFs é um selo da disfunção endotelial em modelos animais e em pacientes com hipertensão e diabetes, explicando em parte o relaxamento vascular prejudicado.
+A5: V. O óxido nítrico (NO) normalmente suprime a produção e os efeitos dos EDCFs, e a perda dessa inibição na disfunção endotelial favorece as respostas contráteis.
+G: V
+C: Existe um antagonismo funcional entre o NO e os EDCFs. O NO fisiológico inibe a via da COX e os efeitos dos receptores TP. Quando a biodisponibilidade de NO diminui, essa "freada" é liberada, permitindo que as respostas contráteis predominem.
+
+QCH: Sobre a regulação da função endotelial por mediadores e forças físicas, assinale todas as assertivas corretas:
+A1: I. O estresse de cisalhamento (shear stress) laminar e constante é um estímulo patológico que induz apoptose e inflamação nas células endoteliais.
+G: F
+C: O estresse de cisalhamento laminar é um estímulo fisiológico e ateroprotetor. É o fluxo sanguíneo turbulento ou de baixo cisalhamento que está associado a um fenótipo disfuncional e pró-inflamatório.
+A2: II. A angiotensina II promove disfunção endotelial ao estimular a produção de espécies reativas de oxigênio (ROS) via NADPH oxidase e ao AUMENTAR a biodisponibilidade de NO.
+G: F
+C: A angiotensina II é um potente indutor de estresse oxidativo na parede vascular, ativando a NADPH oxidase. O aumento de ROS leva à inativação do NO e à disfunção endotelial generalizada. Então toda assertiva está correta, exceto que é <b>diminuir a biodisponibilidade de NO em vez de aumentar</b>.
+A3: III. O estrogênio exerce efeitos cardiovasculares protetores, em parte, por aumentar a expressão e atividade da eNOS e suprimir a produção de EDCFs.
+G: V
+C: Os efeitos vasculares benéficos do estrogênio são bem documentados e incluem a promoção da via do NO e a inibição das vias contráteis dependentes da COX, explicando a menor incidência de doenças cardiovasculares em mulheres na pré-menopausa.
+A4: IV. A endotelina-1 (ET-1) atua exclusivamente como um vasoconstritor, sem qualquer efeito sobre o próprio endotélio.
+G: F
+C: A ET-1, além de sua potente ação vasoconstritora no músculo liso (via ETA/ETB), também atua em receptores ETB no próprio endotélio, estimulando a liberação de mediadores relaxantes (NO, PGI2) como um mecanismo de feedback negativo.
+A5: V. As junções comunicantes (formadas por conexinas) entre células endoteliais (homocelulares) e entre células endoteliais e musculares lisas (mioendoteliais) são cruciais para coordenar as respostas vasculares, como a propagação da hiperpolarização.
+G: V
+C: A comunicação intercelular direta via junções comunicantes é fundamental para a função vascular coordenada. Elas permitem a passagem de íons e segundos mensageiros, possibilitando que um estímulo local se propague por um segmento do vaso, como ocorre na vasodilatação mediada por EDHF.
+
+Q: Qual das seguintes opções descreve mais precisamente a principal função do endotélio em condições fisiológicas normais?
+A) Atuar exclusivamente como uma barreira física passiva entre o sangue e os tecidos.
+B) Regular ativamente a fluidez sanguínea, o tônus vascular e a resposta inflamatória.
+C) Iniciar a cascata de coagulação em vasos sanguíneos intactos.
+D) Promover a adesão de leucócitos e plaquetas à sua superfície em estado quiescente.
+E) Sintetizar principalmente fatores vasoconstritores para manter a pressão arterial.
+G: B
+C: Alternativa correta: {B}) O endotélio é um órgão dinâmico e metabolicamente ativo. Suas células sintetizam e liberam uma variedade de fatores que regulam o tônus dos vasos sanguíneos (vasodilatadores como óxido nítrico e prostaciclina, e vasoconstritores como a endotelina), mantêm o sangue fluido (propriedades antitrombóticas e antiagregantes) e modulam a inflamação (controle da adesão e migração de leucócitos). As demais opções são incorretas porque o endotélio não é uma barreira passiva, ele previne a coagulação em vasos intactos, inibe a adesão celular em estado quiescente e mantém um equilíbrio entre fatores vasodilatadores e vasoconstritores.
+
+Q: As células endoteliais desempenham um papel crucial como um órgão endócrino, parácrino e metabolizador. Qual das seguintes substâncias é um exemplo de um potente fator vasodilatador liberado pelo endotélio?
+A) Endotelina-1
+B) Angiotensina II
+C) Tromboxano A2
+D) Óxido Nítrico (NO)
+E) Fator de Ativação Plaquetária (PAF)
+G: D
+C: Alternativa correta: {D}) O Óxido Nítrico (NO) é um dos mais importantes fatores relaxantes derivados do endotélio (EDRF). Ele se difunde para as células musculares lisas adjacentes, ativa a guanilil ciclase solúvel, resultando em vasodilatação e, consequentemente, aumento do fluxo sanguíneo. Endotelina-1 e Angiotensina II são potentes vasoconstritores. Tromboxano A2, embora possa ser produzido por células endoteliais em certas condições, é primariamente um vasoconstritor e agregante plaquetário. O PAF está mais associado à ativação plaquetária e inflamação.
+
+Q: De que maneira o endotélio contribui para a manutenção da fluidez sanguínea e prevenção da trombose em um vaso saudável?
+A) Expressando o Fator Tecidual (FT) em sua superfície para iniciar a coagulação.
+B) Liberando Fator de von Willebrand (FvW) para promover a adesão plaquetária.
+C) Sintetizando prostaciclina (PGI2) e óxido nítrico (NO), que inibem a agregação plaquetária.
+D) Diminuindo a expressão de trombomodulina para aumentar a atividade da trombina.
+E) Secretando inibidores do ativador do plasminogênio (PAI-1) para impedir a fibrinólise.
+G: C
+C: Alternativa correta: {C}) Em um estado quiescente, o endotélio mantém a fluidez do sangue por meio de várias ações. A produção de prostaciclina (PGI2) e óxido nítrico (NO) é fundamental, pois ambos são potentes inibidores da adesão e agregação plaquetária. O endotélio saudável não expressa Fator Tecidual. A liberação de FvW ocorre principalmente em resposta a lesões. A trombomodulina na superfície endotelial liga-se à trombina, convertendo-a em um anticoagulante. A secreção de PAI-1 é um mecanismo pró-trombótico, não antitrombótico.
+
+Q: O equilíbrio entre trombose e fibrinólise é finamente regulado pelo endotélio. Qual o papel do ativador do plasminogênio tecidual (t-PA) liberado pelas células endoteliais?
+A) Inibir a ação da trombina, prevenindo a formação de fibrina.
+B) Converter o plasminogênio em plasmina para dissolver coágulos de fibrina.
+C) Estabilizar o Fator VIII na circulação, promovendo a coagulação.
+D) Atuar como ponte entre o colágeno exposto e as plaquetas em locais de lesão.
+E) Inibir a atividade do próprio t-PA, em um mecanismo de feedback negativo.
+G: B
+C: Alternativa correta: {B}) O ativador do plasminogênio tecidual (t-PA) é uma enzima crucial no sistema fibrinolítico. Liberado pelas células endoteliais, sua principal função é converter a proenzima inativa, plasminogênio, na enzima ativa, plasmina. A plasmina, por sua vez, degrada a rede de fibrina que forma o coágulo sanguíneo, restaurando a patência do vaso. A sua atividade é regulada pelo PAI-1, também secretado pelo endotélio.
+
+Q: Durante um processo inflamatório, a interação entre leucócitos e o endotélio é um evento-chave. Qual molécula de adesão, expressa na superfície das células endoteliais ativadas, é fundamental para a fase de rolamento dos leucócitos?
+A) VE-caderina
+B) Integrina
+C) P-selectina
+D) PECAM-1
+E) Conexina 40
+G: C
+C: Alternativa correta: {C}) A cascata de adesão leucocitária inicia-se com a captura e o rolamento. As selectinas (E-selectina e P-selectina nas células endoteliais) são as principais responsáveis por mediar essa interação inicial de baixa afinidade, que desacelera os leucócitos circulantes. As integrinas nos leucócitos medeiam a adesão firme subsequente, e a PECAM-1 está envolvida na etapa final de diapedese (transmigração). VE-caderinas são juncionais e Conexinas formam junções comunicantes.
+
+Q: A diapedese, ou transmigração de leucócitos através da barreira endotelial, ocorre preferencialmente por qual via?
+A) Através de canais iônicos específicos.
+B) Pela via transcelular, atravessando o citoplasma da célula endotelial.
+C) Pela via paracelular, através das junções interendoteliais.
+D) Por meio de difusão simples, sem necessidade de receptores.
+E) Utilizando os corpos de Weibel-Palade como portais de saída.
+G: C
+C: Alternativa correta: {C}) A migração transendotelial de leucócitos ocorre predominantemente pela via paracelular, ou seja, passando através dos espaços entre as células endoteliais adjacentes. Esse processo requer a reorganização das junções intercelulares, como as junções aderentes e oclusivas, e é guiado por moléculas de adesão como PECAM-1 e JAMs, que estão concentradas nessas junções. Embora a via transcelular exista, ela é menos comum.
+
+Q: A disfunção endotelial é um estado patológico caracterizado por um desequilíbrio na produção de fatores vasoativos e pró/anti-inflamatórios. Qual das seguintes condições é uma consequência direta de um endotélio disfuncional?
+A) Um estado predominantemente antitrombótico e anti-inflamatório.
+B) Aumento da biodisponibilidade de óxido nítrico e melhora do relaxamento vascular.
+C) Inclinação da balança hemostática para um estado pró-trombótico, favorecendo a aterotrombose.
+D) Diminuição da permeabilidade vascular e redução do extravasamento de leucócitos.
+E) Redução da produção de espécies reativas de oxigênio (ROS).
+G: C
+C: Alternativa correta: {C}) A disfunção endotelial é um termo que abrange múltiplos defeitos, mas um de seus pilares é a mudança de um fenótipo antitrombótico para um pró-trombótico. Isso inclui a redução da produção de NO e prostaciclina, aumento da expressão de moléculas de adesão e secreção de fatores pró-coagulantes, o que contribui para o desenvolvimento de doenças como a aterotrombose. As demais alternativas descrevem as características de um endotélio saudável.
+
+Q: O desacoplamento da enzima óxido nítrico sintase endotelial (eNOS) é um mecanismo central na disfunção endotelial. O que ocorre quando a eNOS está desacoplada?
+A) A enzima aumenta exponencialmente a produção de óxido nítrico (NO).
+B) A enzima passa a produzir ânions superóxido (O2•−) em vez de NO.
+C) A enzima torna-se permanentemente inativa e é degradada.
+D) A enzima passa a produzir monóxido de carbono (CO) como principal produto.
+E) A enzima perde sua localização na membrana celular e fica livre no citosol.
+G: B
+C: Alternativa correta: {B}) O desacoplamento da eNOS ocorre quando há deficiência de seu cofator essencial, a tetrahidrobiopterina (BH4), ou de seu substrato, L-arginina. Nessas condições, o fluxo de elétrons dentro da enzima é desviado do substrato para o oxigênio molecular, resultando na produção de ânions superóxido (O2•−) em vez de óxido nítrico (NO). Isso não só reduz a biodisponibilidade de NO, mas também aumenta o estresse oxidativo, exacerbando a disfunção endotelial.
+
+Q: Diversos fatores podem modular a função das células endoteliais. Qual dos seguintes estímulos físicos é um potente regulador da expressão gênica endotelial, promovendo um fenótipo ateroprotetor?
+A) Hipóxia severa
+B) Estresse de cisalhamento (shear stress) laminar e constante
+C) Turbulência do fluxo sanguíneo
+D) Pressão hidrostática elevada
+E) Estiramento cíclico excessivo
+G: B
+C: Alternativa correta: {B}) O estresse de cisalhamento laminar, a força de atrito exercida pelo fluxo sanguíneo sobre a superfície endotelial, é um potente regulador fisiológico. Ele induz a expressão de genes que promovem um fenótipo saudável e protetor, incluindo o aumento da produção de NO (via eNOS) e a supressão de vias inflamatórias e pró-coagulantes. Em contraste, o fluxo turbulento, encontrado em bifurcações arteriais, está associado à disfunção endotelial e ao desenvolvimento de aterosclerose.
+
+Q: Fatores de risco cardiovascular, como hipercolesterolemia e diabetes, afetam negativamente a função endotelial. Qual é o mecanismo comum pelo qual esses fatores levam à disfunção endotelial?
+A) Aumento da produção e biodisponibilidade do óxido nítrico.
+B) Diminuição da expressão de moléculas de adesão leucocitária.
+C) Indução de um estado de estresse oxidativo crônico.
+D) Aumento da produção de fatores hiperpolarizantes derivados do endotélio (EDHFs).
+E) Redução da produção de endotelina-1.
+G: C
+C: Alternativa correta: {C}) Um denominador comum na patogênese da disfunção endotelial induzida por diversos fatores de risco (hiperglicemia, lipoproteínas oxidadas, hipertensão) é o aumento do estresse oxidativo. A produção excessiva de espécies reativas de oxigênio (ROS), como o ânion superóxido, leva à inativação do óxido nítrico (formando peroxinitrito), ao desacoplamento da eNOS e à ativação de vias pró-inflamatórias, comprometendo a função vascular.
+
+Q: A interação entre o endotélio e as plaquetas é fundamental para a hemostasia. Qual molécula, liberada dos corpos de Weibel-Palade das células endoteliais, é essencial para a adesão inicial das plaquetas ao subendotélio em locais de lesão vascular?
+A) Trombomodulina
+B) Fator de von Willebrand (FvW)
+C) Prostaciclina (PGI2)
+D) Ativador do plasminogênio tecidual (t-PA)
+E) Óxido nítrico (NO)
+G: B
+C: Alternativa correta: {B}) O Fator de von Willebrand (FvW) é uma glicoproteína multimérica sintetizada e armazenada nos corpos de Weibel-Palade das células endoteliais. Em caso de lesão vascular e exposição do subendotélio, o FvW é liberado e atua como uma ponte molecular, ligando-se ao colágeno exposto e ao receptor GPIb nas plaquetas, mediando a adesão plaquetária inicial, especialmente sob condições de alto fluxo sanguíneo.
+
+Q: A arteriogênese é o processo de maturação de novos vasos sanguíneos. Qual evento é crucial para a estabilização de um tubo endotelial recém-formado e sua transformação em um vaso funcional?
+A) A degradação contínua da matriz extracelular pelas metaloproteinases.
+B) O recrutamento e associação de pericitos ou células musculares lisas vasculares.
+C) A expressão aumentada de antagonistas da angiopoietina-1, como a angiopoietina-2.
+D) A inibição completa da via do Fator de Crescimento Derivado de Plaquetas (PDGF).
+E) A manutenção de um estado de alta permeabilidade vascular.
+G: B
+C: Alternativa correta: {B}) Após a formação de um plexo vascular primitivo por vasculogênese e angiogênese, a arteriogênese (ou maturação) é essencial. Este processo envolve o recrutamento de células murais (pericitos em capilares e células musculares lisas em vasos maiores) que se associam ao tubo endotelial. Essas células fornecem suporte estrutural, regulam o diâmetro do vaso e produzem matriz extracelular, estabilizando a nova vasculatura e tornando-a funcional e menos permeável. A via do PDGF é um mediador chave nesse recrutamento.
+
+Q: As células endoteliais possuem intensa atividade metabólica. Uma de suas funções é a conversão de hormônios circulantes. Qual enzima, abundantemente expressa no endotélio, é responsável por converter a Angiotensina I em Angiotensina II, um potente vasoconstritor?
+A) Endopeptidase neutra (NEP)
+B) Enzima conversora de angiotensina (ECA)
+C) Monoamina oxidase (MAO)
+D) Enzima conversora de endotelina (ECE)
+E) Arginase-II
+G: B
+C: Alternativa correta: {B}) A Enzima Conversora de Angiotensina (ECA) é uma ectoenzima proeminente na superfície luminal das células endoteliais, especialmente nos pulmões. Sua função mais conhecida é a clivagem da Angiotensina I para formar a Angiotensina II, o principal peptídeo efetor do sistema renina-angiotensina. A ECA também degrada a bradicinina, um vasodilatador, contribuindo duplamente para o aumento da pressão arterial.
+
+Q: Além de sintetizar e liberar substâncias, o endotélio também metaboliza e inativa mediadores. A enzima Catecol-O-metiltransferase (COMT), presente nas células endoteliais, está envolvida na inativação de qual das seguintes aminas vasoativas?
+A) Bradicinina
+B) Endotelina-1
+C) Serotonina
+D) Angiotensina II
+E) Óxido nítrico
+G: C
+C: Alternativa correta: {C}) As células endoteliais expressam enzimas como a monoamina oxidase (MAO) e a catecol-O-metiltransferase (COMT). Essas enzimas são responsáveis pelo catabolismo de aminas biogênicas, como a epinefrina (adrenalina) e a serotonina. Ao metabolizar esses compostos, o endotélio ajuda a regular seus níveis circulantes e a limitar suas ações vasoativas.
+
+Q: A regulação do tônus vascular pelo endotélio envolve um equilíbrio delicado entre fatores relaxantes e contráteis. Qual peptídeo, produzido pelo endotélio, é considerado um dos mais potentes vasoconstritores endógenos conhecidos?
+A) Peptídeo natriurético tipo C (CNP)
+B) Adrenomedulina
+C) Endotelina-1 (ET-1)
+D) Peptídeo relacionado ao gene da calcitonina (CGRP)
+E) Bradicinina
+G: C
+C: Alternativa correta: {C}) A Endotelina-1 (ET-1) é um peptídeo de 21 aminoácidos sintetizado e secretado pelas células endoteliais. Ela exerce uma potente e sustentada ação vasoconstritora ao atuar sobre os receptores ETA e ETB nas células musculares lisas vasculares. Sua produção é aumentada em diversas condições patológicas, contribuindo para a hipertensão e a disfunção vascular.
+
+Q: O óxido nítrico (NO) e a prostaciclina (PGI2) são dois importantes vasodilatadores derivados do endotélio. Eles exercem seu efeito relaxante nas células musculares lisas vasculares através da ativação de quais vias de segundos mensageiros, respectivamente?
+A) Aumento de AMP cíclico (AMPc) e aumento de GMP cíclico (GMPc).
+B) Aumento de GMP cíclico (GMPc) e aumento de AMP cíclico (AMPc).
+C) Diminuição de AMP cíclico (AMPc) e aumento de cálcio intracelular.
+D) Aumento de diacilglicerol (DAG) e aumento de inositol trifosfato (IP3).
+E) Diminuição de cálcio intracelular e diminuição de GMP cíclico (GMPc).
+G: B
+C: Alternativa correta: {B}) O óxido nítrico (NO) ativa a guanilil ciclase solúvel (sGC) na célula muscular lisa, levando ao aumento do segundo mensageiro guanosina monofosfato cíclico (cGMP). A prostaciclina (PGI2) liga-se ao seu receptor de membrana (receptor IP), que está acoplado à ativação da adenilil ciclase, resultando no aumento do segundo mensageiro adenosina monofosfato cíclico (AMPc). Ambos, cGMP e AMPc, ativam quinases que promovem o relaxamento muscular.
+
+Q: A atividade da óxido nítrico sintase endotelial (eNOS) é rigorosamente regulada. Qual dos seguintes eventos é necessário para a ativação da eNOS e a produção de óxido nítrico em resposta a agonistas como a bradicinina?
+A) A ligação da enzima à caveolina-1.
+B) A dissociação do cofator tetrahidrobiopterina (BH4).
+C) O aumento do cálcio intracelular e a ligação do complexo cálcio-calmodulina.
+D) A fosforilação da enzima no resíduo Treonina 495.
+E) A diminuição da disponibilidade do substrato L-arginina.
+G: C
+C: Alternativa correta: {C}) A eNOS é uma enzima dependente de cálcio-calmodulina. Um aumento na concentração de cálcio intracelular ([Ca2+]i), como o induzido pela bradicinina, promove a ligação do cálcio à proteína calmodulina. O complexo cálcio-calmodulina então se liga à eNOS, deslocando a proteína inibitória caveolina-1 e ativando a enzima para produzir óxido nítrico. A fosforilação da Thr495 é inibitória, e a deficiência de BH4 ou L-arginina leva ao desacoplamento da enzima, não à sua ativação.
+
+Q: Além do óxido nítrico, outros mediadores gasosos, ou "gasotransmissores", como o monóxido de carbono (CO) e o sulfeto de hidrogênio (H2S), podem regular o tônus vascular. O CO, produzido pela enzima heme-oxigenase, pode causar vasodilatação principalmente através de qual mecanismo?
+A) Inibição direta da óxido nítrico sintase (eNOS).
+B) Ativação de canais de potássio de grande condutância ativados por cálcio (BKCa).
+C) Bloqueio de todos os tipos de receptores de prostaglandinas.
+D) Ativação potente da adenilil ciclase.
+E) Ligação e ativação dos receptores de endotelina.
+G: B
+C: Alternativa correta: {B}) O monóxido de carbono (CO) é um vasodilatador que, embora possa ativar fracamente a guanilil ciclase, exerce um efeito relaxante significativo através da ativação direta de canais de potássio, especialmente os canais BKCa, nas células musculares lisas. A ativação desses canais leva à hiperpolarização da membrana celular, fechamento de canais de cálcio dependentes de voltagem e consequente relaxamento.
+
+Q: Na diabetes mellitus, a hiperglicemia crônica induz disfunção endotelial. Um mecanismo chave nesse processo é a produção aumentada de prostanoides vasoconstritores. Qual enzima e qual receptor estão frequentemente implicados nessa resposta patológica?
+A) Lipoxigenase e receptores de leucotrienos.
+B) Ciclooxigenase (COX) e receptores de tromboxano (TP).
+C) Heme-oxigenase e receptores de CGRP.
+D) Óxido nítrico sintase e receptores de adenosina.
+E) Enzima conversora de angiotensina e receptores AT2.
+G: B
+C: Alternativa correta: {B}) Em estados de hiperglicemia e estresse oxidativo, como na diabetes, a via do ácido araquidônico no endotélio é desviada para a produção de fatores de contração derivados do endotélio (EDCFs). A ciclooxigenase (COX-1 e/ou COX-2) é ativada, gerando endoperóxidos (PGH2) e outras prostaglandinas (como PGI2, que paradoxalmente pode se tornar contrátil) que atuam nos receptores de tromboxano (TP) das células musculares lisas, causando vasoconstrição e contribuindo para a disfunção vascular.
+
+Q: A aterosclerose é fundamentalmente uma doença inflamatória crônica da parede arterial onde a disfunção endotelial é um evento inicial. Qual é o papel dos receptores TP (tromboxano/endoperóxido) na progressão da aterosclerose?
+A) Mediar exclusivamente a vasodilatação e inibir a inflamação.
+B) Promover a degradação da placa aterosclerótica.
+C) Aumentar a produção de óxido nítrico e reduzir a adesão de leucócitos.
+D) Mediar a vasoconstrição, a agregação plaquetária e a inflamação vascular.
+E) Inibir a proliferação de células musculares lisas.
+G: D
+C: Alternativa correta: {D}) A ativação dos receptores TP desempenha um papel deletério na aterosclerose. Esses receptores medeiam os efeitos do tromboxano A2 e outros prostanoides contráteis, resultando em vasoconstrição, proliferação de células musculares lisas e, crucialmente, agregação plaquetária. Além disso, a ativação de receptores TP promove a inflamação vascular, aumentando a expressão de moléculas de adesão e contribuindo para o recrutamento de leucócitos para a placa em formação.
+
+Q: Observa-se uma menor incidência de doenças cardiovasculares em mulheres na pré-menopausa em comparação com homens da mesma idade. Qual hormônio e qual mecanismo protetor explicam parcialmente essa diferença?
+A) Testosterona, que aumenta a produção de NO.
+B) Estrogênio, que aumenta a biodisponibilidade de NO e modula a produção de prostanoides.
+C) Progesterona, que causa vasoconstrição e aumenta a pressão arterial.
+D) Aldosterona, que promove a excreção de sódio e protege o endotélio.
+E) Cortisol, que possui potentes efeitos anti-inflamatórios vasculares.
+G: B
+C: Alternativa correta: {B}) O estrogênio exerce efeitos protetores sobre o sistema cardiovascular. Ele aumenta a expressão e a atividade da eNOS, elevando a produção de óxido nítrico. Além disso, modula a produção de prostanoides, favorecendo fatores vasodilatadores como a prostaciclina e suprimindo a produção de fatores de contração derivados do endotélio (EDCFs) que atuam via receptores TP. Essa modulação favorável do tônus vascular e da inflamação contribui para a menor incidência de doenças cardiovasculares em mulheres na pré-menopausa.
+
+Q: Embora o estrogênio seja geralmente protetor, em certas condições ele pode estar associado a doenças envolvendo vasoconstrição excessiva. Isso pode ocorrer porque o estrogênio pode aumentar a expressão de qual combinação de enzimas/receptores na parede vascular?
+A) eNOS e receptores de prostaciclina (IP).
+B) COX-2, tromboxano sintase e receptores TP.
+C) Aromatase e receptores de estrogênio.
+D) Lipoxigenase e receptores de leucotrienos.
+E) Heme-oxigenase e canais de potássio.
+G: B
+C: Alternativa correta: {B}) Paradoxalmente, o estrogênio também pode promover um estado pró-contrátil em alguns leitos vasculares. Estudos mostram que ele pode aumentar a expressão de COX-2 e tromboxano sintase nas células endoteliais e musculares lisas, além de aumentar a expressão dos receptores TP nas células musculares lisas. Essa regulação positiva pode levar a uma maior produção de tromboxano A2 e/ou PGH2 e a uma resposta contrátil exacerbada, o que pode estar relacionado a doenças como enxaqueca ou hipertensão pulmonar primária, mais prevalentes em mulheres.
+
+Q: O fator hiperpolarizante derivado do endotélio (EDHF) é um mecanismo de relaxamento vascular independente do NO e da prostaciclina. Qual é o evento celular fundamental que define a resposta mediada por EDHF?
+A) A contração das células endoteliais.
+B) A hiperpolarização da membrana das células musculares lisas vasculares.
+C) A liberação de endotelina-1 das células endoteliais.
+D) O bloqueio de todos os canais de potássio na parede vascular.
+E) A ativação da guanilil ciclase solúvel no músculo liso.
+G: B
+C: Alternativa correta: {B}) A marca registrada da via do EDHF é a hiperpolarização (aumento da negatividade do potencial de membrana) das células musculares lisas subjacentes. Essa hiperpolarização leva ao fechamento de canais de cálcio dependentes de voltagem, diminuindo o influxo de cálcio e causando relaxamento. A hiperpolarização pode ser causada pela passagem de corrente elétrica das células endoteliais hiperpolarizadas via junções comunicantes ou pela ação de um mediador químico difusível.
+
+Q: A "via clássica" do EDHF envolve a abertura de canais iônicos específicos nas células endoteliais. A ativação de quais dois tipos de canais de potássio nas células endoteliais é crucial para iniciar a hiperpolarização endotelial que pode ser transmitida para o músculo liso?
+A) Canais de potássio dependentes de voltagem (Kv) e canais de potássio sensíveis a ATP (KATP).
+B) Canais de potássio de grande condutância (BKCa) e canais de potássio retificadores de influxo (Kir).
+C) Canais de potássio de condutância intermediária (IKCa) e de pequena condutância (SKCa) ativados por cálcio.
+D) Canais de cloreto ativados por cálcio (ClCa) e canais de sódio.
+E) Canais TRP (Potencial Receptor Transiente) e canais de cálcio tipo T.
+G: C
+C: Alternativa correta: {C}) A resposta mediada por EDHF é iniciada por um aumento do cálcio intracelular na célula endotelial. Esse cálcio ativa dois tipos específicos de canais de potássio: os de condutância intermediária (IKCa) e os de pequena condutância (SKCa). A abertura desses canais causa um efluxo de íons potássio, resultando na hiperpolarização da própria célula endotelial. Essa hiperpolarização é o sinal que, subsequentemente, é transmitido para a célula muscular lisa, causando seu relaxamento.
