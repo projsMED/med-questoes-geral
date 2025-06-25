@@ -1,4 +1,3 @@
-```
 Q: A hanseníase é uma doença causada pelo Mycobacterium leprae, contagiosa que passa de uma pessoa doente, que não esteja em tratamento, para outra. Constituem sinais e sintomas dermatológicos da hanseníase, EXCETO:
 A) manchas esbranquiçadas ou avermelhadas;
 B) pápulas;
@@ -362,4 +361,70 @@ B) Encaminhar para avaliação de resistência medicamentosa.
 C) Acompanhar a paciente clínica e baciloscopicamente sem reiniciar tratamento.
 D) Substituir a dapsona pela ofloxacina e manter o tratamento.
 G: C
-```
+
+Q: Na Hanseníase, a avaliação do grau de incapacidade, deve ser realizada, obrigatoriamente, no momento do diagnóstico e na alta, e também a cada seis meses no tratamento multibacilar (MB). Assinale a alternativa que contemple a descrição da classificação de grau UM de incapacidade. 
+A) Lesões tróficas e/ou lesões traumáticas nos pés
+B) Nenhum problema com os olhos, mãos e pés devido à hanseníase
+C) Olhos: lagoftalmo e/ou ectrópio
+D) Lesões tróficas e/ou lesões traumáticas nas mãos
+E) Diminuição ou perda da sensibilidade nos olhos
+G: E
+C:
+GRAU 0
+‎ 
+nenhuma alteração sensitiva ou motora com os olhos, nas mãos e nos pés decorrentes da hanseníase for encontrada.
+‎ 
+GRAU 1
+‎ 
+NOS OLHOS: quando houver diminuição da força muscular das pálpebras sem deficiências visíveis E/OU diminuição ou perda da sensibilidade da córnea (resposta demorada ou ausente ao toque do fio dental ou diminuição/ausência do piscar).
+‎ 
+NAS MÃOS: quando houver diminuição da força muscular das mãos sem deficiências visíveis E/OU não sentir o monofilamento 2g (lilás) ou o toque leve da ponta de caneta esferográfica, em pelos menos um ponto, nas palmas.
+‎ 
+NOS PÉS: quando houver diminuição da força muscular dos pés sem deficiências visíveis E/OU não sentir o monofilamento 2g (lilás) ou o toque leve da ponta de caneta esferográfica, em pelos menos um ponto, nas plantas.
+‎ 
+GRAU 2
+‎ 
+NOS OLHOS: lagoftalmo E/OU ectrópio; entrópio; triquíase; opacidade corneana central, iridociclite E/OU não conta dedos a 6 metros ou a acuidade visual for < 0,1 ou 6:60.
+‎ 
+NAS MÃOS: garras, reabsorção óssea, atrofia muscular, mão caída, contratura, feridas tróficas ou traumáticas em áreas onde não sente 2g ou o toque leve da ponta de caneta esferográfica.
+‎ 
+NOS PÉS: garras, reabsorção óssea, atrofia muscular, pé caído, contratura, feridas tróficas ou traumáticas em áreas onde não sente 2g ou o toque leve da ponta de caneta esferográfica.
+
+Q: Avaliação clínica da hanseníase deve ser realizada obedecendo a critérios que determinam grau de incapacidade física que varia entre 0, 1 e 2 graus. É uma característica de incapacidade física grau 2 por Hanseníase:
+A) Olhos – Força muscular das pálpebras e sensibilidade da córnea preservadas: conta dedos a 6 metros ou acuidade visual ≥0,1 ou 6:60
+B) Mãos – Diminuição da força muscular das mãos sem deficiências visíveis e/ou alteração da sensibilidade palmar: não sente o monofilamento 2g (lilás) ou o toque da ponta de caneta esferográfica
+C) Pés – Diminuição da força muscular dos pés sem deficiências visíveis e/ou alteração da sensibilidade plantar: não sente o monofilamento 2g (lilás) ou o toque da ponta de caneta esferográfica
+D) Pés – Deficiência(s) visível(eis) causadas pela hanseníase, como: garras, reabsorção óssea, atrofia muscular, pé caído, contratura, feridas tróficas e/ou traumáticas
+E) Olhos – Diminuição da força muscular das pálpebras sem deficiências visíveis e/ou diminuição ou perda da sensibilidade da córnea: resposta demorada ou ausente ao toque do fio dental ou diminuição/ ausência do piscar
+G: D
+
+Q: A avaliação neurológica simplificada na hanseníase adotada no Brasil, envolve a avaliação de nervos e serve de subsídio para a determinação do grau de incapacidade, que é um importante achado clínico funcional do paciente e indicador epidemiológico. Quanto a interpretação do Grau de Incapacidade na hanseníase, assinale a afirmativa correta.
+A) A presença de mal perfurante plantar está associada ao Grau II de incapacidade.
+B) O espessamento do nervo tibial posterior, sem alteração de sensibilidade plantar, está associado ao Grau I de incapacidade.
+C) Nas mãos, o Grau I de Incapacidade é definido por diminuição da força muscular das mãos sem deficiências visíveis sem alteração da sensibilidade.
+D) Alta taxa de detecção de casos com Grau II de incapacidade no momento do diagnóstico indica que, em determinada região, os casos de hanseníase estão sendo diagnosticados precocemente.
+E) O Grau de Incapacidade zero indica que nas mãos e pés a força muscular está preservada, e na sensibilidade palmar e plantar sente o monofilamento 10g (laranja) ou sente o mais leve toque da ponta de caneta esferográfica.
+G: A
+
+Q: A avaliação do grau de incapacidade física e da função neural dos pacientes com hanseníase é imprescindível para avaliar a integridade da função neural e o grau de incapacidade física no momento do diagnóstico, na ocorrência de estados reacionais e na alta por cura (término da poliquimioterapia). Assinale a alternativa INCORRETA sobre como a avaliação neurológica deve ser realizada.
+A) No início do tratamento.
+B) A cada mês durante o tratamento se não houver queixas.
+C) Sempre que houver queixas, tais como: dor em trajeto de nervos, fraqueza muscular, início ou piora de queixas parestésicas.
+D) No controle periódico de doentes em uso de corticoides por estados reacionais e neurites.
+G: B
+
+Q: Em relação à Classificação do Grau de Incapacidade gerada pela hanseníase, é INCORRETO afirmar que
+A) Grau Zero - Nenhum problema com os olhos, mãos e pés devido à hanseníase.
+B) Grau 1- Diminuição ou perda da sensibilidade nos olhos.
+C) Grau 1 - Diminuição ou perda da sensibilidade nas mãos e /ou pés (não sente 2g ou toque da caneta).
+D) Grau 2 - Olhos: lagoftalmo e/ou ectrópio; triquíase; opacidade corneana central; acuidade visual menor que 0,1 ou não conta dedos a 6m.
+E) Grau 1 - Mãos: lesões tróficas e/ou lesões traumáticas; garras; reabsorção; mão caída.
+G: E
+
+Q: Durante o acolhimento a um paciente com hanseníase, foi verificado que ele apresentava incapacidade em fechar os olhos completamente em virtude da doença. Nesse caso, é correto afirmar que o grau de incapacidade apresentado pelo paciente é 
+A) 0.
+B) 1.
+C) 2.
+D) 3.
+E) 4.
+G: C
