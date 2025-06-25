@@ -404,42 +404,53 @@
   },
   {
     "type": "folder",
-    "name": "Práticas em Saúde N1",
+    "name": "Práticas em Saúde - N1",
     "children": [
       {
         "type": "file",
         "name": "Diabetes - QConcursos.txt",
-        "path": "quizes-da-nuvem/Práticas em Saúde N1/Diabetes - QConcursos.txt"
+        "path": "quizes-da-nuvem/Práticas em Saúde - N1/Diabetes - QConcursos.txt"
       },
       {
         "type": "file",
         "name": "Hipertensão - QConcursos.txt",
-        "path": "quizes-da-nuvem/Práticas em Saúde N1/Hipertensão - QConcursos.txt"
+        "path": "quizes-da-nuvem/Práticas em Saúde - N1/Hipertensão - QConcursos.txt"
       },
       {
         "type": "file",
         "name": "Notificação de Violência - QConcursos.txt",
-        "path": "quizes-da-nuvem/Práticas em Saúde N1/Notificação de Violência - QConcursos.txt"
+        "path": "quizes-da-nuvem/Práticas em Saúde - N1/Notificação de Violência - QConcursos.txt"
       },
       {
         "type": "file",
         "name": "Programa Saúde na Escola - QConcursos.txt",
-        "path": "quizes-da-nuvem/Práticas em Saúde N1/Programa Saúde na Escola - QConcursos.txt"
+        "path": "quizes-da-nuvem/Práticas em Saúde - N1/Programa Saúde na Escola - QConcursos.txt"
       },
       {
         "type": "file",
         "name": "SISCOLO - QConcursos.txt",
-        "path": "quizes-da-nuvem/Práticas em Saúde N1/SISCOLO - QConcursos.txt"
+        "path": "quizes-da-nuvem/Práticas em Saúde - N1/SISCOLO - QConcursos.txt"
       },
       {
         "type": "file",
         "name": "SISMAMA - QConcursos.txt",
-        "path": "quizes-da-nuvem/Práticas em Saúde N1/SISMAMA - QConcursos.txt"
+        "path": "quizes-da-nuvem/Práticas em Saúde - N1/SISMAMA - QConcursos.txt"
       },
       {
         "type": "file",
         "name": "SISPRENATAL - QConcursos.txt",
-        "path": "quizes-da-nuvem/Práticas em Saúde N1/SISPRENATAL - QConcursos.txt"
+        "path": "quizes-da-nuvem/Práticas em Saúde - N1/SISPRENATAL - QConcursos.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "Práticas em Saúde - N2",
+    "children": [
+      {
+        "type": "file",
+        "name": "Hanseníase - Qconcursos.txt",
+        "path": "quizes-da-nuvem/Práticas em Saúde - N2/Hanseníase - Qconcursos.txt"
       }
     ]
   },
