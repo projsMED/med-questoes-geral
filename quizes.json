@@ -451,6 +451,16 @@
         "type": "file",
         "name": "Hanseníase - Qconcursos.txt",
         "path": "quizes-da-nuvem/Práticas em Saúde - N2/Hanseníase - Qconcursos.txt"
+      },
+      {
+        "type": "file",
+        "name": "Vacinação - Qconcursos.txt",
+        "path": "quizes-da-nuvem/Práticas em Saúde - N2/Vacinação - Qconcursos.txt"
+      },
+      {
+        "type": "file",
+        "name": "Vacinação da Criança - Baseadas no Calendário.txt",
+        "path": "quizes-da-nuvem/Práticas em Saúde - N2/Vacinação da Criança - Baseadas no Calendário.txt"
       }
     ]
   },
