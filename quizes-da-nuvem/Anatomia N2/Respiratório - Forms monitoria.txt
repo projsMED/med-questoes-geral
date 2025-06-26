@@ -1,5 +1,5 @@
 Q: Escreva as estruturas.
-https://projsmed.github.io/med-questoes-3-periodo/Imagens%20anatomia/monitoria1.jpg
+https://projsmed.github.io/med-questoes-3-periodo/imagens%20anatomia/monitoria1.jpg
 I_A) Estrutura 1
 GABARITO: Traqueia.
 I_B) Estrutura 2
@@ -10,7 +10,7 @@ GABARITO: Brônquio principal.
 ---
 
 Q: Escreva as estruturas.
-https://projsmed.github.io/med-questoes-3-periodo/Imagens%20anatomia/monitoria2.jpg
+https://projsmed.github.io/med-questoes-3-periodo/imagens%20anatomia/monitoria2.jpg
 I_A) Estrutura 1
 GABARITO: Lobo superior.
 I_B) Estrutura 2
@@ -27,7 +27,7 @@ GABARITO: Carina da traqueia.
 ---
 
 Q: Identifique as estruturas indicadas nas letras.
-https://projsmed.github.io/med-questoes-3-periodo/Imagens%20anatomia/monitoria3.jpg
+https://projsmed.github.io/med-questoes-3-periodo/imagens%20anatomia/monitoria3.jpg
 I_A) Estrutura A
 GABARITO: Fissura horizontal.
 I_B) Estrutura B
@@ -44,7 +44,7 @@ GABARITO: Lobo superior.
 ---
 
 Q: Identifique as estruturas.
-https://projsmed.github.io/med-questoes-3-periodo/Imagens%20anatomia/monitoria4.jpg
+https://projsmed.github.io/med-questoes-3-periodo/imagens%20anatomia/monitoria4.jpg
 I_A) Estrutura 1
 GABARITO: Hilo esquerdo.
 I_B) Estrutura 2
