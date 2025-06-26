@@ -12,7 +12,7 @@ A) Hepatite B – Devem ser aplicadas 3 doses independentemente de histórico an
 B) Febre Amarela – Devem ser aplicadas 2 doses, com reforço a cada 10 anos
 C) Tríplice viral – Deve ser verificada a situação vacinal anterior. Se nunca vacinado, o adulto de 20 a 29 anos deve receber 2 doses; o adulto de 30 a 49 anos deve receber apenas 1 dose
 D) Dupla Adulto (dT) – Devem ser aplicadas 3 doses independentemente de vacinação anterior
-G: B
+G: C
 
 Q: É correto afirmar que, em adultos, a vacina Dupla Adulto deve ser administrada:
 A) Um reforço a cada 10 anos.
