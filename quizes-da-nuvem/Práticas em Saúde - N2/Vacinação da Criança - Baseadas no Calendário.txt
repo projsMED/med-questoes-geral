@@ -6,7 +6,7 @@ A2: Adsorvida Difteria, Tétano, pertussis, Hepatite B (recombinante) e Haemophi
 G: F
 C: É aos 2 meses.
 A3: BCG
-G: V​‎ 
+G: V​‎
 A4: Meningocócica C (conjugada) - (Meningo C)
 G: F
 C: É aos 3 meses.
