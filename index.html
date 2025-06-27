@@ -600,6 +600,27 @@
 	.cloud-quiz-list .folder > ul > li.folder:last-child::after {
 	  top: 13px; /* Posição correspondente para iniciar o "corte" */
 	}
+  /* Adicione estas regras ao seu CSS existente */
+
+	.folder.collapsed > ul {
+	  display: none;
+	}
+	.folder.collapsed > ul::before, /* Esconde a linha vertical principal da pasta recolhida */
+	.folder.collapsed > ul > li::before { /* Esconde as linhas horizontais dos itens */
+		display: none;
+	}
+
+	.folder-name {
+	  cursor: pointer;
+	  font-weight: bold;
+	  padding: 4px 2px;
+	  display: inline-block; /* Permite que o padding funcione corretamente */
+	  transition: background-color 0.15s;
+	  border-radius: 4px;
+	}
+	.folder-name:hover {
+	  background-color: #e9f3ff;
+	}
   </style>
 </head>
 <body>
@@ -611,8 +632,9 @@
     2. Por padrão, as opções <strong>aleatorizar questões</strong> e <strong>aleatorizar alternativas</strong> já estão marcadas.<br>
     3. Se preferir, <u>desmarque</u> essas opções para responder ao quiz na ordem original.<br>
     4. Clique em <b>Resetar Quiz</b> para reiniciar seu progresso com o quiz atual.<br>
-    5. <b>Dica:</b> Nas questões de múltipla escolha e de checkbox, utilize o botão <span style="border-radius:50%;border:1.5px solid #c6d7ee;background:#eef2f6;padding:2px 5px;">✂️</span> ao lado de cada alternativa para "eliminar" opções que você não quer marcar.<br><br>
-    <em>O quiz pode conter questões de múltipla escolha, V ou F (inclusive com variantes), checkbox e questões abertas (escrita).</em>
+    5. <b>Dica:</b> Nas questões de múltipla escolha e de checkbox, utilize o botão <span style="border-radius:50%;border:1.5px solid #c6d7ee;background:#eef2f6;padding:2px 5px;">✂️</span> ao lado de cada alternativa para "eliminar" opções que você não quer marcar.<br>
+    6. <b>Mesclar quiz:</b> Após clicar em "quizes da nuvem", você pode opcionalmente clicar em "mesclar quiz" para criar um quiz customizável que junta todas as questões dos quizes que você selecionar.<br><br>
+	<em>O quiz pode conter questões de múltipla escolha, V ou F (inclusive com variantes), checkbox e questões abertas (escrita).</em>
   </div>
   <div id="imgModal" onclick="closeImageModal()">
     <img id="imgModalImg" src="" alt="Clique para fechar">
@@ -636,9 +658,11 @@
 let cloudQuizData = null;
 let shuffleQuestionsLocked = false;
 let currentQuizTitle = "";
+let isMergeMode = false;
+let selectedForMerge = []; 
 
 function renderQuizTitle() {
-  document.getElementById('quizTitle').textContent = currentQuizTitle ? currentQuizTitle : "";
+  <!-- document.getElementById('quizTitle').innerHTML = currentQuizTitle ? currentQuizTitle : ""; -->
 }
 
 
@@ -657,9 +681,27 @@ function renderCloudQuizList(tree) {
   }
   function renderNode(node) {
     if (node.type === 'file') {
-      return `<li><button class="quiz-link" data-path="${node.path}">${removeExtension(node.name)}</button></li>`;
+      if (isMergeMode) {
+        return `<li>
+                  <label style="cursor:pointer; display:flex; align-items:center; padding: 4px 0;">
+                    <input type="checkbox" class="merge-checkbox" 
+                           data-path="${node.path}" 
+                           data-name="${removeExtension(node.name)}" 
+                           style="margin-right: 8px; transform: scale(1.1);">
+                    <span class="alt-text-content">${removeExtension(node.name)}</span>
+                  </label>
+                </li>`;
+      } else {
+        return `<li><button class="quiz-link" data-path="${node.path}">${removeExtension(node.name)}</button></li>`;
+      }
     } else if (node.type === 'folder') {
-      return `<li class="folder">${node.name}<ul>${node.children.map(renderNode).join("")}</ul></li>`;
+      // --- ALTERAÇÕES AQUI ---
+      // 1. Adiciona a classe "collapsed" por padrão.
+      // 2. Envolve o nome da pasta em um <span class="folder-name"> para ser clicável.
+      return `<li class="folder collapsed">
+                <span class="folder-name">${node.name}</span>
+                <ul>${node.children.map(renderNode).join("")}</ul>
+              </li>`;
     }
     return "";
   }
@@ -669,29 +711,141 @@ const cloudQuizBtn   = document.getElementById('cloudQuizBtn');
 const cloudQuizListDiv = document.getElementById('cloudQuizList');
 cloudQuizBtn.addEventListener('click', () => {
   if (cloudQuizListDiv.style.display === 'none') {
+    // Apenas cria os controles na primeira vez que o painel é aberto
+    if (!document.getElementById('merge-controls')) {
+      const controlsDiv = document.createElement('div');
+      controlsDiv.id = 'merge-controls';
+      controlsDiv.style.paddingBottom = '15px';
+      controlsDiv.style.borderBottom = '1px solid #dde6fa';
+      controlsDiv.style.marginBottom = '10px';
+      controlsDiv.innerHTML = `
+        <button id="toggleMergeModeBtn" class="cloud-quiz-btn">Mesclar Quizes</button>
+        <button id="createMergedQuizBtn" class="cloud-quiz-btn" style="display:none; background: linear-gradient(90deg, #6d84f0 0%, #99aaff 100%);">Criar Quiz Mesclado</button>
+        
+        <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #eef2f6;">
+          <label style="cursor:pointer; font-size: 0.95em; color: #324a78; user-select: none;">
+            <input type="checkbox" id="expandAllFoldersCb" style="margin-right: 5px; vertical-align: middle;">
+            Expandir todas as pastas
+          </label>
+        </div>
+      `;
+      cloudQuizListDiv.prepend(controlsDiv);
+
+      // Listener do botão "Mesclar Quizes"
+      document.getElementById('toggleMergeModeBtn').addEventListener('click', (e) => {
+        isMergeMode = !isMergeMode;
+        selectedForMerge = [];
+        e.target.textContent = isMergeMode ? 'Cancelar Mesclagem' : 'Mesclar Quizes';
+        e.target.style.background = isMergeMode ? 'linear-gradient(90deg, #f09a6d 0%, #ffc699 100%)' : '';
+        document.getElementById('createMergedQuizBtn').style.display = 'none';
+        if (cloudQuizData) {
+            const listContainer = cloudQuizListDiv.querySelector('ul');
+            if(listContainer) listContainer.outerHTML = renderCloudQuizList(cloudQuizData);
+        }
+      });
+
+      // Listener do botão "Criar Quiz Mesclado"
+      document.getElementById('createMergedQuizBtn').addEventListener('click', async () => {
+        if (selectedForMerge.length < 2) return;
+        const btn = document.getElementById('createMergedQuizBtn');
+        btn.textContent = 'Carregando...';
+        btn.disabled = true;
+        try {
+          const fetchPromises = selectedForMerge.map(quiz => fetch(quiz.path).then(res => res.text()));
+          const allTexts = await Promise.all(fetchPromises);
+          const mergedText = allTexts.join('\n\n---\n\n');
+          const quizListHtml = selectedForMerge.map(q => q.name).join('<br>+<br>');
+          currentQuizTitle = `Quiz mesclado:<br><br>${quizListHtml}`;
+          processQuizText(mergedText);
+          renderQuizTitle();
+          cloudQuizListDiv.style.display = 'none';
+		  document.getElementById('expandAllFoldersCb').checked = false;
+          isMergeMode = false;
+		  document.getElementById('toggleMergeModeBtn').textContent = 'Mesclar Quizes';
+          document.getElementById('toggleMergeModeBtn').style.background = '';
+          btn.style.display = 'none';
+        } catch (error) {
+          console.error("Erro ao mesclar os quizes:", error);
+          alert("Ocorreu um erro ao buscar os arquivos do quiz. Verifique o console.");
+        } finally {
+            btn.textContent = 'Criar Quiz Mesclado';
+            btn.disabled = false;
+        }
+      });
+
+      // NOVO LISTENER PARA O CHECKBOX 'EXPANDIR TODAS'
+      document.getElementById('expandAllFoldersCb').addEventListener('change', function(e) {
+        const allFolders = cloudQuizListDiv.querySelectorAll('li.folder');
+        const shouldExpand = e.target.checked;
+        allFolders.forEach(folder => {
+            if (shouldExpand) {
+                folder.classList.remove('collapsed');
+            } else {
+                folder.classList.add('collapsed');
+            }
+        });
+      });
+    }
+
     if (cloudQuizData) {
-      cloudQuizListDiv.innerHTML = renderCloudQuizList(cloudQuizData);
+      const listContainer = cloudQuizListDiv.querySelector('ul');
+      if(listContainer) {
+          listContainer.outerHTML = renderCloudQuizList(cloudQuizData);
+      } else { 
+          cloudQuizListDiv.insertAdjacentHTML('beforeend', renderCloudQuizList(cloudQuizData));
+      }
     } else {
       cloudQuizListDiv.innerHTML = "Carregando lista de quizzes...";
     }
     cloudQuizListDiv.style.display = 'block';
   } else {
     cloudQuizListDiv.style.display = 'none';
+	document.getElementById('expandAllFoldersCb').checked = false;
   }
 });
+
+
+// SUBSTITUA ESTE BLOCO INTEIRO
 cloudQuizListDiv.addEventListener('click', (e) => {
+  // --- Comportamento do link de quiz (botão) ---
   if (e.target.classList.contains('quiz-link')) {
+    if (isMergeMode) return; 
+
     const quizPath = e.target.getAttribute('data-path');
-    currentQuizTitle = e.target.textContent || ""; // <--- Adicionado
+    currentQuizTitle = e.target.textContent || "";
     fetch(quizPath)
       .then((res) => res.text())
       .then((text) => {
         processQuizText(text);
-        renderQuizTitle(); // <--- Adicionado
+        renderQuizTitle();
       });
     cloudQuizListDiv.style.display = 'none';
+	document.getElementById('expandAllFoldersCb').checked = false;
+  }
+
+  // --- Comportamento do checkbox de mesclagem (já existe) ---
+  if (e.target.classList.contains('merge-checkbox')) {
+    const path = e.target.dataset.path;
+    const name = e.target.dataset.name;
+
+    if (e.target.checked) {
+      selectedForMerge.push({ path, name });
+    } else {
+      selectedForMerge = selectedForMerge.filter(q => q.path !== path);
+    }
+    
+    document.getElementById('createMergedQuizBtn').style.display = selectedForMerge.length >= 2 ? 'inline-block' : 'none';
+  }
+
+  // --- NOVO: Lógica para expandir/recolher uma pasta individual ---
+  if (e.target.classList.contains('folder-name')) {
+    const folderLi = e.target.closest('li.folder');
+    if (folderLi) {
+      folderLi.classList.toggle('collapsed');
+    }
   }
 });
+
 
 
 /* ---------------   INPUT, CHECKBOXES, BOTÕES GLOBAIS   ----------------- */
