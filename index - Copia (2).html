@@ -621,272 +621,6 @@
 	.folder-name:hover {
 	  background-color: #e9f3ff;
 	}
-	/* --- ESTILOS PARA A CAIXA DE INFORMAÇÕES DO QUIZ --- */
-	#infoContainer {
-	  display: flex;
-	  flex-direction: column;
-	  gap: 12px; /* Espaço entre múltiplas caixas de info (no modo mesclado) */
-	  margin-bottom: 24px;
-	}
-
-	.info-wrapper {
-	  background: #fdfdff;
-	  border: 1px solid #d3dff3;
-	  border-radius: 12px;
-	  box-shadow: 0 4px 16px #c4d2e733;
-	  overflow: hidden; /* Garante que o border-radius funcione */
-	}
-
-	.info-toggle {
-	  padding: 10px 16px;
-	  font-size: 1.1em;
-	  font-weight: 600;
-	  color: #3e5081;
-	  background: linear-gradient(180deg, #f7f9ff 0%, #edf2fa 100%);
-	  cursor: pointer;
-	  user-select: none;
-	  transition: background 0.2s;
-	  border-bottom: 1px solid #d3dff3;
-	}
-
-	.info-toggle:hover {
-	  background: linear-gradient(180deg, #ffffff 0%, #eef3fc 100%);
-	  color: #2c3a5e;
-	}
-
-	.info-toggle .info-quiz-name {
-	  color: #5a76c8; /* Cor ligeiramente diferente para o nome do quiz */
-	  font-weight: 700;
-	}
-
-	.info-content {
-	  padding: 14px 18px;
-	  font-size: 1.05em;
-	  line-height: 1.6;
-	  color: #333;
-	  background: #fff;
-	  white-space: pre-wrap; /* Preserva espaços e quebras de linha */
-	  transition: all 0.3s ease-in-out;
-	}
-
-	/* Classe para ocultar o conteúdo */
-	.info-content.hidden {
-	  display: none;
-	}
-	/* --- ESTILOS PARA A JANELA MODAL DE TAGS --- */
-	#tagModal {
-	  position: fixed;
-	  top: 0;
-	  left: 0;
-	  width: 100vw;
-	  height: 100vh;
-	  z-index: 10001; /* Acima de tudo, até do modal de imagem */
-	  display: none; /* Controlado por JS */
-	  justify-content: center;
-	  align-items: center;
-	}
-
-	#tagModalOverlay {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-	  background: rgba(0,0,0,0.6);
-	  backdrop-filter: blur(4px);
-	}
-
-	#tagModalContent {
-	  position: relative;
-	  background: #fff;
-	  padding: 24px 28px;
-	  border-radius: 16px;
-	  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-	  max-width: 500px;
-	  width: 90%;
-	  z-index: 10002;
-	  border: 1px solid #e0e8ff;
-	  max-height: 80vh;
-	  display: flex;
-	  flex-direction: column;
-	}
-
-	#tagModalContent h2 {
-	  margin-top: 0;
-	  color: #373853;
-	  text-align: center;
-	}
-	#tagModalContent p {
-	  text-align: center;
-	  margin-top: -10px;
-	  margin-bottom: 20px;
-	  color: #555;
-	  font-size: 0.95em;
-	}
-
-	#tagList {
-	  overflow-y: auto;
-	  border-top: 1px solid #eee;
-	  border-bottom: 1px solid #eee;
-	  padding: 10px 5px;
-	  margin-bottom: 20px;
-	  flex-grow: 1; /* Permite que a lista cresça */
-	}
-
-	#tagList label {
-	  display: flex;
-	  align-items: center;
-	  padding: 8px 10px;
-	  font-size: 1.1em;
-	  border-radius: 8px;
-	  cursor: pointer;
-	  transition: background-color 0.15s;
-	}
-	#tagList label:hover {
-	  background-color: #f0f5ff;
-	}
-
-	#tagList input[type="checkbox"] {
-	  transform: scale(1.2);
-	  margin-right: 12px;
-	}
-
-	#tagList .tag-count {
-	  margin-left: auto;
-	  font-size: 0.9em;
-	  color: #667;
-	  background-color: #eef2f9;
-	  padding: 2px 8px;
-	  border-radius: 10px;
-	}
-
-	#tagModalActions {
-	  display: flex;
-	  justify-content: flex-end;
-	  gap: 15px;
-	}
-	/* --- ESTILOS PARA AS TAGS FILTRADAS EXIBIDAS --- */
-	#filteredTagsDisplay {
-		text-align: center;
-		margin: -10px 0 20px 0; /* Margem para ficar mais próximo do título */
-		padding: 5px;
-	}
-
-	.displayed-tag {
-		display: inline-block;
-		background-color: #eef2ff; /* Fundo especial azul claro */
-		color: #4a5a9b;             /* Cor especial azul/lilás escuro */
-		padding: 4px 12px;
-		border-radius: 14px;        /* Bordas arredondadas (formato de pílula) */
-		font-size: 0.9em;           /* Fonte um pouco menor */
-		font-weight: 500;
-		margin: 3px 5px;            /* Espaçamento entre as tags */
-		border: 1px solid #d4dff1;
-		box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-	}
-	/* --- ESTILOS PARA A JANELA MODAL DE DIFICULDADE --- */
-#difficultyModal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10003; /* Acima do modal de tags */
-    display: none; 
-    justify-content: center;
-    align-items: center;
-}
-
-#difficultyModalOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.65);
-    backdrop-filter: blur(5px);
-}
-
-#difficultyModalContent {
-    position: relative;
-    background: #fff;
-    padding: 24px 28px;
-    border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    max-width: 500px;
-    width: 90%;
-    z-index: 10004;
-    border: 1px solid #e0e8ff;
-    max-height: 80vh;
-    display: flex;
-    flex-direction: column;
-}
-	#difficultyModalContent h2 {
-		margin-top: 0;
-		color: #373853;
-		text-align: center;
-	}
-	#difficultyModalContent p {
-		text-align: center;
-		margin-top: -10px;
-		margin-bottom: 20px;
-		color: #555;
-		font-size: 0.95em;
-	}
-
-	#difficultyList {
-		overflow-y: auto;
-		border-top: 1px solid #eee;
-		border-bottom: 1px solid #eee;
-		padding: 10px 5px;
-		margin-bottom: 20px;
-		flex-grow: 1;
-	}
-
-	#difficultyList label {
-		display: flex;
-		align-items: center;
-		padding: 8px 10px;
-		font-size: 1.1em;
-		border-radius: 8px;
-		cursor: pointer;
-		transition: background-color 0.15s;
-	}
-	#difficultyList label:hover {
-		background-color: #f0f5ff;
-	}
-
-	#difficultyList input[type="checkbox"] {
-		transform: scale(1.2);
-		margin-right: 12px;
-	}
-
-	#difficultyList .tag-count { /* Reutilizando a classe .tag-count */
-		margin-left: auto;
-		font-size: 0.9em;
-		color: #667;
-		background-color: #eef2f9;
-		padding: 2px 8px;
-		border-radius: 10px;
-	}
-
-	#difficultyModalActions {
-		display: flex;
-		justify-content: flex-end;
-		gap: 15px;
-	}
-    .displayed-difficulty {
-    display: inline-block;
-    background-color: #e8f5e9; /* Fundo especial verde claro */
-    color: #2e7d32;             /* Cor especial verde escuro */
-    padding: 4px 12px;
-    border-radius: 14px;
-    font-size: 0.9em;
-    font-weight: 500;
-    margin: 3px 5px;
-    border: 1px solid #c8e6c9;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
   </style>
 </head>
 <body>
@@ -913,38 +647,10 @@
     <label><input type="checkbox" id="shuffleAlternatives" checked> Aleatorizar alternativas (apenas múltipla escolha e checkbox)</label>
     <button id="resetQuizBtn" type="button">Resetar Quiz</button>
   </div>
-  <div id="infoContainer"></div><br>
   <div id="quizTitle" style="text-align:center; font-size:1.5em; font-weight:600; color:#305;"></div><br>
-  <div id="filteredTagsDisplay"></div>
   <div id="quiz"></div>
   <button id="submitAll">Enviar Todas as Respostas/Ver Nota Final</button>
   <div id="score"></div>
-  <div id="tagModal" style="display: none;">
-  <div id="tagModalOverlay"></div>
-  <div id="tagModalContent">
-    <h2>Tags encontradas neste quiz</h2>
-    <p>Selecione as tags que deseja incluir. Desmarcar todas irá gerar um quiz vazio.</p>
-    <div id="tagList">
-      </div>
-    <div id="tagModalActions">
-      <button id="cancelTagSelectionBtn" class="cloud-quiz-btn" style="background: linear-gradient(90deg, #f09a6d 0%, #ffc699 100%);">Cancelar</button>
-      <button id="createTaggedQuizBtn" class="cloud-quiz-btn" style="background: linear-gradient(90deg, #6d84f0 0%, #99aaff 100%);">Criar Quiz com Tags</button>
-    </div>
-  </div>
-</div>
-<div id="difficultyModal" style="display: none;">
-    <div id="difficultyModalOverlay"></div>
-    <div id="difficultyModalContent">
-        <h2>Filtro de Dificuldade</h2>
-        <p>Selecione os níveis de dificuldade que deseja incluir.</p>
-        <div id="difficultyList">
-            </div>
-        <div id="difficultyModalActions">
-            <button id="cancelDifficultySelectionBtn" class="cloud-quiz-btn" style="background: linear-gradient(90deg, #f09a6d 0%, #ffc699 100%);">Cancelar</button>
-            <button id="createDifficultyQuizBtn" class="cloud-quiz-btn" style="background: linear-gradient(90deg, #6d84f0 0%, #99aaff 100%);">Criar Quiz com Dificuldades</button>
-        </div>
-    </div>
-</div>
 </div>
 
 <script>
@@ -953,172 +659,10 @@ let cloudQuizData = null;
 let shuffleQuestionsLocked = false;
 let currentQuizTitle = "";
 let isMergeMode = false;
-let selectedForMerge = [];
-let currentlyDisplayedTags = [];
-let currentlyDisplayedDifficulties = [];
-const DIFFICULTY_MAP = {
-    '1': 'Muito Fácil', '2': 'Fácil', '3': 'Médio', '4': 'Difícil', '5': 'Muito Difícil',
-    'no_difficulty': 'Sem dificuldade registrada'
-};
-
-// NOVO: Variável de estado para o processo de filtro de dificuldade
-let difficultyFilterProcess = {
-    isActive: false,
-    rawText: '', // Texto APÓS o filtro de tags
-    quizTitle: '',
-    headers: ''
-};
-
-// NOVO: Funções para analisar e filtrar por dificuldade
-// SUBSTITUA PELA NOVA VERSÃO
-function analyzeTextForDifficulty(text) {
-    const counts = { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0, 'no_difficulty': 0 };
-    let textWithDifficultyTags = '';
-    const difficultyRegex = /<dificuldade=(\d)>([\s\S]*?)<\/dificuldade=\1>/g;
-    const qRegex = /(^Q:|^QCH:)/gm;
-    let match;
-
-    while ((match = difficultyRegex.exec(text)) !== null) {
-        const difficultyLevel = match[1];
-        const blockContent = match[2];
-        textWithDifficultyTags += match[0] + '\n';
-        const questionsInBlock = blockContent.match(qRegex);
-        if (questionsInBlock) {
-            counts[difficultyLevel] = (counts[difficultyLevel] || 0) + questionsInBlock.length;
-        }
-    }
-
-    const untaggedContent = text.replace(difficultyRegex, '').trim();
-    const untaggedQuestions = untaggedContent.match(qRegex);
-    if (untaggedQuestions) {
-        counts.no_difficulty = untaggedQuestions.length;
-    }
-
-    // ALTERAÇÃO: A verificação agora é mais específica.
-    // Só retorna 'true' se houver ao menos uma questão nos níveis 1 a 5.
-    const hasNumberedDifficulty = (counts['1'] + counts['2'] + counts['3'] + counts['4'] + counts['5']) > 0;
-    
-    return { counts, hasNumberedDifficulty }; // Retorna a nova variável booleana
-}
-
-function filterQuizByDifficulty(text, selectedDifficulties) {
-    let finalContent = [];
-    const addedContent = new Set();
-    const difficultyRegex = /<dificuldade=(\d)>([\s\S]*?)<\/dificuldade=\1>/g;
-
-    if (selectedDifficulties.includes("no_difficulty")) {
-        const untaggedContent = text.replace(difficultyRegex, '').trim();
-        if (untaggedContent && !addedContent.has(untaggedContent)) {
-            finalContent.push(untaggedContent);
-            addedContent.add(untaggedContent);
-        }
-    }
-    
-    selectedDifficulties.forEach(level => {
-        if (level === "no_difficulty") return;
-        const levelRegex = new RegExp(`<dificuldade=${level}>([\\s\\S]*?)</dificuldade=${level}>`, 'g');
-        let match;
-        while ((match = levelRegex.exec(text)) !== null) {
-            const blockContent = match[1].trim();
-            if (blockContent && !addedContent.has(blockContent)) {
-                finalContent.push(blockContent);
-                addedContent.add(blockContent);
-            }
-        }
-    });
-
-    return finalContent.join('\n\n---\n\n');
-}
-
-// NOVO: Funções para controlar o modal de dificuldade
-function hideDifficultyModal() {
-    document.getElementById('difficultyModal').style.display = 'none';
-    difficultyFilterProcess.isActive = false;
-}
-
-function showDifficultyModal(difficultyData, text, title, headers) {
-    difficultyFilterProcess = { isActive: true, rawText: text, quizTitle: title, headers: headers };
-    
-    const modal = document.getElementById('difficultyModal');
-    const listDiv = document.getElementById('difficultyList');
-    listDiv.innerHTML = ''; 
-
-    // ALTERAÇÃO: Não precisa mais de um mapa local, usa a constante global DIFFICULTY_MAP
-    Object.keys(DIFFICULTY_MAP).forEach(level => {
-        if (difficultyData[level] > 0) {
-            const label = document.createElement('label');
-            const countText = difficultyData[level] === 1 ? '1 questão' : `${difficultyData[level]} questões`;
-            label.innerHTML = `
-                <input type="checkbox" class="difficulty-checkbox" value="${level}" checked>
-                <span>${DIFFICULTY_MAP[level]}</span>
-                <span class="tag-count">${countText}</span>`;
-            listDiv.appendChild(label);
-        }
-    });
-    modal.style.display = 'flex';
-}
-
-// NOVO: Listeners para os botões do novo modal
-document.getElementById('cancelDifficultySelectionBtn').addEventListener('click', hideDifficultyModal);
-
-document.getElementById('createDifficultyQuizBtn').addEventListener('click', () => {
-    if (!difficultyFilterProcess.isActive) return;
-
-    const checkboxes = document.querySelectorAll('#difficultyList .difficulty-checkbox');
-    const selectedDifficulties = Array.from(checkboxes)
-        .filter(cb => cb.checked)
-        .map(cb => cb.value);
-    
-    // ADIÇÃO: Guarda as dificuldades selecionadas para serem exibidas.
-    currentlyDisplayedDifficulties = selectedDifficulties;
-    
-    if (selectedDifficulties.length === checkboxes.length) {
-        currentQuizTitle = difficultyFilterProcess.quizTitle;
-        processQuizText(difficultyFilterProcess.headers + difficultyFilterProcess.rawText);
-        hideDifficultyModal();
-        return;
-    }
-
-    const filteredContent = filterQuizByDifficulty(difficultyFilterProcess.rawText, selectedDifficulties);
-    currentQuizTitle = difficultyFilterProcess.quizTitle; // O título já contém "(Filtro Ativo)" da etapa anterior se necessário
-    
-    processQuizText(difficultyFilterProcess.headers + filteredContent);
-    hideDifficultyModal();
-});
+let selectedForMerge = []; 
 
 function renderQuizTitle() {
   document.getElementById('quizTitle').innerHTML = currentQuizTitle ? currentQuizTitle : "";
-}
-
-// SUBSTITUIÇÃO: A função agora renderiza ambos os tipos de filtros
-function renderActiveFilters() {
-    const container = document.getElementById('filteredTagsDisplay');
-    if (!container) return;
-
-    container.innerHTML = ''; 
-    let html = '';
-
-    // Renderiza as Tags primeiro
-    if (currentlyDisplayedTags && currentlyDisplayedTags.length > 0) {
-        html += currentlyDisplayedTags.map(tag => `<span class="displayed-tag">${tag}</span>`).join('');
-    }
-
-    // NOVA LÓGICA: Se ambos os tipos de filtros (tags e dificuldades) estiverem presentes,
-    // adiciona uma quebra de linha para separá-los.
-    if (currentlyDisplayedTags && currentlyDisplayedTags.length > 0 &&
-        currentlyDisplayedDifficulties && currentlyDisplayedDifficulties.length > 0) {
-        html += '<br>';
-    }
-
-    // Renderiza as Dificuldades em seguida
-    if (currentlyDisplayedDifficulties && currentlyDisplayedDifficulties.length > 0) {
-        html += currentlyDisplayedDifficulties.map(level => {
-            const levelName = DIFFICULTY_MAP[level] || 'Desconhecida';
-            return `<span class="displayed-difficulty">${levelName}</span>`;
-        }).join('');
-    }
-    
-    container.innerHTML = html;
 }
 
 
@@ -1129,256 +673,6 @@ fetch('quizes.json?v=' + Date.now())
 
 /* ----------  NOVO  ----------  seleções dos variantes escolhidos */
 let variantSelections = [];   // índices escolhidos para cada questão do tipo vf‑variante
-
-
-/* ------------------- ANALISADOR E RENDERIZADOR DO CAMPO INFO ------------------ */
-
-/**
- * Analisa o texto de um quiz para extrair o conteúdo de INFO:
- * @param {string} text O conteúdo completo do arquivo .txt
- * @returns {{info: string|null, remainingText: string}} Objeto com a info e o resto do texto.
- */
-function parseInfo(text) {
-  // Regex para encontrar "INFO:" no início de uma linha até a próxima linha em branco ou
-  // o início de uma questão (Q:, QCH:, <variantes>, <juntas>, ---).
-  // Isso evita que ele capture o arquivo inteiro caso não haja questões.
-  const infoRegex = /^INFO:\s*([\s\S]+?)(?=\n\s*\n|^-{3,}$|^Q:|^QCH:|^<variantes>|^<juntas>)/m;
-  const match = text.match(infoRegex);
-
-  if (match) {
-    const info = match[1].trim();
-    // Retorna a info e o texto do quiz SEM a parte da info.
-    const remainingText = text.replace(infoRegex, '').trim();
-    return { info, remainingText };
-  }
-
-  // Se não encontrar, retorna null para info e o texto original intacto.
-  return { info: null, remainingText: text };
-}
-
-/**
- * Renderiza uma ou mais caixas de informação no container #infoContainer.
- * @param {Array<{name: string, info: string}>} infosArray Array de objetos, cada um com o nome do quiz e o conteúdo da info.
- */
-function renderInfos(infosArray) {
-  const container = document.getElementById('infoContainer');
-  if (!container) return;
-
-  // Limpa infos antigas e verifica se há algo novo para renderizar
-  container.innerHTML = '';
-  if (!infosArray || infosArray.length === 0) {
-    return;
-  }
-
-  let finalHtml = '';
-  infosArray.forEach((item, index) => {
-    // Só renderiza se a info de fato existir
-    if (item.info) {
-      finalHtml += `
-        <div class="info-wrapper">
-          <div class="info-toggle" data-target="info-content-${index}">
-            INFORMAÇÕES do quiz (<span class="info-quiz-name">${item.name}</span>)
-          </div>
-          <div class="info-content" id="info-content-${index}">
-            ${item.info}
-          </div>
-        </div>
-      `;
-    }
-  });
-
-  container.innerHTML = finalHtml;
-}
-
-// Adiciona um único listener de eventos ao contêiner para gerenciar todos os toggles.
-document.getElementById('infoContainer').addEventListener('click', function(e) {
-  // Verifica se o clique foi em um elemento .info-toggle ou em um filho dele
-  const toggle = e.target.closest('.info-toggle');
-  if (toggle) {
-    const targetId = toggle.getAttribute('data-target');
-    const content = document.getElementById(targetId);
-    if (content) {
-      content.classList.toggle('hidden');
-    }
-  }
-});
-
-/* ------------------- LÓGICA DE FILTRAGEM POR TAGS ------------------ */
-
-// Guarda o estado para o processo de filtragem
-let tagFilterProcess = {
-  isActive: false,
-  rawText: '',
-  quizTitle: '',
-  headers: ''
-};
-
-function hideTagModal() {
-  const modal = document.getElementById('tagModal');
-  modal.style.display = 'none';
-  tagFilterProcess.isActive = false;
-}
-
-function showTagModal(tagData, rawText, title, headers) {
-  tagFilterProcess = {
-    isActive: true,
-    rawText: rawText,
-    quizTitle: title,
-    headers: headers
-  };
-
-  const modal = document.getElementById('tagModal');
-  const tagListDiv = document.getElementById('tagList');
-  tagListDiv.innerHTML = ''; // Limpa lista anterior
-
-  // Popula a lista com as tags encontradas
-  for (const tagName in tagData) {
-    if (tagData[tagName].count > 0) {
-      const label = document.createElement('label');
-      const countText = tagData[tagName].count === 1 ? '1 questão' : `${tagData[tagName].count} questões`;
-      label.innerHTML = `
-        <input type="checkbox" class="tag-checkbox" value="${tagName}" checked>
-        <span>${tagName}</span>
-        <span class="tag-count">${countText}</span>
-      `;
-      tagListDiv.appendChild(label);
-    }
-  }
-  modal.style.display = 'flex';
-}
-
-// Listeners dos botões do modal (adicionados uma vez)
-document.getElementById('cancelTagSelectionBtn').addEventListener('click', hideTagModal);
-
-// SUBSTITUIÇÃO: O botão de tags agora chama a verificação de dificuldade
-document.getElementById('createTaggedQuizBtn').addEventListener('click', () => {
-    if (!tagFilterProcess.isActive) return;
-
-    const checkboxes = document.querySelectorAll('#tagList .tag-checkbox');
-    const selectedTags = Array.from(checkboxes)
-        .filter(cb => cb.checked)
-        .map(cb => cb.value);
-
-    // Se tudo estiver selecionado, não filtra por tags
-    if (selectedTags.length === checkboxes.length) {
-        currentlyDisplayedTags = [];
-        hideTagModal();
-        runDifficultyCheck(tagFilterProcess.rawText, tagFilterProcess.quizTitle, tagFilterProcess.headers);
-        return;
-    }
-    
-    // Filtra por tags
-    const filteredContent = filterQuizByTags(tagFilterProcess.rawText, selectedTags);
-    const newTitle = tagFilterProcess.quizTitle;
-    currentlyDisplayedTags = selectedTags.filter(tag => tag !== "Questões sem tag"); 
-    
-    hideTagModal();
-    // Em vez de renderizar, chama a próxima etapa: verificação de dificuldade
-    runDifficultyCheck(filteredContent, newTitle, tagFilterProcess.headers);
-});
-
-
-/**
- * Filtra o conteúdo do quiz com base nas tags selecionadas.
- */
-function filterQuizByTags(text, selectedTags) {
-  let finalContent = [];
-  const addedContent = new Set(); // Para evitar duplicatas de questões
-
-  // 1. Lida com a tag especial "Questões sem tag"
-  if (selectedTags.includes("Questões sem tag")) {
-    const allDeclaredTagsRegex = /<tag=.+?>[\s\S]*?<\/tag=.+?>/g;
-    const untaggedContent = text.replace(allDeclaredTagsRegex, '').trim();
-    if (untaggedContent && !addedContent.has(untaggedContent)) {
-      finalContent.push(untaggedContent);
-      addedContent.add(untaggedContent);
-    }
-  }
-
-  // 2. Lida com as tags nominais
-  selectedTags.forEach(tag => {
-    if (tag === "Questões sem tag") return;
-    
-    // Regex para encontrar todos os blocos da tag atual
-    const tagRegex = new RegExp(`<tag=${escapeRegex(tag)}>([\\s\\S]*?)</tag=${escapeRegex(tag)}>`, 'g');
-    let match;
-    while ((match = tagRegex.exec(text)) !== null) {
-      const blockContent = match[1].trim();
-      if (blockContent && !addedContent.has(blockContent)) {
-        finalContent.push(blockContent);
-        addedContent.add(blockContent);
-      }
-    }
-  });
-
-  return finalContent.join('\n\n---\n\n');
-}
-
-/**
- * Função principal que inicia o processo: verifica se há tags e mostra o modal ou continua.
- */
-// NOVO: Função que inicia a verificação de dificuldade
-function runDifficultyCheck(textToCheck, title, headers) {
-    // ALTERAÇÃO: Usa a nova variável 'hasNumberedDifficulty' retornada pela análise.
-    const { counts, hasNumberedDifficulty } = analyzeTextForDifficulty(textToCheck);
-
-    // Se não há questões com dificuldade numerada, o processo acaba. Renderiza o quiz.
-    if (!hasNumberedDifficulty) {
-        currentQuizTitle = title;
-        processQuizText(headers + textToCheck);
-    } else {
-        // Se há dificuldades numeradas, mostra o novo modal.
-        showDifficultyModal(counts, textToCheck, title, headers);
-    }
-}
-
-// SUBSTITUIÇÃO
-function initiateFilteringProcess(rawText, title) {
-    // ADIÇÃO: Limpa o estado de exibição de filtros antigos no início de qualquer processo.
-    currentlyDisplayedTags = [];
-    currentlyDisplayedDifficulties = [];
-
-    const tagDeclarationRegex = /^TAGS:\s*(.*)$/m;
-    const infoRegex = /^INFO:\s*([\s\S]+?)(?=\n\s*\n|^-{3,}$|^Q:|^QCH:)/m;
-    const qRandomRegex = /^q-random:\s*false;?/im;
-    const tagsMatch = rawText.match(tagDeclarationRegex);
-    const infoMatch = rawText.match(infoRegex);
-    const qRandomMatch = rawText.match(qRandomRegex);
-    let headers = '';
-    if (infoMatch) headers += infoMatch[0] + '\n\n';
-    if (qRandomMatch) headers += qRandomMatch[0] + '\n\n';
-    let contentOnly = rawText.replace(infoRegex, '').replace(qRandomRegex, '').trim();
-    if (!tagsMatch) {
-        runDifficultyCheck(contentOnly, title, headers);
-        return;
-    }
-    headers += tagsMatch[0] + '\n\n';
-    contentOnly = contentOnly.replace(tagDeclarationRegex, '').trim();
-    const declaredTags = tagsMatch[1].split(';').map(t => t.trim()).filter(Boolean);
-    const tagData = {};
-    declaredTags.forEach(tag => {
-        const tagRegex = new RegExp(`<tag=${escapeRegex(tag)}>([\\s\\S]*?)</tag=${escapeRegex(tag)}>`, 'g');
-        const qRegex = /(^Q:|^QCH:)/gm;
-        let questionCount = 0;
-        let match;
-        while ((match = tagRegex.exec(contentOnly)) !== null) {
-            const questionsInBlock = match[1].match(qRegex);
-            if (questionsInBlock) { questionCount += questionsInBlock.length; }
-        }
-        tagData[tag] = { count: questionCount };
-    });
-    const allTagsRegex = /<tag=.+?>[\s\S]*?<\/tag=.+?>/g;
-    const untaggedContent = contentOnly.replace(allTagsRegex, '');
-    const untaggedQuestions = untaggedContent.match(/(^Q:|^QCH:)/gm);
-    tagData["Questões sem tag"] = { count: untaggedQuestions ? untaggedQuestions.length : 0 };
-    showTagModal(tagData, contentOnly, title, headers);
-}
-
-// Função utilitária para escapar caracteres especiais para uso em Regex
-function escapeRegex(string) {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
 
 /* ------------------  RENDERIZA LISTA DE QUIZ NA NUVEM  ----------------- */
 function renderCloudQuizList(tree) {
@@ -1415,165 +709,119 @@ function renderCloudQuizList(tree) {
 }
 const cloudQuizBtn   = document.getElementById('cloudQuizBtn');
 const cloudQuizListDiv = document.getElementById('cloudQuizList');
-// INÍCIO DO BLOCO COM A CORREÇÃO DE INDENTAÇÃO
-// INÍCIO DO BLOCO FINAL E CORRIGIDO
 cloudQuizBtn.addEventListener('click', () => {
-  if (cloudQuizListDiv.style.display === 'none') {
-    if (!document.getElementById('merge-controls')) {
-      const controlsDiv = document.createElement('div');
-      controlsDiv.id = 'merge-controls';
-      controlsDiv.style.paddingBottom = '15px';
-      controlsDiv.style.borderBottom = '1px solid #dde6fa';
-      controlsDiv.style.marginBottom = '10px';
-      controlsDiv.innerHTML = `<button id="toggleMergeModeBtn" class="cloud-quiz-btn">Mesclar Quizes</button>
-<button id="createMergedQuizBtn" class="cloud-quiz-btn" style="display:none; background: linear-gradient(90deg, #6d84f0 0%, #99aaff 100%);">Criar Quiz Mesclado</button>
-<div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #eef2f6; text-align: left;">
-<label style="cursor:pointer; font-size: 0.95em; color: #324a78; user-select: none; display: flex; align-items: center;">
-<input type="checkbox" id="expandAllFoldersCb" style="margin-right: 5px; vertical-align: middle;">
-<span>Expandir todas as pastas</span>
-</label>
-</div>`;
-      cloudQuizListDiv.prepend(controlsDiv);
-
-document.getElementById('toggleMergeModeBtn').addEventListener('click', (e) => {
-    isMergeMode = !isMergeMode;
-    selectedForMerge = [];
-
-    // ADIÇÃO: Garante que o checkbox de expandir pastas seja desmarcado
-    // ao entrar ou sair do modo de mesclagem, forçando as pastas a ficarem recolhidas.
-    document.getElementById('expandAllFoldersCb').checked = false;
-    
-    e.target.textContent = isMergeMode ? 'Cancelar Mesclagem' : 'Mesclar Quizes';
-    e.target.style.background = isMergeMode ? 'linear-gradient(90deg, #f09a6d 0%, #ffc699 100%)' : '';
-    document.getElementById('createMergedQuizBtn').style.display = 'none';
-    
-    if (cloudQuizData) {
-        // A função renderCloudQuizList já recolhe as pastas por padrão ao redesenhar a lista
-        const listContainer = cloudQuizListDiv.querySelector('ul');
-        if(listContainer) listContainer.outerHTML = renderCloudQuizList(cloudQuizData);
-    }
-});
-
-    document.getElementById('createMergedQuizBtn').addEventListener('click', async () => {
-    if (selectedForMerge.length < 2) return;
-    const btn = document.getElementById('createMergedQuizBtn');
-    btn.textContent = 'Carregando...';
-    btn.disabled = true;
-
-    // FIX 3: Título detalhado é criado e usado até o final.
-    const originalMergedTitle = `Quiz mesclado:<br><br><div style="font-size:0.8em; font-weight:500;">${selectedForMerge.map(q => q.name).join('<br>+<br>')}</div>`;
-
-    try {
-        const fetchPromises = selectedForMerge.map(quiz => fetch(quiz.path).then(res => res.text()));
-        const allRawTexts = await Promise.all(fetchPromises);
+  if (cloudQuizListDiv.style.display === 'none') {
+    // Apenas cria os controles na primeira vez que o painel é aberto
+    if (!document.getElementById('merge-controls')) {
+      const controlsDiv = document.createElement('div');
+      controlsDiv.id = 'merge-controls';
+      controlsDiv.style.paddingBottom = '15px';
+      controlsDiv.style.borderBottom = '1px solid #dde6fa';
+      controlsDiv.style.marginBottom = '10px';
+      controlsDiv.innerHTML = `
+        <button id="toggleMergeModeBtn" class="cloud-quiz-btn">Mesclar Quizes</button>
+        <button id="createMergedQuizBtn" class="cloud-quiz-btn" style="display:none; background: linear-gradient(90deg, #6d84f0 0%, #99aaff 100%);">Criar Quiz Mesclado</button>
         
-        const infosToRender = [];
-        const allQuestionTexts = [];
-        const allTags = new Set();
+        <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #eef2f6;">
+          <label style="cursor:pointer; font-size: 0.95em; color: #324a78; user-select: none;">
+            <input type="checkbox" id="expandAllFoldersCb" style="margin-right: 5px; vertical-align: middle;">
+            Expandir todas as pastas
+          </label>
+        </div>
+      `;
+      cloudQuizListDiv.prepend(controlsDiv);
 
-        // FIX 1 & 2: Processa cada arquivo individualmente ANTES de juntar
-        allRawTexts.forEach((text, index) => {
-            const quizName = selectedForMerge[index].name;
-            
-            // Usa a função parseInfo() existente para extrair a INFO
-            const { info, remainingText } = parseInfo(text);
-            if (info) {
-                infosToRender.push({ name: quizName, info });
-            }
-
-            // Extrai as TAGS do resto do texto
-            const tagDeclarationRegex = /^TAGS:\s*(.*)$/m;
-            const tagsMatch = remainingText.match(tagDeclarationRegex);
-            let contentOnly = remainingText;
-
-            if (tagsMatch) {
-                const tags = tagsMatch[1].split(';').map(t => t.trim()).filter(Boolean);
-                tags.forEach(tag => allTags.add(tag));
-                // Remove a declaração de tags para ter só o conteúdo do quiz
-                contentOnly = remainingText.replace(tagDeclarationRegex, '').trim();
-            }
-            allQuestionTexts.push(contentOnly);
-        });
-        
-        // Renderiza todas as infos encontradas, uma embaixo da outra
-        renderInfos(infosToRender);
-
-        // Monta o conteúdo final para o motor do quiz
-        let mergedContent = allQuestionTexts.join('\n\n---\n\n');
-        
-        // Se houver tags, cria um novo cabeçalho de tags consolidado
-        if (allTags.size > 0) {
-            const mergedTagsHeader = `TAGS: ${[...allTags].join('; ')}\n\n`;
-            mergedContent = mergedTagsHeader + mergedContent;
+      // Listener do botão "Mesclar Quizes"
+      document.getElementById('toggleMergeModeBtn').addEventListener('click', (e) => {
+        isMergeMode = !isMergeMode;
+        selectedForMerge = [];
+        e.target.textContent = isMergeMode ? 'Cancelar Mesclagem' : 'Mesclar Quizes';
+        e.target.style.background = isMergeMode ? 'linear-gradient(90deg, #f09a6d 0%, #ffc699 100%)' : '';
+        document.getElementById('createMergedQuizBtn').style.display = 'none';
+        if (cloudQuizData) {
+            const listContainer = cloudQuizListDiv.querySelector('ul');
+            if(listContainer) listContainer.outerHTML = renderCloudQuizList(cloudQuizData);
         }
-        
-        // Chama o motor do quiz com o conteúdo mesclado e o título correto
-        initiateFilteringProcess(mergedContent, originalMergedTitle);
+      });
 
-        // Reseta a UI de seleção
-        cloudQuizListDiv.style.display = 'none';
-        document.getElementById('expandAllFoldersCb').checked = false;
-        isMergeMode = false;
-        document.getElementById('toggleMergeModeBtn').textContent = 'Mesclar Quizes';
-        document.getElementById('toggleMergeModeBtn').style.background = '';
-        btn.style.display = 'none';
+      // Listener do botão "Criar Quiz Mesclado"
+      document.getElementById('createMergedQuizBtn').addEventListener('click', async () => {
+        if (selectedForMerge.length < 2) return;
+        const btn = document.getElementById('createMergedQuizBtn');
+        btn.textContent = 'Carregando...';
+        btn.disabled = true;
+        try {
+          const fetchPromises = selectedForMerge.map(quiz => fetch(quiz.path).then(res => res.text()));
+          const allTexts = await Promise.all(fetchPromises);
+          const mergedText = allTexts.join('\n\n---\n\n');
+          const quizListHtml = selectedForMerge.map(q => q.name).join('<br>+<br>');
+          currentQuizTitle = `Quiz mesclado:<br><br>${quizListHtml}`;
+          processQuizText(mergedText);
+          renderQuizTitle();
+          cloudQuizListDiv.style.display = 'none';
+		  document.getElementById('expandAllFoldersCb').checked = false;
+          isMergeMode = false;
+		  document.getElementById('toggleMergeModeBtn').textContent = 'Mesclar Quizes';
+          document.getElementById('toggleMergeModeBtn').style.background = '';
+          btn.style.display = 'none';
+        } catch (error) {
+          console.error("Erro ao mesclar os quizes:", error);
+          alert("Ocorreu um erro ao buscar os arquivos do quiz. Verifique o console.");
+        } finally {
+            btn.textContent = 'Criar Quiz Mesclado';
+            btn.disabled = false;
+        }
+      });
 
-    } catch (error) {
-        console.error("Erro ao mesclar os quizes:", error);
-        alert("Ocorreu um erro ao buscar os arquivos do quiz. Verifique o console.");
-    } finally {
-        btn.textContent = 'Criar Quiz Mesclado';
-        btn.disabled = false;
+      // NOVO LISTENER PARA O CHECKBOX 'EXPANDIR TODAS'
+      document.getElementById('expandAllFoldersCb').addEventListener('change', function(e) {
+        const allFolders = cloudQuizListDiv.querySelectorAll('li.folder');
+        const shouldExpand = e.target.checked;
+        allFolders.forEach(folder => {
+            if (shouldExpand) {
+                folder.classList.remove('collapsed');
+            } else {
+                folder.classList.add('collapsed');
+            }
+        });
+      });
     }
-}); 
 
-      document.getElementById('expandAllFoldersCb').addEventListener('change', function(e) {
-        const allFolders = cloudQuizListDiv.querySelectorAll('li.folder');
-        const shouldExpand = e.target.checked;
-        allFolders.forEach(folder => {
-            if (shouldExpand) {
-                folder.classList.remove('collapsed');
-            } else {
-                folder.classList.add('collapsed');
-            }
-        });
-      });
-    }
-
-    if (cloudQuizData) {
-      const listContainer = cloudQuizListDiv.querySelector('ul');
-      if(listContainer) {
-          listContainer.outerHTML = renderCloudQuizList(cloudQuizData);
-      } else { 
-          cloudQuizListDiv.insertAdjacentHTML('beforeend', renderCloudQuizList(cloudQuizData));
-      }
-    } else {
-      cloudQuizListDiv.innerHTML = "Carregando lista de quizzes...";
-    }
-    cloudQuizListDiv.style.display = 'block';
-  } else {
-    cloudQuizListDiv.style.display = 'none';
+    if (cloudQuizData) {
+      const listContainer = cloudQuizListDiv.querySelector('ul');
+      if(listContainer) {
+          listContainer.outerHTML = renderCloudQuizList(cloudQuizData);
+      } else { 
+          cloudQuizListDiv.insertAdjacentHTML('beforeend', renderCloudQuizList(cloudQuizData));
+      }
+    } else {
+      cloudQuizListDiv.innerHTML = "Carregando lista de quizzes...";
+    }
+    cloudQuizListDiv.style.display = 'block';
+  } else {
+    cloudQuizListDiv.style.display = 'none';
 	document.getElementById('expandAllFoldersCb').checked = false;
-  }
+  }
 });
 
 
+// SUBSTITUA ESTE BLOCO INTEIRO
 cloudQuizListDiv.addEventListener('click', (e) => {
   // --- Comportamento do link de quiz (botão) ---
-  if (e.target.classList.contains('quiz-link')) {
-    if (isMergeMode) return; 
+  if (e.target.classList.contains('quiz-link')) {
+    if (isMergeMode) return; 
 
-    const quizPath = e.target.getAttribute('data-path');
-    const title = e.target.textContent || "";
-    fetch(quizPath)
-      .then((res) => res.text())
-      .then((text) => {
-        // Chama a nova função principal
-        initiateFilteringProcess(text, title);
-      });
-    cloudQuizListDiv.style.display = 'none';
+    const quizPath = e.target.getAttribute('data-path');
+    currentQuizTitle = e.target.textContent || "";
+    fetch(quizPath)
+      .then((res) => res.text())
+      .then((text) => {
+        processQuizText(text);
+        renderQuizTitle();
+      });
+    cloudQuizListDiv.style.display = 'none';
 	document.getElementById('expandAllFoldersCb').checked = false;
-  }
+  }
 
   // --- Comportamento do checkbox de mesclagem (já existe) ---
   if (e.target.classList.contains('merge-checkbox')) {
@@ -1693,51 +941,43 @@ function parsePlainOrVariantes(chunk) {
 
 
 /* -----------------------------  PROCESSA TXT  ---------------------------- */
-// SUBSTITUIÇÃO
-function processQuizText(fileText, isFromMerge = false) {
-    let questionText = fileText;
-    const isActuallyAMerge = typeof currentQuizTitle === 'string' && currentQuizTitle.startsWith('Quiz mesclado:');
+function processQuizText(fileText) {
+  shuffleQuestionsLocked = false;
+  const extracted  = extractGroupsAndParse(fileText);
+  originalQuestions = extracted.originalQuestions;
+  groups            = extracted.groups;
 
-    if (!isActuallyAMerge) {
-        renderInfos([]);
-        const { info, remainingText } = parseInfo(fileText);
-        if (info) { renderInfos([{ name: currentQuizTitle, info: info }]); }
-        questionText = remainingText;
-    }
+  /* trata flag q-random:false */
+  const lines = fileText.split(/\r?\n/);
+  if (lines.length && /^q-random:\s*false;?/i.test(lines[0].trim())) {
+    shuffleQuestionsLocked   = true;
+    shuffleQuestionsChk.checked  = false;
+    shuffleQuestionsChk.disabled = true;
+    shuffleQuestionsChk.parentElement.style.opacity = 0.6;
+    lines.shift();
+    fileText = lines.join("\n");
+  } else {
+    shuffleQuestionsChk.disabled = false;
+    shuffleQuestionsChk.parentElement.style.opacity = 1;
+  }
 
-    renderQuizTitle();
-    renderActiveFilters(); // ALTERAÇÃO: Chama a nova função de renderização
+  quizTextHash = simpleHash(fileText);
 
-    shuffleQuestionsLocked = false;
-    const extracted = extractGroupsAndParse(questionText);
-    originalQuestions = extracted.originalQuestions;
-    groups = extracted.groups;
-    const lines = questionText.split(/\r?\n/);
-    if (lines.length && /^q-random:\s*false;?/i.test(lines[0].trim())) {
-        shuffleQuestionsLocked = true;
-        shuffleQuestionsChk.checked = false;
-        shuffleQuestionsChk.disabled = true;
-        shuffleQuestionsChk.parentElement.style.opacity = 0.6;
-        lines.shift();
-    } else {
-        shuffleQuestionsChk.disabled = false;
-        shuffleQuestionsChk.parentElement.style.opacity = 1;
-    }
-    quizTextHash = simpleHash(questionText);
-    shuffledQuestionsOrder = [];
-    shuffledAlternativesOrders = [];
-    shuffledCheckboxOrders = [];
-    variantSelections = [];
-    userAnswers = [];
-    tempAnswers = [];
-    scoreME = scoreVF = scoreCheck = scoreEscrita = 0;
-    escritaAutoNotas = [];
-    escritaItensAutoNotas = [];
-    escritaItensRespostas = [];
-    setupQuiz();
-    saveCurrentState(questionText);
+  /* reinicia variáveis de sessão */
+  shuffledQuestionsOrder = [];
+  shuffledAlternativesOrders = [];
+  shuffledCheckboxOrders = [];
+  variantSelections = [];                          // <<<
+  userAnswers = [];
+  tempAnswers  = [];
+  scoreME = scoreVF = scoreCheck = scoreEscrita = 0;
+  escritaAutoNotas       = [];
+  escritaItensAutoNotas  = [];
+  escritaItensRespostas  = [];
+
+  setupQuiz();
+  saveCurrentState(fileText);
 }
-
 
 /* -------------------   HASH SIMPLES PARA CACHE   -------------------- */
 function simpleHash(str) {
@@ -1854,11 +1094,10 @@ fileInput.addEventListener('change', function(e) {
   if (!file) return;
   const reader = new FileReader();
   reader.onload = function(ev) {
-    const title = file.name.replace(/\.txt$/i, "");
-    // Chama a nova função principal
-    initiateFilteringProcess(ev.target.result, title);
-    // renderQuizTitle() será chamado dentro do fluxo de processamento
-  };
+    currentQuizTitle = file.name.replace(/\.txt$/i, "");
+    processQuizText(ev.target.result);
+    renderQuizTitle();
+  };
   reader.readAsText(file, 'utf-8');
 });
 
