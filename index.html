@@ -886,30 +886,6 @@
     margin: 3px 5px;
     border: 1px solid #c8e6c9;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-	/* NOVO: Estilo para o botão flutuante de criar quiz mesclado */
-    #createMergedQuizBtn {
-    /* Efeito flutuante */
-    position: fixed;
-    z-index: 9990; /* Garante que ele fique acima da lista, mas abaixo dos modais */
-    
-    /* Posicionamento: meio da borda inferior */
-    bottom: 25px; /* Distância da borda inferior da tela */
-    left: 50%;
-    transform: translateX(-50%);
-    
-    /* Estética aprimorada para um botão de ação principal */
-    font-size: 1.05em;
-    border-radius: 50px; /* Formato de pílula, mais moderno */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22); /* Sombra mais forte para dar profundidade */
-    
-    /* Transição suave para quando o mouse passar por cima */
-    transition: background 0.2s, box-shadow 0.2s, transform 0.2s ease-out;
-}
-    #createMergedQuizBtn:hover {
-    /* Efeito sutil de levantar ao passar o mouse */
-    transform: translateX(-50%) translateY(-2px);
-    box-shadow: 0 8px 22px rgba(93, 132, 240, 0.35);
 }
   </style>
 </head>
@@ -1759,7 +1735,7 @@ function processQuizText(fileText, isFromMerge = false) {
     escritaItensAutoNotas = [];
     escritaItensRespostas = [];
     setupQuiz();
-    saveCurrentState(questionText);
+    saveCurrentState(fileText); // Salva o texto original completo, incluindo a INFO
 }
 
 
@@ -1777,99 +1753,104 @@ function simpleHash(str) {
 
 /* --------------------  CARREGA ESTADO SALVO NO ONLOAD  ------------------ */
 window.addEventListener("DOMContentLoaded", function() {
-  const state = loadState();
-  if (state && state.quizText && state.quizTextHash) {
-    let fileText = state.quizText;
+    const state = loadState();
+    if (state && state.quizText && state.quizTextHash) {
+        
+        // --- INÍCIO DA LÓGICA CORRIGIDA ---
+        let fileTextWithInfo = state.quizText; // Texto completo salvo
+        currentQuizTitle = state.currentQuizTitle || ""; // Carrega o título salvo
 
-    shuffleQuestionsLocked = !!state.shuffleQuestionsLocked;
-    if (shuffleQuestionsLocked) {
-      shuffleQuestionsChk.checked  = false;
-      shuffleQuestionsChk.disabled = true;
-      shuffleQuestionsChk.parentElement.style.opacity = 0.6;
-    } else {
-      shuffleQuestionsChk.disabled = false;
-      shuffleQuestionsChk.parentElement.style.opacity = 1;
+        // NOVO: Extrai e renderiza a INFO do texto salvo
+        const { info, remainingText } = parseInfo(fileTextWithInfo);
+        if (info) {
+            renderInfos([{ name: currentQuizTitle, info: info }]);
+        }
+
+        // O resto da função agora usa o 'remainingText', que é só o conteúdo das questões
+        let fileText = remainingText;
+        // --- FIM DA LÓGICA CORRIGIDA ---
+
+        shuffleQuestionsLocked = !!state.shuffleQuestionsLocked;
+        if (shuffleQuestionsLocked) {
+            shuffleQuestionsChk.checked = false;
+            shuffleQuestionsChk.disabled = true;
+            shuffleQuestionsChk.parentElement.style.opacity = 0.6;
+        } else {
+            shuffleQuestionsChk.disabled = false;
+            shuffleQuestionsChk.parentElement.style.opacity = 1;
+        }
+
+        const lines = fileText.split(/\r?\n/);
+        if (!shuffleQuestionsLocked && lines.length && /^q-random:\s*false;?/i.test(lines[0].trim())) {
+            shuffleQuestionsLocked = true;
+            shuffleQuestionsChk.checked = false;
+            shuffleQuestionsChk.disabled = true;
+            shuffleQuestionsChk.parentElement.style.opacity = 0.6;
+            lines.shift();
+            fileText = lines.join("\n");
+        }
+
+        const extracted = extractGroupsAndParse(fileText);
+        const parsed = extracted.originalQuestions;
+        if (parsed.length) {
+            originalQuestions = parsed;
+            groups = extracted.groups;
+            quizTextHash = state.quizTextHash;
+            shuffledQuestionsOrder = state.shuffledQuestionsOrder || [...Array(parsed.length).keys()];
+            shuffledAlternativesOrders = state.shuffledAlternativesOrders || [];
+            shuffledCheckboxOrders = state.shuffledCheckboxOrders || [];
+            variantSelections = state.variantSelections || [];
+            questions = shuffledQuestionsOrder.map(idx => originalQuestions[idx]);
+            
+            userAnswers = state.userAnswers || Array(questions.length).fill(null);
+            questions.forEach((q, idx) => {
+                if (q.tipo === 'escrita-itens') {
+                    if (!state.userAnswers || !Array.isArray(state.userAnswers[idx]) || state.userAnswers[idx].every(v => v === null)) {
+                        userAnswers[idx] = Array(q.itens.length).fill(undefined);
+                    }
+                }
+            });
+
+            tempAnswers = state.tempAnswers || Array(questions.length).fill(null);
+            escritaAutoNotas = state.escritaAutoNotas || [];
+            escritaItensAutoNotas = state.escritaItensAutoNotas || [];
+
+            questions.forEach((q, idx) => {
+                if (q.tipo === 'escrita-itens') {
+                    if (state.userAnswers && Array.isArray(state.userAnswers[idx])) {
+                        userAnswers[idx] = state.userAnswers[idx].map(val => val === null ? undefined : val);
+                    } else {
+                        userAnswers[idx] = Array(q.itens.length).fill(undefined);
+                    }
+                    if (state.escritaItensAutoNotas && Array.isArray(state.escritaItensAutoNotas[idx])) {
+                        escritaItensAutoNotas[idx] = state.escritaItensAutoNotas[idx].map(val => val === null ? undefined : val);
+                    } else {
+                        escritaItensAutoNotas[idx] = Array(q.itens.length).fill(undefined);
+                    }
+                }
+            });
+
+            escritaItensRespostas = state.escritaItensRespostas || [];
+            scoreME = state.scoreME || 0;
+            scoreVF = state.scoreVF || 0;
+            scoreCheck = state.scoreCheck || 0;
+            scoreEscrita = state.scoreEscrita || 0;
+            shuffleQuestionsChk.checked = !!state.shuffleQuestions;
+            shuffleAlternativesChk.checked = !!state.shuffleAlternatives;
+            window.individualScores = state.individualScores || { me: [], vf: [], check: [] };
+            
+            // NOVO: Restaura os filtros de dificuldade e tags exibidos
+            currentlyDisplayedTags = state.currentlyDisplayedTags || [];
+            currentlyDisplayedDifficulties = state.currentlyDisplayedDifficulties || [];
+
+            renderQuizTitle();
+            renderActiveFilters(); // Exibe os filtros salvos
+            
+            document.getElementById('score').textContent = '';
+            renderQuiz();
+            return;
+        }
     }
-
-    /* compat antigo q-random:false */
-    const lines = fileText.split(/\r?\n/);
-    if (!shuffleQuestionsLocked && lines.length && /^q-random:\s*false;?/i.test(lines[0].trim())) {
-      shuffleQuestionsLocked   = true;
-      shuffleQuestionsChk.checked  = false;
-      shuffleQuestionsChk.disabled = true;
-      shuffleQuestionsChk.parentElement.style.opacity = 0.6;
-      lines.shift();
-      fileText = lines.join("\n");
-    }
-
-    const extracted = extractGroupsAndParse(fileText);
-    const parsed    = extracted.originalQuestions;
-    if (parsed.length) {
-      originalQuestions = parsed;
-      groups            = extracted.groups;
-      quizTextHash      = state.quizTextHash;
-      shuffledQuestionsOrder   = state.shuffledQuestionsOrder   || [...Array(parsed.length).keys()];
-      shuffledAlternativesOrders = state.shuffledAlternativesOrders || [];
-      shuffledCheckboxOrders  = state.shuffledCheckboxOrders  || [];
-      variantSelections       = state.variantSelections       || [];
-      questions               = shuffledQuestionsOrder.map(idx => originalQuestions[idx]);
-      // Restaura respostas gerais
-userAnswers = state.userAnswers || Array(questions.length).fill(null);
-
-// Corrige DISERTATIVAS-ITENS: se não houver respostas enviadas, garanta undefined por item
-questions.forEach((q, idx) => {
-  if (q.tipo === 'escrita-itens') {
-    // Se state.userAnswers[idx] não for array com itens realmente respondidos...
-    if (!state.userAnswers 
-        || !Array.isArray(state.userAnswers[idx]) 
-        || state.userAnswers[idx].every(v => v === null)) {
-      // inicializa cada sub-resposta como undefined, não como null
-      userAnswers[idx] = Array(q.itens.length).fill(undefined);
-    }
-  }
-});
-
-      // Restaura respostas temporárias gerais
-tempAnswers = state.tempAnswers || Array(questions.length).fill(null);
-
-
-escritaAutoNotas        = state.escritaAutoNotas        || [];
-escritaItensAutoNotas   = state.escritaItensAutoNotas   || [];
-
-// Corrige escrita-itens: converte nulls para undefined em userAnswers e escritaItensAutoNotas
-questions.forEach((q, idx) => {
-  if (q.tipo === 'escrita-itens') {
-    // Corrige respostas dos itens
-    if (state.userAnswers && Array.isArray(state.userAnswers[idx])) {
-      userAnswers[idx] = state.userAnswers[idx].map(val => val === null ? undefined : val);
-    } else {
-      userAnswers[idx] = Array(q.itens.length).fill(undefined);
-    }
-    // Corrige autoavaliação dos itens
-    if (state.escritaItensAutoNotas && Array.isArray(state.escritaItensAutoNotas[idx])) {
-      escritaItensAutoNotas[idx] = state.escritaItensAutoNotas[idx].map(val => val === null ? undefined : val);
-    } else {
-      escritaItensAutoNotas[idx] = Array(q.itens.length).fill(undefined);
-    }
-  }
-});
-
-escritaItensRespostas   = state.escritaItensRespostas   || [];
-scoreME   = state.scoreME   || 0;
-scoreVF   = state.scoreVF   || 0;
-scoreCheck= state.scoreCheck|| 0;
-scoreEscrita = state.scoreEscrita || 0;
-shuffleQuestionsChk.checked     = !!state.shuffleQuestions;
-shuffleAlternativesChk.checked  = !!state.shuffleAlternatives;
-currentQuizTitle = state.currentQuizTitle || "";
-window.individualScores = state.individualScores || { me: [], vf: [], check: [] };
-
-renderQuizTitle();
-document.getElementById('score').textContent = '';
-renderQuiz();
-return;
-    }
-  }
 });
 
 /* ---------------------  INPUT DE ARQUIVO LOCAL  ----------------------- */

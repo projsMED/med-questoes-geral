@@ -1,0 +1,191 @@
+INFO:
+
+TAGS: Estratégia Med; Qconcursos;
+
+<tag=Estratégia Med>
+<tag=Qconcursos>
+
+<tag=Qconcursos>
+Q: Os acidentes ofídicos têm importância médica em virtude de sua grande frequência e gravidade. A ocorrência do acidente ofídico está, em geral, relacionada a fatores climáticos e aumento da atividade humana nos trabalhos no campo. No Brasil, a fauna ofídica de interesse médico está representada principalmente pelos gêneros:
+Alternativas
+A
+Philodryas, Helicops e Micrurus
+B
+ Bothrops, Crotalus, Lachesis e Micrurus. 
+C
+Chironius, Crotalus, Lachesis e Micrurus.
+D
+Helicops, Boa e Crotalus.
+E
+Boa, Philodryas e Helicops. 
+G: B
+
+Q: Acidentes ofídicos são envenenamentos causados pela inoculação de toxinas, por intermédio das presas de serpentes, podendo determinar alterações locais e sistêmicas. Sobre os acidentes ofídicos é correto afirmar:
+Alternativas
+A
+A maioria dos acidentes ofídicos no Brasil é ocasionada por serpentes do gênero Bothrops, seguido pelo gênero Crotalus.
+B
+A maioria dos acidentes é classificada como grave, com necessidade de soroterapia que, quando ultrapassa 01 hora, pode ser letal.
+C
+Os meses de maior frequência de acidentes são os frios e secos, períodos de maior frequência em áreas abertas.
+D
+Os acidentes ofídicos são mais freqüentes na população citadina, no sexo feminino e em faixa etária economicamente ativa.
+E
+As regiões brasileiras onde há maior incidência e prevalência de acidentes são as regiões Sudeste e Sul.
+G: A
+
+Q: Acidentes ofídicos, ou simplesmente ofidismo, é o quadro clínico decorrente da mordedura de serpentes. No Brasil é comum chamar as serpentes de “cobras”. Acerca do tema, podemos afirmar que o acidente elapidico: 
+Alternativas
+A
+É causado por serpentes da família Viperidae, dos gêneros Bothrops e Bothrocophias (jararacuçu, jararaca, urutu, caiçaca, comboia).
+B
+As serpentes que o causam são responsáveis pela maioria dos acidentes ofídicos no Brasil.
+C
+É causado pelas cascavéis (Família Viperidae, espécie Crotalus durissus).
+D
+É causado pelas corais-verdadeiras (família Elapidae, gêneros Micrurus e Leptomicrurus).
+E
+É causado por serpentes da família Viperidae, no caso aespécie Lachesis muta (surucucu-pico-de-jaca).
+G: D
+
+Q: Acidentes ofídicos, ou simplesmente ofidismo, são quadros clínicos decorrentes da mordedura de serpentes, divididos em quatro grupos, de acordo com o gênero da serpente causadora. Assinale a alternativa que corresponde à serpente responsável pelo acidente do grupo botrópico.
+Alternativas
+A
+Surucucu.
+B
+Cascavel.
+C
+Corais-verdadeiras.
+D
+Jararaca.
+E
+Corais-falsas. 
+G: D
+
+Q: Indique o acidente ofídico que apresenta maior letalidade.
+Alternativas
+A
+Elapídico
+B
+Laquético
+C
+Botrópico
+D
+Loxoscélico
+E
+Crotálico
+G: E
+
+Q: Em relação ao acidente ofídico crotálico, assinale a alternativa <b>incorreta</b>.
+Alternativas
+A
+Após 12 horas, pode ocorrer incoagulabilidade sanguínea. A paralisia respiratória pode ser  ainda mais precoce.
+B
+Eritema, dor intensa, bolhas e equimose podem surgir de 1 a 3 horas após o evento, no local da picada.
+C
+Mialgia generalizada, rabdomiólise e mioglobinúria são frequentemente observadas.
+D
+Ptose palpebral bilateral, fácies miastênica, disfagia e diplopia podem ocorrer.
+G: B
+C: Na picada por cascavel, o local da picada muitas vezes não apresenta dor ou lesão evidente, apenas uma sensação de formigamento; dificuldade de manter os olhos abertos, com aspecto sonolento (fácies miastênica), visão turva ou dupla, mal-estar, náuseas e cefaleia são algumas das manifestações, acompanhadas por dores musculares generalizadas e urina escura nos casos mais graves.
+
+Q: Adolescente 13 anos, oriundo de zona rural vítima de acidente ofídico iniciando quadro com mialgia intensa, mal estar, sudorese, náuseas, vômitos, ptose palpebral, flacidez de musculatura facial. Queixa-se também de diplopia. Após 4 horas, paciente apresenta quadro de insuficiência respiratória. Assinale a alternativa que contemple o tipo de acidente ofídico e o tipo predominante da insuficiência respiratória. 
+Alternativas
+A
+Acidente botrópico, insuficiência respiratória hipercápnica.
+B
+Acidente crotálico, insuficiência respiratória hipoxêmica.
+C
+Acidente laquético, insuficiência respiratória hipoxêmica.
+D
+Acidente crotálico, insuficiência respiratória hipercápnica.
+G: D
+C: Os sinais sistêmicos de mialgia intensa, rabdomiólise, mioglobinúria e as manifestações neurotóxicas (ptose palpebral, fácies miastênica, disfagia, diplopia e flacidez muscular) são típicos do veneno de crotalus.
+A paralisia dos músculos respiratórios por bloqueio neuromuscular leva à hipoventilação alveolar, cursando inicialmente com aumento da PaCO₂ (insuficiência respiratória tipo II ou hipercápnica), embora a PaO₂ tenda a cair secundariamente.
+
+Q: Os acidentes ofídicos são de notificação obrigatória em todo o território nacional. Depois dos acidentes por picada de escorpião, são os mais comuns em nosso país. Assinale a alternativa que apresenta, respectivamente, o acidente ofídico de maior importância epidemiológica no Brasil, responsável por cerca de 90% dos envenenamentos, e o acidente que apresenta o maior coeficiente de letalidade.
+Alternativas
+A
+Botrópico e botrópico.
+B
+Crotálico e botrópico.
+C
+Botrópico e crotálico.
+D
+Crotálico e crotálico.
+G: C
+C: Botropico mais comum. Crotalico mais letal devido neurotoxicidade e rabdomiólise.
+Nota: Rabdomiólise é uma síndrome caracterizada pela destruição rápida das fibras musculares esqueléticas, liberando no sangue substâncias intracelulares como mioglobina, enzimas (como a creatina quinase) e eletrólitos (potássio, fósforo, cálcio. Diagnóstico:
+- Elevação marcante da creatina quinase (CK) — normalmente 5× acima do limite.
+- Detecção de mioglobina na urina ou sangue, com urina com teste positivo para sangue, mas sem hemácia.
+- Detecção de mioglobina na urina ou sangue, com urina com teste positivo para sangue, mas sem hemácia.
+
+</tag=Qconcursos>
+
+<tag=Estratégia Med>
+Q: Criança de 8 anos é trazida do interior do Estado por ter sido vítima de acidente ofídico. Dentre os itens abaixo, qual destas deve ser a sua primeira conduta: 
+A
+iniciar a soroterapia
+B
+iniciar a hidratação vigorosa do paciente
+C
+iniciar a medicação pré-soro
+D
+aplicar vacina antitetânica 
+G: C
+C: Os acidentes ofídicos são da grande importância médica tanto pela sua frequência quanto por gravidade. São divididos em 4 grupos: botrópicos (90% dos acidentes), crotálicos (7,7% dos acidentes), laquético (1,4% dos acidentes ) e elapídico (0,4% dos acidentes). Vamos relembrar as ações desses venenos:
+- Botrópico (ex: jararaca): veneno com ação proteolítica, coagulante e hemorrágica.
+- Crotálico (ex: cascavel): veneno com ação neurotóxica precoce, levando a fraqueza muscular, ação miotóxica e coagulante.
+- Laquético (ex: surucucu): veneno com ação proteolítica, coagulante, hemorrágica e neurotóxica (estimulação vagal).
+- Elapídico (ex: coral): veneno com ação neurotóxica, levando a fraqueza muscular generalizada e progressiva que pode ter início em até 12h da picada.
+ Vamos analisar as alternativas e discutir a próxima conduta:
+{A}: A banca não nos informou nenhuma manifestação clínica da criança, portanto não temos como indicar o soro sem antes ter a suspeita de qual cobra causou o acidente, já que o soro é específico para cada agente. Além disso, o risco de hipovolemia nesses pacientes é elevado, portanto a conduta inicial e imediata é a hidratação venosa.
+{B}: A conduta inicial deve ser hidratação vigorosa da criança pelo risco de hipovolemia e choque, já que alguns venenos têm ações hemorrágicas e outros, por uma ação direta, podem levar a um quadro de vasodilatação com depressão miocárdica.
+{C}: Incorreta porque o risco maior da criança no momento é de hipovolemia, sendo a hidratação venosa a conduta inicial. A medicação pré-soro pode ser feita ou não, estando a critério do médico prescritor. Medicações recomendadas incluem os anti-histamínicos e hidrocortisona.
+{D}: A vacina antitetânica está indicada, porém não no momento do atendimento inicial desses pacientes.
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+Q:
+G:
+C:
+
+</tag=Estratégia Med>
