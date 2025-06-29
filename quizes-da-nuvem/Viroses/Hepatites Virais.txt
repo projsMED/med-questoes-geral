@@ -19,9 +19,9 @@ A3: O compartilhamento de objetos como alicates de unha e lâminas de barbear po
 G: V
 C: Objetos que perfuram ou cortam a pele podem estar contaminados com sangue e são vias de transmissão para hepatites B, C e D.
 A4: A transmissão vertical das hepatites virais ocorre exclusivamente durante a gestação, sem risco no momento do parto.
-G: V
+G: F
 C: A transmissão vertical pode ocorrer também no momento do parto, não apenas durante a gestação.
-A5: Em gestantes coinfectadas por HCA e HIV, a chance de transmissão vertical é maior do que em gestantes infectadas apenas pelo HCA
+A5: Em gestantes coinfectadas por HAV e HIV, a chance de transmissão vertical é maior do que em gestantes infectadas apenas pelo HCA
 G: F
 C: Em gestantes coinfectadas por <b>HCV</b> e HIV, a chance de transmissão vertical é maior do que em gestantes infectadas apenas pelo <b>HCV</b>.
 
