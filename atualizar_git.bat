@@ -1,6 +1,5 @@
 @echo off
 REM Script para atualizar o repositório Git local e enviar mudanças para o GitHub
-REM Autor: ChatGPT para o usuário andre
 
 echo =====================================
 echo Sincronizando com o GitHub (git pull)
@@ -29,4 +28,3 @@ echo.
 echo ============
 echo Finalizado!
 echo ============
-pause
