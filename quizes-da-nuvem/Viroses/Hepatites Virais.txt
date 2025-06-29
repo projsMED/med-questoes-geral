@@ -1,0 +1,240 @@
+INFO: Sobre hepatites virais, criado com base no Protocolos clínicos e diretrizes terapêuticas (para a parte de tratamento) e no Guia de Vigilância em Saúde (para o resto).
+
+TAGS: Agentes, transmissão e incubação; Manifestações clínicas e suscetibilidade; Diagnóstico; Tratamento
+
+<tag=Agentes, transmissão e incubação>
+Q: Quais são os <b>cinco vírus</b> agentes etiológicos da hepatite? E qual deles pode ter também animais como reservatório?
+GABARITO: O vírus da hepatite A (HAV), o vírus da hepatite B (HBV), o vírus da hepatite C (HCV), o vírus da hepatite D (HDV) e o vírus da hepatite E (HEV).
+​‎ 
+Alguns genótipos do da hepatite E podem ter animais como reservatórios, como suínos, roedores e aves.
+
+QCH: Com base nas <b>formas de transmissão</b> das hepatites virais, assinale TODAS as assertivas VERDADEIRAS
+A1: As hepatites A e E são transmitidas principalmente por contato com sangue contaminado, como transfusões e uso de drogas injetáveis.
+G: F
+C: As hepatites A e E são transmitidas pela via fecal-oral, não pelo sangue. Elas estão associadas a saneamento básico inadequado, água e alimentos contaminados, e higiene precária.
+A2: A transmissão da hepatite B pode ocorrer por meio de relações sexuais desprotegidas, devido à presença do vírus no sêmen e secreção vaginal.
+G: V
+C: A hepatite B é uma IST (infecção sexualmente transmissível) e pode ser transmitida por fluidos sexuais contaminados.
+A3: O compartilhamento de objetos como alicates de unha e lâminas de barbear pode favorecer a transmissão das hepatites B, C e D.
+G: V
+C: Objetos que perfuram ou cortam a pele podem estar contaminados com sangue e são vias de transmissão para hepatites B, C e D.
+A4: A transmissão vertical das hepatites virais ocorre exclusivamente durante a gestação, sem risco no momento do parto.
+G: V
+C: A transmissão vertical pode ocorrer também no momento do parto, não apenas durante a gestação.
+A5: Em gestantes coinfectadas por HCA e HIV, a chance de transmissão vertical é maior do que em gestantes infectadas apenas pelo HCA
+G: F
+C: Em gestantes coinfectadas por <b>HCV</b> e HIV, a chance de transmissão vertical é maior do que em gestantes infectadas apenas pelo <b>HCV</b>.
+
+---
+
+Q: Associe os períodos de incubação listados na Coluna I (numerados de 1 a 5) com os agentes etiológicos da Coluna II (identificados pelas letras A a E)
+​‎ 
+<b>Coluna I – Períodos de incubação</b>
+​‎ 
+30 a 180 dias (média de 60 a 90 dias)
+​‎ 
+14 a 60 dias (média de 42 dias)
+​‎ 
+15 a 45 dias (média de 30 dias)
+​‎ 
+30 a 180 dias (na superinfecção, período menor)
+​‎ 
+15 a 150 dias (média de 50 dias)
+​‎ 
+<b>Coluna II – Agentes etiológicos</b>
+A. Vírus da hepatite D (HDV)
+B. Vírus da hepatite C (HCV)
+C. Vírus da hepatite E (HEV)
+D. Vírus da hepatite A (HAV)
+E. Vírus da hepatite B (HBV)
+GABARITO: 1–E
+2–C
+3–D
+4–A
+5–B
+
+</tag=Agentes, transmissão e incubação>
+
+<tag=Manifestações clínicas e suscetibilidade>
+QCH: Sobre a <b>suscetibilidade e imunidade</b> às hepatites virais, assinale TODAS as assertivas VERDADEIRAS:
+A1: A presença de anti-HAV IgG reagente indica imunidade contra o vírus da hepatite A, seja por infecção prévia ou vacinação.
+G: V
+C: A presença de anti-HAV IgG indica imunidade, adquirida por infecção passada resolvida ou vacinação.
+A2: F. A detecção isolada de anti-HCV confirma que o indivíduo teve hepatite C resolvida e está imune ao vírus.
+G: F
+C: F. A presença de anti-HCV isoladamente não indica imunidade. Pode refletir infecção passada resolvida ou infecção crônica ativa — é necessário confirmar com HCV-RNA ou HCVAg.
+A3: Indivíduos com sorologia HBsAg, anti-HBc e anti-HBs negativos são suscetíveis à infecção pelo HBV.
+G: V
+C: A ausência de HBsAg, anti-HBc e anti-HBs caracteriza um indivíduo suscetível à hepatite B.
+A4: Para ter hepatite D, é necessário estar infectado por HCV.
+G: F
+C: F. <b>Correção:</b> Para ter hepatite D, é necessário estar infectado por <b>HBV</b>.
+​‎ 
+<b>Explicação:</b> O vírus da hepatite D é defectivo e só consegue se replicar na presença do HBsAg, produzido pelo HBV.
+​‎ 
+A infecção pelo vírus da hepatite D só pode ocorrer de duas formas:
+​‎ 
+ 1. <b>Coinfecção</b>: quando uma pessoa é infectada simultaneamente pelos vírus HBV e HDV
+ 2. <b>Superinfecção</b>: quando uma pessoa já portadora de hepatite B crônica adquire posteriormente o vírus da hepatite D
+​‎ 
+Isso significa que:
+ • Não existe hepatite D isolada
+ • Todo paciente com hepatite D necessariamente também tem hepatite B
+ • A prevenção da hepatite B (através da vacinação) também previne automaticamente a hepatite D
+​‎ 
+A hepatite D geralmente torna a doença hepática mais grave, acelerando a progressão para cirrose e outras complicações quando comparada à infecção isolada por HBV.
+​‎ 
+
+---
+
+QCH: Sobre a <b>hepatite aguda</b> e <b>fulminante</b>, assinale TODAS as assertivas VERDADEIRAS:
+A1: Os aspectos clínicos e virológicos da fase aguda estão limitados aos primeiros 3 meses.
+G: F
+C: Aos primeiros 6 meses.
+A2: Período prodrômico ou pré-ictérico: ocorre após o período de incubação do agente etiológico e anteriormente ao aparecimento da icterícia. Os sintomas são inespecícos: anorexia, náuseas, vômitos, diarreia ou, raramente, constipação, febre baixa, cefaleia, mal-estar, astenia e fadiga, aversão ao paladar e/ou ao olfato, mialgia, fotofobia, desconforto no hipocôndrio direito, urticária, artralgia ou artrite, e exantema papular ou maculopapular.
+G: V
+C: ​‎ 
+A3: Fase ictérica: com o aparecimento da icterícia, em geral, há aumento dos sintomas prodrômicos. Observa-se hepatomegalia dolorosa, com ocasional esplenomegalia.
+G: F
+C: Fase ictérica: com o aparecimento da icterícia, em geral, há <b>diminuição</b> dos sintomas prodrô micos. Observa-se hepatomegalia dolorosa, com ocasional esplenomegalia.
+A4: Fase de convalescença: segue-se ao desaparecimento da icterícia. A recuperação completa, incluindo da fraqueza e cansaço, ocorre após algumas semanas.
+G: F
+C: Fase de convalescença: segue-se ao desaparecimento da icterícia. A recuperação completa ocorre após algumas semanas, <b>mas a fraqueza e o cansaço podem persistir por vários meses</b>.
+A5: A hepatite fulminante é o termo utilizado para designar a insuficiência hepática aguda, caracterizada pelo surgimento de icterícia, coagulopatia e encefalopatia hepática em um intervalo de até dez semanas.
+G: F
+C: A hepatite fulminante é o termo utilizado para designar a insuficiência hepática aguda, caracterizada pelo surgimento de icterícia, coagulopatia e encefalopatia hepática em um intervalo de até <b>oito</b> semanas.
+A6: A fisiopatologia da hepatite fulminante está relacionada à degeneração e à necrose maciça dos hepatócitos. O quadro neurológico progride para o coma ao longo de poucos dias após a apresentação inicial. Todos os cinco tipos de hepatites virais podem causar hepatite fulminante.
+G: V
+C: ​‎ 
+
+---
+
+QCH: Sobre a <b>hepatite crônica</b>, assinale TODAS as assertivas VERDADEIRAS.
+A1: As hepatites virais crônicas estão relacionadas aos vírus B, C e D e, com maior raridade, ao vírus E.
+G: V
+C: ​‎ 
+A2: A cronicidade é caracterizada pela detecção de material genético ou de antígenos virais por um período de um ano após o diagnóstico inicial.
+G: F
+C: A cronicidade é caracterizada pela detecção de material genético ou de antígenos virais por um período de <b>seis meses</b> após o diagnóstico inicial.
+A3: A infecção crônica pode cursar de forma oligo/assintomática ou sintomática, normalmente com agravamento da doença hepática em longo prazo. Nesses casos, os indivíduos apresentam sinais histológicos de lesão hepática (inflamação, com ou sem fibrose) e marcadores sorológicos ou virológicos de replicação viral.
+G: V
+C: ​‎ 
+A4: Indivíduos com infecção crônica assintomática não podem transmitir a doença.
+G: F
+C: O vírus <b>ainda pode ser transmitido</b>, o que constitui fator importante na propagação da doença
+A5: Os casos crônicos das hepatites virais B, C e D podem evoluir com o desenvolvimento de fibrose, cirrose hepática e suas complicações. As pessoas com hepatites virais crônicas também têm risco aumentado para o desenvolvimento de carcinoma hepatocelular.
+G: V
+C: ​‎ 
+A6: Na hepatite D, a cronicidade é elevada na coinfecção (quando o indivíduo adquire o vírus B e D simultaneamente), chegando a mais de 70% dos casos; e menor na superinfecção (quando o portador de hepatite B crônica é infectado pelo vírus D).
+G: F
+C: Na hepatite D, a cronicidade é <b>elevada na superinfecção</b> (quando o portador de hepatite B crônica é infectado pelo vírus D), chegando a mais de 70% dos casos; e <b>menor na coinfecção</b> (quando o indivíduo adquire o vírus B e D simultaneamente), ou seja, por volta de 5% dos casos
+A7: O risco de cronificação pelo HBV depende da idade na qual ocorre a infecção, sendo de 90% para os recém-nascidos (RN) de mães HBeAg positivas, de 25% a 30% para lactentes a menores de 5 anos, até menos de 5% em adultos
+G: V
+C: ​‎ 
+A8: Para a hepatite C, a taxa de cronificação varia entre 60% e 90%, sendo maior em função de alguns fatores do hospedeiro (sexo feminino, imunodeficiências, idade superior a 40 anos).
+G: F
+C: Para a hepatite C, a taxa de cronificação varia entre 60% e 90%, sendo maior em função de alguns fatores do hospedeiro (<b>sexo masculino</b>, imunodeficiências, idade superior a 40 anos).
+
+</tag=Manifestações clínicas e suscetibilidade>
+
+<tag=Diagnóstico>
+Q: Cite <b>dois testes inespecíficos</b> que podem ser usados para o diagnóstico laboratorial de hepatite viral.
+GABARITO: Dosagem de aminotransferases (transaminases) e dosagem de bilirrubinas.
+​‎ 
+Explicação:
+  • <b>Dosagem de aminotransferases (transaminases):</b> aspartato aminotransferase (AST/TGO) e a alanino aminotransferase (ALT/TGP) são marcadores de agressão hepatocelular. Nas formas agudas, chegam a atingir valores até 25 a 100 vezes acima do normal, embora se limitem a níveis mais baixos em alguns indivíduos, principalmente naqueles acometidos pela hepatite C. Em geral, essas enzimas começam a elevar-se uma semana antes do início da icterícia e normalizam-se em aproximadamente três a seis semanas de curso clínico da doença. Nas formas crônicas, na maioria dos casos, elas não ultrapassam 15 vezes o valor normal e, não raro, em indivíduos assintomáticos é o único exame laboratorial sugestivo de doença hepática.
+  • <b>Dosagem de bilirrubinas:</b> elevam-se após o aumento das aminotransferases e, nas formas agudas, podem alcançar valores 20 a 25 vezes acima do normal. Apesar de haver aumento tanto da fração não conjugada (indireta) quanto da conjugada (direta), esta última se apresenta predominante. Na urina, pode ser detectada precocemente, antes mesmo do surgimento da icterícia.
+
+
+Q: Sobre o <b>diagnóstico diferencial</b> de hepatites virais. Responda:
+I_A) Cite ao menos um diagnóstico diferencial para o período prodrômico.
+GABARITO: No período prodrômico, as principais são: mononucleose infecciosa (causada pelo vírus Epstein-Barr), toxoplasmose, citomegalovirose e outras viroses, nas quais, geralmente, o aumento das aminotransferases não ultrapassa 500 UI/L.
+I_B) Cite ao menos um diagnóstico diferencial para o período ictérico.
+GABARITO: Devem-se considerar: leptospirose, febre amarela, malária e dengue grave.
+
+Q: Qual é o marcador sorológico definitivo para o diagnóstico de uma infecção aguda pelo vírus da Hepatite A (HAV)?  
+A) Anti-HAV IgG  
+B) HBsAg  
+C) Anti-HAV IgM  
+D) HAV-RNA  
+E) Anti-HCV  
+G: C  
+C: A alternativa correta é a {C}) Anti-HAV IgM.  
+{A)} Incorreta: A presença do Anti-HAV IgG, isoladamente, indica imunidade adquirida por infecção prévia resolvida ou por vacinação, e não uma infecção aguda.  
+{B)} Incorreta: O HBsAg é o antígeno de superfície do vírus da hepatite B (HBV), utilizado para diagnosticar a infecção por esse vírus, e não o da hepatite A.  
+{C)} Correta: A presença do anticorpo Anti-HAV da classe IgM é o que define o diagnóstico de hepatite A na fase aguda. Ele é detectável logo no início dos sintomas.  
+{D)} Incorreta: Embora o HAV-RNA (material genético do vírus) possa estar presente, o marcador sorológico padrão e definitivo para o diagnóstico da fase aguda é o Anti-HAV IgM.  
+{E)} Incorreta: O Anti-HCV é o anticorpo contra o vírus da hepatite C, não tendo relação com o diagnóstico da hepatite A.  
+
+Q: Um paciente apresenta o marcador HBsAg reagente por um período superior a seis meses. Qual a interpretação correta para este resultado?  
+A) Infecção aguda por Hepatite B.  
+B) Imunidade contra Hepatite B por vacinação.  
+C) Infecção crônica por Hepatite B.  
+D) Cura funcional da Hepatite B.  
+E) Contato prévio com o vírus da Hepatite B, mas sem infecção ativa.  
+G: C  
+C: A alternativa correta é a {C}) Infecção crônica por Hepatite B.  
+{A)} Incorreta: Na hepatite B aguda, o HBsAg pode ser detectado, mas espera-se que desapareça em até 120 dias. Sua persistência indica cronicidade.  
+{B)} Incorreta: A imunidade por vacinação é confirmada pela presença isolada do anticorpo Anti-HBs.  
+{C)} Correta: A persistência do HBsAg por mais de seis meses é o critério que caracteriza a infecção crônica pelo vírus da Hepatite B.  
+{D)} Incorreta: A cura funcional da Hepatite B está associada ao desaparecimento do HBsAg e ao surgimento do Anti-HBs.  
+{E)} Incorreta: O contato prévio com resolução da infecção é indicado pela presença de Anti-HBc total e Anti-HBs, com HBsAg não reagente.  
+
+Q: Um paciente apresenta resultado de Anti-HCV reagente. Qual exame complementar é essencial para diferenciar uma infecção ativa de uma infecção curada?  
+A) Anti-HBc IgM  
+B) Dosagem de aminotransferases (TGO/TGP)  
+C) HBeAg  
+D) Anti-HCV IgM  
+E) HCV-RNA  
+G: E  
+C: A alternativa correta é a {E}) HCV-RNA.  
+{A)} Incorreta: O Anti-HBc IgM é um marcador de infecção recente pelo vírus da hepatite B, não se aplicando à hepatite C.  
+{B)} Incorreta: Embora as aminotransferases possam estar elevadas na doença ativa, elas podem se normalizar. Sozinhas, não confirmam a replicação viral.  
+{C)} Incorreta: O HBeAg é um marcador de replicação do vírus da hepatite B.  
+{D)} Incorreta: Diferente de outras hepatites, o Anti-HCV IgM não é um marcador confiável para a fase aguda e não é utilizado rotineiramente para diferenciar a fase da doença. O Anti-HCV total (IgG + IgM) indica apenas o contato com o vírus.  
+{E)} Correta: O marcador Anti-HCV reagente indica apenas o contato com o vírus, podendo estar presente tanto em quem se curou quanto em quem tem a infecção crônica. A detecção do HCV-RNA (material genético viral) é a evidência da presença e replicação do vírus, sendo, portanto, o exame que confirma a infecção ativa.  
+
+Q: O diagnóstico da Hepatite D (HDV) está intrinsecamente ligado à presença de qual outro vírus?  
+A) Vírus da Hepatite A (HAV)  
+B) Vírus da Hepatite B (HBV)  
+C) Vírus da Hepatite C (HCV)  
+D) Vírus da Hepatite E (HEV)  
+E) Citomegalovírus  
+G: B  
+C: A alternativa correta é a {B}) Vírus da Hepatite B (HBV).  
+{A)} Incorreta: A infecção pelo HAV não tem relação com a replicação do HDV.  
+{B)} Correta: O vírus da Hepatite D (HDV) é um vírus defectivo, o que significa que ele necessita da presença do antígeno de superfície do vírus da Hepatite B (HBsAg) para conseguir se replicar e causar a infecção.  
+{C)} Incorreta: A infecção pelo HCV não permite a replicação do HDV.  
+{D)} Incorreta: A infecção pelo HEV não tem relação com a replicação do HDV.  
+{E)} Incorreta: O Citomegalovírus pode causar hepatite, mas não tem relação com a infecção pelo HDV, fazendo parte do diagnóstico diferencial.  
+
+Q: Em casos de hepatites virais agudas, qual dos seguintes achados laboratoriais inespecíficos é mais característico e frequentemente observado?  
+A) Leucócitos e plaquetas aumentados.  
+B) Níveis de aminotransferases (ALT/TGP e AST/TGO) entre 2 a 3 vezes o valor normal.  
+C) Predomínio de bilirrubina indireta sobre a direta.  
+D) Níveis de aminotransferases (ALT/TGP e AST/TGO) que podem atingir de 25 a 100 vezes o valor normal.  
+E) Fosfatase alcalina e gama-glutamiltransferase como os primeiros exames a se alterarem.  
+G: D  
+C: A alternativa correta é a {D}) Níveis de aminotransferases (ALT/TGP e AST/TGO) que podem atingir de 25 a 100 vezes o valor normal.  
+{A)} Incorreta: A contagem de leucócitos e plaquetas pode ser solicitada, mas não há um padrão de aumento característico; pelo contrário, podem estar normais ou até baixos.  
+{B)} Incorreta: Elevações discretas de aminotransferases são mais comuns em formas crônicas ou em outras condições hepáticas, não sendo o padrão da hepatite viral aguda.  
+{C)} Incorreta: Nas hepatites virais, ocorre um aumento de ambas as frações de bilirrubina, mas com predomínio da fração conjugada (direta).  
+{D)} Correta: Nas formas agudas das hepatites virais, é característica a elevação acentuada das aminotransferases (ALT/TGP e AST/TGO), que podem atingir valores de 25 a 100 vezes acima do limite superior da normalidade, refletindo a intensa agressão aos hepatócitos.  
+{E)} Incorreta: As aminotransferases são os marcadores de agressão hepatocelular que se elevam primeiro, geralmente antes do início da icterícia.  
+
+</tag=Diagnóstico>
+
+<tag=Tratamento>
+QCH: Sobre o tratamento para hepatites virais, assinale TODAS as assertivas VERDADEIRAS.
+A1: Não existe tratamento específico para as formas agudas, exceto para hepatite C e hepatite B aguda grave. Para as demais hepatites, se necessário, faz-se apenas tratamento sintomático para náuseas, vômitos e prurido.
+G: V 
+A2: Não existem restrições dietéticas.
+G: F
+C: A única restrição dietética está relacionada à <b>ingestão de álcool</b>.
+A3: A Alfapeginterferona constitui o tratamento preferencial para a hepatite B, devido à sua maior potência antiviral e barreira genética, bem como à segurança estabelecida em longo prazo, inclusive durante a gestação. A dose padrão é de 300 mg (um comprimido) ao dia, que pode ser ingerido com ou sem alimentos.
+G: F
+C: O <b>fumarato de tenofovir desoproxila (TDF)</b> constitui o tratamento preferencial para a hepatite B, devido à sua maior potência antiviral e barreira genética, bem como à segurança estabelecida em longo prazo, inclusive durante a gestação. A dose padrão é de 300 mg (um comprimido) ao dia, que pode ser ingerido com ou sem alimentos.
+A4: O entecavir (ETV) é um antiviral alternativo para o tratamento da hepatite B, indicado para situações em que se deve evitar o TDF.
+G: V
+C: A dose padrão do ETV é de 0,5 mg (um comprimido) ao dia, administrada, preferencialmente, em jejum (mínimo de duas horas após a refeição e duas horas antes da próxima refeição).
+</tag=Tratamento>
