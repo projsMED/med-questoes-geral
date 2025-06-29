@@ -31,27 +31,27 @@ Q: Associe os períodos de incubação listados na Coluna I (numerados de 1 a 5)
 ​‎ 
 <b>Coluna I – Períodos de incubação</b>
 ​‎ 
-30 a 180 dias (média de 60 a 90 dias)
+1. 30 a 180 dias (média de 60 a 90 dias)
 ​‎ 
-14 a 60 dias (média de 42 dias)
+2. 14 a 60 dias (média de 42 dias)
 ​‎ 
-15 a 45 dias (média de 30 dias)
+3. 15 a 45 dias (média de 30 dias)
 ​‎ 
-30 a 180 dias (na superinfecção, período menor)
+4. 30 a 180 dias (na superinfecção, período menor)
 ​‎ 
-15 a 150 dias (média de 50 dias)
+5. 15 a 150 dias (média de 50 dias)
 ​‎ 
 <b>Coluna II – Agentes etiológicos</b>
-A. Vírus da hepatite D (HDV)
-B. Vírus da hepatite C (HCV)
-C. Vírus da hepatite E (HEV)
-D. Vírus da hepatite A (HAV)
-E. Vírus da hepatite B (HBV)
-GABARITO: 1–E
-2–C
-3–D
-4–A
-5–B
+A. Vírus da hepatite A (HAV)
+B. Vírus da hepatite B (HBV)
+C. Vírus da hepatite C (HCV)
+D. Vírus da hepatite D (HDV)
+E. Vírus da hepatite E (HEV)
+GABARITO: 1–B
+2–E
+3–A
+4–B
+5–C
 
 </tag=Agentes, transmissão e incubação>
 
