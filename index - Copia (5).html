@@ -1161,34 +1161,33 @@ function parseInfo(text) {
  * @param {Array<{name: string, info: string}>} infosArray Array de objetos, cada um com o nome do quiz e o conteúdo da info.
  */
 function renderInfos(infosArray) {
-    const container = document.getElementById('infoContainer');
-    if (!container) return;
+  const container = document.getElementById('infoContainer');
+  if (!container) return;
 
-    container.innerHTML = '';
-    if (!infosArray || infosArray.length === 0) {
-        return;
+  // Limpa infos antigas e verifica se há algo novo para renderizar
+  container.innerHTML = '';
+  if (!infosArray || infosArray.length === 0) {
+    return;
+  }
+
+  let finalHtml = '';
+  infosArray.forEach((item, index) => {
+    // Só renderiza se a info de fato existir
+    if (item.info) {
+      finalHtml += `
+        <div class="info-wrapper">
+          <div class="info-toggle" data-target="info-content-${index}">
+            INFORMAÇÕES do quiz (<span class="info-quiz-name">${item.name}</span>)
+          </div>
+          <div class="info-content" id="info-content-${index}">
+            ${item.info}
+          </div>
+        </div>
+      `;
     }
+  });
 
-    let finalHtml = '';
-    infosArray.forEach((item, index) => {
-        if (item.info) {
-            // NOVO: Aplica a função de conversão de imagem ao conteúdo da INFO
-            const formattedInfo = autoEmbedImages(item.info);
-
-            finalHtml += `
-                <div class="info-wrapper">
-                    <div class="info-toggle" data-target="info-content-${index}">
-                        INFORMAÇÕES do quiz (<span class="info-quiz-name">${item.name}</span>)
-                    </div>
-                    <div class="info-content" id="info-content-${index}">
-                        ${formattedInfo} 
-                    </div>
-                </div>
-            `;
-        }
-    });
-
-    container.innerHTML = finalHtml;
+  container.innerHTML = finalHtml;
 }
 
 // Adiciona um único listener de eventos ao contêiner para gerenciar todos os toggles.

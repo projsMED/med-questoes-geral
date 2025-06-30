@@ -1,118 +1,73 @@
-INFO:
+INFO: As questões forem pegas do Qconcursos e do Estratégia Med. Última adição de questões foi em 30/06/2025
+Resumos:
+https://projsmed.github.io/med-questoes-geral/imagens__f/isadasmdmdsa32.png
 
 TAGS: Estratégia Med; Qconcursos;
 
-<tag=Estratégia Med>
 <tag=Qconcursos>
 
-<tag=Qconcursos>
 Q: Os acidentes ofídicos têm importância médica em virtude de sua grande frequência e gravidade. A ocorrência do acidente ofídico está, em geral, relacionada a fatores climáticos e aumento da atividade humana nos trabalhos no campo. No Brasil, a fauna ofídica de interesse médico está representada principalmente pelos gêneros:
-Alternativas
-A
-Philodryas, Helicops e Micrurus
-B
- Bothrops, Crotalus, Lachesis e Micrurus. 
-C
-Chironius, Crotalus, Lachesis e Micrurus.
-D
-Helicops, Boa e Crotalus.
-E
-Boa, Philodryas e Helicops. 
+A) Philodryas, Helicops e Micrurus
+B) Bothrops, Crotalus, Lachesis e Micrurus.
+C) Chironius, Crotalus, Lachesis e Micrurus.
+D) Helicops, Boa e Crotalus.
+E) Boa, Philodryas e Helicops.
 G: B
 
 Q: Acidentes ofídicos são envenenamentos causados pela inoculação de toxinas, por intermédio das presas de serpentes, podendo determinar alterações locais e sistêmicas. Sobre os acidentes ofídicos é correto afirmar:
-Alternativas
-A
-A maioria dos acidentes ofídicos no Brasil é ocasionada por serpentes do gênero Bothrops, seguido pelo gênero Crotalus.
-B
-A maioria dos acidentes é classificada como grave, com necessidade de soroterapia que, quando ultrapassa 01 hora, pode ser letal.
-C
-Os meses de maior frequência de acidentes são os frios e secos, períodos de maior frequência em áreas abertas.
-D
-Os acidentes ofídicos são mais freqüentes na população citadina, no sexo feminino e em faixa etária economicamente ativa.
-E
-As regiões brasileiras onde há maior incidência e prevalência de acidentes são as regiões Sudeste e Sul.
+A) A maioria dos acidentes ofídicos no Brasil é ocasionada por serpentes do gênero Bothrops, seguido pelo gênero Crotalus.
+B) A maioria dos acidentes é classificada como grave, com necessidade de soroterapia que, quando ultrapassa 01 hora, pode ser letal.
+C) Os meses de maior frequência de acidentes são os frios e secos, períodos de maior frequência em áreas abertas.
+D) Os acidentes ofídicos são mais freqüentes na população citadina, no sexo feminino e em faixa etária economicamente ativa.
+E) As regiões brasileiras onde há maior incidência e prevalência de acidentes são as regiões Sudeste e Sul.
 G: A
 
 Q: Acidentes ofídicos, ou simplesmente ofidismo, é o quadro clínico decorrente da mordedura de serpentes. No Brasil é comum chamar as serpentes de “cobras”. Acerca do tema, podemos afirmar que o acidente elapidico: 
-Alternativas
-A
-É causado por serpentes da família Viperidae, dos gêneros Bothrops e Bothrocophias (jararacuçu, jararaca, urutu, caiçaca, comboia).
-B
-As serpentes que o causam são responsáveis pela maioria dos acidentes ofídicos no Brasil.
-C
-É causado pelas cascavéis (Família Viperidae, espécie Crotalus durissus).
-D
-É causado pelas corais-verdadeiras (família Elapidae, gêneros Micrurus e Leptomicrurus).
-E
-É causado por serpentes da família Viperidae, no caso aespécie Lachesis muta (surucucu-pico-de-jaca).
+A) É causado por serpentes da família Viperidae, dos gêneros Bothrops e Bothrocophias (jararacuçu, jararaca, urutu, caiçaca, comboia).
+B) As serpentes que o causam são responsáveis pela maioria dos acidentes ofídicos no Brasil.
+C) É causado pelas cascavéis (Família Viperidae, espécie Crotalus durissus).
+D) É causado pelas corais-verdadeiras (família Elapidae, gêneros Micrurus e Leptomicrurus).
+E) É causado por serpentes da família Viperidae, no caso aespécie Lachesis muta (surucucu-pico-de-jaca).
 G: D
 
 Q: Acidentes ofídicos, ou simplesmente ofidismo, são quadros clínicos decorrentes da mordedura de serpentes, divididos em quatro grupos, de acordo com o gênero da serpente causadora. Assinale a alternativa que corresponde à serpente responsável pelo acidente do grupo botrópico.
-Alternativas
-A
-Surucucu.
-B
-Cascavel.
-C
-Corais-verdadeiras.
-D
-Jararaca.
-E
-Corais-falsas. 
+A) Surucucu.
+B) Cascavel.
+C) Corais-verdadeiras.
+D) Jararaca.
+E) Corais-falsas.
 G: D
 
 Q: Indique o acidente ofídico que apresenta maior letalidade.
-Alternativas
-A
-Elapídico
-B
-Laquético
-C
-Botrópico
-D
-Loxoscélico
-E
-Crotálico
+A) Elapídico
+B) Laquético
+C) Botrópico
+D) Loxoscélico
+E) Crotálico
 G: E
 
 Q: Em relação ao acidente ofídico crotálico, assinale a alternativa <b>incorreta</b>.
-Alternativas
-A
-Após 12 horas, pode ocorrer incoagulabilidade sanguínea. A paralisia respiratória pode ser  ainda mais precoce.
-B
-Eritema, dor intensa, bolhas e equimose podem surgir de 1 a 3 horas após o evento, no local da picada.
-C
-Mialgia generalizada, rabdomiólise e mioglobinúria são frequentemente observadas.
-D
-Ptose palpebral bilateral, fácies miastênica, disfagia e diplopia podem ocorrer.
+A) Após 12 horas, pode ocorrer incoagulabilidade sanguínea. A paralisia respiratória pode ser  ainda mais precoce.
+B) Eritema, dor intensa, bolhas e equimose podem surgir de 1 a 3 horas após o evento, no local da picada.
+C) Mialgia generalizada, rabdomiólise e mioglobinúria são frequentemente observadas.
+D) Ptose palpebral bilateral, fácies miastênica, disfagia e diplopia podem ocorrer.
 G: B
 C: Na picada por cascavel, o local da picada muitas vezes não apresenta dor ou lesão evidente, apenas uma sensação de formigamento; dificuldade de manter os olhos abertos, com aspecto sonolento (fácies miastênica), visão turva ou dupla, mal-estar, náuseas e cefaleia são algumas das manifestações, acompanhadas por dores musculares generalizadas e urina escura nos casos mais graves.
 
 Q: Adolescente 13 anos, oriundo de zona rural vítima de acidente ofídico iniciando quadro com mialgia intensa, mal estar, sudorese, náuseas, vômitos, ptose palpebral, flacidez de musculatura facial. Queixa-se também de diplopia. Após 4 horas, paciente apresenta quadro de insuficiência respiratória. Assinale a alternativa que contemple o tipo de acidente ofídico e o tipo predominante da insuficiência respiratória. 
-Alternativas
-A
-Acidente botrópico, insuficiência respiratória hipercápnica.
-B
-Acidente crotálico, insuficiência respiratória hipoxêmica.
-C
-Acidente laquético, insuficiência respiratória hipoxêmica.
-D
-Acidente crotálico, insuficiência respiratória hipercápnica.
+A) Acidente botrópico, insuficiência respiratória hipercápnica.
+B) Acidente crotálico, insuficiência respiratória hipoxêmica.
+C) Acidente laquético, insuficiência respiratória hipoxêmica.
+D) Acidente crotálico, insuficiência respiratória hipercápnica.
 G: D
 C: Os sinais sistêmicos de mialgia intensa, rabdomiólise, mioglobinúria e as manifestações neurotóxicas (ptose palpebral, fácies miastênica, disfagia, diplopia e flacidez muscular) são típicos do veneno de crotalus.
 A paralisia dos músculos respiratórios por bloqueio neuromuscular leva à hipoventilação alveolar, cursando inicialmente com aumento da PaCO₂ (insuficiência respiratória tipo II ou hipercápnica), embora a PaO₂ tenda a cair secundariamente.
 
 Q: Os acidentes ofídicos são de notificação obrigatória em todo o território nacional. Depois dos acidentes por picada de escorpião, são os mais comuns em nosso país. Assinale a alternativa que apresenta, respectivamente, o acidente ofídico de maior importância epidemiológica no Brasil, responsável por cerca de 90% dos envenenamentos, e o acidente que apresenta o maior coeficiente de letalidade.
-Alternativas
-A
-Botrópico e botrópico.
-B
-Crotálico e botrópico.
-C
-Botrópico e crotálico.
-D
-Crotálico e crotálico.
+A) Botrópico e botrópico.
+B) Crotálico e botrópico.
+C) Botrópico e crotálico.
+D) Crotálico e crotálico.
 G: C
 C: Botropico mais comum. Crotalico mais letal devido neurotoxicidade e rabdomiólise.
 Nota: Rabdomiólise é uma síndrome caracterizada pela destruição rápida das fibras musculares esqueléticas, liberando no sangue substâncias intracelulares como mioglobina, enzimas (como a creatina quinase) e eletrólitos (potássio, fósforo, cálcio. Diagnóstico:
@@ -120,18 +75,54 @@ Nota: Rabdomiólise é uma síndrome caracterizada pela destruição rápida das
 - Detecção de mioglobina na urina ou sangue, com urina com teste positivo para sangue, mas sem hemácia.
 - Detecção de mioglobina na urina ou sangue, com urina com teste positivo para sangue, mas sem hemácia.
 
+Q: Homem de 22 anos passará a apresentar ptose palpebral, oftalmoplegia, mialgia e mioglobinúria associadas a aumento dos níveis séricos de CPK, aldolase e creatinina, se for vítima de acidente ofídico por
+A) jiboia.
+B) coral.
+C) sucuri.
+D) cascavel.
+E) jararaca.
+G: D
+C: {A}. jiboia:
+A jiboia é uma serpente não venenosa. Portanto, não causa os sintomas descritos na questão, como ptose, oftalmoplegia, mialgia e mioglobinúria.
+{B}. coral:
+As corais são serpentes do gênero Elapidae, e embora possam causar envenenamentos com sintomas neuroparalizantes, não são as principais responsáveis pelo quadro descrito (com aumento de CPK e mioglobinúria). Elas são mais associadas a sintomas neurológicos graves, mas com características diferentes das relatadas.
+{C}. sucuri:
+A sucuri não é venenosa, e seu envenenamento não causa os sintomas descritos. Ela pode causar lesões físicas por constrição, mas não neuroparalisia ou miopatias.
+{D}. cascavel:
+A cascavel (gênero Crotalus) é a responsável por envenenamentos com os sintomas descritos na questão. Ela pode causar fenômenos neuroparalizantes, como ptose palpebral, oftalmoplegia, mialgia e mioglobinúria, além de elevação nos níveis de CPK, aldolase e creatinina, característicos da rabdomiólise.
+{E}. jararaca:
+A jararaca (gênero Bothrops) é uma serpente venenosa, mas seu veneno está mais associado a efeitos hemorrágicos, como necrose e sangramentos, e não aos sintomas neuroparalisantes descritos.
+EM RESUMO
+O envenenamento por cascavel é a causa mais provável dos sintomas descritos: ptose, oftalmoplegia, mialgia, mioglobinúria e aumento dos níveis de CPK, aldolase e creatinina. Esses sinais são típicos de rabdomiólise e comprometimento muscular.
+
+Q: Em acidente ofídico, é importante identificar o animal causador do acidente, pois isso possibilita a liberação imediata dos pacientes picados por serpentes não peçonhentas, viabiliza o imediato atendimento do paciente picado por animal peçonhento e ajuda na indicação do soro antiofídico. Sobre as serpentes, analise as afirmativas abaixo.
+I. A fosseta loreal é um órgão termorregulador situado entre os olhos e as narinas de algumas serpentes, causando a impressão de que elas possuem 4 olhos. Todas as serpentes que possuem a fosseta loreal são peçonhentas.
+II. Serpentes com cauda lisa não são peçonhentas.
+III. Serpentes com cauda com chocalhos são peçonhentas.
+É CORRETO o que se afirma em:
+A) I e III, apenas.
+B) I e II, apenas.
+C) II e III, apenas.
+D) I, II e III.
+E) II, apenas.
+G: A
+C:
+I. "A fosseta loreal é um órgão termorregulador situado entre os olhos e as narinas de algumas serpentes, causando a impressão de que elas possuem 4 olhos. Todas as serpentes que possuem a fosseta loreal são peçonhentas."
+A afirmativa é verdadeira, pois a fosseta loreal é um órgão sensorial encontrado em algumas serpentes peçonhentas, como as da família Viperidae. Ela ajuda na detecção de variações térmicas no ambiente, sendo especialmente útil para localizar presas. Essa característica é comum nas serpentes peçonhentas, mas não é exclusiva delas.
+III. "Serpentes com cauda com chocalhos são peçonhentas."
+A afirmativa é verdadeira, pois as serpentes do gênero Crotalus (cascavéis), que possuem cauda com chocalhos, são de fato peçonhentas.
+
+
 </tag=Qconcursos>
 
+
 <tag=Estratégia Med>
+
 Q: Criança de 8 anos é trazida do interior do Estado por ter sido vítima de acidente ofídico. Dentre os itens abaixo, qual destas deve ser a sua primeira conduta: 
-A
-iniciar a soroterapia
-B
-iniciar a hidratação vigorosa do paciente
-C
-iniciar a medicação pré-soro
-D
-aplicar vacina antitetânica 
+A) iniciar a soroterapia
+B) iniciar a hidratação vigorosa do paciente
+C) iniciar a medicação pré-soro
+D) aplicar vacina antitetânica 
 G: C
 C: Os acidentes ofídicos são da grande importância médica tanto pela sua frequência quanto por gravidade. São divididos em 4 grupos: botrópicos (90% dos acidentes), crotálicos (7,7% dos acidentes), laquético (1,4% dos acidentes ) e elapídico (0,4% dos acidentes). Vamos relembrar as ações desses venenos:
 - Botrópico (ex: jararaca): veneno com ação proteolítica, coagulante e hemorrágica.
@@ -144,48 +135,96 @@ C: Os acidentes ofídicos são da grande importância médica tanto pela sua fre
 {C}: Incorreta porque o risco maior da criança no momento é de hipovolemia, sendo a hidratação venosa a conduta inicial. A medicação pré-soro pode ser feita ou não, estando a critério do médico prescritor. Medicações recomendadas incluem os anti-histamínicos e hidrocortisona.
 {D}: A vacina antitetânica está indicada, porém não no momento do atendimento inicial desses pacientes.
 
-Q:
-G:
-C:
+Q: Menino de 8 anos de idade foi picado por cobra. Quando examinado, duas horas após o acidente ofídico, o menino apresentava-se com dor intensa, edema importante e bolhas no membro afetado, hematúria macroscópica e Pressão Arterial (PA) – de 80 x 30 mmHg. Exame de sangue – incoagulável. (Pressão Arterial para essa idade: sistólica varia de 88–110 mmHg e diastólica de 58–78 mmHg). Para o tratamento, o médico precisa classificar o quadro quanto à gravidade e prescrever o tipo de soro adequado para o caso. Assinale a alternativa que apresenta a classificação do caso e o tipo de soro que essa criança deve receber.
+A) Caso moderado e soro anticrotálico.
+B) Caso moderado e soro antibotrópico.
+C) Caso grave e soro antibotrópico.
+D) Caso grave e soro antilaquético.
+G: C
+C: Temos aqui uma criança que foi picada por uma cobra e que apresenta manifestações locais intensas em todo o segmento afetado e manifestações sistêmica de sangramento (hematúria). Além disso, tem tempo de coagulação incoagulável. Isso tudo é decorrente de um veneno com ação proteolítica, hemorrágica e coagulante. Quem possui essas características é o acidente botrópico. Ele pode ser classificado da seguinte forma:
+● Leve: dor e edema ausentes ou pouco intensos, com ou sem sangramentos locais. 
+● Moderado: dor e edema evidentes que ultrapassam o segmento anatômico picado, com ou sem sangramentos locais ou sistêmicos.
+● Grave: caracterizado por edema local endurado intenso e extenso, podendo atingir todo o membro picado, geralmente acompanhado de dor intensa e, eventualmente com presença de bolhas. Podem aparecer sinais de isquemia e necrose. Tratamento com 12 ampolas de antibotrópico ou soro antibotrópico-crotálico ou antibotrópico-laquético.
+Voltando ao caso dessa questão, você pode perceber que a criança foi vítima de um acidente botrópico grave, pois teve todo o membro acometido. O tratamento deve ser feito com o soro antibotrópico ou soro antibotrópico-crotálico ou antibotrópico-laquético.
 
-Q:
-G:
-C:
+Q: O acidente ofídico de maior importância epidemiológica no Brasil é o botrópico responsável por 90% dos acidentes ofídicos. 
+A respeito dos acidentes por picada de Jararaca é correto afirmar:
+A) Tempo de Coagulação é um exame muito importante para elucidação diagnóstica e norteador para necessidade ou não de dose adicional de soro antibotrópico.
+B) O tempo de Protrombina é o exame mais indicado a ser feito antes da administração do soro específico e 24h após a primeira dose do soro antibotrópico.
+C) O veneno da jararaca produz lesão local por ação proteolítica, mas não leva à alteração da função plaquetária ou plaquetopenia.
+D) Fenômenos hemorrágicos e até coagulação intravascular disseminada não são complicações esperadas em picadas por jararaca.
+E) O soro antibotrópico deve ser administrado apenas por acesso venoso central evitando-se ao máximo o acesso periférico.
+G: A
+C: Como o veneno botrópico tem ação coagulante, o tempo de coagulação (TC) é um exame essencial. Se ele estiver alterado após 24 horas da soroterapia, está indicado doses adicionais do soro (duas ampolas).
 
-Q:
-G:
-C:
+Q: Paciente 45 anos, com história de há 48 horas ter sido picado por cobra do grupo Colubrídeos conhecida como Cobra-Cipó, assinale a conduta correta:
+A) Sintomáticos apenas e acompanhamento na UBS.
+B) Soro anti-ofídico inespecífico, hidratação com Ringer Lactato, monitorização função renal e cardíaca em UTI.
+C) Soro crotálico especifico em 48 horas, sendo repetido após 48h se aparecimento de lesões necróticas, acompanhamento em enfermaria.
+D) Soro bothrópico, específico para neutralizar a neurotoxina capaz de gerar oftalmoplegia e rabdomiólise, acompanhamento em UTI.
+E) Soro elapídico, especifico para neurotoxina ativa, atentar para possível evolução de paralisia flácida, acompanhamento inicial em enfermaria.
+G: A
 
-Q:
-G:
-C:
+Q: Uma criança de 5 anos (20 kg) e um adulto de 45 anos (78 kg) foram picados na perna por uma cascavel, sendo o acidente ofídico classificado como grave em ambos. A dose de soro antiofídico a ser administrada a cada um será: 
+A) A mesma, baseada na gravidade do acidente.
+B) Diferente, baseada no peso de cada um.
+C) Diferente. A dose da criança será metade da dose do adulto.
+D) A mesma, baseada no sítio da picada, desde que o tempo decorrido para o atendimento seja igual. 
+G: A
+C: O veneno da cascavel (crotálico), tem ação neurotóxica precoce, ação miotóxica e coagulante. O tratamento deve ser feito com o soro anticrotálico e hidratação venosa. A dose do soro muda conforme a gravidade da doença. Não tem relação com peso ou idade do paciente.
 
-Q:
-G:
-C:
+Q: Homem, 19 anos de idade, lavrador, dá entrada na emergência após acidente ofídico por jararaca, em pé esquerdo, há 48 horas. Queixa-se de dor intensa no local da picada. Nega comorbidades. Ao exame físico, apresenta-se em regular estado geral, com FR: 22irpm, PA: 140x90mmHg, FC: 100bpm, SatO₂: 95%. Observam-se dois orifícios de inoculação, edema, equimose e lesões bolhosas no local da picada.
+Em relação ao tratamento específico, o soro anti-veneno a ser aplicado é
+A) antibotrópico.
+B) antilaquético.
+C) anticrotálico.
+D) antielapídico.
+G: A
+C: Temos aqui um paciente vítima de acidente ofídico pela jararaca (Bothrops jararaca), que causa o acidente botrópico, logo, o paciente deve receber o soro antibotrópico. Esse acidente é o mais frequente do Brasil. Seu veneno tem ação proteolítica, coagulante e hemorrágica. Por conta disso, as principais manifestações desse acidente são aquelas relacionadas ao local da picada como dor, equimose, edema, bolhas, sangramentos e necrose. Também pode levar a manifestações sistêmicas como sangramentos, plaquetopenia, aumento do tempo de coagulação e insuficiência renal. Lembre-se:<br>
+botróPICO <br>
+P: plaquetopenia (sangramentos)
+I: insuficiência renal
+CO: complicações locais (dor, edema, necrose, sangramentos e bolhas).
 
-Q:
-G:
-C:
+Q: Ainda sobre os acidentes ofídicos, assinale a alternativa correta:
+A) Acidentes crotálicos são mais comuns em áreas litorâneas e podem cursar com manifestações neurológicas, sendo a paralisia flácida uma das mais frequentes.
+B) Cobras corais verdadeiras são extremamente agressivas e a dose do soro antielapídico varia de acordo com a classificação de gravidade do acidente, que pode ser leve, moderado ou grave
+C) Nos casos de acidente botrópico, deve-se atentar para complicações tais como síndrome compartimental, abscessos, necrose e lesão renal aguda.
+D) Considerando a abundante flora bacteriana presente na saliva das cobras, antibioticoterapia precoce está indicada em todos os acidentes ofídicos.
+E) Não há necessidade de profilaxia para tétano nos casos de acidente ofídico.
+G: C
+C: Vamos conhecer os principais tipos de acidente ofídico para ajudar a responder a alternativa correta. 
+<b>O acidente botrópico</b> é aquele causado por espécies como a Bothrops, serpente mais conhecida como jararaca. Seu veneno tem três ações principais: coagulante, hemorrágica e proteolítica. Isso leva à presença de manifestações importantes no local da picada, como dor, edema, bolhas e sangramentos. Pode levar a complicações locais, como o aparecimento de um quadro de síndrome compartimental, formação de abscessos e necrose com risco de amputação do membro. Também por conta das ações do veneno, o paciente pode apresentar manifestações sistêmicas, como hemorragias (epistaxes, gengivorragias, hematúria), insuficiência renal aguda e choque. Com frequência, o tempo de coagulação está alterado (essa informação é bem cobrada nas provas), e ele deve ser usado para controle do tratamento, sendo repetido após 24h. Caso ele permaneça alterado, estão indicadas mais duas ampolas de soro antibotrópico.
+<b>O acidente crotálico</b> é o causado pelas serpentes da espécie Crotalus durissus. Popularmente, são conhecidas como cascavel (lembre-se: C de crotalus, C de cascavel). Seu veneno tem ação neurotóxica, miotóxica e coagulante. Como consequência dessas ações, o paciente pode apresentar uma paralisia de evolução craniocaudal, com aparecimento de fácies miastênica (ptose palpebral uni ou bilateral, com flacidez da musculatura da face), oftalmoplegia (dificuldade de mexer os olhos), turvação visual e/ou diplopia. Por conta da ação miotóxica, o paciente pode apresentar mialgia,
+rabdomiólise, mioglobinúria com consequente insuficiência renal. Ao contrário do acidente botrópico, esse veneno não tem ação importante no local da picada. Geralmente, as manifestações são leves ou ausentes, ao contrário do acidente botrópico.
+<b>O acidente laquético</b> é causado por serpentes do gênero Lachesis, que popularmente são conhecidas como surucucu. Seu veneno tem quatro ações: coagulante, hemorrágica, proteolítica e neurotóxica, por estimulação vagal. Clinicamente ele apresenta-se de forma semelhante ao acidente botrópico, porém, pela ação neurotóxica, o paciente pode referir hipotensão, tontura, bradicardia, cólica abdominal e diarreia, ou seja, uma síndrome vagal.
 
-Q:
-G:
-C:
+Q: Uma pessoa é picada por uma serpente de grande porte do gênero elapídico, caso não seja tratada com soro anti-ofídico seu provável óbito dever-se-á a: 
+A) Insuficiência respiratória;
+B) Sepse de foco cutâneo;
+C) Síndrome de compartimento de extremidades;
+D) Insuficiência renal.
+G: A
 
-Q:
-G:
-C:
+Q: Homem, seringueiro (51 anos, residente em Estancia X, na área rural do município Y no Estado de São Paulo; é atendido na Unidade Básica de Saúde(UBS) com queixa de ter sido picado por uma cobra (com aparência de jararaca) no pé direito no dia 22/10/2024, há 45 minutos. Apresentou manifestação discreta como dor local, edema e parestesia. Houve piora da dor e do edema. A conduta correta do médico da UBS no dia 22/10/2024 deveria ser:
+A) Encaminhar o paciente imediatamente, por se tratar de um acidente ofídico grave, em evolução, para a unidade de referência para atendimento de acidentes por animais peçonhentos, que fica na Unidade Básica Central do município, distante há 3 km da UBS, pois o paciente deve receber 6 ampolas de soro antibotrópico;
+B) Encaminhar o paciente imediatamente, por se tratar de um acidente ofídico leve, em evolução, para a unidade de referência para atendimento de acidentes por animais peçonhentos, que fica no Hospital de Referência da Regional de Saúde, distante há 30 km da UBS, pois o paciente deve receber 3 ampolas de soro antibotrópico;
+C) Encaminhar o paciente imediatamente, por se tratar de um acidente ofídico leve, em evolução, para a unidade de referência para atendimento de acidentes por animais peçonhentos, que fica no Hospital de Referência da Regional de Saúde, distante há 130 km da UBS, pois o paciente deve receber 12 ampolas de soro antibotrópico;
+D) Encaminhar o paciente imediatamente, por se tratar de um acidente ofídico grave, em evolução, para a unidade de referência para atendimento de acidentes por animais peçonhentos, que fica na Unidade Básica Central do município, distante há 3 km da UBS, pois o paciente deve receber 8 ampolas de soro antibotrópico.
+G: B
+C: A gravidade do acidente botrópico é classificada de acordo com a presença e intensidade de manifestações locais e sistêmicas, como dor, edema, sangramento, alterações da coagulação e insuficiência renal.
+Como medidas gerais para o tratamento do acidente botrópico, são indicadas analgesia, elevação do membro, hidratação e antibioticoterapia (em caso de evidência de infecção secundária) para acidentes botrópicos. Quando há síndrome compartimental, deve ser realizada a fasciotomia. A administração de soro antibotrópico é indicada para todos os casos, e deve seguir a orientação abaixo:
+<b>Acidente Botrópico - Tratamento</b><br>
+ • <b>Caso leve</b>
+    ◦ Dor e edema leves ou ausentes
+       - <b>2 a 4 ampolas</b><br>
+ • <b>Caso moderado</b>
+    ◦ Dor e edema que ultrapassam o segmento picado
+       - <b>4 a 8 ampolas</b><br>
+ • <b>Caso grave</b>
+    ◦ Edema endurecido intenso e extenso / choque, hemorragia grave, IRA
+       - <b>12 ampolas</b><br>
+O paciente do caso clínico dessa questão apresenta apenas manifestações locais, que sugerem um acidente botrópico leve, caracterizado por manifestações locais discretas sem sinais de complicações sistêmicas, como hemorragias ou disfunção de órgãos-alvo.
 
-Q:
-G:
-C:
-
-Q:
-G:
-C:
-
-Q:
-G:
-C:
 
 </tag=Estratégia Med>
