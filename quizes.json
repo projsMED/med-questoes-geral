@@ -12,6 +12,17 @@
   },
   {
     "type": "folder",
+    "name": "Tutorias",
+    "children": [
+      {
+        "type": "file",
+        "name": "01.0. A Célula como Unidade de Saúde e Doença - Robbins - Objetivas .txt",
+        "path": "quizes-da-nuvem/Tutorias/01.0. A Célula como Unidade de Saúde e Doença - Robbins - Objetivas .txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
     "name": "Viroses",
     "children": [
       {

@@ -1,0 +1,359 @@
+INFO: Questões feitas com base no capítulo 1 de Patologia de Robbins. As tags se referem as partes do sumário do capítulo. 
+<b>Mantenha a opção "embaralhar alternativas" sempre marcada.</b>
+
+TAGS: Genoma; Manutenção celular; Metabolismo celular e função mitocondrial; Ativação celular; Fatores de crescimento e seus receptores; Matriz extracelular; Manutenção das populações celulares
+
+
+
+<tag=Genoma>
+
+Q: Qual das alternativas melhor explica a principal diferença entre vermes e seres humanos, apesar de ambos possuírem aproximadamente 20 mil genes codificadores de proteínas?
+A) A quantidade de proteínas estruturais produzidas nos seres humanos é maior.
+B) Os genes humanos codificam proteínas mais complexas que os dos vermes.
+C) A diversidade de proteínas humanas decorre exclusivamente da tradução alternativa.
+D) A diferença está nos elementos reguladores presentes nas regiões não codificantes do DNA.
+E) Os seres humanos têm maior número de RNA ribossômico, responsável pela tradução gênica.
+G: D
+C: Apesar da semelhança no número de genes codificadores de proteínas, a complexidade dos seres humanos em relação aos vermes é explicada principalmente pela regulação da expressão gênica mediada por regiões não codificantes, que constituem 98,5% do genoma humano. Essas regiões funcionam como o “projeto” que direciona a construção e a organização celular.
+
+Q: Sobre os micro-RNAs (miRNA), é correto afirmar que:
+A) São traduzidos em proteínas que atuam na compactação da cromatina.
+B) Funcionam como enzimas que degradam o DNA viral.
+C) Modulam a expressão gênica pós-transcricionalmente ao se ligarem ao mRNA.
+D) São RNAs de fita dupla que substituem as histonas na cromatina.
+E) São produzidos a partir de regiões codificadoras do DNA, como os exons.
+G: C
+C: Os miRNA são pequenos RNAs não codificantes que regulam a expressão gênica ao se ligar a RNA mensageiros (mRNA), resultando em sua clivagem ou inibição da tradução. Esse processo é chamado de silenciamento pós-transcricional.
+
+Q: Qual das alternativas descreve corretamente uma característica importante da epigenética?
+A) Envolve alterações irreversíveis na sequência do DNA para inativar genes defeituosos.
+B) Refere-se exclusivamente à tradução alternativa do RNA mensageiro.
+C) Controla a expressão gênica por mecanismos que não alteram a sequência do DNA.
+D) Aplica-se apenas às células germinativas, não influenciando as somáticas.
+E) Depende exclusivamente da acetilação das histonas para silenciar genes.
+G: C
+C: A epigenética estuda alterações na expressão gênica que ocorrem sem modificação da sequência do DNA, como a metilação do DNA ou modificações nas histonas. Esses mecanismos são reversíveis e influenciam a identidade celular.
+
+Q: A tecnologia CRISPR-Cas9 permite a edição genética porque:
+A) Estimula naturalmente a recombinação gênica durante a divisão celular.
+B) Atua diretamente nos ribossomos para corrigir mutações na tradução.
+C) Usa RNA guia para localizar sequências de DNA e cortar em locais específicos.
+D) Substitui todo o cromossomo defeituoso por outro saudável.
+E) É um processo biológico exclusivo de eucariotos para eliminar vírus.
+G: C
+C: A tecnologia CRISPR-Cas9 utiliza um RNA guia (gRNA) que direciona a enzima Cas9 para locais específicos no DNA, onde realiza cortes de fita dupla. Esse mecanismo permite editar o genoma com alta precisão, inserindo, deletando ou corrigindo sequências genéticas.
+
+QCH: Sobre a estrutura e função do genoma humano, assinale todas as assertivas VERDADEIRAS:
+A1: A maioria do genoma humano é composta por genes que codificam proteínas.
+G: F
+C: Falso – Apenas 1,5% do genoma codifica proteínas; a maioria é DNA não codificante, com funções regulatórias.
+A2: Os elementos genéticos móveis, como os transpósons, correspondem a mais de um terço do genoma humano.
+G: V
+C: Verdadeiro – Transpósons e outros elementos móveis correspondem a mais de um terço do genoma.
+A3: Regiões não codificantes do DNA podem exercer papel regulador importante na expressão gênica.
+G: V
+C: Verdadeiro – Regiões não codificantes têm papel essencial na regulação da expressão gênica.
+A4: SNPs localizados fora de regiões codificantes não têm nenhum impacto sobre doenças.
+G: F
+C: Falso – Muitos SNPs em regiões não codificantes podem afetar elementos regulatórios, influenciando suscetibilidade a doenças.
+A5: Os telômeros ajudam a proteger os genes das extremidades dos cromossomos durante a replicação.
+G: V
+C: Verdadeiro – Telômeros são regiões repetitivas que protegem as extremidades do DNA de degradação durante a divisão celular.
+
+QCH: Sobre mecanismos epigenéticos e RNA não codificante, assinale todas as assertivas VERDADEIRAS:
+A1: A metilação do DNA geralmente está associada à inibição da transcrição gênica.
+G: V
+C: Verdadeiro – A metilação do DNA em regiões reguladoras geralmente silencia a expressão gênica.
+A2: A acetilação das histonas contribui para o empacotamento do DNA em heterocromatina.
+G: F
+C: Falso – A acetilação das histonas desempacota a cromatina, facilitando a transcrição (forma eucromática).
+A3: O miRNA promove o silenciamento gênico ao se associar a mRNA e impedir sua tradução.
+G: V
+C: Verdadeiro – miRNAs se ligam ao mRNA e atuam no silenciamento pós-transcricional.
+A4: O IncRNA XIST está relacionado à inativação do cromossomo Y nos indivíduos do sexo masculino.
+G: F
+C: Falso – O lncRNA XIST inativa o cromossomo X, não o Y, em indivíduos do sexo feminino.
+A5: As modificações epigenéticas são potencialmente reversíveis e podem ser alvo de tratamentos.
+G: V
+C: Verdadeiro – Muitas modificações epigenéticas são reversíveis e já estão sendo exploradas em terapias (ex.: câncer).
+
+</tag=Genoma>
+
+
+
+<tag=Manutenção celular>
+
+Q: Qual é a principal vantagem da compartimentalização das funções celulares em organelas intracelulares delimitadas por membrana?
+A) Aumentar a fluidez da membrana plasmática para facilitar o transporte passivo.
+B) Garantir que todas as proteínas da célula sejam sintetizadas no mesmo local para maior eficiência.
+C) Isolar enzimas de degradação e metabólitos tóxicos, permitindo que atuem em altas concentrações sem danificar a célula.
+D) Permitir que a célula se mova mais rapidamente em seu ambiente através do citoesqueleto.
+E) Facilitar a replicação do DNA, concentrando todos os nucleotídeos no núcleo.
+G: C
+C: Alternativa correta: {C}. A compartimentalização permite que enzimas de degradação e metabólitos potencialmente nocivos fiquem confinados, podendo atuar em altas concentrações de forma segura e eficiente. Além disso, possibilita a criação de ambientes físico-químicos únicos (como um pH baixo em lisossomos) que otimizam reações metabólicas específicas, algo que seria impossível no ambiente neutro do citosol.
+
+Q: A síntese de proteínas ocorre em locais distintos da célula, dependendo do destino final da proteína. Onde são sintetizadas as proteínas destinadas ao citosol e as proteínas destinadas à secreção ou à membrana plasmática, respectivamente?
+A) Complexo de Golgi; Retículo Endoplasmático Liso (REL).
+B) Ribossomos livres; Retículo Endoplasmático Rugoso (RER).
+C) Retículo Endoplasmático Rugoso (RER); Ribossomos livres.
+D) Lisossomos; Peroxissomos.
+E) Citosol; Núcleo.
+G: B
+C: Alternativa correta: {B}. Proteínas que atuarão no citosol são sintetizadas por ribossomos que estão dispersos no próprio citosol. Já as proteínas que serão secretadas, inseridas na membrana plasmática ou enviadas para certas organelas são sintetizadas em ribossomos acoplados à membrana do Retículo Endoplasmático Rugoso (RER), sendo direcionadas para o interior (lúmen) do RER durante sua tradução.
+
+Q: A célula utiliza diferentes vias para o catabolismo de macromoléculas e organelas. Qual das seguintes associações entre o local de degradação e sua função principal está correta?
+A) Lisossomos: degradam principalmente proteínas citosólicas marcadas com ubiquitina.
+B) Proteossomos: degradam organelas senescentes e micróbios fagocitados.
+C) Peroxissomos: desempenham um papel especializado na degradação de ácidos graxos de cadeia muito longa.
+D) Retículo Endoplasmático Liso: é o principal local de digestão de macromoléculas captadas por endocitose.
+E) Complexo de Golgi: realiza a autofagia para preservar a viabilidade celular.
+G: C
+C: Alternativa correta: {C}. Os peroxissomos contêm enzimas oxidativas, como a catalase, e são especializados no catabolismo de ácidos graxos de cadeia muito longa, um processo que gera peróxido de hidrogênio como subproduto. A alternativa {A} está incorreta, pois a degradação de proteínas marcadas com ubiquitina é função dos proteossomos. A {B} está incorreta, pois a degradação de organelas (autofagia) e micróbios é realizada pelos lisossomos.
+
+Q: A assimetria da membrana plasmática é crucial para a saúde celular, como no caso do fosfolipídio fosfatidilserina. Qual é a sua função normal no folheto interno e qual é a consequência de seu deslocamento para o folheto extracelular?
+A) Função normal é gerar segundos mensageiros; quando deslocada, ativa a coagulação.
+B) Função normal é conferir carga negativa e interagir com proteínas; quando deslocada, torna-se um sinal de "coma-me" para a apoptose.
+C) Função normal é ancorar o citoesqueleto; quando deslocada, forma canais iônicos.
+D) Função normal é participar da potocitose; quando deslocada, impede a entrada de vírus.
+E) Função normal é atuar como receptor de folato; quando deslocada, inicia a divisão celular.
+G: B
+C: Alternativa correta: {B}. A fosfatidilserina é normalmente mantida no folheto interno (citosólico) da membrana plasmática, onde sua carga negativa ajuda a ancorar proteínas de sinalização. Durante a apoptose (morte celular programada), ela é ativamente movida para o folheto externo, onde atua como um potente sinal para que a célula moribunda seja reconhecida e fagocitada por células como os macrófagos.
+
+Q: O citoesqueleto é essencial para a forma, movimento e organização celular. Qual das seguintes opções descreve corretamente a função e um exemplo de filamentos intermediários?
+A) São os mais dinâmicos e impulsionam a migração celular; exemplo: actina.
+B) Servem como "trilhos" para o transporte de organelas por cinesinas e dineínas; exemplo: tubulina.
+C) Formam o arcabouço para a contração muscular junto com a miosina; exemplo: vimentina.
+D) Proporcionam força tênsil para suportar estresse mecânico e são específicos de tecidos; exemplo: citoqueratinas em células epiteliais.
+E) Compõem o cerne dos cílios e flagelos para o movimento; exemplo: neurofilamentos.
+G: D
+C: Alternativa correta: {D}. A principal função dos filamentos intermediários é fornecer integridade estrutural e resistência a estresses mecânicos, atuando como "cabos" que distribuem a força pela célula. Eles são muito estáveis e sua composição varia com o tipo celular. As citoqueratinas, por exemplo, são filamentos intermediários característicos das células epiteliais, onde formam uma rede robusta.
+
+Q: Sobre os mecanismos de transporte através da membrana, o que é a transcitose?
+A) O processo de exportação de macromoléculas, como hormônios, através da fusão de vesículas com a membrana.
+B) A captação de líquidos e moléculas pequenas através de invaginações da membrana chamadas cavéolas.
+C) A degradação de organelas senescentes dentro de vacúolos de dupla membrana.
+D) O movimento de vesículas endocíticas entre os compartimentos apical e basolateral, transferindo material através da célula.
+E) O transporte de solutos contra um gradiente de concentração, utilizando diretamente a energia da hidrólise de ATP.
+G: D
+C: Alternativa correta: {D}. A transcitose é um processo de transporte vesicular que move substâncias através de uma célula, de um lado para o outro. Ela combina a endocitose em um lado da célula (por exemplo, a face apical de uma célula epitelial) com a exocitose no lado oposto (a face basolateral), permitindo o transporte de moléculas intactas através de uma barreira celular.
+
+Q: As interações célula-célula são mediadas por complexos juncionais. Qual tipo de junção é responsável por selar o espaço entre células epiteliais adjacentes, restringindo o movimento paracelular de íons e criando os domínios de membrana apical e basolateral?
+A) Desmossomos.
+B) Junções comunicantes (gap junctions).
+C) Hemidesmossomos.
+D) Zônulas de oclusão (junções firmes).
+E) Junções aderentes.
+G: D
+C: Alternativa correta: {D}. As zônulas de oclusão (ou junções firmes) formam uma vedação contínua ao redor das células epiteliais, funcionando como uma barreira que impede a livre passagem de fluidos e solutos pelo espaço entre as células (via paracelular). Essa barreira é também crucial para manter a polaridade celular, pois separa as proteínas e os lipídios do domínio apical dos do domínio basolateral.
+
+Q: A perda de polaridade em um epitélio tende a ocorrer quando há dano a qual componente de junção?
+A) Zônula de oclusão
+B) Junção comunicante
+C) Desmossomo
+D) Hemidesmossomo
+G: A
+C: A zônula de oclusão sela os domínios apical e basolateral; sua ruptura compromete a polaridade celular.
+
+Q: Qual organela é especializada na β-oxidação de ácidos graxos de cadeia muito longa e gera peróxido de hidrogênio durante esse processo?
+A) Lisossomo
+B) Peroxissomo
+C) Proteassomo
+D) Complexo de Golgi
+G: B
+C: Peroxissomos contêm catalase e outras oxidases que degradam ácidos graxos muito longos, produzindo H₂O₂ como subproduto.
+
+Q: Qual componente do citoesqueleto é formado por actina e participa da motilidade celular?
+A) Filamentos intermediários
+B) Microtúbulos
+C) Microfilamentos
+D) Cílios
+G: C
+C: Microfilamentos de actina regulam a forma celular, migração e contração.
+
+Q: Como são chamadas as proteínas que marcam outras para degradação nos proteassomos?
+A) Caderinas
+B) Conexinas
+C) Caveolinas
+D) Ubiquitinas
+G: D
+C: Proteínas poliubiquitinadas são reconhecidas e degradadas pelos proteassomos.
+
+Q: Qual é a função principal do complexo de Golgi nas células?
+A) Degradação de proteínas
+B) Geração de ATP
+C) Modificação e distribuição de proteínas
+D) Produção de DNA
+G: C
+C: O Golgi modifica proteínas sintetizadas no RE e as direciona para seus destinos finais.
+
+Q: A presença de fosfatidilserina na face extracelular da membrana plasmática é um sinal de:
+A) Transcrição gênica
+B) Proliferação celular
+C) Morte celular programada (apoptose)
+D) Secreção hormonal
+G: C
+C: Fosfatidilserina normalmente está na face interna; sua exposição sinaliza fagocitose de células apoptóticas.
+
+Q: O acúmulo de proteínas mal enoveladas no Retículo Endoplasmático (RE) desencadeia um mecanismo de resposta ao estresse celular. Qual o nome dessa resposta e qual o seu resultado se a sobrecarga não for corrigida?
+A) Resposta de estresse oxidativo; resulta em hiperplasia do REL.
+B) Resposta a proteínas mal enoveladas (UPR); pode deflagrar a morte da célula por apoptose.
+C) Via da ubiquitina-proteassoma; resulta na degradação imediata do RE.
+D) Resposta inflamatória aguda; resulta na liberação de citocinas.
+E) Via da autofagia; resulta na digestão das proteínas pelos peroxissomos.
+G: B
+C: Alternativa correta: {B}. Quando o sistema de controle de qualidade do RE é sobrecarregado com proteínas mal enoveladas, a célula ativa a Resposta a Proteínas Mal Enoveladas (UPR, do inglês Unfolded Protein Response). Inicialmente, a UPR tenta resolver o problema reduzindo a síntese de novas proteínas e aumentando a produção de chaperonas. Se o estresse persistir e não for resolvido, a UPR pode ativar as vias de morte celular programada (apoptose) para eliminar a célula danificada.
+
+Q: Qual organela é responsável pela maior parte da produção de ATP via fosforilação oxidativa e, além disso, contém sensores de dano celular capazes de iniciar e regular a morte celular programada (apoptose)?
+A) Retículo Endoplasmático Rugoso (RER).
+B) Lisossomo.
+C) Complexo de Golgi.
+D) Mitocôndria.
+E) Proteassoma.
+G: D
+C: Alternativa correta: {D}. As mitocôndrias são conhecidas como as "centrais de energia" da célula por realizarem a fosforilação oxidativa, processo que gera a vasta maioria do ATP celular. Além dessa função vital, elas são um ponto de integração central para sinais de estresse e dano. Em resposta a danos irreparáveis, as mitocôndrias podem liberar proteínas, como o citocromo c, que ativam as caspases e iniciam a cascata da apoptose.
+
+</tag=Manutenção celular>
+
+
+<tag=Metabolismo celular e função mitocondrial>
+
+Q: Qual organela é responsável pela fosforilação oxidativa e produção de ATP?
+A) Lisossomo
+B) Ribossomo
+C) Mitocôndria
+D) Complexo de Golgi
+G: C
+C: A mitocôndria é o local onde ocorre a cadeia respiratória e a produção de ATP via fosforilação oxidativa.
+
+Q: O DNA mitocondrial é herdado predominantemente de qual dos pais?
+A) Pai
+B) Mãe
+C) Ambos em igual proporção
+D) Do avô materno
+G: B
+C: Como o óvulo fornece quase todas as organelas citoplasmáticas ao zigoto, o DNA mitocondrial é herdado da mãe.
+
+Q: Qual substância é liberada pela mitocôndria durante a apoptose para ativar as caspases?
+A) Lactato
+B) Glicose
+C) Citocromo C
+D) Ácido pirúvico
+G: C
+C: O citocromo C, liberado da mitocôndria, ativa o apoptossomo e desencadeia a cascata de morte celular programada.
+
+Q: Qual é o nome do fenômeno em que células dividem-se rapidamente usando glicólise aeróbica, mesmo com oxigênio disponível?
+A) Ciclo de Krebs
+B) Efeito Pasteur
+C) Efeito Warburg
+D) Ciclo da Ureia
+G: C
+C: No efeito Warburg, células proliferativas produzem energia principalmente por glicólise aeróbica para preservar intermediários para biossíntese.
+
+Q: A termogenina (UCP-1), encontrada na gordura marrom, tem como principal função:
+A) Estocar ATP para uso futuro
+B) Promover acúmulo de lactato
+C) Desacoplar fosforilação oxidativa para gerar calor
+D) Bloquear a apoptose mitocondrial
+G: C
+C: UCP-1 permite o refluxo de H⁺ sem produção de ATP, promovendo termogênese (produção de calor).
+
+Q: O que distingue o processo de apoptose do processo de necrose no contexto mitocondrial?
+A) A apoptose não envolve mitocôndrias
+B) A necrose utiliza ATP, enquanto a apoptose consome glicose
+C) A necrose envolve perda abrupta de ATP por abertura de poros, enquanto a apoptose envolve liberação controlada de citocromo C
+D) Ambas usam o mesmo mecanismo de morte celular
+G: C
+C: Na necrose, há perda de ATP por abertura de poros de transição de permeabilidade; na apoptose, há liberação de citocromo C por MOMP.
+
+Q: As células que se dividem rapidamente, como as células cancerosas, frequentemente alteram seu metabolismo para a glicólise aeróbica, um fenômeno conhecido como efeito Warburg. Qual é a principal vantagem metabólica desse desvio?
+A) Gerar uma quantidade muito maior de ATP por molécula de glicose, otimizando a produção de energia.
+B) Produzir ácido láctico para acidificar o microambiente tumoral e inibir o sistema imune.
+C) "Desviar" intermediários do ciclo de Krebs que podem ser usados como blocos de construção para novos lipídios, proteínas e ácidos nucleicos.
+D) Aumentar a dependência de ácidos graxos como fonte de energia, poupando a glicose para funções estruturais.
+E) Ativar a termogenina para gerar calor, o que acelera as reações enzimáticas e a proliferação celular.
+G: C
+C: Embora a glicólise aeróbica produza muito menos ATP por molécula de glicose (apenas 2 ATP) em comparação com a fosforilação oxidativa completa (~36 ATP), ela permite que a célula em proliferação utilize os intermediários do metabolismo da glicose para fins anabólicos (biossíntese). Em vez de oxidar completamente a glicose a CO₂, a célula a converte em lactato, preservando os esqueletos de carbono que são essenciais para a síntese das macromoléculas necessárias para construir novas células.
+
+</tag=Metabolismo celular e função mitocondrial>
+
+
+<tag=Ativação celular>
+
+Q: As vias de sinalização podem ser classificadas com base na distância entre a célula que secreta o sinal e a célula-alvo. Qual das opções abaixo descreve corretamente a sinalização parácrina?
+A) Uma célula libera hormônios na corrente sanguínea para atuar em células distantes por todo o corpo.
+B) Um neurônio libera neurotransmissores em uma fenda sináptica para ativar uma célula-alvo adjacente.
+C) Uma célula secreta moléculas que afetam apenas as células localizadas em sua vizinhança imediata.
+D) Uma célula produz sinais que se ligam a receptores em sua própria superfície, afetando seu próprio comportamento.
+E) Moléculas de sinal passam diretamente do citoplasma de uma célula para o de outra através de junções comunicantes.
+G: C
+C: A sinalização parácrina é caracterizada pela ação local. A molécula de sinalização (mediador parácrino) é liberada no fluido extracelular e atua como um mediador local, afetando apenas as células que estão próximas à célula emissora. A alternativa {A} descreve a sinalização endócrina, a {B} descreve a sináptica, a {D} descreve a autócrina e a {E} descreve a comunicação via junções comunicantes.
+
+Q: Diferentes tipos de ligantes ativam diferentes tipos de receptores. Que característica fundamental uma molécula de sinalização, como um hormônio esteroide ou a vitamina D, deve possuir para ativar um receptor intracelular?
+A) Ser uma proteína de grande peso molecular.
+B) Ser hidrofílica e altamente carregada.
+C) Ter a capacidade de se ligar à matriz extracelular.
+D) Ser lipossolúvel para poder atravessar a membrana plasmática por difusão.
+E) Ser capaz de abrir canais iônicos diretamente.
+G: D
+C: Os receptores intracelulares (sejam citoplasmáticos ou nucleares) estão localizados no interior da célula. Portanto, para alcançá-los, o ligante deve ser capaz de cruzar a barreira da membrana plasmática, que é uma bicamada lipídica. Moléculas pequenas e lipossolúveis (hidrofóbicas), como os hormônios esteroides, conseguem se difundir através da membrana para se ligar a seus receptores internos e modular a transcrição gênica.
+
+Q: Qual é o mecanismo de ativação característico dos Receptores Acoplados à Proteína G (GPCRs) após a ligação do ligante?
+A) O receptor sofre dimerização e autofosforilação em resíduos de tirosina.
+B) O receptor é clivado por uma protease, e um fragmento intracelular migra para o núcleo.
+C) O receptor muda sua conformação, associa-se a uma proteína G e promove a troca de GDP por GTP nesta proteína.
+D) O receptor se liga diretamente ao DNA para atuar como um fator de transcrição.
+E) O receptor abre um canal iônico intrínseco, permitindo o fluxo de íons através da membrana.
+G: C
+C: Os GPCRs são receptores transmembranares que, ao se ligarem a um ligante, alteram sua forma. Essa mudança conformacional permite que o receptor interaja com uma proteína G heterotrimérica no lado citoplasmático. Essa interação faz com que a proteína G libere sua molécula de GDP (difosfato de guanosina) e a troque por uma de GTP (trifosfato de guanosina), ativando a proteína G, que então propaga o sinal para outras moléculas efetoras.
+
+Q: Qual o principal papel da sinalização celular em organismos multicelulares?
+A) Promover a divisão celular contínua
+B) Regular funções específicas e a sobrevivência das células
+C) Impedir a expressão gênica
+D) Aumentar o número de organelas
+G: B
+C: A sinalização celular regula desde a sobrevivência até a diferenciação e proliferação celular, sendo essencial para o funcionamento do organismo.
+
+Q: Qual receptor é ativado por ligantes lipossolúveis que atravessam a membrana plasmática?
+A) Receptor acoplado à proteína G
+B) Receptor tirosinoquinase
+C) Receptor nuclear
+D) Receptor associado à clatrina
+G: C
+C: Receptores nucleares ficam no citoplasma ou núcleo e são ativados por ligantes lipofílicos como esteroides ou vitamina D.
+
+Q: O que normalmente acontece após a ativação de um fator de transcrição?
+A) A célula se torna quiescente
+B) O fator bloqueia os ribossomos
+C) Há alteração na expressão de genes
+D) O receptor é destruído por proteólise
+G: C
+C: Fatores de transcrição, ao serem ativados, regulam a expressão de genes ao se ligarem ao DNA ou recrutarem coativadores.
+
+Q: Qual é a principal função das proteínas adaptadoras nas vias de sinalização?
+A) Ativar diretamente os receptores de membrana
+B) Ligar o DNA à RNA polimerase
+C) Conectar diferentes proteínas sinalizadoras em complexos
+D) Sintetizar proteínas estruturais
+G: C
+C: As proteínas adaptadoras organizam complexos de sinalização, facilitando interações entre enzimas e receptores.
+
+Q: Qual é o papel fundamental das proteínas adaptadoras, que contêm domínios como SH2 e SH3, nas cascatas de sinalização intracelular?
+A) Atuar como as principais enzimas que catalisam a fosforilação de substratos.
+B) Ser os fatores de transcrição finais que se ligam ao DNA para regular os genes.
+C) Funcionar como conectores moleculares que reúnem diferentes proteínas de sinalização, promovendo a montagem de complexos funcionais.
+D) Transportar os ligantes do meio extracelular para o núcleo da célula.
+E) Degradar os segundos mensageiros para terminar a resposta de sinalização.
+G: C
+C: As proteínas adaptadoras não possuem, tipicamente, atividade enzimática própria. Sua função principal é servir como pontes ou andaimes moleculares. Elas usam seus domínios de interação (como os domínios SH2, que se ligam a tirosinas fosforiladas, e os domínios SH3, que se ligam a sequências ricas em prolina) para ligar fisicamente diferentes componentes de uma via de sinalização, organizando-os em complexos de sinalização eficientes e garantindo a especificidade da resposta.
+
+Q: Após serem ativados por uma via de sinalização, como os fatores de transcrição exercem sua função final de modular a expressão gênica?
+A) Eles se ligam diretamente aos ribossomos para impedir a tradução do mRNA.
+B) Eles catalisam a degradação de mRNAs específicos no citoplasma.
+C) Eles se ligam a sequências específicas de DNA (promotores/amplificadores) e recrutam o complexo da RNA polimerase e coativadores para iniciar ou reprimir a transcrição.
+D) Eles alteram a estrutura da membrana nuclear para controlar a exportação de RNA.
+E) Eles sintetizam diretamente novas cópias de DNA para amplificar um gene.
+G: C
+C: Um fator de transcrição ativado (seja por fosforilação, translocação para o núcleo, etc.) reconhece e se liga a sequências de DNA específicas e curtas, localizadas em regiões regulatórias de genes (como promotores e amplificadores). Uma vez ligado ao DNA, ele atua recrutando outras proteínas, incluindo coativadores, enzimas que modificam a cromatina e, o mais importante, o complexo da RNA polimerase, que é a enzima responsável por transcrever o DNA em RNA, iniciando assim a expressão do gene.
+
+</tag=Ativação celular>
