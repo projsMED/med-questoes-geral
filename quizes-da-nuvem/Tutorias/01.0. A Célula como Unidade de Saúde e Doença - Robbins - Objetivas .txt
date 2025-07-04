@@ -357,3 +357,192 @@ G: C
 C: Um fator de transcrição ativado (seja por fosforilação, translocação para o núcleo, etc.) reconhece e se liga a sequências de DNA específicas e curtas, localizadas em regiões regulatórias de genes (como promotores e amplificadores). Uma vez ligado ao DNA, ele atua recrutando outras proteínas, incluindo coativadores, enzimas que modificam a cromatina e, o mais importante, o complexo da RNA polimerase, que é a enzima responsável por transcrever o DNA em RNA, iniciando assim a expressão do gene.
 
 </tag=Ativação celular>
+
+<tag=Fatores de crescimento e seus receptores>
+
+Q: Qual das alternativas abaixo descreve corretamente uma função comum dos fatores de crescimento?
+A) Induzir apoptose celular para eliminar células danificadas.
+B) Estimular diretamente a síntese de anticorpos.
+C) Promover a migração, proliferação e diferenciação celular.
+D) Reprimir a síntese de proteínas da matriz extracelular (MEC).
+E) Ativar os linfócitos para iniciar a resposta imunológica.
+G: C
+C: Os fatores de crescimento promovem processos essenciais como migração, proliferação e diferenciação celular, além de aumentar a síntese de componentes necessários à divisão celular.
+
+Q: Os fatores de crescimento exercem suas funções principalmente ao se ligar a:
+A) Lipídeos de membrana
+B) Receptores específicos na superfície celular
+C) DNA nuclear acoplado a certos fatores de transcrição.
+D) RNA mensageiro
+E) Mitocôndrias
+G: B
+C: Os fatores de crescimento atuam ligando-se a receptores específicos, geralmente com atividade de quinase, localizados na superfície das células-alvo.
+
+Q: Os fatores de crescimento são proteínas que estimulam a proliferação celular e influenciam a expressão de genes. Qual das seguintes funções NÃO é característica dos fatores de crescimento?
+A) Promover a entrada no ciclo celular
+B) Impedir a apoptose
+C) Aumentar a síntese de componentes necessários para divisão celular
+D) Induzir morte celular programada
+E) Aliviar bloqueios à progressão do ciclo celular
+G: D
+C: Os fatores de crescimento têm como função principal estimular a proliferação e sobrevivência celular. Eles promovem a entrada no ciclo celular, impedem a apoptose (morte celular programada), aumentam a síntese de componentes celulares e aliviam bloqueios do ciclo celular. A indução de morte celular programada é o oposto do que fazem os fatores de crescimento.
+
+Q: O VEGF (Fator de Crescimento do Endotélio Vascular) é fundamental para qual processo?
+A) Proliferação de hepatócitos
+B) Formação de tecido ósseo
+C) Angiogênese (formação de vasos sanguíneos)
+D) Diferenciação neural
+E) Síntese de colágeno
+G: C
+C: O VEGF é o principal fator angiogênico, sendo responsável por induzir o desenvolvimento de vasos sanguíneos após lesões e em neoplasias. Ele promove migração e proliferação das células endoteliais, formação da luz vascular e aumenta a permeabilidade vascular.
+
+Q: A desregulação dos fatores de crescimento pode levar ao desenvolvimento de câncer porque muitos genes das vias dos fatores de crescimento são proto-oncogenes. Sobre essa relação, é correto afirmar:
+A) Proto-oncogenes são genes que sempre causam câncer quando expressos
+B) Mutações de perda de função em proto-oncogenes levam ao câncer
+C) Mutações de ganho de função em proto-oncogenes os convertem em oncogenes
+D) Os fatores de crescimento não têm relação com o desenvolvimento de neoplasias
+E) Apenas o VEGF está relacionado com processos neoplásicos
+G: C
+C: Proto-oncogenes são genes normais que, quando sofrem mutações de ganho de função, tornam-se oncogenes e podem levar ao desenvolvimento de câncer. Isso ocorre porque os fatores de crescimento estimulam a proliferação celular, e quando suas vias ficam constitutivamente ativas, podem causar divisão celular descontrolada. Vários fatores mencionados no texto (EGFR, HER-2, MET) são frequentemente alterados em cânceres.
+
+</tag=Fatores de crescimento e seus receptores>
+
+<tag=Matriz extracelular>
+
+Q: A matriz extracelular (MEC) desempenha múltiplas funções nos tecidos. Qual das seguintes alternativas NÃO representa uma função da MEC?
+A) Suporte mecânico para ancoragem celular
+B) Síntese de proteínas ribossomais
+C) Regulação da proliferação celular
+D) Arcabouço para renovação tecidual
+G: B
+C: A MEC tem funções estruturais e regulatórias, incluindo suporte mecânico, regulação da proliferação celular e fornecimento de arcabouço para renovação tecidual. A síntese de proteínas ribossomais é uma função intracelular realizada pelos ribossomos e não pela MEC.
+
+Q: A matriz extracelular ocorre em duas formas básicas. Qual das alternativas apresenta corretamente essas duas formas?
+A) Matriz fibrilar e matriz globular
+B) Matriz intersticial e membrana basal
+C) Matriz colagenosa e matriz elástica
+D) Matriz celular e matriz acelular
+G: B
+C: A MEC apresenta duas formas básicas: a matriz intersticial (que ocupa espaços entre células do estroma) e a membrana basal (superfície especializada altamente organizada ao redor de células epiteliais, endoteliais e musculares lisas).
+
+Q: Os componentes da MEC pertencem a três famílias principais. Qual alternativa lista corretamente essas três famílias?
+A) Proteínas estruturais fibrosas, géis hidratados e glicoproteínas adesivas
+B) Colágenos, elastinas e proteoglicanos
+C) Fibronectina, laminina e integrinas
+D) Matriz intersticial, membrana basal e citoesqueleto
+G: A
+C: As três famílias de componentes da MEC são: proteínas estruturais fibrosas (colágenos e elastina), géis hidratados (proteoglicanos e hialuronano) e glicoproteínas adesivas (fibronectina, laminina).
+
+Q: A deficiência de vitamina C (ascorbato) pode causar problemas na cicatrização e sangramento fácil. Essa deficiência afeta especificamente qual processo relacionado ao colágeno?
+A) Formação da tripla hélice
+B) Síntese das cadeias polipeptídicas
+C) Hidroxilação da lisina
+D) Polimerização das fibrilas
+G: C
+C: A vitamina C é essencial para a atividade da lisil hidroxilase, enzima responsável pela hidroxilação da lisina no colágeno. Sem essa hidroxilação, não ocorrem as ligações cruzadas covalentes que conferem resistência ao colágeno, resultando em cicatrização deficiente e sangramento.
+
+Q: Qual das opções melhor descreve a função das integrinas nas células?
+A) São enzimas que degradam a MEC
+B) São proteínas que armazenam água para hidratação celular
+C) São receptores transmembranares que ligam a MEC ao citoesqueleto
+D) São hormônios secretados durante o estresse celular em resposta a danos
+E) São canais iônicos reguladores de cálcio
+G: C
+C: As integrinas são receptores transmembranares que conectam a MEC ao citoesqueleto intracelular, além de participarem da sinalização celular.
+
+Q: Os proteoglicanos conferem à matriz extracelular principalmente:
+A) Força tênsil
+B) Elasticidade
+C) Resistência à compressão
+D) Atividade enzimática
+E) Transmissão de impulsos elétricos
+G: C
+C: Os proteoglicanos, com suas cadeias de glicosaminoglicanos sulfatados, atraem água e fornecem resistência à compressão e lubrificação.
+
+Q: A fibronectina participa da cicatrização de feridas porque:
+A) Produz colágeno tipo IV
+B) Forma um gel altamente hidratado capaz de unir várias células que se multiplicam
+C) Une fibrina, colágeno e células para formar um arcabouço provisório
+D) Se converte em elastina
+E) Inibe a ação dos fibroblastos
+G: C
+C: A fibronectina conecta componentes da MEC (colágeno, fibrina) e as células, criando o arcabouço temporário para deposição de nova matriz e reepitelização.
+
+</tag=Matriz extracelular>
+
+<tag=Manutenção das populações celulares>
+
+Q: A proliferação celular é essencial para diversas funções no organismo. Qual das alternativas abaixo não é uma das finalidades da proliferação celular?
+A) Substituição de células mortas ou danificadas
+B) Manutenção da homeostasia tecidual
+C) Produção de hormônios pelas células especializadas
+D) Desenvolvimento do organismo durante a embriogênese
+G: C
+C: A produção de hormônios é uma função de células especializadas, não diretamente ligada ao processo de proliferação celular. As outras alternativas descrevem funções diretamente relacionadas à divisão celular.
+
+Q: O ciclo celular é composto por várias fases. Qual alternativa apresenta a sequência correta dessas fases?
+A) M – S – G1 – G2
+B) G1 – G2 – S – M
+C) S – G1 – G2 – M
+D) G1 – S – G2 – M
+G: D
+C: A sequência correta do ciclo celular é: G1 (preparação), S (síntese de DNA), G2 (verificação e preparação final) e M (mitose).
+
+Q: Qual é a principal função dos complexos ciclina-CDK durante o ciclo celular?
+A) Impedir a duplicação do DNA
+B) Promover a apoptose celular
+C) Regular a progressão pelas fases do ciclo celular
+D) Ativar a transcrição gênica
+G: C
+C: Os complexos ciclina-CDK são essenciais para a regulação da progressão entre as fases do ciclo celular, ativando eventos como a replicação do DNA ou entrada na mitose.
+
+Q: Assinale a alternativa correta sobre células-tronco pluripotentes induzidas (iPS):
+A) São obtidas exclusivamente de embriões humanos
+B) São idênticas funcionalmente às células-tronco hematopoéticas
+C) Resultam da introdução de genes específicos em células somáticas diferenciadas
+D) Não apresentam risco de rejeição imunológica por expressarem altos níveis de HLA
+E) Não têm aplicação terapêutica devido à sua instabilidade genética
+G: C
+C: As células iPS são produzidas reprogramando células diferenciadas (como fibroblastos) com genes que restauram a pluripotência, sendo uma alternativa promissora às células embrionárias.
+
+Q: Qual das alternativas abaixo melhor define as células-tronco embrionárias (ES)?
+A) Células encontradas apenas na medula óssea com capacidade de gerar apenas células sanguíneas
+B) Células da massa celular interna do blastocisto com capacidade totipotente
+C) Células diferenciadas que perderam a capacidade de proliferação
+D) Células presentes em nichos teciduais específicos com potencial limitado de diferenciação
+G: B
+C: As células-tronco embrionárias são encontradas na massa celular interna do blastocisto e são totipotentes, podendo dar origem a todos os tipos celulares do corpo. A alternativa {A} descreve células-tronco hematopoéticas, {C} descreve células permanentes, e {D} descreve células-tronco adultas/teciduais.
+
+Q: Os pontos de checagem (checkpoints) do ciclo celular têm como função principal:
+A) Acelerar a progressão do ciclo celular em todas as circunstâncias
+B) Garantir que células com danos genéticos não completem a replicação
+C) Promover a diferenciação celular durante o desenvolvimento
+D) Estimular a síntese de ciclinas em momentos específicos
+G: B
+C: Os pontos de checagem são mecanismos de controle de qualidade que monitoram a integridade do DNA e dos cromossomos, impedindo que células com imperfeições genéticas completem a replicação. Eles podem retardar o ciclo e ativar mecanismos de reparo ou induzir apoptose/senescência se o dano for irreparável.
+
+Q: Em relação aos tipos de divisão celular das células-tronco, é correto afirmar que:
+A) A divisão assimétrica resulta em duas células-filhas idênticas com capacidade de autorrenovação
+B) A divisão simétrica ocorre quando uma célula-filha se diferencia e outra mantém a capacidade de autorrenovação
+C) A divisão assimétrica produz uma célula que se diferencia e outra que mantém a capacidade de autorrenovação
+D) Ambos os tipos de divisão sempre resultam em células totalmente diferenciadas
+G: C
+C: Na divisão assimétrica, uma célula-filha entra na via de diferenciação enquanto a outra permanece indiferenciada, mantendo a capacidade de autorrenovação. A divisão simétrica (alternativa {A}) é quando ambas as células-filhas mantêm a capacidade de autorrenovação. A alternativa {B} inverte os conceitos, e {D} está incorreta porque as divisões das células-tronco sempre mantêm pelo menos uma célula com capacidade de autorrenovação.
+
+Q: Durante o desenvolvimento de uma terapia regenerativa para tratamento de infarto do miocárdio, um grupo de cientistas precisa escolher entre diferentes tipos de células-tronco. Considerando as características dos tipos celulares disponíveis, qual seria a melhor escolha e por quê?
+A) Células-tronco embrionárias, pois são totipotentes e podem gerar qualquer tipo celular
+B) Células-tronco hematopoéticas, pois são facilmente obtidas da medula óssea
+C) Células-tronco mesenquimais, pois são imunoprivilegiadas e podem gerar células do estroma
+D) Células-tronco pluripotentes induzidas (iPS) derivadas do próprio paciente
+G: D
+C: Para terapia regenerativa do miocárdio, as células iPS derivadas do próprio paciente seriam ideais porque: 1) eliminam o problema da rejeição imunológica (são autólogas); 2) têm capacidade pluripotente similar às células ES; 3) podem ser diferenciadas em cardiomiócitos. As células ES ({A}) causariam rejeição imunológica, as hematopoéticas ({B}) não geram células cardíacas, e as mesenquimais ({C}), embora imunoprivilegiadas, têm potencial mais limitado para gerar cardiomiócitos funcionais.
+
+Q: Um pesquisador está comparando as características das células-tronco embrionárias (ES) e das células-tronco teciduais (adultas) para um projeto de medicina regenerativa. Durante seus estudos, ele observa que células-tronco intestinais localizam-se especificamente nas criptas intestinais, enquanto células-tronco hematopoéticas se agrupam em regiões perivasculares da medula óssea. Considerando essas observações e as propriedades fundamentais de ambos os tipos celulares, qual das afirmações abaixo melhor explica as diferenças entre células-tronco embrionárias e teciduais?
+A) As células-tronco embrionárias têm capacidade totipotente e não necessitam de microambiente específico, enquanto as teciduais são multipotentes e dependem de nichos especializados para manter sua função
+B) Ambos os tipos celulares possuem, de fato, a mesma capacidade de diferenciação, podendo originar qualquer linhagem celular do corpo humano; a única distinção entre elas está relacionada à localização anatômica em que são encontradas durante o desenvolvimento e na vida adulta, não havendo diferenças em potencial de especialização celular.
+C) As células-tronco teciduais são consideradas mais primitivas do que as células-tronco embrionárias porque, além de estarem presentes em tecidos adultos, são capazes de gerar todos os tipos celulares do organismo, inclusive células de diferentes camadas germinativas, desempenhando assim um papel universal na diferenciação celular ao longo da vida.
+D) As células-tronco embrionárias expressam marcadores de diferenciação específicos, enquanto as teciduais são completamente indiferenciadas
+G: A
+C: Esta questão aborda as diferenças fundamentais entre células-tronco embrionárias e teciduais. As células ES são totipotentes (podem gerar todos os tipos celulares) e, embora se beneficiem de condições específicas de cultura, não dependem de nichos anatômicos específicos como as células-tronco adultas. As células-tronco teciduais (adultas) têm potencial limitado de diferenciação (multipotentes, não totipotentes) e são criticamente dependentes de seus nichos - microambientes especializados que regulam sua quiescência, proliferação e diferenciação. Os exemplos citados (criptas intestinais e nichos perivasculares da medula) ilustram essa dependência de localização específica das células-tronco adultas.
+
+</tag=Manutenção das populações celulares>
