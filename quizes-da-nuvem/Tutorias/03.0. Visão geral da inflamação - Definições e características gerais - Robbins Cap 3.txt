@@ -1,0 +1,161 @@
+INFO: Esse quiz contém três tipos de questões:
+Verdadeiro ou Falso.
+Completar lacuna.
+Dissertativa de resposta curta.<br>
+Algumas informações citadas em um tipo de questão podem ser abordadas novamente em outro tipo. Sugestão: Comece fazendo primeiro as de V ou F, depois as de completar lacuna e por último as dissertativas de resposta curta.<br>
+Questões feitas com base apenas na seção "Visão geral da inflamação: definições e características gerais" do capítulo 3 de Patologia de Robbins.
+
+TAGS: Verdadeiro ou Falso; Completar lacuna; Dissertativas de resposta curta
+
+<tag=Verdadeiro ou Falso>
+
+Q: A inflamação é uma resposta maléfica do hospedeiro a invasores estranhos e à presença de tecido necrótico.
+G: F
+C: A inflamação é uma resposta <b>benéfica</b> do hospedeiro a invasores estranhos e à presença de tecido necrótico, mas também pode causar dano aos tecidos.
+
+Q: Os principais componentes da inflamação consistem em uma reação vascular e em uma resposta celular, ambas ativadas por mediadores, que derivam de proteínas plasmáticas e de várias células.
+G: V
+
+<variantes>
+Q: As etapas da resposta inflamatória podem ser lembradas como os cinco R nessa ordem: (1) recrutamento de leucócitos, (2) reconhecimento do agente lesivo, (3) remoção do agente, (4) regulação (controle) da resposta e (5) reparo (resolução).
+G: F
+C: As etapas da resposta inflamatória podem ser lembradas como os cinco R: (<b>1) reconhecimento do agente lesivo, (2) recrutamento de leucócitos</b>, (3) remoção do agente, (4) regulação (controle) da resposta e (5) reparo (resolução).
+
+Q: As etapas da resposta inflamatória podem ser lembradas como os cinco R: (1) reconhecimento do agente lesivo, (2) recrutamento de leucócitos</b>, (3) remoção do agente, (4) regulação (controle) da resposta e (5) reparo (resolução).
+G: V
+</variantes>
+
+<variantes>
+Q: A inflamação aguda e a inflamação crônica diferem na cinética da reação, nas principais células envolvidas e no grau de lesão.
+G: V
+
+Q: A inflamação aguda e a inflamação crônica apresentam a mesma duração, envolvem os mesmos tipos celulares e causam lesões de intensidade semelhante.
+G: F
+C: A inflamação aguda e a inflamação crônica diferem na cinética da reação, nas principais células envolvidas e no grau de lesão.
+</variantes>
+
+Q: O resultado da inflamação crônica consiste na eliminação do estímulo nocivo, seguida de declínio da reação e reparo do tecido danificado ou lesão persistente, levando à inflamação aguda.
+G: F
+C: O resultado da inflamação <b>aguda</b> consiste na eliminação do estímulo nocivo, seguida de declínio da reação e reparo do tecido danificado ou lesão persistente, levando à inflamação <b>crônica</b>.
+
+<variantes>
+Q: As consequências da inflamação incluem infecções, necrose tecidual, corpos estranhos, trauma e respostas imunes.
+G: F
+C: As <b>causas</b>.
+
+Q: As causas da inflamação incluem infecções, necrose tecidual, corpos estranhos, trauma e respostas imunes.
+G: V
+</variantes>
+
+Q: As células epiteliais, os macrófagos e as células dendríticas teciduais, os leucócitos e outros tipos de células expressam receptores que detectam a presença de microrganismos e de substâncias liberadas das células danificadas. As proteínas circulantes reconhecem os microrganismos que entraram no sangue.
+G: V
+
+<variantes>
+Q: A remoção do estímulo para a inflamação é efetuada, sobretudo, por células dendríticas, que ingerem e destroem microrganismos e células mortas.
+G: F
+C: Células fagocitárias.
+
+Q: A remoção do estímulo para a inflamação é efetuada, sobretudo, por células fagocitárias, que ingerem e destroem microrganismos e células mortas.
+G: V
+</variantes>
+
+Q: Dependendo da causa da morte celular, a necrose tecidual provoca inflamação.
+G: F
+C: A necrose tecidual provoca inflamação, <b>independentemente</b> da causa da morte celular
+
+</tag=Verdadeiro ou Falso>
+
+<tag=Completar lacuna>
+
+Q: A inflamação é uma resposta dos tecidos ________, caracterizada pelo recrutamento de leucócitos e moléculas de defesa ao local da lesão.
+GABARITO: vascularizados
+
+Q: A adição do sufixo _______ ao nome de um órgão indica inflamação nesse local, como em apendicite e conjuntivite.
+GABARITO: -ite
+
+Q: O extravasamento de leucócitos e proteínas plasmáticas requer alterações nos _______ e na secreção de _______.
+GABARITO: vasos sanguíneos; mediadores
+
+Q: A principal função dos leucócitos fagocíticos recrutados durante a inflamação é a _______ de microrganismos e células mortas.
+GABARITO: remoção
+
+Q: A inflamação pode ser desencadeada por estímulos como infecções e _______ tecidual, independentemente de sua causa.
+GABARITO: necrose
+
+Q: A inflamação crônica caracteriza-se por um infiltrado de _______ e _______ como células predominantes.
+GABARITO: linfócitos; macrófagos
+
+Q: O reconhecimento do agente agressor é feito por células que possuem receptores específicos para produtos microbianos, como os receptores do tipo _______ e _______.
+GABARITO: Toll (TLR); NOD (NLR)
+
+Q: As principais células sentinelas que reconhecem os agentes agressores no tecido são os _______ e as células dendríticas.
+GABARITO: macrófagos
+
+Q: O sistema _______ é uma proteína circulante que contribui para a inflamação ao reconhecer e atacar microrganismos.
+GABARITO: complemento
+
+Q: A resposta inflamatória local pode produzir manifestações sistêmicas, como _______.
+GABARITO: febre
+
+Q: As reações inflamatórias associadas às doenças autoimunes e alérgicas tendem a ser _______ e de difícil _______, contribuindo para morbidade significativa.
+GABARITO: persistentes; cura
+
+Q: A inflamação envolve uma sequência de cinco etapas principais, conhecidas como os cinco R: reconhecimento, _______ de leucócitos, _______ do agente e _______ tecidual.
+GABARITO: recrutamento; remoção; reparo
+
+Q: Os vasos sanguíneos respondem a estímulos inflamatórios por meio de sua _______ e _______ da permeabilidade, possibilitando o extravasamento de proteínas circulantes selecionadas para o local de infecção ou de dano tecidual.
+GABARITO: dilatação; aumento
+
+Q: O endotélio que reveste os vasos sanguíneos também é modificado, de modo que _______ circulantes possam aderir e, em seguida, _______ para os tecidos.
+GABARITO: os leucócitos; migrar
+
+</tag=Completar lacuna>
+
+
+<tag=Dissertativas de resposta curta>
+
+Q: Quais são os cinco sinais clássicos da inflamação descritos por Celsus e Virchow?
+GABARITO: Rubor (vermelhidão), tumor (edema), calor, dor e perda de função.
+
+Q: Qual célula é predominante na inflamação aguda?
+GABARITO: Neutrófilo.
+
+Q: Qual é o nome do complexo multiproteico ativado pelos sensores de dano celular e que leva à produção de IL-1?
+GABARITO: Inflamassoma.
+
+Q: Qual é a principal diferença entre inflamação aguda e crônica quanto ao início da resposta?
+GABARITO: A inflamação aguda tem início rápido (minutos ou horas), enquanto a inflamação crônica tem início lento (dias).
+
+Q: Cite uma doença inflamatória crônica em que macrófagos e linfócitos têm papel predominante.
+GABARITO: Artrite reumatoide (ou aterosclerose, ou fibrose pulmonar).
+
+Q: Qual citocina é produzida após a ativação do inflamassoma e é fundamental para o recrutamento de leucócitos?
+GABARITO: Interleucina-1 (IL-1)
+
+Q: Qual é o principal tipo de célula envolvida na asma, tanto em sua forma aguda quanto crônica?
+GABARITO: Eosinófilo
+
+Q: Quais dois componentes principais participam da resposta inflamatória tecidual?
+GABARITO: Vasos sanguíneos e leucócitos
+
+Q: "iniciam e amplificam a resposta inflamatória e determinam o seu padrão, gravidade e manifestações clínicas e patológicas".<br>
+<b>O trecho acima se refere ao que?</b>
+GABARITO: Aos mediadores inflamatórias.
+
+Q: Até mesmo substâncias endógenas podem ser prejudiciais se forem depositadas nos tecidos. Cite pelo menos <b>um exemplo</b> dessas substâncias e condição relacionada.
+GABARITO: Cristais de urato (na gota), cristais de colesterol (aterosclerose) e lipídeos (na síndrome metabólica associada à obesidade.
+
+Q: São reações nas quais o sistema imune, cujo objetivo é proteger, provoca dano aos próprios tecidos do indivíduo. <b>Como se chamam essas reações?</b>
+GABARITO: Reações imunes (também denominadas <b>reações de hipersensibilidade</b>).
+
+Q: "Todas as células dispõem de receptores citosólicos, como os receptores do tipo NOD (NOD-like) (NLR), que reconhecem moléculas diversificadas que são liberadas ou alteradas em consequência do dano celular."<br>
+Cite pelo menos <b>dois exemplos dessas moléculas</b>.
+GABARITO: Essas moléculas incluem o <b>ácido úrico</b> (um produto da degradação do DNA), trifosfato de adenosina (<b>ATP</b>) (liberado das mitocôndrias danificadas), <b>concentrações intracelulares reduzidas de K+</b> (refletindo a perda de íons, devido à lesão da membrana plasmática), e até mesmo o <b>DNA quando liberado no citoplasma</b> e não sequestrado em núcleos.
+
+Q: A lectina de ligação da manose, reconhece açúcares microbianos e promove a ingestão dos microrganismos e a ativação do sistema complemento. <b>A lectina é considerada o que?</b>
+GABARITO: Uma proteína circulante.
+
+Q: As etapas da resposta inflamatória podem ser lembradas como os cinco R. <b>Cite-os na ordem</b>.
+GABARITO: (1) reconhecimento do agente lesivo, (2) recrutamento de leucócitos, (3) remoção do agente, (4) regulação (controle) da resposta e (5) reparo (resolução).
+
+</tag=Dissertativas de resposta curta>

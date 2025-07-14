@@ -1,0 +1,238 @@
+INFO: Baseado no capítulo 3 de Patologia de Robbins, apenas a parte sobre inflamação aguda. Contém apenas questões objetivas de V ou F. Pelo menos nas primeiras vezes que responder é recomendado manter desativado "embaralhar questões".
+
+TAGS: Reações dos vasos sanguíneos na inflamação aguda; Recrutamento dos leucócitos para os locais de inflamação; 
+
+
+
+<tag=Reações dos vasos sanguíneos na inflamação aguda>
+
+QCH: Sobre os componentes principais da inflamação aguda, marque as assertivas verdadeiras:
+A1: Dilatação dos pequenos vasos, resultando em aumento do fluxo sanguíneo.
+G: V
+A2: Redução da permeabilidade da microvasculatura, permitindo o extravasamento de proteínas plasmáticas e de leucócitos da circulação.
+G: F
+C: Aumento da permeabilidade.
+A3: Migração de leucócitos da microcirculação, seu acúmulo no foco de lesão e sua ativação para eliminar o agente agressor.
+G: V ​‎ 
+A4: Alguns mediadores atuam nos médios vasos sanguíneos na vizinhança dos tecidos e promovem o efluxo de plasma e o recrutamento de leucócitos circulantes para o local em que se encontra o agente agressor.
+G: F
+C: Alguns mediadores atuam nos <b>pequenos</b> vasos sanguíneos na vizinhança dos tecidos e promovem o efluxo de plasma e o recrutamento de leucócitos circulantes para o local em que se encontra o agente agressor.
+
+Q: O extravasamento de líquido, proteínas e células sanguíneas do sistema vascular para dentro do tecido intersticial ou das cavidades corporais é conhecido como estase.
+G: F
+C: Conhecido como exsudação. 
+
+<variantes>
+Q: O exsudato é um líquido extravascular que apresenta uma elevada concentração de proteína e que contém restos celulares.
+G: V
+
+Q: O transudato é um líquido extravascular que apresenta uma elevada concentração de proteína e que contém restos celulares.
+G: F
+C: O exsudato.
+
+Q: O exsudato é um líquido extravascular que apresenta uma baixa concentração de proteína e que contém restos celulares.
+G: F
+C: Alta concentração de proteína.
+</variantes>
+
+<variantes>
+Q: O transudato é um líquido com baixo conteúdo de proteína (cuja maior parte consiste em albumina), pouco ou nenhum material celular e baixa densidade específica.
+G: V
+
+Q: O transudato é um líquido com baixo conteúdo de proteína (cuja maior parte consiste em albumina), pouco ou nenhum material celular e baixa densidade específica.
+G: V
+
+Q: O exsudato é um líquido com baixo conteúdo de proteína (cuja maior parte consiste em albumina), pouco ou nenhum material celular e baixa densidade específica.
+G: F
+C: O transudato.
+
+Q: O transudato é um líquido com alto conteúdo de proteína (cuja maior parte consiste em albumina), pouco ou nenhum material celular e baixa densidade específica.
+G: F
+C: Baixo conteúdo de proteína.
+</variantes>
+
+<variantes>
+Q: O pus, um exsudato purulento, é um exsudato inflamatório rico em leucócitos (sobretudo neutrófilos), restos de células mortas e, em muitos casos, microrganismos.
+G: V
+
+Q: O pus, um transudato purulento, é um transudato inflamatório rico em leucócitos (sobretudo neutrófilos), restos de células mortas e, em muitos casos, microrganismos.
+G: F
+C: O pus, um <b>exsudato</b> purulento, é um <b>exsudato</b> inflamatório rico em leucócitos (sobretudo neutrófilos), restos de células mortas e, em muitos casos, microrganismos.
+</variantes>
+
+Q: A vasodilatação é induzida pela ação de vários mediadores, sobretudo a histamina, no músculo liso vascular. Trata-se de uma das primeiras manifestações da inflamação aguda.
+G: V
+
+Q: A vasodilatação é precedida do aumento da permeabilidade da microvasculatura, com extravasamento de líquido rico em proteína no interstício tecidual.
+G: F
+C: A vasodilatação é <b>logo seguida</b> de aumento da permeabilidade da microvasculatura, com extravasamento de líquido rico em proteína no interstício tecidual.
+
+Q: A estase sanguínea ocorre devido ao aumento do fluxo sanguíneo e diminuição da viscosidade do sangue nos pequenos vasos.
+G: F
+C: A estase ocorre devido ao fluxo sanguíneo mais LENTO, concentração de eritrócitos e AUMENTO da viscosidade do sangue.
+
+<variantes>
+Q: O principal mecanismo de aumento da permeabilidade vascular é a contração das células endoteliais, criando espaços interendoteliais.
+G: V
+
+Q: O principal mecanismo de aumento da permeabilidade vascular é a dilatação das células endoteliais, criando espaços interendoteliais.
+G: F
+C: Contração das células endoteliais.
+</variantes>
+
+Q: O sistema linfático participa da inflamação aguda drenando o líquido do edema e transportando leucócitos e microrganismos.
+G: V
+
+Q: A linfangite é caracterizada por diminuição do fluxo linfático e redução dos linfonodos de drenagem.
+G: F
+C: A linfangite é a inflamação dos vasos linfáticos com AUMENTO do fluxo linfático, e os linfonodos ficam AUMENTADOS (linfadenite).
+
+<variantes>
+Q: As vênulas pós-capilares são os principais vasos responsáveis pelo aumento da permeabilidade vascular na inflamação aguda.
+G: V
+
+Q: As arteríolas são os principais vasos responsáveis pelo aumento da permeabilidade vascular na inflamação aguda.
+G: F
+C: As <b>vênulas pós-capilares</b> são os principais vasos responsáveis pelo aumento da permeabilidade vascular na inflamação aguda.
+</variantes>
+
+Q: As estrias vermelhas próximas a feridas na pele indicam diminuição da atividade do sistema linfático local.
+G: F
+C: As estrias vermelhas representam canais linfáticos INFLAMADOS (linfangite) e são sinal de infecção bacteriana.
+
+<variantes>
+Q: Na inflamação aguda, os neutrófilos predominam no infiltrado inflamatório inicial e, posteriormente, são substituídos por monócitos e macrófagos.
+G: V
+
+Q: Na inflamação aguda os linfócitos predominam no infiltrado inflamatório inicial e, posteriormente, são substituídos por monócitos e macrófagos.
+G: F
+C: Na inflamação aguda os neutrófilos predominam.
+</variantes>
+
+</tag=Reações dos vasos sanguíneos na inflamação aguda>
+
+
+
+<tag=Recrutamento dos leucócitos para os locais de inflamação>
+
+<variantes>
+Q: Os leucócitos mais importantes nas reações inflamatórias típicas são aqueles capazes de realizar a fagocitose, isto é, os neutrófilos e os macrófagos.
+G: V
+
+Q: Os leucócitos mais importantes nas reações inflamatórias típicas são os linfócitos e os eosinófilos.
+G: F
+C: Embora linfócitos e eosinófilos possam estar presentes em alguns tipos específicos de inflamação (como inflamações virais e parasitárias, respectivamente), os principais leucócitos envolvidos na inflamação aguda típica são os neutrófilos e os macrófagos, por sua capacidade de realizar fagocitose.
+</variantes>
+
+<variantes>
+Q: A jornada dos leucócitos da luz do vaso até o tecido é um processo em múltiplas etapas, que é mediado e controlado por moléculas de adesão e citocinas, denominadas quimiocinas.
+G: V
+
+Q: A jornada dos leucócitos da luz do vaso até o tecido é um processo em múltiplas etapas, que é mediado e controlado por hormônios e neurotransmissores.
+G: F
+C: O processo é de fato composto por múltiplas etapas, mas ele é <b>mediado principalmente por moléculas de adesão e citocinas chamadas quimiocinas</b>, e não por hormônios ou neurotransmissores.
+</variantes>
+
+<variantes>
+Q: Devido à dilatação das vênulas pós-capilares na inflamação aguda, o fluxo sanguíneo torna-se lento (estase), e um maior número de leucócitos passa a assumir uma posição periférica ao longo da superfície endotelial. Esse processo de redistribuição dos leucócitos é denominado marginação.
+G: V
+
+Q: Devido à dilatação das vênulas pós-capilares na inflamação aguda, o fluxo sanguíneo acelera, empurrando os leucócitos para o centro do vaso. Esse processo é denominado marginação.
+G: F
+C: Na inflamação, há <b>lentificação do fluxo (estase)</b>, o que favorece o contato dos leucócitos com o endotélio. A marginação é justamente a <b>movimentação dos leucócitos para a periferia do vaso</b>, e não para o centro.
+</variantes>
+
+<variantes>
+Q: Os leucócitos que fluem devagar identificam sinais do endotélio, resultando, no começo, no rolamento das células na parede do vaso.
+G: V
+
+Q: Os leucócitos que fluem devagar identificam sinais do endotélio, resultando, no começo, na diapedese através da membrana basal.
+G: F
+C: A diapedese (transmigração) ocorre após o rolamento e a adesão firme. <b>O rolamento é a etapa inicial do processo de interação entre leucócitos e endotélio</b>.
+</variantes>
+
+<variantes>
+Q: A fixação dos leucócitos às células endoteliais é mediada por moléculas de adesão, cuja expressão é intensificada pelas citocinas.
+G: V
+
+Q: A fixação dos leucócitos às células endoteliais é mediada por moléculas de adesão, cuja expressão é intensificada pelas citocinas.
+G: V
+
+Q: A fixação dos leucócitos às células endoteliais é mediada por moléculas de adesão, cuja expressão é intensificada pelos hormônios inflamatórios.
+G: F
+C: A expressão das moléculas de adesão é intensificada por <b>citocinas</b>, como TNF e IL-1, e não por hormônios inflamatórios. Hormônios não têm papel direto nesse processo.
+
+Q: A fixação dos leucócitos às células endoteliais é mediada por proteínas do complemento, que são reguladas por citocinas inflamatórias.
+G: F
+C: Embora o sistema complemento esteja envolvido na inflamação, a <b>adesão leucocitária é mediada por moléculas específicas de adesão, como integrinas e selectinas</b>, e não por proteínas do complemento.
+</variantes>
+
+Q: As selectinas são responsáveis pela adesão firme dos leucócitos ao endotélio, sendo classificadas em dois tipos: L-selectina e E-selectina.
+G: F
+C: As selectinas são responsáveis pelas interações iniciais de ROLAMENTO (não adesão firme) e são classificadas em TRÊS tipos: L-selectina, E-selectina e P-selectina.
+
+Q: As integrinas são expressas pelos leucócitos em estado de alta afinidade, permitindo imediatamente a adesão firme ao endotélio.
+G: F
+C: As integrinas são normalmente expressas pelos leucócitos em estado de BAIXA afinidade, sendo convertidas para alta afinidade após ativação pelas quimiocinas.
+
+Q: As quimiocinas produzidas no local da lesão ligam-se aos proteoglicanos das células endoteliais e ativam os leucócitos em processo de rolamento.
+G: V
+
+Q: A migração dos leucócitos através do endotélio intacto é denominada transmigração ou diapedese.
+G: V
+
+<variantes>
+Q: A transmigração dos leucócitos ocorre sobretudo nas vênulas pós-capilares.
+G: V
+
+Q: A transmigração dos leucócitos ocorre sobretudo nas arteríolas.
+G: F
+C: A transmigração dos leucócitos ocorre sobretudo nas <b>vênulas pós-capilares</b>.
+
+</variantes>
+
+Q: Após atravessar o endotélio, os leucócitos perfuram a membrana basal secretando colagenases, e as membranas basais permanecem descontínuas para facilitar a passagem de outros leucócitos.
+G: F
+C: <b>Após a passagem dos leucócitos, as membranas basais voltam a ser contínuas</b>, não permanecendo descontínuas.
+
+Q: Os neutrófilos predominam no infiltrado inflamatório durante as primeiras 6-24 horas porque são mais numerosos e respondem mais lentamente às quimiocinas comparados aos monócitos.
+G: F
+C: <b>Os neutrófilos respondem mais RÁPIDO às quimiocinas</b>, não mais lentamente, além de serem mais numerosos e se ligarem mais firmemente às moléculas de adesão.
+
+<variantes>
+Q: Nas infecções virais, os neutrófilos são sempre as primeiras células a chegar ao local da inflamação, seguindo o padrão estereotípico de infiltração celular.
+G: F
+C: <b>Nas infecções virais, os linfócitos podem ser as primeiras células a chegar</b>, constituindo uma exceção ao padrão estereotípico onde neutrófilos predominam inicialmente.
+
+Q: Nas infecções virais, os linfócitos podem ser as primeiras células a chegar ao local da inflamação, constituindo uma exceção ao padrão estereotípico onde neutrófilos predominam inicialmente.
+G: V
+</variantes>
+
+<variantes>
+Q: A quimiotaxia é definida como locomoção ao longo de um gradiente químico, sendo mediada por quimioatraentes endógenos como IL-8, C5a e leucotrieno B4.
+G: V
+
+Q: A quimiotaxia é definida como o acúmulo passivo de leucócitos em áreas de inflamação, controlado por vasodilatação e aumento da permeabilidade vascular.
+G: F
+C: A quimiotaxia é um processo <b>ativo de locomoção celular direcionada por substâncias químicas</b>, não é passivo nem regulado apenas por alterações hemodinâmicas.
+</variantes>
+
+<variantes>
+Q: Os monócitos passam a constituir a população dominante nas reações inflamatórias prolongadas porque sobrevivem por mais tempo e podem proliferar nos tecidos.
+G: V
+
+Q: Os neutrófilos passam a constituir a população dominante nas reações inflamatórias prolongadas porque sobrevivem por mais tempo e podem proliferar nos tecidos.
+G: F
+C: Os <b>monócitos</b> passam a constituir a população dominante nas reações inflamatórias prolongadas porque sobrevivem por mais tempo e podem proliferar nos tecidos.
+
+Q: Os monócitos tornam-se dominantes nas reações inflamatórias prolongadas porque perdem a capacidade de responder a quimiocinas, o que os impede de sair do tecido.
+G: F
+C: A dominância dos monócitos ocorre porque <b>eles sobrevivem mais tempo nos tecidos e podem se proliferar localmente</b>. Eles continuam respondendo a quimiocinas e podem migrar, se necessário.
+</variantes>
+
+</tag=Recrutamento dos leucócitos para os locais de inflamação>
+
+<variantes>
+
+
+</variantes>
