@@ -1,6 +1,6 @@
-INFO: Baseado no capítulo 3 de Patologia de Robbins, apenas a parte sobre inflamação aguda. Contém apenas questões objetivas de V ou F. Pelo menos nas primeiras vezes que responder é recomendado manter desativado "embaralhar questões".
+INFO: Baseado no capítulo 3 de Patologia de Robbins, apenas a parte sobre <b>inflamação aguda</b>. Contém apenas <b>questões objetivas de V ou F</b>. Pelo menos nas primeiras vezes que responder é recomendado manter desativado "embaralhar questões".
 
-TAGS: Reações dos vasos sanguíneos na inflamação aguda; Recrutamento dos leucócitos para os locais de inflamação; 
+TAGS: Reações dos vasos sanguíneos na inflamação aguda; Recrutamento dos leucócitos para os locais de inflamação; Fagocitose e eliminação do agente agressor; Término da resposta inflamatória aguda; Mediadores da inflamação; Padrões morfológicos da inflamação aguda; Resultados da inflamação aguda
 
 
 
@@ -232,7 +232,416 @@ C: A dominância dos monócitos ocorre porque <b>eles sobrevivem mais tempo nos 
 
 </tag=Recrutamento dos leucócitos para os locais de inflamação>
 
+<tag=Fagocitose e eliminação do agente agressor>
+
 <variantes>
+Q: Os neutrófilos têm respostas a estímulos ativadores mais rápidas e de curta duração, enquanto os macrófagos apresentam respostas mais lentas e prolongadas, frequentemente dependentes de nova transcrição gênica.
+G: V
 
-
+Q: Os macrófagos têm respostas a estímulos ativadores mais rápidas e de curta duração, enquanto os neutrófilos apresentam respostas mais lentas e prolongadas, frequentemente dependentes de nova transcrição gênica.
+G: F
+C: Os <b>neutrófilos</b> têm respostas a estímulos ativadores mais rápidas e de curta duração, enquanto os <b>macrófagos</b> apresentam respostas mais lentas e prolongadas, frequentemente dependentes de nova transcrição gênica.
 </variantes>
+
+<variantes>
+Q: Durante a fagocitose, os fagócitos utilizam receptores específicos, como o receptor de manose, que reconhece resíduos terminais presentes nas células do hospedeiro.
+G: F
+C: O receptor de manose reconhece resíduos presentes nas <b>paredes celulares de microrganismos</b>, não das células do hospedeiro.
+
+Q: Durante a fagocitose, os fagócitos utilizam receptores específicos, como o receptor de manose, que reconhece resíduos terminais presentes nas paredes celulares de microrganismos
+G: V
+</variantes>
+
+Q: A explosão respiratória, relacionada à montagem rápida da oxidase dos fagócitos, ocorre de forma mais proeminente nos neutrófilos do que nos macrófagos.
+G: V
+
+Q: O principal sistema bactericida dos neutrófilos envolve a produção de hipoclorito (HOCl•) a partir de peróxido de hidrogênio pela ação da mieloperoxidase.
+G: V
+
+<variantes>
+Q: As espécies reativas de oxigênio (ROS) são produzidas principalmente dentro dos fagolisossomos, podendo atuar sobre as partículas ingeridas sem causar dano ao fagócito.
+G: V
+
+Q: As espécies reativas de oxigênio (ROS) são produzidas principalmente fora dos fagolisossomos.
+G: F
+C: As espécies reativas de oxigênio (ROS) são produzidas principalmente <b>dentro dos fagolisossomos</b>, podendo atuar sobre as partículas ingeridas sem causar dano ao fagócito.
+</variantes>
+
+Q: O óxido nítrico (NO) é produzido pela óxido nítrico sintase induzível (iNOS) em neutrófilos ativados, reagindo com superóxido para gerar peroxinitrito, um radical livre altamente reativo.
+G: F
+C: Produzido em macrófagos ativados e não em neutrófilos.
+
+Q: Nos grânulos dos neutrófilos há lisozima, elastase, colagenase e mieloperoxidase, entre outras enzimas.
+G: V
+C: Grânulos específicos contêm lisozima e colagenase; azurófilos, MPO e proteases neutras (elastase).
+
+Q: Os macrófagos residentes em tecidos podem viver por anos, enquanto macrófagos inflamatórios sobrevivem por dias ou semanas.
+G: V
+C: Macrófagos de origem fetal ou residentes têm longevidade muito maior que os recrutados na inflamação.
+
+<variantes>
+Q: A fagocitose envolve três etapas sequenciais: reconhecimento e ligação da partícula, ingestão com formação de vacúolo fagocítico, e morte do microrganismo com degradação do material ingerido.
+G: V
+
+Q: A fagocitose envolve duas etapas sequenciais: reconhecimento e ligação da partícula e morte do microrganismo com degradação do material ingerido.
+G: F
+C: A fagocitose envolve <b>três etapas</b> sequenciais: reconhecimento e ligação da partícula, <b>ingestão com formação de vacúolo fagocítico</b>, e morte do microrganismo com degradação do material ingerido.
+</variantes>
+
+<variantes>
+Q: As opsoninas aumentam drasticamente a eficiência da fagocitose, sendo as principais os anticorpos IgG, o produto de degradação C3b do complemento e certas lectinas plasmáticas.
+G: V
+
+Q: As espécies reativas de oxigênio aumentam drasticamente a eficiência da fagocitose, sendo as principais os anticorpos IgG, o produto de degradação C3b do complemento e certas lectinas plasmáticas.
+G: F
+C: As <b>opsoninas</b>.
+</variantes>
+
+<variantes>
+Q: A destruição intracelular ocorre por espécies reativas de oxigênio (ROS) e espécies reativas de nitrogênio, derivadas principalmente do óxido nítrico, juntamente com enzimas lisossômicas.
+G: V
+
+Q: A destruição intracelular ocorre por espécies reativas de oxigênio (ROS) e espécies reativas de hidrogênio, derivadas principalmente do óxido nítrico, juntamente com enzimas lisossômicas.
+G: F
+C: A destruição intracelular ocorre por espécies reativas de oxigênio (ROS) e espécies reativas de <b>nitrogênio</b>, derivadas principalmente do óxido nítrico, juntamente com enzimas lisossômicas.
+</variantes>
+
+Q: A NADPH oxidase (oxidase dos fagócitos) é responsável pela produção de ROS através da oxidação do NADPH e redução do oxigênio a ânion superóxido, processo conhecido como explosão respiratória.
+G: V
+
+<variantes>
+Q: As armadilhas extracelulares de neutrófilos (NETs) são redes fibrilares compostas por cromatina nuclear que capturam microrganismos e concentram substâncias antimicrobianas, resultando na morte dos neutrófilos.
+G: V
+
+Q: As armadilhas extracelulares de neutrófilos (NETs) são estruturas formadas a partir de restos de membrana plasmática que se organizam em rede para isolar microrganismos e impedir sua fagocitose.
+G: F
+C: As NETs são compostas por <b>cromatina nuclear</b>, não por restos de membrana plasmática, e contêm proteínas granulares que atuam contra microrganismos. Sua formação leva à morte do neutrófilo.
+</variantes>
+
+Q: Mecanismos antioxidantes endógenos protegem as células saudáveis dos radicais derivados do oxigênio.
+G: V
+
+<variantes>
+Q: As enzimas lisossômicas têm funções distintas: proteases ácidas degradam bactérias nos fagolisossomos acidificados, enquanto proteases neutras podem degradar componentes extracelulares.
+G: V
+
+Q: As enzimas lisossômicas têm funções distintas: proteases neutras degradam bactérias nos fagolisossomos acidificados, enquanto proteases ácidas podem degradar componentes extracelulares.
+G: F
+C: As enzimas lisossômicas têm funções distintas: <b>proteases ácidas</b> degradam bactérias nos fagolisossomos acidificados, enquanto <b>proteases neutras</b> podem degradar componentes extracelulares.
+</variantes>
+
+Q: A fagocitose frustrada ocorre quando os fagócitos encontram materiais que não podem ser facilmente ingeridos, como imunocomplexos em grandes superfícies, levando à liberação de enzimas no meio extracelular.
+G: V
+
+Q: As células Th17 produzem IL-17, que induz secreção de quimiocinas para recrutamento de outros leucócitos, contribuindo para a inflamação aguda ao lado dos neutrófilos e macrófagos.
+G: V
+
+<variantes>
+Q: A eficiência da fagocitose é acentuadamente aumentada quando os microrganismos são recobertos com opsoninas para as quais os fagócitos expressam receptores de alta afinidade.
+G: V
+
+Q: A eficiência da fagocitose é acentuadamente aumentada quando os microrganismos são recobertos com manose para as quais os fagócitos expressam receptores de alta afinidade.
+G: F
+C: Recobertos com opsoninas e não manose.
+</variantes>
+
+Q: Os neutrófilos também são células de importância crítica na inflamação crônica e no reparo dos tecidos após a diminuição da inflamação.
+G: F
+C: Os <b>macrófagos</b>.
+
+</tag=Fagocitose e eliminação do agente agressor>
+
+
+
+<tag=Mediadores da inflamação>
+
+Q: Os receptores fagocíticos são as substâncias que iniciam e que regulam as reações inflamatórias.
+G: F
+C: Os <b>mediadores da inflamação</b> são as substâncias que iniciam e que regulam as reações inflamatórias.
+
+Q: Aminas vasoativas são um exemplo de importantes mediadores da inflamação aguda.
+G: V
+C: Outros exemplos: Produtos lipídicos (prostaglandinas e leucotrienos), citocinas (incluindo quimiocinas) e produtos da ativação do complemento.
+
+<variantes>
+Q: Os mediadores derivados do plasma (p. ex., proteínas do complemento) são produzidos, sobretudo, na medula óssea e estão presentes na circulação como precursores inativos, que precisam ser ativados, geralmente por uma série de clivagens proteolíticas, para adquirir suas propriedades funcionais.
+G: F
+C: Produzidos no fígado.
+
+Q: Os mediadores derivados do plasma (p. ex., proteínas do complemento) são produzidos, sobretudo, no fígado e estão presentes na circulação como precursores inativos, que precisam ser ativados, geralmente por uma série de clivagens proteolíticas, para adquirir suas propriedades funcionais.
+G: V
+</variantes>
+
+Q: Os mediadores ativos são apenas produzidos em resposta a estímulos agressores.
+G: V
+C: Esses estímulos incluem produtos microbianos e substâncias liberadas de células necróticas.
+
+<variantes>
+Q: Os mediadores apresentam, em sua maioria, vida curta.
+G: V
+C: Eles logo diminuem ou são inativados por enzimas, ou depurados ou inibidos.
+
+Q: Os mediadores apresentam, em sua maioria, vida longa.
+G: F
+C: Vida curta.
+</variantes>
+
+<variantes>
+Q: Um mediator pode inibir a liberação de outros mediadores. Por exemplo, produtos da ativação do complemento inibem a liberação de histamina.
+G: F
+C: Um mediator pode <b>estimular</b> a liberação de outros mediadores. Por exemplo, produtos da ativação do complemento <b>estimulam</b> a liberação de histamina.
+
+Q: Um mediator pode estimular a liberação de outros mediadores. Por exemplo, produtos da ativação do complemento estimulam a liberação de histamina.
+G: V
+</variantes>
+
+<variantes>
+Q: As duas principais aminas vasoativas, assim denominadas pelas suas importantes ações sobre os vasos sanguíneos, são a histamina e a serotonina.
+G: V
+C: Essas aminas são armazenadas como moléculas pré-formadas nas células e, portanto, estão entre os primeiros mediadores a serem liberados durante a inflamação.
+
+Q: As duas principais aminas vasoativas, assim denominadas pelas suas importantes ações sobre os vasos sanguíneos, são a histamina e o óxido nítrico.
+G: F
+C: São a histamina e a <b>serotonina</b>.
+</variantes>
+
+Q: As fontes mais abundantes de histamina são os mastócitos, que costumam estar presentes no tecido conjuntivo adjacente aos vasos sanguíneos.
+G: V
+
+<variantes>
+Q: A histamina provoca dilatação das arteríolas e aumenta a permeabilidade das vênulas. 
+G: V
+
+Q: A histamina provoca dilatação das arteríolas e reduz a permeabilidade das vênulas. 
+G: F
+C: A histamina provoca dilatação das arteríolas e <b>aumenta</b> a permeabilidade das vênulas.
+
+Q: A histamina provoca contração das arteríolas e aumenta a permeabilidade das vênulas. 
+G: F
+C: A histamina provoca <b>dilatação</b> das arteríolas e aumenta a permeabilidade das vênulas.
+</variantes>
+
+Q: Os mediadores lipídicos, as prostaglandinas e os leucotrienos, são produzidos a partir do ácido araquidônico (AA), presente nos fosfolipídios da membrana; eles estimulam as reações vasculares e celulares na inflamação aguda.
+G: V
+
+Q: As prostaglandinas (PG) são produzidas pelos mastócitos, macrófagos, células endoteliais e muitos outros tipos celulares e estão envolvidas nas reações vasculares e sistêmicas da inflamação. São geradas pela ação de uma ciclo-oxigenase, denominada COX-1.
+G: F
+C: São geradas pelas ações de <b>duas ciclo-oxigenases, denominadas COX-1 e COX-2</b>.
+
+Q: A expressão da COX-q é geralmente limitada a células que participam das reações inflamatórias.
+G: F
+C: A COX-1 é expressa de forma constitutiva na maioria dos tecidos, podendo desempenhar várias funções homeostáticas (p. ex., equilíbrio hidreletrolítico nos rins, citoproteção no trato gastrintestinal), e também é induzida por estímulos inflamatórios. Em contrapartida, <b>a expressão da COX-2 é geralmente limitada a células que participam das reações inflamatórias.</b>
+
+<variantes>
+Q: Os leucotrienos são produzidos nos leucócitos e nos mastócitos pela ação da lipo-oxigenase e estão envolvidos nas reações vasculares e do músculo liso, bem como no recrutamento de leucócitos.
+G: V
+
+Q: Os leucotrienos são produzidos nos leucócitos e nos mastócitos pela ação da lipo-oxigenase e estão envolvidos nas reações vasculares e do músculo liso, bem como no recrutamento de leucócitos.
+G: V
+
+Q: Os leucotrienos são produzidos nos leucócitos e nos neutrófilos pela ação da lipo-oxigenase e estão envolvidos nas reações vasculares e do músculo liso, bem como no recrutamento de leucócitos.
+G: F
+C: Os leucotrienos são produzidos nos leucócitos e nos <b>mastócitos</b>.
+
+Q: Os leucotrienos são produzidos nos leucócitos e nos mastócitos pela ação da lipo-oxigenase e estão envolvidos nas reações vasculares e do músculo liso, bem como na apoptose de leucócitos.
+G: F
+C: Bem como <b>no recrutamento</b> de leucócitos.
+</variantes>
+
+Q: Os leucotrienos que contêm cisteinil (LTC4, LTD4 e LTE4) causam vasodilatação intensa, contribuindo para o edema.
+G: F
+C: Os leucotrienos que contêm cisteinil (LTC4, LTD4 e LTE4) causam <b>vasoconstrição intensa</b>. Além disso, também causam broncospasmo (importante na asma) e aumento da permeabilidade das vênulas.
+
+<variantes>
+Q: Os leucotrienos são mais potentes do que a histamina no aumento da permeabilidade vascular e na geração de broncospasmo.
+G: V
+
+Q: Os leucotrienos são menos potentes do que a histamina no aumento da permeabilidade vascular e na geração de broncospasmo.
+G: F
+C: Mais potentes do que a histamina.
+</variantes>
+
+Q: As lipoxinas são geradas a partir do AA pela via da lipo-oxigenase. Elas estimulam a inflamação ao estimular a quimiotaxia dos neutrófilos e a adesão ao endotélio.
+G: F
+C: Todavia, diferentemente das prostaglandinas e dos leucotrienos, elas <b>suprimem a inflamação ao inibir</b> a quimiotaxia dos neutrófilos e a adesão ao endotélio.
+
+Q: Os inibidores da ciclo-oxigenase incluem o ácido acetilsalicílico e outros fármacos anti-inflamatórios não esteroides (AINE), como o ibuprofeno.
+G: V
+
+Q: A inibição seletiva de COX-2 pode desviar o equilíbrio para o tromboxano e promover trombose vascular, sobretudo em indivíduos com outros fatores que aumentam o risco de trombose.
+G: V
+
+<variantes>
+Q: O TNF e a IL-1 desempenham funções fundamentais no recrutamento dos leucócitos ao promover a adesão dos leucócitos ao endotélio e a sua migração através dos vasos sanguíneos.
+G: V
+
+Q: O TNF e a IL-7 desempenham funções fundamentais no recrutamento dos leucócitos ao promover a adesão dos leucócitos ao endotélio e a sua migração através dos vasos sanguíneos.
+G: F
+C: O TNF e a IL-1.
+</variantes>
+
+Q: TNF suprimi o apetite. Logo, a produção sustentada de TNF contribui para a caquexia, um estado patológico caracterizado por perda de peso e anorexia, que é observado em algumas infecções crônicas e doenças neoplásicas.
+G: V
+
+<variantes>
+Q: As quimiocinas formam uma família de pequenas proteínas, que atuam sobretudo como quimioatraentes para tipos específicos de leucócitos.
+G: V
+
+Q: As citocinas formam uma família de pequenas proteínas, que atuam sobretudo como quimioatraentes para tipos específicos de leucócitos.
+G: F
+C: As <b>quimiocinas</b>.
+</variantes>
+
+Q: A COX-2 aumenta a fixação dos leucócitos ao endotélio e estimula a migração (quimiotaxia) dos leucócitos nos tecidos até o local de infecção ou de dano tecidual.
+G: F
+C: <b>Citocinas</b> aumentam a fixação dos leucócitos ao endotélio e estimulam a migração (quimiotaxia) dos leucócitos nos tecidos até o local de infecção ou de dano tecidual.
+
+Q: O sistema complemento refere-se a uma coleção de proteínas plasmáticas que atuam principalmente na defesa do hospedeiro contra microrganismos e nas reações inflamatórias patológicas. As proteínas do complemento atuam na imunidade tanto inata quanto adaptativa para defesa contra microrganismos.
+G: V
+ 
+<variantes>
+Q: Sobre o sistema complemento, a clivagem do C3 pode ocorrer por um das três vias seguintes: Via clássica, via alternativa e via da lectina.
+G: V
+
+Q: Sobre o sistema complemento, a clivagem do C3 pode ocorrer por um das três vias seguintes: Via clássica, via alternativa e via direta.
+G: F
+C: Via clássica, via alternativa e <b>via da lectina</b>.
+</variantes>
+
+Q: Todas as três vias de ativação do complemento levam à formação de uma enzima ativa, denominada C3 convertase, que cliva o C3 em dois fragmentos funcionalmente distintos, o C3a e o C3b.
+G: V
+
+Q: O sistema complemento desempenha essas funções principais: Inflamação, opsonização e fagocitose e lise celular.
+G: V
+
+<variantes>
+Q: A bradicinina aumenta a permeabilidade vascular e causa contração do músculo liso, dilatação dos vasos sanguíneos e dor quando injetada na pele.
+G: V
+
+Q: A bradicinina reduz a permeabilidade vascular e causa dilatação do músculo liso, contração dos vasos sanguíneos e dor quando injetada na pele.
+G: F
+C: A bradicinina <b>aumenta</b> a permeabilidade vascular e causa <b>contração</b> do músculo liso, <b>dilatação</b> dos vasos sanguíneos e dor quando injetada na pele.
+</variantes>
+
+Q: A substância P é um neuropeptídeo que apresenta diversas atividades que podem ser importantes na inflamação, como a transmissão de sinais de dor e o aumento da permeabilidade vascular.
+G: V
+C: Os leucócitos expressam receptores para muitos neuropeptíeos, de modo que esses produtos neurais podem proporcionar um mecanismo para a “interação cruzada” entre o sistema nervoso e as reações imunes e inflamatórias. Por exemplo, a ativação do nervo vago eferente inibe a produção de citocinas pró-inflamatórias, como o TNF, proporcionando um mecanismo para suprimir a inflamação.
+
+</tag=Mediadores da inflamação>
+
+<tag=Padrões morfológicos da inflamação aguda>
+
+Q: As características morfológicas essenciais das reações inflamatórias agudas consistem em dilatação dos pequenos vasos sanguíneos e acúmulo de leucócitos e líquido no tecido extravascular.
+G: V
+
+<variantes>
+Q: A inflamação serosa caracteriza-se pela exsudação de líquido pobre em células nos espaços criados pela lesão celular ou em cavidades corporais revestidas pelo peritônio, pela pleura ou pelo pericárdio.
+G: V
+C: Normalmente, o líquido na inflamação serosa não contém microrganismos nem grandes números de leucócitos.
+
+Q: A inflamação serosa caracteriza-se pela exsudação de líquido pobre em células nos espaços criados pela lesão celular ou em cavidades corporais revestidas pelo peritônio, pela pleura ou pelo pericárdio.
+G: V
+C: Normalmente, o líquido na inflamação serosa não contém microrganismos nem grandes números de leucócitos.
+
+Q: A inflamação fibrinosa caracteriza-se pela exsudação de líquido pobre em células nos espaços criados pela lesão celular ou em cavidades corporais revestidas pelo peritônio, pela pleura ou pelo pericárdio.
+G: F
+C: Isso é a inflamação serosa, não a fibrinosa.
+
+Q: A inflamação serosa caracteriza-se por um exsudato espesso e rico em células, principalmente neutrófilos, com presença de pus.
+G: F
+C: O exsudato da inflamação serosa é <b>pobre em células</b>, claro e aquoso, diferentemente da inflamação purulenta, que contém pus e neutrófilos.
+</variantes>
+
+<variantes>
+Q: A bolha na pele, que resulta de queimadura ou de infecção viral, representa o acúmulo de líquido seroso no interior ou logo abaixo da epiderme danificada
+G: V
+
+Q: A bolha na pele, que resulta de queimadura ou de infecção viral, representa o acúmulo de líquido purulento no interior ou logo abaixo da epiderme danificada
+G: F
+C: Líquido seroso.
+</variantes>
+
+Q: Um exsudato fibrinoso se desenvolve quando ocorrem extravasamentos vasculares grandes ou quando há um estímulo pró-coagulante local.
+G: V
+
+<variantes>
+Q: O exsudato fibrinoso é característico da inflamação do revestimento das cavidades corporais, como as meninges, o pericárdio e a pleura.
+G: V
+C: Os exsudatos fibrinosos podem ser dissolvidos por fibrinólise e removidos pelos macrófagos.
+
+Q: O exsudato seroso é característico da inflamação do revestimento das cavidades corporais, como as meninges, o pericárdio e a pleura.
+G: F
+C: O exsudato <b>fibrinoso</b> é característico da inflamação do revestimento das cavidades corporais, como as meninges, o pericárdio e a pleura.
+
+Q: O exsudato fibrinoso é tipicamente encontrado na medula óssea e tecido muscular esquelético.
+G: F
+C: O exsudato fibrinoso ocorre principalmente nas <b>cavidades corporais</b>, como pleura, pericárdio e meninges, não em medula ou músculo esquelético.
+</variantes>
+
+Q: A inflamação fibrinosa caracteriza-se pela produção de pus, um exsudato que contém neutrófilos, restos liquefeitos de células necróticas e líquido de edema.
+G: F
+C: A inflamação <b>purulenta</b> caracteriza-se pela produção de pus, um exsudato que contém neutrófilos, restos liquefeitos de células necróticas e líquido de edema.
+
+<variantes>
+Q: A causa mais frequente de inflamação purulenta (também denominada supurativa) consiste na infecção por bactérias que provocam necrose tecidual liquefativa
+G: V
+C: Como os estafilococos; esses patógenos são conhecidos como bactérias piogênicas (produtoras de pus). Um exemplo comum de inflamação supurativa aguda é a <b>apendicite aguda</b>.
+
+Q: A causa mais frequente de inflamação purulenta (também denominada supurativa) consiste na infecção por vírus que provocam necrose tecidual liquefativa
+G: F
+C: A causa mais comum é por <b>bactérias</b> e não por vírus.
+</variantes>
+
+<variantes>
+Q: Os abscessos são coleções localizadas de pus.
+G: V
+C: Causados por supuração dentro de um tecido, de um órgão ou de um espaço confinado.
+
+Q: Os abscessos são coleções localizadas de tecido fibroso denso.
+G: F
+C: Os abscessos são coleções localizadas de <b>pus</b>. Causados por supuração dentro de um tecido, de um órgão ou de um espaço confinado.
+
+Q: As úlceras são coleções localizadas de pus.
+G: F
+C: Os <b>abscessos</b> são coleções localizadas de pus.
+</variantes>
+
+<variantes>
+Q: Uma úlcera é uma ferida aberta que aparece na superfície de um órgão ou tecido.
+Ela se forma quando uma parte do tecido morre (necrose) por causa de uma inflamação e depois se desprende (descama), criando um “buraco” ou escavação na região.
+G: V
+
+Q: Um abscesso é uma ferida aberta que aparece na superfície de um órgão ou tecido.
+Ele se forma quando uma parte do tecido morre (necrose) por causa de uma inflamação e depois se desprende (descama), criando um “buraco” ou escavação na região.
+G: F
+C: Isso se refere a <b>úlcera</b> e não a abscesso.
+</variantes>
+
+Q: A ulceração só pode ocorrer quando a necrose tecidual e a inflamação associada acontecem na superfície do órgão ou em sua proximidade.
+G: V
+
+Q: As ulcerações são mais bem exemplificadas pela úlcera péptica do estômago ou do duodeno, na qual há existência apenas de inflamação aguda.
+G: F
+C: As ulcerações são mais bem exemplificadas pela úlcera péptica do estômago ou do duodeno, na qual <b>há coexistência de inflamação aguda e crônica</b>.
+
+<variantes>
+Q: As úlceras aparecem com mais frequência em locais onde a inflamação acontece perto da superfície, como nas mucosas internas, na pele e tecidos logo abaixo da pele, especialmente nas pernas de pessoas com problemas de circulação.
+G: V
+
+Q: As úlceras aparecem com mais frequência em órgãos profundos como fígado, rins e pulmões.
+G: F
+C: As úlceras aparecem com mais frequência em locais <b>onde a inflamação acontece perto da superfície</b>, como nas mucosas internas, na pele e tecidos logo abaixo da pele, especialmente nas pernas de pessoas com problemas de circulação, como diabetes.
+</variantes>
+
+<variantes>
+Q: As reações inflamatórias agudas costumam apresentar um dos três resultados seguintes: Resolução completa, cicatrização por deposição de tecido conjuntivo (cicatriz ou fibrose) ou progressão da resposta para a inflamação crônica.
+G: V
+
+Q: As reações inflamatórias agudas costumam apresentar um dos dois resultados seguintes: Resolução completa ou cicatrização por deposição de tecido conjuntivo (cicatriz ou fibrose).
+G: F
+C: As reações inflamatórias agudas costumam apresentar um dos <b>três resultados seguintes</b>: Resolução completa, cicatrização por deposição de tecido conjuntivo (cicatriz ou fibrose) ou <b>progressão da resposta para a inflamação crônica</b>.
+</variantes>
+
+</tag=Padrões morfológicos da inflamação aguda>
+
+
