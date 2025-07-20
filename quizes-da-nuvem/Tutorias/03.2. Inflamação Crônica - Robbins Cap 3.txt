@@ -1,0 +1,85 @@
+INFO: Baseada na parte sobre <b>inflamação crônica</b> do Patologia de Robbins, capítulo 3.
+
+Q: A inflamação crônica pode surgir de forma insidiosa, sem ter passado por uma fase aguda anterior.
+G: V
+C: Uma das características da inflamação crônica é que ela pode se iniciar lentamente, sem uma inflamação aguda visível ou evidente como fase inicial.
+
+Q: A principal célula responsável pela destruição de microrganismos na inflamação crônica é o neutrófilo.
+G: F
+C: Embora os neutrófilos possam estar presentes em algumas formas crônicas, os <b>macrófagos</b> são as células dominantes e mais importantes na inflamação crônica.
+
+Q: A inflamação crônica pode ocorrer em resposta a antígenos inócuos, como na asma brônquica.
+G: V
+C: Doenças alérgicas, como a asma, envolvem uma resposta inflamatória crônica contra substâncias ambientalmente comuns, como pólen e poeira.
+
+Q: A inflamação crônica caracteriza-se pela predominância de células mononucleares, destruição tecidual e fibrose.
+G: V
+C: Esta é uma das características fundamentais da inflamação crônica. Diferentemente da inflamação aguda (predominantemente neutrofílica), a crônica apresenta infiltração por macrófagos, linfócitos e plasmócitos, além de destruição tecidual pelo agente agressor persistente e tentativas de reparo através de fibrose e angiogênese.
+
+Q: Os macrófagos M1 (classicamente ativados) são responsáveis pela resolução da inflamação e promoção do reparo tecidual.
+G: F
+C: Os macrófagos M1 são ativados por produtos microbianos e IFN-γ, tendo função microbicida e pró-inflamatória. Quem promove a resolução da inflamação e o reparo tecidual são os macrófagos M2 (alternativamente ativados), que são induzidos por IL-4 e IL-13.
+
+Q: Os eosinófilos são comuns em infecções virais crônicas e exercem papel predominante na fagocitose viral.
+G: F
+C: Os eosinófilos estão mais associados a <b>reações alérgicas e infecções parasitárias</b>, não a infecções virais.
+
+Q: A inflamação granulomatosa é uma forma de inflamação crônica que se caracteriza por coleções de macrófagos ativados, frequentemente com linfócitos T e sempre associada a necrose.
+G: F
+C: A inflamação granulomatosa é uma forma de inflamação crônica que se caracteriza por coleções de macrófagos ativados, frequentemente com linfócitos T e, <b>algumas vezes</b>, associada a necrose.
+
+<variantes>
+Q: Ao redor de fios de sutura podem se formar os granulomas de corpos estranhos.
+G: V
+C: Os granulomas de corpos estranhos são produzidos por corpos estranhos inertes, que induzem inflamação na ausência de respostas imunes mediadas por células T.
+
+Q: Ao redor de fios de sutura podem se formar os granulomas imunes.
+G: F
+C: Os <b>granulomas de corpos estranhos</b> são produzidos por corpos estranhos inertes, que induzem inflamação na ausência de respostas imunes mediadas por células T, podem se formar ao redor de fios de sutura.
+Já os granulomas imunes são causados por uma variedade de agentes capazes de induzir uma resposta imune persistente mediada por células T.
+</variantes>
+
+Q: A formação de granulomas é uma tentativa celular de conter agentes agressores de difícil erradicação.
+G: V
+C: Os granulomas representam uma forma especializada de inflamação crônica onde macrófagos ativados (células epitelioides) se organizam para tentar conter agentes que são difíceis de eliminar, como micobactérias ou corpos estranhos inertes.
+
+Q: Na inflamação granulomatosa, a necrose caseosa é observada principalmente em infecções virais crônicas como a hepatite C.
+G: F
+C: A necrose caseosa é típica da tuberculose, causada por Mycobacterium tuberculosis, e não é comum em hepatite viral crônica.
+
+Q: As células gigantes de Langhans se originam da fusão de linfócitos B ativados.
+G: F
+C: Essas células resultam da <b>fusão de macrófagos ativados</b>, não de linfócitos B.
+
+Q: A inflamação crônica pode levar à formação de estruturas semelhantes a folículos linfáticos em tecidos não linfoides.
+G: V
+C: Esses são os chamados <b>órgãos linfoides terciários</b>, observados em doenças como tireoidite de Hashimoto e artrite reumatoide.
+
+Q: Os granulomas de corpos estranhos formam-se através de respostas imunes mediadas por células T específicas.
+G: F
+C: Os granulomas de corpos estranhos formam-se ao redor de materiais inertes (talco, fios de sutura) <b>na ausência de respostas imunes mediadas por células T</b>. Eles são formados por materiais grandes demais para fagocitose e não imunogênicos. Os granulomas imunes é que são causados por respostas mediadas por células T.
+
+Q: A silicose exemplifica inflamação crônica causada por exposição prolongada a agente exógeno potencialmente tóxico.
+G: V
+C: A silicose resulta da inalação prolongada de partículas de sílica (material inanimado não degradável), sendo um exemplo clássico de inflamação crônica causada por exposição prolongada a agentes exógenos tóxicos.
+
+Q: A doença inflamatória intestinal é um exemplo de inflamação crônica causada por resposta imune desregulada contra microrganismos intestinais.
+G: V
+C: Tanto a doença de Crohn quanto a colite ulcerativa envolvem respostas inflamatórias crônicas e exacerbadas da mucosa intestinal.
+
+Q: A formação de granulomas é uma resposta celular organizada para isolar agentes de fácil erradicação.
+G: F
+C: Os granulomas são formados justamente quando <b>os agentes são difíceis de eliminar</b>, como micobactérias ou corpos estranhos inertes.
+
+Q: A aterosclerose representa um processo inflamatório crônico induzido pela deposição de colesterol e outros lipídios endógenos na parede arterial.
+G: V
+C: É um processo inflamatório crônico da parede arterial induzido pela produção excessiva e deposição de colesterol e outros lipídios endógenos.
+
+Q: A necrose caseosa nos granulomas é resultado de hipoxia e ação de radicais livres induzidos pela inflamação persistente.
+G: V
+C: Na tuberculose e em outras doenças infecciosas graves, o centro necrótico dos granulomas contém material amorfo e eosinofílico devido à combinação de hipóxia local e lesão celular por radicais livres, gerando o aspecto caseoso típico.
+
+Q: A principal função dos plasmócitos na inflamação crônica é fagocitar resíduos celulares no local da lesão.
+G: F
+C: Os plasmócitos são células especializadas na <b>produção de anticorpos</b>. Embora possam estar presentes em áreas de inflamação crônica, eles não exercem atividade fagocítica como os macrófagos.
+

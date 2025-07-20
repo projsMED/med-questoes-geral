@@ -1,0 +1,96 @@
+
+Q: A inflamação, mesmo quando localizada, está associada a reações sistêmicas induzidas por citocinas, que em seu conjunto são denominadas resposta de fase aguda.
+G: V
+
+Q: A febre constitui uma das manifestações mais proeminentes da resposta de fase aguda, sobretudo quanto a inflamação não está associada a uma infecção.
+G: F
+C: Sobretudo quanto a inflamação <b>está</b> associada a uma infecção.
+
+<variantes>
+Q: As substâncias que induzem a febre são denominadas pirógenos e incluem produtos bacterianos (pirógenos exógenos, por exemplo, LPS) e citocinas, principalmente IL-1 e TNF (denominadas pirógenos endógenos).
+G: V
+
+Q: As substâncias que reduzem a febre são denominadas pirógenos e incluem produtos bacterianos (pirógenos exógenos, por exemplo, LPS) e citocinas, principalmente IL-1 e TNF (denominadas pirógenos endógenos).
+G: F
+C: Essas são substâncias que <b>INDUZEM</b> a febre e não que reduzem.
+</variantes>
+
+
+Q: A liberação de prostaglandinas está associada com a febre.
+G: V
+C: Entre as células que respondem à IL-1 e ao TNF, estão as células vasculares e perivasculares do hipotálamo. As prostaglandinas liberadas por essas células, em particular a PGE2, estimulam a produção de neurotransmissores pelo hipotálamo, que restauram a temperatura corporal no estado de equilíbrio dinâmico em um nível mais alto, reduzindo a perda de calor (por vasoconstrição) e aumentando a produção de calor (por meio de efeitos sobre a gordura marrom e o músculo esquelético).
+
+<variantes>
+Q: Os AINE, incluindo o ácido acetilsalicílico, reduzem a febre ao inibir a síntese de prostaglandinas.
+G: V
+
+Q: Os AINE, incluindo o ácido acetilsalicílico, reduzem a febre ao estimular a síntese de prostaglandinas.
+G: F
+C: Eles <b>inibem</b> a síntese de prostaglandinas.
+</variantes>
+
+Q: Níveis elevados de proteínas da fase aguda são proteínas plasmáticas, em sua maior parte sintetizadas na medula óssea, cujas concentrações plasmáticas podem aumentar várias centenas de vezes como parte da resposta a estímulos inflamatórios.
+G: F
+C: A maioria sintetizada no fígado e não na medula óssea.
+
+<variantes>
+Q: A síntese das três mais conhecidas proteínas da fase aguda é estimulada por citocinas.
+G: V
+C: Três dessas proteínas mais bem conhecidas são a proteína C reativa (CRP), o fibrinogênio e a proteína amiloide sérica A (SAA). A síntese dessas moléculas nos hepatócitos é estimulada por citocinas, sobretudo IL-6 (para a CRP e o fibrinogênio) e IL-1 ou TNF (para a SAA).
+
+Q: A síntese das três mais conhecidas proteínas da fase aguda é estimulada pelos fatores de crescimento.
+G: F
+C: rês dessas proteínas mais bem conhecidas são a proteína C reativa (CRP), o fibrinogênio e a proteína amiloide sérica A (SAA). A síntese dessas moléculas nos hepatócitos é <b>estimulada por citocinas</b>, sobretudo IL-6 (para a CRP e o fibrinogênio) e IL-1 ou TNF (para a SAA).
+</variantes>
+
+Q: As proteínas de fase aguda apresentam efeitos benéficos durante a inflamação aguda, porém sua produção prolongada (sobretudo a SAA) nos estados de inflamação crônica provoca amiloidose secundária.
+G: V
+C: A amiloidose secundária, também chamada de amiloidose AA, é uma condição patológica caracterizada pelo depósito extracelular de proteínas amiloides derivadas da proteína amiloide sérica A (SAA), que é produzida em grandes quantidades pelo fígado durante estados inflamatórios crônicos. Esses depósitos de amiloide ocorrem em vários órgãos, como rins, fígado, baço e intestinos, comprometendo suas funções. A amiloidose secundária é frequentemente associada a doenças inflamatórias crônicas, como artrite reumatoide, infecções persistentes ou doenças autoimunes, sendo uma complicação grave da inflamação prolongada.
+
+Q: A hepcidina é uma pequena proteína que reduz a disponibilidade de ferro para os progenitores eritroides na medula óssea. Com o passar do tempo, esse efeito pode levar à anemia da inflamação crônica.
+G: V
+
+Q: A leucocitose constitui uma característica comum das reações inflamatórias, sobretudo aquelas induzidas por infecções fúngicas.
+G: F
+C: Sobretudo aquelas induzidas por <b>infecções bacterianas</b>.
+
+<variantes>
+Q: A leucocitose ocorre inicialmente em virtude da liberação acelerada de granulócitos da medula óssea (causada por citocinas, incluindo TNF e IL-1) e, portanto, está associada a um aumento no número de neutrófilos tanto maduros quanto imaturos no sangue.
+G: V
+
+Q: A leucocitose ocorre inicialmente em virtude da liberação acelerada de granulócitos da medula óssea (causada por citocinas, incluindo TNF e IL-1) e, portanto, está associada a um aumento no número de neutrófilos imaturos no sangue.
+G: F
+C: Está associada a um aumento no número de neutrófilos <b>tanto maduros quanto imaturos no sangue</b>.
+</variantes>
+
+<variantes>
+Q: A maioria das infecções bacterianas induz um aumento na contagem de neutrófilos do sangue, denominado neutrofilia. As infecções virais, como a mononucleose infecciosa, a caxumba e o sarampo, causam um aumento absoluto no número de linfócitos (linfocitose).
+G: V
+
+Q: A maioria das infecções bacterianas induz um aumento na contagem de linfócitos do sangue, denominado linfocitose. As infecções virais, como a mononucleose infecciosa, a caxumba e o sarampo, causam um aumento absoluto no número de neutrófilos (neutrofilia).
+G: F
+C: A maioria das infecções bacterianas induz um aumento na contagem de <b>neutrófilos do sangue, denominado neutrofilia</b>. As infecções virais, como a mononucleose infecciosa, a caxumba e o sarampo, causam um aumento absoluto no <b>número de linfócitos (linfocitose)</b>.
+</variantes>
+
+Q: Em algumas alergias e infestações helmínticas, observa-se um aumento no número absoluto de eosinófilos, produzindo eosinofilia.
+G: V
+
+Q: Certas infecções (febre tifoide e infecções causadas por alguns vírus, riquétsias e certos protozoários) estão associadas a um número diminuído de leucócitos circulantes (leucopenia), em parte devido ao sequestro dos leucócitos ativados em espaços vasculares e nos tecidos.
+G: V
+
+<variantes>
+Q: Nas infecções bacterianas graves (sepse), as grandes quantidades de bactérias e seus produtos no sangue estimulam a produção de enormes quantidades de várias citocinas, notavelmente TNF e IL-1.
+G: V
+
+Q: Nas infecções bacterianas graves (sepse), as grandes quantidades de bactérias e seus produtos no sangue acabam inibindo a produção de enormes quantidades de várias citocinas, notavelmente TNF e IL-1.
+G: F
+C: <b>Estimulam a produção</b> de enormes quantidades de várias citocinas, notavelmente TNF e IL-1.
+</variantes>
+
+Q: Os níveis sanguíneos elevados de citocinas provocam várias manifestações clínicas, como coagulação intravascular disseminada, choque distributivo com hipotensão arterial e distúrbios metabólicos, como resistência à insulina e hiperglicemia. Essa tríade clínica é conhecida como choque anafilático.
+G: F
+C: É conhecida como choque séptico. O choque anafilático é uma reação alérgica sistêmica grave e potencialmente fatal, mediada principalmente pela liberação de histamina e outros mediadores por mastócitos e basófilos.
+
+Q: A forma grave e frequentemente fatal de um distúrbio designado como síndrome da resposta inflamatória sistêmica é o choque hipovolêmico.
+G: F
+C: É o choque séptico.
