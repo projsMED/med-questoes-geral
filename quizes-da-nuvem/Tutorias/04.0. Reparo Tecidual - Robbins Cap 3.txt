@@ -1,0 +1,424 @@
+INFO: Questões feitas com base na parte sobre <b>Reparo Tecidual</b> do capítulo 3 de Patologia de Robbins. Contém apenas questões objetivas e dissertativas do tipo completar lacuna.
+
+TAGS: Visão geral do reparo tecidual; Regeneração das células e dos tecidos; Reparo pela deposição de tecido conjuntivo; Fatores que influenciam o reparo dos tecidos; Exemplos de reparo tecidual e fibrose; Anormalidades no reparo dos tecidos;
+
+
+<tag=Visão geral do reparo tecidual>
+QCH: Sobre o reparo tecidual, assinale TODAS as assertivas CORRETAS:
+A1: O reparo dos tecidos danificados ocorre por meio de dois processos: a cicatrização, que restaura as células normais; e a regeneração, que consiste na deposição de tecido conjuntivo.
+G: F
+C: O reparo dos tecidos danificados ocorre por meio de dois processos: a <b>regeneração</b>, que restaura as células normais; e a <b>cicatrização</b>, que consiste na deposição de tecido conjuntivo.
+A2: O reparo, também denominado cicatrização, refere-se à restauração da arquitetura e da função dos tecidos após uma lesão.
+G: V
+A3: A resposta inflamatória aos microrganismos e tecidos lesionados não apenas serve para eliminar esses riscos, mas também para dar início ao processo de reparo.
+G: V
+A4: Alguns tecidos são capazes de substituir os componentes danificados e retornar essencialmente a seu estado normal; esse processo é denominado cicatrização.
+G: F
+C: É denominado <b>regeneração</b>.
+
+Q: Complete as lacunas:
+"Se os tecidos lesionados forem incapazes de sofrer regeneração, ou se as estruturas de sustentação do tecido estiverem excessivamente danificadas para haver regeneração das células teciduais, o reparo ocorre por meio da deposição de tecido __________, um processo que pode resultar na formação de __________."
+GABARITO: Tecido conjuntivo (fibroso); cicatriz.
+
+Q: Complete a lacuna:
+"Se houver formação de fibrose em um espaço tecidual ocupado por um exsudato inflamatório, ela é denominada ________."
+GABARITO: Organização.
+
+Q: Em qual das seguintes situações a formação de uma cicatriz é mais provável de ocorrer em vez da regeneração completa do tecido lesionado?
+A) Quando o dano tecidual é mínimo e afeta principalmente as camadas mais superficiais do epitélio, permitindo que as células adjacentes se proliferem e restaurem a estrutura original sem a necessidade de substituição por tecido conjuntivo fibroso.
+B) Quando os tecidos lesionados, apesar de sofrerem algum grau de dano, possuem uma alta capacidade intrínseca de proliferação celular e organização, sendo capazes de se regenerar completamente e restaurar sua função e arquitetura pré-existentes, como acontece em certas lesões hepáticas ou na epiderme após pequenos arranhões.
+C) Quando o dano atinge somente o epitélio superficial.
+D) Quando a lesão é extensa, atinge camadas mais profundas dos tecidos ou as estruturas de sustentação (estroma) estão muito danificadas, impossibilitando a regeneração completa e resultando na substituição do tecido perdido por tecido conjuntivo fibroso.
+G: D
+C: A alternativa {D} está correta porque a formação de cicatriz ocorre predominantemente quando a extensão da lesão impede a regeneração completa do tecido. Nesses casos, o corpo recorre à deposição de tecido conjuntivo fibroso para preencher o espaço e restaurar a integridade estrutural, mesmo que a função original não seja totalmente recuperada. Isso acontece porque a capacidade de regeneração dos tecidos é limitada, especialmente em danos que comprometem a arquitetura de sustentação ou atingem células com baixa capacidade proliferativa.
+
+Q: Qual é a principal diferença entre os processos de regeneração e cicatrização no reparo tecidual?
+A) A regeneração forma uma cicatriz visível, enquanto a cicatrização restaura completamente o tecido original.
+B) A regeneração depende da inflamação crônica, enquanto a cicatrização ocorre apenas em tecidos saudáveis.
+C) A regeneração restaura as células normais do tecido, enquanto a cicatrização envolve a deposição de tecido conjuntivo.
+D) A cicatrização é limitada a órgãos como fígado e pulmão, enquanto a regeneração ocorre em todos os tecidos do corpo, com exceção do tecido neural.
+G: C
+C: A regeneração recupera o tecido original, enquanto a cicatrização se dá por meio da deposição de tecido conjuntivo. As demais alternativas deturpam o conceito de cada processo.
+
+Q: Complete as lacunas:
+"Após a ocorrência de lesão leve, que causa dano ao epitélio, mas não ao tecido subjacente, ocorre resolução por __________; entretanto, após uma lesão mais grave com dano ao tecido conjuntivo, o reparo é feito ____________________"
+GABARITO: Regeneração; pela formação de cicatriz.
+
+</tag=Visão geral do reparo tecidual>
+
+
+
+<tag=Regeneração das células e dos tecidos>
+Q: <b>Complete as lacunas:</b>
+A regeneração de células e tecidos lesionados envolve a proliferação celular, que é impulsionada por ____________________ e que depende fundamentalmente da integridade da MEC, e pelo desenvolvimento de células maduras a partir das ____________________.
+GABARITO: Fatores de crescimento; células-tronco teciduais.
+
+Q: Sobre a regeneração das células e dos tecidos, marque todas as assertivas <b>VERDADEIRAS</b>:
+A1: Tecidos estáveis (em contínua divisão): As células desses tecidos são continuamente perdidas e substituídas pela maturação de células originadas pelas células-tronco teciduais e pela proliferação de células maduras.
+G: F
+C: Isso se refere a tecidos lábeis.
+A2: Tecidos lábeis: As células desses tecidos são quiescentes (encontram-se no estágio G0 do ciclo celular) e apresentam atividade proliferativa apenas mínima no seu estado normal. Entretanto, essas células são capazes de sofrer divisão em resposta à lesão ou à perda de massa tecidual.
+G: F
+C: Isso se refere a tecidos estáveis.
+A3: Tecidos permanentes. As células desses tecidos são consideradas de diferenciação terminal e não proliferativas na vida pós-natal. A maioria dos neurônios e das células do músculo cardíaco pertence a essa categoria.
+G: V
+A4: A proliferação celular é estimulada por sinais proporcionados por fatores de crescimento e pela MEC.
+G: V
+A5: As fontes mais importantes de fatores de crescimento são neutrófilos, que são ativados pela lesão tecidual; entretanto, as células epiteliais e estromais também produzem alguns desses fatores.
+G: F
+C: As fontes mais importantes de fatores de crescimento são <b>macrófagos</b>, que são ativados pela lesão tecidual; entretanto, as células epiteliais e estromais também produzem alguns desses fatores.
+A6: Sobre a regeneração do fígado, mesmo que após o dano restem algumas células hepáticas capazes de se multiplicar e tentar regenerar o tecido, sem a estrutura de reticulina intacta, elas não conseguem se reorganizar corretamente para reconstruir o órgão.
+G: V
+C: Reticulina é uma rede de fibras muito finas formada principalmente por colágeno tipo III. Essas fibras dão sustentação e estrutura ao tecido de vários órgãos, inclusive do fígado. A reticulina é fundamental para a regeneração organizada do fígado. Se ela é destruída, mesmo com hepatócitos capazes de se multiplicar, o resultado final é a formação de cicatriz e não a restauração perfeita do tecido.
+
+Q: A regeneração do fígado ocorre por meio de dois mecanismos principais. Quais são eles?
+A) Proliferação dos hepatócitos remanescentes e necrose dos hepatócitos lesados.
+B) Apoptose programada de hepatócitos disfuncionais e o subsequente repovoamento por células inflamatórias.
+C) Proliferação dos hepatócitos remanescentes e repovoamento a partir de células progenitoras.
+D) Fibrose hepática e formação de nódulos regenerativos.
+E) Diferenciação de fibroblastos em hepatócitos maduros e a subsequente angiogênese para vascularização.
+G: C
+C: A regeneração do fígado é um processo notável que permite ao órgão se recuperar de lesões e manter sua função vital. Os dois mecanismos principais que impulsionam essa capacidade regenerativa são:<br>
+<b>Proliferação dos hepatócitos remanescentes:</b> Quando o fígado sofre uma lesão, os hepatócitos (as células funcionais do fígado) que sobreviveram ao dano começam a se multiplicar. Eles se dividem para repor as células perdidas, restaurando a massa e a função do órgão. Este é o mecanismo mais comum e eficiente em casos de lesões menos graves.
+<b>Repovoamento a partir de células progenitoras:</b> Em situações de dano hepático mais extenso ou crônico, onde a proliferação dos hepatócitos remanescentes pode não ser suficiente, células progenitoras hepáticas, também conhecidas como células-tronco hepáticas, são ativadas. Essas células têm a capacidade de se diferenciar em novos hepatócitos e em células do ducto biliar, contribuindo significativamente para a restauração do tecido hepático.
+
+Q: Um cardiologista atende um paciente de 58 anos com infarto agudo do miocárdio. Após a angioplastia primária e estabilização do quadro, o médico explica ao paciente que, diferentemente de outros órgãos, o coração tem capacidade regenerativa muito limitada.
+<b>Qual é a explicação fisiopatológica CORRETA para a limitada capacidade regenerativa do músculo cardíaco após infarto do miocárdio?</b>
+A) As células do músculo cardíaco são tecido estável e, embora possam proliferar, a resposta regenerativa é insuficiente devido à extensa área de necrose
+B) Os miócitos cardíacos são células terminalmente diferenciadas (tecido permanente) e não proliferativas na vida pós-natal, resultando em cicatrização como principal mecanismo de reparo
+C) O músculo cardíaco é tecido lábil, mas a regeneração é impedida pela ausência de células-tronco cardíacas no miocárdio adulto, portando não há como estas se diferenciarem em miócitos
+D) A regeneração cardíaca é considerada completa, entretanto, o processo intrínseco de reparo é muito lento, levando muitos anos para que o coração consiga restaurar integralmente a função contrátil normal
+G: B
+C: As células do músculo cardíaco podem ser classificadas como tecido permanente - células terminalmente diferenciadas e não proliferativas na vida pós-natal. Por isso, lesões cardíacas resultam em cicatrização irreversível.
+Por que as outras estão incorretas:
+{A}: Músculo cardíaco é permanente, não estável
+{C}: Músculo cardíaco não é lábil
+{D}: Regeneração cardíaca é mínima/inexistente, não completa e lenta
+
+Q: <b>Complete as lacunas:</b>
+A restauração da estrutura normal do tecido só pode ocorrer se o tecido remanescente estiver ___________________________, como no caso de ressecção cirúrgica parcial. Por outro lado, se o tecido for danificado por infecção ou inflamação, a regeneração não é completa e é acompanhada de _______________.
+GABARITO: Estruturalmente intacto; cicatrização.
+
+Q: No processo de reparo tecidual, três tipos celulares principais são responsáveis pela proliferação. Assinale a alternativa que identifica corretamente esses tipos celulares e suas respectivas funções:
+A) Células remanescentes do tecido lesionado (restauração da estrutura normal), células endoteliais vasculares (formação de novos vasos) e fibroblastos (produção de tecido cicatricial)
+B) Células-tronco mesenquimais, que possuem capacidade de diferenciação multipotente; macrófagos residentes, responsáveis pela fagocitose de debris celulares e patógenos; e células dendríticas, que atuam na apresentação de antígenos ao sistema imunológico.
+C) Células satélites musculares (regeneração do músculo esquelético), células de Kupffer (detoxificação hepática) e pneumócitos tipo II (produção de surfactante)
+D) Células progenitoras neurais (neurogênese adulta), células gliais (suporte neuronal) e células endócrinas pancreáticas (regulação glicêmica)
+G: A
+C: No processo de reparo tecidual, a proliferação celular é fundamental para a restauração da integridade e função do tecido lesionado. As principais células que se proliferam com suas respectivas funções são:
+<b>Células remanescentes do tecido lesionado:</b> São as células parenquimatosas do próprio órgão ou tecido que se multiplicam para repor as células perdidas, visando restaurar a estrutura e função normais (regeneração).
+<b>Células endoteliais vasculares:</b> Estas células se proliferam para formar novos vasos sanguíneos (angiogênese), que são essenciais para fornecer oxigênio e nutrientes ao local do reparo, além de remover resíduos.
+<b>Fibroblastos:</b> Estas células são cruciais para a reparação por cicatrização. Elas proliferam no local da lesão e produzem componentes da matriz extracelular, como colágeno, que formam o tecido cicatricial para preencher defeitos extensos que não podem ser completamente restaurados pela regeneração.
+
+Q: Um paciente de 45 anos foi submetido a hepatectomia parcial para ressecção de adenoma hepático, sendo removidos aproximadamente 70% do fígado. No pós-operatório, o médico explica à família que o fígado tem capacidade de regeneração e que a massa hepática será restaurada.
+<b>Com base nos mecanismos de regeneração hepática, qual sequência de eventos ocorre após a hepatectomia parcial?</b>
+A) Ativação imediata dos hepatócitos → proliferação celular → produção de fatores de crescimento → restauração da massa hepática
+B) Produção de IL-6 pelas células de Kupffer (fase de preparo) → ação do HGF e TGF-α (fase de crescimento) → proliferação dos hepatócitos → retorno ao estado quiescente
+C) Diferenciação de células progenitoras → formação de células ovais → proliferação descontrolada → regeneração completa
+D) Inflamação aguda → ativação de fibroblastos → deposição de colágeno → cicatrização com restauração funcional
+G: B
+C: As fases da regeneração hepática após hepatectomia parcial:
+<b>Fase de preparo (priming):</b> IL-6 produzida pelas células de Kupffer prepara os hepatócitos
+<b>Fase de crescimento:</b> HGF e TGF-α estimulam proliferação
+<b>Proliferação</b>: quase todos os hepatócitos se replicam
+<b>Terminação:</b> retorno ao estado quiescente
+Por que as outras estão incorretas:
+{A}: Inverte a sequência correta - fatores de crescimento são produzidos ANTES da proliferação
+{C}: Descreve regeneração por células progenitoras, que ocorre q
+
+</tag=Regeneração das células e dos tecidos>
+
+
+<tag=Reparo pela deposição de tecido conjuntivo>
+
+Q: Complete a lacuna:
+"Quando o reparo não pode ser realizado apenas por regeneração, ele ocorre por meio da substituição das células lesionadas por _______________, levando à formação de uma <b>cicatriz</b>, ou por uma combinação de regeneração de algumas células residuais e formação de cicatriz."
+GABARITO: Tecido conjuntivo.
+
+Q: Complete as lacunas:
+"Os _______________ desempenham um papel central no reparo, visto que removem os agentes agressores e o tecido morto, fornecem fatores de crescimento para proliferação de várias células e secretam citocinas que estimulam a proliferação dos fibroblastos e a síntese e deposição de _______________; "
+GABARITO: Macrófagos; tecido conjuntivo.
+
+Q: Qual dos seguintes tipos de macrófagos está predominantemente envolvido nos processos de reparo tecidual?
+A) Macrófagos clássicos (M1)
+B) Macrófagos residentes (M0)
+C) Macrófagos alternativamente ativados (M2)
+D) Macrófagos apoptóticos
+E) Macrófagos necróticos
+G: C
+C: Os macrófagos do tipo M2 estão associados ao reparo tecidual e resolução da inflamação.
+
+Q: Complete a lacuna:
+"___________ refere-se ao processo de desenvolvimento de novos vasos sanguíneos a partir de vasos existentes"
+GABARITO: Angiogênese.
+
+Q: Um paciente de 64 anos, tabagista crônico, é diagnosticado com adenocarcinoma pulmonar em estágio avançado. Durante o planejamento terapêutico, a equipe médica decide incluir um agente antiangiogênico no protocolo de quimioterapia.  
+Considerando o papel da angiogênese no câncer, qual das alternativas abaixo justifica o uso desse tipo de medicação nesse contexto?
+A) O bloqueio da angiogênese promove o aumento da resposta inflamatória contra o tumor.  
+B) A inibição da formação de novos vasos sanguíneos reduz o suprimento de nutrientes e oxigênio ao tumor, limitando seu crescimento.  
+C) Os antiangiogênicos aumentam a apoptose de linfócitos T, facilitando a regressão do tumor.  
+D) A angiogênese é irrelevante no câncer, sendo os antiangiogênicos usados apenas para evitar metástases hepáticas.  
+E) A angiogênese ocorre principalmente em tumores benignos altamente vascularizados, sendo seu bloqueio útil para evitar complicações secundárias.
+G: B  
+C: <b>{B}) Correta.</b> A inibição da formação de novos vasos sanguíneos reduz o suprimento de nutrientes e oxigênio ao tumor, limitando seu crescimento.  
+{A}) Incorreta. O principal mecanismo de ação dos antiangiogênicos não é aumentar a resposta inflamatória, mas sim bloquear o suprimento sanguíneo ao tumor.  
+{C}) Incorreta. O objetivo dos antiangiogênicos não é aumentar a apoptose de linfócitos T, mas sim reduzir o crescimento tumoral ao bloquear a angiogênese.  
+{D}) Incorreta. A angiogênese é crucial no câncer e não se limita à prevenção de metástases hepáticas.  
+{E}) Incorreta. A angiogênese é mais relevante em tumores malignos, onde contribui para o crescimento e metástase, e não em tumores benignos.
+
+Q: Qual das alternativas a seguir descreve corretamente as etapas principais da deposição de tecido conjuntivo durante o reparo tecidual?
+A) Remodelamento da matriz extracelular seguido pela ativação de mastócitos.
+B) Ativação de células endoteliais seguida da deposição de fibrina no local da lesão.
+C) Liberação de fatores de crescimento por macrófagos seguida pela migração de células endoteliais.
+D) Migração e proliferação de fibroblastos seguidas da deposição de proteínas da matriz extracelular.
+E) Recrutamento de neutrófilos seguido pela secreção de enzimas lisossômicas.
+G: D
+C: Durante o reparo tecidual, a deposição de tecido conjuntivo é uma etapa essencial para a restauração da integridade estrutural. Esse processo ocorre em duas fases principais: a migração e proliferação dos fibroblastos para o local da lesão e, em seguida, a produção e deposição de proteínas da matriz extracelular (como colágeno), fundamentais para a formação do tecido cicatricial. As demais alternativas descrevem processos relacionados a outras fases da inflamação ou do reparo, mas não correspondem especificamente à deposição de tecido conjuntivo.
+
+Q: Complete a lacuna:
+"O _______ é a citocina mais importante para a síntese e a deposição de proteínas do tecido conjuntivo."
+GABARITO: TGF-β
+
+Q: Qual das alternativas descreve corretamente o processo de contração da cicatriz em feridas em reparo?
+A) A contração da cicatriz inicia-se durante a formação do tecido de granulação e é promovida por miofibroblastos com características de células musculares lisas.
+B) A contração é determinada pela ativação de neutrófilos e sua liberação de mediadores inflamatórios na matriz extracelular.
+C) A contração ocorre por aumento da angiogênese e proliferação de fibroblastos indiferenciados.
+D) Os miofibroblastos atuam principalmente secretando colágeno tipo IV, essencial para manter a estrutura da membrana basal, e também estimulam fatores angiogênicos que mantêm o ambiente vascularizado.
+E) A regressão dos vasos sanguíneos ao final do processo de cicatrização interrompe a atividade dos miofibroblastos, impedindo que a contração da cicatriz ocorra de forma eficaz.
+G: A
+C: A contração da cicatriz é promovida principalmente pelos miofibroblastos, células que surgem a partir de fibroblastos ativados e que adquirem características similares às de células musculares lisas, como a presença de filamentos de actina. Esses miofibroblastos são responsáveis por gerar força contrátil sobre a matriz extracelular, contribuindo para o encolhimento da ferida ao longo do tempo. As demais alternativas apresentam erros técnicos: os neutrófilos não participam da contração ({B}), a angiogênese e a proliferação de fibroblastos não explicam diretamente a contração ({C}), os miofibroblastos não secretam predominantemente colágeno tipo IV nem são centrais na angiogênese ({D}), e a contração ocorre mesmo com a regressão vascular progressiva ({E}).
+
+Q: Assinale a alternativa que diferencia corretamente o tecido de granulação da cicatriz madura:
+A) O tecido de granulação possui poucos vasos e grande deposição de colágeno maduro.
+B) A cicatriz madura é caracterizada por grande número de macrófagos e tecido conjuntivo frouxo.
+C) A cicatriz madura apresenta colágeno denso e poucos vasos dispersos.
+D) O tecido de granulação é avascular e composto principalmente por adipócitos.
+G: C
+C: O tecido de granulação é vascularizado, composto por fibroblastos, capilares novos e MEC frouxa. Já a cicatriz madura apresenta colágeno denso e uma redução no número de vasos sanguíneos.
+
+Q: Assinale a alternativa que exemplifica corretamente o papel dos macrófagos no reparo tecidual:
+A) Atuam exclusivamente na fase inicial inflamatória do reparo, limitando-se à fagocitose de patógenos, sem envolvimento na liberação de citocinas ou no estímulo à regeneração ou cicatrização dos tecidos danificados.
+B) Secretam fatores antiangiogênicos para evitar a formação de vasos anormais.
+C) Removem resíduos celulares, produzem fatores de crescimento e induzem fibroblastos a sintetizar colágeno.
+D) Induzem a morte celular programada dos fibroblastos por meio da liberação de radicais livres, interrompendo a produção de matriz extracelular e impedindo a estabilização da cicatriz.
+G: C
+C: Os macrófagos, principalmente os ativados alternativamente (M2), exercem papel essencial no reparo tecidual, promovendo a limpeza da área lesada, a liberação de fatores de crescimento, o estímulo à angiogênese e a ativação de fibroblastos para síntese de colágeno. Já as alternativas {A} e {D} estão incorretas porque limitam ou distorcem o papel multifuncional dos macrófagos no processo de cicatrização e remodelamento tecidual.
+
+</tag=Reparo pela deposição de tecido conjuntivo>
+
+
+<tag=Fatores que influenciam o reparo dos tecidos>
+
+Q: Complete as lacunas:
+"As variáveis que modificam o reparo podem ser ___________ (p. ex., infecção) ou ___________ ao tecido lesionado e sistêmicas ou locais"
+GABARITO: Extrínsecas, intrínsecas.
+
+QCH: Com base nos fatores que influenciam o reparo tecidual, assinale todas as assertivas VERDADEIRAS:
+A1: A presença de corpos estranhos no local da lesão pode prejudicar o reparo ao estimular a resolução do exsudato por enzimas leucocitárias.
+G: F
+C: Corpos estranhos não estimulam a resolução, mas sim perpetuam a inflamação crônica, dificultando a cicatrização.
+A2: A deficiência de vitamina C prejudica a cicatrização por comprometer a síntese de colágeno.
+G: V
+C: A vitamina C é essencial para a hidroxilação do colágeno. Sua deficiência compromete a formação da matriz extracelular adequada.
+A3: A perfusão inadequada, como ocorre em doenças vasculares, pode atrasar o processo de reparo tecidual.
+G: V
+C: Baixo suprimento sanguíneo dificulta a oxigenação e a chegada de nutrientes e células imunes, prejudicando o reparo.
+A4: A administração de glicocorticoides sempre acelera a cicatrização, pois reduz a inflamação local.
+G: F
+C: Glicocorticoides têm efeito anti-inflamatório, mas inibem a produção de colágeno e TGF-β, podendo causar fraqueza da cicatriz. Em alguns casos, esse efeito pode ser desejável, mas não acelera o reparo.
+A5: O tipo celular do tecido lesionado influencia diretamente o resultado do reparo, sendo que tecidos com células permanentes não conseguem regenerar.
+G: V
+C: Tecidos com células permanentes (como neurônios e cardiomiócitos) não regeneram, levando à formação de cicatriz e perda funcional.
+A6: A infecção prolonga a inflamação no local da ferida e pode agravar os danos teciduais, atrasando o reparo.
+G: V
+C: A infecção é uma das principais causas clínicas de atraso no reparo, pois prolonga a fase inflamatória e aumenta o dano local.
+A7: A organização é o processo de digestão do exsudato inflamatório que resulta na restauração completa do tecido sem formação de cicatriz.
+G: F
+C: A descrição corresponde à resolução, e não à organização. A organização ocorre quando o tecido de granulação invade o exsudato, levando à formação de cicatriz fibrosa.
+A8: A perfusão deficiente, em consequência de doença vascular periférica, arteriosclerose e diabetes melito, ou devido à obstrução da drenagem venosa (p. ex., veias varicosas), afeta o reparo.
+G: V
+A9: Os fatores mecânicos, como insolação ou exposição química, podem provocar separação ou deiscência das feridas.
+G: F
+C: Os fatores mecânicos, como <b>aumento da pressão local ou torção</b>, podem provocar separação ou deiscência das feridas.
+
+Q: Em relação à deiscência de ferida, assinale a alternativa correta:
+A) Ocorre principalmente em cicatrização por segunda intenção, devido à contração excessiva dos miofibroblastos  
+B) Está associada à falha de sutura e aumento de pressão local, levando à abertura parcial ou completa da ferida  
+C) Caracteriza‑se pela transformação do tecido de granulação em tecido conjuntivo denso sem comprometimento da integridade  
+D) Resulta de atividade aumentada de colagenases, causando retração das bordas sem abertura da ferida  
+G: B  
+C: A deiscência é a separação das bordas de uma ferida suturada, geralmente por falha mecânica das suturas, aumento da tensão local ou infecção. Leva à abertura parcial ou total do tecido previamente aproximado.
+
+
+</tag=Fatores que influenciam o reparo dos tecidos>
+
+<tag=Exemplos de reparo tecidual e fibrose>
+
+Q: Complete as lacunas:
+"Com base na natureza e no tamanho da ferida, diz-se que a cicatrização de feridas da pele ocorre por __________ ou por ____________________."
+GABARITO: Primeira; segunda intenção.
+
+QCH: Sobre o reparo tecidual, assinale TODAS as assertivas VERDADEIRAS:
+A1: A cicatrização de feridas cutâneas é classificada como por primeira ou segunda intenção, dependendo da natureza e do tamanho da lesão.
+G: V
+A2: Na cicatrização por segunda intenção, como em incisões cirúrgicas limpas e suturadas, o reparo envolve inflamação, proliferação de células epiteliais e maturação de tecido conjuntivo, com mínima perda tecidual.
+G: F
+C: Isso se refere a por <b>primeira intenção</b>.
+A3: A cicatrização por primeira intenção ocorre em feridas com grandes déficits teciduais, envolvendo mais inflamação, maior formação de tecido de granulação e contração da ferida mediada por miofibroblastos.
+G: F
+C: Isso se refere a por <b>segunda intenção</b>.
+A4: A fibrose em órgãos parenquimatosos é a deposição excessiva de colágeno e MEC, levando a disfunção orgânica em doenças como cirrose hepática, esclerodermia e fibrose pulmonar idiopática.
+G: V
+C: A fibrose em órgãos parenquimatosos é um processo patológico caracterizado pela deposição excessiva de colágeno e outros componentes da matriz extracelular (MEC) no tecido funcional de um órgão, substituindo células saudáveis por tecido cicatricial. Esse processo ocorre como resposta a lesões crônicas, inflamações ou agressões persistentes, como em doenças como a cirrose hepática (que afeta o fígado), a esclerodermia (que compromete a pele e outros tecidos) e a fibrose pulmonar idiopática (que prejudica os pulmões). A acumulação de tecido fibroso altera a arquitetura normal do órgão, comprometendo sua função, como a capacidade do fígado de metabolizar substâncias, a elasticidade da pele ou a troca gasosa nos pulmões, levando a disfunção orgânica progressiva.
+A5: O tecido cicatricial regenera estruturas especializadas da pele, como folículos pilosos e glândulas.
+G: F
+C: O tecido cicatricial <b>não regenera</b> estruturas especializadas da pele, como folículos pilosos e glândulas, que são <b>perdidos permanentemente</b>.
+A6: A recuperação da resistência da ferida depende da substituição do colágeno tipo I inicial pelo colágeno tipo III, que é mais forte.
+G: F
+C: A recuperação da resistência da ferida depende da substituição do <b>colágeno tipo III</b> inicial pelo <b>colágeno tipo I</b>, que é mais forte.
+A7: A contração da ferida, mediada por miofibroblastos, é um processo fundamental da segunda intenção que reduz o tamanho do defeito.
+G: V
+A8: A cicatrização por segunda intenção geralmente resulta em uma cicatriz maior do que a por primeira intenção.
+G: V
+C: Como a cicatrização por segunda intenção depende de um preenchimento mais extenso do defeito tecidual, ela tende a formar cicatrizes mais amplas e, frequentemente, mais perceptíveis, especialmente em feridas maiores ou com perda significativa de tecido.
+
+Q: Sobre a cicatrização por primeira intenção, assinale a alternativa INCORRETA.
+A) É o tipo de cicatrização esperado para uma incisão cirúrgica limpa, não infectada e aproximada por suturas.
+B) O processo envolve a formação de um coágulo, uma resposta inflamatória aguda e a proliferação de células epiteliais que fecham a ferida em 24 a 48 horas.
+C) Resulta em uma cicatriz final menor e com menos tecido de granulação quando comparada à cicatrização por segunda intenção.
+D) Uma característica fundamental deste processo é a intensa contração da ferida, realizada por uma rede de miofibroblastos para aproximar as bordas.
+G: D
+C: A contração da ferida por meio da ação dos miofibroblastos é a característica mais marcante da cicatrização por segunda intenção, sendo essencial para diminuir grandes defeitos teciduais. Na cicatrização por primeira intenção, as bordas da ferida já estão aproximadas (por exemplo, por suturas), não havendo necessidade de um processo contrátil significativo. As alternativas {A}, {B} e {C} descrevem corretamente as características e as fases da cicatrização por primeira intenção.
+
+Q: Sobre a cicatrização por segunda intenção, assinale a alternativa CORRETA.
+A) Um aspecto central deste tipo de cicatrização é a contração da ferida, um processo mediado por miofibroblastos que ajuda a diminuir a área do defeito tecidual.
+B) Ocorre em lesões com perda mínima de tecido, como cortes cirúrgicos limpos, resultando em uma cicatriz pequena e linear.
+C) A resposta inflamatória é tipicamente branda e de curta duração, pois há poucos restos necróticos a serem removidos da área, necessitando de menor ação dos neutrófilos e macrófagos.
+D) Garante a regeneração completa dos anexos cutâneos, como folículos pilosos e glândulas, na área da cicatriz final, graças a proliferação de células-tronco.
+G: A
+C: A contração da ferida é um dos eventos mais importantes e distintivos da cicatrização por segunda intenção, responsável por reduzir em até 90-95% o tamanho de grandes defeitos cutâneos. A alternativa {B} descreve a cicatrização por primeira intenção. A alternativa {C} está incorreta porque, devido à maior perda tecidual e maior quantidade de exsudato, a resposta inflamatória na segunda intenção é mais intensa e prolongada. A alternativa {D} também está incorreta, pois o tecido cicatricial formado não regenera os anexos da pele, que são perdidos permanentemente na área lesionada.
+
+QCH: Analise as 6 situações clínicas descritas abaixo e assinale todas as que são exemplos de "Cicatrização por Segunda Intenção".
+A1: Uma úlcera de pressão (escara) em um paciente acamado, que se apresenta como uma ferida aberta e profunda com perda extensa de tecido.
+G: V
+C: Justificativa: As úlceras de pressão representam uma perda substancial de tecido, criando um defeito grande e aberto. O reparo exige a formação de uma grande quantidade de tecido de granulação para preencher o espaço, uma resposta inflamatória mais intensa e, subsequentemente, a contração da ferida, características clássicas da segunda intenção.
+A2: Uma queimadura de terceiro grau que resultou em uma grande área de necrose tecidual e perda de pele, necessitando de um longo processo de reparo.
+G: V
+C: Justificativa: Queimaduras graves causam destruição extensa de tecido e morte celular, resultando em um grande defeito que não pode ter suas bordas aproximadas. O processo de reparo é lento, com inflamação proeminente, formação de uma grande cicatriz e perda permanente dos anexos cutâneos.
+A3: Incisão realizada no abdômen durante uma apendicectomia, cujas bordas foram cuidadosamente unidas com suturas cirúrgicas.
+G: F
+C: Justificativa: Trata-se do exemplo arquetípico de primeira intenção. A lesão é limpa, linear e, o mais importante, suas bordas são aproximadas artificialmente por suturas. Isso minimiza a perda tecidual, a resposta inflamatória e o espaço a ser preenchido, resultando em uma cicatrização rápida e uma cicatriz mínima.
+A4: Um corte superficial e linear na pele causado por uma lâmina de barbear, que foi limpo e coberto com um curativo adesivo, aproximando as bordas.
+G: F
+C: Justificativa: Semelhante à incisão cirúrgica, este é um corte limpo com perda mínima de tecido. As bordas são facilmente justapostas, permitindo que a regeneração epitelial feche a ferida rapidamente com mínima formação de cicatriz.
+A5: A extração de um dente molar, que deixa um alvéolo (espaço vazio) profundo no osso e na gengiva, o qual precisa ser preenchido por novo tecido.
+G: V
+C: Justificativa: A remoção de um dente cria um defeito tridimensional (o alvéolo) que não pode ser fechado por suturas. O espaço precisa ser preenchido de baixo para cima com coágulo sanguíneo, seguido por tecido de granulação e, finalmente, osso e gengiva, um processo clássico de preenchimento de defeito característico da segunda intenção.
+A6: Uma laceração na testa após uma queda, que foi prontamente limpa em um pronto-socorro e fechada com pontos.
+G: F
+C: Justificativa: Embora a causa seja um trauma (diferente de uma incisão cirúrgica controlada), o tratamento imediato com limpeza e sutura transforma a ferida. Ao aproximar as bordas, o processo de cicatrização passa a seguir o caminho da primeira intenção, pois o principal obstáculo (o espaço entre as bordas) foi removido.
+
+Q: Sobre o processo de cicatrização por primeira intenção, assinale a alternativa que descreve corretamente a sequência de eventos:
+A) Nas primeiras 24h, neutrófilos migram para a ferida; em 24-48h, células epiteliais proliferam; no dia 3, macrófagos substituem os neutrófilos e o tecido de granulação invade a área; no dia 5, a neovascularização atinge o pico.
+B) No dia 1, macrófagos iniciam a fagocitose; no dia 3, o tecido de granulação é totalmente substituído por colágeno tipo I; em 24-48h, a contração da ferida começa; no dia 5, os neutrófilos atingem seu pico.
+C) Nas primeiras 24h, células epiteliais fecham completamente a ferida; no dia 3, os neutrófilos chegam para iniciar a resposta inflamatória; no dia 5, o coágulo de fibrina se forma.
+D) O processo inicia com a formação de grande quantidade de tecido de granulação, seguido pela migração de neutrófilos e macrófagos simultaneamente, e a epitelização só ocorre após a segunda semana.
+G: A
+C: Esta opção descreve a cronologia precisa dos eventos na cicatrização por primeira intenção, conforme o texto. A resposta inflamatória inicial é dominada por neutrófilos, seguida pela rápida proliferação epitelial para fechar a superfície. Subsequentemente, macrófagos assumem o papel principal na limpeza e orquestração do reparo, enquanto o tecido de granulação, com seu pico de novos vasos sanguíneos (neovascularização) por volta do quinto dia, preenche o defeito. As outras alternativas apresentam erros na sequência ({B}, {C}), na intensidade dos eventos ({D}) ou misturam características da segunda intenção ({D}).
+
+Q: Sobre o processo de cicatrização por segunda intenção, assinale a alternativa que descreve corretamente suas características e etapas:
+A) A resposta inflamatória é mínima devido à pouca perda tecidual, e o reparo se completa em poucos dias com uma cicatriz quase imperceptível.
+B) O processo envolve uma inflamação mais intensa, formação de uma quantidade significativamente maior de tecido de granulação para preencher o defeito, e a contração da ferida por miofibroblastos como um evento fundamental.
+C) A principal característica é a rápida regeneração epitelial, que fecha a ferida em menos de 48 horas, sem a necessidade de contração ou grande formação de tecido de granulação.
+D) Ocorre a regeneração completa dos anexos cutâneos (folículos pilosos e glândulas), e a matriz provisória de colágeno tipo I é lentamente substituída por colágeno tipo III ao longo de meses.
+G: B
+C: A cicatrização por segunda intenção é definida justamente por ocorrer em feridas com grande perda tecidual. Isso desencadeia uma resposta inflamatória mais robusta e prolongada para remover mais detritos, exige a formação de um volume muito maior de tecido de granulação para preencher o espaço, e depende crucialmente da contração da ferida para reduzir o tamanho do defeito. A alternativa {A} descreve a primeira intenção. A alternativa {C} também descreve a primeira intenção. A alternativa {D} está duplamente incorreta, pois os anexos cutâneos não são regenerados e a substituição de colágeno ocorre do tipo III (provisório) para o tipo I (mais resistente), e não o contrário.
+
+Q: A cicatrização de feridas pode ocorrer por primeira ou segunda intenção, processos que, embora compartilhem mecanismos básicos, possuem diferenças fundamentais em suas características e resultados. Assinale a alternativa que diferencia CORRETAMENTE esses dois processos.
+A) Na primeira intenção, a resposta inflamatória é muito mais exuberante e duradoura, pois o corpo estranho representado pelas suturas atrai um influxo massivo de neutrófilos e macrófagos. Em contraste, na segunda intenção, por ser uma ferida aberta, a drenagem de exsudato é mais eficiente, resultando em uma inflamação mais branda e controlada.
+B) A cicatrização por segunda intenção é um processo notavelmente mais rápido, pois se baseia principalmente na proliferação de células epiteliais que migram da borda para o centro sem a necessidade de formar um arcabouço de colágeno. Já a primeira intenção é mais lenta, pois depende da complexa e demorada deposição e maturação do colágeno para preencher o espaço incisional.
+C) O processo de segunda intenção resulta na formação de uma cicatriz mais fraca, rica em colágeno tipo III, enquanto a primeira intenção forma uma cicatriz resistente, com colágeno tipo I, e garante a regeneração dos folículos pilosos.
+D) A principal diferença reside no volume de tecido perdido; na segunda intenção, há grande perda tecidual, exigindo a formação de mais tecido de granulação e um processo de contração da ferida, que é mínimo ou ausente na primeira intenção.
+G: D
+C: Esta opção aponta para a diferença mais fundamental entre os dois tipos de cicatrização: a magnitude da perda tecidual inicial. Uma ferida de primeira intenção tem perda mínima de tecido e bordas aproximadas, necessitando de pouco tecido de granulação e nenhuma contração significativa. Em contrapartida, uma ferida de segunda intenção possui um grande defeito tecidual que precisa ser preenchido com uma quantidade substancial de tecido de granulação, e o fechamento da ferida depende criticamente do processo de contração mediado por miofibroblastos. As outras alternativas estão incorretas: ({A}) a inflamação é mais intensa e prolongada na segunda intenção devido ao maior volume de tecido necrótico; ({B}) a segunda intenção é um processo significativamente mais lento e complexo justamente por precisar de uma vasta deposição de colágeno; e ({C}) os anexos cutâneos como folículos pilosos não são regenerados em nenhum dos processos de cicatrização com formação de cicatriz.
+
+Q: Complete as lacunas:
+"A contração da ferida ajuda a fechá-la ao diminuir o espaço entre suas margens dérmicas e a reduzir a área de superfície da ferida. Por conseguinte, trata-se de uma característica importante na cicatrização por ________________. A contração da ferida envolve a formação de uma rede de __________"
+GABARITO: Segunda intenção; miofibroblastos.
+
+Q: Qual das alternativas abaixo descreve corretamente a formação de um queloide?
+A) Excesso de deposição de colágeno tipo III que ultrapassa os limites da ferida e não regredie ao longo do tempo  
+B) Acúmulo de fibrina e fibronectina em feridas crônicas, sem envolvimento de fibroblastos  
+C) Remoção inadequada de exsudato inflamatório, levando à formação de tecido de granulação proeminente  
+D) Contração excessiva da ferida mediada por miofibroblastos, resultando em bordas retraídas  
+G: A  
+C: O queloide resulta de depósito exagerado de colágeno, especialmente tipo III, que forma uma cicatriz elevada e se estende além dos limites originais da lesão, sem tendência espontânea de regressão.
+
+</tag=Exemplos de reparo tecidual e fibrose>
+
+
+
+<tag=Anormalidades no reparo dos tecidos>
+
+Q: Complete a lacuna:
+"O acúmulo de quantidades excessivas de colágeno pode dar origem a uma cicatriz elevada, conhecida como ____________________. Com frequência, essas cicatrizes crescem rápido e contêm miofibroblastos abundantes, porém tendem a regredir no decorrer de vários meses."
+GABARITO: Cicatriz hipertrófica.
+
+Q: Complete a lacuna:
+"Se o tecido cicatricial crescer além das margens da ferida original, sem regredir, é denominado __________"
+GABARITO: Queloide.
+
+Q: Complete a lacuna:
+"A granulação exuberante é outra anormalidade da cicatrização de feridas, que consiste na formação de quantidades excessivas de tecido de granulação, que faz protrusão acima do nível da pele circundante e bloqueia a ______________"
+GABARITO: Reepitelização.
+
+Q: Um paciente de 35 anos, previamente saudável, retorna ao ambulatório com queixa de uma massa endurecida e em crescimento na parede abdominal, no local de uma incisão cirúrgica feita há 6 meses para correção de hérnia. Ao exame físico, observa-se lesão firme, mal delimitada, não dolorosa e sem sinais flogísticos. A biópsia revela proliferação exuberante de fibroblastos e tecido conjuntivo. Mesmo após excisão cirúrgica, a lesão recorreu em poucas semanas. Qual das opções abaixo representa o diagnóstico mais provável?
+A) Cicatriz hipertrófica
+B) Queloide
+C) Fibromatose agressiva
+D) Granulação exuberante
+G: C
+C: O quadro descrito — lesão proliferativa fibroblástica, com crescimento exuberante no local de incisão cirúrgica, recorrente após excisão e com aspecto tumoral — é compatível com <b>fibromatose agressiva</b>, também chamada de <b>desmoide</b>. Essa condição <b>representa uma forma rara de proliferação do tecido conjuntivo, localizada na interface entre lesões benignas e malignas (baixo grau de malignidade)</b>. Ao contrário das cicatrizes hipertróficas e queloides, que se mantêm restritas à pele e têm padrão de crescimento mais previsível, as desmoides infiltram planos profundos e têm alta taxa de recorrência. A granulação exuberante, por sua vez, aparece como tecido de granulação que protrui acima da pele e é tratado com excisão simples, sem comportamento recidivante invasivo.
+
+Q: Em relação à granulação exuberante durante o processo de cicatrização de feridas, assinale a conduta mais adequada diante dessa complicação:
+A) Observar a lesão, pois ela regride espontaneamente com o tempo, sem necessidade de intervenção.
+B) Iniciar antibioticoterapia sistêmica, uma vez que a presença de granulação indica infecção ativa.
+C) Aplicar corticoides tópicos para reduzir a proliferação do tecido de granulação.
+D) Realizar excisão cirúrgica ou cauterização para permitir a reepitelização adequada da ferida.
+G: D
+C: A granulação exuberante, também chamada de proud flesh, é caracterizada pela formação excessiva de tecido de granulação que se projeta acima do nível da pele, impedindo a reepitelização da ferida. A conduta correta é a remoção do tecido excessivo por excisão cirúrgica ou cauterização, permitindo que o epitélio possa crescer sobre a ferida e completar a cicatrização. A alternativa {A} está incorreta porque, diferente de cicatrizes hipertróficas, a granulação exuberante não tende a regredir espontaneamente. A {B} está errada, pois não há infecção obrigatória associada, e o uso de antibióticos sistêmicos não é indicado. A {C} também está incorreta, pois o uso de corticoides tópicos não é eficaz para tratar esse tipo específico de anormalidade do reparo tecidual.
+
+Q: Durante o acompanhamento de um paciente vítima de queimadura extensa na face anterior do tórax, observa-se, semanas após a cicatrização inicial, uma limitação progressiva da amplitude de movimento dos ombros, associada à retração visível da pele na região afetada. Esse achado é característico de qual complicação do processo de cicatrização?
+A) Queloide
+B) Cicatriz hipertrófica
+C) Contratura
+D) Deiscência da ferida
+G: C
+C: A <b>contratura</b> é uma complicação do processo de cicatrização caracterizada por uma <b>exagerada contração da ferida</b>, levando à deformidade e, frequentemente, à <b>limitação funcional dos tecidos adjacentes</b>, como articulações. É especialmente comum após <b>queimaduras profundas</b>, particularmente nas regiões das palmas, plantas e tórax anterior. Diferentemente dos queloides ({A}) e cicatrizes hipertróficas ({B}), que envolvem crescimento excessivo de colágeno, a contratura envolve <b>encurtamento do tecido cicatricial</b>. Já a deiscência ({D}) refere-se à <b>reabertura da ferida</b>, o que não corresponde ao quadro descrito.
+
+QCH: Sobre as anormalidades no reparo dos tecidos, assinale todas as assertivas <b>VERDADEIRAS</b>:
+A1: Queloides tendem a regredir espontaneamente ao longo de vários meses, sem necessidade de tratamento.
+G: F
+C: Falso. Ao contrário dos queloides, as cicatrizes hipertróficas podem regredir ao longo de meses; já os queloides não regridem espontaneamente (e, em geral, requerem intervenção).
+A2: Granulação exuberante caracteriza-se pela formação excessiva de tecido de granulação que protrai acima da pele, impedindo a reepitelização da ferida.
+G: V
+C: Verdadeiro. A granulação exuberante (“proud flesh”) produz tecido de granulação em excesso que se eleva acima do nível da pele, bloqueando a contínua reepitelização.
+A3: Cicatrizes hipertróficas crescem além das margens da ferida original e não regridem.
+G: F
+C: Falso. São os queloides que ultrapassam as margens da ferida original; as cicatrizes hipertróficas permanecem dentro dos limites e, ao contrário dos queloides, tendem a regredir.
+A4: Queloides apresentam crescimento que ultrapassa os limites da ferida primária e não sofrem regressão espontânea, refletindo predisposição individual.
+G: V
+C: Verdadeiro. Queloides são proliferações de colágeno que ultrapassam os contornos da ferida inicial, não apresentam tendência à regressão espontânea e decorrem de predisposição individual.
+A5: Deiscência de ferida é caracterizada pela formação exagerada de colágeno que provoca retração e contratura da cicatriz.
+G: F
+C: Falso. Deiscência refere-se à reabertura de uma ferida previamente fechada, não à formação excessiva de colágeno nem à contração cicatricial.
+
+Q: Assinale a alternativa que descreve <b>incorretamente</b> uma ferida crônica e sua causa associada:
+A) Úlcera venosa – Comum em idosos, surge geralmente na perna devido à hipertensão venosa crônica, frequentemente associada a insuficiência venosa ou varizes.
+B) Úlcera arterial – Causada por isquemia decorrente de aterosclerose de artérias periféricas, podendo evoluir com necrose tecidual dolorosa.
+C) Úlcera diabética – Associada à neuropatia periférica e má perfusão tecidual, costuma afetar principalmente os membros superiores de pacientes com diabetes mellitus.
+D) Lesão por pressão – Resulta da compressão prolongada de tecidos entre um plano ósseo e uma superfície externa, comum em pacientes acamados por longos períodos.
+G: C
+C: Embora essa assertiva descreva corretamente os mecanismos envolvidos (neuropatia, isquemia e infecção secundária), as úlceras diabéticas ocorrem principalmente nos <b>membros inferiores</b>, especialmente nos pés, e não nos membros superiores. As demais alternativas estão corretas em suas descrições das feridas crônicas e suas causas associadas.
+
+</tag=Anormalidades no reparo dos tecidos>
