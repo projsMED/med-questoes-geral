@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: med-questoes-geral
+    env: static
+    buildCommand: ""
+    staticPublishPath: public
+    branch: main
+    plan: free
+    autoDeploy: true
