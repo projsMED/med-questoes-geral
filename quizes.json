@@ -53,6 +53,22 @@
   },
   {
     "type": "folder",
+    "name": "Técnica Cirúrgica",
+    "children": [
+      {
+        "type": "file",
+        "name": "01.0. Ambiente Cirúrgico - Goffi - Bioengenharia.txt",
+        "path": "quizes-da-nuvem/Técnica Cirúrgica/01.0. Ambiente Cirúrgico - Goffi - Bioengenharia.txt"
+      },
+      {
+        "type": "file",
+        "name": "01.0. Ambiente Cirúrgico - Goffi - Introdução.txt",
+        "path": "quizes-da-nuvem/Técnica Cirúrgica/01.0. Ambiente Cirúrgico - Goffi - Introdução.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
     "name": "Viroses",
     "children": [
       {
