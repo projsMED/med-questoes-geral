@@ -1,0 +1,75 @@
+INFO: Baseado no Goffi - Capítulo 3 - Ambiente Cirúrgico - Sala Cirúrgica.
+Apenas os subtópicos do tópico "O AMBIENTE CIRÚRGICO E A BIOENGENHARIA" até o final do capítulo.
+
+Q: É objetivo de que minimizar a tarefa visual da equipe e ao mesmo tempo oferecer condições para que a operação se processe.com precisão, rapidez e segurança?
+GABARITO: Da adequada iluminação em salas cirúrgicas.
+
+Q: Ao se planejar a iluminação de uma sala de operação, deve-se considerar vários aspectos. Cite pelo menos dois deles.
+GABARITO: Opções para citar:
+- Iluminação adequada no campo operatório.
+- Eliminação de sombras.
+- Redução dos reflexos.
+- Eliminação do excesso de calor no campo operatório.
+- Suficiente iluminação geral na sala.
+- Proteção contra ocasional interrupção motivada por falta de energia elétrica.
+
+Q: Complete as lacunas:
+"O campo operatório é iluminado através de um foco _______________ a fim de eliminar a presença de _________."
+GABARITO: multidirecional; sombras.
+
+Q: Complete a lacuna:
+"O foco de luz deverá, no início da operação, incidir __________________ na ferida operatória a uma distância de aproximadamente _____ centímetros e, de acordo com o desenrolar da cirurgia, ser mudado de posição conforme a área a ser iluminada."
+GABARITO: perpendicularmente; 120.
+
+Q: O sistema de ventilação de um centro cirúrgico deve abranger três aspectos. Quais são eles?
+GABARITO: 1) prover o ambiente de aeração com condições adequadas;
+2) remover as partículas potencialmente contaminantes liberadas no interior das salas de operações;
+3) impedir a entrada no ambiente cirúrgico de partículas potencialmente contaminantes, oriundas de áreas adjacentes ao centro cirúrgico.
+
+Q: Complete a lacuna:
+"Quanto _______ for a turbulência da corrente aérea em um ambiente cirúrgico, _______ será a possibilidade de contaminação aérea da ferida operatória"
+GABARITO: menor; menor.
+
+Q: Complete a lacuna:
+"A umidade relativa de um ambiente cirúrgico deve situar-se entre ___ e ___"
+GABARITO: 45%; 55%.
+
+Q: Complete a lacuna:
+"O controle do paciente, por parte de _______________________, permite um acompanhamento e tratamento mais próximo da normalidade, durante cirurgias de grande porte ou de pacientes criticamente doentes."
+GABARITO: sistemas monitorizados.
+
+Q: O piso de um centro cirúrgico deve ter varias características importantes, cite pelo menos 3 delas.
+GABARITO: Opções para citar:
+- Ser de material resistente.
+- Ser não poroso.
+- De fácil visualização de sujeiras.
+- De fácil limpeza.
+- Livre de ralos e frestas.
+- Pouco sonoro.
+- Bom condutor de eletricidade estática para evitar faíscas.
+
+Q: Em um centro cirúrgico podemos considerar quatro tipos de fluxos. Quais são eles?
+GABARITO: De pacientes, pessoal profissional, de materiais e de equipamentos.
+
+Q: Complete as lacunas:
+"Quando uma cirurgia for declarada ___________, todos os instrumentos, aparelhos e campos cirúrgicos utilizados na mesma deverão ser acondicionados em recipientes especiais (containers) que serão levados, para posterior retirada da sala, pelo corredor periférico em direção ao __________________________________, para adequada desinfecção, evitando-se assim disseminação de infecção por todo o corredor periférico do centro cirúrgico."
+GABARITO: contamina; centro de material esterilizado.
+
+Q: Sobre tráfego unidirecional no centro cirúrgico, complete as lacunas:
+I_A) "Tráfego unidirecional significa que as pessoas e os materiais só podem se mover em uma única direção dentro do centro cirúrgico — sempre da área mais __________ para a mais __________."
+GABARITO: limpa; contaminada.
+I_B) "Isso é feito para evitar que microrganismos sejam levados de áreas _____ para áreas _____, reduzindo o risco de infecção para os pacientes."
+GABARITO: sujas, limpas.
+
+Q: Durante um dia de cirurgias, um médico realiza um procedimento em um paciente na sala cirúrgica. Após o término da cirurgia, ele acompanha um instrumentador até a área de lavagem de materiais (zona suja) para esclarecer uma dúvida. Em seguida, retorna diretamente à sala de cirurgia para iniciar um novo procedimento, utilizando o mesmo jaleco e sem realizar nova antissepsia.<br>
+Com base nas normas de tráfego unidirecional em centros cirúrgicos, qual foi o erro cometido pelo médico?
+GABARITO: Ele violou o princípio do tráfego unidirecional ao retornar da zona suja para a sala cirúrgica sem reprocessar-se.<br>
+Explicando melhor: O erro do médico foi retornar diretamente da zona suja (área de lavagem de materiais) para a zona limpa (sala de cirurgia) sem trocar os paramentos e realizar nova higienização, violando o conceito de tráfego unidirecional. Essa atitude aumenta o risco de contaminação e infecção para o paciente.
+
+Q: Complete a lacuna:
+"As instalações, os equipamentos, o pessoal e, principalmente, a vontade do mesmo em servir o paciente da melhor forma possível é que definem a qualidade ______________________."
+GABARITO: do ambiente cirúrgico.
+
+
+
+

@@ -1,0 +1,151 @@
+INFO: Baseado no Goffi - Capítulo 3 - Ambiente Cirúrgico - Sala Cirúrgica.
+Apenas os subtópicos do tópico INTRODUÇÃO (até o final do subtópico "Central de Gasoterapia").
+
+
+Q: Complete a lacuna:
+"Entende-se por ________________ o preparo pré-operatório do paciente, a administração da anestesia, o controle monitorizado de variáveis fisiológicas, o desempenho da enfermagem especializada em centro cirúrgico, a colaboração do laboratório clínico e banco de sangue, e finalmente a recuperação pós-operatória imediata do paciente."
+GABARITO: serviços auxiliares.
+
+Q: Como se chama a unidade hospitalar incumbida do preparo, esterilização e distribuição de todo o material esterilizado, bem como dos aparelhos destinados a tratamentos nas salas cirúrgicas, nas unidades de internação, nos ambulatórios, no pronto-socorro e demais serviços paramédicos?
+GABARITO: Centro de material esterilizado.
+
+Q: Complete a lacuna:
+"No conceito de ambiente cirúrgico, cumpre também acrescentar a idéia de ____________, ou seja, o centro cirúrgico deve ser único e ter capacidade para atender aos diversos setores hospitalares: unidade de internação, pronto-socorro e ambulatório."
+GABARITO: centralização.
+
+Q: Genericamente, na planta de um centro cirúrgico, podemos individualizar três áreas distintas, quais são elas?
+GABARITO: Zona de proteção, zona limpa e zona asséptica ou estéril.
+
+Q: Escreva o nome de cada zona a seguir:
+I_A) É composta por todos os demais componentes do agrupamento cirúrgico, que não os vestiários, salas de operações e salas de subesterilização.
+GABARITO: Zona limpa.
+I_B) É representada pelos vestiários masculino e feminino, onde todos os integrantes das equipes de cirurgia, anestesia, enfermagem, técnicos e demais elementos que trabalham no centro cirúrgico, trocam suas roupas por uniforme próprio, bem como colocam gorros, máscaras e pró-pés de uso exclusivo no interior do ambiente cirúrgico.
+GABARITO: Zona de proteção.
+I_C) É constituída pelas salas de operação e salas de subesterilização.
+GABARITO: Zona asséptica ou estéril.
+
+Q: Complete a lacuna:
+"As _____________________________ são aquelas em que os pacientes são passados das macas das suas respectivas unidades de internação para macas que só trafegam no ambiente cirúrgico."
+GABARITO: áreas de transferência.
+
+Q: No centro cirúrgico deverão existir dois vestiários, masculino e feminino, cada um com outra divisão segundo a categoria dos elementos: médicos, enfermeiros, técnicos.
+G: F
+C: Evidentemente deverão existir dois vestiários, masculino e feminino, <b>não se justificando outra divisão</b> segundo a categoria dos elementos: médicos, enfermeiros, técnicos.
+
+Q: Como se chama o local do centro cirúrgico a qual os que serão operados são recebidos e permanecem até o momento em que serão conduzidos para a sala de operação?
+GABARITO: Sala de recepção.
+
+Q: Complete a lacuna:
+"Na __________________ os pacientes poderão ser reavaliados clinicamente antes da cirurgia, ou ainda receber a medicação pré-anestésica caso não tenha sido aplicada na sua respectiva unidade de internação."
+GABARITO: sala de recepção.
+
+Q: Para evitar o cruzamento do fluxo de pessoas e instrumentos, teoricamente não contaminados, com pessoal e material potencialmente contaminados há dois tipos de corredores nos centros cirúrgicos. Como eles se chamam e qual a diferença entre eles?
+GABARITO: Há o corredor "limpo", através do qual as equipes de trabalho, o paciente e os instrumentos, campos, aventais e aparelhos estéreis ganham a sala de operação. E também há o corredor peiférico ou contaminado, através do qual saem todos os elementos que entraram na sala de operação, o paciente e todos os instrumentos, campos, aventais, e aparelhos utilizados na operação.
+
+Q: Em que local os integrantes da equipe cirúrgica escovam as mãos e antebraços antes de entrar na sala de operação para vestir os aventais cirúrgicos, as luvas e eventualmente a roupa, para posterior montagem da mesa de instrumentos e demais requisitos para a realização do ato operatório?
+GABARITO: Nos lavabos.
+
+Q: Quais as quatro tipos de mesas que a sala de operação deve dispor?
+GABARITO: Mesa de operação, mesas de instrumental, mesa para equipamento do anestesista e mesa auxiliar para a enfermeira circulante.
+
+Q: Complete a lacuna:
+"A característica fundamental é que a sala ______________________ é dotada de uma autoclave de alta pressão e alta velocidade, destinada a rápida e segura esterilização de instrumentos metálicos que acidentalmente se contaminam durante a cirurgia e cuja utilização seja imprescindível."
+GABARITO: de subesterilização.
+
+Q: È uma sala empregada, em geral, para montagem de um aparelho ou equipamento, como uma máquina de circulação extracorpórea, um trépano elétrico ou ainda utilizada para a indução da anestesia. Como se chama essa sala? É obrigatória?
+GABARITO: Sala auxiliar. Não é obrigatória.
+
+Q: É o local onde todos os aparelhos como bisturi elétrico, eletrocardiógrafo, desfibriladores, trépanos elétricos, microscópio cirúrgico, respiradores, focos auxiliares etc., ficam guardados quando estiverem limpos, testados e estéreis, ou seja, prontos para serem utilizados. Como se chama esse local?
+GABARITO: Sala de equipamentos.
+
+Q: É uma área componente da "zona limpa", na qual fica armazenado todo o material esterilizado proveniente do cen-tro de materiais esterilizados, tais como aventais, pacotes de campos, tambores de gases, caixa como o instrumental cirúrgico, todos esterilizados e prontos para a utilização nas cirurgias. Ficam também os fios de sutura, soros para hidratação etc. Como se chama esse local?
+GABARITO: Depósito de material.
+
+Q: Como é chamada a sala onde o paciente permanece sob vigilância rigorosa no período pós-operatório imediato, após sair da sala de cirurgia?
+GABARITO: Sala de recuperação pós-anestésica.
+
+Q: Complete a lacuna:
+"Enquanto uma equipe de médicos, técnicos ou enfermeiras aguardam a ocasião para entrar em ação na sala de operação, permanece em ambiente adequado e próprio. Este local é representado pelas __________________________."
+GABARITO: salas de conforto.
+
+Q: Todo ambiente cirúrgico necessita de área para a instalação, em separado, de três serviços auxiliares, quais são eles?
+GABARITO: Radiologia, anatomia patológica e laboratório clínico.
+
+Q: Qual o nome da área do centro cirúrgico, integrante da zona limpa, responsável pelos registros e manômetros das tubulações de oxigênio, gases anestésicos e ar comprimido que abastecem as salas de cirurgia e a sala de recuperação pós-anestésica?
+GABARITO: Central de gasoterapia.
+
+
+
+
+Q: É objetivo de que minimizar a tarefa visual da equipe e ao mesmo tempo oferecer condições para que a operação se processe.com precisão, rapidez e segurança?
+GABARITO: Da adequada iluminação em salas cirúrgicas.
+
+Q: Ao se planejar a iluminação de uma sala de operação, deve-se considerar vários aspectos. Cite pelo menos dois deles.
+GABARITO: Opções para citar:
+- Iluminação adequada no campo operatório.
+- Eliminação de sombras.
+- Redução dos reflexos.
+- Eliminação do excesso de calor no campo operatório.
+- Suficiente iluminação geral na sala.
+- Proteção contra ocasional interrupção motivada por falta de energia elétrica.
+
+Q: Complete as lacunas:
+"O campo operatório é iluminado através de um foco _______________ a fim de eliminar a presença de _________."
+GABARITO: multidirecional; sombras.
+
+Q: Complete a lacuna:
+"O foco de luz deverá, no início da operação, incidir __________________ na ferida operatória a uma distância de aproximadamente _____ centímetros e, de acordo com o desenrolar da cirurgia, ser mudado de posição conforme a área a ser iluminada."
+GABARITO: perpendicularmente; 120.
+
+Q: O sistema de ventilação de um centro cirúrgico deve abranger três aspectos. Quais são eles?
+GABARITO: 1) prover o ambiente de aeração com condições adequadas;
+2) remover as partículas potencialmente contaminantes liberadas no interior das salas de operações;
+3) impedir a entrada no ambiente cirúrgico de partículas potencialmente contaminantes, oriundas de áreas adjacentes ao centro cirúrgico.
+
+Q: Complete a lacuna:
+"Quanto _______ for a turbulência da corrente aérea em um ambiente cirúrgico, _______ será a possibilidade de contaminação aérea da ferida operatória"
+GABARITO: menor; menor.
+
+Q: Complete a lacuna:
+"A umidade relativa de um ambiente cirúrgico deve situar-se entre ___ e ___"
+GABARITO: 45%; 55%.
+
+Q: Complete a lacuna:
+"O controle do paciente, por parte de _______________________, permite um acompanhamento e tratamento mais próximo da normalidade, durante cirurgias de grande porte ou de pacientes criticamente doentes."
+GABARITO: sistemas monitorizados.
+
+Q: O piso de um centro cirúrgico deve ter varias características importantes, cite pelo menos 3 delas.
+GABARITO: Opções para citar:
+- Ser de material resistente.
+- Ser não poroso.
+- De fácil visualização de sujeiras.
+- De fácil limpeza.
+- Livre de ralos e frestas.
+- Pouco sonoro.
+- Bom condutor de eletricidade estática para evitar faíscas.
+
+Q: Em um centro cirúrgico podemos considerar quatro tipos de fluxos. Quais são eles?
+GABARITO: De pacientes, pessoal profissional, de materiais e de equipamentos.
+
+Q: Complete as lacunas:
+"Quando uma cirurgia for declarada ___________, todos os instrumentos, aparelhos e campos cirúrgicos utilizados na mesma deverão ser acondicionados em recipientes especiais (containers) que serão levados, para posterior retirada da sala, pelo corredor periférico em direção ao __________________________________, para adequada desinfecção, evitando-se assim disseminação de infecção por todo o corredor periférico do centro cirúrgico."
+GABARITO: contamina; centro de material esterilizado.
+
+Q: Sobre tráfego unidirecional no centro cirúrgico, complete as lacunas:
+I_A) "Tráfego unidirecional significa que as pessoas e os materiais só podem se mover em uma única direção dentro do centro cirúrgico — sempre da área mais __________ para a mais __________."
+GABARITO: limpa; contaminada.
+I_B) "Isso é feito para evitar que microrganismos sejam levados de áreas _____ para áreas _____, reduzindo o risco de infecção para os pacientes."
+GABARITO: sujas, limpas.
+
+Q: Durante um dia de cirurgias, um médico realiza um procedimento em um paciente na sala cirúrgica. Após o término da cirurgia, ele acompanha um instrumentador até a área de lavagem de materiais (zona suja) para esclarecer uma dúvida. Em seguida, retorna diretamente à sala de cirurgia para iniciar um novo procedimento, utilizando o mesmo jaleco e sem realizar nova antissepsia.<br>
+Com base nas normas de tráfego unidirecional em centros cirúrgicos, qual foi o erro cometido pelo médico?
+GABARITO: Ele violou o princípio do tráfego unidirecional ao retornar da zona suja para a sala cirúrgica sem reprocessar-se.<br>
+Explicando melhor: O erro do médico foi retornar diretamente da zona suja (área de lavagem de materiais) para a zona limpa (sala de cirurgia) sem trocar os paramentos e realizar nova higienização, violando o conceito de tráfego unidirecional. Essa atitude aumenta o risco de contaminação e infecção para o paciente.
+
+Q: Complete a lacuna:
+"As instalações, os equipamentos, o pessoal e, principalmente, a vontade do mesmo em servir o paciente da melhor forma possível é que definem a qualidade ______________________."
+GABARITO: do ambiente cirúrgico.
+
+
+
+
