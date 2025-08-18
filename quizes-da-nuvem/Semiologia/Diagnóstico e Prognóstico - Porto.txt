@@ -1,0 +1,320 @@
+<juntas>
+Q: O conceito "uma série de procedimentos de ordem intelectual (cognitiva) e operacional (atitudes e habilidades) através dos quais se obtém uma resposta a um determinado problema clínico" se refere a que?
+GABARITO: Definição de diagnóstico.
+
+Q: Como se chama o ramo da medicina que estuda e classifica as doenças?
+GABARITO: Nosologia.
+</juntas>
+
+Q: Um paciente de 65 anos procura atendimento ambulatorial com queixa de fadiga há 3 meses, associada a perda ponderal de 5 kg no período. Durante a consulta, o médico identifica que o paciente é portador de diabetes mellitus tipo 2, hipertensão arterial e dislipidemia, todas controladas com medicamentos. Considerando que não há sinais de risco iminente à vida e que se trata de um quadro complexo que pode envolver múltiplas etiologias, o médico opta por realizar o atendimento de forma escalonada em várias consultas, elegendo prioridades a serem abordadas em cada encontro, permitindo uma investigação mais detalhada e gradual.
+Essa estratégia de conduta médica é denominada:
+A) Diagnóstico diferencial escalonado
+B) Demora permitida
+C) Raciocínio hipotético-dedutivo
+D) Método da exaustão
+E) Diagnóstico sindrômico
+G: B
+C: 
+Segundo o texto, a demora permitida pode ser exercitada "quando o diagnóstico for mais complexo (p. ex., doenças raras) ou o paciente for portador de várias morbidades, ou seja, tratando-se de um paciente portador de doença crônica ('de progresso lento, duração longa e desprovida de resolução espontânea'), sem risco de vida mediato."
+O conceito se aplica perfeitamente ao caso apresentado, onde:<br>
+<br>
+O paciente apresenta múltiplas comorbidades (diabetes, hipertensão, dislipidemia)<br>
+Não há risco de vida imediato<br>
+O quadro é complexo e requer investigação detalhada<br>
+É correto fazer o atendimento de forma escalonada em várias consultas<br>
+Permite eleger prioridades a serem abordadas gradualmente<br>
+<br>
+Análise das alternativas incorretas:<br>
+{A}) Diagnóstico diferencial escalonado - Não é um conceito descrito no texto.<br>
+{C}) Raciocínio hipotético-dedutivo - Refere-se ao método que valoriza queixas, sinais e sintomas correlacionados com conhecimentos de epidemiologia clínica para gerar hipóteses diagnósticas.<br>
+{D}) Método da exaustão - Consiste em esmiuçar detalhes da anamnese e realizar exame físico meticuloso, pressupondo que a narrativa forneça pistas para identificar a doença.<br>
+{E}) Diagnóstico sindrômico - Refere-se ao reconhecimento de uma síndrome (conjunto de sintomas e sinais), útil para reduzir possibilidades e orientar investigações, mas não se relaciona com o escalonamento temporal do atendimento.
+
+Q: Um paciente de 45 anos procura atendimento médico com queixa principal de diarreia secretória há 5 dias, sem febre ou outros sintomas associados. Durante o exame físico realizado para investigação do quadro diarreico, o médico identifica placas eritematodescamativas no couro cabeludo e região nasolabial, compatíveis com dermatite seborreica. O médico orienta que este achado dermatológico não deve desviar o foco da atenção do motivo real da consulta, que é a investigação da diarreia.
+O achado dermatológico descrito no caso caracteriza:
+A) Diagnóstico diferencial
+B) Achado casual
+C) Síndrome clínica
+D) Comorbidade principal
+E) Diagnóstico sindrômico
+G: B
+C: 
+Segundo o texto, os achados casuais são exemplificados exatamente com esta situação: "um paciente que vai à consulta por conta de diarreia secretória, e, durante o exame físico, identifica-se um quadro de dermatite seborreica – achado casual, que não deve desfocar a atenção do motivo real da consulta."
+O achado casual caracteriza-se por:<br>
+<br>
+Ser descoberto durante o exame físico<br>
+Não estar relacionado à queixa principal<br>
+Não ser o motivo da consulta<br>
+Não dever desviar o foco da atenção do problema principal<br>
+<br>
+Análise das alternativas incorretas:<br>
+{A}) Diagnóstico diferencial - Refere-se à análise comparativa de várias enfermidades com quadro clínico semelhante.<br>
+{C}) Síndrome clínica - Conjunto de sintomas e/ou sinais que ocorrem associadamente.<br>
+{D}) Comorbidade principal - Seria a condição mórbida mais importante quando há múltiplas doenças.<br>
+{E}) Diagnóstico sindrômico - Reconhecimento de uma síndrome, útil para reduzir possibilidades diagnósticas.
+
+Q: Durante uma consulta médica, qual das situações abaixo melhor exemplifica um achado casual?
+A) Paciente com queixa de dor torácica apresenta sopro cardíaco ao exame físico
+B) Paciente procura atendimento por cefaleia e durante o exame físico é identificada hipertensão arterial
+C) Paciente com diabetes mellitus apresenta retinopatia diabética no exame oftalmológico
+D) Paciente consulta por lombalgia e durante o exame físico é detectado um lipoma em região dorsal
+G: D
+C: 
+O achado casual caracteriza-se por ser uma descoberta não relacionada à queixa principal do paciente e que não deve desviar o foco da atenção do motivo real da consulta. No caso da alternativa {D}, o lipoma em região dorsal não tem relação com a lombalgia (queixa principal) e representa um achado incidental durante o exame físico.
+Análise das alternativas incorretas:<br>
+{A}) O sopro cardíaco pode estar diretamente relacionado à dor torácica, sendo parte da investigação do sintoma principal.<br>
+{B}) A hipertensão arterial pode ser uma causa importante de cefaleia, não constituindo achado casual, mas sim achado relevante para o diagnóstico.<br>
+{C}) A retinopatia diabética é uma complicação esperada e relacionada ao diabetes mellitus, não sendo um achado casual, mas sim uma comorbidade ou complicação da doença de base.<br>
+{D}) CORRETA - O lipoma não tem relação com a lombalgia e representa um achado incidental que não deve desviar a atenção do problema principal.
+
+Q: Durante a consulta médica, o paciente relata que há uma semana vem sentindo uma sensação desagradável de queimação no estômago, principalmente após as refeições, além de referir que tem tido dificuldade para adormecer nas últimas noites. O médico realiza o exame físico completo, mas não consegue identificar através da inspeção, palpação, percussão ou ausculta nenhuma alteração que corresponda diretamente a essas queixas relatadas pelo paciente.
+As manifestações descritas pelo paciente caracterizam:
+A) Sinais clínicos
+B) Síndrome clínica
+C) Sintomas
+D) Entidade nosológica
+E) Achados objetivos
+G: C
+C: 
+Sintoma é definido como uma sensação subjetiva anormal percebida pelo paciente e não observável pelo examinador durante o exame físico (inspeção, palpação, percussão e ausculta). No caso apresentado, a queimação no estômago e a dificuldade para adormecer são sensações subjetivas relatadas pelo paciente, que não podem ser objetivamente identificadas pelo médico durante o exame físico.
+
+Q: Durante o atendimento de um paciente com dispneia, o médico observa uma coloração azulada nas extremidades dos dedos e lábios. Adicionalmente, ao realizar a palpação do abdome, identifica aumento do volume abdominal com característica de "onda líquida" e, na ausculta pulmonar, detecta estertores crepitantes em bases pulmonares. Esses achados também podem ser documentados através de exames complementares como oximetria de pulso, ultrassonografia abdominal e radiografia de tórax.
+Os achados descritos caracterizam:
+A) Sintomas subjetivos
+B) Sinais objetivos
+C) Síndrome clínica
+D) Entidade nosológica
+E) Manifestações inespecíficas
+G: B
+C: 
+Sinal é um dado objetivo que pode ser observado pelo examinador através do método clínico ou de exames complementares. A cianose, o aumento do volume abdominal e os estertores pulmonares são achados objetivos que podem ser detectados pelo médico durante o exame físico e confirmados por exames complementares.
+
+Q: Um paciente apresenta um quadro caracterizado por elevação da temperatura corporal (38,5°C), aumento da frequência cardíaca (110 bpm), sudorese profusa, tremores generalizados, dores musculares difusas e dores articulares. Esse conjunto de manifestações clínicas pode estar associado tanto a infecções de origem bacteriana quanto viral, a processos fúngicos ou mesmo a neoplasias malignas, requerendo investigação complementar para identificação da causa específica.
+O quadro descrito caracteriza:
+A) Sintoma isolado
+B) Sinal patognomônico
+C) Síndrome
+D) Entidade nosológica específica
+E) Achado casual
+G: C
+C: 
+Síndrome é definida como um conjunto de sintomas e/ou sinais que ocorrem associadamente e que podem ter diferentes causas. O caso apresentado exemplifica a síndrome febril, que inclui hipertermia, taquicardia, sudorese, tremores, mialgias e artralgias, podendo estar relacionada a diferentes etiologias como infecções bacterianas, virais, fúngicas ou neoplasias malignas.
+
+Q: Um paciente apresenta um quadro clínico bem caracterizado, com alterações funcionais específicas de determinado órgão, cujas manifestações, evolução natural, fisiopatologia e prognóstico são amplamente conhecidos e descritos na literatura médica. Esta condição possui características próprias que lhe conferem individualidade, permitindo seu reconhecimento, catalogação e identificação precisa, possibilitando o estabelecimento de condutas terapêuticas específicas e definição prognóstica.
+O quadro descrito caracteriza:
+A) Síndrome inespecífica
+B) Conjunto de sintomas
+C) Sinal clínico isolado
+D) Entidade nosológica
+E) Achado laboratorial
+G: D
+C: 
+Entidade nosológica refere-se a uma doença bem definida com alteração de função de órgãos ou sistemas, caracterizada por história natural conhecida, manifestações específicas que lhe conferem individualidade e permitem sua catalogação e identificação precisa. É uma condição clínica que possibilita o estabelecimento de condutas terapêuticas específicas e definição prognóstica adequada.
+
+Q: Durante o exame físico de um paciente, qual dos achados abaixo representa um exemplo de sinal?
+A) Sensação de queimação epigástrica relatada pelo paciente
+B) Queixa de dormência em membros inferiores
+C) Presença de edema em membros inferiores identificado à palpação
+D) Relato de insônia há duas semanas
+E) Sensação de náusea após as refeições
+G: C
+C:
+O sinal é caracterizado como um dado objetivo que pode ser observado pelo examinador através do método clínico. O edema em membros inferiores é um achado objetivo que pode ser identificado pelo médico durante a palpação, sendo visível e mensurável, diferentemente das outras alternativas que representam sensações subjetivas relatadas pelo paciente (sintomas).
+Análise das alternativas incorretas:<br>
+<br>
+{A}, {B}, {D}, {E} - Todas representam sintomas, pois são sensações subjetivas percebidas pelo paciente e relatadas ao médico, mas não podem ser diretamente observadas durante o exame físico.
+
+Q: Qual das manifestações abaixo representa um exemplo típico de sintoma?
+A) Cianose de extremidades observada pelo médico
+B) Dor abdominal referida pelo paciente
+C) Febre de 38,5°C aferida termicamente
+D) Presença de petéquias na pele identificadas à inspeção
+E) Sopro cardíaco detectado à ausculta
+G: B
+C:
+O sintoma é definido como uma sensação subjetiva anormal percebida pelo paciente e não observável pelo examinador através dos métodos de exame físico. A dor abdominal é uma sensação subjetiva que apenas o paciente pode perceber e relatar, não sendo possível ao médico observá-la diretamente durante o exame físico.
+Análise das alternativas incorretas:<br>
+<br>
+{A} - Cianose é um sinal, pois pode ser observada objetivamente pelo médico durante a inspeção<br>
+{C} - Febre é um sinal, pois pode ser mensurada objetivamente através da aferição da temperatura<br>
+{D} - Petéquias são sinais, pois podem ser visualizadas pelo médico durante a inspeção da pele<br>
+{E} - Sopro cardíaco é um sinal, pois pode ser detectado objetivamente pelo médico através da ausculta
+
+Q: Na prática médica moderna, tem-se observado crescente preocupação com condições clínicas caracterizadas por lesão, dano ou prejuízo ocasionado pelo médico e outros profissionais da área de saúde, pela medicina e por estabelecimentos de saúde. Essas situações podem ser de ordem física, mental, social ou espiritual, manifestando-se de forma direta ou indireta, incluindo danos causados tanto por atos e procedimentos quanto por palavras inadequadas. Algumas dessas situações podem ser objeto de escrutínio jurídico-legal e passíveis de punição ética, penal e criminal.
+As condições descritas são denominadas:
+A) Nosocômicas
+B) Iatropatogênicas ou iatrogênicas
+C) Idiopáticas
+D) Psicossomáticas
+E) Funcionais
+G: B
+C: 
+As doenças iatropatogênicas ou iatrogênicas são definidas como lesão, dano ou prejuízo ocasionado pelo médico e outros profissionais da área de saúde, pela medicina e por estabelecimentos de saúde. Podem manifestar-se de ordem física, mental, social ou espiritual, seja de forma direta ou indireta. Incluem tanto a iatrogenia dos atos (procedimentos inadequados, medicamentos) quanto a iatrogenia das palavras (comunicação inadequada), sendo algumas passíveis de consequências jurídico-legais.
+Análise das alternativas incorretas:<br>
+{A}) Nosocômicas - Refere-se a infecções adquiridas no ambiente hospitalar, não relacionadas à ação direta dos profissionais.<br>
+{C}) Idiopáticas - Doenças de causa desconhecida ou indeterminada.<br>
+{D}) Psicossomáticas - Condições em que fatores psicológicos influenciam manifestações físicas.<br>
+{E}) Funcionais - Distúrbios em que há alteração da função sem lesão anatômica identificável.
+
+Q: Um pediatra experiente, ao examinar uma criança que apresenta febre, manchas avermelhadas espalhadas pelo corpo e pequenas vesículas, imediatamente reconhece o quadro como varicela. Este diagnóstico é feito de forma rápida e intuitiva, baseado no conhecimento, experiência e na frequência com que o profissional se depara com esta enfermidade comum na infância.
+O processo diagnóstico descrito caracteriza o método de:
+A) Raciocínio fisiopatológico
+B) Método hipotético-dedutivo
+C) Reconhecimento de padrão (gestalt)
+D) Método da exaustão
+E) Fluxograma diagnóstico
+G: C
+C:
+Este método caracteriza-se pelo diagnóstico "fácil" do "já visto", em que a inferência é intuitiva e baseada no famoso "olho clínico". O pediatra reconhece imediatamente a varicela porque já viu muitos casos similares, sendo capaz de identificar o padrão característico da doença sem necessidade de raciocínio complexo ou investigação detalhada. É fruto do conhecimento, experiência e frequência de exposição à condição clínica.
+
+Q: Um médico do pronto-socorro, ao atender um paciente com dor torácica, utiliza um protocolo padronizado que o orienta através de etapas sequenciais: primeiro verifica se há instabilidade hemodinâmica, depois avalia características da dor, solicita ECG conforme algoritmo preestabelecido, e segue diretrizes específicas até chegar ao diagnóstico final.
+Esta abordagem diagnóstica corresponde ao método:
+A) Reconhecimento de padrão (gestalt)
+B) Fluxograma diagnóstico
+C) Método da exaustão
+D) Raciocínio fisiopatológico
+E) Método hipotético-dedutivo
+G: B
+C: 
+Este método baseia-se em diretrizes, consensos, protocolos e guias, utilizando inferência dedutiva. O médico identifica sinais e sintomas em uma árvore diagnóstica e percorre caminhos e etapas preestabelecidas que convergem para um diagnóstico final. É de grande valia para serviços de pronto atendimento e útil para médicos jovens, fornecendo parametrização confiável nas decisões clínicas através de algoritmos estruturados.
+
+Q: Um clínico geral está investigando um paciente com queixas inespecíficas de fadiga crônica. Realiza anamnese extremamente detalhada, investigando minuciosamente aspectos sociais, familiares, ambiente de trabalho, relações interpessoais, crenças e valores do paciente. Complementa com exame físico sistematizado e completo, na presunção de que todos esses elementos fornecerão pistas para identificar a condição clínica.
+Esta estratégia diagnóstica caracteriza o:
+A) Fluxograma diagnóstico
+B) Reconhecimento de padrão (gestalt)
+C) Raciocínio fisiopatológico
+D) Método da exaustão
+E) Método hipotético-dedutivo
+G: D
+C: 
+Este método caracteriza-se por esmiuçar detalhes da anamnese e realizar exame físico meticuloso, na presunção de que a narrativa forneça pistas e elementos para identificar a doença. Valoriza-se o "entorno" do problema principal e o "contexto" do paciente, incluindo aspectos sociais (ambiente familiar, trabalho), relações interpessoais, conflitos, escala de valores e crenças. É uma abordagem abrangente que busca compreender integralmente o paciente e sua condição.
+
+Q: Um internista está avaliando um paciente diabético que desenvolveu, ao longo dos anos, progressiva diminuição da acuidade visual. O médico analisa a evolução temporal do quadro, correlacionando o descontrole glicêmico inicial com o desenvolvimento de microangiopatia retiniana e suas consequentes alterações visuais, baseando-se na compreensão dos mecanismos biológicos envolvidos na progressão da retinopatia diabética.
+Este processo diagnóstico exemplifica o:
+A) Método hipotético-dedutivo
+B) Método da exaustão
+C) Fluxograma diagnóstico
+D) Reconhecimento de padrão (gestalt)
+E) Raciocínio fisiopatológico
+G: E
+C: 
+Este método baseia-se na história e evolução temporal do quadro clínico, valorizando as queixas, sinais, sintomas e achados semiológicos e suas modificações no decorrer do processo nosológico. O médico compreende a sequência fisiopatológica: diabetes mal controlada → hiperglicemia crônica → lesão microvascular retiniana → retinopatia diabética → diminuição da acuidade visual. Esta abordagem fundamenta-se na compreensão dos mecanismos biológicos e na evolução natural da doença.
+
+Q: Um médico atende um paciente de 45 anos com quadro de febre há 3 dias, tosse produtiva e dispneia. Com base nos sintomas apresentados, o médico elabora uma lista de possibilidades diagnósticas: pneumonia bacteriana, pneumonia viral, bronquite aguda e tuberculose pulmonar. Para confirmar ou descartar cada uma dessas possibilidades, solicita radiografia de tórax, hemograma completo, cultura de escarro e pesquisa de BAAR. Após análise dos resultados, elimina sucessivamente as hipóteses menos prováveis até chegar ao diagnóstico definitivo.
+Este processo diagnóstico caracteriza o método:
+A) Reconhecimento de padrão (gestalt)
+B) Fluxograma diagnóstico
+C) Método da exaustão
+D) Método hipotético-dedutivo
+E) Raciocínio fisiopatológico
+G: D
+C: 
+Este método valoriza as queixas, sinais, sintomas e achados, correlacionando-os com conhecimentos de epidemiologia clínica para gerar hipóteses diagnósticas. Na sequência, o raciocínio clínico permite chegar ao diagnóstico final através da comparação com modelos, peso de evidências e descarte de hipóteses não validadas. No caso apresentado, o médico: 1) coletou os sintomas (febre, tosse, dispneia), 2) gerou múltiplas hipóteses (pneumonia bacteriana, viral, bronquite, tuberculose), 3) testou cada hipótese com exames específicos, 4) eliminou as menos prováveis baseado nas evidências, chegando ao diagnóstico mais provável.
+
+Q: Um médico da atenção primária está avaliando um paciente de 35 anos que apresenta febre, cefaleia, mialgia e mal-estar geral há 2 dias. Com base nestes sintomas inespecíficos, diversas hipóteses diagnósticas são possíveis: síndrome gripal, dengue, mononucleose infecciosa, meningite viral, febre tifoide e leptospirose. Considerando que todas essas condições podem apresentar sintomas similares no início do quadro, qual deve ser a abordagem prioritária do médico para hierarquizar essas hipóteses diagnósticas?
+A) Solicitar imediatamente todos os exames complementares disponíveis para cada uma das hipóteses levantadas, independentemente da probabilidade de ocorrência de cada doença na região
+B) Aplicar as informações epidemiológicas sobre frequência e prevalência das doenças suspeitas, analisando primeiro as mais frequentes e prevalentes antes de considerar as raridades e exceções
+C) Iniciar tratamento empírico para a condição mais grave dentre as hipóteses levantadas, postergando a investigação diagnóstica até observar a resposta terapêutica do paciente
+D) Encaminhar o paciente imediatamente para especialista em doenças infecciosas para definição diagnóstica, evitando assumir a responsabilidade pela hierarquização das múltiplas possibilidades
+E) Realizar anamnese exaustiva explorando detalhadamente a história familiar de doenças raras, priorizando as hipóteses diagnósticas baseadas nos antecedentes genéticos identificados
+G: B
+C: Quando o conjunto de dados gerar várias hipóteses diagnósticas, uma das ajudas heurísticas fundamentais é aplicar as informações epidemiológicas sobre a frequência e prevalência das doenças em suspeição. Deve-se analisar as doenças mais frequentes e prevalentes antes de pensar nas raridades e exceções. No caso apresentado, síndrome gripal e dengue (dependendo da região e época do ano) seriam mais prováveis que leptospirose ou febre tifoide, por exemplo.<br>
+<br>
+Análise das alternativas incorretas:<br>
+{A}) Solicitar todos os exames seria uma abordagem custosa e desnecessária, sem considerar a probabilidade pré-teste de cada condição.<br>
+{C}) Iniciar tratamento empírico para a condição mais grave não é a abordagem diagnóstica adequada para hierarquizar hipóteses.<br>
+{D}) O encaminhamento imediato não é necessário neste caso, sendo possível a avaliação inicial na atenção primária.<br>
+{E}) A história familiar é importante, mas não é o fator prioritário para hierarquização quando há sintomas inespecíficos compatíveis com doenças infecciosas comuns.
+
+Q: Após a fase de integração de dados e formulação de hipóteses, o processo diagnóstico entra em sua fase operacional. A fase operacional do diagnóstico firmado é caracterizada principalmente por:
+A) Um processo puramente mental de reconhecimento de padrões, no qual o médico utiliza a intuição e a experiência para correlacionar os achados clínicos e gerar hipóteses.
+B) A etapa de comunicação com o paciente e seus familiares, envolvendo a explicação dos fatos, a tomada de decisões compartilhadas sobre a investigação e a terapêutica, e o estabelecimento do prognóstico.
+C) A realização do diagnóstico diferencial, que consiste na análise comparativa de enfermidades com quadros clínicos semelhantes para excluir as de menor probabilidade.
+D) A solicitação e a interpretação de exames complementares como principal ferramenta para obter a comprovação diagnóstica, sendo esta a única base para as decisões futuras.
+G: B
+C: {A}) Incorreta. Esta alternativa descreve a "fase silenciosa do diagnóstico", o momento do raciocínio clínico que antecede a fase operacional. É a etapa onde o médico trabalha mentalmente para integrar os dados.<br>
+<br>
+{B}) Correta. A fase operacional é o momento que se segue à integração dos dados, consistindo na explicação dos fatos ao paciente, tomada de decisões compartilhadas sobre investigação complementar, terapêutica e prognóstico.<br>
+<br>
+{C}) Incorreta. O diagnóstico diferencial é uma ferramenta crucial utilizada durante o raciocínio clínico (fase silenciosa) para se chegar ao diagnóstico mais provável, mas não define a fase operacional, que é focada na comunicação e no planejamento com o paciente.<br>
+<br>
+{D}) Incorreta. Embora a investigação complementar seja mencionada, ela é apenas um dos aspectos sobre os quais as decisões são tomadas com o paciente. A fase operacional é mais ampla, centrada na comunicação e na decisão compartilhada, e não apenas na realização de exames.
+
+Q: Um médico planeja uma estratégia de diagnóstico para uma doença grave, cujo tratamento é invasivo e possui riscos significativos. A estratégia consistirá em duas etapas: primeiro, um teste de triagem (screening) de baixo custo para ser aplicado em uma grande população assintomática; segundo, um teste confirmatório para os indivíduos que testarem positivo na primeira etapa.<br>
+Considerando as propriedades de um teste diagnóstico, qual seria a abordagem correta na escolha dos testes?
+A) Para a triagem inicial, deve-se priorizar um teste de alta especificidade para não sobrecarregar o sistema com falsos positivos. Para a confirmação, um teste de alta sensibilidade é o ideal.
+B) Tanto para a triagem quanto para a confirmação, o ideal é usar testes de alta sensibilidade, pois o mais importante é não deixar nenhum doente sem diagnóstico.
+C) Para a triagem inicial (screening), deve-se priorizar um teste de alta sensibilidade. Para a confirmação diagnóstica, deve-se priorizar um teste de alta especificidade.
+D) A escolha deve se basear apenas no valor preditivo positivo do teste, pois a sensibilidade e a especificidade são características que variam conforme a população testada.
+G: C
+C:
+<br>
+{A}) Incorreta. Esta alternativa inverte a lógica correta. Usar um teste de alta especificidade na triagem resultaria em muitos "falsos negativos" (doentes seriam classificados como saudáveis e não seriam testados novamente), enquanto um teste de alta sensibilidade na confirmação geraria muitos "falsos positivos" (saudáveis seriam confirmados como doentes e submetidos a um tratamento de risco desnecessariamente).<br>
+<br>
+{B}) Incorreta. Embora a alta sensibilidade seja crucial na triagem, usá-la também na confirmação é inadequado. Um teste muito sensível pode ter baixa especificidade, o que levaria à confirmação de muitos falsos positivos gerados na primeira etapa.<br>
+<br>
+{C}) Correta. Esta é a estratégia clássica e correta.<br>
+- <b>Triagem (Screening):</b> Requer alta <b>sensibilidade</b>. O objetivo é identificar o maior número possível de indivíduos que <i>possam</i> ter a doença, minimizando a chance de falsos negativos. Um resultado negativo em um teste muito sensível é muito confiável para excluir a doença (princípio "SnNOut" – a highly <b>S</b>e<b>n</b>sitive test, when <b>N</b>egative, rules <b>Out</b> the disease).<br>
+- <b>Confirmação:</b> Requer alta <b>especificidade</b>. Após a triagem, o objetivo é confirmar com grande certeza que os indivíduos positivos realmente têm a doença, minimizando a chance de falsos positivos antes de iniciar um tratamento arriscado. Um resultado positivo em um teste muito específico é muito confiável para confirmar a doença (princípio "SpPIn" – a highly <b>Sp</b>ecific test, when <b>P</b>ositive, rules <b>In</b> the disease).<br>
+<br>
+{D}) Incorreta. Esta afirmação contém um erro fundamental. A sensibilidade e a especificidade são características <i>intrínsecas</i> de um teste, que não variam com a população. Os valores preditivos (positivo e negativo) é que são influenciados pela prevalência da doença na população testada. Portanto, a escolha inicial do teste se baseia em suas características intrínsecas (sensibilidade e especificidade) para o objetivo desejado (triagem ou confirmação).
+
+Q: Um médico atende um paciente com dor abdominal intensa, náuseas, vômitos e febre. Após realizar anamnese detalhada e exame físico minucioso, o médico identifica sinais de irritação peritoneal e dor à descompressão brusca em fossa ilíaca direita. Com base exclusivamente na história clínica e no exame físico, sem necessidade de exames complementares, o médico consegue reconhecer a enfermidade e suas manifestações clínicas.
+O tipo de diagnóstico descrito caracteriza:
+A) Diagnóstico etiológico
+B) Diagnóstico clínico
+C) Diagnóstico anatômico
+D) Diagnóstico histopatológico
+E) Diagnóstico radiológico
+G: B
+C: 
+O diagnóstico clínico é definido como o reconhecimento de uma doença com base na anamnese e no exame físico. No caso apresentado, o médico utiliza exclusivamente os dados obtidos através da história clínica (dor abdominal, náuseas, vômitos, febre) e do exame físico (sinais de irritação peritoneal, dor à descompressão) para chegar ao diagnóstico, sem necessidade inicial de métodos complementares. Este foi o primeiro tipo de diagnóstico desenvolvido na medicina, tendo suas bases estabelecidas por Hipócrates através da valorização da observação clínica.
+
+Q: Um paciente apresenta um quadro clínico caracterizado por hipertermia, taquicardia, sudorese, tremores, mialgias e prostração. Embora este conjunto de manifestações não identifique uma doença específica, ele orienta o médico sobre o tipo de distúrbio presente e direciona a investigação para determinar se a causa é infecciosa, neoplásica ou autoimune.
+Este tipo de reconhecimento diagnóstico caracteriza:
+A) Diagnóstico etiológico
+B) Diagnóstico anatômico  
+C) Diagnóstico sindrômico
+D) Diagnóstico funcional
+E) Diagnóstico de certeza
+G: C
+C: 
+O diagnóstico sindrômico consiste no reconhecimento de uma síndrome, definida como um conjunto de sintomas e sinais que ocorrem associadamente. Embora não identifique uma doença específica, é muito útil na prática médica pois reduz o número de possibilidades diagnósticas e orienta as investigações necessárias. No caso apresentado, trata-se da síndrome febril, que pode ter diferentes causas (infecciosas, neoplásicas, autoimunes), mas o reconhecimento do padrão sindrômico direciona a investigação adequada.
+
+Q: Após a descoberta de microrganismos por Pasteur e o desenvolvimento da microbiologia, tornou-se possível identificar o agente causal específico de muitas doenças infecciosas. Um médico, ao investigar um paciente com pneumonia, solicita cultura de escarro que identifica o Streptococcus pneumoniae como agente responsável pelo quadro infeccioso.
+Este tipo de diagnóstico caracteriza:
+A) Diagnóstico clínico
+B) Diagnóstico sindrômico
+C) Diagnóstico anatômico
+D) Diagnóstico etiológico
+E) Diagnóstico funcional
+G: D
+C: 
+O diagnóstico etiológico refere-se à identificação da causa específica de uma doença. Com os avanços da medicina científica no século XIX, incluindo a descoberta dos microrganismos por Pasteur, o melhor conhecimento dos processos bioquímicos, a descoberta de hormônios e vitaminas, e o desenvolvimento da imunologia, tornou-se possível identificar as causas de muitas doenças. No exemplo apresentado, a identificação do Streptococcus pneumoniae como agente causal da pneumonia representa um diagnóstico etiológico específico.
+
+Q: Um patologista analisa uma biópsia de fígado obtida durante uma cirurgia. O exame macroscópico revela alterações na arquitetura tecidual e o exame microscópico demonstra infiltrado inflamatório portal, necrose hepatocelular e fibrose. A análise conjunta destes achados macro e microscópicos permite estabelecer o diagnóstico definitivo da lesão hepática.
+Este processo diagnóstico caracteriza:
+A) Diagnóstico clínico
+B) Diagnóstico radiológico
+C) Diagnóstico etiológico
+D) Diagnóstico anatomopatológico
+E) Diagnóstico sindrômico
+G: D
+C: 
+O diagnóstico anatomopatológico consiste no exame simultâneo macro e microscópico de peças cirúrgicas ou post mortem, englobando tanto os aspectos anatômicos quanto histopatológicos das lesões. Este tipo de diagnóstico surgiu com o desenvolvimento do microscópio e sua aplicação no estudo dos tecidos. No caso apresentado, a análise conjunta dos achados macroscópicos (alterações arquiteturais) e microscópicos (infiltrado inflamatório, necrose, fibrose) da biópsia hepática exemplifica perfeitamente este método diagnóstico.
+
+Q: Um paciente de 68 anos, portador de neoplasia pancreática em estágio avançado, tem sua condição clínica avaliada pela equipe médica. Com base no conhecimento da história natural da enfermidade, dados fisiopatológicos, sinais premonitórios e informações probabilísticas, os médicos fornecem aos familiares uma estimativa sobre a evolução esperada do quadro, possíveis intercorrências e o tempo de vida restante. Essas informações são essenciais para que a família possa tomar providências relacionadas ao testamento vital, diretivas antecipadas de vontade e outras deliberações familiares e jurídicas.
+O processo descrito caracteriza:
+A) Diagnóstico diferencial
+B) Diagnóstico de certeza
+C) Prognóstico
+D) Diagnóstico sindrômico
+E) Comprovação diagnóstica
+G: C
+C: 
+O prognóstico (do grego pro – para diante + gnosis – conhecimento) refere-se à capacidade de prever a evolução de uma doença e suas possíveis consequências pelo conhecimento. É construído com base no conhecimento da história natural das enfermidades, dados fisiopatológicos e probabilísticos, considerando as comorbidades e estimando as principais intercorrências às quais o paciente está sujeito. O prognóstico pode ser quanto à vida, à validez (incapacidade) e ao restabelecimento. No exemplo apresentado, a avaliação prognóstica em doença terminal é fundamental para orientar decisões familiares e jurídicas, incluindo testamento vital e diretivas antecipadas de vontade.<br>
+Análise das alternativas incorretas:<br>
+{A}) Diagnóstico diferencial - Análise comparativa de doenças com quadro clínico semelhante.<br>
+{B}) Diagnóstico de certeza - Identificação precisa da doença através de métodos confirmatórios.<br>
+{D}) Diagnóstico sindrômico - Reconhecimento de conjunto de sintomas e sinais.<br>
+{E}) Comprovação diagnóstica - Confirmação do diagnóstico através de métodos complementares específicos.
