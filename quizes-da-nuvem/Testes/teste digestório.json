@@ -1,0 +1,137 @@
+{
+  "titulo": "Sistema Digestório - 10 Questões",
+  "id_quiz": "digestorio_v1",
+  "descricao": "Conjunto de 10 questões de múltipla escolha sobre sistema digestório, com gabarito, comentários por alternativa e comentário geral.",
+  "conteudo": [
+    {
+      "tipo": "ME",
+      "id": "q1",
+      "enunciado": "A principal função do estômago é:",
+      "alternativas": [
+        { "id": "alt_A", "texto": "Absorver nutrientes", "comentario": "Incorreto — a absorção no estômago é mínima; ocorre principalmente no intestino delgado." },
+        { "id": "alt_B", "texto": "Iniciar a digestão química de proteínas", "comentario": "Correto — a pepsina inicia a digestão proteica." },
+        { "id": "alt_C", "texto": "Produzir bile", "comentario": "Incorreto — a bile é produzida pelo fígado." },
+        { "id": "alt_D", "texto": "Realizar digestão de carboidratos", "comentario": "Incorreto — carboidratos começam a ser digeridos na boca." }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "O estômago desempenha papel essencial na digestão, especialmente no processamento de proteínas, graças à ação da pepsina sob ambiente ácido. Esse processo prepara os nutrientes para digestões posteriores no intestino delgado.<br>Além disso, o estômago funciona como reservatório e promove movimentos mecânicos que misturam o alimento ao suco gástrico, garantindo que o bolo alimentar seja transformado em quimo."
+    },
+    {
+      "tipo": "ME",
+      "id": "q2",
+      "enunciado": "A bile atua principalmente na digestão de:",
+      "alternativas": [
+        { "id": "alt_A", "texto": "Proteínas", "comentario": "Incorreto — as proteínas são digeridas por proteases." },
+        { "id": "alt_B", "texto": "Carboidratos", "comentario": "Incorreto — carboidratos são digeridos por amilases." },
+        { "id": "alt_C", "texto": "Lipídios", "comentario": "Correto — a bile emulsifica gorduras, facilitando a ação de lipases." },
+        { "id": "alt_D", "texto": "Vitaminas hidrossolúveis", "comentario": "Incorreto — a bile não tem ação direta sobre essas vitaminas." }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "A bile desempenha papel fundamental na digestão de gorduras, quebrando grandes glóbulos lipídicos em partículas menores, processo conhecido como emulsificação. Isso aumenta a superfície de contato para a ação das lipases pancreáticas.<br>Sem a bile, a absorção de lipídios e vitaminas lipossolúveis seria consideravelmente prejudicada, impactando processos fisiológicos importantes como produção hormonal e manutenção de membranas celulares."
+    },
+    {
+      "tipo": "ME",
+      "id": "q3",
+      "enunciado": "Onde ocorre a maior absorção de nutrientes?",
+      "alternativas": [
+        { "id": "alt_A", "texto": "Estômago", "comentario": "Incorreto — absorção aqui é limitada." },
+        { "id": "alt_B", "texto": "Intestino delgado", "comentario": "Correto — principal local de absorção de nutrientes." },
+        { "id": "alt_C", "texto": "Intestino grosso", "comentario": "Incorreto — absorve principalmente água e sais." },
+        { "id": "alt_D", "texto": "Boca", "comentario": "Incorreto — praticamente não ocorre absorção." }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "O intestino delgado é especializado na absorção de nutrientes graças à presença de vilosidades e microvilosidades, que ampliam enormemente a superfície de contato com o alimento. Esse design anatômico permite rápida e eficiente transferência de nutrientes para o sangue e sistema linfático.<br>Além disso, enzimas digestivas e secreções pancreáticas atuam nesse segmento, garantindo que carboidratos, lipídios e proteínas sejam reduzidos a unidades absorvíveis."
+    },
+    {
+      "tipo": "ME",
+      "id": "q4",
+      "enunciado": "A enzima amilase salivar atua sobre:",
+      "alternativas": [
+        { "id": "alt_A", "texto": "Lipídios", "comentario": "Incorreto — lipídios são digeridos por lipases." },
+        { "id": "alt_B", "texto": "Amido", "comentario": "Correto — a amilase salivar inicia a digestão do amido." },
+        { "id": "alt_C", "texto": "Proteínas", "comentario": "Incorreto — proteínas não são digeridas na boca." },
+        { "id": "alt_D", "texto": "Ácidos nucleicos", "comentario": "Incorreto — estes não são digeridos pela amilase." }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "A amilase salivar é a primeira enzima a entrar em contato com o alimento, iniciando a quebra de carboidratos complexos ainda na boca. Esse processo facilita etapas posteriores da digestão no intestino delgado.<br>A atividade da amilase salivar cessa quando o alimento chega ao estômago, devido ao pH altamente ácido, mostrando como diferentes partes do sistema digestório possuem funções complementares."
+    },
+    {
+      "tipo": "ME",
+      "id": "q5",
+      "enunciado": "O órgão responsável pela produção de insulina é:",
+      "alternativas": [
+        { "id": "alt_A", "texto": "Fígado", "comentario": "Incorreto — o fígado produz bile, mas não insulina." },
+        { "id": "alt_B", "texto": "Estômago", "comentario": "Incorreto — sem função na produção de insulina." },
+        { "id": "alt_C", "texto": "Pâncreas", "comentario": "Correto — o pâncreas produz insulina nas ilhotas de Langerhans." },
+        { "id": "alt_D", "texto": "Vesícula biliar", "comentario": "Incorreto — apenas armazena bile." }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "O pâncreas possui função exócrina e endócrina, e a produção de insulina faz parte de sua atuação endócrina, essencial na regulação dos níveis de glicose no sangue. A falta ou deficiência desse hormônio leva a quadros como o diabetes mellitus.<br>As ilhotas de Langerhans também produzem outros hormônios, como o glucagon, mostrando que o pâncreas desempenha papel central no equilíbrio metabólico do organismo."
+    },
+    {
+      "tipo": "ME",
+      "id": "q6",
+      "enunciado": "A função principal do intestino grosso é:",
+      "alternativas": [
+        { "id": "alt_A", "texto": "Digestão de proteínas", "comentario": "Incorreto — digestão significativa não ocorre no intestino grosso." },
+        { "id": "alt_B", "texto": "Absorção de água e formação de fezes", "comentario": "Correto — esta é sua função essencial." },
+        { "id": "alt_C", "texto": "Absorção de lipídios", "comentario": "Incorreto — lipídios são absorvidos no intestino delgado." },
+        { "id": "alt_D", "texto": "Neutralização do suco gástrico", "comentario": "Incorreto — isso ocorre no início do intestino delgado." }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "O intestino grosso realiza a absorção final de água e eletrólitos, contribuindo para a formação e compactação das fezes. Esse processo é essencial para manter o equilíbrio hídrico do organismo.<br>Além disso, abriga uma microbiota intensa que participa na produção de vitaminas e fermentação de fibras, mostrando que sua função vai além do simples armazenamento."
+    },
+    {
+      "tipo": "ME",
+      "id": "q7",
+      "enunciado": "A pepsina é uma enzima ativada pela presença de:",
+      "alternativas": [
+        { "id": "alt_A", "texto": "pH básico", "comentario": "Incorreto — ela atua em pH ácido." },
+        { "id": "alt_B", "texto": "Ácido clorídrico", "comentario": "Correto — o HCl ativa o pepsinogênio em pepsina." },
+        { "id": "alt_C", "texto": "Bile", "comentario": "Incorreto — a bile não atua no estômago." },
+        { "id": "alt_D", "texto": "Amilase", "comentario": "Incorreto — amilase não participa desse processo." }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "A ativação da pepsina demonstra como o ambiente ácido do estômago é fundamental para a digestão das proteínas. O ácido clorídrico modifica a estrutura proteica, facilitando a ação enzimática.<br>Esse mecanismo é extremamente eficiente, mas também exige proteção da mucosa gástrica, que produz muco para evitar autodegradação."
+    },
+    {
+      "tipo": "ME",
+      "id": "q8",
+      "enunciado": "O movimento responsável por empurrar o alimento ao longo do tubo digestório é chamado de:",
+      "alternativas": [
+        { "id": "alt_A", "texto": "Contração voluntária", "comentario": "Incorreto — o processo é involuntário." },
+        { "id": "alt_B", "texto": "Mastigação", "comentario": "Incorreto — ocorre apenas na boca." },
+        { "id": "alt_C", "texto": "Peristaltismo", "comentario": "Correto — movimento muscular que impulsiona o bolo alimentar." },
+        { "id": "alt_D", "texto": "Deglutição", "comentario": "Incorreto — ocorre apenas ao iniciar o trajeto do alimento." }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "O peristaltismo garante que o alimento avance pelo sistema digestório mesmo contra a gravidade, graças à contração coordenada das camadas musculares do tubo digestivo. Esse processo ocorre de forma contínua e involuntária.<br>Ele também ajuda a misturar o alimento com enzimas digestivas, garantindo melhor eficiência digestória ao longo do percurso."
+    },
+    {
+      "tipo": "ME",
+      "id": "q9",
+      "enunciado": "Qual estrutura impede o refluxo do conteúdo gástrico para o esôfago?",
+      "alternativas": [
+        { "id": "alt_A", "texto": "Epiglote", "comentario": "Incorreto — impede entrada de alimento na traqueia." },
+        { "id": "alt_B", "texto": "Esfíncter pilórico", "comentario": "Incorreto — separa estômago e intestino delgado." },
+        { "id": "alt_C", "texto": "Esfíncter esofágico inferior", "comentario": "Correto — impede o retorno do conteúdo ácido ao esôfago." },
+        { "id": "alt_D", "texto": "Esfíncter anal", "comentario": "Incorreto — localizado no final do intestino grosso." }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "O esfíncter esofágico inferior funciona como válvula que evita que o conteúdo ácido do estômago retorne ao esôfago, protegendo seu revestimento, que não é preparado para lidar com acidez intensa.<br>Quando esse esfíncter não funciona adequadamente, ocorrem episódios de refluxo gastroesofágico, causando irritação e sintomas como azia."
+    },
+    {
+      "tipo": "ME",
+      "id": "q10",
+      "enunciado": "A digestão de proteínas inicia-se em qual parte do sistema digestório?",
+      "alternativas": [
+        { "id": "alt_A", "texto": "Boca", "comentario": "Incorreto — não há enzimas proteolíticas na boca." },
+        { "id": "alt_B", "texto": "Estômago", "comentario": "Correto — a pepsina inicia a digestão de proteínas." },
+        { "id": "alt_C", "texto": "Intestino delgado", "comentario": "Incorreto — ocorre continuação da digestão, não o início." },
+        { "id": "alt_D", "texto": "Intestino grosso", "comentario": "Incorreto — não ocorre digestão de proteínas aqui." }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "O estômago é o primeiro local onde proteínas sofrem digestão química significativa, graças ao ambiente ácido e à ação da pepsina. Isso transforma moléculas grandes em cadeias menores de aminoácidos.<br>No intestino delgado, essas cadeias são então quebradas completamente em aminoácidos individuais, que podem ser absorvidos pelo organismo."
+    }
+  ]
+}

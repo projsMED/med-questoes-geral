@@ -1,0 +1,3455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ6GXTCQNG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DJ6GXTCQNG');
+  </script>
+  <meta charset="UTF-8" />
+  <title>Questões do Terceiro Período</title>
+  <style>
+	.enunciado,
+	.alternatives label .alt-text-content, /* Texto das alternativas */
+	.feedback,                         /* Feedback geral (ME, VF, Checkbox, Escrita) */
+	.assertive-feedback,          /* Feedback específico de assertiva Checkbox */
+  .escrita-item-label  /* Adicione esta linha */
+	{
+	  white-space: pre-wrap; /* Preserva espaços e newlines, permite quebra de linha */
+	}
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #e3eeff 0%, #f7f4fd 100%);
+      margin: 0;
+      min-height: 100vh;
+      padding: 0;
+    }
+    #container {
+      max-width: 700px;
+      margin: 36px auto 36px auto;
+      padding: 32px 24px 28px 24px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 28px 0 #a3b1c633, 0 2px 4px #a3b1c644;
+      border: 1px solid #e6eaff;
+      min-height: 70vh;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      font-size: 2.1em;
+      margin-bottom: 18px;
+      color: #373853;
+      letter-spacing: 1px;
+      user-select: none;
+    }
+    .tutorial {
+      background: #f0f5ff;
+      border: 1px solid #b9d3fa;
+      border-radius: 12px;
+      padding: 16px 22px 10px 22px;
+      margin-bottom: 22px;
+      font-size: 1.07em;
+      color: #324a78;
+      box-shadow: 0 1px 8px #b9d3fa22;
+      line-height: 1.55;
+      user-select: none;
+    }
+    .cloud-quiz-btn {
+      background: linear-gradient(90deg, #59c7f3 0%, #91eac9 100%);
+      color: #203447;
+      border: none;
+      border-radius: 7px;
+      padding: 7px 22px;
+      font-size: 1em;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #59c7f333;
+      transition: background 0.16s, box-shadow 0.16s;
+      margin-bottom: 12px;
+      margin-left: 0;
+      margin-right: 13px;
+      letter-spacing: 0.02em;
+      user-select: none;
+    }
+    .cloud-quiz-btn:hover {
+      background: linear-gradient(90deg, #23b6ea 0%, #47e4a1 100%);
+      color: #fff;
+    }
+    .cloud-quiz-list {
+      background: #f9fcff;
+      border: 1px solid #b9d3fa;
+      border-radius: 10px;
+      padding: 18px 18px 10px 18px;
+      margin-bottom: 18px;
+      box-shadow: 0 1px 8px #b9d3fa22;
+      font-size: 1.05em;
+      color: #324a78;
+      user-select: none;
+    }
+    .cloud-quiz-list ul {
+      list-style: none;
+      padding-left: 10px;
+      margin: 0 0 8px 0;
+    }
+    .cloud-quiz-list li {
+      margin: 3px 0 3px 0;
+    }
+    .cloud-quiz-list .folder {
+      font-weight: bold;
+      margin-top: 6px;
+      color: #0d2d48;
+    }
+    .cloud-quiz-list .quiz-link {
+      color: #1a4f7a;
+      text-decoration: underline;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font: inherit;
+      padding: 2px 0;
+      margin-left: 7px;
+      transition: color 0.15s;
+	  text-align: left;
+    }
+    .cloud-quiz-list .quiz-link:hover {
+      color: #0e866a;
+      text-decoration: underline;
+      background: #e0f7fa;
+    }
+    input[type="file"] {
+      margin-bottom: 18px;
+      padding: 6px 0;
+      font-size: 1em;
+      border: none;
+      background: transparent;
+    }
+    .options-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 18px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      user-select: none;
+    }
+    .options-bar label {
+      font-size: 1em;
+      background: #f8fafd;
+      border-radius: 8px;
+      padding: 4px 10px 4px 7px;
+      box-shadow: 0 1px 4px #0001;
+      cursor: pointer;
+      transition: background .2s;
+      border: 1px solid #d3e1fa;
+      margin-bottom: 2px;
+      user-select: none;
+    }
+    .options-bar input[type="checkbox"] {
+      margin-right: 6px;
+    }
+    #resetQuizBtn {
+      background: linear-gradient(90deg, #f06d6d 0%, #ffb199 100%);
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      padding: 7px 22px;
+      font-size: 1em;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #f06d6d22;
+      transition: background 0.16s, box-shadow 0.16s;
+      margin-left: 8px;
+      margin-bottom: 2px;
+      user-select: none;
+    }
+    #resetQuizBtn:hover {
+      background: linear-gradient(90deg, #d43a3a 0%, #ff7e5f 100%);
+      box-shadow: 0 4px 18px #f06d6d33;
+    }
+    .question-block {
+      margin-bottom: 35px;
+      border-radius: 12px;
+      border: 1px solid #e8e8f7;
+      background: #f7f8fc;
+      padding: 20px 20px 18px 20px;
+      box-shadow: 0 2px 10px #cbd6f320;
+      transition: box-shadow 0.15s;
+    }
+    .question-block:hover {
+      box-shadow: 0 6px 18px #b3b9e833;
+      border-color: #bacfff;
+    }
+    .question-block strong {
+      color: #4b53b7;
+      font-size: 1.09em;
+      letter-spacing: 0.3px;
+    }
+    .alternatives {
+      margin: 16px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .enunciado {
+      font-size: 1.25em;
+      line-height: 1.4;
+      margin-bottom: 2px;
+      color: #313265;
+    }
+    .alternatives label {
+      display: flex;
+      align-items: flex-start;
+      background: #fff;
+      border-radius: 8px;
+      border: 1px solid #dde2f7;
+      font-size: 1.25em;
+      padding: 7px 10px 7px 0;
+      cursor: pointer;
+      transition: background 0.15s, border 0.15s;
+      min-height: 36px;
+      user-select: text;
+      position: relative;
+      gap: 8px;
+    }
+    .alt-text-content {
+      flex: 1 1 0;
+      display: block;
+      min-width: 0;
+      word-break: break-word;
+    }
+    .alternatives label:hover {
+      background: #e9f3ff;
+      border-color: #adc9ff;
+    }
+    .alternatives input[type="radio"],
+    .alternatives input[type="checkbox"] {
+      accent-color: #6b7cff;
+      margin: 0 13px 0 7px;
+      transform: scale(1.08);
+    }
+    .alt-elim-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 43px;
+      height: 43px;
+      margin-left: 8px;
+      border-radius: 50%;
+      background: #eef2f6;
+      border: 1.5px solid #c6d7ee;
+      color: #444;
+      cursor: pointer;
+      font-size: 1.13em;
+      font-weight: bold;
+      transition: background 0.15s, border 0.15s, color 0.13s;
+      outline: none;
+      user-select: none;
+    }
+    .alt-elim-btn:hover,
+    .alt-elim-btn:focus {
+      background: #e0e8f9;
+      color: #0e866a;
+      border-color: #91b6e6;
+    }
+    .eliminada {
+      color: #b7b7b7 !important;
+      text-decoration: line-through;
+      font-style: italic;
+      opacity: 0.8;
+      transition: color 0.15s, opacity 0.15s;
+    }
+    .feedback {
+      margin-top: 10px;
+      font-weight: 430;
+      min-height: 30px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      padding: 7px 12px 7px 12px;
+      background: #f5f5fc;
+      border: 1px solid #e5e7fb;
+      margin-bottom: 4px;
+    }
+	.feedback neutral{
+	user-select: none;
+	font-weight: 430;
+	}
+	.feedback.correct {
+	  border: 5px solid #228b22; /* Borda verde densa. Ajuste a espessura (3px) conforme necessário */
+	}
+	.feedback.incorrect {
+	  border: 5px solid #d5001a; /* Borda vermelha densa. Ajuste a espessura (3px) conforme necessário */
+	}
+    .feedback.neutral {
+      color: #3a3c50;
+      background: #f4f6ff;
+      border-color: #c2d8f9;
+    }
+    .assertive-feedback {
+      font-size: 1.25em;
+      margin: 2px 0 2px 32px;
+	  padding: 5px 5px 5px 5px;
+    }
+    .assertive-feedback.correct {
+	border: 3px solid #228b22;
+    }
+    .assertive-feedback.incorrect {
+	border: 3px solid #d5001a;
+    }
+    .write-block {
+      margin-top: 18px;
+      margin-bottom: 10px;
+    }
+    .write-block textarea {
+      width: 100%;
+      min-height: 100px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      border: 1px solid #adc9ff;
+      background: #f9faff;
+      padding: 7px 10px;
+      resize: none;
+      margin-bottom: 7px;
+      font-family: inherit;
+      transition: border 0.15s;
+      overflow-y: hidden;
+      box-sizing: border-box;
+      user-select: none;
+    }
+    .write-block textarea:focus {
+      outline: 2px solid #7a9afd;
+      border-color: #7a9afd;
+    }
+    .send-btn {
+      user-select: none;
+      background: linear-gradient(90deg, #7a9afd 0%, #4f79e7 100%);
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      padding: 8px 24px;
+      font-size: 1em;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #adc9ff22;
+      transition: background 0.16s;
+      margin-bottom: 10px;
+      margin-top: 4px;
+      display: inline-block;
+    }
+    .send-btn:hover {
+      background: linear-gradient(90deg, #4f79e7 0%, #7a9afd 100%);
+    }
+    .self-eval-block {
+      margin-top: 6px;
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+      align-items: center;
+      font-size: 1.01em;
+      flex-wrap: wrap;
+    }
+    .self-eval-label {
+      font-weight: 500;
+      color: #445;
+      margin-right: 8px;
+	  user-select: none;
+    }
+    .self-eval-btn {
+      border: 1.5px solid #adc9ff;
+      background: #ecf4fe;
+      color: #4b53b7;
+      border-radius: 5px;
+      font-size: 1.08em;
+      padding: 4px 13px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.14s, border 0.14s, color 0.14s;
+      margin-left: 0;
+      margin-right: 0;
+	  user-select: none;
+    }
+    .self-eval-btn.selected,
+    .self-eval-btn:hover {
+      background: #7a9afd;
+      color: #fff;
+      border-color: #4f79e7;
+    }
+    #submitAll {
+      display: none;
+      user-select: none;
+      margin-top: 10px;
+      background: linear-gradient(90deg, #7a9afd 0%, #4f79e7 100%);
+      color: #fff;
+      border: none;
+      border-radius: 9px;
+      padding: 12px 32px;
+      font-size: 1.12em;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 2px 10px #a8b7ee33;
+      transition: background 0.16s, box-shadow 0.16s;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    #submitAll:hover {
+      background: linear-gradient(90deg, #4f79e7 0%, #7a9afd 100%);
+      box-shadow: 0 4px 18px #7a9afd33;
+    }
+    #score {
+      font-size: 1.18em;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 28px;
+      color: #373853;
+      letter-spacing: 1px;
+      background: #f1f5ff;
+      border-radius: 10px;
+      padding: 16px 0 14px 0;
+      border: 1px solid #d3e1fa;
+      box-shadow: 0 1px 8px #adc9ff22;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      white-space: pre-line;
+    }
+    @media (max-width: 700px) {
+      #container { padding: 16px 2vw 12px 2vw; }
+      .question-block { padding: 12px 3vw 10px 3vw; }
+    }
+    #quiz img {
+      display: block;
+      margin: 16px auto;
+      max-width: 90%;
+      max-height: 70vh;
+      border-radius: 12px;
+      cursor: zoom-in;
+    }
+    #imgModal {
+      display: none;
+      position: fixed;
+      z-index: 10000;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    #imgModal.open {
+      display: flex;
+    }
+    #imgModal img {
+      margin: 10px auto 100px;
+      width: auto;
+      height: auto;
+      max-width: 60%;
+      max-height: 60%;
+      transform: scale(1.5);
+      transform-origin: center center;
+      box-shadow: 0 0 24px #0008;
+    }
+    input[type="file"] {
+      user-select: none;
+    }
+    input[type="file"]::file-selector-button,
+    input[type="file"]::-webkit-file-upload-button {
+      user-select: none;
+    }
+    input[type="file"]::-moz-file-upload-text {
+      user-select: none;
+    }
+    input[type="file"]::-webkit-file-upload-text {
+      user-select: none;
+    }
+    .escrita-item-label {
+      font-size: 1.2em;
+      margin-bottom: 2px;
+      display: block;
+      user-select: text;
+    }
+	#score-table-container {
+	  max-width: 480px;
+	  margin: 36px auto 8px auto;
+	  border-radius: 14px;
+	  background: #f8fbff;
+	  box-shadow: 0 2px 12px #7a9afd18, 0 1px 4px #aac1f933;
+	  border: 1.5px solid #a6c8ff22;
+	  padding: 24px 24px 18px 24px;
+	  text-align: center;
+	}
+	.score-title {
+	  font-size: 1.25em;
+	  font-weight: 600;
+	  color: #2e3d63;
+	  margin-bottom: 7px;
+	  letter-spacing: 0.5px;
+	  user-select: none;
+	}
+	#score-table {
+	  width: 96%;
+	  border-collapse: collapse;
+	  margin: 0 auto 8px auto;
+	  background: none;
+	  font-size: 1.10em;
+	}
+	#score-table th, #score-table td {
+	  padding: 7px 10px;
+	  border: none;
+	}
+	#score-table th {
+	  color: #4661a5;
+	  font-weight: 500;
+	  font-size: 1em;
+	  background: none;
+	}
+	#score-table tr {
+	  border-bottom: 1px solid #dde6fa;
+	}
+	#score-table tr:last-child {
+	  border-bottom: none;
+	}
+	#score-table td {
+	  color: #24324d;
+	  font-size: 1.11em;
+	}
+	.score-type {
+	  font-weight: 500;
+	  color: #384871;
+	  background: none;
+	}
+	.score-note {
+	  font-weight: 600;
+	  color: #247fc5;
+	}
+	.score-detail {
+	  color: #576b95;
+	  font-size: 0.97em;
+	}
+	#score-overall-row td {
+	  font-size: 1.21em;
+	  font-weight: 800;
+	  color: #238969;
+	  background: linear-gradient(90deg,#e7fff4 0%,#d2f8fa 100%);
+	  border-radius: 7px;
+	  border-bottom: none !important;
+	  letter-spacing: 0.5px;
+	  box-shadow: 0 1px 8px #6ee0bc15;
+	}
+	@media (max-width:600px) {
+	  #score-table-container { padding: 14px 3vw 8px 3vw; }
+	  #score-table { font-size: 1em; }
+	  #score-overall-row td { font-size: 1.09em;}
+	}
+	/* --- Linhas de Conexão em Árvore --- */
+
+	/* Ajusta as listas aninhadas para dar espaço às linhas */
+	.cloud-quiz-list .folder > ul {
+	  position: relative;
+	  padding-left: 25px; /* Espaço à esquerda para as linhas */
+	  margin-left: 5px;
+	}
+
+	/* Desenha a linha VERTICAL principal que desce da pasta */
+	.cloud-quiz-list .folder > ul::before {
+	  content: '';
+	  position: absolute;
+	  left: 0;
+	  top: -6px; /* Ajuste para conectar na pasta-pai */
+	  width: 1px;
+	  height: 100%;
+	  background: #c6d7ee; /* Cor suave para a linha */
+	}
+
+	/* Prepara cada item da lista para receber sua linha de conexão */
+	.cloud-quiz-list .folder > ul > li {
+	  position: relative;
+	}
+
+	/* Desenha a linha HORIZONTAL (o "traço" do "├") para cada item */
+	.cloud-quiz-list .folder > ul > li::before {
+	  content: '';
+	  position: absolute;
+	  left: -25px; /* Puxa a linha para a área do padding */
+	  top: 16px;   /* Alinhamento vertical da linha. Ajuste se necessário */
+	  width: 25px;
+	  height: 1px;
+	  background: #c6d7ee;
+	}
+
+	/* Truque para o ÚLTIMO item da lista: apaga a linha vertical para criar o "└" */
+	.cloud-quiz-list .folder > ul > li:last-child::after {
+	  content: '';
+	  position: absolute;
+	  left: 0px;
+	  top: 17px; /* Posição para começar a "apagar" */
+	  width: 1px;
+	  height: 100%;
+	  background: #f9fcff; /* Cor de fundo da lista, para "esconder" a linha vertical */
+	}
+	/* --- Ajuste Fino de Alinhamento para Subpastas --- */
+
+	/* Move a linha de conexão para CIMA quando o item é uma SUBPASTA */
+	.cloud-quiz-list .folder > ul > li.folder::before {
+	  top: 12px; /* Valor menor para alinhar ao centro do texto da pasta */
+	}
+
+	/* Ajusta o "corte" da linha para o caso de o ÚLTIMO item ser também uma SUBPASTA */
+	.cloud-quiz-list .folder > ul > li.folder:last-child::after {
+	  top: 13px; /* Posição correspondente para iniciar o "corte" */
+	}
+  /* Adicione estas regras ao seu CSS existente */
+
+	.folder.collapsed > ul {
+	  display: none;
+	}
+	.folder.collapsed > ul::before, /* Esconde a linha vertical principal da pasta recolhida */
+	.folder.collapsed > ul > li::before { /* Esconde as linhas horizontais dos itens */
+		display: none;
+	}
+
+	.folder-name {
+	  cursor: pointer;
+	  font-weight: bold;
+	  padding: 4px 2px;
+	  display: inline-block; /* Permite que o padding funcione corretamente */
+	  transition: background-color 0.15s;
+	  border-radius: 4px;
+	}
+	.folder-name:hover {
+	  background-color: #e9f3ff;
+	}
+	/* --- ESTILOS PARA A CAIXA DE INFORMAÇÕES DO QUIZ --- */
+	#infoContainer {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 12px; /* Espaço entre múltiplas caixas de info (no modo mesclado) */
+	  margin-bottom: 24px;
+	}
+
+	.info-wrapper {
+	  background: #fdfdff;
+	  border: 1px solid #d3dff3;
+	  border-radius: 12px;
+	  box-shadow: 0 4px 16px #c4d2e733;
+	  overflow: hidden; /* Garante que o border-radius funcione */
+	}
+
+	.info-toggle {
+	  padding: 10px 16px;
+	  font-size: 1.1em;
+	  font-weight: 600;
+	  color: #3e5081;
+	  background: linear-gradient(180deg, #f7f9ff 0%, #edf2fa 100%);
+	  cursor: pointer;
+	  user-select: none;
+	  transition: background 0.2s;
+	  border-bottom: 1px solid #d3dff3;
+	}
+
+	.info-toggle:hover {
+	  background: linear-gradient(180deg, #ffffff 0%, #eef3fc 100%);
+	  color: #2c3a5e;
+	}
+
+	.info-toggle .info-quiz-name {
+	  color: #5a76c8; /* Cor ligeiramente diferente para o nome do quiz */
+	  font-weight: 700;
+	}
+
+	.info-content {
+	  padding: 14px 18px;
+	  font-size: 1.05em;
+	  line-height: 1.6;
+	  color: #333;
+	  background: #fff;
+	  white-space: pre-wrap; /* Preserva espaços e quebras de linha */
+	  transition: all 0.3s ease-in-out;
+	}
+
+	/* Classe para ocultar o conteúdo */
+	.info-content.hidden {
+	  display: none;
+	}
+	/* --- ESTILOS PARA A JANELA MODAL DE TAGS --- */
+	#tagModal {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100vw;
+	  height: 100vh;
+	  z-index: 10001; /* Acima de tudo, até do modal de imagem */
+	  display: none; /* Controlado por JS */
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	#tagModalOverlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(0,0,0,0.6);
+	  backdrop-filter: blur(4px);
+	}
+
+	#tagModalContent {
+	  position: relative;
+	  background: #fff;
+	  padding: 24px 28px;
+	  border-radius: 16px;
+	  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+	  max-width: 500px;
+	  width: 90%;
+	  z-index: 10002;
+	  border: 1px solid #e0e8ff;
+	  max-height: 80vh;
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	#tagModalContent h2 {
+	  margin-top: 0;
+	  color: #373853;
+	  text-align: center;
+	}
+	#tagModalContent p {
+	  text-align: center;
+	  margin-top: -10px;
+	  margin-bottom: 20px;
+	  color: #555;
+	  font-size: 0.95em;
+	}
+
+	#tagList {
+	  overflow-y: auto;
+	  border-top: 1px solid #eee;
+	  border-bottom: 1px solid #eee;
+	  padding: 10px 5px;
+	  margin-bottom: 20px;
+	  flex-grow: 1; /* Permite que a lista cresça */
+	}
+
+	#tagList label {
+	  display: flex;
+	  align-items: center;
+	  padding: 8px 10px;
+	  font-size: 1.1em;
+	  border-radius: 8px;
+	  cursor: pointer;
+	  transition: background-color 0.15s;
+	}
+	#tagList label:hover {
+	  background-color: #f0f5ff;
+	}
+
+	#tagList input[type="checkbox"] {
+	  transform: scale(1.2);
+	  margin-right: 12px;
+	}
+
+	#tagList .tag-count {
+	  margin-left: auto;
+	  font-size: 0.9em;
+	  color: #667;
+	  background-color: #eef2f9;
+	  padding: 2px 8px;
+	  border-radius: 10px;
+	}
+
+	#tagModalActions {
+	  display: flex;
+	  justify-content: flex-end;
+	  gap: 15px;
+	}
+	/* --- ESTILOS PARA AS TAGS FILTRADAS EXIBIDAS --- */
+	#filteredTagsDisplay {
+		text-align: center;
+		margin: -10px 0 20px 0; /* Margem para ficar mais próximo do título */
+		padding: 5px;
+	}
+
+	.displayed-tag {
+		display: inline-block;
+		background-color: #eef2ff; /* Fundo especial azul claro */
+		color: #4a5a9b;             /* Cor especial azul/lilás escuro */
+		padding: 4px 12px;
+		border-radius: 14px;        /* Bordas arredondadas (formato de pílula) */
+		font-size: 0.9em;           /* Fonte um pouco menor */
+		font-weight: 500;
+		margin: 3px 5px;            /* Espaçamento entre as tags */
+		border: 1px solid #d4dff1;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+	}
+	/* --- ESTILOS PARA A JANELA MODAL DE DIFICULDADE --- */
+#difficultyModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10003; /* Acima do modal de tags */
+    display: none; 
+    justify-content: center;
+    align-items: center;
+}
+
+#difficultyModalOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(5px);
+}
+
+#difficultyModalContent {
+    position: relative;
+    background: #fff;
+    padding: 24px 28px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 90%;
+    z-index: 10004;
+    border: 1px solid #e0e8ff;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+	#difficultyModalContent h2 {
+		margin-top: 0;
+		color: #373853;
+		text-align: center;
+	}
+	#difficultyModalContent p {
+		text-align: center;
+		margin-top: -10px;
+		margin-bottom: 20px;
+		color: #555;
+		font-size: 0.95em;
+	}
+
+	#difficultyList {
+		overflow-y: auto;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		padding: 10px 5px;
+		margin-bottom: 20px;
+		flex-grow: 1;
+	}
+
+	#difficultyList label {
+		display: flex;
+		align-items: center;
+		padding: 8px 10px;
+		font-size: 1.1em;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: background-color 0.15s;
+	}
+	#difficultyList label:hover {
+		background-color: #f0f5ff;
+	}
+
+	#difficultyList input[type="checkbox"] {
+		transform: scale(1.2);
+		margin-right: 12px;
+	}
+
+	#difficultyList .tag-count { /* Reutilizando a classe .tag-count */
+		margin-left: auto;
+		font-size: 0.9em;
+		color: #667;
+		background-color: #eef2f9;
+		padding: 2px 8px;
+		border-radius: 10px;
+	}
+
+	#difficultyModalActions {
+		display: flex;
+		justify-content: flex-end;
+		gap: 15px;
+	}
+    .displayed-difficulty {
+    display: inline-block;
+    background-color: #e8f5e9; /* Fundo especial verde claro */
+    color: #2e7d32;             /* Cor especial verde escuro */
+    padding: 4px 12px;
+    border-radius: 14px;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 3px 5px;
+    border: 1px solid #c8e6c9;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+  </style>
+</head>
+<body>
+<div id="container">
+  <h1>Questões do Terceiro Período</h1>
+  <div class="tutorial">
+    <strong>Como usar:</strong><br>
+    1. Importe o arquivo <strong>TXT</strong> contendo o quiz ou escolha um dos Quizes da Nuvem abaixo.<br>
+    2. Por padrão, as opções <strong>aleatorizar questões</strong> e <strong>aleatorizar alternativas</strong> já estão marcadas.<br>
+    3. Se preferir, <u>desmarque</u> essas opções para responder ao quiz na ordem original.<br>
+    4. Clique em <b>Resetar Quiz</b> para reiniciar seu progresso com o quiz atual.<br>
+    5. <b>Dica:</b> Nas questões de múltipla escolha e de checkbox, utilize o botão <span style="border-radius:50%;border:1.5px solid #c6d7ee;background:#eef2f6;padding:2px 5px;">✂️</span> ao lado de cada alternativa para "eliminar" opções que você não quer marcar.<br>
+    6. <b>Mesclar quiz:</b> Após clicar em "quizes da nuvem", você pode opcionalmente clicar em "mesclar quiz" para criar um quiz customizável que junta todas as questões dos quizes que você selecionar.<br><br>
+	<em>O quiz pode conter questões de múltipla escolha, V ou F (inclusive com variantes), checkbox e questões abertas (escrita).</em>
+  </div>
+  <div id="imgModal" onclick="closeImageModal()">
+    <img id="imgModalImg" src="" alt="Clique para fechar">
+  </div>
+  <button class="cloud-quiz-btn" type="button" id="cloudQuizBtn">Quizes da Nuvem</button>
+  <div id="cloudQuizList" class="cloud-quiz-list" style="display:none"></div>
+  <input type="file" id="fileInput" accept=".txt" />
+  <div class="options-bar">
+    <label><input type="checkbox" id="shuffleQuestions" checked> Aleatorizar questões</label>
+    <label><input type="checkbox" id="shuffleAlternatives" checked> Aleatorizar alternativas (apenas múltipla escolha e checkbox)</label>
+    <button id="resetQuizBtn" type="button">Resetar Quiz</button>
+  </div>
+  <div id="infoContainer"></div><br>
+  <div id="quizTitle" style="text-align:center; font-size:1.5em; font-weight:600; color:#305;"></div><br>
+  <div id="filteredTagsDisplay"></div>
+  <div id="quiz"></div>
+  <button id="submitAll">Enviar Todas as Respostas/Ver Nota Final</button>
+  <div id="score"></div>
+  <div id="tagModal" style="display: none;">
+  <div id="tagModalOverlay"></div>
+  <div id="tagModalContent">
+    <h2>Tags encontradas neste quiz</h2>
+    <p>Selecione as tags que deseja incluir. Desmarcar todas irá gerar um quiz vazio.</p>
+    <div id="tagList">
+      </div>
+    <div id="tagModalActions">
+      <button id="cancelTagSelectionBtn" class="cloud-quiz-btn" style="background: linear-gradient(90deg, #f09a6d 0%, #ffc699 100%);">Cancelar</button>
+      <button id="createTaggedQuizBtn" class="cloud-quiz-btn" style="background: linear-gradient(90deg, #6d84f0 0%, #99aaff 100%);">Criar Quiz com Tags</button>
+    </div>
+  </div>
+</div>
+<div id="difficultyModal" style="display: none;">
+    <div id="difficultyModalOverlay"></div>
+    <div id="difficultyModalContent">
+        <h2>Filtro de Dificuldade</h2>
+        <p>Selecione os níveis de dificuldade que deseja incluir.</p>
+        <div id="difficultyList">
+            </div>
+        <div id="difficultyModalActions">
+            <button id="cancelDifficultySelectionBtn" class="cloud-quiz-btn" style="background: linear-gradient(90deg, #f09a6d 0%, #ffc699 100%);">Cancelar</button>
+            <button id="createDifficultyQuizBtn" class="cloud-quiz-btn" style="background: linear-gradient(90deg, #6d84f0 0%, #99aaff 100%);">Criar Quiz com Dificuldades</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+/* -------------------------  VARIÁVEIS GLOBAIS  ------------------------- */
+let cloudQuizData = null;
+let shuffleQuestionsLocked = false;
+let currentQuizTitle = "";
+let isMergeMode = false;
+let selectedForMerge = [];
+let currentlyDisplayedTags = [];
+let currentlyDisplayedDifficulties = [];
+const DIFFICULTY_MAP = {
+    '1': 'Muito Fácil', '2': 'Fácil', '3': 'Médio', '4': 'Difícil', '5': 'Muito Difícil',
+    'no_difficulty': 'Sem dificuldade registrada'
+};
+
+// NOVO: Variável de estado para o processo de filtro de dificuldade
+let difficultyFilterProcess = {
+    isActive: false,
+    rawText: '', // Texto APÓS o filtro de tags
+    quizTitle: '',
+    headers: ''
+};
+
+// NOVO: Funções para analisar e filtrar por dificuldade
+// SUBSTITUA PELA NOVA VERSÃO
+function analyzeTextForDifficulty(text) {
+    const counts = { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0, 'no_difficulty': 0 };
+    let textWithDifficultyTags = '';
+    const difficultyRegex = /<dificuldade=(\d)>([\s\S]*?)<\/dificuldade=\1>/g;
+    const qRegex = /(^Q:|^QCH:)/gm;
+    let match;
+
+    while ((match = difficultyRegex.exec(text)) !== null) {
+        const difficultyLevel = match[1];
+        const blockContent = match[2];
+        textWithDifficultyTags += match[0] + '\n';
+        const questionsInBlock = blockContent.match(qRegex);
+        if (questionsInBlock) {
+            counts[difficultyLevel] = (counts[difficultyLevel] || 0) + questionsInBlock.length;
+        }
+    }
+
+    const untaggedContent = text.replace(difficultyRegex, '').trim();
+    const untaggedQuestions = untaggedContent.match(qRegex);
+    if (untaggedQuestions) {
+        counts.no_difficulty = untaggedQuestions.length;
+    }
+
+    // ALTERAÇÃO: A verificação agora é mais específica.
+    // Só retorna 'true' se houver ao menos uma questão nos níveis 1 a 5.
+    const hasNumberedDifficulty = (counts['1'] + counts['2'] + counts['3'] + counts['4'] + counts['5']) > 0;
+    
+    return { counts, hasNumberedDifficulty }; // Retorna a nova variável booleana
+}
+
+function filterQuizByDifficulty(text, selectedDifficulties) {
+    let finalContent = [];
+    const addedContent = new Set();
+    const difficultyRegex = /<dificuldade=(\d)>([\s\S]*?)<\/dificuldade=\1>/g;
+
+    if (selectedDifficulties.includes("no_difficulty")) {
+        const untaggedContent = text.replace(difficultyRegex, '').trim();
+        if (untaggedContent && !addedContent.has(untaggedContent)) {
+            finalContent.push(untaggedContent);
+            addedContent.add(untaggedContent);
+        }
+    }
+    
+    selectedDifficulties.forEach(level => {
+        if (level === "no_difficulty") return;
+        const levelRegex = new RegExp(`<dificuldade=${level}>([\\s\\S]*?)</dificuldade=${level}>`, 'g');
+        let match;
+        while ((match = levelRegex.exec(text)) !== null) {
+            const blockContent = match[1].trim();
+            if (blockContent && !addedContent.has(blockContent)) {
+                finalContent.push(blockContent);
+                addedContent.add(blockContent);
+            }
+        }
+    });
+
+    return finalContent.join('\n\n---\n\n');
+}
+
+// NOVO: Funções para controlar o modal de dificuldade
+function hideDifficultyModal() {
+    document.getElementById('difficultyModal').style.display = 'none';
+    difficultyFilterProcess.isActive = false;
+}
+
+function showDifficultyModal(difficultyData, text, title, headers) {
+    difficultyFilterProcess = { isActive: true, rawText: text, quizTitle: title, headers: headers };
+    
+    const modal = document.getElementById('difficultyModal');
+    const listDiv = document.getElementById('difficultyList');
+    listDiv.innerHTML = ''; 
+
+    // ALTERAÇÃO: Não precisa mais de um mapa local, usa a constante global DIFFICULTY_MAP
+    Object.keys(DIFFICULTY_MAP).forEach(level => {
+        if (difficultyData[level] > 0) {
+            const label = document.createElement('label');
+            const countText = difficultyData[level] === 1 ? '1 questão' : `${difficultyData[level]} questões`;
+            label.innerHTML = `
+                <input type="checkbox" class="difficulty-checkbox" value="${level}" checked>
+                <span>${DIFFICULTY_MAP[level]}</span>
+                <span class="tag-count">${countText}</span>`;
+            listDiv.appendChild(label);
+        }
+    });
+    modal.style.display = 'flex';
+}
+
+// NOVO: Listeners para os botões do novo modal
+document.getElementById('cancelDifficultySelectionBtn').addEventListener('click', hideDifficultyModal);
+
+document.getElementById('createDifficultyQuizBtn').addEventListener('click', () => {
+    if (!difficultyFilterProcess.isActive) return;
+
+    const checkboxes = document.querySelectorAll('#difficultyList .difficulty-checkbox');
+    const selectedDifficulties = Array.from(checkboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
+    
+    // ADIÇÃO: Guarda as dificuldades selecionadas para serem exibidas.
+    currentlyDisplayedDifficulties = selectedDifficulties;
+    
+    if (selectedDifficulties.length === checkboxes.length) {
+        currentQuizTitle = difficultyFilterProcess.quizTitle;
+        processQuizText(difficultyFilterProcess.headers + difficultyFilterProcess.rawText);
+        hideDifficultyModal();
+        return;
+    }
+
+    const filteredContent = filterQuizByDifficulty(difficultyFilterProcess.rawText, selectedDifficulties);
+    currentQuizTitle = difficultyFilterProcess.quizTitle; // O título já contém "(Filtro Ativo)" da etapa anterior se necessário
+    
+    processQuizText(difficultyFilterProcess.headers + filteredContent);
+    hideDifficultyModal();
+});
+
+function renderQuizTitle() {
+  document.getElementById('quizTitle').innerHTML = currentQuizTitle ? currentQuizTitle : "";
+}
+
+// SUBSTITUIÇÃO: A função agora renderiza ambos os tipos de filtros
+function renderActiveFilters() {
+    const container = document.getElementById('filteredTagsDisplay');
+    if (!container) return;
+
+    container.innerHTML = ''; 
+    let html = '';
+
+    // Renderiza as Tags primeiro
+    if (currentlyDisplayedTags && currentlyDisplayedTags.length > 0) {
+        html += currentlyDisplayedTags.map(tag => `<span class="displayed-tag">${tag}</span>`).join('');
+    }
+
+    // NOVA LÓGICA: Se ambos os tipos de filtros (tags e dificuldades) estiverem presentes,
+    // adiciona uma quebra de linha para separá-los.
+    if (currentlyDisplayedTags && currentlyDisplayedTags.length > 0 &&
+        currentlyDisplayedDifficulties && currentlyDisplayedDifficulties.length > 0) {
+        html += '<br>';
+    }
+
+    // Renderiza as Dificuldades em seguida
+    if (currentlyDisplayedDifficulties && currentlyDisplayedDifficulties.length > 0) {
+        html += currentlyDisplayedDifficulties.map(level => {
+            const levelName = DIFFICULTY_MAP[level] || 'Desconhecida';
+            return `<span class="displayed-difficulty">${levelName}</span>`;
+        }).join('');
+    }
+    
+    container.innerHTML = html;
+}
+
+
+fetch('quizes.json?v=' + Date.now())
+  .then((response) => response.json())
+  .then((data) => { cloudQuizData = data; })
+  .catch((err) => console.error('Erro ao carregar quizes.json:', err));
+
+/* ----------  NOVO  ----------  seleções dos variantes escolhidos */
+let variantSelections = [];   // índices escolhidos para cada questão do tipo vf‑variante
+
+
+/* ------------------- ANALISADOR E RENDERIZADOR DO CAMPO INFO ------------------ */
+
+/**
+ * Analisa o texto de um quiz para extrair o conteúdo de INFO:
+ * @param {string} text O conteúdo completo do arquivo .txt
+ * @returns {{info: string|null, remainingText: string}} Objeto com a info e o resto do texto.
+ */
+function parseInfo(text) {
+  // Regex para encontrar "INFO:" no início de uma linha até a próxima linha em branco ou
+  // o início de uma questão (Q:, QCH:, <variantes>, <juntas>, ---).
+  // Isso evita que ele capture o arquivo inteiro caso não haja questões.
+  const infoRegex = /^INFO:\s*([\s\S]+?)(?=\n\s*\n|^-{3,}$|^Q:|^QCH:|^<variantes>|^<juntas>)/m;
+  const match = text.match(infoRegex);
+
+  if (match) {
+    const info = match[1].trim();
+    // Retorna a info e o texto do quiz SEM a parte da info.
+    const remainingText = text.replace(infoRegex, '').trim();
+    return { info, remainingText };
+  }
+
+  // Se não encontrar, retorna null para info e o texto original intacto.
+  return { info: null, remainingText: text };
+}
+
+/**
+ * Renderiza uma ou mais caixas de informação no container #infoContainer.
+ * @param {Array<{name: string, info: string}>} infosArray Array de objetos, cada um com o nome do quiz e o conteúdo da info.
+ */
+function renderInfos(infosArray) {
+    const container = document.getElementById('infoContainer');
+    if (!container) return;
+
+    container.innerHTML = '';
+    if (!infosArray || infosArray.length === 0) {
+        return;
+    }
+
+    let finalHtml = '';
+    infosArray.forEach((item, index) => {
+        if (item.info) {
+            // NOVO: Aplica a função de conversão de imagem ao conteúdo da INFO
+            const formattedInfo = autoEmbedImages(item.info);
+
+            finalHtml += `
+                <div class="info-wrapper">
+                    <div class="info-toggle" data-target="info-content-${index}">
+                        INFORMAÇÕES do quiz (<span class="info-quiz-name">${item.name}</span>)
+                    </div>
+                    <div class="info-content" id="info-content-${index}">
+                        ${formattedInfo} 
+                    </div>
+                </div>
+            `;
+        }
+    });
+
+    container.innerHTML = finalHtml;
+}
+
+// Adiciona um único listener de eventos ao contêiner para gerenciar todos os toggles.
+document.getElementById('infoContainer').addEventListener('click', function(e) {
+  // Verifica se o clique foi em um elemento .info-toggle ou em um filho dele
+  const toggle = e.target.closest('.info-toggle');
+  if (toggle) {
+    const targetId = toggle.getAttribute('data-target');
+    const content = document.getElementById(targetId);
+    if (content) {
+      content.classList.toggle('hidden');
+    }
+  }
+});
+
+/* ------------------- LÓGICA DE FILTRAGEM POR TAGS ------------------ */
+
+// Guarda o estado para o processo de filtragem
+let tagFilterProcess = {
+  isActive: false,
+  rawText: '',
+  quizTitle: '',
+  headers: ''
+};
+
+function hideTagModal() {
+  const modal = document.getElementById('tagModal');
+  modal.style.display = 'none';
+  tagFilterProcess.isActive = false;
+}
+
+function showTagModal(tagData, rawText, title, headers) {
+  tagFilterProcess = {
+    isActive: true,
+    rawText: rawText,
+    quizTitle: title,
+    headers: headers
+  };
+
+  const modal = document.getElementById('tagModal');
+  const tagListDiv = document.getElementById('tagList');
+  tagListDiv.innerHTML = ''; // Limpa lista anterior
+
+  // Popula a lista com as tags encontradas
+  for (const tagName in tagData) {
+    if (tagData[tagName].count > 0) {
+      const label = document.createElement('label');
+      const countText = tagData[tagName].count === 1 ? '1 questão' : `${tagData[tagName].count} questões`;
+      label.innerHTML = `
+        <input type="checkbox" class="tag-checkbox" value="${tagName}" checked>
+        <span>${tagName}</span>
+        <span class="tag-count">${countText}</span>
+      `;
+      tagListDiv.appendChild(label);
+    }
+  }
+  modal.style.display = 'flex';
+}
+
+// Listeners dos botões do modal (adicionados uma vez)
+document.getElementById('cancelTagSelectionBtn').addEventListener('click', hideTagModal);
+
+// SUBSTITUIÇÃO: O botão de tags agora chama a verificação de dificuldade
+document.getElementById('createTaggedQuizBtn').addEventListener('click', () => {
+    if (!tagFilterProcess.isActive) return;
+
+    const checkboxes = document.querySelectorAll('#tagList .tag-checkbox');
+    const selectedTags = Array.from(checkboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
+
+    // Se tudo estiver selecionado, não filtra por tags
+    if (selectedTags.length === checkboxes.length) {
+        currentlyDisplayedTags = [];
+        hideTagModal();
+        runDifficultyCheck(tagFilterProcess.rawText, tagFilterProcess.quizTitle, tagFilterProcess.headers);
+        return;
+    }
+    
+    // Filtra por tags
+    const filteredContent = filterQuizByTags(tagFilterProcess.rawText, selectedTags);
+    const newTitle = tagFilterProcess.quizTitle;
+    currentlyDisplayedTags = selectedTags.filter(tag => tag !== "Questões sem tag"); 
+    
+    hideTagModal();
+    // Em vez de renderizar, chama a próxima etapa: verificação de dificuldade
+    runDifficultyCheck(filteredContent, newTitle, tagFilterProcess.headers);
+});
+
+
+/**
+ * Filtra o conteúdo do quiz com base nas tags selecionadas.
+ */
+function filterQuizByTags(text, selectedTags) {
+  let finalContent = [];
+  const addedContent = new Set(); // Para evitar duplicatas de questões
+
+  // 1. Lida com a tag especial "Questões sem tag"
+  if (selectedTags.includes("Questões sem tag")) {
+    const allDeclaredTagsRegex = /<tag=.+?>[\s\S]*?<\/tag=.+?>/g;
+    const untaggedContent = text.replace(allDeclaredTagsRegex, '').trim();
+    if (untaggedContent && !addedContent.has(untaggedContent)) {
+      finalContent.push(untaggedContent);
+      addedContent.add(untaggedContent);
+    }
+  }
+
+  // 2. Lida com as tags nominais
+  selectedTags.forEach(tag => {
+    if (tag === "Questões sem tag") return;
+    
+    // Regex para encontrar todos os blocos da tag atual
+    const tagRegex = new RegExp(`<tag=${escapeRegex(tag)}>([\\s\\S]*?)</tag=${escapeRegex(tag)}>`, 'g');
+    let match;
+    while ((match = tagRegex.exec(text)) !== null) {
+      const blockContent = match[1].trim();
+      if (blockContent && !addedContent.has(blockContent)) {
+        finalContent.push(blockContent);
+        addedContent.add(blockContent);
+      }
+    }
+  });
+
+  return finalContent.join('\n\n---\n\n');
+}
+
+/**
+ * Função principal que inicia o processo: verifica se há tags e mostra o modal ou continua.
+ */
+// NOVO: Função que inicia a verificação de dificuldade
+function runDifficultyCheck(textToCheck, title, headers) {
+    // ALTERAÇÃO: Usa a nova variável 'hasNumberedDifficulty' retornada pela análise.
+    const { counts, hasNumberedDifficulty } = analyzeTextForDifficulty(textToCheck);
+
+    // Se não há questões com dificuldade numerada, o processo acaba. Renderiza o quiz.
+    if (!hasNumberedDifficulty) {
+        currentQuizTitle = title;
+        processQuizText(headers + textToCheck);
+    } else {
+        // Se há dificuldades numeradas, mostra o novo modal.
+        showDifficultyModal(counts, textToCheck, title, headers);
+    }
+}
+
+// SUBSTITUIÇÃO
+function initiateFilteringProcess(rawText, title) {
+    // ADIÇÃO: Limpa o estado de exibição de filtros antigos no início de qualquer processo.
+    currentlyDisplayedTags = [];
+    currentlyDisplayedDifficulties = [];
+
+    const tagDeclarationRegex = /^TAGS:\s*(.*)$/m;
+    const infoRegex = /^INFO:\s*([\s\S]+?)(?=\n\s*\n|^-{3,}$|^Q:|^QCH:)/m;
+    const qRandomRegex = /^q-random:\s*false;?/im;
+    const tagsMatch = rawText.match(tagDeclarationRegex);
+    const infoMatch = rawText.match(infoRegex);
+    const qRandomMatch = rawText.match(qRandomRegex);
+    let headers = '';
+    if (infoMatch) headers += infoMatch[0] + '\n\n';
+    if (qRandomMatch) headers += qRandomMatch[0] + '\n\n';
+    let contentOnly = rawText.replace(infoRegex, '').replace(qRandomRegex, '').trim();
+    if (!tagsMatch) {
+        runDifficultyCheck(contentOnly, title, headers);
+        return;
+    }
+    headers += tagsMatch[0] + '\n\n';
+    contentOnly = contentOnly.replace(tagDeclarationRegex, '').trim();
+    const declaredTags = tagsMatch[1].split(';').map(t => t.trim()).filter(Boolean);
+    const tagData = {};
+    declaredTags.forEach(tag => {
+        const tagRegex = new RegExp(`<tag=${escapeRegex(tag)}>([\\s\\S]*?)</tag=${escapeRegex(tag)}>`, 'g');
+        const qRegex = /(^Q:|^QCH:)/gm;
+        let questionCount = 0;
+        let match;
+        while ((match = tagRegex.exec(contentOnly)) !== null) {
+            const questionsInBlock = match[1].match(qRegex);
+            if (questionsInBlock) { questionCount += questionsInBlock.length; }
+        }
+        tagData[tag] = { count: questionCount };
+    });
+    const allTagsRegex = /<tag=.+?>[\s\S]*?<\/tag=.+?>/g;
+    const untaggedContent = contentOnly.replace(allTagsRegex, '');
+    const untaggedQuestions = untaggedContent.match(/(^Q:|^QCH:)/gm);
+    tagData["Questões sem tag"] = { count: untaggedQuestions ? untaggedQuestions.length : 0 };
+    showTagModal(tagData, contentOnly, title, headers);
+}
+
+// Função utilitária para escapar caracteres especiais para uso em Regex
+function escapeRegex(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+
+/* ------------------  RENDERIZA LISTA DE QUIZ NA NUVEM  ----------------- */
+function renderCloudQuizList(tree) {
+  function removeExtension(name) {
+    return name.replace(/\.txt$/i, "");
+  }
+  function renderNode(node) {
+    if (node.type === 'file') {
+      if (isMergeMode) {
+        return `<li>
+                  <label style="cursor:pointer; display:flex; align-items:center; padding: 4px 0;">
+                    <input type="checkbox" class="merge-checkbox" 
+                           data-path="${node.path}" 
+                           data-name="${removeExtension(node.name)}" 
+                           style="margin-right: 8px; transform: scale(1.1);">
+                    <span class="alt-text-content">${removeExtension(node.name)}</span>
+                  </label>
+                </li>`;
+      } else {
+        return `<li><button class="quiz-link" data-path="${node.path}">${removeExtension(node.name)}</button></li>`;
+      }
+    } else if (node.type === 'folder') {
+      // --- ALTERAÇÕES AQUI ---
+      // 1. Adiciona a classe "collapsed" por padrão.
+      // 2. Envolve o nome da pasta em um <span class="folder-name"> para ser clicável.
+      return `<li class="folder collapsed">
+                <span class="folder-name">${node.name}</span>
+                <ul>${node.children.map(renderNode).join("")}</ul>
+              </li>`;
+    }
+    return "";
+  }
+  return `<ul>${tree.map(renderNode).join("")}</ul>`;
+}
+const cloudQuizBtn   = document.getElementById('cloudQuizBtn');
+const cloudQuizListDiv = document.getElementById('cloudQuizList');
+// INÍCIO DO BLOCO COM A CORREÇÃO DE INDENTAÇÃO
+// INÍCIO DO BLOCO FINAL E CORRIGIDO
+cloudQuizBtn.addEventListener('click', () => {
+  if (cloudQuizListDiv.style.display === 'none') {
+    if (!document.getElementById('merge-controls')) {
+      const controlsDiv = document.createElement('div');
+      controlsDiv.id = 'merge-controls';
+      controlsDiv.style.paddingBottom = '15px';
+      controlsDiv.style.borderBottom = '1px solid #dde6fa';
+      controlsDiv.style.marginBottom = '10px';
+      controlsDiv.innerHTML = `<button id="toggleMergeModeBtn" class="cloud-quiz-btn">Mesclar Quizes</button>
+<button id="createMergedQuizBtn" class="cloud-quiz-btn" style="display:none; background: linear-gradient(90deg, #6d84f0 0%, #99aaff 100%);">Criar Quiz Mesclado</button>
+<div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #eef2f6; text-align: left;">
+<label style="cursor:pointer; font-size: 0.95em; color: #324a78; user-select: none; display: flex; align-items: center;">
+<input type="checkbox" id="expandAllFoldersCb" style="margin-right: 5px; vertical-align: middle;">
+<span>Expandir todas as pastas</span>
+</label>
+</div>`;
+      cloudQuizListDiv.prepend(controlsDiv);
+
+document.getElementById('toggleMergeModeBtn').addEventListener('click', (e) => {
+    isMergeMode = !isMergeMode;
+    selectedForMerge = [];
+
+    // ADIÇÃO: Garante que o checkbox de expandir pastas seja desmarcado
+    // ao entrar ou sair do modo de mesclagem, forçando as pastas a ficarem recolhidas.
+    document.getElementById('expandAllFoldersCb').checked = false;
+    
+    e.target.textContent = isMergeMode ? 'Cancelar Mesclagem' : 'Mesclar Quizes';
+    e.target.style.background = isMergeMode ? 'linear-gradient(90deg, #f09a6d 0%, #ffc699 100%)' : '';
+    document.getElementById('createMergedQuizBtn').style.display = 'none';
+    
+    if (cloudQuizData) {
+        // A função renderCloudQuizList já recolhe as pastas por padrão ao redesenhar a lista
+        const listContainer = cloudQuizListDiv.querySelector('ul');
+        if(listContainer) listContainer.outerHTML = renderCloudQuizList(cloudQuizData);
+    }
+});
+
+    document.getElementById('createMergedQuizBtn').addEventListener('click', async () => {
+    if (selectedForMerge.length < 2) return;
+    const btn = document.getElementById('createMergedQuizBtn');
+    btn.textContent = 'Carregando...';
+    btn.disabled = true;
+
+    // FIX 3: Título detalhado é criado e usado até o final.
+    const originalMergedTitle = `Quiz mesclado:<br><br><div style="font-size:0.8em; font-weight:500;">${selectedForMerge.map(q => q.name).join('<br>+<br>')}</div>`;
+
+    try {
+        const fetchPromises = selectedForMerge.map(quiz => fetch(quiz.path).then(res => res.text()));
+        const allRawTexts = await Promise.all(fetchPromises);
+        
+        const infosToRender = [];
+        const allQuestionTexts = [];
+        const allTags = new Set();
+
+        // FIX 1 & 2: Processa cada arquivo individualmente ANTES de juntar
+        allRawTexts.forEach((text, index) => {
+            const quizName = selectedForMerge[index].name;
+            
+            // Usa a função parseInfo() existente para extrair a INFO
+            const { info, remainingText } = parseInfo(text);
+            if (info) {
+                infosToRender.push({ name: quizName, info });
+            }
+
+            // Extrai as TAGS do resto do texto
+            const tagDeclarationRegex = /^TAGS:\s*(.*)$/m;
+            const tagsMatch = remainingText.match(tagDeclarationRegex);
+            let contentOnly = remainingText;
+
+            if (tagsMatch) {
+                const tags = tagsMatch[1].split(';').map(t => t.trim()).filter(Boolean);
+                tags.forEach(tag => allTags.add(tag));
+                // Remove a declaração de tags para ter só o conteúdo do quiz
+                contentOnly = remainingText.replace(tagDeclarationRegex, '').trim();
+            }
+            allQuestionTexts.push(contentOnly);
+        });
+        
+        // Renderiza todas as infos encontradas, uma embaixo da outra
+        renderInfos(infosToRender);
+
+        // Monta o conteúdo final para o motor do quiz
+        let mergedContent = allQuestionTexts.join('\n\n---\n\n');
+        
+        // Se houver tags, cria um novo cabeçalho de tags consolidado
+        if (allTags.size > 0) {
+            const mergedTagsHeader = `TAGS: ${[...allTags].join('; ')}\n\n`;
+            mergedContent = mergedTagsHeader + mergedContent;
+        }
+        
+        // Chama o motor do quiz com o conteúdo mesclado e o título correto
+        initiateFilteringProcess(mergedContent, originalMergedTitle);
+
+        // Reseta a UI de seleção
+        cloudQuizListDiv.style.display = 'none';
+        document.getElementById('expandAllFoldersCb').checked = false;
+        isMergeMode = false;
+        document.getElementById('toggleMergeModeBtn').textContent = 'Mesclar Quizes';
+        document.getElementById('toggleMergeModeBtn').style.background = '';
+        btn.style.display = 'none';
+
+    } catch (error) {
+        console.error("Erro ao mesclar os quizes:", error);
+        alert("Ocorreu um erro ao buscar os arquivos do quiz. Verifique o console.");
+    } finally {
+        btn.textContent = 'Criar Quiz Mesclado';
+        btn.disabled = false;
+    }
+}); 
+
+      document.getElementById('expandAllFoldersCb').addEventListener('change', function(e) {
+        const allFolders = cloudQuizListDiv.querySelectorAll('li.folder');
+        const shouldExpand = e.target.checked;
+        allFolders.forEach(folder => {
+            if (shouldExpand) {
+                folder.classList.remove('collapsed');
+            } else {
+                folder.classList.add('collapsed');
+            }
+        });
+      });
+    }
+
+    if (cloudQuizData) {
+      const listContainer = cloudQuizListDiv.querySelector('ul');
+      if(listContainer) {
+          listContainer.outerHTML = renderCloudQuizList(cloudQuizData);
+      } else { 
+          cloudQuizListDiv.insertAdjacentHTML('beforeend', renderCloudQuizList(cloudQuizData));
+      }
+    } else {
+      cloudQuizListDiv.innerHTML = "Carregando lista de quizzes...";
+    }
+    cloudQuizListDiv.style.display = 'block';
+  } else {
+    cloudQuizListDiv.style.display = 'none';
+	document.getElementById('expandAllFoldersCb').checked = false;
+  }
+});
+
+
+cloudQuizListDiv.addEventListener('click', (e) => {
+  // --- Comportamento do link de quiz (botão) ---
+  if (e.target.classList.contains('quiz-link')) {
+    if (isMergeMode) return; 
+
+    const quizPath = e.target.getAttribute('data-path');
+    const title = e.target.textContent || "";
+    fetch(quizPath)
+      .then((res) => res.text())
+      .then((text) => {
+        // Chama a nova função principal
+        initiateFilteringProcess(text, title);
+      });
+    cloudQuizListDiv.style.display = 'none';
+	document.getElementById('expandAllFoldersCb').checked = false;
+  }
+
+  // --- Comportamento do checkbox de mesclagem (já existe) ---
+  if (e.target.classList.contains('merge-checkbox')) {
+    const path = e.target.dataset.path;
+    const name = e.target.dataset.name;
+
+    if (e.target.checked) {
+      selectedForMerge.push({ path, name });
+    } else {
+      selectedForMerge = selectedForMerge.filter(q => q.path !== path);
+    }
+    
+    document.getElementById('createMergedQuizBtn').style.display = selectedForMerge.length >= 2 ? 'inline-block' : 'none';
+  }
+
+  // --- NOVO: Lógica para expandir/recolher uma pasta individual ---
+  if (e.target.classList.contains('folder-name')) {
+    const folderLi = e.target.closest('li.folder');
+    if (folderLi) {
+      folderLi.classList.toggle('collapsed');
+    }
+  }
+});
+
+
+
+/* ---------------   INPUT, CHECKBOXES, BOTÕES GLOBAIS   ----------------- */
+const fileInput               = document.getElementById('fileInput');
+const shuffleQuestionsChk     = document.getElementById('shuffleQuestions');
+const shuffleAlternativesChk  = document.getElementById('shuffleAlternatives');
+const resetQuizBtn            = document.getElementById('resetQuizBtn');
+
+/* -------------------  ESTRUTURAS DE DADOS PRINCIPAIS  ------------------ */
+let originalQuestions           = [];
+let questions                   = [];
+let userAnswers                 = [];
+let tempAnswers                 = [];
+let scoreME = 0, scoreVF = 0, scoreCheck = 0, scoreEscrita = 0;
+let shuffledQuestionsOrder      = [];
+let shuffledAlternativesOrders  = [];
+let shuffledCheckboxOrders      = [];
+let escritaAutoNotas            = [];
+let escritaItensAutoNotas       = []; // dissertativas por item
+let escritaItensRespostas       = [];
+let quizTextHash                = "";
+let groups                      = [];
+
+/* -------------------  EXTRAÇÃO DE GRUPOS (juntas + variantes ou qualquer tipo)  ------------------ */
+function extractGroupsAndParse(text) {
+  const juntasRegex = /<juntas>([\s\S]*?)<\/juntas>/gi;
+  let allQs = [];
+  let groups = [];
+  let lastEnd = 0;
+  let mJ;
+
+  // 1) percorre cada bloco <juntas>…</juntas>
+  while ((mJ = juntasRegex.exec(text)) !== null) {
+    // tudo que vem antes de <juntas>
+    const before = text.slice(lastEnd, mJ.index).trim();
+    if (before) {
+      allQs.push(... parsePlainOrVariantes(before));
+    }
+
+    // parse genérico de tudo dentro de <juntas>
+    const innerBlock = mJ[1];
+    const groupStart = allQs.length;
+    const innerQs    = parsePlainOrVariantes(innerBlock);
+
+    allQs.push(... innerQs);
+    if (innerQs.length >= 1) {
+      // garante que todos fiquem juntos
+      groups.push({ start: groupStart, length: innerQs.length });
+    }
+
+    lastEnd = juntasRegex.lastIndex;
+  }
+
+  // 2) resto após o último </juntas>
+  const tail = text.slice(lastEnd).trim();
+  if (tail) {
+    allQs.push(... parsePlainOrVariantes(tail));
+  }
+
+  return { originalQuestions: allQs, groups };
+}
+
+/* auxiliar que trata tanto blocos <variantes> isolados quanto perguntas comuns */
+function parsePlainOrVariantes(chunk) {
+  let res = [];
+  const varRegex = /<variantes>([\s\S]*?)<\/variantes>/gi;
+  let last = 0, mv;
+
+  while ((mv = varRegex.exec(chunk)) !== null) {
+    // antes de cada <variantes>
+    const antes = chunk.slice(last, mv.index).trim();
+    if (antes) {
+      res.push(... parseQuestions(antes));
+    }
+    // transforma o bloco de variantes em UMA pergunta tipo vf-variante
+    const variantes = parseQuestions(mv[1]).map(v => ({
+      enunciado:  v.enunciado,
+      gabarito:   v.gabarito,
+      comentario: v.comentario || null
+    }));
+    res.push({ tipo: 'vf-variante', variantes });
+    last = varRegex.lastIndex;
+  }
+
+  // o que sobrou depois do último </variantes>
+  const resto = chunk.slice(last).trim();
+  if (resto) {
+    res.push(... parseQuestions(resto));
+  }
+
+  return res;
+}
+
+
+/* -----------------------------  PROCESSA TXT  ---------------------------- */
+// SUBSTITUIÇÃO
+function processQuizText(fileText, isFromMerge = false) {
+    let questionText = fileText;
+    const isActuallyAMerge = typeof currentQuizTitle === 'string' && currentQuizTitle.startsWith('Quiz mesclado:');
+
+    if (!isActuallyAMerge) {
+        renderInfos([]);
+        const { info, remainingText } = parseInfo(fileText);
+        if (info) { renderInfos([{ name: currentQuizTitle, info: info }]); }
+        questionText = remainingText;
+    }
+
+    renderQuizTitle();
+    renderActiveFilters(); // ALTERAÇÃO: Chama a nova função de renderização
+
+    shuffleQuestionsLocked = false;
+    const extracted = extractGroupsAndParse(questionText);
+    originalQuestions = extracted.originalQuestions;
+    groups = extracted.groups;
+    const lines = questionText.split(/\r?\n/);
+    if (lines.length && /^q-random:\s*false;?/i.test(lines[0].trim())) {
+        shuffleQuestionsLocked = true;
+        shuffleQuestionsChk.checked = false;
+        shuffleQuestionsChk.disabled = true;
+        shuffleQuestionsChk.parentElement.style.opacity = 0.6;
+        lines.shift();
+    } else {
+        shuffleQuestionsChk.disabled = false;
+        shuffleQuestionsChk.parentElement.style.opacity = 1;
+    }
+    quizTextHash = simpleHash(questionText);
+    shuffledQuestionsOrder = [];
+    shuffledAlternativesOrders = [];
+    shuffledCheckboxOrders = [];
+    variantSelections = [];
+    userAnswers = [];
+    tempAnswers = [];
+    scoreME = scoreVF = scoreCheck = scoreEscrita = 0;
+    escritaAutoNotas = [];
+    escritaItensAutoNotas = [];
+    escritaItensRespostas = [];
+    setupQuiz();
+    saveCurrentState(fileText); // Salva o texto original completo, incluindo a INFO
+}
+
+
+/* -------------------   HASH SIMPLES PARA CACHE   -------------------- */
+function simpleHash(str) {
+  let hash = 0, i, chr;
+  if (str.length === 0) return hash.toString();
+  for (i = 0; i < str.length; i++) {
+    chr = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0;
+  }
+  return hash.toString();
+}
+
+/* --------------------  CARREGA ESTADO SALVO NO ONLOAD  ------------------ */
+window.addEventListener("DOMContentLoaded", function() {
+    const state = loadState();
+    if (state && state.quizText && state.quizTextHash) {
+        
+        // --- INÍCIO DA LÓGICA CORRIGIDA ---
+        let fileTextWithInfo = state.quizText; // Texto completo salvo
+        currentQuizTitle = state.currentQuizTitle || ""; // Carrega o título salvo
+
+        // NOVO: Extrai e renderiza a INFO do texto salvo
+        const { info, remainingText } = parseInfo(fileTextWithInfo);
+        if (info) {
+            renderInfos([{ name: currentQuizTitle, info: info }]);
+        }
+
+        // O resto da função agora usa o 'remainingText', que é só o conteúdo das questões
+        let fileText = remainingText;
+        // --- FIM DA LÓGICA CORRIGIDA ---
+
+        shuffleQuestionsLocked = !!state.shuffleQuestionsLocked;
+        if (shuffleQuestionsLocked) {
+            shuffleQuestionsChk.checked = false;
+            shuffleQuestionsChk.disabled = true;
+            shuffleQuestionsChk.parentElement.style.opacity = 0.6;
+        } else {
+            shuffleQuestionsChk.disabled = false;
+            shuffleQuestionsChk.parentElement.style.opacity = 1;
+        }
+
+        const lines = fileText.split(/\r?\n/);
+        if (!shuffleQuestionsLocked && lines.length && /^q-random:\s*false;?/i.test(lines[0].trim())) {
+            shuffleQuestionsLocked = true;
+            shuffleQuestionsChk.checked = false;
+            shuffleQuestionsChk.disabled = true;
+            shuffleQuestionsChk.parentElement.style.opacity = 0.6;
+            lines.shift();
+            fileText = lines.join("\n");
+        }
+
+        const extracted = extractGroupsAndParse(fileText);
+        const parsed = extracted.originalQuestions;
+        if (parsed.length) {
+            originalQuestions = parsed;
+            groups = extracted.groups;
+            quizTextHash = state.quizTextHash;
+            shuffledQuestionsOrder = state.shuffledQuestionsOrder || [...Array(parsed.length).keys()];
+            shuffledAlternativesOrders = state.shuffledAlternativesOrders || [];
+            shuffledCheckboxOrders = state.shuffledCheckboxOrders || [];
+            variantSelections = state.variantSelections || [];
+            questions = shuffledQuestionsOrder.map(idx => originalQuestions[idx]);
+            
+            userAnswers = state.userAnswers || Array(questions.length).fill(null);
+            questions.forEach((q, idx) => {
+                if (q.tipo === 'escrita-itens') {
+                    if (!state.userAnswers || !Array.isArray(state.userAnswers[idx]) || state.userAnswers[idx].every(v => v === null)) {
+                        userAnswers[idx] = Array(q.itens.length).fill(undefined);
+                    }
+                }
+            });
+
+            tempAnswers = state.tempAnswers || Array(questions.length).fill(null);
+            escritaAutoNotas = state.escritaAutoNotas || [];
+            escritaItensAutoNotas = state.escritaItensAutoNotas || [];
+
+            questions.forEach((q, idx) => {
+                if (q.tipo === 'escrita-itens') {
+                    if (state.userAnswers && Array.isArray(state.userAnswers[idx])) {
+                        userAnswers[idx] = state.userAnswers[idx].map(val => val === null ? undefined : val);
+                    } else {
+                        userAnswers[idx] = Array(q.itens.length).fill(undefined);
+                    }
+                    if (state.escritaItensAutoNotas && Array.isArray(state.escritaItensAutoNotas[idx])) {
+                        escritaItensAutoNotas[idx] = state.escritaItensAutoNotas[idx].map(val => val === null ? undefined : val);
+                    } else {
+                        escritaItensAutoNotas[idx] = Array(q.itens.length).fill(undefined);
+                    }
+                }
+            });
+
+            escritaItensRespostas = state.escritaItensRespostas || [];
+            scoreME = state.scoreME || 0;
+            scoreVF = state.scoreVF || 0;
+            scoreCheck = state.scoreCheck || 0;
+            scoreEscrita = state.scoreEscrita || 0;
+            shuffleQuestionsChk.checked = !!state.shuffleQuestions;
+            shuffleAlternativesChk.checked = !!state.shuffleAlternatives;
+            window.individualScores = state.individualScores || { me: [], vf: [], check: [] };
+            
+            // NOVO: Restaura os filtros de dificuldade e tags exibidos
+            currentlyDisplayedTags = state.currentlyDisplayedTags || [];
+            currentlyDisplayedDifficulties = state.currentlyDisplayedDifficulties || [];
+
+            renderQuizTitle();
+            renderActiveFilters(); // Exibe os filtros salvos
+            
+            document.getElementById('score').textContent = '';
+            renderQuiz();
+            return;
+        }
+    }
+});
+
+/* ---------------------  INPUT DE ARQUIVO LOCAL  ----------------------- */
+fileInput.addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(ev) {
+    const title = file.name.replace(/\.txt$/i, "");
+    // Chama a nova função principal
+    initiateFilteringProcess(ev.target.result, title);
+    // renderQuizTitle() será chamado dentro do fluxo de processamento
+  };
+  reader.readAsText(file, 'utf-8');
+});
+
+
+/* ---------------------------  RESET QUIZ  --------------------------- */
+resetQuizBtn.addEventListener('click', function() {
+  if (!originalQuestions.length) return;
+  variantSelections = [];     // força escolher novos variantes
+  setupQuiz();
+  renderQuizTitle();
+  saveCurrentState();
+});
+shuffleQuestionsChk.addEventListener('change', function() {
+  if (shuffleQuestionsLocked) {
+    shuffleQuestionsChk.checked = false;
+    return;
+  }
+  setupQuiz();
+  saveCurrentState();
+});
+shuffleAlternativesChk.addEventListener('change', function() {
+  setupQuiz();
+  saveCurrentState();
+});
+
+/* --------------------------   SETUP QUIZ   --------------------------- */
+function setupQuiz() {
+  if (!originalQuestions.length) {
+    document.getElementById('quiz').innerHTML =
+      "<div style='text-align:center;color:#b22;font-size:1.1em;font-weight:600'>Nenhuma questão válida encontrada.<br>Verifique o formato do arquivo.</div>";
+    document.getElementById('submitAll').style.display = 'none';
+    document.getElementById('score').textContent = '';
+    return;
+  }
+  const n = originalQuestions.length;
+
+  /*  Escolha (ou preserva) variante para cada questão vf‑variante  */
+  for (let i = 0; i < n; i++) {
+    const q = originalQuestions[i];
+    if (q.tipo === 'vf-variante') {
+        // Garantir que variantSelections tenha o tamanho certo, preenchendo com null se necessário
+        while (variantSelections.length <= i) {
+            variantSelections.push(null);
+        }
+        // Escolher apenas se for null ou undefined
+        if (variantSelections[i] === undefined || variantSelections[i] === null) {
+            variantSelections[i] = Math.floor(Math.random() * q.variantes.length);
+        }
+    } else {
+        // Adicionar null para outros tipos de questão para manter o índice alinhado
+         while (variantSelections.length <= i) {
+            variantSelections.push(null);
+        }
+    }
+  }
+
+
+  /*  ----------  randomização / manutenção de grupos  --------- */
+  if (shuffleQuestionsChk.checked) {
+    const allIdx   = [...Array(n).keys()];
+    const movable  = allIdx.filter(i =>
+      !groups.some(g => i >= g.start && i < g.start + g.length)
+    );
+    const shuffledMovable = shuffleArray(movable);
+
+    let result = [];
+    let movPtr = 0;
+    for (let pos = 0; pos < n; pos++) {
+      const grp = groups.find(g => g.start === pos);
+      if (grp) {
+        for (let k = 0; k < grp.length; k++) result.push(pos + k);
+        pos += grp.length - 1;
+      } else {
+        if (movPtr < shuffledMovable.length) { // Check bounds
+           result.push(shuffledMovable[movPtr++]);
+        } else {
+            // This case shouldn't happen if logic is correct, but as a fallback:
+            // Find the next index not already in result and not part of a group that hasn't started
+            let fallbackIndex = -1;
+            for (let potentialIdx = 0; potentialIdx < n; potentialIdx++) {
+                if (!result.includes(potentialIdx) && !groups.some(g => potentialIdx >= g.start && potentialIdx < g.start + g.length && !result.includes(g.start))) {
+                    fallbackIndex = potentialIdx;
+                    break;
+                }
+            }
+            if(fallbackIndex !== -1) result.push(fallbackIndex);
+             // else console.error("Could not find a fallback index for shuffling");
+        }
+      }
+    }
+    shuffledQuestionsOrder = result;
+  } else {
+    shuffledQuestionsOrder = [...Array(n).keys()];
+  }
+
+  /*  ----------  randomização de alternativas/check‑box  ---------- */
+  shuffledAlternativesOrders = [];
+  shuffledCheckboxOrders = [];
+  for (let qidx = 0; qidx < originalQuestions.length; qidx++) {
+    const q = originalQuestions[qidx];
+    if (q.tipo === 'me') {
+      const alts = q.alternativas.map(a => a.letra);
+      shuffledAlternativesOrders[qidx] = shuffleAlternativesChk.checked ? shuffleArray(alts) : alts;
+      shuffledCheckboxOrders[qidx]     = null;
+    }
+    else if (q.tipo === 'checkbox') {
+      const nAssert = q.assertives.length;
+      const arrIdx  = [...Array(nAssert).keys()];
+      shuffledCheckboxOrders[qidx] = (shuffleAlternativesChk.checked && !q.noRandom) ? shuffleArray(arrIdx) : arrIdx;
+      shuffledAlternativesOrders[qidx] = null;
+    }
+    else {
+      shuffledAlternativesOrders[qidx] = null;
+      shuffledCheckboxOrders[qidx]     = null;
+    }
+  }
+
+  questions      = shuffledQuestionsOrder.map(idx => originalQuestions[idx]);
+  userAnswers    = Array(questions.length).fill(null);
+  tempAnswers    = Array(questions.length).fill(null);
+  escritaAutoNotas       = Array(questions.length).fill(null);
+  escritaItensAutoNotas  = Array(questions.length).fill(null);
+  escritaItensRespostas  = Array(questions.length).fill(null);
+  scoreME = scoreVF = scoreCheck = scoreEscrita = 0;
+  document.getElementById('score').textContent = '';
+  renderQuiz();
+  // Don't save state here yet, let the caller (processQuizText or button clicks) handle saving
+  // saveCurrentState(); // Removed from here
+}
+
+
+/* -------------------  PARSER DE QUESTÕES (Copied from V1)  ------------------- */
+function parseQuestions(text) {
+  const blocks = text.split(/\n\s*\n|^-{3,}$/m)
+    .map(b => b.trim())
+    .filter(Boolean);
+  const questions = [];
+  for (const block of blocks) {
+    // Checkbox (QCH:) - Abordagem v4: Separar enunciado e assertivas
+    const inicioCheckboxMatch = block.match(/^QCH:\s*/i); // Encontra apenas o início
+    if (inicioCheckboxMatch) {
+        // Encontra onde as assertivas começam
+        const inicioAssertivasRegex = /(?:^\s*A\d+:|^\s*NO-RANDOM:)/im; // Adiciona 'm' para ^ funcionar por linha
+        const matchInicioAssertivas = inicioAssertivasRegex.exec(block);
+
+        let enunciado = "";
+        let textoAssertivas = "";
+        const indiceInicioQCH = inicioCheckboxMatch[0].length; // Posição após "QCH: "
+
+        if (matchInicioAssertivas) {
+            // Separa o enunciado (do fim de QCH: até o início das assertivas)
+            enunciado = block.substring(indiceInicioQCH, matchInicioAssertivas.index).trim();
+            // Separa o texto que contém apenas as assertivas e NO-RANDOM
+            textoAssertivas = block.substring(matchInicioAssertivas.index);
+        } else {
+            // Não encontrou assertivas nem NO-RANDOM, bloco inteiro é enunciado? (Pouco provável para QCH válido)
+            enunciado = block.substring(indiceInicioQCH).trim();
+            textoAssertivas = ""; // Nenhuma assertiva para processar
+            // console.warn("Questão QCH detectada mas sem assertivas (A:) ou NO-RANDOM: encontradas."); // Optional warning
+        }
+
+        const enunciadoFormatado = autoEmbedImages(enunciado); // Formata só o enunciado
+        const noRandom = /^\s*NO-RANDOM:\s*TRUE/i.test(textoAssertivas); // Verifica NO-RANDOM no início do texto das assertivas
+
+        const assertives = [];
+        const assertiveRegex = /A(\d{1,2}):\s*([\s\S]+?)(?:^G:\s*([VF])\s*(?:\n|$))((?:\s*C:\s*((?:(?!\s*^A\d+:|\s*^NO-RANDOM:)[\s\S])+))?(?=^A\d+:|^NO-RANDOM:|$))/gmi; // Regex da v3 (bom para assertivas)
+
+        // *** IMPORTANTE: Execute o regex no texto *separado* das assertivas ***
+        let match;
+        let count = 0;
+        // Reset lastIndex before executing regex in a loop
+        assertiveRegex.lastIndex = 0;
+        while ((match = assertiveRegex.exec(textoAssertivas)) !== null && count < 50) {
+             // Check if match[2] is just whitespace or empty, skip if so
+            if (!match[2] || /^\s*$/.test(match[2])) continue;
+            assertives.push({
+                idx: count, // Use count as index
+                texto: autoEmbedImages(match[2].trim()),
+                gabarito: match[3],
+                comentario: match[5] ? autoEmbedImages(match[5].trim()) : null,
+            });
+            count++;
+        }
+
+
+        if (assertives.length > 0) {
+            questions.push({
+                tipo: 'checkbox',
+                enunciado: enunciadoFormatado, // Usa o enunciado separado e formatado
+                assertives,
+                noRandom
+            });
+            continue; // Próximo bloco
+        } else if (!textoAssertivas && enunciado) {
+             // If no valid assertives but had an enunciado, let it try other types
+             // console.log("Bloco começou com QCH: mas não teve assertivas válidas. Tentando outros tipos.");
+        }
+    }
+    // NOVO: Dissertativa com itens
+    const escritaItensMatch = block.match(/^Q:\s*([\s\S]+?)(?=^I_[A-Z]\))/m);
+    if (escritaItensMatch) {
+      const enunciado = autoEmbedImages(escritaItensMatch[1].trim());
+      // Extrair itens: I_A) ... GABARITO: ... (até 26)
+      const itens = [];
+      const itemRegex = /^I_([A-Z])\)\s*([\s\S]+?)^\s*GABARITO:\s*((?:(?!\s*^I_[A-Z]\))[\s\S])+)/gm;
+      let match, count = 0;
+       itemRegex.lastIndex = 0; // Reset lastIndex
+      while ((match = itemRegex.exec(block)) !== null && count < 26) {
+        itens.push({
+          letra: match[1],
+          texto: autoEmbedImages(match[2].trim()),
+          gabarito: match[3].trim()
+        });
+        count++;
+      }
+      if (itens.length > 0) {
+        questions.push({
+          tipo: 'escrita-itens',
+          enunciado,
+          itens
+        });
+        continue;
+      }
+    }
+    // Questão discursiva tradicional
+    const openQ = block.match(/^Q:\s*([\s\S]+?)^\s*GABARITO:\s*([\s\S]+)$/m);
+    if (openQ) {
+      const enunciado = autoEmbedImages(openQ[1].trim());
+      questions.push({
+        tipo: 'escrita',
+        enunciado,
+        gabarito: openQ[2].trim()
+      });
+      continue;
+    }
+    // Múltipla escolha e VF
+    const qMatch = block.match(/^Q:\s*([\s\S]+?)(?=^([A-E]\)|G:))/m);
+    if (!qMatch) continue;
+    const enunciado = autoEmbedImages(qMatch[1].trim());
+    const gMatch = block.match(/^G:\s*([A-EVF])$/m);
+    if (!gMatch) continue;
+    const gabarito = gMatch[1];
+    const cmtMatch = block.match(/^C:\s*([\s\S]+)$/m);
+    const comentario = cmtMatch ? autoEmbedImages(cmtMatch[1].trim()) : null;
+    const altRegex = /^([A-E])\)\s*([\s\S]+?)(?=^[A-E]\)|^G:|^C:|^$)/gm;
+    const alternativas = [];
+    let mAlt;
+    altRegex.lastIndex = 0; // Reset lastIndex
+    while ((mAlt = altRegex.exec(block)) !== null) {
+      alternativas.push({
+        letra: mAlt[1],
+        texto: mAlt[2].trim()
+      });
+    }
+    if (alternativas.length >= 3 && alternativas.length <= 5) {
+      questions.push({
+        tipo: 'me',
+        enunciado,
+        alternativas,
+        gabarito,
+        comentario
+      });
+      continue; // Added continue
+    } else if (alternativas.length === 0) { // Changed condition: only check for 0 alternatives for VF
+       questions.push({
+         tipo: 'vf',
+         enunciado,
+         gabarito,
+         comentario
+       });
+       continue; // Added continue
+    }
+    // If none of the above matched, it might be an invalid block
+    // console.warn("Block didn't match any known question type:", block);
+  }
+  return questions;
+}
+
+/* --------------  autoEmbedImages (Copied from V1) -------------- */
+function autoEmbedImages(text) {
+  if (!text) return "";
+  return text.replace(
+    /(https?:\/\/\S+\.(?:png|jpe?g|gif|webp))/gi,
+    '<img src="$1" alt="<imagem da questão>">'
+  );
+}
+
+/* ---------------------------  RENDER QUIZ  --------------------------- */
+function renderQuiz() {
+  const quizDiv = document.getElementById('quiz');
+  quizDiv.innerHTML = '';
+
+  questions.forEach((q, idx) => {
+    const block = document.createElement('div');
+    block.className = 'question-block';
+
+    /* -----------  ENUNCIADO (trata vf‑variante)  ----------- */
+    let enunciadoHtml = q.enunciado;
+    if (q.tipo === 'vf-variante') {
+        const origIdx = shuffledQuestionsOrder[idx];
+        const vIdx = variantSelections[origIdx];
+        // Add checks for undefined/null before accessing variants
+        if (q.variantes && vIdx !== null && vIdx !== undefined && q.variantes[vIdx]) {
+            const variant = q.variantes[vIdx];
+            enunciadoHtml = variant.enunciado;
+        } else {
+             // Fallback or error handling if variant data is missing
+             enunciadoHtml = q.enunciado || "[Erro: Variante não encontrada]";
+             console.error(`Error rendering vf-variant: Missing data for qIndex ${idx}, origIdx ${origIdx}, vIdx ${vIdx}`);
+        }
+    }
+    block.innerHTML += `<div class="enunciado"><strong>${idx+1}.</strong> ${enunciadoHtml}</div>`;
+
+
+    /* --------------  MÚLTIPLA ESCOLHA (Copied from V1) -------------- */
+    if (q.tipo === 'me') {
+      const altDiv = document.createElement('div');
+      altDiv.className = 'alternatives';
+      const origIdx = shuffledQuestionsOrder[idx];
+      const altOrder = shuffledAlternativesOrders[origIdx];
+      altOrder.forEach((letra, i) => {
+        const alt = q.alternativas.find(a => a.letra === letra);
+        const visLetra = String.fromCharCode(65 + i);
+        const label = document.createElement('label');
+        label.innerHTML = `<input type="radio" name="q${idx}" value="${letra}">
+          <strong>${visLetra})</strong>
+          <span class="alt-text-content">${alt ? alt.texto : ''}</span>`;
+        addEliminationButton(label);
+        altDiv.appendChild(label);
+      });
+      block.appendChild(altDiv);
+      const radios = block.querySelectorAll(`input[type="radio"][name="q${idx}"]`);
+      radios.forEach(r => {
+        if (tempAnswers[idx] && r.value === tempAnswers[idx] && userAnswers[idx] === null) {
+          r.checked = true;
+        }
+        r.addEventListener('change', () => {
+          if (userAnswers[idx] === null) {
+            tempAnswers[idx] = r.value;
+            saveCurrentState();
+          }
+        });
+      });
+      const sendBtn = document.createElement('button');
+      sendBtn.className = 'send-btn';
+      sendBtn.textContent = 'Enviar Resposta';
+      sendBtn.type = "button";
+      sendBtn.addEventListener('click', () => {
+        const selected = tempAnswers[idx] || "";
+        checkAnswer(idx, selected, null);
+        radios.forEach(r => r.disabled = true);
+        sendBtn.disabled = true;
+        sendBtn.style.opacity = 0.6;
+        sendBtn.style.cursor = 'not-allowed';
+        userAnswers[idx] = selected;
+        saveCurrentState();
+      });
+      block.appendChild(sendBtn);
+      const feedback = document.createElement('div');
+      feedback.className = 'feedback';
+      feedback.id = `feedback${idx}`;
+      block.appendChild(feedback);
+    }
+
+    /* --------------  V ou F tradicional (Copied from V1) -------------- */
+    else if (q.tipo === 'vf') {
+      const altDiv = document.createElement('div');
+      altDiv.className = 'alternatives';
+      const vfAlts = [
+        { letra: 'V', texto: 'Verdadeiro' },
+        { letra: 'F', texto: 'Falso' }
+      ];
+      vfAlts.forEach((alt, i) => {
+        const label = document.createElement('label');
+        label.innerHTML = `<input type="radio" name="q${idx}" value="${alt.letra}"> <strong>${alt.letra})</strong> ${alt.texto}`;
+        altDiv.appendChild(label);
+      });
+      block.appendChild(altDiv);
+      const radios = block.querySelectorAll(`input[type="radio"][name="q${idx}"]`);
+      radios.forEach(r => {
+        if (tempAnswers[idx] && r.value === tempAnswers[idx] && userAnswers[idx] === null) {
+          r.checked = true;
+        }
+        r.addEventListener('change', () => {
+          if (userAnswers[idx] === null) {
+            tempAnswers[idx] = r.value;
+            saveCurrentState();
+          }
+        });
+      });
+      const sendBtn = document.createElement('button');
+      sendBtn.className = 'send-btn';
+      sendBtn.textContent = 'Enviar Resposta';
+      sendBtn.type = "button";
+      sendBtn.addEventListener('click', () => {
+        const selected = tempAnswers[idx] || "";
+        checkAnswer(idx, selected, null);
+        radios.forEach(r => r.disabled = true);
+        sendBtn.disabled = true;
+        sendBtn.style.opacity = 0.6;
+        sendBtn.style.cursor = 'not-allowed';
+        userAnswers[idx] = selected;
+        saveCurrentState();
+      });
+      block.appendChild(sendBtn);
+      const feedback = document.createElement('div');
+      feedback.className = 'feedback';
+      feedback.id = `feedback${idx}`;
+      block.appendChild(feedback);
+    }
+
+    /* --------------  V ou F com VARIANTES (From V2) ------------- */
+    else if (q.tipo === 'vf-variante') {
+      // This part remains from V2 - Renders standard V/F options
+      const altDiv  = document.createElement('div');
+      altDiv.className = 'alternatives';
+      const vfAlts = [
+        { letra:'V', texto:'Verdadeiro' },
+        { letra:'F', texto:'Falso' }
+      ];
+      vfAlts.forEach(alt => {
+        const label = document.createElement('label');
+        label.innerHTML = `<input type="radio" name="q${idx}" value="${alt.letra}"><strong>${alt.letra})</strong> ${alt.texto}`;
+        altDiv.appendChild(label);
+      });
+      block.appendChild(altDiv);
+
+      const radios = block.querySelectorAll(`input[type="radio"][name="q${idx}"]`);
+      radios.forEach(r => {
+        if (tempAnswers[idx] && r.value === tempAnswers[idx] && userAnswers[idx] === null) r.checked = true;
+        r.addEventListener('change', () => {
+          if (userAnswers[idx] === null) {
+            tempAnswers[idx] = r.value;
+            saveCurrentState();
+          }
+        });
+      });
+
+      const sendBtn = document.createElement('button');
+      sendBtn.className = 'send-btn';
+      sendBtn.textContent = 'Enviar Resposta';
+      sendBtn.type = "button";
+      sendBtn.addEventListener('click', () => {
+        const selected = tempAnswers[idx] || "";
+        checkAnswer(idx, selected, null);
+        radios.forEach(r => r.disabled = true);
+        sendBtn.disabled = true;
+        sendBtn.style.opacity = 0.6;
+        sendBtn.style.cursor  = 'not-allowed';
+        userAnswers[idx] = selected;
+        saveCurrentState();
+      });
+      block.appendChild(sendBtn);
+
+      const feedback = document.createElement('div');
+      feedback.className = 'feedback';
+      feedback.id = `feedback${idx}`;
+      block.appendChild(feedback);
+    }
+
+    /* --------------  CHECKBOX (Copied from V1) ------------- */
+    else if (q.tipo === 'checkbox') {
+      const origIdx = shuffledQuestionsOrder[idx];
+      const order = shuffledCheckboxOrders[origIdx];
+      const altDiv = document.createElement('div');
+      altDiv.className = 'alternatives';
+      order.forEach((assertIdx, i) => {
+        const assertive = q.assertives[assertIdx];
+        const label = document.createElement('label');
+        label.innerHTML = `<input type="checkbox" name="q${idx}-assert" value="${assertIdx}">
+          <span class="alt-text-content">${assertive.texto}</span>`;
+        addEliminationButton(label);
+        altDiv.appendChild(label);
+        const cmtDiv = document.createElement('div');
+        cmtDiv.className = 'assertive-feedback';
+        cmtDiv.id = `feedback${idx}-assert${assertIdx}`;
+        cmtDiv.style.display = "none";
+        altDiv.appendChild(cmtDiv);
+      });
+      block.appendChild(altDiv);
+      const checks = block.querySelectorAll(`input[type="checkbox"][name="q${idx}-assert"]`);
+      if (Array.isArray(tempAnswers[idx]) && userAnswers[idx] === null) {
+        checks.forEach(chk => {
+          if (tempAnswers[idx].includes(Number(chk.value))) chk.checked = true;
+        });
+      }
+      checks.forEach(chk => {
+        chk.addEventListener('change', () => {
+          if (userAnswers[idx] === null) {
+            tempAnswers[idx] = Array.from(checks).filter(c => c.checked).map(c => Number(c.value));
+            saveCurrentState();
+          }
+        });
+      });
+      const sendBtn = document.createElement('button');
+      sendBtn.className = 'send-btn';
+      sendBtn.textContent = 'Enviar Resposta';
+      sendBtn.type = "button";
+      sendBtn.addEventListener('click', () => {
+        const selecionadas = Array.from(checks).filter(c => c.checked).map(c => Number(c.value));
+        checkCheckboxAnswer(idx, selecionadas, null); // Uses dedicated function
+        checks.forEach(c => c.disabled = true);
+        sendBtn.disabled = true;
+        sendBtn.style.opacity = 0.6;
+        sendBtn.style.cursor = 'not-allowed';
+        userAnswers[idx] = selecionadas.slice();
+        saveCurrentState();
+      });
+      block.appendChild(sendBtn);
+      const feedback = document.createElement('div');
+      feedback.className = 'feedback';
+      feedback.id = `feedback${idx}`;
+      block.appendChild(feedback);
+    }
+
+    /* -------------- ESCRITA (Copied from V1) ------------- */
+    else if (q.tipo === 'escrita') {
+      const writeDiv = document.createElement('div');
+      writeDiv.className = 'write-block';
+      const textarea = document.createElement('textarea');
+      textarea.id = `escrita-input-${idx}`;
+      if (userAnswers[idx] !== null) textarea.value = userAnswers[idx];
+      else if (tempAnswers[idx]) textarea.value = tempAnswers[idx];
+      textarea.placeholder = "Digite sua resposta aqui...";
+      textarea.autocomplete = "off";
+      textarea.spellcheck = true;
+      textarea.addEventListener('input', (e) => {
+        if (userAnswers[idx] === null) {
+          tempAnswers[idx] = e.target.value;
+          autoGrow(e);
+          saveCurrentState();
+        }
+      });
+      const sendBtn = document.createElement('button');
+      sendBtn.className = 'send-btn';
+      sendBtn.textContent = 'Enviar Resposta';
+      sendBtn.type = "button";
+      sendBtn.addEventListener('click', () => {
+        enviarRespostaEscrita(idx); // Uses dedicated function
+        saveCurrentState();
+      });
+      writeDiv.appendChild(textarea);
+      writeDiv.appendChild(sendBtn);
+      block.appendChild(writeDiv);
+      const feedback = document.createElement('div');
+      feedback.className = 'feedback neutral';
+      feedback.id = `feedback${idx}`;
+      feedback.style.display = 'none';
+      block.appendChild(feedback);
+      const selfEvalDiv = document.createElement('div');
+      selfEvalDiv.className = 'self-eval-block';
+      selfEvalDiv.id = `selfeval-${idx}`;
+      selfEvalDiv.style.display = 'none';
+      const evalLabel = document.createElement('span');
+      evalLabel.className = 'self-eval-label';
+      evalLabel.textContent = 'Autoavaliação:';
+      selfEvalDiv.appendChild(evalLabel);
+      for (let i = 0; i <= 10; i++) {
+        const btn = document.createElement('button');
+        btn.className = 'self-eval-btn';
+        btn.textContent = i;
+        btn.setAttribute('data-value', i);
+        btn.type = "button";
+        btn.addEventListener('click', () => {
+          avaliarEscrita(idx, i); // Uses dedicated function
+          saveCurrentState();
+        });
+        selfEvalDiv.appendChild(btn);
+      }
+      block.appendChild(selfEvalDiv);
+    }
+
+    /* -------------- ESCRITA-ITENS (Copied from V1) ------------- */
+else if (q.tipo === 'escrita-itens') {
+  const writeDiv = document.createElement('div');
+  writeDiv.className = 'write-block';
+
+  // Garante arrays válidos
+  if (!Array.isArray(escritaItensRespostas[idx])) escritaItensRespostas[idx] = Array(q.itens.length).fill("");
+  if (!Array.isArray(escritaItensAutoNotas[idx])) escritaItensAutoNotas[idx] = Array(q.itens.length).fill(null);
+  if (!Array.isArray(tempAnswers[idx])) tempAnswers[idx] = Array(q.itens.length).fill("");
+  if (!Array.isArray(userAnswers[idx])) userAnswers[idx] = Array(q.itens.length).fill(undefined);
+
+  q.itens.forEach((item, i) => {
+    // Label do item
+    const label = document.createElement('label');
+    label.className = 'escrita-item-label';
+    label.setAttribute('for', `escrita-itens-input-${idx}-${i}`);
+    label.innerHTML = `<strong>${item.letra})</strong> ${item.texto}`;
+    writeDiv.appendChild(label);
+
+    // Textarea do item
+    const textarea = document.createElement('textarea');
+    textarea.id = `escrita-itens-input-${idx}-${i}`;
+    textarea.placeholder = "Digite sua resposta para este item...";
+    textarea.autocomplete = "off";
+    textarea.spellcheck = true;
+    textarea.value = (userAnswers[idx][i] !== undefined) ? userAnswers[idx][i]
+      : (tempAnswers[idx][i] !== undefined ? tempAnswers[idx][i] : "");
+    textarea.disabled = (userAnswers[idx][i] !== undefined);
+    textarea.style.background = textarea.disabled ? '#e1e6f8' : '';
+    textarea.style.borderColor = '#adc9ff';
+    textarea.addEventListener('input', (e) => {
+      if (userAnswers[idx][i] === undefined) {
+        tempAnswers[idx][i] = e.target.value;
+        autoGrow(e);
+        saveCurrentState();
+      }
+    });
+    writeDiv.appendChild(textarea);
+
+    // Botão de envio individual para o item
+    const sendBtn = document.createElement('button');
+    sendBtn.className = 'send-btn';
+    sendBtn.textContent = 'Enviar Resposta';
+    sendBtn.type = "button";
+    sendBtn.disabled = (userAnswers[idx][i] !== undefined);
+    sendBtn.style.opacity = sendBtn.disabled ? 0.6 : "";
+    sendBtn.style.cursor = sendBtn.disabled ? 'not-allowed' : '';
+    sendBtn.addEventListener('click', () => {
+      enviarRespostaEscritaItem(idx, i); // Função adaptada abaixo
+      saveCurrentState();
+    });
+    writeDiv.appendChild(sendBtn);
+
+    // Gabarito do item (feedback)
+    const feedback = document.createElement('div');
+    feedback.className = 'feedback neutral';
+    feedback.id = `feedback${idx}-item${i}`;
+    feedback.style.display = (userAnswers[idx][i] !== undefined) ? 'block' : 'none';
+    feedback.innerHTML = `<strong>Gabarito (item ${item.letra}):</strong><br>${item.gabarito}`;
+    writeDiv.appendChild(feedback);
+
+    // Autoavaliação por item
+    const selfEvalDiv = document.createElement('div');
+    selfEvalDiv.className = 'self-eval-block';
+    selfEvalDiv.id = `selfeval-${idx}-item${i}`;
+    selfEvalDiv.style.display = (userAnswers[idx][i] !== undefined) ? 'flex' : 'none';
+    const evalLabel = document.createElement('span');
+    evalLabel.className = 'self-eval-label';
+    evalLabel.textContent = `Autoavaliação (item ${item.letra}):`;
+    selfEvalDiv.appendChild(evalLabel);
+    for (let nota = 0; nota <= 10; nota++) {
+      const btn = document.createElement('button');
+      btn.className = 'self-eval-btn';
+      btn.textContent = nota;
+      btn.setAttribute('data-value', nota);
+      btn.type = "button";
+      if (escritaItensAutoNotas[idx] && escritaItensAutoNotas[idx][i] === nota) {
+        btn.classList.add('selected');
+      }
+      btn.addEventListener('click', () => {
+        avaliarEscritaItem(idx, i, nota);
+        saveCurrentState();
+      });
+      selfEvalDiv.appendChild(btn);
+    }
+    writeDiv.appendChild(selfEvalDiv);
+
+  });
+
+  block.appendChild(writeDiv);
+}
+
+
+    quizDiv.appendChild(block);
+  });
+
+  /* --- RESTAURA ESTADOS SALVOS (Copied/adapted from V1 + V2) --- */
+  questions.forEach((q, idx) => {
+    // ME, VF, VF-Variante
+    if (q.tipo === 'me' || q.tipo === 'vf' || q.tipo === 'vf-variante') {
+      if (userAnswers[idx] !== null) {
+        const radios = document.getElementsByName(`q${idx}`);
+        radios.forEach(r => {
+          if (r.value === userAnswers[idx]) r.checked = true;
+          r.disabled = true;
+        });
+        checkAnswer(idx, userAnswers[idx], null, true); // Use 'true' for restoring flag
+        const btn = radios[0] ? radios[0].closest('.question-block').querySelector('.send-btn') : null;
+        if (btn) {
+          btn.disabled = true;
+          btn.style.opacity = 0.6;
+          btn.style.cursor = 'not-allowed';
+        }
+      }
+    }
+    // Checkbox
+    else if (q.tipo === 'checkbox') {
+      if (userAnswers[idx] !== null) { // userAnswers[idx] should be an array here
+        const checks = document.querySelectorAll(`input[type="checkbox"][name="q${idx}-assert"]`);
+        if (Array.isArray(userAnswers[idx])) {
+          checks.forEach(chk => {
+            if (userAnswers[idx].includes(Number(chk.value))) chk.checked = true;
+            chk.disabled = true;
+          });
+        }
+        checkCheckboxAnswer(idx, userAnswers[idx], null, true); // Use 'true' for restoring flag
+        const btn = checks[0] ? checks[0].closest('.question-block').querySelector('.send-btn') : null;
+        if (btn) {
+          btn.disabled = true;
+          btn.style.opacity = 0.6;
+          btn.style.cursor = 'not-allowed';
+        }
+      }
+    }
+    // Escrita (Traditional)
+    else if (q.tipo === 'escrita') {
+      if (userAnswers[idx] !== null) { // userAnswers[idx] is the string response
+        const textarea = document.getElementById(`escrita-input-${idx}`);
+        textarea.value = userAnswers[idx];
+        autoGrow({target: textarea}); // Adjust height
+        textarea.disabled = true;
+        textarea.style.background = '#e1e6f8';
+        textarea.style.borderColor = '#adc9ff';
+        const sendBtn = textarea.nextSibling; // Assumes button is next sibling
+        if (sendBtn && sendBtn.classList.contains('send-btn')) {
+            sendBtn.disabled = true;
+            sendBtn.style.opacity = 0.6;
+            sendBtn.style.cursor = 'not-allowed';
+        }
+        const feedback = document.getElementById(`feedback${idx}`);
+        feedback.innerHTML = `<strong>Gabarito:</strong><br>${questions[idx].gabarito}`;
+        feedback.className = 'feedback neutral';
+        feedback.style.display = 'block';
+
+        const selfEvalDiv = document.getElementById(`selfeval-${idx}`);
+        selfEvalDiv.style.display = 'flex'; // Show self-eval
+         if (escritaAutoNotas[idx] !== null) { // Check if a score exists
+              const buttons = selfEvalDiv.querySelectorAll('.self-eval-btn');
+              buttons.forEach(btn => {
+                  btn.classList.remove('selected'); // Clear previous selections
+                  if (Number(btn.getAttribute('data-value')) === escritaAutoNotas[idx]) {
+                      btn.classList.add('selected');
+                  }
+              });
+         } else {
+            // Optionally, select '0' by default if no score exists yet
+            const zeroButton = selfEvalDiv.querySelector('.self-eval-btn[data-value="0"]');
+            if(zeroButton) zeroButton.classList.add('selected');
+            // Make sure escritaAutoNotas[idx] is actually 0 if we default visually
+            // avaliarEscrita(idx, 0); // Be careful with side effects here during restore
+         }
+      }
+    }
+    // Escrita por Itens
+    else if (q.tipo === 'escrita-itens') {
+      // Check if userAnswers for this question exists and is an array
+      if (userAnswers[idx] && Array.isArray(userAnswers[idx])) {
+          let allItemsAnswered = true; // Flag to check if all textareas are filled
+          q.itens.forEach((item, i) => {
+              const textarea = document.getElementById(`escrita-itens-input-${idx}-${i}`);
+              if (textarea) {
+                 // Check if a specific answer exists for this item
+                 if (userAnswers[idx][i] !== undefined) {
+                      textarea.value = userAnswers[idx][i];
+                      textarea.disabled = true;
+                      textarea.style.background = '#e1e6f8';
+                      textarea.style.borderColor = '#adc9ff';
+                      autoGrow({target: textarea}); // Adjust height
+
+                      const feedback = document.getElementById(`feedback${idx}-item${i}`);
+                      if (feedback) feedback.style.display = 'block'; // Show feedback
+
+                      const selfEvalDiv = document.getElementById(`selfeval-${idx}-item${i}`);
+                      if (selfEvalDiv) {
+                          selfEvalDiv.style.display = 'flex'; // Show self-eval
+                          // Restore selected score button
+                          if (escritaItensAutoNotas[idx] && escritaItensAutoNotas[idx][i] !== null) {
+                              const buttons = selfEvalDiv.querySelectorAll('.self-eval-btn');
+                              buttons.forEach(btn => {
+                                  btn.classList.remove('selected');
+                                  if (Number(btn.getAttribute('data-value')) === escritaItensAutoNotas[idx][i]) {
+                                      btn.classList.add('selected');
+                                  }
+                              });
+                          } else {
+                             // Optionally select '0' if no score yet
+                             const zeroButton = selfEvalDiv.querySelector('.self-eval-btn[data-value="0"]');
+                             if(zeroButton) zeroButton.classList.add('selected');
+                            // avaliarEscritaItem(idx, i, 0); // Careful with side effects
+                          }
+                      }
+                 } else {
+                    // If this specific item wasn't answered, the whole question isn't fully submitted
+                    allItemsAnswered = false;
+                 }
+              } else {
+                allItemsAnswered = false; // Textarea not found
+              }
+          });
+
+          // Disable the main send button only if ALL items were answered
+          if (allItemsAnswered) {
+              const blockElement = quizDiv.children[idx]; // Get the question block
+              const sendBtn = blockElement ? blockElement.querySelector('.send-btn') : null;
+              if (sendBtn) {
+                  sendBtn.disabled = true;
+                  sendBtn.style.opacity = 0.6;
+                  sendBtn.style.cursor = 'not-allowed';
+              }
+          }
+      }
+    }
+
+  });
+  // Restore score display if quiz was finished
+  if (isQuizFinished()) {
+     showScore();
+  }
+
+  document.getElementById('submitAll').style.display = questions.length ? 'block' : 'none';
+  
+}
+
+
+/* ---------  FUNÇÕES AUX. (Copied/adapted from V1) --------- */
+
+function addEliminationButton(label) {
+  const btn = document.createElement('button');
+  btn.type = "button";
+  btn.className = "alt-elim-btn";
+  btn.title = "Eliminar/Restaurar alternativa";
+  btn.tabIndex = 0; // Make it focusable
+  btn.innerText = "✂️";
+  btn.setAttribute("aria-label", "Eliminar alternativa");
+  btn.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent label's default action (checking radio/checkbox)
+    e.stopPropagation(); // Prevent event from bubbling up to label
+    const textSpan = label.querySelector('.alt-text-content'); // Target the text span
+    if (textSpan) { // Check if span exists
+        textSpan.classList.toggle('eliminada');
+        // Update title/aria-label for accessibility
+        if (textSpan.classList.contains('eliminada')) {
+            btn.title = "Restaurar alternativa";
+            btn.setAttribute("aria-label", "Restaurar alternativa");
+        } else {
+            btn.title = "Eliminar alternativa";
+            btn.setAttribute("aria-label", "Eliminar alternativa");
+        }
+    } else {
+        // Fallback if structure is different (e.g., VF) - might toggle the whole label
+         label.classList.toggle('eliminada');
+          if (label.classList.contains('eliminada')) {
+            btn.title = "Restaurar alternativa";
+            btn.setAttribute("aria-label", "Restaurar alternativa");
+        } else {
+            btn.title = "Eliminar alternativa";
+            btn.setAttribute("aria-label", "Eliminar alternativa");
+        }
+    }
+  });
+  label.appendChild(btn);
+}
+
+
+function autoGrow(e) {
+  const el = e.target;
+  el.style.height = 'auto'; // Temporarily shrink to get the correct scrollHeight
+  el.style.height = (el.scrollHeight) + 'px';
+}
+
+function formatComentarioLetraShuffle(comentario, altOrder) {
+  if (!comentario) return "";
+  let letraMap = {};
+  altOrder.forEach((origLetra, index) => {
+      letraMap[origLetra] = String.fromCharCode(65 + index); // Map original (A-E) to visible (A-E based on shuffle)
+  });
+
+  // Replace {A}, {B} etc. with the *visible* shuffled letter
+  return comentario.replace(/\{([A-E])\}/g, (match, origLetra) => {
+    return letraMap[origLetra] ? `<strong>${letraMap[origLetra]}</strong>` : match; // Return bolded visible letter or original match if not found
+  });
+}
+
+
+function checkCheckboxAnswer(qIdx, selecionadas, visIdx, restoring = false) {
+    const question = questions[qIdx];
+    if (!question || question.tipo !== 'checkbox') return; // Basic validation
+
+    if (!Array.isArray(selecionadas)) selecionadas = []; // Ensure it's an array
+
+    let acertos = 0;
+    const n = question.assertives.length;
+    const origIdx = shuffledQuestionsOrder[qIdx];
+    const order = shuffledCheckboxOrders[origIdx] || [...Array(n).keys()]; // Use order or default if missing
+
+    for (let i = 0; i < n; i++) {
+        const assertIdx = order[i]; // Original index of the assertive
+        if (assertIdx === undefined || !question.assertives[assertIdx]) continue; // Skip if index or assertive is invalid
+
+        const assertive = question.assertives[assertIdx];
+        const checked = selecionadas.includes(assertIdx); // Check if the *original index* was selected
+        const gabarito = assertive.gabarito === "V";
+        const correto = (checked === gabarito);
+
+        if (correto) acertos++;
+
+        // Update individual assertive feedback
+        const feedbackDiv = document.getElementById(`feedback${qIdx}-assert${assertIdx}`);
+        if (feedbackDiv) {
+            feedbackDiv.style.display = "block";
+            if (correto) {
+                feedbackDiv.className = "assertive-feedback correct";
+                feedbackDiv.innerHTML = '<b><span style="color: #228b22;">Você julgou CORRETAMENTE a assertiva!</span></b>';
+            } else {
+                feedbackDiv.className = "assertive-feedback incorrect";
+                feedbackDiv.innerHTML = '<b><span style="color: #d5001a;">Você julgou INCORRETAMENTE a assertiva!</span></b>';
+            }
+            if (assertive.comentario) {
+                feedbackDiv.innerHTML += "<br>" + assertive.comentario;
+            }
+        }
+    }
+
+    const nota = n > 0 ? acertos / n : 0; // Calculate score (0 if no assertives)
+
+    // Update score only if not restoring state
+    if (!restoring) {
+        // Need to recalculate total check score potentially
+        // Let's assume scoreCheck holds the sum of individual question scores (0 to 1)
+        // Find previous score for this question if it exists and subtract it
+         // This recalculation logic might be better placed in showScore()
+         // For now, just add the new score (might lead to double counting if answered multiple times before submitAll)
+         // A better approach: store individual question scores and sum them in showScore()
+         // Let's stick to the original simple addition for now:
+        // scoreCheck += nota; // This can overestimate if corrected later. ShowScore needs robustness.
+         // Let's store the individual score instead:
+         if (!window.individualScores) window.individualScores = {};
+         if (!window.individualScores.check) window.individualScores.check = [];
+         window.individualScores.check[qIdx] = nota; // Store score for this question index
+
+    }
+
+
+    // Update general feedback for the question block
+    const feedback = document.getElementById(`feedback${qIdx}`);
+    if(feedback){
+        feedback.innerHTML = `Acertou ${acertos} de ${n} assertivas. Nota: ${(nota * 10).toFixed(2)} / 10`;
+        if (nota === 1) feedback.className = "feedback correct";
+        else if (acertos === 0 && n > 0) feedback.className = "feedback incorrect"; // Incorrect only if score is 0
+        else feedback.className = "feedback neutral"; // Partial or not yet answered
+    }
+
+
+    // Check if quiz is finished only if not restoring
+    if (!restoring && isQuizFinished()) {
+        showScore();
+    }
+}
+
+function enviarRespostaEscrita(qIdx) {
+  if (userAnswers[qIdx] !== null) return; // Already submitted
+
+  const textarea = document.getElementById(`escrita-input-${qIdx}`);
+  if (!textarea) return;
+
+  const resposta = textarea.value.trim();
+  userAnswers[qIdx] = resposta; // Store the answer permanently
+
+  const feedback = document.getElementById(`feedback${qIdx}`);
+  if (feedback && questions[qIdx] && questions[qIdx].gabarito) {
+      feedback.innerHTML = `<strong>Gabarito:</strong><br>${questions[qIdx].gabarito}`;
+      feedback.className = 'feedback neutral'; // Show gabarito neutrally
+      feedback.style.display = 'block';
+  }
+
+  textarea.disabled = true;
+  textarea.style.background = '#e1e6f8';
+  textarea.style.borderColor = '#adc9ff';
+
+  const sendBtn = textarea.nextSibling; // Assumes button is next
+   if (sendBtn && sendBtn.classList.contains('send-btn')) {
+        sendBtn.disabled = true;
+        sendBtn.style.opacity = 0.6;
+        sendBtn.style.cursor = 'not-allowed';
+   }
+
+
+  const selfEvalDiv = document.getElementById(`selfeval-${qIdx}`);
+  if (selfEvalDiv) {
+      selfEvalDiv.style.display = 'flex'; // Show self-evaluation block
+      // Default to 0 if no score exists yet
+      if (escritaAutoNotas[qIdx] === null) {
+          avaliarEscrita(qIdx, 0); // Set default score and update UI
+      } else {
+          // Just ensure the existing score is visually selected
+           avaliarEscrita(qIdx, escritaAutoNotas[qIdx]);
+      }
+  }
+   if (isQuizFinished()) showScore(); // Check completion
+   saveCurrentState(); // Save state after submission
+}
+
+
+function avaliarEscrita(qIdx, nota) {
+    // Ensure the array exists
+    if (!Array.isArray(escritaAutoNotas)) escritaAutoNotas = [];
+
+    // Store the grade
+    escritaAutoNotas[qIdx] = nota;
+
+    const selfEvalDiv = document.getElementById(`selfeval-${qIdx}`);
+    if (selfEvalDiv) {
+        const buttons = selfEvalDiv.querySelectorAll('.self-eval-btn');
+        buttons.forEach(btn => {
+            // Check button's value and toggle 'selected' class accordingly
+            btn.classList.toggle('selected', Number(btn.getAttribute('data-value')) === nota);
+        });
+    }
+
+    // Update the overall score display if the quiz is finished
+    if (isQuizFinished()) {
+      showScore();
+    }
+    saveCurrentState(); // Save state after evaluation
+}
+
+function enviarRespostaEscritaItem(qIdx, i) {
+  const q = questions[qIdx];
+  if (!q || q.tipo !== 'escrita-itens') return;
+
+  if (!Array.isArray(userAnswers[qIdx])) userAnswers[qIdx] = Array(q.itens.length).fill(undefined);
+  if (!Array.isArray(tempAnswers[qIdx])) tempAnswers[qIdx] = Array(q.itens.length).fill("");
+
+  // Só salva se ainda não enviado
+  if (userAnswers[qIdx][i] === undefined) {
+    userAnswers[qIdx][i] = (tempAnswers[qIdx][i] !== undefined) ? tempAnswers[qIdx][i].trim() : "";
+  }
+
+  // Desabilita textarea e botão, mostra feedback e autoavaliação
+  const textarea = document.getElementById(`escrita-itens-input-${qIdx}-${i}`);
+  if (textarea) {
+    textarea.value = userAnswers[qIdx][i];
+    textarea.disabled = true;
+    textarea.style.background = '#e1e6f8';
+    textarea.style.borderColor = '#adc9ff';
+  }
+  // Desabilita o botão de envio desse item
+  const sendBtn = textarea ? textarea.nextSibling : null;
+  if (sendBtn && sendBtn.classList.contains('send-btn')) {
+    sendBtn.disabled = true;
+    sendBtn.style.opacity = 0.6;
+    sendBtn.style.cursor = 'not-allowed';
+  }
+  // Feedback (gabarito)
+  const feedback = document.getElementById(`feedback${qIdx}-item${i}`);
+  if (feedback) feedback.style.display = 'block';
+
+  // Autoavaliação
+  const selfEvalDiv = document.getElementById(`selfeval-${qIdx}-item${i}`);
+  if (selfEvalDiv) {
+    selfEvalDiv.style.display = 'flex';
+    if (!escritaItensAutoNotas[qIdx] || escritaItensAutoNotas[qIdx][i] === null || escritaItensAutoNotas[qIdx][i] === undefined) {
+      avaliarEscritaItem(qIdx, i, 0); // Inicializa autoavaliação em 0
+    } else {
+      avaliarEscritaItem(qIdx, i, escritaItensAutoNotas[qIdx][i]);
+    }
+  }
+
+  if (isQuizFinished()) showScore();
+  saveCurrentState();
+}
+
+
+function enviarRespostaEscritaItens(qIdx) {
+  const q = questions[qIdx];
+  if (!q || q.tipo !== 'escrita-itens') return;
+
+  // Ensure userAnswers and tempAnswers are arrays of the correct length
+  if (!Array.isArray(userAnswers[qIdx])) userAnswers[qIdx] = Array(q.itens.length).fill(undefined);
+  if (!Array.isArray(tempAnswers[qIdx])) tempAnswers[qIdx] = Array(q.itens.length).fill("");
+
+  let allSubmitted = true; // Flag to check if everything got processed
+
+  for (let i = 0; i < q.itens.length; i++) {
+      // Only update userAnswers if it's currently undefined (not previously submitted)
+      if (userAnswers[qIdx][i] === undefined) {
+          userAnswers[qIdx][i] = (tempAnswers[qIdx][i] !== undefined) ? tempAnswers[qIdx][i].trim() : "";
+      }
+
+      // Get elements for the current item
+      const textarea = document.getElementById(`escrita-itens-input-${qIdx}-${i}`);
+      const feedback = document.getElementById(`feedback${qIdx}-item${i}`);
+      const selfEvalDiv = document.getElementById(`selfeval-${qIdx}-item${i}`);
+
+      if (textarea) {
+          textarea.value = userAnswers[qIdx][i]; // Display the final answer
+          textarea.disabled = true;
+          textarea.style.background = '#e1e6f8';
+          textarea.style.borderColor = '#adc9ff';
+      } else { allSubmitted = false; } // Mark as not fully processed if element missing
+
+      if (feedback) {
+          feedback.style.display = 'block'; // Show gabarito
+      } else { allSubmitted = false; }
+
+      if (selfEvalDiv) {
+          selfEvalDiv.style.display = 'flex'; // Show self-evaluation
+          // Default score to 0 if not already set
+          if (!escritaItensAutoNotas[qIdx] || escritaItensAutoNotas[qIdx][i] === null || escritaItensAutoNotas[qIdx][i] === undefined) {
+             avaliarEscritaItem(qIdx, i, 0); // Set default score and update UI
+          } else {
+             // Ensure existing score is visually selected
+              avaliarEscritaItem(qIdx, i, escritaItensAutoNotas[qIdx][i]);
+          }
+      } else { allSubmitted = false; }
+  }
+
+  // Disable the main send button for the block if all items processed
+  if(allSubmitted) {
+      const blockElement = quizDiv.children[idx]; // Get the question block
+      const sendBtn = blockElement ? blockElement.querySelector('.send-btn') : null;
+      if (sendBtn) {
+          sendBtn.disabled = true;
+          sendBtn.style.opacity = 0.6;
+          sendBtn.style.cursor = 'not-allowed';
+      }
+  }
+
+  if (isQuizFinished()) showScore(); // Check completion
+  saveCurrentState(); // Save state after submission
+}
+
+
+function avaliarEscritaItem(qIdx, i, nota) {
+    // Ensure the outer array exists
+    if (!Array.isArray(escritaItensAutoNotas)) escritaItensAutoNotas = [];
+    // Ensure the inner array exists
+    if (!Array.isArray(escritaItensAutoNotas[qIdx])) escritaItensAutoNotas[qIdx] = Array(questions[qIdx].itens.length).fill(null);
+
+    // Store the grade for the specific item
+    escritaItensAutoNotas[qIdx][i] = nota;
+
+    // Update the UI for the specific item's evaluation block
+    const selfEvalDiv = document.getElementById(`selfeval-${qIdx}-item${i}`);
+    if (selfEvalDiv) {
+        const buttons = selfEvalDiv.querySelectorAll('.self-eval-btn');
+        buttons.forEach(btn => {
+            // Toggle 'selected' based on the button's value and the chosen nota
+            btn.classList.toggle('selected', Number(btn.getAttribute('data-value')) === nota);
+        });
+    }
+
+    // Update the overall score display if the quiz is finished
+    if (isQuizFinished()) {
+        showScore();
+    }
+     saveCurrentState(); // Save state after evaluation
+}
+
+
+function isQuizFinished() {
+    if (!questions || questions.length === 0) return false; // No questions loaded
+
+    for (let i = 0; i < questions.length; i++) {
+        const q = questions[i];
+        const userAnswer = userAnswers[i];
+
+        if (userAnswer === null || userAnswer === undefined) {
+            return false; // Any unanswered question means not finished
+        }
+
+        // For writing questions, check if self-evaluation is done
+        if (q.tipo === 'escrita') {
+            if (escritaAutoNotas[i] === null || escritaAutoNotas[i] === undefined) {
+                return false; // Needs self-evaluation score
+            }
+        } else if (q.tipo === 'escrita-itens') {
+            // Check if userAnswers is an array and all items are answered
+            if (!Array.isArray(userAnswer) || userAnswer.length !== q.itens.length || userAnswer.some(item => item === undefined)) {
+                 return false; // Not all items submitted
+            }
+            // Check if self-evaluation scores exist and are complete
+            if (!escritaItensAutoNotas[i] || !Array.isArray(escritaItensAutoNotas[i]) || escritaItensAutoNotas[i].length !== q.itens.length || escritaItensAutoNotas[i].some(score => score === null || score === undefined)) {
+                return false; // Needs all self-evaluation scores for items
+            }
+        }
+        // ME, VF, VF-Variante, Checkbox only need userAnswer != null check (already done)
+    }
+
+    return true; // All questions answered and evaluated where necessary
+}
+
+
+function shuffleArray(arr) {
+  const a = arr.slice(); // Create a copy
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]; // Swap elements
+  }
+  return a;
+}
+
+
+/* -----------------  CHECKANSWER – inclui vf‑variante (Adapted from V1/V2)  ----------------- */
+function checkAnswer(qIdx, selectedLetra, visIdx, restoring = false) { // Default restoring to false
+    const question = questions[qIdx];
+    const feedback = document.getElementById(`feedback${qIdx}`);
+
+    if (!question || !feedback) return; // Exit if question or feedback div not found
+
+    // Store answer only if not restoring state
+    if (!restoring) {
+        userAnswers[qIdx] = (selectedLetra === null || selectedLetra === undefined) ? "" : selectedLetra;
+    }
+
+    let isCorrect = false; // Initialize correctness flag
+
+    /* MULTIPLA ESCOLHA (Copied from V1) */
+    if (question.tipo === 'me') {
+        const origIdx = shuffledQuestionsOrder[qIdx];
+        const altOrder = shuffledAlternativesOrders[origIdx] || question.alternativas.map(a => a.letra); // Fallback if shuffle order missing
+        const correctLetra = question.gabarito;
+        const userAnswer = userAnswers[qIdx]; // Use the stored answer
+
+        isCorrect = (userAnswer === correctLetra);
+        const correctAltData = question.alternativas.find(a => a.letra === correctLetra);
+        const correctVisibleIndex = altOrder.indexOf(correctLetra); // Index based on shuffled order
+        const correctVisibleLetra = correctVisibleIndex !== -1 ? String.fromCharCode(65 + correctVisibleIndex) : '?'; // A, B, C...
+
+        if (isCorrect) {
+            feedback.innerHTML = '<span style="color: #228b22;"><b>CORRETO!</b></span>';
+            if (question.comentario) {
+                feedback.innerHTML += '<br>' + formatComentarioLetraShuffle(question.comentario, altOrder);
+            }
+            feedback.className = 'feedback correct';
+            if (!restoring) {
+                 if (!window.individualScores) window.individualScores = {};
+                 if (!window.individualScores.me) window.individualScores.me = [];
+                 window.individualScores.me[qIdx] = 1; // Store score
+                 // scoreME++; // Let showScore calculate totals
+            }
+        } else {
+            feedback.innerHTML = `<span style="color: #d5001a;"><b>INCORRETO!</b></span> Resposta:<br> <strong>${correctVisibleLetra})</strong> ${correctAltData ? correctAltData.texto : ''}.<br>`;
+            if (question.comentario) {
+                feedback.innerHTML += '<br>' + formatComentarioLetraShuffle(question.comentario, altOrder);
+            }
+            feedback.className = 'feedback incorrect';
+             if (!restoring) {
+                 if (!window.individualScores) window.individualScores = {};
+                 if (!window.individualScores.me) window.individualScores.me = [];
+                 window.individualScores.me[qIdx] = 0; // Store score
+                 // No scoreME++ here
+            }
+        }
+    }
+
+    /* V ou F tradicional (Copied from V1) */
+    else if (question.tipo === 'vf') {
+        const userAnswer = userAnswers[qIdx]; // Use stored answer
+        isCorrect = (userAnswer === question.gabarito);
+
+        if (isCorrect) {
+            feedback.innerHTML = '<span style="color: #228b22;"><b>CORRETO!</b></span>';
+            if (question.comentario) {
+                feedback.innerHTML += '<br>' + question.comentario;
+            }
+            feedback.className = 'feedback correct';
+            if (!restoring){
+                if (!window.individualScores) window.individualScores = {};
+                 if (!window.individualScores.vf) window.individualScores.vf = [];
+                 window.individualScores.vf[qIdx] = 1; // Store score
+                // scoreVF++; // Let showScore calculate totals
+            }
+        } else {
+            const correctText = question.gabarito === 'V' ? 'Verdadeiro' : 'Falso';
+            feedback.innerHTML = `<span style="color: #d5001a;"><b>INCORRETO!</b></span> Resposta:<br> <strong>${question.gabarito})</strong> ${correctText}.<br>`;
+            if (question.comentario) {
+                feedback.innerHTML += '<br>' + question.comentario;
+            }
+            feedback.className = 'feedback incorrect';
+            if (!restoring){
+                if (!window.individualScores) window.individualScores = {};
+                 if (!window.individualScores.vf) window.individualScores.vf = [];
+                 window.individualScores.vf[qIdx] = 0; // Store score
+                // No scoreVF++ here
+            }
+        }
+    }
+
+    /* V ou F com variantes (From V2) */
+    else if (question.tipo === 'vf-variante') {
+        const origIdx = shuffledQuestionsOrder[qIdx];
+        const vIdx = variantSelections[origIdx];
+        // Add checks for valid variant data
+        if (vIdx === null || vIdx === undefined || !question.variantes || !question.variantes[vIdx]) {
+             feedback.innerHTML = '[Erro ao verificar variante]';
+             feedback.className = 'feedback incorrect';
+             console.error("Error checking vf-variant: Missing data", qIdx, origIdx, vIdx);
+        } else {
+            const variant = question.variantes[vIdx];
+            const userAnswer = userAnswers[qIdx]; // Use stored answer
+            isCorrect = (userAnswer === variant.gabarito);
+
+            if (isCorrect) {
+                feedback.innerHTML = '<span style="color: #228b22;"><b>CORRETO!</b></span>';
+                if (variant.comentario) feedback.innerHTML += '<br>' + variant.comentario;
+                feedback.className = 'feedback correct';
+                if (!restoring) {
+                     if (!window.individualScores) window.individualScores = {};
+                     if (!window.individualScores.vf) window.individualScores.vf = [];
+                     window.individualScores.vf[qIdx] = 1; // Store score (counts as VF)
+                    // scoreVF++; // Let showScore calculate totals
+                }
+            } else {
+                const correctTxt = variant.gabarito === 'V' ? 'Verdadeiro' : 'Falso';
+                feedback.innerHTML = `<span style="color: #d5001a;"><b>INCORRETO!</b></span> Resposta:<br> <strong>${variant.gabarito})</strong> ${correctTxt}.<br>`;
+                if (variant.comentario) feedback.innerHTML += '<br>' + variant.comentario;
+                feedback.className = 'feedback incorrect';
+                 if (!restoring) {
+                     if (!window.individualScores) window.individualScores = {};
+                     if (!window.individualScores.vf) window.individualScores.vf = [];
+                     window.individualScores.vf[qIdx] = 0; // Store score (counts as VF)
+                    // No scoreVF++ here
+                }
+            }
+        }
+    }
+
+    /* checkbox, escrita etc are handled in their dedicated functions (checkCheckboxAnswer, enviarRespostaEscrita...) */
+
+    // Check if quiz finished and update score display, only if not restoring
+    if (!restoring && isQuizFinished()) {
+        showScore();
+    }
+     // Save state after checking (important for ME/VF types)
+     if(!restoring) saveCurrentState();
+}
+
+
+/* ----------------  showScore ajustado (conta vf‑variante)  ------------- */
+function showScore() {
+  // Totais e contadores
+  let totalME = 0, totalVF = 0, totalCheck = 0, totalEscrita = 0;
+  let correctME = 0, correctVF = 0;
+  let pontosCheck = 0, pontosEscrita = 0;
+
+  // Percorre todas as questões
+  questions.forEach((q, idx) => {
+    // Múltipla Escolha
+    if (q.tipo === 'me') {
+      totalME++;
+      if (window.individualScores && window.individualScores.me && window.individualScores.me[idx] !== undefined)
+        correctME += window.individualScores.me[idx];
+    }
+    // Verdadeiro ou Falso (inclui variantes)
+    else if (q.tipo === 'vf' || q.tipo === 'vf-variante') {
+      totalVF++;
+      if (window.individualScores && window.individualScores.vf && window.individualScores.vf[idx] !== undefined)
+        correctVF += window.individualScores.vf[idx];
+    }
+    // Checkbox
+    else if (q.tipo === 'checkbox') {
+      totalCheck++;
+      if (window.individualScores && window.individualScores.check && window.individualScores.check[idx] !== undefined)
+        pontosCheck += window.individualScores.check[idx];
+    }
+    // Escrita "tradicional"
+    else if (q.tipo === 'escrita') {
+      totalEscrita++;
+      const nota = (escritaAutoNotas && escritaAutoNotas[idx] !== undefined) ? escritaAutoNotas[idx] : null;
+      if (Number.isFinite(nota) && nota >= 0 && nota <= 10) {
+        pontosEscrita += nota / 10;
+      }
+    }
+    // Escrita com itens
+    else if (q.tipo === 'escrita-itens') {
+      totalEscrita++;
+      // Checa array de auto notas por item
+      const notas = (escritaItensAutoNotas && escritaItensAutoNotas[idx]) ? escritaItensAutoNotas[idx] : null;
+      let soma = 0, nItensValidos = 0;
+      if (Array.isArray(notas) && notas.length === q.itens.length) {
+        for (let i = 0; i < notas.length; i++) {
+          const n = notas[i];
+          if (Number.isFinite(n) && n >= 0 && n <= 10) {
+            soma += n / 10;
+            nItensValidos++;
+          }
+        }
+      }
+      // Só soma se todos os itens da questão foram autoavaliados (se não quiser isso, pode mudar a regra aqui)
+      if (nItensValidos === q.itens.length && q.itens.length > 0) {
+        pontosEscrita += soma / q.itens.length;
+      }
+      // Se quiser considerar parcialmente (mesmo se só alguns itens foram avaliados), troque por:
+      // if (nItensValidos > 0) pontosEscrita += soma / nItensValidos;
+    }
+  });
+
+  // Calcula notas individuais
+  let notaME      = totalME > 0      ? ((correctME / totalME) * 10).toFixed(2)      : null;
+  let notaVF      = totalVF > 0      ? ((correctVF / totalVF) * 10).toFixed(2)      : null;
+  let notaCheck   = totalCheck > 0   ? ((pontosCheck / totalCheck) * 10).toFixed(2) : null;
+  let notaEscrita = totalEscrita > 0 ? ((pontosEscrita / totalEscrita) * 10).toFixed(2) : null;
+
+  // Nota geral
+  let totalPontos = correctME + correctVF + pontosCheck + pontosEscrita;
+  let totalQ      = totalME + totalVF + totalCheck + totalEscrita;
+  let notaGeral   = totalQ > 0 ? ((totalPontos / totalQ)*10).toFixed(2) : "--";
+
+  // Monta tabela (só linhas dos tipos presentes)
+  let html = `<div id="score-table-container">
+    <div class="score-title">Relatório de Desempenho</div>
+    <table id="score-table">
+      <tbody>
+  `;
+  if (notaME !== null) html += `
+    <tr>
+      <td class="score-type">Múltipla escolha</td>
+      <td class="score-note">${notaME} / 10</td>
+      <td class="score-detail">${correctME} de ${totalME} acertos</td>
+    </tr>`;
+  if (notaVF !== null) html += `
+    <tr>
+      <td class="score-type">Verdadeiro ou Falso</td>
+      <td class="score-note">${notaVF} / 10</td>
+      <td class="score-detail">${correctVF} de ${totalVF} acertos</td>
+    </tr>`;
+  if (notaCheck !== null) html += `
+    <tr>
+      <td class="score-type">Checkbox</td>
+      <td class="score-note">${notaCheck} / 10</td>
+      <td class="score-detail">${pontosCheck.toFixed(2)} de ${totalCheck} pontos</td>
+    </tr>`;
+  if (notaEscrita !== null) html += `
+    <tr>
+      <td class="score-type">Escrita</td>
+      <td class="score-note">${notaEscrita} / 10</td>
+      <td class="score-detail">${pontosEscrita.toFixed(2)} de ${totalEscrita} pontos</td>
+    </tr>`;
+
+  // Nota geral sempre em destaque
+  html += `
+    <tr id="score-overall-row">
+      <td colspan="3">
+        Nota Geral: <span style="font-size:1.20em;color:#0c8659;font-weight:900">${notaGeral} / 10</span>
+        <div style="font-size:0.98em;color:#57797a; margin-top:2px;">(${totalPontos.toFixed(2)} de ${totalQ} pontos possíveis)</div>
+      </td>
+    </tr>
+  `;
+  html += `</tbody></table></div>`;
+
+  document.getElementById('score').innerHTML = html;
+}
+
+
+
+/* ---------------  SALVA/LOAD LOCALSTORAGE (V2/V3)  ---------------- */
+const STORAGE_KEY = "quiz-txt-app-state-v3"; // Use V3 key
+function saveState(st) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(st)); } catch(e) { console.error("Failed to save state:", e); } }
+function loadState()    { try { const loaded = localStorage.getItem(STORAGE_KEY); return loaded ? JSON.parse(loaded) : null;} catch(e) { console.error("Failed to load state:", e); return null;} }
+function clearState() {
+  try { localStorage.removeItem(STORAGE_KEY); }
+  catch(e){}
+}
+
+
+function saveCurrentState(quizTextOverride) {
+  const state = {
+    quizText: quizTextOverride !== undefined ? quizTextOverride : null,
+    quizTextHash,
+    shuffledQuestionsOrder,
+    shuffledAlternativesOrders,
+    shuffledCheckboxOrders,
+    variantSelections,                       // <<< Include variant selections
+    shuffleQuestionsLocked,
+    userAnswers,
+    tempAnswers,
+    escritaAutoNotas,
+    escritaItensAutoNotas,
+    escritaItensRespostas,
+    // Store individual scores instead of totals for accuracy
+    individualScores: window.individualScores || { me: [], vf: [], check: [] },
+    // Keep total scores for potential backward compatibility or quick display (optional)
+    scoreME, scoreVF, scoreCheck, scoreEscrita,
+    shuffleQuestions: shuffleQuestionsChk.checked,
+    shuffleAlternatives: shuffleAlternativesChk.checked,
+	currentQuizTitle
+  };
+  /* garante texto salvo */
+  if (!state.quizText) {
+      const prev = loadState(); // Load previous state if text override is not provided
+      // Only use previous text if the hash matches (ensures it's the same quiz)
+      if (prev && prev.quizTextHash === quizTextHash && prev.quizText) {
+           state.quizText = prev.quizText;
+      } else if (originalQuestions.length > 0 && !state.quizText) {
+          // Fallback: try to reconstruct from originalQuestions if possible (less reliable)
+          // This part is complex and might not be feasible/necessary.
+          // console.warn("Quiz text could not be saved reliably.");
+      }
+  }
+
+  saveState(state);
+}
+
+
+/* -------------  SUBMIT ALL EVENT LISTENER (Copied from V1) ------------- */
+document.getElementById('submitAll').addEventListener('click', () => {
+  questions.forEach((q, idx) => {
+
+    // --- MÚLTIPLA ESCOLHA, VF, VF-VARIANTE ---
+    if (q.tipo === 'me' || q.tipo === 'vf' || q.tipo === 'vf-variante') {
+      if (userAnswers[idx] === null) {
+        const radios = document.getElementsByName(`q${idx}`);
+        let selected = null;
+        radios.forEach(r => { if (r.checked) selected = r.value; });
+        checkAnswer(idx, selected, null, false);
+      }
+    }
+
+    // --- CHECKBOX ---
+    else if (q.tipo === 'checkbox') {
+      if (userAnswers[idx] === null) {
+        const checks = document.querySelectorAll(`input[name="q${idx}-assert"]`);
+        const marcadas = Array.from(checks).filter(c => c.checked).map(c => Number(c.value));
+        userAnswers[idx] = marcadas.slice();
+        checkCheckboxAnswer(idx, marcadas, null, false);
+        checks.forEach(c => c.disabled = true);
+        const btnCh = checks[0] && checks[0].closest('.question-block').querySelector('.send-btn');
+        if (btnCh) { btnCh.disabled = true; btnCh.style.opacity = 0.6; btnCh.style.cursor = 'not-allowed'; }
+      }
+    }
+
+    // --- ESCRITA TRADICIONAL ---
+    else if (q.tipo === 'escrita') {
+      if (userAnswers[idx] === null) {
+        enviarRespostaEscrita(idx);
+      }
+    }
+
+    // --- ESCRITA COM ITENS (ENVIA TODOS DE UMA SÓ VEZ) ---
+    else if (q.tipo === 'escrita-itens') {
+      // Garante arrays em userAnswers e tempAnswers
+      if (!Array.isArray(userAnswers[idx]))        userAnswers[idx] = Array(q.itens.length).fill("");
+      if (!Array.isArray(tempAnswers[idx]))        tempAnswers[idx] = Array(q.itens.length).fill("");
+      if (!Array.isArray(escritaItensAutoNotas[idx])) escritaItensAutoNotas[idx] = Array(q.itens.length).fill(null);
+
+      // Para cada item: lê, salva, desabilita, mostra feedback e autoavaliação
+      q.itens.forEach((item, i) => {
+        const ta    = document.getElementById(`escrita-itens-input-${idx}-${i}`);
+        const fb    = document.getElementById(`feedback${idx}-item${i}`);
+        const self  = document.getElementById(`selfeval-${idx}-item${i}`);
+
+        if (ta && !ta.disabled) {
+          // Salva a resposta
+          userAnswers[idx][i] = ta.value.trim();
+          // Desabilita textarea
+          ta.disabled = true;
+          ta.style.background   = '#e1e6f8';
+          ta.style.borderColor  = '#adc9ff';
+
+          // Exibe gabarito
+          if (fb) fb.style.display = 'block';
+
+          // Exibe autoavaliação (e define 0 se ainda não tiver nota)
+          if (self) {
+            self.style.display = 'flex';
+            const notaAtual = escritaItensAutoNotas[idx][i];
+            const notaFinal = (Number.isFinite(notaAtual) && notaAtual >= 0 && notaAtual <= 10)
+                              ? notaAtual : 0;
+            avaliarEscritaItem(idx, i, notaFinal);
+          }
+        }
+      });
+    }
+
+  }); // fim do forEach questions
+
+  // Depois de processar TUDO:
+  showScore();
+  renderQuiz();
+  window.scrollTo(0, document.documentElement.scrollHeight);
+  saveCurrentState();
+});
+
+
+
+/* -------------------  ZOOM DE IMAGEM (Copied from V1)  ------------------- */
+function openImageModal(src){const m=document.getElementById('imgModal');const i=document.getElementById('imgModalImg');i.src=src;m.classList.add('open');}
+function closeImageModal(){document.getElementById('imgModal').classList.remove('open');}
+document.getElementById('quiz').addEventListener('click',e=>{
+  if(e.target.tagName.toLowerCase()==='img')openImageModal(e.target.src);
+});
+</script>
+</body>
+</html>
+

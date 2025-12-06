@@ -1,0 +1,229 @@
+Descrição: Simulado com questões de múltipla escolha (ME), Verdadeiro ou Falso (VF) e Checkbox (CH), incluindo pastas, grupos de questões e variantes.
+
+Pasta: Clínica Médica
+[
+
+juntas [
+Texto Base: <b>Texto Base:</b> Paciente de 65 anos com história de insuficiência cardíaca descompensada, edema de membros inferiores e dispneia aos mínimos esforços.
+
+Tag: Clínica Médica, Insuficiência Cardíaca
+Dificuldade: Fácil
+Q: O exame físico clássico da insuficiência cardíaca direita inclui:
+A) Turgência jugular patológica e hepatomegalia dolorosa.
+B) Pletora facial e sopro sistólico em foco aórtico.
+C) Icterícia intensa e sinais de encefalopatia hepática.
+D) Hipotensão severa e ausência de pulsos periféricos.
+G: A
+CG: Turgência jugular e hepatomegalia dolorosa são achados comuns em IC direita.
+
+Tag: Clínica Médica, Insuficiência Cardíaca
+Dificuldade: Muito fácil
+Q: Na insuficiência cardíaca, o uso de diuréticos pode reduzir o edema periférico e melhorar a dispneia.
+G: V
+C: Os diuréticos reduzem a congestão hídrica, aliviando sintomas como edema e falta de ar.
+
+Tag: Clínica Médica, Insuficiência Cardíaca
+Dificuldade: Médio
+CH: Sobre o manejo inicial da insuficiência cardíaca aguda no pronto atendimento:
+A1: Oxigenoterapia pode ser indicada em pacientes com saturação de O₂ reduzida.
+G: V
+C: A oferta de oxigênio suplementar é recomendada em hipoxemia.
+A2: Restrição hídrica é uma medida que pode ser necessária em alguns pacientes.
+G: V
+C: Ajuda a evitar piora da congestão.
+A3: O uso de betabloqueadores deve ser sempre iniciado em dose plena na admissão.
+G: F
+C: Em descompensação aguda, betabloqueadores exigem cautela e individualização.
+CG: O manejo foca em aliviar a congestão, melhorar a oxigenação e estabilizar hemodinamicamente o paciente.
+]
+
+Tag: Hipertensão
+Dificuldade: Fácil
+Q: Qual das opções abaixo é considerada um fator de risco clássico para hipertensão arterial sistêmica?
+A) Tabagismo.
+B) Baixo consumo de sódio.
+C) Prática regular de atividade física.
+D) Peso adequado para a altura.
+G: A
+CG: Tabagismo, sedentarismo, obesidade e alto consumo de sal são fatores de risco importantes.
+
+Tag: Diabetes
+Dificuldade: Fácil
+Q: Na cetoacidose diabética, a hiperglicemia está associada à acidose metabólica com anion gap aumentado.
+G: V
+C: A cetoacidose cursa com produção de corpos cetônicos, gerando acidose metabólica de ânion gap elevado.
+
+Tag: Diabetes, Complicações
+Dificuldade: Médio
+CH: Marque as características que DEVEM ser associadas à hipoglicemia grave em pacientes diabéticos:
+A1: Confusão mental ou alteração de nível de consciência.
+G: V
+C: Sintoma neurológico típico de hipoglicemia grave.
+A2: Glicemia capilar muito baixa (por exemplo, abaixo de 50 mg/dL).
+G: V
+C: Valores muito baixos reforçam o diagnóstico de hipoglicemia.
+A3: Necessidade de auxílio de terceiros para se recuperar.
+G: V
+C: Define hipoglicemia grave na prática clínica.
+A4: Aumento da diurese e sede intensa.
+G: F
+C: São sinais mais relacionados à hiperglicemia.
+CG: Hipoglicemia grave envolve sintomas neuroglicopênicos importantes e necessidade de ajuda.
+]
+
+
+Pasta: Biologia
+[
+
+variantes [
+Tag: Citologia
+Dificuldade: Fácil
+
+Q: A mitocôndria é conhecida principalmente por sua função de:
+A) Armazenar material genético hereditário.
+B) Produzir ATP através da respiração celular.
+C) Realizar fotossíntese em células animais.
+D) Sintetizar proteínas no citoplasma.
+G: B
+CG: A mitocôndria é a principal organela responsável pela produção de ATP.
+
+Q: Os ribossomos são estruturas celulares relacionadas principalmente à:
+A) Síntese de proteínas.
+B) Digestão intracelular.
+C) Armazenamento de lipídios.
+D) Produção de ATP.
+G: A
+CG: Os ribossomos são o local de síntese proteica.
+]
+
+variantes [
+Tag: Genética
+Dificuldade: Fácil
+
+Q: O DNA possui normalmente dupla-hélice e é composto por desoxirribose, fosfato e bases nitrogenadas.
+G: V
+C: Trata-se da estrutura clássica do DNA descrita por Watson e Crick.
+
+Q: Em humanos, a célula haploide possui o mesmo número de cromossomos que a célula somática.
+G: F
+C: Células haploides possuem metade do número de cromossomos (n) em relação às somáticas (2n).
+]
+
+Tag: Ecologia
+Dificuldade: Médio
+CH: Sobre relações ecológicas interespecíficas, marque as alternativas que DEVEM ser associadas à competição:
+A1: Ocorre quando duas espécies disputam o mesmo recurso limitado.
+G: V
+C: Competição envolve disputa por recurso comum.
+A2: A relação entre leão e zebra é um exemplo clássico de predação.
+G: F
+C: Predação, não competição.
+A3: Algumas competições podem levar à exclusão competitiva de uma das espécies.
+G: V
+C: Competidores menos eficientes podem ser excluídos do nicho.
+A3: Competição nunca leva à extinção local de espécies.
+G: F
+C: A exclusão competitiva pode levar à extinção local.
+CG: Competição ocorre quando espécies disputam o mesmo nicho ou recurso ambiental.
+
+Tag: Fisiologia
+Dificuldade: Fácil
+Q: Qual das estruturas abaixo é diretamente responsável pela filtração do sangue nos rins?
+A) Alça de Henle.
+B) Glomérulo.
+C) Uretra.
+D) Pelve renal.
+G: B
+CG: A filtração ocorre principalmente nos glomérulos dos néfrons.
+]
+
+
+Pasta: Tecnologia e Saúde Pública
+[
+
+juntas [
+Texto Base: <b>Texto Base:</b> Durante a pandemia de COVID-19, medidas não farmacológicas e vacinação foram fundamentais para reduzir casos graves e óbitos.
+
+Tag: Saúde Pública, COVID-19
+Dificuldade: Muito fácil
+Q: Uso de máscaras e distanciamento social foram medidas recomendadas para reduzir a transmissão do SARS-CoV-2.
+G: V
+C: São medidas de prevenção de transmissão por gotículas e aerossóis.
+
+Tag: Saúde Pública, COVID-19
+Dificuldade: Fácil
+CH: Marque as ações que DEVEM ser consideradas estratégias de Saúde Pública em pandemias:
+A1: Rastreamento de contatos de casos confirmados.
+G: V
+C: Ajuda a interromper cadeias de transmissão.
+A2: Divulgação de informações baseadas em evidências para a população.
+G: V
+C: Comunicação clara é fundamental em crises sanitárias.
+A3: Suspender toda e qualquer forma de vigilância epidemiológica.
+G: F
+C: O oposto: a vigilância deve ser fortalecida.
+CG: Combinação de vigilância, comunicação e medidas de controle são pilares da resposta em saúde pública.
+]
+
+variantes [
+Tag: Tecnologia, Segurança da Informação
+Dificuldade: Difícil
+
+CH: Marque as práticas que DEVEM ser consideradas medidas de segurança da informação:
+A1: Utilizar autenticação em dois fatores (2FA) sempre que disponível.
+G: V
+C: Aumenta a segurança de acesso.
+A2: Compartilhar senhas por e-mail com colegas de trabalho.
+G: F
+C: Senhas nunca devem ser compartilhadas dessa forma.
+A3: Manter softwares e sistemas sempre atualizados.
+G: V
+C: Corrige vulnerabilidades conhecidas.
+CG: Boas práticas reduzem o risco de ataques e vazamentos.
+
+CH: Marque as atitudes que NÃO DEVEM ser adotadas em segurança da informação:
+A1: Anotar senhas em papéis visíveis sobre a mesa.
+G: V
+C: Exemplo de conduta insegura que deve ser evitada.
+A2: Conectar-se a redes Wi-Fi públicas sem qualquer forma de proteção.
+G: V
+C: Aumenta o risco de interceptação de dados.
+A3: Desconfiar de links suspeitos enviados por desconhecidos.
+G: F
+C: Na verdade, essa atitude é desejável (deve ser encorajada).
+CG: Aqui, is_correct:true indica o que deve ser marcado como conduta inadequada, pois o comando pede para assinalar o que NÃO deve ser feito.
+]
+
+Tag: Informática em Saúde
+Dificuldade: Fácil
+Q: Um prontuário eletrônico bem projetado deve:
+A) Permitir registro claro e organizado das informações clínicas.
+B) Impedir qualquer forma de auditoria ou rastreio de acessos.
+C) Substituir o julgamento clínico do profissional de saúde.
+D) Ser inacessível a toda a equipe multiprofissional.
+G: A
+CG: O prontuário eletrônico organiza dados e permite rastreio seguro, sem substituir o profissional.
+
+Tag: Telemedicina
+Dificuldade: Fácil
+Q: A telemedicina pode ampliar o acesso à saúde em regiões remotas, desde que respeite princípios éticos e legais.
+G: V
+C: O uso responsável da telemedicina melhora o acesso sem substituir o exame clínico quando necessário.
+
+Tag: Saúde Pública, Promoção da Saúde
+Dificuldade: Muito fácil
+CH: Marque as ações que DEVEM ser associadas à promoção da saúde:
+A1: Campanhas de vacinação em massa.
+G: V
+C: Vacinação é estratégia fundamental de promoção e prevenção.
+A2: Programas de incentivo à atividade física.
+G: V
+C: Estimula hábitos de vida saudáveis.
+A3: Aumento deliberado do preço de alimentos ultraprocessados como política fiscal.
+G: V
+C: Medidas fiscais podem desestimular consumo de produtos não saudáveis.
+A4: Reduzir o acesso à informação sobre saúde baseada em evidências.
+G: F
+C: O objetivo é justamente ampliar o acesso à informação qualificada.
+CG: Promoção da saúde envolve políticas públicas, educação e ações de incentivo a comportamentos saudáveis.
+]

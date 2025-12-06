@@ -1,0 +1,72 @@
+{
+  "titulo": "Simulado de Julgamento (VF)",
+  "id_quiz": "exemplo_vf_v1",
+  "descricao": "Teste focado em questões do tipo Verdadeiro ou Falso.",
+  "conteudo": [
+    {
+      "tipo": "folder",
+      "nome": "Biologia Geral",
+      "conteudo": [
+        {
+          "tipo": "VF",
+          "id": "bio_01",
+          "tags": ["Citologia"],
+          "dificuldade": 1,
+          "enunciado": "A mitocôndria é a organela responsável pela respiração celular e produção de ATP.",
+          "gabarito": "V",
+          "comentario_geral": "Correto. É a 'usina de energia' da célula."
+        },
+        {
+          "tipo": "VF",
+          "id": "bio_02",
+          "tags": ["Genética"],
+          "dificuldade": 3,
+          "enunciado": "O RNA mensageiro possui a base nitrogenada Timina em sua estrutura.",
+          "gabarito": "F",
+          "comentario_geral": "Falso. O RNA substitui a Timina pela Uracila."
+        }
+      ]
+    },
+    {
+      "tipo": "grupo_juntas",
+      "texto": "<b>Texto Base:</b> A Revolução Francesa (1789) marcou o fim do Absolutismo na França.",
+      "questoes": [
+        {
+          "tipo": "VF",
+          "tags": ["História"],
+          "dificuldade": 2,
+          "enunciado": "A Queda da Bastilha é considerada o marco inicial simbólico da revolução.",
+          "gabarito": "V",
+          "comentario_geral": "Ocorreu em 14 de julho de 1789."
+        }
+      ]
+    },
+    {
+      "tipo": "variantes",
+      "tags": ["Geografia"],
+      "dificuldade": 2,
+      "questoes": [
+        {
+          "tipo": "VF",
+          "enunciado": "O Brasil é o maior país da América do Sul em extensão territorial.",
+          "gabarito": "V",
+          "comentario_geral": "Sim, ocupa quase metade do continente."
+        },
+        {
+          "tipo": "VF",
+          "enunciado": "O Chile é o país com a maior costa litorânea do Atlântico na América do Sul.",
+          "gabarito": "F",
+          "comentario_geral": "O Chile é banhado pelo Pacífico. O Brasil tem a maior costa do Atlântico."
+        }
+      ]
+    },
+    {
+      "tipo": "VF",
+      "tags": ["Tecnologia"],
+      "dificuldade": 4,
+      "enunciado": "O protocolo HTTP utiliza criptografia de ponta a ponta por padrão.<br><img src='https://via.placeholder.com/150' alt='Exemplo'>",
+      "gabarito": "F",
+      "comentario_geral": "O HTTP trafega texto puro. O HTTPS é que utiliza criptografia (TLS/SSL)."
+    }
+  ]
+}

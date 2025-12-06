@@ -1,0 +1,48 @@
+[
+  {
+    "type": "folder",
+    "name": "Testes",
+    "children": [
+      {
+        "type": "file",
+        "name": "CH-teste",
+        "path": "quizes-da-nuvem/Testes/CH-teste.json"
+      },
+      {
+        "type": "file",
+        "name": "ME-teste",
+        "path": "quizes-da-nuvem/Testes/ME-teste.json"
+      },
+      {
+        "type": "file",
+        "name": "teste digestório",
+        "path": "quizes-da-nuvem/Testes/teste digestório.json"
+      },
+      {
+        "type": "file",
+        "name": "testeconvertido - Vários tipos",
+        "path": "quizes-da-nuvem/Testes/testeconvertido - Vários tipos.json"
+      },
+      {
+        "type": "file",
+        "name": "testeconvertido",
+        "path": "quizes-da-nuvem/Testes/testeconvertido.json"
+      },
+      {
+        "type": "file",
+        "name": "VariosTipos - Convertido",
+        "path": "quizes-da-nuvem/Testes/VariosTipos - Convertido.json"
+      },
+      {
+        "type": "file",
+        "name": "VariosTipos",
+        "path": "quizes-da-nuvem/Testes/VariosTipos.json"
+      },
+      {
+        "type": "file",
+        "name": "VF-teste",
+        "path": "quizes-da-nuvem/Testes/VF-teste.json"
+      }
+    ]
+  }
+]

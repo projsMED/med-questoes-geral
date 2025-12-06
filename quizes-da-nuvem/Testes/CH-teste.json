@@ -1,0 +1,153 @@
+{
+  "titulo": "Exemplo Avançado - Questões Checkbox (CH)",
+  "id_quiz": "exemplo_ch_complexo_v1",
+  "descricao": "Demonstração de variantes de assertivas e lógica 'no_random'.",
+  "conteudo": [
+    {
+      "tipo": "folder",
+      "nome": "Epidemiologia",
+      "conteudo": [
+        {
+          "tipo": "grupo_juntas",
+          "id": "grp_dengue",
+          "texto": "<b>Contexto:</b> O Brasil enfrenta epidemias recorrentes de Dengue. O vetor principal é o mosquito <i>Aedes aegypti</i>, que se reproduz em água parada.",
+          "questoes": [
+            {
+              "tipo": "CH",
+              "id": "q1",
+              "tags": ["Dengue", "Sintomas"],
+              "dificuldade": 2,
+              "no_random": false,
+              "enunciado": "Selecione os sinais de alarme da Dengue:",
+              "assertivas": [
+                { "id": "ass_1", "texto": "Dor abdominal intensa e contínua.", "is_correct": true, "comentario": "Sinal de extravasamento plasmático." },
+                { "id": "ass_2", "texto": "Vômitos persistentes.", "is_correct": true, "comentario": "Indica gravidade." },
+                { "id": "ass_3", "texto": "Coriza e espirros.", "is_correct": false, "comentario": "Sintomas gripais, não de dengue." }
+              ],
+              "comentario_geral": "Identificar sinais de alarme evita o choque."
+            },
+            {
+              "tipo": "CH",
+              "id": "q2",
+              "tags": ["Dengue", "Prevenção"],
+              "dificuldade": 1,
+              "no_random": false,
+              "enunciado": "Sobre a prevenção e o vetor:",
+              "assertivas": [
+                { "id": "ass_1", "texto": "O mosquito tem hábitos noturnos.", "is_correct": false, "comentario": "É diurno." },
+                { "id": "ass_2", "texto": "O uso de repelentes é recomendado.", "is_correct": true, "comentario": "Medida de proteção individual." },
+                { "id": "ass_3", "texto": "A eliminação de criadouros é a medida mais eficaz.", "is_correct": true, "comentario": "Controle vetorial." }
+              ],
+              "comentario_geral": "O combate ao vetor é a principal estratégia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "folder",
+      "nome": "Bioquímica e Genética",
+      "conteudo": [
+        {
+          "tipo": "CH",
+          "id": "q3",
+          "tags": ["Nutrição", "Vitaminas"],
+          "dificuldade": 2,
+          "no_random": false,
+          "enunciado": "Julgue as assertivas sobre fontes vitamínicas:",
+          "assertivas": [
+            { 
+              "id": "ass_1", 
+              "texto": "A cenoura é rica em Vitamina A (Betacaroteno).", 
+              "is_correct": true, 
+              "comentario": "Essencial para a visão." 
+            },
+            { 
+              "id": "ass_2", 
+              "texto": "A Laranja é uma fonte primária de Vitamina C.", 
+              "is_correct": true, 
+              "comentario": "Variante A: Cítricos são clássicos." 
+            },
+            { 
+              "id": "ass_2", 
+              "texto": "A Acerola contém altas concentrações de Vitamina C.", 
+              "is_correct": true, 
+              "comentario": "Variante B: Acerola tem mais Vit C que a laranja." 
+            },
+            { 
+              "id": "ass_3", 
+              "texto": "Carnes são ricas em fibras.", 
+              "is_correct": false, 
+              "comentario": "Fibras são vegetais." 
+            }
+          ],
+          "comentario_geral": "Note que a assertiva 2 vai variar entre Laranja ou Acerola a cada tentativa."
+        },
+        {
+          "tipo": "CH",
+          "id": "q4",
+          "tags": ["DNA", "Genética"],
+          "dificuldade": 4,
+          "no_random": false,
+          "enunciado": "Sobre a estrutura dos ácidos nucleicos:",
+          "assertivas": [
+            { "id": "ass_1", "texto": "O DNA é uma dupla hélice.", "is_correct": true, "comentario": "Modelo de Watson e Crick." },
+            { "id": "ass_2", "texto": "O RNA geralmente é fita simples.", "is_correct": true, "comentario": "Correto." },
+            
+            { "id": "ass_3", "texto": "No DNA, a Adenina (A) pareia com Timina (T).", "is_correct": true, "comentario": "Variante 1: Base A-T." },
+            { "id": "ass_3", "texto": "No DNA, a Citosina (C) pareia com Guanina (G).", "is_correct": true, "comentario": "Variante 2: Base C-G." },
+            { "id": "ass_3", "texto": "No DNA, a Adenina (A) pareia com Uracila (U).", "is_correct": false, "comentario": "Variante 3 (Falsa): U é exclusivo de RNA." },
+            
+            { "id": "ass_4", "texto": "As ligações entre bases são pontes de hidrogênio.", "is_correct": true, "comentario": "Correto." },
+            
+            { "id": "ass_5", "texto": "A Timina é exclusiva do DNA.", "is_correct": true, "comentario": "Variante 1: T no DNA." },
+            { "id": "ass_5", "texto": "A Uracila é exclusiva do RNA.", "is_correct": true, "comentario": "Variante 2: U no RNA." }
+          ],
+          "comentario_geral": "Esta questão testa pareamento de bases com alta variabilidade nas assertivas 3 e 5."
+        }
+      ]
+    },
+    {
+      "tipo": "folder",
+      "nome": "Endocrinologia",
+      "conteudo": [
+        {
+          "tipo": "variantes",
+          "id": "var_diabetes_t1",
+          "questoes": [
+            {
+              "tipo": "CH",
+              "id": "q5_v1",
+              "tags": ["Diabetes Tipo 1"],
+              "dificuldade": 3,
+              "no_random": true,
+              "enunciado": "Marque as características <b>VERDADEIRAS</b> sobre o Diabetes Mellitus Tipo 1:",
+              "assertivas": [
+                { "id": "ass_1", "texto": "É uma doença autoimune.", "is_correct": true, "comentario": "Destruição das células beta." },
+                { "id": "ass_2", "texto": "Geralmente acomete jovens.", "is_correct": true, "comentario": "Pico na infância/adolescência." },
+                { "id": "ass_3", "texto": "O tratamento exige insulina.", "is_correct": true, "comentario": "Insulinodependente." },
+                { "id": "ass_4", "texto": "Está associado à obesidade e resistência insulínica.", "is_correct": false, "comentario": "Isso é DM Tipo 2." }
+              ],
+              "comentario_geral": "Foco nas características clássicas do DM1."
+            },
+            {
+              "tipo": "CH",
+              "id": "q6_v2",
+              "tags": ["Diabetes Tipo 1"],
+              "dificuldade": 3,
+              "no_random": true,
+              "enunciado": "Marque as afirmativas <b>INCORRETAS</b> (o que <b>NÃO</b> é característico) sobre o Diabetes Mellitus Tipo 1:",
+              "assertivas": [
+                { "id": "ass_1", "texto": "A principal causa é a resistência à insulina.", "is_correct": true, "comentario": "Correto (no sentido de que ESTA frase está errada sobre DM1). É característica de DM2." },
+                { "id": "ass_2", "texto": "Pode ser tratado apenas com dieta e exercícios.", "is_correct": true, "comentario": "Correto (frase falsa para DM1). DM1 exige insulina." },
+                { "id": "ass_3", "texto": "Ocorre destruição das ilhotas pancreáticas.", "is_correct": false, "comentario": "Incorreto marcar esta, pois é uma verdade sobre a doença." },
+                { "id": "ass_4", "texto": "Leva à cetoacidose se não tratado.", "is_correct": false, "comentario": "Incorreto marcar esta, pois é verdade." }
+              ],
+              "comentario_geral": "Atenção: O comando pede para assinalar o que NÃO condiz com a doença."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

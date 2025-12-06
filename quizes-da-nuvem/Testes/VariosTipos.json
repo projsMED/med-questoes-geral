@@ -1,0 +1,484 @@
+{
+  "titulo": "Simulado Misto – ME, VF e CH",
+  "id_quiz": "simulado_misto_16_v1",
+  "descricao": "Simulado com questões de múltipla escolha (ME), Verdadeiro ou Falso (VF) e Checkbox (CH), incluindo pastas, grupos de questões e variantes.",
+  "conteudo": [
+    {
+      "tipo": "folder",
+      "nome": "Clínica Médica",
+      "conteudo": [
+        {
+          "tipo": "grupo_juntas",
+          "id": "grp_insuf_card",
+          "texto": "<b>Texto Base:</b> Paciente de 65 anos com história de insuficiência cardíaca descompensada, edema de membros inferiores e dispneia aos mínimos esforços.",
+          "questoes": [
+            {
+              "tipo": "ME",
+              "id": "cm_q1",
+              "tags": ["Clínica Médica", "Insuficiência Cardíaca"],
+              "dificuldade": 2,
+              "enunciado": "O exame físico clássico da insuficiência cardíaca direita inclui:",
+              "alternativas": [
+                {
+                  "id": "a",
+                  "texto": "Turgência jugular patológica e hepatomegalia dolorosa."
+                },
+                {
+                  "id": "b",
+                  "texto": "Pletora facial e sopro sistólico em foco aórtico."
+                },
+                {
+                  "id": "c",
+                  "texto": "Icterícia intensa e sinais de encefalopatia hepática."
+                },
+                {
+                  "id": "d",
+                  "texto": "Hipotensão severa e ausência de pulsos periféricos."
+                }
+              ],
+              "gabarito": "A",
+              "comentario_geral": "Turgência jugular e hepatomegalia dolorosa são achados comuns em IC direita."
+            },
+            {
+              "tipo": "VF",
+              "id": "cm_q2",
+              "tags": ["Clínica Médica", "Insuficiência Cardíaca"],
+              "dificuldade": 1,
+              "enunciado": "Na insuficiência cardíaca, o uso de diuréticos pode reduzir o edema periférico e melhorar a dispneia.",
+              "gabarito": "V",
+              "comentario_geral": "Os diuréticos reduzem a congestão hídrica, aliviando sintomas como edema e falta de ar."
+            },
+            {
+              "tipo": "CH",
+              "id": "cm_q3",
+              "tags": ["Clínica Médica", "Insuficiência Cardíaca"],
+              "dificuldade": 3,
+              "no_random": false,
+              "enunciado": "Sobre o manejo inicial da insuficiência cardíaca aguda no pronto atendimento:",
+              "assertivas": [
+                {
+                  "id": "ass_1",
+                  "texto": "Oxigenoterapia pode ser indicada em pacientes com saturação de O₂ reduzida.",
+                  "is_correct": true,
+                  "comentario": "A oferta de oxigênio suplementar é recomendada em hipoxemia."
+                },
+                {
+                  "id": "ass_2",
+                  "texto": "Restrição hídrica é uma medida que pode ser necessária em alguns pacientes.",
+                  "is_correct": true,
+                  "comentario": "Ajuda a evitar piora da congestão."
+                },
+                {
+                  "id": "ass_3",
+                  "texto": "O uso de betabloqueadores deve ser sempre iniciado em dose plena na admissão.",
+                  "is_correct": false,
+                  "comentario": "Em descompensação aguda, betabloqueadores exigem cautela e individualização."
+                }
+              ],
+              "comentario_geral": "O manejo foca em aliviar a congestão, melhorar a oxigenação e estabilizar hemodinamicamente o paciente."
+            }
+          ]
+        },
+        {
+          "tipo": "ME",
+          "id": "cm_q4",
+          "tags": ["Hipertensão"],
+          "dificuldade": 2,
+          "enunciado": "Qual das opções abaixo é considerada um fator de risco clássico para hipertensão arterial sistêmica?",
+          "alternativas": [
+            {
+              "id": "a",
+              "texto": "Tabagismo."
+            },
+            {
+              "id": "b",
+              "texto": "Baixo consumo de sódio."
+            },
+            {
+              "id": "c",
+              "texto": "Prática regular de atividade física."
+            },
+            {
+              "id": "d",
+              "texto": "Peso adequado para a altura."
+            }
+          ],
+          "gabarito": "A",
+          "comentario_geral": "Tabagismo, sedentarismo, obesidade e alto consumo de sal são fatores de risco importantes."
+        },
+        {
+          "tipo": "VF",
+          "id": "cm_q5",
+          "tags": ["Diabetes"],
+          "dificuldade": 2,
+          "enunciado": "Na cetoacidose diabética, a hiperglicemia está associada à acidose metabólica com anion gap aumentado.",
+          "gabarito": "V",
+          "comentario_geral": "A cetoacidose cursa com produção de corpos cetônicos, gerando acidose metabólica de ânion gap elevado."
+        },
+        {
+          "tipo": "CH",
+          "id": "cm_q6",
+          "tags": ["Diabetes", "Complicações"],
+          "dificuldade": 3,
+          "no_random": true,
+          "enunciado": "Marque as características que DEVEM ser associadas à hipoglicemia grave em pacientes diabéticos:",
+          "assertivas": [
+            {
+              "id": "ass_1",
+              "texto": "Confusão mental ou alteração de nível de consciência.",
+              "is_correct": true,
+              "comentario": "Sintoma neurológico típico de hipoglicemia grave."
+            },
+            {
+              "id": "ass_2",
+              "texto": "Glicemia capilar muito baixa (por exemplo, abaixo de 50 mg/dL).",
+              "is_correct": true,
+              "comentario": "Valores muito baixos reforçam o diagnóstico de hipoglicemia."
+            },
+            {
+              "id": "ass_3",
+              "texto": "Necessidade de auxílio de terceiros para se recuperar.",
+              "is_correct": true,
+              "comentario": "Define hipoglicemia grave na prática clínica."
+            },
+            {
+              "id": "ass_4",
+              "texto": "Aumento da diurese e sede intensa.",
+              "is_correct": false,
+              "comentario": "São sinais mais relacionados à hiperglicemia."
+            }
+          ],
+          "comentario_geral": "Hipoglicemia grave envolve sintomas neuroglicopênicos importantes e necessidade de ajuda."
+        }
+      ]
+    },
+    {
+      "tipo": "folder",
+      "nome": "Biologia",
+      "conteudo": [
+        {
+          "tipo": "variantes",
+          "id": "bio_var_me1",
+          "tags": ["Citologia"],
+          "dificuldade": 2,
+          "questoes": [
+            {
+              "tipo": "ME",
+              "enunciado": "A mitocôndria é conhecida principalmente por sua função de:",
+              "alternativas": [
+                {
+                  "id": "a",
+                  "texto": "Armazenar material genético hereditário."
+                },
+                {
+                  "id": "b",
+                  "texto": "Produzir ATP através da respiração celular."
+                },
+                {
+                  "id": "c",
+                  "texto": "Realizar fotossíntese em células animais."
+                },
+                {
+                  "id": "d",
+                  "texto": "Sintetizar proteínas no citoplasma."
+                }
+              ],
+              "gabarito": "B",
+              "comentario_geral": "A mitocôndria é a principal organela responsável pela produção de ATP."
+            },
+            {
+              "tipo": "ME",
+              "enunciado": "Os ribossomos são estruturas celulares relacionadas principalmente à:",
+              "alternativas": [
+                {
+                  "id": "a",
+                  "texto": "Síntese de proteínas."
+                },
+                {
+                  "id": "b",
+                  "texto": "Digestão intracelular."
+                },
+                {
+                  "id": "c",
+                  "texto": "Armazenamento de lipídios."
+                },
+                {
+                  "id": "d",
+                  "texto": "Produção de ATP."
+                }
+              ],
+              "gabarito": "A",
+              "comentario_geral": "Os ribossomos são o local de síntese proteica."
+            }
+          ]
+        },
+        {
+          "tipo": "variantes",
+          "id": "bio_var_vf1",
+          "tags": ["Genética"],
+          "dificuldade": 2,
+          "questoes": [
+            {
+              "tipo": "VF",
+              "enunciado": "O DNA possui normalmente dupla-hélice e é composto por desoxirribose, fosfato e bases nitrogenadas.",
+              "gabarito": "V",
+              "comentario_geral": "Trata-se da estrutura clássica do DNA descrita por Watson e Crick."
+            },
+            {
+              "tipo": "VF",
+              "enunciado": "Em humanos, a célula haploide possui o mesmo número de cromossomos que a célula somática.",
+              "gabarito": "F",
+              "comentario_geral": "Células haploides possuem metade do número de cromossomos (n) em relação às somáticas (2n)."
+            }
+          ]
+        },
+        {
+          "tipo": "CH",
+          "id": "bio_q3",
+          "tags": ["Ecologia"],
+          "dificuldade": 3,
+          "no_random": false,
+          "enunciado": "Sobre relações ecológicas interespecíficas, marque as alternativas que DEVEM ser associadas à competição:",
+          "assertivas": [
+            {
+              "id": "ass_1",
+              "texto": "Ocorre quando duas espécies disputam o mesmo recurso limitado.",
+              "is_correct": true,
+              "comentario": "Competição envolve disputa por recurso comum."
+            },
+            {
+              "id": "ass_2",
+              "texto": "A relação entre leão e zebra é um exemplo clássico de predação.",
+              "is_correct": false,
+              "comentario": "Predação, não competição."
+            },
+            {
+              "id": "ass_3",
+              "texto": "Algumas competições podem levar à exclusão competitiva de uma das espécies.",
+              "is_correct": true,
+              "comentario": "Competidores menos eficientes podem ser excluídos do nicho."
+            },
+            {
+              "id": "ass_3",
+              "texto": "Competição nunca leva à extinção local de espécies.",
+              "is_correct": false,
+              "comentario": "A exclusão competitiva pode levar à extinção local."
+            }
+          ],
+          "comentario_geral": "Competição ocorre quando espécies disputam o mesmo nicho ou recurso ambiental."
+        },
+        {
+          "tipo": "ME",
+          "id": "bio_q4",
+          "tags": ["Fisiologia"],
+          "dificuldade": 2,
+          "enunciado": "Qual das estruturas abaixo é diretamente responsável pela filtração do sangue nos rins?",
+          "alternativas": [
+            {
+              "id": "a",
+              "texto": "Alça de Henle."
+            },
+            {
+              "id": "b",
+              "texto": "Glomérulo."
+            },
+            {
+              "id": "c",
+              "texto": "Uretra."
+            },
+            {
+              "id": "d",
+              "texto": "Pelve renal."
+            }
+          ],
+          "gabarito": "B",
+          "comentario_geral": "A filtração ocorre principalmente nos glomérulos dos néfrons."
+        }
+      ]
+    },
+    {
+      "tipo": "folder",
+      "nome": "Tecnologia e Saúde Pública",
+      "conteudo": [
+        {
+          "tipo": "grupo_juntas",
+          "id": "grp_covid",
+          "texto": "<b>Texto Base:</b> Durante a pandemia de COVID-19, medidas não farmacológicas e vacinação foram fundamentais para reduzir casos graves e óbitos.",
+          "questoes": [
+            {
+              "tipo": "VF",
+              "id": "ts_q1",
+              "tags": ["Saúde Pública", "COVID-19"],
+              "dificuldade": 1,
+              "enunciado": "Uso de máscaras e distanciamento social foram medidas recomendadas para reduzir a transmissão do SARS-CoV-2.",
+              "gabarito": "V",
+              "comentario_geral": "São medidas de prevenção de transmissão por gotículas e aerossóis."
+            },
+            {
+              "tipo": "CH",
+              "id": "ts_q2",
+              "tags": ["Saúde Pública", "COVID-19"],
+              "dificuldade": 2,
+              "no_random": false,
+              "enunciado": "Marque as ações que DEVEM ser consideradas estratégias de Saúde Pública em pandemias:",
+              "assertivas": [
+                {
+                  "id": "ass_1",
+                  "texto": "Rastreamento de contatos de casos confirmados.",
+                  "is_correct": true,
+                  "comentario": "Ajuda a interromper cadeias de transmissão."
+                },
+                {
+                  "id": "ass_2",
+                  "texto": "Divulgação de informações baseadas em evidências para a população.",
+                  "is_correct": true,
+                  "comentario": "Comunicação clara é fundamental em crises sanitárias."
+                },
+                {
+                  "id": "ass_3",
+                  "texto": "Suspender toda e qualquer forma de vigilância epidemiológica.",
+                  "is_correct": false,
+                  "comentario": "O oposto: a vigilância deve ser fortalecida."
+                }
+              ],
+              "comentario_geral": "Combinação de vigilância, comunicação e medidas de controle são pilares da resposta em saúde pública."
+            }
+          ]
+        },
+        {
+          "tipo": "variantes",
+          "id": "ts_var_ch1",
+          "tags": ["Tecnologia", "Segurança da Informação"],
+          "dificuldade": 3,
+          "questoes": [
+            {
+              "tipo": "CH",
+              "id": "ts_q3_v1",
+              "no_random": false,
+              "enunciado": "Marque as práticas que DEVEM ser consideradas medidas de segurança da informação:",
+              "assertivas": [
+                {
+                  "id": "ass_1",
+                  "texto": "Utilizar autenticação em dois fatores (2FA) sempre que disponível.",
+                  "is_correct": true,
+                  "comentario": "Aumenta a segurança de acesso."
+                },
+                {
+                  "id": "ass_2",
+                  "texto": "Compartilhar senhas por e-mail com colegas de trabalho.",
+                  "is_correct": false,
+                  "comentario": "Senhas nunca devem ser compartilhadas dessa forma."
+                },
+                {
+                  "id": "ass_3",
+                  "texto": "Manter softwares e sistemas sempre atualizados.",
+                  "is_correct": true,
+                  "comentario": "Corrige vulnerabilidades conhecidas."
+                }
+              ],
+              "comentario_geral": "Boas práticas reduzem o risco de ataques e vazamentos."
+            },
+            {
+              "tipo": "CH",
+              "id": "ts_q3_v2",
+              "no_random": false,
+              "enunciado": "Marque as atitudes que NÃO DEVEM ser adotadas em segurança da informação:",
+              "assertivas": [
+                {
+                  "id": "ass_1",
+                  "texto": "Anotar senhas em papéis visíveis sobre a mesa.",
+                  "is_correct": true,
+                  "comentario": "Exemplo de conduta insegura que deve ser evitada."
+                },
+                {
+                  "id": "ass_2",
+                  "texto": "Conectar-se a redes Wi-Fi públicas sem qualquer forma de proteção.",
+                  "is_correct": true,
+                  "comentario": "Aumenta o risco de interceptação de dados."
+                },
+                {
+                  "id": "ass_3",
+                  "texto": "Desconfiar de links suspeitos enviados por desconhecidos.",
+                  "is_correct": false,
+                  "comentario": "Na verdade, essa atitude é desejável (deve ser encorajada)."
+                }
+              ],
+              "comentario_geral": "Aqui, is_correct:true indica o que deve ser marcado como conduta inadequada, pois o comando pede para assinalar o que NÃO deve ser feito."
+            }
+          ]
+        },
+        {
+          "tipo": "ME",
+          "id": "ts_q4",
+          "tags": ["Informática em Saúde"],
+          "dificuldade": 2,
+          "enunciado": "Um prontuário eletrônico bem projetado deve:",
+          "alternativas": [
+            {
+              "id": "a",
+              "texto": "Permitir registro claro e organizado das informações clínicas."
+            },
+            {
+              "id": "b",
+              "texto": "Impedir qualquer forma de auditoria ou rastreio de acessos."
+            },
+            {
+              "id": "c",
+              "texto": "Substituir o julgamento clínico do profissional de saúde."
+            },
+            {
+              "id": "d",
+              "texto": "Ser inacessível a toda a equipe multiprofissional."
+            }
+          ],
+          "gabarito": "A",
+          "comentario_geral": "O prontuário eletrônico organiza dados e permite rastreio seguro, sem substituir o profissional."
+        },
+        {
+          "tipo": "VF",
+          "id": "ts_q5",
+          "tags": ["Telemedicina"],
+          "dificuldade": 2,
+          "enunciado": "A telemedicina pode ampliar o acesso à saúde em regiões remotas, desde que respeite princípios éticos e legais.",
+          "gabarito": "V",
+          "comentario_geral": "O uso responsável da telemedicina melhora o acesso sem substituir o exame clínico quando necessário."
+        },
+        {
+          "tipo": "CH",
+          "id": "ts_q6",
+          "tags": ["Saúde Pública", "Promoção da Saúde"],
+          "dificuldade": 1,
+          "no_random": false,
+          "enunciado": "Marque as ações que DEVEM ser associadas à promoção da saúde:",
+          "assertivas": [
+            {
+              "id": "ass_1",
+              "texto": "Campanhas de vacinação em massa.",
+              "is_correct": true,
+              "comentario": "Vacinação é estratégia fundamental de promoção e prevenção."
+            },
+            {
+              "id": "ass_2",
+              "texto": "Programas de incentivo à atividade física.",
+              "is_correct": true,
+              "comentario": "Estimula hábitos de vida saudáveis."
+            },
+            {
+              "id": "ass_3",
+              "texto": "Aumento deliberado do preço de alimentos ultraprocessados como política fiscal.",
+              "is_correct": true,
+              "comentario": "Medidas fiscais podem desestimular consumo de produtos não saudáveis."
+            },
+            {
+              "id": "ass_4",
+              "texto": "Reduzir o acesso à informação sobre saúde baseada em evidências.",
+              "is_correct": false,
+              "comentario": "O objetivo é justamente ampliar o acesso à informação qualificada."
+            }
+          ],
+          "comentario_geral": "Promoção da saúde envolve políticas públicas, educação e ações de incentivo a comportamentos saudáveis."
+        }
+      ]
+    }
+  ]
+}

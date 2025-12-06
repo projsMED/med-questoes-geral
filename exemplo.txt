@@ -1,0 +1,101 @@
+Descrição: Demonstração técnica de restrições de comentários, tags e dificuldades misturadas.
+
+Pasta: Conceitos Iniciais
+Descrição: Foca em conceitos iniciais mais importantes [
+
+Tag: Astronomia
+Q: Qual é o planeta mais próximo do Sol?
+A) Vênus
+B) Terra
+C) Mercúrio
+G: B
+CG: Mercúrio é o primeiro planeta.
+Orbitando a uma distância média de 57,9 milhões de km.
+Alternativa {B} é completamente absurda.
+
+
+
+
+Tag: Matemática
+Dificuldade: Muito fácil
+Q: Qual o resultado de <b>7 x 8</b>?
+A) 54
+B) 56
+C) 48
+G: B
+CG: Tabuada básica: 7 vezes 8 é igual a 56.
+
+]
+
+
+
+Pasta: Aprofundamento
+Descrição: Conceitos mais específicos [
+
+juntas [
+Texto Base: <b>Texto Base:</b> Em 1808, a Família Real Portuguesa desembarcou no Brasil, fugindo das tropas de Napoleão. Esse evento marcou profundamente a economia e cultura da colônia.
+    
+
+    Tag: História do Brasil
+    Q: Qual foi a principal medida econômica tomada logo após a chegada da Corte?
+    A) Abertura dos Portos às Nações Amigas.
+    C: Correto. Fim do Pacto Colonial.
+    B) Proclamação da República.
+    C: Incorreto. Isso só ocorreu em 1889.
+    C) Abolição da Escravatura.
+    C: Incorreto. Ocorreu apenas em 1888.
+    G: A
+    CG: A Abertura dos Portos (1808) foi o primeiro passo para a independência econômica do Brasil.
+    
+
+    Tag: História do Brasil, Cultura
+    Dificuldade: Médio
+    Q: Qual instituição cultural foi criada nesse período joanino?
+    A) Museu de Arte Moderna (MAM).
+    C: Incorreto. Criado no século XX.
+    B) Jardim Botânico do Rio de Janeiro.
+    C: Correto. Criado para aclimatação de especiarias.
+    C) Teatro Amazonas.
+    C: Incorreto. Símbolo do Ciclo da Borracha (fim do séc XIX).
+    G: B
+]
+
+variantes [
+
+    Tag: Europa
+    Dificuldade: Fácil
+    
+    Q: Qual é a capital da <b>Itália</b>?
+    A) Milão
+    C: Centro financeiro, mas não capital.
+    B) Roma
+    C: Correto. A 'Cidade Eterna'.
+    C) Veneza
+    C: Famosa pelos canais.
+    G: B
+    CG: Roma é a capital histórica e política da Itália.
+    
+    Q: Qual é a capital da <b>Espanha</b>?
+    A) Barcelona
+    C: Capital da Catalunha, mas não do país.
+    B) Madri
+    C: Correto. Capital desde o século XVI.
+    C) Sevilha
+    C: Cidade importante da Andaluzia.
+    G: B
+    CG: Madri fica no centro geográfico da Península Ibérica.
+]
+
+
+Dificuldade: Difícil
+Q: Qual é o símbolo químico do Ouro?
+A) Ag
+C: Incorreto. Ag é Prata (Argentum).
+B) Au
+C: Correto. Vem do latim Aurum.
+C) Cu
+C: Incorreto. Cu é Cobre (Cuprum).
+G: B
+CG: Sem comentário geral.
+
+]

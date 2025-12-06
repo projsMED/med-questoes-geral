@@ -1,0 +1,220 @@
+{
+  "titulo": "Quiz gerado automaticamente",
+  "id_quiz": "fdVR-r0B8-UJnN-IEuX",
+  "descricao": "Demonstração técnica de restrições de comentários, tags e dificuldades misturadas.",
+  "conteudo": [
+    {
+      "tipo": "folder",
+      "id": "Gwgm-0UvB-J1V6-V61j",
+      "nome": "Conceitos Iniciais",
+      "descricao": "Foca em conceitos iniciais mais importantes",
+      "conteudo": [
+        {
+          "tipo": "ME",
+          "id": "C2uW-5d94-bm0c-u5JV",
+          "tags": [
+            "Astronomia"
+          ],
+          "dificuldade": null,
+          "enunciado": "Qual é o planeta mais próximo do Sol?",
+          "alternativas": [
+            {
+              "id": "alt_A",
+              "texto": "Vênus"
+            },
+            {
+              "id": "alt_B",
+              "texto": "Terra"
+            },
+            {
+              "id": "alt_C",
+              "texto": "Mercúrio"
+            }
+          ],
+          "gabarito": "B",
+          "comentario_geral": "Mercúrio é o primeiro planeta.<br>Orbitando a uma distância média de 57,9 milhões de km.<br>Alternativa {B} é completamente absurda."
+        },
+        {
+          "tipo": "ME",
+          "id": "mtDN-lj9K-uMs8-eFDE",
+          "tags": [
+            "Matemática"
+          ],
+          "dificuldade": 1,
+          "enunciado": "Qual o resultado de <b>7 x 8</b>?",
+          "alternativas": [
+            {
+              "id": "alt_A",
+              "texto": "54"
+            },
+            {
+              "id": "alt_B",
+              "texto": "56"
+            },
+            {
+              "id": "alt_C",
+              "texto": "48"
+            }
+          ],
+          "gabarito": "B",
+          "comentario_geral": "Tabuada básica: 7 vezes 8 é igual a 56."
+        }
+      ]
+    },
+    {
+      "tipo": "folder",
+      "id": "MfrX-f9HS-Q690-Yqbe",
+      "nome": "Aprofundamento",
+      "descricao": "Conceitos mais específicos",
+      "conteudo": [
+        {
+          "tipo": "grupo_juntas",
+          "id": "y9fm-bK4p-Kmae-JSqX",
+          "texto": "<b>Texto Base:</b> Em 1808, a Família Real Portuguesa desembarcou no Brasil, fugindo das tropas de Napoleão. Esse evento marcou profundamente a economia e cultura da colônia.",
+          "questoes": [
+            {
+              "tipo": "ME",
+              "id": "Io2l-bTQH-WHE4-wwCi",
+              "tags": [
+                "História do Brasil"
+              ],
+              "dificuldade": null,
+              "enunciado": "Qual foi a principal medida econômica tomada logo após a chegada da Corte?",
+              "alternativas": [
+                {
+                  "id": "alt_A",
+                  "texto": "Abertura dos Portos às Nações Amigas.",
+                  "comentario": "Correto. Fim do Pacto Colonial."
+                },
+                {
+                  "id": "alt_B",
+                  "texto": "Proclamação da República.",
+                  "comentario": "Incorreto. Isso só ocorreu em 1889."
+                },
+                {
+                  "id": "alt_C",
+                  "texto": "Abolição da Escravatura.",
+                  "comentario": "Incorreto. Ocorreu apenas em 1888."
+                }
+              ],
+              "gabarito": "A",
+              "comentario_geral": "A Abertura dos Portos (1808) foi o primeiro passo para a independência econômica do Brasil."
+            },
+            {
+              "tipo": "ME",
+              "id": "vQev-qXTz-M5l8-pviB",
+              "tags": [
+                "História do Brasil",
+                "Cultura"
+              ],
+              "dificuldade": 3,
+              "enunciado": "Qual instituição cultural foi criada nesse período joanino?",
+              "alternativas": [
+                {
+                  "id": "alt_A",
+                  "texto": "Museu de Arte Moderna (MAM).",
+                  "comentario": "Incorreto. Criado no século XX."
+                },
+                {
+                  "id": "alt_B",
+                  "texto": "Jardim Botânico do Rio de Janeiro.",
+                  "comentario": "Correto. Criado para aclimatação de especiarias."
+                },
+                {
+                  "id": "alt_C",
+                  "texto": "Teatro Amazonas.",
+                  "comentario": "Incorreto. Símbolo do Ciclo da Borracha (fim do séc XIX)."
+                }
+              ],
+              "gabarito": "B"
+            }
+          ]
+        },
+        {
+          "tipo": "variantes",
+          "id": "PqgC-afQs-U8tb-oeAo",
+          "tags": [
+            "Europa"
+          ],
+          "dificuldade": 2,
+          "questoes": [
+            {
+              "tipo": "ME",
+              "id": "JTQn-nhJX-lvST-WWru",
+              "enunciado": "Qual é a capital da <b>Itália</b>?",
+              "alternativas": [
+                {
+                  "id": "alt_A",
+                  "texto": "Milão",
+                  "comentario": "Centro financeiro, mas não capital."
+                },
+                {
+                  "id": "alt_B",
+                  "texto": "Roma",
+                  "comentario": "Correto. A 'Cidade Eterna'."
+                },
+                {
+                  "id": "alt_C",
+                  "texto": "Veneza",
+                  "comentario": "Famosa pelos canais."
+                }
+              ],
+              "gabarito": "B",
+              "comentario_geral": "Roma é a capital histórica e política da Itália."
+            },
+            {
+              "tipo": "ME",
+              "id": "2ggv-uVbI-XXGb-xhQh",
+              "enunciado": "Qual é a capital da <b>Espanha</b>?",
+              "alternativas": [
+                {
+                  "id": "alt_A",
+                  "texto": "Barcelona",
+                  "comentario": "Capital da Catalunha, mas não do país."
+                },
+                {
+                  "id": "alt_B",
+                  "texto": "Madri",
+                  "comentario": "Correto. Capital desde o século XVI."
+                },
+                {
+                  "id": "alt_C",
+                  "texto": "Sevilha",
+                  "comentario": "Cidade importante da Andaluzia."
+                }
+              ],
+              "gabarito": "B",
+              "comentario_geral": "Madri fica no centro geográfico da Península Ibérica."
+            }
+          ]
+        },
+        {
+          "tipo": "ME",
+          "id": "ReQo-Gpok-HUg6-dIHG",
+          "tags": null,
+          "dificuldade": 4,
+          "enunciado": "Qual é o símbolo químico do Ouro?",
+          "alternativas": [
+            {
+              "id": "alt_A",
+              "texto": "Ag",
+              "comentario": "Incorreto. Ag é Prata (Argentum)."
+            },
+            {
+              "id": "alt_B",
+              "texto": "Au",
+              "comentario": "Correto. Vem do latim Aurum."
+            },
+            {
+              "id": "alt_C",
+              "texto": "Cu",
+              "comentario": "Incorreto. Cu é Cobre (Cuprum)."
+            }
+          ],
+          "gabarito": "B",
+          "comentario_geral": "Sem comentário geral."
+        }
+      ]
+    }
+  ]
+}
