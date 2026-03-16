@@ -1,5 +1,5 @@
 /* ===== JS: js\main.js ===== */
-import { saveState, loadState, clearState } from './store.js';
+import { saveState, loadState, clearState, exportState, importState } from './store.js';
 import { parseContent } from './parser.js';
 import { shuffleArray, difficultyMap } from './utils.js';
 import { QuizRenderer } from './renderer.js';
@@ -70,6 +70,12 @@ const App = {
     btnChooseOther: document.getElementById('btnChooseOther'),
     btnSubmitAll: document.getElementById('btnSubmitAll'),
     btnDeleteQuiz: document.getElementById('btnDeleteQuiz'),
+
+    // Export/Import
+    btnExport: document.getElementById('btnExport'),
+    btnImport: document.getElementById('btnImport'),
+    btnImportStart: document.getElementById('btnImportStart'),
+    importInput: document.getElementById('importInput'),
 
     // Nuvem
     btnCloudStart: document.getElementById('btnCloudStart'),
@@ -159,6 +165,12 @@ const App = {
         this.deleteCurrentQuiz()
       );
     }
+
+    // Export/Import
+    this.elements.btnExport.addEventListener('click', () => this.exportBackup());
+    this.elements.btnImport.addEventListener('click', () => this.elements.importInput.click());
+    this.elements.btnImportStart.addEventListener('click', () => this.elements.importInput.click());
+    this.elements.importInput.addEventListener('change', (e) => this.handleImport(e));
 
     // Filtro em etapas
     this.elements.btnGoToStep2.addEventListener('click', () => {
@@ -941,6 +953,45 @@ const App = {
     setTimeout(() => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }, 100);
+  },
+
+  async exportBackup() {
+    const blob = await exportState();
+    if (!blob) {
+      alert('Nenhum dado para exportar.');
+      return;
+    }
+    const title = (this.state.quizJson && this.state.quizJson.titulo) || '';
+    const fileName = title ? `Backup - ${title}.json` : 'Backup.json';
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = fileName;
+    a.click();
+    URL.revokeObjectURL(url);
+  },
+
+  async handleImport(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async (evt) => {
+      try {
+        const data = JSON.parse(evt.target.result);
+        if (!data.quizJson) {
+          alert('Arquivo de backup inválido: não contém dados de quiz.');
+          return;
+        }
+        if (!confirm('Importar este backup? O progresso atual será substituído.')) return;
+        await importState(data);
+        location.reload();
+      } catch (err) {
+        alert('Erro ao importar: ' + err.message);
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
   },
 
   resetApp() {

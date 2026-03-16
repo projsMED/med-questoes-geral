@@ -44,6 +44,32 @@ export async function loadState() {
   }
 }
 
+export async function exportState() {
+  const db = await dbPromise;
+  return new Promise((resolve) => {
+    const tx = db.transaction(STORE_NAME, 'readonly');
+    const req = tx.objectStore(STORE_NAME).get('current');
+    req.onsuccess = () => {
+      const data = req.result;
+      if (!data) { resolve(null); return; }
+      const { id, ...rest } = data;
+      const blob = new Blob([JSON.stringify(rest, null, 2)], { type: 'application/json' });
+      resolve(blob);
+    };
+    req.onerror = () => resolve(null);
+  });
+}
+
+export async function importState(jsonObj) {
+  const db = await dbPromise;
+  const tx = db.transaction(STORE_NAME, 'readwrite');
+  tx.objectStore(STORE_NAME).put({ id: 'current', ...jsonObj });
+  return new Promise((resolve) => {
+    tx.oncomplete = () => resolve(true);
+    tx.onerror = () => resolve(false);
+  });
+}
+
 export async function clearState() {
   try {
     const db = await dbPromise;
