@@ -1,0 +1,274 @@
+Q: (enunciado)
+A) (alternativa A)
+C: (comentário da alternativa, explicando porque está certa ou porque está errada.)
+B) (alternativa B)
+C: (comentário da alternativa, explicando porque está certa ou porque está errada.)
+C) (alternativa C)
+C: (comentário da alternativa, explicando porque está certa ou porque está errada.)
+D) (alternativa D)
+C: (comentário da alternativa, explicando porque está certa ou porque está errada.)
+G: (gabarito, escrever apenas letra da alternativa)
+CG: (comentário geral sobre a questão, cerca de 2 parágrafos)
+
+Q: (enunciado)
+A) (alternativa A)
+C: (comentário da alternativa, explicando porque está certa ou porque está errada.)
+B) (alternativa B)
+C: (comentário da alternativa, explicando porque está certa ou porque está errada.)
+C) (alternativa C)
+C: (comentário da alternativa, explicando porque está certa ou porque está errada.)
+D) (alternativa D)
+C: (comentário da alternativa, explicando porque está certa ou porque está errada.)
+G: (gabarito, escrever apenas letra da alternativa)
+CG: (comentário geral sobre a questão, cerca de 2 parágrafos)
+
+else if teste dw
+
+
+E assim por diante...
+
+Pasta: Várias, misturadas; [ 
+Descrição: De diversos assuntos do capítulo.
+
+
+Q: Qual o principal mecanismo estrutural e funcional que permite que o músculo cardíaco atue como um sincício, garantindo a rápida propagação do potencial de ação entre as células?
+A) Discos intercalares, que são barreiras de tecido fibroso que isolam eletricamente as células vizinhas.
+C: **Incorreto**. Os discos intercalares são as membranas que separam as células, mas contêm as estruturas de conexão funcional (junções comunicantes). O texto afirma que o músculo cardíaco é **altamente interconectado**, o oposto do isolamento.
+B) A difusão lenta de íons através do líquido extracelular para ativar a célula subsequente.
+C: **Incorreto**. O texto especifica que as junções comunicantes permitem a **"difusão rápida de íons"** no **"líquido intracelular"**, o que é crucial para a velocidade de propagação.
+C) A fusão de membranas celulares nos discos intercalares para formar junções de comunicação permeáveis (gap junctions), que permitem a difusão rápida de íons.
+C: **Correto**. O texto descreve que as **junções de comunicação (gap junctions)** se formam onde as membranas celulares se fundem nos discos intercalares, facilitando o movimento rápido de íons e, consequentemente, a **rápida propagação do potencial de ação** de célula para célula.
+D) O feixe AV, um sistema condutor especializado que liga todas as células musculares em paralelo.
+C: **Incorreto** . O feixe AV é a via de condução entre o sincício atrial e o ventricular, e não o mecanismo que interconecta as células individuais **dentro de um único sincício** (atrial ou ventricular).
+G: C
+CG: O conceito de sincício é **fundamental** para a função de bombeamento do coração. No sincício, todas as células funcionam como uma unidade, o que é crucial para uma contração coordenada e eficiente. A base estrutural para isso são os **discos intercalares**, as áreas escuras que representam as membranas celulares entre as células do músculo cardíaco. 
+A verdadeira chave funcional reside nas **junções de comunicação**, ou *gap junctions*, encontradas nesses discos. Essas junções são canais proteicos que permitem que os íons se movam **livremente e rapidamente** do citoplasma de uma célula para o da próxima. Essa permeabilidade iônica garante que, uma vez que uma única célula cardíaca seja excitada por um potencial de ação, a corrente elétrica (movimento de íons) se espalhe quase instantaneamente para todas as células adjacentes, permitindo que todo o sincício se **contraia em uníssono**.
+
+Q: O coração é composto por dois sincícios, o atrial e o ventricular. Qual é a importância funcional dessa separação e como o potencial de ação é conduzido de um para o outro, de acordo com o texto?
+A) A separação permite que os ventrículos se contraiam antes dos átrios, com a condução ocorrendo por difusão iônica direta através do tecido fibroso entre eles.
+C: **Incorreto**. A separação permite que os **átrios se contraiam antes** dos ventrículos. Além disso, a condução direta pelo tecido fibroso é impedida.
+B) A separação garante que o potencial de ação viaje facilmente de um sincício para o outro através do tecido fibroso que circunda as aberturas valvares atrioventriculares (AV).
+C: **Incorreto**. O texto afirma que os potenciais **não são conduzidos diretamente** por meio desse tecido fibroso, que, ao contrário, atua como um isolante elétrico.
+C) A separação é crucial para que os átrios se contraiam um pouco antes da contração ventricular, e a condução do potencial de ação entre eles ocorre apenas por meio do feixe AV.
+C: **Correto**. A divisão em dois sincícios permite a sequência de contração átrio-ventrículo (**átrios antes**), importante para a eficácia do bombeamento. O **feixe AV** é o único sistema condutor especializado que liga os dois sincícios funcionalmente.
+D) A separação é irrelevante para a eficácia do bombeamento, e o potencial de ação é transmitido por sinapses químicas entre as células atriais e ventriculares.
+C: **Incorreto**. O texto explicitamente afirma que a divisão em dois sincícios é **"importante para a eficácia do bombeamento cardíaco"**. O mecanismo de condução especializada não envolve sinapses químicas.
+G: C
+CG: A arquitetura do músculo cardíaco em **dois sincícios distintos** — o atrial e o ventricular — é uma adaptação fisiológica essencial para a função eficiente do coração como bomba. Esta divisão é fisicamente mediada por um **tecido fibroso** que circunda as aberturas das válvulas atrioventriculares. A separação é **vital** porque garante que a contração atrial se complete antes do início da contração ventricular, maximizando o enchimento dos ventrículos e, consequentemente, a eficácia do bombeamento.
+A condução do potencial de ação entre o sincício atrial e o ventricular **não ocorre diretamente** através do tecido fibroso separador, que atua como um isolante. Em vez disso, a excitação elétrica é canalizada exclusivamente por meio de um sistema condutor especializado: o **feixe AV (Feixe Atrioventricular)**. Esta via única e controlada permite o atraso necessário na transmissão do potencial de ação, estabelecendo o **ritmo sequencial** (átrio-ventrículo) que otimiza o ciclo cardíaco. 
+
+Variantes [
+Q: O retículo sarcoplasmático do músculo cardíaco é menos desenvolvido do que o do músculo esquelético.
+G: V
+C: Além de não armazenar cálcio suficiente para fornecer a contração completa, é por isso que o músculo cardíaco precisa do cálcio dos túbulos T, sem ele a força de contração seria muito fraca.
+
+Q: O retículo sarcoplasmático do músculo cardíaco é mais desenvolvido do que o do músculo esquelético.
+G: F
+C: É **menos** desenvolvido. Além de não armazenar cálcio suficiente para fornecer a contração completa, é por isso que o músculo cardíaco precisa do cálcio dos túbulos T, sem ele a força de contração seria muito fraca.
+]
+
+Q: Assinale a alternativa que explica porque **hipocalcemia pode reduzir a força de contração cardíaca**.
+A) Porque a força de contração do músculo cardíaco depende, em grande parte, da concentração de íons cálcio nos líquidos extracelulares.
+B) Porque a hipocalcemia aumenta a permeabilidade da membrana celular ao potássio, reduzindo o potencial de ação e a despolarização ventricular.
+C) Porque a redução do cálcio sérico inibe diretamente a bomba de sódio-potássio, diminuindo o gradiente eletroquímico necessário para a contração.
+D) Porque a baixa concentração de cálcio impede a liberação adequada de acetilcolina nas sinapses neuromusculares do tecido cardíaco.
+G: A
+
+Q: Durante o relaxamento do músculo cardíaco, os íons cálcio são removidos do sarcoplasma e transportados de volta para o retículo sarcoplasmático. Qual enzima é responsável por esse transporte ativo de cálcio?
+A) Bomba de sódio-potássio-ATPase
+C: **INCORRETA**. A bomba de sódio-potássio-ATPase transporta sódio para fora e potássio para dentro da célula, mas não transporta cálcio diretamente.
+B) Trocador de sódio-cálcio (NCX)
+C: **INCORRETA**. O trocador sódio-cálcio (NCX) também remove cálcio da célula, mas para o espaço extracelular, não para o retículo sarcoplasmático, e não utiliza ATP diretamente.
+C) Bomba de cálcio-ATPase (SERCA2)
+C: **CORRETA**. A SERCA2 (sarcoplasmic endoplasmic reticulum calcium ATPase) é a bomba de cálcio-ATPase responsável por transportar ativamente os íons cálcio de volta para o retículo sarcoplasmático durante o relaxamento.
+D) Canais de cálcio voltagem-dependentes tipo L
+C: **INCORRETA**. Os canais de cálcio tipo L permitem a entrada de cálcio durante a despolarização, não sua remoção durante o relaxamento.
+G: C
+tESTE *itálico*
+Q: A duração da contração do músculo cardíaco é principalmente uma função da duração do potencial de ação, incluindo o platô − cerca de 0,3 segundo no músculo atrial e 0,2 segundo no músculo ventricular.
+G: F
+C: Cerca de 0,2 segundo no músculo atrial e 0,3 segundo no músculo ventricular.
+]
+
+
+Pasta: Fisiologia do Músculo Cardíaco; [
+Descrição: Apenas questões do tópico "fisiologia do músculo cardíaco".
+
+Q: Sobre a fisiologia do músculo cardíaco, assinale a alternativa CORRETA:
+A) O coração é composto de três tipos principais de músculo cardíaco – músculo atrial, músculo ventricular e fibras musculares excitatórias e condutoras especializadas.
+B) As fibras excitatórias e condutoras especializadas do coração contraem-se fortemente.
+C: **FALSO**. As fibras excitatórias e condutoras especializadas do coração, entretanto, contraem-se **fracamente** porque contêm poucas fibrilas contráteis.
+**Explicação**: Em vez disso, geram descarga elétrica rítmica automática na forma de potenciais de ação e conduzem esses potenciais de ação ao longo do coração, formando um sistema excitocondutor que gera e conduz o batimento rítmico do coração.
+C) A torção do ventrículo direito ajuda na sua ejeção e no seu relaxamento.
+C: **FALSO**. A torção do ventrículo **esquerdo** ajuda na sua ejeção e no seu relaxamento.
+D) A condução normal do átrio para o ventrículo ocorre principalmente pelo tecido elástico.
+C: **FALSO**. A condução normal do átrio para o ventrículo ocorre principalmente pelo **feixe AV** (via especializada).
+G: A
+
+Q: Sobre a fisiologia do músculo cardíaco, julgue como V ou F.
+A1: Discos intercalares são membranas celulares que separam as células individuais do músculo cardíaco umas das outras.
+G: V
+A1: Fibras excitatórias são membranas celulares que separam as células individuais do músculo cardíaco umas das outras.
+G: F
+C: **Discos intercalares** são membranas celulares que separam as células individuais do músculo cardíaco umas das outras.
+A2: Junções comunicantes permitem a difusão rápida de íons.
+G: V
+C: Em cada disco intercalado, as membranas celulares se fundem para formar junções de comunicação permeáveis (gap junctions, ou junções comunicantes) que permitem a difusão rápida de íons.
+A3: O músculo cardíaco é um sincício.
+G: V
+C: O músculo cardíaco é um sincício formado por muitas células musculares cardíacas, no qual as células cardíacas estão tão interconectadas que, quando uma célula fica excitada, o potencial de ação se espalha rapidamente para todas elas.
+A4: O coração é composto por três síncios: O sincício atrial, o sincício ventricular e o sincício condutor.
+G: F
+C: É composto por **DOIS** sincícios; o **sincício atrial**, que constitui as paredes dos dois átrios; e o **sincício ventricular**, que constitui as paredes dos dois ventrículos.
+A5: Os átrios são separados dos ventrículos por tecido fibroso que circunda as aberturas valvares atrioventriculares (AV) entre os átrios e os ventrículos.
+G: V
+A5: Os átrios são separados dos ventrículos por tecido elástico que circunda as aberturas valvares atrioventriculares (AV) entre os átrios e os ventrículos.
+G: F
+C: Tecido **fibroso**.
+A5: Os átrios são separados dos ventrículos por tecido epitelial que circunda as aberturas valvares atrioventriculares (AV) entre os átrios e os ventrículos.
+G: F
+C: Tecido **fibroso**.
+
+Q: A divisão do músculo cardíaco em dois sincícios funcionais permite que os átrios se contraiam um pouco depois da contração ventricular.
+G: F
+C: Essa divisão do músculo cardíaco em dois sincícios funcionais permite que os átrios se contraiam um pouco **antes** da contração ventricular, o que é importante para a eficácia do bombeamento cardíaco.
+
+Q: Sobre o potencial de ação cardíaco, julgue as assertivas a seguir.
+A1: O platô torna a contração cardíaca muito mais longa (até ~15× mais) do que no músculo esquelético.
+G: V
+C: A duração longa evita tetania, permitindo ciclos de contração-relaxamento adequados ao bombeamento.
+A2: No músculo cardíaco, o potencial de ação depende quase só de canais rápidos de Na⁺, que abrem e fecham em milissegundos.
+G: F
+C: Isso se refere ao **músculo esquelético**.
+- No músculo cardíaco, além dos canais rápidos de Na⁺, existem **canais lentos do tipo L** (Ca²⁺, também chamados Ca²⁺-Na⁺).
+- Esses canais tipo L abrem mais lentamente e ficam abertos por décimos de segundo, mantendo a despolarização e formando o platô.
+A3: O Ca²⁺ que entra durante o platô ajuda a iniciar a contração (papel direto no acoplamento excitação-contração).
+G: V
+C: No músculo cardíaco, o Ca²⁺ que entra durante o platô é o gatilho da contração; o relaxamento só ocorre quando o Ca²⁺ é removido do citosol.
+A3: O Ca²⁺ que entra durante o platô ajuda a terminar a contração (papel direto no acoplamento excitação-contração).
+G: F
+C: Ajuda a **iniciar** a contração. No músculo cardíaco, o Ca²⁺ que entra durante o platô é o gatilho da contração; o relaxamento só ocorre quando o Ca²⁺ é removido do citosol.
+A4: No músculo cardíaco, logo após o início do potencial de ação, a permeabilidade ao K⁺ diminui ~5×, reduzindo o efluxo de K⁺ e adiantando a repolarização.
+G: F
+C: No músculo cardíaco, logo após o início do potencial de ação, a permeabilidade ao K⁺ diminui ~5×, reduzindo o efluxo de K⁺ e **atrasando** a repolarização.
+Quando os canais lentos de Ca²⁺-Na⁺ fecham (0,2–0,3 s), a permeabilidade ao K⁺ aumenta e o K⁺ sai rapidamente, produzindo repolarização final.
+A5: O platô equivale a fase 2 do potencial de ação.
+G: V
+C: <center style="font-size:1.15em">**Fases do Potencial de Ação Cardíaco**</center>
+- **Fase 0 (despolarização):** abrem canais rápidos de Na⁺ → Na⁺ entra rapidamente → pico em torno de +20 mV.
+- **Fase 1 (repolarização inicial)**: inativação/fechamento dos canais de Na⁺ + saída de K⁺ → queda inicial.
+- **Fase 2 (platô):** entrada de Ca²⁺ por canais tipo L + redução da saída de K⁺ → voltagem estabiliza (platô).
+- **Fase 3 (repolarização rápida):** fecham canais de Ca²⁺ e aumenta permeabilidade ao K⁺ → K⁺ sai → retorna ao repouso.
+- **Fase 4 (repouso):** potencial de repouso em torno de −80 a −90 mV.
+A5: O platô equivale a fase 3 do potencial de ação.
+G: F
+C: Equivale a fase 2. A fase 3 é a de repolarização rápida.
+<center style="font-size:1.15em">**Fases do Potencial de Ação Cardíaco**</center>
+- **Fase 0 (despolarização):** abrem canais rápidos de Na⁺ → Na⁺ entra rapidamente → pico em torno de +20 mV.
+- **Fase 1 (repolarização inicial)**: inativação/fechamento dos canais de Na⁺ + saída de K⁺ → queda inicial.
+- **Fase 2 (platô):** entrada de Ca²⁺ por canais tipo L + redução da saída de K⁺ → voltagem estabiliza (platô).
+- **Fase 3 (repolarização rápida):** fecham canais de Ca²⁺ e aumenta permeabilidade ao K⁺ → K⁺ sai → retorna ao repouso.
+- **Fase 4 (repouso):** potencial de repouso em torno de −80 a −90 mV.
+A6: O coração pode ser reestimulado normalmente durante grande parte do potencial de ação.
+G: F
+C: O coração **não pode** ser reestimulado normalmente durante grande parte do potencial de ação: isso é o **período refratário**. Explicação:
+- **Ventrículo:** período refratário absoluto ~0,25 a 0,30 s (próximo à duração do platô).
+- Após isso existe um **refratário relativo** de ~0,05 s, quando o tecido pode responder apenas a estímulo muito forte.
+- **Átrio**: refratário mais curto (~0,15 s), favorecendo dinâmica atrial diferente da ventricular.
+- Contrações prematuras não somam como no músculo esquelético, devido ao refratariedade prolongada.
+
+Q: O coração é formado principalmente por quais tipos de músculo?
+A) Atrial, ventricular e fibras condutoras
+B) Liso, esquelético e fibras elásticas
+C) Esquelético, liso e fibras mielínicas
+D) Atrial, esquelético e fibras cartilaginosas
+G: A
+CG: A alternativa {A} é correta porque o coração tem três componentes funcionais principais: músculo atrial, músculo ventricular e fibras excitatórias/condutoras especializadas. Os músculos atrial e ventricular são os responsáveis pela força de bombeamento, enquanto as fibras especializadas organizam a ativação elétrica.
+As demais alternativas misturam tipos de tecido que não compõem a musculatura cardíaca (músculo liso como principal, cartilagem, “fibras mielínicas” etc.). Embora existam estruturas nervosas e tecido conjuntivo no coração, elas não são classificadas como os “três tipos principais” de músculo cardíaco.
+
+Q: As fibras excitatórias e condutoras especializadas:
+A) Contraem fortemente e geram força
+B) Contraem pouco e geram ritmo elétrico
+C) Contraem rápido e entram em tetania
+D) Contraem lento e produzem ATP extra
+G: B
+CG: A alternativa {B} é correta porque as fibras excitatórias e condutoras possuem poucas fibrilas contráteis, então sua capacidade de contração é pequena. A função delas é gerar descargas elétricas rítmicas e conduzir potenciais de ação, coordenando o batimento.
+As alternativas {A}, {C} e {D} descrevem características que não correspondem a esse tecido especializado. Ele não existe para produzir grande força mecânica, não tem como principal papel “tetania” ou “produção extra de ATP”, e sua marca é a automatização e condução do impulso elétrico.
+
+Q: O músculo cardíaco é considerado um sincício funcional porque:
+A) Não possui membranas celulares
+B) Tem junções comunicantes entre células
+C) É formado por um único neurônio
+D) Possui apenas fibras paralelas longas
+G: B
+CG: A alternativa {B} é correta porque as junções comunicantes (gap junctions) nos discos intercalares permitem passagem rápida de íons entre células. Isso faz com que a despolarização se espalhe célula a célula, de modo que o tecido funcione como uma unidade integrada.
+As alternativas {A}, {C} e {D} estão erradas: o músculo cardíaco tem membranas celulares, não é um único neurônio e não é composto apenas por fibras paralelas longas como no músculo esquelético. O “sincício” aqui é funcional, baseado em comunicação elétrica eficiente.
+
+Q: Os discos intercalares são:
+A) Mitocôndrias especializadas
+B) Membranas entre células cardíacas
+C) Filamentos grossos de miosina
+D) Dobras do retículo endoplasmático
+G: B
+CG: A alternativa {B} é correta porque os discos intercalares são regiões de contato especializadas que correspondem a membranas entre células musculares cardíacas. Neles há estruturas de adesão mecânica e junções comunicantes, essenciais para integração mecânica e elétrica.
+As alternativas {A}, {C} e {D} confundem organelas e componentes celulares: discos intercalares não são mitocôndrias, não são filamentos de miosina e não são “dobras” do retículo. Eles são marcos histológicos típicos do músculo cardíaco e explicam sua condução coordenada.
+
+Q: A condução do impulso dos átrios aos ventrículos ocorre principalmente por:
+A) Tecido fibroso valvar
+B) Feixe AV especializado
+C) Artérias coronárias
+D) Veias pulmonares
+G: B
+CG: A alternativa {B} é correta porque, devido ao tecido fibroso entre átrios e ventrículos, a condução normal não ocorre diretamente de um sincício ao outro. Assim, o impulso passa pelo sistema especializado, especialmente pelo feixe atrioventricular (feixe AV).
+As alternativas {A}, {C} e {D} não fazem o papel de via elétrica principal. O tecido fibroso funciona mais como isolante, e vasos (coronárias, veias pulmonares) são estruturas circulatórias, não feixes condutores do impulso entre átrio e ventrículo.
+
+Q: O platô do potencial de ação ventricular ocorre principalmente devido à:
+A) Abertura prolongada de canais tipo L
+B) Fechamento total de canais de Na⁺
+C) Aumento contínuo de canais de Cl⁻
+D) Bloqueio permanente de canais de Ca²⁺
+G: A
+CG: A alternativa {A} é correta porque o platô do potencial de ação ventricular depende principalmente da abertura prolongada dos canais de cálcio tipo L (canais lentos). Eles mantêm entrada de Ca²⁺ (e algum Na⁺) por décimos de segundo, sustentando a despolarização.
+As alternativas {B}, {C} e {D} não explicam o platô: o fechamento dos canais rápidos de Na⁺ ocorre cedo, mas não mantém a fase longa; canais de Cl⁻ não são o mecanismo central desse platô; e “bloqueio permanente” de Ca²⁺ faria o oposto, encurtando o potencial e reduzindo a contração.
+
+Q: Qual mudança iônica ajuda a manter o platô no músculo cardíaco?
+A) Aumento grande do efluxo de K⁺
+B) Diminuição da permeabilidade ao K⁺
+C) Diminuição do influxo de Ca²⁺
+D) Aumento do influxo de Cl⁻
+G: B
+CG: A alternativa {B} é correta porque, logo após o início do potencial de ação, a permeabilidade ao K⁺ diminui significativamente. Com menos saída de K⁺, a repolarização fica retardada, o que ajuda a manter o platô junto com a entrada prolongada de Ca²⁺.
+As alternativas {A}, {C} e {D} estão incorretas: aumento do efluxo de K⁺ aceleraria a repolarização; diminuição do influxo de Ca²⁺ enfraqueceria o platô e a contração; e influxo de Cl⁻ não é o fator-chave descrito para sustentar o platô ventricular.
+
+Q: Qual alternativa descreve corretamente a fase 0 do potencial de ação ventricular?
+A) Entrada rápida de Na⁺
+B) Saída lenta de Ca²⁺
+C) Entrada de K⁺ dominante
+D) Repouso em −90 mV
+G: A
+CG: A alternativa {A} é correta porque a fase 0 é a despolarização rápida, dominada pela abertura dos canais rápidos de Na⁺ dependentes de voltagem. O Na⁺ entra rapidamente e leva o potencial até valores próximos de +20 mV.
+As alternativas {B}, {C} e {D} não representam a fase 0: saída de Ca²⁺ não é o evento inicial; entrada dominante de K⁺ não causa o upstroke; e o repouso em torno de −90 mV corresponde à fase 4, não ao início da despolarização.
+
+Q: A velocidade de condução é maior:
+A) Em fibras ventriculares comuns
+B) Em fibras de Purkinje
+C) Em fibras atriais comuns
+D) Em discos intercalares isolados
+G: B
+CG: A alternativa {B} é correta porque as fibras de Purkinje têm velocidade de condução muito maior do que o músculo atrial e ventricular comuns. Isso permite que o impulso chegue rapidamente a diferentes regiões ventriculares, sincronizando a contração.
+As alternativas {A} e {C} são erradas porque fibras atriais/ventriculares comuns conduzem mais lentamente (ordem de 0,3–0,5 m/s). A alternativa {D} não faz sentido fisiológico: “discos intercalares isolados” não são um tecido condutor independente; eles são pontos de conexão entre células.
+
+Q: Sobre o cálcio e a contração cardíaca, é correto afirmar:
+A) Depende pouco do Ca²⁺ extracelular
+B) Depende muito do Ca²⁺ extracelular
+C) Independe dos túbulos T
+D) Usa apenas Ca²⁺ do retículo
+G: B
+CG: A alternativa {B} é correta porque a força de contração do coração depende bastante da disponibilidade de Ca²⁺ extracelular. Parte essencial do Ca²⁺ entra pela membrana (especialmente via túbulos T), o que desencadeia liberação adicional pelo retículo (CICR), sustentando a contração.
+As alternativas {A}, {C} e {D} contradizem essa característica do músculo cardíaco: ele é mais sensível ao Ca²⁺ extracelular do que o músculo esquelético; os túbulos T são fundamentais para a entrada de Ca²⁺; e não é “apenas” Ca²⁺ do retículo, pois a entrada extracelular é decisiva para a força contrátil.
+
+]
+
+
+Pasta: Ciclo Cardíaco; [
+Descrição: Apenas questões do tópico "Ciclo Cardíaco".

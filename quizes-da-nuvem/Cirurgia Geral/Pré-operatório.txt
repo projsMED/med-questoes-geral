@@ -1,0 +1,208 @@
+Descrição: Questões sobre pré-operatório com base em diversas fontes/materiais. Algumas de autoria própria, outras de residência e concurso.
+
+Pasta: Sabiston [
+Descrição: Questões feitas com base no Sabiston. 
+
+CH:
+A1: 
+G: 
+A2:
+G: 
+A3: 
+G: 
+
+CH: 
+A1: 
+G: 
+A2:
+G: 
+A3: 
+G: 
+
+]
+
+Pasta: Medway - Criadas [
+Descrição: Questões feitas com base na aula/apostila MedWay. 
+
+CH: Sobre o <b>pré-operatório</b>, assinale o que for verdadeiro.
+A1: Para procedimentos sem riscos de sangramento e paciente hígido entre 45 a 45 anos, solicitar ECG para homens.
+G: V
+A2: Para procedimentos sem riscos de sangramento e paciente hígido de mais de 55 anos, solicitar ECG, hemograma completo, eletrólitos, glicemia e função renal.
+G: F
+C: Falso. Essa recomendação é para mais de 70 anos.
+A3: Paciente mulher em idade fértil, se pede BHCG caso tenha mais de 25 anos.
+G: F
+C: Falso, pois é para toda mulher em idade fértil.
+A4: ECG, eletrólitos e função renal devem ser pedidos para hipertenso ou tabagista, com a diferença que no caso do diabético se acrescenta ainda HMG e glicemia.
+G: V
+A5: Cirurgias abdominais e pacientes pneumopatas são indicações para solicitar raio-X de tórax.
+G: F
+C: Cirurgias **torácicas**, cirurgias **cardíacas** e pacientes pneumopatas são indicações para solicitar raio-X de tórax.
+
+CH: Sobre <b>exames pré-operatório</b>s, julgue as assertivas a seguir.
+A1: Coagulograma deve ser solicitado em cirurgias de grande porte ou oftalmologicas.
+G: V
+A2: Suspeita ou confirmação de coagulopatia são indicações de coagulograma.
+G: V
+A3: Perda sanguínea maior que 1L é indicação de coagulograma.
+G: F
+C: Maior que 2L.
+A4: Cirurgias hepáticas são indicações de Urina 1 e URC.
+G: F
+C: Indicações de Urina 1 e URC são cirurgias urológicas e prótese ortopédica.
+Urina 1 -> Também conhecido como EAS. 
+Urina 1 (EAS - Exame de Elementos Anormais do Sedimento): É um exame básico de urina que analisa macroscopicamente (cor, aspecto, densidade) e microscopicamente (células, cristais, bactérias, leucócitos, hemácias) uma amostra de urina de primeira micção. Serve para detectar infecções, inflamações, diabetes, problemas renais ou hemorragias urinárias de forma rápida e acessível. É o "triagem inicial" para alterações no sedimento urinário.
+URC (Urocultura): É um exame microbiológico que cultiva a urina em meio nutritivo para identificar e quantificar bactérias ou fungos presentes (geralmente >10^5 UFC/mL indica infecção). É mais específico que o EAS e é usado para confirmar ITU e guiar antibioticoterapia. Requer coleta de urina de jato médio (meio da micção) para evitar contaminação.
+
+CH: Sobre <b>jejum pré-operatório</b>, julgue.
+A1: Para leite materno o tempo de jejum é de 4 horas.
+G: V
+A1: Para leite materno o tempo de jejum é de 6 horas.
+G: F
+C: 4 horas 
+A2: Líquidos claros o tempo é de 2 horas.
+G: V
+A3: Refeição sólida leve o tempo é de 4 horas e para pesada é de 6 horas.
+G: F
+C: 6 horas para leves e 8 horas para pesadas.
+CG: Essa imagem resume bem:
+jejum342040dw.png
+
+CH: Sobre <b>avaliação anestésica</b> no pré-operatório.
+A1: 3-3-2 -> Boca, mento ao osso hióide e osso hióide até cartilagem cricoide.
+G: F
+C: Osso hióide até cartilagem tireóide.
+A2: Mandíbula pequena e língua grande indicam anestesia mais difícil.
+G: V
+A3: Mallampati deve ser feito e idealmente com o paciente sentado.
+G: V
+A3: Mallampati deve ser feito e idealmente com o paciente em pé.
+G: F
+C: Ideal sentado, sempre olhando em
+direção horizontal com língua para
+fora em máxima projeção.
+A4: Mallampati avalia palato mole, úvula, fauces e pilares amigdalianos.
+G: V
+C: Inserir imagem medway 27:59
+A5: A classificação de Mallampati tem 5 classes.
+G: F
+C: Tem 4 classes, de I a IV.
+A6: Cormack-Lehane avalia pela laringoscopia: Epiglote, prega vocal e aritenóides.
+G: V
+C: Lembrar que é avaliado na laringoscopia e não na consulta pré-operatória.
+CG: Imagens úteis:
+vasdsd.png
+bbasd3434d.png
+
+CH: Sobre <b>classificação ASA</b>, julgue:
+A1: ASA 1 é hígido 
+G: V
+A2: Asa 2 é doença sistêmica com comprometimento funcional.
+G: F
+C: Sem comprimento funcional.
+A3: Tabagista, álcool social e HAS controlada são exemplos de ASA 2.
+G: V
+A4: Gestante é exemplo de ASA 3.
+G: F
+C: ASA 2.
+A5: Paciente dialítico, DM complicada e obesidade grau 2 são exemplos de ASA 3.
+G: F
+C: Obesidade grau 3. Grau 2 e 1 faz parte de ASA 2.
+A6: Disfunção valvar grave é exemplo de ASA 3.
+G: F
+C: ASA 4
+A6: Disfunção valvar grave é exemplo de ASA 4.
+G: V
+A7: Isquemia mesentérica e aneurisma abdominal roto são exemplos de ASA 5.
+G: V
+C: isquemia mesentérica é uma condição grave causada pela redução ou interrupção do fluxo sanguíneo para os intestinos delgado e/ou grosso, levando à falta de oxigênio nos tecidos intestinais.
+Ela pode ser aguda (súbita, emergência médica com risco de gangrena e perfuração) ou crônica (progressiva, por estreitamento arterial).
+Causas principais incluem embolia (coágulo de coração), trombose (coágulo local), ou hipoperfusão (choque, insuficiência cardíaca).
+A8: ASA VI -> Paciente em morte encefálica, doador de órgãos
+G: V
+CG: Classificação ASA:
+ASA2025-12-07004353.png
+
+CH: Sobre a <b>avaliação cardiovascular</b>, julgue:
+A1: Em caso de doença valvar grave, arritmia grave, SCA instável e IC descompensada, não operar e compensar antes da cirurgia.
+G: V
+A2: No índice de Goldman, paciente com 10 pontos já é risco intermediário.
+G: V
+C: goldman395023.png
+A2: No índice de Goldman, paciente com 6 pontos já é risco intermediário.
+G: V
+C: goldman395023.png 
+A3: No índice de Goldman, paciente com 20 pontos ou mais já é classe IV.
+G: F
+C: 26 pontos ou mais
+goldman395023.png
+A4: Estenose aórtica grave é o fator de risco que mais pontua no Índice de Goldman.
+G: F
+C: O que mais pontua (11 pontos) é a presença da <b>3ª bulha ou estase jugular</b>, enquanto a estenose aórtica grave pontua com 3 pontos.
+<details><summary>Mas o que é 3ª bulha ou estase jugular?</summary><br><!DOCTYPE html> <html lang=\"pt-BR\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Terceira Bulha e Estase Jugular</title> <style> body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f5; } .container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); } h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; } h2 { color: #2980b9; margin-top: 25px; } .intro { background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; margin-bottom: 20px; } .section { margin-bottom: 25px; } .subsection { margin-left: 20px; margin-top: 10px; } .highlight { background-color: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 15px 0; } ul { margin-left: 20px; } li { margin-bottom: 8px; } strong { color: #2c3e50; } </style> </head> <body> <div class=\"container\"> <h1>Terceira Bulha e Estase Jugular no Índice de Goldman</h1> <div class=\"intro\"> <p>A <strong>terceira bulha (B3)</strong> e a <strong>estase jugular</strong> são sinais clínicos importantes de insuficiência cardíaca, por isso pontuam bastante no Índice de Goldman.</p> </div> <div class=\"section\"> <h2>Terceira Bulha (B3)</h2> <p>É um som cardíaco anormal que ocorre logo após a segunda bulha (B2), durante o enchimento ventricular rápido na diástole. Soa como um ritmo de \"galope\".</p> <div class=\"subsection\"> <strong>Por que acontece:</strong> <ul> <li>Indica disfunção ventricular esquerda grave</li> <li>O ventrículo está rígido ou dilatado, causando vibração anormal quando o sangue entra rapidamente</li> <li>É um marcador de insuficiência cardíaca descompensada</li> </ul> </div> </div> <div class=\"section\"> <h2>Estase Jugular</h2> <p>É a distensão (ingurgitamento) das veias jugulares no pescoço, visível quando o paciente está em posição semi-sentada (45°).</p> <div class=\"subsection\"> <strong>Por que acontece:</strong> <ul> <li>Indica congestão venosa sistêmica</li> <li>O coração direito não está bombeando eficientemente</li> <li>Há acúmulo de sangue no sistema venoso</li> <li>Sinal de insuficiência cardíaca direita ou congestiva</li> </ul> </div> </div> <div class=\"section\"> <h2>Por que pontuam 11 pontos?</h2> <p>Ambos os sinais indicam <strong>insuficiência cardíaca grave e descompensada</strong>, que é o principal fator de risco para complicações perioperatórias cardiovasculares. Pacientes com IC descompensada têm:</p> <ul> <li>Maior risco de edema pulmonar agudo</li> <li>Risco elevado de arritmias</li> <li>Baixa reserva cardíaca para tolerar o estresse cirúrgico</li> <li>Mortalidade perioperatória significativamente aumentada</li> </ul> <div class=\"highlight\"> <strong>Importância clínica:</strong> Esses achados têm peso similar ao infarto recente (10 pontos) no índice de Goldman. </div> </div> </div> </body> </html></details>
+A5: Infarto há menos de 1 ano pontua 10 pontos no índice de Goldman.
+G: F
+C: Infarto há menos de <b>6 meses</b> pontua 10 pontos no índice de Goldman.
+A5: Infarto há menos de 6 meses pontua 10 pontos no índice de Goldman.
+G: V
+
+CH: Sobre a <b>avaliação cardiovascular</b>, julgue:
+A1: No Índice de Lee, paciente com apenas um fator de risco é considerado Classe II.
+G: V
+C: Já para classe I é necessário não ter <b>nenhum</b> fator de risco.
+A1: No Índice de Lee, paciente com zero ou apenas um fator de risco é considerado Classe I.
+G: F
+C: Paciente com zero fator de risco é Classe I, mas paciente com 1 fator de risco é Classe II.
+A2: No Índice de Lee, pertence a classe IV paciente com histórico de acidente isquêmico transitório, creatinina 1,5 mg/dL e DM II dependente de insulina.
+G: F
+C: Esse paciente pertence a classe III, pois embora os outros dois históricos sejam fatores de risco, <b>a creatinina está abaixo de 2,0 mg/dL</b>.
+A3: Se GOLDMAN ou LEE alterados com paciente com moderado/alto risco cardiovascular, então submetê-lo a avaliação funcional: METS (metabolic equivalents).
+G: V
+A3: Se GOLDMAN ou LEE alterados com paciente com moderado/alto risco cardiovascular, então submetê-lo a avaliação cefálica.
+G: F
+C: Se GOLDMAN ou LEE alterados com paciente com moderado/alto risco cardiovascular, então <b>submetê-lo a avaliação funcional: METS (metabolic equivalents)</b>.
+A4: Na questão dos METS, o divisor de águas para decidir se o paciente pode operar é ter 4 METS ou mais.
+G: V
+A5: Se paciente tiver menos de 4 METS, então verificar fatores de risco, caso tenha 2 fatores de risco, então pode-se fazer o controle da FC com betabloqueador ou fazer o teste de esforço.
+G: F
+C: <b>Correção:</b> Caso tenha <b>1-2</b> fatores de risco.
+<br><b>Informação extra:</b> Para 3 ou mais fatores de risco, a conduta já é o teste de esforço.
+
+CH: Sobre a <b>avaliação hematológica</b>, julge:
+A1: Administrar hemácias apenas para pacientes com Hb < 7.
+G: F
+C: De fato administrar para pacientes com Hb menor que 7. No entanto, para a faixa 7-10 deve ser feita uma avaliação individual (ex:taquicardia) ou estimativa de perda sanguínea > 30% da volemia.
+A2: Em cirurgias em geral, administrar plaquetas se contagem estiver abaixo de 50 mil.
+G: V
+A3: Em casos de cirurgias em que o sangramento pode atrapalhar o procedimento, administrar plaquetas se contagem estiver abaixo de 75 mil.
+G: F
+C: Se contagem estiver abaixo de <b>100 mil</b>.
+
+CH: Medicamentos de uso contínuo.
+
+
+
+
+
+CH: 
+A1: 
+G: 
+A2:
+G: 
+A3: 
+G:
+
+
+
+
+Parei em 1:05:59
+
+
+
+]
+
+Pasta: Residência
+Descrição: Questões de residência copiadas ou então adaptadas para formato MVF/VF.
+
+Pasta: Concurso.
+Descrição: Questões de concursos copiadas ou então adaptadas para formato MVF/VF.

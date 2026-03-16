@@ -1,0 +1,728 @@
+INFO: Quando o gabarito comentado citar informações como "manual", "página", "seção" etc, é em referência ao documento "DENGUE DIAGNÓSTICO E MANEJO CLÍNICO - Adulto e criança - 6ª edição".
+
+Pasta: Dengue - Concursos; [
+Descrição: Apenas questões de concurso. Assuntos/tags:
+Transmissão
+Sintomas
+Diagnóstico
+Tratamento
+Prevenção
+
+
+
+Tag: Transmissão, Diagnóstico, Tratamento
+Dificuldade: 1
+Q: Durante uma campanha de conscientização sobre a dengue, é importante esclarecer como ocorre a transmissão, quais os cuidados no tratamento, e as precauções que devem ser tomadas. Leia as afirmativas abaixo e marque V para verdadeiro e F para falso, considerando o que se sabe sobre a prevenção e tratamento da dengue:
+( ) A principal forma de transmissão da dengue é pelo mosquito Aedes aegypti infectado.
+( ) O tratamento da dengue é sintomático, com reposição de líquidos e controle da febre.
+( ) O uso de anti-inflamatórios não esteroidais (AINEs) é seguro para o controle da dor na dengue.
+( ) O diagnóstico da dengue pode ser confirmado por testes sorológicos.
+Assinale a alternativa que contém a sequência **CORRETA**.
+A) V, F, V, F
+B) V, V, F, V
+C) F, V, F, V
+D) V, V, V, F
+G: B
+
+Tag: Sintomas
+Dificuldade: 1
+Q: Uma criança de 9 anos de idade foi levada ao pronto-socorro por causa de quadro de febre alta (média de 39 °C), acompanhada de dor de cabeça, mialgia, artralgias, dores na região retro-orbital, astenia, hiperemia conjuntival e vômitos persistentes há três dias. Evoluiu há um dia com manchas vermelhas pruriginosas difusas. A mãe relata que o filho não está aceitando nem líquidos e que diminuiu a diurese. Ao exame físico, a criança se apresenta apática, desidratada, com rash maculopapular difuso, FC = 95 bpm, FR = 22 irpm, PA = 110 mmHg x 65 mmHg e SatO2 = 98%.
+**De acordo com a Organização Mundial da Saúde (OMS), a dengue pode ser agrupada em duas categorias, tendo como base a gravidade da doença: dengue com ou sem sinais de alarme e dengue grave. O caso clínico apresentado é, portanto, classificado como**
+A) dengue com sinal de alarme, porque o paciente apresenta rush maculopapular difuso.
+B) dengue grave, uma vez que o paciente se encontra em choque hipovolêmico.
+C) dengue sem sinal de alarme, visto que o paciente não teve sangramento de mucosa.
+D) dengue com sinal de alarme, pois o paciente apresenta vômitos persistentes.
+G: D
+CG: A maioria dos sinais de alarme é resultante do aumento da permeabilidade vascular, que marca o início da deterioração clínica do paciente e sua possível evolução para o choque por extravasamento plasmático.
+sinaisalarmedengue2332324.png
+
+SALV-HHD "SALVar Helicóptero Do Hélio"
+
+Tag: Sintomas, Diagnóstico
+Dificuldade: 1
+Q: Nos pacientes com dengue, o que poderia definir melhor um **quadro de dengue tipo D**, com indicação mais precisa de internação em UTI?
+A) Vômitos, hipotensão e dor abdominal persistente
+B) Prova do laço positiva, hepatomegalia, dor abdominal persistente
+C) Paciente maior de 65 anos, diabética, hipertensa obesa
+D) Extravazamento de plasma, pressão arterial convergente, débito urinário menor que 1,5 mL/Kg/h
+G: D
+CG: 👉 *Pressão arterial convergente* significa que a diferença entre a pressão sistólica e diastólica é menor que 20 mmHg, indicando choque iminente.  
+👉 *Débito urinário menor que 1,5 mL/kg/h* reflete **oligúria**, sinal de hipoperfusão renal, caracterizando disfunção orgânica grave — por isso classifica o paciente como **dengue tipo D (grave)**, com necessidade de UTI<br>
+Detalhando os conceitos
+1. Pressão arterial convergente
+- **Definição:** ocorre quando a diferença entre a pressão arterial sistólica (PAS) e a diastólica (PAD) é **menor que 20 mmHg**.  
+- **Exemplo:** PAS = 90 mmHg e PAD = 75 mmHg → diferença = 15 mmHg → convergente.  
+- **Significado clínico:**  
+  - Indica **redução crítica da pressão de pulso**, geralmente causada por **extravasamento de plasma** e queda do volume circulante.  
+  - É um marcador precoce de **choque hipovolêmico** na dengue grave.  
+  - Associado a outros sinais de hipoperfusão: pulso rápido e fino, extremidades frias, enchimento capilar lento.<br>
+2. Débito urinário < 1,5 mL/kg/h
+- **Normalidade:** em adultos, espera-se diurese ≥ 1 mL/kg/h; em crianças, valores um pouco maiores.  
+- **Na dengue:**  
+  - Quando o débito cai para **< 1,5 mL/kg/h**, isso indica **oligúria**.  
+  - Oligúria é consequência da **hipoperfusão renal** causada pelo choque e pelo extravasamento de plasma.  
+  - É considerado **sinal de disfunção orgânica grave**, critério para classificar o paciente como **Grupo D (dengue grave)**.  
+- **Importância prática:**  
+  - Pacientes com oligúria precisam de monitorização intensiva, reposição volêmica cuidadosa e, muitas vezes, suporte em UTI.  
+  - A diurese é um dos parâmetros mais confiáveis para avaliar perfusão tecidual em tempo real.
+
+Tag: Sintomas
+Dificuldade: 1
+Q: Paciente, 25 anos, previamente saudável, apresenta febre alta, dor retro-orbitária e mialgias intensas há três dias. Exames laboratoriais revelam leucopenia, trombocitopenia e hematócrito normal. Relata que recentemente viajou para uma área endêmica de dengue. Trata-se de uma complicação que pode sugerir progressão para dengue grave:
+A) Icterícia e hepatomegalia leve.
+B) Aumento isolado da transaminase.
+C) Leucopenia persistente com neutrofilia.
+C: A leucopenia persistente é uma característica frequente na fase aguda da dengue, mas a presença de neutrofilia não é um achado característico de dengue grave. A leucopenia é geralmente acompanhada de linfocitose, não neutrofilia, e a neutrofilia é mais associada a infecções bacterianas.
+D) Aumento do hematócrito com queda concomitante das plaquetas.
+G: D
+
+Dificuldade: 1
+Q: Analise as afirmativas a seguir:
+I. A dengue é a arbovirose urbana mais prevalente nas Américas, principalmente no Brasil. É uma doença febril que tem se mostrado de grande importância em saúde pública nos últimos anos.
+II. O vírus da dengue (DENV) é um arbovírus transmitido pela picada da fêmea do mosquito Aedes aegypti e que possui quatro sorotipos diferentes (DENV-1, DENV-2, DENV-3 e DENV-4).
+III. Os casos graves de dengue são caracterizados por sangramento, disfunções de órgãos ou extravasamento de plasma. O choque ocorre quando um volume crítico de plasma é perdido pelo extravasamento.
+Marque a alternativa CORRETA:
+A) Todas as afirmativas estão corretas.
+B) Nenhuma afirmativa está correta.
+C) Apenas uma afirmativa está correta.
+D) Apenas duas afirmativas estão corretas.
+G: A
+
+Tag: Prevenção
+Dificuldade: 1
+Q: Com relação à vacina contra dengue é correto afirmar que
+A) ainda não existem vacinas contra essa doença aprovadas pela Agência Nacional de Vigilância em Saúde (ANVISA).
+B) as vacinas existentes não demonstram relação custo-benefício que justifique a sua utilização em larga escala.
+C) desde janeiro de 2024, está sendo utilizada em larga escala no Brasil.
+D) o Brasil é o primeiro país do mundo a oferecer o imunizante no sistema público universal.
+E) a sua disponibilidade para uso em larga escala depende apenas da conclusão bem-sucedida dos ensaios clínicos e da validação regulatória.
+G: D
+
+Tag: Epidemiologia
+Dificuldade: 1
+Q: No estado do Espírito Santo, que possui aproximadamente 4 milhões de habitantes, o número de casos de dengue foi de 148.000 entre as semanas epidemiológicas 1 (1.o/1/2023 a 7/1/2023) e 25 (18/6/2023 a 24/6/2023); nesse período, foram confirmados 70 óbitos causados por dengue.
+Com relação aos dados apresentados, bem como a aspectos pertinentes a emergências médicas e a fundamentos de epidemiologia e doenças de notificação compulsória, julgue o item subsequente.
+Conforme dispõe portaria do Ministério da Saúde, a dengue é uma doença endêmica, razão por que não é de notificação compulsória.
+G: F
+C: O item apresentado está **incorreto**. A dengue **é, de fato, uma doença de notificação compulsória**, conforme estabelecido pela Portaria do Ministério da Saúde nº 1.271, de 6 de junho de 2014, que lista as doenças, agravos e eventos em saúde pública de notificação compulsória em todo o território nacional. A classificação de uma doença como endêmica refere-se à sua presença regular em determinada área geográfica ou população. No entanto, isso não exime a dengue de ser uma doença de notificação compulsória, uma vez que tal medida é essencial para que os órgãos de saúde pública possam monitorar, prevenir e controlar surtos e epidemias. Portanto, o fato de uma doença ser endêmica não elimina a necessidade de notificação às autoridades de saúde quando há ocorrência de casos, especialmente para doenças transmissíveis e potencialmente epidêmicas como a dengue.
+
+Tag: Prevenção
+Dificuldade: 1
+Q: No que concerne à transmissão e prevenção da Dengue, é CORRETO afirmar que:
+A) a eliminação de água parada não contribui significativamente para a prevenção da Dengue;
+B) o mosquito Aedes aegypti é ativo e realiza a maior parte de suas picadas durante a noite;
+C) o uso de repelentes é eficaz somente no interior das residências;
+D) a Dengue pode ser transmitida diretamente de uma pessoa infectada para uma pessoa saudável sem a intervenção do mosquito;
+E) a eliminação de criadouros do mosquito Aedes aegypti é uma medida eficaz na prevenção da Dengue.
+G: E
+
+Tag: Diagnóstico
+Dificuldade: 1
+Q: Na dengue, o achado laboratorial cuja alteração progressiva constitui indicador de gravidade é:
+A) linfopenia
+C: A linfopenia (redução de linfócitos) não é um marcador característico de gravidade na dengue. Na verdade, é comum observar linfocitose relativa (aumento percentual de linfócitos) na fase inicial da doença, com presença de linfócitos atípicos, sendo este um achado esperado na infecção viral aguda por dengue.
+B) neutrofilia
+C: A neutrofilia (aumento de neutrófilos) não é um marcador de gravidade da dengue. Pelo contrário, a dengue tipicamente cursa com leucopenia (redução global de leucócitos) e neutropenia relativa, sendo a neutrofilia mais associada a infecções bacterianas secundárias ou complicações, mas não como indicador progressivo da gravidade da própria dengue.
+C) eosinofilia
+C: A eosinofilia (aumento de eosinófilos) não representa um marcador de gravidade na dengue. Na fase aguda da doença, é comum observar eosinopenia (redução de eosinófilos), e o reaparecimento dos eosinófilos no hemograma pode inclusive sinalizar a fase de recuperação do paciente, sendo considerado um sinal favorável de convalescença.
+D) leucocitose
+C: A leucocitose (aumento de leucócitos) não é característica da dengue nem constitui marcador de gravidade da doença. O padrão hematológico típico da dengue é a leucopenia (diminuição de leucócitos), que ocorre pela redistribuição e sequestro de células, sendo a leucocitose mais sugestiva de complicações como infecções bacterianas secundárias.
+E) plaquetopenia
+C: A plaquetopenia (redução de plaquetas) é o principal marcador laboratorial de gravidade na dengue, e sua queda progressiva indica maior risco de sangramento e evolução para dengue grave. A contagem plaquetária abaixo de 100.000/mm³ já é considerada trombocitopenia significativa, e valores progressivamente menores, especialmente quando associados a sinais de alarme e extravasamento plasmático, caracterizam formas graves da doença com risco de hemorragias e choque.
+G: E
+
+Tag: Prevenção
+Dificuldade: 1
+Q: A respeito da vacina aprovada recentemente para a prevenção da dengue, é correto afirmar que
+A) a vacina é uma formulação tetravalente de vírus vivos atenuados.
+C: CORRETA. A Qdenga é um imunizante tetravalente produzido a partir do vírus vivo atenuado, contendo os quatro sorotipos da dengue (DENV-1, DENV-2, DENV-3 e DENV-4). A vacina é baseada no sorotipo 2 geneticamente atenuado com três vírus quiméricos, o que permite induzir resposta imunológica contra todos os sorotipos sem causar a doença.
+B) é recomendado um esquema de três doses para crianças (de 0, 6 e 12 meses de vida) e para adolescentes.
+C: INCORRETA. O esquema vacinal da Qdenga é composto por **duas doses**, com **intervalo** de **90 dias (3 meses)** entre cada uma, e não três doses. Além disso, a vacina **não é indicada para bebês desde o nascimento**; o registro na Anvisa indica a vacina para pessoas de **4 a 60 anos**, e o Ministério da Saúde priorizou inicialmente **crianças e adolescentes de 10 a 14 anos**.
+C) o público‑alvo definido pelo Ministério da Saúde é composto de crianças e de adolescentes de 4 meses de vida a 15 anos de idade.
+C: INCORRETA. O público-alvo em 2024 é composto por **crianças e adolescentes de 10 a 14 anos, não de 4 meses a 15 anos**. A faixa etária foi definida porque esse grupo concentra o maior número de hospitalização por dengue, depois de pessoas idosas. A escolha dessa faixa também considerou a disponibilidade limitada de doses e as áreas de maior transmissão.
+D) a vacina é indicada apenas para pessoas que já tiveram infecção prévia confirmada pelo vírus da dengue.
+C: INCORRETA. A Qdenga é única vacina contra dengue aprovada no Brasil para utilização independentemente da exposição anterior à doença e sem necessidade de teste pré-vacinação. Diferentemente da vacina Dengvaxia (que exige infecção prévia), a Qdenga pode ser aplicada tanto em pessoas que já tiveram dengue quanto naquelas que nunca tiveram contato com o vírus.
+E) a vacina é indicada para crianças imunocomprometidas.
+C: INCORRETA. A Qdenga **tem as mesmas contraindicações das vacinas feitas a partir de vírus vivo, ou seja, NÃO DEVE ser tomada por gestantes, lactantes e pessoas com imunodeficiência**. Como vacina de vírus vivo, está contraindicada para imunodeficiências primárias ou adquiridas, incluindo terapias imunossupressoras, pois o vírus atenuado pode causar infecção em pessoas com sistema imune comprometido.
+G: A
+CG: Mapa mental
+530839023_18407122744116328_7821092103729392481_n.jpg
+
+Tag: Prevenção
+Dificuldade: 1
+Q: Um dos critérios de vacinação para a vacina da dengue é referente à predominância do sorotipo:
+A) G1P1.
+B) H1N1.
+C) DENV2.
+D) Pn23.
+G: C
+CG: O critério de vacinação para a dengue que se refere à predominância do sorotipo foi utilizado pelo Ministério da Saúde do Brasil para a priorização e distribuição inicial da vacina (Qdenga) em municípios.
+​O foco foi dado às regiões que apresentavam a maior predominância do sorotipo 2 (DENV-2) do vírus da dengue, pois este sorotipo tem histórico de estar associado a casos mais graves.
+
+
+Dificuldade: 1
+Q: Sobre a dengue, que tem sido demanda recorrente nos serviços de urgência, assinale a alternativa correta.
+A) É uma doença passiva, e o paciente pode evoluir de um estágio a outro, de modo lento.
+C: INCORRETA. A dengue é uma doença dinâmica e evolutiva, e não passiva. O paciente pode evoluir rapidamente de um estágio para outro, especialmente na fase crítica da doença (geralmente entre o 3º e 7º dia após o início dos sintomas), quando pode ocorrer extravasamento plasmático, choque e complicações graves em questão de horas. Por isso, é essencial o monitoramento clínico rigoroso e a reavaliação frequente dos pacientes, principalmente aqueles com sinais de alarme, pois a evolução pode ser rápida e imprevisível.
+B) Hidratação oral, antitérmico e analgésico são tratamentos eficientes no caso de o paciente apresentar manifestação hemorrágica.
+C: INCORRETA. Quando o paciente apresenta manifestações hemorrágicas (sangramento de mucosas, petéquias extensas, sangramento gastrointestinal, hematúria, etc.), ele já está em um quadro de dengue grave ou com sinais de alarme, necessitando de hidratação venosa imediata e internação hospitalar para monitoramento intensivo. A hidratação oral isolada é insuficiente nesses casos, pois há risco iminente de choque por extravasamento plasmático. Além disso, é contraindicado o uso de anti-inflamatórios não esteroidais e ácido acetilsalicílico (AAS) pelo risco de agravar sangramentos.
+C) É uma doença de notificação compulsória e de investigação obrigatória.
+C: CORRETA. A dengue está incluída na Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública no Brasil. Todos os casos suspeitos de dengue devem ser notificados às autoridades sanitárias em até 24 horas, e os casos graves, óbitos e surtos requerem notificação imediata. A investigação é obrigatória para confirmar o diagnóstico, identificar o sorotipo circulante, monitorar a situação epidemiológica e implementar medidas de controle vetorial e prevenção de novos casos nas áreas afetadas.
+D) A prova do laço não apresenta evidências suficientes para casos suspeitos de dengue.
+C: INCORRETA. A prova do laço é um teste simples, de baixo custo e recomendado pelo Ministério da Saúde brasileiro como parte da avaliação clínica inicial de casos suspeitos de dengue. Quando positiva (20 ou mais petéquias em um quadrado de 2,5 cm x 2,5 cm no antebraço), indica fragilidade capilar e auxilia na identificação de pacientes com maior risco de evolução para formas graves. Embora não seja específica para dengue e possa ser negativa em casos graves, a prova do laço positiva é considerada um sinal de alarme e orienta a necessidade de monitoramento mais rigoroso do paciente.
+G: C
+
+Tag: Sintomas, Diagnóstico
+Dificuldade:
+Q: Um paciente de 45 anos de idade com 80 Kg, sem comorbidades prévias, residente no Paranoá-DF, compareceu ao pronto-socorro com febre de início abrupto há 2 dias, cefaleia intensa, mialgia, e dor retro-ocular. Quando questionado ativamente, negou outros sintomas. Ao exame, apresentou-se febril (39 °C), com taquicardia (110 bpm) e com FR = 18 irpm, PA = 135 mmHg x 85 mmHg e SatO2 = 97% ao ar ambiente e, prova do laço positiva, sem outras alterações. O Hemograma evidenciou: hemoglobina = 15 g%, hematócrito = 45%, leucócitos = 4200/mm³, linfócitos = 880/mm³ e plaquetas = 120 mil/mm³.
+Qual é o exame considerado adequado para confirmação laboratorial do diagnóstico de dengue no caso clínico apresentado?
+A) Sorologia por Elisa IgM
+C: Incorreta para este caso, pois só é recomendada a partir do 6º dia de sintomas.
+B) Sorologia por Elisa IgG
+C: Incorreta, pois o IgG indica infecção passada ou resposta tardia, não sendo o teste de escolha para confirmação de caso agudo inicial. Além disso, a detecção de IgG para fins de confirmação exige amostras pareadas com 14 dias de intervalo para verificar o aumento dos títulos
+C) Detecção de antígeno NS1
+D) Presença de linfócitos atípicos no hemograma
+C: Incorreta, pois embora a linfocitose atípica possa aparecer no hemograma de pacientes com dengue, ela é um achado laboratorial inespecífico e não serve como critério de confirmação diagnóstica laboratorial segundo o Ministério da Saúde
+G: C
+CG: No caso clínico apresentado, o paciente está no **2º dia de febre**. Como ele se encontra dentro da janela dos primeiros cinco dias, os testes de sorologia (como o ELISA IgM citado na alternativa {A} ainda resultariam em um "falso negativo", pois os anticorpos levam tempo para atingir níveis detectáveis. Portanto, a detecção da proteína NS1, que circula no sangue desde o primeiro dia de febre, é o método adequado para este momento.
+image_eejkxueejkxucseejk.png
+
+Tag: Sintomas
+Dificuldade: 1
+Q: Assinale a alternativa que descreve de forma mais correta e completa os sintomas comuns da fase febril da dengue:
+A) Febre de início lento, acompanhada de icterícia, tosse produtiva e convulsões.
+B) Febre de sete a quinze dias, com vômitos persistentes e convulsões generalizadas.
+C) Febre de início abrupto, associada a cefaleia, dores musculares e dor retro-orbitária.
+D) Queda de temperatura corporal, palidez súbita e delírios.
+G: C
+
+Tag: Tratamento
+Dificuldade: 1
+Q: Na dengue com sinais de alarme, há dor abdominal intensa, vômitos e hipotensão. Identifique a intervenção inicial no hospital.
+A) Dar antitérmicos e observar até 72 horas, pois a normalização circulatória tende a ocorrer sozinha.
+B) Administrar antibióticos de amplo espectro para eliminar a viremia.
+C) Fazer hidratação venosa cautelosa, monitorar parâmetros hemodinâmicos e checar hematócrito, considerando intensificação se surgirem sinais de choque.
+D) Indicar corticoides em doses elevadas para suprimir inflamação viral.
+G: C
+
+Tag: Prevenção
+Dificuldade: 1
+Q: Qual é o principal método recomendado pelo Ministério da Saúde para controle vetorial da Aedes aegypti, vetor da dengue, zika e chikungunya?
+A) Pulverização aérea de inseticidas.
+B) Aplicação de larvicidas em criadouros.
+C) Erradicação completa do mosquito Aedes aegypti.
+D) Uso de inseticidas de amplo espectro em áreas urbanas.
+E) Controle integrado, com ênfase na eliminação de criadouros.
+G: E
+
+Tag: Tratamento
+Dificuldade: 1
+Q: Qual das alternativas a seguir apresenta medicamentos que podem aumentar o risco de sangramento e são, portanto, contraindicados para tratar a dengue?
+A) Dipirona e paracetamol.
+B) Loratadina e sais de reidratação oral.
+C) Ibuprofeno e naproxeno.
+D) Metoclopramida e bromoprida.
+E) Dopamina e dobutamina.
+G: C
+
+Tag: Tratamento
+Dificuldade: 1
+Q: A dengue é uma doença infecciosa causada por um dos quatro sorotipos do vírus da dengue (DENV-1, DENV-2, DENV-3 e DENV-4), transmitida a indivíduos suscetíveis pela picada de fêmeas infectadas de mosquitos do gênero Aedes, principalmente Aedes aegypti e Aedes albopictus. Após a infecção, o vírus se multiplica no organismo, podendo desencadear uma ampla gama de sintomas, desde quadros leves de febre até formas graves com manifestações hemorrágicas e choque.
+Sobre o tratamento da doença, julgue as seguintes afirmações como verdadeiras (V) ou falsas (F):
+(__) No tratamento das formas graves da dengue, o uso de corticosteróides é recomendado, pois há evidências de que podem oferecer benefícios, ajudando a reduzir a inflamação e as complicações associadas à doença.
+(__) Para casos benignos de febre indiferenciada e dengue sem sinais de alarme, recomenda-se hidratação e tratamento sintomático para febre, cefaleia, mialgias e artralgias, devendo-se evitar o uso de salicilatos, devido ao risco de hemorragia digestiva alta, acidose e impacto na agregação plaquetária, o que pode agravar quadros hemorrágicos.  
+(__) A hidratação deverá ser reavaliada continuamente ao se iniciar a fase de convalescença e consequente reabsorção do plasma extravasado, sendo necessário cuidado com o possível estado hipervolêmico do paciente.
+Assinale a alternativa cuja respectiva ordem de julgamento esteja correta:
+A) F, V, V.
+B) V, V, V.
+C) F, F, V.
+D) V, F, F.
+G: A
+CG: Nas formas graves (Grupos C e D), o tratamento foca na reposição volêmica imediata com cristaloides (soro fisiológico a 0,9%) para combater o choque e o extravasamento plasmático, e não em terapia anti-inflamatória com esteroides.
+
+Tag: Sintomas
+Dificuldade: 1
+Q: Segundo as diretrizes mais recentes do Ministério da Saúde, qual dos achados clínicos abaixo caracteriza sinal de alarme na dengue, indicando necessidade de avaliação hospitalar imediata?
+A) Febre baixa persistente após o sétimo dia da doença.
+B) Dor retro-orbitária e mialgia intensa.
+C) Exantema difuso associado a prurido.
+D) Dor abdominal intensa e contínua.
+E) Linfadenomegalia cervical dolorosa.
+G: D
+
+Tag: Prevenção
+Dificuldade: 1
+Q: Atualmente, a dengue continua sendo uma das endemias mais preocupantes no Brasil, caracterizada por surtos periódicos que sobrecarregam o sistema de saúde. Tratada na ausência de um antídoto específico, a prevenção é central no combate à epidemia. A estratégia de controle usada pelo Ministério da Saúde enfatiza a eliminação dos criadouros do Aedes aegypti. Contudo, novos métodos estão sendo considerados como o uso de mosquitos geneticamente modificados e bactérias Wolbachia. Qual a principal vantagem esperada com a introdução de mosquitos contendo a bactéria Wolbachia na luta contra a dengue?
+A) O aumento da biodiversidade local.
+B) A erradicação completa do Aedes aegypti.
+C) O desenvolvimento de uma vacina universal.
+D) A redução da capacidade do mosquito de transmitir o vírus.
+G: D
+
+Tag: Diagnóstico
+Dificuldade: 1
+Q: É o exame utilizado para detecção de anticorpos anti-Dengue e deve ser solicitada a partir do sexto dia do início dos sintomas. Trata-se do exame:
+A) Hemograma completo.
+C: Este é um exame fundamental para o acompanhamento clínico, sendo obrigatório para pacientes do Grupo B e essencial para monitorar sinais de gravidade, como a hemoconcentração (aumento do hematócrito) e a plaquetopenia (queda no número de plaquetas). No entanto, o hemograma não é capaz de detectar anticorpos ou identificar o vírus diretamente; ele apenas reflete as alterações hematológicas causadas pela infecção e pelo extravasamento plasmático.
+B) Virologia.
+C: Este termo refere-se ao conjunto de métodos de detecção direta do vírus, que incluem o **isolamento viral, a pesquisa do antígeno NS1 e o RT-PCR**. Esses exames são indicados apenas para a fase inicial da doença, especificamente **até o quinto dia do início dos sintomas**, quando o vírus ainda está circulando no sangue, o que chamamos de viremia. Como a virologia busca componentes do próprio vírus e não a resposta do hospedeiro, ela não serve para detectar anticorpos.
+C) Cultura.
+D) Reação em cadeia da polimerase (PCR).
+C: O RT-PCR é uma técnica de biologia molecular que detecta o material genético (RNA) do vírus dengue no sangue. Este exame é extremamente sensível para confirmar o diagnóstico na fase aguda, devendo ser solicitado preferencialmente **até o quinto dia de sintomas.** Embora seja um método de confirmação laboratorial, ele **identifica o vírus circulante** e não os anticorpos produzidos pelo sistema imunológico.
+E) Sorologia.
+C: Esta é a alternativa correta, pois a sorologia (especialmente o método **ELISA IgM**) é o exame desenhado especificamente para detectar os anticorpos que o corpo produz em resposta ao vírus. Como o sistema imunológico precisa de tempo para gerar esses anticorpos em quantidade suficiente para serem medidos, a coleta deve ser realizada a partir do **sexto dia do início dos sintomas**. É o exame de escolha para pacientes que já passaram da fase inicial de viremia.
+G: E
+
+Tag: Sintomas
+Dificuldade: 1
+Q: Assinale qual das opções abaixo apresenta um sinal de alarme de um paciente com dengue, quando no período de defervescência da febre, apresente, entre outros, o seguinte:
+A) Aumento progressivo do hematócrito.
+B) Exantema
+C) Leucopenia
+D) Cefaleia
+G: A
+
+Tag: Prevenção
+Dificuldade: 1
+Q: Durante uma visita domiciliar, um agente de saúde educa a família sobre medidas de prevenção à dengue, como evitar água parada. Qual nível de prevenção é exemplificado?
+A) Primária.
+B) Secundária.
+C) Terciária.
+D) Quaternária.
+G: A
+
+Tag: Sintomas, Diagnóstico
+Dificuldade:
+Q: A co-circulação de arbovírus como Dengue, Zika e Chikungunya em diversas regiões do Brasil representa um desafio diagnóstico para o médico, dada a sobreposição de sinais e sintomas iniciais.
+A identificação de características clínicas predominantes em cada uma delas é fundamental para o manejo adequado e a orientação do paciente. Acerca do diagnóstico diferencial dessas arboviroses, marque V para as afirmativas verdadeiras e F para as falsas.
+(__)A poliartralgia intensa, simétrica e frequentemente incapacitante, que acomete tanto grandes quanto pequenas articulações, com edema associado, é a manifestação clínica mais característica e distintiva da febre pelo vírus Chikungunya.
+(__)O exantema maculopapular na Dengue é tipicamente mais pruriginoso e de início mais precoce que na Zika, sendo a presença de conjuntivite purulenta um achado comum que ajuda a diferenciar a Dengue das outras duas arboviroses.
+(__)Os sinais de alarme na Dengue, que indicam risco de evolução para formas graves, incluem dor abdominal intensa e contínua, vômitos persistentes, acúmulo de líquidos, letargia ou irritabilidade e sangramentos de mucosas.
+(__)Embora a febre seja um sintoma comum às três doenças, na infecção pelo vírus Zika, ela tende a ser de menor intensidade (baixa) ou até mesmo ausente, com o quadro clínico sendo dominado pelo exantema, prurido e hiperemia conjuntival não purulenta.
+Após análise, assinale a alternativa que apresenta a sequência correta dos itens acima, de cima para baixo:
+A) V − F − V − V.
+B) F − F − V − V.
+C) V − V − V − V.
+D) V − F − F − F.
+G: A
+CG: **A assertiva II está incorreta** porque inverte as características clínicas fundamentais para o diagnóstico diferencial entre as arboviroses. Segundo o manual do Ministério da Saúde, **é na infecção pelo vírus Zika que o exantema surge de forma precoce **(logo no 1º ou 2º dia) e apresenta prurido intenso, enquanto na Dengue o exantema costuma aparecer mais tardiamente (entre o 3º e 6º dia). Além disso, a **conjuntivite é um achado raro na Dengue**, sendo, na verdade, **muito frequente na Zika** (presente em 50% a 90% dos casos), manifestando-se caracteristicamente como uma hiperemia conjuntival não purulenta (olhos vermelhos sem secreção de pus).
+
+Tag: Tratamento, Prevenção
+Dificuldade: 1
+Q: Uma **gestante** é admitida com **suspeita de dengue**. Ela apresenta febre, mialgia e exantema maculopapular.
+Qual é o principal **cuidado** a ser tomado com relação à **gestação** nesse contexto?
+A) Iniciar profilaxia antitrombótica.
+B) Manter hidratação adequada.
+C) Administrar corticosteroides para reduzir a resposta inflamatória.
+D) Realizar transfusão de plaquetas profilática.
+E) iniciar anti-inflamatório para reduzir complicações.
+G: B
+
+Tag: Tratamento
+Dificuldade: 1
+Q: Diante de um **quadro suspeito de Dengue**, classificado como pertencente ao **grupo C** (ou seja, com sinais de alarme presentes e sinais de choque ausentes), a **conduta médica** seria:
+A) iniciar reposição volêmica com soro fisiológico a depender do tempo de enchimento capilar e da prova do laço – caso ainda normais, fazer via oral.
+B) calcular o volume de soro a ser infundido com base nos níveis pressóricos, uma vez que a vasodilatação provocada pela dengue reduz a pressão arterial e esse ser um parâmetro-alvo.
+C) iniciar reposição volêmica imediata endovenosa, mesmo na ausência de exames complementares ou da prova do laço negativa.
+D) calcular o volume de soro a ser infundido com base nos níveis plaquetários, uma vez que a plaquetopenia provocada pela dengue pode se acentuar com infusões de soro vultuosas devido à hemodiluição.
+G: C
+
+Tag: Sintomas
+Dificuldade: 1
+Q: “Em relação à Dengue, sintomas neurológicos são incomuns, mas pode incluir encefalopatia e convulsões, sendo que alguns pacientes podem desenvolver a síndrome de Guillain-Barré”.
+A **síndrome de Guillain-Barré** é caracterizada por:
+A) Vômito.
+B) Fraqueza muscular.
+C) Diarreia.
+D) Hipotensão.
+E) Hemorragia.
+G: B
+
+Tag: Sintomas
+Dificuldade: 1
+Q: **Em relação à dengue**, analisar os itens abaixo:
+I. O exame físico deve ser completo, sem preocupação em detectar exantema, fenômenos hemorrágicos, sinais de alteração hemodinâmica e nível de consciência.
+II. Após realizada a prova do laço e desenhado um quadrado de 2,5 cm de lado no antebraço, a prova será positiva se houver 20 ou mais petéquias em adultos e 10 ou mais em crianças.
+III. Ao realizar a prova do laço, se ela for positiva antes do tempo preconizado, ela pode e deve ser interrompida.
+IV. O diagnóstico da dengue é feito a partir de dados clínicos e epidemiológicos, com reforço de exames laboratoriais quando necessário.
+Estão CORRETOS:
+A) Somente os itens I e II.
+B) Somente os itens I e III.
+C) Somente os itens III e IV.
+D) Somente os itens II, III e IV.
+G: D
+
+Tag: Sintomas, Diagnóstico
+Dificuldade: 1
+Q: A **dengue** é a arbovirose mais difundida no mundo е constitui-se em um grave problema de saúde pública mundial. Em relação ao **quadro clínico, ao diagnóstico e ao acompanhamento** para a doença, **assinale a alternativa correta**.
+A) A fase crítica da doença inicia-se coma defervescência da febre e caracteriza-se pela estabilização do estado hemodinâmico.
+C: **Incorreta**. Embora a afirmação acerte ao dizer que a fase crítica se inicia com a defervescência (a queda da febre, geralmente entre o 3º e 7º dia), ela erra gravemente ao dizer que há "estabilização hemodinâmica". Pelo contrário: é justamente nessa fase que ocorre o aumento da permeabilidade vascular e o extravasamento de plasma. Esse é o momento de maior instabilidade, onde surgem os sinais de alarme e o risco de choque.
+B) No diagnóstico diferencial do vírus da zika e chikungunya, a poliartrite e a poliartralgia são sintomas frequentes na dengue e raros nas duas doenças.
+C: **Incorreta**. A alternativa inverte as características clínicas. No diagnóstico diferencial, a artralgia intensa e o edema articular (inchaço nas juntas) são as marcas registradas da Chikungunya (frequentes e intensos). Na Dengue, a artralgia costuma ser leve e o edema articular é raro.
+C) A elevação do hematócrito de 10% a 20% do valor basal durante a evolução pode indicar infecção bacteriana.
+C: **Incorreta**. O aumento do hematócrito na dengue não indica infecção bacteriana. Ele é o principal marcador laboratorial de hemoconcentração causada pelo vazamento de plasma para fora dos vasos sanguíneos. Um aumento progressivo do hematócrito é, inclusive, classificado como um sinal de alarme, indicando que o paciente está perdendo volume intravascular e pode evoluir para o choque.
+D) Na criança, o quadro grave pode ser identificado como a primeira manifestação clínica da doença.
+C: **Correta**. Em crianças, especialmente nas menores de 2 anos, os sintomas iniciais podem ser muito inespecíficos (choro persistente, sonolência, recusa alimentar, diarreia), passando despercebidos pelos pais ou sendo confundidos com outras viroses comuns. Diferente do adulto, que apresenta sinais de alarme mais claros, o agravamento na criança é súbito, fazendo com que o quadro grave (choque) seja, muitas vezes, a primeira manifestação clínica identificada no serviço de saúde.
+G: D
+
+Tag: Sintomas
+Dificuldade: 1
+Q: Uma **gestante de 20 semanas**, moradora de área endêmica, chegou à admissão da maternidade com sinais e sintomas sugestivos de **dengue**.
+Após o exame clínico-obstétrico e laboratorial, a equipe de plantão resolveu internar e tratar a paciente, pois identificou corretamente o seguinte **sinal de alarme**:
+A) vômitos esporádicos;
+C: Incorreta. Para ser considerado um sinal de alarme, os vômitos devem ser persistentes. Vômitos isolados ou esporádicos exigem atenção, mas não definem, por si só, a necessidade de internação imediata por sinal de alarme.
+B) dor abdominal moderada;
+C: Incorreta. O critério de alarme é a dor abdominal intensa (referida ou à palpação) e contínua. Dores de intensidade moderada não preenchem a definição clássica para o estadiamento de risco do Grupo C.
+C) hipotensão postural e/ou lipotimia;
+C: Correta. A hipotensão postural e a lipotimia (sensação de desmaio) são sinais claros de alarme. Elas indicam que o volume de sangue circulante está diminuindo devido ao extravasamento plasmático, o que justifica a internação imediata para monitoramento e hidratação venosa.
+D) diminuição progressiva do hematócrito;
+C: Incorreta. Na dengue, o sinal de alarme é o aumento progressivo do hematócrito. Esse aumento indica a hemoconcentração (o sangue ficando "grosso") porque o plasma está vazando dos vasos sanguíneos. A diminuição do hematócrito pode ocorrer na fase de recuperação ou em casos de hemorragia grave.
+E) esplenomegalia 1 cm abaixo do rebordo costal.
+C: Incorreta. O sinal de alarme relacionado a órgãos é a hepatomegalia (aumento do fígado) maior que 2 cm abaixo do rebordo costal. A esplenomegalia (aumento do baço) não é um critério de alarme definido pelo protocolo oficial.
+G: C
+
+Tag: Sintomas, Tratamento
+Dificuldade: 1
+Q: A **dengue** é uma doença endêmica podendo evoluir de casos leves a graves.
+Acerca dessa doença, analise as afirmativas a seguir e assinale (V) para a verdadeira e (F) para a falsa.
+( ) Na USG abdominal, a presença de ascite e o aumento da espessura da parede da vesícula biliar demonstra extravasamento plasmático.
+( ) Os pacientes com choque podem apresentar disfunção cardíaca biventricular de caráter transitório.
+( ) O derrame pleural deve ser drenado na grande maioria das vezes.
+As afirmativas são, na ordem apresentada, respectivamente,
+A) F – V – F.
+B) F – V – V.
+C) V – F – F.
+D) V – V – F.
+E) F – F – V.
+G: D
+
+Tag: Sintomas
+Dificuldade: 1
+Q: **Sobre Dengue Grave**, analise as alternativas e assinale a correta:
+I - Choque devido ao extravasamento grave de plasma evidenciado por taquicardia, extremidades frias e tempo de enchimento capilar ≥ a 2 segundos, pulso débil ou indetectável, pressão diferencial convergente ≤20mmHg; hipotensão arterial em fase tardia, acumulação de líquidos com insuficiência respiratória.
+II - Sangramento grave, segundo a avaliação do médico (exemplos: hematêmese, melena, metrorragia volumosa, sangramento do sistema nervoso central).
+III - Comprometimento grave de órgãos, tais como: dano hepático importante (AST/ALT>1.000), sistema nervoso central (alteração da consciência), coração (miocardite) ou outros órgãos.
+A) I e II.
+B) I, II e III.
+C) II e III.
+D) I e III.
+E) II.
+G: B
+
+Tag: Tratamento
+Dificuldade: 1
+Q: Um jovem de 25 anos procura a unidade básica de saúde com febre alta há 4 dias, acompanhada de dores musculares intensas, cefaleia, dor retro-orbital e náuseas. Ele relata que, nos últimos dois dias, notou algumas manchas avermelhadas na pele, principalmente nos braços e nas pernas, além de ter sentido tontura ao levantar-se pela manhã. Ao exame físico, o paciente apresenta febre de 38,7 ºC, erupções cutâneas, pressão arterial de 100/70 mmHg e pulso de 98 bpm. O hemograma revela uma queda no número de plaquetas (80000/mm3 ) e um hematócrito aumentado (45%).
+Assinale a alternativa que indica a correta **classificação** desse caso e a **conduta** a ser adotada.
+A) Dengue grupo A. Hidratação oral vigorosa e orientar procurar o pronto atendimento em caso de sinais de alarme.
+C: **Incorreta**. O paciente não se enquadra no Grupo A. Para ser classificado neste grupo, é necessário haver ausência de sinais de alarme e ausência de condições especiais ou risco social. O paciente relatou tontura ao levantar-se, o que configura hipotensão postural, um sinal de alarme claro, excluindo-o automaticamente do Grupo A.
+B) Dengue grupo B. Observação no domicílio com hidratação oral vigorosa e solicitar coleta de IgG no 6o
+C: **Incorreta**. O Grupo B engloba pacientes com sangramento espontâneo ou induzido, ou condições clínicas especiais, mas sem sinais de alarme. Como o paciente apresenta hipotensão postural (tontura ao levantar) e indícios de hemoconcentração, ele já evoluiu para um estágio de maior gravidade (Grupo C). Além disso, a conduta para Grupo B seria observação no serviço de saúde até o resultado de exames, não em domicílio imediato.
+dia.
+C) Dengue grupo D. Iniciar reposição volêmica intravenosa imediata e transferir para pronto-socorro para acompanhamento em UTI.
+C: **Incorreta**. O Grupo D é reservado para casos de Dengue Grave, caracterizados por choque, sangramento grave ou disfunção grave de órgãos. Embora o paciente tenha sinais de alarme, ele ainda não apresenta sinais clássicos de choque instalados (como PA convergente < 20 mmHg, extremidades frias, pulso filiforme ou hipotensão franca com PA sistólica < 90 mmHg) . Ele está na fase que antecede o choque, portanto, a classificação correta ainda não é D.
+D) Dengue grupo C. Iniciar reposição volêmica intravenosa imediata na UBS e transferir para unidade de referência para reavaliação do hematócrito.
+C: **Correta**. A presença de tontura ao levantar-se (hipotensão postural) é classificada como um Sinal de Alarme. Pacientes com qualquer sinal de alarme pertencem ao Grupo C8888. A conduta mandatória é iniciar a reposição volêmica imediata (10 ml/kg na primeira hora) em qualquer ponto de atenção (inclusive na UBS) e transferir o paciente para uma unidade com leito de internação para acompanhamento mínimo de 48 horas.
+G: D
+
+Tag: Prevenção
+Dificuldade: 1
+Q: Um paciente do sexo masculino de 37 anos de idade, portador de doença de Crohn, atualmente em uso de adalimumabe 40 mg em infusões quinzenais com bom controle de atividade de doença, perdeu seu cartão de vacinação e comparece ao centro de referência de imunobiológicos para atualização vacinal. **Esse paciente pode ser vacinado com todas alternativas a seguir, EXCETO:**
+A) meningocócica C em dose única.
+B) HPV tetravalente em três doses.
+C) hepatite B em três doses e com volume dobrado.
+D) dengue tetravalente em duas doses.
+G: D
+
+Tag: Sintomas
+Dificuldade: 2
+Q: Epidemiologia: Dengue Grave
+Na vigilância de casos de dengue, qual dos sinais abaixo é considerado um **critério de ALARME para dengue grave**, exigindo intervenção imediata?
+A) Hematêmese (vômitos com sangue).
+B) Exantema máculo-papular generalizado.
+C: **Errado**. O exantema máculo-papular é uma manifestação comum da fase febril da dengue (seção 2.1), ocorrendo em cerca de 50% dos casos, geralmente no 3º ao 6º dia, podendo envolver face, tronco, membros, palmas e plantas. Não é sinal de alarme nem critério de gravidade. É um achado inespecífico que também aparece em outras viroses (Zika, chikungunya, rubéola etc.).
+C) Cefaleia retroorbitária intensa.
+C: **Errado**. A cefaleia e a dor retro-orbital são sintomas clássicos da Fase Febril da dengue. Elas são critérios para a definição de caso suspeito, mas não indicam extravasamento plasmático ou evolução para gravidade.
+D) Mialgia e artralgia difusas.
+C: **Errado**. Assim como a cefaleia, a mialgia (dor muscular) e a artralgia (dor nas articulações) são sintomas típicos da Fase Febril. Elas causam desconforto, mas não constituem risco imediato à vida nem são classificadas como sinais de alarme.
+G: A
+
+Tag: Sintomas
+Dificuldade: 2
+Q: A dengue hemorrágica é uma complicação grave da infecção pelo vírus da dengue. Qual o principal **mecanismo fisiopatológico responsável pelo desenvolvimento da síndrome do choque da dengue**, caracterizada por extravasamento plasmático e coagulopatia?
+A) Aumento da permeabilidade vascular.
+B) Diminuição da produção de plaquetas.
+C) Ativação excessiva do sistema complemento.
+D) Lesão direta do vírus nas células endoteliais.
+G: A
+
+Tag: Transmissão, Sintomas
+Dificuldade: 2
+Q: As arboviroses transmitidas pelo mosquito Aedes aegypti constituem-se como um dos principais problemas de saúde pública no mundo. A dengue é a arbovirose urbana de maior relevância nas Américas, e tem como agente etiológico o vírus dengue (DENV), com quatro sorotipos. **Sobre a dengue, assinale a alternativa INCORRETA.**
+A) A suscetibilidade ao vírus da dengue (DENV) no indivíduo é universal; uma vez que haja infecção, a imunidade adquirida é permanente para um mesmo sorotipo (homóloga).
+B) A infecção primária ocorre em pessoas não previamente expostas a qualquer um dos sorotipos do vírus dengue. Nessa situação, surgem os anticorpos IgM, que se elevam rapidamente, sendo detectáveis a partir do sexto dia.
+C) O hematócrito, a contagem de plaquetas e a dosagem de albumina não auxiliam na avaliação e no monitoramento dos pacientes com suspeita ou diagnóstico confirmado de dengue, especialmente os que apresentarem prova do laço positiva.
+D) Enteroviroses, influenza e outras viroses respiratórias, hepatites virais, malária, febre tifoide, chikungunya, zika e outras arboviroses podem ser consideradas diagnóstico diferencial de dengue.
+E) É importante reconhecer precocemente os sinais de extravasamento plasmático, para correção rápida com infusão de fluidos.
+G: C
+CG: A afirmativa {C} contradiz totalmente as diretrizes do Ministério da Saúde. Esses exames são fundamentais para avaliar a gravidade e o extravasamento plasmático:
+	**Hematócrito:** O extravasamento plasmático pode ser percebido pelo aumento do hematócrito (hemoconcentração). Quanto maior a elevação, maior a gravidade. A avaliação da hemoconcentração é crucial para o estadiamento e decisão terapêutica.
+	**Albumina:** A redução dos níveis de albumina é um marcador de extravasamento plasmático. A dosagem de albumina sérica é um exame obrigatório para pacientes dos Grupos C e D.
+	**Plaquetas:** A trombocitopenia (queda de plaquetas) é uma alteração laboratorial comum e a "plaquetas em elevação" é um dos critérios para alta hospitalar. A plaquetometria também é usada para monitorar risco de sangramento.
+
+Tag:
+Dificuldade: 2
+Q: Considere as seguintes **afirmações sobre a dengue**:
+I. a febre alta constitui sinal de alarme para dengue;
+II. a fase febril cursa com febre alta, de início abrupto, concomitante com cefaleia, mialgia, artralgia e dor ocular, com duração de dois a sete dias;
+III. o aumento progressivo do hematócrito constitui sinal de alarme para dengue;
+IV. a febre de chikungunya, bem como a febre causada pelo zika vírus, constituem diagnósticos diferenciais de dengue caso não haja confirmação desta doença.
+A) todas as afirmativas estão corretas.
+B) apenas as afirmativas I e II estão corretas.
+C) apenas as afirmativas I, II e III estão corretas.
+D) apenas as afirmativas II, III e IV estão corretas.
+G: D
+CG: A afirmativa I está **incorreta**: A febre alta é a manifestação inicial característica da fase febril (seção 2.1), com início abrupto e duração de 2 a 7 dias. Os sinais de alarme surgem tipicamente na fase crítica, ao redor da defervescência (seção 2.2.1, Quadro 1 e seção 10.2). O Quadro 1 lista explicitamente os sinais de alarme (dor abdominal intensa e contínua, vômitos persistentes, acúmulo de líquidos, hipotensão postural/lipotimia, hepatomegalia >2 cm, sangramento de mucosa, letargia/irritabilidade), sem incluir febre alta. O aumento progressivo do hematócrito é adicionado em seções posteriores (ex.: 6.3.1 e 10.2), mas a febre em si não é sinal de alarme.
+
+Tag: Sintomas, Tratamento
+Dificuldade: 2
+Q: Uma paciente de 65 anos de idade, diabética, hipertensa e obesa, com dengue confirmada por NS1, foi transferida da UPA para a UTI. No momento, encontra-se na fase de defervescência (sexto dia de evolução da arbovirose).
+Nos pacientes com dengue, o que poderia definir melhor um **quadro de dengue tipo D**, com indicação mais precisa de **internação em UTI**?
+A) Vômitos, hipotensão e dor abdominal persistente
+B) Prova do laço positiva, hepatomegalia, dor abdominal persistente
+C) Paciente maior de 65 anos, diabética, hipertensa obesa
+D) Extravazamento de plasma, pressão arterial convergente, débito urinário menor que 1,5 mL/Kg/h
+G: D
+
+Tag: Sintomas
+Dificuldade: 2
+Q: A dengue é uma arbovirose que pode evoluir com formas graves, exigindo conhecimento detalhado de sua fisiopatologia e manejo. **Sobre a dengue, assinale a alternativa correta.**
+A) A presença de derrame pleural ou ascite em pacientes com dengue indica provável evolução para choque hipovolêmico, caracterizando a fase crítica da doença.
+B) O aumento da permeabilidade vascular na dengue grave ocorre devido à ação direta do vírus nas células endoteliais, sem participação do sistema imunológico.
+C) A trombocitopenia observada na dengue é consequência exclusiva da destruição direta das plaquetas pelo vírus durante a fase aguda da infecção.
+D) O uso de corticosteroides está indicado na fase inicial da dengue grave para reduzir o risco de complicações hemorrágicas.
+G: A
+
+Tag: Sintomas
+Dificuldade: 2
+Q: Compete à Vigilância Epidemiológica notificar e investigar os casos suspeitos de dengue para acompanhar a evolução temporal desse agravo e detectar mudanças no padrão de ocorrência, surtos e epidemias. Considera-se um **caso suspeito de dengue** se um indivíduo que reside em área onde se registram casos de dengue, apresenta febre entre dois e sete dias e manifesta, pelo menos, dois sintomas como
+A) náusea/vômitos e exantema.
+B) mialgia/artralgia e leucocitose.
+C) cefaleia/dor retro-orbital e eritema infeccioso.
+D) petéquias/prova do laço negativa e taquicardia.
+G: A
+
+Tag: Diagnóstico
+Dificuldade: 2
+Q: Um paciente jovem, previamente saudável, apresenta febre alta, cefaleia retro-orbital e mialgia intensa após viagem a área endêmica de dengue.
+Qual dos achados laboratoriais abaixo é mais compatível com o diagnóstico de dengue grave?
+A) D-dímero menor que 500ng/ml
+C: Na dengue grave, pode ocorrer Coagulação Intravascular Disseminada (CIVD) , o que levaria a um consumo de fatores de coagulação e elevação (e não redução ou níveis normais) do D-dímero e dos produtos de degradação da fibrina.
+B) Hematócrito reduzido
+C: O sinal de alarme clássico que indica extravasamento plasmático e risco de evolução para dengue grave (choque) é o **aumento progressivo do hematócrito** (hemoconcentração). O hematócrito reduzido geralmente ocorre na fase de recuperação (reabsorção de líquidos)  ou, agudamente, apenas se houver hemorragia muito vultosa que mascare a hemoconcentração, mas o marcador primário de gravidade por extravasamento é a elevação do hematócrito.
+C) Aumento de AST e ALT < 3x o limite superior
+D) Plaquetas < 50.000/mm³
+E) Leucocitose com desvio à esquerda
+C: A dengue é caracterizada laboratorialmente por leucopenia (diminuição dos leucócitos) e não leucocitose.
+G: D
+
+Tag: Sintomas
+Dificuldade: 2
+Q: A cidade de São Paulo registrou, até novembro de 2023, cerca de 12 mil casos de dengue com 10 óbitos no total. A região Norte (Tremembé, Santana, Tucuruvi e Vila Maria) apresenta índices próximos aos de uma epidemia.
+Você examina, ao final do dia, um servidor residente da zona Norte com quadro febril e cefaleia e logo suspeita de dengue.
+Um caso suspeito de dengue é classificado como com sinais de alarme se, no período de defervescência da febre, apresenta, entre outros sinais,
+A) mialgia e artralgia.
+B) dor a palpação do abdome.
+C) petéquias.
+D) prova do laço positiva.
+E) náuseas e vômitos.
+G: B
+
+Tag: Sintomas
+Dificuldade: 2
+Q: Observa-se um aumento nos casos de Dengue no Brasil.
+Algumas populações são mais suscetíveis a complicações e evolução para forma grave da doença. As gestantes e puérperas pertencem a este grupo. Assinale a alternativa que NÃO CORRESPONDE a um dos sinais de alarme da dengue:
+A) aumento do hematócrito (>10%) e queda de plaquetas.
+B) aumento do D-dímero.
+C) sangramento de mucosa.
+D) acúmulo de líquidos nas cavidades virtuais.
+E) sinais de acometimento do sistema nervoso central.
+G: B
+CG: A questão solicita a alternativa que NÃO corresponde a um sinal de alarme. O aumento do D-dímero é um marcador de ativação da coagulação e fibrinólise, podendo estar elevado em quadros de coagulação intravascular disseminada (CIVD) ou tromboembolismo, mas não consta na lista oficial de sinais de alarme da dengue definida pelo Ministério da Saúde e pela OMS. Os sinais de alarme têm como objetivo identificar precocemente o extravasamento plasmático e a iminência de choque. O D-dímero é citado no manual (Seção 6.7) apenas no contexto de investigação de distúrbios de coagulação e hemorragias, não como critério de triagem de alarme.
+
+Tag: Sintomas
+Dificuldade: 2
+Q: Em relação à **dengue**, assinale a alternativa **INCORRETA**:
+A) a dengue é dividida em 4 grupos: A, B, C e D, sendo que os grupos A e B não possuem sinais de alarme.
+B) os pacientes pertencentes aos grupos C e D já possuem algum sinal de alarme e necessitam iniciar reposição volêmica imediatamente.
+C) a fase crítica da dengue coincide com os primeiros dias da doença, quando a febre se instala abruptamente.
+C: - A Fase Febril é a primeira manifestação, caracterizada por febre alta de início abrupto, durando de dois a sete dias.
+- A Fase Crítica tem início com a defervescência (declínio) da febre, geralmente entre o terceiro e o sétimo dia do início da doença. É nesta fase, e não no início febril, que podem surgir os sinais de alarme e o extravasamento plasmático.
+D) a dengue, nas crianças, pode apresentar-se como uma síndrome febril clássica viral com sinais e sintomas inespecíficos sendo necessário, muitas vezes, critérios epidemiológicos para auxiliar no diagnóstico clínico.
+G: C
+
+Tag: Sintomas
+Dificuldade: 2
+Q: Quanto às **manifestações clínicas da dengue**, é **correto** afirmar:
+A) A presença de sangramento define a gravidade da doença.
+B) As hemorragias são características da fase febril da doença e desaparecem com a defervescência.
+C) Os sinais de alarme podem surgir entre o terceiro dia e o sétimo dia da doença, quando ocorre o período de defervescência.
+D) O exantema é uma característica da doença e está presente em todos os casos de dengue.
+G: C
+
+Tag: Sintomas
+Dificuldade: 2
+Q: São **sinais de alarme da dengue** os mencionados abaixo, **EXCETO**:
+A) Fibrilação atrial de alta resposta.
+B) Acúmulo de líquidos (ascite, derrame pleural e derrame pericárdico).
+C) Hipotensão postural ou lipotimia.
+D) Hepatomegalia >2 cm abaixo do rebordo costal.
+E) Sangramento de mucosa.
+G: A
+
+Tag: Sintomas
+Dificuldade: 2
+Q: Qual dos seguintes **sintomas** **NÃO** é comumente associado à dengue?
+A) Febre alta súbita.
+B) Dor de cabeça intensa, especialmente atrás dos olhos.
+C) Erupção cutânea maculopapular.
+D) Dor nas articulações e músculos.
+E) Diarreia persistente.
+G: E
+
+Tag: Diagnóstico
+Dificuldade: 2
+Q: Um **caso suspeito de dengue** é classificado como **grave** se, entre outros **sinais**, apresenta
+A) aminotransferases superiores a 1000 UI/L.
+B) leucopenia.
+C) petéquias.
+D) exantema.
+E) prova do laço positiva.
+G: A
+
+Tag: Prevenção
+Dificuldade: 2
+Q: Em relação a **nova vacina contra dengue** (QDENGA® - Takeda), assinale a alternativa correta.
+A) É uma vacina inativada
+B) É licenciada dos 9 aos 60 anos
+C) É recomendada em 2 doses, com intervalo de 3 meses
+D) Exige comprovação prévia de dengue
+E) Pode ser utilizada rotineiramente em gestantes
+G: C
+
+Tag: Sintomas
+Dificuldade: 2
+Q: Dentre os pacientes abaixo com diagnóstico com dengue, qual deles **NÃO tem indicação de internação**?
+A) Homem, 26 anos, com sintomas há 4 dias, letargia e PA 85/40 mmHg na admissão.
+C: Apresenta letargia (sinal de alarme) e hipotensão (PA sistólica < 90 mmHg, indicando choque). Trata-se de um caso de Dengue Grave (Grupo D), com indicação imediata de internação (preferencialmente UTI) e reposição volêmica.
+<details><summary>Definição de letargia:</summary>
+Estado de profunda e prolongada inconsciência, semelhante ao sono profundo, do qual a pessoa pode ser despertada, mas ao qual retorna logo a seguir.</details>
+B) Mulher, 85 anos, com sinais de desidratação ao exame clínico, sem alterações em sinais vitais, com hematócrito >50%.
+C: Idosos (>65 anos) são grupo de risco. O hematócrito >50% evidencia hemoconcentração significativa (extravasamento plasmático), o que pode ser considerado um sinal de gravidade ou alarme (aumento progressivo). Devido à idade avançada, desidratação e hemoconcentração, há risco elevado, indicando manejo como Grupo C (internação para hidratação venosa) ou observação prolongada rigorosa.
+C) Mulher, 65 anos, com rash cutâneo em quatro membros, com contagem de plaquetas 130 mil.
+C: Esta paciente é **classificada no Grupo B** devido à sua idade (condição clínica especial: adultos > 65 anos). O rash cutâneo e a plaquetometria de 130.000 não constituem, por si sós, sinais de alarme ou gravidade. De acordo com o protocolo para o Grupo B:
+- A conduta indicada é manter o paciente em leito de observação até o resultado dos exames (hemograma obrigatório).
+- Se o hematócrito for normal e não houver sinais de alarme, o tratamento é ambulatorial (alta com orientações e retorno diário).
+- Portanto, ao contrário dos Grupos C e D, esta paciente não tem indicação imediata de internação hospitalar, apenas de observação temporária para estadiamento.
+<details><summary>Significado de **rash cutâneo**:</summary>
+Rash cutâneo (ou exantema) é uma alteração visível na pele, como manchas vermelhas, pápulas ou bolhas, que indica uma reação inflamatória ou infecciosa e pode vir acompanhada de coceira, febre ou mal-estar</details>
+D) Homem, 43 anos, com mialgias difusas, febre há 3 dias e sangramento em mucosas persistente.
+C: O sangramento de mucosas é explicitamente listado como um Sinal de Alarme no Quadro 1 do manual. Pacientes com sinais de alarme são classificados no Grupo C e exigem internação hospitalar por no mínimo 48 horas para hidratação venosa e monitoramento.
+E) Homem, 39 anos, com prostração, mal-estar, febre persistente há 4 dias e contagem de plaquetas 80 mil (contagem do dia de plaquetas do dia anterior 150 mil).
+C: "prostração" intensa é frequentemente correlacionada clinicamente à letargia (sinal de alarme). Além disso, a queda abrupta de plaquetas (de 150 mil para 80 mil) sugere evolução rápida da fase crítica. A presença de um provável sinal de alarme (letargia/prostração) indicaria classificação no Grupo C (internação).
+G: C
+
+Tag:
+Dificuldade: 2
+Q: Em relação às **manifestações hemorrágicas** que podem acontecer na **dengue grave**, assinale a alterantiva CORRETA.
+A) São causadas por plaquetopenia e, em casos graves, tempo de protrombina prolongado e coagulação intravascular disseminada.
+B) Não tem relação com o estado de hipovolemia.
+C) A transfusão de plaquetas é eficaz na prevenção de hemorragia.
+D) Complexo protrombínico é o hemoconcentrado de escolha nos casos de colagulopatia de consumo.
+E) Vitamina K intravenosa pode ser aplicada de forma profilática nos pacientes com plaquetas <50.000/mm³.
+G: A
+
+Tag:
+Dificuldade: 2
+Q: Em relação às **características clínicas das arbovirose**s (dengue, zika e chikungunya), assinale a alternativa CORRETA.
+A) Plaquetopenia é sinal de alarme na chicungunya.
+B) Na zika, o exantema geralmente surge do 5º ao 6º dias de evolução.
+C) Na dengue, a febre tem duração de dois a sete dias e geralmente é alta (39°C a 40°C).
+D) Na dengue, edema articular é frequente, de moderado a intenso.
+E) Conjuntivite pode ocorrer de 50 a 90 % dos casos de dengue.
+G: C
+
+Tag: Tratamento
+Dificuldade: 2
+Q: Uma medida importante para evitar a ocorrência de óbitos por dengue é a organização dos serviços de saúde, especialmente em epidemias. Além do acolhimento, a triagem com classificação de risco é de suma importância, para que o correto estadiamento ofereça tratamento prioritário e oportuno para os casos com sinais de alarme e para os casos graves. Sobre a **classificação e o manejo dos casos suspeitos de dengue**, assinale a afirmativa correta.
+A) Somente casos confirmados devem ser notificados.
+C: **Errada**. A dengue é doença de notificação compulsória, incluindo casos suspeitos (seção 10 – Classificação dos casos de dengue). O manual reforça: "A dengue é uma doença de notificação compulsória, sendo obrigatória sua comunicação pelos profissionais de saúde às vigilâncias locais, seja de um caso suspeito ou confirmado." Notificar apenas confirmados atrasaria medidas de controle e vigilância.
+B) As formas graves da doença podem se manifestar como choque ou acúmulo de líquidos com desconforto respiratório.
+C) Indivíduos com sangramento de mucosa e sem sinais de gravidade são classificados no grupo B e devem realizar hemograma completo em até 48h.
+C: **Errada** (dois erros principais):
+1. Sangramento de mucosa é sinal de alarme explícito (Quadro 1, seção 2.2.1 e 6.3.1), configurando Grupo C (presença de sinais de alarme), não Grupo B (ausência de sinais de alarme, mas com sangramento espontâneo de pele ou prova do laço positiva – seção 6.2.1).
+2. No Grupo C, o hemograma completo é obrigatório e imediato, com resultados liberados em até 2-4 horas (seção 6.3.2), não em 48h. O erro ignora a gravidade do sangramento de mucosa e subestima a urgência laboratorial.
+D) Indivíduos do grupo C sem sinais de gravidade devem manter hidratação oral, sendo 1/3 do total de líquidos composto por soro de reidratação oral.
+C: **Errada** (dois erros principais):
+1. O Grupo C é definido exatamente pela presença de sinais de alarme (seção 6.3.1); não existe "Grupo C sem sinais de gravidade".
+2. No Grupo C, a conduta é hidratação venosa imediata (reposição volêmica com soro fisiológico – seção 6.3.2), não oral. A orientação de hidratação oral com 1/3 de SRO é exclusiva dos Grupos A e B (Quadro 3, seções 6.1.2 e 6.2.2). O erro confunde estadiamentos e condutas, o que poderia atrasar o manejo adequado e aumentar risco de choque.
+G: B
+
+Tag:
+Dificuldade:
+Q: A partir de 2014 o Brasil passou a adotar a atual classificação de risco de dengue (grupo A, B, C ou D), revisada pela Organização Mundial de Saúde (OMS). Ela se tornou um auxílio importante nas decisões médicas, pois ajuda a sistematizar o atendimento dos pacientes suspeitos ou confirmados, norteando os profissionais em relação às condutas em cada caso. De acordo com a classificação de risco da dengue, é CORRETO afirmar:
+A) Pacientes classificados como Grupo A podem ser atendidos de acordo com o horário de chegada.
+Sem sinais de alarme, sem condição especial, sem risco social e com comorbidades. Iniciar hidratação oral e deve ser realizado hemograma com reavaliação ambulatorial. A hidratação deve ser oral.
+C: O erro está na definição clínica e na obrigatoriedade do exame.
+- **Erro 1:** A alternativa menciona "com comorbidades". Pacientes com comorbidades são classificados no Grupo B, não no A. O Grupo A é definido pela ausência de sinais de alarme, ausência de condições especiais e sem comorbidades.
+- **Erro 2:** A alternativa afirma que "deve ser realizado hemograma". No Grupo A, exames complementares são "a critério médico", não sendo obrigatórios para todos.
+B) Pacientes do Grupo B tem prioridade não urgente no atendimento. Sem sinais de alarme, com comorbidades, como condição especial ou com risco social, com sangramento espontâneo ou induzido.
+Deve ser iniciada hidratação oral, realizado hemograma e mantido em leito de observação até resultado. Caso apresente hematócrito normal, tratamento ambulatorial com hidratação oral.
+C: Esta alternativa descreve corretamente o manejo do Grupo B:
+- **Classificação de Risco**: É classificado como "Verde" (Prioridade não urgente).
+- **Critérios Clínicos**: Inclui casos suspeitos sem sinais de alarme, mas com sangramento espontâneo (pele) ou induzido (prova do laço), ou presença de condições clínicas especiais, risco social ou comorbidades.
+- **Conduta**: O hemograma completo é obrigatório. O paciente deve permanecer em observação até o resultado, iniciando hidratação oral imediata (conforme Grupo A).
+- **Alta**: Se o hematócrito for normal e não houver sinais de alarme, o tratamento segue ambulatorial com hidratação oral e reavaliação diária.
+C) Pacientes do Grupo C devem ser atendidos como urgência. Presença de sinais de alarme. Iniciar hidratação oral, deve solicitar hemograma, albumina e transaminases. Reavaliar após resultado de exames. Caso apresente hemoconcentração, iniciar hidratação venosa e colher novo hemograma após 2 horas. Caso mantenha hemoconcentração ou piora da hipotensão com sinais de choque após 2 horas de hidratação venosa conduzir como grupo D.
+C: O erro está na via de hidratação e no tempo de conduta.
+- **Erro 1**: A alternativa sugere "iniciar hidratação oral". Para o Grupo C (sinais de alarme), a conduta é reposição volêmica imediata por via venosa (10 ml/kg na primeira hora), independentemente de exames.
+- **Erro 2**: Não se deve aguardar o resultado de exames para iniciar a conduta venosa ou reavaliar. A reavaliação clínica deve ocorrer após a primeira hora de infusão.
+D) Pacientes do Grupo D são classificados como emergência, com atendimento imediato. Apresentam sinais de choque, sangramento grave ou disfunção grave de órgãos. Iniciar hidratação venosa, deve solicitar hemograma, albumina e transaminases. Reavaliar o paciente após 2 horas da reposição volêmica. Caso mantenha sinais de choque com hematócrito em queda devem receber albumina.
+C: O erro está na conduta terapêutica específica para o hematócrito em queda e no tempo de reavaliação.
+**Erro 1**: A reavaliação clínica no choque (Grupo D) deve ser a cada 15 a 30 minutos, e não após 2 horas.
+**Erro 2**: Se o paciente mantém choque com hematócrito em queda, isso sugere hemorragia. A conduta correta é investigar hemorragias e transfundir concentrado de hemácias, não administrar albumina. A albumina é indicada quando o hematócrito está em ascensão (hemoconcentração persistente) após reposição volêmica.
+G: B
+
+Tag:
+Dificuldade:
+Q: Na dengue hemorrágica, além de sangramentos graves, ocorrem outras manifestações.
+Assinale a alternativa que contém essas manifestações.
+A) Hemoconcentração, hipertensão arterial e aumento dos fatores de coagulação (V,VII, IX e X)
+B) Extravasamento grave de plasma, desidratação e hipertensão arterial
+C) Hemoconcentração, hipotensão arterial com ou sem choque e coagulação intravascular disseminada
+D) Hipotensão arterial, diminuição do hematócrito e dos fatores de coagulação
+G: C
+
+Tag: Diagnóstico
+Dificuldade: 2
+Q: Sobre os sinais e sintomas no diagnóstico diferencial dengue versus Zika versus Chikungunya, assinale a alternativa CORRETA.
+A) A artralgia é mais frequente e mais intensa nos casos de Dengue.
+B) O edema nas articulações é mais raro nos casos de Chikungunya.
+C) A linfopenia é mais frequente nos casos de Chikungunya.
+D) O exantema surge do 2º ao 5º dia nos casos de Zika.
+E) A trombocitopenia é mais frequente nos casos de Zika.
+G: C
+
+Tag:
+Dificuldade: 2
+Q: Lactente, sexo masculino, com 2 anos de idade, foi internado com suspeita de dengue grave. Ele apresentava febre alta, dor abdominal intensa e vômitos frequentes.
+Após o diagnóstico confirmado, foi tratado com reposição de líquidos e tratamento de suporte. No entanto, seu estado clínico piorou e ele desenvolveu hemorragias graves. A criança precisou ser internada na UTI pediátrica e, infelizmente, veio a falecer. Qual é o principal fator de risco para o desenvolvimento da dengue grave em crianças?
+A) Sexo masculino.
+B) Idade avançada.
+C) Presença de outras doenças crônicas compensadas.
+D) Consumo excessivo de alimentos industrializados.
+E) Infecção por mais de um sorotipo do vírus da dengue.
+G: E
+
+
+]
+
