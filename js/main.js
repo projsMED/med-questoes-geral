@@ -197,6 +197,9 @@ const App = {
         }
         // Atualiza lastAccessedAt
         this.save();
+
+        // Carregar Firebase (opcional, não bloqueia o app)
+        this.initFirebaseAsync();
         return;
       }
     }
