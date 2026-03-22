@@ -24,8 +24,11 @@
         <button class="btn btn-info" id="btnCloudStart">
           ☁️ Quizes da Nuvem
         </button>
-        <button class="btn btn-secondary" id="btnImportStart" title="Importar backup de progresso">
-          📥 Importar Backup
+        <button class="btn btn-secondary" id="btnImportStart" title="Importar uma sessão">
+          📥 Importar uma Sessão
+        </button>
+        <button class="btn btn-info" id="btnSessionListStart" title="Lista de sessões salvas">
+          📋 Lista de Sessões
         </button>
       </div>
     </div>
@@ -96,8 +99,10 @@
       <div class="config-actions">
         <button class="btn btn-info" id="btnCloudConfig" title="Abrir Nuvem">☁️ Nuvem</button>
         <button class="btn btn-secondary" id="btnChooseOther" title="Carregar arquivo local">📂 Trocar Arq.</button>
-        <button class="btn btn-secondary" id="btnExport" title="Exportar backup do progresso">💾 Exportar</button>
-        <button class="btn btn-secondary" id="btnImport" title="Importar backup de progresso">📥 Importar</button>
+        <button class="btn btn-secondary" id="btnExport" title="Exportar sessão atual">💾 Exportar Sessão</button>
+        <button class="btn btn-secondary" id="btnImport" title="Importar uma sessão">📥 Importar Sessão</button>
+        <button class="btn btn-info" id="btnSessionListConfig" title="Lista de sessões salvas">📋 Sessões</button>
+        <button class="btn btn-sync hidden" id="btnSyncConfig" title="Sincronizar com Firebase">🔄 Sync <span id="syncIndicator" class="sync-indicator"></span></button>
         <input type="file" id="importInput" accept=".json,application/json" class="hidden">
         <button class="btn btn-reset" id="btnResetQuiz" title="Limpar respostas">🔄 Resetar</button>
         <button class="btn btn-danger" id="btnDeleteQuiz" title="Remover quiz atual e voltar ao início">🗑️ Deletar</button>
@@ -145,6 +150,69 @@
     </div>
     <div class="modal-body">
       <div id="cloudTree" class="tree-container">Carregando...</div>
+    </div>
+  </div>
+</div>
+
+<div id="sessionListModal" class="modal-overlay hidden">
+  <div class="modal-box session-list-box">
+    <div class="modal-header">
+      <h3>Lista de Sessões</h3>
+      <span class="close-sessions">&times;</span>
+    </div>
+    <div class="modal-toolbar">
+      <select id="sessionSortBy" class="session-sort-select">
+        <option value="lastAccessedAt-desc">Último acesso (recentes)</option>
+        <option value="lastAccessedAt-asc">Último acesso (antigos)</option>
+        <option value="createdAt-desc">Criação (recentes)</option>
+        <option value="createdAt-asc">Criação (antigos)</option>
+      </select>
+      <button class="btn btn-sm" id="btnExportAllSessions">📤 Exportar Lista</button>
+      <button class="btn btn-sm" id="btnImportAllSessions">📥 Importar Lista</button>
+      <input type="file" id="importSessionsInput" accept=".json,application/json" class="hidden">
+      <button class="btn btn-sm" id="btnFirebaseSettings" title="Configurar Firebase">☁️ Firebase</button>
+    </div>
+    <div class="modal-body">
+      <div id="sessionListContainer">
+        <p style="text-align:center;color:#999;">Carregando...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="firebaseModal" class="modal-overlay hidden">
+  <div class="modal-box firebase-box">
+    <div class="modal-header">
+      <h3>Sincronizacao Firebase</h3>
+      <span class="close-firebase">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div id="firebaseLogin">
+        <p style="color:#666;margin-bottom:15px;">Insira o codigo de acesso para ativar a sincronizacao na nuvem.</p>
+        <div class="firebase-login-form">
+          <input type="password" id="firebaseCode" placeholder="Codigo de acesso" class="firebase-input">
+          <button class="btn btn-primary" id="btnFirebaseConnect">Conectar</button>
+        </div>
+        <p id="firebaseLoginError" class="firebase-error hidden"></p>
+      </div>
+      <div id="firebaseConnected" class="hidden">
+        <div class="firebase-status-bar">
+          <span class="firebase-status-ok">Conectado ao Firebase</span>
+        </div>
+        <div class="firebase-sync-info">
+          <p>Ultimo sync: <strong id="firebaseLastSync">--</strong></p>
+          <p>Status: <strong id="firebaseSyncStatusText">--</strong></p>
+        </div>
+        <div class="firebase-actions">
+          <button class="btn btn-primary" id="btnFirebaseSyncNow">Sincronizar Agora</button>
+          <label class="toggle-label" style="margin-left:15px;">
+            <input type="checkbox" id="chkFirebaseAutoSync"> Sync automatico
+          </label>
+        </div>
+        <div style="margin-top:20px;padding-top:15px;border-top:1px solid #eee;">
+          <button class="btn btn-danger btn-sm" id="btnFirebaseDisconnect">Desconectar</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

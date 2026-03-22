@@ -198,6 +198,7 @@ body {
 .start-buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -814,6 +815,207 @@ body {
 .close-modal:hover { color: #bbb; }
 
 /* ... (Mantenha o CSS anterior) ... */
+
+/* --- LISTA DE SESSÕES --- */
+.session-list-box {
+  max-width: 750px;
+  width: 95%;
+}
+
+.session-sort-select {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  font-size: 0.85em;
+  background: white;
+}
+
+.close-sessions {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #999;
+}
+.close-sessions:hover { color: #333; }
+
+.session-list-empty {
+  text-align: center;
+  color: #999;
+  padding: 30px 10px;
+  font-style: italic;
+}
+
+.session-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.session-item:hover {
+  border-color: var(--primary);
+  background: #f0f8ff;
+}
+
+.session-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.session-item-title {
+  font-weight: 600;
+  font-size: 1em;
+  color: var(--text);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.session-item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 0.8em;
+  color: #6c757d;
+}
+
+.session-item-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.session-progress-badge {
+  background: #e3f2fd;
+  color: #0d47a1;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.session-item-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.session-btn {
+  padding: 5px 8px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background: #f8f9fa;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: all 0.2s;
+}
+
+.session-btn:hover {
+  background: #e9ecef;
+  border-color: #ced4da;
+}
+
+.session-btn.btn-session-delete:hover {
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.session-size {
+  font-size: 0.75em;
+  color: #adb5bd;
+}
+
+/* --- FIREBASE / SYNC --- */
+.firebase-box { max-width: 420px; }
+
+.firebase-login-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.firebase-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 0.95em;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.firebase-input:focus { border-color: var(--primary); }
+
+.firebase-error {
+  color: #dc3545;
+  font-size: 0.85em;
+  margin-top: 10px;
+}
+
+.firebase-status-bar {
+  background: #d4edda;
+  color: #155724;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.firebase-sync-info {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+}
+.firebase-sync-info p { margin: 4px 0; }
+
+.firebase-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.close-firebase {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #999;
+}
+.close-firebase:hover { color: #333; }
+
+/* Botão Sync na config bar */
+.btn-sync {
+  background: #6f42c1;
+  color: white;
+  position: relative;
+}
+.btn-sync:hover { background: #5a32a3; }
+
+.sync-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+.sync-indicator.synced { background: #28a745; }
+.sync-indicator.pending { background: #fd7e14; }
+.sync-indicator.error { background: #dc3545; }
+.sync-indicator.syncing { background: #007bff; animation: pulse 1s infinite; }
+.sync-indicator.offline { background: #6c757d; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
 
 /* Botão Repetir Erros (Laranja) */
 .btn-retry {

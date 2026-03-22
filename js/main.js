@@ -1,10 +1,28 @@
 /* ===== JS: js\main.js ===== */
-import { saveState, loadState, clearState, exportState, importState } from './store.js';
+import {
+  saveState, loadState, clearState, exportState, importState,
+  saveSession, loadSession, deleteSession, getAllSessions,
+  exportAllSessions, importAllSessions, migrateLegacyState, generateId
+} from './store.js';
 import { parseContent } from './parser.js';
 import { shuffleArray, difficultyMap } from './utils.js';
 import { QuizRenderer } from './renderer.js';
 
 const App = {
+  activeSessionId: null,
+
+  // Firebase (carregado dinamicamente)
+  firebaseConfig: null,
+  firebaseSync: null,
+  firebaseState: {
+    connected: false,
+    autoSync: false,
+    pendingChanges: false,
+    syncing: false,
+    lastSyncTime: null,
+    debounceTimer: null
+  },
+
   state: {
     quizJson: null,
     questions: [],
@@ -96,7 +114,35 @@ const App = {
     infoModalTitle: document.getElementById('infoModalTitle'),
     infoModalBody: document.getElementById('infoModalBody'),
     btnInfoOk: document.getElementById('btnInfoOk'),
-    closeInfo: document.querySelector('.close-info')
+    closeInfo: document.querySelector('.close-info'),
+
+    // Firebase / Sync
+    btnSyncConfig: document.getElementById('btnSyncConfig'),
+    syncIndicator: document.getElementById('syncIndicator'),
+    btnFirebaseSettings: document.getElementById('btnFirebaseSettings'),
+    firebaseModal: document.getElementById('firebaseModal'),
+    closeFirebase: document.querySelector('.close-firebase'),
+    firebaseLogin: document.getElementById('firebaseLogin'),
+    firebaseConnected: document.getElementById('firebaseConnected'),
+    firebaseCode: document.getElementById('firebaseCode'),
+    btnFirebaseConnect: document.getElementById('btnFirebaseConnect'),
+    firebaseLoginError: document.getElementById('firebaseLoginError'),
+    firebaseLastSync: document.getElementById('firebaseLastSync'),
+    firebaseSyncStatusText: document.getElementById('firebaseSyncStatusText'),
+    btnFirebaseSyncNow: document.getElementById('btnFirebaseSyncNow'),
+    chkFirebaseAutoSync: document.getElementById('chkFirebaseAutoSync'),
+    btnFirebaseDisconnect: document.getElementById('btnFirebaseDisconnect'),
+
+    // Lista de sessões
+    btnSessionListStart: document.getElementById('btnSessionListStart'),
+    btnSessionListConfig: document.getElementById('btnSessionListConfig'),
+    sessionListModal: document.getElementById('sessionListModal'),
+    closeSessions: document.querySelector('.close-sessions'),
+    sessionSortBy: document.getElementById('sessionSortBy'),
+    sessionListContainer: document.getElementById('sessionListContainer'),
+    btnExportAllSessions: document.getElementById('btnExportAllSessions'),
+    btnImportAllSessions: document.getElementById('btnImportAllSessions'),
+    importSessionsInput: document.getElementById('importSessionsInput')
   },
 
   renderer: null,
@@ -114,6 +160,48 @@ const App = {
     this.bindEvents();
     this.setupImageZoom();
 
+    // Migração do estado legado (v1 → v2)
+    const migrated = await migrateLegacyState();
+    if (migrated) {
+      this.activeSessionId = migrated.sessionId;
+      localStorage.setItem('activeSessionId', migrated.sessionId);
+    }
+
+    // Tentar restaurar sessão ativa
+    const savedSessionId = this.activeSessionId || localStorage.getItem('activeSessionId');
+    if (savedSessionId) {
+      const session = await loadSession(savedSessionId);
+      if (session && session.state && session.state.quizJson) {
+        this.activeSessionId = session.sessionId;
+        this._sessionCreatedAt = session.createdAt;
+        this.state = session.state;
+        this.ensureStateIntegrity();
+        this.restoreUI();
+
+        if (this.state.mappings.qOrder && this.state.mappings.qOrder.length > 0) {
+          if (this.state.retryMode) {
+            this.generateMappings();
+          }
+          this.showQuizInterface();
+          this.renderer.render(this.state);
+        } else {
+          this.renderFilterDescription();
+          if (this.state.filters.step === 2) {
+            this.prepareStep1();
+            this.prepareStep2();
+          } else {
+            this.prepareStep1();
+          }
+          this.elements.uploadSection.classList.add('hidden');
+          this.elements.filterSection.classList.remove('hidden');
+        }
+        // Atualiza lastAccessedAt
+        this.save();
+        return;
+      }
+    }
+
+    // Fallback: sem sessão ativa, tenta estado legado
     const saved = await loadState();
     if (saved && saved.quizJson) {
       this.state = saved;
@@ -121,7 +209,6 @@ const App = {
       this.restoreUI();
 
       if (this.state.mappings.qOrder && this.state.mappings.qOrder.length > 0) {
-        // Se estava em retry mode, garante integridade dos mappings
         if (this.state.retryMode) {
           this.generateMappings();
         }
@@ -138,6 +225,32 @@ const App = {
         this.elements.uploadSection.classList.add('hidden');
         this.elements.filterSection.classList.remove('hidden');
       }
+    }
+
+    // Carregar Firebase (opcional, não bloqueia o app)
+    this.initFirebaseAsync();
+  },
+
+  async initFirebaseAsync() {
+    try {
+      this.firebaseConfig = await import('./firebase-config.js');
+      this.firebaseSync = await import('./firebase-sync.js');
+
+      this.firebaseState.autoSync = localStorage.getItem('firebaseAutoSync') === 'true';
+      this.firebaseState.lastSyncTime = localStorage.getItem('lastSyncTime') || null;
+      this.elements.chkFirebaseAutoSync.checked = this.firebaseState.autoSync;
+
+      this.firebaseConfig.onAuthChange((user) => {
+        this.firebaseState.connected = !!user;
+        this.updateFirebaseUI();
+        if (user && this.firebaseState.autoSync) {
+          this.syncNow();
+        }
+      });
+    } catch (e) {
+      console.warn('Firebase não disponível:', e);
+      this.firebaseConfig = null;
+      this.firebaseSync = null;
     }
   },
 
@@ -219,6 +332,70 @@ const App = {
     );
     this.elements.btnCollapseAll.addEventListener('click', () =>
       this.toggleTree(false)
+    );
+
+    // Lista de sessões
+    this.elements.btnSessionListStart.addEventListener('click', () =>
+      this.openSessionListModal()
+    );
+    this.elements.btnSessionListConfig.addEventListener('click', () =>
+      this.openSessionListModal()
+    );
+    this.elements.closeSessions.addEventListener('click', () =>
+      this.elements.sessionListModal.classList.add('hidden')
+    );
+    this.elements.sessionListModal.addEventListener('click', (e) => {
+      if (e.target === this.elements.sessionListModal) {
+        this.elements.sessionListModal.classList.add('hidden');
+      }
+    });
+    this.elements.sessionSortBy.addEventListener('change', () =>
+      this.renderSessionList()
+    );
+    this.elements.btnExportAllSessions.addEventListener('click', () =>
+      this.exportSessionList()
+    );
+    this.elements.btnImportAllSessions.addEventListener('click', () =>
+      this.elements.importSessionsInput.click()
+    );
+    this.elements.importSessionsInput.addEventListener('change', (e) =>
+      this.handleImportSessionList(e)
+    );
+
+    // Firebase / Sync
+    this.elements.btnSyncConfig.addEventListener('click', () => {
+      if (this.firebaseState.connected) {
+        this.syncNow();
+      } else {
+        this.openFirebaseModal();
+      }
+    });
+    this.elements.btnFirebaseSettings.addEventListener('click', () =>
+      this.openFirebaseModal()
+    );
+    this.elements.closeFirebase.addEventListener('click', () =>
+      this.elements.firebaseModal.classList.add('hidden')
+    );
+    this.elements.firebaseModal.addEventListener('click', (e) => {
+      if (e.target === this.elements.firebaseModal) {
+        this.elements.firebaseModal.classList.add('hidden');
+      }
+    });
+    this.elements.btnFirebaseConnect.addEventListener('click', () =>
+      this.handleFirebaseLogin()
+    );
+    this.elements.firebaseCode.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') this.handleFirebaseLogin();
+    });
+    this.elements.btnFirebaseSyncNow.addEventListener('click', () =>
+      this.syncNow()
+    );
+    this.elements.chkFirebaseAutoSync.addEventListener('change', (e) => {
+      this.firebaseState.autoSync = e.target.checked;
+      localStorage.setItem('firebaseAutoSync', e.target.checked ? 'true' : 'false');
+    });
+    this.elements.btnFirebaseDisconnect.addEventListener('click', () =>
+      this.handleFirebaseLogout()
     );
 
     // Configurações
@@ -335,6 +512,10 @@ const App = {
 
     this.state.questions = parseContent(this.state.quizJson.conteudo);
     this.state.userAnswers = {};
+
+    // Criar nova sessão
+    this.activeSessionId = generateId();
+    localStorage.setItem('activeSessionId', this.activeSessionId);
 
     this.extractFiltersData();
     this.renderFilterDescription();
@@ -575,6 +756,13 @@ const App = {
     )
       return;
 
+    // Deletar sessão do IndexedDB
+    if (this.activeSessionId) {
+      deleteSession(this.activeSessionId);
+    }
+    this.activeSessionId = null;
+    localStorage.removeItem('activeSessionId');
+
     this.state.quizJson = null;
     this.state.questions = [];
     this.state.mappings = { qOrder: [], altOrder: {} };
@@ -655,7 +843,7 @@ const App = {
   chooseOther() {
     if (
       !confirm(
-        'Deseja carregar outro arquivo? O progresso atual será perdido.'
+        'Deseja carregar outro arquivo? O progresso atual ficará salvo na lista de sessões.'
       )
     )
       return;
@@ -950,19 +1138,41 @@ const App = {
     this.save();
     this.renderer.render(this.state);
 
+    // Sync imediato após submeter todas (ação importante)
+    if (this.firebaseState.autoSync && this.firebaseState.connected) {
+      clearTimeout(this.firebaseState.debounceTimer);
+      this.syncNow();
+    }
+
     setTimeout(() => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }, 100);
   },
 
   async exportBackup() {
-    const blob = await exportState();
-    if (!blob) {
+    if (!this.state.quizJson) {
       alert('Nenhum dado para exportar.');
       return;
     }
+
+    // Monta objeto de exportação com metadados
+    const now = new Date().toISOString();
     const title = (this.state.quizJson && this.state.quizJson.titulo) || '';
-    const fileName = title ? `Backup - ${title}.json` : 'Backup.json';
+    const answeredCount = this.getAnsweredCount();
+    const totalCount = Array.isArray(this.state.questions) ? this.state.questions.length : 0;
+
+    const exportData = {
+      sessionId: this.activeSessionId || generateId(),
+      title: title || 'Quiz sem título',
+      createdAt: this._sessionCreatedAt || now,
+      lastAccessedAt: now,
+      answeredCount,
+      totalCount,
+      state: JSON.parse(JSON.stringify(this.state))
+    };
+
+    const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+    const fileName = title ? `Sessão - ${title}.json` : 'Sessão.json';
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -979,12 +1189,29 @@ const App = {
     reader.onload = async (evt) => {
       try {
         const data = JSON.parse(evt.target.result);
-        if (!data.quizJson) {
-          alert('Arquivo de backup inválido: não contém dados de quiz.');
+
+        // Suporta formato novo (com sessionId/state) e legado (com quizJson direto)
+        const state = data.state || (data.quizJson ? data : null);
+        if (!state || !state.quizJson) {
+          alert('Arquivo de sessão inválido: não contém dados de quiz.');
           return;
         }
-        if (!confirm('Importar este backup? O progresso atual será substituído.')) return;
-        await importState(data);
+        if (!confirm('Importar esta sessão? Ela será adicionada à lista de sessões e aberta.')) return;
+
+        const now = new Date().toISOString();
+        const session = {
+          sessionId: data.sessionId || generateId(),
+          title: data.title || (state.quizJson && state.quizJson.titulo) || 'Quiz sem título',
+          createdAt: data.createdAt || now,
+          lastAccessedAt: now,
+          answeredCount: data.answeredCount || 0,
+          totalCount: data.totalCount || (Array.isArray(state.questions) ? state.questions.length : 0),
+          state: data.state || state
+        };
+
+        await saveSession(session);
+        this.activeSessionId = session.sessionId;
+        localStorage.setItem('activeSessionId', session.sessionId);
         location.reload();
       } catch (err) {
         alert('Erro ao importar: ' + err.message);
@@ -1008,8 +1235,449 @@ const App = {
       this.state.config.showFilterSummary;
   },
 
+  getAnsweredCount() {
+    if (!this.state.userAnswers) return 0;
+    return Object.values(this.state.userAnswers).filter(a => a && a.submitted).length;
+  },
+
   save() {
-    saveState(this.state);
+    if (this.activeSessionId) {
+      const now = new Date().toISOString();
+      const title = (this.state.quizJson && this.state.quizJson.titulo) || 'Quiz sem título';
+      const answeredCount = this.getAnsweredCount();
+      const totalCount = Array.isArray(this.state.questions) ? this.state.questions.length : 0;
+
+      // Preservar createdAt original
+      if (!this._sessionCreatedAt) {
+        this._sessionCreatedAt = now;
+      }
+
+      const session = {
+        sessionId: this.activeSessionId,
+        title,
+        createdAt: this._sessionCreatedAt,
+        lastAccessedAt: now,
+        answeredCount,
+        totalCount,
+        state: this.state
+      };
+      saveSession(session);
+      this.markSyncPending();
+    } else {
+      saveState(this.state);
+    }
+  },
+
+  markSyncPending() {
+    if (!this.firebaseConfig || !this.firebaseState.connected) return;
+    this.firebaseState.pendingChanges = true;
+    this.updateSyncIndicator();
+
+    if (this.firebaseState.autoSync) {
+      clearTimeout(this.firebaseState.debounceTimer);
+      this.firebaseState.debounceTimer = setTimeout(() => this.syncNow(), 30000);
+    }
+  },
+
+  // ===== Firebase =====
+  openFirebaseModal() {
+    if (!this.firebaseConfig) {
+      alert('Firebase não está disponível. Verifique sua conexão com a internet.');
+      return;
+    }
+    this.updateFirebaseUI();
+    this.elements.firebaseModal.classList.remove('hidden');
+  },
+
+  updateFirebaseUI() {
+    if (this.firebaseState.connected) {
+      this.elements.firebaseLogin.classList.add('hidden');
+      this.elements.firebaseConnected.classList.remove('hidden');
+      this.elements.btnSyncConfig.classList.remove('hidden');
+      this.updateSyncIndicator();
+
+      // Last sync time
+      if (this.firebaseState.lastSyncTime) {
+        try {
+          this.elements.firebaseLastSync.textContent = new Date(this.firebaseState.lastSyncTime)
+            .toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+        } catch { this.elements.firebaseLastSync.textContent = this.firebaseState.lastSyncTime; }
+      } else {
+        this.elements.firebaseLastSync.textContent = 'Nunca';
+      }
+
+      this.elements.firebaseSyncStatusText.textContent = this.firebaseState.syncing
+        ? 'Sincronizando...'
+        : this.firebaseState.pendingChanges
+          ? 'Pendente'
+          : 'Sincronizado';
+    } else {
+      this.elements.firebaseLogin.classList.remove('hidden');
+      this.elements.firebaseConnected.classList.add('hidden');
+      this.elements.btnSyncConfig.classList.add('hidden');
+      this.elements.firebaseLoginError.classList.add('hidden');
+    }
+  },
+
+  updateSyncIndicator() {
+    const ind = this.elements.syncIndicator;
+    ind.className = 'sync-indicator';
+    if (!this.firebaseState.connected) {
+      ind.classList.add('offline');
+    } else if (this.firebaseState.syncing) {
+      ind.classList.add('syncing');
+    } else if (this.firebaseState.pendingChanges) {
+      ind.classList.add('pending');
+    } else {
+      ind.classList.add('synced');
+    }
+  },
+
+  async handleFirebaseLogin() {
+    if (!this.firebaseConfig) return;
+    const code = this.elements.firebaseCode.value.trim();
+    if (!code) return;
+
+    this.elements.btnFirebaseConnect.disabled = true;
+    this.elements.firebaseLoginError.classList.add('hidden');
+
+    try {
+      await this.firebaseConfig.loginWithCode(code);
+      this.elements.firebaseCode.value = '';
+      // onAuthChange callback will update UI
+    } catch (e) {
+      const msg = (e.code === 'auth/wrong-password' || e.code === 'auth/invalid-credential')
+        ? 'Codigo incorreto.'
+        : (e.code === 'auth/too-many-requests')
+          ? 'Muitas tentativas. Tente novamente mais tarde.'
+          : 'Erro: ' + e.message;
+      this.elements.firebaseLoginError.textContent = msg;
+      this.elements.firebaseLoginError.classList.remove('hidden');
+    } finally {
+      this.elements.btnFirebaseConnect.disabled = false;
+    }
+  },
+
+  async handleFirebaseLogout() {
+    if (!this.firebaseConfig) return;
+    if (!confirm('Desconectar do Firebase? A sincronizacao automatica sera desativada.')) return;
+    try {
+      await this.firebaseConfig.logout();
+      this.firebaseState.autoSync = false;
+      localStorage.setItem('firebaseAutoSync', 'false');
+      this.elements.chkFirebaseAutoSync.checked = false;
+      this.elements.firebaseModal.classList.add('hidden');
+    } catch (e) {
+      alert('Erro ao desconectar: ' + e.message);
+    }
+  },
+
+  async syncNow() {
+    if (!this.firebaseConfig || !this.firebaseSync || !this.firebaseState.connected) return;
+    if (this.firebaseState.syncing) return;
+
+    clearTimeout(this.firebaseState.debounceTimer);
+    this.firebaseState.syncing = true;
+    this.updateSyncIndicator();
+    this.updateFirebaseUI();
+
+    try {
+      // 1. Processar deletes pendentes
+      const pendingDeletes = JSON.parse(localStorage.getItem('pendingDeletes') || '[]');
+      for (const id of pendingDeletes) {
+        await this.firebaseSync.deleteRemoteSession(id);
+      }
+      localStorage.removeItem('pendingDeletes');
+
+      // 2. Obter listas local e remota
+      const localSessions = await getAllSessions();
+      const remoteSessions = await this.firebaseSync.getRemoteSessionList();
+
+      const localMap = new Map(localSessions.map(s => [s.sessionId, s]));
+      const remoteMap = new Map(remoteSessions.map(s => [s.sessionId, s]));
+
+      // 3. Comparar e decidir upload/download
+      const toUpload = [];
+      const toDownload = [];
+
+      for (const [id, local] of localMap) {
+        const remote = remoteMap.get(id);
+        if (!remote) {
+          toUpload.push(id);
+        } else if ((local.lastAccessedAt || '') > (remote.lastAccessedAt || '')) {
+          toUpload.push(id);
+        } else if ((remote.lastAccessedAt || '') > (local.lastAccessedAt || '')) {
+          toDownload.push(id);
+        }
+      }
+
+      for (const [id] of remoteMap) {
+        if (!localMap.has(id)) {
+          toDownload.push(id);
+        }
+      }
+
+      // 4. Upload (local → Firebase)
+      for (const id of toUpload) {
+        const full = await loadSession(id);
+        if (full) {
+          await this.firebaseSync.uploadSession(full);
+        }
+      }
+
+      // 5. Download (Firebase → local)
+      for (const id of toDownload) {
+        const full = await this.firebaseSync.downloadSession(id);
+        if (full) {
+          await saveSession(full);
+        }
+      }
+
+      this.firebaseState.pendingChanges = false;
+      this.firebaseState.lastSyncTime = new Date().toISOString();
+      localStorage.setItem('lastSyncTime', this.firebaseState.lastSyncTime);
+
+    } catch (e) {
+      console.error('Erro na sincronizacao:', e);
+    } finally {
+      this.firebaseState.syncing = false;
+      this.updateSyncIndicator();
+      this.updateFirebaseUI();
+    }
+  },
+
+  // ===== Lista de Sessões =====
+  async openSessionListModal() {
+    this.elements.sessionListModal.classList.remove('hidden');
+    await this.renderSessionList();
+  },
+
+  async renderSessionList() {
+    const container = this.elements.sessionListContainer;
+    container.innerHTML = '<p style="text-align:center;color:#999;">Carregando...</p>';
+
+    const sessions = await getAllSessions();
+    if (sessions.length === 0) {
+      container.innerHTML = '<p class="session-list-empty">Nenhuma sessão salva.</p>';
+      return;
+    }
+
+    // Ordenação
+    const sortValue = this.elements.sessionSortBy.value;
+    const [sortField, sortDir] = sortValue.split('-');
+    sessions.sort((a, b) => {
+      const va = a[sortField] || '';
+      const vb = b[sortField] || '';
+      return sortDir === 'desc' ? vb.localeCompare(va) : va.localeCompare(vb);
+    });
+
+    container.innerHTML = '';
+
+    sessions.forEach(s => {
+      const item = document.createElement('div');
+      item.className = 'session-item';
+      const isActive = s.sessionId === this.activeSessionId;
+
+      if (isActive) {
+        item.style.borderColor = '#007bff';
+        item.style.borderWidth = '2px';
+      }
+
+      const formatDate = (iso) => {
+        if (!iso) return '—';
+        try {
+          return new Date(iso).toLocaleString('pt-BR', {
+            day: '2-digit', month: '2-digit', year: 'numeric',
+            hour: '2-digit', minute: '2-digit'
+          });
+        } catch { return iso; }
+      };
+
+      const formatSize = (bytes) => {
+        if (!bytes || bytes === 0) return '—';
+        if (bytes < 1024) return bytes + ' B';
+        if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+        return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+      };
+
+      item.innerHTML = `
+        <div class="session-item-info">
+          <div class="session-item-title">${this.escapeHtml(s.title)}${isActive ? ' (ativa)' : ''}</div>
+          <div class="session-item-meta">
+            <span>Criada: ${formatDate(s.createdAt)}</span>
+            <span>Último acesso: ${formatDate(s.lastAccessedAt)}</span>
+            <span class="session-progress-badge">Respondidas: ${s.answeredCount || 0}/${s.totalCount || 0}</span>
+            <span class="session-size">${formatSize(s.sizeBytes)}</span>
+          </div>
+        </div>
+        <div class="session-item-actions">
+          <button class="session-btn btn-session-export" title="Exportar esta sessão">💾</button>
+          <button class="session-btn btn-session-delete" title="Deletar esta sessão">🗑️</button>
+        </div>
+      `;
+
+      // Clique no item → carregar sessão
+      item.querySelector('.session-item-info').addEventListener('click', () => {
+        this.loadSessionFromList(s.sessionId);
+      });
+
+      // Exportar sessão individual
+      item.querySelector('.btn-session-export').addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.exportSingleSession(s.sessionId);
+      });
+
+      // Deletar sessão
+      item.querySelector('.btn-session-delete').addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.deleteSessionFromList(s.sessionId, s.title);
+      });
+
+      container.appendChild(item);
+    });
+  },
+
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  },
+
+  async loadSessionFromList(sessionId) {
+    const session = await loadSession(sessionId);
+    if (!session || !session.state) {
+      alert('Erro ao carregar sessão.');
+      return;
+    }
+
+    this.activeSessionId = session.sessionId;
+    this._sessionCreatedAt = session.createdAt;
+    localStorage.setItem('activeSessionId', session.sessionId);
+    this.elements.sessionListModal.classList.add('hidden');
+
+    this.state = session.state;
+    this.ensureStateIntegrity();
+    this.restoreUI();
+
+    if (this.state.mappings.qOrder && this.state.mappings.qOrder.length > 0) {
+      if (this.state.retryMode) {
+        this.generateMappings();
+      }
+      this.showQuizInterface();
+      this.renderer.render(this.state);
+    } else if (this.state.quizJson) {
+      this.renderFilterDescription();
+      if (this.state.filters.step === 2) {
+        this.prepareStep1();
+        this.prepareStep2();
+      } else {
+        this.prepareStep1();
+      }
+      this.elements.uploadSection.classList.add('hidden');
+      this.elements.filterSection.classList.remove('hidden');
+      this.elements.configBar.classList.add('hidden');
+      this.elements.footerBar.classList.add('hidden');
+      this.renderer.container.innerHTML = '';
+    }
+
+    this.save();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
+
+  async exportSingleSession(sessionId) {
+    const session = await loadSession(sessionId);
+    if (!session) {
+      alert('Sessão não encontrada.');
+      return;
+    }
+    const blob = new Blob([JSON.stringify(session, null, 2)], { type: 'application/json' });
+    const fileName = session.title ? `Sessão - ${session.title}.json` : 'Sessão.json';
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = fileName;
+    a.click();
+    URL.revokeObjectURL(url);
+  },
+
+  async deleteSessionFromList(sessionId, title) {
+    if (!confirm(`Deletar a sessão "${title}"? Esta ação não pode ser desfeita.`)) return;
+
+    await deleteSession(sessionId);
+
+    // Deletar do Firebase (ou marcar para deletar depois)
+    if (this.firebaseSync && this.firebaseState.connected) {
+      try { await this.firebaseSync.deleteRemoteSession(sessionId); } catch (e) { console.warn('Erro ao deletar remoto:', e); }
+    } else if (this.firebaseConfig) {
+      const pending = JSON.parse(localStorage.getItem('pendingDeletes') || '[]');
+      pending.push(sessionId);
+      localStorage.setItem('pendingDeletes', JSON.stringify(pending));
+    }
+
+    // Se era a sessão ativa, limpa tudo
+    if (sessionId === this.activeSessionId) {
+      this.activeSessionId = null;
+      localStorage.removeItem('activeSessionId');
+      this.state.quizJson = null;
+      this.state.questions = [];
+      this.state.mappings = { qOrder: [], altOrder: {} };
+      this.state.userAnswers = {};
+      this.state.retryMode = false;
+      this.state.retryIndices = [];
+      this.renderer.container.innerHTML = '';
+      this.elements.configBar.classList.add('hidden');
+      this.elements.footerBar.classList.add('hidden');
+      this.elements.filterSection.classList.add('hidden');
+      this.elements.uploadSection.classList.remove('hidden');
+    }
+
+    await this.renderSessionList();
+  },
+
+  async exportSessionList() {
+    const blob = await exportAllSessions();
+    if (!blob) {
+      alert('Nenhuma sessão para exportar.');
+      return;
+    }
+    const fileName = `Lista de Sessões - ${new Date().toLocaleDateString('pt-BR')}.json`;
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = fileName;
+    a.click();
+    URL.revokeObjectURL(url);
+  },
+
+  async handleImportSessionList(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async (evt) => {
+      try {
+        const data = JSON.parse(evt.target.result);
+        if (!Array.isArray(data)) {
+          alert('Arquivo inválido: esperava uma lista de sessões (array).');
+          return;
+        }
+
+        const valid = data.filter(s => s.sessionId && s.state && s.state.quizJson);
+        if (valid.length === 0) {
+          alert('Nenhuma sessão válida encontrada no arquivo.');
+          return;
+        }
+
+        if (!confirm(`Importar ${valid.length} sessão(ões)? Sessões com IDs iguais serão substituídas.`)) return;
+
+        await importAllSessions(valid);
+        await this.renderSessionList();
+      } catch (err) {
+        alert('Erro ao importar lista: ' + err.message);
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
   },
 
   // ===== Nuvem =====
@@ -1078,7 +1746,7 @@ const App = {
   },
 
   async fetchCloudQuiz(path) {
-    if (!confirm(`Carregar quiz: ${path}? O progresso atual será perdido.`))
+    if (!confirm(`Carregar quiz: ${path}? O progresso atual ficará salvo na lista de sessões.`))
       return;
 
     this.elements.cloudModal.classList.add('hidden');
