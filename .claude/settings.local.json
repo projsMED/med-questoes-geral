@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(cd:*)",
-      "Bash(grep -E \"\\\\.\\(html|js|css|json\\)$\")"
+      "Bash(grep -E \"\\\\.\\(html|js|css|json\\)$\")",
+      "Bash(node:*)"
     ]
   }
 }

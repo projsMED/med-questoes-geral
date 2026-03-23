@@ -2,7 +2,8 @@
 import {
   saveState, loadState, clearState, exportState, importState,
   saveSession, loadSession, deleteSession, getAllSessions,
-  exportAllSessions, importAllSessions, migrateLegacyState, generateId
+  exportAllSessions, importAllSessions, migrateLegacyState, generateId,
+  saveSessionFolders, loadSessionFolders, updateSessionFolder
 } from './store.js';
 import { parseContent } from './parser.js';
 import { shuffleArray, difficultyMap } from './utils.js';
@@ -15,6 +16,12 @@ const App = {
   _manuallyOpenedComments: new Set(),
   _scrollTimer: null,
   _tripleTapState: { count: 0, timer: null },
+  _sessionFolders: [],
+  _folderViewActive: true,
+  _currentViewFolderId: null, // null = raiz
+  _editingFolderId: null,
+  _movingSessionId: null,
+  _sessionFolderId: '',
 
   // Firebase (carregado dinamicamente)
   firebaseConfig: null,
@@ -168,7 +175,30 @@ const App = {
     editQuizTitle: document.getElementById('editQuizTitle'),
     editQuizDescription: document.getElementById('editQuizDescription'),
     btnEditSave: document.getElementById('btnEditSave'),
-    btnEditCancel: document.getElementById('btnEditCancel')
+    btnEditCancel: document.getElementById('btnEditCancel'),
+
+    // Pastas de sessões
+    btnToggleFolderView: document.getElementById('btnToggleFolderView'),
+    btnNewFolder: document.getElementById('btnNewFolder'),
+
+    // Mover sessão
+    moveSessionModal: document.getElementById('moveSessionModal'),
+    closeMoveSession: document.querySelector('.close-move-session'),
+    moveSessionInfo: document.getElementById('moveSessionInfo'),
+    moveFolderSelect: document.getElementById('moveFolderSelect'),
+    btnMoveConfirm: document.getElementById('btnMoveConfirm'),
+    btnMoveCancel: document.getElementById('btnMoveCancel'),
+
+    // Nome de pasta
+    folderNameModal: document.getElementById('folderNameModal'),
+    folderNameModalTitle: document.getElementById('folderNameModalTitle'),
+    closeFolderName: document.querySelector('.close-folder-name'),
+    folderNameInput: document.getElementById('folderNameInput'),
+    folderParentField: document.getElementById('folderParentField'),
+    folderParentSelect: document.getElementById('folderParentSelect'),
+    folderDescInput: document.getElementById('folderDescInput'),
+    btnFolderNameSave: document.getElementById('btnFolderNameSave'),
+    btnFolderNameCancel: document.getElementById('btnFolderNameCancel')
   },
 
   renderer: null,
@@ -188,6 +218,7 @@ const App = {
     this.initVisualSettings();
     this.setupNextUnansweredButton();
     this.setupCommentShortcuts();
+    this.initFolderSystem();
 
     // Migração do estado legado (v1 → v2)
     const migrated = await migrateLegacyState();
@@ -206,6 +237,7 @@ const App = {
         this._lastAccessedAt = session.lastAccessedAt || session.createdAt;
         this._sessionTitle = session.title;
         this._sourceFileName = session.sourceFileName || null;
+        this._sessionFolderId = session.folderId || '';
         this.state = session.state;
         this.ensureStateIntegrity();
         this.restoreUI();
@@ -1214,6 +1246,7 @@ const App = {
       sessionId: this.activeSessionId || generateId(),
       title: this._sessionTitle || title || 'Quiz sem título',
       sourceFileName: this._sourceFileName || '',
+      folderId: this._sessionFolderId || '',
       createdAt: this._sessionCreatedAt || now,
       lastAccessedAt: this._lastAccessedAt || now,
       answeredCount,
@@ -1253,6 +1286,7 @@ const App = {
           sessionId: data.sessionId || generateId(),
           title: data.title || (state.quizJson && state.quizJson.titulo) || 'Quiz sem título',
           sourceFileName: data.sourceFileName || '',
+          folderId: data.folderId || '',
           createdAt: data.createdAt || now,
           lastAccessedAt: data.lastAccessedAt || now,
           answeredCount: data.answeredCount || 0,
@@ -1307,6 +1341,7 @@ const App = {
         sessionId: this.activeSessionId,
         title,
         sourceFileName: this._sourceFileName || '',
+        folderId: this._sessionFolderId || '',
         createdAt: this._sessionCreatedAt,
         lastAccessedAt: updateAccess ? now : (this._lastAccessedAt || this._sessionCreatedAt),
         answeredCount,
@@ -1490,6 +1525,41 @@ const App = {
         }
       }
 
+      // 6. Sincronizar pastas de sessões
+      try {
+        const localFolderData = await loadSessionFolders();
+        const remoteFolderData = await this.firebaseSync.downloadSessionFolders();
+
+        if (remoteFolderData && localFolderData) {
+          const localTime = localFolderData.updatedAt || '';
+          const remoteTime = remoteFolderData.updatedAt || '';
+
+          if (remoteTime > localTime) {
+            // Remoto é mais recente: baixar
+            await saveSessionFolders(remoteFolderData.folders || []);
+            this._sessionFolders = remoteFolderData.folders || [];
+          } else if (localTime > remoteTime) {
+            // Local é mais recente: subir
+            await this.firebaseSync.uploadSessionFolders({
+              folders: localFolderData.folders || [],
+              updatedAt: localFolderData.updatedAt
+            });
+          }
+        } else if (localFolderData && localFolderData.folders && localFolderData.folders.length > 0 && !remoteFolderData) {
+          // Só existe local: subir
+          await this.firebaseSync.uploadSessionFolders({
+            folders: localFolderData.folders,
+            updatedAt: localFolderData.updatedAt
+          });
+        } else if (remoteFolderData && remoteFolderData.folders && remoteFolderData.folders.length > 0) {
+          // Só existe remoto: baixar
+          await saveSessionFolders(remoteFolderData.folders);
+          this._sessionFolders = remoteFolderData.folders;
+        }
+      } catch (e) {
+        console.warn('Erro ao sincronizar pastas:', e);
+      }
+
       this.firebaseState.pendingChanges = false;
       this.firebaseState.lastSyncTime = new Date().toISOString();
       localStorage.setItem('lastSyncTime', this.firebaseState.lastSyncTime);
@@ -1506,7 +1576,106 @@ const App = {
   // ===== Lista de Sessões =====
   async openSessionListModal() {
     this.elements.sessionListModal.classList.remove('hidden');
+    const data = await loadSessionFolders();
+    this._sessionFolders = data.folders || [];
     await this.renderSessionList();
+  },
+
+  _sortSessions(sessions) {
+    const sortValue = this.elements.sessionSortBy.value;
+    const [sortField, sortDir] = sortValue.split('-');
+    sessions.sort((a, b) => {
+      const va = a[sortField] || '';
+      const vb = b[sortField] || '';
+      return sortDir === 'desc' ? vb.localeCompare(va) : va.localeCompare(vb);
+    });
+    return sessions;
+  },
+
+  _formatDate(iso) {
+    if (!iso) return '—';
+    try {
+      return new Date(iso).toLocaleString('pt-BR', {
+        day: '2-digit', month: '2-digit', year: 'numeric',
+        hour: '2-digit', minute: '2-digit'
+      });
+    } catch { return iso; }
+  },
+
+  _formatSize(bytes) {
+    if (!bytes || bytes === 0) return '—';
+    if (bytes < 1024) return bytes + ' B';
+    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+    return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+  },
+
+  _createSessionItemElement(s) {
+    const item = document.createElement('div');
+    item.className = 'session-item';
+    const isActive = s.sessionId === this.activeSessionId;
+
+    if (isActive) {
+      item.style.borderColor = '#007bff';
+      item.style.borderWidth = '2px';
+    }
+
+    const sourceFileHtml = s.sourceFileName
+      ? `<div class="session-item-source">📄 ${this.escapeHtml(s.sourceFileName)}</div>`
+      : '';
+
+    item.innerHTML = `
+      <div class="session-item-info">
+        <div class="session-item-title">${this.escapeHtml(s.title)}${isActive ? ' (ativa)' : ''}</div>
+        ${sourceFileHtml}
+        <div class="session-item-meta">
+          <span>Criada: ${this._formatDate(s.createdAt)}</span>
+          <span>Última interação: ${this._formatDate(s.lastAccessedAt)}</span>
+          <span class="session-progress-badge">Respondidas: ${s.answeredCount || 0}/${s.totalCount || 0}</span>
+          <span class="session-size">${this._formatSize(s.sizeBytes)}</span>
+        </div>
+      </div>
+      <div class="session-item-actions">
+        ${s.description ? '<button class="session-btn btn-session-desc" title="Ver descrição do quiz">📝</button>' : ''}
+        <button class="session-btn btn-session-edit" title="Editar título e descrição">✏️</button>
+        <button class="session-btn btn-session-move" title="Mover para pasta">📁</button>
+        <button class="session-btn btn-session-export" title="Exportar esta sessão">💾</button>
+        <button class="session-btn btn-session-delete" title="Deletar esta sessão">🗑️</button>
+      </div>
+    `;
+
+    item.querySelector('.session-item-info').addEventListener('click', () => {
+      this.loadSessionFromList(s.sessionId);
+    });
+
+    const descBtn = item.querySelector('.btn-session-desc');
+    if (descBtn) {
+      descBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.showInfoModal(s.title, s.description);
+      });
+    }
+
+    item.querySelector('.btn-session-edit').addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.openEditSessionModal(s.sessionId, s.title, s.quizTitle, s.description);
+    });
+
+    item.querySelector('.btn-session-move').addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.openMoveSessionModal(s.sessionId, s.title, s.folderId);
+    });
+
+    item.querySelector('.btn-session-export').addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.exportSingleSession(s.sessionId);
+    });
+
+    item.querySelector('.btn-session-delete').addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.deleteSessionFromList(s.sessionId, s.title);
+    });
+
+    return item;
   },
 
   async renderSessionList() {
@@ -1519,101 +1688,183 @@ const App = {
       return;
     }
 
-    // Ordenação
-    const sortValue = this.elements.sessionSortBy.value;
-    const [sortField, sortDir] = sortValue.split('-');
-    sessions.sort((a, b) => {
-      const va = a[sortField] || '';
-      const vb = b[sortField] || '';
-      return sortDir === 'desc' ? vb.localeCompare(va) : va.localeCompare(vb);
-    });
-
+    this._sortSessions(sessions);
     container.innerHTML = '';
 
-    sessions.forEach(s => {
-      const item = document.createElement('div');
-      item.className = 'session-item';
-      const isActive = s.sessionId === this.activeSessionId;
+    // Atualizar botão de toggle
+    const toggleBtn = this.elements.btnToggleFolderView;
+    if (this._folderViewActive) {
+      toggleBtn.classList.add('active');
+      toggleBtn.textContent = '📁 Pastas';
+    } else {
+      toggleBtn.classList.remove('active');
+      toggleBtn.textContent = '📋 Lista';
+    }
 
-      if (isActive) {
-        item.style.borderColor = '#007bff';
-        item.style.borderWidth = '2px';
-      }
+    if (!this._folderViewActive) {
+      // Visão plana
+      sessions.forEach(s => container.appendChild(this._createSessionItemElement(s)));
+      return;
+    }
 
-      const formatDate = (iso) => {
-        if (!iso) return '—';
-        try {
-          return new Date(iso).toLocaleString('pt-BR', {
-            day: '2-digit', month: '2-digit', year: 'numeric',
-            hour: '2-digit', minute: '2-digit'
-          });
-        } catch { return iso; }
-      };
+    // === Visão de pastas ===
 
-      const formatSize = (bytes) => {
-        if (!bytes || bytes === 0) return '—';
-        if (bytes < 1024) return bytes + ' B';
-        if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
-        return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
-      };
+    // 1. Mostrar 3 últimas sessões interagidas
+    const recentSessions = [...sessions]
+      .sort((a, b) => (b.lastAccessedAt || '').localeCompare(a.lastAccessedAt || ''))
+      .slice(0, 3);
 
-      const sourceFileHtml = s.sourceFileName
-        ? `<div class="session-item-source">📄 ${this.escapeHtml(s.sourceFileName)}</div>`
-        : '';
+    if (recentSessions.length > 0) {
+      const recentHeader = document.createElement('div');
+      recentHeader.className = 'session-recent-header';
+      recentHeader.textContent = '⏱️ Últimas interações';
+      container.appendChild(recentHeader);
+      recentSessions.forEach(s => container.appendChild(this._createSessionItemElement(s)));
+    }
 
-      item.innerHTML = `
-        <div class="session-item-info">
-          <div class="session-item-title">${this.escapeHtml(s.title)}${isActive ? ' (ativa)' : ''}</div>
-          ${sourceFileHtml}
-          <div class="session-item-meta">
-            <span>Criada: ${formatDate(s.createdAt)}</span>
-            <span>Última interação: ${formatDate(s.lastAccessedAt)}</span>
-            <span class="session-progress-badge">Respondidas: ${s.answeredCount || 0}/${s.totalCount || 0}</span>
-            <span class="session-size">${formatSize(s.sizeBytes)}</span>
-          </div>
-        </div>
-        <div class="session-item-actions">
-          ${s.description ? '<button class="session-btn btn-session-desc" title="Ver descrição do quiz">📝</button>' : ''}
-          <button class="session-btn btn-session-edit" title="Editar título e descrição">✏️</button>
-          <button class="session-btn btn-session-export" title="Exportar esta sessão">💾</button>
-          <button class="session-btn btn-session-delete" title="Deletar esta sessão">🗑️</button>
+    // 2. Breadcrumb de navegação
+    const breadcrumb = document.createElement('div');
+    breadcrumb.className = 'session-folder-breadcrumb';
+    this._renderBreadcrumb(breadcrumb);
+    container.appendChild(breadcrumb);
+
+    // 3. Subpastas da pasta atual
+    const childFolders = this._sessionFolders.filter(f => (f.parentId || '') === (this._currentViewFolderId || ''));
+    childFolders.sort((a, b) => a.name.localeCompare(b.name));
+
+    childFolders.forEach(folder => {
+      const sessionsInFolder = this._countSessionsInFolder(folder.folderId, sessions);
+      const folderEl = document.createElement('div');
+      folderEl.className = 'session-folder-item';
+      folderEl.innerHTML = `
+        <span class="folder-icon">📁</span>
+        <span class="folder-name">${this.escapeHtml(folder.name)}</span>
+        <span class="folder-count">${sessionsInFolder}</span>
+        <div class="session-folder-actions">
+          ${folder.description ? '<button class="session-btn btn-session-desc" title="Ver descrição">📝</button>' : ''}
+          <button class="session-btn btn-folder-edit" title="Editar pasta">✏️</button>
+          <button class="session-btn btn-folder-delete" title="Deletar pasta">🗑️</button>
         </div>
       `;
 
-      // Clique no item → carregar sessão
-      item.querySelector('.session-item-info').addEventListener('click', () => {
-        this.loadSessionFromList(s.sessionId);
+      // Navegar para dentro da pasta
+      folderEl.querySelector('.folder-name').addEventListener('click', () => {
+        this._currentViewFolderId = folder.folderId;
+        this.renderSessionList();
+      });
+      folderEl.querySelector('.folder-icon').addEventListener('click', () => {
+        this._currentViewFolderId = folder.folderId;
+        this.renderSessionList();
       });
 
-      // Ver descrição
-      const descBtn = item.querySelector('.btn-session-desc');
+      const descBtn = folderEl.querySelector('.btn-session-desc');
       if (descBtn) {
         descBtn.addEventListener('click', (e) => {
           e.stopPropagation();
-          this.showInfoModal(s.title, s.description);
+          this.showInfoModal(folder.name, folder.description);
         });
       }
 
-      // Editar sessão
-      item.querySelector('.btn-session-edit').addEventListener('click', (e) => {
+      // Editar pasta
+      folderEl.querySelector('.btn-folder-edit').addEventListener('click', (e) => {
         e.stopPropagation();
-        this.openEditSessionModal(s.sessionId, s.title, s.quizTitle, s.description);
+        this.openEditFolderModal(folder);
       });
 
-      // Exportar sessão individual
-      item.querySelector('.btn-session-export').addEventListener('click', (e) => {
+      // Deletar pasta
+      folderEl.querySelector('.btn-folder-delete').addEventListener('click', (e) => {
         e.stopPropagation();
-        this.exportSingleSession(s.sessionId);
+        this.deleteFolderWithConfirm(folder, sessions);
       });
 
-      // Deletar sessão
-      item.querySelector('.btn-session-delete').addEventListener('click', (e) => {
-        e.stopPropagation();
-        this.deleteSessionFromList(s.sessionId, s.title);
-      });
-
-      container.appendChild(item);
+      container.appendChild(folderEl);
     });
+
+    // 4. Sessões da pasta atual (sem subpasta)
+    const currentSessions = sessions.filter(s => (s.folderId || '') === (this._currentViewFolderId || ''));
+    if (currentSessions.length > 0) {
+      if (childFolders.length > 0 || this._currentViewFolderId) {
+        const label = document.createElement('div');
+        label.className = 'session-root-label';
+        label.textContent = this._currentViewFolderId ? 'Sessões nesta pasta:' : 'Sessões sem pasta:';
+        container.appendChild(label);
+      }
+      currentSessions.forEach(s => container.appendChild(this._createSessionItemElement(s)));
+    }
+
+    if (childFolders.length === 0 && currentSessions.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'session-list-empty';
+      empty.textContent = 'Pasta vazia.';
+      container.appendChild(empty);
+    }
+  },
+
+  _renderBreadcrumb(container) {
+    container.innerHTML = '';
+    const path = this._getFolderPath(this._currentViewFolderId);
+
+    const rootSpan = document.createElement('span');
+    rootSpan.textContent = '🏠 Raiz';
+    if (this._currentViewFolderId) {
+      rootSpan.addEventListener('click', () => {
+        this._currentViewFolderId = null;
+        this.renderSessionList();
+      });
+    } else {
+      rootSpan.className = 'bc-current';
+    }
+    container.appendChild(rootSpan);
+
+    path.forEach((folder, idx) => {
+      const sep = document.createElement('span');
+      sep.className = 'bc-separator';
+      sep.textContent = ' › ';
+      container.appendChild(sep);
+
+      const span = document.createElement('span');
+      span.textContent = folder.name;
+      if (idx === path.length - 1) {
+        span.className = 'bc-current';
+      } else {
+        span.addEventListener('click', () => {
+          this._currentViewFolderId = folder.folderId;
+          this.renderSessionList();
+        });
+      }
+      container.appendChild(span);
+    });
+  },
+
+  _getFolderPath(folderId) {
+    const path = [];
+    let currentId = folderId;
+    while (currentId) {
+      const folder = this._sessionFolders.find(f => f.folderId === currentId);
+      if (!folder) break;
+      path.unshift(folder);
+      currentId = folder.parentId || null;
+    }
+    return path;
+  },
+
+  _countSessionsInFolder(folderId, sessions) {
+    // Contar sessões nesta pasta e em todas as subpastas recursivamente
+    let count = sessions.filter(s => (s.folderId || '') === folderId).length;
+    const childFolders = this._sessionFolders.filter(f => f.parentId === folderId);
+    childFolders.forEach(child => {
+      count += this._countSessionsInFolder(child.folderId, sessions);
+    });
+    return count;
+  },
+
+  _getDescendantFolderIds(folderId) {
+    const ids = [folderId];
+    const children = this._sessionFolders.filter(f => f.parentId === folderId);
+    children.forEach(c => {
+      ids.push(...this._getDescendantFolderIds(c.folderId));
+    });
+    return ids;
   },
 
   escapeHtml(text) {
@@ -1634,6 +1885,7 @@ const App = {
     this._lastAccessedAt = session.lastAccessedAt || session.createdAt;
     this._sessionTitle = session.title;
     this._sourceFileName = session.sourceFileName || null;
+    this._sessionFolderId = session.folderId || '';
     localStorage.setItem('activeSessionId', session.sessionId);
     this.elements.sessionListModal.classList.add('hidden');
 
@@ -2411,6 +2663,262 @@ const App = {
     btn.addEventListener('click', () => {
       this.scrollToNextUnanswered();
     });
+  },
+
+  // ===== Sistema de Pastas de Sessões =====
+
+  initFolderSystem() {
+    // Toggle entre visão de pastas e lista plana
+    this.elements.btnToggleFolderView.addEventListener('click', () => {
+      this._folderViewActive = !this._folderViewActive;
+      localStorage.setItem('folderViewActive', this._folderViewActive ? 'true' : 'false');
+      this.renderSessionList();
+    });
+
+    // Restaurar preferência de visão
+    const savedView = localStorage.getItem('folderViewActive');
+    if (savedView !== null) {
+      this._folderViewActive = savedView !== 'false';
+    }
+
+    // Criar nova pasta
+    this.elements.btnNewFolder.addEventListener('click', () => {
+      this.openCreateFolderModal();
+    });
+
+    // Modal de nome de pasta
+    this.elements.closeFolderName.addEventListener('click', () => {
+      this.elements.folderNameModal.classList.add('hidden');
+    });
+    this.elements.btnFolderNameCancel.addEventListener('click', () => {
+      this.elements.folderNameModal.classList.add('hidden');
+    });
+    this.elements.btnFolderNameSave.addEventListener('click', () => {
+      this._saveFolderChanges();
+    });
+    this.elements.folderNameModal.addEventListener('click', (e) => {
+      if (e.target === this.elements.folderNameModal) {
+        this.elements.folderNameModal.classList.add('hidden');
+      }
+    });
+
+    // Modal de mover sessão
+    this.elements.closeMoveSession.addEventListener('click', () => {
+      this.elements.moveSessionModal.classList.add('hidden');
+    });
+    this.elements.btnMoveCancel.addEventListener('click', () => {
+      this.elements.moveSessionModal.classList.add('hidden');
+    });
+    this.elements.btnMoveConfirm.addEventListener('click', () => {
+      this.moveSessionToFolder();
+    });
+    this.elements.moveSessionModal.addEventListener('click', (e) => {
+      if (e.target === this.elements.moveSessionModal) {
+        this.elements.moveSessionModal.classList.add('hidden');
+      }
+    });
+  },
+
+  openCreateFolderModal() {
+    this._editingFolderId = null;
+    this.elements.folderNameModalTitle.textContent = 'Nova Pasta';
+    this.elements.folderNameInput.value = '';
+    this.elements.folderDescInput.value = '';
+    this.elements.folderParentField.classList.remove('hidden');
+
+    // Popular select de pasta pai
+    this._populateFolderSelect(this.elements.folderParentSelect, this._currentViewFolderId || '', null);
+
+    this.elements.folderNameModal.classList.remove('hidden');
+    this.elements.folderNameInput.focus();
+  },
+
+  openEditFolderModal(folder) {
+    this._editingFolderId = folder.folderId;
+    this.elements.folderNameModalTitle.textContent = 'Editar Pasta';
+    this.elements.folderNameInput.value = folder.name;
+    this.elements.folderDescInput.value = folder.description || '';
+    this.elements.folderParentField.classList.remove('hidden');
+
+    // Popular select de pasta pai, excluindo a própria pasta e seus descendentes
+    const excludeIds = this._getDescendantFolderIds(folder.folderId);
+    this._populateFolderSelect(this.elements.folderParentSelect, folder.parentId || '', excludeIds);
+
+    this.elements.folderNameModal.classList.remove('hidden');
+    this.elements.folderNameInput.focus();
+  },
+
+  _populateFolderSelect(selectEl, selectedValue, excludeIds) {
+    selectEl.innerHTML = '';
+
+    const rootOpt = document.createElement('option');
+    rootOpt.value = '';
+    rootOpt.textContent = '🏠 Raiz';
+    selectEl.appendChild(rootOpt);
+
+    const addOptions = (parentId, depth) => {
+      const children = this._sessionFolders
+        .filter(f => (f.parentId || '') === parentId)
+        .sort((a, b) => a.name.localeCompare(b.name));
+      children.forEach(f => {
+        if (excludeIds && excludeIds.includes(f.folderId)) return;
+        const opt = document.createElement('option');
+        opt.value = f.folderId;
+        opt.textContent = '  '.repeat(depth) + '📁 ' + f.name;
+        selectEl.appendChild(opt);
+        addOptions(f.folderId, depth + 1);
+      });
+    };
+
+    addOptions('', 1);
+
+    selectEl.value = selectedValue || '';
+  },
+
+  async _saveFolderChanges() {
+    const name = this.elements.folderNameInput.value.trim();
+    if (!name) {
+      alert('O nome da pasta não pode estar vazio.');
+      return;
+    }
+
+    const parentId = this.elements.folderParentSelect.value || '';
+    const description = this.elements.folderDescInput.value.trim();
+    const now = new Date().toISOString();
+
+    if (this._editingFolderId) {
+      // Editar pasta existente
+      const folder = this._sessionFolders.find(f => f.folderId === this._editingFolderId);
+      if (folder) {
+        folder.name = name;
+        folder.parentId = parentId;
+        folder.description = description;
+        folder.updatedAt = now;
+      }
+    } else {
+      // Criar nova pasta
+      const newFolder = {
+        folderId: generateId(),
+        name,
+        parentId,
+        description,
+        createdAt: now,
+        updatedAt: now
+      };
+      this._sessionFolders.push(newFolder);
+    }
+
+    await this._saveFolders();
+    this.elements.folderNameModal.classList.add('hidden');
+    this._editingFolderId = null;
+    await this.renderSessionList();
+  },
+
+  async _saveFolders() {
+    await saveSessionFolders(this._sessionFolders);
+    this.markSyncPending();
+  },
+
+  openMoveSessionModal(sessionId, title, currentFolderId) {
+    this._movingSessionId = sessionId;
+    this.elements.moveSessionInfo.textContent = `Mover "${title}" para:`;
+
+    // Popular select com todas as pastas
+    this._populateFolderSelect(this.elements.moveFolderSelect, currentFolderId || '', null);
+
+    this.elements.moveSessionModal.classList.remove('hidden');
+  },
+
+  async moveSessionToFolder() {
+    if (!this._movingSessionId) return;
+
+    const newFolderId = this.elements.moveFolderSelect.value || '';
+    await updateSessionFolder(this._movingSessionId, newFolderId);
+
+    // Se a sessão movida é a ativa, atualiza o campo local
+    if (this._movingSessionId === this.activeSessionId) {
+      this._sessionFolderId = newFolderId;
+    }
+
+    this.markSyncPending();
+    this.elements.moveSessionModal.classList.add('hidden');
+    this._movingSessionId = null;
+    await this.renderSessionList();
+  },
+
+  async deleteFolderWithConfirm(folder, sessions) {
+    const descendantIds = this._getDescendantFolderIds(folder.folderId);
+    const affectedSessions = sessions.filter(s => descendantIds.includes(s.folderId || ''));
+    const childFolders = this._sessionFolders.filter(f => descendantIds.includes(f.folderId) && f.folderId !== folder.folderId);
+
+    let msg = `Deletar a pasta "${folder.name}"?`;
+    if (childFolders.length > 0) {
+      msg += `\n\nInclui ${childFolders.length} subpasta(s).`;
+    }
+
+    if (affectedSessions.length > 0) {
+      msg += `\n\nExistem ${affectedSessions.length} sessão(ões) nesta pasta e subpastas.`;
+      msg += `\n\nClique OK para escolher o que fazer com as sessões.`;
+    } else {
+      msg += `\n\nA pasta está vazia de sessões.`;
+    }
+
+    if (!confirm(msg)) return;
+
+    if (affectedSessions.length > 0) {
+      const moveToParent = confirm(
+        `O que fazer com as ${affectedSessions.length} sessão(ões)?\n\n` +
+        `OK = Mover sessões para a pasta pai ("${folder.parentId ? this._sessionFolders.find(f => f.folderId === folder.parentId)?.name || 'Raiz' : 'Raiz'}")\n` +
+        `Cancelar = Deletar as sessões permanentemente`
+      );
+
+      if (moveToParent) {
+        // Mover sessões para a pasta pai
+        for (const s of affectedSessions) {
+          await updateSessionFolder(s.sessionId, folder.parentId || '');
+          if (s.sessionId === this.activeSessionId) {
+            this._sessionFolderId = folder.parentId || '';
+          }
+        }
+      } else {
+        // Confirmação dupla antes de deletar
+        if (!confirm(`⚠️ ATENÇÃO: Tem certeza que deseja DELETAR permanentemente ${affectedSessions.length} sessão(ões)? Esta ação NÃO pode ser desfeita!`)) {
+          return;
+        }
+        for (const s of affectedSessions) {
+          await deleteSession(s.sessionId);
+          if (this.firebaseSync && this.firebaseState.connected) {
+            try { await this.firebaseSync.deleteRemoteSession(s.sessionId); } catch (e) { console.warn('Erro ao deletar remoto:', e); }
+          }
+          if (s.sessionId === this.activeSessionId) {
+            this.activeSessionId = null;
+            localStorage.removeItem('activeSessionId');
+            this.state.quizJson = null;
+            this.state.questions = [];
+            this.state.mappings = { qOrder: [], altOrder: {} };
+            this.state.userAnswers = {};
+            this.state.retryMode = false;
+            this.state.retryIndices = [];
+            this.renderer.container.innerHTML = '';
+            this.elements.configBar.classList.add('hidden');
+            this.elements.footerBar.classList.add('hidden');
+            this.elements.filterSection.classList.add('hidden');
+            this.elements.uploadSection.classList.remove('hidden');
+          }
+        }
+      }
+    }
+
+    // Remover a pasta e todas as subpastas
+    this._sessionFolders = this._sessionFolders.filter(f => !descendantIds.includes(f.folderId));
+
+    // Se estávamos navegando dentro da pasta deletada, voltar ao pai
+    if (descendantIds.includes(this._currentViewFolderId)) {
+      this._currentViewFolderId = folder.parentId || null;
+    }
+
+    await this._saveFolders();
+    await this.renderSessionList();
   },
 
   scrollToNextUnanswered() {

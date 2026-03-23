@@ -731,6 +731,11 @@ body {
   backdrop-filter: blur(2px);
 }
 
+/* Modais que podem abrir por cima de outros modais */
+#infoModal, #editSessionModal, #moveSessionModal, #folderNameModal {
+  z-index: 3500;
+}
+
 .modal-box {
   background: white;
   width: 90%;
@@ -1223,5 +1228,121 @@ body {
   background: #e8f5e9;
   border-color: #a5d6a7;
   color: #2e7d32;
+}
+
+.session-btn.btn-session-move:hover {
+  background: #fff3e0;
+  border-color: #ffcc80;
+  color: #e65100;
+}
+
+/* --- PASTAS DE SESSÕES --- */
+.session-recent-header {
+  font-size: 0.85em;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 8px 0 4px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+}
+
+.session-folder-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #495057;
+}
+
+.session-folder-item:hover {
+  border-color: #f0ad4e;
+  background: #fff8ee;
+}
+
+.session-folder-item .folder-icon {
+  font-size: 1.1em;
+}
+
+.session-folder-item .folder-name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.session-folder-item .folder-count {
+  font-size: 0.8em;
+  color: #888;
+  background: #e9ecef;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.session-folder-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.session-folder-actions .session-btn {
+  padding: 3px 6px;
+  font-size: 0.8em;
+}
+
+.session-folder-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
+  margin-bottom: 8px;
+  font-size: 0.85em;
+  color: #6c757d;
+  flex-wrap: wrap;
+}
+
+.session-folder-breadcrumb span {
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.session-folder-breadcrumb span:hover {
+  text-decoration: underline;
+}
+
+.session-folder-breadcrumb .bc-separator {
+  color: #aaa;
+  cursor: default;
+}
+
+.session-folder-breadcrumb .bc-current {
+  color: #495057;
+  cursor: default;
+  font-weight: 600;
+}
+
+.session-root-label {
+  font-size: 0.8em;
+  color: #aaa;
+  text-align: center;
+  padding: 6px 0;
+  font-style: italic;
+}
+
+.btn-toggle-folder-view.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
 }
 

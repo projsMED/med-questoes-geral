@@ -138,6 +138,33 @@ export async function getRemoteSessionList() {
   }
 }
 
+// ===== Pastas de Sessões =====
+
+export async function uploadSessionFolders(data) {
+  if (!isLoggedIn()) return false;
+  try {
+    const ref = doc(db, 'meta', 'sessionFolders');
+    await setDoc(ref, data);
+    return true;
+  } catch (e) {
+    console.error('Erro ao enviar pastas para Firebase:', e);
+    return false;
+  }
+}
+
+export async function downloadSessionFolders() {
+  if (!isLoggedIn()) return null;
+  try {
+    const ref = doc(db, 'meta', 'sessionFolders');
+    const snap = await getDoc(ref);
+    if (!snap.exists()) return null;
+    return snap.data();
+  } catch (e) {
+    console.error('Erro ao baixar pastas do Firebase:', e);
+    return null;
+  }
+}
+
 export async function deleteRemoteSession(sessionId) {
   if (!isLoggedIn()) return false;
 

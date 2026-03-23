@@ -180,6 +180,50 @@
   </div>
 </div>
 
+<div id="moveSessionModal" class="modal-overlay hidden">
+  <div class="modal-box" style="max-width:400px;">
+    <div class="modal-header">
+      <h3>Mover Sessão</h3>
+      <span class="close-move-session">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p id="moveSessionInfo" style="margin-bottom:12px;color:#555;"></p>
+      <select id="moveFolderSelect" class="edit-input" style="width:100%;"></select>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" id="btnMoveCancel">Cancelar</button>
+      <button class="btn btn-primary" id="btnMoveConfirm">Mover</button>
+    </div>
+  </div>
+</div>
+
+<div id="folderNameModal" class="modal-overlay hidden">
+  <div class="modal-box" style="max-width:420px;">
+    <div class="modal-header">
+      <h3 id="folderNameModalTitle">Nova Pasta</h3>
+      <span class="close-folder-name">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class="edit-field">
+        <label for="folderNameInput">Nome da pasta:</label>
+        <input type="text" id="folderNameInput" class="edit-input">
+      </div>
+      <div class="edit-field" id="folderParentField">
+        <label for="folderParentSelect">Pasta pai:</label>
+        <select id="folderParentSelect" class="edit-input" style="width:100%;"></select>
+      </div>
+      <div class="edit-field">
+        <label for="folderDescInput">Descrição (opcional):</label>
+        <textarea id="folderDescInput" class="edit-textarea" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" id="btnFolderNameCancel">Cancelar</button>
+      <button class="btn btn-primary" id="btnFolderNameSave">Salvar</button>
+    </div>
+  </div>
+</div>
+
 <div id="imgModal">
   <span class="close-modal">&times;</span>
   <img class="modal-content" id="imgModalContent">
@@ -221,15 +265,17 @@
       <h3>Lista de Sessões</h3>
       <span class="close-sessions">&times;</span>
     </div>
-    <div class="modal-toolbar">
+    <div class="modal-toolbar" style="flex-wrap:wrap;">
       <select id="sessionSortBy" class="session-sort-select">
-        <option value="lastAccessedAt-desc">Último acesso (recentes)</option>
-        <option value="lastAccessedAt-asc">Último acesso (antigos)</option>
+        <option value="lastAccessedAt-desc">Última interação (recentes)</option>
+        <option value="lastAccessedAt-asc">Última interação (antigos)</option>
         <option value="createdAt-desc">Criação (recentes)</option>
         <option value="createdAt-asc">Criação (antigos)</option>
       </select>
-      <button class="btn btn-sm" id="btnExportAllSessions">📤 Exportar Lista</button>
-      <button class="btn btn-sm" id="btnImportAllSessions">📥 Importar Lista</button>
+      <button class="btn btn-sm" id="btnToggleFolderView" title="Alternar visão de pastas / lista plana">📁 Pastas</button>
+      <button class="btn btn-sm" id="btnNewFolder" title="Criar nova pasta">➕ Nova Pasta</button>
+      <button class="btn btn-sm" id="btnExportAllSessions">📤 Exportar</button>
+      <button class="btn btn-sm" id="btnImportAllSessions">📥 Importar</button>
       <input type="file" id="importSessionsInput" accept=".json,application/json" class="hidden">
       <button class="btn btn-sm" id="btnFirebaseSettings" title="Configurar Firebase">☁️ Firebase</button>
     </div>

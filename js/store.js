@@ -166,6 +166,7 @@ export async function getAllSessions() {
           sourceFileName: s.sourceFileName || '',
           description: (s.state && s.state.quizJson && s.state.quizJson.descricao) || '',
           quizTitle: (s.state && s.state.quizJson && s.state.quizJson.titulo) || '',
+          folderId: s.folderId || '',
           createdAt: s.createdAt,
           lastAccessedAt: s.lastAccessedAt,
           answeredCount: s.answeredCount,
@@ -272,6 +273,70 @@ export async function migrateLegacyState() {
   } catch (e) {
     console.error('Erro na migração', e);
     return null;
+  }
+}
+
+// ===== Pastas de Sessões (armazenado no store legado como entrada especial) =====
+
+export async function saveSessionFolders(folders) {
+  try {
+    const db = await dbPromise;
+    const tx = db.transaction(STORE_NAME, 'readwrite');
+    tx.objectStore(STORE_NAME).put({
+      id: 'sessionFolders',
+      folders: JSON.parse(JSON.stringify(folders)),
+      updatedAt: new Date().toISOString()
+    });
+    return new Promise((resolve) => {
+      tx.oncomplete = () => resolve(true);
+      tx.onerror = () => resolve(false);
+    });
+  } catch (e) {
+    console.error('Erro ao salvar pastas', e);
+    return false;
+  }
+}
+
+export async function loadSessionFolders() {
+  try {
+    const db = await dbPromise;
+    return new Promise((resolve) => {
+      const tx = db.transaction(STORE_NAME, 'readonly');
+      const req = tx.objectStore(STORE_NAME).get('sessionFolders');
+      req.onsuccess = () => {
+        const result = req.result;
+        resolve(result ? { folders: result.folders || [], updatedAt: result.updatedAt || '' } : { folders: [], updatedAt: '' });
+      };
+      req.onerror = () => resolve({ folders: [], updatedAt: '' });
+    });
+  } catch (e) {
+    console.error('Erro ao carregar pastas', e);
+    return { folders: [], updatedAt: '' };
+  }
+}
+
+// Atualiza folderId de uma sessão sem recarregar o state completo
+export async function updateSessionFolder(sessionId, folderId) {
+  try {
+    const db = await dbPromise;
+    return new Promise((resolve) => {
+      const tx = db.transaction(SESSIONS_STORE, 'readwrite');
+      const store = tx.objectStore(SESSIONS_STORE);
+      const req = store.get(sessionId);
+      req.onsuccess = () => {
+        const session = req.result;
+        if (session) {
+          session.folderId = folderId;
+          store.put(session);
+        }
+        tx.oncomplete = () => resolve(true);
+        tx.onerror = () => resolve(false);
+      };
+      req.onerror = () => resolve(false);
+    });
+  } catch (e) {
+    console.error('Erro ao mover sessão', e);
+    return false;
   }
 }
 
