@@ -163,6 +163,9 @@ export async function getAllSessions() {
         resolve(sessions.map(s => ({
           sessionId: s.sessionId,
           title: s.title,
+          sourceFileName: s.sourceFileName || '',
+          description: (s.state && s.state.quizJson && s.state.quizJson.descricao) || '',
+          quizTitle: (s.state && s.state.quizJson && s.state.quizJson.titulo) || '',
           createdAt: s.createdAt,
           lastAccessedAt: s.lastAccessedAt,
           answeredCount: s.answeredCount,

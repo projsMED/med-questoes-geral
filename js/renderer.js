@@ -432,6 +432,25 @@ export class QuizRenderer {
         genDiv.innerHTML = `<strong>Comentário Geral:</strong><br>${genCommentTxt}`;
         wrapper.appendChild(genDiv);
       }
+
+      // Botão para alternar visibilidade dos comentários
+      const hasComments = wrapper.querySelector('.specific-comment') || genCommentTxt;
+      if (hasComments && !isForced) {
+        const toggleBtn = document.createElement('button');
+        toggleBtn.className = 'btn-toggle-comments';
+        toggleBtn.type = 'button';
+        const isCollapsed = wrapper.classList.contains('comments-collapsed');
+        toggleBtn.textContent = isCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+        toggleBtn.addEventListener('click', () => {
+          wrapper.classList.toggle('comments-collapsed');
+          const nowCollapsed = wrapper.classList.contains('comments-collapsed');
+          toggleBtn.textContent = nowCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+          if (this.callbacks.onToggleComments) {
+            this.callbacks.onToggleComments(originalIdx, !nowCollapsed);
+          }
+        });
+        wrapper.appendChild(toggleBtn);
+      }
     }
 
     return wrapper;

@@ -96,6 +96,38 @@
         </label>
       </div>
 
+      <div class="config-row visual-settings-toggle">
+        <button class="btn btn-sm" id="btnVisualSettings">⚙️ Configurações Visuais</button>
+      </div>
+      <div id="visualSettingsPanel" class="visual-settings-panel hidden">
+        <div class="vs-option">
+          <label class="toggle-label">
+            <input type="checkbox" id="chkFooterFixed" checked>
+            Botão "Responder Todas" fixo na tela
+          </label>
+        </div>
+        <div class="vs-option">
+          <strong class="vs-label">Comentários de gabarito:</strong>
+          <div class="vs-radio-group">
+            <label class="toggle-label">
+              <input type="radio" name="commentMode" value="all" id="commentModeAll" checked> Exibir todos
+            </label>
+            <label class="toggle-label">
+              <input type="radio" name="commentMode" value="current" id="commentModeCurrent"> Exibir apenas da atual
+            </label>
+          </div>
+          <div id="commentSubOptions" class="vs-sub-option hidden">
+            <label class="toggle-label">
+              <input type="checkbox" id="chkPersistManualOpen">
+              Persistir comentários abertos manualmente
+            </label>
+          </div>
+        </div>
+        <div class="vs-hint">
+          <small>Ctrl+B: Alternar todos os comentários | Mobile: 3 toques rápidos com 3 dedos</small>
+        </div>
+      </div>
+
       <div class="config-actions">
         <button class="btn btn-info" id="btnCloudConfig" title="Abrir Nuvem">☁️ Nuvem</button>
         <button class="btn btn-secondary" id="btnChooseOther" title="Carregar arquivo local">📂 Trocar Arq.</button>
@@ -117,6 +149,35 @@
 <div class="footer-bar hidden" id="footerBar">
   <div class="score-display" id="scoreDisplay">Nota: <span>-</span></div>
   <button class="btn btn-submit" id="btnSubmitAll" style="padding: 10px 30px; font-size: 1.1em;">Responder Todas</button>
+</div>
+
+<button id="btnNextUnanswered" class="btn-next-unanswered hidden" title="Ir para a próxima questão não respondida">⏭️ Próxima</button>
+
+<div id="editSessionModal" class="modal-overlay hidden">
+  <div class="modal-box edit-session-box">
+    <div class="modal-header">
+      <h3>Editar Sessão</h3>
+      <span class="close-edit-session">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class="edit-field">
+        <label for="editSessionTitle">Título da Sessão:</label>
+        <input type="text" id="editSessionTitle" class="edit-input" placeholder="Título da sessão">
+      </div>
+      <div class="edit-field">
+        <label for="editQuizTitle">Título do Quiz:</label>
+        <input type="text" id="editQuizTitle" class="edit-input" placeholder="Título do quiz">
+      </div>
+      <div class="edit-field">
+        <label for="editQuizDescription">Descrição do Quiz:</label>
+        <textarea id="editQuizDescription" class="edit-textarea" rows="5" placeholder="Descrição do quiz"></textarea>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" id="btnEditCancel">Cancelar</button>
+      <button class="btn btn-primary" id="btnEditSave">Salvar</button>
+    </div>
+  </div>
 </div>
 
 <div id="imgModal">

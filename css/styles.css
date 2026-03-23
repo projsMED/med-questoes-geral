@@ -1033,3 +1033,195 @@ body {
   flex-wrap: wrap; /* Caso tela pequena */
 }
 
+/* Footer modo inline (não fixo) */
+.footer-bar.footer-inline {
+  position: static;
+  box-shadow: none;
+  border-top: 2px solid #dee2e6;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* --- CONFIGURAÇÕES VISUAIS --- */
+.visual-settings-toggle {
+  justify-content: center;
+}
+
+.visual-settings-panel {
+  background: #f0f2f5;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vs-option {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vs-label {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.vs-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-left: 10px;
+}
+
+.vs-sub-option {
+  margin-left: 28px;
+  padding: 6px 10px;
+  border-left: 3px solid var(--primary);
+  background: #e8f0fe;
+  border-radius: 0 4px 4px 0;
+}
+
+.vs-hint {
+  text-align: center;
+  color: #888;
+  border-top: 1px solid #dee2e6;
+  padding-top: 8px;
+}
+
+/* --- BOTÃO PRÓXIMA NÃO RESPONDIDA --- */
+.btn-next-unanswered {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 150;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.btn-next-unanswered.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-next-unanswered:hover {
+  background: var(--primary-hover);
+}
+
+/* --- COLAPSAR COMENTÁRIOS --- */
+.question-card.submitted.comments-collapsed .specific-comment {
+  display: none !important;
+}
+.question-card.submitted.comments-collapsed .general-comment {
+  display: none !important;
+}
+
+.btn-toggle-comments {
+  display: none;
+  margin-top: 10px;
+  background: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 0.85em;
+  cursor: pointer;
+  color: #495057;
+  transition: background 0.2s;
+}
+.btn-toggle-comments:hover {
+  background: #dde2e6;
+}
+
+.question-card.submitted .btn-toggle-comments {
+  display: inline-block;
+}
+
+/* --- EDIT SESSION MODAL --- */
+.edit-session-box {
+  max-width: 500px;
+}
+
+.close-edit-session {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #999;
+}
+.close-edit-session:hover { color: #333; }
+
+.edit-field {
+  margin-bottom: 15px;
+}
+
+.edit-field label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 0.95em;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+.edit-input:focus { border-color: var(--primary); }
+
+.edit-textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 0.95em;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+.edit-textarea:focus { border-color: var(--primary); }
+
+.modal-footer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* --- SESSION LIST: sourceFileName + description btn --- */
+.session-item-source {
+  font-size: 0.75em;
+  color: #888;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.session-btn.btn-session-edit:hover {
+  background: #e3f2fd;
+  border-color: #90caf9;
+  color: #0d47a1;
+}
+
+.session-btn.btn-session-desc:hover {
+  background: #e8f5e9;
+  border-color: #a5d6a7;
+  color: #2e7d32;
+}
+

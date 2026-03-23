@@ -10,6 +10,11 @@ import { QuizRenderer } from './renderer.js';
 
 const App = {
   activeSessionId: null,
+  _sessionTitle: null,
+  _sourceFileName: null,
+  _manuallyOpenedComments: new Set(),
+  _scrollTimer: null,
+  _tripleTapState: { count: 0, timer: null },
 
   // Firebase (carregado dinamicamente)
   firebaseConfig: null,
@@ -142,7 +147,28 @@ const App = {
     sessionListContainer: document.getElementById('sessionListContainer'),
     btnExportAllSessions: document.getElementById('btnExportAllSessions'),
     btnImportAllSessions: document.getElementById('btnImportAllSessions'),
-    importSessionsInput: document.getElementById('importSessionsInput')
+    importSessionsInput: document.getElementById('importSessionsInput'),
+
+    // Configurações Visuais
+    btnVisualSettings: document.getElementById('btnVisualSettings'),
+    visualSettingsPanel: document.getElementById('visualSettingsPanel'),
+    chkFooterFixed: document.getElementById('chkFooterFixed'),
+    commentModeAll: document.getElementById('commentModeAll'),
+    commentModeCurrent: document.getElementById('commentModeCurrent'),
+    commentSubOptions: document.getElementById('commentSubOptions'),
+    chkPersistManualOpen: document.getElementById('chkPersistManualOpen'),
+
+    // Próxima não respondida
+    btnNextUnanswered: document.getElementById('btnNextUnanswered'),
+
+    // Editar sessão
+    editSessionModal: document.getElementById('editSessionModal'),
+    closeEditSession: document.querySelector('.close-edit-session'),
+    editSessionTitle: document.getElementById('editSessionTitle'),
+    editQuizTitle: document.getElementById('editQuizTitle'),
+    editQuizDescription: document.getElementById('editQuizDescription'),
+    btnEditSave: document.getElementById('btnEditSave'),
+    btnEditCancel: document.getElementById('btnEditCancel')
   },
 
   renderer: null,
@@ -153,12 +179,15 @@ const App = {
         this.handleSelection(qIdx, altIdx, isCheckbox, checked),
       onSubmit: (qIdx) => this.submitQuestion(qIdx),
       onEliminate: (qIdx, altIdx) => this.handleElimination(qIdx, altIdx),
-      // Callback do botão "Repetir apenas questões que errou"
-      onRetry: () => this.retryIncorrect()
+      onRetry: () => this.retryIncorrect(),
+      onToggleComments: (qIdx, isOpen) => this.handleToggleComments(qIdx, isOpen)
     });
 
     this.bindEvents();
     this.setupImageZoom();
+    this.initVisualSettings();
+    this.setupNextUnansweredButton();
+    this.setupCommentShortcuts();
 
     // Migração do estado legado (v1 → v2)
     const migrated = await migrateLegacyState();
@@ -174,6 +203,9 @@ const App = {
       if (session && session.state && session.state.quizJson) {
         this.activeSessionId = session.sessionId;
         this._sessionCreatedAt = session.createdAt;
+        this._lastAccessedAt = session.lastAccessedAt || session.createdAt;
+        this._sessionTitle = session.title;
+        this._sourceFileName = session.sourceFileName || null;
         this.state = session.state;
         this.ensureStateIntegrity();
         this.restoreUI();
@@ -184,6 +216,7 @@ const App = {
           }
           this.showQuizInterface();
           this.renderer.render(this.state);
+          this.applyCommentCollapseMode();
         } else {
           this.renderFilterDescription();
           if (this.state.filters.step === 2) {
@@ -195,7 +228,7 @@ const App = {
           this.elements.uploadSection.classList.add('hidden');
           this.elements.filterSection.classList.remove('hidden');
         }
-        // Atualiza lastAccessedAt
+        // Salva sem atualizar lastAccessedAt (apenas abriu)
         this.save();
 
         // Carregar Firebase (opcional, não bloqueia o app)
@@ -472,11 +505,12 @@ const App = {
     const file = e.target.files[0];
     if (!file) return;
 
+    const fileName = file.name;
     const reader = new FileReader();
     reader.onload = (evt) => {
       try {
         const json = JSON.parse(evt.target.result);
-        this.loadQuizJSON(json);
+        this.loadQuizJSON(json, fileName);
       } catch (err) {
         alert('Erro no JSON: ' + err.message);
       }
@@ -486,7 +520,7 @@ const App = {
     e.target.value = '';
   },
 
-  loadQuizJSON(json) {
+  loadQuizJSON(json, sourceFileName = null) {
     this.state.quizJson = json;
     this.state.config.shuffleQ = this.elements.chkShuffleQ.checked;
     this.state.config.shuffleA = this.elements.chkShuffleA.checked;
@@ -518,6 +552,12 @@ const App = {
 
     // Criar nova sessão
     this.activeSessionId = generateId();
+    this._sessionTitle = (json.titulo) || 'Quiz sem título';
+    this._sourceFileName = sourceFileName;
+    const now = new Date().toISOString();
+    this._sessionCreatedAt = now;
+    this._lastAccessedAt = now;
+    this._manuallyOpenedComments = new Set();
     localStorage.setItem('activeSessionId', this.activeSessionId);
 
     this.extractFiltersData();
@@ -988,6 +1028,7 @@ const App = {
     this.generateMappings();
     this.showQuizInterface();
     this.renderer.render(this.state);
+    this.applyCommentCollapseMode();
     this.save();
   },
 
@@ -996,6 +1037,7 @@ const App = {
     this.elements.filterSection.classList.add('hidden');
     this.elements.configBar.classList.remove('hidden');
     this.elements.footerBar.classList.remove('hidden');
+    this.applyFooterMode(this.getVisualSettings().footerFixed);
   },
 
   handleSelection(originalQIdx, originalAltIdx, isCheckbox = false, checked = true) {
@@ -1064,7 +1106,7 @@ const App = {
       }
     }
 
-    this.save();
+    this.save(true);
   },
 
   handleElimination(originalQIdx, originalAltIdx) {
@@ -1081,7 +1123,7 @@ const App = {
       list.push(originalAltIdx);
     }
 
-    this.save();
+    this.save(true);
 
     const visualIdx = this.state.mappings.qOrder.indexOf(originalQIdx);
     const card = document.querySelector(
@@ -1107,7 +1149,7 @@ const App = {
     }
 
     this.state.userAnswers[originalQIdx].submitted = true;
-    this.save();
+    this.save(true);
 
     const visualIdx = this.state.mappings.qOrder.indexOf(originalQIdx);
     const card = document.querySelector(
@@ -1121,6 +1163,9 @@ const App = {
     );
     card.replaceWith(newCard);
     this.renderer.updateFooter(this.state);
+
+    // Aplicar modo de colapso de comentários após submissão
+    this.applyCommentCollapseModeAfterSubmit(originalQIdx);
   },
 
   submitAll() {
@@ -1138,8 +1183,9 @@ const App = {
       }
     });
 
-    this.save();
+    this.save(true);
     this.renderer.render(this.state);
+    this.applyCommentCollapseMode();
 
     // Sync imediato após submeter todas (ação importante)
     if (this.firebaseState.autoSync && this.firebaseState.connected) {
@@ -1166,9 +1212,10 @@ const App = {
 
     const exportData = {
       sessionId: this.activeSessionId || generateId(),
-      title: title || 'Quiz sem título',
+      title: this._sessionTitle || title || 'Quiz sem título',
+      sourceFileName: this._sourceFileName || '',
       createdAt: this._sessionCreatedAt || now,
-      lastAccessedAt: now,
+      lastAccessedAt: this._lastAccessedAt || now,
       answeredCount,
       totalCount,
       state: JSON.parse(JSON.stringify(this.state))
@@ -1205,8 +1252,9 @@ const App = {
         const session = {
           sessionId: data.sessionId || generateId(),
           title: data.title || (state.quizJson && state.quizJson.titulo) || 'Quiz sem título',
+          sourceFileName: data.sourceFileName || '',
           createdAt: data.createdAt || now,
-          lastAccessedAt: now,
+          lastAccessedAt: data.lastAccessedAt || now,
           answeredCount: data.answeredCount || 0,
           totalCount: data.totalCount || (Array.isArray(state.questions) ? state.questions.length : 0),
           state: data.state || state
@@ -1243,10 +1291,10 @@ const App = {
     return Object.values(this.state.userAnswers).filter(a => a && a.submitted).length;
   },
 
-  save() {
+  save(updateAccess = false) {
     if (this.activeSessionId) {
       const now = new Date().toISOString();
-      const title = (this.state.quizJson && this.state.quizJson.titulo) || 'Quiz sem título';
+      const title = this._sessionTitle || (this.state.quizJson && this.state.quizJson.titulo) || 'Quiz sem título';
       const answeredCount = this.getAnsweredCount();
       const totalCount = Array.isArray(this.state.questions) ? this.state.questions.length : 0;
 
@@ -1258,12 +1306,18 @@ const App = {
       const session = {
         sessionId: this.activeSessionId,
         title,
+        sourceFileName: this._sourceFileName || '',
         createdAt: this._sessionCreatedAt,
-        lastAccessedAt: now,
+        lastAccessedAt: updateAccess ? now : (this._lastAccessedAt || this._sessionCreatedAt),
         answeredCount,
         totalCount,
         state: this.state
       };
+
+      if (updateAccess) {
+        this._lastAccessedAt = now;
+      }
+
       saveSession(session);
       this.markSyncPending();
     } else {
@@ -1503,17 +1557,24 @@ const App = {
         return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
       };
 
+      const sourceFileHtml = s.sourceFileName
+        ? `<div class="session-item-source">📄 ${this.escapeHtml(s.sourceFileName)}</div>`
+        : '';
+
       item.innerHTML = `
         <div class="session-item-info">
           <div class="session-item-title">${this.escapeHtml(s.title)}${isActive ? ' (ativa)' : ''}</div>
+          ${sourceFileHtml}
           <div class="session-item-meta">
             <span>Criada: ${formatDate(s.createdAt)}</span>
-            <span>Último acesso: ${formatDate(s.lastAccessedAt)}</span>
+            <span>Última interação: ${formatDate(s.lastAccessedAt)}</span>
             <span class="session-progress-badge">Respondidas: ${s.answeredCount || 0}/${s.totalCount || 0}</span>
             <span class="session-size">${formatSize(s.sizeBytes)}</span>
           </div>
         </div>
         <div class="session-item-actions">
+          ${s.description ? '<button class="session-btn btn-session-desc" title="Ver descrição do quiz">📝</button>' : ''}
+          <button class="session-btn btn-session-edit" title="Editar título e descrição">✏️</button>
           <button class="session-btn btn-session-export" title="Exportar esta sessão">💾</button>
           <button class="session-btn btn-session-delete" title="Deletar esta sessão">🗑️</button>
         </div>
@@ -1522,6 +1583,21 @@ const App = {
       // Clique no item → carregar sessão
       item.querySelector('.session-item-info').addEventListener('click', () => {
         this.loadSessionFromList(s.sessionId);
+      });
+
+      // Ver descrição
+      const descBtn = item.querySelector('.btn-session-desc');
+      if (descBtn) {
+        descBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.showInfoModal(s.title, s.description);
+        });
+      }
+
+      // Editar sessão
+      item.querySelector('.btn-session-edit').addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.openEditSessionModal(s.sessionId, s.title, s.quizTitle, s.description);
       });
 
       // Exportar sessão individual
@@ -1555,6 +1631,9 @@ const App = {
 
     this.activeSessionId = session.sessionId;
     this._sessionCreatedAt = session.createdAt;
+    this._lastAccessedAt = session.lastAccessedAt || session.createdAt;
+    this._sessionTitle = session.title;
+    this._sourceFileName = session.sourceFileName || null;
     localStorage.setItem('activeSessionId', session.sessionId);
     this.elements.sessionListModal.classList.add('hidden');
 
@@ -1568,6 +1647,7 @@ const App = {
       }
       this.showQuizInterface();
       this.renderer.render(this.state);
+      this.applyCommentCollapseMode();
     } else if (this.state.quizJson) {
       this.renderFilterDescription();
       if (this.state.filters.step === 2) {
@@ -1758,7 +1838,8 @@ const App = {
       const response = await fetch(path);
       if (!response.ok) throw new Error('Arquivo não encontrado');
       const json = await response.json();
-      this.loadQuizJSON(json);
+      const fileName = path.split('/').pop();
+      this.loadQuizJSON(json, fileName);
     } catch (e) {
       alert('Erro ao baixar quiz: ' + e.message);
     }
@@ -2031,6 +2112,349 @@ const App = {
         this.extractFolderDescriptions(node.conteudo, newPath);
       }
     });
+  },
+
+  // ===== Editar Sessão =====
+  _editingSessionId: null,
+
+  openEditSessionModal(sessionId, sessionTitle, quizTitle, description) {
+    this._editingSessionId = sessionId;
+    this.elements.editSessionTitle.value = sessionTitle || '';
+    this.elements.editQuizTitle.value = quizTitle || '';
+    this.elements.editQuizDescription.value = description || '';
+    this.elements.editSessionModal.classList.remove('hidden');
+  },
+
+  async saveEditSession() {
+    const sessionId = this._editingSessionId;
+    if (!sessionId) return;
+
+    const session = await loadSession(sessionId);
+    if (!session) {
+      alert('Sessão não encontrada.');
+      return;
+    }
+
+    const newSessionTitle = this.elements.editSessionTitle.value.trim() || 'Quiz sem título';
+    const newQuizTitle = this.elements.editQuizTitle.value.trim() || '';
+    const newDescription = this.elements.editQuizDescription.value;
+
+    session.title = newSessionTitle;
+    if (session.state && session.state.quizJson) {
+      if (newQuizTitle) session.state.quizJson.titulo = newQuizTitle;
+      session.state.quizJson.descricao = newDescription;
+    }
+
+    await saveSession(session);
+
+    // Se a sessão editada é a ativa, atualiza os campos locais
+    if (sessionId === this.activeSessionId) {
+      this._sessionTitle = newSessionTitle;
+      if (this.state.quizJson) {
+        if (newQuizTitle) this.state.quizJson.titulo = newQuizTitle;
+        this.state.quizJson.descricao = newDescription;
+      }
+    }
+
+    this.elements.editSessionModal.classList.add('hidden');
+    this._editingSessionId = null;
+    await this.renderSessionList();
+  },
+
+  // ===== Configurações Visuais =====
+  getVisualSettings() {
+    return {
+      footerFixed: localStorage.getItem('vs_footerFixed') !== 'false',
+      commentMode: localStorage.getItem('vs_commentMode') || 'all',
+      persistManualOpen: localStorage.getItem('vs_persistManualOpen') === 'true'
+    };
+  },
+
+  initVisualSettings() {
+    const vs = this.getVisualSettings();
+
+    // Restaurar UI
+    this.elements.chkFooterFixed.checked = vs.footerFixed;
+    if (vs.commentMode === 'current') {
+      this.elements.commentModeCurrent.checked = true;
+      this.elements.commentSubOptions.classList.remove('hidden');
+    } else {
+      this.elements.commentModeAll.checked = true;
+    }
+    this.elements.chkPersistManualOpen.checked = vs.persistManualOpen;
+
+    // Aplicar footer
+    this.applyFooterMode(vs.footerFixed);
+
+    // Eventos
+    this.elements.btnVisualSettings.addEventListener('click', () => {
+      this.elements.visualSettingsPanel.classList.toggle('hidden');
+    });
+
+    this.elements.chkFooterFixed.addEventListener('change', (e) => {
+      localStorage.setItem('vs_footerFixed', e.target.checked);
+      this.applyFooterMode(e.target.checked);
+    });
+
+    this.elements.commentModeAll.addEventListener('change', () => {
+      localStorage.setItem('vs_commentMode', 'all');
+      this.elements.commentSubOptions.classList.add('hidden');
+      this.expandAllComments();
+    });
+
+    this.elements.commentModeCurrent.addEventListener('change', () => {
+      localStorage.setItem('vs_commentMode', 'current');
+      this.elements.commentSubOptions.classList.remove('hidden');
+    });
+
+    this.elements.chkPersistManualOpen.addEventListener('change', (e) => {
+      localStorage.setItem('vs_persistManualOpen', e.target.checked);
+    });
+
+    // Eventos do modal de editar sessão
+    this.elements.closeEditSession.addEventListener('click', () => {
+      this.elements.editSessionModal.classList.add('hidden');
+    });
+    this.elements.btnEditCancel.addEventListener('click', () => {
+      this.elements.editSessionModal.classList.add('hidden');
+    });
+    this.elements.btnEditSave.addEventListener('click', () => {
+      this.saveEditSession();
+    });
+    this.elements.editSessionModal.addEventListener('click', (e) => {
+      if (e.target === this.elements.editSessionModal) {
+        this.elements.editSessionModal.classList.add('hidden');
+      }
+    });
+  },
+
+  applyFooterMode(fixed) {
+    if (fixed) {
+      this.elements.footerBar.classList.remove('footer-inline');
+    } else {
+      this.elements.footerBar.classList.add('footer-inline');
+    }
+  },
+
+  // ===== Colapso de Comentários =====
+  handleToggleComments(qIdx, isOpen) {
+    if (isOpen) {
+      this._manuallyOpenedComments.add(qIdx);
+    } else {
+      this._manuallyOpenedComments.delete(qIdx);
+    }
+  },
+
+  applyCommentCollapseMode() {
+    const vs = this.getVisualSettings();
+    if (vs.commentMode === 'all') {
+      this.expandAllComments();
+      return;
+    }
+    // Modo "current": encontrar a última questão respondida
+    this.collapseAllExceptLast();
+  },
+
+  applyCommentCollapseModeAfterSubmit(justSubmittedIdx) {
+    const vs = this.getVisualSettings();
+    if (vs.commentMode !== 'current') return;
+
+    const cards = document.querySelectorAll('.question-card.submitted');
+    cards.forEach(card => {
+      const idx = parseInt(card.dataset.originalIdx, 10);
+      if (idx === justSubmittedIdx) {
+        // A questão recém-respondida fica aberta
+        card.classList.remove('comments-collapsed');
+        this.updateToggleButton(card, false);
+      } else {
+        // Se persistir abertos manualmente está ativo
+        if (vs.persistManualOpen && this._manuallyOpenedComments.has(idx)) {
+          return;
+        }
+        card.classList.add('comments-collapsed');
+        this.updateToggleButton(card, true);
+      }
+    });
+  },
+
+  collapseAllExceptLast() {
+    const vs = this.getVisualSettings();
+    const cards = document.querySelectorAll('.question-card.submitted');
+    if (cards.length === 0) return;
+
+    // Encontrar a última questão respondida na ordem visual
+    let lastSubmittedCard = null;
+    const qOrder = this.state.mappings.qOrder;
+    for (let i = qOrder.length - 1; i >= 0; i--) {
+      const idx = qOrder[i];
+      const ans = this.state.userAnswers[idx];
+      if (ans && ans.submitted && !this.state.forcedIndices.includes(idx)) {
+        lastSubmittedCard = document.querySelector(`.question-card[data-original-idx="${idx}"]`);
+        if (lastSubmittedCard) break;
+      }
+    }
+
+    cards.forEach(card => {
+      const idx = parseInt(card.dataset.originalIdx, 10);
+      if (card === lastSubmittedCard) {
+        card.classList.remove('comments-collapsed');
+        this.updateToggleButton(card, false);
+      } else {
+        if (vs.persistManualOpen && this._manuallyOpenedComments.has(idx)) {
+          return;
+        }
+        card.classList.add('comments-collapsed');
+        this.updateToggleButton(card, true);
+      }
+    });
+  },
+
+  expandAllComments() {
+    document.querySelectorAll('.question-card.submitted.comments-collapsed').forEach(card => {
+      card.classList.remove('comments-collapsed');
+      this.updateToggleButton(card, false);
+    });
+  },
+
+  collapseAllComments() {
+    document.querySelectorAll('.question-card.submitted').forEach(card => {
+      card.classList.add('comments-collapsed');
+      this.updateToggleButton(card, true);
+    });
+  },
+
+  toggleAllComments() {
+    const anyVisible = document.querySelector('.question-card.submitted:not(.comments-collapsed) .general-comment, .question-card.submitted:not(.comments-collapsed) .specific-comment');
+    if (anyVisible) {
+      this.collapseAllComments();
+    } else {
+      this.expandAllComments();
+    }
+  },
+
+  updateToggleButton(card, collapsed) {
+    const btn = card.querySelector('.btn-toggle-comments');
+    if (btn) {
+      btn.textContent = collapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+    }
+  },
+
+  // ===== Atalho Ctrl+B e toque triplo com 3 dedos =====
+  setupCommentShortcuts() {
+    // Ctrl+B
+    document.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.key === 'b') {
+        e.preventDefault();
+        this.toggleAllComments();
+      }
+    });
+
+    // Triple tap com 3 dedos simultâneos
+    let tripleTapCount = 0;
+    let tripleTapTimer = null;
+
+    document.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 3) {
+        tripleTapCount++;
+        clearTimeout(tripleTapTimer);
+        tripleTapTimer = setTimeout(() => {
+          tripleTapCount = 0;
+        }, 800);
+
+        if (tripleTapCount >= 3) {
+          e.preventDefault();
+          tripleTapCount = 0;
+          clearTimeout(tripleTapTimer);
+          this.toggleAllComments();
+        }
+      } else {
+        tripleTapCount = 0;
+        clearTimeout(tripleTapTimer);
+      }
+    }, { passive: false });
+  },
+
+  // ===== Botão Próxima Não Respondida =====
+  setupNextUnansweredButton() {
+    const btn = this.elements.btnNextUnanswered;
+    let scrollTimeout = null;
+
+    window.addEventListener('scroll', () => {
+      if (!this.state.mappings.qOrder || this.state.mappings.qOrder.length === 0) return;
+
+      const hasUnanswered = this.state.mappings.qOrder.some(idx => {
+        if (this.state.forcedIndices.includes(idx)) return false;
+        const ans = this.state.userAnswers[idx];
+        return !ans || !ans.submitted;
+      });
+
+      if (!hasUnanswered) {
+        btn.classList.remove('visible');
+        btn.classList.add('hidden');
+        return;
+      }
+
+      btn.classList.remove('hidden');
+      btn.classList.add('visible');
+
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        btn.classList.remove('visible');
+        setTimeout(() => {
+          if (!btn.classList.contains('visible')) {
+            btn.classList.add('hidden');
+          }
+        }, 300);
+      }, 3000);
+    });
+
+    btn.addEventListener('click', () => {
+      this.scrollToNextUnanswered();
+    });
+  },
+
+  scrollToNextUnanswered() {
+    const scrollY = window.scrollY + window.innerHeight / 3;
+    const qOrder = this.state.mappings.qOrder;
+    let targetCard = null;
+
+    // Procurar a próxima não respondida a partir da posição do scroll
+    for (const idx of qOrder) {
+      if (this.state.forcedIndices.includes(idx)) continue;
+      const ans = this.state.userAnswers[idx];
+      if (ans && ans.submitted) continue;
+
+      const card = document.querySelector(`.question-card[data-original-idx="${idx}"]`);
+      if (card && card.getBoundingClientRect().top + window.scrollY > scrollY) {
+        targetCard = card;
+        break;
+      }
+    }
+
+    // Se não achou à frente, voltar ao início (cíclico)
+    if (!targetCard) {
+      for (const idx of qOrder) {
+        if (this.state.forcedIndices.includes(idx)) continue;
+        const ans = this.state.userAnswers[idx];
+        if (ans && ans.submitted) continue;
+
+        const card = document.querySelector(`.question-card[data-original-idx="${idx}"]`);
+        if (card) {
+          targetCard = card;
+          break;
+        }
+      }
+    }
+
+    if (targetCard) {
+      targetCard.scrollIntoView({ behavior: 'instant', block: 'center' });
+      // Flash visual para indicar a questão
+      targetCard.style.transition = 'box-shadow 0.3s';
+      targetCard.style.boxShadow = '0 0 0 3px var(--primary)';
+      setTimeout(() => {
+        targetCard.style.boxShadow = '';
+      }, 1500);
+    }
   }
 };
 
