@@ -202,6 +202,7 @@ const App = {
   },
 
   renderer: null,
+  _escritaTextSaveTimer: null,
 
   async init() {
     this.renderer = new QuizRenderer('quizContainer', 'footerBar', {
@@ -210,7 +211,13 @@ const App = {
       onSubmit: (qIdx) => this.submitQuestion(qIdx),
       onEliminate: (qIdx, altIdx) => this.handleElimination(qIdx, altIdx),
       onRetry: () => this.retryIncorrect(),
-      onToggleComments: (qIdx, isOpen) => this.handleToggleComments(qIdx, isOpen)
+      onToggleComments: (qIdx, isOpen) => this.handleToggleComments(qIdx, isOpen),
+      onEscritaTextChange: (qIdx, text, itemIdx) =>
+        this.handleEscritaTextChange(qIdx, text, itemIdx),
+      onEscritaItemSubmit: (qIdx, itemIdx, text) =>
+        this.handleEscritaItemSubmit(qIdx, itemIdx, text),
+      onSelfEval: (qIdx, score, itemIdx) =>
+        this.handleSelfEval(qIdx, score, itemIdx)
     });
 
     this.bindEvents();
@@ -605,11 +612,13 @@ const App = {
     this.save();
   },
 
-  // --- Lógica de checagem de acerto e pontuação (ME / VF / CH) ---
+  // --- Lógica de checagem de acerto e pontuação (ME / VF / CH / ESCRITA) ---
   /**
    * Retorna { hits, total } para a questão originalQIdx.
    * - ME / VF: total = 1, hits = 1 ou 0
-   * - CH: total = número de assertivas exibidas, hits = quantas foram julgadas corretamente
+   * - CH: total = número de assertivas, hits = quantas julgadas corretamente
+   * - ESCRITA simples: total = 10, hits = selfEval (0–10)
+   * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
    */
   computeQuestionScore(originalQIdx) {
     const qData = this.state.questions[originalQIdx];
@@ -617,6 +626,26 @@ const App = {
     if (!ans || !ans.submitted) return { hits: 0, total: 0 };
 
     const tipo = (qData.tipo || '').toUpperCase();
+
+    if (tipo === 'ESCRITA') {
+      const isItemsType = qData.subtipo === 'itens' ||
+        (Array.isArray(qData.itens) && qData.itens.length > 0);
+
+      if (!isItemsType) {
+        const selfEval = typeof ans.selfEval === 'number' ? ans.selfEval : 0;
+        return { hits: selfEval, total: 10 };
+      } else {
+        const numItems = (qData.itens || []).length;
+        if (numItems === 0) return { hits: 0, total: 0 };
+        const items = Array.isArray(ans.items) ? ans.items : [];
+        let sumEvals = 0;
+        for (let i = 0; i < numItems; i++) {
+          const item = items[i] || {};
+          sumEvals += typeof item.selfEval === 'number' ? item.selfEval : 0;
+        }
+        return { hits: sumEvals, total: numItems * 10 };
+      }
+    }
 
     if (tipo === 'CH') {
       const assertivas = Array.isArray(qData.assertivas) ? qData.assertivas : [];
@@ -1204,15 +1233,31 @@ const App = {
     if (!confirm('Tem certeza que deseja entregar todas as questões?')) return;
 
     this.state.mappings.qOrder.forEach((idx) => {
-      if (this.state.forcedIndices.includes(idx)) return;
+      if (this.state.forcedIndices && this.state.forcedIndices.includes(idx)) return;
+
+      const qData = this.state.questions[idx];
+      const tipo = (qData.tipo || '').toUpperCase();
 
       if (!this.state.userAnswers[idx]) {
-        this.state.userAnswers[idx] = {
-          submitted: true
-        };
-      } else {
-        this.state.userAnswers[idx].submitted = true;
+        this.state.userAnswers[idx] = {};
       }
+      const ans = this.state.userAnswers[idx];
+
+      if (tipo === 'ESCRITA' &&
+          (qData.subtipo === 'itens' || (Array.isArray(qData.itens) && qData.itens.length > 0))) {
+        // ESCRITA com itens: submete cada item individualmente
+        const numItems = (qData.itens || []).length;
+        if (!Array.isArray(ans.items)) {
+          ans.items = Array.from({ length: numItems }, () => ({}));
+        }
+        while (ans.items.length < numItems) ans.items.push({});
+        ans.items.forEach((_, i) => {
+          if (!ans.items[i]) ans.items[i] = {};
+          ans.items[i].submitted = true;
+        });
+      }
+
+      ans.submitted = true;
     });
 
     this.save(true);
@@ -1226,8 +1271,111 @@ const App = {
     }
 
     setTimeout(() => {
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    }, 100);
+      const resultSection = document.querySelector('.result-section');
+      if (resultSection) {
+        resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      }
+    }, 150);
+  },
+
+  // ===================== ESCRITA handlers =====================
+
+  handleEscritaTextChange(qIdx, text, itemIdx) {
+    if (!this.state.userAnswers[qIdx]) {
+      this.state.userAnswers[qIdx] = {};
+    }
+    const ans = this.state.userAnswers[qIdx];
+
+    if (itemIdx === null || itemIdx === undefined) {
+      ans.text = text;
+    } else {
+      const qData = this.state.questions[qIdx];
+      const numItems = (qData.itens || []).length;
+      if (!Array.isArray(ans.items)) {
+        ans.items = Array.from({ length: numItems }, () => ({}));
+      }
+      while (ans.items.length <= itemIdx) ans.items.push({});
+      if (!ans.items[itemIdx]) ans.items[itemIdx] = {};
+      ans.items[itemIdx].text = text;
+    }
+
+    // Salva no IndexedDB com debounce curto para não perder dados em reload rápido
+    clearTimeout(this._escritaTextSaveTimer);
+    this._escritaTextSaveTimer = setTimeout(() => this.save(false), 400);
+  },
+
+  handleEscritaItemSubmit(qIdx, itemIdx, text) {
+    if (this.state.forcedIndices && this.state.forcedIndices.includes(qIdx)) return;
+
+    const qData = this.state.questions[qIdx];
+    if (!this.state.userAnswers[qIdx]) {
+      this.state.userAnswers[qIdx] = {};
+    }
+    const ans = this.state.userAnswers[qIdx];
+
+    if (itemIdx === null || itemIdx === undefined) {
+      // ESCRITA simples
+      ans.text = text;
+      ans.submitted = true;
+    } else {
+      // ESCRITA com itens
+      const numItems = (qData.itens || []).length;
+      if (!Array.isArray(ans.items)) {
+        ans.items = Array.from({ length: numItems }, () => ({}));
+      }
+      while (ans.items.length <= itemIdx) ans.items.push({});
+      if (!ans.items[itemIdx]) ans.items[itemIdx] = {};
+      ans.items[itemIdx].text = text;
+      ans.items[itemIdx].submitted = true;
+
+      // Verifica se todos os itens foram enviados
+      const allItemsDone = ans.items.length >= numItems &&
+        qData.itens.every((_, i) => ans.items[i] && ans.items[i].submitted);
+      if (allItemsDone) ans.submitted = true;
+    }
+
+    this.save(true);
+
+    // Re-renderiza o card da questão
+    const visualIdx = this.state.mappings.qOrder.indexOf(qIdx);
+    const card = document.querySelector(`.question-card[data-original-idx="${qIdx}"]`);
+    if (card) {
+      const newCard = this.renderer.createQuestionCard(
+        this.state.questions[qIdx], qIdx, visualIdx, this.state
+      );
+      card.replaceWith(newCard);
+    }
+
+    this.renderer.updateFooter(this.state);
+  },
+
+  handleSelfEval(qIdx, score, itemIdx) {
+    if (!this.state.userAnswers[qIdx]) return;
+    const ans = this.state.userAnswers[qIdx];
+
+    if (itemIdx === null || itemIdx === undefined) {
+      ans.selfEval = score;
+    } else {
+      if (!Array.isArray(ans.items) || !ans.items[itemIdx]) return;
+      ans.items[itemIdx].selfEval = score;
+    }
+
+    this.save(false);
+
+    // Re-renderiza o card para atualizar botão selecionado
+    const visualIdx = this.state.mappings.qOrder.indexOf(qIdx);
+    const card = document.querySelector(`.question-card[data-original-idx="${qIdx}"]`);
+    if (card) {
+      const newCard = this.renderer.createQuestionCard(
+        this.state.questions[qIdx], qIdx, visualIdx, this.state
+      );
+      card.replaceWith(newCard);
+    }
+
+    // Atualiza pontuação em tempo real
+    this.renderer.updateFooter(this.state);
   },
 
   async exportBackup() {

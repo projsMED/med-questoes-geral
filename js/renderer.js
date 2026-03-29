@@ -133,8 +133,10 @@ export class QuizRenderer {
 
     const tipo = (qData.tipo || '').toUpperCase();
     const isCH = tipo === 'CH';
+    const isEscrita = tipo === 'ESCRITA';
 
     if (tipo === 'VF') wrapper.classList.add('type-vf');
+    if (tipo === 'ESCRITA') wrapper.classList.add('type-escrita');
     wrapper.dataset.originalIdx = originalIdx;
 
     const userAnswer = state.userAnswers[originalIdx];
@@ -199,6 +201,49 @@ export class QuizRenderer {
       </div>
     `;
 
+    // ===================== ESCRITA =====================
+    if (isEscrita) {
+      const escritaContent = this._createEscritaContent(
+        qData, originalIdx, state, isForced, isSubmitted, userAnswer
+      );
+      wrapper.appendChild(escritaContent);
+
+      // Comentário geral após envio de todas as partes
+      if (isSubmitted || isForced) {
+        const genCommentTxt = formatText(
+          qData.comentario_geral,
+          originalIdx,
+          state.mappings.altOrder
+        );
+        if (genCommentTxt) {
+          const genDiv = document.createElement('div');
+          genDiv.className = 'general-comment';
+          genDiv.innerHTML = `<strong>Comentário Geral:</strong><br>${genCommentTxt}`;
+          wrapper.appendChild(genDiv);
+
+          if (!isForced) {
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'btn-toggle-comments';
+            toggleBtn.type = 'button';
+            const isCollapsed = wrapper.classList.contains('comments-collapsed');
+            toggleBtn.textContent = isCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+            toggleBtn.addEventListener('click', () => {
+              wrapper.classList.toggle('comments-collapsed');
+              const nowCollapsed = wrapper.classList.contains('comments-collapsed');
+              toggleBtn.textContent = nowCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+              if (this.callbacks.onToggleComments) {
+                this.callbacks.onToggleComments(originalIdx, !nowCollapsed);
+              }
+            });
+            wrapper.appendChild(toggleBtn);
+          }
+        }
+      }
+
+      return wrapper;
+    }
+
+    // ===================== ME / VF / CH =====================
     const altList = document.createElement('div');
     altList.className = 'alternatives-list';
     const altMapping = state.mappings.altOrder[originalIdx] || [];
@@ -456,11 +501,218 @@ export class QuizRenderer {
     return wrapper;
   }
 
-  // Cálculo de pontuação por questão (ME / VF / CH)
+  // ===================== ESCRITA helpers =====================
+
+  _createEscritaContent(qData, originalIdx, state, isForced, isSubmitted, userAnswer) {
+    const isItemsType = qData.subtipo === 'itens' || (Array.isArray(qData.itens) && qData.itens.length > 0);
+    const container = document.createElement('div');
+    container.className = 'escrita-content';
+
+    if (isForced) {
+      // Questão de contexto: apenas indica que é escrita
+      const note = document.createElement('div');
+      note.className = 'escrita-forced-note';
+      note.textContent = isItemsType
+        ? `[Questão dissertativa com ${(qData.itens || []).length} itens]`
+        : '[Questão dissertativa]';
+      container.appendChild(note);
+      return container;
+    }
+
+    if (!isItemsType) {
+      // ---- ESCRITA SIMPLES ----
+      const savedText = (userAnswer && userAnswer.text) || '';
+
+      if (!isSubmitted) {
+        const textarea = this._createAutoTextarea(savedText, (val) => {
+          if (this.callbacks.onEscritaTextChange) {
+            this.callbacks.onEscritaTextChange(originalIdx, val, null);
+          }
+        });
+        container.appendChild(textarea);
+
+        const actionsDiv = document.createElement('div');
+        actionsDiv.className = 'action-bar';
+        const btn = document.createElement('button');
+        btn.className = 'btn btn-submit';
+        btn.innerText = 'Enviar Resposta';
+        btn.addEventListener('click', () => {
+          if (this.callbacks.onEscritaItemSubmit) {
+            this.callbacks.onEscritaItemSubmit(originalIdx, null, textarea.value);
+          }
+        });
+        actionsDiv.appendChild(btn);
+        container.appendChild(actionsDiv);
+      } else {
+        // Resposta enviada
+        const userTextDiv = document.createElement('div');
+        userTextDiv.className = 'escrita-submitted-text';
+        userTextDiv.innerHTML = `<strong>Sua resposta:</strong><br>${
+          savedText ? this._escapeAndBreak(savedText) : '<em>Sem resposta</em>'
+        }`;
+        container.appendChild(userTextDiv);
+
+        // Autoavaliação (entre resposta e gabarito)
+        const selfEvalVal = userAnswer && typeof userAnswer.selfEval === 'number'
+          ? userAnswer.selfEval : null;
+        container.appendChild(this._createSelfEvalSection(originalIdx, null, selfEvalVal));
+
+        // Gabarito
+        if (qData.gabarito) {
+          const gabDiv = document.createElement('div');
+          gabDiv.className = 'escrita-gabarito';
+          gabDiv.innerHTML = `<strong>Gabarito:</strong><br>${this._escapeAndBreak(qData.gabarito)}`;
+          container.appendChild(gabDiv);
+        }
+      }
+    } else {
+      // ---- ESCRITA COM ITENS ----
+      const ansItems = (userAnswer && Array.isArray(userAnswer.items)) ? userAnswer.items : [];
+
+      (qData.itens || []).forEach((item, itemIdx) => {
+        const letter = String.fromCharCode(65 + itemIdx);
+        const itemAns = ansItems[itemIdx] || {};
+        const itemSubmitted = itemAns.submitted === true;
+
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'escrita-item' + (itemSubmitted ? ' escrita-item-submitted' : '');
+
+        const itemHeader = document.createElement('div');
+        itemHeader.className = 'escrita-item-header';
+        itemHeader.innerHTML = `<strong>${letter})</strong> ${item.pergunta || ''}`;
+        itemDiv.appendChild(itemHeader);
+
+        if (!itemSubmitted) {
+          const savedItemText = itemAns.text || '';
+          const textarea = this._createAutoTextarea(savedItemText, (val) => {
+            if (this.callbacks.onEscritaTextChange) {
+              this.callbacks.onEscritaTextChange(originalIdx, val, itemIdx);
+            }
+          });
+          itemDiv.appendChild(textarea);
+
+          const actionsDiv = document.createElement('div');
+          actionsDiv.className = 'action-bar';
+          const btn = document.createElement('button');
+          btn.className = 'btn btn-submit';
+          btn.innerText = 'Enviar Resposta';
+          btn.addEventListener('click', () => {
+            if (this.callbacks.onEscritaItemSubmit) {
+              this.callbacks.onEscritaItemSubmit(originalIdx, itemIdx, textarea.value);
+            }
+          });
+          actionsDiv.appendChild(btn);
+          itemDiv.appendChild(actionsDiv);
+        } else {
+          const savedItemText = itemAns.text || '';
+          const userTextDiv = document.createElement('div');
+          userTextDiv.className = 'escrita-submitted-text';
+          userTextDiv.innerHTML = `<strong>Sua resposta:</strong><br>${
+            savedItemText ? this._escapeAndBreak(savedItemText) : '<em>Sem resposta</em>'
+          }`;
+          itemDiv.appendChild(userTextDiv);
+
+          // Autoavaliação
+          const selfEvalVal = typeof itemAns.selfEval === 'number' ? itemAns.selfEval : null;
+          itemDiv.appendChild(this._createSelfEvalSection(originalIdx, itemIdx, selfEvalVal));
+
+          // Gabarito do item
+          if (item.gabarito) {
+            const gabDiv = document.createElement('div');
+            gabDiv.className = 'escrita-gabarito';
+            gabDiv.innerHTML = `<strong>Gabarito:</strong><br>${this._escapeAndBreak(item.gabarito)}`;
+            itemDiv.appendChild(gabDiv);
+          }
+
+          // Comentário específico do item (opcional)
+          if (item.comentario) {
+            const cmtDiv = document.createElement('div');
+            cmtDiv.className = 'escrita-item-comentario';
+            cmtDiv.innerHTML = `<strong>Comentário:</strong><br>${item.comentario}`;
+            itemDiv.appendChild(cmtDiv);
+          }
+        }
+
+        container.appendChild(itemDiv);
+      });
+    }
+
+    return container;
+  }
+
+  _createAutoTextarea(initialValue, onChangeCallback) {
+    const textarea = document.createElement('textarea');
+    textarea.className = 'escrita-textarea';
+    textarea.rows = 4;
+    textarea.placeholder = 'Digite sua resposta aqui...';
+    textarea.value = initialValue;
+
+    const autoResize = () => {
+      textarea.style.height = 'auto';
+      const minH = parseInt(getComputedStyle(textarea).minHeight, 10) || 96;
+      textarea.style.height = Math.max(minH, textarea.scrollHeight) + 'px';
+    };
+
+    // Resize após inserção no DOM
+    requestAnimationFrame(autoResize);
+
+    textarea.addEventListener('input', () => {
+      autoResize();
+      if (onChangeCallback) onChangeCallback(textarea.value);
+    });
+
+    return textarea;
+  }
+
+  _createSelfEvalSection(qIdx, itemIdx, currentScore) {
+    const section = document.createElement('div');
+    section.className = 'self-eval-section';
+
+    const label = document.createElement('div');
+    label.className = 'self-eval-label';
+    label.textContent = 'Autoavaliação — compare com o gabarito e avalie de 0 a 10:';
+    section.appendChild(label);
+
+    const buttonsDiv = document.createElement('div');
+    buttonsDiv.className = 'self-eval-buttons';
+
+    for (let i = 0; i <= 10; i++) {
+      const btn = document.createElement('button');
+      btn.className = 'self-eval-btn' + (i === currentScore ? ' selected' : '');
+      btn.type = 'button';
+      btn.textContent = i;
+
+      const score = i; // capture
+      btn.addEventListener('click', () => {
+        if (this.callbacks.onSelfEval) {
+          this.callbacks.onSelfEval(qIdx, score, itemIdx);
+        }
+      });
+
+      buttonsDiv.appendChild(btn);
+    }
+
+    section.appendChild(buttonsDiv);
+    return section;
+  }
+
+  _escapeAndBreak(text) {
+    if (!text) return '';
+    return text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/\n/g, '<br>');
+  }
+
+  // ===================== Pontuação =====================
+
   /**
    * Retorna { hits, total } para a questão idx.
    * - ME / VF: total = 1, hits = 1 ou 0
-   * - CH: total = número de assertivas exibidas, hits = quantas foram julgadas corretamente
+   * - CH: total = número de assertivas, hits = quantas julgadas corretamente
+   * - ESCRITA simples: total = 10, hits = selfEval (0–10)
+   * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
    */
   computeQuestionScore(state, idx) {
     const qData = state.questions[idx];
@@ -468,6 +720,26 @@ export class QuizRenderer {
     if (!ans || !ans.submitted) return { hits: 0, total: 0 };
 
     const tipo = (qData.tipo || '').toUpperCase();
+
+    if (tipo === 'ESCRITA') {
+      const isItemsType = qData.subtipo === 'itens' ||
+        (Array.isArray(qData.itens) && qData.itens.length > 0);
+
+      if (!isItemsType) {
+        const selfEval = typeof ans.selfEval === 'number' ? ans.selfEval : 0;
+        return { hits: selfEval, total: 10 };
+      } else {
+        const numItems = (qData.itens || []).length;
+        if (numItems === 0) return { hits: 0, total: 0 };
+        const items = Array.isArray(ans.items) ? ans.items : [];
+        let sumEvals = 0;
+        for (let i = 0; i < numItems; i++) {
+          const item = items[i] || {};
+          sumEvals += typeof item.selfEval === 'number' ? item.selfEval : 0;
+        }
+        return { hits: sumEvals, total: numItems * 10 };
+      }
+    }
 
     if (tipo === 'CH') {
       const assertivas = Array.isArray(qData.assertivas) ? qData.assertivas : [];
@@ -488,6 +760,7 @@ export class QuizRenderer {
       return { hits, total };
     }
 
+    // ME / VF
     const gabaritoLetra = (qData.gabarito || '').trim().toUpperCase();
     if (!gabaritoLetra) return { hits: 0, total: 0 };
     const gabaritoIdx = gabaritoLetra.charCodeAt(0) - 65;
@@ -496,14 +769,27 @@ export class QuizRenderer {
   }
 
   updateFooter(state) {
-    let totalQuestions = 0;      // questões que contam nota (exceto forçadas)
+    let totalQuestions = 0;
     let allSubmitted = true;
-    let sumHits = 0;             // soma dos acertos (por questão, normalizados)
+    let sumHits = 0;
     let incorrectIndices = [];
+
+    // Rastreamento por tipo
+    const typeOrder = ['ME', 'VF', 'CH', 'ESCRITA'];
+    const typeLabels = {
+      ME: 'Múltipla Escolha',
+      VF: 'Verdadeiro ou Falso (simples)',
+      CH: 'Verdadeiro ou Falso (múltiplo)',
+      ESCRITA: 'Escrita'
+    };
+    const typeStats = {};
+    typeOrder.forEach((t) => { typeStats[t] = { sumScore: 0, count: 0 }; });
 
     state.mappings.qOrder.forEach((idx) => {
       if (state.forcedIndices && state.forcedIndices.includes(idx)) return;
 
+      const qData = state.questions[idx];
+      const tipo = (qData.tipo || '').toUpperCase();
       totalQuestions++;
 
       const ans = state.userAnswers[idx];
@@ -514,52 +800,84 @@ export class QuizRenderer {
 
       const { hits, total } = this.computeQuestionScore(state, idx);
       if (total > 0) {
-        const questionScore = hits / total; // 0..1
+        const questionScore = hits / total;
         sumHits += questionScore;
-        if (questionScore < 1) {
-          incorrectIndices.push(idx);
+        if (questionScore < 1) incorrectIndices.push(idx);
+        if (typeStats[tipo]) {
+          typeStats[tipo].sumScore += questionScore;
+          typeStats[tipo].count++;
         }
       } else {
-        // Se a questão não tiver base de correção, considera como 0
         incorrectIndices.push(idx);
+        if (typeStats[tipo]) {
+          typeStats[tipo].count++;
+        }
       }
     });
 
     if (totalQuestions === 0) {
       this.btnSubmitAll.style.display = 'none';
       this.scoreDisplay.style.display = 'none';
+      this._removeResultCard();
       return;
     }
 
     if (allSubmitted && totalQuestions > 0) {
       this.btnSubmitAll.style.display = 'none';
-      this.scoreDisplay.style.display = 'block';
-
-      const avgScore = sumHits / totalQuestions; // 0..1
-      const grade = avgScore * 10;
-
-      let html = `
-        Resultado: <span>${grade.toFixed(1)}</span> / 10 
-        <small style="color:#666; font-weight:normal; font-size:0.8em">
-          (média de ${avgScore.toFixed(2)} por questão)
-        </small>
-      `;
-
-      if (incorrectIndices.length > 0) {
-        html += `<button class="btn btn-sm btn-retry" id="btnRetryErrors">Repetir apenas questões que errou</button>`;
-      }
-
-      this.scoreDisplay.innerHTML = html;
-
-      const btnRetry = document.getElementById('btnRetryErrors');
-      if (btnRetry) {
-        btnRetry.addEventListener('click', () => {
-          this.callbacks.onRetry();
-        });
-      }
+      this.scoreDisplay.style.display = 'none';
+      this._renderResultCard(typeStats, typeOrder, typeLabels, sumHits, totalQuestions, incorrectIndices);
     } else {
       this.btnSubmitAll.style.display = 'block';
       this.scoreDisplay.style.display = 'none';
+      this._removeResultCard();
+    }
+  }
+
+  _removeResultCard() {
+    const existing = this.container.querySelector('.result-section');
+    if (existing) existing.remove();
+  }
+
+  _renderResultCard(typeStats, typeOrder, typeLabels, sumHits, totalQuestions, incorrectIndices) {
+    // Reutiliza card existente para evitar salto de scroll
+    let section = this.container.querySelector('.result-section');
+    if (!section) {
+      section = document.createElement('div');
+      section.className = 'result-section';
+      this.container.appendChild(section);
+    }
+
+    const fmt = (n, maxDec = 2) =>
+      (+n).toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: maxDec });
+    const fmtPct = (n) => fmt(n, 1);
+
+    const pct = totalQuestions > 0 ? (sumHits / totalQuestions * 100) : 0;
+
+    let html = '<div class="result-title">Resultado</div>';
+    html += `<div class="result-row result-general">`;
+    html += `<strong>Pontuação geral:</strong> ${fmt(sumHits)}/${totalQuestions} pontos | ${fmtPct(pct)}% de taxa de acerto`;
+    html += `</div>`;
+
+    typeOrder.forEach((tipo) => {
+      const stat = typeStats[tipo];
+      if (!stat || stat.count === 0) return;
+      const typePct = stat.count > 0 ? (stat.sumScore / stat.count * 100) : 0;
+      html += `<div class="result-row">`;
+      html += `${typeLabels[tipo]}: ${fmt(stat.sumScore)}/${stat.count} pontos | ${fmtPct(typePct)}% de taxa de acerto`;
+      html += `</div>`;
+    });
+
+    if (incorrectIndices.length > 0) {
+      html += `<div class="result-actions">`;
+      html += `<button class="btn btn-sm btn-retry" id="btnRetryErrors">Repetir apenas questões que errou</button>`;
+      html += `</div>`;
+    }
+
+    section.innerHTML = html;
+
+    const btnRetry = section.querySelector('#btnRetryErrors');
+    if (btnRetry) {
+      btnRetry.addEventListener('click', () => this.callbacks.onRetry());
     }
   }
 }

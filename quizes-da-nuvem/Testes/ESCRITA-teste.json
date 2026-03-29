@@ -1,0 +1,47 @@
+{
+  "titulo": "Teste – Questões Escritas",
+  "id_quiz": "escrita_teste_v1",
+  "descricao": "Quiz de exemplo com questões do tipo ESCRITA: duas simples e uma com itens A, B e C.",
+  "conteudo": [
+    {
+      "tipo": "ESCRITA",
+      "id": "esf_1",
+      "tags": ["Fisiologia", "Cardiovascular"],
+      "dificuldade": 2,
+      "enunciado": "Explique o que é pressão arterial e quais os dois componentes que a determinam.",
+      "gabarito": "Pressão arterial é a força exercida pelo sangue contra a parede das artérias durante a circulação.\n\nSeus dois componentes principais são:\n1. Débito cardíaco (DC): volume de sangue bombeado pelo coração por minuto (frequência cardíaca × volume sistólico).\n2. Resistência vascular periférica (RVP): oposição ao fluxo sanguíneo oferecida pelos vasos, principalmente as arteríolas.\n\nA relação é expressa por: PA = DC × RVP."
+    },
+    {
+      "tipo": "ESCRITA",
+      "id": "esf_2",
+      "tags": ["Farmacologia", "Antibióticos"],
+      "dificuldade": 3,
+      "enunciado": "Descreva o mecanismo de ação das penicilinas e explique por que bactérias resistentes com betalactamase conseguem inativá-las.",
+      "gabarito": "Mecanismo de ação: As penicilinas são antibióticos betalactâmicos que inibem a síntese da parede celular bacteriana. Elas se ligam covalentemente às proteínas ligadoras de penicilina (PBPs), que são transpeptidases responsáveis pela formação das ligações cruzadas do peptidoglicano. Sem essas ligações, a parede celular fica frágil e a bactéria sofre lise osmótica.\n\nResistência por betalactamase: Algumas bactérias produzem enzimas chamadas betalactamases que hidrolisam o anel betalactâmico da molécula de penicilina, abrindo-o e tornando o antibiótico inativo antes que ele possa se ligar às PBPs. Para contornar isso, associa-se a penicilina a inibidores de betalactamase como ácido clavulânico, sulbactam ou tazobactam.",
+      "comentario_geral": "Lembrete: resistência por PBPs alteradas (como no S. aureus MRSA) é diferente de resistência por betalactamase — inibidores de betalactamase não resolvem o MRSA."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "itens",
+      "id": "esf_3",
+      "tags": ["Pneumologia", "Clínica Médica"],
+      "dificuldade": 3,
+      "enunciado": "Sobre a pneumonia adquirida na comunidade (PAC), responda os itens a seguir.",
+      "itens": [
+        {
+          "pergunta": "Quais os principais agentes etiológicos da PAC em adultos imunocompetentes?",
+          "gabarito": "Os principais agentes são:\n- Streptococcus pneumoniae (pneumococo) — o mais comum em todas as faixas etárias\n- Mycoplasma pneumoniae — comum em jovens e adultos jovens (\"pneumonia atípica\")\n- Chlamydophila pneumoniae — similar ao Mycoplasma, curso subagudo\n- Haemophilus influenzae — especialmente em tabagistas e DPOC\n- Vírus respiratórios (influenza, SARS-CoV-2, VRS) — causa crescente\n- Legionella pneumophila — associada a sistemas de água contaminados, forma grave"
+        },
+        {
+          "pergunta": "Quais os critérios clínicos e laboratoriais que sugerem PAC grave e indicam internação em UTI?",
+          "gabarito": "Critérios maiores (qualquer um indica UTI):\n- Necessidade de ventilação mecânica\n- Choque séptico com necessidade de vasopressores\n\nCritérios menores (≥ 3 indicam considerar UTI):\n- Frequência respiratória ≥ 30 irpm\n- PaO2/FiO2 ≤ 250\n- Infiltrado multilobar\n- Confusão ou desorientação\n- Ureia ≥ 20 mg/dL\n- Leucopenia (< 4.000 células/mm³)\n- Trombocitopenia (< 100.000 plaquetas/mm³)\n- Hipotermia (< 36 °C)\n- Hipotensão necessitando reposição volêmica agressiva\n\n(Critérios de acordo com ATS/IDSA 2007)"
+        },
+        {
+          "pergunta": "Qual o tratamento empírico de primeira linha para PAC leve a moderada em paciente ambulatorial sem comorbidades?",
+          "gabarito": "Para pacientes ambulatoriais sem comorbidades e sem uso recente de antibióticos:\n\n1ª escolha: Amoxicilina 500 mg VO 8/8h por 5–7 dias\n  OU\nAzitromicina 500 mg/dia VO por 5 dias (se suspeita de agente atípico ou alergia à penicilina)\n\nSe suspeita de atípico + pneumococo: associação de amoxicilina + azitromicina ou uso de fluoroquinolona respiratória (levofloxacino 750 mg/dia ou moxifloxacino 400 mg/dia).\n\nObs.: Amoxicilina-clavulanato é preferido se houver comorbidades como DPOC, diabetes ou uso recente de antibióticos."
+        }
+      ],
+      "comentario_geral": "A PAC é uma das principais causas de internação hospitalar e morte por infecção. A estratificação de risco (ex.: PSI/PORT score ou escore CURB-65) orienta o local de tratamento (ambulatório, enfermaria ou UTI)."
+    }
+  ]
+}

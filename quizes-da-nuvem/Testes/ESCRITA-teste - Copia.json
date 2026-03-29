@@ -1,0 +1,31 @@
+{
+  "titulo": "Quiz gerado automaticamente",
+  "id_quiz": "cucn-fzmy-5fIj-i7X6",
+  "descricao": "",
+  "conteudo": [
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "itens",
+      "id": "EXhv-MCL6-HyGz-d0Wr",
+      "enunciado": "Responda sobre endocardite.",
+      "itens": [
+        {
+          "pergunta": "Quais os patógenos?",
+          "gabarito": "Os principais são Staphylococcus aureus...\nPode ter múltiplas linhas no gabarito.",
+          "comentario": "Comentário adicional sobre o item A (opcional)."
+        },
+        {
+          "pergunta": "Qual o tratamento farmacológico?",
+          "gabarito": "Depende do agente etiológico..."
+        }
+      ],
+      "comentario_geral": "A gentamicina em baixas doses...<br>Comentário geral da questão inteira (opcional)."
+    },
+    {
+      "tipo": "ESCRITA",
+      "id": "T7xs-pml5-CAoY-9tyu",
+      "enunciado": "O que é pericárdio?",
+      "gabarito": "O pericárdio é o saco fibrosseroso que envolve o\ncoração...\nPode continuar em múltiplas linhas aqui."
+    }
+  ]
+}

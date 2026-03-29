@@ -1,7 +1,7 @@
 /* ===== JS: js\parser.js ===== */
 /**
  * Transforma a árvore JSON em uma lista plana.
- * Identifica e processa GRUPO_JUNTAS, VARIANTES, VF e CH.
+ * Identifica e processa GRUPO_JUNTAS, VARIANTES, VF, CH e ESCRITA.
  * Adiciona rastreamento de pastas (path).
  */
 export function parseContent(nodes, path = []) {
@@ -81,6 +81,26 @@ export function parseContent(nodes, path = []) {
     } else if (tipo === 'ME') {
       // Adiciona o caminho à questão
       node._path = path.length > 0 ? path : ['Raiz'];
+      list.push(node);
+    }
+    // --- BLOCO ESCRITA (dissertativa simples ou com itens) ---
+    else if (tipo === 'ESCRITA') {
+      node._path = path.length > 0 ? path : ['Raiz'];
+
+      // Auto-detecta subtipo se não especificado
+      if (!node.subtipo) {
+        node.subtipo = Array.isArray(node.itens) && node.itens.length > 0 ? 'itens' : 'simples';
+      }
+
+      // Para itens, garante que cada item tenha pelo menos pergunta e gabarito
+      if (node.subtipo === 'itens' && Array.isArray(node.itens)) {
+        node.itens = node.itens.map((item, i) => ({
+          pergunta: item.pergunta || '',
+          gabarito: item.gabarito || '',
+          ...item
+        }));
+      }
+
       list.push(node);
     }
     // --- NOVO BLOCO VF ---

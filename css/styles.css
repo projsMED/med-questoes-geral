@@ -1346,3 +1346,197 @@ body {
   border-color: var(--primary);
 }
 
+/* ===== QUESTÃO ESCRITA ===== */
+
+.type-escrita {
+  border-left: 4px solid #6f42c1;
+}
+
+.escrita-content {
+  margin-top: 10px;
+}
+
+/* Textarea auto-crescente */
+.escrita-textarea {
+  display: block;
+  width: 100%;
+  min-height: 96px; /* ~4 linhas */
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.95em;
+  line-height: 1.5;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  resize: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #fff;
+  color: var(--text);
+  margin: 8px 0 4px;
+}
+.escrita-textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.12);
+}
+
+/* Resposta enviada (texto do usuário) */
+.escrita-submitted-text {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 10px 0 6px;
+  font-size: 0.95em;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Gabarito da questão escrita */
+.escrita-gabarito {
+  background: white;
+  border: 1px solid #b8dfc4;
+  border-left: 4px solid #28a745;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 6px 0 10px;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.escrita-gabarito strong {
+  color: #155724;
+}
+
+/* Seção de autoavaliação */
+.self-eval-section {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-left: 4px solid #ffc107;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 6px 0;
+}
+
+.self-eval-label {
+  font-size: 0.88em;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.self-eval-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.self-eval-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.88em;
+  font-weight: 600;
+  color: #333;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  padding: 0;
+  line-height: 1;
+}
+.self-eval-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: #e8f0fe;
+}
+.self-eval-btn.selected {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* Comentário específico de item (dentro de ESCRITA com itens) */
+.escrita-item-comentario {
+  background: #e8f4fd;
+  border: 1px solid #b6d9f5;
+  border-left: 4px solid #2196f3;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 6px 0 4px;
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #1a4a6b;
+}
+
+/* Itens de questão escrita com múltiplos sub-itens */
+.escrita-item {
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  background: #fafafa;
+}
+.escrita-item-submitted {
+  background: #f0f4f8;
+}
+
+.escrita-item-header {
+  font-size: 0.95em;
+  margin-bottom: 8px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Indicador para questão forçada de tipo escrita */
+.escrita-forced-note {
+  font-style: italic;
+  color: #888;
+  font-size: 0.9em;
+  padding: 8px 0;
+}
+
+/* ===== SEÇÃO DE RESULTADO ===== */
+
+.result-section {
+  background: white;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-top: 30px;
+  box-shadow: 0 2px 10px rgba(0, 123, 255, 0.1);
+}
+
+.result-title {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0ecff;
+}
+
+.result-row {
+  padding: 6px 0;
+  font-size: 0.95em;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+}
+.result-row:last-of-type {
+  border-bottom: none;
+}
+
+.result-general {
+  font-size: 1.05em;
+  padding: 8px 0 10px;
+  margin-bottom: 4px;
+  border-bottom: 2px solid #e0ecff !important;
+}
+
+.result-actions {
+  margin-top: 14px;
+}
+

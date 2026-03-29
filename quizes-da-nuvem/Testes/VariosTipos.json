@@ -1,5 +1,5 @@
 {
-  "titulo": "Simulado Misto – ME, VF e CH",
+  "titulo": "Simulado Misto – ME, VF, CH e ESCRITA",
   "id_quiz": "simulado_misto_16_v1",
   "descricao": "Simulado com questões de múltipla escolha (ME), Verdadeiro ou Falso (VF) e Checkbox (CH), incluindo pastas, grupos de questões e variantes.",
   "conteudo": [
@@ -477,6 +477,42 @@
             }
           ],
           "comentario_geral": "Promoção da saúde envolve políticas públicas, educação e ações de incentivo a comportamentos saudáveis."
+        },
+        {
+          "tipo": "ESCRITA",
+          "id": "esf_saude_simples",
+          "tags": ["Saúde Pública", "Epidemiologia"],
+          "dificuldade": 3,
+          "enunciado": "Explique o conceito de promoção da saúde segundo a Carta de Ottawa (1986) e cite dois exemplos de ações de promoção da saúde.",
+          "gabarito": "A promoção da saúde é o processo de capacitação da comunidade para atuar na melhoria da qualidade de vida e saúde, incluindo maior participação no controle desse processo.\n\nExemplos de ações:\n1. Políticas públicas saudáveis (ex: tributação de tabaco e álcool, regulação de alimentos ultraprocessados).\n2. Criação de ambientes favoráveis à saúde (ex: ciclovias, parques, saneamento básico).",
+          "comentario_geral": "A Carta de Ottawa é o documento-referência da promoção da saúde. Foram definidos 5 campos de ação: elaborar políticas públicas saudáveis, criar ambientes favoráveis à saúde, reforçar a ação comunitária, desenvolver habilidades pessoais e reorientar os serviços de saúde."
+        },
+        {
+          "tipo": "ESCRITA",
+          "subtipo": "itens",
+          "id": "esf_endocardite_itens",
+          "tags": ["Clínica Médica", "Infectologia", "Cardiologia"],
+          "dificuldade": 4,
+          "enunciado": "Sobre a endocardite infecciosa, responda as questões a seguir.",
+          "itens": [
+            {
+              "pergunta": "Quais os principais agentes etiológicos da endocardite infecciosa?",
+              "gabarito": "Os principais agentes são:\n- Streptococcus viridans (mais comum em valvas nativas, especialmente após procedimentos odontológicos)\n- Staphylococcus aureus (mais comum em usuários de drogas intravenosas e em próteses valvares)\n- Enterococcus spp. (associado a manipulações do trato gastrointestinal ou genitourinário)\n- Staphylococcus epidermidis (principalmente em próteses valvares precoces)"
+            },
+            {
+              "pergunta": "Quais as principais manifestações clínicas da endocardite infecciosa?",
+              "gabarito": "As manifestações incluem:\n- Febre (mais comum, presente em ~90% dos casos)\n- Sopro cardíaco novo ou mudança em sopro preexistente\n- Fenômenos embólicos (AVC isquêmico, embolia pulmonar, infartos esplênicos)\n- Manifestações imunológicas: nódulos de Osler, manchas de Roth, lesões de Janeway, fenômeno de glomerulonefrite\n- Esplenomegalia\n- Petéquias"
+            },
+            {
+              "pergunta": "Qual o tratamento farmacológico de primeira linha para endocardite por Streptococcus viridans sensível à penicilina?",
+              "gabarito": "O tratamento de primeira linha é:\n- Penicilina cristalina 12–18 milhões UI/dia IV em doses fracionadas por 4 semanas\n  OU\n- Ceftriaxona 2 g/dia IV por 4 semanas\n\nPode-se associar gentamicina por 2 semanas para reduzir a duração do tratamento (esquema de 2 semanas com penicilina + gentamicina em casos selecionados de baixo risco)."
+            },
+            {
+              "pergunta": "Em quais situações está indicada a profilaxia da endocardite infecciosa?",
+              "gabarito": "A profilaxia é indicada em pacientes de alto risco submetidos a procedimentos de risco:\n\nPacientes de alto risco:\n- Portadores de prótese valvar cardíaca\n- Endocardite prévia\n- Cardiopatia congênita cianótica não corrigida\n- Transplantados cardíacos com valvopatia\n\nProcedimentos: procedimentos odontológicos que manipulam gengiva ou região periapical dos dentes.\n\nEsquema: Amoxicilina 2 g VO 30–60 min antes do procedimento (ou ampicilina IV se não puder usar VO; clindamicina para alérgicos à penicilina)."
+            }
+          ],
+          "comentario_geral": "A endocardite infecciosa é uma condição grave com mortalidade significativa. O diagnóstico é feito pelos critérios de Duke modificados. A ecocardiografia é fundamental para o diagnóstico e acompanhamento."
         }
       ]
     }
