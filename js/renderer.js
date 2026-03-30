@@ -561,7 +561,7 @@ export class QuizRenderer {
         if (qData.gabarito) {
           const gabDiv = document.createElement('div');
           gabDiv.className = 'escrita-gabarito';
-          gabDiv.innerHTML = `<strong>Gabarito:</strong><br>${this._escapeAndBreak(qData.gabarito)}`;
+          gabDiv.innerHTML = `<strong>Gabarito:</strong><br>${this._htmlWithBreaks(qData.gabarito)}`;
           container.appendChild(gabDiv);
         }
       }
@@ -620,7 +620,7 @@ export class QuizRenderer {
           if (item.gabarito) {
             const gabDiv = document.createElement('div');
             gabDiv.className = 'escrita-gabarito';
-            gabDiv.innerHTML = `<strong>Gabarito:</strong><br>${this._escapeAndBreak(item.gabarito)}`;
+            gabDiv.innerHTML = `<strong>Gabarito:</strong><br>${this._htmlWithBreaks(item.gabarito)}`;
             itemDiv.appendChild(gabDiv);
           }
 
@@ -703,6 +703,11 @@ export class QuizRenderer {
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/\n/g, '<br>');
+  }
+
+  _htmlWithBreaks(text) {
+    if (!text) return '';
+    return text.replace(/\n/g, '<br>');
   }
 
   // ===================== Pontuação =====================

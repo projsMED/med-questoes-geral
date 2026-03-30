@@ -16,7 +16,9 @@
   --group-header-color: #2c3e50;
   --highlight-blue: #0056b3;
 }
-
+li::marker {
+  font-weight: bold !important;
+}
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   background-color: var(--bg);
