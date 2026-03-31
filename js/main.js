@@ -5,7 +5,7 @@ import {
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
 } from './store.js';
-import { parseContent } from './parser.js';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js';
 import { shuffleArray, difficultyMap } from './utils.js';
 import { QuizRenderer } from './renderer.js';
 
@@ -164,6 +164,7 @@ const App = {
     commentModeCurrent: document.getElementById('commentModeCurrent'),
     commentSubOptions: document.getElementById('commentSubOptions'),
     chkPersistManualOpen: document.getElementById('chkPersistManualOpen'),
+    chkVfStacked: document.getElementById('chkVfStacked'),
 
     // Próxima não respondida
     btnNextUnanswered: document.getElementById('btnNextUnanswered'),
@@ -217,7 +218,9 @@ const App = {
       onEscritaItemSubmit: (qIdx, itemIdx, text) =>
         this.handleEscritaItemSubmit(qIdx, itemIdx, text),
       onSelfEval: (qIdx, score, itemIdx) =>
-        this.handleSelfEval(qIdx, score, itemIdx)
+        this.handleSelfEval(qIdx, score, itemIdx),
+      onMarkWords: (qIdx, markKey, wordIndices) =>
+        this.handleMarkWords(qIdx, markKey, wordIndices)
     });
 
     this.bindEvents();
@@ -652,15 +655,13 @@ const App = {
       const total = assertivas.length;
       if (total === 0) return { hits: 0, total: 0 };
 
-      const selected = Array.isArray(ans.selectedOriginalIdxs)
-        ? ans.selectedOriginalIdxs
-        : [];
+      const answers = ans.assertivaAnswers || {};
 
       let hits = 0;
       assertivas.forEach((ass, idx) => {
-        const shouldCheck = !!ass.is_correct;
-        const isChecked = selected.includes(idx);
-        if (shouldCheck === isChecked) hits++;
+        const isCorrect = !!ass.is_correct;
+        const userSaidTrue = answers[idx];
+        if (userSaidTrue !== undefined && userSaidTrue === isCorrect) hits++;
       });
 
       return { hits, total };
@@ -938,6 +939,8 @@ const App = {
 
     this.state.userAnswers = {};
     this.state.eliminatedAlts = {};
+    reshuffleVariants(this.state.questions);
+    reshuffleChVariants(this.state.questions);
     this.generateMappings();
     this.renderer.render(this.state);
     this.save();
@@ -1114,17 +1117,10 @@ const App = {
     if (ans.submitted) return;
 
     if (tipo === 'CH' && isCheckbox) {
-      if (!Array.isArray(ans.selectedOriginalIdxs)) {
-        ans.selectedOriginalIdxs = [];
+      if (!ans.assertivaAnswers) {
+        ans.assertivaAnswers = {};
       }
-      const arr = ans.selectedOriginalIdxs;
-      const pos = arr.indexOf(originalAltIdx);
-
-      if (checked) {
-        if (pos === -1) arr.push(originalAltIdx);
-      } else if (pos > -1) {
-        arr.splice(pos, 1);
-      }
+      ans.assertivaAnswers[originalAltIdx] = checked; // true = V, false = F
     } else {
       // ME / VF – uma única alternativa
       ans.selectedOriginalIdx = originalAltIdx;
@@ -1135,18 +1131,21 @@ const App = {
     );
     if (card) {
       if (tipo === 'CH') {
-        const selectedArr = Array.isArray(ans.selectedOriginalIdxs)
-          ? ans.selectedOriginalIdxs
-          : [];
-        card.querySelectorAll('.alt-label').forEach((label) => {
-          const input = label.querySelector('input');
-          if (!input) return;
-          const val = parseInt(input.value, 10);
-          if (selectedArr.includes(val)) {
-            label.classList.add('selected');
-          } else {
-            label.classList.remove('selected');
-          }
+        const answers = ans.assertivaAnswers || {};
+        // Atualiza visual dos botões V/F e do label da assertiva
+        card.querySelectorAll('.ch-vf-wrapper').forEach((wrapper) => {
+          const radioV = wrapper.querySelector('input[value="V"]');
+          if (!radioV) return;
+          const assIdx = parseInt(radioV.name.split('_ass')[1], 10);
+          const choice = answers[assIdx];
+
+          const btnV = wrapper.querySelector('.ch-vf-v');
+          const btnF = wrapper.querySelector('.ch-vf-f');
+          const label = wrapper.querySelector('.ch-assertiva-label');
+
+          if (btnV) btnV.classList.toggle('selected', choice === true);
+          if (btnF) btnF.classList.toggle('selected', choice === false);
+          if (label) label.classList.toggle('selected', choice !== undefined);
         });
       } else {
         card.querySelectorAll('.alt-label').forEach((l) =>
@@ -1200,6 +1199,34 @@ const App = {
       );
       card.replaceWith(newCard);
     }
+  },
+
+  handleMarkWords(qIdx, markKey, wordIndices) {
+    if (!this.state.userAnswers[qIdx]) {
+      this.state.userAnswers[qIdx] = {};
+    }
+    const ans = this.state.userAnswers[qIdx];
+    const tipo = (this.state.questions[qIdx].tipo || '').toUpperCase();
+
+    if (tipo === 'VF') {
+      // VF: markedWords é um array simples (só enunciado)
+      if (wordIndices.length > 0) {
+        ans.markedWords = wordIndices;
+      } else {
+        delete ans.markedWords;
+      }
+    } else {
+      // CH: markedWords é objeto { assIdx: [...] }
+      if (!ans.markedWords) ans.markedWords = {};
+      if (wordIndices.length > 0) {
+        ans.markedWords[markKey] = wordIndices;
+      } else {
+        delete ans.markedWords[markKey];
+      }
+      if (Object.keys(ans.markedWords).length === 0) delete ans.markedWords;
+    }
+
+    this.save(true);
   },
 
   submitQuestion(originalQIdx) {
@@ -2566,7 +2593,8 @@ const App = {
     return {
       footerFixed: localStorage.getItem('vs_footerFixed') !== 'false',
       commentMode: localStorage.getItem('vs_commentMode') || 'all',
-      persistManualOpen: localStorage.getItem('vs_persistManualOpen') === 'true'
+      persistManualOpen: localStorage.getItem('vs_persistManualOpen') === 'true',
+      vfStacked: localStorage.getItem('vs_vfStacked') === 'true'
     };
   },
 
@@ -2582,9 +2610,11 @@ const App = {
       this.elements.commentModeAll.checked = true;
     }
     this.elements.chkPersistManualOpen.checked = vs.persistManualOpen;
+    this.elements.chkVfStacked.checked = vs.vfStacked;
 
-    // Aplicar footer
+    // Aplicar footer e VF stacked
     this.applyFooterMode(vs.footerFixed);
+    this.applyVfStacked(vs.vfStacked);
 
     // Eventos
     this.elements.btnVisualSettings.addEventListener('click', () => {
@@ -2611,6 +2641,11 @@ const App = {
       localStorage.setItem('vs_persistManualOpen', e.target.checked);
     });
 
+    this.elements.chkVfStacked.addEventListener('change', (e) => {
+      localStorage.setItem('vs_vfStacked', e.target.checked);
+      this.applyVfStacked(e.target.checked);
+    });
+
     // Eventos do modal de editar sessão
     this.elements.closeEditSession.addEventListener('click', () => {
       this.elements.editSessionModal.classList.add('hidden');
@@ -2634,6 +2669,10 @@ const App = {
     } else {
       this.elements.footerBar.classList.add('footer-inline');
     }
+  },
+
+  applyVfStacked(stacked) {
+    document.getElementById('quizContainer').classList.toggle('ch-vf-stacked', !!stacked);
   },
 
   // ===== Colapso de Comentários =====

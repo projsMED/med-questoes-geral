@@ -7,9 +7,22 @@ export class QuizRenderer {
     this.btnSubmitAll = document.getElementById('btnSubmitAll');
     this.scoreDisplay = document.getElementById('scoreDisplay');
     this.callbacks = callbacks;
+
+    // Word marking state
+    this._activeMarking = null;
+    this._copyMenu = null;
+    this._state = null;
+    document.addEventListener('mouseup', () => {
+      if (this._activeMarking) {
+        this._saveMarkedWords(this._activeMarking.element, this._activeMarking.qIdx, this._activeMarking.markKey);
+        this._activeMarking = null;
+      }
+    });
+    this.container.addEventListener('copy', (e) => this._handleCopy(e));
   }
 
   render(state) {
+    this._state = state;
     this.container.innerHTML = '';
     if (!state.quizJson) return;
 
@@ -136,6 +149,7 @@ export class QuizRenderer {
     const isEscrita = tipo === 'ESCRITA';
 
     if (tipo === 'VF') wrapper.classList.add('type-vf');
+    if (tipo === 'CH') wrapper.classList.add('type-ch');
     if (tipo === 'ESCRITA') wrapper.classList.add('type-escrita');
     wrapper.dataset.originalIdx = originalIdx;
 
@@ -189,17 +203,48 @@ export class QuizRenderer {
       originalIdx,
       state.mappings.altOrder
     );
+    const enunciadoHtml = tipo === 'VF'
+      ? `<span class="markable-text">${enunciadoTxt}</span>`
+      : enunciadoTxt;
+    const hasMarking = tipo === 'VF' || isCH || tipo === 'ME';
+    const selModeBtn = hasMarking
+      ? `<button class="btn-selection-mode" type="button" title="Alternar modo seleção de texto">📋 Selecionar</button>`
+      : '';
 
     wrapper.innerHTML = `
       ${forcedBadge}
       <div class="q-header-container">
         ${tagsHtml}
-        <div style="margin-left:auto">${diffHtml}</div>
+        <div style="margin-left:auto">${selModeBtn}${diffHtml}</div>
       </div>
       <div class="q-enunciado">
-        <span style="color:var(--primary);">${visualIdx + 1}.</span> ${enunciadoTxt}
+        <span style="color:var(--primary);">${visualIdx + 1}.</span> ${enunciadoHtml}
       </div>
     `;
+
+    // Toggle modo seleção (global)
+    const selBtn = wrapper.querySelector('.btn-selection-mode');
+    if (selBtn) {
+      if (this.container.classList.contains('selection-mode')) {
+        selBtn.classList.add('active');
+      }
+      selBtn.addEventListener('click', () => {
+        const active = this.container.classList.toggle('selection-mode');
+        this.container.querySelectorAll('.btn-selection-mode').forEach(b => {
+          b.classList.toggle('active', active);
+        });
+      });
+    }
+
+    // Word marking for VF enunciado
+    if (tipo === 'VF') {
+      const markEl = wrapper.querySelector('.markable-text');
+      if (markEl) {
+        const marks = (userAnswer && userAnswer.markedWords) || [];
+        this._applyWordMarking(markEl, marks);
+        this._setupMarkingListeners(markEl, originalIdx, 'enunciado');
+      }
+    }
 
     // ===================== ESCRITA =====================
     if (isEscrita) {
@@ -249,27 +294,28 @@ export class QuizRenderer {
     const altMapping = state.mappings.altOrder[originalIdx] || [];
 
     if (isCH) {
-      const selectedArr =
-        userAnswer && Array.isArray(userAnswer.selectedOriginalIdxs)
-          ? userAnswer.selectedOriginalIdxs
-          : [];
+      const assAnswers =
+        userAnswer && userAnswer.assertivaAnswers
+          ? userAnswer.assertivaAnswers
+          : {};
 
       altMapping.forEach((originalAssIdx, visualIdxAss) => {
         const assData = qData.assertivas[originalAssIdx];
+        const visualLetter = String.fromCharCode(65 + visualIdxAss);
         const altItem = document.createElement('div');
         altItem.className = 'alt-item';
 
         const isCorrectAss = !!assData.is_correct;
-        const isSelected = selectedArr.includes(originalAssIdx);
+        const userChoice = assAnswers[originalAssIdx]; // true=V, false=F, undefined=não respondeu
+        const hasAnswered = userChoice !== undefined;
         const isEliminated = eliminatedList.includes(originalAssIdx);
 
         const altWrapper = document.createElement('div');
-        altWrapper.className = 'alt-wrapper';
+        altWrapper.className = 'alt-wrapper ch-vf-wrapper';
         if (isEliminated) altWrapper.classList.add('eliminated');
 
-        // Correção visual: verde se estado do checkbox == is_correct, vermelho se diferente
         if (isSubmitted) {
-          const stateMatches = isSelected === isCorrectAss;
+          const stateMatches = hasAnswered && (userChoice === isCorrectAss);
           if (stateMatches) {
             altWrapper.classList.add('correct');
           } else {
@@ -277,8 +323,6 @@ export class QuizRenderer {
           }
         }
 
-        const inputId = `q${originalIdx}_ass${visualIdxAss}`;
-        const checkedAttr = isSelected ? 'checked' : '';
         const altText = formatText(
           assData.texto,
           originalIdx,
@@ -299,17 +343,57 @@ export class QuizRenderer {
             ? `<button class="btn-cut" type="button" title="Cortar alternativa">✂️</button>`
             : '';
 
-        // Sem letras A/B/C – apenas checkbox + texto
-        const labelHtml = `
-          <label class="alt-label ${isSelected ? 'selected' : ''}" for="${inputId}">
-            <input type="checkbox" name="q_${originalIdx}" id="${inputId}"
-              class="alt-input" value="${originalAssIdx}" ${checkedAttr}
-              ${isSubmitted || isForced ? 'disabled' : ''}>
-            <span class="alt-text">${altText}</span>
-          </label>
+        const radioNameV = `q${originalIdx}_ass${originalAssIdx}`;
+        const checkedV = hasAnswered && userChoice === true ? 'checked' : '';
+        const checkedF = hasAnswered && userChoice === false ? 'checked' : '';
+        const disabledAttr = isSubmitted || isForced ? 'disabled' : '';
+
+        // Determinar classes visuais para os botões V/F após submissão
+        let vBtnClass = 'ch-vf-btn ch-vf-v';
+        let fBtnClass = 'ch-vf-btn ch-vf-f';
+        if (!isSubmitted) {
+          if (checkedV) vBtnClass += ' selected';
+          if (checkedF) fBtnClass += ' selected';
+        } else {
+          // Após submissão: destacar a resposta correta e o erro do usuário
+          if (isCorrectAss) {
+            vBtnClass += ' ch-vf-correct-answer';
+            if (hasAnswered && !userChoice) fBtnClass += ' ch-vf-wrong-pick';
+          } else {
+            fBtnClass += ' ch-vf-correct-answer';
+            if (hasAnswered && userChoice) vBtnClass += ' ch-vf-wrong-pick';
+          }
+        }
+
+        const vfControlsHtml = `
+          <div class="ch-vf-controls">
+            <label class="${vBtnClass}">
+              <input type="radio" name="${radioNameV}" value="V" ${checkedV} ${disabledAttr}> V
+            </label>
+            <label class="${fBtnClass}">
+              <input type="radio" name="${radioNameV}" value="F" ${checkedF} ${disabledAttr}> F
+            </label>
+          </div>
         `;
 
-        altWrapper.innerHTML = labelHtml + scissorBtn;
+        const labelHtml = `
+          <div class="alt-label ch-assertiva-label ${hasAnswered ? 'selected' : ''}">
+            <span class="alt-letter">${visualLetter})</span>
+            <span class="alt-text markable-text">${altText}</span>
+          </div>
+        `;
+
+        altWrapper.innerHTML = vfControlsHtml + labelHtml + scissorBtn;
+
+        // Word marking for CH assertiva
+        const markTextEl = altWrapper.querySelector('.markable-text');
+        if (markTextEl) {
+          const mw = userAnswer && userAnswer.markedWords;
+          const marks = (mw && mw[String(originalAssIdx)]) || [];
+          this._applyWordMarking(markTextEl, marks);
+          this._setupMarkingListeners(markTextEl, originalIdx, String(originalAssIdx));
+        }
+
         altItem.appendChild(altWrapper);
 
         if (specificCommentHtml) {
@@ -319,22 +403,23 @@ export class QuizRenderer {
         }
 
         if (!isSubmitted && !isForced) {
-          const input = altWrapper.querySelector('input');
-          if (input) {
-            input.addEventListener('change', (e) => {
+          const radios = altWrapper.querySelectorAll(`input[name="${radioNameV}"]`);
+          radios.forEach((radio) => {
+            radio.addEventListener('change', (e) => {
               if (eliminatedList.includes(originalAssIdx)) {
                 e.preventDefault();
-                input.checked = false;
+                radio.checked = false;
                 return;
               }
+              const markedTrue = radio.value === 'V';
               this.callbacks.onSelect(
                 originalIdx,
                 originalAssIdx,
                 true,
-                input.checked
+                markedTrue
               );
             });
-          }
+          });
 
           const cutBtn = altWrapper.querySelector('.btn-cut');
           if (cutBtn) {
@@ -394,16 +479,29 @@ export class QuizRenderer {
             ? `<button class="btn-cut" type="button" title="Cortar alternativa">✂️</button>`
             : '';
 
+        const isME = tipo === 'ME';
         const labelHtml = `
           <label class="alt-label ${isSelected ? 'selected' : ''}" for="${inputId}">
             <input type="radio" name="q_${originalIdx}" id="${inputId}"
               class="alt-input" value="${originalAltIdx}" ${checked}
               ${isSubmitted || isForced ? 'disabled' : ''}>
             <span class="alt-letter">${visualLetter})</span>
-            <span class="alt-text">${altText}</span>
+            <span class="alt-text${isME ? ' markable-text' : ''}">${altText}</span>
           </label>
         `;
         altWrapper.innerHTML = labelHtml + scissorBtn;
+
+        // Word marking for ME alternativas
+        if (isME) {
+          const markEl = altWrapper.querySelector('.markable-text');
+          if (markEl) {
+            const mw = userAnswer && userAnswer.markedWords;
+            const marks = (mw && mw[String(originalAltIdx)]) || [];
+            this._applyWordMarking(markEl, marks);
+            this._setupMarkingListeners(markEl, originalIdx, String(originalAltIdx));
+          }
+        }
+
         altItem.appendChild(altWrapper);
 
         if (specificCommentHtml) {
@@ -710,6 +808,306 @@ export class QuizRenderer {
     return text.replace(/\n/g, '<br>');
   }
 
+  // ===================== Marcação de Palavras =====================
+
+  _applyWordMarking(element, markedIndices) {
+    const markedSet = new Set(markedIndices || []);
+    let wordIdx = 0;
+
+    const processNode = (node) => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const text = node.textContent;
+        if (!text.trim()) return;
+        const parts = text.split(/(\s+)/);
+        const fragment = document.createDocumentFragment();
+        parts.forEach(part => {
+          if (!part.trim()) {
+            fragment.appendChild(document.createTextNode(part));
+          } else {
+            const span = document.createElement('span');
+            span.className = 'markable-word' + (markedSet.has(wordIdx) ? ' word-marked' : '');
+            span.dataset.wordIdx = wordIdx;
+            span.textContent = part;
+            fragment.appendChild(span);
+            wordIdx++;
+          }
+        });
+        node.parentNode.replaceChild(fragment, node);
+      } else if (node.nodeType === Node.ELEMENT_NODE &&
+                 !['IMG', 'BR', 'SVG', 'VIDEO', 'AUDIO', 'IFRAME'].includes(node.tagName)) {
+        Array.from(node.childNodes).forEach(child => processNode(child));
+      }
+    };
+
+    Array.from(element.childNodes).forEach(child => processNode(child));
+  }
+
+  _saveMarkedWords(element, qIdx, markKey) {
+    const indices = [];
+    element.querySelectorAll('.word-marked').forEach(span => {
+      indices.push(parseInt(span.dataset.wordIdx, 10));
+    });
+    if (this.callbacks.onMarkWords) {
+      this.callbacks.onMarkWords(qIdx, markKey, indices);
+    }
+  }
+
+  _setupMarkingListeners(element, qIdx, markKey) {
+    const self = this;
+    let lastToggledIdx = null;
+
+    const getWord = (target) => {
+      if (target && target.classList && target.classList.contains('markable-word')) return target;
+      return null;
+    };
+
+    // --- Mouse ---
+    const isSelMode = () => self.container.classList.contains('selection-mode');
+
+    element.addEventListener('mousedown', (e) => {
+      if (isSelMode()) return;
+      const span = getWord(e.target);
+      if (!span || e.button !== 0 || e.ctrlKey || e.metaKey) return;
+      e.preventDefault();
+      lastToggledIdx = null;
+      const action = span.classList.contains('word-marked') ? 'unmark' : 'mark';
+      self._activeMarking = { element, qIdx, markKey, action };
+      const idx = parseInt(span.dataset.wordIdx, 10);
+      lastToggledIdx = idx;
+      if (action === 'mark') span.classList.add('word-marked');
+      else span.classList.remove('word-marked');
+    });
+
+    element.addEventListener('mouseover', (e) => {
+      if (!self._activeMarking || self._activeMarking.element !== element) return;
+      const span = getWord(e.target);
+      if (!span) return;
+      const idx = parseInt(span.dataset.wordIdx, 10);
+      if (idx === lastToggledIdx) return;
+      lastToggledIdx = idx;
+      if (self._activeMarking.action === 'mark') span.classList.add('word-marked');
+      else span.classList.remove('word-marked');
+    });
+
+    // --- Touch ---
+    let touchStart = null;
+    let touchMode = null; // null | 'marking' | 'scroll'
+    let touchAction = null;
+
+    element.addEventListener('touchstart', (e) => {
+      if (isSelMode()) return;
+      const touch = e.touches[0];
+      touchStart = { x: touch.clientX, y: touch.clientY };
+      touchMode = null;
+      lastToggledIdx = null;
+      const span = getWord(e.target);
+      if (span) {
+        touchAction = span.classList.contains('word-marked') ? 'unmark' : 'mark';
+      } else {
+        touchAction = null;
+      }
+    }, { passive: true });
+
+    element.addEventListener('touchmove', (e) => {
+      if (!touchStart || touchMode === 'scroll') return;
+      const touch = e.touches[0];
+      const dx = Math.abs(touch.clientX - touchStart.x);
+      const dy = Math.abs(touch.clientY - touchStart.y);
+
+      if (dy > 15 && touchMode !== 'marking') {
+        touchMode = 'scroll';
+        return;
+      }
+      if ((dx > 10 || touchMode === 'marking') && touchAction) {
+        touchMode = 'marking';
+        e.preventDefault();
+        const el = document.elementFromPoint(touch.clientX, touch.clientY);
+        const span = el ? getWord(el) : null;
+        if (span) {
+          const idx = parseInt(span.dataset.wordIdx, 10);
+          if (idx !== lastToggledIdx) {
+            lastToggledIdx = idx;
+            if (touchAction === 'mark') span.classList.add('word-marked');
+            else span.classList.remove('word-marked');
+          }
+        }
+      }
+    }, { passive: false });
+
+    element.addEventListener('touchend', (e) => {
+      if (touchMode === null && touchStart) {
+        const touch = e.changedTouches[0];
+        const el = document.elementFromPoint(touch.clientX, touch.clientY);
+        const span = el ? getWord(el) : null;
+        if (span) {
+          span.classList.toggle('word-marked');
+          self._saveMarkedWords(element, qIdx, markKey);
+        }
+      } else if (touchMode === 'marking') {
+        self._saveMarkedWords(element, qIdx, markKey);
+      }
+      touchMode = null;
+      touchStart = null;
+    });
+
+    // --- Context menu (right-click PC / long-press mobile) ---
+    element.addEventListener('contextmenu', (e) => {
+      if (isSelMode()) return; // modo seleção: menu nativo do browser
+      e.preventDefault();
+      self._showCopyMenu(e.clientX, e.clientY, element.textContent);
+    });
+  }
+
+  _showCopyMenu(x, y, text) {
+    this._hideCopyMenu();
+    const menu = document.createElement('div');
+    menu.className = 'copy-context-menu';
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.textContent = '📋 Copiar assertiva';
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navigator.clipboard.writeText(text).catch(() => {});
+      this._hideCopyMenu();
+    });
+    menu.appendChild(btn);
+    menu.style.left = Math.min(x, window.innerWidth - 190) + 'px';
+    menu.style.top = Math.min(y, window.innerHeight - 50) + 'px';
+    document.body.appendChild(menu);
+    this._copyMenu = menu;
+    setTimeout(() => {
+      const close = (ev) => {
+        if (menu.contains(ev.target)) return;
+        this._hideCopyMenu();
+        document.removeEventListener('click', close);
+        document.removeEventListener('touchstart', close);
+      };
+      document.addEventListener('click', close);
+      document.addEventListener('touchstart', close, { passive: true });
+    }, 10);
+  }
+
+  _hideCopyMenu() {
+    if (this._copyMenu) {
+      this._copyMenu.remove();
+      this._copyMenu = null;
+    }
+  }
+
+  // ===================== Clipboard Formatado =====================
+
+  _stripHtml(html) {
+    if (!html) return '';
+    const d = document.createElement('div');
+    d.innerHTML = html;
+    return d.textContent.trim();
+  }
+
+  _handleCopy(e) {
+    if (!this._state) return;
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed) return;
+
+    const range = sel.getRangeAt(0);
+    const cards = this.container.querySelectorAll('.question-card');
+    const selected = [];
+
+    cards.forEach(card => {
+      if (range.intersectsNode(card)) {
+        const idx = parseInt(card.dataset.originalIdx, 10);
+        const vIdx = this._state.mappings.qOrder.indexOf(idx);
+        if (vIdx !== -1) selected.push({ originalIdx: idx, visualIdx: vIdx });
+      }
+    });
+
+    if (selected.length === 0) return;
+
+    selected.sort((a, b) => a.visualIdx - b.visualIdx);
+
+    const parts = [];
+    const includedGroups = new Set();
+
+    for (const { originalIdx, visualIdx } of selected) {
+      const q = this._state.questions[originalIdx];
+      if (q._groupData && !includedGroups.has(q._groupData.id)) {
+        includedGroups.add(q._groupData.id);
+        parts.push(this._stripHtml(q._groupData.text));
+      }
+      parts.push(this._formatQuestionText(originalIdx, visualIdx));
+    }
+
+    e.preventDefault();
+    e.clipboardData.setData('text/plain', parts.join('\n\n'));
+  }
+
+  _formatQuestionText(originalIdx, visualIdx) {
+    const s = this._state;
+    const q = s.questions[originalIdx];
+    const ans = s.userAnswers[originalIdx];
+    const tipo = (q.tipo || '').toUpperCase();
+    const sub = ans && ans.submitted;
+    const altMap = s.mappings.altOrder[originalIdx] || [];
+    const strip = (h) => this._stripHtml(h);
+    const lines = [];
+
+    lines.push(`${visualIdx + 1}. ${strip(q.enunciado)}`);
+
+    if (tipo === 'VF') {
+      if (sub) {
+        const gab = (q.gabarito || '').trim().toUpperCase();
+        lines.push(`Gabarito: ${gab === 'A' ? 'Verdadeiro' : 'Falso'}`);
+        if (q.comentario_geral) lines.push(`Comentário Geral:\n${strip(q.comentario_geral)}`);
+      }
+    } else if (tipo === 'ME') {
+      const gabIdx = ((q.gabarito || '').trim().toUpperCase().charCodeAt(0) || 65) - 65;
+
+      altMap.forEach((origIdx, visIdx) => {
+        const alt = q.alternativas[origIdx];
+        const letter = String.fromCharCode(65 + visIdx);
+        let line = `${letter}) ${strip(alt.texto)}`;
+        if (sub && origIdx === gabIdx) line += ' ✔ Gabarito';
+        lines.push(line);
+        if (sub && alt.comentario) lines.push(`Comentário do gabarito: ${strip(alt.comentario)}`);
+      });
+
+      if (sub && q.comentario_geral) lines.push(`Comentário Geral:\n${strip(q.comentario_geral)}`);
+
+    } else if (tipo === 'CH') {
+      altMap.forEach((origIdx, visIdx) => {
+        const ass = q.assertivas[origIdx];
+        const letter = String.fromCharCode(65 + visIdx);
+        let line = `${letter}) ${strip(ass.texto)}`;
+        if (sub) line += ` (Gabarito: ${ass.is_correct ? 'V' : 'F'})`;
+        lines.push(line);
+        if (sub && ass.comentario) lines.push(`Comentário do gabarito: ${strip(ass.comentario)}`);
+      });
+
+      if (sub && q.comentario_geral) lines.push(`Comentário Geral:\n${strip(q.comentario_geral)}`);
+
+    } else if (tipo === 'ESCRITA') {
+      const isItems = q.subtipo === 'itens' || (Array.isArray(q.itens) && q.itens.length > 0);
+
+      if (sub) {
+        if (!isItems) {
+          if (ans.text) lines.push(`Sua resposta: ${ans.text}`);
+          if (q.gabarito) lines.push(`Gabarito: ${strip(q.gabarito)}`);
+        } else {
+          (q.itens || []).forEach((item, i) => {
+            const letter = String.fromCharCode(65 + i);
+            lines.push(`${letter}) ${strip(item.pergunta)}`);
+            const ia = (ans.items && ans.items[i]) || {};
+            if (ia.text) lines.push(`Sua resposta: ${ia.text}`);
+            if (item.gabarito) lines.push(`Gabarito: ${strip(item.gabarito)}`);
+            if (item.comentario) lines.push(`Comentário: ${strip(item.comentario)}`);
+          });
+        }
+        if (q.comentario_geral) lines.push(`Comentário Geral:\n${strip(q.comentario_geral)}`);
+      }
+    }
+
+    return lines.join('\n');
+  }
+
   // ===================== Pontuação =====================
 
   /**
@@ -751,15 +1149,13 @@ export class QuizRenderer {
       const total = assertivas.length;
       if (total === 0) return { hits: 0, total: 0 };
 
-      const selected = Array.isArray(ans.selectedOriginalIdxs)
-        ? ans.selectedOriginalIdxs
-        : [];
+      const answers = ans.assertivaAnswers || {};
 
       let hits = 0;
       assertivas.forEach((ass, i) => {
-        const shouldCheck = !!ass.is_correct;
-        const isChecked = selected.includes(i);
-        if (shouldCheck === isChecked) hits++;
+        const isCorrect = !!ass.is_correct;
+        const userSaidTrue = answers[i];
+        if (userSaidTrue !== undefined && userSaidTrue === isCorrect) hits++;
       });
 
       return { hits, total };

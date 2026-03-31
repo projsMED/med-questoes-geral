@@ -1,0 +1,67 @@
+{
+  "titulo": "Teste - Variantes no Reset",
+  "descricao": "Quiz para testar se variantes mudam ao clicar Resetar.",
+  "conteudo": [
+    {
+      "tipo": "VARIANTES",
+      "questoes": [
+        {
+          "tipo": "ME",
+          "enunciado": "[VARIANTE A - ME] Qual é o maior osso do corpo humano?",
+          "alternativas": [
+            { "id": "a", "texto": "Fêmur" },
+            { "id": "b", "texto": "Tíbia" },
+            { "id": "c", "texto": "Úmero" }
+          ],
+          "gabarito": "A"
+        },
+        {
+          "tipo": "ME",
+          "enunciado": "[VARIANTE B - ME] Qual é o menor osso do corpo humano?",
+          "alternativas": [
+            { "id": "a", "texto": "Estribo" },
+            { "id": "b", "texto": "Martelo" },
+            { "id": "c", "texto": "Bigorna" }
+          ],
+          "gabarito": "A"
+        }
+      ]
+    },
+    {
+      "tipo": "VARIANTES",
+      "questoes": [
+        {
+          "tipo": "VF",
+          "enunciado": "[VARIANTE A - VF] O coração humano possui 4 câmaras.",
+          "gabarito": "V"
+        },
+        {
+          "tipo": "VF",
+          "enunciado": "[VARIANTE B - VF] O pulmão direito possui 2 lobos.",
+          "gabarito": "F"
+        }
+      ]
+    },
+    {
+      "tipo": "ME",
+      "enunciado": "[FIXA - sem variante] Qual vitamina é produzida pela exposição solar?",
+      "alternativas": [
+        { "id": "a", "texto": "Vitamina A" },
+        { "id": "b", "texto": "Vitamina C" },
+        { "id": "c", "texto": "Vitamina D" },
+        { "id": "d", "texto": "Vitamina B12" }
+      ],
+      "gabarito": "C"
+    },
+    {
+      "tipo": "CH",
+      "enunciado": "[CH com variantes de assertiva] Sobre o sistema cardiovascular, julgue:",
+      "assertivas": [
+        { "id": "1", "texto": "[Var A] A aorta é a maior artéria do corpo.", "is_correct": true },
+        { "id": "1", "texto": "[Var B] A veia cava é a maior artéria do corpo.", "is_correct": false },
+        { "id": "2", "texto": "O sangue venoso é rico em oxigênio.", "is_correct": false },
+        { "id": "3", "texto": "O ventrículo esquerdo bombeia sangue para a circulação sistêmica.", "is_correct": true }
+      ]
+    }
+  ]
+}

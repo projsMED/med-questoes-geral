@@ -164,7 +164,7 @@ body {
 }
 
 /* Botão Padrão/Gerar */
-.btn-submit { background: var(--primary); color: white; }
+.btn-submit { background: var(--primary); color: white; user-select: none; -webkit-user-select: none; }
 .btn-submit:hover { background: var(--primary-hover); }
 .btn-submit:disabled { background: #ccc; cursor: not-allowed; }
 
@@ -472,10 +472,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px; 
+  width: 45px;
   background: #fff;
   border: 2px solid #e9ecef;
   border-radius: 8px;
+  user-select: none;
+  -webkit-user-select: none;
   cursor: pointer;
   font-size: 1.2em;
   color: #6c757d;
@@ -505,6 +507,110 @@ body {
   font-weight: bold;
   margin-right: 8px;
   min-width: 20px;
+}
+
+/* --- CH: CONTROLES V/F POR ASSERTIVA --- */
+
+.ch-vf-wrapper {
+  align-items: stretch;
+}
+
+.ch-vf-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+/* Modo empilhado (V em cima, F embaixo) */
+.ch-vf-stacked .ch-vf-controls {
+  flex-direction: column;
+}
+
+.ch-vf-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75em;
+  border: 2px solid #e0e0e0;
+  background: #f8f9fa;
+  color: #888;
+  transition: all 0.15s;
+  user-select: none;
+  min-width: 36px;
+  gap: 3px;
+}
+
+.ch-vf-btn:hover {
+  border-color: #bbb;
+  background: #eee;
+}
+
+.ch-vf-btn input[type="radio"] {
+  margin: 0;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+}
+
+/* V ou F selecionado (antes de submeter) — cor neutra */
+.ch-vf-btn.selected {
+  background: #e2e6ea;
+  border-color: #6c757d;
+  color: #333;
+}
+
+/* Assertiva label no modo CH — não é clicável como no ME */
+.ch-assertiva-label {
+  cursor: default;
+}
+
+.ch-assertiva-label.selected {
+  border-color: var(--primary);
+  background-color: #f0f8ff;
+}
+
+/* --- Feedback V/F após submissão --- */
+
+/* Botão que é a resposta correta */
+.ch-vf-correct-answer {
+  background: #c3e6cb !important;
+  border-color: #28a745 !important;
+  color: #155724 !important;
+}
+
+/* Botão errado que o usuário marcou */
+.ch-vf-wrong-pick {
+  background: #f5c6cb !important;
+  border-color: #dc3545 !important;
+  color: #721c24 !important;
+}
+
+/* Desabilita hover nos V/F após submit */
+.question-card.submitted .ch-vf-btn,
+.question-forced .ch-vf-btn {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Texto do ::after para CH — sobrescreve o padrão ME/VF */
+.question-card.type-ch.submitted .alt-wrapper.correct .alt-label::after {
+  content: '✔ Correto';
+}
+.question-card.type-ch.submitted .alt-wrapper.wrong .alt-label::after {
+  content: '✖ Errado';
+}
+
+/* Para questões forçadas CH */
+.question-forced .ch-vf-btn {
+  background: #e9ecef;
+  border-color: #ced4da;
+  color: #999;
 }
 
 /* --- ESTADOS DE FEEDBACK (CORREÇÃO FUNDAMENTAL) --- */
@@ -625,6 +731,96 @@ body {
 .question-card.submitted .alt-wrapper.wrong + .specific-comment {
   background-color: #fbeebc;
   border-color: #ffc107;
+}
+
+/* --- MARCAÇÃO DE PALAVRAS (VF / CH) --- */
+
+.markable-text {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.selection-mode .markable-text {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.selection-mode .markable-word {
+  cursor: text;
+}
+
+.btn-selection-mode {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.78em;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-left: 8px;
+}
+
+.btn-selection-mode {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.btn-selection-mode:hover {
+  background: #f0f0f0;
+  border-color: #aaa;
+}
+
+.btn-selection-mode.active {
+  background: #e8f4fd;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.markable-word {
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.markable-word:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.word-marked {
+  color: #dc3545 !important;
+  font-weight: bold !important;
+}
+
+/* Preserva cor vermelha mesmo em wrappers com override de cor (correct/wrong) */
+.question-card.submitted .word-marked {
+  color: #dc3545 !important;
+}
+
+.copy-context-menu {
+  position: fixed;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  z-index: 10000;
+  padding: 4px 0;
+  min-width: 170px;
+}
+
+.copy-context-menu button {
+  display: block;
+  width: 100%;
+  padding: 8px 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.copy-context-menu button:hover {
+  background: #f0f0f0;
 }
 
 /* --- IMAGENS NO QUIZ --- */
