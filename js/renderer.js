@@ -40,13 +40,7 @@ export class QuizRenderer {
     // Aviso de Modo Retry
     if (state.retryMode) {
       const retryBanner = document.createElement('div');
-      retryBanner.style.background = '#fff3cd';
-      retryBanner.style.border = '1px solid #ffeeba';
-      retryBanner.style.color = '#856404';
-      retryBanner.style.padding = '10px';
-      retryBanner.style.marginBottom = '20px';
-      retryBanner.style.textAlign = 'center';
-      retryBanner.style.borderRadius = '6px';
+      retryBanner.className = 'retry-banner';
       retryBanner.innerHTML = `<strong>Modo de Repetição:</strong> Exibindo apenas as questões que você errou anteriormente.`;
       this.container.appendChild(retryBanner);
     }
@@ -299,9 +293,14 @@ export class QuizRenderer {
           ? userAnswer.assertivaAnswers
           : {};
 
+      const toRoman = (n) => {
+        const numerals = ['I','II','III','IV','V','VI','VII','VIII','IX','X'];
+        return numerals[n] || String(n + 1);
+      };
+
       altMapping.forEach((originalAssIdx, visualIdxAss) => {
         const assData = qData.assertivas[originalAssIdx];
-        const visualLetter = String.fromCharCode(65 + visualIdxAss);
+        const visualLetter = toRoman(visualIdxAss);
         const altItem = document.createElement('div');
         altItem.className = 'alt-item';
 
@@ -378,7 +377,7 @@ export class QuizRenderer {
 
         const labelHtml = `
           <div class="alt-label ch-assertiva-label ${hasAnswered ? 'selected' : ''}">
-            <span class="alt-letter">${visualLetter})</span>
+            <span class="alt-letter ch-roman">${visualLetter}.</span>
             <span class="alt-text markable-text">${altText}</span>
           </div>
         `;

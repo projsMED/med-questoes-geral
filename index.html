@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Engine V3.7 - Filtro em Etapas</title>
+  <script>
+    (function() {
+      var dm = localStorage.getItem('vs_darkMode');
+      if (dm === 'true' || (dm === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -16,7 +24,7 @@
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
     <div id="uploadSection">
-      <p style="text-align:center; color:#666; margin-bottom:20px;">Carregue um arquivo local ou escolha da nuvem.</p>
+      <p class="upload-hint">Carregue um arquivo local ou escolha da nuvem.</p>
       <div class="start-buttons">
         <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
           📂 Carregar Arquivo Local
@@ -102,6 +110,12 @@
       <div id="visualSettingsPanel" class="visual-settings-panel hidden">
         <div class="vs-option">
           <label class="toggle-label">
+            <input type="checkbox" id="chkDarkMode">
+            <span id="darkModeIcon">🌙</span> Modo escuro
+          </label>
+        </div>
+        <div class="vs-option">
+          <label class="toggle-label">
             <input type="checkbox" id="chkFooterFixed" checked>
             Botão "Responder Todas" fixo na tela
           </label>
@@ -127,6 +141,15 @@
               <input type="checkbox" id="chkPersistManualOpen">
               Persistir comentários abertos manualmente
             </label>
+          </div>
+        </div>
+        <div class="vs-option">
+          <strong class="vs-label">Tamanho da fonte:</strong>
+          <div class="vs-font-size-row">
+            <span class="vs-font-label">A</span>
+            <input type="range" id="rangeFontSize" min="12" max="22" step="1" value="16">
+            <span class="vs-font-label vs-font-label-big">A</span>
+            <span class="vs-font-value" id="fontSizeValue">16px</span>
           </div>
         </div>
         <div class="vs-hint">
@@ -193,7 +216,7 @@
       <span class="close-move-session">&times;</span>
     </div>
     <div class="modal-body">
-      <p id="moveSessionInfo" style="margin-bottom:12px;color:#555;"></p>
+      <p id="moveSessionInfo" class="move-session-info"></p>
       <select id="moveFolderSelect" class="edit-input" style="width:100%;"></select>
     </div>
     <div class="modal-footer">
@@ -287,7 +310,7 @@
     </div>
     <div class="modal-body">
       <div id="sessionListContainer">
-        <p style="text-align:center;color:#999;">Carregando...</p>
+        <p class="loading-hint">Carregando...</p>
       </div>
     </div>
   </div>
@@ -301,7 +324,7 @@
     </div>
     <div class="modal-body">
       <div id="firebaseLogin">
-        <p style="color:#666;margin-bottom:15px;">Insira o codigo de acesso para ativar a sincronizacao na nuvem.</p>
+        <p class="firebase-hint">Insira o codigo de acesso para ativar a sincronizacao na nuvem.</p>
         <div class="firebase-login-form">
           <input type="password" id="firebaseCode" placeholder="Codigo de acesso" class="firebase-input">
           <button class="btn btn-primary" id="btnFirebaseConnect">Conectar</button>

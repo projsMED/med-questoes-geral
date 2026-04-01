@@ -165,6 +165,10 @@ const App = {
     commentSubOptions: document.getElementById('commentSubOptions'),
     chkPersistManualOpen: document.getElementById('chkPersistManualOpen'),
     chkVfStacked: document.getElementById('chkVfStacked'),
+    chkDarkMode: document.getElementById('chkDarkMode'),
+    darkModeIcon: document.getElementById('darkModeIcon'),
+    rangeFontSize: document.getElementById('rangeFontSize'),
+    fontSizeValue: document.getElementById('fontSizeValue'),
 
     // Próxima não respondida
     btnNextUnanswered: document.getElementById('btnNextUnanswered'),
@@ -1790,8 +1794,7 @@ const App = {
     const isActive = s.sessionId === this.activeSessionId;
 
     if (isActive) {
-      item.style.borderColor = '#007bff';
-      item.style.borderWidth = '2px';
+      item.classList.add('session-item-active');
     }
 
     const sourceFileHtml = s.sourceFileName
@@ -2594,7 +2597,9 @@ const App = {
       footerFixed: localStorage.getItem('vs_footerFixed') !== 'false',
       commentMode: localStorage.getItem('vs_commentMode') || 'all',
       persistManualOpen: localStorage.getItem('vs_persistManualOpen') === 'true',
-      vfStacked: localStorage.getItem('vs_vfStacked') === 'true'
+      vfStacked: localStorage.getItem('vs_vfStacked') === 'true',
+      fontSize: parseInt(localStorage.getItem('vs_fontSize')) || 16,
+      darkMode: localStorage.getItem('vs_darkMode')
     };
   },
 
@@ -2611,10 +2616,19 @@ const App = {
     }
     this.elements.chkPersistManualOpen.checked = vs.persistManualOpen;
     this.elements.chkVfStacked.checked = vs.vfStacked;
+    this.elements.rangeFontSize.value = vs.fontSize;
+    this.elements.fontSizeValue.textContent = vs.fontSize + 'px';
 
-    // Aplicar footer e VF stacked
+    // Dark mode: null = auto (segue o sistema), 'true'/'false' = manual
+    const isDark = vs.darkMode === 'true' ||
+      (vs.darkMode === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    this.elements.chkDarkMode.checked = isDark;
+
+    // Aplicar footer, VF stacked, font size e dark mode
     this.applyFooterMode(vs.footerFixed);
     this.applyVfStacked(vs.vfStacked);
+    this.applyFontSize(vs.fontSize);
+    this.applyDarkMode(isDark);
 
     // Eventos
     this.elements.btnVisualSettings.addEventListener('click', () => {
@@ -2646,6 +2660,27 @@ const App = {
       this.applyVfStacked(e.target.checked);
     });
 
+    this.elements.chkDarkMode.addEventListener('change', (e) => {
+      const enabled = e.target.checked;
+      localStorage.setItem('vs_darkMode', enabled);
+      this.applyDarkMode(enabled);
+    });
+
+    // Ouvir mudanças do tema do sistema (só aplica se o usuário nunca escolheu manualmente)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (localStorage.getItem('vs_darkMode') === null) {
+        this.elements.chkDarkMode.checked = e.matches;
+        this.applyDarkMode(e.matches);
+      }
+    });
+
+    this.elements.rangeFontSize.addEventListener('input', (e) => {
+      const size = parseInt(e.target.value);
+      localStorage.setItem('vs_fontSize', size);
+      this.elements.fontSizeValue.textContent = size + 'px';
+      this.applyFontSize(size);
+    });
+
     // Eventos do modal de editar sessão
     this.elements.closeEditSession.addEventListener('click', () => {
       this.elements.editSessionModal.classList.add('hidden');
@@ -2673,6 +2708,17 @@ const App = {
 
   applyVfStacked(stacked) {
     document.getElementById('quizContainer').classList.toggle('ch-vf-stacked', !!stacked);
+  },
+
+  applyDarkMode(enabled) {
+    document.documentElement.classList.toggle('dark-mode', enabled);
+    if (this.elements.darkModeIcon) {
+      this.elements.darkModeIcon.textContent = enabled ? '☀️' : '🌙';
+    }
+  },
+
+  applyFontSize(size) {
+    document.body.style.fontSize = size + 'px';
   },
 
   // ===== Colapso de Comentários =====
