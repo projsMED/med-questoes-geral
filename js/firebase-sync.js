@@ -165,6 +165,51 @@ export async function downloadSessionFolders() {
   }
 }
 
+// ===== Registro de Sessões Deletadas =====
+
+const DELETED_SESSIONS_DOC = 'deletedSessions';
+
+export async function downloadDeletedSessionTombstones() {
+  if (!isLoggedIn()) return {};
+  try {
+    const ref = doc(db, 'meta', DELETED_SESSIONS_DOC);
+    const snap = await getDoc(ref);
+    if (!snap.exists()) return {};
+    const data = snap.data();
+    return data.ids || {};
+  } catch (e) {
+    console.error('Erro ao baixar registro de sessões deletadas:', e);
+    return {};
+  }
+}
+
+export async function uploadDeletedSessionTombstones(tombstones) {
+  if (!isLoggedIn()) return false;
+  try {
+    const ref = doc(db, 'meta', DELETED_SESSIONS_DOC);
+    const existingSnap = await getDoc(ref);
+    const existing = existingSnap.exists() ? (existingSnap.data().ids || {}) : {};
+    const merged = { ...existing, ...tombstones };
+
+    await setDoc(ref, {
+      ids: merged,
+      updatedAt: new Date().toISOString()
+    });
+    return true;
+  } catch (e) {
+    console.error('Erro ao enviar registro de sessões deletadas:', e);
+    return false;
+  }
+}
+
+export async function recordDeletedSession(sessionId, deletedAt = new Date().toISOString()) {
+  if (!isLoggedIn()) return false;
+  const ok = await uploadDeletedSessionTombstones({ [sessionId]: deletedAt });
+  if (!ok) return false;
+  await deleteRemoteSession(sessionId);
+  return true;
+}
+
 export async function deleteRemoteSession(sessionId) {
   if (!isLoggedIn()) return false;
 

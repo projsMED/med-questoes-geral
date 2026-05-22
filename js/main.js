@@ -857,7 +857,7 @@ const App = {
     });
   },
 
-  deleteCurrentQuiz() {
+  async deleteCurrentQuiz() {
     if (
       !confirm(
         'Tem certeza? Isso apagará o quiz atual e voltará para a tela inicial.'
@@ -867,7 +867,9 @@ const App = {
 
     // Deletar sessão do IndexedDB
     if (this.activeSessionId) {
-      deleteSession(this.activeSessionId);
+      const deletedId = this.activeSessionId;
+      await deleteSession(deletedId);
+      await this._markSessionDeleted(deletedId);
     }
     this.activeSessionId = null;
     localStorage.removeItem('activeSessionId');
@@ -1428,6 +1430,7 @@ const App = {
       folderId: this._sessionFolderId || '',
       createdAt: this._sessionCreatedAt || now,
       lastAccessedAt: this._lastAccessedAt || now,
+      updatedAt: now,
       answeredCount,
       totalCount,
       state: JSON.parse(JSON.stringify(this.state))
@@ -1468,6 +1471,7 @@ const App = {
           folderId: data.folderId || '',
           createdAt: data.createdAt || now,
           lastAccessedAt: data.lastAccessedAt || now,
+          updatedAt: data.updatedAt || data.lastAccessedAt || data.createdAt || now,
           answeredCount: data.answeredCount || 0,
           totalCount: data.totalCount || (Array.isArray(state.questions) ? state.questions.length : 0),
           state: data.state || state
@@ -1523,6 +1527,7 @@ const App = {
         folderId: this._sessionFolderId || '',
         createdAt: this._sessionCreatedAt,
         lastAccessedAt: updateAccess ? now : (this._lastAccessedAt || this._sessionCreatedAt),
+        updatedAt: now,
         answeredCount,
         totalCount,
         state: this.state
@@ -1604,6 +1609,60 @@ const App = {
     }
   },
 
+  _getPendingDeleteTombstones() {
+    try {
+      const raw = JSON.parse(localStorage.getItem('pendingDeletes') || '{}');
+      if (Array.isArray(raw)) {
+        const now = new Date().toISOString();
+        return Object.fromEntries(raw.map(id => [id, now]));
+      }
+      return raw && typeof raw === 'object' ? raw : {};
+    } catch {
+      return {};
+    }
+  },
+
+  _setPendingDeleteTombstones(tombstones) {
+    const ids = Object.keys(tombstones || {});
+    if (ids.length === 0) {
+      localStorage.removeItem('pendingDeletes');
+    } else {
+      localStorage.setItem('pendingDeletes', JSON.stringify(tombstones));
+    }
+  },
+
+  async _markSessionDeleted(sessionId, deletedAt = new Date().toISOString()) {
+    if (!sessionId) return;
+
+    const pending = this._getPendingDeleteTombstones();
+    pending[sessionId] = pending[sessionId] || deletedAt;
+    this._setPendingDeleteTombstones(pending);
+
+    if (this.firebaseSync && this.firebaseState.connected) {
+      const ok = await this.firebaseSync.recordDeletedSession(sessionId, pending[sessionId]);
+      if (ok) {
+        delete pending[sessionId];
+        this._setPendingDeleteTombstones(pending);
+      }
+    }
+  },
+
+  _clearActiveSessionUI() {
+    this.activeSessionId = null;
+    localStorage.removeItem('activeSessionId');
+    this.state.quizJson = null;
+    this.state.questions = [];
+    this.state.mappings = { qOrder: [], altOrder: {} };
+    this.state.userAnswers = {};
+    this.state.retryMode = false;
+    this.state.retryIndices = [];
+    this.renderer.container.innerHTML = '';
+    this.elements.configBar.classList.add('hidden');
+    this.elements.footerBar.classList.add('hidden');
+    this.elements.filterSection.classList.add('hidden');
+    this.elements.uploadSection.classList.remove('hidden');
+  },
+
   async handleFirebaseLogin() {
     if (!this.firebaseConfig) return;
     const code = this.elements.firebaseCode.value.trim();
@@ -1653,37 +1712,60 @@ const App = {
     this.updateFirebaseUI();
 
     try {
-      // 1. Processar deletes pendentes
-      const pendingDeletes = JSON.parse(localStorage.getItem('pendingDeletes') || '[]');
-      for (const id of pendingDeletes) {
-        await this.firebaseSync.deleteRemoteSession(id);
-      }
-      localStorage.removeItem('pendingDeletes');
+      // 1. Sincronizar tombstones de sessões deletadas antes de comparar listas.
+      const pendingDeletes = this._getPendingDeleteTombstones();
+      const remoteDeletes = await this.firebaseSync.downloadDeletedSessionTombstones();
+      const deletedSessions = { ...remoteDeletes, ...pendingDeletes };
+      const deletedIds = new Set(Object.keys(deletedSessions));
 
-      // 2. Obter listas local e remota
+      if (deletedIds.size > 0) {
+        const tombstonesUploaded = await this.firebaseSync.uploadDeletedSessionTombstones(deletedSessions);
+        if (!tombstonesUploaded) {
+          throw new Error('Falha ao enviar registro de sessões deletadas.');
+        }
+        this._setPendingDeleteTombstones({});
+
+        const localBeforeDelete = await getAllSessions();
+        for (const session of localBeforeDelete) {
+          if (deletedIds.has(session.sessionId)) {
+            await deleteSession(session.sessionId);
+            if (session.sessionId === this.activeSessionId) {
+              this._clearActiveSessionUI();
+            }
+          }
+        }
+
+        for (const id of deletedIds) {
+          await this.firebaseSync.deleteRemoteSession(id);
+        }
+      }
+
+      // 2. Obter listas local e remota após aplicar deleções
       const localSessions = await getAllSessions();
       const remoteSessions = await this.firebaseSync.getRemoteSessionList();
 
       const localMap = new Map(localSessions.map(s => [s.sessionId, s]));
       const remoteMap = new Map(remoteSessions.map(s => [s.sessionId, s]));
+      const syncTime = (s) => s.updatedAt || s.lastAccessedAt || s.createdAt || '';
 
       // 3. Comparar e decidir upload/download
       const toUpload = [];
       const toDownload = [];
 
       for (const [id, local] of localMap) {
+        if (deletedIds.has(id)) continue;
         const remote = remoteMap.get(id);
         if (!remote) {
           toUpload.push(id);
-        } else if ((local.lastAccessedAt || '') > (remote.lastAccessedAt || '')) {
+        } else if (syncTime(local) > syncTime(remote)) {
           toUpload.push(id);
-        } else if ((remote.lastAccessedAt || '') > (local.lastAccessedAt || '')) {
+        } else if (syncTime(remote) > syncTime(local)) {
           toDownload.push(id);
         }
       }
 
       for (const [id] of remoteMap) {
-        if (!localMap.has(id)) {
+        if (!localMap.has(id) && !deletedIds.has(id)) {
           toDownload.push(id);
         }
       }
@@ -2117,31 +2199,11 @@ const App = {
     if (!confirm(`Deletar a sessão "${title}"? Esta ação não pode ser desfeita.`)) return;
 
     await deleteSession(sessionId);
-
-    // Deletar do Firebase (ou marcar para deletar depois)
-    if (this.firebaseSync && this.firebaseState.connected) {
-      try { await this.firebaseSync.deleteRemoteSession(sessionId); } catch (e) { console.warn('Erro ao deletar remoto:', e); }
-    } else if (this.firebaseConfig) {
-      const pending = JSON.parse(localStorage.getItem('pendingDeletes') || '[]');
-      pending.push(sessionId);
-      localStorage.setItem('pendingDeletes', JSON.stringify(pending));
-    }
+    await this._markSessionDeleted(sessionId);
 
     // Se era a sessão ativa, limpa tudo
     if (sessionId === this.activeSessionId) {
-      this.activeSessionId = null;
-      localStorage.removeItem('activeSessionId');
-      this.state.quizJson = null;
-      this.state.questions = [];
-      this.state.mappings = { qOrder: [], altOrder: {} };
-      this.state.userAnswers = {};
-      this.state.retryMode = false;
-      this.state.retryIndices = [];
-      this.renderer.container.innerHTML = '';
-      this.elements.configBar.classList.add('hidden');
-      this.elements.footerBar.classList.add('hidden');
-      this.elements.filterSection.classList.add('hidden');
-      this.elements.uploadSection.classList.remove('hidden');
+      this._clearActiveSessionUI();
     }
 
     await this.renderSessionList();
@@ -2574,6 +2636,7 @@ const App = {
       if (newQuizTitle) session.state.quizJson.titulo = newQuizTitle;
       session.state.quizJson.descricao = newDescription;
     }
+    session.updatedAt = new Date().toISOString();
 
     await saveSession(session);
 
@@ -2588,6 +2651,7 @@ const App = {
 
     this.elements.editSessionModal.classList.add('hidden');
     this._editingSessionId = null;
+    this.markSyncPending();
     await this.renderSessionList();
   },
 
@@ -3120,23 +3184,9 @@ const App = {
         }
         for (const s of affectedSessions) {
           await deleteSession(s.sessionId);
-          if (this.firebaseSync && this.firebaseState.connected) {
-            try { await this.firebaseSync.deleteRemoteSession(s.sessionId); } catch (e) { console.warn('Erro ao deletar remoto:', e); }
-          }
+          await this._markSessionDeleted(s.sessionId);
           if (s.sessionId === this.activeSessionId) {
-            this.activeSessionId = null;
-            localStorage.removeItem('activeSessionId');
-            this.state.quizJson = null;
-            this.state.questions = [];
-            this.state.mappings = { qOrder: [], altOrder: {} };
-            this.state.userAnswers = {};
-            this.state.retryMode = false;
-            this.state.retryIndices = [];
-            this.renderer.container.innerHTML = '';
-            this.elements.configBar.classList.add('hidden');
-            this.elements.footerBar.classList.add('hidden');
-            this.elements.filterSection.classList.add('hidden');
-            this.elements.uploadSection.classList.remove('hidden');
+            this._clearActiveSessionUI();
           }
         }
       }

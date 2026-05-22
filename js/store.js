@@ -107,6 +107,12 @@ export { generateId };
 
 export async function saveSession(session) {
   try {
+    if (!session.sessionId) {
+      session.sessionId = generateId();
+    }
+    if (!session.updatedAt) {
+      session.updatedAt = new Date().toISOString();
+    }
     const db = await dbPromise;
     const tx = db.transaction(SESSIONS_STORE, 'readwrite');
     const copy = JSON.parse(JSON.stringify(session));
@@ -169,6 +175,7 @@ export async function getAllSessions() {
           folderId: s.folderId || '',
           createdAt: s.createdAt,
           lastAccessedAt: s.lastAccessedAt,
+          updatedAt: s.updatedAt || s.lastAccessedAt || s.createdAt,
           answeredCount: s.answeredCount,
           totalCount: s.totalCount,
           sizeBytes: estimateSize(s)
@@ -210,8 +217,14 @@ export async function importAllSessions(sessionsArray) {
     const db = await dbPromise;
     const tx = db.transaction(SESSIONS_STORE, 'readwrite');
     const store = tx.objectStore(SESSIONS_STORE);
+    const now = new Date().toISOString();
     sessionsArray.forEach(s => {
-      if (s.sessionId) store.put(s);
+      if (s.sessionId) {
+        store.put({
+          ...s,
+          updatedAt: s.updatedAt || s.lastAccessedAt || s.createdAt || now
+        });
+      }
     });
     return new Promise((resolve) => {
       tx.oncomplete = () => resolve(true);
@@ -260,6 +273,7 @@ export async function migrateLegacyState() {
       title,
       createdAt: now,
       lastAccessedAt: now,
+      updatedAt: now,
       answeredCount,
       totalCount,
       state: rest
@@ -326,7 +340,9 @@ export async function updateSessionFolder(sessionId, folderId) {
       req.onsuccess = () => {
         const session = req.result;
         if (session) {
+          const now = new Date().toISOString();
           session.folderId = folderId;
+          session.updatedAt = now;
           store.put(session);
         }
         tx.oncomplete = () => resolve(true);
