@@ -1,0 +1,166 @@
+{
+  "titulo": "Exemplo ME-CH",
+  "descricao": "Arquivo de exemplo com questões de múltipla escolha múltipla.",
+  "conteudo": [
+    {
+      "tipo": "ME-CH",
+      "id": "mech-exemplo-001",
+      "tags": ["Astronomia"],
+      "dificuldade": 1,
+      "enunciado": "Assinale apenas planetas do sistema solar.",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Mercúrio.",
+          "comentario": "Mercúrio é um planeta do sistema solar."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Vênus.",
+          "comentario": "Vênus é um planeta do sistema solar."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Ceres.",
+          "comentario": "Ceres é um planeta anão."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Netuno.",
+          "comentario": "Netuno é um planeta do sistema solar."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Plutão.",
+          "comentario": "Plutão é classificado como planeta anão."
+        }
+      ],
+      "gabarito": "A, B, D",
+      "comentario_geral": "Planetas reconhecidos nessa lista: Mercúrio, Vênus e Netuno."
+    },
+    {
+      "tipo": "ME-CH",
+      "id": "mech-exemplo-002",
+      "tags": ["Anatomia"],
+      "dificuldade": 2,
+      "enunciado": "Assinale estruturas que pertencem ao sistema respiratório.",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Traqueia."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Brônquios."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Esôfago."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Alvéolos."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Ureter."
+        }
+      ],
+      "gabarito": "A, B, D",
+      "comentario_geral": "Traqueia, brônquios e alvéolos fazem parte do sistema respiratório."
+    },
+    {
+      "tipo": "ME-CH",
+      "id": "mech-exemplo-003",
+      "tags": ["Farmacologia"],
+      "dificuldade": 3,
+      "enunciado": "Assinale classes de fármacos que podem ser usadas no tratamento da hipertensão arterial.",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Inibidores da ECA."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Diuréticos tiazídicos."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Betabloqueadores."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Antifúngicos azólicos."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Bloqueadores dos canais de cálcio."
+        }
+      ],
+      "gabarito": "A, B, C, E",
+      "comentario_geral": "Antifúngicos azólicos não são classe anti-hipertensiva."
+    },
+    {
+      "tipo": "ME-CH",
+      "id": "mech-exemplo-004",
+      "tags": ["Matemática"],
+      "dificuldade": 1,
+      "enunciado": "Assinale as igualdades verdadeiras.",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "2 + 2 = 4."
+        },
+        {
+          "id": "alt_B",
+          "texto": "3 x 3 = 9."
+        },
+        {
+          "id": "alt_C",
+          "texto": "10 - 7 = 3."
+        },
+        {
+          "id": "alt_D",
+          "texto": "5 + 1 = 6."
+        },
+        {
+          "id": "alt_E",
+          "texto": "8 / 2 = 4."
+        }
+      ],
+      "gabarito": "ALL",
+      "comentario_geral": "Todas as alternativas são verdadeiras."
+    },
+    {
+      "tipo": "ME-CH",
+      "id": "mech-exemplo-005",
+      "tags": ["Conceitos"],
+      "dificuldade": 2,
+      "enunciado": "Assinale afirmações corretas sobre mamíferos.",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Todos os mamíferos adultos respiram por brânquias."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Todos os mamíferos são ovíparos."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Mamíferos não possuem coluna vertebral."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Todos os mamíferos são incapazes de regular a temperatura corporal."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Mamíferos não possuem glândulas mamárias."
+        }
+      ],
+      "gabarito": "",
+      "comentario_geral": "Nenhuma alternativa está correta; deixar tudo desmarcado vale pontuação máxima."
+    }
+  ]
+}

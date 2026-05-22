@@ -6,7 +6,7 @@ import {
   saveSessionFolders, loadSessionFolders, updateSessionFolder
 } from './store.js';
 import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js';
-import { shuffleArray, difficultyMap } from './utils.js';
+import { shuffleArray, difficultyMap, computeMeChScore } from './utils.js';
 import { QuizRenderer } from './renderer.js';
 
 const App = {
@@ -623,6 +623,7 @@ const App = {
   /**
    * Retorna { hits, total } para a questão originalQIdx.
    * - ME / VF: total = 1, hits = 1 ou 0
+   * - ME-CH: total = 1, hits = pontuação proporcional entre 0 e 1
    * - CH: total = número de assertivas, hits = quantas julgadas corretamente
    * - ESCRITA simples: total = 10, hits = selfEval (0–10)
    * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
@@ -669,6 +670,11 @@ const App = {
       });
 
       return { hits, total };
+    }
+
+    if (tipo === 'ME-CH') {
+      const score = computeMeChScore(qData, ans.selectedOriginalIndices || []);
+      return { hits: score, total: 1 };
     }
 
     // ME / VF – um único gabarito por letra
@@ -1127,6 +1133,14 @@ const App = {
         ans.assertivaAnswers = {};
       }
       ans.assertivaAnswers[originalAltIdx] = checked; // true = V, false = F
+    } else if (tipo === 'ME-CH' && isCheckbox) {
+      const selected = new Set((ans.selectedOriginalIndices || []).map((idx) => Number(idx)));
+      if (checked) {
+        selected.add(originalAltIdx);
+      } else {
+        selected.delete(originalAltIdx);
+      }
+      ans.selectedOriginalIndices = Array.from(selected).sort((a, b) => a - b);
     } else {
       // ME / VF – uma única alternativa
       ans.selectedOriginalIdx = originalAltIdx;
@@ -1153,6 +1167,13 @@ const App = {
           if (btnF) btnF.classList.toggle('selected', choice === false);
           if (label) label.classList.toggle('selected', choice !== undefined);
         });
+      } else if (tipo === 'ME-CH') {
+        const selected = new Set((ans.selectedOriginalIndices || []).map((idx) => Number(idx)));
+        card.querySelectorAll('.alt-label').forEach((label) => {
+          const input = label.querySelector('.alt-input');
+          if (!input) return;
+          label.classList.toggle('selected', selected.has(Number(input.value)));
+        });
       } else {
         card.querySelectorAll('.alt-label').forEach((l) =>
           l.classList.remove('selected')
@@ -1163,8 +1184,8 @@ const App = {
 
       const btn = card.querySelector('.btn-submit');
       if (btn) {
-        if (tipo === 'CH') {
-          // CH: permite responder mesmo sem marcar nada
+        if (tipo === 'CH' || tipo === 'ME-CH') {
+          // CH e ME-CH permitem responder mesmo sem marcar nada
           btn.disabled = false;
         } else {
           btn.disabled = ans.selectedOriginalIdx === undefined;

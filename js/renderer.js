@@ -1,5 +1,10 @@
 /* ===== JS: js\renderer.js ===== */
-import { formatText, difficultyMap } from './utils.js';
+import {
+  formatText,
+  difficultyMap,
+  parseMeChGabarito,
+  computeMeChScore
+} from './utils.js';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
@@ -140,10 +145,12 @@ export class QuizRenderer {
 
     const tipo = (qData.tipo || '').toUpperCase();
     const isCH = tipo === 'CH';
+    const isMECH = tipo === 'ME-CH';
     const isEscrita = tipo === 'ESCRITA';
 
     if (tipo === 'VF') wrapper.classList.add('type-vf');
     if (tipo === 'CH') wrapper.classList.add('type-ch');
+    if (tipo === 'ME-CH') wrapper.classList.add('type-me-ch');
     if (tipo === 'ESCRITA') wrapper.classList.add('type-escrita');
     wrapper.dataset.originalIdx = originalIdx;
 
@@ -200,7 +207,7 @@ export class QuizRenderer {
     const enunciadoHtml = tipo === 'VF'
       ? `<span class="markable-text">${enunciadoTxt}</span>`
       : enunciadoTxt;
-    const hasMarking = tipo === 'VF' || isCH || tipo === 'ME';
+    const hasMarking = tipo === 'VF' || isCH || tipo === 'ME' || isMECH;
     const selModeBtn = hasMarking
       ? `<button class="btn-selection-mode" type="button" title="Alternar modo seleção de texto">📋 Selecionar</button>`
       : '';
@@ -434,7 +441,14 @@ export class QuizRenderer {
       });
 
     } else {
-      // ME / VF – comportamento antigo
+      // ME / VF / ME-CH
+      const selectedMeCh = new Set(
+        userAnswer && Array.isArray(userAnswer.selectedOriginalIndices)
+          ? userAnswer.selectedOriginalIndices.map((idx) => Number(idx))
+          : []
+      );
+      const meChCorrectSet = isMECH ? parseMeChGabarito(qData) : null;
+
       altMapping.forEach((originalAltIdx, visualAltIdx) => {
         const altData = qData.alternativas[originalAltIdx];
         const visualLetter = String.fromCharCode(65 + visualAltIdx);
@@ -443,17 +457,26 @@ export class QuizRenderer {
 
         const gabaritoLetra = (qData.gabarito || '').trim().toUpperCase();
         const gabaritoOriginalIdx = gabaritoLetra.charCodeAt(0) - 65;
-        const isCorrectAlt = originalAltIdx === gabaritoOriginalIdx;
-        const isSelected =
-          userAnswer && userAnswer.selectedOriginalIdx === originalAltIdx;
+        const isCorrectAlt = isMECH
+          ? meChCorrectSet.has(originalAltIdx)
+          : originalAltIdx === gabaritoOriginalIdx;
+        const isSelected = isMECH
+          ? selectedMeCh.has(originalAltIdx)
+          : userAnswer && userAnswer.selectedOriginalIdx === originalAltIdx;
         const isEliminated = eliminatedList.includes(originalAltIdx);
 
         const altWrapper = document.createElement('div');
         altWrapper.className = 'alt-wrapper';
         if (isEliminated) altWrapper.classList.add('eliminated');
         if (isSubmitted) {
-          if (isCorrectAlt) altWrapper.classList.add('correct');
-          if (isSelected && !isCorrectAlt) altWrapper.classList.add('wrong');
+          if (isMECH) {
+            if (isSelected && isCorrectAlt) altWrapper.classList.add('correct');
+            if (isSelected && !isCorrectAlt) altWrapper.classList.add('wrong');
+            if (!isSelected && isCorrectAlt) altWrapper.classList.add('missed-correct');
+          } else {
+            if (isCorrectAlt) altWrapper.classList.add('correct');
+            if (isSelected && !isCorrectAlt) altWrapper.classList.add('wrong');
+          }
         }
 
         const inputId = `q${originalIdx}_alt${visualAltIdx}`;
@@ -479,19 +502,20 @@ export class QuizRenderer {
             : '';
 
         const isME = tipo === 'ME';
+        const inputType = isMECH ? 'checkbox' : 'radio';
         const labelHtml = `
           <label class="alt-label ${isSelected ? 'selected' : ''}" for="${inputId}">
-            <input type="radio" name="q_${originalIdx}" id="${inputId}"
+            <input type="${inputType}" name="q_${originalIdx}" id="${inputId}"
               class="alt-input" value="${originalAltIdx}" ${checked}
               ${isSubmitted || isForced ? 'disabled' : ''}>
             <span class="alt-letter">${visualLetter})</span>
-            <span class="alt-text${isME ? ' markable-text' : ''}">${altText}</span>
+            <span class="alt-text${isME || isMECH ? ' markable-text' : ''}">${altText}</span>
           </label>
         `;
         altWrapper.innerHTML = labelHtml + scissorBtn;
 
-        // Word marking for ME alternativas
-        if (isME) {
+        // Word marking for ME / ME-CH alternativas
+        if (isME || isMECH) {
           const markEl = altWrapper.querySelector('.markable-text');
           if (markEl) {
             const mw = userAnswer && userAnswer.markedWords;
@@ -517,7 +541,12 @@ export class QuizRenderer {
               return;
             }
             if (e.target.tagName === 'INPUT') {
-              this.callbacks.onSelect(originalIdx, originalAltIdx, false, true);
+              this.callbacks.onSelect(
+                originalIdx,
+                originalAltIdx,
+                isMECH,
+                isMECH ? e.target.checked : true
+              );
             }
           });
 
@@ -546,8 +575,8 @@ export class QuizRenderer {
 
       if (isSubmitted) {
         btnAnswer.style.display = 'none';
-      } else if (isCH) {
-        // CH: pode responder mesmo sem marcar nada
+      } else if (isCH || isMECH) {
+        // CH e ME-CH podem responder mesmo sem marcar nada
         btnAnswer.disabled = false;
       } else {
         btnAnswer.disabled =
@@ -560,6 +589,19 @@ export class QuizRenderer {
 
       actionsDiv.appendChild(btnAnswer);
       wrapper.appendChild(actionsDiv);
+    }
+
+    if (isSubmitted && isMECH && !isForced) {
+      const { hits, total } = this.computeQuestionScore(state, originalIdx);
+      const score = total > 0 ? hits / total : 0;
+      const fmt = (n, maxDec = 2) =>
+        (+n).toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: maxDec });
+
+      const scoreDiv = document.createElement('div');
+      scoreDiv.className = 'me-ch-score';
+      scoreDiv.innerHTML =
+        `<strong>Pontuação nesta questão:</strong> ${fmt(score)}/1 ponto (${fmt(score * 100, 1)}%)`;
+      wrapper.appendChild(scoreDiv);
     }
 
     if (isSubmitted || isForced) {
@@ -1057,14 +1099,17 @@ export class QuizRenderer {
         lines.push(`Gabarito: ${gab === 'A' ? 'Verdadeiro' : 'Falso'}`);
         if (q.comentario_geral) lines.push(`Comentário Geral:\n${strip(q.comentario_geral)}`);
       }
-    } else if (tipo === 'ME') {
+    } else if (tipo === 'ME' || tipo === 'ME-CH') {
       const gabIdx = ((q.gabarito || '').trim().toUpperCase().charCodeAt(0) || 65) - 65;
+      const gabSet = tipo === 'ME-CH' ? parseMeChGabarito(q) : null;
 
       altMap.forEach((origIdx, visIdx) => {
         const alt = q.alternativas[origIdx];
         const letter = String.fromCharCode(65 + visIdx);
         let line = `${letter}) ${strip(alt.texto)}`;
-        if (sub && origIdx === gabIdx) line += ' ✔ Gabarito';
+        if (sub && (tipo === 'ME-CH' ? gabSet.has(origIdx) : origIdx === gabIdx)) {
+          line += ' ✔ Gabarito';
+        }
         lines.push(line);
         if (sub && alt.comentario) lines.push(`Comentário do gabarito: ${strip(alt.comentario)}`);
       });
@@ -1112,6 +1157,7 @@ export class QuizRenderer {
   /**
    * Retorna { hits, total } para a questão idx.
    * - ME / VF: total = 1, hits = 1 ou 0
+   * - ME-CH: total = 1, hits = pontuação proporcional entre 0 e 1
    * - CH: total = número de assertivas, hits = quantas julgadas corretamente
    * - ESCRITA simples: total = 10, hits = selfEval (0–10)
    * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
@@ -1160,6 +1206,11 @@ export class QuizRenderer {
       return { hits, total };
     }
 
+    if (tipo === 'ME-CH') {
+      const score = computeMeChScore(qData, ans.selectedOriginalIndices || []);
+      return { hits: score, total: 1 };
+    }
+
     // ME / VF
     const gabaritoLetra = (qData.gabarito || '').trim().toUpperCase();
     if (!gabaritoLetra) return { hits: 0, total: 0 };
@@ -1175,9 +1226,10 @@ export class QuizRenderer {
     let incorrectIndices = [];
 
     // Rastreamento por tipo
-    const typeOrder = ['ME', 'VF', 'CH', 'ESCRITA'];
+    const typeOrder = ['ME', 'ME-CH', 'VF', 'CH', 'ESCRITA'];
     const typeLabels = {
       ME: 'Múltipla Escolha',
+      'ME-CH': 'Múltipla Escolha Múltipla',
       VF: 'Verdadeiro ou Falso (simples)',
       CH: 'Verdadeiro ou Falso (múltiplo)',
       ESCRITA: 'Escrita'

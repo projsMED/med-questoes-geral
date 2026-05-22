@@ -37,3 +37,74 @@ export function formatText(text, originalQIdx, altMappings) {
     return String.fromCharCode(65 + visualIdx);
   });
 }
+
+export function parseMeChGabarito(qData) {
+  const alternativas = Array.isArray(qData.alternativas) ? qData.alternativas : [];
+  const total = alternativas.length;
+  const raw = qData.gabarito;
+
+  if (Array.isArray(raw)) {
+    return new Set(
+      raw
+        .map((item) => {
+          if (typeof item === 'number') return item;
+          const text = String(item || '').trim().toUpperCase();
+          return text.length === 1 ? text.charCodeAt(0) - 65 : Number.NaN;
+        })
+        .filter((idx) => Number.isInteger(idx) && idx >= 0 && idx < total)
+    );
+  }
+
+  const text = String(raw || '').trim().toUpperCase();
+  if (!text || text === 'NONE') return new Set();
+  if (text === 'ALL') return new Set(Array.from({ length: total }, (_, i) => i));
+
+  const indices = text
+    .split(/[\s,;]+/)
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .map((part) => part.length === 1 ? part.charCodeAt(0) - 65 : Number.NaN)
+    .filter((idx) => Number.isInteger(idx) && idx >= 0 && idx < total);
+
+  return new Set(indices);
+}
+
+export function computeMeChScore(qData, selectedIndices) {
+  const alternativas = Array.isArray(qData.alternativas) ? qData.alternativas : [];
+  const total = alternativas.length;
+  if (total === 0) return 0;
+
+  const correctSet = parseMeChGabarito(qData);
+  const selectedSet = new Set(
+    (selectedIndices || [])
+      .map((idx) => Number(idx))
+      .filter((idx) => Number.isInteger(idx) && idx >= 0 && idx < total)
+  );
+
+  let correctMarked = 0;
+  let incorrectMarked = 0;
+
+  selectedSet.forEach((idx) => {
+    if (correctSet.has(idx)) {
+      correctMarked++;
+    } else {
+      incorrectMarked++;
+    }
+  });
+
+  const totalCorrect = correctSet.size;
+  const totalIncorrect = total - totalCorrect;
+  let score = 0;
+
+  if (totalCorrect === 0) {
+    const incorrectNotMarked = totalIncorrect - incorrectMarked;
+    score = (incorrectNotMarked / totalIncorrect) - (incorrectMarked / totalIncorrect);
+  } else if (totalIncorrect === 0) {
+    const correctNotMarked = totalCorrect - correctMarked;
+    score = (correctMarked / totalCorrect) - (correctNotMarked / totalCorrect);
+  } else {
+    score = (correctMarked / totalCorrect) - (incorrectMarked / totalIncorrect);
+  }
+
+  return Math.max(0, Math.min(1, score));
+}
