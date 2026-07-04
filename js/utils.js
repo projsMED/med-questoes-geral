@@ -7,6 +7,16 @@ export const difficultyMap = {
   5: 'Muito difícil'
 };
 
+export const questionTypeMap = {
+  ME: 'Múltipla Escolha Padrão',
+  'ME-CH': 'Múltipla Escolha Múltipla',
+  CH: 'Múltiplo Verdadeiro ou Falso',
+  VF: 'Verdadeiro ou Falso Simples',
+  ESCRITA: 'Dissertativa'
+};
+
+export const questionTypes = Object.keys(questionTypeMap);
+
 /**
  * Embaralha um array usando o algoritmo Fisher-Yates
  */

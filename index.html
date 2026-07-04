@@ -50,7 +50,7 @@
           <div id="folderTree" class="filter-tree"></div>
         </div>
         <div class="step-actions">
-          <button class="btn btn-primary" id="btnGoToStep2">Prosseguir para Tags/Dificuldade &rarr;</button>
+          <button class="btn btn-primary" id="btnGoToStep2">Prosseguir para Tags/Dificuldade/Tipo &rarr;</button>
         </div>
       </div>
 
@@ -62,13 +62,34 @@
 
         <div class="filter-row">
           <div class="filter-group half">
-            <h3>Passo 2: Filtrar por Tags</h3>
+            <div class="filter-group-header">
+              <h3>Tags a incluir</h3>
+              <button class="btn btn-sm filter-bulk-btn" id="btnToggleAllIncludedTags" type="button">Desselecionar todas</button>
+            </div>
             <div id="tagList" class="filter-grid"></div>
           </div>
-          
+
           <div class="filter-group half">
-            <h3>Passo 2: Filtrar por Dificuldade</h3>
+            <div class="filter-group-header">
+              <h3>Tags a excluir</h3>
+              <div class="filter-bulk-actions">
+                <button class="btn btn-sm filter-bulk-btn" id="btnToggleAllExcludedTags" type="button">Selecionar todas</button>
+                <button class="btn btn-sm filter-bulk-btn" id="btnExcludeNotIncludedTags" type="button">Selecionar todas não incluídas</button>
+              </div>
+            </div>
+            <div id="excludedTagList" class="filter-grid"></div>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-group half">
+            <h3>Filtrar por Dificuldade</h3>
             <div id="diffList" class="filter-grid"></div>
+          </div>
+
+          <div class="filter-group half">
+            <h3>Filtrar por Tipo de Questão</h3>
+            <div id="typeList" class="filter-grid"></div>
           </div>
         </div>
 
@@ -353,7 +374,68 @@
   </div>
 </div>
 
-<script type="module" src="js/main.js"></script>
+<script type="module">
+  // Deve coincidir com o parâmetro ?v= das importações locais em js/.
+  const APP_ASSET_VERSION = '20260704-1';
+  const moduleAssets = [
+    'main.js',
+    'store.js',
+    'parser.js',
+    'utils.js',
+    'renderer.js',
+    'firebase-config.js',
+    'firebase-sync.js'
+  ].map((file) => `./js/${file}?v=${APP_ASSET_VERSION}`);
+
+  const showModuleError = (error) => {
+    console.error('Falha ao carregar os módulos da aplicação:', error);
+    const notice = document.createElement('div');
+    notice.setAttribute('role', 'alert');
+    notice.style.cssText = [
+      'position:fixed',
+      'inset:16px 16px auto 16px',
+      'z-index:20000',
+      'padding:14px 18px',
+      'border:1px solid #842029',
+      'border-radius:8px',
+      'background:#f8d7da',
+      'color:#842029',
+      'font:14px/1.4 sans-serif',
+      'box-shadow:0 4px 16px rgba(0,0,0,.2)'
+    ].join(';');
+    notice.textContent =
+      'Não foi possível atualizar os arquivos do site. Recarregue a página ou reinicie o servidor local.';
+    document.body.appendChild(notice);
+  };
+
+  const pageUrl = new URL(window.location.href);
+  try {
+    await import(`./js/main.js?v=${APP_ASSET_VERSION}`);
+    if (pageUrl.searchParams.has('_moduleRefresh')) {
+      pageUrl.searchParams.delete('_moduleRefresh');
+      history.replaceState(null, '', pageUrl);
+    }
+  } catch (error) {
+    if (pageUrl.searchParams.has('_moduleRefresh')) {
+      showModuleError(error);
+    } else {
+      console.warn('Cache de módulos inconsistente; forçando atualização.', error);
+      try {
+        const responses = await Promise.all(
+          moduleAssets.map((url) => fetch(url, { cache: 'reload' }))
+        );
+        const failedResponse = responses.find((response) => !response.ok);
+        if (failedResponse) {
+          throw new Error(`Falha HTTP ${failedResponse.status} ao atualizar módulos.`);
+        }
+        pageUrl.searchParams.set('_moduleRefresh', Date.now().toString());
+        window.location.replace(pageUrl);
+      } catch (recoveryError) {
+        showModuleError(recoveryError);
+      }
+    }
+  }
+</script>
 
 </body>
 </html>

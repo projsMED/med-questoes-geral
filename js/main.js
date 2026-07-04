@@ -4,10 +4,16 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js';
-import { shuffleArray, difficultyMap, computeMeChScore } from './utils.js';
-import { QuizRenderer } from './renderer.js';
+} from './store.js?v=20260704-1';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260704-1';
+import {
+  shuffleArray,
+  difficultyMap,
+  questionTypeMap,
+  questionTypes,
+  computeMeChScore
+} from './utils.js?v=20260704-1';
+import { QuizRenderer } from './renderer.js?v=20260704-1';
 
 const App = {
   activeSessionId: null,
@@ -56,12 +62,15 @@ const App = {
     },
     filters: {
       tags: [],
+      excludedTags: [],
       diffs: [],
+      types: [...questionTypes],
       folders: [],
       allTags: [],
       allDiffs: [],
+      allTypes: [...questionTypes],
       allFolders: [],
-      counts: { tags: {}, diffs: {}, folders: {} },
+      counts: { tags: {}, diffs: {}, types: {}, folders: {} },
       folderDescriptions: {},
       step: 1
     }
@@ -79,7 +88,12 @@ const App = {
     filterStep2: document.getElementById('filterStep2'),
     folderTree: document.getElementById('folderTree'),
     tagList: document.getElementById('tagList'),
+    excludedTagList: document.getElementById('excludedTagList'),
     diffList: document.getElementById('diffList'),
+    typeList: document.getElementById('typeList'),
+    btnToggleAllIncludedTags: document.getElementById('btnToggleAllIncludedTags'),
+    btnToggleAllExcludedTags: document.getElementById('btnToggleAllExcludedTags'),
+    btnExcludeNotIncludedTags: document.getElementById('btnExcludeNotIncludedTags'),
 
     btnGoToStep2: document.getElementById('btnGoToStep2'),
     btnBackToStep1: document.getElementById('btnBackToStep1'),
@@ -315,8 +329,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js');
-      this.firebaseSync = await import('./firebase-sync.js');
+      this.firebaseConfig = await import('./firebase-config.js?v=20260704-1');
+      this.firebaseSync = await import('./firebase-sync.js?v=20260704-1');
 
       this.firebaseState.autoSync = localStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = localStorage.getItem('lastSyncTime') || null;
@@ -379,6 +393,16 @@ const App = {
       this.showStep1();
       this.save();
     });
+
+    this.elements.btnToggleAllIncludedTags.addEventListener('click', () =>
+      this.toggleAllIncludedTags()
+    );
+    this.elements.btnToggleAllExcludedTags.addEventListener('click', () =>
+      this.toggleAllExcludedTags()
+    );
+    this.elements.btnExcludeNotIncludedTags.addEventListener('click', () =>
+      this.excludeAllTagsNotIncluded()
+    );
 
     // IMPORTANTE: ao gerar pelo filtro, sai do modo retry
     this.elements.btnGenerate.addEventListener('click', () => {
@@ -514,20 +538,42 @@ const App = {
     if (!this.state.filters) {
       this.state.filters = {
         tags: [],
+        excludedTags: [],
         diffs: [],
+        types: [...questionTypes],
         folders: [],
         allTags: [],
         allDiffs: [],
+        allTypes: [...questionTypes],
         allFolders: [],
-        counts: { tags: {}, diffs: {}, folders: {} },
+        counts: { tags: {}, diffs: {}, types: {}, folders: {} },
         folderDescriptions: {},
         step: 1
       };
     }
 
-    if (!this.state.filters.counts) {
-      this.state.filters.counts = { tags: {}, diffs: {}, folders: {} };
+    if (!Array.isArray(this.state.filters.tags)) this.state.filters.tags = [];
+    if (!Array.isArray(this.state.filters.excludedTags)) {
+      this.state.filters.excludedTags = [];
     }
+    const excludedTagSet = new Set(this.state.filters.excludedTags);
+    this.state.filters.tags = this.state.filters.tags.filter(
+      (tag) => !excludedTagSet.has(tag)
+    );
+    if (!Array.isArray(this.state.filters.diffs)) this.state.filters.diffs = [];
+    if (!Array.isArray(this.state.filters.types)) {
+      this.state.filters.types = [...questionTypes];
+    }
+    this.state.filters.types = this.state.filters.types.filter((type) =>
+      questionTypes.includes(type)
+    );
+    this.state.filters.allTypes = [...questionTypes];
+
+    if (!this.state.filters.counts) this.state.filters.counts = {};
+    if (!this.state.filters.counts.tags) this.state.filters.counts.tags = {};
+    if (!this.state.filters.counts.diffs) this.state.filters.counts.diffs = {};
+    if (!this.state.filters.counts.types) this.state.filters.counts.types = {};
+    if (!this.state.filters.counts.folders) this.state.filters.counts.folders = {};
 
     if (!this.state.filters.folderDescriptions) {
       this.state.filters.folderDescriptions = {};
@@ -576,12 +622,15 @@ const App = {
 
     this.state.filters = {
       tags: [],
+      excludedTags: [],
       diffs: [],
+      types: [...questionTypes],
       folders: [],
       allTags: [],
       allDiffs: [],
+      allTypes: [...questionTypes],
       allFolders: [],
-      counts: { tags: {}, diffs: {}, folders: {} },
+      counts: { tags: {}, diffs: {}, types: {}, folders: {} },
       folderDescriptions: {},
       step: 1
     };
@@ -738,21 +787,20 @@ const App = {
         }
       });
     } else {
-      // Modo normal: aplica filtros de pasta / tag / dificuldade
-      const selTags = new Set(this.state.filters.tags);
+      // Modo normal: aplica filtros de pasta, tags, dificuldade e tipo.
+      const includedTags = new Set(this.state.filters.tags);
+      const excludedTags = new Set(this.state.filters.excludedTags || []);
       const selDiffs = new Set(this.state.filters.diffs);
+      const selTypes = new Set(this.state.filters.types || questionTypes);
       const selFolders = new Set(this.state.filters.folders);
 
       this.state.questions.forEach((q, idx) => {
         const qPathStr = q._path.join(' > ');
         if (!selFolders.has(qPathStr)) return;
 
-        let hasTag = false;
-        if (q.tags && q.tags.length > 0) {
-          hasTag = q.tags.some((t) => selTags.has(t));
-        } else {
-          hasTag = selTags.has('__NO_TAG__');
-        }
+        const qTags = q.tags && q.tags.length > 0 ? q.tags : ['__NO_TAG__'];
+        const hasIncludedTag = qTags.some((tag) => includedTags.has(tag));
+        const hasExcludedTag = qTags.some((tag) => excludedTags.has(tag));
 
         let hasDiff = false;
         const qDiff =
@@ -761,7 +809,10 @@ const App = {
             : '__NO_DIFF__';
         hasDiff = selDiffs.has(qDiff);
 
-        if (hasTag && hasDiff) {
+        const type = (q.tipo || '').toUpperCase();
+        const hasType = selTypes.has(type);
+
+        if (hasIncludedTag && !hasExcludedTag && hasDiff && hasType) {
           strictPassIndices.add(idx);
           if (q._groupData) {
             activeGroupIds.add(q._groupData.id);
@@ -773,6 +824,7 @@ const App = {
     let finalIndices = [];
     this.state.forcedIndices = [];
     let processedIndices = new Set();
+    const selectedFolders = new Set(this.state.filters.folders);
 
     this.state.questions.forEach((q, idx) => {
       if (processedIndices.has(idx)) return;
@@ -780,22 +832,19 @@ const App = {
       // No modo normal, respeita filtro de pasta aqui também
       if (!this.state.retryMode) {
         const qPathStr = q._path.join(' > ');
-        const selFolders = new Set(this.state.filters.folders);
-        if (!selFolders.has(qPathStr)) return;
+        if (!selectedFolders.has(qPathStr)) return;
       }
 
       if (q._groupData) {
         const groupId = q._groupData.id;
-        if (this.state.retryMode || activeGroupIds.has(groupId)) {
+        if (activeGroupIds.has(groupId)) {
           const groupIndices = [];
 
           this.state.questions.forEach((innerQ, innerIdx) => {
             if (innerQ._groupData && innerQ._groupData.id === groupId) {
               let allowedByFolder = true;
               if (!this.state.retryMode) {
-                allowedByFolder = new Set(this.state.filters.folders).has(
-                  innerQ._path.join(' > ')
-                );
+                allowedByFolder = selectedFolders.has(innerQ._path.join(' > '));
               }
 
               if (allowedByFolder) {
@@ -886,12 +935,15 @@ const App = {
     this.state.userAnswers = {};
     this.state.filters = {
       tags: [],
+      excludedTags: [],
       diffs: [],
+      types: [...questionTypes],
       folders: [],
       allTags: [],
       allDiffs: [],
+      allTypes: [...questionTypes],
       allFolders: [],
-      counts: { tags: {}, diffs: {}, folders: {} },
+      counts: { tags: {}, diffs: {}, types: {}, folders: {} },
       folderDescriptions: {},
       step: 1
     };
@@ -973,14 +1025,21 @@ const App = {
     if (!this.state.filters) {
       this.state.filters = {
         tags: [],
+        excludedTags: [],
         diffs: [],
+        types: [...questionTypes],
+        folders: [],
         allTags: [],
         allDiffs: [],
-        counts: { tags: {}, diffs: {}, folders: {} }
+        allTypes: [...questionTypes],
+        allFolders: [],
+        counts: { tags: {}, diffs: {}, types: {}, folders: {} },
+        folderDescriptions: {},
+        step: 1
       };
     }
 
-    this.state.filters.counts = { tags: {}, diffs: {}, folders: {} };
+    this.state.filters.counts = { tags: {}, diffs: {}, types: {}, folders: {} };
 
     const tagsSet = new Set();
     const diffsSet = new Set();
@@ -1012,14 +1071,29 @@ const App = {
         this.state.filters.counts.diffs[noDiffLabel] =
           (this.state.filters.counts.diffs[noDiffLabel] || 0) + 1;
       }
+
+      const type = (q.tipo || '').toUpperCase();
+      if (questionTypes.includes(type)) {
+        this.state.filters.counts.types[type] =
+          (this.state.filters.counts.types[type] || 0) + 1;
+      }
     });
 
     this.state.filters.allTags = Array.from(tagsSet).sort();
     this.state.filters.allDiffs = Array.from(diffsSet).sort();
+    this.state.filters.allTypes = [...questionTypes];
 
     if (!this.state.filters.tags || this.state.filters.tags.length === 0) {
       this.state.filters.tags = [...this.state.filters.allTags];
+    }
+    if (!Array.isArray(this.state.filters.excludedTags)) {
+      this.state.filters.excludedTags = [];
+    }
+    if (!this.state.filters.diffs || this.state.filters.diffs.length === 0) {
       this.state.filters.diffs = [...this.state.filters.allDiffs];
+    }
+    if (!Array.isArray(this.state.filters.types)) {
+      this.state.filters.types = [...this.state.filters.allTypes];
     }
   },
 
@@ -1029,7 +1103,8 @@ const App = {
       labelBase,
       container,
       selectedList,
-      countDict
+      countDict,
+      onChange = null
     ) => {
       const item = document.createElement('label');
       item.className = 'filter-item';
@@ -1043,14 +1118,18 @@ const App = {
       chk.checked = selectedList.includes(value);
 
       chk.addEventListener('change', () => {
-        if (chk.checked) {
-          selectedList.push(value);
+        if (onChange) {
+          onChange(chk.checked);
         } else {
-          const idx = selectedList.indexOf(value);
-          if (idx > -1) selectedList.splice(idx, 1);
+          if (chk.checked) {
+            if (!selectedList.includes(value)) selectedList.push(value);
+          } else {
+            const idx = selectedList.indexOf(value);
+            if (idx > -1) selectedList.splice(idx, 1);
+          }
+          this.updateGenerateButton();
+          this.save();
         }
-        this.updateGenerateButton();
-        this.save();
       });
 
       item.appendChild(chk);
@@ -1066,7 +1145,31 @@ const App = {
         label,
         this.elements.tagList,
         this.state.filters.tags,
-        this.state.filters.counts.tags
+        this.state.filters.counts.tags,
+        (checked) => {
+          this.setTagFilterValue('tags', tag, checked);
+          if (checked) this.setTagFilterValue('excludedTags', tag, false);
+          this.renderFilterUI();
+          this.save();
+        }
+      );
+    });
+
+    this.elements.excludedTagList.innerHTML = '';
+    this.state.filters.allTags.forEach((tag) => {
+      const label = tag === '__NO_TAG__' ? 'Sem tag' : tag;
+      createCheckbox(
+        tag,
+        label,
+        this.elements.excludedTagList,
+        this.state.filters.excludedTags,
+        this.state.filters.counts.tags,
+        (checked) => {
+          this.setTagFilterValue('excludedTags', tag, checked);
+          if (checked) this.setTagFilterValue('tags', tag, false);
+          this.renderFilterUI();
+          this.save();
+        }
       );
     });
 
@@ -1085,7 +1188,74 @@ const App = {
       );
     });
 
+    this.elements.typeList.innerHTML = '';
+    this.state.filters.allTypes.forEach((type) => {
+      createCheckbox(
+        type,
+        questionTypeMap[type] || type,
+        this.elements.typeList,
+        this.state.filters.types,
+        this.state.filters.counts.types
+      );
+    });
+
+    const allIncluded =
+      this.state.filters.allTags.length > 0 &&
+      this.state.filters.allTags.every((tag) => this.state.filters.tags.includes(tag));
+    const allExcluded =
+      this.state.filters.allTags.length > 0 &&
+      this.state.filters.allTags.every((tag) =>
+        this.state.filters.excludedTags.includes(tag)
+      );
+    this.elements.btnToggleAllIncludedTags.textContent = allIncluded
+      ? 'Desselecionar todas'
+      : 'Selecionar todas';
+    this.elements.btnToggleAllExcludedTags.textContent = allExcluded
+      ? 'Desselecionar todas'
+      : 'Selecionar todas';
+    const noTags = this.state.filters.allTags.length === 0;
+    this.elements.btnToggleAllIncludedTags.disabled = noTags;
+    this.elements.btnToggleAllExcludedTags.disabled = noTags;
+    this.elements.btnExcludeNotIncludedTags.disabled = noTags;
+
     this.updateGenerateButton();
+  },
+
+  setTagFilterValue(filterKey, tag, selected) {
+    const list = this.state.filters[filterKey];
+    const index = list.indexOf(tag);
+    if (selected && index === -1) list.push(tag);
+    if (!selected && index !== -1) list.splice(index, 1);
+  },
+
+  toggleAllIncludedTags() {
+    const allTags = this.state.filters.allTags;
+    const allSelected =
+      allTags.length > 0 && allTags.every((tag) => this.state.filters.tags.includes(tag));
+    this.state.filters.tags = allSelected ? [] : [...allTags];
+    if (!allSelected) this.state.filters.excludedTags = [];
+    this.renderFilterUI();
+    this.save();
+  },
+
+  toggleAllExcludedTags() {
+    const allTags = this.state.filters.allTags;
+    const allSelected =
+      allTags.length > 0 &&
+      allTags.every((tag) => this.state.filters.excludedTags.includes(tag));
+    this.state.filters.excludedTags = allSelected ? [] : [...allTags];
+    if (!allSelected) this.state.filters.tags = [];
+    this.renderFilterUI();
+    this.save();
+  },
+
+  excludeAllTagsNotIncluded() {
+    const included = new Set(this.state.filters.tags);
+    this.state.filters.excludedTags = this.state.filters.allTags.filter(
+      (tag) => !included.has(tag)
+    );
+    this.renderFilterUI();
+    this.save();
   },
 
   updateGenerateButton() {
@@ -1095,9 +1265,16 @@ const App = {
       this.state.filters.tags.length === this.state.filters.allTags.length;
     const allDiffsSel =
       this.state.filters.diffs.length === this.state.filters.allDiffs.length;
+    const allTypesSel =
+      this.state.filters.types.length === this.state.filters.allTypes.length;
 
     this.elements.btnGenerate.textContent =
-      !allTagsSel || !allDiffsSel ? 'Gerar quiz filtrado' : 'Gerar quiz';
+      !allTagsSel ||
+      this.state.filters.excludedTags.length > 0 ||
+      !allDiffsSel ||
+      !allTypesSel
+        ? 'Gerar quiz filtrado'
+        : 'Gerar quiz';
   },
 
   generateAndRender() {
@@ -1281,6 +1458,71 @@ const App = {
 
     // Aplicar modo de colapso de comentários após submissão
     this.applyCommentCollapseModeAfterSubmit(originalQIdx);
+
+    // Reenquadrar a questão depois que alternativas, correções e comentários
+    // específicos assumirem suas dimensões finais.
+    this.scrollSubmittedQuestionIntoView(originalQIdx);
+  },
+
+  scrollSubmittedQuestionIntoView(originalQIdx) {
+    // Dois frames evitam disputar a rolagem com a ancoragem automática que o
+    // navegador aplica quando o card é substituído por uma versão mais alta.
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const card = document.querySelector(
+          `.question-card[data-original-idx="${originalQIdx}"]`
+        );
+        const alternatives = card && card.querySelector('.alternatives-list');
+        if (!alternatives) return;
+
+        const statement = card.querySelector('.q-enunciado');
+        const alternativesRect = alternatives.getBoundingClientRect();
+        const statementRect = statement && statement.getBoundingClientRect();
+
+        const margin = 16;
+        const footerStyle = window.getComputedStyle(this.elements.footerBar);
+        const footerHeight =
+          footerStyle.position === 'fixed' && footerStyle.display !== 'none'
+            ? this.elements.footerBar.getBoundingClientRect().height
+            : 0;
+        const viewportTop = margin;
+        const viewportBottom = window.innerHeight - footerHeight - margin;
+        const availableHeight = Math.max(0, viewportBottom - viewportTop);
+
+        const alternativesTop = window.scrollY + alternativesRect.top;
+        const alternativesBottom = window.scrollY + alternativesRect.bottom;
+        const alternativesHeight = alternativesRect.height;
+        let targetScroll;
+
+        const combinedTop = statementRect
+          ? window.scrollY + statementRect.top
+          : alternativesTop;
+        const combinedHeight = alternativesBottom - combinedTop;
+
+        if (combinedHeight <= availableHeight) {
+          // Enunciado e lista completa cabem: centralizar o conjunto.
+          targetScroll =
+            combinedTop - viewportTop - (availableHeight - combinedHeight) / 2;
+        } else if (alternativesHeight <= availableHeight) {
+          // A lista completa cabe: colocá-la junto à base da área útil para
+          // aproveitar todo o espaço restante acima com o enunciado.
+          targetScroll = alternativesBottom - viewportBottom;
+        } else {
+          // A lista é maior que a tela: começar pela primeira alternativa em
+          // vez de deixar a ancoragem cair no meio de um comentário extenso.
+          targetScroll = alternativesTop - viewportTop;
+        }
+
+        const maxScroll = Math.max(
+          0,
+          document.documentElement.scrollHeight - window.innerHeight
+        );
+        window.scrollTo({
+          top: Math.min(Math.max(0, targetScroll), maxScroll),
+          behavior: 'smooth'
+        });
+      });
+    });
   },
 
   submitAll() {
@@ -2417,6 +2659,7 @@ const App = {
 
     this.state.filters.counts.tags = {};
     this.state.filters.counts.diffs = {};
+    this.state.filters.counts.types = {};
 
     this.state.questions.forEach((q) => {
       const pathStr = q._path.join(' > ');
@@ -2446,24 +2689,30 @@ const App = {
         this.state.filters.counts.diffs[noDiff] =
           (this.state.filters.counts.diffs[noDiff] || 0) + 1;
       }
+
+      const type = (q.tipo || '').toUpperCase();
+      if (questionTypes.includes(type)) {
+        this.state.filters.counts.types[type] =
+          (this.state.filters.counts.types[type] || 0) + 1;
+      }
     });
 
     this.state.filters.allTags = Array.from(tagsSet).sort();
     this.state.filters.allDiffs = Array.from(diffsSet).sort();
+    this.state.filters.allTypes = [...questionTypes];
 
     this.state.filters.tags = this.state.filters.tags.filter((t) =>
+      tagsSet.has(t)
+    );
+    this.state.filters.excludedTags = this.state.filters.excludedTags.filter((t) =>
       tagsSet.has(t)
     );
     this.state.filters.diffs = this.state.filters.diffs.filter((d) =>
       diffsSet.has(d)
     );
-
-    if (
-      this.state.filters.tags.length === 0 &&
-      this.state.filters.allTags.length > 0
-    ) {
-      this.state.filters.tags = [...this.state.filters.allTags];
-    }
+    this.state.filters.types = this.state.filters.types.filter((type) =>
+      questionTypes.includes(type)
+    );
 
     if (
       this.state.filters.diffs.length === 0 &&

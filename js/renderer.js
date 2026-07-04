@@ -2,9 +2,10 @@
 import {
   formatText,
   difficultyMap,
+  questionTypeMap,
   parseMeChGabarito,
   computeMeChScore
-} from './utils.js';
+} from './utils.js?v=20260704-1';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
@@ -23,7 +24,6 @@ export class QuizRenderer {
         this._activeMarking = null;
       }
     });
-    this.container.addEventListener('copy', (e) => this._handleCopy(e));
   }
 
   render(state) {
@@ -95,15 +95,20 @@ export class QuizRenderer {
 
   renderFilterSummary(state) {
     const selTags = state.filters.tags || [];
+    const excludedTags = state.filters.excludedTags || [];
     const allTags = state.filters.allTags || [];
     const selDiffs = state.filters.diffs || [];
     const allDiffs = state.filters.allDiffs || [];
+    const selTypes = state.filters.types || [];
+    const allTypes = state.filters.allTypes || Object.keys(questionTypeMap);
     const selFolders = state.filters.folders || [];
     const allFolders = state.filters.allFolders || [];
 
     const isFiltered =
       selTags.length < allTags.length ||
+      excludedTags.length > 0 ||
       selDiffs.length < allDiffs.length ||
+      selTypes.length < allTypes.length ||
       selFolders.length < allFolders.length;
 
     if (!isFiltered) return;
@@ -118,10 +123,29 @@ export class QuizRenderer {
     }
 
     if (selTags.length < allTags.length) {
-      selTags.forEach((t) => {
-        const label = t === '__NO_TAG__' ? 'Sem tag' : t;
-        html += `<span class="filter-pill tag-pill">${label}</span>`;
-      });
+      if (selTags.length === 0) {
+        html += `<span class="filter-pill tag-pill">Nenhuma tag incluída</span>`;
+      } else {
+        selTags.forEach((t) => {
+          const label = t === '__NO_TAG__' ? 'Sem tag' : t;
+          html += `<span class="filter-pill tag-pill">Inclui: ${label}</span>`;
+        });
+      }
+    }
+
+    excludedTags.forEach((t) => {
+      const label = t === '__NO_TAG__' ? 'Sem tag' : t;
+      html += `<span class="filter-pill exclude-pill">Exclui: ${label}</span>`;
+    });
+
+    if (selTypes.length < allTypes.length) {
+      if (selTypes.length === 0) {
+        html += `<span class="filter-pill diff-pill">Nenhum tipo selecionado</span>`;
+      } else {
+        selTypes.forEach((type) => {
+          html += `<span class="filter-pill diff-pill">Tipo: ${questionTypeMap[type] || type}</span>`;
+        });
+      }
     }
 
     if (selDiffs.length < allDiffs.length) {
@@ -155,14 +179,13 @@ export class QuizRenderer {
     wrapper.dataset.originalIdx = originalIdx;
 
     const userAnswer = state.userAnswers[originalIdx];
-    let isSubmitted = userAnswer && userAnswer.submitted;
     const isForced =
       state.forcedIndices && state.forcedIndices.includes(originalIdx);
+    const isSubmitted = !!(userAnswer && userAnswer.submitted) && !isForced;
     const eliminatedList = state.eliminatedAlts[originalIdx] || [];
 
     if (isForced) {
       wrapper.classList.add('question-forced');
-      isSubmitted = true;
     } else if (isSubmitted) {
       wrapper.classList.add('submitted');
     }
@@ -196,7 +219,7 @@ export class QuizRenderer {
 
     let forcedBadge = '';
     if (isForced) {
-      forcedBadge = `<div class="forced-badge">Exibida para contexto (fora do filtro) - Não vale nota</div>`;
+      forcedBadge = `<div class="forced-badge">Exibida apenas como contexto (fora dos filtros) — não respondível e não vale nota</div>`;
     }
 
     const enunciadoTxt = formatText(
@@ -255,7 +278,7 @@ export class QuizRenderer {
       wrapper.appendChild(escritaContent);
 
       // Comentário geral após envio de todas as partes
-      if (isSubmitted || isForced) {
+      if (isSubmitted) {
         const genCommentTxt = formatText(
           qData.comentario_geral,
           originalIdx,
@@ -604,7 +627,7 @@ export class QuizRenderer {
       wrapper.appendChild(scoreDiv);
     }
 
-    if (isSubmitted || isForced) {
+    if (isSubmitted) {
       const genCommentTxt = formatText(
         qData.comentario_geral,
         originalIdx,
