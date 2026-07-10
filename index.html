@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Engine V3.7 - Filtro em Etapas</title>
+  <title>Question Engine V3.7 - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('vs_darkMode');
@@ -19,7 +19,7 @@
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Quiz Engine V3.7</h2>
+    <h2 class="header-title">Question Engine V3.7</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -148,6 +148,12 @@
           </label>
         </div>
         <div class="vs-option">
+          <label class="toggle-label">
+            <input type="checkbox" id="chkShowPartialScore" checked>
+            Exibir nota parcial
+          </label>
+        </div>
+        <div class="vs-option">
           <strong class="vs-label">Comentários de gabarito:</strong>
           <div class="vs-radio-group">
             <label class="toggle-label">
@@ -175,6 +181,18 @@
         </div>
         <div class="vs-hint">
           <small>Ctrl+B: Alternar todos os comentários | Mobile: 3 toques rápidos com 3 dedos</small>
+        </div>
+      </div>
+
+      <div class="config-row general-settings-toggle">
+        <button class="btn btn-sm" id="btnGeneralSettings">⚙️ Configurações Gerais</button>
+      </div>
+      <div id="generalSettingsPanel" class="general-settings-panel hidden">
+        <div class="vs-option">
+          <label class="toggle-label">
+            <input type="checkbox" id="chkShowDisregardCorrect" checked>
+            Mostrar opção "Desconsiderar acerto"
+          </label>
         </div>
       </div>
 

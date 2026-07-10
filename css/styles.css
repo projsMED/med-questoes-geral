@@ -778,7 +778,7 @@ body {
   pointer-events: none;
 }
 .question-card.submitted .btn-cut {
-  display: none;
+  opacity: 0.75;
 }
 
 /* --- QUESTÃO FORÇADA (CINZA) --- */
@@ -1193,6 +1193,9 @@ body {
 }
 
 .session-item-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-weight: 600;
   font-size: 1em;
   color: var(--text);
@@ -1200,6 +1203,25 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.session-item-title span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.session-errors-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffc107;
+  color: #5f4300;
+  font-size: 0.75em;
+  font-weight: 800;
+  flex: 0 0 auto;
 }
 
 .session-item-meta {
@@ -1370,11 +1392,13 @@ body {
 }
 
 /* --- CONFIGURAÇÕES VISUAIS --- */
-.visual-settings-toggle {
+.visual-settings-toggle,
+.general-settings-toggle {
   justify-content: center;
 }
 
-.visual-settings-panel {
+.visual-settings-panel,
+.general-settings-panel {
   background: var(--surface-sunken);
   border: 1px solid var(--border-medium);
   border-radius: 6px;
@@ -1388,6 +1412,38 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.disregard-correct-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #e0a800;
+  border-radius: 6px;
+  background: #ffc107;
+  color: #3d2b00;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.disregard-correct-control:hover {
+  background: #e0a800;
+}
+
+.result-disregard-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0 10px;
+  padding: 8px 10px;
+  border: 1px solid #ffe08a;
+  border-radius: 6px;
+  background: #fff8db;
+  color: #5f4300;
+  font-weight: 600;
 }
 
 .vs-label {
@@ -1502,6 +1558,10 @@ body {
 
 .question-card.submitted .btn-toggle-comments {
   display: inline-block;
+}
+
+.question-card.submitted .btn-toggle-comments.hidden {
+  display: none !important;
 }
 
 /* --- EDIT SESSION MODAL --- */

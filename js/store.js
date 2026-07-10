@@ -173,11 +173,12 @@ export async function getAllSessions() {
           description: (s.state && s.state.quizJson && s.state.quizJson.descricao) || '',
           quizTitle: (s.state && s.state.quizJson && s.state.quizJson.titulo) || '',
           folderId: s.folderId || '',
+          derivedFromErrors: !!(s.derivedFromErrors || (s.state && s.state.retryDerivedFromErrors)),
           createdAt: s.createdAt,
           lastAccessedAt: s.lastAccessedAt,
           updatedAt: s.updatedAt || s.lastAccessedAt || s.createdAt,
           answeredCount: s.answeredCount,
-          totalCount: s.totalCount,
+          totalCount: getEffectiveSessionTotal(s),
           sizeBytes: estimateSize(s)
         })));
       };
@@ -362,4 +363,18 @@ function estimateSize(obj) {
   } catch {
     return 0;
   }
+}
+
+function getEffectiveSessionTotal(session) {
+  const state = session && session.state;
+  if (!state) return session.totalCount || 0;
+  if (typeof state.sessionQuestionCount === 'number') return state.sessionQuestionCount;
+  if (state.mappings && Array.isArray(state.mappings.qOrder) && state.mappings.qOrder.length > 0) {
+    const forced = Array.isArray(state.forcedIndices) ? state.forcedIndices : [];
+    return state.mappings.qOrder.filter((idx) => !forced.includes(idx)).length;
+  }
+  if (state.retryMode && Array.isArray(state.retryIndices)) {
+    return state.retryIndices.length;
+  }
+  return session.totalCount || (Array.isArray(state.questions) ? state.questions.length : 0);
 }

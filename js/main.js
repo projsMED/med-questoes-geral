@@ -58,7 +58,9 @@ const App = {
       shuffleA: false,
       showTags: true,
       showDiff: false,
-      showFilterSummary: true
+      showFilterSummary: true,
+      showDisregardCorrect: true,
+      applyDisregardedCorrect: true
     },
     filters: {
       tags: [],
@@ -179,10 +181,14 @@ const App = {
     commentSubOptions: document.getElementById('commentSubOptions'),
     chkPersistManualOpen: document.getElementById('chkPersistManualOpen'),
     chkVfStacked: document.getElementById('chkVfStacked'),
+    chkShowPartialScore: document.getElementById('chkShowPartialScore'),
     chkDarkMode: document.getElementById('chkDarkMode'),
     darkModeIcon: document.getElementById('darkModeIcon'),
     rangeFontSize: document.getElementById('rangeFontSize'),
     fontSizeValue: document.getElementById('fontSizeValue'),
+    btnGeneralSettings: document.getElementById('btnGeneralSettings'),
+    generalSettingsPanel: document.getElementById('generalSettingsPanel'),
+    chkShowDisregardCorrect: document.getElementById('chkShowDisregardCorrect'),
 
     // Próxima não respondida
     btnNextUnanswered: document.getElementById('btnNextUnanswered'),
@@ -238,7 +244,11 @@ const App = {
       onSelfEval: (qIdx, score, itemIdx) =>
         this.handleSelfEval(qIdx, score, itemIdx),
       onMarkWords: (qIdx, markKey, wordIndices) =>
-        this.handleMarkWords(qIdx, markKey, wordIndices)
+        this.handleMarkWords(qIdx, markKey, wordIndices),
+      onToggleDisregardCorrect: (qIdx, checked) =>
+        this.handleToggleDisregardCorrect(qIdx, checked),
+      onToggleApplyDisregardedCorrect: (checked) =>
+        this.handleToggleApplyDisregardedCorrect(checked)
     });
 
     this.bindEvents();
@@ -266,6 +276,7 @@ const App = {
         this._sessionTitle = session.title;
         this._sourceFileName = session.sourceFileName || null;
         this._sessionFolderId = session.folderId || '';
+        this._sessionDerivedFromErrors = !!(session.derivedFromErrors || session.state.retryDerivedFromErrors);
         this.state = session.state;
         this.ensureStateIntegrity();
         this.restoreUI();
@@ -532,6 +543,17 @@ const App = {
       this.renderer.render(this.state);
       this.save();
     });
+
+    if (this.elements.chkShowDisregardCorrect) {
+      this.elements.chkShowDisregardCorrect.addEventListener('change', (e) => {
+        localStorage.setItem('gs_showDisregardCorrect', e.target.checked ? 'true' : 'false');
+        this.state.config.showDisregardCorrect = e.target.checked;
+        this.state.config.applyDisregardedCorrect = e.target.checked;
+        this.renderer.render(this.state);
+        this.applyCommentCollapseMode();
+        this.save();
+      });
+    }
   },
 
   ensureStateIntegrity() {
@@ -590,6 +612,13 @@ const App = {
     if (this.state.config.showFilterSummary === undefined) {
       this.state.config.showFilterSummary = true;
     }
+    if (this.state.config.showDisregardCorrect === undefined) {
+      this.state.config.showDisregardCorrect =
+        localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+    }
+    if (this.state.config.applyDisregardedCorrect === undefined) {
+      this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
+    }
   },
 
   // === UPLOAD LOCAL (que você tinha apagado) ===
@@ -619,6 +648,9 @@ const App = {
     this.state.config.showTags = this.elements.chkShowTags.checked;
     this.state.config.showDiff = this.elements.chkShowDiff.checked;
     this.state.config.showFilterSummary = this.elements.chkShowFilterSummary.checked;
+    this.state.config.showDisregardCorrect =
+      localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+    this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
 
     this.state.filters = {
       tags: [],
@@ -641,6 +673,8 @@ const App = {
     // Reset Retry
     this.state.retryMode = false;
     this.state.retryIndices = [];
+    this.state.retryDerivedFromErrors = false;
+    this._sessionDerivedFromErrors = false;
 
     this.state.questions = parseContent(this.state.quizJson.conteudo);
     this.state.userAnswers = {};
@@ -652,6 +686,7 @@ const App = {
     const now = new Date().toISOString();
     this._sessionCreatedAt = now;
     this._lastAccessedAt = now;
+    this._sessionDerivedFromErrors = false;
     this._manuallyOpenedComments = new Set();
     localStorage.setItem('activeSessionId', this.activeSessionId);
 
@@ -669,6 +704,37 @@ const App = {
   },
 
   // --- Lógica de checagem de acerto e pontuação (ME / VF / CH / ESCRITA) ---
+  isObjectiveQuestion(originalQIdx) {
+    const qData = this.state.questions[originalQIdx];
+    return ((qData && qData.tipo) || '').toUpperCase() !== 'ESCRITA';
+  },
+
+  applyDisregardedCorrectToScore(originalQIdx, score, options = {}) {
+    if (options.ignoreDisregard) return score;
+    const ans = this.state.userAnswers[originalQIdx];
+    const featureOn = this.state.config.showDisregardCorrect !== false;
+    const applyOn = this.state.config.applyDisregardedCorrect !== false;
+    if (
+      featureOn &&
+      applyOn &&
+      ans &&
+      ans.disregardCorrect &&
+      this.isObjectiveQuestion(originalQIdx) &&
+      score.total > 0 &&
+      score.hits > 0
+    ) {
+      return { hits: 0, total: score.total };
+    }
+    return score;
+  },
+
+  isDisregardedCorrectForRetry(originalQIdx) {
+    const ans = this.state.userAnswers[originalQIdx];
+    if (!ans || !ans.disregardCorrect || !this.isObjectiveQuestion(originalQIdx)) return false;
+    const raw = this.computeQuestionScore(originalQIdx, { ignoreDisregard: true });
+    return raw.total > 0 && raw.hits > 0;
+  },
+
   /**
    * Retorna { hits, total } para a questão originalQIdx.
    * - ME / VF: total = 1, hits = 1 ou 0
@@ -677,7 +743,7 @@ const App = {
    * - ESCRITA simples: total = 10, hits = selfEval (0–10)
    * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
    */
-  computeQuestionScore(originalQIdx) {
+  computeQuestionScore(originalQIdx, options = {}) {
     const qData = this.state.questions[originalQIdx];
     const ans = this.state.userAnswers[originalQIdx];
     if (!ans || !ans.submitted) return { hits: 0, total: 0 };
@@ -718,12 +784,12 @@ const App = {
         if (userSaidTrue !== undefined && userSaidTrue === isCorrect) hits++;
       });
 
-      return { hits, total };
+      return this.applyDisregardedCorrectToScore(originalQIdx, { hits, total }, options);
     }
 
     if (tipo === 'ME-CH') {
       const score = computeMeChScore(qData, ans.selectedOriginalIndices || []);
-      return { hits: score, total: 1 };
+      return this.applyDisregardedCorrectToScore(originalQIdx, { hits: score, total: 1 }, options);
     }
 
     // ME / VF – um único gabarito por letra
@@ -731,7 +797,11 @@ const App = {
     if (!gabaritoLetra) return { hits: 0, total: 0 };
     const gabaritoIdx = gabaritoLetra.charCodeAt(0) - 65;
     const isCorrect = ans.selectedOriginalIdx === gabaritoIdx;
-    return { hits: isCorrect ? 1 : 0, total: 1 };
+    return this.applyDisregardedCorrectToScore(
+      originalQIdx,
+      { hits: isCorrect ? 1 : 0, total: 1 },
+      options
+    );
   },
 
 // --- NOVA LÓGICA DE RETRY ---
@@ -745,7 +815,7 @@ const App = {
       const { hits, total } = this.computeQuestionScore(idx);
 
       // Considera "errada" para retry se não tiver pontuação máxima
-      if (!ans || !ans.submitted || total === 0 || hits < total) {
+      if (!ans || !ans.submitted || total === 0 || hits < total || this.isDisregardedCorrectForRetry(idx)) {
         wrongIndices.push(idx);
       }
     });
@@ -762,11 +832,26 @@ const App = {
     )
       return;
 
+    this.save(false);
+
+    const sourceSessionId = this.activeSessionId || null;
+    const sourceState = JSON.parse(JSON.stringify(this.state));
+    const now = new Date().toISOString();
+    this.activeSessionId = generateId();
+    localStorage.setItem('activeSessionId', this.activeSessionId);
+    this._sessionCreatedAt = now;
+    this._lastAccessedAt = now;
+    this._sessionDerivedFromErrors = true;
+
+    this.state = sourceState;
     this.state.retryMode = true;
     this.state.retryIndices = wrongIndices;
-
+    this.state.retryDerivedFromErrors = true;
+    this.state.retrySourceSessionId = sourceSessionId;
     this.state.userAnswers = {};
     this.state.eliminatedAlts = {};
+    this.state.mappings = { qOrder: [], altOrder: {} };
+    this.state.sessionQuestionCount = wrongIndices.length;
 
     this.generateAndRender();
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1389,20 +1474,24 @@ const App = {
 
     this.save(true);
 
-    const visualIdx = this.state.mappings.qOrder.indexOf(originalQIdx);
     const card = document.querySelector(
       `.question-card[data-original-idx="${originalQIdx}"]`
     );
-
     if (card) {
-      const newCard = this.renderer.createQuestionCard(
-        this.state.questions[originalQIdx],
-        originalQIdx,
-        visualIdx,
-        this.state
-      );
-      card.replaceWith(newCard);
+      const qData = this.state.questions[originalQIdx];
+      const wrapper = this.findAlternativeWrapper(card, qData, originalAltIdx);
+      if (wrapper) {
+        wrapper.classList.toggle('eliminated', index === -1);
+      }
     }
+  },
+
+  findAlternativeWrapper(card, qData, originalAltIdx) {
+    const tipo = ((qData && qData.tipo) || '').toUpperCase();
+    if (tipo === 'CH') {
+      return card.querySelector(`input[name="q${card.dataset.originalIdx}_ass${originalAltIdx}"]`)?.closest('.alt-wrapper');
+    }
+    return card.querySelector(`.alt-input[value="${originalAltIdx}"]`)?.closest('.alt-wrapper');
   },
 
   handleMarkWords(qIdx, markKey, wordIndices) {
@@ -1462,6 +1551,55 @@ const App = {
     // Reenquadrar a questão depois que alternativas, correções e comentários
     // específicos assumirem suas dimensões finais.
     this.scrollSubmittedQuestionIntoView(originalQIdx);
+  },
+
+  handleToggleDisregardCorrect(originalQIdx, checked) {
+    if (!this.state.userAnswers[originalQIdx]) return;
+    const ans = this.state.userAnswers[originalQIdx];
+    const raw = this.computeQuestionScore(originalQIdx, { ignoreDisregard: true });
+    if (!ans.submitted || !this.isObjectiveQuestion(originalQIdx) || raw.total === 0 || raw.hits <= 0) {
+      return;
+    }
+
+    ans.disregardCorrect = !!checked;
+    if (checked && this.state.config.showDisregardCorrect !== false) {
+      this.state.config.applyDisregardedCorrect = true;
+    }
+
+    this.save(true);
+
+    const card = document.querySelector(
+      `.question-card[data-original-idx="${originalQIdx}"]`
+    );
+    if (card) {
+      this.updateQuestionScoreDisplay(originalQIdx, card);
+    }
+    this.renderer.updateFooter(this.state);
+  },
+
+  updateQuestionScoreDisplay(originalQIdx, card) {
+    const scoreDiv = card.querySelector('.me-ch-score');
+    if (!scoreDiv) return;
+    const { hits, total } = this.computeQuestionScore(originalQIdx);
+    const score = total > 0 ? hits / total : 0;
+    const fmt = (n, maxDec = 2) =>
+      (+n).toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: maxDec });
+    scoreDiv.innerHTML =
+      `<strong>Pontuação nesta questão:</strong> ${fmt(score)}/1 ponto (${fmt(score * 100, 1)}%)`;
+  },
+
+  handleToggleApplyDisregardedCorrect(checked) {
+    this.state.config.applyDisregardedCorrect = !!checked;
+    this.save(false);
+    this.updateVisibleQuestionScoreDisplays();
+    this.renderer.updateFooter(this.state);
+  },
+
+  updateVisibleQuestionScoreDisplays() {
+    document.querySelectorAll('.question-card[data-original-idx]').forEach((card) => {
+      const idx = Number(card.dataset.originalIdx);
+      if (!Number.isNaN(idx)) this.updateQuestionScoreDisplay(idx, card);
+    });
   },
 
   scrollSubmittedQuestionIntoView(originalQIdx) {
@@ -1684,13 +1822,14 @@ const App = {
     const now = new Date().toISOString();
     const title = (this.state.quizJson && this.state.quizJson.titulo) || '';
     const answeredCount = this.getAnsweredCount();
-    const totalCount = Array.isArray(this.state.questions) ? this.state.questions.length : 0;
+    const totalCount = this.getTotalQuestionCount();
 
     const exportData = {
       sessionId: this.activeSessionId || generateId(),
       title: this._sessionTitle || title || 'Quiz sem título',
       sourceFileName: this._sourceFileName || '',
       folderId: this._sessionFolderId || '',
+      derivedFromErrors: !!(this._sessionDerivedFromErrors || this.state.retryDerivedFromErrors),
       createdAt: this._sessionCreatedAt || now,
       lastAccessedAt: this._lastAccessedAt || now,
       updatedAt: now,
@@ -1728,15 +1867,16 @@ const App = {
 
         const now = new Date().toISOString();
         const session = {
-          sessionId: data.sessionId || generateId(),
+          sessionId: generateId(),
           title: data.title || (state.quizJson && state.quizJson.titulo) || 'Quiz sem título',
           sourceFileName: data.sourceFileName || '',
           folderId: data.folderId || '',
-          createdAt: data.createdAt || now,
-          lastAccessedAt: data.lastAccessedAt || now,
-          updatedAt: data.updatedAt || data.lastAccessedAt || data.createdAt || now,
+          derivedFromErrors: !!(data.derivedFromErrors || state.retryDerivedFromErrors),
+          createdAt: now,
+          lastAccessedAt: now,
+          updatedAt: now,
           answeredCount: data.answeredCount || 0,
-          totalCount: data.totalCount || (Array.isArray(state.questions) ? state.questions.length : 0),
+          totalCount: state.sessionQuestionCount || data.totalCount || (Array.isArray(state.questions) ? state.questions.length : 0),
           state: data.state || state
         };
 
@@ -1764,11 +1904,42 @@ const App = {
     this.elements.chkShowDiff.checked = this.state.config.showDiff;
     this.elements.chkShowFilterSummary.checked =
       this.state.config.showFilterSummary;
+    if (this.elements.chkShowDisregardCorrect) {
+      this.state.config.showDisregardCorrect =
+        localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+      this.elements.chkShowDisregardCorrect.checked =
+        this.state.config.showDisregardCorrect !== false;
+    }
   },
 
   getAnsweredCount() {
     if (!this.state.userAnswers) return 0;
-    return Object.values(this.state.userAnswers).filter(a => a && a.submitted).length;
+    const active = new Set(this.getActiveQuestionIndices());
+    return Object.entries(this.state.userAnswers).filter(([idx, a]) =>
+      a && a.submitted && active.has(Number(idx))
+    ).length;
+  },
+
+  getActiveQuestionIndices() {
+    if (this.state.mappings && Array.isArray(this.state.mappings.qOrder) && this.state.mappings.qOrder.length > 0) {
+      return this.state.mappings.qOrder.filter(idx =>
+        !(this.state.forcedIndices && this.state.forcedIndices.includes(idx))
+      );
+    }
+    if (this.state.retryMode && Array.isArray(this.state.retryIndices)) {
+      return this.state.retryIndices;
+    }
+    if (Array.isArray(this.state.questions)) {
+      return this.state.questions.map((_, idx) => idx);
+    }
+    return [];
+  },
+
+  getTotalQuestionCount() {
+    if (typeof this.state.sessionQuestionCount === 'number') {
+      return this.state.sessionQuestionCount;
+    }
+    return this.getActiveQuestionIndices().length;
   },
 
   save(updateAccess = false) {
@@ -1776,7 +1947,7 @@ const App = {
       const now = new Date().toISOString();
       const title = this._sessionTitle || (this.state.quizJson && this.state.quizJson.titulo) || 'Quiz sem título';
       const answeredCount = this.getAnsweredCount();
-      const totalCount = Array.isArray(this.state.questions) ? this.state.questions.length : 0;
+      const totalCount = this.getTotalQuestionCount();
 
       // Preservar createdAt original
       if (!this._sessionCreatedAt) {
@@ -1788,6 +1959,7 @@ const App = {
         title,
         sourceFileName: this._sourceFileName || '',
         folderId: this._sessionFolderId || '',
+        derivedFromErrors: !!(this._sessionDerivedFromErrors || this.state.retryDerivedFromErrors),
         createdAt: this._sessionCreatedAt,
         lastAccessedAt: updateAccess ? now : (this._lastAccessedAt || this._sessionCreatedAt),
         updatedAt: now,
@@ -1919,6 +2091,8 @@ const App = {
     this.state.userAnswers = {};
     this.state.retryMode = false;
     this.state.retryIndices = [];
+    this.state.retryDerivedFromErrors = false;
+    this._sessionDerivedFromErrors = false;
     this.renderer.container.innerHTML = '';
     this.elements.configBar.classList.add('hidden');
     this.elements.footerBar.classList.add('hidden');
@@ -2145,10 +2319,13 @@ const App = {
     const sourceFileHtml = s.sourceFileName
       ? `<div class="session-item-source">📄 ${this.escapeHtml(s.sourceFileName)}</div>`
       : '';
+    const errorsBadgeHtml = s.derivedFromErrors
+      ? '<span class="session-errors-badge" title="Sessão criada a partir de questões erradas">⚠</span>'
+      : '';
 
     item.innerHTML = `
       <div class="session-item-info">
-        <div class="session-item-title">${this.escapeHtml(s.title)}${isActive ? ' (ativa)' : ''}</div>
+        <div class="session-item-title">${errorsBadgeHtml}<span>${this.escapeHtml(s.title)}${isActive ? ' (ativa)' : ''}</span></div>
         ${sourceFileHtml}
         <div class="session-item-meta">
           <span>Criada: ${this._formatDate(s.createdAt)}</span>
@@ -2506,9 +2683,19 @@ const App = {
           return;
         }
 
-        if (!confirm(`Importar ${valid.length} sessão(ões)? Sessões com IDs iguais serão substituídas.`)) return;
+        if (!confirm(`Importar ${valid.length} sessão(ões)? Elas serão adicionadas como novas sessões.`)) return;
 
-        await importAllSessions(valid);
+        const now = new Date().toISOString();
+        const imported = valid.map((s) => ({
+          ...s,
+          sessionId: generateId(),
+          createdAt: now,
+          lastAccessedAt: now,
+          updatedAt: now,
+          derivedFromErrors: !!(s.derivedFromErrors || (s.state && s.state.retryDerivedFromErrors))
+        }));
+
+        await importAllSessions(imported);
         await this.renderSessionList();
       } catch (err) {
         alert('Erro ao importar lista: ' + err.message);
@@ -2932,6 +3119,7 @@ const App = {
       commentMode: localStorage.getItem('vs_commentMode') || 'all',
       persistManualOpen: localStorage.getItem('vs_persistManualOpen') === 'true',
       vfStacked: localStorage.getItem('vs_vfStacked') === 'true',
+      showPartialScore: localStorage.getItem('vs_showPartialScore') !== 'false',
       fontSize: parseInt(localStorage.getItem('vs_fontSize')) || 16,
       darkMode: localStorage.getItem('vs_darkMode')
     };
@@ -2950,8 +3138,15 @@ const App = {
     }
     this.elements.chkPersistManualOpen.checked = vs.persistManualOpen;
     this.elements.chkVfStacked.checked = vs.vfStacked;
+    if (this.elements.chkShowPartialScore) {
+      this.elements.chkShowPartialScore.checked = vs.showPartialScore;
+    }
     this.elements.rangeFontSize.value = vs.fontSize;
     this.elements.fontSizeValue.textContent = vs.fontSize + 'px';
+    if (this.elements.chkShowDisregardCorrect) {
+      this.elements.chkShowDisregardCorrect.checked =
+        localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+    }
 
     // Dark mode: null = auto (segue o sistema), 'true'/'false' = manual
     const isDark = vs.darkMode === 'true' ||
@@ -2968,6 +3163,12 @@ const App = {
     this.elements.btnVisualSettings.addEventListener('click', () => {
       this.elements.visualSettingsPanel.classList.toggle('hidden');
     });
+
+    if (this.elements.btnGeneralSettings && this.elements.generalSettingsPanel) {
+      this.elements.btnGeneralSettings.addEventListener('click', () => {
+        this.elements.generalSettingsPanel.classList.toggle('hidden');
+      });
+    }
 
     this.elements.chkFooterFixed.addEventListener('change', (e) => {
       localStorage.setItem('vs_footerFixed', e.target.checked);
@@ -2993,6 +3194,14 @@ const App = {
       localStorage.setItem('vs_vfStacked', e.target.checked);
       this.applyVfStacked(e.target.checked);
     });
+
+    if (this.elements.chkShowPartialScore) {
+      this.elements.chkShowPartialScore.addEventListener('change', (e) => {
+        localStorage.setItem('vs_showPartialScore', e.target.checked ? 'true' : 'false');
+        this.renderer.render(this.state);
+        this.applyCommentCollapseMode();
+      });
+    }
 
     this.elements.chkDarkMode.addEventListener('change', (e) => {
       const enabled = e.target.checked;
@@ -3142,6 +3351,25 @@ const App = {
     });
   },
 
+  getCollapsedCommentIndices() {
+    const collapsed = new Set();
+    document.querySelectorAll('.question-card.submitted.comments-collapsed').forEach(card => {
+      const idx = parseInt(card.dataset.originalIdx, 10);
+      if (!Number.isNaN(idx)) collapsed.add(idx);
+    });
+    return collapsed;
+  },
+
+  restoreCollapsedCommentIndices(collapsed) {
+    if (!collapsed || collapsed.size === 0) return;
+    collapsed.forEach((idx) => {
+      const card = document.querySelector(`.question-card[data-original-idx="${idx}"]`);
+      if (!card || !card.classList.contains('submitted')) return;
+      card.classList.add('comments-collapsed');
+      this.updateToggleButton(card, true);
+    });
+  },
+
   toggleAllComments() {
     const anyVisible = document.querySelector('.question-card.submitted:not(.comments-collapsed) .general-comment, .question-card.submitted:not(.comments-collapsed) .specific-comment');
     if (anyVisible) {
@@ -3152,9 +3380,15 @@ const App = {
   },
 
   updateToggleButton(card, collapsed) {
-    const btn = card.querySelector('.btn-toggle-comments');
-    if (btn) {
-      btn.textContent = collapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+    card.querySelectorAll('.btn-toggle-comments').forEach((btn) => {
+      if (btn.classList.contains('btn-toggle-comments-end')) {
+        btn.textContent = '📕 Ocultar comentários';
+      } else {
+        btn.textContent = collapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+      }
+    });
+    if (this.renderer && this.renderer.refreshCommentToggleVisibility) {
+      requestAnimationFrame(() => this.renderer.refreshCommentToggleVisibility(card));
     }
   },
 

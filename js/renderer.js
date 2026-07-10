@@ -91,6 +91,11 @@ export class QuizRenderer {
     });
 
     this.updateFooter(state);
+    requestAnimationFrame(() => {
+      this.container.querySelectorAll('.question-card.submitted').forEach((card) => {
+        this.refreshCommentToggleVisibility(card);
+      });
+    });
   }
 
   renderFilterSummary(state) {
@@ -277,6 +282,10 @@ export class QuizRenderer {
       );
       wrapper.appendChild(escritaContent);
 
+      if (isSubmitted && !isForced && this._hasQuestionComments(qData, tipo)) {
+        wrapper.appendChild(this._createToggleCommentsButton(wrapper, originalIdx, 'main'));
+      }
+
       // Comentário geral após envio de todas as partes
       if (isSubmitted) {
         const genCommentTxt = formatText(
@@ -291,20 +300,7 @@ export class QuizRenderer {
           wrapper.appendChild(genDiv);
 
           if (!isForced) {
-            const toggleBtn = document.createElement('button');
-            toggleBtn.className = 'btn-toggle-comments';
-            toggleBtn.type = 'button';
-            const isCollapsed = wrapper.classList.contains('comments-collapsed');
-            toggleBtn.textContent = isCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
-            toggleBtn.addEventListener('click', () => {
-              wrapper.classList.toggle('comments-collapsed');
-              const nowCollapsed = wrapper.classList.contains('comments-collapsed');
-              toggleBtn.textContent = nowCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
-              if (this.callbacks.onToggleComments) {
-                this.callbacks.onToggleComments(originalIdx, !nowCollapsed);
-              }
-            });
-            wrapper.appendChild(toggleBtn);
+            wrapper.appendChild(this._createToggleCommentsButton(wrapper, originalIdx, 'end'));
           }
         }
       }
@@ -368,7 +364,7 @@ export class QuizRenderer {
         }
 
         const scissorBtn =
-          !isSubmitted && !isForced
+          !isForced
             ? `<button class="btn-cut" type="button" title="Cortar alternativa">✂️</button>`
             : '';
 
@@ -431,24 +427,26 @@ export class QuizRenderer {
           altItem.appendChild(commentDiv);
         }
 
-        if (!isSubmitted && !isForced) {
+        if (!isForced) {
           const radios = altWrapper.querySelectorAll(`input[name="${radioNameV}"]`);
-          radios.forEach((radio) => {
-            radio.addEventListener('change', (e) => {
-              if (eliminatedList.includes(originalAssIdx)) {
-                e.preventDefault();
-                radio.checked = false;
-                return;
-              }
-              const markedTrue = radio.value === 'V';
-              this.callbacks.onSelect(
-                originalIdx,
-                originalAssIdx,
-                true,
-                markedTrue
-              );
+          if (!isSubmitted) {
+            radios.forEach((radio) => {
+              radio.addEventListener('change', (e) => {
+                if (eliminatedList.includes(originalAssIdx)) {
+                  e.preventDefault();
+                  radio.checked = false;
+                  return;
+                }
+                const markedTrue = radio.value === 'V';
+                this.callbacks.onSelect(
+                  originalIdx,
+                  originalAssIdx,
+                  true,
+                  markedTrue
+                );
+              });
             });
-          });
+          }
 
           const cutBtn = altWrapper.querySelector('.btn-cut');
           if (cutBtn) {
@@ -520,7 +518,7 @@ export class QuizRenderer {
         }
 
         const scissorBtn =
-          !isSubmitted && !isForced
+          !isForced
             ? `<button class="btn-cut" type="button" title="Cortar alternativa">✂️</button>`
             : '';
 
@@ -556,22 +554,24 @@ export class QuizRenderer {
           altItem.appendChild(commentDiv);
         }
 
-        if (!isSubmitted && !isForced) {
+        if (!isForced) {
           const lbl = altWrapper.querySelector('.alt-label');
-          lbl.addEventListener('click', (e) => {
-            if (eliminatedList.includes(originalAltIdx)) {
-              e.preventDefault();
-              return;
-            }
-            if (e.target.tagName === 'INPUT') {
-              this.callbacks.onSelect(
-                originalIdx,
-                originalAltIdx,
-                isMECH,
-                isMECH ? e.target.checked : true
-              );
-            }
-          });
+          if (!isSubmitted) {
+            lbl.addEventListener('click', (e) => {
+              if (eliminatedList.includes(originalAltIdx)) {
+                e.preventDefault();
+                return;
+              }
+              if (e.target.tagName === 'INPUT') {
+                this.callbacks.onSelect(
+                  originalIdx,
+                  originalAltIdx,
+                  isMECH,
+                  isMECH ? e.target.checked : true
+                );
+              }
+            });
+          }
 
           const cutBtn = altWrapper.querySelector('.btn-cut');
           if (cutBtn) {
@@ -611,7 +611,30 @@ export class QuizRenderer {
       });
 
       actionsDiv.appendChild(btnAnswer);
+
+      if (isSubmitted && !isEscrita && state.config.showDisregardCorrect !== false) {
+        const rawScore = this.computeQuestionScore(state, originalIdx, { ignoreDisregard: true });
+        if (rawScore.total > 0 && rawScore.hits > 0) {
+          const disregardLabel = document.createElement('label');
+          disregardLabel.className = 'disregard-correct-control';
+          disregardLabel.innerHTML = `
+            <input type="checkbox" ${userAnswer && userAnswer.disregardCorrect ? 'checked' : ''}>
+            <span>Desconsiderar acerto</span>
+          `;
+          const disregardInput = disregardLabel.querySelector('input');
+          disregardInput.addEventListener('change', (e) => {
+            if (this.callbacks.onToggleDisregardCorrect) {
+              this.callbacks.onToggleDisregardCorrect(originalIdx, e.target.checked);
+            }
+          });
+          actionsDiv.appendChild(disregardLabel);
+        }
+      }
       wrapper.appendChild(actionsDiv);
+    }
+
+    if (isSubmitted && !isForced && this._hasQuestionComments(qData, tipo)) {
+      wrapper.appendChild(this._createToggleCommentsButton(wrapper, originalIdx, 'main'));
     }
 
     if (isSubmitted && isMECH && !isForced) {
@@ -638,32 +661,99 @@ export class QuizRenderer {
         genDiv.className = 'general-comment';
         genDiv.innerHTML = `<strong>Comentário Geral:</strong><br>${genCommentTxt}`;
         wrapper.appendChild(genDiv);
+        if (!isForced) {
+          wrapper.appendChild(this._createToggleCommentsButton(wrapper, originalIdx, 'end'));
+        }
       }
 
-      // Botão para alternar visibilidade dos comentários
-      const hasComments = wrapper.querySelector('.specific-comment') || genCommentTxt;
-      if (hasComments && !isForced) {
-        const toggleBtn = document.createElement('button');
-        toggleBtn.className = 'btn-toggle-comments';
-        toggleBtn.type = 'button';
-        const isCollapsed = wrapper.classList.contains('comments-collapsed');
-        toggleBtn.textContent = isCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
-        toggleBtn.addEventListener('click', () => {
-          wrapper.classList.toggle('comments-collapsed');
-          const nowCollapsed = wrapper.classList.contains('comments-collapsed');
-          toggleBtn.textContent = nowCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
-          if (this.callbacks.onToggleComments) {
-            this.callbacks.onToggleComments(originalIdx, !nowCollapsed);
-          }
-        });
-        wrapper.appendChild(toggleBtn);
-      }
     }
 
     return wrapper;
   }
 
   // ===================== ESCRITA helpers =====================
+
+  _hasQuestionComments(qData, tipo) {
+    if (qData.comentario_geral) return true;
+    if (tipo === 'CH') {
+      return Array.isArray(qData.assertivas) && qData.assertivas.some((ass) => ass.comentario);
+    }
+    if (tipo === 'ESCRITA') {
+      return Array.isArray(qData.itens) && qData.itens.some((item) => item.comentario || item.gabarito);
+    }
+    return Array.isArray(qData.alternativas) && qData.alternativas.some((alt) => alt.comentario);
+  }
+
+  _createToggleCommentsButton(wrapper, originalIdx, position = 'main') {
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = `btn-toggle-comments btn-toggle-comments-${position}`;
+    toggleBtn.type = 'button';
+    const updateText = () => {
+      const isCollapsed = wrapper.classList.contains('comments-collapsed');
+      if (position === 'main') {
+        toggleBtn.textContent = isCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+      } else {
+        toggleBtn.textContent = '📕 Ocultar comentários';
+      }
+      wrapper.querySelectorAll('.btn-toggle-comments-main').forEach((btn) => {
+        btn.textContent = isCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+      });
+      wrapper.querySelectorAll('.btn-toggle-comments-end').forEach((btn) => {
+        btn.textContent = '📕 Ocultar comentários';
+        btn.classList.toggle('hidden', isCollapsed || !this._shouldShowEndCommentToggle(wrapper));
+      });
+    };
+    updateText();
+    toggleBtn.addEventListener('click', () => {
+      const wasCollapsed = wrapper.classList.contains('comments-collapsed');
+      const shouldRestoreCardPosition = position === 'end' && !wasCollapsed;
+      const targetTop = shouldRestoreCardPosition
+        ? window.scrollY + wrapper.getBoundingClientRect().top - 16
+        : null;
+
+      wrapper.classList.toggle('comments-collapsed');
+      updateText();
+      if (this.callbacks.onToggleComments) {
+        this.callbacks.onToggleComments(originalIdx, !wrapper.classList.contains('comments-collapsed'));
+      }
+      if (targetTop !== null) {
+        requestAnimationFrame(() => {
+          window.scrollTo({
+            top: Math.max(0, targetTop),
+            behavior: 'instant'
+          });
+        });
+      }
+    });
+    return toggleBtn;
+  }
+
+  _shouldShowEndCommentToggle(wrapper) {
+    if (!wrapper || wrapper.classList.contains('comments-collapsed')) return false;
+    const endBtn = wrapper.querySelector('.btn-toggle-comments-end');
+    if (!endBtn) return false;
+
+    const comments = Array.from(wrapper.querySelectorAll('.specific-comment, .general-comment, .escrita-submitted-text, .escrita-item-submitted'));
+    if (comments.length === 0) return false;
+
+    const first = comments[0];
+    const last = comments[comments.length - 1];
+    const top = first.getBoundingClientRect().top;
+    const bottom = last.getBoundingClientRect().bottom;
+    return (bottom - top) > (window.innerHeight - 80);
+  }
+
+  refreshCommentToggleVisibility(card) {
+    if (!card) return;
+    const isCollapsed = card.classList.contains('comments-collapsed');
+    card.querySelectorAll('.btn-toggle-comments-main').forEach((btn) => {
+      btn.textContent = isCollapsed ? '📖 Exibir comentários' : '📕 Ocultar comentários';
+    });
+    card.querySelectorAll('.btn-toggle-comments-end').forEach((btn) => {
+      btn.textContent = '📕 Ocultar comentários';
+      btn.classList.toggle('hidden', isCollapsed || !this._shouldShowEndCommentToggle(card));
+    });
+  }
 
   _createEscritaContent(qData, originalIdx, state, isForced, isSubmitted, userAnswer) {
     const isItemsType = qData.subtipo === 'itens' || (Array.isArray(qData.itens) && qData.itens.length > 0);
@@ -1177,6 +1267,37 @@ export class QuizRenderer {
 
   // ===================== Pontuação =====================
 
+  isObjectiveQuestion(state, idx) {
+    const qData = state.questions[idx];
+    return ((qData && qData.tipo) || '').toUpperCase() !== 'ESCRITA';
+  }
+
+  applyDisregardedCorrectToScore(state, idx, score, options = {}) {
+    if (options.ignoreDisregard) return score;
+    const ans = state.userAnswers[idx];
+    const featureOn = state.config.showDisregardCorrect !== false;
+    const applyOn = state.config.applyDisregardedCorrect !== false;
+    if (
+      featureOn &&
+      applyOn &&
+      ans &&
+      ans.disregardCorrect &&
+      this.isObjectiveQuestion(state, idx) &&
+      score.total > 0 &&
+      score.hits > 0
+    ) {
+      return { hits: 0, total: score.total };
+    }
+    return score;
+  }
+
+  isDisregardedCorrectMarked(state, idx) {
+    const ans = state.userAnswers[idx];
+    if (!ans || !ans.disregardCorrect || !this.isObjectiveQuestion(state, idx)) return false;
+    const raw = this.computeQuestionScore(state, idx, { ignoreDisregard: true });
+    return raw.total > 0 && raw.hits > 0;
+  }
+
   /**
    * Retorna { hits, total } para a questão idx.
    * - ME / VF: total = 1, hits = 1 ou 0
@@ -1185,7 +1306,7 @@ export class QuizRenderer {
    * - ESCRITA simples: total = 10, hits = selfEval (0–10)
    * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
    */
-  computeQuestionScore(state, idx) {
+  computeQuestionScore(state, idx, options = {}) {
     const qData = state.questions[idx];
     const ans = state.userAnswers[idx];
     if (!ans || !ans.submitted) return { hits: 0, total: 0 };
@@ -1226,12 +1347,12 @@ export class QuizRenderer {
         if (userSaidTrue !== undefined && userSaidTrue === isCorrect) hits++;
       });
 
-      return { hits, total };
+      return this.applyDisregardedCorrectToScore(state, idx, { hits, total }, options);
     }
 
     if (tipo === 'ME-CH') {
       const score = computeMeChScore(qData, ans.selectedOriginalIndices || []);
-      return { hits: score, total: 1 };
+      return this.applyDisregardedCorrectToScore(state, idx, { hits: score, total: 1 }, options);
     }
 
     // ME / VF
@@ -1239,14 +1360,21 @@ export class QuizRenderer {
     if (!gabaritoLetra) return { hits: 0, total: 0 };
     const gabaritoIdx = gabaritoLetra.charCodeAt(0) - 65;
     const isCorrect = ans.selectedOriginalIdx === gabaritoIdx;
-    return { hits: isCorrect ? 1 : 0, total: 1 };
+    return this.applyDisregardedCorrectToScore(
+      state,
+      idx,
+      { hits: isCorrect ? 1 : 0, total: 1 },
+      options
+    );
   }
 
   updateFooter(state) {
     let totalQuestions = 0;
+    let submittedQuestions = 0;
     let allSubmitted = true;
     let sumHits = 0;
     let incorrectIndices = [];
+    let disregardedCorrectCount = 0;
 
     // Rastreamento por tipo
     const typeOrder = ['ME', 'ME-CH', 'VF', 'CH', 'ESCRITA'];
@@ -1272,12 +1400,15 @@ export class QuizRenderer {
         allSubmitted = false;
         return;
       }
+      submittedQuestions++;
 
       const { hits, total } = this.computeQuestionScore(state, idx);
+      const isDisregarded = this.isDisregardedCorrectMarked(state, idx);
+      if (isDisregarded) disregardedCorrectCount++;
       if (total > 0) {
         const questionScore = hits / total;
         sumHits += questionScore;
-        if (questionScore < 1) incorrectIndices.push(idx);
+        if (questionScore < 1 || isDisregarded) incorrectIndices.push(idx);
         if (typeStats[tipo]) {
           typeStats[tipo].sumScore += questionScore;
           typeStats[tipo].count++;
@@ -1297,10 +1428,24 @@ export class QuizRenderer {
       return;
     }
 
-    if (allSubmitted && totalQuestions > 0) {
-      this.btnSubmitAll.style.display = 'none';
+    const showPartialScore = localStorage.getItem('vs_showPartialScore') !== 'false';
+    if ((allSubmitted || (showPartialScore && submittedQuestions > 0)) && totalQuestions > 0) {
+      this.btnSubmitAll.style.display = allSubmitted ? 'none' : 'block';
       this.scoreDisplay.style.display = 'none';
-      this._renderResultCard(typeStats, typeOrder, typeLabels, sumHits, totalQuestions, incorrectIndices);
+      this._renderResultCard(
+        typeStats,
+        typeOrder,
+        typeLabels,
+        sumHits,
+        allSubmitted ? totalQuestions : submittedQuestions,
+        allSubmitted ? incorrectIndices : [],
+        disregardedCorrectCount,
+        state,
+        {
+          isPartial: !allSubmitted,
+          remainingQuestions: Math.max(0, totalQuestions - submittedQuestions)
+        }
+      );
     } else {
       this.btnSubmitAll.style.display = 'block';
       this.scoreDisplay.style.display = 'none';
@@ -1313,7 +1458,17 @@ export class QuizRenderer {
     if (existing) existing.remove();
   }
 
-  _renderResultCard(typeStats, typeOrder, typeLabels, sumHits, totalQuestions, incorrectIndices) {
+  _renderResultCard(
+    typeStats,
+    typeOrder,
+    typeLabels,
+    sumHits,
+    totalQuestions,
+    incorrectIndices,
+    disregardedCorrectCount,
+    state,
+    options = {}
+  ) {
     // Reutiliza card existente para evitar salto de scroll
     let section = this.container.querySelector('.result-section');
     if (!section) {
@@ -1327,11 +1482,18 @@ export class QuizRenderer {
     const fmtPct = (n) => fmt(n, 1);
 
     const pct = totalQuestions > 0 ? (sumHits / totalQuestions * 100) : 0;
+    const title = options.isPartial ? 'Resultado Parcial' : 'Resultado';
+    const scoreLabel = options.isPartial ? 'Pontuação parcial' : 'Pontuação geral';
 
-    let html = '<div class="result-title">Resultado</div>';
+    let html = `<div class="result-title">${title}</div>`;
     html += `<div class="result-row result-general">`;
-    html += `<strong>Pontuação geral:</strong> ${fmt(sumHits)}/${totalQuestions} pontos | ${fmtPct(pct)}% de taxa de acerto`;
+    html += `<strong>${scoreLabel}:</strong> ${fmt(sumHits)}/${totalQuestions} pontos | ${fmtPct(pct)}% de taxa de acerto`;
     html += `</div>`;
+    if (options.isPartial) {
+      html += `<div class="result-row result-remaining">`;
+      html += `Faltam responder: ${options.remainingQuestions || 0}`;
+      html += `</div>`;
+    }
 
     typeOrder.forEach((tipo) => {
       const stat = typeStats[tipo];
@@ -1341,6 +1503,17 @@ export class QuizRenderer {
       html += `${typeLabels[tipo]}: ${fmt(stat.sumScore)}/${stat.count} pontos | ${fmtPct(typePct)}% de taxa de acerto`;
       html += `</div>`;
     });
+
+    if (
+      state.config.showDisregardCorrect !== false &&
+      disregardedCorrectCount > 0
+    ) {
+      const checked = state.config.applyDisregardedCorrect !== false ? 'checked' : '';
+      html += `<label class="result-disregard-toggle">`;
+      html += `<input type="checkbox" id="chkApplyDisregardedCorrect" ${checked}>`;
+      html += `<span>Aplicar "Desconsiderar acerto" (${disregardedCorrectCount})</span>`;
+      html += `</label>`;
+    }
 
     if (incorrectIndices.length > 0) {
       html += `<div class="result-actions">`;
@@ -1353,6 +1526,15 @@ export class QuizRenderer {
     const btnRetry = section.querySelector('#btnRetryErrors');
     if (btnRetry) {
       btnRetry.addEventListener('click', () => this.callbacks.onRetry());
+    }
+
+    const chkApply = section.querySelector('#chkApplyDisregardedCorrect');
+    if (chkApply) {
+      chkApply.addEventListener('change', (e) => {
+        if (this.callbacks.onToggleApplyDisregardedCorrect) {
+          this.callbacks.onToggleApplyDisregardedCorrect(e.target.checked);
+        }
+      });
     }
   }
 }
