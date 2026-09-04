@@ -1149,6 +1149,36 @@ body {
   -webkit-user-select: text;
 }
 
+@media (pointer: coarse) {
+  .highlightable-text.highlighter-active.touch-highlighter-supported {
+    cursor: crosshair;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: pinch-zoom;
+  }
+}
+
+.touch-highlight-preview-layer {
+  position: fixed;
+  z-index: 10010;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.touch-highlight-preview-segment.text-highlight {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border-radius: 2px;
+  background-color: rgb(var(--highlight-rgb) / var(--highlight-opacity, 0.42));
+  background-image: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+
 .text-highlight {
   background-color: transparent;
   background-image: linear-gradient(

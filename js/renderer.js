@@ -5,7 +5,7 @@ import {
   questionTypeMap,
   parseMeChGabarito,
   computeMeChScore
-} from './utils.js?v=20260903-3';
+} from './utils.js?v=20260904-1';
 
 const HIGHLIGHT_COLORS = [
   { key: 'yellow', label: 'Amarelo' },
@@ -40,7 +40,14 @@ export class QuizRenderer {
     this._hiddenHighlightTargets = new Set();
     this._revealedMetadataQuestions = new Set();
     this._metadataQuizRef = null;
-    this._highlightTouchTimer = null;
+    this._touchHighlightGesture = null;
+    this._touchHighlightPreviewLayer = null;
+    this._touchHighlightPreviewFrame = null;
+    this._touchHighlightAutoScrollFrame = null;
+    this._suppressHighlightTapUntil = 0;
+    this._supportsDirectTouchHighlight =
+      'PointerEvent' in window &&
+      !!(document.caretPositionFromPoint || document.caretRangeFromPoint);
     this._groupConnectorFrame = null;
     this._groupResizeObserver = typeof ResizeObserver !== 'undefined'
       ? new ResizeObserver(() => this._scheduleGroupConnectorUpdate())
@@ -60,6 +67,7 @@ export class QuizRenderer {
 
   render(state) {
     this._state = state;
+    this._cancelTouchHighlightGesture();
     if (this._metadataQuizRef !== state.quizJson) {
       this._metadataQuizRef = state.quizJson;
       this._revealedMetadataQuestions.clear();
@@ -1246,6 +1254,7 @@ export class QuizRenderer {
 
   _activateHighlighter(target) {
     const targetKey = this._highlightTargetKey(target);
+    this._cancelTouchHighlightGesture();
     this.container.classList.remove('selection-mode');
     this.container.querySelectorAll('.btn-selection-mode').forEach((btn) => {
       btn.classList.remove('active');
@@ -1258,6 +1267,7 @@ export class QuizRenderer {
   }
 
   _deactivateHighlighter() {
+    this._cancelTouchHighlightGesture();
     this._activeHighlightTargetKey = null;
     this._hideHighlightPopover();
     const selection = window.getSelection();
@@ -1283,6 +1293,7 @@ export class QuizRenderer {
     });
     this._highlightTargets.forEach((entry, key) => {
       entry.element.classList.toggle('highlighter-active', key === this._activeHighlightTargetKey);
+      entry.element.classList.toggle('touch-highlighter-supported', this._supportsDirectTouchHighlight);
       entry.element.classList.toggle('highlights-hidden', this._hiddenHighlightTargets.has(key));
     });
   }
@@ -1305,16 +1316,29 @@ export class QuizRenderer {
       setTimeout(() => this._captureHighlightSelection(entry), 0);
     });
 
-    element.addEventListener('touchend', () => {
-      clearTimeout(this._highlightTouchTimer);
-      this._highlightTouchTimer = setTimeout(() => {
-        this._captureHighlightSelection(entry);
-      }, 280);
-    }, { passive: true });
+    if (this._supportsDirectTouchHighlight) {
+      this._setupTouchHighlighterListeners(element, entry);
+    } else {
+      let fallbackTouchTimer = null;
+      element.addEventListener('touchend', () => {
+        clearTimeout(fallbackTouchTimer);
+        fallbackTouchTimer = setTimeout(() => {
+          this._captureHighlightSelection(entry);
+        }, 280);
+      }, { passive: true });
+    }
 
     element.addEventListener('contextmenu', (e) => {
       const fragment = e.target.closest && e.target.closest('.text-highlight');
-      if (!fragment || !element.contains(fragment)) return;
+      if (!fragment || !element.contains(fragment)) {
+        const touchModeActive =
+          this._supportsDirectTouchHighlight &&
+          this._activeHighlightTargetKey === targetKey &&
+          window.matchMedia &&
+          window.matchMedia('(pointer: coarse)').matches;
+        if (touchModeActive) e.preventDefault();
+        return;
+      }
       e.preventDefault();
       e.stopPropagation();
       this._showHighlightContextMenu(fragment.getBoundingClientRect(), entry, fragment.dataset.highlightId);
@@ -1323,7 +1347,16 @@ export class QuizRenderer {
     element.addEventListener('click', (e) => {
       const fragment = e.target.closest && e.target.closest('.text-highlight');
       if (!fragment || !element.contains(fragment)) return;
-      if (!window.matchMedia || !window.matchMedia('(pointer: coarse)').matches) return;
+      const touchLikeClick =
+        e.pointerType === 'touch' ||
+        e.pointerType === 'pen' ||
+        (window.matchMedia && window.matchMedia('(pointer: coarse)').matches);
+      if (!touchLikeClick) return;
+      if (Date.now() < this._suppressHighlightTapUntil) {
+        e.preventDefault();
+        e.stopPropagation();
+        return;
+      }
       const selection = window.getSelection();
       if (selection && !selection.isCollapsed) return;
       e.preventDefault();
@@ -1342,6 +1375,318 @@ export class QuizRenderer {
     this._updateHighlighterControls();
   }
 
+  _setupTouchHighlighterListeners(element, entry) {
+    element.addEventListener('pointerdown', (e) => {
+      if (!e.isPrimary || (e.pointerType !== 'touch' && e.pointerType !== 'pen')) return;
+      if (e.button !== 0) return;
+      if (this._activeHighlightTargetKey !== this._highlightTargetKey(entry.target)) return;
+      const existingHighlight = e.target.closest && e.target.closest('.text-highlight');
+      if (existingHighlight && element.contains(existingHighlight)) return;
+
+      const startOffset = this._getTextOffsetFromPoint(entry.element, e.clientX, e.clientY);
+      if (startOffset === null) return;
+
+      this._cancelTouchHighlightGesture();
+      this._hideHighlightPopover();
+      const selection = window.getSelection();
+      if (selection) selection.removeAllRanges();
+
+      this._touchHighlightGesture = {
+        entry,
+        element,
+        pointerId: e.pointerId,
+        startOffset,
+        currentOffset: startOffset,
+        startX: e.clientX,
+        startY: e.clientY,
+        lastX: e.clientX,
+        lastY: e.clientY,
+        active: false,
+        autoScrollVelocity: 0,
+        settings: this._getHighlightSettings()
+      };
+      element.classList.add('touch-highlighting');
+      try { element.setPointerCapture(e.pointerId); } catch {}
+      e.preventDefault();
+      e.stopPropagation();
+    }, { passive: false });
+
+    element.addEventListener('pointermove', (e) => {
+      const gesture = this._touchHighlightGesture;
+      if (!gesture || gesture.pointerId !== e.pointerId || gesture.element !== element) return;
+      gesture.lastX = e.clientX;
+      gesture.lastY = e.clientY;
+
+      if (!gesture.active) {
+        const distance = Math.hypot(e.clientX - gesture.startX, e.clientY - gesture.startY);
+        if (distance < 5) {
+          e.preventDefault();
+          return;
+        }
+        gesture.active = true;
+      }
+
+      const offset = this._getTextOffsetFromPoint(entry.element, e.clientX, e.clientY);
+      if (offset !== null) gesture.currentOffset = offset;
+      this._updateTouchHighlightAutoScroll(e.clientY);
+      this._scheduleTouchHighlightPreview();
+      e.preventDefault();
+      e.stopPropagation();
+    }, { passive: false });
+
+    element.addEventListener('pointerup', (e) => {
+      this._finishTouchHighlightGesture(e, true);
+    }, { passive: false });
+
+    element.addEventListener('pointercancel', (e) => {
+      this._finishTouchHighlightGesture(e, false);
+    });
+
+    element.addEventListener('lostpointercapture', (e) => {
+      const gesture = this._touchHighlightGesture;
+      if (gesture && gesture.pointerId === e.pointerId && gesture.element === element) {
+        this._finishTouchHighlightGesture(e, false);
+      }
+    });
+  }
+
+  _getTextOffsetFromPoint(root, clientX, clientY) {
+    if (!root || !root.isConnected) return null;
+    const bounds = root.getBoundingClientRect();
+    if (bounds.width <= 0 || bounds.height <= 0) return null;
+
+    const x = Math.max(bounds.left + 1, Math.min(bounds.right - 1, clientX));
+    const visibleTop = Math.max(bounds.top + 1, 1);
+    const visibleBottom = Math.min(bounds.bottom - 1, window.innerHeight - 1);
+    const y = visibleTop <= visibleBottom
+      ? Math.max(visibleTop, Math.min(visibleBottom, clientY))
+      : Math.max(bounds.top + 1, Math.min(bounds.bottom - 1, clientY));
+
+    let node = null;
+    let offset = 0;
+    const previewLayer = this._touchHighlightPreviewLayer;
+    const previousPreviewVisibility = previewLayer ? previewLayer.style.visibility : '';
+    if (previewLayer) previewLayer.style.visibility = 'hidden';
+    try {
+      if (document.caretPositionFromPoint) {
+        const position = document.caretPositionFromPoint(x, y);
+        if (position) {
+          node = position.offsetNode;
+          offset = position.offset;
+        }
+      }
+      if (!node && document.caretRangeFromPoint) {
+        const range = document.caretRangeFromPoint(x, y);
+        if (range) {
+          node = range.startContainer;
+          offset = range.startOffset;
+        }
+      }
+    } catch {
+      return null;
+    } finally {
+      if (previewLayer) previewLayer.style.visibility = previousPreviewVisibility;
+    }
+
+    if (!node || (node !== root && !root.contains(node))) return null;
+    const textLength = (root.textContent || '').length;
+    return Math.max(0, Math.min(textLength, this._getTextBoundaryOffset(root, node, offset)));
+  }
+
+  _normalizeHighlightOffsets(root, rawStart, rawEnd) {
+    const fullText = (root && root.textContent) || '';
+    let start = Math.max(0, Math.min(fullText.length, Math.min(rawStart, rawEnd)));
+    let end = Math.max(0, Math.min(fullText.length, Math.max(rawStart, rawEnd)));
+    while (start < end && /\s/.test(fullText[start])) start++;
+    while (end > start && /\s/.test(fullText[end - 1])) end--;
+    return end > start ? { start, end } : null;
+  }
+
+  _getTouchHighlightRange(gesture) {
+    if (!gesture || !gesture.entry || gesture.currentOffset === gesture.startOffset) return null;
+    const current = this._getTextHighlights(gesture.entry.target)
+      .map((item) => ({ start: Number(item.start), end: Number(item.end) }))
+      .filter((item) => Number.isFinite(item.start) && Number.isFinite(item.end) && item.end > item.start)
+      .sort((a, b) => a.start - b.start || a.end - b.end);
+
+    const anchor = gesture.startOffset;
+    let focus = gesture.currentOffset;
+    if (focus > anchor) {
+      for (const item of current) {
+        if (item.end <= anchor || item.start >= focus) continue;
+        if (item.start <= anchor) return null;
+        focus = item.start;
+        break;
+      }
+    } else {
+      for (let i = current.length - 1; i >= 0; i--) {
+        const item = current[i];
+        if (item.start >= anchor || item.end <= focus) continue;
+        if (item.end >= anchor) return null;
+        focus = item.end;
+        break;
+      }
+    }
+    return this._normalizeHighlightOffsets(gesture.entry.element, anchor, focus);
+  }
+
+  _scheduleTouchHighlightPreview() {
+    if (this._touchHighlightPreviewFrame !== null) return;
+    this._touchHighlightPreviewFrame = requestAnimationFrame(() => {
+      this._touchHighlightPreviewFrame = null;
+      this._renderTouchHighlightPreview();
+    });
+  }
+
+  _renderTouchHighlightPreview() {
+    const gesture = this._touchHighlightGesture;
+    const offsets = this._getTouchHighlightRange(gesture);
+    if (!gesture || !gesture.active || !offsets) {
+      this._removeTouchHighlightPreview();
+      return;
+    }
+    const range = this._rangeFromHighlightOffsets(gesture.entry.element, offsets.start, offsets.end);
+    if (!range) {
+      this._removeTouchHighlightPreview();
+      return;
+    }
+
+    const rawRects = Array.from(range.getClientRects())
+      .filter((rect) => rect.width > 0.5 && rect.height > 0.5)
+      .map((rect) => ({
+        left: rect.left,
+        right: rect.right,
+        top: rect.top,
+        bottom: rect.bottom
+      }));
+    const rects = [];
+    rawRects.forEach((rect) => {
+      const previous = rects[rects.length - 1];
+      if (
+        previous &&
+        Math.abs(previous.top - rect.top) <= 2 &&
+        Math.abs(previous.bottom - rect.bottom) <= 2 &&
+        rect.left <= previous.right + 2
+      ) {
+        previous.right = Math.max(previous.right, rect.right);
+        previous.top = Math.min(previous.top, rect.top);
+        previous.bottom = Math.max(previous.bottom, rect.bottom);
+      } else {
+        rects.push({ ...rect });
+      }
+    });
+
+    if (!this._touchHighlightPreviewLayer) {
+      this._touchHighlightPreviewLayer = document.createElement('div');
+      this._touchHighlightPreviewLayer.className = 'touch-highlight-preview-layer';
+      document.body.appendChild(this._touchHighlightPreviewLayer);
+    }
+
+    const fragment = document.createDocumentFragment();
+    rects.forEach((rect) => {
+      const segment = document.createElement('div');
+      segment.className = 'text-highlight touch-highlight-preview-segment';
+      segment.dataset.color = gesture.settings.color;
+      segment.style.setProperty('--highlight-opacity', String(gesture.settings.opacity));
+      segment.style.left = `${rect.left - 1}px`;
+      segment.style.top = `${rect.top + 1}px`;
+      segment.style.width = `${Math.max(1, rect.right - rect.left + 2)}px`;
+      segment.style.height = `${Math.max(1, rect.bottom - rect.top)}px`;
+      fragment.appendChild(segment);
+    });
+    this._touchHighlightPreviewLayer.replaceChildren(fragment);
+  }
+
+  _removeTouchHighlightPreview() {
+    if (this._touchHighlightPreviewLayer) {
+      this._touchHighlightPreviewLayer.remove();
+      this._touchHighlightPreviewLayer = null;
+    }
+  }
+
+  _updateTouchHighlightAutoScroll(clientY) {
+    const gesture = this._touchHighlightGesture;
+    if (!gesture || !gesture.active) return;
+    const edge = Math.min(80, Math.max(48, window.innerHeight * 0.12));
+    let velocity = 0;
+    if (clientY < edge) {
+      velocity = -Math.ceil(12 * Math.min(1, (edge - clientY) / edge));
+    } else if (clientY > window.innerHeight - edge) {
+      velocity = Math.ceil(12 * Math.min(1, (clientY - (window.innerHeight - edge)) / edge));
+    }
+    gesture.autoScrollVelocity = velocity;
+    if (velocity !== 0 && this._touchHighlightAutoScrollFrame === null) {
+      this._touchHighlightAutoScrollFrame = requestAnimationFrame(() => this._runTouchHighlightAutoScroll());
+    }
+  }
+
+  _runTouchHighlightAutoScroll() {
+    this._touchHighlightAutoScrollFrame = null;
+    const gesture = this._touchHighlightGesture;
+    if (!gesture || !gesture.active || gesture.autoScrollVelocity === 0) return;
+    const before = window.scrollY || window.pageYOffset || 0;
+    window.scrollBy(0, gesture.autoScrollVelocity);
+    const after = window.scrollY || window.pageYOffset || 0;
+    if (after === before) {
+      gesture.autoScrollVelocity = 0;
+      return;
+    }
+    const offset = this._getTextOffsetFromPoint(gesture.entry.element, gesture.lastX, gesture.lastY);
+    if (offset !== null) gesture.currentOffset = offset;
+    this._scheduleTouchHighlightPreview();
+    this._touchHighlightAutoScrollFrame = requestAnimationFrame(() => this._runTouchHighlightAutoScroll());
+  }
+
+  _finishTouchHighlightGesture(e, shouldCommit) {
+    const gesture = this._touchHighlightGesture;
+    if (!gesture || (e && gesture.pointerId !== e.pointerId)) return;
+    if (e) {
+      const offset = this._getTextOffsetFromPoint(gesture.entry.element, e.clientX, e.clientY);
+      if (offset !== null) gesture.currentOffset = offset;
+      if (e.cancelable) e.preventDefault();
+      e.stopPropagation();
+    }
+    const offsets = shouldCommit && gesture.active
+      ? this._getTouchHighlightRange(gesture)
+      : null;
+
+    this._touchHighlightGesture = null;
+    gesture.element.classList.remove('touch-highlighting');
+    try {
+      if (gesture.element.hasPointerCapture(gesture.pointerId)) {
+        gesture.element.releasePointerCapture(gesture.pointerId);
+      }
+    } catch {}
+    if (this._touchHighlightPreviewFrame !== null) {
+      cancelAnimationFrame(this._touchHighlightPreviewFrame);
+      this._touchHighlightPreviewFrame = null;
+    }
+    if (this._touchHighlightAutoScrollFrame !== null) {
+      cancelAnimationFrame(this._touchHighlightAutoScrollFrame);
+      this._touchHighlightAutoScrollFrame = null;
+    }
+    this._removeTouchHighlightPreview();
+
+    if (gesture.active) this._suppressHighlightTapUntil = Date.now() + 450;
+    if (offsets) this._commitTextHighlight(gesture.entry, offsets.start, offsets.end);
+  }
+
+  _cancelTouchHighlightGesture() {
+    if (this._touchHighlightGesture) {
+      this._finishTouchHighlightGesture(null, false);
+      return;
+    }
+    if (this._touchHighlightPreviewFrame !== null) {
+      cancelAnimationFrame(this._touchHighlightPreviewFrame);
+      this._touchHighlightPreviewFrame = null;
+    }
+    if (this._touchHighlightAutoScrollFrame !== null) {
+      cancelAnimationFrame(this._touchHighlightAutoScrollFrame);
+      this._touchHighlightAutoScrollFrame = null;
+    }
+    this._removeTouchHighlightPreview();
+  }
+
   _captureHighlightSelection(entry) {
     if (!entry || this._activeHighlightTargetKey !== this._highlightTargetKey(entry.target)) return;
     if (!entry.element.isConnected) return;
@@ -1350,33 +1695,33 @@ export class QuizRenderer {
     const range = selection.getRangeAt(0);
     if (!entry.element.contains(range.startContainer) || !entry.element.contains(range.endContainer)) return;
 
-    let start = this._getTextBoundaryOffset(entry.element, range.startContainer, range.startOffset);
-    let end = this._getTextBoundaryOffset(entry.element, range.endContainer, range.endOffset);
-    const fullText = entry.element.textContent || '';
-    start = Math.max(0, Math.min(fullText.length, start));
-    end = Math.max(0, Math.min(fullText.length, end));
-    while (start < end && /\s/.test(fullText[start])) start++;
-    while (end > start && /\s/.test(fullText[end - 1])) end--;
-    if (end <= start) {
-      selection.removeAllRanges();
-      return;
-    }
+    const start = this._getTextBoundaryOffset(entry.element, range.startContainer, range.startOffset);
+    const end = this._getTextBoundaryOffset(entry.element, range.endContainer, range.endOffset);
+    this._commitTextHighlight(entry, start, end);
+    selection.removeAllRanges();
+  }
+
+  _commitTextHighlight(entry, rawStart, rawEnd) {
+    if (!entry || !entry.element || !entry.element.isConnected) return false;
+    const offsets = this._normalizeHighlightOffsets(entry.element, rawStart, rawEnd);
+    if (!offsets) return false;
+    const { start, end } = offsets;
 
     const settings = this._getHighlightSettings();
     const current = this._getTextHighlights(entry.target).map((item) => ({ ...item }));
     const overlaps = current.some((item) => start < Number(item.end) && end > Number(item.start));
     if (overlaps) {
-      selection.removeAllRanges();
       this._showHighlightToast('Não é possível sobrepor duas marcações.');
-      return;
+      return false;
     }
 
+    const range = this._rangeFromHighlightOffsets(entry.element, start, end);
     const now = new Date().toISOString();
     const highlight = {
       id: this._createHighlightId(),
       start,
       end,
-      text: selection.toString().trim(),
+      text: range ? range.toString().trim() : '',
       color: settings.color,
       opacity: settings.opacity,
       sourceHash: entry.sourceHash,
@@ -1386,8 +1731,8 @@ export class QuizRenderer {
     const merged = this._mergeAdjacentHighlights([...current, highlight], entry);
     this._hiddenHighlightTargets.delete(this._highlightTargetKey(entry.target));
     this._setTextHighlights(entry.target, merged);
-    selection.removeAllRanges();
     this._refreshHighlightTarget(entry.target);
+    return true;
   }
 
   _getTextBoundaryOffset(root, node, offset) {
@@ -1625,6 +1970,10 @@ export class QuizRenderer {
     const menu = document.createElement('div');
     menu.className = 'highlight-popover highlight-tool-menu';
     const active = this._activeHighlightTargetKey === targetKey;
+    const directTouchMode =
+      this._supportsDirectTouchHighlight &&
+      window.matchMedia &&
+      window.matchMedia('(pointer: coarse)').matches;
     menu.innerHTML = `
       <div class="highlight-popover-title">Opções do marca-texto</div>
       <button type="button" class="highlight-menu-visibility">
@@ -1637,7 +1986,9 @@ export class QuizRenderer {
         🗑️ Apagar todas da sessão (${total})
       </button>
       <div class="highlight-popover-hint">${active
-        ? 'Selecione um trecho do texto para marcá-lo.'
+        ? (directTouchMode
+            ? 'Arraste o dedo sobre o texto para marcá-lo.'
+            : 'Selecione um trecho do texto para marcá-lo.')
         : 'Ative o marca-texto para criar novas marcações.'}</div>
     `;
 
