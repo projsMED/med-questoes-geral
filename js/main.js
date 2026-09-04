@@ -4,16 +4,16 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20260904-1';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260904-1';
+} from './store.js?v=20260904-2';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260904-2';
 import {
   shuffleArray,
   difficultyMap,
   questionTypeMap,
   questionTypes,
   computeMeChScore
-} from './utils.js?v=20260904-1';
-import { QuizRenderer } from './renderer.js?v=20260904-1';
+} from './utils.js?v=20260904-2';
+import { QuizRenderer } from './renderer.js?v=20260904-2';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -370,8 +370,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20260904-1');
-      this.firebaseSync = await import('./firebase-sync.js?v=20260904-1');
+      this.firebaseConfig = await import('./firebase-config.js?v=20260904-2');
+      this.firebaseSync = await import('./firebase-sync.js?v=20260904-2');
 
       this.firebaseState.autoSync = localStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = localStorage.getItem('lastSyncTime') || null;

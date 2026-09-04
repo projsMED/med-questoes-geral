@@ -1,4 +1,4 @@
-# 🩺 Question Engine V3.9.3 (med-questoes-geral)
+# 🩺 Question Engine V3.9.4 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
 
@@ -274,7 +274,7 @@ Ambos os estados (`deletedIndices` e `disabledIndices`) são armazenados por ín
 
 ### Marcação de Texto & Eliminação de Alternativas
 - **Marcação de palavras legada:** Mantida para compatibilidade nos pontos em que já existia, incluindo o sistema próprio do VF simples.
-- **Marca-texto V3.9.3:** Enunciados de ME, ME-CH, CH e ESCRITA, além dos textos-base de `grupo_juntas`, podem receber marcações persistentes em 12 cores e opacidade ajustável. VF simples não exibe o novo marca-texto.
+- **Marca-texto V3.9.4:** Enunciados de ME, ME-CH, CH e ESCRITA, além dos textos-base de `grupo_juntas`, podem receber marcações persistentes em 12 cores e opacidade ajustável. No touch, a seleção salta por palavras inteiras; no PC, continua precisa por caractere. VF simples não exibe o novo marca-texto.
   - Cada marcação preserva sua própria cor e opacidade e pode atravessar parágrafos e formatações HTML sem alterar o texto original.
   - Marcações não podem se sobrepor; marcações adjacentes com a mesma aparência são unidas.
   - O menu contextual permite deletar, copiar, alterar cor/opacidade ou cancelar. A engrenagem acoplada ao botão da ferramenta abre as opções para ocultar temporariamente, apagar as marcações do texto atual ou apagar todas da sessão.
@@ -353,7 +353,7 @@ Inicia um servidor local na porta 8000 via Python e abre automaticamente o naveg
 Ao trabalhar neste repositório, observe as seguintes diretrizes arquiteturais:
 
 1. **Versionamento de Assets & Cache Buster (`APP_ASSET_VERSION`):**
-   - No arquivo `index.html` e nos `import` relativos dentro de `js/`, há um sufixo de versão (ex.: `?v=20260904-1`).
+   - No arquivo `index.html` e nos `import` relativos dentro de `js/`, há um sufixo de versão (ex.: `?v=20260904-2`).
    - Sempre que alterar a assinatura de funções ou estruturas críticas em arquivos JS, certifique-se de atualizar o `APP_ASSET_VERSION` em `index.html` e nas importações para evitar que navegadores executem módulos em cache antigo.
 
 2. **Imutabilidade e Deep Copy de Variantes:**

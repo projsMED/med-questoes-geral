@@ -5,7 +5,7 @@ import {
   questionTypeMap,
   parseMeChGabarito,
   computeMeChScore
-} from './utils.js?v=20260904-1';
+} from './utils.js?v=20260904-2';
 
 const HIGHLIGHT_COLORS = [
   { key: 'yellow', label: 'Amarelo' },
@@ -1385,6 +1385,8 @@ export class QuizRenderer {
 
       const startOffset = this._getTextOffsetFromPoint(entry.element, e.clientX, e.clientY);
       if (startOffset === null) return;
+      const anchorWord = this._getTouchWordBounds(entry.element.textContent || '', startOffset, 0);
+      if (!anchorWord) return;
 
       this._cancelTouchHighlightGesture();
       this._hideHighlightPopover();
@@ -1397,6 +1399,7 @@ export class QuizRenderer {
         pointerId: e.pointerId,
         startOffset,
         currentOffset: startOffset,
+        anchorWord,
         startX: e.clientX,
         startY: e.clientY,
         lastX: e.clientX,
@@ -1502,32 +1505,124 @@ export class QuizRenderer {
     return end > start ? { start, end } : null;
   }
 
+  _isHighlightWordCoreCharacter(character) {
+    return !!character && /[\p{L}\p{N}\p{M}_]/u.test(character);
+  }
+
+  _isHighlightWordCharacterAt(text, index) {
+    if (!text || index < 0 || index >= text.length) return false;
+    if (this._isHighlightWordCoreCharacter(text[index])) return true;
+    if (!['-', "'", '’'].includes(text[index])) return false;
+    return this._isHighlightWordCoreCharacter(text[index - 1]) &&
+      this._isHighlightWordCoreCharacter(text[index + 1]);
+  }
+
+  _getTouchWordBounds(text, rawOffset, direction = 0) {
+    if (!text) return null;
+    const offset = Math.max(0, Math.min(text.length, Number(rawOffset) || 0));
+    let index = -1;
+
+    if (offset < text.length && this._isHighlightWordCharacterAt(text, offset)) {
+      index = offset;
+    } else if (offset > 0 && this._isHighlightWordCharacterAt(text, offset - 1)) {
+      index = offset - 1;
+    } else if (direction > 0) {
+      for (let i = offset; i < text.length; i++) {
+        if (this._isHighlightWordCharacterAt(text, i)) {
+          index = i;
+          break;
+        }
+      }
+    } else if (direction < 0) {
+      for (let i = Math.min(text.length - 1, offset - 1); i >= 0; i--) {
+        if (this._isHighlightWordCharacterAt(text, i)) {
+          index = i;
+          break;
+        }
+      }
+    } else {
+      let left = offset - 1;
+      let right = offset;
+      while (left >= 0 || right < text.length) {
+        if (left >= 0 && this._isHighlightWordCharacterAt(text, left)) {
+          index = left;
+          break;
+        }
+        if (right < text.length && this._isHighlightWordCharacterAt(text, right)) {
+          index = right;
+          break;
+        }
+        left--;
+        right++;
+      }
+    }
+
+    if (index < 0) return null;
+    let start = index;
+    let end = index + 1;
+    while (start > 0 && this._isHighlightWordCharacterAt(text, start - 1)) start--;
+    while (end < text.length && this._isHighlightWordCharacterAt(text, end)) end++;
+    return { start, end };
+  }
+
+  _getTouchWordSnappedRange(gesture) {
+    if (!gesture || !gesture.entry || !gesture.anchorWord) return null;
+    const text = gesture.entry.element.textContent || '';
+    let direction = 0;
+    if (gesture.currentOffset > gesture.startOffset) {
+      direction = 1;
+    } else if (gesture.currentOffset < gesture.startOffset) {
+      direction = -1;
+    } else {
+      const dx = gesture.lastX - gesture.startX;
+      const dy = gesture.lastY - gesture.startY;
+      direction = Math.abs(dy) > Math.abs(dx) ? (dy < 0 ? -1 : 1) : (dx < 0 ? -1 : 1);
+    }
+
+    const focusWord = this._getTouchWordBounds(text, gesture.currentOffset, direction);
+    if (!focusWord) return null;
+    return direction < 0
+      ? { start: focusWord.start, end: gesture.anchorWord.end, direction }
+      : { start: gesture.anchorWord.start, end: focusWord.end, direction };
+  }
+
   _getTouchHighlightRange(gesture) {
-    if (!gesture || !gesture.entry || gesture.currentOffset === gesture.startOffset) return null;
+    const snapped = this._getTouchWordSnappedRange(gesture);
+    if (!snapped) return null;
+    const text = gesture.entry.element.textContent || '';
     const current = this._getTextHighlights(gesture.entry.target)
       .map((item) => ({ start: Number(item.start), end: Number(item.end) }))
       .filter((item) => Number.isFinite(item.start) && Number.isFinite(item.end) && item.end > item.start)
       .sort((a, b) => a.start - b.start || a.end - b.end);
 
-    const anchor = gesture.startOffset;
-    let focus = gesture.currentOffset;
-    if (focus > anchor) {
+    let { start, end } = snapped;
+    if (snapped.direction > 0) {
       for (const item of current) {
-        if (item.end <= anchor || item.start >= focus) continue;
-        if (item.start <= anchor) return null;
-        focus = item.start;
+        if (item.end <= start || item.start >= end) continue;
+        if (item.start <= start) return null;
+        const splitsWord = this._isHighlightWordCharacterAt(text, item.start - 1) &&
+          this._isHighlightWordCharacterAt(text, item.start);
+        const collisionWord = splitsWord
+          ? this._getTouchWordBounds(text, item.start, 0)
+          : null;
+        end = collisionWord ? collisionWord.start : item.start;
         break;
       }
     } else {
       for (let i = current.length - 1; i >= 0; i--) {
         const item = current[i];
-        if (item.start >= anchor || item.end <= focus) continue;
-        if (item.end >= anchor) return null;
-        focus = item.end;
+        if (item.start >= end || item.end <= start) continue;
+        if (item.end >= end) return null;
+        const splitsWord = this._isHighlightWordCharacterAt(text, item.end - 1) &&
+          this._isHighlightWordCharacterAt(text, item.end);
+        const collisionWord = splitsWord
+          ? this._getTouchWordBounds(text, item.end, 0)
+          : null;
+        start = collisionWord ? collisionWord.end : item.end;
         break;
       }
     }
-    return this._normalizeHighlightOffsets(gesture.entry.element, anchor, focus);
+    return this._normalizeHighlightOffsets(gesture.entry.element, start, end);
   }
 
   _scheduleTouchHighlightPreview() {
