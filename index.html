@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V3.7 - Filtro em Etapas</title>
+  <title>Question Engine V3.9.2 - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('vs_darkMode');
@@ -12,14 +12,14 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20260903-3">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V3.7</h2>
+    <h2 class="header-title">Question Engine V3.9.2</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -116,6 +116,9 @@
         <strong>Exibição:</strong>
         <label class="toggle-label">
           <input type="checkbox" id="chkShowTags" checked> Tags
+        </label>
+        <label class="toggle-label">
+          <input type="checkbox" id="chkShowFolders" checked> Pastas
         </label>
         <label class="toggle-label">
           <input type="checkbox" id="chkShowDiff"> Dificuldade
@@ -244,6 +247,23 @@
     <div class="modal-footer">
       <button class="btn btn-secondary" id="btnEditCancel">Cancelar</button>
       <button class="btn btn-primary" id="btnEditSave">Salvar</button>
+    </div>
+  </div>
+</div>
+
+<div id="deleteQuestionModal" class="modal-overlay hidden">
+  <div class="modal-box" style="max-width:420px;">
+    <div class="modal-header">
+      <h3>Gerenciar Questão</h3>
+      <span class="close-delete-question">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p id="deleteQuestionModalText">O que deseja fazer com esta questão?</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" id="btnDeleteQuestionCancel">Cancelar</button>
+      <button class="btn btn-secondary" id="btnDisableQuestionConfirm">Desativar questão</button>
+      <button class="btn btn-danger" id="btnDeleteQuestionConfirm">Deletar questão</button>
     </div>
   </div>
 </div>
@@ -394,7 +414,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20260704-1';
+  const APP_ASSET_VERSION = '20260903-3';
   const moduleAssets = [
     'main.js',
     'store.js',

@@ -369,12 +369,13 @@ function getEffectiveSessionTotal(session) {
   const state = session && session.state;
   if (!state) return session.totalCount || 0;
   if (typeof state.sessionQuestionCount === 'number') return state.sessionQuestionCount;
+  const disabled = Array.isArray(state.disabledIndices) ? state.disabledIndices : [];
   if (state.mappings && Array.isArray(state.mappings.qOrder) && state.mappings.qOrder.length > 0) {
     const forced = Array.isArray(state.forcedIndices) ? state.forcedIndices : [];
-    return state.mappings.qOrder.filter((idx) => !forced.includes(idx)).length;
+    return state.mappings.qOrder.filter((idx) => !forced.includes(idx) && !disabled.includes(idx)).length;
   }
   if (state.retryMode && Array.isArray(state.retryIndices)) {
-    return state.retryIndices.length;
+    return state.retryIndices.filter((idx) => !disabled.includes(idx)).length;
   }
   return session.totalCount || (Array.isArray(state.questions) ? state.questions.length : 0);
 }

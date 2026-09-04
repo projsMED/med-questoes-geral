@@ -4,16 +4,21 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20260704-1';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260704-1';
+} from './store.js?v=20260903-3';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260903-3';
 import {
   shuffleArray,
   difficultyMap,
   questionTypeMap,
   questionTypes,
   computeMeChScore
-} from './utils.js?v=20260704-1';
-import { QuizRenderer } from './renderer.js?v=20260704-1';
+} from './utils.js?v=20260903-3';
+import { QuizRenderer } from './renderer.js?v=20260903-3';
+
+const HIGHLIGHT_COLOR_KEYS = new Set([
+  'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
+  'blue', 'cyan', 'green', 'lime', 'brown', 'gray'
+]);
 
 const App = {
   activeSessionId: null,
@@ -49,6 +54,14 @@ const App = {
     forcedIndices: [],
     eliminatedAlts: {},
 
+    // Marca-texto V3.9 (separado das respostas e da marcação legada de palavras)
+    textHighlights: { questions: {}, groups: {} },
+    highlightSettings: { color: 'yellow', opacity: 0.42 },
+
+    // Gerenciamento individual de questões (V3.8)
+    deletedIndices: [], // índices originais removidos permanentemente da sessão
+    disabledIndices: [], // índices originais desativados (visíveis, mas não respondíveis nem pontuados)
+
     // NOVOS ESTADOS (modo retry)
     retryMode: false,
     retryIndices: [], // índices originais das questões erradas
@@ -57,6 +70,7 @@ const App = {
       shuffleQ: false,
       shuffleA: false,
       showTags: true,
+      showFolders: true,
       showDiff: false,
       showFilterSummary: true,
       showDisregardCorrect: true,
@@ -109,6 +123,7 @@ const App = {
     chkShuffleQ: document.getElementById('chkShuffleQuestions'),
     chkShuffleA: document.getElementById('chkShuffleAlternatives'),
     chkShowTags: document.getElementById('chkShowTags'),
+    chkShowFolders: document.getElementById('chkShowFolders'),
     chkShowDiff: document.getElementById('chkShowDiff'),
     chkShowFilterSummary: document.getElementById('chkShowFilterSummary'),
 
@@ -214,6 +229,14 @@ const App = {
     btnMoveConfirm: document.getElementById('btnMoveConfirm'),
     btnMoveCancel: document.getElementById('btnMoveCancel'),
 
+    // Gerenciar questão (deletar/desativar)
+    deleteQuestionModal: document.getElementById('deleteQuestionModal'),
+    closeDeleteQuestion: document.querySelector('.close-delete-question'),
+    deleteQuestionModalText: document.getElementById('deleteQuestionModalText'),
+    btnDeleteQuestionConfirm: document.getElementById('btnDeleteQuestionConfirm'),
+    btnDisableQuestionConfirm: document.getElementById('btnDisableQuestionConfirm'),
+    btnDeleteQuestionCancel: document.getElementById('btnDeleteQuestionCancel'),
+
     // Nome de pasta
     folderNameModal: document.getElementById('folderNameModal'),
     folderNameModalTitle: document.getElementById('folderNameModalTitle'),
@@ -245,10 +268,17 @@ const App = {
         this.handleSelfEval(qIdx, score, itemIdx),
       onMarkWords: (qIdx, markKey, wordIndices) =>
         this.handleMarkWords(qIdx, markKey, wordIndices),
+      onSetTextHighlights: (targetType, targetId, highlights) =>
+        this.handleSetTextHighlights(targetType, targetId, highlights),
+      onHighlightSettingsChange: (settings) =>
+        this.handleHighlightSettingsChange(settings),
+      onClearAllTextHighlights: () =>
+        this.handleClearAllTextHighlights(),
       onToggleDisregardCorrect: (qIdx, checked) =>
         this.handleToggleDisregardCorrect(qIdx, checked),
       onToggleApplyDisregardedCorrect: (checked) =>
-        this.handleToggleApplyDisregardedCorrect(checked)
+        this.handleToggleApplyDisregardedCorrect(checked),
+      onManageQuestion: (originalIdx) => this.openDeleteQuestionModal(originalIdx)
     });
 
     this.bindEvents();
@@ -340,8 +370,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20260704-1');
-      this.firebaseSync = await import('./firebase-sync.js?v=20260704-1');
+      this.firebaseConfig = await import('./firebase-config.js?v=20260903-3');
+      this.firebaseSync = await import('./firebase-sync.js?v=20260903-3');
 
       this.firebaseState.autoSync = localStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = localStorage.getItem('lastSyncTime') || null;
@@ -532,6 +562,12 @@ const App = {
       this.save();
     });
 
+    this.elements.chkShowFolders.addEventListener('change', (e) => {
+      this.state.config.showFolders = e.target.checked;
+      this.renderer.render(this.state);
+      this.save();
+    });
+
     this.elements.chkShowDiff.addEventListener('change', (e) => {
       this.state.config.showDiff = e.target.checked;
       this.renderer.render(this.state);
@@ -553,6 +589,27 @@ const App = {
         this.applyCommentCollapseMode();
         this.save();
       });
+    }
+
+    // Gerenciar questão (deletar/desativar/ativar)
+    if (this.elements.deleteQuestionModal) {
+      this.elements.closeDeleteQuestion.addEventListener('click', () =>
+        this.closeDeleteQuestionModal()
+      );
+      this.elements.deleteQuestionModal.addEventListener('click', (e) => {
+        if (e.target === this.elements.deleteQuestionModal) {
+          this.closeDeleteQuestionModal();
+        }
+      });
+      this.elements.btnDeleteQuestionCancel.addEventListener('click', () =>
+        this.closeDeleteQuestionModal()
+      );
+      this.elements.btnDeleteQuestionConfirm.addEventListener('click', () =>
+        this.deleteQuestionConfirmed()
+      );
+      this.elements.btnDisableQuestionConfirm.addEventListener('click', () =>
+        this.toggleDisableQuestionConfirmed()
+      );
     }
   },
 
@@ -603,11 +660,42 @@ const App = {
 
     if (!this.state.forcedIndices) this.state.forcedIndices = [];
     if (!this.state.eliminatedAlts) this.state.eliminatedAlts = {};
+    if (!this.state.textHighlights || typeof this.state.textHighlights !== 'object') {
+      this.state.textHighlights = { questions: {}, groups: {} };
+    }
+    if (!this.state.textHighlights.questions || typeof this.state.textHighlights.questions !== 'object') {
+      this.state.textHighlights.questions = {};
+    }
+    if (!this.state.textHighlights.groups || typeof this.state.textHighlights.groups !== 'object') {
+      this.state.textHighlights.groups = {};
+    }
+    if (!this.state.highlightSettings || typeof this.state.highlightSettings !== 'object') {
+      this.state.highlightSettings = { color: 'yellow', opacity: 0.42 };
+    }
+    if (typeof this.state.highlightSettings.color !== 'string') {
+      this.state.highlightSettings.color = 'yellow';
+    }
+    if (!HIGHLIGHT_COLOR_KEYS.has(this.state.highlightSettings.color)) {
+      this.state.highlightSettings.color = 'yellow';
+    }
+    const highlightOpacity = Number(this.state.highlightSettings.opacity);
+    this.state.highlightSettings.opacity = Number.isFinite(highlightOpacity)
+      ? Math.min(0.9, Math.max(0.15, highlightOpacity))
+      : 0.42;
+    Object.keys(this.state.textHighlights.questions).forEach((idx) => {
+      const qData = this.state.questions && this.state.questions[Number(idx)];
+      if (qData && (qData.tipo || '').toUpperCase() === 'VF') {
+        delete this.state.textHighlights.questions[idx];
+      }
+    });
+    if (!Array.isArray(this.state.deletedIndices)) this.state.deletedIndices = [];
+    if (!Array.isArray(this.state.disabledIndices)) this.state.disabledIndices = [];
 
     if (typeof this.state.retryMode !== 'boolean') this.state.retryMode = false;
     if (!Array.isArray(this.state.retryIndices)) this.state.retryIndices = [];
 
     if (this.state.config.showTags === undefined) this.state.config.showTags = true;
+    if (this.state.config.showFolders === undefined) this.state.config.showFolders = true;
     if (this.state.config.showDiff === undefined) this.state.config.showDiff = false;
     if (this.state.config.showFilterSummary === undefined) {
       this.state.config.showFilterSummary = true;
@@ -618,6 +706,10 @@ const App = {
     }
     if (this.state.config.applyDisregardedCorrect === undefined) {
       this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
+    }
+
+    if (this.state.mappings && Array.isArray(this.state.mappings.qOrder) && this.state.mappings.qOrder.length > 0) {
+      this.recalculateSessionQuestionCount();
     }
   },
 
@@ -646,6 +738,7 @@ const App = {
     this.state.config.shuffleQ = this.elements.chkShuffleQ.checked;
     this.state.config.shuffleA = this.elements.chkShuffleA.checked;
     this.state.config.showTags = this.elements.chkShowTags.checked;
+    this.state.config.showFolders = this.elements.chkShowFolders.checked;
     this.state.config.showDiff = this.elements.chkShowDiff.checked;
     this.state.config.showFilterSummary = this.elements.chkShowFilterSummary.checked;
     this.state.config.showDisregardCorrect =
@@ -668,6 +761,10 @@ const App = {
     };
     this.state.forcedIndices = [];
     this.state.eliminatedAlts = {};
+    this.state.textHighlights = { questions: {}, groups: {} };
+    this.state.highlightSettings = { color: 'yellow', opacity: 0.42 };
+    this.state.deletedIndices = [];
+    this.state.disabledIndices = [];
     this.state.mappings = { qOrder: [], altOrder: {} };
 
     // Reset Retry
@@ -809,7 +906,7 @@ const App = {
     const wrongIndices = [];
 
     this.state.mappings.qOrder.forEach((idx) => {
-      if (this.state.forcedIndices.includes(idx)) return;
+      if (this.isQuestionExcluded(idx)) return;
 
       const ans = this.state.userAnswers[idx];
       const { hits, total } = this.computeQuestionScore(idx);
@@ -850,6 +947,7 @@ const App = {
     this.state.retrySourceSessionId = sourceSessionId;
     this.state.userAnswers = {};
     this.state.eliminatedAlts = {};
+    this.state.textHighlights = { questions: {}, groups: {} };
     this.state.mappings = { qOrder: [], altOrder: {} };
     this.state.sessionQuestionCount = wrongIndices.length;
 
@@ -859,12 +957,14 @@ const App = {
 
   // --- GERADOR DE MAPAS (com suporte a retryMode, VF, CH/no_random) ---
   generateMappings() {
+    const deletedSet = new Set(this.state.deletedIndices || []);
     let strictPassIndices = new Set();
     const activeGroupIds = new Set();
 
     if (this.state.retryMode) {
       // No modo retry, só as questões salvas em retryIndices entram como "estritas"
       this.state.retryIndices.forEach((idx) => {
+        if (deletedSet.has(idx)) return;
         strictPassIndices.add(idx);
         const q = this.state.questions[idx];
         if (q._groupData) {
@@ -880,6 +980,7 @@ const App = {
       const selFolders = new Set(this.state.filters.folders);
 
       this.state.questions.forEach((q, idx) => {
+        if (deletedSet.has(idx)) return;
         const qPathStr = q._path.join(' > ');
         if (!selFolders.has(qPathStr)) return;
 
@@ -913,6 +1014,7 @@ const App = {
 
     this.state.questions.forEach((q, idx) => {
       if (processedIndices.has(idx)) return;
+      if (deletedSet.has(idx)) return;
 
       // No modo normal, respeita filtro de pasta aqui também
       if (!this.state.retryMode) {
@@ -926,6 +1028,7 @@ const App = {
           const groupIndices = [];
 
           this.state.questions.forEach((innerQ, innerIdx) => {
+            if (deletedSet.has(innerIdx)) return;
             if (innerQ._groupData && innerQ._groupData.id === groupId) {
               let allowedByFolder = true;
               if (!this.state.retryMode) {
@@ -995,6 +1098,106 @@ const App = {
 
       this.state.mappings.altOrder[originalIdx] = altIndices;
     });
+
+    this.recalculateSessionQuestionCount();
+  },
+
+  // === Gerenciamento individual de questões (deletar / desativar / ativar) ===
+  isQuestionExcluded(originalIdx) {
+    return !!(
+      (this.state.forcedIndices && this.state.forcedIndices.includes(originalIdx)) ||
+      (this.state.disabledIndices && this.state.disabledIndices.includes(originalIdx))
+    );
+  },
+
+  recalculateSessionQuestionCount() {
+    const forced = new Set(this.state.forcedIndices || []);
+    const disabled = new Set(this.state.disabledIndices || []);
+    const qOrder = (this.state.mappings && this.state.mappings.qOrder) || [];
+    this.state.sessionQuestionCount = qOrder.filter(
+      (idx) => !forced.has(idx) && !disabled.has(idx)
+    ).length;
+  },
+
+  openDeleteQuestionModal(originalIdx) {
+    if (!this.elements.deleteQuestionModal) return;
+    this._pendingDeleteQuestionIdx = originalIdx;
+
+    const isDisabled = !!(this.state.disabledIndices && this.state.disabledIndices.includes(originalIdx));
+    this.elements.btnDisableQuestionConfirm.textContent = isDisabled ? 'Ativar questão' : 'Desativar questão';
+    this.elements.btnDisableQuestionConfirm.dataset.mode = isDisabled ? 'enable' : 'disable';
+
+    const visualIdx = this.state.mappings.qOrder.indexOf(originalIdx);
+    const label = visualIdx > -1 ? `a questão ${visualIdx + 1}` : 'esta questão';
+    this.elements.deleteQuestionModalText.textContent =
+      isDisabled
+        ? `Esta questão está desativada. O que deseja fazer com ${label}?`
+        : `O que deseja fazer com ${label}?`;
+
+    this.elements.deleteQuestionModal.classList.remove('hidden');
+  },
+
+  closeDeleteQuestionModal() {
+    this._pendingDeleteQuestionIdx = null;
+    if (this.elements.deleteQuestionModal) {
+      this.elements.deleteQuestionModal.classList.add('hidden');
+    }
+  },
+
+  deleteQuestionConfirmed() {
+    const idx = this._pendingDeleteQuestionIdx;
+    if (idx === null || idx === undefined) return;
+    this.closeDeleteQuestionModal();
+
+    if (!Array.isArray(this.state.deletedIndices)) this.state.deletedIndices = [];
+    if (!this.state.deletedIndices.includes(idx)) this.state.deletedIndices.push(idx);
+
+    if (this.state.textHighlights && this.state.textHighlights.questions) {
+      delete this.state.textHighlights.questions[String(idx)];
+    }
+
+    // Uma questão deletada não faz mais sentido continuar marcada como desativada
+    if (Array.isArray(this.state.disabledIndices)) {
+      const dIdx = this.state.disabledIndices.indexOf(idx);
+      if (dIdx > -1) this.state.disabledIndices.splice(dIdx, 1);
+    }
+
+    const deletedGroupId = this.state.questions[idx] && this.state.questions[idx]._groupData
+      ? this.state.questions[idx]._groupData.id
+      : null;
+    if (deletedGroupId && this.state.textHighlights && this.state.textHighlights.groups) {
+      const deletedSet = new Set(this.state.deletedIndices);
+      const groupStillExists = this.state.questions.some((question, questionIdx) => (
+        !deletedSet.has(questionIdx) && question._groupData && question._groupData.id === deletedGroupId
+      ));
+      if (!groupStillExists) delete this.state.textHighlights.groups[String(deletedGroupId)];
+    }
+
+    this.generateMappings();
+    this.renderer.render(this.state);
+    this.applyCommentCollapseMode();
+    this.save(true);
+  },
+
+  toggleDisableQuestionConfirmed() {
+    const idx = this._pendingDeleteQuestionIdx;
+    if (idx === null || idx === undefined) return;
+    const mode = (this.elements.btnDisableQuestionConfirm && this.elements.btnDisableQuestionConfirm.dataset.mode) || 'disable';
+    this.closeDeleteQuestionModal();
+
+    if (!Array.isArray(this.state.disabledIndices)) this.state.disabledIndices = [];
+
+    if (mode === 'enable') {
+      const dIdx = this.state.disabledIndices.indexOf(idx);
+      if (dIdx > -1) this.state.disabledIndices.splice(dIdx, 1);
+    } else if (!this.state.disabledIndices.includes(idx)) {
+      this.state.disabledIndices.push(idx);
+    }
+
+    this.recalculateSessionQuestionCount();
+    this.renderer.render(this.state);
+    this.applyCommentCollapseMode();
+    this.save(true);
   },
 
   async deleteCurrentQuiz() {
@@ -1018,6 +1221,9 @@ const App = {
     this.state.questions = [];
     this.state.mappings = { qOrder: [], altOrder: {} };
     this.state.userAnswers = {};
+    this.state.textHighlights = { questions: {}, groups: {} };
+    this.state.deletedIndices = [];
+    this.state.disabledIndices = [];
     this.state.filters = {
       tags: [],
       excludedTags: [],
@@ -1083,11 +1289,12 @@ const App = {
   },
 
   resetQuiz() {
-    if (!confirm('Deseja reiniciar este quiz? Suas respostas serão apagadas.'))
+    if (!confirm('Deseja reiniciar este quiz? Suas respostas e marcações serão apagadas.'))
       return;
 
     this.state.userAnswers = {};
     this.state.eliminatedAlts = {};
+    this.state.textHighlights = { questions: {}, groups: {} };
     reshuffleVariants(this.state.questions);
     reshuffleChVariants(this.state.questions);
     this.generateMappings();
@@ -1379,7 +1586,7 @@ const App = {
   },
 
   handleSelection(originalQIdx, originalAltIdx, isCheckbox = false, checked = true) {
-    if (this.state.forcedIndices.includes(originalQIdx)) return;
+    if (this.isQuestionExcluded(originalQIdx)) return;
 
     const qData = this.state.questions[originalQIdx];
     const tipo = (qData.tipo || '').toUpperCase();
@@ -1522,8 +1729,53 @@ const App = {
     this.save(true);
   },
 
+  handleSetTextHighlights(targetType, targetId, highlights) {
+    if (targetType !== 'group') {
+      const qData = this.state.questions && this.state.questions[Number(targetId)];
+      if (qData && (qData.tipo || '').toUpperCase() === 'VF') return;
+    }
+    if (!this.state.textHighlights || typeof this.state.textHighlights !== 'object') {
+      this.state.textHighlights = { questions: {}, groups: {} };
+    }
+    const bucketName = targetType === 'group' ? 'groups' : 'questions';
+    if (!this.state.textHighlights[bucketName]) {
+      this.state.textHighlights[bucketName] = {};
+    }
+
+    const key = String(targetId);
+    const cleanHighlights = Array.isArray(highlights)
+      ? highlights.filter((item) => (
+          item && Number.isFinite(item.start) && Number.isFinite(item.end) && item.end > item.start
+        ))
+      : [];
+
+    if (cleanHighlights.length > 0) {
+      this.state.textHighlights[bucketName][key] = cleanHighlights;
+    } else {
+      delete this.state.textHighlights[bucketName][key];
+    }
+    this.save(true);
+  },
+
+  handleHighlightSettingsChange(settings) {
+    const color = HIGHLIGHT_COLOR_KEYS.has(settings && settings.color)
+      ? settings.color
+      : 'yellow';
+    const rawOpacity = Number(settings && settings.opacity);
+    const opacity = Number.isFinite(rawOpacity)
+      ? Math.min(0.9, Math.max(0.15, rawOpacity))
+      : 0.42;
+    this.state.highlightSettings = { color, opacity };
+    this.save(false);
+  },
+
+  handleClearAllTextHighlights() {
+    this.state.textHighlights = { questions: {}, groups: {} };
+    this.save(true);
+  },
+
   submitQuestion(originalQIdx) {
-    if (this.state.forcedIndices.includes(originalQIdx)) return;
+    if (this.isQuestionExcluded(originalQIdx)) return;
 
     if (!this.state.userAnswers[originalQIdx]) {
       this.state.userAnswers[originalQIdx] = {};
@@ -1554,6 +1806,7 @@ const App = {
   },
 
   handleToggleDisregardCorrect(originalQIdx, checked) {
+    if (this.isQuestionExcluded(originalQIdx)) return;
     if (!this.state.userAnswers[originalQIdx]) return;
     const ans = this.state.userAnswers[originalQIdx];
     const raw = this.computeQuestionScore(originalQIdx, { ignoreDisregard: true });
@@ -1667,7 +1920,7 @@ const App = {
     if (!confirm('Tem certeza que deseja entregar todas as questões?')) return;
 
     this.state.mappings.qOrder.forEach((idx) => {
-      if (this.state.forcedIndices && this.state.forcedIndices.includes(idx)) return;
+      if (this.isQuestionExcluded(idx)) return;
 
       const qData = this.state.questions[idx];
       const tipo = (qData.tipo || '').toUpperCase();
@@ -1741,7 +1994,7 @@ const App = {
   },
 
   handleEscritaItemSubmit(qIdx, itemIdx, text) {
-    if (this.state.forcedIndices && this.state.forcedIndices.includes(qIdx)) return;
+    if (this.isQuestionExcluded(qIdx)) return;
 
     const qData = this.state.questions[qIdx];
     if (!this.state.userAnswers[qIdx]) {
@@ -1901,6 +2154,7 @@ const App = {
     this.elements.chkShuffleQ.checked = this.state.config.shuffleQ;
     this.elements.chkShuffleA.checked = this.state.config.shuffleA;
     this.elements.chkShowTags.checked = this.state.config.showTags;
+    this.elements.chkShowFolders.checked = this.state.config.showFolders;
     this.elements.chkShowDiff.checked = this.state.config.showDiff;
     this.elements.chkShowFilterSummary.checked =
       this.state.config.showFilterSummary;
@@ -1922,9 +2176,7 @@ const App = {
 
   getActiveQuestionIndices() {
     if (this.state.mappings && Array.isArray(this.state.mappings.qOrder) && this.state.mappings.qOrder.length > 0) {
-      return this.state.mappings.qOrder.filter(idx =>
-        !(this.state.forcedIndices && this.state.forcedIndices.includes(idx))
-      );
+      return this.state.mappings.qOrder.filter(idx => !this.isQuestionExcluded(idx));
     }
     if (this.state.retryMode && Array.isArray(this.state.retryIndices)) {
       return this.state.retryIndices;
@@ -2089,6 +2341,7 @@ const App = {
     this.state.questions = [];
     this.state.mappings = { qOrder: [], altOrder: {} };
     this.state.userAnswers = {};
+    this.state.textHighlights = { questions: {}, groups: {} };
     this.state.retryMode = false;
     this.state.retryIndices = [];
     this.state.retryDerivedFromErrors = false;
@@ -3316,7 +3569,7 @@ const App = {
     for (let i = qOrder.length - 1; i >= 0; i--) {
       const idx = qOrder[i];
       const ans = this.state.userAnswers[idx];
-      if (ans && ans.submitted && !this.state.forcedIndices.includes(idx)) {
+      if (ans && ans.submitted && !this.isQuestionExcluded(idx)) {
         lastSubmittedCard = document.querySelector(`.question-card[data-original-idx="${idx}"]`);
         if (lastSubmittedCard) break;
       }
@@ -3436,7 +3689,7 @@ const App = {
       if (!this.state.mappings.qOrder || this.state.mappings.qOrder.length === 0) return;
 
       const hasUnanswered = this.state.mappings.qOrder.some(idx => {
-        if (this.state.forcedIndices.includes(idx)) return false;
+        if (this.isQuestionExcluded(idx)) return false;
         const ans = this.state.userAnswers[idx];
         return !ans || !ans.submitted;
       });
@@ -3715,7 +3968,7 @@ const App = {
 
     // Procurar a próxima não respondida a partir da posição do scroll
     for (const idx of qOrder) {
-      if (this.state.forcedIndices.includes(idx)) continue;
+      if (this.isQuestionExcluded(idx)) continue;
       const ans = this.state.userAnswers[idx];
       if (ans && ans.submitted) continue;
 
@@ -3729,7 +3982,7 @@ const App = {
     // Se não achou à frente, voltar ao início (cíclico)
     if (!targetCard) {
       for (const idx of qOrder) {
-        if (this.state.forcedIndices.includes(idx)) continue;
+        if (this.isQuestionExcluded(idx)) continue;
         const ans = this.state.userAnswers[idx];
         if (ans && ans.submitted) continue;
 
