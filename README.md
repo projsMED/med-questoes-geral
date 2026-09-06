@@ -1,4 +1,4 @@
-# 🩺 Question Engine V3.9.4 (med-questoes-geral)
+# 🩺 Question Engine V4.4 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
 
@@ -14,9 +14,10 @@
    - [Variantes (`variantes`)](#3-variantes-variantes)
    - [Múltipla Escolha Padrão (`ME`)](#4-múltipla-escolha-padrão-me)
    - [Verdadeiro ou Falso Simples (`VF`)](#5-verdadeiro-ou-falso-simples-vf)
-   - [Múltiplo Verdadeiro ou Falso / Checkbox (`CH`)](#6-múltiplo-verdadeiro-ou-falso--checkbox-ch)
-   - [Múltipla Escolha Múltipla (`ME-CH`)](#7-múltipla-escolha-múltipla-me-ch)
+   - [Múltiplo Verdadeiro ou Falso (`MVF` / `CH`)](#6-múltiplo-verdadeiro-ou-falso-mvf)
+   - [Múltipla Escolha Múltipla (`MEM` / `ME-CH`)](#7-múltipla-escolha-múltipla-mem)
    - [Dissertativa / Discursiva (`ESCRITA`)](#8-dissertativa--discursiva-escrita)
+   - [Questão de Associação / Matching Question (`MQ`)](#9-questão-de-associação--matching-question-mq)
 5. [Fluxos de Funcionamento e Regras de Negócio](#-fluxos-de-funcionamento-e-regras-de-negócio)
    - [Motor de Filtro em 2 Etapas](#motor-de-filtro-em-2-etapas)
    - [Embaralhamento e Mapeamento Dinâmico de Letras](#embaralhamento-e-mapeamento-dinâmico-de-letras)
@@ -60,7 +61,7 @@ med-questoes-geral/
 │   ├── renderer.js                 # QuizRenderer: renderização de cards, gabaritos, avaliação e inputs
 │   ├── parser.js                   # Parser: linearização da árvore JSON, resolução de grupos, variantes e tipos
 │   ├── store.js                    # Camada de persistência IndexedDB (sessões, pastas e migrações)
-│   ├── utils.js                    # Utilitários: Fisher-Yates, mapa de dificuldades/tipos, score ME-CH e formatters
+│   ├── utils.js                    # Utilitários: Fisher-Yates, mapa de dificuldades/tipos, scores (MEM, MVF, MQ) e formatters
 │   ├── firebase-config.js          # Inicialização do Firebase v10 e métodos de autenticação
 │   └── firebase-sync.js            # Lógica de sincronização remota, chunking e compressão Gzip
 ├── quizes-da-nuvem/                # Repositório de questões pré-empacotadas
@@ -111,7 +112,7 @@ Agrupa questões que compartilham o mesmo enunciado/caso clínico base. Na inter
   "tipo": "grupo_juntas",
   "id": "grp_caso_01",
   "texto": "<b>Caso Clínico:</b> Paciente masculino, 58 anos...",
-  "questoes": [ /* Questões ME, VF, CH, etc. */ ]
+  "questoes": [ /* Questões ME, MEM, VF, MVF, ESCRITA, MQ */ ]
 }
 ```
 
@@ -161,12 +162,15 @@ Item único para julgamento como V ou F.
 }
 ```
 
-### 6. Múltiplo Verdadeiro ou Falso / Checkbox (`CH`)
+### 6. Múltiplo Verdadeiro ou Falso (`MVF`)
 Apresenta múltiplas assertivas (I, II, III...) a serem julgadas individualmente como V ou F. Suporta **variantes internas** de assertivas (assertivas com mesmo `id` são sorteadas randomicamente).
+
+> **Nota de Retrocompatibilidade:** O identificador anterior `"tipo": "CH"` continua 100% suportado e aceito de forma transparente pelo sistema.
+
 ```json
 {
-  "tipo": "CH",
-  "id": "q_ch_01",
+  "tipo": "MVF",
+  "id": "q_mvf_01",
   "tags": ["Emergência"],
   "dificuldade": 3,
   "no_random": false,
@@ -189,22 +193,25 @@ Apresenta múltiplas assertivas (I, II, III...) a serem julgadas individualmente
 }
 ```
 
-### 7. Múltipla Escolha Múltipla (`ME-CH`)
+### 7. Múltipla Escolha Múltipla (`MEM`)
 Múltipla escolha com caixas de seleção onde mais de uma alternativa pode estar correta.
+
+> **Nota de Retrocompatibilidade:** O identificador anterior `"tipo": "ME-CH"` continua 100% suportado e aceito de forma transparente pelo sistema.
+
 ```json
 {
-  "tipo": "ME-CH",
-  "id": "q_mech_01",
+  "tipo": "MEM",
+  "id": "q_mem_01",
   "tags": ["Farmacologia"],
   "dificuldade": 2,
   "enunciado": "Assinale os antibióticos que atuam na inibição da síntese da parede celular bacteriana:",
   "alternativas": [
     { "id": "alt_1", "texto": "Amoxicilina" },
-    { "id": "alt_2", "texto": "Vancomicina" },
-    { "id": "alt_3", "texto": "Gentamicina" }
+    { "id": "alt_2", "texto": "Gentamicina" },
+    { "id": "alt_3", "texto": "Vancomicina" }
   ],
-  "gabarito": "A, B",
-  "comentario_geral": "Amoxicilina e Vancomicina inibem parede. Gentamicina inibe síntese proteica (30S)."
+  "gabarito": "A, C",
+  "comentario_geral": "Amoxicilina (A) e Vancomicina (C) inibem parede. Gentamicina (B) inibe síntese proteica (30S)."
 }
 ```
 *Fórmula de pontuação proporcional:* `Score = (Acertos Marcados / Total Corretas) - (Erros Marcados / Total Incorretas)`, limitado ao intervalo `[0, 1]`.
@@ -236,6 +243,51 @@ Suporta dois subtipos:
 }
 ```
 
+### 9. Questão de Associação / Matching Question (`MQ`) - V4.4
+Consiste em duas colunas (Coluna I e Coluna II) com até 26 itens em cada uma. Suporta associações 1:1, 1:N, N:1 ou itens sem associação (nenhum).
+- **Coluna Esquerda:** renderizada numericamente (1, 2, 3...). Nome configurável (`nome`, padrão "Coluna I"). Ordenação configurável (`ordenacao`: `"fixa"`, `"alfabetica"` ou ausente/aleatorizável por `shuffleA`).
+- **Coluna Direita:** renderizada alfabeticamente (A, B, C...). Nome configurável (`nome`, padrão "Coluna II"). Mesmas opções de ordenação.
+- **Dois Modos Visuais:**
+  1. *Setas de Ligação (SVG):* traçado dinâmico por clique e remoção facilitada: basta repetir o clique na mesma associação (toggle) ou usar o menu de contexto com botão direito (desktop) e toque duplo (mobile). Setas com alto contraste no modo escuro (`#cbd5e1`) e feedback pós-envio em verde (acerto), vermelho (erro), laranja tracejado (omissão) e verde-claro fino (correção do erro).
+  2. *Grade / Tabela (V4.4):* matriz interativa com alternância entre `○` e `●`. A Coluna I tem largura compacta ajustada ao seu conteúdo (*fit-content*), sem sobras vazias. Inclui **divisores arrastáveis estilo Excel (`↔`)** nos cabeçalhos: arrastar na borda da Coluna I ajusta sua largura; arrastar em qualquer coluna da Coluna II redimensiona todas as colunas de opções de forma sincronizada (com duplo clique para restaurar o tamanho padrão). Possui barra superior permanente com botões de zoom `A−` e `A+` (com escala proporcional de textos e larguras) e botão inteligente **`⛶ Expandir`** (modal suspenso adaptativo que fecha via `Esc`, botão `✕ Fechar expansão` ou clique fora). A **Coluna I (número e nome do item) permanece perfeitamente fixada (sticky)** durante rolagens horizontais. Associações esquecidas são sinalizadas com fundo alaranjado e **borda pontilhada verde**.
+- **Botão Responder e Ações (V4.4):** barra de ação com *"Responder"* e *"Desconsiderar acerto"* posicionada **antes** dos comentários e pontuações, mantendo o padrão unificado da plataforma. Total compatibilidade com o modo *"📋 Selecionar"*, marca-texto no enunciado, grupos de questões e quebras de linha em enunciados e comentários gerais (`white-space: pre-line`).
+- **Fórmula de Pontuação por Item da Esquerda:**
+  - Item com gabarito sem associação (`nenhum`): `1.0` se nenhuma marcação for feita; `0.0` se marcar algo.
+  - Caso geral: `max(0, (corretas - incorretas) / total_corretas_no_gabarito)`.
+- **Pontuação Final da Questão:** média das pontuações dos itens da coluna esquerda (normalizada de 0 a 1 ponto).
+
+```json
+{
+  "tipo": "MQ",
+  "id": "q_mq_01",
+  "tags": ["Farmacologia", "Tuberculose"],
+  "dificuldade": 2,
+  "enunciado": "Associe os fármacos aos seus respectivos efeitos adversos:",
+  "coluna_esquerda": {
+    "nome": "Fármaco",
+    "ordenacao": "alfabetica",
+    "itens": [
+      { "id": 1, "texto": "Isoniazida" },
+      { "id": 2, "texto": "Rifampicina" },
+      { "id": 3, "texto": "Pirazinamida" },
+      { "id": 4, "texto": "Etambutol" }
+    ]
+  },
+  "coluna_direita": {
+    "nome": "Efeito adverso",
+    "ordenacao": "fixa",
+    "itens": [
+      { "id": "A", "texto": "Neurite óptica" },
+      { "id": "B", "texto": "Hiperuricemia e artralgia" },
+      { "id": "C", "texto": "Neuropatia periférica (vitamina B6)" },
+      { "id": "D", "texto": "Coloração alaranjada de secreções" }
+    ]
+  },
+  "gabarito": "1(C), 2(D), 3(B), 4(A)",
+  "comentario_geral": "A {1} causa neuropatia ({C}). A {2} causa urina alaranjada ({D})."
+}
+```
+
 ---
 
 ## ⚙️ Fluxos de Funcionamento e Regras de Negócio
@@ -245,7 +297,7 @@ Suporta dois subtipos:
 2. **Passo 2 (Critérios Finos):** Apenas com base nas questões das pastas selecionadas no Passo 1, o usuário refina por:
    - **Tags a incluir / Tags a excluir** (com botões de ação rápida: *Desselecionar todas*, *Selecionar todas não incluídas*).
    - **Nível de Dificuldade** (1 a 5).
-   - **Tipo de Questão** (ME, VF, CH, ME-CH, ESCRITA).
+   - **Tipo de Questão** (ME, MEM, VF, MVF, ESCRITA, MQ — com suporte retrocompatível a ME-CH e CH).
 3. **Preservação de Contexto em Grupos (`question-forced`):** Se uma questão de um `grupo_juntas` for selecionada pelos filtros, mas outras questões do mesmo caso clínico não corresponderem aos filtros, as demais podem ser exibidas com um badge cinza especial como contexto de leitura (não valem nota e não são pontuadas).
 
 ### Embaralhamento e Mapeamento Dinâmico de Letras
@@ -274,7 +326,7 @@ Ambos os estados (`deletedIndices` e `disabledIndices`) são armazenados por ín
 
 ### Marcação de Texto & Eliminação de Alternativas
 - **Marcação de palavras legada:** Mantida para compatibilidade nos pontos em que já existia, incluindo o sistema próprio do VF simples.
-- **Marca-texto V3.9.4:** Enunciados de ME, ME-CH, CH e ESCRITA, além dos textos-base de `grupo_juntas`, podem receber marcações persistentes em 12 cores e opacidade ajustável. No touch, a seleção salta por palavras inteiras; no PC, continua precisa por caractere. VF simples não exibe o novo marca-texto.
+- **Marca-texto V3.9.4:** Enunciados de ME, MEM (ME-CH), MVF (CH) e ESCRITA, além dos textos-base de `grupo_juntas`, podem receber marcações persistentes em 12 cores e opacidade ajustável. No touch, a seleção salta por palavras inteiras; no PC, continua precisa por caractere. VF simples não exibe o novo marca-texto.
   - Cada marcação preserva sua própria cor e opacidade e pode atravessar parágrafos e formatações HTML sem alterar o texto original.
   - Marcações não podem se sobrepor; marcações adjacentes com a mesma aparência são unidas.
   - O menu contextual permite deletar, copiar, alterar cor/opacidade ou cancelar. A engrenagem acoplada ao botão da ferramenta abre as opções para ocultar temporariamente, apagar as marcações do texto atual ou apagar todas da sessão.
@@ -357,7 +409,7 @@ Ao trabalhar neste repositório, observe as seguintes diretrizes arquiteturais:
    - Sempre que alterar a assinatura de funções ou estruturas críticas em arquivos JS, certifique-se de atualizar o `APP_ASSET_VERSION` em `index.html` e nas importações para evitar que navegadores executem módulos em cache antigo.
 
 2. **Imutabilidade e Deep Copy de Variantes:**
-   - Em `js/parser.js`, os nós originais de `VARIANTES` e assertivas de `CH` são clonados (`JSON.parse(JSON.stringify(node))`) antes de sofrer mutação, ficando guardados em `_variantNode` e `_originalAssertivas`. Não remova essas referências, pois são vitais para o funcionamento de `reshuffleVariants` e do Modo Retry.
+   - Em `js/parser.js`, os nós originais de `VARIANTES` e assertivas de `MVF` (`CH`) são clonados (`JSON.parse(JSON.stringify(node))`) antes de sofrer mutação, ficando guardados em `_variantNode` e `_originalAssertivas`. Não remova essas referências, pois são vitais para o funcionamento de `reshuffleVariants` e do Modo Retry.
 
 3. **Compatibilidade de Gabaritos V/F:**
    - Para questões do tipo `VF`, o parser normaliza `gabarito: "V"` para `"A"` e `gabarito: "F"` para `"B"` internamente para manter compatibilidade com a engine de correção de escolha única.

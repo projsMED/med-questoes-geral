@@ -1,0 +1,304 @@
+{
+  "titulo": "Quiz Demonstrativo - Questões de Associação (MQ) V4.4",
+  "descricao": "Quiz para validação de todas as funcionalidades do tipo MQ: relações 1:1, 1:N, N:1, itens sem associação (nenhum), suporte a embaralhamento independente por coluna, modos de exibição (Setas e Tabela com Zoom e Modal Expandir), e gabarito textual dinâmico com {1} e {C}.",
+  "conteudo": [
+    {
+      "tipo": "FOLDER",
+      "nome": "Questões de Associação (MQ)",
+      "conteudo": [
+        {
+          "tipo": "MQ",
+          "enunciado": "Associe os fármacos utilizados no tratamento da tuberculose, apresentados na Coluna I, aos respectivos efeitos adversos mais característicos, apresentados na Coluna II.",
+          "dificuldade": 2,
+          "tags": [
+            "Farmacologia",
+            "Infectologia",
+            "Tuberculose"
+          ],
+          "coluna_esquerda": {
+            "nome": "Fármaco",
+            "itens": [
+              {
+                "id": 1,
+                "texto": "Isoniazida"
+              },
+              {
+                "id": 2,
+                "texto": "Rifampicina"
+              },
+              {
+                "id": 3,
+                "texto": "Pirazinamida"
+              },
+              {
+                "id": 4,
+                "texto": "Etambutol"
+              }
+            ]
+          },
+          "coluna_direita": {
+            "nome": "Efeito colateral",
+            "itens": [
+              {
+                "id": "A",
+                "texto": "Neurite óptica e alteração da discriminação entre vermelho e verde"
+              },
+              {
+                "id": "B",
+                "texto": "Hiperuricemia e artralgia"
+              },
+              {
+                "id": "C",
+                "texto": "Neuropatia periférica associada à deficiência de vitamina B6"
+              },
+              {
+                "id": "D",
+                "texto": "Coloração alaranjada de secreções corporais e potente indução enzimática"
+              }
+            ]
+          },
+          "gabarito": "1(C), 2(D), 3(B), 4(A)",
+          "comentario_geral": "Correlação clássica do esquema RIPE:\n• A {1} (Isoniazida) provoca neuropatia periférica ({C}) prevenível com piridoxina (vitamina B6).\n• A {2} (Rifampicina) induz o citocromo P450 e tinge secreções de alaranjado ({D}).\n• A {3} (Pirazinamida) inibe a excreção renal de urato, causando hiperuricemia e artralgias ({B}).\n• O {4} (Etambutol) é notório pela toxicidade ocular retrobulbar / neurite óptica ({A})."
+        },
+        {
+          "tipo": "MQ",
+          "enunciado": "Associe as doenças reumatológicas autoimunes (Coluna I) aos seus respectivos achados clínicos ou autoanticorpos característicos (Coluna II). Observe que uma doença pode apresentar múltiplos achados e diferentes doenças podem compartilhar o mesmo achado.",
+          "dificuldade": 4,
+          "tags": [
+            "Reumatologia",
+            "Autoimunidade",
+            "Anticorpos"
+          ],
+          "coluna_esquerda": {
+            "nome": "Doença Autoimune",
+            "ordenacao": "fixa",
+            "itens": [
+              {
+                "id": 1,
+                "texto": "Lúpus Eritematoso Sistêmico (LES)"
+              },
+              {
+                "id": 2,
+                "texto": "Esclerose Sistêmica (Esclerodermia)"
+              },
+              {
+                "id": 3,
+                "texto": "Síndrome de Sjögren"
+              }
+            ]
+          },
+          "coluna_direita": {
+            "nome": "Manifestações e Autoanticorpos",
+            "itens": [
+              {
+                "id": "A",
+                "texto": "Anticorpo anti-Ro (SSA)"
+              },
+              {
+                "id": "B",
+                "texto": "Fenômeno de Raynaud"
+              },
+              {
+                "id": "C",
+                "texto": "Anticorpo anti-Sm (altamente específico)"
+              },
+              {
+                "id": "D",
+                "texto": "Anticorpo anti-Scl-70 (anti-topoisomerase I)"
+              },
+              {
+                "id": "E",
+                "texto": "Xerostomia e ceratoconjuntivite seca (sintomas sicca)"
+              }
+            ]
+          },
+          "gabarito": "1(A, B, C), 2(B, D), 3(A, E)",
+          "comentario_geral": "Esta questão exemplifica associações 1:N e N:1:\n• O {1} associa-se ao anti-Ro ({A}), fenômeno de Raynaud ({B}) e anti-Sm ({C}).\n• A {2} associa-se ao Raynaud ({B}) e ao anti-Scl-70 ({D}).\n• A {3} associa-se ao anti-Ro ({A}) e à síndrome seca ({E}).\nNote que o Fenômeno de Raynaud ({B}) é compartilhado por {1} e {2}, e o anti-Ro ({A}) é compartilhado por {1} e {3}."
+        },
+        {
+          "tipo": "MQ",
+          "enunciado": "Associe os agentes infecciosos bacterianos (Coluna I) às suas toxinas patogênicas correspondentes (Coluna II). Atenção: pode haver patógenos sem nenhuma das toxinas listadas, bem como toxinas distratoras.",
+          "dificuldade": 3,
+          "tags": [
+            "Microbiologia",
+            "Infectologia",
+            "Toxinas"
+          ],
+          "coluna_esquerda": {
+            "nome": "Bactéria",
+            "ordenacao": "alfabetica",
+            "itens": [
+              {
+                "id": 1,
+                "texto": "Clostridium botulinum"
+              },
+              {
+                "id": 2,
+                "texto": "Corynebacterium diphtheriae"
+              },
+              {
+                "id": 3,
+                "texto": "Streptococcus pneumoniae"
+              },
+              {
+                "id": 4,
+                "texto": "Vibrio cholerae"
+              }
+            ]
+          },
+          "coluna_direita": {
+            "nome": "Mecanismo da Toxina",
+            "ordenacao": "alfabetica",
+            "itens": [
+              {
+                "id": "A",
+                "texto": "Ativação irreversível da adenilil ciclase com hipersecreção maciça de água e eletrólitos"
+              },
+              {
+                "id": "B",
+                "texto": "Inibição da síntese proteica por ADP-ribosilação do fator de elongação 2 (EF-2)"
+              },
+              {
+                "id": "C",
+                "texto": "Clivagem de proteínas SNARE impedindo a liberação pré-sináptica de acetilcolina"
+              },
+              {
+                "id": "D",
+                "texto": "Estimulação da guanilil ciclase luminal (enterotoxina termoestável STa)"
+              }
+            ]
+          },
+          "gabarito": "1(C), 2(B), 3(nenhum), 4(A)",
+          "comentario_geral": "Análise das toxinas:\n• O {1} produz a neurotoxina botulínica ({C}), clivando o complexo SNARE e impedindo a liberação de ACh (paralisia flácida).\n• O {2} produz a toxina diftérica ({B}), inibindo o EF-2 e bloqueando a síntese proteica celular.\n• O {3} (Pneumococo) NÃO produz exotoxina com nenhum desses mecanismos (seu principal fator de virulência é a cápsula polissacarídica e pneumolisina); logo, seu gabarito é NENHUM.\n• O {4} secreta a toxina colérica ({A}), causando diarreia aquosa secretora intensa.\n• A opção {D} (enterotoxina STa) é típica da E. coli enterotoxigênica (ETEC), servindo como distrator na Coluna II."
+        },
+        {
+          "tipo": "MQ",
+          "enunciado": "A classificação KDIGO estratifica os estágios da Doença Renal Crônica (DRC) com base na Taxa de Filtração Glomerular (TFG). Associe os estágios funcionais na Coluna I às respectivas faixas de TFG na Coluna II.",
+          "dificuldade": 2,
+          "tags": [
+            "Nefrologia",
+            "KDIGO",
+            "Insuficiência Renal"
+          ],
+          "coluna_esquerda": {
+            "nome": "Estágio KDIGO",
+            "ordenacao": "fixa",
+            "itens": [
+              {
+                "id": 1,
+                "texto": "Estágio 1"
+              },
+              {
+                "id": 2,
+                "texto": "Estágio 2"
+              },
+              {
+                "id": 3,
+                "texto": "Estágio 3a"
+              },
+              {
+                "id": 4,
+                "texto": "Estágio 3b"
+              },
+              {
+                "id": 5,
+                "texto": "Estágio 4"
+              },
+              {
+                "id": 6,
+                "texto": "Estágio 5"
+              }
+            ]
+          },
+          "coluna_direita": {
+            "nome": "Taxa de Filtração Glomerular (mL/min/1,73m²)",
+            "ordenacao": "alfabetica",
+            "itens": [
+              {
+                "id": "A",
+                "texto": "< 15 (Falência renal / diálise)"
+              },
+              {
+                "id": "B",
+                "texto": "15 a 29 (Redução grave da TFG)"
+              },
+              {
+                "id": "C",
+                "texto": "30 a 44 (Redução moderada a grave da TFG)"
+              },
+              {
+                "id": "D",
+                "texto": "45 a 59 (Redução leve a moderada da TFG)"
+              },
+              {
+                "id": "E",
+                "texto": "60 a 89 (Redução leve da TFG na presença de lesão renal)"
+              },
+              {
+                "id": "F",
+                "texto": "≥ 90 (TFG normal ou aumentada com evidência de lesão renal)"
+              }
+            ]
+          },
+          "gabarito": "1(F), 2(E), 3(D), 4(C), 5(B), 6(A)",
+          "comentario_geral": "Critérios KDIGO para DRC:\n• {1}: TFG ≥ 90 ({F})\n• {2}: TFG 60-89 ({E})\n• {3}: TFG 45-59 ({D})\n• {4}: TFG 30-44 ({C})\n• {5}: TFG 15-29 ({B})\n• {6}: TFG < 15 ({A})"
+        },
+        {
+          "tipo": "MQ",
+          "enunciado": "Em pacientes admitidos na emergência cardiológica com queixa de palpitações e síncope, o eletrocardiograma (ECG) de 12 derivações é a principal ferramenta diagnóstica. Correlacione as arritmias cardíacas (Coluna I) aos seus traçados eletrocardiográficos diagnósticos (Coluna II).",
+          "dificuldade": 3,
+          "tags": [
+            "Cardiologia",
+            "Arritmias",
+            "ECG",
+            "Emergência"
+          ],
+          "coluna_esquerda": {
+            "nome": "Arritmia Cardíaca",
+            "itens": [
+              {
+                "id": 1,
+                "texto": "Fibrilação Atrial (FA)"
+              },
+              {
+                "id": 2,
+                "texto": "Flutter Atrial típico"
+              },
+              {
+                "id": 3,
+                "texto": "Taquicardia Ventricular Monomórfica"
+              },
+              {
+                "id": 4,
+                "texto": "Bloqueio Atrioventricular Total (BAVT)"
+              }
+            ]
+          },
+          "coluna_direita": {
+            "nome": "Achado Eletrocardiográfico",
+            "itens": [
+              {
+                "id": "A",
+                "texto": "Ausência de ondas P organizadas, linha de base com oscilações rápidas e intervalos R-R absolutamente irregulares"
+              },
+              {
+                "id": "B",
+                "texto": "Ondas 'F' regulares em formato de dente de serra, tipicamente negativas em DII, DIII e aVF a ~300 bpm"
+              },
+              {
+                "id": "C",
+                "texto": "Complexos QRS alargados (> 120 ms) com frequência > 100 bpm e morfologia uniforme batimento a batimento"
+              },
+              {
+                "id": "D",
+                "texto": "Dissociação completa entre átrios e ventrículos, com frequência atrial maior que a frequência ventricular (ritmo de escape)"
+              }
+            ]
+          },
+          "gabarito": "1(A), 2(B), 3(C), 4(D)",
+          "comentario_geral": "Diagnóstico eletrocardiográfico das arritmias:\n• {1}: Intervalos R-R irregularmente irregulares e ausência de onda P ({A}).\n• {2}: Ondas em dente de serra ({B}), circuito de macrorreentrada no átrio direito pelo istmo cavotricuspídeo.\n• {3}: QRS largo com morfologia uniforme ({C}), originado abaixo do feixe de His.\n• {4}: Atividade atrial e ventricular independentes com ritmo de escape ({D})."
+        }
+      ]
+    }
+  ]
+}

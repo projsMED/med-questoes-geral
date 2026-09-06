@@ -4,16 +4,17 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20260904-2';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260904-2';
+} from './store.js?v=20260906-8';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260906-8';
 import {
   shuffleArray,
   difficultyMap,
   questionTypeMap,
   questionTypes,
-  computeMeChScore
-} from './utils.js?v=20260904-2';
-import { QuizRenderer } from './renderer.js?v=20260904-2';
+  computeMeChScore,
+  computeMqScore
+} from './utils.js?v=20260906-8';
+import { QuizRenderer } from './renderer.js?v=20260906-8';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -196,6 +197,8 @@ const App = {
     commentSubOptions: document.getElementById('commentSubOptions'),
     chkPersistManualOpen: document.getElementById('chkPersistManualOpen'),
     chkVfStacked: document.getElementById('chkVfStacked'),
+    mqModeArrows: document.getElementById('mqModeArrows'),
+    mqModeTable: document.getElementById('mqModeTable'),
     chkShowPartialScore: document.getElementById('chkShowPartialScore'),
     chkDarkMode: document.getElementById('chkDarkMode'),
     darkModeIcon: document.getElementById('darkModeIcon'),
@@ -278,7 +281,8 @@ const App = {
         this.handleToggleDisregardCorrect(qIdx, checked),
       onToggleApplyDisregardedCorrect: (checked) =>
         this.handleToggleApplyDisregardedCorrect(checked),
-      onManageQuestion: (originalIdx) => this.openDeleteQuestionModal(originalIdx)
+      onManageQuestion: (originalIdx) => this.openDeleteQuestionModal(originalIdx),
+      onMqChange: (qIdx, connections) => this.handleMqChange(qIdx, connections)
     });
 
     this.bindEvents();
@@ -370,8 +374,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20260904-2');
-      this.firebaseSync = await import('./firebase-sync.js?v=20260904-2');
+      this.firebaseConfig = await import('./firebase-config.js?v=20260906-8');
+      this.firebaseSync = await import('./firebase-sync.js?v=20260906-8');
 
       this.firebaseState.autoSync = localStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = localStorage.getItem('lastSyncTime') || null;
@@ -642,10 +646,16 @@ const App = {
     if (!Array.isArray(this.state.filters.diffs)) this.state.filters.diffs = [];
     if (!Array.isArray(this.state.filters.types)) {
       this.state.filters.types = [...questionTypes];
+    } else {
+      this.state.filters.types = this.state.filters.types.map((t) => {
+        if (t === 'ME-CH') return 'MEM';
+        if (t === 'CH') return 'MVF';
+        return t;
+      });
     }
-    this.state.filters.types = this.state.filters.types.filter((type) =>
+    this.state.filters.types = [...new Set(this.state.filters.types.filter((type) =>
       questionTypes.includes(type)
-    );
+    ))];
     this.state.filters.allTypes = [...questionTypes];
 
     if (!this.state.filters.counts) this.state.filters.counts = {};
@@ -835,8 +845,8 @@ const App = {
   /**
    * Retorna { hits, total } para a questão originalQIdx.
    * - ME / VF: total = 1, hits = 1 ou 0
-   * - ME-CH: total = 1, hits = pontuação proporcional entre 0 e 1
-   * - CH: total = número de assertivas, hits = quantas julgadas corretamente
+   * - MEM (ME-CH): total = 1, hits = pontuação proporcional entre 0 e 1
+   * - MVF (CH): total = número de assertivas, hits = quantas julgadas corretamente
    * - ESCRITA simples: total = 10, hits = selfEval (0–10)
    * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
    */
@@ -867,7 +877,7 @@ const App = {
       }
     }
 
-    if (tipo === 'CH') {
+    if (tipo === 'CH' || tipo === 'MVF') {
       const assertivas = Array.isArray(qData.assertivas) ? qData.assertivas : [];
       const total = assertivas.length;
       if (total === 0) return { hits: 0, total: 0 };
@@ -884,9 +894,14 @@ const App = {
       return this.applyDisregardedCorrectToScore(originalQIdx, { hits, total }, options);
     }
 
-    if (tipo === 'ME-CH') {
+    if (tipo === 'ME-CH' || tipo === 'MEM') {
       const score = computeMeChScore(qData, ans.selectedOriginalIndices || []);
       return this.applyDisregardedCorrectToScore(originalQIdx, { hits: score, total: 1 }, options);
+    }
+
+    if (tipo === 'MQ') {
+      const scoreData = computeMqScore(qData, ans.connections || []);
+      return this.applyDisregardedCorrectToScore(originalQIdx, { hits: scoreData.hits, total: 1 }, options);
     }
 
     // ME / VF – um único gabarito por letra
@@ -976,7 +991,13 @@ const App = {
       const includedTags = new Set(this.state.filters.tags);
       const excludedTags = new Set(this.state.filters.excludedTags || []);
       const selDiffs = new Set(this.state.filters.diffs);
-      const selTypes = new Set(this.state.filters.types || questionTypes);
+      const rawTypes = this.state.filters.types || questionTypes;
+      const selTypes = new Set(rawTypes.map((t) => {
+        const up = String(t || '').toUpperCase();
+        if (up === 'ME-CH') return 'MEM';
+        if (up === 'CH') return 'MVF';
+        return up;
+      }));
       const selFolders = new Set(this.state.filters.folders);
 
       this.state.questions.forEach((q, idx) => {
@@ -995,7 +1016,9 @@ const App = {
             : '__NO_DIFF__';
         hasDiff = selDiffs.has(qDiff);
 
-        const type = (q.tipo || '').toUpperCase();
+        let type = (q.tipo || '').toUpperCase();
+        if (type === 'ME-CH') type = 'MEM';
+        if (type === 'CH') type = 'MVF';
         const hasType = selTypes.has(type);
 
         if (hasIncludedTag && !hasExcludedTag && hasDiff && hasType) {
@@ -1069,9 +1092,66 @@ const App = {
     this.state.questions.forEach((q, originalIdx) => {
       const tipo = (q.tipo || '').toUpperCase();
 
-      // Para ME/VF usamos alternativas; para CH usamos assertivas
+      if (tipo === 'MQ') {
+        const leftItens = (q.coluna_esquerda && q.coluna_esquerda.itens) || [];
+        const rightItens = (q.coluna_direita && q.coluna_direita.itens) || [];
+
+        let leftIndices = Array.from({ length: leftItens.length }, (_, i) => i);
+        let rightIndices = Array.from({ length: rightItens.length }, (_, i) => i);
+
+        const ordLeft = ((q.coluna_esquerda && q.coluna_esquerda.ordenacao) || '').trim().toLowerCase();
+        const ordRight = ((q.coluna_direita && q.coluna_direita.ordenacao) || '').trim().toLowerCase();
+
+        if (ordLeft === 'fixa') {
+          // mantém ordem original
+        } else if (ordLeft === 'alfabetica') {
+          leftIndices.sort((a, b) => {
+            const txtA = String((leftItens[a] && leftItens[a].texto) || '');
+            const txtB = String((leftItens[b] && leftItens[b].texto) || '');
+            return txtA.localeCompare(txtB, 'pt-BR', { sensitivity: 'base' });
+          });
+        } else {
+          if (this.state.config.shuffleA) {
+            leftIndices = shuffleArray(leftIndices);
+          } else {
+            leftIndices.sort((a, b) => {
+              const txtA = String((leftItens[a] && leftItens[a].texto) || '');
+              const txtB = String((leftItens[b] && leftItens[b].texto) || '');
+              return txtA.localeCompare(txtB, 'pt-BR', { sensitivity: 'base' });
+            });
+          }
+        }
+
+        if (ordRight === 'fixa') {
+          // mantém ordem original
+        } else if (ordRight === 'alfabetica') {
+          rightIndices.sort((a, b) => {
+            const txtA = String((rightItens[a] && rightItens[a].texto) || '');
+            const txtB = String((rightItens[b] && rightItens[b].texto) || '');
+            return txtA.localeCompare(txtB, 'pt-BR', { sensitivity: 'base' });
+          });
+        } else {
+          if (this.state.config.shuffleA) {
+            rightIndices = shuffleArray(rightIndices);
+          } else {
+            rightIndices.sort((a, b) => {
+              const txtA = String((rightItens[a] && rightItens[a].texto) || '');
+              const txtB = String((rightItens[b] && rightItens[b].texto) || '');
+              return txtA.localeCompare(txtB, 'pt-BR', { sensitivity: 'base' });
+            });
+          }
+        }
+
+        this.state.mappings.altOrder[originalIdx] = {
+          left: leftIndices,
+          right: rightIndices
+        };
+        return;
+      }
+
+      // Para ME/VF usamos alternativas; para CH/MVF usamos assertivas
       let totalAlt = 0;
-      if (tipo === 'CH') {
+      if (tipo === 'CH' || tipo === 'MVF') {
         totalAlt = Array.isArray(q.assertivas) ? q.assertivas.length : 0;
       } else {
         totalAlt = Array.isArray(q.alternativas) ? q.alternativas.length : 0;
@@ -1080,7 +1160,7 @@ const App = {
       let altIndices = Array.from({ length: totalAlt }, (_, i) => i);
 
       const isVF = tipo === 'VF';
-      const isCH = tipo === 'CH';
+      const isCH = tipo === 'CH' || tipo === 'MVF';
       const noRandom = isCH && q.no_random === true;
 
       if (this.state.config.shuffleA) {
@@ -1364,7 +1444,9 @@ const App = {
           (this.state.filters.counts.diffs[noDiffLabel] || 0) + 1;
       }
 
-      const type = (q.tipo || '').toUpperCase();
+      let type = (q.tipo || '').toUpperCase();
+      if (type === 'ME-CH') type = 'MEM';
+      if (type === 'CH') type = 'MVF';
       if (questionTypes.includes(type)) {
         this.state.filters.counts.types[type] =
           (this.state.filters.counts.types[type] || 0) + 1;
@@ -1597,12 +1679,12 @@ const App = {
     const ans = this.state.userAnswers[originalQIdx];
     if (ans.submitted) return;
 
-    if (tipo === 'CH' && isCheckbox) {
+    if ((tipo === 'CH' || tipo === 'MVF') && isCheckbox) {
       if (!ans.assertivaAnswers) {
         ans.assertivaAnswers = {};
       }
       ans.assertivaAnswers[originalAltIdx] = checked; // true = V, false = F
-    } else if (tipo === 'ME-CH' && isCheckbox) {
+    } else if ((tipo === 'ME-CH' || tipo === 'MEM') && isCheckbox) {
       const selected = new Set((ans.selectedOriginalIndices || []).map((idx) => Number(idx)));
       if (checked) {
         selected.add(originalAltIdx);
@@ -1619,7 +1701,7 @@ const App = {
       `.question-card[data-original-idx="${originalQIdx}"]`
     );
     if (card) {
-      if (tipo === 'CH') {
+      if (tipo === 'CH' || tipo === 'MVF') {
         const answers = ans.assertivaAnswers || {};
         // Atualiza visual dos botões V/F e do label da assertiva
         card.querySelectorAll('.ch-vf-wrapper').forEach((wrapper) => {
@@ -1636,7 +1718,7 @@ const App = {
           if (btnF) btnF.classList.toggle('selected', choice === false);
           if (label) label.classList.toggle('selected', choice !== undefined);
         });
-      } else if (tipo === 'ME-CH') {
+      } else if (tipo === 'ME-CH' || tipo === 'MEM') {
         const selected = new Set((ans.selectedOriginalIndices || []).map((idx) => Number(idx)));
         card.querySelectorAll('.alt-label').forEach((label) => {
           const input = label.querySelector('.alt-input');
@@ -1653,8 +1735,8 @@ const App = {
 
       const btn = card.querySelector('.btn-submit');
       if (btn) {
-        if (tipo === 'CH' || tipo === 'ME-CH') {
-          // CH e ME-CH permitem responder mesmo sem marcar nada
+        if (tipo === 'CH' || tipo === 'MVF' || tipo === 'ME-CH' || tipo === 'MEM') {
+          // CH/MVF e ME-CH/MEM permitem responder mesmo sem marcar nada
           btn.disabled = false;
         } else {
           btn.disabled = ans.selectedOriginalIdx === undefined;
@@ -1695,7 +1777,7 @@ const App = {
 
   findAlternativeWrapper(card, qData, originalAltIdx) {
     const tipo = ((qData && qData.tipo) || '').toUpperCase();
-    if (tipo === 'CH') {
+    if (tipo === 'CH' || tipo === 'MVF') {
       return card.querySelector(`input[name="q${card.dataset.originalIdx}_ass${originalAltIdx}"]`)?.closest('.alt-wrapper');
     }
     return card.querySelector(`.alt-input[value="${originalAltIdx}"]`)?.closest('.alt-wrapper');
@@ -1774,6 +1856,15 @@ const App = {
     this.save(true);
   },
 
+  handleMqChange(originalQIdx, connections) {
+    if (this.isQuestionExcluded(originalQIdx)) return;
+    if (!this.state.userAnswers[originalQIdx]) {
+      this.state.userAnswers[originalQIdx] = {};
+    }
+    this.state.userAnswers[originalQIdx].connections = connections;
+    this.save(true);
+  },
+
   submitQuestion(originalQIdx) {
     if (this.isQuestionExcluded(originalQIdx)) return;
 
@@ -1831,7 +1922,7 @@ const App = {
   },
 
   updateQuestionScoreDisplay(originalQIdx, card) {
-    const scoreDiv = card.querySelector('.me-ch-score');
+    const scoreDiv = card.querySelector('.me-ch-score, .mq-score');
     if (!scoreDiv) return;
     const { hits, total } = this.computeQuestionScore(originalQIdx);
     const score = total > 0 ? hits / total : 0;
@@ -3130,7 +3221,9 @@ const App = {
           (this.state.filters.counts.diffs[noDiff] || 0) + 1;
       }
 
-      const type = (q.tipo || '').toUpperCase();
+      let type = (q.tipo || '').toUpperCase();
+      if (type === 'ME-CH') type = 'MEM';
+      if (type === 'CH') type = 'MVF';
       if (questionTypes.includes(type)) {
         this.state.filters.counts.types[type] =
           (this.state.filters.counts.types[type] || 0) + 1;
@@ -3150,9 +3243,14 @@ const App = {
     this.state.filters.diffs = this.state.filters.diffs.filter((d) =>
       diffsSet.has(d)
     );
-    this.state.filters.types = this.state.filters.types.filter((type) =>
+    this.state.filters.types = this.state.filters.types.map((t) => {
+      if (t === 'ME-CH') return 'MEM';
+      if (t === 'CH') return 'MVF';
+      return t;
+    });
+    this.state.filters.types = [...new Set(this.state.filters.types.filter((type) =>
       questionTypes.includes(type)
-    );
+    ))];
 
     if (
       this.state.filters.diffs.length === 0 &&
@@ -3372,6 +3470,7 @@ const App = {
       commentMode: localStorage.getItem('vs_commentMode') || 'all',
       persistManualOpen: localStorage.getItem('vs_persistManualOpen') === 'true',
       vfStacked: localStorage.getItem('vs_vfStacked') === 'true',
+      mqRenderMode: localStorage.getItem('vs_mqRenderMode') || 'arrows',
       showPartialScore: localStorage.getItem('vs_showPartialScore') !== 'false',
       fontSize: parseInt(localStorage.getItem('vs_fontSize')) || 16,
       darkMode: localStorage.getItem('vs_darkMode')
@@ -3391,6 +3490,13 @@ const App = {
     }
     this.elements.chkPersistManualOpen.checked = vs.persistManualOpen;
     this.elements.chkVfStacked.checked = vs.vfStacked;
+    if (this.elements.mqModeTable && this.elements.mqModeArrows) {
+      if (vs.mqRenderMode === 'table') {
+        this.elements.mqModeTable.checked = true;
+      } else {
+        this.elements.mqModeArrows.checked = true;
+      }
+    }
     if (this.elements.chkShowPartialScore) {
       this.elements.chkShowPartialScore.checked = vs.showPartialScore;
     }
@@ -3447,6 +3553,19 @@ const App = {
       localStorage.setItem('vs_vfStacked', e.target.checked);
       this.applyVfStacked(e.target.checked);
     });
+
+    const handleMqModeChange = (mode) => {
+      localStorage.setItem('vs_mqRenderMode', mode);
+      if (this.state.questions && this.state.questions.length > 0) {
+        this.renderer.render(this.state);
+      }
+    };
+    if (this.elements.mqModeArrows) {
+      this.elements.mqModeArrows.addEventListener('change', () => handleMqModeChange('arrows'));
+    }
+    if (this.elements.mqModeTable) {
+      this.elements.mqModeTable.addEventListener('change', () => handleMqModeChange('table'));
+    }
 
     if (this.elements.chkShowPartialScore) {
       this.elements.chkShowPartialScore.addEventListener('change', (e) => {

@@ -528,6 +528,7 @@ body {
 .question-stem-text {
   flex: 1 1 auto;
   min-width: 0;
+  white-space: pre-line;
 }
 
 .question-stem-text > :first-child,
@@ -698,7 +699,8 @@ body {
   line-height: 1.2;
 }
 
-.question-card.type-me-ch .alt-input {
+.question-card.type-me-ch .alt-input,
+.question-card.type-mem .alt-input {
   accent-color: var(--primary);
 }
 
@@ -802,11 +804,13 @@ body {
   pointer-events: none;
 }
 
-/* Texto do ::after para CH — sobrescreve o padrão ME/VF */
-.question-card.type-ch.submitted .alt-wrapper.correct .alt-label::after {
+/* Texto do ::after para CH / MVF — sobrescreve o padrão ME/VF */
+.question-card.type-ch.submitted .alt-wrapper.correct .alt-label::after,
+.question-card.type-mvf.submitted .alt-wrapper.correct .alt-label::after {
   content: '✔';
 }
-.question-card.type-ch.submitted .alt-wrapper.wrong .alt-label::after {
+.question-card.type-ch.submitted .alt-wrapper.wrong .alt-label::after,
+.question-card.type-mvf.submitted .alt-wrapper.wrong .alt-label::after {
   content: '✖';
 }
 
@@ -865,7 +869,8 @@ body {
   opacity: 0.8;
 }
 
-.question-card.type-me-ch.submitted .alt-wrapper.missed-correct .alt-label {
+.question-card.type-me-ch.submitted .alt-wrapper.missed-correct .alt-label,
+.question-card.type-mem.submitted .alt-wrapper.missed-correct .alt-label {
   background-color: var(--comment-wrong-bg) !important;
   border-color: #ffc107 !important;
   color: var(--text) !important;
@@ -873,7 +878,8 @@ body {
   padding-right: 35px;
 }
 
-.question-card.type-me-ch.submitted .alt-wrapper.missed-correct .alt-label::after {
+.question-card.type-me-ch.submitted .alt-wrapper.missed-correct .alt-label::after,
+.question-card.type-mem.submitted .alt-wrapper.missed-correct .alt-label::after {
   content: '!';
   position: absolute;
   right: 14px;
@@ -964,6 +970,7 @@ body {
   border-radius: 6px;
   border-top: 4px solid var(--secondary);
   display: none;
+  white-space: pre-line;
 }
 
 .question-card.submitted .specific-comment { display: block; }
@@ -2750,3 +2757,780 @@ html.dark-mode .sync-indicator.syncing {
   }
 }
 
+
+
+/* ==========================================================================
+   MQ (Matching Question / Associação) Styles - V4.0
+   ========================================================================== */
+
+.mq-container {
+  position: relative;
+  margin: 18px 0;
+  user-select: none;
+}
+
+/* Modo Setas */
+.mq-arrows-layout {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  align-items: stretch;
+  gap: 8px;
+  position: relative;
+}
+
+.mq-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mq-column-header {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 12px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--border-color, #e2e8f0);
+}
+
+.mq-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mq-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid var(--border-color, #cbd5e1);
+  border-radius: 8px;
+  background: var(--card-bg, #ffffff);
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+.mq-item:hover:not(.mq-item-disabled) {
+  border-color: #3b82f6;
+  background: #f8fafc;
+}
+
+.mq-item.mq-item-active {
+  border-color: #2563eb;
+  background: #eff6ff;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.mq-item.mq-item-disabled {
+  cursor: default;
+}
+
+.mq-item-num,
+.mq-item-letter {
+  font-weight: 700;
+  margin-right: 8px;
+  color: var(--text-color, #1e293b);
+  flex-shrink: 0;
+}
+
+.mq-item-text {
+  flex-grow: 1;
+}
+
+.mq-anchor {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #94a3b8;
+  flex-shrink: 0;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.mq-item:hover:not(.mq-item-disabled) .mq-anchor,
+.mq-item.mq-item-active .mq-anchor {
+  background: #2563eb;
+  transform: scale(1.3);
+}
+
+.mq-anchor-right {
+  margin-left: 8px;
+}
+
+.mq-anchor-left {
+  margin-right: 8px;
+}
+
+.mq-svg-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+  overflow: visible;
+}
+
+.mq-arrow-hitbox {
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+.mq-arrow-line {
+  pointer-events: none;
+  transition: stroke 0.2s, stroke-width 0.2s;
+}
+
+.mq-arrow-selected {
+  stroke: #2563eb !important;
+  filter: drop-shadow(0 0 4px rgba(37, 99, 235, 0.6));
+}
+
+/* Setas padrão reativas ao modo escuro */
+.mq-arrow-line.mq-arrow-default {
+  stroke: #334155;
+}
+
+.dark-mode .mq-arrow-line.mq-arrow-default {
+  stroke: #cbd5e1;
+}
+
+.mq-marker-path-default {
+  fill: #334155;
+}
+
+.dark-mode .mq-marker-path-default {
+  fill: #cbd5e1;
+}
+
+/* Status das setas pós submissão */
+.mq-arrow-correct {
+  stroke: #16a34a !important;
+}
+
+.mq-arrow-wrong {
+  stroke: #dc2626 !important;
+}
+
+.mq-arrow-missed {
+  stroke: #ea580c !important;
+  stroke-dasharray: 6 4;
+}
+
+.mq-arrow-solution {
+  stroke: #86efac !important;
+  stroke-width: 1.5 !important;
+  stroke-dasharray: 4 3;
+}
+
+/* Menu de contexto para deletar seta */
+.mq-context-menu {
+  position: fixed;
+  z-index: 10000;
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #cbd5e1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 4px;
+  font-size: 13px;
+}
+
+.mq-context-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: none;
+  background: none;
+  color: #dc2626;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.mq-context-menu-item:hover {
+  background: #fee2e2;
+}
+
+/* Modo Grade / Tabela */
+.mq-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 16px 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+.matching-table {
+  width: 100%;
+  box-sizing: border-box;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: inherit;
+  font-size: var(--mq-table-font-size, 14px);
+  border: 1px solid var(--border-color, #d0d7de);
+  border-radius: 10px;
+  background: var(--card-bg, #ffffff);
+}
+
+.matching-table thead tr:first-child th:first-child {
+  border-top-left-radius: 9px;
+}
+
+.matching-table thead tr:first-child th:last-child {
+  border-top-right-radius: 9px;
+}
+
+.matching-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 9px;
+}
+
+.matching-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 9px;
+}
+
+.matching-table th,
+.matching-table td {
+  padding: 0.55em 0.7em;
+  border-right: 1px solid var(--border-color, #d0d7de);
+  border-bottom: 1px solid var(--border-color, #d0d7de);
+  vertical-align: middle;
+}
+
+.matching-table th:last-child,
+.matching-table td:last-child {
+  border-right: none;
+}
+
+.matching-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.matching-table thead th {
+  background: #f6f8fa;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-color, #24292f);
+}
+
+.matching-table .group-header {
+  font-size: 1.05em;
+  padding: 0.6em 0.8em;
+  position: relative;
+}
+
+/* Divisores de coluna arrastáveis estilo Excel */
+.matching-table th {
+  position: relative;
+}
+
+.mq-col-resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 6px;
+  cursor: col-resize;
+  user-select: none;
+  z-index: 20;
+  touch-action: none;
+}
+
+.mq-col-resizer::after {
+  content: '';
+  position: absolute;
+  top: 12%;
+  bottom: 12%;
+  right: 0;
+  width: 2px;
+  background: transparent;
+  transition: background-color 0.15s;
+}
+
+.mq-col-resizer:hover::after,
+.mq-col-resizer.is-resizing::after {
+  background: #2563eb;
+}
+
+.dark-mode .mq-col-resizer:hover::after,
+.dark-mode .mq-col-resizer.is-resizing::after {
+  background: #38bdf8;
+}
+
+.matching-table .item-id {
+  width: 2.8em;
+  min-width: 2.8em;
+  max-width: 2.8em;
+  box-sizing: border-box;
+  padding: 0.55em 0.25em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.matching-table .drug-name {
+  width: var(--mq-col1-width, 1%);
+  min-width: var(--mq-col1-width, 7.5em);
+  max-width: var(--mq-col1-width, 240px);
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0.55em 0.8em;
+}
+
+.matching-table .effect-code {
+  padding: 0.45em 0.25em;
+  font-size: 1.1em;
+  font-weight: 700;
+  position: relative;
+}
+
+.matching-table .effect-text {
+  width: var(--mq-col2-width, auto);
+  min-width: var(--mq-col2-width, 6.5em);
+  max-width: var(--mq-col2-width, 22em);
+  line-height: 1.35;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: normal;
+  padding: 0.55em 0.6em;
+}
+
+.matching-table .choice {
+  width: var(--mq-col2-width, auto);
+  min-width: var(--mq-col2-width, 2.4em);
+  text-align: center;
+  font-size: 1.4em;
+  padding: 0.45em 0.2em;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s;
+}
+
+.matching-table .choice:hover:not(.mq-cell-disabled) {
+  background-color: #f1f5f9;
+}
+
+.matching-table .choice.selected {
+  font-weight: bold;
+  color: #0969da;
+}
+
+.matching-table .choice.empty {
+  color: #8c959f;
+}
+
+.matching-table .choice.mq-cell-disabled {
+  cursor: default;
+}
+
+/* Status na tabela pós submissão */
+.matching-table .choice.mq-cell-correct {
+  background-color: #dcfce7 !important;
+  color: #16a34a !important;
+  font-weight: 900;
+}
+
+.matching-table .choice.mq-cell-wrong {
+  background-color: #fee2e2 !important;
+  color: #dc2626 !important;
+  font-weight: 900;
+}
+
+.matching-table .choice.mq-cell-missed {
+  background-color: #ffedd5 !important;
+  color: #ea580c !important;
+  font-weight: 900;
+  outline: 2px dashed #16a34a !important;
+  outline-offset: -2px;
+}
+
+.matching-table .choice.mq-cell-solution {
+  background-color: #f0fdf4 !important;
+  color: #15803d !important;
+  outline: 2px dashed #86efac;
+  outline-offset: -2px;
+}
+
+/* Modo Escuro */
+.dark-mode .mq-column-header {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+.dark-mode .mq-item {
+  background: #0f172a;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+.dark-mode .mq-item:hover:not(.mq-item-disabled) {
+  background: #1e293b;
+  border-color: #38bdf8;
+}
+
+.dark-mode .mq-item.mq-item-active {
+  background: #172554;
+  border-color: #3b82f6;
+}
+
+.dark-mode .mq-item-num,
+.dark-mode .mq-item-letter {
+  color: #f8fafc;
+}
+
+.dark-mode .matching-table {
+  border-color: #334155;
+  background: #0f172a;
+}
+
+.dark-mode .matching-table th,
+.dark-mode .matching-table td {
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+.dark-mode .matching-table thead th {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+.dark-mode .matching-table .choice:hover:not(.mq-cell-disabled) {
+  background-color: #1e293b;
+}
+
+.dark-mode .matching-table .choice.selected {
+  color: #38bdf8;
+}
+
+.dark-mode .matching-table .choice.empty {
+  color: #64748b;
+}
+
+.dark-mode .matching-table .choice.mq-cell-correct {
+  background-color: #14532d !important;
+  color: #4ade80 !important;
+}
+
+.dark-mode .matching-table .choice.mq-cell-wrong {
+  background-color: #7f1d1d !important;
+  color: #f87171 !important;
+}
+
+.dark-mode .matching-table .choice.mq-cell-missed {
+  background-color: #7c2d12 !important;
+  color: #fb923c !important;
+  outline: 2px dashed #4ade80 !important;
+  outline-offset: -2px;
+}
+
+.dark-mode .matching-table .choice.mq-cell-solution {
+  background-color: #1e3a29 !important;
+  color: #86efac !important;
+  outline-color: #4ade80;
+}
+
+.dark-mode .mq-context-menu {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.dark-mode .mq-context-menu-item {
+  color: #f87171;
+}
+
+.dark-mode .mq-context-menu-item:hover {
+  background: #334155;
+}
+
+/* Gabarito textual MQ */
+.mq-textual-gabarito {
+  margin-top: 14px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-left: 4px solid #16a34a;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dark-mode .mq-textual-gabarito {
+  background: #1e293b;
+  border-left-color: #4ade80;
+}
+
+.mq-textual-gabarito-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #15803d;
+}
+
+.dark-mode .mq-textual-gabarito-title {
+  color: #4ade80;
+}
+
+.mq-textual-gabarito-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.mq-textual-gabarito-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+.dark-mode .mq-textual-gabarito-item {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+/* Responsividade Mobile para Modo Setas */
+@media (max-width: 640px) {
+  .mq-arrows-layout {
+    grid-template-columns: 1fr 60px 1fr;
+    gap: 4px;
+  }
+  .mq-item {
+    padding: 8px 8px;
+    font-size: 13px;
+  }
+  .mq-column-header {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+}
+
+
+/* ==========================================================================
+   MQ V4.1 Enhancements: Sticky Columns, Full-Width Table & Selection Mode
+   ========================================================================== */
+
+/* Barra superior e controles da Tabela MQ - V4.3 */
+.mq-table-card {
+  width: 100%;
+}
+
+.mq-table-topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.mq-topbar-group {
+  display: inline-flex;
+  border: 1px solid var(--border-color, #cbd5e1);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--card-bg, #ffffff);
+}
+
+.btn-mq-tool {
+  background: var(--card-bg, #ffffff);
+  border: none;
+  color: var(--text-color, #334155);
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+  user-select: none;
+}
+
+.btn-mq-zoom {
+  font-family: inherit;
+  font-size: 12px;
+  min-width: 32px;
+  padding: 5px 8px;
+  border-right: 1px solid var(--border-color, #cbd5e1);
+}
+
+.btn-mq-zoom:last-child {
+  border-right: none;
+}
+
+.btn-mq-tool:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.btn-mq-expand {
+  border: 1px solid var(--border-color, #cbd5e1);
+  border-radius: 6px;
+}
+
+.btn-mq-expand.active {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+.dark-mode .mq-topbar-group {
+  background: #1e293b;
+  border-color: #475569;
+}
+
+.dark-mode .btn-mq-tool {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+.dark-mode .btn-mq-zoom {
+  border-right-color: #475569;
+}
+
+.dark-mode .btn-mq-expand {
+  border-color: #475569;
+}
+
+.dark-mode .btn-mq-tool:hover {
+  background: #334155;
+  color: #ffffff;
+}
+
+.dark-mode .btn-mq-expand.active {
+  background: #450a0a;
+  border-color: #991b1b;
+  color: #fca5a5;
+}
+
+/* Modo Expandir da Tabela MQ (Overlay Modal Dinâmico) */
+body.mq-has-expanded {
+  overflow: hidden !important;
+}
+
+.mq-container.mq-mode-table.mq-is-expanded {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 15000 !important;
+  background: rgba(0, 0, 0, 0.65) !important;
+  backdrop-filter: blur(2px);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  cursor: pointer;
+}
+
+.mq-container.mq-mode-table.mq-is-expanded .mq-table-card {
+  background: var(--card-bg, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  max-width: min(96vw, 1400px);
+  max-height: 90vh;
+  width: max-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color, #cbd5e1);
+  cursor: default;
+  animation: mqModalIn 0.2s ease-out;
+}
+
+@keyframes mqModalIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.dark-mode .mq-container.mq-mode-table.mq-is-expanded .mq-table-card {
+  background: #0f172a;
+  border-color: #334155;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+.mq-container.mq-mode-table.mq-is-expanded .mq-table-topbar {
+  flex-shrink: 0;
+}
+
+.mq-container.mq-mode-table.mq-is-expanded .mq-table-wrapper {
+  max-height: calc(90vh - 65px);
+  overflow: auto;
+  border-radius: 8px;
+}
+
+.mq-container.mq-mode-table.mq-is-expanded .matching-table {
+  height: auto;
+  width: max-content;
+  min-width: 100%;
+}
+
+/* Colunas fixas (Sticky) na rolagem horizontal da tabela */
+.matching-table th.group-header:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  background: #f6f8fa;
+  box-shadow: 4px 0 8px -3px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .matching-table th.group-header:first-child {
+  background: #1e293b;
+  box-shadow: 4px 0 8px -3px rgba(0, 0, 0, 0.5);
+}
+
+.matching-table .item-id {
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  background: var(--card-bg, #ffffff);
+  width: 2.8em;
+  min-width: 2.8em;
+  max-width: 2.8em;
+  box-sizing: border-box;
+  padding: 0.55em 0.25em;
+  text-align: center;
+}
+
+.dark-mode .matching-table .item-id {
+  background: #0f172a;
+}
+
+.matching-table .drug-name {
+  position: sticky;
+  left: 2.8em;
+  z-index: 5;
+  background: var(--card-bg, #ffffff);
+  width: var(--mq-col1-width, 1%);
+  min-width: var(--mq-col1-width, 7.5em);
+  max-width: var(--mq-col1-width, 240px);
+  box-sizing: border-box;
+  padding: 0.55em 0.8em;
+  box-shadow: 4px 0 8px -3px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .matching-table .drug-name {
+  background: #0f172a;
+  box-shadow: 4px 0 8px -3px rgba(0, 0, 0, 0.5);
+}
+
+/* Modo Selecionar aplicado a questões MQ */
+.selection-mode .mq-container,
+.selection-mode .mq-item,
+.selection-mode .matching-table,
+.selection-mode .matching-table td,
+.selection-mode .matching-table th {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+.selection-mode .mq-item,
+.selection-mode .matching-table .choice {
+  cursor: text !important;
+}

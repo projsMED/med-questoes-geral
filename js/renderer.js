@@ -4,8 +4,10 @@ import {
   difficultyMap,
   questionTypeMap,
   parseMeChGabarito,
-  computeMeChScore
-} from './utils.js?v=20260904-2';
+  computeMeChScore,
+  parseMqGabarito,
+  computeMqScore
+} from './utils.js?v=20260906-8';
 
 const HIGHLIGHT_COLORS = [
   { key: 'yellow', label: 'Amarelo' },
@@ -293,14 +295,15 @@ export class QuizRenderer {
     wrapper.className = 'question-card';
 
     const tipo = (qData.tipo || '').toUpperCase();
-    const isCH = tipo === 'CH';
-    const isMECH = tipo === 'ME-CH';
+    const isCH = tipo === 'CH' || tipo === 'MVF';
+    const isMECH = tipo === 'ME-CH' || tipo === 'MEM';
     const isEscrita = tipo === 'ESCRITA';
 
     if (tipo === 'VF') wrapper.classList.add('type-vf');
-    if (tipo === 'CH') wrapper.classList.add('type-ch');
-    if (tipo === 'ME-CH') wrapper.classList.add('type-me-ch');
+    if (isCH) wrapper.classList.add('type-ch', 'type-mvf');
+    if (isMECH) wrapper.classList.add('type-me-ch', 'type-mem');
     if (tipo === 'ESCRITA') wrapper.classList.add('type-escrita');
+    if (tipo === 'MQ') wrapper.classList.add('type-mq');
     wrapper.dataset.originalIdx = originalIdx;
 
     const userAnswer = state.userAnswers[originalIdx];
@@ -381,7 +384,7 @@ export class QuizRenderer {
     const enunciadoClass = tipo === 'VF'
       ? 'question-stem-text markable-text'
       : 'question-stem-text highlightable-text';
-    const hasMarking = tipo === 'VF' || isCH || tipo === 'ME' || isMECH;
+    const hasMarking = tipo === 'VF' || isCH || tipo === 'ME' || isMECH || tipo === 'MQ';
     const selModeBtn = hasMarking
       ? `<button class="btn-selection-mode" type="button" title="Alternar modo seleção de texto">📋 Selecionar</button>`
       : '';
@@ -492,6 +495,138 @@ export class QuizRenderer {
       if (isSubmitted) {
         const genCommentTxt = formatText(
           qData.comentario_geral,
+          originalIdx,
+          state.mappings.altOrder
+        );
+        if (genCommentTxt) {
+          const genDiv = document.createElement('div');
+          genDiv.className = 'general-comment';
+          genDiv.innerHTML = `<strong>Comentário Geral:</strong><br>${genCommentTxt}`;
+          wrapper.appendChild(genDiv);
+
+          if (!isForced) {
+            wrapper.appendChild(this._createToggleCommentsButton(wrapper, originalIdx, 'end'));
+          }
+        }
+      }
+
+      if (!isLocked) {
+        const actionsDiv = document.createElement('div');
+        actionsDiv.className = 'action-bar';
+        const btnAnswer = document.createElement('button');
+        btnAnswer.className = 'btn btn-submit';
+        btnAnswer.innerText = 'Responder';
+
+        if (isSubmitted) {
+          btnAnswer.style.display = 'none';
+        } else {
+          btnAnswer.disabled = false;
+        }
+
+        btnAnswer.addEventListener('click', () => {
+          this.callbacks.onSubmit(originalIdx);
+        });
+
+        actionsDiv.appendChild(btnAnswer);
+
+        if (isSubmitted && state.config.showDisregardCorrect !== false) {
+          const rawScore = this.computeQuestionScore(state, originalIdx, { ignoreDisregard: true });
+          if (rawScore.total > 0 && rawScore.hits > 0) {
+            const disregardLabel = document.createElement('label');
+            disregardLabel.className = 'disregard-correct-control';
+            disregardLabel.innerHTML = `
+              <input type="checkbox" ${userAnswer && userAnswer.disregardCorrect ? 'checked' : ''}>
+              <span>Desconsiderar acerto</span>
+            `;
+            const disregardInput = disregardLabel.querySelector('input');
+            disregardInput.addEventListener('change', (e) => {
+              if (this.callbacks.onToggleDisregardCorrect) {
+                this.callbacks.onToggleDisregardCorrect(originalIdx, e.target.checked);
+              }
+            });
+            actionsDiv.appendChild(disregardLabel);
+          }
+        }
+
+        wrapper.appendChild(actionsDiv);
+      }
+
+      return wrapper;
+    }
+
+    // ===================== MQ (Matching Question / Associação) =====================
+    if (tipo === 'MQ') {
+      const mqContent = this._createMqContent(
+        qData, originalIdx, state, isLocked, isSubmitted, userAnswer
+      );
+      wrapper.appendChild(mqContent);
+
+      if (!isLocked) {
+        const actionsDiv = document.createElement('div');
+        actionsDiv.className = 'action-bar';
+        const btnAnswer = document.createElement('button');
+        btnAnswer.className = 'btn btn-submit';
+        btnAnswer.innerText = 'Responder';
+
+        if (isSubmitted) {
+          btnAnswer.style.display = 'none';
+        } else {
+          btnAnswer.disabled = false;
+        }
+
+        btnAnswer.addEventListener('click', () => {
+          this.callbacks.onSubmit(originalIdx);
+        });
+
+        actionsDiv.appendChild(btnAnswer);
+
+        if (isSubmitted && state.config.showDisregardCorrect !== false) {
+          const rawScore = this.computeQuestionScore(state, originalIdx, { ignoreDisregard: true });
+          if (rawScore.total > 0 && rawScore.hits > 0) {
+            const disregardLabel = document.createElement('label');
+            disregardLabel.className = 'disregard-correct-control';
+            disregardLabel.innerHTML = `
+              <input type="checkbox" ${userAnswer && userAnswer.disregardCorrect ? 'checked' : ''}>
+              <span>Desconsiderar acerto</span>
+            `;
+            const disregardInput = disregardLabel.querySelector('input');
+            disregardInput.addEventListener('change', (e) => {
+              if (this.callbacks.onToggleDisregardCorrect) {
+                this.callbacks.onToggleDisregardCorrect(originalIdx, e.target.checked);
+              }
+            });
+            actionsDiv.appendChild(disregardLabel);
+          }
+        }
+
+        wrapper.appendChild(actionsDiv);
+      }
+
+      if (isSubmitted && !isForced && this._hasQuestionComments(qData, tipo)) {
+        wrapper.appendChild(this._createToggleCommentsButton(wrapper, originalIdx, 'main'));
+      }
+
+      if (isSubmitted && !isForced) {
+        const { hits, total } = this.computeQuestionScore(state, originalIdx);
+        const score = total > 0 ? hits / total : 0;
+        const fmt = (n, maxDec = 2) =>
+          (+n).toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: maxDec });
+
+        const scoreDiv = document.createElement('div');
+        scoreDiv.className = 'me-ch-score mq-score';
+        scoreDiv.innerHTML =
+          `<strong>Pontuação nesta questão:</strong> ${fmt(score)}/1 ponto (${fmt(score * 100, 1)}%)`;
+        wrapper.appendChild(scoreDiv);
+
+        const gabDiv = document.createElement('div');
+        gabDiv.className = 'mq-textual-gabarito';
+        gabDiv.innerHTML = this._renderMqTextualGabarito(qData, originalIdx, state);
+        wrapper.appendChild(gabDiv);
+      }
+
+      if (isSubmitted) {
+        const genCommentTxt = formatText(
+          qData.comentario_geral || qData.comentario,
           originalIdx,
           state.mappings.altOrder
         );
@@ -873,11 +1008,806 @@ export class QuizRenderer {
     return wrapper;
   }
 
+  // ===================== MQ (Matching Question / Associação) Helpers =====================
+
+  _createMqContent(qData, originalIdx, state, isLocked, isSubmitted, userAnswer) {
+    const renderMode = localStorage.getItem('vs_mqRenderMode') || 'arrows';
+    if (renderMode === 'table') {
+      return this._renderMqTable(qData, originalIdx, state, isLocked, isSubmitted, userAnswer);
+    }
+    return this._renderMqArrows(qData, originalIdx, state, isLocked, isSubmitted, userAnswer);
+  }
+
+  _renderMqArrows(qData, originalIdx, state, isLocked, isSubmitted, userAnswer) {
+    const container = document.createElement('div');
+    container.className = 'mq-container mq-mode-arrows';
+    container.dataset.originalIdx = originalIdx;
+
+    const leftColName = (qData.coluna_esquerda && qData.coluna_esquerda.nome) || 'Coluna I';
+    const rightColName = (qData.coluna_direita && qData.coluna_direita.nome) || 'Coluna II';
+
+    const leftItens = (qData.coluna_esquerda && qData.coluna_esquerda.itens) || [];
+    const rightItens = (qData.coluna_direita && qData.coluna_direita.itens) || [];
+
+    const mqMap = state.mappings.altOrder[originalIdx] || {};
+    const leftIndices = Array.isArray(mqMap.left) ? mqMap.left : Array.from({ length: leftItens.length }, (_, i) => i);
+    const rightIndices = Array.isArray(mqMap.right) ? mqMap.right : Array.from({ length: rightItens.length }, (_, i) => i);
+
+    let userConns = (userAnswer && Array.isArray(userAnswer.connections)) ? [...userAnswer.connections] : [];
+
+    const layout = document.createElement('div');
+    layout.className = 'mq-arrows-layout';
+
+    // Coluna Esquerda
+    const leftCol = document.createElement('div');
+    leftCol.className = 'mq-column mq-column-left';
+    leftCol.innerHTML = `<div class="mq-column-header"><strong>${leftColName}</strong></div>`;
+    const leftList = document.createElement('div');
+    leftList.className = 'mq-items-list';
+
+    leftIndices.forEach((origIdx, visIdx) => {
+      const item = leftItens[origIdx] || {};
+      const itemEl = document.createElement('div');
+      itemEl.className = 'mq-item mq-left-item' + (isLocked || isSubmitted ? ' mq-item-disabled' : '');
+      itemEl.dataset.origIdx = origIdx;
+      itemEl.dataset.visIdx = visIdx;
+      itemEl.dataset.side = 'left';
+
+      const formattedTxt = formatText(item.texto, originalIdx, state.mappings.altOrder);
+      itemEl.innerHTML = `
+        <span class="mq-item-num">${visIdx + 1}.</span>
+        <span class="mq-item-text">${formattedTxt}</span>
+        <span class="mq-anchor mq-anchor-right"></span>
+      `;
+      leftList.appendChild(itemEl);
+    });
+    leftCol.appendChild(leftList);
+
+    // Calha Central
+    const gutter = document.createElement('div');
+    gutter.className = 'mq-gutter';
+
+    // Coluna Direita
+    const rightCol = document.createElement('div');
+    rightCol.className = 'mq-column mq-column-right';
+    rightCol.innerHTML = `<div class="mq-column-header"><strong>${rightColName}</strong></div>`;
+    const rightList = document.createElement('div');
+    rightList.className = 'mq-items-list';
+
+    rightIndices.forEach((origIdx, visIdx) => {
+      const item = rightItens[origIdx] || {};
+      const letter = String.fromCharCode(65 + visIdx);
+      const itemEl = document.createElement('div');
+      itemEl.className = 'mq-item mq-right-item' + (isLocked || isSubmitted ? ' mq-item-disabled' : '');
+      itemEl.dataset.origIdx = origIdx;
+      itemEl.dataset.visIdx = visIdx;
+      itemEl.dataset.side = 'right';
+
+      const formattedTxt = formatText(item.texto, originalIdx, state.mappings.altOrder);
+      itemEl.innerHTML = `
+        <span class="mq-anchor mq-anchor-left"></span>
+        <span class="mq-item-letter">${letter}.</span>
+        <span class="mq-item-text">${formattedTxt}</span>
+      `;
+      rightList.appendChild(itemEl);
+    });
+    rightCol.appendChild(rightList);
+
+    layout.appendChild(leftCol);
+    layout.appendChild(gutter);
+    layout.appendChild(rightCol);
+    container.appendChild(layout);
+
+    // Canvas SVG
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('class', 'mq-svg-canvas');
+
+    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+    const createMarker = (id, colorClass, defaultColor = null) => {
+      const marker = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
+      marker.setAttribute('id', id);
+      marker.setAttribute('viewBox', '0 0 10 10');
+      marker.setAttribute('refX', '8');
+      marker.setAttribute('refY', '5');
+      marker.setAttribute('markerWidth', '6');
+      marker.setAttribute('markerHeight', '6');
+      marker.setAttribute('orient', 'auto-start-reverse');
+      const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      p.setAttribute('d', 'M 0 1 L 10 5 L 0 9 z');
+      if (colorClass) {
+        p.setAttribute('class', colorClass);
+      }
+      if (defaultColor) {
+        p.setAttribute('fill', defaultColor);
+      }
+      marker.appendChild(p);
+      return marker;
+    };
+
+    // Marcador padrão com classe reativa ao modo escuro
+    defs.appendChild(createMarker(`mq-arr-def-${originalIdx}`, 'mq-marker-path-default'));
+    defs.appendChild(createMarker(`mq-arr-cor-${originalIdx}`, '', '#16a34a'));
+    defs.appendChild(createMarker(`mq-arr-wro-${originalIdx}`, '', '#dc2626'));
+    defs.appendChild(createMarker(`mq-arr-mis-${originalIdx}`, '', '#ea580c'));
+    defs.appendChild(createMarker(`mq-arr-sol-${originalIdx}`, '', '#86efac'));
+    svg.appendChild(defs);
+
+    const pathsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    svg.appendChild(pathsGroup);
+    container.appendChild(svg);
+
+    const gabMap = parseMqGabarito(qData);
+
+    const drawArrows = () => {
+      pathsGroup.innerHTML = '';
+      const cRect = container.getBoundingClientRect();
+      if (cRect.width === 0 || cRect.height === 0) return;
+
+      const linesToDraw = [];
+
+      if (!isSubmitted) {
+        userConns.forEach((c) => {
+          linesToDraw.push({
+            leftOrigIdx: c.leftOrigIdx !== undefined ? c.leftOrigIdx : c.left,
+            rightOrigIdx: c.rightOrigIdx !== undefined ? c.rightOrigIdx : c.right,
+            color: '', // controlada de forma 100% reativa via classe .mq-arrow-default
+            markerId: `mq-arr-def-${originalIdx}`,
+            width: 2.5,
+            statusClass: 'mq-arrow-default',
+            interactive: true
+          });
+        });
+      } else {
+        const userSet = new Set(userConns.map((c) => {
+          const l = c.leftOrigIdx !== undefined ? c.leftOrigIdx : c.left;
+          const r = c.rightOrigIdx !== undefined ? c.rightOrigIdx : c.right;
+          return `${l}_${r}`;
+        }));
+
+        const wrongLefts = new Set();
+
+        userConns.forEach((c) => {
+          const l = c.leftOrigIdx !== undefined ? c.leftOrigIdx : c.left;
+          const r = c.rightOrigIdx !== undefined ? c.rightOrigIdx : c.right;
+          const targetSet = gabMap.get(l) || new Set();
+          const isCorrect = targetSet.has(r);
+
+          if (isCorrect) {
+            linesToDraw.push({
+              leftOrigIdx: l,
+              rightOrigIdx: r,
+              color: '#16a34a',
+              markerId: `mq-arr-cor-${originalIdx}`,
+              width: 2.5,
+              statusClass: 'mq-arrow-correct',
+              interactive: false
+            });
+          } else {
+            wrongLefts.add(l);
+            linesToDraw.push({
+              leftOrigIdx: l,
+              rightOrigIdx: r,
+              color: '#dc2626',
+              markerId: `mq-arr-wro-${originalIdx}`,
+              width: 2.5,
+              statusClass: 'mq-arrow-wrong',
+              interactive: false
+            });
+          }
+        });
+
+        // Omissões / esquecidas
+        gabMap.forEach((targetSet, lIdx) => {
+          targetSet.forEach((rIdx) => {
+            const key = `${lIdx}_${rIdx}`;
+            if (!userSet.has(key)) {
+              linesToDraw.push({
+                leftOrigIdx: lIdx,
+                rightOrigIdx: rIdx,
+                color: '#ea580c',
+                markerId: `mq-arr-mis-${originalIdx}`,
+                width: 2.2,
+                statusClass: 'mq-arrow-missed',
+                interactive: false
+              });
+            }
+          });
+        });
+
+        // Solução para erros
+        wrongLefts.forEach((lIdx) => {
+          const targetSet = gabMap.get(lIdx) || new Set();
+          targetSet.forEach((rIdx) => {
+            linesToDraw.push({
+              leftOrigIdx: lIdx,
+              rightOrigIdx: rIdx,
+              color: '#86efac',
+              markerId: `mq-arr-sol-${originalIdx}`,
+              width: 1.5,
+              statusClass: 'mq-arrow-solution',
+              interactive: false
+            });
+          });
+        });
+      }
+
+      linesToDraw.forEach((ld) => {
+        const leftEl = leftList.querySelector(`.mq-left-item[data-orig-idx="${ld.leftOrigIdx}"]`);
+        const rightEl = rightList.querySelector(`.mq-right-item[data-orig-idx="${ld.rightOrigIdx}"]`);
+        if (!leftEl || !rightEl) return;
+
+        const leftAnchor = leftEl.querySelector('.mq-anchor-right') || leftEl;
+        const rightAnchor = rightEl.querySelector('.mq-anchor-left') || rightEl;
+
+        const laRect = leftAnchor.getBoundingClientRect();
+        const raRect = rightAnchor.getBoundingClientRect();
+
+        const x1 = laRect.left + laRect.width / 2 - cRect.left;
+        const y1 = laRect.top + laRect.height / 2 - cRect.top;
+        const x2 = raRect.left + raRect.width / 2 - cRect.left;
+        const y2 = raRect.top + raRect.height / 2 - cRect.top;
+
+        const dx = Math.max(30, (x2 - x1) * 0.5);
+        const pathD = `M ${x1} ${y1} C ${x1 + dx} ${y1}, ${x2 - dx} ${y2}, ${x2} ${y2}`;
+
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', pathD);
+        path.setAttribute('fill', 'none');
+        if (ld.color) {
+          path.setAttribute('stroke', ld.color);
+        }
+        path.setAttribute('stroke-width', ld.width);
+        path.setAttribute('marker-end', `url(#${ld.markerId})`);
+        path.setAttribute('class', `mq-arrow-line ${ld.statusClass}`);
+        pathsGroup.appendChild(path);
+
+        if (ld.interactive && !isLocked && !isSubmitted) {
+          const hitbox = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          hitbox.setAttribute('d', pathD);
+          hitbox.setAttribute('fill', 'none');
+          hitbox.setAttribute('stroke', 'transparent');
+          hitbox.setAttribute('stroke-width', '18');
+          hitbox.setAttribute('class', 'mq-arrow-hitbox');
+
+          const removeConnection = () => {
+            userConns = userConns.filter((c) => {
+              const l = c.leftOrigIdx !== undefined ? c.leftOrigIdx : c.left;
+              const r = c.rightOrigIdx !== undefined ? c.rightOrigIdx : c.right;
+              return !(l === ld.leftOrigIdx && r === ld.rightOrigIdx);
+            });
+            if (this.callbacks.onMqChange) {
+              this.callbacks.onMqChange(originalIdx, userConns);
+            }
+            drawArrows();
+          };
+
+          hitbox.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            this._showMqContextMenu(e.clientX, e.clientY, () => removeConnection());
+          });
+
+          let tapCount = 0;
+          let tapTimer = null;
+          hitbox.addEventListener('click', (e) => {
+            tapCount++;
+            if (tapCount === 1) {
+              path.classList.add('mq-arrow-selected');
+              tapTimer = setTimeout(() => {
+                tapCount = 0;
+                path.classList.remove('mq-arrow-selected');
+              }, 400);
+            } else if (tapCount === 2) {
+              clearTimeout(tapTimer);
+              tapCount = 0;
+              path.classList.remove('mq-arrow-selected');
+              this._showMqContextMenu(e.clientX, e.clientY, () => removeConnection());
+            }
+          });
+
+          pathsGroup.appendChild(hitbox);
+        }
+      });
+    };
+
+    let activeItem = null;
+
+    if (!isLocked && !isSubmitted) {
+      const handleItemClick = (side, origIdx, el) => {
+        if (this.container.classList.contains('selection-mode')) return;
+
+        if (!activeItem) {
+          activeItem = { side, origIdx, element: el };
+          el.classList.add('mq-item-active');
+          return;
+        }
+
+        if (activeItem.side === side && activeItem.origIdx === origIdx) {
+          activeItem.element.classList.remove('mq-item-active');
+          activeItem = null;
+          return;
+        }
+
+        if (activeItem.side === side) {
+          activeItem.element.classList.remove('mq-item-active');
+          activeItem = { side, origIdx, element: el };
+          el.classList.add('mq-item-active');
+          return;
+        }
+
+        const lIdx = side === 'left' ? origIdx : activeItem.origIdx;
+        const rIdx = side === 'right' ? origIdx : activeItem.origIdx;
+
+        activeItem.element.classList.remove('mq-item-active');
+        activeItem = null;
+
+        const existingIdx = userConns.findIndex((c) => {
+          const l = c.leftOrigIdx !== undefined ? c.leftOrigIdx : c.left;
+          const r = c.rightOrigIdx !== undefined ? c.rightOrigIdx : c.right;
+          return l === lIdx && r === rIdx;
+        });
+
+        if (existingIdx !== -1) {
+          // Desfaz a conexão se já existir (toggle off)
+          userConns.splice(existingIdx, 1);
+        } else {
+          // Cria nova conexão se não existir
+          userConns.push({ leftOrigIdx: lIdx, rightOrigIdx: rIdx });
+        }
+
+        if (this.callbacks.onMqChange) {
+          this.callbacks.onMqChange(originalIdx, userConns);
+        }
+        drawArrows();
+      };
+
+      leftList.querySelectorAll('.mq-left-item').forEach((el) => {
+        el.addEventListener('click', () => {
+          handleItemClick('left', Number(el.dataset.origIdx), el);
+        });
+      });
+
+      rightList.querySelectorAll('.mq-right-item').forEach((el) => {
+        el.addEventListener('click', () => {
+          handleItemClick('right', Number(el.dataset.origIdx), el);
+        });
+      });
+    }
+
+    if (typeof ResizeObserver !== 'undefined') {
+      const ro = new ResizeObserver(() => {
+        requestAnimationFrame(() => drawArrows());
+      });
+      ro.observe(container);
+    }
+
+    requestAnimationFrame(() => drawArrows());
+    setTimeout(() => drawArrows(), 50);
+
+    return container;
+  }
+
+  _showMqContextMenu(clientX, clientY, onDelete) {
+    const existing = document.querySelector('.mq-context-menu');
+    if (existing) existing.remove();
+
+    const menu = document.createElement('div');
+    menu.className = 'mq-context-menu';
+    menu.style.left = `${clientX + 5}px`;
+    menu.style.top = `${clientY + 5}px`;
+
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'mq-context-menu-item';
+    btn.innerHTML = '🗑️ Deletar associação';
+    btn.addEventListener('click', () => {
+      onDelete();
+      menu.remove();
+    });
+
+    menu.appendChild(btn);
+    document.body.appendChild(menu);
+
+    const closeHandler = (e) => {
+      if (!menu.contains(e.target)) {
+        menu.remove();
+        document.removeEventListener('click', closeHandler);
+        document.removeEventListener('contextmenu', closeHandler);
+      }
+    };
+    setTimeout(() => {
+      document.addEventListener('click', closeHandler);
+      document.addEventListener('contextmenu', closeHandler);
+    }, 10);
+  }
+
+  _renderMqTable(qData, originalIdx, state, isLocked, isSubmitted, userAnswer) {
+    const container = document.createElement('div');
+    container.className = 'mq-container mq-mode-table';
+    container.dataset.originalIdx = originalIdx;
+
+    const card = document.createElement('div');
+    card.className = 'mq-table-card';
+
+    const topBar = document.createElement('div');
+    topBar.className = 'mq-table-topbar';
+
+    const zoomGroup = document.createElement('div');
+    zoomGroup.className = 'mq-topbar-group';
+
+    let currentFontSize = 14;
+    const minFontSize = 10;
+    const maxFontSize = 18;
+
+    const btnZoomOut = document.createElement('button');
+    btnZoomOut.type = 'button';
+    btnZoomOut.className = 'btn-mq-tool btn-mq-zoom';
+    btnZoomOut.title = 'Diminuir fonte da tabela (A−)';
+    btnZoomOut.textContent = 'A−';
+    btnZoomOut.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (currentFontSize > minFontSize) {
+        currentFontSize--;
+        container.style.setProperty('--mq-table-font-size', `${currentFontSize}px`);
+      }
+    });
+
+    const btnZoomIn = document.createElement('button');
+    btnZoomIn.type = 'button';
+    btnZoomIn.className = 'btn-mq-tool btn-mq-zoom';
+    btnZoomIn.title = 'Aumentar fonte da tabela (A+)';
+    btnZoomIn.textContent = 'A+';
+    btnZoomIn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (currentFontSize < maxFontSize) {
+        currentFontSize++;
+        container.style.setProperty('--mq-table-font-size', `${currentFontSize}px`);
+      }
+    });
+
+    zoomGroup.appendChild(btnZoomOut);
+    zoomGroup.appendChild(btnZoomIn);
+
+    const btnExpand = document.createElement('button');
+    btnExpand.type = 'button';
+    btnExpand.className = 'btn-mq-tool btn-mq-expand';
+    btnExpand.title = 'Expandir tabela';
+    btnExpand.innerHTML = '⛶ Expandir';
+
+    const closeExpand = () => {
+      container.classList.remove('mq-is-expanded');
+      btnExpand.innerHTML = '⛶ Expandir';
+      btnExpand.classList.remove('active');
+      document.body.classList.remove('mq-has-expanded');
+    };
+
+    const toggleExpand = () => {
+      const isExp = container.classList.toggle('mq-is-expanded');
+      btnExpand.innerHTML = isExp ? '✕ Fechar expansão' : '⛶ Expandir';
+      btnExpand.classList.toggle('active', isExp);
+      document.body.classList.toggle('mq-has-expanded', isExp);
+    };
+
+    btnExpand.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleExpand();
+    });
+
+    container.addEventListener('click', (e) => {
+      if (container.classList.contains('mq-is-expanded') && e.target === container) {
+        closeExpand();
+      }
+    });
+
+    const escHandler = (e) => {
+      if (!container.isConnected) {
+        window.removeEventListener('keydown', escHandler);
+        return;
+      }
+      if (e.key === 'Escape' && container.classList.contains('mq-is-expanded')) {
+        closeExpand();
+      }
+    };
+    window.addEventListener('keydown', escHandler);
+
+    topBar.appendChild(zoomGroup);
+    topBar.appendChild(btnExpand);
+    card.appendChild(topBar);
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'mq-table-wrapper';
+
+    const leftColName = (qData.coluna_esquerda && qData.coluna_esquerda.nome) || 'Coluna I';
+    const rightColName = (qData.coluna_direita && qData.coluna_direita.nome) || 'Coluna II';
+
+    const leftItens = (qData.coluna_esquerda && qData.coluna_esquerda.itens) || [];
+    const rightItens = (qData.coluna_direita && qData.coluna_direita.itens) || [];
+
+    const mqMap = state.mappings.altOrder[originalIdx] || {};
+    const leftIndices = Array.isArray(mqMap.left) ? mqMap.left : Array.from({ length: leftItens.length }, (_, i) => i);
+    const rightIndices = Array.isArray(mqMap.right) ? mqMap.right : Array.from({ length: rightItens.length }, (_, i) => i);
+
+    let userConns = (userAnswer && Array.isArray(userAnswer.connections)) ? [...userAnswer.connections] : [];
+    const gabMap = parseMqGabarito(qData);
+
+    const userMap = new Map();
+    userConns.forEach((c) => {
+      const l = c.leftOrigIdx !== undefined ? c.leftOrigIdx : c.left;
+      const r = c.rightOrigIdx !== undefined ? c.rightOrigIdx : c.right;
+      if (!userMap.has(l)) userMap.set(l, new Set());
+      userMap.get(l).add(r);
+    });
+
+    const table = document.createElement('table');
+    table.className = 'matching-table';
+
+    const thead = document.createElement('thead');
+
+    const tr1 = document.createElement('tr');
+    const thLeftGroup = document.createElement('th');
+    thLeftGroup.setAttribute('colspan', '2');
+    thLeftGroup.setAttribute('rowspan', '3');
+    thLeftGroup.className = 'group-header';
+    thLeftGroup.textContent = leftColName;
+
+    // Divisor arrastável (estilo Excel) para redimensionar a Coluna I
+    const resizerCol1 = document.createElement('div');
+    resizerCol1.className = 'mq-col-resizer mq-resizer-col1';
+    resizerCol1.title = 'Arrastar para redimensionar Coluna I (duplo clique para restaurar)';
+    thLeftGroup.appendChild(resizerCol1);
+
+    let startX = 0;
+    let startW = 0;
+
+    resizerCol1.addEventListener('pointerdown', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      startX = e.clientX;
+      const drugEl = wrapper.querySelector('.drug-name');
+      startW = drugEl ? drugEl.getBoundingClientRect().width : 160;
+      resizerCol1.classList.add('is-resizing');
+      resizerCol1.setPointerCapture(e.pointerId);
+
+      const onPointerMove = (pe) => {
+        const dx = pe.clientX - startX;
+        const newW = Math.max(80, Math.min(420, startW + dx));
+        container.style.setProperty('--mq-col1-width', `${newW}px`);
+      };
+
+      const onPointerUp = (pe) => {
+        resizerCol1.classList.remove('is-resizing');
+        resizerCol1.removeEventListener('pointermove', onPointerMove);
+        resizerCol1.removeEventListener('pointerup', onPointerUp);
+        resizerCol1.removeEventListener('pointercancel', onPointerUp);
+      };
+
+      resizerCol1.addEventListener('pointermove', onPointerMove);
+      resizerCol1.addEventListener('pointerup', onPointerUp);
+      resizerCol1.addEventListener('pointercancel', onPointerUp);
+    });
+
+    resizerCol1.addEventListener('dblclick', (e) => {
+      e.stopPropagation();
+      container.style.removeProperty('--mq-col1-width');
+    });
+
+    tr1.appendChild(thLeftGroup);
+
+    const thRightGroup = document.createElement('th');
+    thRightGroup.setAttribute('colspan', String(rightIndices.length));
+    thRightGroup.className = 'group-header';
+    thRightGroup.textContent = rightColName;
+    tr1.appendChild(thRightGroup);
+    thead.appendChild(tr1);
+
+    // Helper para conectar redimensionador da Coluna II com sincronização global
+    const attachCol2Resizer = (resizerEl, visIdx) => {
+      resizerEl.addEventListener('pointerdown', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        startX = e.clientX;
+        const thTextEl = wrapper.querySelectorAll('.effect-text')[visIdx] || resizerEl.parentElement;
+        startW = thTextEl.getBoundingClientRect().width;
+        resizerEl.classList.add('is-resizing');
+        resizerEl.setPointerCapture(e.pointerId);
+
+        const onPointerMove = (pe) => {
+          const dx = pe.clientX - startX;
+          const newW = Math.max(70, Math.min(420, startW + dx));
+          container.style.setProperty('--mq-col2-width', `${newW}px`);
+        };
+
+        const onPointerUp = (pe) => {
+          resizerEl.classList.remove('is-resizing');
+          resizerEl.removeEventListener('pointermove', onPointerMove);
+          resizerEl.removeEventListener('pointerup', onPointerUp);
+          resizerEl.removeEventListener('pointercancel', onPointerUp);
+        };
+
+        resizerEl.addEventListener('pointermove', onPointerMove);
+        resizerEl.addEventListener('pointerup', onPointerUp);
+        resizerEl.addEventListener('pointercancel', onPointerUp);
+      });
+
+      resizerEl.addEventListener('dblclick', (e) => {
+        e.stopPropagation();
+        container.style.removeProperty('--mq-col2-width');
+      });
+    };
+
+    const tr2 = document.createElement('tr');
+    rightIndices.forEach((_, visIdx) => {
+      const thCode = document.createElement('th');
+      thCode.className = 'effect-code';
+      thCode.textContent = String.fromCharCode(65 + visIdx);
+
+      // Divisor estilo Excel entre as letras (visível exceto na última coluna)
+      if (visIdx < rightIndices.length - 1) {
+        const resizerCode = document.createElement('div');
+        resizerCode.className = 'mq-col-resizer mq-resizer-col2';
+        resizerCode.title = 'Arrastar para redimensionar Coluna II (duplo clique para restaurar)';
+        thCode.appendChild(resizerCode);
+        attachCol2Resizer(resizerCode, visIdx);
+      }
+
+      tr2.appendChild(thCode);
+    });
+    thead.appendChild(tr2);
+
+    const tr3 = document.createElement('tr');
+    rightIndices.forEach((origIdx, visIdx) => {
+      const thText = document.createElement('th');
+      thText.className = 'effect-text';
+      const item = rightItens[origIdx] || {};
+      thText.innerHTML = formatText(item.texto, originalIdx, state.mappings.altOrder);
+
+      // Divisor estilo Excel entre os itens de texto (visível exceto na última coluna)
+      if (visIdx < rightIndices.length - 1) {
+        const resizerText = document.createElement('div');
+        resizerText.className = 'mq-col-resizer mq-resizer-col2';
+        resizerText.title = 'Arrastar para redimensionar Coluna II (duplo clique para restaurar)';
+        thText.appendChild(resizerText);
+        attachCol2Resizer(resizerText, visIdx);
+      }
+
+      tr3.appendChild(thText);
+    });
+    thead.appendChild(tr3);
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+
+    leftIndices.forEach((lOrigIdx, lVisIdx) => {
+      const lItem = leftItens[lOrigIdx] || {};
+      const tr = document.createElement('tr');
+
+      const tdId = document.createElement('td');
+      tdId.className = 'item-id';
+      tdId.textContent = String(lVisIdx + 1);
+      tr.appendChild(tdId);
+
+      const tdName = document.createElement('td');
+      tdName.className = 'drug-name';
+      tdName.innerHTML = formatText(lItem.texto, originalIdx, state.mappings.altOrder);
+      tr.appendChild(tdName);
+
+      const targetSet = gabMap.get(lOrigIdx) || new Set();
+      const markedSet = userMap.get(lOrigIdx) || new Set();
+
+      let rowHasError = false;
+      if (isSubmitted) {
+        markedSet.forEach((r) => {
+          if (!targetSet.has(r)) rowHasError = true;
+        });
+      }
+
+      rightIndices.forEach((rOrigIdx) => {
+        const tdChoice = document.createElement('td');
+        const isMarked = markedSet.has(rOrigIdx);
+        const inGabarito = targetSet.has(rOrigIdx);
+
+        let cellClass = 'choice';
+        let cellChar = isMarked ? '●' : '○';
+
+        if (!isSubmitted) {
+          cellClass += isMarked ? ' selected' : ' empty';
+        } else {
+          cellClass += ' mq-cell-disabled';
+          if (isMarked && inGabarito) {
+            cellClass += ' selected mq-cell-correct';
+            cellChar = '●';
+          } else if (isMarked && !inGabarito) {
+            cellClass += ' selected mq-cell-wrong';
+            cellChar = '✕';
+          } else if (!isMarked && inGabarito) {
+            cellClass += ' empty mq-cell-missed';
+            cellChar = '○';
+          } else if (!isMarked && inGabarito && rowHasError) {
+            cellClass += ' empty mq-cell-solution';
+            cellChar = '●';
+          } else {
+            cellClass += ' empty';
+            cellChar = '○';
+          }
+        }
+
+        tdChoice.className = cellClass;
+        tdChoice.textContent = cellChar;
+        tdChoice.dataset.left = lOrigIdx;
+        tdChoice.dataset.right = rOrigIdx;
+
+        if (!isLocked && !isSubmitted) {
+          tdChoice.addEventListener('click', () => {
+            if (this.container.classList.contains('selection-mode')) return;
+            const alreadySelected = tdChoice.classList.contains('selected');
+            if (alreadySelected) {
+              tdChoice.classList.remove('selected');
+              tdChoice.classList.add('empty');
+              tdChoice.textContent = '○';
+              userConns = userConns.filter((c) => {
+                const l = c.leftOrigIdx !== undefined ? c.leftOrigIdx : c.left;
+                const r = c.rightOrigIdx !== undefined ? c.rightOrigIdx : c.right;
+                return !(l === lOrigIdx && r === rOrigIdx);
+              });
+            } else {
+              tdChoice.classList.add('selected');
+              tdChoice.classList.remove('empty');
+              tdChoice.textContent = '●';
+              userConns.push({ leftOrigIdx: lOrigIdx, rightOrigIdx: rOrigIdx });
+            }
+            if (this.callbacks.onMqChange) {
+              this.callbacks.onMqChange(originalIdx, userConns);
+            }
+          });
+        }
+
+        tr.appendChild(tdChoice);
+      });
+
+      tbody.appendChild(tr);
+    });
+
+    table.appendChild(tbody);
+    wrapper.appendChild(table);
+    card.appendChild(wrapper);
+    container.appendChild(card);
+
+    return container;
+  }
+
+  _renderMqTextualGabarito(qData, originalIdx, state) {
+    const leftItens = (qData.coluna_esquerda && qData.coluna_esquerda.itens) || [];
+    const rightItens = (qData.coluna_direita && qData.coluna_direita.itens) || [];
+    const mqMap = state.mappings.altOrder[originalIdx] || {};
+    const leftIndices = Array.isArray(mqMap.left) ? mqMap.left : Array.from({ length: leftItens.length }, (_, i) => i);
+    const rightIndices = Array.isArray(mqMap.right) ? mqMap.right : Array.from({ length: rightItens.length }, (_, i) => i);
+
+    const gabMap = parseMqGabarito(qData);
+
+    const itemsHtml = leftIndices.map((lOrigIdx, lVisIdx) => {
+      const lItem = leftItens[lOrigIdx] || {};
+      const targetSet = gabMap.get(lOrigIdx) || new Set();
+      const letters = Array.from(targetSet).map((rOrig) => {
+        const rVis = rightIndices.indexOf(rOrig);
+        return rVis !== -1 ? String.fromCharCode(65 + rVis) : '?';
+      }).sort();
+
+      const letterDisplay = letters.length > 0 ? letters.join(', ') : 'nenhum';
+      const cleanText = (lItem.texto || '').replace(/<[^>]+>/g, '').trim();
+      return `<span class="mq-textual-gabarito-item"><strong>${lVisIdx + 1}</strong> (${cleanText}) ➔ <strong>[ ${letterDisplay} ]</strong></span>`;
+    }).join('');
+
+    return `
+      <div class="mq-textual-gabarito-title">✔ Gabarito Oficial:</div>
+      <div class="mq-textual-gabarito-list">${itemsHtml}</div>
+    `;
+  }
+
+
   // ===================== ESCRITA helpers =====================
 
   _hasQuestionComments(qData, tipo) {
-    if (qData.comentario_geral) return true;
-    if (tipo === 'CH') {
+    if (qData.comentario_geral || qData.comentario) return true;
+    if (tipo === 'CH' || tipo === 'MVF') {
       return Array.isArray(qData.assertivas) && qData.assertivas.some((ass) => ass.comentario);
     }
     if (tipo === 'ESCRITA') {
@@ -2576,15 +3506,16 @@ export class QuizRenderer {
         lines.push(`Gabarito: ${gab === 'A' ? 'Verdadeiro' : 'Falso'}`);
         if (q.comentario_geral) lines.push(`Comentário Geral:\n${strip(q.comentario_geral)}`);
       }
-    } else if (tipo === 'ME' || tipo === 'ME-CH') {
+    } else if (tipo === 'ME' || tipo === 'ME-CH' || tipo === 'MEM') {
+      const isMemOrMeCh = tipo === 'ME-CH' || tipo === 'MEM';
       const gabIdx = ((q.gabarito || '').trim().toUpperCase().charCodeAt(0) || 65) - 65;
-      const gabSet = tipo === 'ME-CH' ? parseMeChGabarito(q) : null;
+      const gabSet = isMemOrMeCh ? parseMeChGabarito(q) : null;
 
       altMap.forEach((origIdx, visIdx) => {
         const alt = q.alternativas[origIdx];
         const letter = String.fromCharCode(65 + visIdx);
         let line = `${letter}) ${strip(alt.texto)}`;
-        if (sub && (tipo === 'ME-CH' ? gabSet.has(origIdx) : origIdx === gabIdx)) {
+        if (sub && (isMemOrMeCh ? gabSet.has(origIdx) : origIdx === gabIdx)) {
           line += ' ✔ Gabarito';
         }
         lines.push(line);
@@ -2593,7 +3524,7 @@ export class QuizRenderer {
 
       if (sub && q.comentario_geral) lines.push(`Comentário Geral:\n${strip(q.comentario_geral)}`);
 
-    } else if (tipo === 'CH') {
+    } else if (tipo === 'CH' || tipo === 'MVF') {
       altMap.forEach((origIdx, visIdx) => {
         const ass = q.assertivas[origIdx];
         const letter = String.fromCharCode(65 + visIdx);
@@ -2623,6 +3554,38 @@ export class QuizRenderer {
           });
         }
         if (q.comentario_geral) lines.push(`Comentário Geral:\n${strip(q.comentario_geral)}`);
+      }
+    } else if (tipo === 'MQ') {
+      const leftItens = (q.coluna_esquerda && q.coluna_esquerda.itens) || [];
+      const rightItens = (q.coluna_direita && q.coluna_direita.itens) || [];
+      const leftMap = (altMap && altMap.left) || Array.from({ length: leftItens.length }, (_, i) => i);
+      const rightMap = (altMap && altMap.right) || Array.from({ length: rightItens.length }, (_, i) => i);
+
+      lines.push(`\n[${(q.coluna_esquerda && q.coluna_esquerda.nome) || 'Coluna I'}]`);
+      leftMap.forEach((origIdx, visIdx) => {
+        lines.push(`  ${visIdx + 1}. ${strip(leftItens[origIdx].texto)}`);
+      });
+
+      lines.push(`\n[${(q.coluna_direita && q.coluna_direita.nome) || 'Coluna II'}]`);
+      rightMap.forEach((origIdx, visIdx) => {
+        lines.push(`  ${String.fromCharCode(65 + visIdx)}. ${strip(rightItens[origIdx].texto)}`);
+      });
+
+      if (sub) {
+        const gabMap = parseMqGabarito(q);
+        lines.push('\nGabarito:');
+        leftMap.forEach((lOrigIdx, lVisIdx) => {
+          const targetSet = gabMap.get(lOrigIdx) || new Set();
+          const letters = Array.from(targetSet).map((rOrig) => {
+            const rVis = rightMap.indexOf(rOrig);
+            return rVis !== -1 ? String.fromCharCode(65 + rVis) : '?';
+          }).sort();
+          lines.push(`  ${lVisIdx + 1} ➔ (${letters.join(', ') || 'nenhum'})`);
+        });
+      }
+
+      if (sub && (q.comentario_geral || q.comentario)) {
+        lines.push(`\nComentário Geral:\n${strip(q.comentario_geral || q.comentario)}`);
       }
     }
 
@@ -2665,8 +3628,8 @@ export class QuizRenderer {
   /**
    * Retorna { hits, total } para a questão idx.
    * - ME / VF: total = 1, hits = 1 ou 0
-   * - ME-CH: total = 1, hits = pontuação proporcional entre 0 e 1
-   * - CH: total = número de assertivas, hits = quantas julgadas corretamente
+   * - MEM (ME-CH): total = 1, hits = pontuação proporcional entre 0 e 1
+   * - MVF (CH): total = número de assertivas, hits = quantas julgadas corretamente
    * - ESCRITA simples: total = 10, hits = selfEval (0–10)
    * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
    */
@@ -2697,7 +3660,7 @@ export class QuizRenderer {
       }
     }
 
-    if (tipo === 'CH') {
+    if (tipo === 'CH' || tipo === 'MVF') {
       const assertivas = Array.isArray(qData.assertivas) ? qData.assertivas : [];
       const total = assertivas.length;
       if (total === 0) return { hits: 0, total: 0 };
@@ -2714,9 +3677,14 @@ export class QuizRenderer {
       return this.applyDisregardedCorrectToScore(state, idx, { hits, total }, options);
     }
 
-    if (tipo === 'ME-CH') {
+    if (tipo === 'ME-CH' || tipo === 'MEM') {
       const score = computeMeChScore(qData, ans.selectedOriginalIndices || []);
       return this.applyDisregardedCorrectToScore(state, idx, { hits: score, total: 1 }, options);
+    }
+
+    if (tipo === 'MQ') {
+      const scoreData = computeMqScore(qData, ans.connections || []);
+      return this.applyDisregardedCorrectToScore(state, idx, { hits: scoreData.hits, total: 1 }, options);
     }
 
     // ME / VF
@@ -2741,13 +3709,14 @@ export class QuizRenderer {
     let disregardedCorrectCount = 0;
 
     // Rastreamento por tipo
-    const typeOrder = ['ME', 'ME-CH', 'VF', 'CH', 'ESCRITA'];
+    const typeOrder = ['ME', 'MEM', 'VF', 'MVF', 'ESCRITA', 'MQ'];
     const typeLabels = {
       ME: 'Múltipla Escolha',
-      'ME-CH': 'Múltipla Escolha Múltipla',
+      MEM: 'Múltipla Escolha Múltipla',
       VF: 'Verdadeiro ou Falso (simples)',
-      CH: 'Verdadeiro ou Falso (múltiplo)',
-      ESCRITA: 'Escrita'
+      MVF: 'Verdadeiro ou Falso (múltiplo)',
+      ESCRITA: 'Escrita',
+      MQ: 'Associação'
     };
     const typeStats = {};
     typeOrder.forEach((t) => { typeStats[t] = { sumScore: 0, count: 0 }; });
@@ -2759,7 +3728,9 @@ export class QuizRenderer {
       if (isExcluded) return;
 
       const qData = state.questions[idx];
-      const tipo = (qData.tipo || '').toUpperCase();
+      let tipo = (qData.tipo || '').toUpperCase();
+      if (tipo === 'ME-CH') tipo = 'MEM';
+      if (tipo === 'CH') tipo = 'MVF';
       totalQuestions++;
 
       const ans = state.userAnswers[idx];

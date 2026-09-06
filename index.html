@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V3.9.4 - Filtro em Etapas</title>
+  <title>Question Engine V4.4 - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('vs_darkMode');
@@ -12,14 +12,14 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20260904-2">
+  <link rel="stylesheet" href="css/styles.css?v=20260906-8">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V3.9.4</h2>
+    <h2 class="header-title">Question Engine V4.4</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -149,6 +149,17 @@
             <input type="checkbox" id="chkVfStacked">
             Empilhar botões V/F (vertical)
           </label>
+        </div>
+        <div class="vs-option">
+          <strong class="vs-label">Questões de associação (MQ):</strong>
+          <div class="vs-radio-group">
+            <label class="toggle-label">
+              <input type="radio" name="mqRenderMode" value="arrows" id="mqModeArrows" checked> Setas de ligação
+            </label>
+            <label class="toggle-label">
+              <input type="radio" name="mqRenderMode" value="table" id="mqModeTable"> Grade / Tabela
+            </label>
+          </div>
         </div>
         <div class="vs-option">
           <label class="toggle-label">
@@ -414,7 +425,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20260904-2';
+  const APP_ASSET_VERSION = '20260906-8';
   const moduleAssets = [
     'main.js',
     'store.js',

@@ -9,7 +9,10 @@ export function parseContent(nodes, path = []) {
   if (!Array.isArray(nodes)) return list;
 
   nodes.forEach((node) => {
-    const tipo = (node.tipo || '').toUpperCase();
+    let tipo = (node.tipo || '').toUpperCase();
+    // Normalização transparente: MEM substitui ME-CH e MVF substitui CH
+    if (tipo === 'ME-CH') tipo = 'MEM';
+    if (tipo === 'CH') tipo = 'MVF';
 
     if (tipo === 'FOLDER') {
       // Adiciona o nome da pasta atual ao caminho e desce recursivamente
@@ -59,8 +62,9 @@ export function parseContent(nodes, path = []) {
         list = list.concat(parsed);
       }
     }
-    // --- NOVO BLOCO CH (Checkbox) ---
-    else if (tipo === 'CH') {
+    // --- BLOCO MVF / CH (Múltiplo Verdadeiro ou Falso) ---
+    else if (tipo === 'MVF' || tipo === 'CH') {
+      node.tipo = 'MVF';
       // Adiciona o caminho à questão
       node._path = path.length > 0 ? path : ['Raiz'];
 
@@ -97,7 +101,8 @@ export function parseContent(nodes, path = []) {
       }
 
       list.push(node);
-    } else if (tipo === 'ME' || tipo === 'ME-CH') {
+    } else if (tipo === 'ME' || tipo === 'MEM' || tipo === 'ME-CH') {
+      if (tipo === 'ME-CH' || tipo === 'MEM') node.tipo = 'MEM';
       // Adiciona o caminho à questão
       node._path = path.length > 0 ? path : ['Raiz'];
       if (!Array.isArray(node.alternativas)) node.alternativas = [];
@@ -137,6 +142,47 @@ export function parseContent(nodes, path = []) {
       const gab = (node.gabarito || '').trim().toUpperCase();
       if (gab === 'V' || gab === 'VERDADEIRO') node.gabarito = 'A'; // Index 0
       else if (gab === 'F' || gab === 'FALSO') node.gabarito = 'B'; // Index 1
+
+      list.push(node);
+    }
+    // --- NOVO BLOCO MQ (Matching Question / Associação) ---
+    else if (tipo === 'MQ') {
+      node._path = path.length > 0 ? path : ['Raiz'];
+
+      // Normaliza coluna_esquerda
+      if (!node.coluna_esquerda || typeof node.coluna_esquerda !== 'object') {
+        node.coluna_esquerda = { nome: 'Coluna I', itens: [] };
+      } else if (Array.isArray(node.coluna_esquerda)) {
+        node.coluna_esquerda = { nome: 'Coluna I', itens: node.coluna_esquerda };
+      }
+      if (!node.coluna_esquerda.nome || !String(node.coluna_esquerda.nome).trim()) {
+        node.coluna_esquerda.nome = 'Coluna I';
+      }
+      if (!Array.isArray(node.coluna_esquerda.itens)) {
+        node.coluna_esquerda.itens = [];
+      }
+      node.coluna_esquerda.itens = node.coluna_esquerda.itens.slice(0, 26).map((item, idx) => {
+        if (typeof item === 'string') return { id: idx + 1, texto: item };
+        return { id: item.id !== undefined ? item.id : (idx + 1), texto: item.texto || '' };
+      });
+
+      // Normaliza coluna_direita
+      if (!node.coluna_direita || typeof node.coluna_direita !== 'object') {
+        node.coluna_direita = { nome: 'Coluna II', itens: [] };
+      } else if (Array.isArray(node.coluna_direita)) {
+        node.coluna_direita = { nome: 'Coluna II', itens: node.coluna_direita };
+      }
+      if (!node.coluna_direita.nome || !String(node.coluna_direita.nome).trim()) {
+        node.coluna_direita.nome = 'Coluna II';
+      }
+      if (!Array.isArray(node.coluna_direita.itens)) {
+        node.coluna_direita.itens = [];
+      }
+      node.coluna_direita.itens = node.coluna_direita.itens.slice(0, 26).map((item, idx) => {
+        const defaultLetter = String.fromCharCode(65 + idx);
+        if (typeof item === 'string') return { id: defaultLetter, texto: item };
+        return { id: item.id !== undefined ? item.id : defaultLetter, texto: item.texto || '' };
+      });
 
       list.push(node);
     }
@@ -185,7 +231,7 @@ export function reshuffleVariants(questions) {
  */
 export function reshuffleChVariants(questions) {
   questions.forEach((q) => {
-    if ((q.tipo || '').toUpperCase() !== 'CH') return;
+    const qTipo = (q.tipo || '').toUpperCase(); if (qTipo !== 'CH' && qTipo !== 'MVF') return;
     if (!Array.isArray(q._originalAssertivas)) return;
 
     const byId = new Map();
