@@ -12,7 +12,7 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20260906-8">
+  <link rel="stylesheet" href="css/styles.css?v=20260924-5">
 </head>
 <body>
 
@@ -193,6 +193,14 @@
             <span class="vs-font-value" id="fontSizeValue">16px</span>
           </div>
         </div>
+        <div class="vs-option">
+          <label class="vs-label" for="rangeQuizWidth"><strong>Largura das questões:</strong></label>
+          <div class="vs-quiz-width-row">
+            <input type="range" id="rangeQuizWidth" min="320" max="1800" step="10" value="900">
+            <output id="quizWidthValue" for="rangeQuizWidth">900px</output>
+            <button type="button" class="btn btn-sm" id="btnResetQuizWidth">Padrão</button>
+          </div>
+        </div>
         <div class="vs-hint">
           <small>Ctrl+B: Alternar todos os comentários | Mobile: 3 toques rápidos com 3 dedos</small>
         </div>
@@ -224,7 +232,13 @@
     </div>
   </div>
 
-  <div id="quizContainer"></div>
+  <div id="quizWidthShell" class="quiz-width-shell">
+    <div id="quizContainer"></div>
+    <div class="quiz-resize-handle quiz-resize-left" role="slider" tabindex="0"
+         aria-label="Ajustar largura das questões pela borda esquerda" aria-valuemin="320" aria-valuemax="1800" aria-valuenow="900"></div>
+    <div class="quiz-resize-handle quiz-resize-right" role="slider" tabindex="0"
+         aria-label="Ajustar largura das questões pela borda direita" aria-valuemin="320" aria-valuemax="1800" aria-valuenow="900"></div>
+  </div>
 
 </div>
 
@@ -425,7 +439,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20260906-8';
+  const APP_ASSET_VERSION = '20260924-5';
   const moduleAssets = [
     'main.js',
     'store.js',

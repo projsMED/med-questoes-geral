@@ -1,0 +1,437 @@
+{
+  "titulo": "Banco de Teste Completo — 24 Questões",
+  "id_quiz": "teste_completo_24_questoes_v1",
+  "descricao": "Banco de conhecimentos gerais criado para testar todos os tipos de questão, aliases legados, pastas, grupos, variantes, metadados, comentários, HTML e quebras de linha.",
+  "conteudo": [
+    {
+      "tipo": "folder",
+      "nome": "Humanidades",
+      "conteudo": [
+        {
+          "tipo": "grupo_juntas",
+          "id": "grp_revolucao_industrial",
+          "texto": "<b>Texto-base — Revolução Industrial:</b> A industrialização iniciada na Inglaterra no século XVIII transformou a produção, o trabalho e a urbanização.\nUse esse contexto nas quatro questões seguintes.",
+          "questoes": [
+            {
+              "tipo": "ME",
+              "id": "tc24_q01_me",
+              "tags": ["História", "Revolução Industrial"],
+              "dificuldade": 1,
+              "enunciado": "Qual fonte de energia teve papel central na Primeira Revolução Industrial?",
+              "alternativas": [
+                { "id": "q01_a", "texto": "Carvão mineral", "comentario": "Correto. O carvão alimentava as máquinas a vapor." },
+                { "id": "q01_b", "texto": "Energia solar", "comentario": "Painéis solares surgiram muito depois." },
+                { "id": "q01_c", "texto": "Urânio", "comentario": "A energia nuclear pertence ao século XX." },
+                { "id": "q01_d", "texto": "Gás hidrogênio", "comentario": "Não foi a base energética dessa fase." }
+              ],
+              "gabarito": "A",
+              "comentario_geral": "A alternativa {A} relaciona corretamente carvão, vapor e mecanização."
+            },
+            {
+              "tipo": "VF",
+              "id": "tc24_q02_vf",
+              "tags": ["História", "Urbanização"],
+              "dificuldade": 2,
+              "enunciado": "A industrialização contribuiu para o crescimento acelerado das cidades inglesas.",
+              "gabarito": "Verdadeiro",
+              "comentario_geral": "A oferta de trabalho fabril estimulou migrações para os centros urbanos."
+            },
+            {
+              "tipo": "MEM",
+              "id": "tc24_q03_mem",
+              "tags": ["História", "Trabalho"],
+              "dificuldade": 3,
+              "enunciado": "Marque as transformações associadas à industrialização dos séculos XVIII e XIX:",
+              "alternativas": [
+                { "id": "q03_a", "texto": "Expansão do trabalho fabril", "comentario": "Correta." },
+                { "id": "q03_b", "texto": "Crescimento urbano", "comentario": "Correta." },
+                { "id": "q03_c", "texto": "Desaparecimento imediato do artesanato", "comentario": "Incorreta: o artesanato não desapareceu imediatamente." },
+                { "id": "q03_d", "texto": "Uso crescente de máquinas", "comentario": "Correta." }
+              ],
+              "gabarito": "A, B, D",
+              "comentario_geral": "Devem ser marcadas {A}, {B} e {D}."
+            },
+            {
+              "tipo": "MVF",
+              "id": "tc24_q04_mvf",
+              "tags": ["História", "Economia"],
+              "dificuldade": 4,
+              "no_random": false,
+              "enunciado": "Julgue cada afirmação sobre o processo de industrialização:",
+              "assertivas": [
+                { "id": "q04_1", "texto": "A máquina a vapor ampliou a mecanização.", "is_correct": true, "comentario": "Verdadeiro." },
+                { "id": "q04_2", "texto": "A produção industrial eliminou toda desigualdade social.", "is_correct": false, "comentario": "Falso; persistiram e surgiram fortes desigualdades." },
+                { "id": "q04_3", "texto": "Ferrovias ajudaram a integrar mercados.", "is_correct": true, "comentario": "Verdadeiro." }
+              ],
+              "comentario_geral": "A mecanização e os transportes ampliaram a produção e a circulação de mercadorias."
+            }
+          ]
+        },
+        {
+          "tipo": "ESCRITA",
+          "subtipo": "simples",
+          "id": "tc24_q05_escrita_simples",
+          "tags": ["Geografia", "Cartografia"],
+          "dificuldade": 2,
+          "enunciado": "Explique, em uma ou duas frases, para que serve a escala de um mapa.",
+          "gabarito": "A escala expressa a relação proporcional entre uma distância representada no mapa e a distância correspondente no terreno.",
+          "comentario_geral": "A escala pode ser apresentada de forma numérica ou gráfica."
+        },
+        {
+          "tipo": "MQ",
+          "id": "tc24_q06_mq",
+          "tags": ["Artes", "Obras"],
+          "dificuldade": 2,
+          "enunciado": "Associe cada obra ao seu autor:",
+          "coluna_esquerda": {
+            "nome": "Obra",
+            "ordenacao": "fixa",
+            "itens": [
+              { "id": 1, "texto": "Mona Lisa" },
+              { "id": 2, "texto": "Guernica" },
+              { "id": 3, "texto": "O Pensador" }
+            ]
+          },
+          "coluna_direita": {
+            "nome": "Autor",
+            "ordenacao": "alfabetica",
+            "itens": [
+              { "id": "A", "texto": "Auguste Rodin" },
+              { "id": "B", "texto": "Leonardo da Vinci" },
+              { "id": "C", "texto": "Pablo Picasso" }
+            ]
+          },
+          "gabarito": "1(B), 2(C), 3(A)",
+          "comentario_geral": "A obra {1} é de {B}; a obra {2}, de {C}; e a obra {3}, de {A}."
+        },
+        {
+          "tipo": "folder",
+          "nome": "História e língua",
+          "conteudo": [
+            {
+              "tipo": "ME",
+              "id": "tc24_q07_me",
+              "tags": ["História", "Brasil"],
+              "dificuldade": 2,
+              "enunciado": "Em que ano foi proclamada a República no Brasil?",
+              "alternativas": [
+                { "id": "q07_a", "texto": "1822" },
+                { "id": "q07_b", "texto": "1888" },
+                { "id": "q07_c", "texto": "1889" },
+                { "id": "q07_d", "texto": "1930" }
+              ],
+              "gabarito": "C",
+              "comentario_geral": "A Proclamação da República ocorreu em 15 de novembro de 1889."
+            },
+            {
+              "tipo": "VF",
+              "id": "tc24_q08_vf",
+              "tags": ["Português", "Gramática"],
+              "dificuldade": 3,
+              "enunciado": "Na frase “Os alunos chegaram cedo”, a palavra “cedo” funciona como advérbio.",
+              "gabarito": "V",
+              "comentario_geral": "“Cedo” modifica o verbo “chegaram” e indica circunstância de tempo."
+            }
+          ]
+        },
+        {
+          "tipo": "variantes",
+          "id": "tc24_var_q09_capitais",
+          "tags": ["Geografia", "Capitais", "Variante externa"],
+          "dificuldade": 1,
+          "questoes": [
+            {
+              "tipo": "ME",
+              "id": "tc24_q09a_me_variante",
+              "enunciado": "Qual é a capital da Austrália?",
+              "alternativas": [
+                { "id": "q09a_a", "texto": "Sydney" },
+                { "id": "q09a_b", "texto": "Canberra" },
+                { "id": "q09a_c", "texto": "Melbourne" },
+                { "id": "q09a_d", "texto": "Perth" }
+              ],
+              "gabarito": "B",
+              "comentario_geral": "Canberra é a capital australiana."
+            },
+            {
+              "tipo": "ME",
+              "id": "tc24_q09b_me_variante",
+              "enunciado": "Qual é a capital do Canadá?",
+              "alternativas": [
+                { "id": "q09b_a", "texto": "Toronto" },
+                { "id": "q09b_b", "texto": "Vancouver" },
+                { "id": "q09b_c", "texto": "Ottawa" },
+                { "id": "q09b_d", "texto": "Montreal" }
+              ],
+              "gabarito": "C",
+              "comentario_geral": "Ottawa é a capital canadense."
+            },
+            {
+              "tipo": "ME",
+              "id": "tc24_q09c_me_variante",
+              "enunciado": "Qual é a capital da Turquia?",
+              "alternativas": [
+                { "id": "q09c_a", "texto": "Istambul" },
+                { "id": "q09c_b", "texto": "Ancara" },
+                { "id": "q09c_c", "texto": "Esmirna" },
+                { "id": "q09c_d", "texto": "Antália" }
+              ],
+              "gabarito": "B",
+              "comentario_geral": "Ancara é a capital da Turquia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "folder",
+      "nome": "Ciências e tecnologia",
+      "conteudo": [
+        {
+          "tipo": "grupo_juntas",
+          "id": "grp_agua",
+          "texto": "<b>Experimento:</b> uma amostra de água pura é resfriada, congelada e depois aquecida até entrar em ebulição ao nível do mar.",
+          "questoes": [
+            {
+              "tipo": "MQ",
+              "id": "tc24_q10_mq",
+              "tags": ["Química", "Mudanças de estado"],
+              "dificuldade": 3,
+              "enunciado": "Associe o processo à mudança de estado:",
+              "coluna_esquerda": {
+                "nome": "Processo",
+                "itens": ["Congelamento", "Ebulição", "Condensação"]
+              },
+              "coluna_direita": {
+                "nome": "Mudança",
+                "ordenacao": "fixa",
+                "itens": ["Líquido → sólido", "Líquido → gasoso", "Gasoso → líquido"]
+              },
+              "gabarito": { "1": "A", "2": ["B"], "3": "C" },
+              "comentario_geral": "As três associações representam mudanças físicas de estado."
+            },
+            {
+              "tipo": "ESCRITA",
+              "subtipo": "itens",
+              "id": "tc24_q11_escrita_itens",
+              "tags": ["Física", "Termologia"],
+              "dificuldade": 3,
+              "enunciado": "Responda sobre a amostra de água ao nível do mar:",
+              "itens": [
+                { "pergunta": "Qual é seu ponto de congelamento aproximado?", "gabarito": "0 °C.", "comentario": "Valor para água pura sob pressão atmosférica padrão." },
+                { "pergunta": "Qual é seu ponto de ebulição aproximado?", "gabarito": "100 °C.", "comentario": "O valor muda com a pressão." }
+              ],
+              "comentario_geral": "Temperatura e pressão devem ser consideradas juntas."
+            },
+            {
+              "tipo": "MEM",
+              "id": "tc24_q12_mem",
+              "tags": ["Ciências", "Água"],
+              "dificuldade": 2,
+              "enunciado": "Quais afirmações descrevem corretamente a água pura?",
+              "alternativas": [
+                { "id": "q12_a", "texto": "Sua molécula contém hidrogênio e oxigênio." },
+                { "id": "q12_b", "texto": "Sua fórmula é CO₂." },
+                { "id": "q12_c", "texto": "Pode existir nos estados sólido, líquido e gasoso." },
+                { "id": "q12_d", "texto": "É um elemento químico." }
+              ],
+              "gabarito": "A; C",
+              "comentario_geral": "Água é o composto H₂O e pode ocorrer nos três estados físicos."
+            }
+          ]
+        },
+        {
+          "tipo": "MVF",
+          "id": "tc24_q13_mvf_variantes_internas",
+          "tags": ["Astronomia", "Sistema Solar", "Variante interna"],
+          "dificuldade": 4,
+          "no_random": false,
+          "enunciado": "Julgue as assertivas. A segunda posição muda quando as variantes são reembaralhadas:",
+          "assertivas": [
+            { "id": "q13_1", "texto": "O Sol é uma estrela.", "is_correct": true, "comentario": "Verdadeiro." },
+            { "id": "q13_2", "texto": "Marte é conhecido como planeta vermelho.", "is_correct": true, "comentario": "Variante verdadeira da posição 2." },
+            { "id": "q13_2", "texto": "Vênus é o planeta mais distante do Sol.", "is_correct": false, "comentario": "Variante falsa da posição 2; Netuno é o mais distante entre os oito planetas." },
+            { "id": "q13_3", "texto": "A Lua é um satélite natural da Terra.", "is_correct": true, "comentario": "Verdadeiro." }
+          ],
+          "comentario_geral": "Duas entradas com o mesmo id exercitam variantes internas de assertivas."
+        },
+        {
+          "tipo": "CH",
+          "id": "tc24_q14_ch_legado",
+          "tags": ["Biologia", "Retrocompatibilidade"],
+          "dificuldade": 3,
+          "no_random": true,
+          "enunciado": "Julgue as afirmações sobre células. Este item usa o alias legado CH:",
+          "assertivas": [
+            { "id": "q14_1", "texto": "A membrana plasmática delimita a célula.", "is_correct": true, "comentario": "Verdadeiro." },
+            { "id": "q14_2", "texto": "Ribossomos participam da síntese de proteínas.", "is_correct": true, "comentario": "Verdadeiro." },
+            { "id": "q14_3", "texto": "Toda célula possui núcleo delimitado por membrana.", "is_correct": false, "comentario": "Falso; procariontes não possuem núcleo membranoso." }
+          ],
+          "comentario_geral": "O parser deve normalizar CH para MVF e preservar a ordem por no_random."
+        },
+        {
+          "tipo": "ME-CH",
+          "id": "tc24_q15_me_ch_legado",
+          "tags": ["Computação", "Retrocompatibilidade"],
+          "dificuldade": 2,
+          "enunciado": "Selecione os dispositivos que podem fornecer entrada de dados a um computador. Este item usa o alias ME-CH:",
+          "alternativas": [
+            { "id": "q15_a", "texto": "Teclado" },
+            { "id": "q15_b", "texto": "Mouse" },
+            { "id": "q15_c", "texto": "Monitor sem tela sensível ao toque" },
+            { "id": "q15_d", "texto": "Microfone" }
+          ],
+          "gabarito": "A, B, D",
+          "comentario_geral": "O parser deve normalizar ME-CH para MEM."
+        },
+        {
+          "tipo": "VF",
+          "id": "tc24_q16_vf",
+          "tags": ["Matemática", "Números primos"],
+          "dificuldade": 1,
+          "enunciado": "O número 2 é o único número primo par.",
+          "gabarito": "V",
+          "comentario_geral": "Todo outro número par é divisível por 2 e por isso não é primo."
+        },
+        {
+          "tipo": "ME",
+          "id": "tc24_q17_me",
+          "tags": ["Física", "Unidades"],
+          "dificuldade": 2,
+          "enunciado": "Qual é a unidade de força no Sistema Internacional?",
+          "alternativas": [
+            { "id": "q17_a", "texto": "Joule" },
+            { "id": "q17_b", "texto": "Watt" },
+            { "id": "q17_c", "texto": "Newton" },
+            { "id": "q17_d", "texto": "Pascal" }
+          ],
+          "gabarito": "C",
+          "comentario_geral": "O newton (N) é a unidade derivada de força."
+        },
+        {
+          "tipo": "variantes",
+          "id": "tc24_var_q18_ciencias",
+          "tags": ["Ciências", "Variante externa"],
+          "dificuldade": 2,
+          "questoes": [
+            {
+              "tipo": "VF",
+              "id": "tc24_q18a_vf_variante",
+              "enunciado": "O som precisa de um meio material para se propagar.",
+              "gabarito": "V",
+              "comentario_geral": "Ondas sonoras mecânicas não se propagam no vácuo."
+            },
+            {
+              "tipo": "VF",
+              "id": "tc24_q18b_vf_variante",
+              "enunciado": "A luz visível é uma onda eletromagnética.",
+              "gabarito": "V",
+              "comentario_geral": "Ondas eletromagnéticas podem se propagar no vácuo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "folder",
+      "nome": "Cotidiano e raciocínio",
+      "conteudo": [
+        {
+          "tipo": "grupo_juntas",
+          "id": "grp_biblioteca",
+          "texto": "<b>Situação:</b> uma biblioteca abre às 9h e fecha às 18h. Um leitor entra às 10h30, consulta o catálogo e escolhe um livro de 240 páginas.",
+          "questoes": [
+            {
+              "tipo": "ME",
+              "id": "tc24_q19_me",
+              "tags": ["Raciocínio lógico", "Tempo"],
+              "dificuldade": 1,
+              "enunciado": "Quantas horas a biblioteca permanece aberta por dia?",
+              "alternativas": [
+                { "id": "q19_a", "texto": "7 horas" },
+                { "id": "q19_b", "texto": "8 horas" },
+                { "id": "q19_c", "texto": "9 horas" },
+                { "id": "q19_d", "texto": "10 horas" }
+              ],
+              "gabarito": "C",
+              "comentario_geral": "De 9h a 18h decorrem 9 horas."
+            },
+            {
+              "tipo": "VF",
+              "id": "tc24_q20_vf",
+              "tags": ["Leitura", "Informação"],
+              "dificuldade": 1,
+              "enunciado": "O catálogo pode ajudar o leitor a localizar uma obra no acervo.",
+              "gabarito": "V",
+              "comentario_geral": "Catálogos registram e organizam informações sobre as obras."
+            },
+            {
+              "tipo": "ESCRITA",
+              "subtipo": "simples",
+              "id": "tc24_q21_escrita_simples",
+              "tags": ["Matemática", "Proporção"],
+              "dificuldade": 2,
+              "enunciado": "Se o leitor ler 30 páginas por dia, em quantos dias terminará o livro? Mostre a operação.",
+              "gabarito": "240 ÷ 30 = 8. O leitor terminará o livro em 8 dias.",
+              "comentario_geral": "A resposta esperada combina cálculo e unidade."
+            }
+          ]
+        },
+        {
+          "tipo": "MQ",
+          "id": "tc24_q22_mq_multiplas",
+          "tags": ["Língua portuguesa", "Semântica", "Associação múltipla"],
+          "dificuldade": 5,
+          "enunciado": "Associe cada palavra às relações cabíveis. Uma palavra admite duas associações e outra não admite nenhuma:",
+          "coluna_esquerda": {
+            "nome": "Palavra",
+            "ordenacao": "alfabetica",
+            "itens": [
+              { "id": "L1", "texto": "Alegre" },
+              { "id": "L2", "texto": "Feliz" },
+              { "id": "L3", "texto": "Mesa" }
+            ]
+          },
+          "coluna_direita": {
+            "nome": "Relação com “feliz”",
+            "itens": [
+              { "id": "A", "texto": "Sentido semelhante" },
+              { "id": "B", "texto": "Mesma classe gramatical no uso comum" },
+              { "id": "C", "texto": "Sentido oposto" }
+            ]
+          },
+          "gabarito": "L1(A, B), L2(A, B), L3(nenhum)",
+          "comentario_geral": "O formato testa relações 1:N e item sem associação."
+        },
+        {
+          "tipo": "MEM",
+          "id": "tc24_q23_mem_all",
+          "tags": ["Meio ambiente", "Sustentabilidade"],
+          "dificuldade": 2,
+          "enunciado": "Selecione todas as ações que ajudam a reduzir desperdícios domésticos:",
+          "alternativas": [
+            { "id": "q23_a", "texto": "Planejar compras de alimentos" },
+            { "id": "q23_b", "texto": "Reutilizar recipientes quando seguro" },
+            { "id": "q23_c", "texto": "Consertar objetos antes de descartá-los" },
+            { "id": "q23_d", "texto": "Separar materiais recicláveis conforme a coleta local" }
+          ],
+          "gabarito": "ALL",
+          "comentario_geral": "Todas as alternativas descrevem ações úteis; o gabarito ALL exercita esse formato especial."
+        },
+        {
+          "tipo": "ESCRITA",
+          "id": "tc24_q24_escrita_autodetectada",
+          "tags": ["Método científico", "Escrita com itens"],
+          "dificuldade": 4,
+          "enunciado": "Analise um experimento simples e responda:",
+          "itens": [
+            { "pergunta": "O que é uma hipótese científica?", "gabarito": "É uma explicação provisória e testável para uma observação ou problema." },
+            { "pergunta": "Para que serve um grupo de controle?", "gabarito": "Serve como referência de comparação para avaliar o efeito da variável investigada." },
+            { "pergunta": "Por que repetir medições?", "gabarito": "Para estimar a variabilidade e aumentar a confiabilidade dos resultados." }
+          ],
+          "comentario_geral": "O subtipo foi omitido de propósito para testar a autodetecção de ESCRITA com itens."
+        }
+      ]
+    }
+  ]
+}

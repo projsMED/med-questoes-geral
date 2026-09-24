@@ -20,6 +20,11 @@
     "children": [
       {
         "type": "file",
+        "name": "Banco completo - 24 questoes",
+        "path": "quizes-da-nuvem/Testes/Banco completo - 24 questoes.json"
+      },
+      {
+        "type": "file",
         "name": "CH-teste",
         "path": "quizes-da-nuvem/Testes/CH-teste.json"
       },

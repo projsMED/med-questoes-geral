@@ -7,7 +7,7 @@ import {
   computeMeChScore,
   parseMqGabarito,
   computeMqScore
-} from './utils.js?v=20260906-8';
+} from './utils.js?v=20260924-5';
 
 const HIGHLIGHT_COLORS = [
   { key: 'yellow', label: 'Amarelo' },
@@ -32,6 +32,8 @@ export class QuizRenderer {
     this.btnSubmitAll = document.getElementById('btnSubmitAll');
     this.scoreDisplay = document.getElementById('scoreDisplay');
     this.callbacks = callbacks;
+    this._mqCleanups = new Map();
+    this._mqFontSizes = new WeakMap();
 
     // Word marking state
     this._activeMarking = null;
@@ -68,6 +70,8 @@ export class QuizRenderer {
   }
 
   render(state) {
+    this._mqCleanups.forEach((cleanup) => cleanup());
+    this._mqCleanups.clear();
     this._state = state;
     this._cancelTouchHighlightGesture();
     if (this._metadataQuizRef !== state.quizJson) {
@@ -291,6 +295,8 @@ export class QuizRenderer {
   }
 
   createQuestionCard(qData, originalIdx, visualIdx, state) {
+    this._mqCleanups.get(originalIdx)?.();
+    this._mqCleanups.delete(originalIdx);
     const wrapper = document.createElement('div');
     wrapper.className = 'question-card';
 
@@ -510,24 +516,9 @@ export class QuizRenderer {
         }
       }
 
-      if (!isLocked) {
+      if (!isLocked && isSubmitted) {
         const actionsDiv = document.createElement('div');
         actionsDiv.className = 'action-bar';
-        const btnAnswer = document.createElement('button');
-        btnAnswer.className = 'btn btn-submit';
-        btnAnswer.innerText = 'Responder';
-
-        if (isSubmitted) {
-          btnAnswer.style.display = 'none';
-        } else {
-          btnAnswer.disabled = false;
-        }
-
-        btnAnswer.addEventListener('click', () => {
-          this.callbacks.onSubmit(originalIdx);
-        });
-
-        actionsDiv.appendChild(btnAnswer);
 
         if (isSubmitted && state.config.showDisregardCorrect !== false) {
           const rawScore = this.computeQuestionScore(state, originalIdx, { ignoreDisregard: true });
@@ -1034,6 +1025,9 @@ export class QuizRenderer {
     const rightIndices = Array.isArray(mqMap.right) ? mqMap.right : Array.from({ length: rightItens.length }, (_, i) => i);
 
     let userConns = (userAnswer && Array.isArray(userAnswer.connections)) ? [...userAnswer.connections] : [];
+    const gabMap = parseMqGabarito(qData);
+    const userSet = new Set(userConns.map((c) =>
+      `${c.leftOrigIdx ?? c.left}_${c.rightOrigIdx ?? c.right}`));
 
     const layout = document.createElement('div');
     layout.className = 'mq-arrows-layout';
@@ -1059,7 +1053,41 @@ export class QuizRenderer {
         <span class="mq-item-text">${formattedTxt}</span>
         <span class="mq-anchor mq-anchor-right"></span>
       `;
-      leftList.appendChild(itemEl);
+      const itemGroup = document.createElement('div');
+      itemGroup.className = 'mq-item-group';
+      itemGroup.appendChild(itemEl);
+      if (isSubmitted) {
+        const targets = gabMap.get(origIdx) || new Set();
+        const missingLetters = rightIndices.flatMap((rightIdx, visualIdx) =>
+          targets.has(rightIdx) && !userSet.has(`${origIdx}_${rightIdx}`)
+            ? [String.fromCharCode(65 + visualIdx)] : []);
+        if (missingLetters.length) {
+          const notice = document.createElement('div');
+          notice.className = 'mq-omission';
+          notice.append('Faltou: ');
+          const letters = document.createElement('strong');
+          letters.textContent = missingLetters.join(', ');
+          notice.appendChild(letters);
+          notice.tabIndex = 0;
+          notice.setAttribute('role', 'button');
+          notice.setAttribute('aria-label', `Mostrar as associações que faltaram no item ${visIdx + 1}: ${missingLetters.join(', ')}`);
+          const selectOmissions = () => {
+            if (this.container.classList.contains('selection-mode')) return;
+            const isSameSelection = reviewSelection?.kind === 'omissions' &&
+              reviewSelection.index === origIdx;
+            setReviewSelection(isSameSelection ? null : { kind: 'omissions', index: origIdx });
+          };
+          notice.addEventListener('click', selectOmissions);
+          notice.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              selectOmissions();
+            }
+          });
+          itemGroup.appendChild(notice);
+        }
+      }
+      leftList.appendChild(itemGroup);
     });
     leftCol.appendChild(leftList);
 
@@ -1128,15 +1156,21 @@ export class QuizRenderer {
     defs.appendChild(createMarker(`mq-arr-def-${originalIdx}`, 'mq-marker-path-default'));
     defs.appendChild(createMarker(`mq-arr-cor-${originalIdx}`, '', '#16a34a'));
     defs.appendChild(createMarker(`mq-arr-wro-${originalIdx}`, '', '#dc2626'));
-    defs.appendChild(createMarker(`mq-arr-mis-${originalIdx}`, '', '#ea580c'));
-    defs.appendChild(createMarker(`mq-arr-sol-${originalIdx}`, '', '#86efac'));
+    defs.appendChild(createMarker(`mq-arr-omit-${originalIdx}`, '', '#86efac'));
     svg.appendChild(defs);
 
     const pathsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     svg.appendChild(pathsGroup);
     container.appendChild(svg);
 
-    const gabMap = parseMqGabarito(qData);
+    let reviewSelection = null;
+    const isSelected = (line) => reviewSelection && (
+      reviewSelection.kind === 'omissions'
+        ? line.statusClass === 'mq-arrow-omission-focus' && line.leftOrigIdx === reviewSelection.index :
+      reviewSelection.side === 'left' ? line.leftOrigIdx === reviewSelection.index :
+      reviewSelection.side === 'right' ? line.rightOrigIdx === reviewSelection.index :
+      line.leftOrigIdx === reviewSelection.left && line.rightOrigIdx === reviewSelection.right
+    );
 
     const drawArrows = () => {
       pathsGroup.innerHTML = '';
@@ -1158,14 +1192,6 @@ export class QuizRenderer {
           });
         });
       } else {
-        const userSet = new Set(userConns.map((c) => {
-          const l = c.leftOrigIdx !== undefined ? c.leftOrigIdx : c.left;
-          const r = c.rightOrigIdx !== undefined ? c.rightOrigIdx : c.right;
-          return `${l}_${r}`;
-        }));
-
-        const wrongLefts = new Set();
-
         userConns.forEach((c) => {
           const l = c.leftOrigIdx !== undefined ? c.leftOrigIdx : c.left;
           const r = c.rightOrigIdx !== undefined ? c.rightOrigIdx : c.right;
@@ -1183,7 +1209,6 @@ export class QuizRenderer {
               interactive: false
             });
           } else {
-            wrongLefts.add(l);
             linesToDraw.push({
               leftOrigIdx: l,
               rightOrigIdx: r,
@@ -1196,40 +1221,25 @@ export class QuizRenderer {
           }
         });
 
-        // Omissões / esquecidas
-        gabMap.forEach((targetSet, lIdx) => {
-          targetSet.forEach((rIdx) => {
-            const key = `${lIdx}_${rIdx}`;
-            if (!userSet.has(key)) {
-              linesToDraw.push({
-                leftOrigIdx: lIdx,
-                rightOrigIdx: rIdx,
-                color: '#ea580c',
-                markerId: `mq-arr-mis-${originalIdx}`,
-                width: 2.2,
-                statusClass: 'mq-arrow-missed',
-                interactive: false
-              });
-            }
-          });
-        });
-
-        // Solução para erros
-        wrongLefts.forEach((lIdx) => {
-          const targetSet = gabMap.get(lIdx) || new Set();
-          targetSet.forEach((rIdx) => {
+        if (reviewSelection?.kind === 'omissions') {
+          const missingTargets = gabMap.get(reviewSelection.index) || new Set();
+          missingTargets.forEach((rightIdx) => {
+            if (userSet.has(`${reviewSelection.index}_${rightIdx}`)) return;
             linesToDraw.push({
-              leftOrigIdx: lIdx,
-              rightOrigIdx: rIdx,
+              leftOrigIdx: reviewSelection.index,
+              rightOrigIdx: rightIdx,
               color: '#86efac',
-              markerId: `mq-arr-sol-${originalIdx}`,
-              width: 1.5,
-              statusClass: 'mq-arrow-solution',
+              markerId: `mq-arr-omit-${originalIdx}`,
+              width: 3.5,
+              statusClass: 'mq-arrow-omission-focus',
               interactive: false
             });
           });
-        });
+        }
+
       }
+
+      linesToDraw.sort((a, b) => Number(!!isSelected(a)) - Number(!!isSelected(b)));
 
       linesToDraw.forEach((ld) => {
         const leftEl = leftList.querySelector(`.mq-left-item[data-orig-idx="${ld.leftOrigIdx}"]`);
@@ -1259,7 +1269,40 @@ export class QuizRenderer {
         path.setAttribute('stroke-width', ld.width);
         path.setAttribute('marker-end', `url(#${ld.markerId})`);
         path.setAttribute('class', `mq-arrow-line ${ld.statusClass}`);
+        if (isSelected(ld) && ld.statusClass !== 'mq-arrow-omission-focus') {
+          path.classList.add('mq-arrow-review-selected');
+        }
         pathsGroup.appendChild(path);
+
+        if (isSubmitted && !isLocked) {
+          const hitbox = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          hitbox.setAttribute('d', pathD);
+          hitbox.setAttribute('fill', 'none');
+          hitbox.setAttribute('stroke', 'transparent');
+          hitbox.setAttribute('stroke-width', '18');
+          hitbox.setAttribute('class', 'mq-arrow-hitbox');
+          hitbox.setAttribute('tabindex', '0');
+          hitbox.setAttribute('role', 'button');
+          const label = `Destacar associação ${leftIndices.indexOf(ld.leftOrigIdx) + 1} com ${String.fromCharCode(65 + rightIndices.indexOf(ld.rightOrigIdx))}`;
+          hitbox.setAttribute('aria-label', label);
+          hitbox.setAttribute('aria-pressed', String(!!isSelected(ld)));
+          const select = () => {
+            if (this.container.classList.contains('selection-mode')) return;
+            setReviewSelection({ left: ld.leftOrigIdx, right: ld.rightOrigIdx });
+          };
+          hitbox.addEventListener('click', (event) => {
+            event.stopPropagation();
+            select();
+          });
+          hitbox.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              select();
+              pathsGroup.querySelector(`[aria-label="${label}"]`)?.focus();
+            }
+          });
+          pathsGroup.appendChild(hitbox);
+        }
 
         if (ld.interactive && !isLocked && !isSubmitted) {
           const hitbox = document.createElementNS('http://www.w3.org/2000/svg', 'path');
@@ -1373,15 +1416,120 @@ export class QuizRenderer {
       });
     }
 
-    if (typeof ResizeObserver !== 'undefined') {
-      const ro = new ResizeObserver(() => {
-        requestAnimationFrame(() => drawArrows());
+    let frame = null;
+    const scheduleDraw = () => {
+      if (frame !== null) return;
+      frame = requestAnimationFrame(() => {
+        frame = null;
+        if (container.isConnected) {
+          updateFontControlsLayout();
+          drawArrows();
+        }
       });
-      ro.observe(container);
+    };
+    const setReviewSelection = (selection) => {
+      reviewSelection = selection;
+      container.querySelectorAll('.mq-item').forEach((item) => {
+        const selected = !!selection && item.dataset.side === selection.side &&
+          Number(item.dataset.origIdx) === selection.index;
+        item.classList.toggle('mq-item-review-selected', selected);
+        if (isSubmitted && !isLocked) item.setAttribute('aria-pressed', String(selected));
+      });
+      drawArrows();
+    };
+    const clearReviewSelection = (event) => {
+      if (reviewSelection && (!container.contains(event.target) ||
+          !event.target.closest('.mq-item, .mq-arrow-hitbox, .mq-omission'))) setReviewSelection(null);
+    };
+    if (isSubmitted && !isLocked) {
+      container.querySelectorAll('.mq-item').forEach((item) => {
+        item.classList.add('mq-item-review');
+        item.tabIndex = 0;
+        item.setAttribute('role', 'button');
+        item.setAttribute('aria-pressed', 'false');
+        const select = () => {
+          if (this.container.classList.contains('selection-mode')) return;
+          setReviewSelection({ side: item.dataset.side, index: Number(item.dataset.origIdx) });
+        };
+        item.addEventListener('click', select);
+        item.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            select();
+          }
+        });
+      });
+      document.addEventListener('click', clearReviewSelection, true);
     }
 
-    requestAnimationFrame(() => drawArrows());
-    setTimeout(() => drawArrows(), 50);
+    // Preferências locais à questão, preservadas ao responder ou trocar de modo.
+    const fontSizes = this._mqFontSizes.get(qData) || {};
+    this._mqFontSizes.set(qData, fontSizes);
+    const addFontControls = (column, side, label) => {
+      const controls = document.createElement('div');
+      controls.className = 'mq-column-font-controls';
+      const buttons = [];
+      const update = () => {
+        if (fontSizes[side] !== undefined) {
+          column.style.setProperty('--mq-column-font-size', `${fontSizes[side]}px`);
+        }
+        buttons.forEach(({ button, delta }) => {
+          button.disabled = delta < 0 ? fontSizes[side] <= 10 : fontSizes[side] >= 28;
+        });
+      };
+      [-1, 1].forEach((delta) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'btn-mq-tool';
+        button.textContent = delta < 0 ? 'A−' : 'A+';
+        button.title = `${delta < 0 ? 'Diminuir' : 'Aumentar'} fonte da coluna ${label}`;
+        button.setAttribute('aria-label', button.title);
+        button.addEventListener('click', () => {
+          const item = column.querySelector('.mq-item');
+          const current = fontSizes[side] ?? (parseFloat(getComputedStyle(item || column).fontSize) || 16);
+          fontSizes[side] = Math.max(10, Math.min(28, current + delta));
+          update();
+          scheduleDraw();
+        });
+        buttons.push({ button, delta });
+        controls.appendChild(button);
+      });
+      column.querySelector('.mq-column-header').appendChild(controls);
+      update();
+    };
+    addFontControls(leftCol, 'left', 'esquerda');
+    addFontControls(rightCol, 'right', 'direita');
+
+    const updateFontControlsLayout = () => {
+      const needsStack = [leftCol, rightCol].some((column) => {
+        const header = column.querySelector('.mq-column-header');
+        const title = header.querySelector('strong');
+        const measure = title.cloneNode(true);
+        measure.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;width:max-content;max-width:none;';
+        header.appendChild(measure);
+        const titleWidth = measure.getBoundingClientRect().width;
+        measure.remove();
+        const controlsWidth = header.querySelector('.mq-column-font-controls').getBoundingClientRect().width;
+        const style = getComputedStyle(header);
+        const available = header.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+        return titleWidth + 2 * (controlsWidth + 8) > available;
+      });
+      layout.classList.toggle('mq-font-controls-stacked', needsStack);
+    };
+
+    const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(scheduleDraw) : null;
+    [container, leftCol, rightCol, leftList, rightList, ...container.querySelectorAll('.mq-item')]
+      .forEach((element) => observer?.observe(element));
+    container.addEventListener('load', scheduleDraw, true);
+    window.addEventListener('resize', scheduleDraw, { passive: true });
+    this._mqCleanups.set(originalIdx, () => {
+      observer?.disconnect();
+      if (frame !== null) cancelAnimationFrame(frame);
+      document.removeEventListener('click', clearReviewSelection, true);
+      container.removeEventListener('load', scheduleDraw, true);
+      window.removeEventListener('resize', scheduleDraw);
+    });
+    scheduleDraw();
 
     return container;
   }

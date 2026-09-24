@@ -4,8 +4,8 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20260906-8';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260906-8';
+} from './store.js?v=20260924-5';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260924-5';
 import {
   shuffleArray,
   difficultyMap,
@@ -13,8 +13,8 @@ import {
   questionTypes,
   computeMeChScore,
   computeMqScore
-} from './utils.js?v=20260906-8';
-import { QuizRenderer } from './renderer.js?v=20260906-8';
+} from './utils.js?v=20260924-5';
+import { QuizRenderer } from './renderer.js?v=20260924-5';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -204,6 +204,10 @@ const App = {
     darkModeIcon: document.getElementById('darkModeIcon'),
     rangeFontSize: document.getElementById('rangeFontSize'),
     fontSizeValue: document.getElementById('fontSizeValue'),
+    quizWidthShell: document.getElementById('quizWidthShell'),
+    rangeQuizWidth: document.getElementById('rangeQuizWidth'),
+    quizWidthValue: document.getElementById('quizWidthValue'),
+    btnResetQuizWidth: document.getElementById('btnResetQuizWidth'),
     btnGeneralSettings: document.getElementById('btnGeneralSettings'),
     generalSettingsPanel: document.getElementById('generalSettingsPanel'),
     chkShowDisregardCorrect: document.getElementById('chkShowDisregardCorrect'),
@@ -374,8 +378,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20260906-8');
-      this.firebaseSync = await import('./firebase-sync.js?v=20260906-8');
+      this.firebaseConfig = await import('./firebase-config.js?v=20260924-5');
+      this.firebaseSync = await import('./firebase-sync.js?v=20260924-5');
 
       this.firebaseState.autoSync = localStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = localStorage.getItem('lastSyncTime') || null;
@@ -3473,6 +3477,7 @@ const App = {
       mqRenderMode: localStorage.getItem('vs_mqRenderMode') || 'arrows',
       showPartialScore: localStorage.getItem('vs_showPartialScore') !== 'false',
       fontSize: parseInt(localStorage.getItem('vs_fontSize')) || 16,
+      quizWidth: parseInt(localStorage.getItem('vs_quizWidth'), 10) || 900,
       darkMode: localStorage.getItem('vs_darkMode')
     };
   },
@@ -3516,6 +3521,8 @@ const App = {
     this.applyFooterMode(vs.footerFixed);
     this.applyVfStacked(vs.vfStacked);
     this.applyFontSize(vs.fontSize);
+    this.applyQuizWidth(vs.quizWidth, false);
+    this.initQuizWidthControls();
     this.applyDarkMode(isDark);
 
     // Eventos
@@ -3634,6 +3641,73 @@ const App = {
 
   applyFontSize(size) {
     document.body.style.fontSize = size + 'px';
+  },
+
+  applyQuizWidth(size, save = true) {
+    const width = Math.max(320, Math.min(1800, Math.round(Number(size) || 900)));
+    this._quizWidth = width;
+    this.elements.quizWidthShell.style.setProperty('--quiz-width', `${width}px`);
+    this.elements.rangeQuizWidth.value = width;
+    this.elements.quizWidthValue.textContent = `${width}px`;
+    this.elements.quizWidthShell.querySelectorAll('.quiz-resize-handle').forEach((handle) => {
+      handle.setAttribute('aria-valuenow', String(width));
+      handle.setAttribute('aria-valuetext', `${width} pixels`);
+    });
+    if (save) localStorage.setItem('vs_quizWidth', String(width));
+  },
+
+  initQuizWidthControls() {
+    const { quizWidthShell, rangeQuizWidth, btnResetQuizWidth } = this.elements;
+    rangeQuizWidth.addEventListener('input', (event) => {
+      this.applyQuizWidth(event.target.value);
+    });
+    btnResetQuizWidth.addEventListener('click', () => this.applyQuizWidth(900));
+
+    quizWidthShell.querySelectorAll('.quiz-resize-handle').forEach((handle) => {
+      let drag = null;
+      const finishDrag = () => {
+        if (!drag) return;
+        localStorage.setItem('vs_quizWidth', String(this._quizWidth));
+        drag = null;
+        handle.classList.remove('is-dragging');
+        document.body.classList.remove('quiz-width-resizing');
+      };
+      handle.addEventListener('pointerdown', (event) => {
+        if (!event.isPrimary || event.button !== 0) return;
+        event.preventDefault();
+        const side = handle.classList.contains('quiz-resize-left') ? -1 : 1;
+        drag = {
+          pointerId: event.pointerId,
+          startX: event.clientX,
+          startWidth: quizWidthShell.getBoundingClientRect().width,
+          side
+        };
+        handle.setPointerCapture(event.pointerId);
+        handle.classList.add('is-dragging');
+        document.body.classList.add('quiz-width-resizing');
+      });
+      handle.addEventListener('pointermove', (event) => {
+        if (!drag || event.pointerId !== drag.pointerId) return;
+        event.preventDefault();
+        const viewportWidth = window.innerWidth - (window.innerWidth <= 600 ? 16 : 40);
+        const maxWidth = Math.max(1, Math.min(1800, viewportWidth));
+        const minWidth = Math.min(320, maxWidth);
+        const width = drag.startWidth + 2 * drag.side * (event.clientX - drag.startX);
+        this.applyQuizWidth(Math.max(minWidth, Math.min(maxWidth, width)), false);
+      });
+      handle.addEventListener('pointerup', finishDrag);
+      handle.addEventListener('pointercancel', finishDrag);
+      handle.addEventListener('lostpointercapture', finishDrag);
+      handle.addEventListener('keydown', (event) => {
+        const current = this._quizWidth;
+        const next = event.key === 'ArrowRight' ? current + 10 :
+          event.key === 'ArrowLeft' ? current - 10 :
+          event.key === 'Home' ? 320 : event.key === 'End' ? 1800 : null;
+        if (next === null) return;
+        event.preventDefault();
+        this.applyQuizWidth(next);
+      });
+    });
   },
 
   // ===== Colapso de Comentários =====
