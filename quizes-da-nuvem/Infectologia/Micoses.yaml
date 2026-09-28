@@ -1,0 +1,111 @@
+# Questão 01
+- tipo: ME
+  enunciado: Qual é o tratamento de escolha para uma gestante no terceiro trimestre de gravidez diagnosticada com coccidioidomicose pulmonar grave?
+  alternativas:
+    - A): Anfotericina B intravenosa
+      comentario: "Os antifúngicos triazólicos possuem potencial teratogênico e são contraindicados na gestação, tornando a anfotericina B a droga indicada."
+    - B): Itraconazol por via oral
+      comentario: "Fármacos triazólicos são contraindicados durante o período gestacional devido ao risco de teratogenicidade."
+    - C): Fluconazol em alta dose
+      comentario: "O fluconazol pertence à classe dos triazólicos, contraindicados na gravidez por efeitos teratogênicos."
+    - D): Voriconazol por via oral
+      comentario: "Assim como outros azólicos, o voriconazol apresenta risco de teratogenicidade na gestação."
+  gabarito: A
+
+# Questão 02
+- tipo: ME
+  enunciado: Um homem de 34 anos, vivendo com HIV, internado com meningoencefalite criptocócica em fase de indução, apresenta cefaleia intensa e holocraniana. A punção lombar revela pressão de abertura de 32 cm $H_2O$. Qual conduta imediata é indicada para o controle sintomático dessa complicação?
+  alternativas:
+    - A): Punção lombar de alívio
+      comentario: "O alívio da pressão intracraniana elevada requer a remoção mecânica de 20 a 30 mL de líquido cefalorraquidiano por punções repetidas."
+    - B): Administração de manitol intravenoso
+      comentario: "O uso de diuréticos osmóticos como o manitol não melhora o prognóstico na hipertensão intracraniana por criptococose."
+    - C): Corticoterapia em altas doses
+      comentario: "Corticoides não são indicados de rotina para controle da pressão intracraniana na meningite criptocócica e não reduzem a mortalidade."
+    - D): Derivação ventriculoperitoneal de urgência
+      comentario: "A intervenção cirúrgica definitiva só é indicada após falha de punções lombares repetidas ou em presença de hidrocefalia."
+  gabarito: A
+
+# Questão 03
+- tipo: ME
+  enunciado: Qual classe de antifúngicos deve ser evitada no tratamento da histoplasmose durante a gestação devido ao risco de teratogenicidade?
+  alternativas:
+    - A): Triazólicos
+      comentario: "Antifúngicos triazólicos, como o itraconazol, devem ser evitados na gravidez devido aos potenciais efeitos teratogênicos."
+    - B): Polienos
+      comentario: "A anfotericina B (um polieno) é o medicamento de escolha e considerado seguro para uso durante a gestação."
+    - C): Equinocandinas
+      comentario: "Embora pouco usadas para micoses sistêmicas endêmicas, os triazólicos são a classe explicitamente contraindicada por teratogenicidade descrita."
+    - D): Sulfonamidas
+      comentario: "As sulfonamidas não constituem a classe principal de escolha contra Histoplasma sp. nem a classe triazólica restrita."
+  gabarito: A
+
+# Questão 04
+- tipo: ME
+  enunciado: Um agricultor de 48 anos apresenta lesões ulceradas na mucosa oral com pontilhado hemorrágico e infiltrado pulmonar reticulonodular bilateral. O exame micológico confirma paracoccidioidomicose na forma crônica moderada. Qual é o tratamento de primeira escolha indicado para este paciente?
+  alternativas:
+    - A): Itraconazol oral
+      comentario: "O itraconazol na dose de 200 mg a cada 12 horas por via oral é a medicação de primeira escolha para formas moderadas de paracoccidioidomicose."
+    - B): Anfotericina B desoxicolato
+      comentario: "A anfotericina B é reservada prioritariamente para os casos graves e disseminados da doença."
+    - C): Fluconazol intravenoso
+      comentario: "O fluconazol é utilizado principalmente como alternativa ou no acometimento do sistema nervoso central."
+    - D): Ketoconazol oral
+      comentario: "Apesar de eficaz, o cetoconazol caiu em desuso frente à maior eficácia e segurança do itraconazol."
+  gabarito: A
+
+# Questão 05
+- tipo: ME
+  enunciado: Qual é o esquema terapêutico preferencial para a fase de indução da meningoencefalite criptocócica grave em pessoas vivendo com HIV/aids?
+  alternativas:
+    - A): Anfotericina lipossomal e flucitosina
+      comentario: "A combinação de uma formulação lipídica de anfotericina B com flucitosina por no mínimo 14 dias constitui a terapia de indução preferencial."
+    - B): Fluconazol e itraconazol
+      comentario: "A associação exclusiva de azólicos orais não atinge a ação fungicida rápida necessária na fase de indução grave."
+    - C): Anfotericina desoxicolato isolada
+      comentario: "A monoterapia apresenta menor eficácia na redução da carga fúngica e maior taxa de mortalidade quando comparada à terapia combinada."
+    - D): Voriconazol e flucitosina
+      comentario: "O voriconazol não é o fármaco de primeira escolha para a indução da meningoencefalite criptocócica."
+  gabarito: A
+
+# Questão 06
+- tipo: ME
+  enunciado: Qual é o medicamento mais utilizado como primeira escolha no tratamento da paracoccidioidomicose em crianças devido à facilidade de administração e disponibilidade em suspensão oral?
+  alternativas:
+    - A): Cotrimoxazol
+      comentario: "A combinação de sulfametoxazol e trimetoprima (cotrimoxazol) é amplamente empregada na pediatria por apresentar boa tolerabilidade e forma de xarope."
+    - B): Anfotericina B
+      comentario: "Sendo uma medicação parenteral e de alta toxicidade, é reservada apenas para casos infantis graves."
+    - C): Fluconazol
+      comentario: "Não é a primeira linha recomendada para o tratamento de rotina da paracoccidioidomicose em crianças."
+    - D): Voriconazol
+      comentario: "O voriconazol é um azólico de uso restrito e não constitui primeira escolha na paracoccidioidomicose pediátrica."
+  gabarito: A
+
+# Questão 07
+- tipo: ME
+  enunciado: Um jovem de 22 anos desenvolve insuficiência respiratória aguda e choque séptico duas semanas após participar de uma caçada a tatus com intensa exposição à poeira. A tomografia exibe múltiplos infiltrados pulmonares nodulares cavitados. Qual conduta antifúngica imediata está indicada?
+  alternativas:
+    - A): Anfotericina B intravenosa
+      comentario: "Formas pulmonares agudas graves por inalação maciça de artroconídeos exigem tratamento imediato com anfotericina B parenteral."
+    - B): Itraconazol oral
+      comentario: "O itraconazol oral é indicado para formas pulmonares de moderada gravidade, incapaz de agir com a rapidez necessária no choque séptico."
+    - C): Fluconazol oral
+      comentario: "A terapia oral com fluconazol não é adequada para a fase inicial de infecções fulminantes com insuficiência respiratória."
+    - D): Observação sem antifúngico
+      comentario: "Infecções agudas graves com risco de óbito não podem ser tratadas apenas com observação expectante."
+  gabarito: A
+
+# Questão 08
+- tipo: ME
+  enunciado: Qual antifúngico oral é indicado para a fase de manutenção e consolidação do tratamento da histoplasmose disseminada?
+  alternativas:
+    - A): Itraconazol
+      comentario: "O itraconazol é a medicação de escolha para a fase de manutenção no tratamento da histoplasmose disseminada."
+    - B): Nistatina
+      comentario: "A nistatina não é absorvida por via sistêmica e serve apenas para infecções tópicas ou mucosas por Candida."
+    - C): Terbinafina
+      comentario: "A terbinafina é utilizada para dermatofitoses e não é indicada para consolidação de histoplasmose."
+    - D): Griseofulvina
+      comentario: "A griseofulvina é restrita ao tratamento de micoses superficiais e sem ação em histoplasmose sistêmica."
+  gabarito: A

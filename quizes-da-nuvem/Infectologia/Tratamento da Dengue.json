@@ -1,0 +1,447 @@
+{
+  "titulo": "Tratamento da Dengue",
+  "descricao": "Questões de múltipla escolha",
+  "id_quiz": "240926-1518-MQlhbB",
+  "conteudo": [
+    {
+      "tipo": "ME",
+      "id": "240926-1518-1-YhH7ls",
+      "enunciado": "Um paciente desenvolve quadro de extravasamento plasmático maciço em uma segunda infecção por sorotipo heterólogo de dengue.\n<b>O mecanismo imunológico em que anticorpos pré-existentes facilitam a infecção de monócitos via receptores Fc-gama chama-se</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Mimetismo molecular patogênico",
+          "comentario": "<b>Incorreta.</b> O mimetismo molecular ocorre quando antígenos virais compartilham homologia com antígenos próprios do hospedeiro, deflagrando autoimunidade, o que não explica a facilitação da infecção via receptores Fc."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Depleção primária de linfócitos",
+          "comentario": "<b>Incorreta.</b> A linfopenia na fase aguda é transitória e secundária à apoptose e redistribuição tecidual, não sendo a causa primária do aumento da replicação viral em monócitos."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Amplificação dependente de anticorpos",
+          "comentario": "<b>Correta.</b> O fenômeno de <i>Antibody-Dependent Enhancement</i> (ADE) consiste na ligação de anticorpos heterólogos subneutralizantes prévios ao novo sorotipo viral e aos receptores Fc&gamma; de monócitos e macrófagos, intensificando a internalização e a proliferação viral."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Hipersensibilidade mediada por IgE",
+          "comentario": "<b>Incorreta.</b> As reações de hipersensibilidade do tipo I são mediadas por IgE e degranulação de mastócitos em processos anafiláticos e alérgicos, mecanismo não relacionado à gravidade da dengue secundária."
+        }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "A hipótese de Halstead (amplificação dependente de anticorpos) explica a fisiopatologia do extravasamento plasmático grave em infecções secundárias por sorotipos heterólogos, desencadeando intensa tempestade de citocinas."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-2-M12iPq",
+      "enunciado": "Homem de 34 anos, no 4º dia de febre, apresenta defervescência térmica associada a dor abdominal intensa e contínua, vômitos persistentes e sangramento gengival. Ao exame físico apresenta PA 110x70 mmHg, FC 84 bpm e tempo de enchimento capilar de 2 segundos.\n<b>Conforme o Ministério da Saúde, o paciente pertence ao</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Grupo A",
+          "comentario": "<b>Incorreta.</b> O Grupo A destina-se a casos sem sinais de alarme, sem comorbidades e sem risco social, conduzidos ambulatorialmente apenas com hidratação oral."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Grupo C",
+          "comentario": "<b>Correta.</b> O paciente apresenta sinais de alarme bem definidos (dor abdominal contínua, vômitos persistentes e sangramento de mucosa), mantendo estabilidade hemodinâmica sem sinais de choque, o que define a inclusão no Grupo C com hidratação venosa e internação."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Grupo B",
+          "comentario": "<b>Incorreta.</b> O Grupo B abrange pacientes sem sinais de alarme, mas com sangramento cutâneo espontâneo ou induzido (prova do laço positiva), condições especiais ou risco social."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Grupo D",
+          "comentario": "<b>Incorreta.</b> O Grupo D é reservado a casos com extravasamento plasmático grave com choque, hemorragia grave ou disfunção grave de órgãos, achados ainda ausentes neste paciente."
+        }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "Conforme o manual do Ministério da Saúde, a manifestação de qualquer sinal de alarme na fase crítica em paciente hemodinamicamente estável exige classificação imediata no Grupo C."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-3-agSqRq",
+      "enunciado": "Uma jovem procura atendimento médico com febre alta de início súbito, cefaleia retro-orbitária e mialgia há 36 horas (2º dia de evolução).\n<b>Considerando a janela da fase de viremia, o teste diagnóstico de escolha para confirmação imediata é</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Sorologia IgM (MAC-ELISA)",
+          "comentario": "<b>Incorreta.</b> Os anticorpos da classe IgM só atingem níveis detectáveis e confiáveis a partir do 6º dia do início dos sintomas."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Titulação de anticorpos IgG",
+          "comentario": "<b>Incorreta.</b> Títulos basais de IgG nas primeiras 48 horas indicam unicamente memória de infecção prévia por flavivírus, sem valor para comprovar infecção aguda recente."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Teste de neutralização viral",
+          "comentario": "<b>Incorreta.</b> O teste de neutralização por redução de placas (PRNT) exige amostras pareadas com intervalo de 14 dias para demonstrar soroconversão, sendo inadequado para o diagnóstico imediato no início do quadro."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Pesquisa do antígeno NS1",
+          "comentario": "<b>Correta.</b> Entre o 1º e o 5º dia de sintomas ocorre a fase virêmica aguda, período em que a pesquisa direta da proteína não estrutural NS1 (por ELISA ou teste rápido) apresenta alta sensibilidade diagnóstica."
+        }
+      ],
+      "gabarito": "D",
+      "comentario_geral": "Durante a fase virêmica (até o 5º dia), o Ministério da Saúde orienta a confirmação etiológica direta pela pesquisa do antígeno NS1 ou por RT-PCR."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-4-8vdTAC",
+      "enunciado": "Paciente com dengue evolui para choque hemodinâmico com extremidades frias, pulso filiforme e hipotensão arterial.\n<b>De acordo com o protocolo oficial do Ministério da Saúde (2024), a conduta imediata para expansão parenteral rápida é</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Soro fisiológico 20 mL/kg",
+          "comentario": "<b>Correta.</b> Para pacientes em choque circulatório (Grupo D), a diretriz nacional preconiza reposição volêmica imediata com soro fisiológico a 0,9% na dose de 20 mL/kg em até 20 minutos."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Ringer lactato 30 mL/kg",
+          "comentario": "<b>Incorreta.</b> O manual do Ministério da Saúde não adota Ringer Lactato no choque da dengue, padronizando soro fisiológico a 0,9% na dose de 20 mL/kg (o volume de 30 mL/kg refere-se aos protocolos de sepse bacteriana)."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Soro fisiológico 10 mL/kg",
+          "comentario": "<b>Incorreta.</b> A infusão de 10 mL/kg na primeira hora é a regra estipulada para a reposição volêmica no paciente com sinais de alarme estável hemodinamicamente (Grupo C), sendo insuficiente como ataque no choque descompensado (Grupo D)."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Concentrado de hemácias filtrado",
+          "comentario": "<b>Incorreta.</b> A transfusão de hemácias é restrita a episódios de choque acompanhados de queda progressiva do hematócrito por sangramentos graves identificados ou suspeitos."
+        }
+      ],
+      "gabarito": "A",
+      "comentario_geral": "O manejo do choque por extravasamento plasmático (Grupo D) requer expansão rápida com soro fisiológico a 0,9% na dose de 20 mL/kg em até 20 minutos, podendo ser repetida até 3 vezes."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-5-xSdyuI",
+      "enunciado": "Durante o tratamento ambulatorial dos sintomas na fase febril da dengue,\n<b>qual das seguintes classes medicamentosas é expressamente contraindicada pelo risco de induzir disfunção plaquetária e sangramentos gastrintestinais graves?</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Analgésicos opioides fracos",
+          "comentario": "<b>Incorreta.</b> Opioides não interferem na integridade endotelial nem na agregação de plaquetas, não apresentando o risco hemostático que motiva a contraindicação formal dos salicilatos e AINEs."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Antieméticos antagonistas dopaminérgicos",
+          "comentario": "<b>Incorreta.</b> Antieméticos como a metoclopramida e a domperidona atuam no trato digestivo sem inibir a função plaquetária ou degradar a barreira protetora da mucosa gástrica."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Antihistamínicos de primeira geração",
+          "comentario": "<b>Incorreta.</b> Os anti-histamínicos não afetam os parâmetros de coagulação e são indicados com segurança para o alívio do prurido na fase exantemática de recuperação."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Anti-inflamatórios não esteroides",
+          "comentario": "<b>Correta.</b> Os AINEs inibem a ciclo-oxigenase com supressão do tromboxano A2 plaquetário e causam irritação direta da mucosa gástrica, elevando severamente o risco de sangramentos digestivos graves em pacientes já trombocitopênicos."
+        }
+      ],
+      "gabarito": "D",
+      "comentario_geral": "Anti-inflamatórios não esteroides (AINEs) e ácido acetilsalicílico são formalmente contraindicados na suspeita de dengue devido à toxicidade na hemostasia primária e no trato gastrointestinal."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-6-PYWDC1",
+      "enunciado": "Na realização da prova do laço em um paciente adulto com suspeita de dengue,\n<b>o teste é considerado positivo caso surja, no interior do quadrado demarcado de 2,5 x 2,5 cm, uma contagem de</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Dez ou mais petéquias",
+          "comentario": "<b>Incorreta.</b> O ponto de corte de 10 ou mais petéquias após 3 minutos de compressão é o critério de positividade exclusivo para a faixa etária pediátrica."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Vinte ou mais petéquias",
+          "comentario": "<b>Correta.</b> No paciente adulto, após insuflação do manguito no valor médio da pressão arterial por 5 minutos, a detecção de 20 ou mais petéquias no quadrado de 2,5 x 2,5 cm caracteriza o teste como positivo."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Cinco ou mais petéquias",
+          "comentario": "<b>Incorreta.</b> A formação de apenas 5 petéquias é inferior a qualquer limite mínimo de positividade estabelecido pelas normas técnicas."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Quinze ou mais petéquias",
+          "comentario": "<b>Incorreta.</b> Quinze petéquias não alcançam o ponto de corte padronizado de 20 petéquias exigido para confirmar fragilidade capilar no indivíduo adulto."
+        }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "A prova do laço avalia a fragilidade vascular capilar; a positividade é determinada por 20 ou mais petéquias no adulto (5 min de manguito na PAM) e 10 ou mais na criança (3 min)."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-7-NrN99v",
+      "enunciado": "Na fase crítica da dengue,\n<b>o parâmetro do hemograma que reflete diretamente a hemoconcentração e serve como o principal indicador precoce de extravasamento de plasma para o terceiro espaço é a</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Redução da hemoglobina",
+          "comentario": "<b>Incorreta.</b> A queda da hemoglobina sugere sangramento oculto ou evidente, ou hiper-hidratação com hemodiluição, sendo o oposto do extravasamento capilar puro."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Leucocitose com neutrofilia",
+          "comentario": "<b>Incorreta.</b> A infecção por dengue costuma cursar com leucopenia; a presença de leucocitose neutrofílica indica sobreposição bacteriana ou outra etiologia infecciosa associada."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Elevação do hematócrito",
+          "comentario": "<b>Correta.</b> O aumento progressivo do hematócrito revela a contração do volume plasmático intravascular decorrente do extravasamento de líquidos para os tecidos, constituindo o alerta precoce mais importante antes da hipotensão."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Queda rápida de plaquetas",
+          "comentario": "<b>Incorreta.</b> Embora a trombocitopenia seja comum e decorra de destruição periférica e supressão medular, ela não reflete a perda volêmica intravascular; o indicador biológico direto da fuga de plasma e hemoconcentração é o hematócrito."
+        }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "O aumento gradual do hematócrito é um sinal de alarme crucial que evidencia hemoconcentração por fuga plasmática para o terceiro espaço e orienta a expansão volêmica antes do choque."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-8-D0DjXE",
+      "enunciado": "O vírus da dengue (DENV) pertence a uma família viral específica e possui uma conformação genômica característica.\n<b>Sua taxonomia e estrutura de ácido nucleico correspondem a</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Flaviviridae; RNA (+) simples",
+          "comentario": "<b>Correta.</b> O DENV pertence à família <i>Flaviviridae</i> e ao gênero <i>Flavivirus</i>, possuindo genoma de RNA fita simples com senso positivo (+ssRNA), o qual atua de forma direta como RNA mensageiro celular."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Togaviridae; RNA (-) simples",
+          "comentario": "<b>Incorreta.</b> A família <i>Togaviridae</i> inclui o vírus Chikungunya e vírus da rubéola, cujo genoma também é de polaridade positiva, não possuindo senso negativo."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Bunyaviridae; RNA fita dupla",
+          "comentario": "<b>Incorreta.</b> Os buniavírus (ordem <i>Bunyavirales</i>) possuem genoma de RNA de fita simples segmentada com polaridade negativa ou ambissenso, não sendo de fita dupla."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Filoviridae; DNA fita dupla",
+          "comentario": "<b>Incorreta.</b> Os filovírus (como os vírus Ebola e Marburg) são vírus de RNA de fita simples de polaridade negativa, e não de DNA fita dupla."
+        }
+      ],
+      "gabarito": "A",
+      "comentario_geral": "O vírus da dengue é um arbovírus envelopado de genoma RNA de fita simples de polaridade positiva, pertencente à família taxonômica <i>Flaviviridae</i>."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-9-e7gM3q",
+      "enunciado": "Mulher de 28 anos, previamente hígida, procura a Unidade de Pronto Atendimento no 5º dia de febre, relatando que a temperatura cedeu nas últimas 12 horas, mas passou a apresentar dor abdominal contínua e vômitos frequentes. Ao exame físico encontra-se prostrada, corada e afebril; PA 110x75 mmHg; FC 86 bpm; FR 18 irpm; tempo de enchimento capilar de 2 segundos; abdômen doloroso difusamente à palpação profunda, sem sinais de peritonite. Hemograma inicial revela hematócrito de 46% e contagem de plaquetas de 68.000/mm³.\n<b>Diante do estadiamento clínico e das recomendações do Ministério da Saúde (2024), a conduta imediata indicada é</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Administrar expansão volêmica com soro fisiológico a 20 mL/kg em vinte minutos em terapia intensiva.",
+          "comentario": "<b>Incorreta.</b> A infusão rápida de 20 mL/kg em até 20 minutos com monitoramento contínuo em leito de terapia intensiva constitui a conduta estipulada para a dengue grave em choque hemodinâmico (Grupo D)."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Iniciar reposição volêmica imediata com soro fisiológico a 10 mL/kg na primeira hora e internar.",
+          "comentario": "<b>Correta.</b> A paciente apresenta sinais de alarme clássicos da fase crítica (dor abdominal contínua e vômitos frequentes) sem sinais de choque ou disfunção orgânica grave, definindo o enquadramento no Grupo C; o protocolo ministerial padroniza reposição parenteral imediata com 10 mL/kg de solução salina a 0,9% na primeira hora e internação por no mínimo 48 horas."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Indicar hidratação exclusivamente oral com 60 mL/kg ao dia e liberar para acompanhamento no domicílio.",
+          "comentario": "<b>Incorreta.</b> O manejo ambulatorial com hidratação oral exclusiva é restrito aos Grupos A e B; a presença de dor abdominal contínua e vômitos inviabiliza a hidratação oral isolada e torna a reposição venosa obrigatória."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Prescrever solução de Ringer Lactato a 25 mL/kg em seis horas e manter sob observação domiciliar.",
+          "comentario": "<b>Incorreta.</b> A infusão de 25 mL/kg em 6 horas corresponde à etapa de manutenção (após melhora da fase de expansão inicial com cristaloides), e o Ministério da Saúde padroniza o uso de soro fisiológico a 0,9% em ambiente hospitalar, nunca em regime domiciliar."
+        }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "Pacientes que apresentam sinais de alarme sem choque pertencem ao Grupo C; a conduta mandatória consiste na infusão venosa de soro fisiológico a 0,9% na dose de 10 mL/kg na primeira hora, seguida de reavaliação clínica seriada e manutenção em leito de internação por pelo menos 48 horas."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-10-mACzBm",
+      "enunciado": "Homem de 25 anos, estudante universitário, procura a Atenção Primária no 2º dia de quadro febril agudo (38,8°C), associado a mialgia intensa, cefaleia retro-orbitária e prostração. Nega comorbidades, dor abdominal, vômitos ou sangramentos. Ao exame: paciente lúcido, eupneico, corado e hidratado; PA 120x80 mmHg; FC 74 bpm; tempo de enchimento capilar de 1 segundo; abdômen indolor à palpação; prova do laço negativa. O paciente pesa 70 kg.\n<b>Considerando a classificação do Ministério da Saúde (Grupo A), qual é a recomendação oficial para o volume hídrico total diário e a proporção de sais de reidratação oral (SRO)?</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "60 mL/kg/dia; um terço SRO",
+          "comentario": "<b>Correta.</b> Para adultos no Grupo A, o Ministério da Saúde orienta volume hídrico diário de 60 mL/kg/dia, preconizando que um terço do volume total seja ofertado na forma de sais de reidratação oral (com maior aporte nas primeiras 4 a 6 horas) e os dois terços restantes por líquidos caseiros."
+        },
+        {
+          "id": "alt_B",
+          "texto": "30 mL/kg/dia; metade SRO",
+          "comentario": "<b>Incorreta.</b> O volume de 30 mL/kg/dia corresponde à necessidade hídrica basal de um adulto saudável em repouso, sendo marcadamente insuficiente para compensar a perda insensível por febre e o risco de desidratação na dengue."
+        },
+        {
+          "id": "alt_C",
+          "texto": "80 mL/kg/dia; dois terços SRO",
+          "comentario": "<b>Incorreta.</b> O volume de 80 mL/kg/dia é o padrão calculado pela regra de Holliday-Segar para crianças acima de 20 kg, além de a proporção preconizada de SRO ser de um terço, e não dois terços."
+        },
+        {
+          "id": "alt_D",
+          "texto": "100 mL/kg/dia; apenas água",
+          "comentario": "<b>Incorreta.</b> A hidratação oral exclusiva com água livre induz hiponatremia dilucional sintomática; o protocolo exige reposição eletrolítica balanceada com SRO e líquidos como soro caseiro, sucos e água de coco."
+        }
+      ],
+      "gabarito": "A",
+      "comentario_geral": "No Grupo A (adultos), prescreve-se hidratação oral rigorosa na base de 60 mL/kg/dia, fracionando-se um terço na forma de sais de reidratação oral (com maior volume no início) e dois terços em líquidos caseiros variados, mantendo-se a reposição por até 48 horas após a remissão da febre."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-11-tCU1gz",
+      "enunciado": "Mulher de 40 anos é admitida em leito de terapia intensiva com diagnóstico de dengue grave em choque circulatório (Grupo D). A equipe instituiu imediatamente três etapas sequenciais de expansão parenteral rápida com soro fisiológico a 0,9% (20 mL/kg em até 20 minutos cada etapa). Na reavaliação pós-expansão, a paciente persiste em choque refratário (PA 75x40 mmHg, pulso filiforme, má perfusão periférica e oligúria), não apresenta focos hemorrágicos e seu hematócrito aumentou de 48% para 55%.\n<b>Conforme as diretrizes do Ministério da Saúde (2024), a conduta indicada diante da persistência do choque com hematócrito em ascensão é infundir</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Concentrado de hemácias filtrado",
+          "comentario": "<b>Incorreta.</b> A transfusão de hemácias está indicada nos casos em que a persistência do choque é acompanhada por queda progressiva do hematócrito decorrente de hemorragias ativas ou coagulopatia grave."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Plasma fresco congelado",
+          "comentario": "<b>Incorreta.</b> O plasma fresco congelado (10 mL/kg) é reservado para distúrbios da coagulação com sangramento persistente ou alteração relevante das provas hemostáticas (como INR alargado), não sendo a solução expansora de escolha para choque com hemoconcentração isolada."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Albumina humana a 5%",
+          "comentario": "<b>Correta.</b> O algoritmo do Ministério da Saúde define que, diante de resposta inadequada com choque persistente e hematócrito em elevação após expansão adequada com cristaloides, deve-se administrar expansor plasmático coloidal na forma de solução de albumina a 5% (0,5 a 1 g/kg)."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Noradrenalina em infusão contínua",
+          "comentario": "<b>Incorreta.</b> No choque puramente hipovolêmico por perda de plasma com hematócrito em elevação, drogas vasoconstritoras isoladas sem restauração coloidal da pressão oncótica agravam a isquemia microvascular e a acidose láctica."
+        }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "Na persistência do choque com hematócrito em elevação após três ciclos de expansão com cristaloides, está demonstrada a falha da retenção intravascular de soluções salinas isotônicas, impondo-se o uso de albumina a 5% (0,5 a 1 g/kg) ou, na sua indisponibilidade, coloides sintéticos."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-12-1BwhyH",
+      "enunciado": "Um jovem de 21 anos, previamente hígido, com diagnóstico clínico de dengue no 3º dia de evolução (Grupo A), procura a unidade básica de saúde queixando-se de dor lombar intensa, mialgia difusa e temperatura de 39,2°C. O médico deseja prescrever analgesia e antitérmico para manejo sintomático ambulatorial.\n<b>Dentre as opções a seguir, o fármaco cuja prescrição é expressamente recomendada e segura segundo as normas do Ministério da Saúde é</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Ibuprofeno",
+          "comentario": "<b>Incorreta.</b> Fármaco anti-inflamatório não esteroide (AINE) formalmente contraindicado pelo risco de toxicidade plaquetária e agravamento de sangramentos no trato digestivo."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Cetoprofeno",
+          "comentario": "<b>Incorreta.</b> Derivado do ácido propiônico cuja inibição de COX-1 e COX-2 reduz o tromboxano plaquetário e predispõe a hemorragias graves em pacientes com dengue."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Nimesulida",
+          "comentario": "<b>Incorreta.</b> Anti-inflamatório com risco associado de hepatotoxicidade e sangramentos gastrintestinais, sendo terminantemente proscrito durante o curso de qualquer arbovirose febril."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Dipirona",
+          "comentario": "<b>Correta.</b> O Ministério da Saúde padroniza a dipirona (ou o paracetamol) como analgésico e antipirético de escolha para o manejo da fase febril da dengue, por controlar a dor e a temperatura sem comprometer a integridade da mucosa gástrica ou a hemostasia primária."
+        }
+      ],
+      "gabarito": "D",
+      "comentario_geral": "O tratamento sintomático na dengue deve empregar estritamente dipirona ou paracetamol nas doses padronizadas pelo Apêndice H do manual ministerial, sendo terminantemente proscritos salicilatos e anti-inflamatórios não esteroides."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-13-kjr41J",
+      "enunciado": "Homem de 52 anos, hipertenso crônico em uso regular de losartana, procura a Unidade Básica de Saúde no 3º dia de febre alta, cefaleia e mialgia intensa. Nega dor abdominal, vômitos, tonturas ou hemorragias espontâneas. Ao exame clínico: lúcido e orientado; PA 130x80 mmHg; FC 76 bpm; tempo de enchimento capilar de 1 segundo; abdômen flácido e totalmente indolor à palpação superficial e profunda. A realização da prova do laço revela a presença de 24 petéquias na área delimitada de 2,5 x 2,5 cm no antebraço esquerdo.\n<b>Considerando o estadiamento clínico e as diretrizes do Ministério da Saúde (2024), a conduta mais adequada para este paciente é</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Prescrever hidratação oral, solicitar hemograma completo obrigatório e manter a observação clínica até o resultado.",
+          "comentario": "<b>Correta.</b> O paciente apresenta caso suspeito de dengue sem sinais de alarme, porém é portador de comorbidade (hipertensão arterial) e tem prova do laço positiva, caracterizando o Grupo B. O protocolo ministerial determina início imediato de hidratação oral, realização mandatória de hemograma completo e permanência em observação na unidade de saúde até o resultado do hematócrito para orientar a conduta."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Iniciar reposição volêmica parenteral imediata com soro fisiológico a 10 mL/kg na primeira hora e internar por quarenta e oito horas.",
+          "comentario": "<b>Incorreta.</b> Esta expansão parenteral com 10 mL/kg na primeira hora e internação hospitalar por no mínimo 48 horas é a abordagem padrão preconizada para o Grupo C (presença de sinais de alarme), que não estão presentes neste paciente."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Prescrever hidratação oral ambulatorial e agendar retorno para o dia da melhora da febre ou quinto dia de doença.",
+          "comentario": "<b>Incorreta.</b> Esta é a conduta clássica para o Grupo A. Como o paciente tem comorbidade e prova do laço positiva (Grupo B), ele não pode receber alta imediata sem a avaliação obrigatória do hemograma em leito de observação."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Administrar expansão rápida com 20 mL/kg de solução salina em 20 minutos com monitorização contínua de sinais vitais.",
+          "comentario": "<b>Incorreta.</b> A infusão ultrarrápida de 20 mL/kg em até 20 minutos é a conduta de emergência estabelecida para choque circulatório (Grupo D), condição incompatível com a estabilidade hemodinâmica do paciente."
+        }
+      ],
+      "gabarito": "A",
+      "comentario_geral": "Pacientes com suspeita de dengue sem sinais de alarme que apresentam manifestações hemorrágicas induzidas (prova do laço positiva) ou comorbidades pertencem ao Grupo B. Exigem hidratação oral imediata e hemograma obrigatório enquanto aguardam em leito de observação."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-14-h1mDpV",
+      "enunciado": "Lactente de 18 meses é levado por seus responsáveis à Unidade de Pronto Atendimento com história de febre alta há 3 dias associada a irritabilidade e prostração. A mãe relata que, nas últimas 12 horas, a criança passou a recusar categoricamente qualquer tipo de alimentação e não consegue ingerir água, soro caseiro ou leite materno, apresentando episódios repetidos de vômitos imediatos a cada tentativa de ingesta. Ao exame físico: paciente sonolento, mucosas secas, fontanela discretamente deprimida, perfusão capilar periférica de 2 segundos, frequência cardíaca e pressão arterial normais para a faixa etária, abdômen normotenso e sem visceromegalias. Hemograma sem hemoconcentração.\n<b>Considerando as diretrizes do Ministério da Saúde (2024), a indicação que justifica a internação hospitalar desta criança é a</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Recusa de alimentos e líquidos",
+          "comentario": "<b>Correta.</b> De acordo com o item 6.9 do manual do Ministério da Saúde, a recusa ou impossibilidade de ingestão de alimentos e líquidos constitui indicação formal de internação hospitalar, por impedir a terapia de reidratação oral e acelerar o risco de desidratação e choque."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Idade inferior a dois anos",
+          "comentario": "<b>Incorreta.</b> A idade menor que 24 meses categoriza o paciente como condição especial (Grupo B), exigindo monitoramento rigoroso, mas não constitui, isoladamente, critério mandatário de internação se a via oral e a hidratação estiverem mantidas."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Comorbidade clínica crônica compensada",
+          "comentario": "<b>Incorreta.</b> O critério oficial para indicação de internação abrange comorbidades <i>descompensadas</i> ou de difícil controle (ex.: diabetes descompensado, insuficiência cardíaca crônica descompensada), e não condições clínicas sob controle basal."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Plaquetopenia isolada sem sangramento ativo",
+          "comentario": "<b>Incorreta.</b> A diminuição isolada na contagem de plaquetas, na ausência de hemorragias com repercussão clínica ou disfunção hemostática grave associada, não define critério de internação hospitalar."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Prova do laço fortemente positiva",
+          "comentario": "<b>Incorreta.</b> A prova do laço positiva é critério para triagem e estadiamento no Grupo B, conduzido inicialmente em leito de observação para aguardar o hemograma, não configurando indicação de internação hospitalar."
+        }
+      ],
+      "gabarito": "A",
+      "comentario_geral": "O Ministério da Saúde elenca como critérios formais de internação hospitalar a presença de sinais de alarme ou choque (Grupos C e D), desconforto respiratório, comorbidades descompensadas, impossibilidade de seguimento social e a recusa à ingestão de alimentos e líquidos."
+    },
+    {
+      "tipo": "ME",
+      "id": "240926-1518-15-Z0Bkob",
+      "enunciado": "Homem de 38 anos, residente em município com taxa de incidência epidêmica de dengue, procura atendimento no 5º dia do início dos sintomas. Relata que apresentou febre de 39,5°C, cefaleia retro-orbital, mialgias e prostração nos primeiros 4 dias. No dia da consulta, a febre cedeu completamente, mas o paciente passou a notar tontura importante com escurecimento visual e sensação de desmaio ao assumir a posição ereta. Nega sangramentos espontâneos visíveis, dor torácica ou dispneia. Ao exame clínico: afebril (36,4°C); lúcido e orientado no tempo e espaço (Glasgow 15); eupneico em ar ambiente (FR 16 irpm, murmúrio vesicular universalmente audível sem ruídos adventícios); pulsos radiais simétricos e cheios; tempo de enchimento capilar de 1 segundo. A PA em decúbito dorsal é de 125x80 mmHg (pressão diferencial de 45 mmHg), mas na aferição em ortostase após 3 minutos a PA cai para 95x65 mmHg, com queixa simultânea de vertigem. À palpação abdominal, constata-se hepatomegalia dolorosa, com bordo hepático palpável a 3,5 cm abaixo do rebordo costal direito. Exames laboratoriais revelam leucopenia, contagem de plaquetas de 80.000/mm³ e hematócrito compatível com o basal, com transaminases de AST 54 U/L e ALT 48 U/L.\n<b>Considerando as definições de vigilância epidemiológica e a classificação oficial de casos do Ministério da Saúde (2024), este paciente deve ser classificado como</b>",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Caso suspeito de dengue",
+          "comentario": "<b>Incorreta.</b> A denominação isolada de caso suspeito de dengue refere-se à síndrome febril aguda sem a detecção dos sinais clínicos de alarme que indicam extravasamento capilar incipiente."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Caso suspeito de dengue com sinais de alarme",
+          "comentario": "<b>Correta.</b> O paciente preenche a definição de caso suspeito e, durante a defervescência térmica (fase crítica), manifesta dois sinais de alarme formais: hipotensão postural/lipotimia e hepatomegalia dolorosa maior que 2 cm abaixo do rebordo costal. Como a pressão arterial em decúbito e o tempo de enchimento capilar permanecem normais (sem choque) e as transaminases não atingem níveis de disfunção orgânica grave (> 1.000 U/L), sua classificação oficial é caso suspeito com sinais de alarme."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Caso suspeito de dengue grave",
+          "comentario": "<b>Incorreta.</b> A dengue grave exige choque estabelecido (pressão arterial diferencial convergente &le; 20 mmHg, pulso filiforme, perfusão periférica lentificada), sangramento volumoso com repercussão ou disfunção grave de órgãos-alvo, manifestações ausentes no caso."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Caso confirmado de dengue",
+          "comentario": "<b>Incorreta.</b> A confirmação do caso depende do resultado de testes laboratoriais específicos reagentes (NS1, RT-PCR ou sorologia IgM coletada a partir do 6º dia) ou da homologação por vínculo clínico-epidemiológico pela vigilância local, não sendo a nomenclatura de estratificação clínica imediata no acolhimento."
+        }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "No período de remissão febril, o aparecimento de sinais de alarme (como hipotensão postural e hepatomegalia dolorosa acima de 2 cm) sem evidências de choque hemodinâmico define a classificação do paciente como caso suspeito de dengue com sinais de alarme."
+    }
+  ]
+}

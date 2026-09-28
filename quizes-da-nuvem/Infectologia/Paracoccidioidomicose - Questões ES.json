@@ -1,0 +1,102 @@
+{
+  "titulo": "Paracoccidioidomicose - Questões ES",
+  "id_quiz": "210926-2348-TVrRD9",
+  "conteudo": [
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-1-PgeqFu",
+      "enunciado": "Qual espécie de mamífero silvestre é considerada o principal reservatório natural de Paracoccidioides spp. na natureza?",
+      "gabarito": "Tatu-galinha (Dasypus novemcinctus).",
+      "comentario": "O tatu-galinha (Dasypus novemcinctus) é amplamente descrito como o reservatório silvestre natural do fungo. A perturbação do solo em áreas onde o animal habita favorece a dispersão de conídios infectantes no ar, que constituem a fonte primária de contágio para trabalhadores rurais."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-2-A1fO5h",
+      "enunciado": "Embora a infecção assintomática por Paracoccidioides spp. incida de maneira equilibrada entre ambos os sexos, a paracoccidioidomicose doença é expressivamente mais comum em homens adultos. Qual é o mecanismo biológico responsável por essa diferença epidemiológica após a puberdade?",
+      "gabarito": "As mulheres adultas são protegidas pelos estrógenos circulantes, os quais inibem a transformação do fungo da fase conidial/miceliana para a fase leveduriforme parasitária, bloqueando o estabelecimento da infecção ativa nos tecidos.",
+      "comentario": "A infecção subclínica ocorre em taxas semelhantes em homens e mulheres, conforme comprovam inquéritos intradérmicos. Contudo, a partir da puberdade, os homens respondem por cerca de 75% a 100% dos casos de doença clínica, com proporção média de 15 homens para cada mulher.\n\nEssa proteção feminina decorre da ação direta dos hormônios estrogênicos sobre os propágulos fúngicos inalados, inibindo a sua transição morfológica para levedura. Como a forma de levedura é a única adaptada para a vida parasitária em mamíferos, o fungo não progride para o adoecimento clínico na maioria das mulheres férteis."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-3-1DlEhp",
+      "enunciado": "Quais são as duas técnicas de coloração histopatológica especiais preconizadas para a evidenciação do agente etiológico em fragmentos teciduais de pacientes com paracoccidioidomicose?",
+      "gabarito": "Ácido periódico de Schiff (PAS) e impregnação pela prata de Grocott (metenamina prata).",
+      "comentario": "O diagnóstico histopatológico definitivo exige métodos de coloração fúngica capazes de evidenciar a parede das células leveduriformes. O PAS cora os componentes polissacarídicos da parede celular fúngica em tom vermelho-magenta, enquanto a metenamina prata de Grocott cora a parede em negro, permitindo identificar com nitidez o contorno celular e os multibrotamentos diagnósticos."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-4-HIcotW",
+      "enunciado": "Qual glândula endócrina sofre disfunção em 15% a 50% dos indivíduos com paracoccidioidomicose crônica, exigindo terapia de reposição com glicocorticoides e mineralocorticoides?",
+      "gabarito": "Glândula adrenal (ou suprarrenal).",
+      "comentario": "A invasão fúngica granulomatosa e a posterior fibrose cicatricial comprometem as glândulas adrenais em parcela expressiva dos pacientes crônicos. A destruição do córtex adrenal gera hipoaldosteronismo e hipocortisolismo (insuficiência adrenal crônica ou síndrome de Addison), manifestando-se clinicamente com astenia, hipotensão, emagrecimento e hiperpigmentação cutânea, requerendo reposição hormonal contínua."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-5-FknWYu",
+      "enunciado": "Sob quais circunstâncias clínicas e radiológicas deve ser realizada a investigação diagnóstica de tuberculose em um paciente em tratamento para paracoccidioidomicose?",
+      "gabarito": "A investigação de tuberculose é indicada quando o paciente apresentar tosse persistente por três semanas ou mais sem melhora clínica durante a terapêutica antifúngica, e/ou quando houver presença de infiltrado ou cavitações em lobos pulmonares superiores.",
+      "comentario": "A associação com tuberculose acomete entre 2% e 20% dos doentes com paracoccidioidomicose. Pelo fato de ambas as afecções compartilharem perfil epidemiológico de vulnerabilidade e sintomas respiratórios crônicos, a refratariedade da tosse após três semanas de tratamento ou achados radiológicos com cavernas apicais obrigam a pesquisa laboratorial imediata.\n\nNesses cenários, devem ser solicitados baciloscopia direta, Teste Rápido Molecular para Tuberculose (TRM-TB) e cultura para micobactérias, prevenindo o atraso terapêutico de uma comorbidade infecciosa grave."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-6-ZTfV7h",
+      "enunciado": "Qual é o antifúngico oral de primeira escolha indicado para o tratamento das formas clínicas leves a moderadas da paracoccidioidomicose em adultos?",
+      "gabarito": "Itraconazol.",
+      "comentario": "O itraconazol oral é o fármaco de primeira linha para as formas leves a moderadas, administrado na dose de 200 mg ao dia nas formas leves ou 200 mg a cada 12 horas nas moderadas. Sua absorção é otimizada em pH gástrico ácido (tomada pós-prandial com líquidos cítricos), apresentando alta eficácia e menor tempo terapêutico em comparação aos derivados sulfamídicos."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-7-kBL1rm",
+      "enunciado": "No seguimento sorológico pós-terapêutico pela técnica de imunodifusão dupla em gel de ágar (ID), qual é o critério sorológico estabelecido para confirmação da cura?",
+      "gabarito": "Negativação da reação ou estabilização dos títulos em valores menores ou iguais a 1:2, demonstrada em duas aferições sucessivas com intervalo de seis meses.",
+      "comentario": "A reação de imunodifusão em ágar é o método padrão de acompanhamento terapêutico. Considera-se atingida a cura imunológica quando o exame resulta negativo ou estabiliza em soro puro ou na diluição de 1:2 em duas coletas separadas por 6 meses de intervalo. Títulos que aumentam durante o acompanhamento sugerem reativação e recidiva da micose."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-8-KvOaLf",
+      "enunciado": "Em relação ao tratamento da paracoccidioidomicose durante a gestação, quais medicamentos são considerados opções seguras de uso, qual classe antifúngica é contraindicada e qual cautela temporal deve ser adotada com as sulfas antes do parto?",
+      "gabarito": "Podem ser utilizadas a anfotericina B ou a sulfadiazina (além do cotrimoxazol no 3º trimestre). Os antifúngicos azólicos são contraindicados devido ao risco de teratogenicidade. Os derivados sulfamídicos devem ser descontinuados 15 dias antes da data prevista para o parto a fim de prevenir kernicterus no recém-nascido.",
+      "comentario": "Os azólicos (itraconazol, fluconazol) são formalmente proscritos na gestação devido à teratogenicidade comprovada. Por isso, preconiza-se o uso de anfotericina B (Categoria B) ou sulfadiazina (Categoria C).\n\nA suspensão de qualquer tratamento sulfamídico com pelo menos 15 dias de antecedência do parto é indispensável porque as sulfas competem com a bilirrubina pelos sítios de ligação da albumina materna e fetal. Caso persista no sangue neonatal, a fração livre de bilirrubina pode atravessar a barreira hematoencefálica e causar encefalopatia bilirrubínica grave (kernicterus)."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-9-HGHcuP",
+      "enunciado": "Qual é o efeito adverso hematológico frequentemente observado em crianças tratadas com sulfametoxazol + trimetoprima para paracoccidioidomicose e qual fármaco deve ser administrado para o seu controle?",
+      "gabarito": "Leucopenia; manejada mediante a administração concomitante de ácido folínico.",
+      "comentario": "O sulfametoxazol + trimetoprima em suspensão oral é o esquema de escolha em pediatria devido à facilidade de administração e posologia. A toxicidade hematológica caracterizada por leucopenia decorre do bloqueio do metabolismo do folato pelas células da medula óssea, sendo rapidamente revertida pela suplementação de ácido folínico sem necessidade de interromper o antifúngico."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-10-hBO6QF",
+      "enunciado": "Em qual meio de conservação deve ser imerso o fragmento de biópsia tecidual destinado ao exame micológico direto e isolamento em cultura para Paracoccidioides spp.?",
+      "gabarito": "Solução salina estéril.",
+      "comentario": "Os espécimes clínicos de biópsia encaminhados para a micologia necessitam permanecer viáveis e hidratados. O uso de salina estéril evita o ressecamento celular sem exercer ação fungicida. O formaldeído é estritamente contraindicado para o setor de micologia, pois fixa e mata as células fúngicas, inviabilizando o isolamento do microrganismo."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-11-OIyYUG",
+      "enunciado": "Em pacientes com coinfecção por HIV/aids diagnosticados com paracoccidioidomicose, qual é a recomendação quanto ao intervalo para início da terapia antirretroviral (TARV) e qual complicação clínica se busca prevenir?",
+      "gabarito": "Os antifúngicos devem ser administrados por 3 a 5 semanas antes de se iniciar a TARV, com a finalidade de prevenir a ocorrência da síndrome inflamatória de reconstituição imune (SIRI).",
+      "comentario": "A introdução imediata da TARV combinada em indivíduos gravemente imunodeprimidos com infecções fúngicas ativas pode deflagrar uma resposta inflamatória desregulada e hiperativa à medida que a contagem de linfócitos CD4 se recupera.\n\nEsse fenômeno, conhecido como síndrome inflamatória de reconstituição imune (SIRI), pode causar exacerbação paradoxal grave dos sintomas clínicos, piora de lesões cerebrais e falência respiratória. O intervalo de 3 a 5 semanas sob antifúngicos específicos reduz drasticamente a carga fúngica tecidual antes do restabelecimento imune."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "SIMPLES",
+      "id": "210926-2348-12-RxUVcq",
+      "enunciado": "Qual é a característica morfológica definidora de Paracoccidioides spp. observada ao exame microscópico direto que permite distingui-lo com segurança de Histoplasma capsulatum?",
+      "gabarito": "Presença de células leveduriformes birrefringentes com brotamento múltiplo periférico (aspecto em roda de leme ou orelhas de Mickey).",
+      "comentario": "Enquanto o Histoplasma capsulatum se apresenta aos tecidos como pequenas leveduras ovais intracelulares de diâmetro homogêneo e brotamento único, o Paracoccidioides spp. apresenta elementos leveduriformes de dimensões variadas (1 µm a 30 µm) que emitem múltiplos brotos periféricos em torno de uma célula central, conferindo o aspecto clássico de roda de leme náutica."
+    }
+  ]
+}

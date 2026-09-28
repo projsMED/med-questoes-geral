@@ -12,7 +12,38 @@
   {
     "type": "folder",
     "name": "Infectologia",
-    "children": []
+    "children": [
+      {
+        "type": "file",
+        "name": "HIV NotebookLM",
+        "path": "quizes-da-nuvem/Infectologia/HIV NotebookLM.json"
+      },
+      {
+        "type": "file",
+        "name": "Malária - Estilo Residência",
+        "path": "quizes-da-nuvem/Infectologia/Malária - Estilo Residência.json"
+      },
+      {
+        "type": "file",
+        "name": "Malária",
+        "path": "quizes-da-nuvem/Infectologia/Malária.json"
+      },
+      {
+        "type": "file",
+        "name": "Micoses",
+        "path": "quizes-da-nuvem/Infectologia/Micoses.json"
+      },
+      {
+        "type": "file",
+        "name": "Paracoccidioidomicose - Questões ES",
+        "path": "quizes-da-nuvem/Infectologia/Paracoccidioidomicose - Questões ES.json"
+      },
+      {
+        "type": "file",
+        "name": "Tratamento da Dengue",
+        "path": "quizes-da-nuvem/Infectologia/Tratamento da Dengue.json"
+      }
+    ]
   },
   {
     "type": "folder",

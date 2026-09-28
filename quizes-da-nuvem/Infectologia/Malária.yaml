@@ -1,0 +1,177 @@
+# Questão 01
+- tipo: ME
+  enunciado: Paciente do sexo masculino, 34 anos (70 kg), morador de área endêmica, apresenta quadro de malária por Plasmodium vivax confirmado por gota espessa. O teste de G6PD revelou atividade de 7,8 UI/gHb e a dosagem de hemoglobina é de 13,2 g/dL. Qual é o esquema terapêutico de primeira escolha indicado para este paciente?
+  alternativas:
+    - A): Cloroquina e Tafenoquina dose única
+      comentario: "Para pacientes com idade igual ou superior a 2 anos, peso mínimo de 10 kg e atividade de G6PD maior ou igual a 6,1 UI/gHb, o esquema recomendado é Cloroquina por três dias e Tafenoquina em dose única."
+    - B): Cloroquina e Primaquina 7 dias
+      comentario: "O esquema de Cloroquina associado à Primaquina por 7 dias é indicado para pacientes com atividade de G6PD intermediária (entre 4,1 e 6,0 UI/gHb)."
+    - C): Cloroquina e Primaquina semanal
+      comentario: "A Primaquina em dose semanal por 8 semanas é reservada para pacientes com atividade baixa de G6PD (igual ou menor que 4,0 UI/gHb)."
+    - D): Arteméter-Lumefantrina por 3 dias
+      comentario: "Terapêuticas combinadas baseadas em artemisinina são usadas principalmente no tratamento de Plasmodium falciparum, malária mista ou casos de falha terapêutica/recorrência de P. vivax."
+  gabarito: A
+
+# Questão 02
+- tipo: ME
+  enunciado: Qual espécie de plasmódio causadora de malária humana é responsável pela formação de formas latentes hepáticas chamadas hipnozoítos?
+  alternativas:
+    - A): Plasmodium vivax
+      comentario: "Apenas Plasmodium vivax e Plasmodium ovale desenvolvem a forma latente no fígado (hipnozoíto), que permanece dormente e pode causar recaídas."
+    - B): Plasmodium falciparum
+      comentario: "O Plasmodium falciparum realiza o ciclo hepático sem a formação de hipnozoítos, motivo pelo qual não apresenta recaídas a partir do fígado."
+    - C): Plasmodium malariae
+      comentario: "O Plasmodium malariae não desenvolve formas dormentes no fígado e apresenta um ciclo eritrocitário mais longo (72 horas)."
+    - D): Plasmodium knowlesi
+      comentario: "O Plasmodium knowlesi é uma espécie associada primariamente a macacos que não produz hipnozoítos no hospedeiro humano."
+  gabarito: A
+
+# Questão 03
+- tipo: ME
+  enunciado: Qual antimalárico é absolutamente contraindicado durante a gestação pelo risco de desencadear hemólise fetal grave?
+  alternativas:
+    - A): Primaquina
+      comentario: "As 8-aminoquinoleínas (Primaquina e Tafenoquina) são contraindicadas na gestação porque não é possível determinar o status da enzima G6PD no feto, havendo risco de hemólise fetal."
+    - B): Cloroquina
+      comentario: "A Cloroquina é considerada segura em qualquer trimestre da gestação e é utilizada no esquema terapêutico e profilático de P. vivax."
+    - C): Artesunato
+      comentario: "Os derivados de artemisinina, como o Artesunato, são seguros e indicados para o tratamento da malária por P. falciparum em gestantes."
+    - D): Mefloquina
+      comentario: "A Mefloquina integra as terapias combinadas recomendadas para tratamento de P. falciparum em grávidas com boa margem de segurança."
+  gabarito: A
+
+# Questão 04
+- tipo: ME
+  enunciado: Gestante de 24 anos, na 16ª semana de gestação, apresenta quadro não complicado de malária por Plasmodium falciparum confirmado por microscopia. Qual é a terapia esquizonticida sanguínea recomendada para essa gestante?
+  alternativas:
+    - A): Artesunato e Mefloquina
+      comentario: "As terapias combinadas à base de artemisinina (ACT), como Artesunato + Mefloquina (ASMQ) ou Arteméter + Lumefantrina (AL), são as opções recomendadas para tratamento de P. falciparum em gestantes."
+    - B): Cloroquina por 3 dias
+      comentario: "A Cloroquina não é eficaz como esquizonticida sanguíneo para Plasmodium falciparum devido aos níveis de resistência da espécie."
+    - C): Artesunato com Primaquina diária
+      comentario: "Embora o Artesunato seja indicado, a adição de Primaquina é contraindicada durante todo o período gestacional."
+    - D): Cloroquina com Primaquina semanal
+      comentario: "Esse esquema com Primaquina semanal é inapropriado para P. falciparum e contraindicado durante a gravidez."
+  gabarito: A
+
+# Questão 05
+- tipo: ME
+  enunciado: Qual é o medicamento de primeira escolha para o tratamento inicial da malária grave/complicada no Brasil?
+  alternativas:
+    - A): Artesunato injetável
+      comentario: "O Artesunato por via parenteral (intravenosa ou intramuscular) é a medicação potente e de ação rápida recomendada pela OMS e pelo Ministério da Saúde para reduzir a mortalidade na malária grave."
+    - B): Cloroquina oral
+      comentario: "A Cloroquina oral é destinada apenas a formas não complicadas de P. vivax ou P. malariae e não possui potência adequada para quadros graves."
+    - C): Primaquina intravenosa
+      comentario: "A Primaquina é administrada exclusivamente por via oral para eliminação de hipnozoítos ou gametócitos, não sendo utilizada para controle da gravidade de fase aguda."
+    - D): Quinina oral
+      comentario: "Medicamentos por via oral não são indicados na fase inicial da malária grave devido ao risco de má absorção, vômitos e rebaixamento do nível de consciência."
+  gabarito: A
+
+# Questão 06
+- tipo: ME
+  enunciado: Homem de 50 anos dá entrada na emergência com rebaixamento do nível de consciência, icterícia acentuada e oligúria. A gota espessa demonstra alta parasitemia por Plasmodium falciparum. Qual via de administração é preferencial para a terapia antimalárica inicial nessa situação?
+  alternativas:
+    - A): Intravenosa
+      comentario: "Em quadros de malária grave com alteração de consciência ou complicações sistêmicas, a via intravenosa (IV) é a preferida para a administração imediata de Artesunato injetável."
+    - B): Oral
+      comentario: "A via oral é contraindicada na fase inicial do tratamento de malária grave devido ao rebaixamento de consciência e ao risco de aspiração ou absorção inadequada."
+    - C): Subcutânea
+      comentario: "O Artesunato parenteral não possui formulação ou indicação de administração por via subcutânea."
+    - D): Inalatória
+      comentario: "Não existem formulações ou protocolos de antimaláricos administrados por via inalatória no manejo de malária."
+  gabarito: A
+
+# Questão 07
+- tipo: ME
+  enunciado: Para um paciente com malária por Plasmodium vivax e atividade de G6PD de 3,5 UI/gHb, qual é o esquema de Primaquina indicado?
+  alternativas:
+    - A): Esquema semanal por 8 semanas
+      comentario: "Para valores de atividade de G6PD iguais ou inferiores a 4,0 UI/gHb (atividade baixa), o esquema recomendado para prevenção de recaídas é a Primaquina 0,75 mg/kg em dose única semanal por 8 semanas."
+    - B): Esquema diário por 7 dias
+      comentario: "O esquema diário de 7 dias com Primaquina (0,5 mg/kg/dia) é reservado para pacientes com atividade de G6PD intermediária (entre 4,1 e 6,0 UI/gHb)."
+    - C): Dose única no primeiro dia
+      comentario: "A Primaquina em dose única no primeiro dia é utilizada exclusivamente como gametocida na malária por P. falciparum, não servindo para cura radical de P. vivax."
+    - D): Esquema diário por 14 dias
+      comentario: "O esquema de 14 dias com dose diária normal de Primaquina desencadearia hemólise grave em pacientes com baixa atividade de G6PD."
+  gabarito: A
+
+# Questão 08
+- tipo: MEM
+  enunciado: |-
+    Paciente do sexo masculino, 32 anos, garimpeiro, retorna de área indígena na Região Amazônica e busca atendimento em pronto-socorro no estado de São Paulo (região extra-amazônica). Apresenta febre alta diária com calafrios, cefaleia holocraniana e vômitos há 5 dias.
+    
+    O resultado da gota espessa confirma infecção por Plasmodium falciparum sem critérios de gravidade. O médico assistente analisa os procedimentos de notificação e o esquema terapêutico adequado. Com base na vigilância epidemiológica e no tratamento da malária por P. falciparum, quais condutas e conceitos aplicam-se a este caso?
+  alternativas:
+    - A): A notificação na região extra-amazônica deve ser compulsória imediata, em até 24 horas, e registrada no Sinan.
+      comentario: "Na região extra-amazônica, todo caso suspeito é de notificação compulsória imediata (até 24 horas) via Sinan, diferentemente da região amazônica, que utiliza o Sivep-Malária."
+    - B): O esquema terapêutico oral de escolha consiste em uma terapia combinada à base de artemisinina (ACT).
+      comentario: "O tratamento de primeira linha para P. falciparum não complicado exige a utilização de combinações como Artesunato + Mefloquina (ASMQ) ou Arteméter + Lumefantrina (AL)."
+    - C): A adição de Primaquina em dose única no primeiro dia é indicada para eliminar gametócitos e interromper a transmissão.
+      comentario: "O uso de Primaquina em dose única associa-se ao ACT para destruir gametócitos maduros circulantes de P. falciparum, prevenindo a infecção do anofelino vetor local."
+    - D): O paciente deve realizar profilaxia secundária com Cloroquina semanal por seis meses após a alta hospitalar.
+      comentario: "A Cloroquina semanal é recomendada apenas como medida profilática temporária contra recaídas de P. vivax in gestantes, não tendo indicação para P. falciparum."
+    - E): A quimioprofilaxia medicamentosa contínua deveria ter sido prescrita de forma obrigatória antes de sua viagem ao garimpo.
+      comentario: "A quimioprofilaxia de rotina não é indicada no Brasil; as medidas preventivas baseiam-se na proteção contra picadas e no diagnóstico e tratamento oportunos."
+  gabarito: A, B, C
+
+# Questão 09
+- tipo: MEM
+  enunciado: Quais dos seguintes parâmetros clínicos ou laboratoriais constituem manifestações indicativas de malária grave e complicada?
+  alternativas:
+    - A): Redução do volume urinário a menos de 400 mL em 24 horas.
+      comentario: "A oligúria definida como volume urinário menor que 400 mL em 24 horas é um sinal clínico direto de insuficiência renal aguda na malária complicada."
+    - B): Anemia grave com nível de hemoglobina menor ou igual a 7 g/dL em adultos.
+      comentario: "Níveis de hemoglobina iguais ou inferiores a 7 g/dL configuram alteração laboratorial indicativa de anemia grave e critério de gravidade."
+    - C): Presença de episódios febris acompanhados por calafrios e sudorese.
+      comentario: "Paroxismos de febre com calafrios e sudorese compõem a tríade clássica do ataque agudo não complicado, presente na maioria das infecções simples."
+    - D): Parasitemia por Plasmodium vivax inferior a 500 parasitos por mm³.
+      comentario: "Parasitemias baixas são comuns no quadro agudo inicial; apenas hiperparasitemias expressivas em P. falciparum (> 250.000/mm³) são listadas como critério laboratorial de gravidade."
+  gabarito: A, B
+
+# Questão 10
+- tipo: MEM
+  enunciado: |-
+    Paciente feminina, 22 anos, gestante na 20ª semana de gestação, residente em área de transmissão ativa na Região Amazônica, apresenta febre, calafrios e cefaleia há dois dias. A gota espessa confirma infecção mista por Plasmodium falciparum e Plasmodium vivax.
+    
+    A equipe de saúde revisa as diretrizes terapêuticas para tratar o quadro agudo e evitar complicações obstétricas. Em relação ao manejo da malária mista nesta gestante, quais condutas são corretas?
+  alternativas:
+    - A): O tratamento esquizonticida sanguíneo deve ser realizado com terapia combinada à base de artemisinina (ACT).
+      comentario: "Para infecções mistas, utilza-se ACT (como ASMQ ou AL), pois elimina eficientemente as formas sanguíneas tanto de P. falciparum quanto de P. vivax."
+    - B): Deve-se prescrever Cloroquina profilática semanal até completar um mês de amamentação.
+      comentario: "Como a gestante não pode usar Primaquina para tratar os hipnozoítos de P. vivax, utiliza-se a Cloroquina semanal para suprimir a ocorrência de recaídas durante a gestação e puerpério."
+    - C): A Tafenoquina em dose única deve ser administrada imediatamente para eliminar hipnozoítos hepáticos.
+      comentario: "A Tafenoquina é expressamente contraindicada para gestantes e lactantes devido à ausência de dados de segurança e ao risco de hemólise fetal/neonatal."
+    - D): A Primaquina em dose diária por 7 dias deve ser associada ao esquema inicial durante o segundo trimestre.
+      comentario: "A Primaquina é contraindicada em qualquer período da gestação pelo risco de hemólise em feto com deficiência de G6PD."
+    - E): O tratamento medicamentoso deve ser suspenso até o parto para prevenir teratogenia medicamentosa.
+      comentario: "O tratamento da malária na gestação é prioritário e imediato, pois o atraso terapêutico aumenta drasticamente os riscos de morbimortalidade materna e fetal."
+  gabarito: A, B
+
+# Questão 11
+- tipo: MEM
+  enunciado: Sobre a avaliação da atividade da enzima Glicose-6-fosfatodesidrogenase (G6PD) e o uso de antimaláricos para cura radical de Plasmodium vivax, quais afirmativas estão corretas?
+  alternativas:
+    - A): Níveis de atividade de G6PD maiores ou iguais a 6,1 UI/gHb autorizam o uso de Tafenoquina em dose única em pacientes elegíveis.
+      comentario: "O ponto de corte de 6,1 UI/gHb assegura atividade enzimática alta suficiente para a administração segura de Tafenoquina em indivíduos com mais de 2 anos e peso maior que 10 kg."
+    - B): A presença de urina escura (cor de café ou refrigerante) constitui sinal indicativo de hemólise por 8-aminoquinoleínas.
+      comentario: "A hemoglobinúria decorrente da destruição maciça de hemácias manifesta-se tipicamente pelo escurecimento característico da urina, exigindo interrupção imediata da medicação."
+    - C): A testagem de G6PD é obrigatória antes de prescrever Primaquina em dose única para tratamento de P. falciparum.
+      comentario: "Devido ao uso de dose baixa de Primaquina como gametocida em P. falciparum, a testagem prévia de G6PD não é obrigatória para este fim específico."
+    - D): A Tafenoquina pode ser prescrita para pacientes que apresentem anemia grave with hemoglobina menor ou igual a 7 g/dL.
+      comentario: "Pacientes com níveis de hemoglobina iguais ou inferiores a 7 g/dL possuem contraindicação para o uso de Tafenoquina devido ao risco de agravamento da anemia caso ocorra hemólise."
+  gabarito: A, B
+
+# Questão 12
+- tipo: MEM
+  enunciado: No que se refere ao acompanhamento por Lâmina de Verificação de Cura (LVC), quais diretrizes são preconizadas pelo Ministério da Saúde?
+  alternativas:
+    - A): Em áreas de moderada e alta transmissão, prioriza-se a LVC otimizada no dia 5 e no dia 28 após o início do tratamento.
+      comentario: "O esquema otimizado de LVC para áreas de moderada e alta endemicidade reduz a sobrecarga do serviço mantendo a verificação estratégica nos dias 5 e 28."
+    - B): A LVC permite avaliar a redução progressiva da parasitemia e identificar precocemente recorrências ou falhas terapêuticas.
+      comentario: "A lâmina de seguimento por microscopia é fundamental para monitorar a clareação da parasitemia e detectar eventual resistência ou abandono do tratamento."
+    - C): Os Testes Diagnósticos Rápidos (TDR) substituem a gota espessa no seguimento de controle de cura da LVC.
+      comentario: "Os TDRs não devem ser usados no controle de cura porque os antígenos parasitários podem permanecer circulantes por semanas, gerando resultados falso-positivos."
+    - D): A pesquisa de anticorpos por sorologia é o método de escolha para confirmar a cura parasitológica na LVC.
+      comentario: "A sorologia indica apenas exposição prévia ao parasito e não diferencia infecção ativa de passada, sendo contraindicada para acompanhamento clínico ou controle de cura."
+  gabarito: A, B

@@ -1,0 +1,188 @@
+# Questão 01
+- tipo: ME
+  enunciado: Quando a contagem de linfócitos T-CD4 é inferior a 350 células/mm³ em uma pessoa vivendo com HIV sem sinais clínicos de tuberculose ativa, qual conduta é recomendada para a indicação do tratamento preventivo da tuberculose (TPT)?
+  alternativas:
+    - A): Avaliar diretamente os critérios para indicação do TPT, sem necessidade de realizar prova tuberculínica (PPD) ou teste IGRA.
+      comentario: "Em indivíduos com contagem de CD4 abaixo de 350 células/mm³, a imunodepressão pode gerar anergia nos testes cutâneos e in vitro, justificando a avaliação direta para TPT sem a obrigatoriedade de exames imunológicos."
+    - B): Exigir o resultado reativo do PPD (leitura igual ou superior a 5 mm) antes de autorizar qualquer esquema preventivo.
+      comentario: "A exigência do PPD positivo aplica-se prioritariamente a pacientes com contagem de CD4 acima de 350 células/mm³, pois em níveis mais baixos de CD4 a imunodepressão reduz a sensibilidade do teste."
+    - C): Solicitar o teste de fluxo lateral para lipoarabinomanano (LF-LAM) na urina como método confirmatório de infecção latente.
+      comentario: "O teste LF-LAM é utilizado exclusivamente para detecção e rastreamento de tuberculose ativa em urina, não servindo para o diagnóstico de infecção latente."
+    - D): Contraindicar o TPT até que a contagem de T-CD4 se eleve acima de 500 células/mm³ com o uso de antirretrovirais.
+      comentario: "A imunodepressão eleva significativamente o risco de reagudização da tuberculose, sendo o TPT uma intervenção prioritária em níveis mais baixos de imunidade."
+  gabarito: A
+
+# Questão 02
+- tipo: ME
+  enunciado: O esquema preferencial de terapia antirretroviral (TARV) para início de tratamento em adultos é composto por tenofovir, lamivudina e dolutegravir. Em qual condição clínica o tenofovir é contraindicado no esquema de primeira linha?
+  alternativas:
+    - A): Disfunção renal preexistente ou taxa de filtração glomerular estimada (TFGe) inferior a 60 mL/minuto.
+      comentario: "O tenofovir (TDF) apresenta risco de toxicidade renal proximal e perda de densidade óssea, sendo contraindicado quando há comprometimento renal prévio ou TFGe reduzida."
+    - B): Presença de coinfecção ativa pelo vírus da hepatite B (HBV).
+      comentario: "O tenofovir possui atividade dupla contra o HIV e o HBV, sendo o medicamento de escolha (e não contraindicado) na coinfecção com hepatite B."
+    - C): Contagem de linfócitos T-CD4 inferior a 50 células/mm³.
+      comentario: "Níveis extremamente baixos de CD4 reforçam a necessidade do início rápido da TARV com o esquema preferencial, não constituindo contraindicação ao tenofovir."
+    - D): Diagnóstico de hipertensão arterial sistêmica devidamente controlada com medicação.
+      comentario: "A hipertensão arterial exige cautela e monitoramento da função renal, mas não é uma contraindicação absoluta ao uso do tenofovir quando a função renal está preservada."
+  gabarito: A
+
+# Questão 03
+- tipo: ME
+  enunciado: Qual é a recomendação quanto ao início da terapia antirretroviral para indivíduos classificados como 'controladores de elite' (que mantêm carga viral indetectável espontaneamente)?
+  alternativas:
+    - A): Recomenda-se iniciar a TARV independentemente da contagem de CD4, devido à persistência de ativação inflamatória imune.
+      comentario: "Mesmo sem replicação viral detectável no plasma, controladores de elite mantêm ativação imune e inflamação crônica, o que aumenta o risco de doenças cardiovasculares e desfechos não definidores de aids."
+    - B): A TARV é formalmente contraindicada para evitar o surgimento de mutações de resistência e toxicidade desnecessária.
+      comentario: "As evidências demonstram benefício clínico na redução do processo inflamatório crônico com a TARV, superando os riscos de toxicidade."
+    - C): Deve-se aguardar a queda da contagem de T-CD4 para valores abaixo de 350 células/mm³ antes de prescrever qualquer antirretroviral.
+      comentario: "As diretrizes atuais preconizam o início da TARV universal para todas as pessoas vivendo com HIV, sem corte inferior de CD4."
+    - D): Indica-se exclusivamente monoterapia com dolutegravir para prevenir a replicação residual sem usar dois ITRN.
+      comentario: "A monoterapia não é uma estratégia recomendada para início de tratamento, devendo ser utilizado o esquema triplo padronizado."
+  gabarito: A
+
+# Questão 04
+- tipo: VF
+  enunciado: A primeira consulta de avaliação de uma pessoa com diagnóstico recente de infecção pelo HIV deve ter uma duração sugerida de, no mínimo, 45 minutos para permitir o acolhimento adequado e a abordagem integral.
+  gabarito: V
+  comentario_geral: "A primeira consulta requer tempo prolongado (ao menos 45 minutos) devido à complexidade da anamnese, necessidade de escuta acolhedora, explicação sobre a doença e pactuação da adesão inicial."
+
+# Questão 05
+- tipo: VF
+  enunciado: Para adultos vivendo com HIV suscetíveis à hepatite B, o esquema imunológico recomendado é idêntico ao da população geral, consistindo em três doses com dosagem padrão do fabricante.
+  gabarito: F
+  comentario_geral: "O esquema vacinal contra hepatite B em pessoas vivendo com HIV necessita de dose dobrada e 4 tomadas para garantir taxas adequadas de soroconversão e títulos de anti-HBs protetores."
+
+# Questão 06
+- tipo: VF
+  enunciado: Na confirmação de falha virológica da TARV, a genotipagem da região do gene da integrase é realizada de forma automática para todos os exames de genotipagem solicitados.
+  gabarito: F
+  comentario_geral: "A genotipagem convencional avalia apenas a transcriptase reversa e a protease; a inclusão do gene da integrase exige indicação específica ligada ao histórico de exposição a essa classe."
+
+# Questão 07
+- tipo: MEM
+  enunciado: O teste rápido de fluxo lateral para detecção de lipoarabinomanano em urina (LF-LAM) é indicado para rastreamento de tuberculose em pessoas vivendo com HIV gravemente doentes. Quais dos seguintes critérios clínicos ou sinais vitais classificam o paciente como 'gravemente doente'?
+  alternativas:
+    - A): Frequência respiratória igual ou superior a 30 respirações por minuto.
+      comentario: "A taquipneia acentuada (≥ 30 irpm) reflete insuficiência respiratória ou acometimento sistêmico grave, enquadrando o indivíduo nos critérios de gravidade."
+    - B): Frequência cardíaca igual ou superior a 120 batimentos por minuto.
+      comentario: "A taquicardia de repouso elevada (≥ 120 bpm) indica instabilidade hemodinâmica ou resposta inflamatória sistêmica grave."
+    - C): Incapacidade para deambular sem auxílio.
+      comentario: "A limitação funcional grave para caminhar representa prostração importante e alto risco de mortalidade de curto prazo."
+    - D): Pressão arterial sistólica superior a 180 mmHg mantida.
+      comentario: "A crise hipertensiva não faz parte dos critérios definidores de gravidade para a indicação do teste LF-LAM segundo os protocolos de rastreio de TB."
+  gabarito: A, B, C
+
+# Questão 08
+- tipo: MEM
+  enunciado: Em uma pessoa vivendo com HIV em uso de TARV, assintomática e com exames prévios normais, quais exames complementares devem ser solicitados com periodicidade anual no seguimento clínico de rotina?
+  alternativas:
+    - A): Dosagem de lipídios (colesterol total, HDL, LDL, VLDL e triglicerídeos).
+      comentario: "O perfil lipídico deve ser monitorado anualmente para avaliar o risco cardiovascular e possíveis dislipidemias induzidas pela TARV ou pelo HIV."
+    - B): Creatinina sérica e taxa de filtração glomerular estimada (TFGe).
+      comentario: "A avaliação anual da função renal é necessária para rastrear toxicidade por tenofovir e nefropatias associadas a comorbidades."
+    - C): Glicemia de jejum.
+      comentario: "A glicemia de jejum anual rastreia distúrbios metabólicos do carboidrato e diabetes mellitus, comorbidades frequentes em pessoas sob tratamento prolongado."
+    - D): Hemograma completo a cada 3 meses de forma obrigatória.
+      comentario: "O hemograma completo em pacientes assintomáticos sem uso de drogas mielotóxicas tem periodicidade indicada de 6 a 12 meses, e não trimestral."
+  gabarito: A, B, C
+
+# Questão 09
+- tipo: MEM
+  enunciado: De acordo com as diretrizes do Ministério da Saúde para o rastreamento e a detecção precoce de neoplasias em pessoas vivendo com HIV, quais estratégias e frequências estão corretamente indicadas?
+  alternativas:
+    - A): Mamografia bianual para mulheres na faixa etária entre 50 e 69 anos.
+      comentario: "Segue a diretriz nacional de rastreamento do câncer de mama aplicável também às mulheres vivendo com HIV."
+    - B): Toque retal anual para indivíduos com histórico de relação anal receptiva ou lesões por HPV.
+      comentario: "O rastreio do câncer anal envolve exame físico com toque retal anual em populações expostas a maior risco de neoplasia por HPV."
+    - C): Ultrassonografia hepática e dosagem de alfa-fetoproteína semestrais para indivíduos cirróticos ou HBsAg positivos.
+      comentario: "A vigilância semestral para carcinoma hepatocelular está indicada em pessoas com cirrose ou infecção crônica pelo vírus da hepatite B."
+    - D): Exame preventivo do colo do útero (Papanicolau) a cada 3 anos para mulheres com primeiro exame normal.
+      comentario: "Para mulheres vivendo com HIV, o preventivo de colo uterino é anual após dois exames semestrais consecutivos normais, e não trienal."
+  gabarito: A, B, C
+
+# Questão 10
+- tipo: ESCRITA
+  subtipo: simples
+  enunciado: |-
+    <b>Escreva o que preenche a(s) lacuna(s):</b>
+    Para pessoas vivendo com HIV que desenvolvem meningite tuberculosa, o início da TARV deve ocorrer, preferencialmente, entre _____ semanas após o início do tratamento tuberculostático.
+  gabarito: 4 e 6 ou quatro e seis ou 4 a 6 ou 4-6
+  comentario_geral: "Adia-se o início da TARV na meningite tuberculosa por 4 a 6 semanas para reduzir o risco de eventos adversos graves e Síndrome Inflamatória de Reconstituição Imune (SIRI) em sistema nervoso central."
+
+# Questão 11
+- tipo: ESCRITA
+  subtipo: simples
+  enunciado: |-
+    <b>Escreva o que preenche a(s) lacuna(s):</b>
+    O antirretroviral da classe dos inibidores da transcriptase reversa não análogos de nucleosídeos (ITRNN) indicado na posologia de 200 mg de 12 em 12 horas em esquemas de resgate após múltiplas falhas é a _____.
+  gabarito: etravirina
+  comentario_geral: "A etravirina é um ITRNN de segunda geração com maior barreira genética, utilizado em esquemas de resgate complexos na dose de 200 mg a cada 12 horas."
+
+# Questão 12
+- tipo: ESCRITA
+  subtipo: simples
+  enunciado: |-
+    <b>Escreva o que preenche a(s) lacuna(s):</b>
+    Antes da prescrição do antirretroviral abacavir, é mandatória a realização do teste de triagem genética para o alelo _____, a fim de evitar reações graves de hipersensibilidade.
+  gabarito: HLA-B*5701 ou HLA-B5701 ou HLA B*5701 ou HLA B5701
+  comentario_geral: "A presença do alelo HLA-B*5701 associa-se a um risco elevado (de até 50%) de reação de hipersensibilidade grave e potencialmente fatal ao abacavir."
+
+# Questão 13
+- tipo: ESCRITA
+  subtipo: simples
+  enunciado: Por que a dose de dolutegravir deve ser ajustada para 50 mg de 12 em 12 horas durante o tratamento concomitante com rifampicina, e por quanto tempo essa dosagem dobrada deve ser mantida após o término do esquematuberculostático?
+  gabarito: |-
+    <b>Exemplo de resposta correta</b>:A dose do dolutegravir deve ser dobrada (50 mg a cada 12 horas) porque a rifampicina é um potente indutor enzimático e reduz acentuadamente as concentrações séricas do dolutegravir. A dosagem dobrada deve ser mantida durante todo o tratamento com rifampicina e por mais 15 dias (duas semanas) após o seu término, tempo necessário para a reversão da indução enzimática.
+    
+    <b>Atributos de uma resposta correta</b>:
+    (1) Explica que a rifampicina induz o metabolismo/reduz os níveis séricos do dolutegravir.
+    (2) Menciona que a nova dose é de 50 mg de 12 em 12 horas (dose dobrada).
+    (3) Especifica que o ajuste deve ser mantido por 15 dias (ou 2 semanas) após o término da rifampicina.
+    
+    <b>Possíveis erros</b>:
+    (1) Afirmar que o ajuste se deve à toxicidade renal somada das duas medicações.
+    (2) Indicar suspensão imediata do dolutegravir ao iniciar a rifampicina.
+    
+    <b>Blefes</b>:
+    (1) Mencionar vagamente que as drogas interagem sem especificar o mecanismo indutor e o prazo de 15 dias pós-tratamento.
+  comentario_geral: "A rifampicina induz vias metabólicas que aceleram a eliminação do dolutegravir, exigindo a compensação da dose durante o tratamento e no período de depuração da indução enzimática."
+
+# Questão 14
+- tipo: ESCRITA
+  subtipo: simples
+  enunciado: O que caracteriza o fenômeno conhecido como 'blip' virológico no monitoramento de pessoas vivendo com HIV em TARV e qual a sua implicação clínica em relação à falha terapêutica?
+  gabarito: |-
+    <b>Exemplo de resposta correta</b>:O 'blip' virológico é caracterizado por um aumento transitório e esporádico da carga viral do HIV (em níveis baixos, geralmente inferiores a 200 cópias/mL), antecedido e seguido por exames com carga viral indetectável. Clinicamente, o 'blip' isolado não indica falha terapêutica nem necessidade de troca do esquema de TARV.
+    
+    <b>Atributos de uma resposta correta</b>:
+    (1) Define o 'blip' como uma elevação transitória/isolada da carga viral (abaixo de 200 cópias/mL).
+    (2) Menciona que os exames anterior e posterior mantêm-se indetectáveis.
+    (3) Afirma que o 'blip' não caracteriza falha virológica e não exige mudança da TARV.
+    
+    <b>Possíveis erros</b>:
+    (1) Confundir 'blip' com falha virológica confirmada.
+    (2) Afirmar que o 'blip' exige solicitação imediata de teste de genotipagem.
+    
+    <b>Blefes</b>:
+    (1) Dizer apenas que é uma pequena alteração no exame sem descrever a transitoriedade e a indetectabilidade subsequente.
+  comentario_geral: "A elevação pontual da carga viral decorre da liberação de vírus a partir de reservatórios celulares, sem significar emergência de resistência ou falha do tratamento."
+
+# Questão 15
+- tipo: ESCRITA
+  subtipo: simples
+  enunciado: Explique o mecanismo pelo qual o dolutegravir provoca uma elevação na creatinina sérica nas primeiras semanas de tratamento e por que essa alteração não representa nefrotoxicidade real.
+  gabarito: |-
+    <b>Exemplo de resposta correta</b>:O dolutegravir inibe o transportador de cátions orgânicos tipo 2 (OCT2) nos túbulos renais proximais, reduzindo a secreção tubular de creatinina e provocando um aumento benigno de 10% a 15% na creatinina sérica. Isso não representa nefrotoxicidade real porque não há alteração na taxa de filtração glomerular verdadeira (medida por métodos diretos como inulina), nem lesão estrutural aos néfrons.
+    
+    <b>Atributos de uma resposta correta</b>:
+    (1) Menciona a inibição do transportador tubular OCT2 (secreção tubular de creatinina).
+    (2) Indica que há um aumento sérico de creatinina (cerca de 10% a 15%).
+    (3) Explica que a filtração glomerular real permanece inalterada / não há nefrotoxicidade real.
+    
+    <b>Possíveis erros</b>:
+    (1) Afirmar que o dolutegravir causa necrose tubular aguda ou dano glomerular proximal.
+    (2) Sugerir que o aumento da creatinina contraindica o dolutegravir em pacientes renais.
+    
+    <b>Blefes</b>:
+    (1) Afirmar vagamente que o rim se adapta ao medicamento sem mencionar a inibição da secreção tubular do marcador.
+  comentario_geral: "A elevação da creatinina resulta da competição pelo transportador tubular de secreção, e não de dano glomerular ou tubular renal."
