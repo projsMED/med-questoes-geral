@@ -1,0 +1,287 @@
+{
+  "titulo": "Tratamento da Tuberculose - NotebookLM",
+  "descricao": "10 questões de múltipla escolha de 4 alternativas sobre o tratamento da tuberculose.\n- Alternativas de tamanhos semelhantes.\n- Distratores de qualidade, evitando termos como \"sempre\", \"nunca\", \"apenas\" etc.\n- Metade das questões tem casos clínicos pertinentes e bem elaborados, no estilo de residência. As demais tem apenas enunciado.\n- Alternativas curtas, de 1 a 5 palavras, no máximo.",
+  "id_quiz": "280926-1031-VYOzf5",
+  "conteudo": [
+    {
+      "tipo": "ME",
+      "id": "280926-1031-1-eKd7BO",
+      "enunciado": "Um homem de 34 anos recebe o diagnóstico de tuberculose pulmonar sem comorbidades associadas. Ele nunca realizou tratamento prévio para a doença. Qual é o esquema farmacológico indicado para a fase intensiva do tratamento?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "2 RHZE",
+          "comentario": "A fase intensiva do Esquema Básico para adultos combina quatro fármacos durante os dois primeiros meses de tratamento."
+        },
+        {
+          "id": "alt_B",
+          "texto": "2 RHZ",
+          "comentario": "Essa combinação de três fármacos é reservada para a fase intensiva em crianças com menos de 10 anos de idade."
+        },
+        {
+          "id": "alt_C",
+          "texto": "2 RH",
+          "comentario": "A associação dupla de rifampicina e isoniazida constitui a fase de manutenção do tratamento, não a intensiva."
+        },
+        {
+          "id": "alt_D",
+          "texto": "2 RHE",
+          "comentario": "A pirazinamida é um componente essencial na fase de ataque por sua ação bactericida e esterilizante intracelular."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "280926-1031-2-EH8j2u",
+      "enunciado": "Qual é a duração total do tratamento padrão recomendado para a tuberculose meningoencefálica em pacientes adultos?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "12 meses",
+          "comentario": "O tratamento da tuberculose meningoencefálica compreende 2 meses de fase intensiva e 10 meses de fase de manutenção."
+        },
+        {
+          "id": "alt_B",
+          "texto": "6 meses",
+          "comentario": "A duração de seis meses é o padrão estipulado para a tuberculose pulmonar e para a maioria das formas extrapulmonares."
+        },
+        {
+          "id": "alt_C",
+          "texto": "9 meses",
+          "comentario": "Nove meses é uma duração utilizada em situações específicas de monorresistência à isoniazida."
+        },
+        {
+          "id": "alt_D",
+          "texto": "18 meses",
+          "comentario": "Durações de 18 meses ou mais são reservadas a esquemas de tuberculose multidrogarresistente ou extensivamente resistente."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "280926-1031-3-IguRXV",
+      "enunciado": "Uma gestante no segundo trimestre é diagnosticada com tuberculose pulmonar sensível e iniciará o Esquema Básico. Qual suplementação deve ser associada para prevenir complicações fetais?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Piridoxina",
+          "comentario": "A vitamina B6 deve ser suplementada em gestantes para mitigar o risco de toxicidade neurológica fetal induzida pela isoniazida."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Tiamina",
+          "comentario": "A tiamina não é o suplemento específico indicado nos protocolos para prevenir os efeitos neurotóxicos dos tuberculostáticos."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Ácido fólico",
+          "comentario": "Embora rotineiro na gestação, o ácido fólico não é a indicação específica para conter a neurotoxicidade da isoniazida."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Riboflavina",
+          "comentario": "A riboflavina não apresenta indicação no protocolo de acompanhamento da tuberculose na gestação."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "280926-1031-4-Q9Rsaa",
+      "enunciado": "Em qual situação laboratorial assintomática deve-se suspender temporariamente o Esquema Básico da tuberculose por hepatotoxicidade?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "TGO/TGP $\\ge$ 5x LSN",
+          "comentario": "Em pacientes assintomáticos, a interrupção é indicada quando as transaminases atingem cinco vezes o limite superior da normalidade."
+        },
+        {
+          "id": "alt_B",
+          "texto": "TGO/TGP $\\ge$ 2x LSN",
+          "comentario": "Elevações discretas de até duas vezes o limite normal podem ocorrer de forma transitória sem necessidade de suspensão."
+        },
+        {
+          "id": "alt_C",
+          "texto": "TGO/TGP $\\ge$ 3x LSN",
+          "comentario": "O valor de três vezes o limite superior só determina a suspensão imediata se acompanhado de sintomas digestivos ou icterícia."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Bilirrubina $\\ge$ 1,5x LSN",
+          "comentario": "O critério objetivo para interrupção assintomática por enzimas hepáticas baseia-se prioritariamente nos níveis de transaminases."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "280926-1031-5-6sCKEg",
+      "enunciado": "Um paciente coinfectado por TB e HIV apresenta contagem de linfócitos T-CD4+ de $35\\text{ céls/mm}^3$. Em quanto tempo após o início do tratamento antiTB deve ser introduzida a TARV?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Até 2 semanas",
+          "comentario": "Em pacientes com imunossupressão grave e contagem de CD4 inferior a $50\\text{ céls/mm}^3$, a TARV deve ser iniciada em até 14 dias."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Na 8ª semana",
+          "comentario": "O início na oitava semana é recomendado para pacientes coinfectados com contagem de CD4 igual ou superior a $50\\text{ céls/mm}^3$."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Após 6 meses",
+          "comentario": "Aguardar o término do tratamento da tuberculose para iniciar a TARV aumenta substancialmente a mortalidade em casos gravemente imunodeprimidos."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Imediatamente e simultaneamente",
+          "comentario": "O início simultâneo no mesmo dia é contraindicado pelo elevado risco de sobreposição de reações adversas e intolerância."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "280926-1031-6-Phveuz",
+      "enunciado": "Qual é a conduta imediata indicada para um recém-nascido coabitante de caso fonte com tuberculose pulmonar bacilífera?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Iniciar quimioprofilaxia primária",
+          "comentario": "O recém-nascido exposto deve iniciar prontamente a profilaxia com isoniazida ou rifampicina antes da vacinação."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Aplicar a vacina BCG",
+          "comentario": "A vacinação com BCG deve ser postergada para não interferir na resposta imune nem ser inativada pelo tratamento profilático."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Fazer a prova tuberculínica",
+          "comentario": "A prova tuberculínica é realizada apenas após três meses de profilaxia para definir se o tratamento prossegue ou é suspenso."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Solicitar radiografia de tórax",
+          "comentario": "O protocolo determina a introdução da prevenção primária assim que descartados os sinais clínicos de tuberculose ativa."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "280926-1031-7-qDqXLP",
+      "enunciado": "Um paciente com tuberculose pulmonar tem monorresistência à isoniazida confirmada antes do início da terapêutica. Qual é o esquema preferencial indicado?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "2 R Lfx Z E / 7 R Lfx E",
+          "comentario": "O esquema preferencial para monorresistência à isoniazida substitui este medicamento pelo levofloxacino nas fases intensiva e de manutenção."
+        },
+        {
+          "id": "alt_B",
+          "texto": "2 RHZE / 4 RH",
+          "comentario": "O Esquema Básico convencional torna-se inadequado como conduta principal após a confirmação de resistência à isoniazida."
+        },
+        {
+          "id": "alt_C",
+          "texto": "2 R Z E Lfx / 4 R E Lfx",
+          "comentario": "A duração total da terapêutica utilizando fluoroquinolona para este padrão de resistência deve ser de nove meses."
+        },
+        {
+          "id": "alt_D",
+          "texto": "8 Cm Lfx Trd E Z",
+          "comentario": "Regimes contendo medicamentos injetáveis de segunda linha são indicados para quadros de multirresistência ou monorresistência à rifampicina."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "280926-1031-8-SBrYiD",
+      "enunciado": "Quais são os dois medicamentos de primeira linha com maior atividade esterilizante no tratamento da tuberculose?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Rifampicina e pirazinamida",
+          "comentario": "A rifampicina e a pirazinamida apresentam o maior poder de eliminação dos bacilos latentes em lesões fechadas e meio intracelular."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Isoniazida e etambutol",
+          "comentario": "A isoniazida destaca-se pelo poder bactericida precoce, enquanto o etambutol atua prevenindo a emergência de resistência."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Estreptomicina e pirazinamida",
+          "comentario": "A estreptomicina possui forte ação bactericida em lesões cavitárias, mas apresenta baixo poder esterilizante."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Isoniazida e rifampicina",
+          "comentario": "Embora a isoniazida tenha elevada capacidade bactericida, seu poder esterilizante é inferior ao da pirazinamida."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "280926-1031-9-FJYHX4",
+      "enunciado": "Um homem de 60 anos com insuficiência renal crônica ($clearance\\text{ de creatinina} < 30\\text{ mL/min}$) iniciará o Esquema Básico (RHZE). Como deve ser a administração na fase intensiva?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "RHZE em dias alternados",
+          "comentario": "Para nefropatas graves, a dose fixa combinada RHZE é administrada três vezes por semana (alternados) na fase intensiva, completada com RH nos demais dias."
+        },
+        {
+          "id": "alt_B",
+          "texto": "RHZE diariamente em dose plena",
+          "comentario": "A administração diária sem ajuste para fármacos de eliminação renal em insuficiência avançada gera acúmulo de toxicidade."
+        },
+        {
+          "id": "alt_C",
+          "texto": "RHZE uma vez por semana",
+          "comentario": "O espaçamento semanal compromete a concentração bactericida necessária durante a fase inicial do tratamento."
+        },
+        {
+          "id": "alt_D",
+          "texto": "RHZE ajustado pós-diálise apenas",
+          "comentario": "O protocolo estabelece um esquema de dias fixos alternados para o comprimido combinado durante a fase intensiva."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "280926-1031-10-xBl98z",
+      "enunciado": "Como é classificada a tuberculose que apresenta resistência comprovada pelo menos à rifampicina e à isoniazida simultaneamente?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Multirresistente",
+          "comentario": "A tuberculose multirresistente (TB MDR) é caracterizada pela resistência concomitante a pelo menos rifampicina e isoniazida."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Monorresistente",
+          "comentario": "A monorresistência é definida pela resistência isolada a apenas um fármaco do esquema antituberculose."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Polirresistente",
+          "comentario": "A polirresistência refere-se à resistência a dois ou mais fármacos, excluindo a associação simultânea de rifampicina e isoniazida."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Extensivamente resistente",
+          "comentario": "A resistência extensiva requer, além da multirresistência, resistência a fluoroquinolonas e injetáveis de segunda linha."
+        }
+      ],
+      "gabarito": "A"
+    }
+  ]
+}

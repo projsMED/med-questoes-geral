@@ -15,6 +15,11 @@
     "children": [
       {
         "type": "file",
+        "name": "Diagnóstico da Tuberculose - NotebookLM",
+        "path": "quizes-da-nuvem/Infectologia/Diagnóstico da Tuberculose - NotebookLM.json"
+      },
+      {
+        "type": "file",
         "name": "HIV NotebookLM",
         "path": "quizes-da-nuvem/Infectologia/HIV NotebookLM.json"
       },
@@ -42,6 +47,11 @@
         "type": "file",
         "name": "Tratamento da Dengue",
         "path": "quizes-da-nuvem/Infectologia/Tratamento da Dengue.json"
+      },
+      {
+        "type": "file",
+        "name": "Tratamento da Tuberculose - NotebookLM",
+        "path": "quizes-da-nuvem/Infectologia/Tratamento da Tuberculose - NotebookLM.json"
       }
     ]
   },

@@ -1,0 +1,167 @@
+# Questão 01
+- tipo: ME
+  enunciado: Qual é o método bacteriológico considerado padrão-ouro para o diagnóstico de certeza da tuberculose?
+  alternativas:
+    - A): Cultura para micobactérias
+      comentario: "A isolamento do bacilo em meio de cultura seguido da identificação da espécie é o único método capaz de fornecer a confirmação bacteriológica definitiva da doença."
+    - B): Baciloscopia direta de escarro
+      comentario: "Apesar de ser o exame inicial mais utilizado para triagem e controle de tratamento, a pesquisa direta de BAAR apresenta menor sensibilidade e não confirma a espécie da micobactéria."
+    - C): Teste rápido molecular
+      comentario: "Embora apresente alta sensibilidade e detecte resistência à rifampicina rapidamente, o teste molecular não substitui a cultura para a confirmação definitiva de certeza."
+    - D): Dosagem de adenosina deaminase
+      comentario: "A dosagem enzimática serve como método auxiliar indireto em fluidos corporais, mas não isola o agente etiológico para fornecer certeza bacteriológica."
+  gabarito: A
+
+# Questão 02
+- tipo: ME
+  enunciado: Um homem de 35 anos apresenta tosse há quatro semanas, febre vespertina e emagrecimento. A baciloscopia direta de escarro revelou resultado positivo. Qual achado microscópico fundamenta essa classificação?
+  alternativas:
+    - A): Presença de BAAR
+      comentario: "A técnica de Ziehl-Neelsen evidencia bacilos álcool-ácido resistentes na amostra, o que caracteriza o resultado positivo da baciloscopia."
+    - B): Ausência de microorganismos
+      comentario: "A ausência de bacilos ao exame microscópico de 100 campos observados define um resultado negativo."
+    - C): Presença de cocos gram-positivos
+      comentario: "A baciloscopia para tuberculose utiliza a coloração específica para micobactérias e não a taxonomia da coloração de Gram."
+    - D): Predomínio de leucócitos polimorfonucleares
+      comentario: "A contagem de leucócitos polimorfonucleares é utilizada na diferenciação citológica de derrames e processos purulentos agudos, e não na baciloscopia de escarro."
+  gabarito: A
+
+# Questão 03
+- tipo: ME
+  enunciado: Qual é o volume ideal de amostra de escarro recomendado para assegurar a qualidade do exame bacteriológico de tuberculose?
+  alternativas:
+    - A): 5 a 10 ml
+      comentario: "Este volume garante material proveniente da árvore brônquica em quantidade suficiente para o processamento das técnicas bacteriológicas."
+    - B): 1 a 2 ml
+      comentario: "Volumes reduzidos costumam conter predominantemente saliva ou secreções nasofaríngeas, comprometendo o rendimento do exame."
+    - C): 15 a 20 ml
+      comentario: "Volumes excessivamente altos não são necessários para o processamento laboratorial e podem dificultar a manipulação e o transporte adequado."
+    - D): 25 a 30 ml
+      comentario: "Embora a capacidade do pote de coleta seja maior, a solicitação de um volume tão elevado é desnecessária para as análises padrão."
+  gabarito: A
+
+# Questão 04
+- tipo: ME
+  enunciado: Após a aplicação intradérmica do PPD, em qual intervalo de tempo deve ser realizada a leitura da Prova Tuberculínica?
+  alternativas:
+    - A): 48 a 72 horas
+      comentario: "Este período corresponde ao pico da resposta de hipersensibilidade tardia, permitindo a mensuração precisa do endurado palpável."
+    - B): 12 a 24 horas
+      comentario: "Nesse intervalo inicial ocorrem reações inflamatórias inespecíficas que ainda não refletem a resposta imune celular específica."
+    - C): 24 a 36 horas
+      comentario: "A leitura precoce antes de 48 horas pode subestimar o diâmetro da induração por não atingir o tempo adequado da reação imunológica."
+    - D): 5 a 7 dias
+      comentario: "Após 96 horas a induração começa a regredir, invalidando a precisão da medida da resposta celular."
+  gabarito: A
+
+# Questão 05
+- tipo: ME
+  enunciado: Um adolescente de 14 anos com suspeita de tuberculose pulmonar realiza o Teste Rápido Molecular (TRM-TB). O resultado indica detecção de M. tuberculosis acompanhada de resistência à rifampicina. De acordo com os algoritmos oficiais para casos novos, qual conduta deve ser adotada?
+  alternativas:
+    - A): Repetir o TRM-TB em nova amostra e encaminhar para referência terciária.
+      comentario: "A repetição do teste confirma a resistência à rifampicina e o encaminhamento à referência terciária garante o manejo especializado imediato."
+    - B): Iniciar imediatamente o tratamento para tuberculose utilizando o Esquema Básico.
+      comentario: "O Esquema Básico é indicado apenas nos casos em que a resistência à rifampicina não é detectada pelo teste molecular."
+    - C): Solicitar apenas uma nova baciloscopia direta de escarro para acompanhamento.
+      comentario: "A baciloscopia direta não avalia perfil de resistência genética, sendo insuficiente diante de uma detecção de resistência no TRM-TB."
+    - D): Descartar infecção por tuberculose e investigar outras doenças pulmonares crônicas.
+      comentario: "A detecção do complexo M. tuberculosis confirma o diagnóstico da doença, necessitando de investigação de resistência e não do descarte do caso."
+  gabarito: A
+
+# Questão 06
+- tipo: ME
+  enunciado: Um paciente de 28 anos apresenta dor torácica pleurítica, febre e astenia. A punção pleural identifica exsudato com predomínio linfocítico. Qual biomarcador no líquido pleural auxilia no diagnóstico de pleurite tuberculosa nessa apresentação?
+  alternativas:
+    - A): Adenosina deaminase elevada
+      comentario: "Níveis elevados desta enzima refletem a ativação da imunidade celular no espaço pleural, sendo aceitos como critério diagnóstico complementar."
+    - B): Pesquisa direta de fungos
+      comentario: "A pesquisa de fungos direciona o diagnóstico para micoses profundas e não constitui o marcador primário para a forma pleural da tuberculose."
+    - C): Dosagem de glicose elevada
+      comentario: "Derrames pleurais inflamatórios e infecciosos costumam apresentar níveis reduzidos de glicose, e não elevados."
+    - D): Baciloscopia com alto rendimento
+      comentario: "A pesquisa direta de BAAR no líquido pleural da TB pleural típica apresenta baixo rendimento, inferior a 5%."
+  gabarito: A
+
+# Questão 07
+- tipo: ME
+  enunciado: Qual é a forma de tuberculose extrapulmonar mais frequente em pessoas vivendo com HIV e em crianças com idade inferior a 40 anos?
+  alternativas:
+    - A): Ganglionar periférica
+      comentario: "O comprometimento dos linfonodos, principalmente nas cadeias cervicais, representa a manifestação extrapulmonar mais comum nesses grupos vulneráveis."
+    - B): Pleural exsudativa
+      comentario: "A forma pleural é a mais frequente entre adultos imunocompetentes não infectados pelo HIV."
+    - C): Osteoarticular periférica
+      comentario: "O acometimento ósseo e articular é menos prevalente e incide principalmente na coluna vertebral ou articulações de carga."
+    - D): Meningoencefálica basal
+      comentario: "A tuberculose do sistema nervoso central é uma forma grave e menos frequente que a ganglionar em termos de prevalência absoluta."
+  gabarito: A
+
+# Questão 08
+- tipo: ME
+  enunciado: Uma criança de 4 anos apresenta tosse persistente, febre e perda de peso há três semanas, além de histórico de contato com adulto tratado para tuberculose. Diante de baciloscopia negativa ou impossibilidade de coleta, qual instrumento é preconizado no Brasil para orientar o diagnóstico pulmonar?
+  alternativas:
+    - A): Sistema de escore pontuado
+      comentario: "O sistema de pontuação valida dados clínicos, radiológicos, epidemiológicos e nutricionais para diagnosticar a TB pulmonar paucibacilar na infância."
+    - B): Biópsia pulmonar aberta
+      comentario: "Procedimentos cirúrgicos invasivos são reservados para casos atípicos complexos e não constituem a ferramenta primária de decisão na infância."
+    - C): Tomografia por emissão pósitrons
+      comentario: "Exames de PET-CT possuem indicações restritas e não fazem parte do protocolo de investigação inicial de tuberculose infantil."
+    - D): Repetição mensal do PPD
+      comentario: "Testes tuberculínicos seriados mensais não são recomendados e atrasariam o início do tratamento oportuno."
+  gabarito: A
+
+# Questão 09
+- tipo: ME
+  enunciado: Durante a investigação histopatológica de peças biópticas, qual achado microscópico é considerado altamente característico de tuberculose ativa?
+  alternativas:
+    - A): Presença de granuloma com necrose de caseificação no tecido analisado.
+      comentario: "A formação granulomatosa acompanhada de necrose caseosa central é o padrão histológico clássico indicativo da infecção por M. tuberculosis."
+    - B): Identificação de infiltrado inflamatório purulento rico em neutrófilos segmentados.
+      comentario: "Infiltrados piogênicos ricos em neutrófilos são característicos de infecções bacterianas agudas comuns, e não do padrão granulomatoso."
+    - C): Visualização de granulomas sem necrose acompanhados de fibrose difusa acentuada.
+      comentario: "Granulomas sem necrose são típicos de condições como a sarcoidose, necessitando de cautela na diferenciação com a tuberculose."
+    - D): Presença exclusiva de hiperplasia folicular sem formação de granulomas estruturados.
+      comentario: "A hiperplasia folicular isolada é uma resposta linfoides inespecífica que não confirma processos granulomatosos específicos."
+  gabarito: A
+
+# Questão 10
+- tipo: ME
+  enunciado: Na avaliação tomográfica do tórax, qual sinal radiológico é considerado fortemente sugestivo de atividade da tuberculose pulmonar por disseminação broncogênica?
+  alternativas:
+    - A): Árvore em brotamento
+      comentario: "O padrão em árvore em brotamento traduz o preenchimento de bronquíolos centrolobulares por secreção e exsudato inflamatório em fase ativa."
+    - B): Bandas fibrosas residuais
+      comentario: "Bandas parenquimatóseis e traves de fibrose representam alterações cicatriciais e sequelares de lesões prévias."
+    - C): Nódulos calcificados isolados
+      comentario: "Nódulos densos e calcificados sem alterações periféricas indicam lesões antigas inativas ou estabilizadas."
+    - D): Bronquiectasias de tração
+      comentario: "Bronquiectasias decorrentes de retração fibrosa parenquimatosa são achados típicos de sequela de processos inflamatórios curados."
+  gabarito: A
+
+# Questão 11
+- tipo: ME
+  enunciado: Em contatos adultos de casos de tuberculose pulmonar, qual medida de induração na Prova Tuberculínica define a presença de infecção latente pelo M. tuberculosis (ILTB)?
+  alternativas:
+    - A): 5 mm ou mais
+      comentario: "Nos indivíduos com histórico de contato recente ou vulnerabilidade, o ponto de corte igual ou superior a 5 mm é suficiente para indicar ILTB."
+    - B): 10 mm ou mais
+      comentario: "Embora 10 mm confirme a infecção, o limite mínimo exigido para considerar o teste reativo em contatos de risco é mais baixo."
+    - C): 15 mm ou mais
+      comentario: "Exigir uma induração deste porte causaria subdiagnóstico de infecção latente em pessoas expostas a fontes bacilíferas."
+    - D): 20 mm ou mais
+      comentario: "Valores tão elevados não são necessários como ponto de corte inicial para rastreamento de contatos nas diretrizes de ILTB."
+  gabarito: A
+
+# Questão 12
+- tipo: ME
+  enunciado: Qual condição de conservação deve ser mantida durante o transporte das amostras de escarro da unidade de saúde para o laboratório de análise?
+  alternativas:
+    - A): Refrigeração contínua
+      comentario: "O transporte refrigerado em caixas térmicas preserva a viabilidade dos bacilos e evita o supercrescimento de microbiota contaminante."
+    - B): Congelamento a vinte graus
+      comentario: "O congelamento direto sem crioprotetores adequados pode lisar a parede celular das micobactérias e inviabilizar a cultura."
+    - C): Aquecimento em estufa
+      comentario: "Temperaturas elevadas aceleram a degradação da amostra e favorecem a proliferação excessiva de bactérias e fungos saprófitas."
+    - D): Exposição à luz solar
+      comentario: "A radiação ultravioleta contida na luz solar direta é bactericida para os bacilos e degrada o espécime clínico."
+  gabarito: A

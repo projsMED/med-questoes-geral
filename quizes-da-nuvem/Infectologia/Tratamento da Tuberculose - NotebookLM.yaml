@@ -1,0 +1,139 @@
+# Questão 01
+- tipo: ME
+  enunciado: Um homem de 34 anos recebe o diagnóstico de tuberculose pulmonar sem comorbidades associadas. Ele nunca realizou tratamento prévio para a doença. Qual é o esquema farmacológico indicado para a fase intensiva do tratamento?
+  alternativas:
+    - A): 2 RHZE
+      comentario: "A fase intensiva do Esquema Básico para adultos combina quatro fármacos durante os dois primeiros meses de tratamento."
+    - B): 2 RHZ
+      comentario: "Essa combinação de três fármacos é reservada para a fase intensiva em crianças com menos de 10 anos de idade."
+    - C): 2 RH
+      comentario: "A associação dupla de rifampicina e isoniazida constitui a fase de manutenção do tratamento, não a intensiva."
+    - D): 2 RHE
+      comentario: "A pirazinamida é um componente essencial na fase de ataque por sua ação bactericida e esterilizante intracelular."
+  gabarito: A
+
+# Questão 02
+- tipo: ME
+  enunciado: Qual é a duração total do tratamento padrão recomendado para a tuberculose meningoencefálica em pacientes adultos?
+  alternativas:
+    - A): 12 meses
+      comentario: "O tratamento da tuberculose meningoencefálica compreende 2 meses de fase intensiva e 10 meses de fase de manutenção."
+    - B): 6 meses
+      comentario: "A duração de seis meses é o padrão estipulado para a tuberculose pulmonar e para a maioria das formas extrapulmonares."
+    - C): 9 meses
+      comentario: "Nove meses é uma duração utilizada em situações específicas de monorresistência à isoniazida."
+    - D): 18 meses
+      comentario: "Durações de 18 meses ou mais são reservadas a esquemas de tuberculose multidrogarresistente ou extensivamente resistente."
+  gabarito: A
+
+# Questão 03
+- tipo: ME
+  enunciado: Uma gestante no segundo trimestre é diagnosticada com tuberculose pulmonar sensível e iniciará o Esquema Básico. Qual suplementação deve ser associada para prevenir complicações fetais?
+  alternativas:
+    - A): Piridoxina
+      comentario: "A vitamina B6 deve ser suplementada em gestantes para mitigar o risco de toxicidade neurológica fetal induzida pela isoniazida."
+    - B): Tiamina
+      comentario: "A tiamina não é o suplemento específico indicado nos protocolos para prevenir os efeitos neurotóxicos dos tuberculostáticos."
+    - C): Ácido fólico
+      comentario: "Embora rotineiro na gestação, o ácido fólico não é a indicação específica para conter a neurotoxicidade da isoniazida."
+    - D): Riboflavina
+      comentario: "A riboflavina não apresenta indicação no protocolo de acompanhamento da tuberculose na gestação."
+  gabarito: A
+
+# Questão 04
+- tipo: ME
+  enunciado: Em qual situação laboratorial assintomática deve-se suspender temporariamente o Esquema Básico da tuberculose por hepatotoxicidade?
+  alternativas:
+    - A): TGO/TGP $\ge$ 5x LSN
+      comentario: "Em pacientes assintomáticos, a interrupção é indicada quando as transaminases atingem cinco vezes o limite superior da normalidade."
+    - B): TGO/TGP $\ge$ 2x LSN
+      comentario: "Elevações discretas de até duas vezes o limite normal podem ocorrer de forma transitória sem necessidade de suspensão."
+    - C): TGO/TGP $\ge$ 3x LSN
+      comentario: "O valor de três vezes o limite superior só determina a suspensão imediata se acompanhado de sintomas digestivos ou icterícia."
+    - D): Bilirrubina $\ge$ 1,5x LSN
+      comentario: "O critério objetivo para interrupção assintomática por enzimas hepáticas baseia-se prioritariamente nos níveis de transaminases."
+  gabarito: A
+
+# Questão 05
+- tipo: ME
+  enunciado: Um paciente coinfectado por TB e HIV apresenta contagem de linfócitos T-CD4+ de $35\text{ céls/mm}^3$. Em quanto tempo após o início do tratamento antiTB deve ser introduzida a TARV?
+  alternativas:
+    - A): Até 2 semanas
+      comentario: "Em pacientes com imunossupressão grave e contagem de CD4 inferior a $50\\text{ céls/mm}^3$, a TARV deve ser iniciada em até 14 dias."
+    - B): Na 8ª semana
+      comentario: "O início na oitava semana é recomendado para pacientes coinfectados com contagem de CD4 igual ou superior a $50\\text{ céls/mm}^3$."
+    - C): Após 6 meses
+      comentario: "Aguardar o término do tratamento da tuberculose para iniciar a TARV aumenta substancialmente a mortalidade em casos gravemente imunodeprimidos."
+    - D): Imediatamente e simultaneamente
+      comentario: "O início simultâneo no mesmo dia é contraindicado pelo elevado risco de sobreposição de reações adversas e intolerância."
+  gabarito: A
+
+# Questão 06
+- tipo: ME
+  enunciado: Qual é a conduta imediata indicada para um recém-nascido coabitante de caso fonte com tuberculose pulmonar bacilífera?
+  alternativas:
+    - A): Iniciar quimioprofilaxia primária
+      comentario: "O recém-nascido exposto deve iniciar prontamente a profilaxia com isoniazida ou rifampicina antes da vacinação."
+    - B): Aplicar a vacina BCG
+      comentario: "A vacinação com BCG deve ser postergada para não interferir na resposta imune nem ser inativada pelo tratamento profilático."
+    - C): Fazer a prova tuberculínica
+      comentario: "A prova tuberculínica é realizada apenas após três meses de profilaxia para definir se o tratamento prossegue ou é suspenso."
+    - D): Solicitar radiografia de tórax
+      comentario: "O protocolo determina a introdução da prevenção primária assim que descartados os sinais clínicos de tuberculose ativa."
+  gabarito: A
+
+# Questão 07
+- tipo: ME
+  enunciado: Um paciente com tuberculose pulmonar tem monorresistência à isoniazida confirmada antes do início da terapêutica. Qual é o esquema preferencial indicado?
+  alternativas:
+    - A): 2 R Lfx Z E / 7 R Lfx E
+      comentario: "O esquema preferencial para monorresistência à isoniazida substitui este medicamento pelo levofloxacino nas fases intensiva e de manutenção."
+    - B): 2 RHZE / 4 RH
+      comentario: "O Esquema Básico convencional torna-se inadequado como conduta principal após a confirmação de resistência à isoniazida."
+    - C): 2 R Z E Lfx / 4 R E Lfx
+      comentario: "A duração total da terapêutica utilizando fluoroquinolona para este padrão de resistência deve ser de nove meses."
+    - D): 8 Cm Lfx Trd E Z
+      comentario: "Regimes contendo medicamentos injetáveis de segunda linha são indicados para quadros de multirresistência ou monorresistência à rifampicina."
+  gabarito: A
+
+# Questão 08
+- tipo: ME
+  enunciado: Quais são os dois medicamentos de primeira linha com maior atividade esterilizante no tratamento da tuberculose?
+  alternativas:
+    - A): Rifampicina e pirazinamida
+      comentario: "A rifampicina e a pirazinamida apresentam o maior poder de eliminação dos bacilos latentes em lesões fechadas e meio intracelular."
+    - B): Isoniazida e etambutol
+      comentario: "A isoniazida destaca-se pelo poder bactericida precoce, enquanto o etambutol atua prevenindo a emergência de resistência."
+    - C): Estreptomicina e pirazinamida
+      comentario: "A estreptomicina possui forte ação bactericida em lesões cavitárias, mas apresenta baixo poder esterilizante."
+    - D): Isoniazida e rifampicina
+      comentario: "Embora a isoniazida tenha elevada capacidade bactericida, seu poder esterilizante é inferior ao da pirazinamida."
+  gabarito: A
+
+# Questão 09
+- tipo: ME
+  enunciado: Um homem de 60 anos com insuficiência renal crônica ($clearance\text{ de creatinina} < 30\text{ mL/min}$) iniciará o Esquema Básico (RHZE). Como deve ser a administração na fase intensiva?
+  alternativas:
+    - A): RHZE em dias alternados
+      comentario: "Para nefropatas graves, a dose fixa combinada RHZE é administrada três vezes por semana (alternados) na fase intensiva, completada com RH nos demais dias."
+    - B): RHZE diariamente em dose plena
+      comentario: "A administração diária sem ajuste para fármacos de eliminação renal em insuficiência avançada gera acúmulo de toxicidade."
+    - C): RHZE uma vez por semana
+      comentario: "O espaçamento semanal compromete a concentração bactericida necessária durante a fase inicial do tratamento."
+    - D): RHZE ajustado pós-diálise apenas
+      comentario: "O protocolo estabelece um esquema de dias fixos alternados para o comprimido combinado durante a fase intensiva."
+  gabarito: A
+
+# Questão 10
+- tipo: ME
+  enunciado: Como é classificada a tuberculose que apresenta resistência comprovada pelo menos à rifampicina e à isoniazida simultaneamente?
+  alternativas:
+    - A): Multirresistente
+      comentario: "A tuberculose multirresistente (TB MDR) é caracterizada pela resistência concomitante a pelo menos rifampicina e isoniazida."
+    - B): Monorresistente
+      comentario: "A monorresistência é definida pela resistência isolada a apenas um fármaco do esquema antituberculose."
+    - C): Polirresistente
+      comentario: "A polirresistência refere-se à resistência a dois ou mais fármacos, excluindo a associação simultânea de rifampicina e isoniazida."
+    - D): Extensivamente resistente
+      comentario: "A resistência extensiva requer, além da multirresistência, resistência a fluoroquinolonas e injetáveis de segunda linha."
+  gabarito: A
