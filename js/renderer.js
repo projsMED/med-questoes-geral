@@ -6,8 +6,9 @@ import {
   parseMeChGabarito,
   computeMeChScore,
   parseMqGabarito,
-  computeMqScore
-} from './utils.js?v=20260924-5';
+  computeMqScore,
+  computeMvfScore
+} from './utils.js?v=20260928-1';
 
 const HIGHLIGHT_COLORS = [
   { key: 'yellow', label: 'Amarelo' },
@@ -965,7 +966,7 @@ export class QuizRenderer {
       wrapper.appendChild(this._createToggleCommentsButton(wrapper, originalIdx, 'main'));
     }
 
-    if (isSubmitted && isMECH && !isForced) {
+    if (isSubmitted && (isMECH || isCH) && !isForced) {
       const { hits, total } = this.computeQuestionScore(state, originalIdx);
       const score = total > 0 ? hits / total : 0;
       const fmt = (n, maxDec = 2) =>
@@ -3777,7 +3778,7 @@ export class QuizRenderer {
    * Retorna { hits, total } para a questão idx.
    * - ME / VF: total = 1, hits = 1 ou 0
    * - MEM (ME-CH): total = 1, hits = pontuação proporcional entre 0 e 1
-   * - MVF (CH): total = número de assertivas, hits = quantas julgadas corretamente
+   * - MVF (CH): total = número de assertivas, hits = acertos menos erros (mínimo 0), ou apenas acertos no modo simples
    * - ESCRITA simples: total = 10, hits = selfEval (0–10)
    * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
    */
@@ -3810,19 +3811,10 @@ export class QuizRenderer {
 
     if (tipo === 'CH' || tipo === 'MVF') {
       const assertivas = Array.isArray(qData.assertivas) ? qData.assertivas : [];
-      const total = assertivas.length;
-      if (total === 0) return { hits: 0, total: 0 };
-
-      const answers = ans.assertivaAnswers || {};
-
-      let hits = 0;
-      assertivas.forEach((ass, i) => {
-        const isCorrect = !!ass.is_correct;
-        const userSaidTrue = answers[i];
-        if (userSaidTrue !== undefined && userSaidTrue === isCorrect) hits++;
-      });
-
-      return this.applyDisregardedCorrectToScore(state, idx, { hits, total }, options);
+      const score = computeMvfScore(
+        assertivas, ans.assertivaAnswers || {}, state.config.simpleMvfCorrection === true
+      );
+      return this.applyDisregardedCorrectToScore(state, idx, score, options);
     }
 
     if (tipo === 'ME-CH' || tipo === 'MEM') {

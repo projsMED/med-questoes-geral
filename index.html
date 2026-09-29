@@ -12,7 +12,7 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20260924-5">
+  <link rel="stylesheet" href="css/styles.css?v=20260928-1">
 </head>
 <body>
 
@@ -214,6 +214,12 @@
           <label class="toggle-label">
             <input type="checkbox" id="chkShowDisregardCorrect" checked>
             Mostrar opção "Desconsiderar acerto"
+          </label>
+        </div>
+        <div class="vs-option">
+          <label class="toggle-label">
+            <input type="checkbox" id="chkSimpleMvfCorrection">
+            Correção simples para MVF
           </label>
         </div>
       </div>
@@ -439,7 +445,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20260924-5';
+  const APP_ASSET_VERSION = '20260928-1';
   const moduleAssets = [
     'main.js',
     'store.js',

@@ -42,6 +42,18 @@ export function isMvfType(tipo) {
   return t === 'MVF' || t === 'CH';
 }
 
+/** Cada assertiva incorreta ou não respondida anula um acerto no modo padrão. */
+export function computeMvfScore(assertivas, answers = {}, simpleCorrection = false) {
+  const total = Array.isArray(assertivas) ? assertivas.length : 0;
+  if (total === 0) return { hits: 0, total: 0 };
+
+  const correct = assertivas.reduce((count, ass, idx) => {
+    const choice = answers[idx];
+    return count + (typeof choice === 'boolean' && choice === !!ass.is_correct ? 1 : 0);
+  }, 0);
+  return { hits: simpleCorrection ? correct : Math.max(0, correct - (total - correct)), total };
+}
+
 /**
  * Embaralha um array usando o algoritmo Fisher-Yates
  */

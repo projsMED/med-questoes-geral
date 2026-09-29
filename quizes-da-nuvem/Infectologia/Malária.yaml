@@ -53,6 +53,10 @@
     - D): Cloroquina com Primaquina semanal
       comentario: "Esse esquema com Primaquina semanal é inapropriado para P. falciparum e contraindicado durante a gravidez."
   gabarito: A
+  comentario_geral: |-
+    Essa combinação funciona como um ataque coordenado em duas frentes:
+    o <b>artesunato</b> atua como uma ofensiva ultrarrápida que reage com o ferro da hemoglobina digerida pelo parasita, rompendo sua ponte endoperóxido e liberando radicais livres que danificam membranas e proteínas vitais do Plasmodium, dizimando a vasta maioria dos esquizontes sanguíneos em poucas horas;
+    Em seguida, a <b>mefloquina</b> assume o papel de retaguarda duradoura, graças à sua longa meia-vida plasmática, acumulando-se no vacúolo digestivo para impedir a detoxificação do heme e desestruturar os ribossomos do parasita, o que garante a eliminação completa dos esquizontes residuais e impede que a infecção recrudesça.
 
 # Questão 05
 - tipo: ME
@@ -114,6 +118,7 @@
     - E): A quimioprofilaxia medicamentosa contínua deveria ter sido prescrita de forma obrigatória antes de sua viagem ao garimpo.
       comentario: "A quimioprofilaxia de rotina não é indicada no Brasil; as medidas preventivas baseiam-se na proteção contra picadas e no diagnóstico e tratamento oportunos."
   gabarito: A, B, C
+  comentario_geral: A <b>artemisinina</b> é um antimalárico potente de ação ultrarrápida derivado da planta <i>Artemisia annua</i>, cuja estrutura com ponte endoperóxido reage com o ferro da hemoglobina para liberar radicais livres que destroem rapidamente os esquizontes de <i>Plasmodium</i> no sangue. Ela nunca deve ser utilizada isolada porque possui uma meia-vida plasmática extremamente curta (cerca de 1 a 2 horas), tempo insuficiente para sustentar a depuração parasitária completa; a monoterapia resulta em frequentes recrudescências da infecção e acelera a seleção de linhagens resistentes, motivo pelo qual a OMS e os protocolos clínicos exigem o seu uso estrito em Terapias Combinadas (ACT), associando-a a um fármaco parceiro de ação longa para erradicar de forma definitiva os parasitas residuais.
 
 # Questão 09
 - tipo: MEM

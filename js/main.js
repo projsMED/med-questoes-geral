@@ -12,9 +12,10 @@ import {
   questionTypeMap,
   questionTypes,
   computeMeChScore,
-  computeMqScore
-} from './utils.js?v=20260924-5';
-import { QuizRenderer } from './renderer.js?v=20260924-5';
+  computeMqScore,
+  computeMvfScore
+} from './utils.js?v=20260928-1';
+import { QuizRenderer } from './renderer.js?v=20260928-1';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -75,7 +76,8 @@ const App = {
       showDiff: false,
       showFilterSummary: true,
       showDisregardCorrect: true,
-      applyDisregardedCorrect: true
+      applyDisregardedCorrect: true,
+      simpleMvfCorrection: false
     },
     filters: {
       tags: [],
@@ -211,6 +213,7 @@ const App = {
     btnGeneralSettings: document.getElementById('btnGeneralSettings'),
     generalSettingsPanel: document.getElementById('generalSettingsPanel'),
     chkShowDisregardCorrect: document.getElementById('chkShowDisregardCorrect'),
+    chkSimpleMvfCorrection: document.getElementById('chkSimpleMvfCorrection'),
 
     // Próxima não respondida
     btnNextUnanswered: document.getElementById('btnNextUnanswered'),
@@ -599,6 +602,15 @@ const App = {
       });
     }
 
+    this.elements.chkSimpleMvfCorrection.addEventListener('change', (e) => {
+      const enabled = e.target.checked;
+      localStorage.setItem('gs_simpleMvfCorrection', String(enabled));
+      this.state.config.simpleMvfCorrection = enabled;
+      this.renderer.render(this.state);
+      this.applyCommentCollapseMode();
+      this.save();
+    });
+
     // Gerenciar questão (deletar/desativar/ativar)
     if (this.elements.deleteQuestionModal) {
       this.elements.closeDeleteQuestion.addEventListener('click', () =>
@@ -721,6 +733,8 @@ const App = {
     if (this.state.config.applyDisregardedCorrect === undefined) {
       this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
     }
+    this.state.config.simpleMvfCorrection =
+      localStorage.getItem('gs_simpleMvfCorrection') === 'true';
 
     if (this.state.mappings && Array.isArray(this.state.mappings.qOrder) && this.state.mappings.qOrder.length > 0) {
       this.recalculateSessionQuestionCount();
@@ -758,6 +772,8 @@ const App = {
     this.state.config.showDisregardCorrect =
       localStorage.getItem('gs_showDisregardCorrect') !== 'false';
     this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
+    this.state.config.simpleMvfCorrection =
+      localStorage.getItem('gs_simpleMvfCorrection') === 'true';
 
     this.state.filters = {
       tags: [],
@@ -850,7 +866,7 @@ const App = {
    * Retorna { hits, total } para a questão originalQIdx.
    * - ME / VF: total = 1, hits = 1 ou 0
    * - MEM (ME-CH): total = 1, hits = pontuação proporcional entre 0 e 1
-   * - MVF (CH): total = número de assertivas, hits = quantas julgadas corretamente
+   * - MVF (CH): total = número de assertivas, hits = acertos menos erros (mínimo 0), ou apenas acertos no modo simples
    * - ESCRITA simples: total = 10, hits = selfEval (0–10)
    * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
    */
@@ -883,19 +899,10 @@ const App = {
 
     if (tipo === 'CH' || tipo === 'MVF') {
       const assertivas = Array.isArray(qData.assertivas) ? qData.assertivas : [];
-      const total = assertivas.length;
-      if (total === 0) return { hits: 0, total: 0 };
-
-      const answers = ans.assertivaAnswers || {};
-
-      let hits = 0;
-      assertivas.forEach((ass, idx) => {
-        const isCorrect = !!ass.is_correct;
-        const userSaidTrue = answers[idx];
-        if (userSaidTrue !== undefined && userSaidTrue === isCorrect) hits++;
-      });
-
-      return this.applyDisregardedCorrectToScore(originalQIdx, { hits, total }, options);
+      const score = computeMvfScore(
+        assertivas, ans.assertivaAnswers || {}, this.state.config.simpleMvfCorrection === true
+      );
+      return this.applyDisregardedCorrectToScore(originalQIdx, score, options);
     }
 
     if (tipo === 'ME-CH' || tipo === 'MEM') {
@@ -2259,6 +2266,8 @@ const App = {
       this.elements.chkShowDisregardCorrect.checked =
         this.state.config.showDisregardCorrect !== false;
     }
+    this.elements.chkSimpleMvfCorrection.checked =
+      this.state.config.simpleMvfCorrection === true;
   },
 
   getAnsweredCount() {
@@ -3511,6 +3520,8 @@ const App = {
       this.elements.chkShowDisregardCorrect.checked =
         localStorage.getItem('gs_showDisregardCorrect') !== 'false';
     }
+    this.elements.chkSimpleMvfCorrection.checked =
+      localStorage.getItem('gs_simpleMvfCorrection') === 'true';
 
     // Dark mode: null = auto (segue o sistema), 'true'/'false' = manual
     const isDark = vs.darkMode === 'true' ||
