@@ -1,0 +1,387 @@
+{
+  "titulo": "Meningites - Slides Professor",
+  "id_quiz": "290926-1328-zRtC5g",
+  "conteudo": [
+    {
+      "tipo": "ME",
+      "id": "290926-1328-1-PYTXe7",
+      "enunciado": "Um homem de 68 anos, portador de diabetes mellitus, é levado ao pronto-socorro com febre, rebaixamento do nível de consciência e rigidez nucal. A família relata que o paciente ingeriu queijos frescos não pasteurizados recentemente.\n\nQual o agente etiológico mais provável e a antibioticoterapia empírica adicional indicada para o caso?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "<i>Listeria monocytogenes</i> com ampicilina.",
+          "comentario": "A idade avançada, a presença de diabetes e a ingestão de laticínios não pasteurizados são fatores de risco clássicos para a infecção por Listeria monocytogenes, que exige a adição de ampicilina ao esquema empírico."
+        },
+        {
+          "id": "alt_B",
+          "texto": "<i>Streptococcus pneumoniae</i> com vancomicina.",
+          "comentario": "Embora o pneumococo seja frequente em idosos, a associação direta com a ingestão de alimentos refrigerados não pasteurizados aponta especificamente para a listeriose."
+        },
+        {
+          "id": "alt_C",
+          "texto": "<i>Neisseria meningitidis</i> com ciprofloxacino.",
+          "comentario": "O meningococo é mais prevalente em adolescentes e adultos jovens em aglomerados, e o ciprofloxacino é utilizado na quimioprofilaxia de contatos, não no tratamento agudo."
+        },
+        {
+          "id": "alt_D",
+          "texto": "<i>Haemophilus influenzae</i> com rifampicina.",
+          "comentario": "O <i>Haemophilus influenzae</i> afeta principalmente crianças não vacinadas ou imunossuprimidos, e a rifampicina é empregada na profilaxia de contatos próximos."
+        },
+        {
+          "id": "alt_E",
+          "texto": "<i>Cryptococcus neoformans</i> com fluconazol.",
+          "comentario": "Infeções fúngicas criptocócicas são mais comuns em imunodeficiências graves como HIV com contagem de CD4 baixa, apresentando curso clínico tipicamente mais subagudo."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-2-04AYjk",
+      "enunciado": "Qual achado microbiológico na bacterioscopia (Gram) do líquido cefalorraquidiano é característico do <i>Streptococcus pneumoniae</i>?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Diplococo Gram-positivo.",
+          "comentario": "O <i>Streptococcus pneumoniae</i> apresenta-se microscopicamente na forma de pares de cocos que retêm o corante cristal violeta, caracterizando diplococos Gram-positivos."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Diplococo Gram-negativo.",
+          "comentario": "Essa morfologia microscópica é típica da <i>Neisseria meningitidis</i>, e não do pneumococo."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Cocobacilo Gram-negativo.",
+          "comentario": "Os cocobacilos Gram-negativos são a apresentação microscópica característica do <i>Haemophilus influenzae</i>."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Bacilo Gram-positivo.",
+          "comentario": "A forma bacilar Gram-positiva à bacterioscopia identifica a <i>Listeria monocytogenes</i>."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-3-vn2ID9",
+      "enunciado": "Um estudante universitário de 19 anos, morador de alojamento estudantil, dá entrada na emergência com febre alta de início abrupto, cefaleia intensa, rigidez de nuca e lesões petequiais em membros inferiores.\n\nQual o principal agente etiológico associado a esse quadro e contexto epidemiológico?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "<i>Neisseria meningitidis</i>.",
+          "comentario": "Adolescentes e adultos jovens vivendo em aglomerados urbanos ou dormitórios têm risco elevado para meningite meningocócica, frequentemente acompanhada de exantema purpúrico/petequial."
+        },
+        {
+          "id": "alt_B",
+          "texto": "<i>Streptococcus pneumoniae</i>.",
+          "comentario": "Apesar de causar meningite grave, o pneumococo está tipicamente associado a otite/sinusite prévias, fraturas de base de crânio ou asplenia, e não ao surto em aglomerados jovens."
+        },
+        {
+          "id": "alt_C",
+          "texto": "<i>Haemophilus influenzae</i>.",
+          "comentario": "A infecção por <i>H. influenzae</i> tipo b predomina em crianças menores de 5 anos não vacinadas."
+        },
+        {
+          "id": "alt_D",
+          "texto": "<i>Listeria monocytogenes</i>.",
+          "comentario": "A listeriose incide preferencialmente em recém-nascidos, gestantes, idosos e imunossuprimidos."
+        },
+        {
+          "id": "alt_E",
+          "texto": "<i>Mycobacterium tuberculosis</i>.",
+          "comentario": "A meningite tuberculosa apresenta evolução subaguda a crônica, diferindo do início hiperagudo e fulminante com petéquias observado na doença meningocócica."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-4-eVMKwH",
+      "enunciado": "Qual é o padrão clássico das alterações no líquido cefalorraquidiano (LCR) observado na meningite bacteriana aguda convencional?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Pleocitose neutrofílica e hipoglicorraquia.",
+          "comentario": "O processo infeccioso bacteriano purulento atrai predominantemente neutrófilos e consome glicose do LCR, resultando em contagem celular elevada à custa de polimorfonucleares e níveis baixos de glicose em relação à glicemia."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Pleocitose linfocítica e glicose normal.",
+          "comentario": "Esse padrão celular e bioquímico é característico de meningites de etiologia viral."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Aspecto límpido e normoglicorraquia.",
+          "comentario": "O LCR da meningite bacteriana aguda apresenta-se turvo ou purulento com consumo marcante de glicose."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Proteínas normais e hiperglicorraquia.",
+          "comentario": "A inflamação meníngea bacteriana leva ao aumento acentuado de proteínas por quebra da barreira hematoencefálica, associado à diminuição da glicose."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Predomínio linfocítico com xantocromia.",
+          "comentario": "Predomínio linfocítico é típico de etiologias virais, fúngicas ou tuberculosas, e a xantocromia decorre da degradação de hemácias após hemorragia subaracnóidea."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-5-k7cfr7",
+      "enunciado": "Em uma criança de 2 anos não vacinada diagnosticada com meningite por <i>Haemophilus influenzae</i> tipo b, qual a conduta profilática indicada para os contatos domiciliares próximos?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Rifampicina por 4 dias.",
+          "comentario": "A erradicação da nasofaringe para o <i>Haemophilus influenzae</i> tipo b requer a administração de rifampicina diária durante o período de 4 dias."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Rifampicina por 2 dias.",
+          "comentario": "O esquema profilático de rifampicina em 2 dias (a cada 12 horas) é o protocolo indicado para a prevenção da doença meningocócica, não do <i>Haemophilus</i>."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Ciprofloxacino em dose única.",
+          "comentario": "O ciprofloxacino em dose única é uma opção profilática utilizada exclusivamente para <i>Neisseria meningitidis</i> em maiores de 18 anos."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Ceftriaxona em dose única.",
+          "comentario": "A ceftriaxona em dose única intramuscular é alternativa profilática para a doença meningocócica, e não o tratamento padrão da profilaxia para Hib."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-6-Odv7DP",
+      "enunciado": "Um adulto de 42 anos com histórico de fratura de base de crânio e fístula liquórica recorrente evolui com quadro agudo de febre, cefaleia holocraniana e rigidez nucal intensa.\n\nQual o patógeno bacteriano mais frequentemente relacionado a esse fator de risco estrutural?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "<i>Streptococcus pneumoniae</i>.",
+          "comentario": "A fístula de LCR e as fraturas da base do crânio estabelecem uma comunicação direta entre a nasofaringe e o espaço subaracnóideo, sendo o <i>Streptococcus pneumoniae</i> o agente mais comumente isolado nessas condições."
+        },
+        {
+          "id": "alt_B",
+          "texto": "<i>Neisseria meningitidis</i>.",
+          "comentario": "A <i>Neisseria meningitidis</i> relaciona-se principalmente a aglomerados humanos, deficiências de complemento e asplenia, sem forte associação com traumas cranianos anatômicos."
+        },
+        {
+          "id": "alt_C",
+          "texto": "<i>Listeria monocytogenes</i>.",
+          "comentario": "A <i>Listeria</i> associa-se a extremos de idade, imunossupressão e transmissão alimentar por laticínios não pasteurizados."
+        },
+        {
+          "id": "alt_D",
+          "texto": "<i>Pseudomonas aeruginosa</i>.",
+          "comentario": "A <i>Pseudomonas</i> está associada a procedimentos neurocirúrgicos prévios ou traumatismos cranioencefálicos abertos graves, e não tipicamente a fístulas liquóricas comunitárias."
+        },
+        {
+          "id": "alt_E",
+          "texto": "<i>Enterococcus faecalis</i>.",
+          "comentario": "Este agente não figura entre as causas primárias de meningite bacteriana comunitária associada a fístula liquórica."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-7-qyG0Fm",
+      "enunciado": "Um paciente de 25 anos é admitido com forte suspeita clínica de meningite bacteriana aguda. A equipe médica planeja administrar dexametasona para reduzir a resposta inflamatória no SNC.\n\nQual o momento adequado para a administração da primeira dose deste corticoide?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Dexametasona antes do antibiótico.",
+          "comentario": "A dexametasona deve ser administrada antes ou simultaneamente à primeira dose de antimicrobiano para inibir a cascata inflamatória maciça desencadeada pela lise bacteriana."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Dexametasona após 24 horas.",
+          "comentario": "Iniciar a corticoterapia tardiamente perde o benefício de atenuação da resposta inflamatória inicial deflagrada pela morte das bactérias nas primeiras horas de antibiótico."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Hidrocortisona após a punção.",
+          "comentario": "O corticoide com evidência estabelecida no manejo adjuvante é a dexametasona, e seu início deve ser articulado à infusão do antibiótico."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Prednisona junto com alta.",
+          "comentario": "O uso de corticoide visa atenuar a fase inflamatória aguda grave do SNC e deve ser realizado na admissão hospitalar por via intravenosa durante 4 dias."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Metilprednisolona após a cultura.",
+          "comentario": "Aguardar o resultado das culturas atrasa a medicação adjuvante, cujo benefício máximo ocorre na fase prévia ou imediata à primeira dose empírica de antimicrobiano."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-8-PEQXNh",
+      "enunciado": "Durante a avaliação neurológica de um paciente com febre e cefaleia, o médico flete a coxa sobre a bacia em 90 graus e tenta realizar a extensão passiva da perna, provocando dor e resistência voluntária.\n\nComo é denominado esse sinal de irritação meníngea?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Sinal de Kernig.",
+          "comentario": "O sinal de Kernig é caracterizado pela dor e limitação à extensão passiva do joelho quando a coxa está fletida em ângulo reto em relação ao quadril."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Sinal de Brudzinski.",
+          "comentario": "O sinal de Brudzinski ocorre quando a flexão passiva do pescoço induz uma flexão involuntária dos quadris e joelhos."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Sinal de Lasègue.",
+          "comentario": "O sinal de Lasègue consiste na elevação do membro inferior totalmente estendido com estiramento do nervo ciático, sendo pesquisado na suspeita de radiculopatias/hérnias discais."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Sinal de Bragard.",
+          "comentario": "O sinal de Bragard é a exacerbação da dor no membro inferior estendido mediante a realização de dorsiflexão passiva do pé."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-9-ErpkSh",
+      "enunciado": "Ao estruturar o tratamento antimicrobiano empírico inicial para meningite bacteriana aguda em um adulto, qual condição individual exige a adição de ampicilina ao esquema com ceftriaxona?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Idade acima de 60 anos.",
+          "comentario": "Pacientes idosos (> 60 anos) apresentam declínio da imunidade celular e maior suscetibilidade à <i>Listeria monocytogenes</i>, microrganismo intrinsecamente resistente às cefalosporinas de 3ª geração."
+        },
+        {
+          "id": "alt_B",
+          "texto": "História de tabagismo ativo.",
+          "comentario": "O tabagismo é fator de risco para pneumococo e meningococo, cobertos adequadamente pela ceftriaxona sem necessidade de ampicilina."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Presença de fístula liquórica.",
+          "comentario": "A fístula liquórica predispõe principalmente à infecção por <i>S. pneumoniae</i>, tratada com ceftriaxona (associada ou não à vancomicina)."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Coabitação em quartéis militares.",
+          "comentario": "O convívio em quartéis aumenta o risco de <i>Neisseria meningitidis</i>, a qual responde à ceftriaxona ou penicilina G."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Otite média crônica ipsilateral.",
+          "comentario": "Infecções do trato respiratório superior e ouvido associam-se ao <i>S. pneumoniae</i> e <i>H. influenzae</i>, ambos contemplados no esquema com ceftriaxona."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-10-G6V62Q",
+      "enunciado": "Um médico residente realiza procedimento de intubação orotraqueal de emergência em um paciente com diagnóstico posterior de doença meningocócica fulminante, sem ter utilizado máscara de proteção adequada.\n\nQual a indicação de profilaxia medicamentosa para esse profissional de saúde?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Ciprofloxacino oral dose única.",
+          "comentario": "Profissionais de saúde expostos a secreções respiratórias através de procedimentos invasivos da via aérea sem EPI adequado devem receber quimioprofilaxia imediata, sendo o ciprofloxacino 500 mg VO em dose única uma das opções de escolha."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Amoxicilina oral por 7 dias.",
+          "comentario": "A amoxicilina por 7 dias não é um esquema recomendado para erradicação da <i>Neisseria meningitidis</i> na nasofaringe."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Apenas observação de sintomas.",
+          "comentario": "Diante de exposição de alto risco por manobra invasiva da via aérea sem EPI, a quimioprofilaxia é formalmente indicada e não deve ser substituída por observação isolada."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Vancomicina endovenosa dose única.",
+          "comentario": "A vancomicina é um glicopeptídeo voltado para bactérias Gram-positivas e não apresenta ação na profilaxia da <i>Neisseria meningitidis</i>."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Penicilina G benzatina intramuscular.",
+          "comentario": "A penicilina benzatina não atinge concentrações ideais para erradicação do estado de portador de meningococo em nasofaringe para fins profiláticos rápidos."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-11-J8QeIk",
+      "enunciado": "Qual morfologia e coloração à bacterioscopia pelo método de Gram identificam a <i>Listeria monocytogenes</i> na análise direta do líquido cefalorraquidiano?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Bacilo Gram-positivo.",
+          "comentario": "A <i>Listeria monocytogenes</i> é um bacilo Gram-positivo curto (por vezes parecido com cocobacilo) que retém o corante violeta no exame bacterioscópico."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Diplococo Gram-positivo.",
+          "comentario": "Esta descrição corresponde às características microbiológicas do <i>Streptococcus pneumoniae</i>."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Diplococo Gram-negativo.",
+          "comentario": "Esta morfologia é típica do meningococo (<i>Neisseria meningitidis</i>)."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Cocobacilo Gram-negativo.",
+          "comentario": "Esta é a apresentação microbiológica clássica do <i>Haemophilus influenzae</i>."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Bacilo Gram-negativo.",
+          "comentario": "Bacilos Gram-negativos incluem enterobactérias como <i>E. coli</i> e <i>Pseudomonas</i>, diferindo da estrutura Gram-positiva da <i>Listeria</i>."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1328-12-kFLx82",
+      "enunciado": "Qual é a medicação de primeira escolha para a quimioprofilaxia de contatos próximos de pacientes com doença meningocócica e o tempo total de seu uso?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Rifampicina por 2 dias.",
+          "comentario": "A rifampicina é a droga padrão para a quimioprofilaxia contra o meningococo, administrada a cada 12 horas durante o período de 2 dias."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Rifampicina por 4 dias.",
+          "comentario": "A duração de 4 dias de rifampicina é empregada na profilaxia de contatos para <i>Haemophilus influenzae</i> tipo b."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Ceftriaxona por 3 dias.",
+          "comentario": "A ceftriaxona, quando utilizada como profilaxia para meningococo, é administrada em dose única intramuscular."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Ciprofloxacino por 5 dias.",
+          "comentario": "O ciprofloxacino é prescrito em dose única oral para adultos, e não em regime estendido por 5 dias."
+        },
+        {
+          "id": "alt_E",
+          "texto": "Azitromicina por 1 dia.",
+          "comentario": "A azitromicina não faz parte dos esquemas profiláticos de primeira linha indicados no material de referência."
+        }
+      ],
+      "gabarito": "A"
+    }
+  ]
+}

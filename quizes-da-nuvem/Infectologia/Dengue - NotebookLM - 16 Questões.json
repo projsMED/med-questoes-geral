@@ -1,0 +1,454 @@
+{
+  "titulo": "Dengue - NotebookLM - 16 Questões.yaml",
+  "id_quiz": "290926-1325-sJnOR9",
+  "conteudo": [
+    {
+      "tipo": "ME",
+      "id": "290926-1325-1-4L7P2P",
+      "enunciado": "Qual é a duração habitual da febre durante a fase febril da dengue?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "De dois a sete dias",
+          "comentario": "A fase febril caracteriza-se por febre alta de início abrupto que dura tipicamente entre dois e sete dias."
+        },
+        {
+          "id": "alt_B",
+          "texto": "De oito a quatorze dias",
+          "comentario": "Períodos febris superiores a uma semana costumam afastar o curso típico da fase febril da dengue."
+        },
+        {
+          "id": "alt_C",
+          "texto": "De um a dois dias",
+          "comentario": "Uma duração tão curta é atípica e costuma corresponder à febre observada na infecção por Zika."
+        },
+        {
+          "id": "alt_D",
+          "texto": "De dez a vinte dias",
+          "comentario": "Uma febre com essa duração prolongada sugere outras etiologias infecciosas e não a fase febril da dengue."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-2-RS4FnQ",
+      "enunciado": "Paciente de 32 anos apresenta febre há 4 dias, acompanhada de dor abdominal intensa e contínua, vômitos persistentes e hepatomegalia a 3 cm do rebordo costal.\n\nDiante do quadro, em qual grupo de risco o paciente deve ser classificado?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Grupo C",
+          "comentario": "A presença de dor abdominal intensa e vômitos persistentes caracteriza a dengue com sinais de alarme, enquadrando o paciente no Grupo C."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Grupo A",
+          "comentario": "O Grupo A destina-se a casos sem sinais de alarme, comorbidades ou risco social."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Grupo B",
+          "comentario": "O Grupo B contempla pacientes com sangramento espontâneo ou induzido ou comorbidades, mas sem sinais de alarme."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Grupo D",
+          "comentario": "O Grupo D é reservado aos casos de dengue grave com choque manifestado, sangramento grave ou disfunção grave de órgãos."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-3-U78su5",
+      "enunciado": "Qual exame laboratorial complementar é de realização obrigatória para todos os pacientes classificados no Grupo B?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Hemograma completo",
+          "comentario": "O hemograma completo é obrigatório no Grupo B para avaliar a hemoconcentração e determinar se o manejo prosseguirá como Grupo B ou C."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Dosagem de transaminases",
+          "comentario": "A dosagem de transaminases é um exame obrigatório para pacientes dos Grupos C e D, não sendo exigido de rotina para o Grupo B."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Radiografia de tórax",
+          "comentario": "A radiografia de tórax é um exame recomendado na investigação de derrames cavitários em grupos de maior gravidade."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Dosagem de albumina sérica",
+          "comentario": "A dosagem de albumina sérica é indicada prioritariamente no monitoramento do extravasamento plasmático nos Grupos C e D."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-4-OhRjwi",
+      "enunciado": "Paciente masculino de 25 anos é diagnosticado com dengue sem sinais de alarme, sem comorbidades ou risco social.\n\nQual é a orientação de hidratação oral diária adequada para este paciente?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "60 mL/kg/dia",
+          "comentario": "Para adultos no Grupo A, recomenda-se a prescrição de 60 mL/kg/dia de líquidos, sendo um terço com sais de reidratação oral."
+        },
+        {
+          "id": "alt_B",
+          "texto": "30 mL/kg/dia",
+          "comentario": "Esse volume representa metade do necessário para manter a hidratação adequada e prevenir complicações na fase febril."
+        },
+        {
+          "id": "alt_C",
+          "texto": "100 mL/kg/dia",
+          "comentario": "Volumes dessa magnitude são indicados para crianças na faixa de 10 a 20 kg, e não para adultos."
+        },
+        {
+          "id": "alt_D",
+          "texto": "10 mL/kg/dia",
+          "comentario": "Este valor corresponde à taxa horária de reposição venosa inicial no Grupo C e não ao volume oral diário."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-5-5joHIm",
+      "enunciado": "Qual das seguintes manifestações clínicas é classificada como sinal de alarme na dengue?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Hepatomegalia maior que 2 cm",
+          "comentario": "A hepatomegalia dolorosa maior do que 2 cm abaixo do rebordo costal é formalmente reconhecida como sinal de alarme."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Exantema maculopapular pruriginoso",
+          "comentario": "O exantema é uma manifestação clínica comum da fase febril ou de recuperação, sem conotação de alarme."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Artralgia moderada a intensa",
+          "comentario": "A artralgia faz parte das manifestações clássicas da doença, sendo ainda mais proeminente na chikungunya."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Febre de início abrupto",
+          "comentario": "A febre alta de início abrupto é o sintoma inicial característico da fase febril da dengue e não sinal de alarme."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-6-FhJW31",
+      "enunciado": "Paciente de 40 anos, classificado no Grupo C, inicia tratamento na unidade hospitalar.\n\nQual deve ser o volume de soro fisiológico a 0,9% infundido na primeira hora da reposição volêmica?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "10 mL/kg",
+          "comentario": "A conduta inicial no Grupo C estabelece a reposição volêmica com 10 mL/kg de soro fisiológico a 0,9% na primeira hora."
+        },
+        {
+          "id": "alt_B",
+          "texto": "20 mL/kg em 20 minutos",
+          "comentario": "A expansão rápida de 20 mL/kg em até 20 minutos é o esquema reservado ao tratamento do choque no Grupo D."
+        },
+        {
+          "id": "alt_C",
+          "texto": "25 mL/kg em 6 horas",
+          "comentario": "Essa infusão de 25 mL/kg em 6 horas corresponde à primeira etapa da fase de manutenção após a expansão."
+        },
+        {
+          "id": "alt_D",
+          "texto": "60 mL/kg em 24 horas",
+          "comentario": "Este volume refere-se à reidratação por via oral recomendada para adultos do Grupo A."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-7-CM6jYc",
+      "enunciado": "Qual é o esquema de expansão volêmica rápida parenteral indicado na abordagem inicial do Grupo D?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "20 mL/kg em 20 minutos",
+          "comentario": "Pacientes em choque (Grupo D) exigem ressuscitação volêmica imediata com 20 mL/kg de soro fisiológico em até 20 minutos."
+        },
+        {
+          "id": "alt_B",
+          "texto": "10 mL/kg em 1 hora",
+          "comentario": "O volume de 10 mL/kg em 1 hora é a conduta adotada para a fase de expansão do Grupo C."
+        },
+        {
+          "id": "alt_C",
+          "texto": "25 mL/kg em 6 horas",
+          "comentario": "A infusão em 6 horas é parte da manutenção volêmica após a estabilização do extravasamento."
+        },
+        {
+          "id": "alt_D",
+          "texto": "50 mL/kg em 2 horas",
+          "comentario": "Essa velocidade e volume excedem os parâmetros padronizados de expansão rápida no choque."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-8-tEO5sx",
+      "enunciado": "Gestante com 28 semanas de idade gestacional dá entrada com suspeita de dengue. Durante a avaliação no leito, queixas de tontura ocorrem ao se deitar.\n\nQual posição de decúbito deve ser recomendada para evitar a compressão da veia cava inferior?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Decúbito lateral esquerdo",
+          "comentario": "O decúbito lateral esquerdo afasta o útero gravídico da veia cava inferior, otimizando o retorno venoso e o débito cardíaco."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Decúbito dorsal horizontal",
+          "comentario": "A posição supina acentua a compressão da veia cava pelo útero a partir da 20ª semana de gestação."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Posição de Trendelenburg",
+          "comentario": "A posição de Trendelenburg não alivia a compressão mecânica exercida pelo útero sobre a veia cava inferior."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Decúbito lateral direito",
+          "comentario": "O decúbito lateral direito pode manter a compressão parcial da veia cava em virtude da anatomia vascular à direita."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-9-gExtoD",
+      "enunciado": "Até qual dia de início dos sintomas deve ser realizada a coleta de sangue para exames diretos de detecção viral (RT-PCR ou antígeno NS1)?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Até o quinto dia",
+          "comentario": "A pesquisa direta do vírus por RT-PCR ou antígeno NS1 deve ser realizada até o quinto dia do início dos sintomas, período correspondente à viremia."
+        },
+        {
+          "id": "alt_B",
+          "texto": "A partir do sexto dia",
+          "comentario": "A partir do sexto dia, a viremia diminui substancialmente, sendo indicada a sorologia para anticorpos IgM."
+        },
+        {
+          "id": "alt_C",
+          "texto": "A partir do décimo dia",
+          "comentario": "No décimo dia, os testes de detecção direta perdem a sensibilidade, restando a avaliação sorológica."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Entre oitavo e décimo dia",
+          "comentario": "Nessa janela tardia, a resposta imune humoral já predomina, tornando a pesquisa de antígenos ou RNA viral inadequada."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-10-CE5Rjj",
+      "enunciado": "Paciente coronariopata em uso de dupla antiagregação plaquetária (DAPT com AAS e clopidogrel) por stent farmacológico colocado há 2 meses apresenta dengue. O hemograma revela plaquetas de 40 x 10⁹/L.\n\nQual é a conduta adequada em relação à DAPT e ao acompanhamento?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Manter medicações e observar",
+          "comentario": "Com plaquetas entre 30x10⁹/L e 50x10⁹/L em paciente com stent recente, a DAPT deve ser mantida em leito de observação com controle diário de plaquetas."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Suspender imediatamente os antiagregantes",
+          "comentario": "A suspensão da DAPT só é indicada quando a contagem plaquetária se encontra abaixo de 30x10⁹/L."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Trocar DAPT por anticoagulante oral",
+          "comentario": "Não há indicação de substituir antiagregantes plaquetários por anticoagulantes no manejo da trombocitopenia."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Dar alta para acompanhamento ambulatorial",
+          "comentario": "A contagem de plaquetas abaixo de 50x10⁹/L exige admissão em leito de observação e impede a alta imediata."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-11-HMHKKb",
+      "enunciado": "Qual conduta deve ser adotada para paciente portador de prótese valvar metálica em uso de varfarina que apresenta contagem de plaquetas inferior a 30 x 10⁹/L?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Suspender varfarina e internar",
+          "comentario": "Diante de plaquetometria <30x10⁹/L, suspende-se a varfarina com internação para monitoramento diário do TAP e contagem de plaquetas."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Substituir por heparina venosa",
+          "comentario": "A substituição por heparina venosa é indicada para a faixa plaquetária situando-se entre 30x10⁹/L e 50x10⁹/L."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Manter a varfarina ambulatorialmente",
+          "comentario": "O nível plaquetário inferior a 30x10⁹/L contraindica a manutenção da varfarina pelo elevado risco de sangramento grave."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Reverter com vitamina K",
+          "comentario": "A reversão da anticoagulação não deve ser realizada profilaticamente, devendo ser reservada a casos com sangramento manifesto."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-12-VENcID",
+      "enunciado": "Paciente idoso com insuficiência cardíaca congestiva (NYHA classe III) e dengue evolui com oligúria e má perfusão periférica, sem sinais de congestão pulmonar.\n\nQual é a dose de expansão volêmica recomendada com soro fisiológico a 0,9%?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "10 mL/kg em 30 minutos",
+          "comentario": "Para cardiopatas classe III da NYHA sem congestão pulmonar, a dose de expansão volêmica é de 10 mL/kg em 30 minutos sob monitorização estrita."
+        },
+        {
+          "id": "alt_B",
+          "texto": "15 mL/kg em 30 minutos",
+          "comentario": "A dose de 15 mL/kg em 30 minutos é destinada aos pacientes cardiopatas em classe funcional II da NYHA."
+        },
+        {
+          "id": "alt_C",
+          "texto": "20 mL/kg em 20 minutos",
+          "comentario": "Esta taxa é a reposição rápida padrão para o Grupo D em pacientes sem insuficiência cardíaca grave."
+        },
+        {
+          "id": "alt_D",
+          "texto": "25 mL/kg a cada 12h",
+          "comentario": "Esta posologia corresponde à hidratação de manutenção e não à fase de expansão em pacientes oligúricos."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-13-pWEVNn",
+      "enunciado": "A partir de qual dia do início dos sintomas é indicada a coleta de amostra de soro para confirmação laboratorial de dengue por IgM?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Sexto dia de sintomas",
+          "comentario": "A pesquisa de anticorpos IgM por ELISA é recomendada a partir do sexto dia do início dos sintomas, quando os títulos sorológicos se tornam detectáveis."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Primeiro dia de sintomas",
+          "comentario": "No primeiro dia da doença, os anticorpos IgM ainda não foram produzidos em níveis detectáveis."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Terceiro dia de sintomas",
+          "comentario": "No terceiro dia, os testes indicados são os de detecção viral direta (NS1 ou PCR), pois a IgM é habitualmente negativa."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Décimo quinto dia apenas",
+          "comentario": "Apesar de positiva no 15º dia, a sorologia IgM já apresenta sensibilidade adequada a partir do 6º dia."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-14-dBCzPQ",
+      "enunciado": "Paciente em manejo do Grupo C evolui para estado de choque com congestão pulmonar e pressão arterial sistólica inferior a 100 mmHg a despeito da reposição volêmica.\n\nQual classe terapêutica deve ser associada de imediato?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Aminas vasoativas",
+          "comentario": "A presença de hipotensão, má perfusão e congestão pulmonar indica o uso de aminas vasoativas para suporte hemodinâmico sem hiper-hidratação."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Diuréticos de alça",
+          "comentario": "O uso isolado de diuréticos em paciente hipotenso agravaria a instabilidade hemodinâmica."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Corticosteroides intravenosos",
+          "comentario": "Corticosteroides não têm indicação no manejo hemodinâmico do choque na dengue."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Coloides sintéticos isolados",
+          "comentario": "O aporte adicional de volume líquido em paciente com congestão pulmonar pode precipitar edema agudo de pulmão."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-15-B2yX1E",
+      "enunciado": "Quais são os prazos mínimos de estabilização hemodinâmica e de ausência de febre exigidos entre os critérios para alta hospitalar?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "48 horas e 24 horas",
+          "comentario": "Os critérios de alta hospitalar exigem estabilização hemodinâmica por pelo menos 48 horas e ausência de febre por no mínimo 24 horas."
+        },
+        {
+          "id": "alt_B",
+          "texto": "24 horas e 12 horas",
+          "comentario": "Apenas 24 horas de estabilidade hemodinâmica é tempo insuficiente para garantir o fim da fase de extravasamento."
+        },
+        {
+          "id": "alt_C",
+          "texto": "72 horas e 48 horas",
+          "comentario": "Estes prazos excedem os parâmetros oficiais estabelecidos pelas diretrizes de conduta hospitalar."
+        },
+        {
+          "id": "alt_D",
+          "texto": "12 horas e 24 horas",
+          "comentario": "Um período de 12 horas de estabilização hemodinâmica é insuficiente para descartar instabilidade volêmica residual."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "290926-1325-16-kToMff",
+      "enunciado": "Paciente hipertenso em tratamento regular desenvolve dengue grave com extravasamento plasmático acentuado e queda de 40% nos níveis de pressão arterial sistólica.\n\nQual conduta deve ser adotada em relação aos medicamentos anti-hipertensivos em uso?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Suspender prontamente os hipotensores",
+          "comentario": "Diante de um quadro de dengue grave com extravasamento plasmático e hipotensão relativa, os medicamentos hipotensores devem ser prontamente suspensos."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Manter as doses habituais",
+          "comentario": "Manter anti-hipertensivos em um paciente hipotenso agravaria a hipoperfusão tecidual e a evolução do choque."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Dobrar a dose diária",
+          "comentario": "Aumentar a medicação provocaria uma piora drástica dos níveis pressóricos e da perfusão orgânica."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Associar diurético intravenoso",
+          "comentario": "A adição de diuréticos reduziria ainda mais o volume intravascular, acentuando a hipotensão."
+        }
+      ],
+      "gabarito": "A"
+    }
+  ]
+}

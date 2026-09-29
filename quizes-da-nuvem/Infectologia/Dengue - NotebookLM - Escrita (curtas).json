@@ -1,0 +1,126 @@
+{
+  "titulo": "Dengue - NotebookLM - Escrita (curtas)",
+  "id_quiz": "290926-1327-pVA0TC",
+  "conteudo": [
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-1-PQvzdi",
+      "enunciado": "Caso clínico: Paciente adulto, com suspeita de dengue sem sinais de alarme, sem comorbidades ou condições especiais de risco. Qual é o grupo de estadiamento e a forma de acompanhamento indicada?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Grupo A, com acompanhamento ambulatorial.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Menciona o Grupo A.\n(2) Menciona acompanhamento ou tratamento ambulatorial.\n\n<b>Possíveis erros</b>:\n(1) Classificar o paciente no Grupo B por falta de triagem adequada.\n\n<b>Blefes</b>:\n(1) Indicar necessidade de leito de observação para pacientes sem comorbidades.",
+      "comentario_geral": "Pacientes suspeitos de dengue sem sinais de alarme e sem condições clínicas especiais pertencem ao Grupo A e devem ser tratados de forma ambulatorial."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-2-gAxGpz",
+      "enunciado": "Caso clínico: Adulto com febre há 4 dias e petéquias no braço, sem sinais de alarme ou comorbidades. O hematócrito está normal. Como deve ser classificado e qual o local de conduta?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Grupo B, com tratamento ambulatorial.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Identifica o Grupo B.\n(2) Indica tratamento ambulatorial após resultado de hematócrito normal.\n\n<b>Possíveis erros</b>:\n(1) Acreditar que petéquias necessitam de internação no Grupo C.\n\n<b>Blefes</b>:\n(1) Sugerir hidratação venosa imediata sem checar a hemoconcentração.",
+      "comentario_geral": "A presença de sangramento espontâneo de pele (petéquias) sem sinais de alarme direciona o paciente para o Grupo B; com hematócrito normal, o tratamento prossegue ambulatorialmente."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-3-NP4ALp",
+      "enunciado": "Caso clínico: Paciente no 4º dia de sintomas apresenta dor abdominal intensa e contínua e vômitos persistentes. Em qual grupo de risco se enquadra e qual a conduta imediata?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Grupo C, reposição volêmica imediata.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Identifica o Grupo C.\n(2) Indica reposição volêmica ou hidratação venosa imediata.\n\n<b>Possíveis erros</b>:\n(1) Postergar a reposição volêmica enquanto aguarda exames laboratoriais.\n\n<b>Blefes</b>:\n(1) Prescrever apenas reidratação oral para um paciente com sinais de alarme manifestos.",
+      "comentario_geral": "Dor abdominal intensa e vômitos persistentes são sinais de alarme, enquadrando o paciente no Grupo C e exigindo reposição volêmica venosa imediata."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-4-VCpWH4",
+      "enunciado": "Caso clínico: Paciente no 5º dia de doença apresenta pulso fraco e filiforme, extremidades frias e pressão arterial convergente (<20 mmHg). Qual o estadiamento e a dose de expansão parenteral rápida inicial?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Grupo D, $20\\text{ mL/kg}$ em até $20$ minutos.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Identifica o Grupo D.\n(2) Indica a dose de 20 mL/kg em até 20 minutos.\n\n<b>Possíveis erros</b>:\n(1) Utilizar o esquema de hidratação do Grupo C (10 mL/kg/h) em paciente choque manifesto.\n\n<b>Blefes</b>:\n(1) Sugerir infusão lenta em 2 horas em um quadro de colapso circulatório.",
+      "comentario_geral": "Sinais de choque caracterizam o Grupo D (dengue grave), exigindo ressuscitação volêmica parenteral de emergência com $20\\text{ mL/kg}$ de soro fisiológico a $0{,}9\\%$ em até $20$ minutos."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-5-wahPOo",
+      "enunciado": "Caso clínico: Paciente em dupla antiagregação plaquetária (AAS + Clopidogrel) por stent farmacológico colocado há 2 meses apresenta dengue e plaquetas de $25 \\times 10^9/\\text{L}$. Qual é a conduta para os antiagregantes?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Suspender AAS e clopidogrel e admitir em observação.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Menciona a suspensão do AAS e do clopidogrel/DAPT.\n(2) Menciona a admissão em leito de observação.\n\n<b>Possíveis erros</b>:\n(1) Manter o AAS e suspender apenas o clopidogrel com plaquetometria abaixo de 30 x 10^9/L.\n\n<b>Blefes</b>:\n(1) Dar alta ambulatorial sem observação a um paciente sob alto risco de sangramento e trombose.",
+      "comentario_geral": "Em pacientes sob DAPT, a contagem de plaquetas inferior a $30 \\times 10^9/\\text{L}$ obriga a suspensão de ambos os antiagregantes e a admissão em leito de observação até recuperação dos níveis plaquetários."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-6-A01ciw",
+      "enunciado": "Caso clínico: Hipertenso com dengue grave desenvolve queda de $40\\%$ na pressão arterial habitual durante extravasamento plasmático. Qual a conduta imediata referente aos anti-hipertensivos?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Suspender prontamente os medicamentos hipotensores.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Menciona a suspensão dos medicamentos hipotensores/anti-hipertensivos.\n\n<b>Possíveis erros</b>:\n(1) Manter a medicação hipertensiva apenas por conta do histórico prévio de hipertensão do paciente.\n\n<b>Blefes</b>:\n(1) Aumentar a hidratação mantendo vasodilatadores ou diuréticos ativos.",
+      "comentario_geral": "Uma queda de $40\\%$ da pressão arterial em hipertensos com dengue grave indica hipotensão relativa e choque, devendo os anti-hipertensivos ser prontamente suspensos."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-7-Zs4V8P",
+      "enunciado": "Qual sinal de alarme da dengue é caracterizado pela mensuração do fígado abaixo do rebordo costal direito superior a $2\\text{ cm}$?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Hepatomegalia dolorosa ou maior que $2\\text{ cm}$.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Menciona hepatomegalia.\n\n<b>Possíveis erros</b>:\n(1) Confundir a hepatomegalia com esclenomegalia ou acúmulo peritoneal de líquidos.\n\n<b>Blefes</b>:\n(1) Listar sinais que não possuem parâmetro de medida no exame físico abdominal.",
+      "comentario_geral": "A hepatomegalia maior que $2\\text{ cm}$ abaixo do rebordo costal é um dos sinais de alarme definidos pela OMS e adotados no manejo da dengue."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-8-mwXwd9",
+      "enunciado": "Qual exame laboratorial complementar é de realização obrigatória para todos os pacientes triados no Grupo B?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Hemograma completo.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Especifica o hemograma completo.\n\n<b>Possíveis erros</b>:\n(1) Acreditar que apenas a sorologia ou o teste rápido NS1 é obrigatório para a conduta do Grupo B.\n\n<b>Blefes</b>:\n(1) Citar dosagem isolada de transaminases ou albumina como exames primários no Grupo B.",
+      "comentario_geral": "Para os pacientes do Grupo B, o hemograma completo é um exame obrigatório para avaliar a presença de hemoconcentração e determinar se o paciente deve ser mantido em ambulatório ou remanejado para o Grupo C."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-9-eMw8Ev",
+      "enunciado": "Qual é o volume diário total de hidratação oral recomendado para um paciente adulto classificado no Grupo A?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Sessenta mililitros por quilograma por dia ($60\\text{ mL/kg/dia}$).\n\n<b>Atributos de uma resposta correta</b>:\n(1) Menciona o valor exato de 60 mL/kg/dia.\n\n<b>Possíveis erros</b>:\n(1) Usar a regra de Holliday-Segar para adultos em vez de crianças.\n\n<b>Blefes</b>:\n(1) Fornecer apenas um volume genérico em litros sem indexar ao peso do paciente.",
+      "comentario_geral": "A prescrição de hidratação oral para o adulto do Grupo A prevê $60\\text{ mL/kg/dia}$, sendo um terço com solução de reidratação oral e dois terços com líquidos caseiros."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-10-SYJJ2F",
+      "enunciado": "Qual o posicionamento de decúbito recomendado para gestantes a partir da $20^{\\text{a}}$ semana com dengue e qual a justificativa anatômica?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Decúbito lateral esquerdo, para descompressão da veia cava.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Menciona decúbito lateral esquerdo.\n(2) Menciona a descompressão da veia cava (inferior).\n\n<b>Possíveis erros</b>:\n(1) Recomendar decúbito dorsal de rotina para evitar o estresse gestacional.\n\n<b>Blefes</b>:\n(1) Justificar o posicionamento apenas pela melhora do padrão respiratório sem citar a estrutura vascular.",
+      "comentario_geral": "A partir da $20^{\\text{a}}$ semana de gestação, o peso do útero comprime a veia cava inferior, sendo necessário o posicionamento em decúbito lateral esquerdo para preservar o retorno venoso."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-11-cwwxkZ",
+      "enunciado": "Até qual dia do início dos sintomas está indicada a coleta de amostras biológicas para os testes diretos (RT-PCR e NS1)?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Até o quinto dia de início dos sintomas.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Especifica o prazo limite até o 5º dia.\n\n<b>Possíveis erros</b>:\n(1) Indicar teste NS1 ou PCR a partir do 6º dia, quando a sorologia IgM passa a ser o método adequado.\n\n<b>Blefes</b>:\n(1) Confundir o período de detecção viral direta com a fase de convalescença.",
+      "comentario_geral": "A detecção viral direta (por RT-PCR ou antígeno NS1) deve ser realizada com amostras colhidas até o $5^{\\circ}$ dia do início dos sintomas, período correspondente à fase de viremia."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-12-qGf6sV",
+      "enunciado": "Quantos critérios clínicos e laboratoriais cumulativos precisam ser integralmente atendidos para que o paciente receba alta hospitalar?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Todos os cinco critérios estabelecidos no protocolo.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Especifica o número exato de cinco critérios.\n\n<b>Possíveis erros</b>:\n(1) Acreditar que apenas a melhora clínica e a ausência de febre são suficientes para a alta.\n\n<b>Blefes</b>:\n(1) Dar alta se houver apenas normalização do hematócrito, ignorando a curva plaquetária.",
+      "comentario_geral": "A alta hospitalar na dengue exige o preenchimento conjunto dos cinco critérios: estabilidade hemodinâmica por 48h, afebril por 24h, melhora clínica, hematócrito estável por 24h e elevação das plaquetas."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-13-G2eLRA",
+      "enunciado": "Em qual fase da evolução clínica da dengue costumam emergir os sinais de alarme e o extravasamento plasmático?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Na fase crítica da doença.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Menciona a fase crítica.\n\n<b>Possíveis erros</b>:\n(1) Acreditar que os sinais de alarme surgem no pico febril dos primeiros dois dias.\n\n<b>Blefes</b>:\n(1) Confundir a fase crítica com a fase de reabsorção e recuperação.",
+      "comentario_geral": "Os sinais de alarme e o extravasamento de plasma surgem tipicamente na transição da fase febril para a fase crítica, coincidindo com a defervescência da febre."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-14-taGsKU",
+      "enunciado": "Qual a conduta indicada para o uso de varfarina em paciente com dengue sem sangramento e plaquetas entre $30 \\times 10^9/\\text{L}$ e $50 \\times 10^9/\\text{L}$?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Suspender varfarina e trocar por heparina não fracionada.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Menciona a suspensão da varfarina.\n(2) Menciona a substituição/troca por heparina não fracionada.\n\n<b>Possíveis erros</b>:\n(1) Manter a varfarina sem alteração em plaquetopenias moderadas a graves.\n\n<b>Blefes</b>:\n(1) Usar plasma fresco congelado para reverter a anticoagulação em paciente sem qualquer sangramento.",
+      "comentario_geral": "Nesta faixa de plaquetopenia, o paciente deve ser internado para suspensão da varfarina e transição para heparina não fracionada endovenosa assim que o INR atingir níveis subterapêuticos."
+    },
+    {
+      "tipo": "ESCRITA",
+      "subtipo": "simples",
+      "id": "290926-1327-15-Ys7Emy",
+      "enunciado": "Quais são os dois expansores plasmáticos indicados em caso de resposta inadequada no Grupo D com hematócrito em ascensão?",
+      "gabarito": "<b>Exemplo de resposta correta</b>:Albumina a $5\\%$ ou coloides sintéticos.\n\n<b>Atributos de uma resposta correta</b>:\n(1) Menciona albumina (a 5%).\n(2) Menciona coloides sintéticos.\n\n<b>Possíveis erros</b>:\n(1) Indicar transfusão de concentrado de hemácias quando o hematócrito está subindo.\n\n<b>Blefes</b>:\n(1) Insistir apenas em soro fisiológico a 0,9% em doses repetidas indefinidamente.",
+      "comentario_geral": "No choque refratário com hemoconcentração persistente/em ascensão no Grupo D, indica-se o uso de expansores plasmáticos como a solução de albumina a $5\\%$ ou coloides sintéticos."
+    }
+  ]
+}

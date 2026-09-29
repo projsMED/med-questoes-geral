@@ -15,6 +15,16 @@
     "children": [
       {
         "type": "file",
+        "name": "Dengue - NotebookLM - 16 Questões",
+        "path": "quizes-da-nuvem/Infectologia/Dengue - NotebookLM - 16 Questões.json"
+      },
+      {
+        "type": "file",
+        "name": "Dengue - NotebookLM - Escrita (curtas)",
+        "path": "quizes-da-nuvem/Infectologia/Dengue - NotebookLM - Escrita (curtas).json"
+      },
+      {
+        "type": "file",
         "name": "Diagnóstico da Tuberculose - NotebookLM",
         "path": "quizes-da-nuvem/Infectologia/Diagnóstico da Tuberculose - NotebookLM.json"
       },
@@ -32,6 +42,16 @@
         "type": "file",
         "name": "Malária",
         "path": "quizes-da-nuvem/Infectologia/Malária.json"
+      },
+      {
+        "type": "file",
+        "name": "Meningites - EMED RE",
+        "path": "quizes-da-nuvem/Infectologia/Meningites - EMED RE.json"
+      },
+      {
+        "type": "file",
+        "name": "Meningites - Slides Professor",
+        "path": "quizes-da-nuvem/Infectologia/Meningites - Slides Professor.json"
       },
       {
         "type": "file",
