@@ -1,6 +1,12 @@
-# 🩺 Question Engine V4.4.1 (med-questoes-geral)
+# 🩺 Question Engine V4.4.2 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
+
+## Novidades da versão 4.4.2
+
+- Dois toques rápidos ou botão direito do mouse no espaço vazio entre cartões abrem o mesmo menu rápido das laterais, incluindo intervalos entre questões agrupadas. Textos-base, enunciados, alternativas e espaços internos dos cartões continuam fora da área do atalho.
+- As áreas de toque são transparentes, acompanham mudanças de layout e não alteram o espaçamento. Rolagem vertical e zoom por pinça são preservados.
+- O menu rápido oferece **Entrar/Sair da tela cheia** antes de Configurações gerais, com estado e mensagens sincronizados com o botão existente nas configurações gerais.
 
 ## Novidades da versão 4.4.1
 

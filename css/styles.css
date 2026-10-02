@@ -1947,6 +1947,11 @@ body.quiz-width-resizing { cursor: ew-resize; user-select: none; }
   touch-action: manipulation;
 }
 .settings-shortcut-gutter[hidden] { display: none; }
+.settings-shortcut-gap {
+  position: absolute;
+  z-index: 10;
+  touch-action: manipulation;
+}
 .settings-shortcut-left { left: 0; }
 .settings-shortcut-right { right: 0; }
 
@@ -1994,7 +1999,8 @@ html.settings-shortcuts-open:fullscreen { overflow: hidden; }
 .settings-shortcut-dialog .vs-font-size-row,
 .settings-shortcut-dialog .vs-quiz-width-row { flex-wrap: wrap; }
 .settings-shortcut-dialog input[type="range"] { min-width: 0; }
-#fullscreenStatus:empty { display: none; }
+#fullscreenStatus:empty,
+#quickFullscreenStatus:empty { display: none; }
 
 .disregard-correct-control {
   display: inline-flex;

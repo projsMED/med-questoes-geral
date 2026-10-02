@@ -8,7 +8,7 @@ import {
   parseMqGabarito,
   computeMqScore,
   computeMvfScore
-} from './utils.js?v=20261002-441';
+} from './utils.js?v=20261002-442';
 
 const HIGHLIGHT_COLORS = [
   { key: 'yellow', label: 'Amarelo' },

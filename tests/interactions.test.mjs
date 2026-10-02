@@ -67,6 +67,10 @@ class Element {
     parent.children[parent.children.indexOf(this)] = replacement;
     replacement.parentNode = parent; this.parentNode = null;
   }
+  remove() {
+    if (this.parentNode) this.parentNode.children = this.parentNode.children.filter((item) => item !== this);
+    this.parentNode = null;
+  }
   contains(child) { return child === this || this.children.some((element) => element.contains(child)); }
   getBoundingClientRect() { return { ...this.rect }; }
   setAttribute(name, value) { this.attributes[name] = value; }
@@ -104,9 +108,10 @@ function fixture() {
   let time = 0;
   Object.defineProperty(globalThis, 'performance', { configurable: true, value: { now: () => time } });
   const shell = element('quizWidthShell');
+  const quizContainer = element('quizContainer'); shell.appendChild(quizContainer);
   const card = new Element('question-card'); card.dataset.originalIdx = '8';
-  card.getBoundingClientRect = () => ({ top: 1020 - win.scrollY, bottom: 1500 - win.scrollY });
-  shell.appendChild(card);
+  card.getBoundingClientRect = () => ({ left: 100, right: 700, top: 1020 - win.scrollY, bottom: 1500 - win.scrollY });
+  quizContainer.appendChild(card);
   const handles = ['left', 'right'].map((side) => {
     const handle = new Element(`quiz-resize-handle quiz-resize-${side}`);
     shell.appendChild(handle); return handle;
@@ -114,6 +119,8 @@ function fixture() {
   const gutters = ['left', 'right'].map(() => new Element('settings-shortcut-gutter'));
   doc.querySelectorAll = () => gutters;
   const home = element('settingsShortcutHome');
+  home.appendChild(element('btnQuickFullscreen'));
+  home.appendChild(element('quickFullscreenStatus'));
   for (const section of ['general', 'visual']) {
     const button = new Element(); button.dataset.settingsSection = section; home.appendChild(button);
   }
@@ -136,8 +143,83 @@ function fixture() {
     doc.emit('pointerup', pointer(x, y, extra)); time += 80;
   };
   flush();
-  return { ids, element, doc, win, settings, shell, card, handles, gutters, visualPanel, generalPanel, top, flush, pointer, tap };
+  return { ids, element, doc, win, settings, shell, quizContainer, card, handles, gutters, visualPanel, generalPanel, top, flush, pointer, tap };
 }
+
+function addCard(fixture, index, top, bottom, parent = fixture.quizContainer) {
+  const card = new Element('question-card'); card.dataset.originalIdx = String(index);
+  card.getBoundingClientRect = () => ({ left: 100, right: 700, top: top - fixture.win.scrollY, bottom: bottom - fixture.win.scrollY });
+  parent.appendChild(card);
+  return card;
+}
+
+test('espaço entre cartões abre com dois toques e clique direito, sem mudar o espaçamento', () => {
+  const f = fixture(); addCard(f, 9, 1520, 1900);
+  f.settings.scheduleGutters(true); f.flush();
+  const gap = f.settings.gapElements.get('gap:8:9');
+  assert.ok(gap);
+  assert.equal(gap.style.height, '20px');
+  assert.equal(gap.style.width, '600px');
+  assert.equal(gap.getAttribute?.('aria-hidden') || gap.attributes['aria-hidden'], 'true');
+  f.tap(300, 510, { target: gap }); f.tap(300, 510, { target: gap });
+  assert.equal(f.settings.dialog.open, true);
+  f.settings.dialog.close(); f.flush();
+  const event = f.doc.emit('contextmenu', f.pointer(300, 510, {
+    target: f.settings.gapElements.get('gap:8:9'), pointerType: 'mouse', button: 2
+  }));
+  assert.equal(event.defaultPrevented, true);
+  assert.equal(f.settings.dialog.open, true);
+});
+
+test('gesto no espaço vazio preserva rolagem; toques em intervalos diferentes não se combinam', () => {
+  const f = fixture(); addCard(f, 9, 1520, 1525); addCard(f, 10, 1540, 1900);
+  f.settings.scheduleGutters(true); f.flush();
+  const gap = f.settings.gapElements.get('gap:8:9');
+  f.tap(300, 510, { target: gap });
+  f.tap(300, 532, { target: f.settings.gapElements.get('gap:9:10') });
+  assert.equal(f.settings.dialog.open, undefined);
+  const down = f.doc.emit('pointerdown', f.pointer(300, 510, { target: gap }));
+  const move = f.doc.emit('pointermove', f.pointer(300, 530, { target: gap }));
+  f.doc.emit('pointerup', f.pointer(300, 530, { target: gap }));
+  f.tap(300, 510, { target: gap });
+  assert.equal(down.defaultPrevented, undefined);
+  assert.equal(move.defaultPrevented, undefined);
+  assert.equal(f.settings.dialog.open, undefined);
+  f.win.emit('scroll'); f.tap(300, 510, { target: gap });
+  assert.equal(f.settings.dialog.open, undefined);
+});
+
+test('intervalos em grupos funcionam, textos-base e áreas internas não viram atalhos', () => {
+  const f = fixture();
+  const group = new Element('question-group'); f.quizContainer.appendChild(group);
+  group.appendChild(f.card); addCard(f, 9, 1520, 1900, group);
+  f.settings.scheduleGutters(true); f.flush();
+  f.tap(300, 510, { target: group }); f.tap(300, 510, { target: group });
+  assert.equal(f.settings.dialog.open, true);
+  f.settings.dialog.close(); f.flush();
+  f.tap(300, 490, { target: f.card }); f.tap(300, 490, { target: f.card });
+  assert.equal(f.settings.dialog.open, false);
+  const header = new Element('group-container');
+  header.getBoundingClientRect = () => ({ left: 100, right: 700, top: 500, bottom: 518 });
+  group.children.splice(1, 0, header); header.parentNode = group;
+  f.settings.scheduleGutters(true); f.flush();
+  assert.equal(f.settings.gapElements.size, 0);
+  f.tap(300, 510, { target: header }); f.tap(300, 510, { target: header });
+  assert.equal(f.settings.dialog.open, false);
+});
+
+test('áreas transparentes são atualizadas após mudanças de layout e removidas com os cartões', () => {
+  const f = fixture(); const second = addCard(f, 9, 1520, 1900);
+  f.settings.scheduleGutters(true); f.flush();
+  const oldGap = f.settings.gapElements.get('gap:8:9');
+  second.getBoundingClientRect = () => ({ left: 100, right: 700, top: 540, bottom: 900 });
+  f.settings.scheduleGutters(true); f.flush();
+  assert.equal(f.settings.gapElements.get('gap:8:9'), oldGap);
+  assert.equal(oldGap.style.height, '40px');
+  second.remove(); f.settings.scheduleGutters(true); f.flush();
+  assert.equal(f.settings.gapElements.size, 0);
+  assert.equal(oldGap.parentNode, null);
+});
 
 test('dois toques abrem em ambas as margens; conteúdo, arrasto e rolagem não abrem', () => {
   const f = fixture();
@@ -210,6 +292,36 @@ test('tela cheia entra/sai pelo botão, atualiza estado e trata ausência de sup
   delete f.doc.documentElement.requestFullscreen; f.settings.updateFullscreen();
   assert.equal(f.settings.fullscreenButton.disabled, true);
   assert.match(f.settings.fullscreenStatus.textContent, /indisponível/);
+});
+
+test('atalho de tela cheia executa diretamente e sincroniza os dois botões e mensagens', async () => {
+  const f = fixture(); const quick = f.element('btnQuickFullscreen');
+  const quickStatus = f.element('quickFullscreenStatus');
+  f.doc.documentElement.requestFullscreen = () => {
+    f.doc.fullscreenElement = f.doc.documentElement;
+    f.doc.emit('fullscreenchange'); return Promise.resolve();
+  };
+  f.doc.exitFullscreen = () => {
+    f.doc.fullscreenElement = null; f.doc.emit('fullscreenchange'); return Promise.resolve();
+  };
+  f.settings.updateFullscreen(); f.settings.open();
+  quick.emit('click');
+  assert.equal(f.doc.fullscreenElement, f.doc.documentElement);
+  await Promise.resolve();
+  for (const button of f.settings.fullscreenButtons) {
+    assert.equal(button.attributes['aria-pressed'], 'true');
+    assert.match(button.textContent, /Sair/);
+  }
+  assert.equal(f.settings.mountedPanel, null, 'não precisa abrir configurações gerais');
+  f.settings.fullscreenButton.emit('click'); await Promise.resolve();
+  assert.equal(quick.attributes['aria-pressed'], 'false');
+  f.doc.documentElement.requestFullscreen = () => Promise.reject(new Error('denied'));
+  quick.emit('click'); await Promise.resolve();
+  assert.match(quickStatus.textContent, /Não foi possível/);
+  assert.equal(quickStatus.textContent, f.settings.fullscreenStatus.textContent);
+  delete f.doc.documentElement.requestFullscreen; f.settings.updateFullscreen();
+  assert.equal(quick.disabled, true);
+  assert.match(quickStatus.textContent, /indisponível/);
 });
 
 test('alças distinguem duplo toque, arrasto horizontal e vertical sem gravar largura em um toque', () => {

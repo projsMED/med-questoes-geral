@@ -1,14 +1,20 @@
-/* Configurações acessíveis das laterais, com os mesmos controles do topo. */
+/* Configurações acessíveis das laterais e dos espaços entre questões. */
 export class SettingsShortcuts {
   constructor({ shell, visualPanel, generalPanel, fullscreenButton, fullscreenStatus }) {
     this.shell = shell;
     this.panels = { visual: visualPanel, general: generalPanel };
     this.fullscreenButton = fullscreenButton;
     this.fullscreenStatus = fullscreenStatus;
+    this.fullscreenButtons = [fullscreenButton, document.getElementById('btnQuickFullscreen')].filter(Boolean);
+    this.fullscreenStatuses = [fullscreenStatus, document.getElementById('quickFullscreenStatus')].filter(Boolean);
     this.pointers = new Map();
     this.lastTap = null;
     this.mountedPanel = null;
     this.frame = null;
+    this.quizContainer = document.getElementById('quizContainer');
+    this.gapElements = new Map();
+    this.gapLayout = [];
+    this.gapLayoutDirty = true;
 
     this.dialog = document.getElementById('settingsShortcutDialog');
     this.title = document.getElementById('settingsShortcutTitle');
@@ -60,7 +66,7 @@ export class SettingsShortcuts {
       this.lastTap = null;
     }, { capture: true, passive: true });
     document.addEventListener('contextmenu', (event) => {
-      if (!this.getSide(event)) return;
+      if (!this.getRegion(event)) return;
       // Long press touch mantém o comportamento nativo; mouse Bluetooth usa este atalho.
       if ((event.pointerType || this.lastPointerType) !== 'mouse' || this.pointers.size) return;
       event.preventDefault();
@@ -71,12 +77,22 @@ export class SettingsShortcuts {
       this.pointers.forEach((pointer) => { pointer.moved = true; });
       this.scheduleGutters();
     }, { passive: true });
-    window.addEventListener('resize', () => this.scheduleGutters(), { passive: true });
+    window.addEventListener('resize', () => this.scheduleGutters(true), { passive: true });
     if (typeof ResizeObserver !== 'undefined') {
-      this.resizeObserver = new ResizeObserver(() => this.scheduleGutters());
+      this.resizeObserver = new ResizeObserver(() => this.scheduleGutters(true));
       this.resizeObserver.observe(shell);
+      const controls = document.querySelector('.controls-card');
+      if (controls) this.resizeObserver.observe(controls);
     }
-    this.fullscreenButton.addEventListener('click', () => this.toggleFullscreen());
+    if (typeof MutationObserver !== 'undefined') {
+      this.contentObserver = new MutationObserver(() => this.scheduleGutters(true));
+      this.contentObserver.observe(this.quizContainer, {
+        childList: true, subtree: true, attributes: true, characterData: true
+      });
+    }
+    this.fullscreenButtons.forEach((button) => {
+      button.addEventListener('click', () => this.toggleFullscreen());
+    });
     ['fullscreenchange', 'webkitfullscreenchange'].forEach((type) => {
       document.addEventListener(type, () => {
         this.updateFullscreen();
@@ -84,24 +100,29 @@ export class SettingsShortcuts {
           this.restoreAnchor(this.fullscreenAnchor || this.anchor);
         }
         this.fullscreenAnchor = null;
-        this.scheduleGutters();
+        this.scheduleGutters(true);
       });
     });
     this.updateFullscreen();
     this.scheduleGutters();
   }
 
-  getSide(event) {
+  getRegion(event) {
     if (this.dialog.open || !this.shell.querySelector('.question-card')) return null;
-    // Apenas margens externas e a metade externa das alças; nunca o conteúdo das questões.
-    if (!event.target.closest('.settings-shortcut-gutter, .quiz-resize-handle') &&
+    // Só superfícies vazias; padding e espaços internos de um cartão não são atalhos.
+    if (!event.target.closest('.settings-shortcut-gutter, .settings-shortcut-gap, .quiz-resize-handle') &&
         event.target !== document.body && event.target !== document.documentElement &&
-        event.target !== this.shell && !event.target.matches('.container')) return null;
+        event.target !== this.shell && event.target !== this.quizContainer &&
+        !event.target.matches('.container, .question-group')) return null;
     const rect = this.shell.getBoundingClientRect();
     if (event.clientY < rect.top || event.clientY > rect.bottom) return null;
     if (event.clientX < rect.left) return 'left';
     if (event.clientX > rect.right) return 'right';
-    return null;
+    // Confere a geometria atual, mesmo se uma reconstrução acabou de ocorrer.
+    const y = event.clientY + window.scrollY;
+    return this.readGapLayout().find((gap) =>
+      event.clientX >= gap.left && event.clientX <= gap.right && y > gap.top && y < gap.bottom
+    )?.region || null;
   }
 
   onPointerDown(event) {
@@ -110,10 +131,10 @@ export class SettingsShortcuts {
       this.lastTap = null;
       return;
     }
-    const side = this.getSide(event);
+    const region = this.getRegion(event);
     this.pointers.set(event.pointerId, {
-      side, x: event.clientX, y: event.clientY,
-      time: performance.now(), scrollY: window.scrollY, moved: !side || !event.isPrimary
+      region, x: event.clientX, y: event.clientY,
+      time: performance.now(), scrollY: window.scrollY, moved: !region || !event.isPrimary
     });
     if (this.pointers.size > 1) {
       this.pointers.forEach((pointer) => { pointer.moved = true; });
@@ -126,14 +147,14 @@ export class SettingsShortcuts {
     this.pointers.delete(event.pointerId);
     if (!pointer) return;
     const now = performance.now();
-    if (pointer.moved || !pointer.side || this.pointers.size ||
+    if (pointer.moved || !pointer.region || this.pointers.size ||
         now - pointer.time > 300 || Math.abs(window.scrollY - pointer.scrollY) > 3 ||
         Math.hypot(event.clientX - pointer.x, event.clientY - pointer.y) > 10) {
       this.lastTap = null;
       return;
     }
     const previous = this.lastTap;
-    if (previous && previous.side === pointer.side && now - previous.time <= 350 &&
+    if (previous && previous.region === pointer.region && now - previous.time <= 350 &&
         Math.hypot(pointer.x - previous.x, pointer.y - previous.y) <= 24) {
       this.lastTap = null;
       if (event.cancelable) event.preventDefault();
@@ -143,7 +164,62 @@ export class SettingsShortcuts {
     }
   }
 
-  scheduleGutters() {
+  readGapLayout() {
+    // Textos-base interrompem a sequência para que o atalho não cubra um grupo.
+    const blocks = Array.from(this.quizContainer.querySelectorAll('.question-card, .group-container'));
+    const gaps = [];
+    for (let index = 1; index < blocks.length; index++) {
+      const previous = blocks[index - 1];
+      const current = blocks[index];
+      if (!previous.matches('.question-card') || !current.matches('.question-card')) continue;
+      const before = previous.getBoundingClientRect();
+      const after = current.getBoundingClientRect();
+      const left = Math.max(before.left, after.left);
+      const right = Math.min(before.right, after.right);
+      if (after.top <= before.bottom || right <= left) continue;
+      gaps.push({
+        region: `gap:${previous.dataset.originalIdx}:${current.dataset.originalIdx}`,
+        left, right, top: before.bottom + window.scrollY, bottom: after.top + window.scrollY
+      });
+    }
+    return gaps;
+  }
+
+  updateGapElements(shellRect, visible) {
+    if (this.gapLayoutDirty) {
+      this.gapLayout = this.readGapLayout();
+      this.gapLayoutDirty = false;
+    }
+    const active = new Set();
+    const shellTop = shellRect.top + window.scrollY;
+    for (const gap of this.gapLayout) {
+      if (!visible || gap.bottom <= window.scrollY || gap.top >= window.scrollY + window.innerHeight) continue;
+      active.add(gap.region);
+      let element = this.gapElements.get(gap.region);
+      if (!element) {
+        element = document.createElement('div');
+        element.classList.add('settings-shortcut-gap');
+        element.dataset.settingsGap = gap.region;
+        element.setAttribute('aria-hidden', 'true');
+        this.shell.appendChild(element);
+        this.gapElements.set(gap.region, element);
+      }
+      // Elementos absolutos e transparentes preservam o espaçamento existente.
+      element.style.left = `${gap.left - shellRect.left}px`;
+      element.style.top = `${gap.top - shellTop}px`;
+      element.style.width = `${gap.right - gap.left}px`;
+      element.style.height = `${gap.bottom - gap.top}px`;
+    }
+    this.gapElements.forEach((element, region) => {
+      if (!active.has(region)) {
+        element.remove();
+        this.gapElements.delete(region);
+      }
+    });
+  }
+
+  scheduleGutters(refreshGaps = false) {
+    if (refreshGaps) this.gapLayoutDirty = true;
     if (this.frame !== null) return;
     this.frame = requestAnimationFrame(() => {
       this.frame = null;
@@ -158,6 +234,7 @@ export class SettingsShortcuts {
         gutter.style.top = `${top}px`;
         gutter.style.height = `${Math.max(0, bottom - top)}px`;
       });
+      this.updateGapElements(rect, visible);
     });
   }
 
@@ -239,12 +316,18 @@ export class SettingsShortcuts {
     const root = document.documentElement;
     const supported = (typeof root.requestFullscreen === 'function' && document.fullscreenEnabled !== false) ||
       (typeof root.webkitRequestFullscreen === 'function' && document.webkitFullscreenEnabled !== false);
-    this.fullscreenButton.disabled = this.fullscreenBusy || (!active && !supported);
-    this.fullscreenButton.setAttribute('aria-pressed', String(active));
-    this.fullscreenButton.textContent = active ? '⛶ Sair da tela cheia' : '⛶ Entrar em tela cheia';
+    this.fullscreenButtons.forEach((button) => {
+      button.disabled = this.fullscreenBusy || (!active && !supported);
+      button.setAttribute('aria-pressed', String(active));
+      button.textContent = active ? '⛶ Sair da tela cheia' : '⛶ Entrar em tela cheia';
+    });
     if (!active && !supported) {
-      this.fullscreenStatus.textContent = 'Tela cheia indisponível neste navegador.';
+      this.setFullscreenStatus('Tela cheia indisponível neste navegador.');
     }
+  }
+
+  setFullscreenStatus(message) {
+    this.fullscreenStatuses.forEach((status) => { status.textContent = message; });
   }
 
   async toggleFullscreen() {
@@ -252,7 +335,7 @@ export class SettingsShortcuts {
     const anchor = this.dialog.open ? this.anchor : this.captureAnchor();
     this.fullscreenAnchor = anchor;
     this.fullscreenBusy = true;
-    this.fullscreenStatus.textContent = '';
+    this.setFullscreenStatus('');
     this.updateFullscreen();
     try {
       if (this.fullscreenElement()) {
@@ -266,7 +349,7 @@ export class SettingsShortcuts {
       }
     } catch {
       this.fullscreenAnchor = null;
-      this.fullscreenStatus.textContent = 'Não foi possível alterar a tela cheia neste navegador.';
+      this.setFullscreenStatus('Não foi possível alterar a tela cheia neste navegador.');
     } finally {
       this.fullscreenBusy = false;
       this.updateFullscreen();

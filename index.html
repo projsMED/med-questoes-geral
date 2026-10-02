@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V4.4.1 - Filtro em Etapas</title>
+  <title>Question Engine V4.4.2 - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('vs_darkMode');
@@ -12,14 +12,14 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20261002-441">
+  <link rel="stylesheet" href="css/styles.css?v=20261002-442">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V4.4.1</h2>
+    <h2 class="header-title">Question Engine V4.4.2</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -457,16 +457,18 @@
     <button type="button" class="btn btn-sm" id="settingsShortcutClose" aria-label="Fechar configurações">✕</button>
   </div>
   <div id="settingsShortcutHome" class="settings-shortcut-home">
+    <button type="button" class="btn btn-sm" id="btnQuickFullscreen" aria-pressed="false" aria-describedby="quickFullscreenStatus">⛶ Entrar em tela cheia</button>
+    <small id="quickFullscreenStatus" role="status" aria-live="polite"></small>
     <button type="button" class="btn btn-sm" data-settings-section="general">⚙️ Configurações gerais</button>
     <button type="button" class="btn btn-sm" data-settings-section="visual">⚙️ Configurações visuais</button>
-    <small>Nas laterais das questões: dois toques rápidos ou botão direito do mouse.</small>
+    <small>Nas laterais ou entre as questões: dois toques rápidos ou botão direito do mouse.</small>
   </div>
   <div id="settingsShortcutContent" class="hidden"></div>
 </dialog>
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20261002-441';
+  const APP_ASSET_VERSION = '20261002-442';
   const moduleAssets = [
     'main.js',
     'store.js',
