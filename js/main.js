@@ -4,21 +4,21 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261002-450b1';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-450b1';
+} from './store.js?v=20261002-450b2';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-450b2';
 import {
   shuffleArray,
   difficultyMap,
   questionTypeMap,
   questionTypes
-} from './utils.js?v=20261002-450b1';
+} from './utils.js?v=20261002-450b2';
 import {
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261002-450b1';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261002-450b1';
-import { QuizRenderer } from './renderer.js?v=20261002-450b1';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-450b1';
+} from './scoring.js?v=20261002-450b2';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261002-450b2';
+import { QuizRenderer } from './renderer.js?v=20261002-450b2';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-450b2';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -391,8 +391,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261002-450b1');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261002-450b1');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261002-450b2');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261002-450b2');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
@@ -837,7 +837,7 @@ const App = {
     this.elements.filterSection.classList.remove('hidden');
     this.elements.configBar.classList.add('hidden');
     this.elements.footerBar.classList.add('hidden');
-    this.renderer.container.innerHTML = '';
+    this.renderer.clear();
 
     this.save();
   },
@@ -1267,7 +1267,7 @@ const App = {
     this.state.retryIndices = [];
 
     clearState();
-    this.renderer.container.innerHTML = '';
+    this.renderer.clear();
     this.elements.configBar.classList.add('hidden');
     this.elements.footerBar.classList.add('hidden');
     this.elements.filterSection.classList.add('hidden');
@@ -2387,7 +2387,7 @@ const App = {
     this.state.retryIndices = [];
     this.state.retryDerivedFromErrors = false;
     this._sessionDerivedFromErrors = false;
-    this.renderer.container.innerHTML = '';
+    this.renderer.clear();
     this.elements.configBar.classList.add('hidden');
     this.elements.footerBar.classList.add('hidden');
     this.elements.filterSection.classList.add('hidden');
@@ -2906,7 +2906,7 @@ const App = {
       this.elements.filterSection.classList.remove('hidden');
       this.elements.configBar.classList.add('hidden');
       this.elements.footerBar.classList.add('hidden');
-      this.renderer.container.innerHTML = '';
+      this.renderer.clear();
     }
 
     this.save();

@@ -1,25 +1,39 @@
-# 🩺 Question Engine V4.5.0-beta.1 (med-questoes-geral)
+# 🩺 Question Engine V4.5.0-beta.2 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
 
-## Beta 4.5.0 — etapa 1 de 5
+## Beta 4.5.0 — etapa 2 de 5
+
+- `js/highlighter.js` agora concentra o marca-texto: entrada por mouse/touch/caneta, seleção por palavras, preview, rolagem durante o gesto, menus, cores, opacidade e cópia de trechos.
+- `QuizRenderer` monta as questões e delega o marca-texto ao componente `TextHighlighter`, passando o contêiner, uma função para ler o estado e callbacks para salvar alterações. O módulo não recebe o controlador inteiro nem grava diretamente no IndexedDB ou Firebase.
+- A reconstrução da lista e a troca de cartões removem eventos e seleções pendentes dos elementos anteriores. `renderer.clear()` também cancela gestos, preview e menus ao sair de uma sessão. O componente oferece `dispose()` para liberar seus eventos e temporizadores quando for descartado.
+- Os campos `textHighlights`, IDs, offsets, hash do texto e configurações são preservados. Sessões salvas na beta.1 continuam usando o mesmo banco local. A marcação legada de palavras e o modo de seleção permanecem no renderer, com a desativação do marca-texto integrada ao botão de seleção.
+
+### Mantido da beta.1
 
 - `js/scoring.js` reúne gabaritos, pontuação e regras de desconsideração de acertos. O controlador e o renderer usam a mesma implementação; as regras e os formatos de dados são preservados. Os exports anteriores de `utils.js` permanecem disponíveis por compatibilidade.
 - A beta usa o IndexedDB **QuizEngineV3Beta**, com o mesmo esquema da versão estável. Sessão ativa, preferências e exclusões pendentes usam chaves de localStorage com prefixo `beta:`. A beta não lê nem migra automaticamente o banco estável **QuizEngineV3**.
 - Firebase permanece disponível apenas por ação manual nos botões de sincronização. Login, salvamento, entrega de respostas e exclusão de sessões não enviam nem baixam dados automaticamente. Exclusões locais ficam pendentes até a sincronização manual.
 - A sincronização manual usa a **mesma nuvem** da versão estável, incluindo sessões, pastas e exclusões. O isolamento local não cria outra conta ou banco Firebase.
 
-Testes: `node --test tests/*.test.mjs` (Node.js 20+). Além das interações existentes, cobrem pontuação dos tipos e aliases, desconsideração, consistência entre resumo/retry, isolamento do canal e sincronização manual com Firebase simulado. A validação nativa de IndexedDB e Firebase deve também ser feita no navegador.
+Testes: `node --test tests/*.test.mjs` (Node.js 20+). Os 41 testes cobrem interações, pontuação dos tipos e aliases, desconsideração, consistência entre resumo/retry, isolamento do canal e sincronização manual com Firebase simulado. Incluem persistência do marca-texto por callbacks, restauração dos campos, grupos, sobreposição, cor/opacidade e limpeza de recursos. A decoração do texto, layout, seleção nativa, IndexedDB e Firebase reais devem também ser verificados no navegador.
 
 ### Próximas etapas — uma por atualização após avaliação
 
-1. **beta.1:** pontuação compartilhada e preparação do canal beta.
-2. **beta.2:** extrair marca-texto.
+1. **beta.1 — concluída:** pontuação compartilhada e preparação do canal beta.
+2. **beta.2 — concluída:** extrair marca-texto.
 3. **beta.3:** extrair associação de colunas.
 4. **beta.4:** extrair preferências.
 5. **beta.5:** extrair filtros e avaliar o resultado.
 
 A branch `main` continua estável. Criar a branch `beta` não configura automaticamente uma URL no GitHub Pages; a publicação de teste é uma configuração separada.
+
+### Teste manual da beta.2
+
+- Marcar com mouse (incluindo mouse Bluetooth em tablet), touch e caneta; soltar o mouse fora do enunciado e alternar a entrada sem recarregar.
+- Marcar um enunciado e um texto-base de grupo; alterar cor/opacidade, ocultar/mostrar, copiar e apagar marcações.
+- Recarregar uma sessão criada na beta.1 e conferir os destaques existentes. Responder, trocar a ordem das questões e alternar configurações para verificar a reconstrução dos cartões.
+- Sair ou apagar uma sessão com um gesto/menu aberto, abrir outra e confirmar que não ficam preview, rolagem ou menus da sessão anterior.
 
 ### Promoção para versão estável
 
@@ -97,6 +111,7 @@ med-questoes-geral/
 ├── js/
 │   ├── main.js                     # Controlador principal (App): eventos, ciclo de vida, filtros, sessões e UI
 │   ├── renderer.js                 # QuizRenderer: renderização de cards, gabaritos, avaliação e inputs
+│   ├── highlighter.js              # TextHighlighter: seleção, destaques, gestos, menus e limpeza de recursos
 │   ├── parser.js                   # Parser: linearização da árvore JSON, resolução de grupos, variantes e tipos
 │   ├── store.js                    # Camada de persistência IndexedDB (sessões, pastas e migrações)
 │   ├── utils.js                    # Utilitários: Fisher-Yates, mapas, formatters e reexports de compatibilidade
