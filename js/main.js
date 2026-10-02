@@ -4,19 +4,21 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261002-442';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-442';
+} from './store.js?v=20261002-450b1';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-450b1';
 import {
   shuffleArray,
   difficultyMap,
   questionTypeMap,
-  questionTypes,
-  computeMeChScore,
-  computeMqScore,
-  computeMvfScore
-} from './utils.js?v=20261002-442';
-import { QuizRenderer } from './renderer.js?v=20261002-442';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-442';
+  questionTypes
+} from './utils.js?v=20261002-450b1';
+import {
+  computeQuestionScore, isObjectiveQuestion,
+  applyDisregardedCorrectToScore, isDisregardedCorrectMarked
+} from './scoring.js?v=20261002-450b1';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261002-450b1';
+import { QuizRenderer } from './renderer.js?v=20261002-450b1';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-450b1';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -311,11 +313,11 @@ const App = {
     const migrated = await migrateLegacyState();
     if (migrated) {
       this.activeSessionId = migrated.sessionId;
-      localStorage.setItem('activeSessionId', migrated.sessionId);
+      appStorage.setItem('activeSessionId', migrated.sessionId);
     }
 
     // Tentar restaurar sessão ativa
-    const savedSessionId = this.activeSessionId || localStorage.getItem('activeSessionId');
+    const savedSessionId = this.activeSessionId || appStorage.getItem('activeSessionId');
     if (savedSessionId) {
       const session = await loadSession(savedSessionId);
       if (session && session.state && session.state.quizJson) {
@@ -389,17 +391,18 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261002-442');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261002-442');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261002-450b1');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261002-450b1');
 
-      this.firebaseState.autoSync = localStorage.getItem('firebaseAutoSync') === 'true';
-      this.firebaseState.lastSyncTime = localStorage.getItem('lastSyncTime') || null;
+      this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
+      this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
       this.elements.chkFirebaseAutoSync.checked = this.firebaseState.autoSync;
+      this.elements.chkFirebaseAutoSync.disabled = !ALLOW_AUTOMATIC_SYNC;
 
       this.firebaseConfig.onAuthChange((user) => {
         this.firebaseState.connected = !!user;
         this.updateFirebaseUI();
-        if (user && this.firebaseState.autoSync) {
+        if (ALLOW_AUTOMATIC_SYNC && user && this.firebaseState.autoSync) {
           this.syncNow();
         }
       });
@@ -557,8 +560,9 @@ const App = {
       this.syncNow()
     );
     this.elements.chkFirebaseAutoSync.addEventListener('change', (e) => {
-      this.firebaseState.autoSync = e.target.checked;
-      localStorage.setItem('firebaseAutoSync', e.target.checked ? 'true' : 'false');
+      this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && e.target.checked;
+      e.target.checked = this.firebaseState.autoSync;
+      appStorage.setItem('firebaseAutoSync', this.firebaseState.autoSync ? 'true' : 'false');
     });
     this.elements.btnFirebaseDisconnect.addEventListener('click', () =>
       this.handleFirebaseLogout()
@@ -601,7 +605,7 @@ const App = {
 
     if (this.elements.chkShowDisregardCorrect) {
       this.elements.chkShowDisregardCorrect.addEventListener('change', (e) => {
-        localStorage.setItem('gs_showDisregardCorrect', e.target.checked ? 'true' : 'false');
+        appStorage.setItem('gs_showDisregardCorrect', e.target.checked ? 'true' : 'false');
         this.state.config.showDisregardCorrect = e.target.checked;
         this.state.config.applyDisregardedCorrect = e.target.checked;
         this.renderer.render(this.state);
@@ -612,7 +616,7 @@ const App = {
 
     this.elements.chkSimpleMvfCorrection.addEventListener('change', (e) => {
       const enabled = e.target.checked;
-      localStorage.setItem('gs_simpleMvfCorrection', String(enabled));
+      appStorage.setItem('gs_simpleMvfCorrection', String(enabled));
       this.state.config.simpleMvfCorrection = enabled;
       this.renderer.render(this.state);
       this.applyCommentCollapseMode();
@@ -736,13 +740,13 @@ const App = {
     }
     if (this.state.config.showDisregardCorrect === undefined) {
       this.state.config.showDisregardCorrect =
-        localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+        appStorage.getItem('gs_showDisregardCorrect') !== 'false';
     }
     if (this.state.config.applyDisregardedCorrect === undefined) {
       this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
     }
     this.state.config.simpleMvfCorrection =
-      localStorage.getItem('gs_simpleMvfCorrection') === 'true';
+      appStorage.getItem('gs_simpleMvfCorrection') === 'true';
 
     if (this.state.mappings && Array.isArray(this.state.mappings.qOrder) && this.state.mappings.qOrder.length > 0) {
       this.recalculateSessionQuestionCount();
@@ -778,10 +782,10 @@ const App = {
     this.state.config.showDiff = this.elements.chkShowDiff.checked;
     this.state.config.showFilterSummary = this.elements.chkShowFilterSummary.checked;
     this.state.config.showDisregardCorrect =
-      localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+      appStorage.getItem('gs_showDisregardCorrect') !== 'false';
     this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
     this.state.config.simpleMvfCorrection =
-      localStorage.getItem('gs_simpleMvfCorrection') === 'true';
+      appStorage.getItem('gs_simpleMvfCorrection') === 'true';
 
     this.state.filters = {
       tags: [],
@@ -823,7 +827,7 @@ const App = {
     this._lastAccessedAt = now;
     this._sessionDerivedFromErrors = false;
     this._manuallyOpenedComments = new Set();
-    localStorage.setItem('activeSessionId', this.activeSessionId);
+    appStorage.setItem('activeSessionId', this.activeSessionId);
 
     this.extractFiltersData();
     this.renderFilterDescription();
@@ -840,99 +844,19 @@ const App = {
 
   // --- Lógica de checagem de acerto e pontuação (ME / VF / CH / ESCRITA) ---
   isObjectiveQuestion(originalQIdx) {
-    const qData = this.state.questions[originalQIdx];
-    return ((qData && qData.tipo) || '').toUpperCase() !== 'ESCRITA';
+    return isObjectiveQuestion(this.state, originalQIdx);
   },
 
   applyDisregardedCorrectToScore(originalQIdx, score, options = {}) {
-    if (options.ignoreDisregard) return score;
-    const ans = this.state.userAnswers[originalQIdx];
-    const featureOn = this.state.config.showDisregardCorrect !== false;
-    const applyOn = this.state.config.applyDisregardedCorrect !== false;
-    if (
-      featureOn &&
-      applyOn &&
-      ans &&
-      ans.disregardCorrect &&
-      this.isObjectiveQuestion(originalQIdx) &&
-      score.total > 0 &&
-      score.hits > 0
-    ) {
-      return { hits: 0, total: score.total };
-    }
-    return score;
+    return applyDisregardedCorrectToScore(this.state, originalQIdx, score, options);
   },
 
   isDisregardedCorrectForRetry(originalQIdx) {
-    const ans = this.state.userAnswers[originalQIdx];
-    if (!ans || !ans.disregardCorrect || !this.isObjectiveQuestion(originalQIdx)) return false;
-    const raw = this.computeQuestionScore(originalQIdx, { ignoreDisregard: true });
-    return raw.total > 0 && raw.hits > 0;
+    return isDisregardedCorrectMarked(this.state, originalQIdx);
   },
 
-  /**
-   * Retorna { hits, total } para a questão originalQIdx.
-   * - ME / VF: total = 1, hits = 1 ou 0
-   * - MEM (ME-CH): total = 1, hits = pontuação proporcional entre 0 e 1
-   * - MVF (CH): total = número de assertivas, hits = acertos menos erros (mínimo 0), ou apenas acertos no modo simples
-   * - ESCRITA simples: total = 10, hits = selfEval (0–10)
-   * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
-   */
   computeQuestionScore(originalQIdx, options = {}) {
-    const qData = this.state.questions[originalQIdx];
-    const ans = this.state.userAnswers[originalQIdx];
-    if (!ans || !ans.submitted) return { hits: 0, total: 0 };
-
-    const tipo = (qData.tipo || '').toUpperCase();
-
-    if (tipo === 'ESCRITA') {
-      const isItemsType = qData.subtipo === 'itens' ||
-        (Array.isArray(qData.itens) && qData.itens.length > 0);
-
-      if (!isItemsType) {
-        const selfEval = typeof ans.selfEval === 'number' ? ans.selfEval : 0;
-        return { hits: selfEval, total: 10 };
-      } else {
-        const numItems = (qData.itens || []).length;
-        if (numItems === 0) return { hits: 0, total: 0 };
-        const items = Array.isArray(ans.items) ? ans.items : [];
-        let sumEvals = 0;
-        for (let i = 0; i < numItems; i++) {
-          const item = items[i] || {};
-          sumEvals += typeof item.selfEval === 'number' ? item.selfEval : 0;
-        }
-        return { hits: sumEvals, total: numItems * 10 };
-      }
-    }
-
-    if (tipo === 'CH' || tipo === 'MVF') {
-      const assertivas = Array.isArray(qData.assertivas) ? qData.assertivas : [];
-      const score = computeMvfScore(
-        assertivas, ans.assertivaAnswers || {}, this.state.config.simpleMvfCorrection === true
-      );
-      return this.applyDisregardedCorrectToScore(originalQIdx, score, options);
-    }
-
-    if (tipo === 'ME-CH' || tipo === 'MEM') {
-      const score = computeMeChScore(qData, ans.selectedOriginalIndices || []);
-      return this.applyDisregardedCorrectToScore(originalQIdx, { hits: score, total: 1 }, options);
-    }
-
-    if (tipo === 'MQ') {
-      const scoreData = computeMqScore(qData, ans.connections || []);
-      return this.applyDisregardedCorrectToScore(originalQIdx, { hits: scoreData.hits, total: 1 }, options);
-    }
-
-    // ME / VF – um único gabarito por letra
-    const gabaritoLetra = (qData.gabarito || '').trim().toUpperCase();
-    if (!gabaritoLetra) return { hits: 0, total: 0 };
-    const gabaritoIdx = gabaritoLetra.charCodeAt(0) - 65;
-    const isCorrect = ans.selectedOriginalIdx === gabaritoIdx;
-    return this.applyDisregardedCorrectToScore(
-      originalQIdx,
-      { hits: isCorrect ? 1 : 0, total: 1 },
-      options
-    );
+    return computeQuestionScore(this.state, originalQIdx, options);
   },
 
 // --- NOVA LÓGICA DE RETRY ---
@@ -969,7 +893,7 @@ const App = {
     const sourceState = JSON.parse(JSON.stringify(this.state));
     const now = new Date().toISOString();
     this.activeSessionId = generateId();
-    localStorage.setItem('activeSessionId', this.activeSessionId);
+    appStorage.setItem('activeSessionId', this.activeSessionId);
     this._sessionCreatedAt = now;
     this._lastAccessedAt = now;
     this._sessionDerivedFromErrors = true;
@@ -1314,7 +1238,7 @@ const App = {
       await this._markSessionDeleted(deletedId);
     }
     this.activeSessionId = null;
-    localStorage.removeItem('activeSessionId');
+    appStorage.removeItem('activeSessionId');
 
     this.state.quizJson = null;
     this.state.questions = [];
@@ -2062,7 +1986,7 @@ const App = {
     this.applyCommentCollapseMode();
 
     // Sync imediato após submeter todas (ação importante)
-    if (this.firebaseState.autoSync && this.firebaseState.connected) {
+    if (ALLOW_AUTOMATIC_SYNC && this.firebaseState.autoSync && this.firebaseState.connected) {
       clearTimeout(this.firebaseState.debounceTimer);
       this.syncNow();
     }
@@ -2245,7 +2169,7 @@ const App = {
 
         await saveSession(session);
         this.activeSessionId = session.sessionId;
-        localStorage.setItem('activeSessionId', session.sessionId);
+        appStorage.setItem('activeSessionId', session.sessionId);
         location.reload();
       } catch (err) {
         alert('Erro ao importar: ' + err.message);
@@ -2270,7 +2194,7 @@ const App = {
       this.state.config.showFilterSummary;
     if (this.elements.chkShowDisregardCorrect) {
       this.state.config.showDisregardCorrect =
-        localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+        appStorage.getItem('gs_showDisregardCorrect') !== 'false';
       this.elements.chkShowDisregardCorrect.checked =
         this.state.config.showDisregardCorrect !== false;
     }
@@ -2348,7 +2272,7 @@ const App = {
     this.firebaseState.pendingChanges = true;
     this.updateSyncIndicator();
 
-    if (this.firebaseState.autoSync) {
+    if (ALLOW_AUTOMATIC_SYNC && this.firebaseState.autoSync) {
       clearTimeout(this.firebaseState.debounceTimer);
       this.firebaseState.debounceTimer = setTimeout(() => this.syncNow(), 30000);
     }
@@ -2410,7 +2334,7 @@ const App = {
 
   _getPendingDeleteTombstones() {
     try {
-      const raw = JSON.parse(localStorage.getItem('pendingDeletes') || '{}');
+      const raw = JSON.parse(appStorage.getItem('pendingDeletes') || '{}');
       if (Array.isArray(raw)) {
         const now = new Date().toISOString();
         return Object.fromEntries(raw.map(id => [id, now]));
@@ -2424,9 +2348,9 @@ const App = {
   _setPendingDeleteTombstones(tombstones) {
     const ids = Object.keys(tombstones || {});
     if (ids.length === 0) {
-      localStorage.removeItem('pendingDeletes');
+      appStorage.removeItem('pendingDeletes');
     } else {
-      localStorage.setItem('pendingDeletes', JSON.stringify(tombstones));
+      appStorage.setItem('pendingDeletes', JSON.stringify(tombstones));
     }
   },
 
@@ -2436,6 +2360,11 @@ const App = {
     const pending = this._getPendingDeleteTombstones();
     pending[sessionId] = pending[sessionId] || deletedAt;
     this._setPendingDeleteTombstones(pending);
+
+    if (!ALLOW_AUTOMATIC_SYNC) {
+      this.markSyncPending();
+      return; // Na beta, enviar exclusões somente em Sincronizar Agora.
+    }
 
     if (this.firebaseSync && this.firebaseState.connected) {
       const ok = await this.firebaseSync.recordDeletedSession(sessionId, pending[sessionId]);
@@ -2448,7 +2377,7 @@ const App = {
 
   _clearActiveSessionUI() {
     this.activeSessionId = null;
-    localStorage.removeItem('activeSessionId');
+    appStorage.removeItem('activeSessionId');
     this.state.quizJson = null;
     this.state.questions = [];
     this.state.mappings = { qOrder: [], altOrder: {} };
@@ -2496,7 +2425,7 @@ const App = {
     try {
       await this.firebaseConfig.logout();
       this.firebaseState.autoSync = false;
-      localStorage.setItem('firebaseAutoSync', 'false');
+      appStorage.setItem('firebaseAutoSync', 'false');
       this.elements.chkFirebaseAutoSync.checked = false;
       this.elements.firebaseModal.classList.add('hidden');
     } catch (e) {
@@ -2625,7 +2554,7 @@ const App = {
 
       this.firebaseState.pendingChanges = false;
       this.firebaseState.lastSyncTime = new Date().toISOString();
-      localStorage.setItem('lastSyncTime', this.firebaseState.lastSyncTime);
+      appStorage.setItem('lastSyncTime', this.firebaseState.lastSyncTime);
 
     } catch (e) {
       console.error('Erro na sincronizacao:', e);
@@ -2951,7 +2880,7 @@ const App = {
     this._sessionTitle = session.title;
     this._sourceFileName = session.sourceFileName || null;
     this._sessionFolderId = session.folderId || '';
-    localStorage.setItem('activeSessionId', session.sessionId);
+    appStorage.setItem('activeSessionId', session.sessionId);
     this.elements.sessionListModal.classList.add('hidden');
 
     this.state = session.state;
@@ -3487,15 +3416,15 @@ const App = {
   // ===== Configurações Visuais =====
   getVisualSettings() {
     return {
-      footerFixed: localStorage.getItem('vs_footerFixed') !== 'false',
-      commentMode: localStorage.getItem('vs_commentMode') || 'all',
-      persistManualOpen: localStorage.getItem('vs_persistManualOpen') === 'true',
-      vfStacked: localStorage.getItem('vs_vfStacked') === 'true',
-      mqRenderMode: localStorage.getItem('vs_mqRenderMode') || 'arrows',
-      showPartialScore: localStorage.getItem('vs_showPartialScore') !== 'false',
-      fontSize: parseInt(localStorage.getItem('vs_fontSize')) || 16,
-      quizWidth: parseInt(localStorage.getItem('vs_quizWidth'), 10) || 900,
-      darkMode: localStorage.getItem('vs_darkMode')
+      footerFixed: appStorage.getItem('vs_footerFixed') !== 'false',
+      commentMode: appStorage.getItem('vs_commentMode') || 'all',
+      persistManualOpen: appStorage.getItem('vs_persistManualOpen') === 'true',
+      vfStacked: appStorage.getItem('vs_vfStacked') === 'true',
+      mqRenderMode: appStorage.getItem('vs_mqRenderMode') || 'arrows',
+      showPartialScore: appStorage.getItem('vs_showPartialScore') !== 'false',
+      fontSize: parseInt(appStorage.getItem('vs_fontSize')) || 16,
+      quizWidth: parseInt(appStorage.getItem('vs_quizWidth'), 10) || 900,
+      darkMode: appStorage.getItem('vs_darkMode')
     };
   },
 
@@ -3526,10 +3455,10 @@ const App = {
     this.elements.fontSizeValue.textContent = vs.fontSize + 'px';
     if (this.elements.chkShowDisregardCorrect) {
       this.elements.chkShowDisregardCorrect.checked =
-        localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+        appStorage.getItem('gs_showDisregardCorrect') !== 'false';
     }
     this.elements.chkSimpleMvfCorrection.checked =
-      localStorage.getItem('gs_simpleMvfCorrection') === 'true';
+      appStorage.getItem('gs_simpleMvfCorrection') === 'true';
 
     // Dark mode: null = auto (segue o sistema), 'true'/'false' = manual
     const isDark = vs.darkMode === 'true' ||
@@ -3556,32 +3485,32 @@ const App = {
     }
 
     this.elements.chkFooterFixed.addEventListener('change', (e) => {
-      localStorage.setItem('vs_footerFixed', e.target.checked);
+      appStorage.setItem('vs_footerFixed', e.target.checked);
       this.applyFooterMode(e.target.checked);
     });
 
     this.elements.commentModeAll.addEventListener('change', () => {
-      localStorage.setItem('vs_commentMode', 'all');
+      appStorage.setItem('vs_commentMode', 'all');
       this.elements.commentSubOptions.classList.add('hidden');
       this.expandAllComments();
     });
 
     this.elements.commentModeCurrent.addEventListener('change', () => {
-      localStorage.setItem('vs_commentMode', 'current');
+      appStorage.setItem('vs_commentMode', 'current');
       this.elements.commentSubOptions.classList.remove('hidden');
     });
 
     this.elements.chkPersistManualOpen.addEventListener('change', (e) => {
-      localStorage.setItem('vs_persistManualOpen', e.target.checked);
+      appStorage.setItem('vs_persistManualOpen', e.target.checked);
     });
 
     this.elements.chkVfStacked.addEventListener('change', (e) => {
-      localStorage.setItem('vs_vfStacked', e.target.checked);
+      appStorage.setItem('vs_vfStacked', e.target.checked);
       this.applyVfStacked(e.target.checked);
     });
 
     const handleMqModeChange = (mode) => {
-      localStorage.setItem('vs_mqRenderMode', mode);
+      appStorage.setItem('vs_mqRenderMode', mode);
       if (this.state.questions && this.state.questions.length > 0) {
         this.renderer.render(this.state);
       }
@@ -3595,7 +3524,7 @@ const App = {
 
     if (this.elements.chkShowPartialScore) {
       this.elements.chkShowPartialScore.addEventListener('change', (e) => {
-        localStorage.setItem('vs_showPartialScore', e.target.checked ? 'true' : 'false');
+        appStorage.setItem('vs_showPartialScore', e.target.checked ? 'true' : 'false');
         this.renderer.render(this.state);
         this.applyCommentCollapseMode();
       });
@@ -3603,13 +3532,13 @@ const App = {
 
     this.elements.chkDarkMode.addEventListener('change', (e) => {
       const enabled = e.target.checked;
-      localStorage.setItem('vs_darkMode', enabled);
+      appStorage.setItem('vs_darkMode', enabled);
       this.applyDarkMode(enabled);
     });
 
     // Ouvir mudanças do tema do sistema (só aplica se o usuário nunca escolheu manualmente)
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (localStorage.getItem('vs_darkMode') === null) {
+      if (appStorage.getItem('vs_darkMode') === null) {
         this.elements.chkDarkMode.checked = e.matches;
         this.applyDarkMode(e.matches);
       }
@@ -3617,7 +3546,7 @@ const App = {
 
     this.elements.rangeFontSize.addEventListener('input', (e) => {
       const size = parseInt(e.target.value);
-      localStorage.setItem('vs_fontSize', size);
+      appStorage.setItem('vs_fontSize', size);
       this.elements.fontSizeValue.textContent = size + 'px';
       this.applyFontSize(size);
     });
@@ -3672,7 +3601,7 @@ const App = {
       handle.setAttribute('aria-valuenow', String(width));
       handle.setAttribute('aria-valuetext', `${width} pixels`);
     });
-    if (save) localStorage.setItem('vs_quizWidth', String(width));
+    if (save) appStorage.setItem('vs_quizWidth', String(width));
   },
 
   initQuizWidthControls() {
@@ -3689,7 +3618,7 @@ const App = {
         const finished = drag;
         drag = null;
         if (finished.active) {
-          if (commit) localStorage.setItem('vs_quizWidth', String(this._quizWidth));
+          if (commit) appStorage.setItem('vs_quizWidth', String(this._quizWidth));
           else this.applyQuizWidth(finished.preferredWidth, false);
         }
         handle.classList.remove('is-dragging');
@@ -3959,12 +3888,12 @@ const App = {
     // Toggle entre visão de pastas e lista plana
     this.elements.btnToggleFolderView.addEventListener('click', () => {
       this._folderViewActive = !this._folderViewActive;
-      localStorage.setItem('folderViewActive', this._folderViewActive ? 'true' : 'false');
+      appStorage.setItem('folderViewActive', this._folderViewActive ? 'true' : 'false');
       this.renderSessionList();
     });
 
     // Restaurar preferência de visão
-    const savedView = localStorage.getItem('folderViewActive');
+    const savedView = appStorage.getItem('folderViewActive');
     if (savedView !== null) {
       this._folderViewActive = savedView !== 'false';
     }

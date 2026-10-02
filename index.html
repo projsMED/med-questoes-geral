@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V4.4.2 - Filtro em Etapas</title>
+  <title>Question Engine V4.5.0-beta.1 - Filtro em Etapas</title>
   <script>
     (function() {
-      var dm = localStorage.getItem('vs_darkMode');
+      var dm = localStorage.getItem('beta:vs_darkMode');
       if (dm === 'true' || (dm === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark-mode');
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20261002-442">
+  <link rel="stylesheet" href="css/styles.css?v=20261002-450b1">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V4.4.2</h2>
+    <h2 class="header-title">Question Engine V4.5.0-beta.1</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -434,10 +434,11 @@
           <p>Ultimo sync: <strong id="firebaseLastSync">--</strong></p>
           <p>Status: <strong id="firebaseSyncStatusText">--</strong></p>
         </div>
+        <p class="upload-hint">Na beta, a sincronização é somente manual e usa a mesma nuvem da versão estável.</p>
         <div class="firebase-actions">
           <button class="btn btn-primary" id="btnFirebaseSyncNow">Sincronizar Agora</button>
           <label class="toggle-label" style="margin-left:15px;">
-            <input type="checkbox" id="chkFirebaseAutoSync"> Sync automatico
+            <input type="checkbox" id="chkFirebaseAutoSync" disabled> Sync automático (indisponível na beta)
           </label>
         </div>
         <div style="margin-top:20px;padding-top:15px;border-top:1px solid #eee;">
@@ -468,12 +469,14 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20261002-442';
+  const APP_ASSET_VERSION = '20261002-450b1';
   const moduleAssets = [
     'main.js',
     'store.js',
     'parser.js',
     'utils.js',
+    'scoring.js',
+    'release-config.js',
     'renderer.js',
     'settings-shortcuts.js',
     'firebase-config.js',

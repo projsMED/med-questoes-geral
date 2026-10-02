@@ -5,6 +5,7 @@ import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 import { SettingsShortcuts } from '../js/settings-shortcuts.js';
 import { QuizRenderer } from '../js/renderer.js';
+import { appStorage } from '../js/release-config.js';
 import { questionTypes } from '../js/utils.js';
 
 // Superfície DOM mínima. Eventos e coordenadas vêm dos cenários, sem recriar
@@ -330,6 +331,7 @@ test('alças distinguem duplo toque, arrasto horizontal e vertical sem gravar la
     .replace(/^import[\s\S]*?from ['"][^'"]+['"];\n/gm, '')
     .replace(/App\.init\(\);\s*$/, 'globalThis.testApp = App;');
   globalThis.questionTypes = questionTypes;
+  globalThis.appStorage = appStorage;
   vm.runInThisContext(source);
   const app = globalThis.testApp; app._quizWidth = 600;
   app.initQuizWidthControls();
@@ -344,12 +346,12 @@ test('alças distinguem duplo toque, arrasto horizontal e vertical sem gravar la
   };
   down(); up(); down(); up();
   assert.equal(f.settings.dialog.open, true);
-  assert.equal(localStorage.getItem('vs_quizWidth'), null);
+  assert.equal(appStorage.getItem('vs_quizWidth'), null);
   f.settings.dialog.close();
   down(); handle.emit('pointermove', f.pointer(76, 250, { target: handle }));
   assert.equal(app._quizWidth, 640);
   handle.emit('pointerup', f.pointer(76, 250, { target: handle }));
-  assert.equal(localStorage.getItem('vs_quizWidth'), '640');
+  assert.equal(appStorage.getItem('vs_quizWidth'), '640');
   down(); handle.emit('pointermove', f.pointer(96, 280, { target: handle }));
   handle.emit('pointerup', f.pointer(96, 280, { target: handle }));
   assert.equal(app._quizWidth, 640);

@@ -2,13 +2,14 @@
 import {
   formatText,
   difficultyMap,
-  questionTypeMap,
-  parseMeChGabarito,
-  computeMeChScore,
-  parseMqGabarito,
-  computeMqScore,
-  computeMvfScore
-} from './utils.js?v=20261002-442';
+  questionTypeMap
+} from './utils.js?v=20261002-450b1';
+
+import { appStorage } from './release-config.js?v=20261002-450b1';
+import {
+  parseMeChGabarito, parseMqGabarito, computeQuestionScore,
+  isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
+} from './scoring.js?v=20261002-450b1';
 
 const HIGHLIGHT_COLORS = [
   { key: 'yellow', label: 'Amarelo' },
@@ -1009,7 +1010,7 @@ export class QuizRenderer {
   // ===================== MQ (Matching Question / Associação) Helpers =====================
 
   _createMqContent(qData, originalIdx, state, isLocked, isSubmitted, userAnswer) {
-    const renderMode = localStorage.getItem('vs_mqRenderMode') || 'arrows';
+    const renderMode = appStorage.getItem('vs_mqRenderMode') || 'arrows';
     if (renderMode === 'table') {
       return this._renderMqTable(qData, originalIdx, state, isLocked, isSubmitted, userAnswer);
     }
@@ -3753,100 +3754,19 @@ export class QuizRenderer {
   // ===================== Pontuação =====================
 
   isObjectiveQuestion(state, idx) {
-    const qData = state.questions[idx];
-    return ((qData && qData.tipo) || '').toUpperCase() !== 'ESCRITA';
+    return isObjectiveQuestion(state, idx);
   }
 
   applyDisregardedCorrectToScore(state, idx, score, options = {}) {
-    if (options.ignoreDisregard) return score;
-    const ans = state.userAnswers[idx];
-    const featureOn = state.config.showDisregardCorrect !== false;
-    const applyOn = state.config.applyDisregardedCorrect !== false;
-    if (
-      featureOn &&
-      applyOn &&
-      ans &&
-      ans.disregardCorrect &&
-      this.isObjectiveQuestion(state, idx) &&
-      score.total > 0 &&
-      score.hits > 0
-    ) {
-      return { hits: 0, total: score.total };
-    }
-    return score;
+    return applyDisregardedCorrectToScore(state, idx, score, options);
   }
 
   isDisregardedCorrectMarked(state, idx) {
-    const ans = state.userAnswers[idx];
-    if (!ans || !ans.disregardCorrect || !this.isObjectiveQuestion(state, idx)) return false;
-    const raw = this.computeQuestionScore(state, idx, { ignoreDisregard: true });
-    return raw.total > 0 && raw.hits > 0;
+    return isDisregardedCorrectMarked(state, idx);
   }
 
-  /**
-   * Retorna { hits, total } para a questão idx.
-   * - ME / VF: total = 1, hits = 1 ou 0
-   * - MEM (ME-CH): total = 1, hits = pontuação proporcional entre 0 e 1
-   * - MVF (CH): total = número de assertivas, hits = acertos menos erros (mínimo 0), ou apenas acertos no modo simples
-   * - ESCRITA simples: total = 10, hits = selfEval (0–10)
-   * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
-   */
   computeQuestionScore(state, idx, options = {}) {
-    const qData = state.questions[idx];
-    const ans = state.userAnswers[idx];
-    if (!ans || !ans.submitted) return { hits: 0, total: 0 };
-
-    const tipo = (qData.tipo || '').toUpperCase();
-
-    if (tipo === 'ESCRITA') {
-      const isItemsType = qData.subtipo === 'itens' ||
-        (Array.isArray(qData.itens) && qData.itens.length > 0);
-
-      if (!isItemsType) {
-        const selfEval = typeof ans.selfEval === 'number' ? ans.selfEval : 0;
-        return { hits: selfEval, total: 10 };
-      } else {
-        const numItems = (qData.itens || []).length;
-        if (numItems === 0) return { hits: 0, total: 0 };
-        const items = Array.isArray(ans.items) ? ans.items : [];
-        let sumEvals = 0;
-        for (let i = 0; i < numItems; i++) {
-          const item = items[i] || {};
-          sumEvals += typeof item.selfEval === 'number' ? item.selfEval : 0;
-        }
-        return { hits: sumEvals, total: numItems * 10 };
-      }
-    }
-
-    if (tipo === 'CH' || tipo === 'MVF') {
-      const assertivas = Array.isArray(qData.assertivas) ? qData.assertivas : [];
-      const score = computeMvfScore(
-        assertivas, ans.assertivaAnswers || {}, state.config.simpleMvfCorrection === true
-      );
-      return this.applyDisregardedCorrectToScore(state, idx, score, options);
-    }
-
-    if (tipo === 'ME-CH' || tipo === 'MEM') {
-      const score = computeMeChScore(qData, ans.selectedOriginalIndices || []);
-      return this.applyDisregardedCorrectToScore(state, idx, { hits: score, total: 1 }, options);
-    }
-
-    if (tipo === 'MQ') {
-      const scoreData = computeMqScore(qData, ans.connections || []);
-      return this.applyDisregardedCorrectToScore(state, idx, { hits: scoreData.hits, total: 1 }, options);
-    }
-
-    // ME / VF
-    const gabaritoLetra = (qData.gabarito || '').trim().toUpperCase();
-    if (!gabaritoLetra) return { hits: 0, total: 0 };
-    const gabaritoIdx = gabaritoLetra.charCodeAt(0) - 65;
-    const isCorrect = ans.selectedOriginalIdx === gabaritoIdx;
-    return this.applyDisregardedCorrectToScore(
-      state,
-      idx,
-      { hits: isCorrect ? 1 : 0, total: 1 },
-      options
-    );
+    return computeQuestionScore(state, idx, options);
   }
 
   updateFooter(state) {
@@ -3915,7 +3835,7 @@ export class QuizRenderer {
       return;
     }
 
-    const showPartialScore = localStorage.getItem('vs_showPartialScore') !== 'false';
+    const showPartialScore = appStorage.getItem('vs_showPartialScore') !== 'false';
     if ((allSubmitted || (showPartialScore && submittedQuestions > 0)) && totalQuestions > 0) {
       this.btnSubmitAll.style.display = allSubmitted ? 'none' : 'block';
       this.scoreDisplay.style.display = 'none';

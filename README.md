@@ -1,6 +1,29 @@
-# 🩺 Question Engine V4.4.2 (med-questoes-geral)
+# 🩺 Question Engine V4.5.0-beta.1 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
+
+## Beta 4.5.0 — etapa 1 de 5
+
+- `js/scoring.js` reúne gabaritos, pontuação e regras de desconsideração de acertos. O controlador e o renderer usam a mesma implementação; as regras e os formatos de dados são preservados. Os exports anteriores de `utils.js` permanecem disponíveis por compatibilidade.
+- A beta usa o IndexedDB **QuizEngineV3Beta**, com o mesmo esquema da versão estável. Sessão ativa, preferências e exclusões pendentes usam chaves de localStorage com prefixo `beta:`. A beta não lê nem migra automaticamente o banco estável **QuizEngineV3**.
+- Firebase permanece disponível apenas por ação manual nos botões de sincronização. Login, salvamento, entrega de respostas e exclusão de sessões não enviam nem baixam dados automaticamente. Exclusões locais ficam pendentes até a sincronização manual.
+- A sincronização manual usa a **mesma nuvem** da versão estável, incluindo sessões, pastas e exclusões. O isolamento local não cria outra conta ou banco Firebase.
+
+Testes: `node --test tests/*.test.mjs` (Node.js 20+). Além das interações existentes, cobrem pontuação dos tipos e aliases, desconsideração, consistência entre resumo/retry, isolamento do canal e sincronização manual com Firebase simulado. A validação nativa de IndexedDB e Firebase deve também ser feita no navegador.
+
+### Próximas etapas — uma por atualização após avaliação
+
+1. **beta.1:** pontuação compartilhada e preparação do canal beta.
+2. **beta.2:** extrair marca-texto.
+3. **beta.3:** extrair associação de colunas.
+4. **beta.4:** extrair preferências.
+5. **beta.5:** extrair filtros e avaliar o resultado.
+
+A branch `main` continua estável. Criar a branch `beta` não configura automaticamente uma URL no GitHub Pages; a publicação de teste é uma configuração separada.
+
+### Promoção para versão estável
+
+Antes do merge, mudar `RELEASE_CHANNEL` para `stable` em `js/release-config.js`, atualizar a versão/título e usar novamente `vs_darkMode` na leitura inicial do tema em `index.html`. Remover o aviso específico da beta e o atributo `disabled` inicial da opção de sincronização automática. Atualizar também a versão dos assets e imports. O código passa a usar o banco **QuizEngineV3** e as chaves locais originais; a preferência estável de sincronização automática volta a ser respeitada. Dados da beta não são copiados automaticamente para o banco estável; eventuais sessões de teste podem ser transferidas pelos exports/imports existentes quando desejado.
 
 ## Novidades da versão 4.4.2
 
@@ -76,7 +99,10 @@ med-questoes-geral/
 │   ├── renderer.js                 # QuizRenderer: renderização de cards, gabaritos, avaliação e inputs
 │   ├── parser.js                   # Parser: linearização da árvore JSON, resolução de grupos, variantes e tipos
 │   ├── store.js                    # Camada de persistência IndexedDB (sessões, pastas e migrações)
-│   ├── utils.js                    # Utilitários: Fisher-Yates, mapa de dificuldades/tipos, scores (MEM, MVF, MQ) e formatters
+│   ├── utils.js                    # Utilitários: Fisher-Yates, mapas, formatters e reexports de compatibilidade
+│   ├── scoring.js                  # Gabaritos e pontuação compartilhados, sem dependências de DOM
+│   ├── release-config.js           # Canal, armazenamento local e política de sincronização automática
+│   ├── settings-shortcuts.js       # Menu de configurações, gestos e tela cheia
 │   ├── firebase-config.js          # Inicialização do Firebase v10 e métodos de autenticação
 │   └── firebase-sync.js            # Lógica de sincronização remota, chunking e compressão Gzip
 ├── quizes-da-nuvem/                # Repositório de questões pré-empacotadas
