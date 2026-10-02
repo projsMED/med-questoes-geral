@@ -8,7 +8,7 @@ import {
   parseMqGabarito,
   computeMqScore,
   computeMvfScore
-} from './utils.js?v=20260928-1';
+} from './utils.js?v=20261002-441';
 
 const HIGHLIGHT_COLORS = [
   { key: 'yellow', label: 'Amarelo' },
@@ -46,6 +46,8 @@ export class QuizRenderer {
     this._revealedMetadataQuestions = new Set();
     this._metadataQuizRef = null;
     this._touchHighlightGesture = null;
+    this._lastHighlightPointerType = null;
+    this._mouseHighlightEntry = null;
     this._touchHighlightPreviewLayer = null;
     this._touchHighlightPreviewFrame = null;
     this._touchHighlightAutoScrollFrame = null;
@@ -59,6 +61,9 @@ export class QuizRenderer {
       : null;
     this._state = null;
     document.addEventListener('mouseup', () => {
+      const highlightEntry = this._mouseHighlightEntry;
+      this._mouseHighlightEntry = null;
+      if (highlightEntry) setTimeout(() => this._captureHighlightSelection(highlightEntry), 0);
       if (this._activeMarking) {
         this._saveMarkedWords(this._activeMarking.element, this._activeMarking.qIdx, this._activeMarking.markKey);
         this._activeMarking = null;
@@ -71,6 +76,7 @@ export class QuizRenderer {
   }
 
   render(state) {
+    this._mouseHighlightEntry = null;
     this._mqCleanups.forEach((cleanup) => cleanup());
     this._mqCleanups.clear();
     this._state = state;
@@ -2390,9 +2396,15 @@ export class QuizRenderer {
     this._highlightTargets.set(targetKey, entry);
     this._renderTextHighlights(entry);
 
-    element.addEventListener('mouseup', (e) => {
-      if (e.button !== 0) return;
-      setTimeout(() => this._captureHighlightSelection(entry), 0);
+    // Um tablet pode alternar entre dedo, caneta e mouse sem recarregar.
+    element.addEventListener('pointerdown', (e) => {
+      this._lastHighlightPointerType = e.pointerType;
+      if (e.pointerType === 'mouse') this._cancelTouchHighlightGesture();
+    }, { capture: true, passive: true });
+
+    element.addEventListener('mousedown', (e) => {
+      if (e.button !== 0 || this._touchHighlightGesture) return;
+      if (this._activeHighlightTargetKey === targetKey) this._mouseHighlightEntry = entry;
     });
 
     if (this._supportsDirectTouchHighlight) {
@@ -2413,8 +2425,7 @@ export class QuizRenderer {
         const touchModeActive =
           this._supportsDirectTouchHighlight &&
           this._activeHighlightTargetKey === targetKey &&
-          window.matchMedia &&
-          window.matchMedia('(pointer: coarse)').matches;
+          ['touch', 'pen'].includes(e.pointerType || this._lastHighlightPointerType);
         if (touchModeActive) e.preventDefault();
         return;
       }
@@ -2426,10 +2437,9 @@ export class QuizRenderer {
     element.addEventListener('click', (e) => {
       const fragment = e.target.closest && e.target.closest('.text-highlight');
       if (!fragment || !element.contains(fragment)) return;
-      const touchLikeClick =
-        e.pointerType === 'touch' ||
-        e.pointerType === 'pen' ||
-        (window.matchMedia && window.matchMedia('(pointer: coarse)').matches);
+      const touchLikeClick = ['touch', 'pen'].includes(
+        e.pointerType || this._lastHighlightPointerType
+      );
       if (!touchLikeClick) return;
       if (Date.now() < this._suppressHighlightTapUntil) {
         e.preventDefault();
@@ -3146,8 +3156,7 @@ export class QuizRenderer {
     const active = this._activeHighlightTargetKey === targetKey;
     const directTouchMode =
       this._supportsDirectTouchHighlight &&
-      window.matchMedia &&
-      window.matchMedia('(pointer: coarse)').matches;
+      ['touch', 'pen'].includes(this._lastHighlightPointerType);
     menu.innerHTML = `
       <div class="highlight-popover-title">Opções do marca-texto</div>
       <button type="button" class="highlight-menu-visibility">
@@ -3161,8 +3170,8 @@ export class QuizRenderer {
       </button>
       <div class="highlight-popover-hint">${active
         ? (directTouchMode
-            ? 'Arraste o dedo sobre o texto para marcá-lo.'
-            : 'Selecione um trecho do texto para marcá-lo.')
+            ? 'Arraste o dedo ou a caneta sobre o texto para marcá-lo.'
+            : 'Selecione com o mouse ou arraste o dedo sobre o texto para marcá-lo.')
         : 'Ative o marca-texto para criar novas marcações.'}</div>
     `;
 

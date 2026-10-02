@@ -1,6 +1,15 @@
-# 🩺 Question Engine V4.4 (med-questoes-geral)
+# 🩺 Question Engine V4.4.1 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
+
+## Novidades da versão 4.4.1
+
+- Marca-texto compatível com mouse Bluetooth em tablets: a seleção por caractere do mouse e o gesto por palavras do touch/caneta seguem a entrada usada em cada interação.
+- Dois toques rápidos na mesma margem externa das questões ou botão direito do mouse abrem um popup com configurações gerais e visuais. Os controles são os mesmos do topo; fechar o popup preserva a questão em estudo.
+- As alças laterais aguardam movimento horizontal para redimensionar, permitindo distinguir toque duplo, arrasto horizontal e rolagem vertical, com zoom por pinça preservado.
+- A opção **Tela cheia** aparece no topo das configurações gerais, com entrada/saída por botão e indicação quando o navegador não oferece suporte.
+
+Os testes de regressão de interação podem ser executados com `node --test tests/interactions.test.mjs` (Node.js 20+). Eles verificam reconhecimento dos gestos, reutilização dos controles, preservação da questão, tela cheia e alternância entre mouse/touch/caneta usando uma superfície DOM simulada. A validação de rolagem, zoom e tela cheia nativos deve também ser feita no navegador/dispositivo de destino.
 
 ---
 

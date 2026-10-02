@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V4.4 - Filtro em Etapas</title>
+  <title>Question Engine V4.4.1 - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('vs_darkMode');
@@ -12,14 +12,14 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20260928-1">
+  <link rel="stylesheet" href="css/styles.css?v=20261002-441">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V4.4</h2>
+    <h2 class="header-title">Question Engine V4.4.1</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -210,6 +210,11 @@
         <button class="btn btn-sm" id="btnGeneralSettings">⚙️ Configurações Gerais</button>
       </div>
       <div id="generalSettingsPanel" class="general-settings-panel hidden">
+        <div class="vs-option">
+          <strong class="vs-label">Tela cheia:</strong>
+          <button type="button" class="btn btn-sm" id="btnFullscreen" aria-pressed="false" aria-describedby="fullscreenStatus">⛶ Entrar em tela cheia</button>
+          <small id="fullscreenStatus" role="status" aria-live="polite"></small>
+        </div>
         <div class="vs-option">
           <label class="toggle-label">
             <input type="checkbox" id="chkShowDisregardCorrect" checked>
@@ -443,15 +448,32 @@
   </div>
 </div>
 
+<div class="settings-shortcut-gutter settings-shortcut-left" aria-hidden="true" hidden></div>
+<div class="settings-shortcut-gutter settings-shortcut-right" aria-hidden="true" hidden></div>
+<dialog id="settingsShortcutDialog" class="settings-shortcut-dialog" aria-labelledby="settingsShortcutTitle">
+  <div class="settings-shortcut-header">
+    <button type="button" class="btn btn-sm hidden" id="settingsShortcutBack">← Voltar</button>
+    <h3 id="settingsShortcutTitle" tabindex="-1">Configurações</h3>
+    <button type="button" class="btn btn-sm" id="settingsShortcutClose" aria-label="Fechar configurações">✕</button>
+  </div>
+  <div id="settingsShortcutHome" class="settings-shortcut-home">
+    <button type="button" class="btn btn-sm" data-settings-section="general">⚙️ Configurações gerais</button>
+    <button type="button" class="btn btn-sm" data-settings-section="visual">⚙️ Configurações visuais</button>
+    <small>Nas laterais das questões: dois toques rápidos ou botão direito do mouse.</small>
+  </div>
+  <div id="settingsShortcutContent" class="hidden"></div>
+</dialog>
+
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20260928-1';
+  const APP_ASSET_VERSION = '20261002-441';
   const moduleAssets = [
     'main.js',
     'store.js',
     'parser.js',
     'utils.js',
     'renderer.js',
+    'settings-shortcuts.js',
     'firebase-config.js',
     'firebase-sync.js'
   ].map((file) => `./js/${file}?v=${APP_ASSET_VERSION}`);

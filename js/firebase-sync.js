@@ -1,5 +1,5 @@
 /* ===== JS: js/firebase-sync.js ===== */
-import { db, isLoggedIn } from './firebase-config.js?v=20260924-5';
+import { db, isLoggedIn } from './firebase-config.js?v=20261002-441';
 import {
   doc, setDoc, getDoc, getDocs, deleteDoc,
   collection, writeBatch
@@ -229,3 +229,4 @@ export async function deleteRemoteSession(sessionId) {
     return false;
   }
 }
+

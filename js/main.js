@@ -4,8 +4,8 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20260924-5';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20260924-5';
+} from './store.js?v=20261002-441';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-441';
 import {
   shuffleArray,
   difficultyMap,
@@ -14,8 +14,9 @@ import {
   computeMeChScore,
   computeMqScore,
   computeMvfScore
-} from './utils.js?v=20260928-1';
-import { QuizRenderer } from './renderer.js?v=20260928-1';
+} from './utils.js?v=20261002-441';
+import { QuizRenderer } from './renderer.js?v=20261002-441';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-441';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -295,6 +296,13 @@ const App = {
     this.bindEvents();
     this.setupImageZoom();
     this.initVisualSettings();
+    this.settingsShortcuts = new SettingsShortcuts({
+      shell: this.elements.quizWidthShell,
+      visualPanel: this.elements.visualSettingsPanel,
+      generalPanel: this.elements.generalSettingsPanel,
+      fullscreenButton: document.getElementById('btnFullscreen'),
+      fullscreenStatus: document.getElementById('fullscreenStatus')
+    });
     this.setupNextUnansweredButton();
     this.setupCommentShortcuts();
     this.initFolderSystem();
@@ -381,8 +389,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20260924-5');
-      this.firebaseSync = await import('./firebase-sync.js?v=20260924-5');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261002-441');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261002-441');
 
       this.firebaseState.autoSync = localStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = localStorage.getItem('lastSyncTime') || null;
@@ -3676,29 +3684,48 @@ const App = {
 
     quizWidthShell.querySelectorAll('.quiz-resize-handle').forEach((handle) => {
       let drag = null;
-      const finishDrag = () => {
+      const finishDrag = (commit = true) => {
         if (!drag) return;
-        localStorage.setItem('vs_quizWidth', String(this._quizWidth));
+        const finished = drag;
         drag = null;
+        if (finished.active) {
+          if (commit) localStorage.setItem('vs_quizWidth', String(this._quizWidth));
+          else this.applyQuizWidth(finished.preferredWidth, false);
+        }
         handle.classList.remove('is-dragging');
         document.body.classList.remove('quiz-width-resizing');
+        if (handle.hasPointerCapture(finished.pointerId)) handle.releasePointerCapture(finished.pointerId);
       };
       handle.addEventListener('pointerdown', (event) => {
         if (!event.isPrimary || event.button !== 0) return;
-        event.preventDefault();
         const side = handle.classList.contains('quiz-resize-left') ? -1 : 1;
         drag = {
           pointerId: event.pointerId,
           startX: event.clientX,
+          startY: event.clientY,
           startWidth: quizWidthShell.getBoundingClientRect().width,
-          side
+          preferredWidth: this._quizWidth,
+          side,
+          active: false
         };
         handle.setPointerCapture(event.pointerId);
-        handle.classList.add('is-dragging');
-        document.body.classList.add('quiz-width-resizing');
       });
       handle.addEventListener('pointermove', (event) => {
         if (!drag || event.pointerId !== drag.pointerId) return;
+        const dx = Math.abs(event.clientX - drag.startX);
+        const dy = Math.abs(event.clientY - drag.startY);
+        if (!drag.active) {
+          if (dy > 8 && dy >= dx) {
+            finishDrag(false);
+            return;
+          }
+          if (dx < 8 || dx <= dy) return;
+          drag.active = true;
+          handle.classList.add('is-dragging');
+          document.body.classList.add('quiz-width-resizing');
+          const selection = window.getSelection();
+          if (selection) selection.removeAllRanges();
+        }
         event.preventDefault();
         const viewportWidth = window.innerWidth - (window.innerWidth <= 600 ? 16 : 40);
         const maxWidth = Math.max(1, Math.min(1800, viewportWidth));
@@ -3706,9 +3733,12 @@ const App = {
         const width = drag.startWidth + 2 * drag.side * (event.clientX - drag.startX);
         this.applyQuizWidth(Math.max(minWidth, Math.min(maxWidth, width)), false);
       });
-      handle.addEventListener('pointerup', finishDrag);
-      handle.addEventListener('pointercancel', finishDrag);
-      handle.addEventListener('lostpointercapture', finishDrag);
+      handle.addEventListener('pointerup', () => finishDrag());
+      handle.addEventListener('pointercancel', () => finishDrag(false));
+      handle.addEventListener('lostpointercapture', () => finishDrag(false));
+      document.addEventListener('pointerdown', (event) => {
+        if (drag && event.pointerType !== 'mouse' && !event.isPrimary) finishDrag(false);
+      }, { capture: true, passive: true });
       handle.addEventListener('keydown', (event) => {
         const current = this._quizWidth;
         const next = event.key === 'ArrowRight' ? current + 10 :
