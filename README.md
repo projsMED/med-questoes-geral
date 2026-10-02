@@ -1,8 +1,15 @@
-# 🩺 Question Engine V4.5.0-beta.2 (med-questoes-geral)
+# 🩺 Question Engine V4.5.0-beta.3 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
 
-## Beta 4.5.0 — etapa 2 de 5
+## Beta 4.5.0 — etapa 3 de 5
+
+- `js/matching-questions.js` concentra as questões de associação (MQ): setas, tabela, conexões, gabarito visual, fonte, expansão, redimensionamento e menu de exclusão.
+- `QuizRenderer` delega a associação ao componente `MatchingQuestions`, passando o contêiner e o callback para salvar conexões. O módulo não recebe o controlador inteiro nem grava diretamente no IndexedDB ou Firebase.
+- Os índices originais das conexões, a ordem embaralhada, as respostas legadas e as regras de pontuação são preservados. Sessões salvas nas betas anteriores continuam no mesmo banco.
+- Ao reconstruir cartões ou sair de uma sessão, o módulo remove observadores, eventos globais, menus e temporizadores. A tabela expandida é fechada e os gestos de redimensionamento pendentes são cancelados.
+
+### Mantido da beta.2
 
 - `js/highlighter.js` agora concentra o marca-texto: entrada por mouse/touch/caneta, seleção por palavras, preview, rolagem durante o gesto, menus, cores, opacidade e cópia de trechos.
 - `QuizRenderer` monta as questões e delega o marca-texto ao componente `TextHighlighter`, passando o contêiner, uma função para ler o estado e callbacks para salvar alterações. O módulo não recebe o controlador inteiro nem grava diretamente no IndexedDB ou Firebase.
@@ -16,19 +23,27 @@
 - Firebase permanece disponível apenas por ação manual nos botões de sincronização. Login, salvamento, entrega de respostas e exclusão de sessões não enviam nem baixam dados automaticamente. Exclusões locais ficam pendentes até a sincronização manual.
 - A sincronização manual usa a **mesma nuvem** da versão estável, incluindo sessões, pastas e exclusões. O isolamento local não cria outra conta ou banco Firebase.
 
-Testes: `node --test tests/*.test.mjs` (Node.js 20+). Os 41 testes cobrem interações, pontuação dos tipos e aliases, desconsideração, consistência entre resumo/retry, isolamento do canal e sincronização manual com Firebase simulado. Incluem persistência do marca-texto por callbacks, restauração dos campos, grupos, sobreposição, cor/opacidade e limpeza de recursos. A decoração do texto, layout, seleção nativa, IndexedDB e Firebase reais devem também ser verificados no navegador.
+Testes: `node --test tests/*.test.mjs` (Node.js 20+). Os 49 testes cobrem interações, pontuação dos tipos e aliases, desconsideração, consistência entre resumo/retry, isolamento do canal e sincronização manual com Firebase simulado. Incluem persistência do marca-texto por callbacks, restauração dos campos, grupos, sobreposição, cor/opacidade e limpeza de recursos. Também cobrem conexões e gabarito embaralhados, respostas legadas, bloqueio após entrega, troca entre setas/tabela, controles da tabela e limpeza de recursos MQ. São testes com DOM e serviços simulados; geometria das setas, layout, seleção nativa, IndexedDB e Firebase reais devem também ser verificados no navegador.
 
 ### Próximas etapas — uma por atualização após avaliação
 
 1. **beta.1 — concluída:** pontuação compartilhada e preparação do canal beta.
 2. **beta.2 — concluída:** extrair marca-texto.
-3. **beta.3:** extrair associação de colunas.
+3. **beta.3 — concluída:** extrair associação de colunas.
 4. **beta.4:** extrair preferências.
 5. **beta.5:** extrair filtros e avaliar o resultado.
 
 A branch `main` continua estável. Criar a branch `beta` não configura automaticamente uma URL no GitHub Pages; a publicação de teste é uma configuração separada.
 
-### Teste manual da beta.2
+### Teste manual da beta.3
+
+- Em questões MQ, criar e remover conexões nos modos setas e tabela, incluindo um item com vários destinos e outro sem associação (`nulo`).
+- Embaralhar as colunas e conferir se as respostas, letras/números e pontuação continuam correspondendo aos itens originais. Entregar respostas e verificar acertos, erros, omissões e bloqueio de edição.
+- Alternar entre setas e tabela, salvar/reabrir a sessão e conferir as conexões existentes, incluindo uma sessão criada nas betas anteriores.
+- Nas setas, testar fonte e exclusão pelo menu do botão direito. Na tabela, testar fonte, largura das colunas, restauração com duplo clique, expansão e Escape; verificar também o arrasto por touch.
+- Sair ou trocar de sessão com menu/tabela expandida, abrir outra e confirmar que não ficam menus, expansão ou ações da questão anterior.
+
+### Teste manual do marca-texto (beta.2)
 
 - Marcar com mouse (incluindo mouse Bluetooth em tablet), touch e caneta; soltar o mouse fora do enunciado e alternar a entrada sem recarregar.
 - Marcar um enunciado e um texto-base de grupo; alterar cor/opacidade, ocultar/mostrar, copiar e apagar marcações.
@@ -111,6 +126,7 @@ med-questoes-geral/
 ├── js/
 │   ├── main.js                     # Controlador principal (App): eventos, ciclo de vida, filtros, sessões e UI
 │   ├── renderer.js                 # QuizRenderer: renderização de cards, gabaritos, avaliação e inputs
+│   ├── matching-questions.js       # MatchingQuestions: associação por setas/tabela e limpeza de recursos
 │   ├── highlighter.js              # TextHighlighter: seleção, destaques, gestos, menus e limpeza de recursos
 │   ├── parser.js                   # Parser: linearização da árvore JSON, resolução de grupos, variantes e tipos
 │   ├── store.js                    # Camada de persistência IndexedDB (sessões, pastas e migrações)

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V4.5.0-beta.2 - Filtro em Etapas</title>
+  <title>Question Engine V4.5.0-beta.3 - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('beta:vs_darkMode');
@@ -12,14 +12,14 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20261002-450b2">
+  <link rel="stylesheet" href="css/styles.css?v=20261002-450b3">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V4.5.0-beta.2</h2>
+    <h2 class="header-title">Question Engine V4.5.0-beta.3</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -469,7 +469,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20261002-450b2';
+  const APP_ASSET_VERSION = '20261002-450b3';
   const moduleAssets = [
     'main.js',
     'store.js',
@@ -479,6 +479,7 @@
     'release-config.js',
     'renderer.js',
     'highlighter.js',
+    'matching-questions.js',
     'settings-shortcuts.js',
     'firebase-config.js',
     'firebase-sync.js'

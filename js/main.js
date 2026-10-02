@@ -4,21 +4,21 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261002-450b2';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-450b2';
+} from './store.js?v=20261002-450b3';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-450b3';
 import {
   shuffleArray,
   difficultyMap,
   questionTypeMap,
   questionTypes
-} from './utils.js?v=20261002-450b2';
+} from './utils.js?v=20261002-450b3';
 import {
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261002-450b2';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261002-450b2';
-import { QuizRenderer } from './renderer.js?v=20261002-450b2';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-450b2';
+} from './scoring.js?v=20261002-450b3';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261002-450b3';
+import { QuizRenderer } from './renderer.js?v=20261002-450b3';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-450b3';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -391,8 +391,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261002-450b2');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261002-450b2');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261002-450b3');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261002-450b3');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
