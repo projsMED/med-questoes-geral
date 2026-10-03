@@ -1,8 +1,15 @@
-# 🩺 Question Engine V4.5.0-beta.4 (med-questoes-geral)
+# 🩺 Question Engine V4.5.0-beta.5 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
 
-## Beta 4.5.0 — etapa 4 de 5
+## Beta 4.5.0 — etapa 5 de 5
+
+- `js/filters.js` concentra o esquema dos filtros, normalização de sessões legadas, contagens, árvore de pastas, descrições, tags incluídas/excluídas, dificuldade e tipo nas duas etapas.
+- `selectQuestionGroups(state)` seleciona os blocos de questões e identifica o contexto obrigatório dos grupos sem modificar a sessão. O controlador mantém embaralhamento, mapas de alternativas, renderização e salvamento.
+- `QuizFilters` recebe elementos do DOM, um leitor do estado atual e callbacks para salvar, gerar o quiz e mostrar informações. A troca de sessão e a reconstrução dos painéis removem eventos dos controles anteriores.
+- Os campos e as regras são preservados, incluindo questões sem tag/dificuldade, aliases CH/ME-CH, exclusões de tags, contexto dos grupos, retry e questões apagadas/desativadas. Sessões das betas anteriores usam o mesmo banco.
+
+### Mantido da beta.4
 
 - `js/preferences.js` concentra a leitura das preferências visuais/gerais, a restauração dos controles e a aplicação de tema, fonte, largura, rodapé e disposição V/F.
 - O componente `Preferences` recebe elementos do DOM e callbacks para reconstruir questões, aplicar opções gerais e abrir comentários. As ações e o salvamento da sessão continuam no controlador. Renderer e associação usam os mesmos leitores de preferências.
@@ -31,19 +38,36 @@
 - Firebase permanece disponível apenas por ação manual nos botões de sincronização. Login, salvamento, entrega de respostas e exclusão de sessões não enviam nem baixam dados automaticamente. Exclusões locais ficam pendentes até a sincronização manual.
 - A sincronização manual usa a **mesma nuvem** da versão estável, incluindo sessões, pastas e exclusões. O isolamento local não cria outra conta ou banco Firebase.
 
-Testes: `node --test tests/*.test.mjs` (Node.js 20+). Os 57 testes cobrem interações, pontuação dos tipos e aliases, desconsideração, consistência entre resumo/retry, isolamento do canal e sincronização manual com Firebase simulado. Incluem persistência do marca-texto por callbacks, restauração dos campos, grupos, sobreposição, cor/opacidade e limpeza de recursos. Também cobrem conexões e gabarito embaralhados, respostas legadas, bloqueio após entrega, troca entre setas/tabela, controles da tabela e limpeza de recursos MQ. A beta.4 acrescenta restauração das preferências, isolamento de chaves, tema automático/manual, efeitos dos controles na sessão, uso no popup e descarte de eventos/arrastos. São testes com DOM e serviços simulados; geometria das setas, layout, seleção nativa, IndexedDB e Firebase reais devem também ser verificados no navegador.
+Testes: `node --test tests/*.test.mjs` (Node.js 20+). Os 69 testes cobrem interações, pontuação dos tipos e aliases, desconsideração, consistência entre resumo/retry, isolamento do canal e sincronização manual com Firebase simulado. Incluem persistência do marca-texto por callbacks, restauração dos campos, grupos, sobreposição, cor/opacidade e limpeza de recursos. Também cobrem conexões e gabarito embaralhados, respostas legadas, bloqueio após entrega, troca entre setas/tabela, controles da tabela e limpeza de recursos MQ. A beta.4 acrescenta restauração das preferências, isolamento de chaves, tema automático/manual, efeitos dos controles na sessão, uso no popup e descarte de eventos/arrastos. A beta.5 acrescenta combinação de filtros, árvore/contagens, aliases, grupos/contexto, retry, geração, restauração de sessão e limpeza de eventos. São testes com DOM e serviços simulados; geometria das setas, layout, seleção nativa, IndexedDB e Firebase reais devem também ser verificados no navegador.
 
-### Próximas etapas — uma por atualização após avaliação
+### Etapas da modularização
 
 1. **beta.1 — concluída:** pontuação compartilhada e preparação do canal beta.
 2. **beta.2 — concluída:** extrair marca-texto.
 3. **beta.3 — concluída:** extrair associação de colunas.
 4. **beta.4 — concluída:** extrair preferências.
-5. **beta.5:** extrair filtros e avaliar o resultado.
+5. **beta.5 — concluída:** extrair filtros e avaliar o resultado.
+
+### Avaliação ao concluir as cinco etapas
+
+A divisão agora acompanha cinco responsabilidades claras: pontuação, marca-texto, associação, preferências e filtros. Os componentes usam callbacks pequenos e o estado salvo mantém o mesmo formato. A aplicação continua com ES modules nativos e o mesmo processo de publicação.
+
+Em relação à `main` 4.4.2, `main.js` passou de 152.812 para 116.608 bytes (cerca de 24% menor) e `renderer.js` de 155.965 para 68.025 bytes (cerca de 56% menor). Essas medidas mostram a distribuição do código entre arquivos; a validação de desempenho depende do navegador e da carga de questões.
+
+`main.js` continua coordenando sessões, pastas de sessões, Firebase, ações sobre respostas e geração de mapas. A organização é suficiente para esta rodada de cinco etapas. Uma separação dessas áreas pode ser avaliada em futuras mudanças que realmente as envolvam. Antes da promoção, conferir manualmente os fluxos abaixo e as convenções de canal/banco descritas na seção de promoção.
 
 A branch `main` continua estável. Criar a branch `beta` não configura automaticamente uma URL no GitHub Pages; a publicação de teste é uma configuração separada.
 
-### Teste manual da beta.4
+### Teste manual da beta.5
+
+- Abrir um quiz com pastas/subpastas, conferir contagens, seleção parcial e descrições; avançar/voltar entre as duas etapas.
+- Combinar tags incluídas/excluídas, dificuldade e tipo. Testar Selecionar/Desselecionar todas e Excluir as não incluídas, além de questões sem tag/dificuldade.
+- Gerar o quiz e conferir a seleção, o resumo dos filtros e o contexto dos grupos. Testar embaralhamento de questões/alternativas e associação MQ.
+- Refazer erros de um grupo, conferir as questões de contexto, depois gerar pelos filtros e confirmar a saída do retry. Questões apagadas não devem reaparecer; desativadas seguem visíveis e fora da pontuação.
+- Reabrir uma sessão da beta.4 com filtros salvos na segunda etapa; conferir escolhas e gerar novamente. Trocar de sessão e verificar que os controles passam a alterar a sessão atual.
+- Revisar marca-texto, associação, configurações, atalhos, tela cheia, salvamento e sincronização manual para concluir a avaliação das cinco etapas.
+
+### Teste manual das preferências (beta.4)
 
 - Reabrir uma sessão da beta.3 e conferir tema, fonte, largura, rodapé, disposição V/F, modo MQ, nota parcial e opções gerais já salvas. Recarregar e confirmar que as escolhas persistem.
 - Sem escolha manual de tema na beta, mudar o tema do sistema e conferir a atualização; depois escolher claro/escuro no site e confirmar que o sistema deixa de sobrescrever essa escolha.
@@ -142,6 +166,7 @@ med-questoes-geral/
 ├── js/
 │   ├── main.js                     # Controlador principal (App): eventos, ciclo de vida, filtros, sessões e UI
 │   ├── renderer.js                 # QuizRenderer: renderização de cards, gabaritos, avaliação e inputs
+│   ├── filters.js                 # QuizFilters: esquema, seleção por grupos, contagens e controles
 │   ├── preferences.js             # Preferences: leitura, controles e aplicação das preferências visuais/gerais
 │   ├── matching-questions.js       # MatchingQuestions: associação por setas/tabela e limpeza de recursos
 │   ├── highlighter.js              # TextHighlighter: seleção, destaques, gestos, menus e limpeza de recursos

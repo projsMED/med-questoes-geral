@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from '../../js/filters.js';
 import { Preferences, readVisualPreferences, readGeneralPreferences } from '../../js/preferences.js';
 import * as scoring from '../../js/scoring.js';
 import * as utils from '../../js/utils.js';
@@ -24,6 +25,7 @@ export function loadApp(overrides = {}) {
     .replace(/App\.init\(\);\s*$/, 'App;');
   return vm.runInNewContext(source, {
     ...utils, ...scoring, appStorage, ALLOW_AUTOMATIC_SYNC, Preferences, readVisualPreferences, readGeneralPreferences,
+    QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups,
     document: { getElementById: element, querySelector: element },
     window: { scrollTo() {} }, console,
     confirm: () => true, alert() {},
