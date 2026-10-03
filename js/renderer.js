@@ -3,16 +3,16 @@ import {
   formatText,
   difficultyMap,
   questionTypeMap
-} from './utils.js?v=20261002-450b3';
+} from './utils.js?v=20261002-450b4';
 
-import { appStorage } from './release-config.js?v=20261002-450b3';
+import { readVisualPreferences } from './preferences.js?v=20261002-450b4';
 import {
   parseMeChGabarito, parseMqGabarito, computeQuestionScore,
   isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261002-450b3';
+} from './scoring.js?v=20261002-450b4';
 
-import { MatchingQuestions } from './matching-questions.js?v=20261002-450b3';
-import { TextHighlighter } from './highlighter.js?v=20261002-450b3';
+import { MatchingQuestions } from './matching-questions.js?v=20261002-450b4';
+import { TextHighlighter } from './highlighter.js?v=20261002-450b4';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
@@ -1701,7 +1701,7 @@ export class QuizRenderer {
       return;
     }
 
-    const showPartialScore = appStorage.getItem('vs_showPartialScore') !== 'false';
+    const showPartialScore = readVisualPreferences().showPartialScore;
     if ((allSubmitted || (showPartialScore && submittedQuestions > 0)) && totalQuestions > 0) {
       this.btnSubmitAll.style.display = allSubmitted ? 'none' : 'block';
       this.scoreDisplay.style.display = 'none';

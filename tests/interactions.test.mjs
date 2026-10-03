@@ -1,12 +1,10 @@
 // Regressões de interação sem dependências: node --test tests/interactions.test.mjs
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
-import vm from 'node:vm';
 import { Element, fixture } from './helpers/interactions-dom.mjs';
 import { QuizRenderer } from '../js/renderer.js';
 import { appStorage } from '../js/release-config.js';
-import { questionTypes } from '../js/utils.js';
+import { Preferences } from '../js/preferences.js';
 
 function addCard(fixture, index, top, bottom, parent = fixture.quizContainer) {
   const card = new Element('question-card'); card.dataset.originalIdx = String(index);
@@ -188,14 +186,12 @@ test('atalho de tela cheia executa diretamente e sincroniza os dois botões e me
 
 test('alças distinguem duplo toque, arrasto horizontal e vertical sem gravar largura em um toque', () => {
   const f = fixture();
-  const source = readFileSync(new URL('../js/main.js', import.meta.url), 'utf8')
-    .replace(/^import[\s\S]*?from ['"][^'"]+['"];\n/gm, '')
-    .replace(/App\.init\(\);\s*$/, 'globalThis.testApp = App;');
-  globalThis.questionTypes = questionTypes;
-  globalThis.appStorage = appStorage;
-  vm.runInThisContext(source);
-  const app = globalThis.testApp; app._quizWidth = 600;
-  app.initQuizWidthControls();
+  const preferences = new Preferences({ elements: {
+    quizWidthShell: f.shell, rangeQuizWidth: f.element('rangeQuizWidth'),
+    btnResetQuizWidth: f.element('btnResetQuizWidth'), quizWidthValue: f.element('quizWidthValue')
+  } });
+  preferences._quizWidth = 600;
+  preferences.initQuizWidthControls();
   const handle = f.handles[0];
   const down = () => {
     const e = f.pointer(96, 250, { target: handle });
@@ -210,13 +206,14 @@ test('alças distinguem duplo toque, arrasto horizontal e vertical sem gravar la
   assert.equal(appStorage.getItem('vs_quizWidth'), null);
   f.settings.dialog.close();
   down(); handle.emit('pointermove', f.pointer(76, 250, { target: handle }));
-  assert.equal(app._quizWidth, 640);
+  assert.equal(preferences._quizWidth, 640);
   handle.emit('pointerup', f.pointer(76, 250, { target: handle }));
   assert.equal(appStorage.getItem('vs_quizWidth'), '640');
   down(); handle.emit('pointermove', f.pointer(96, 280, { target: handle }));
   handle.emit('pointerup', f.pointer(96, 280, { target: handle }));
-  assert.equal(app._quizWidth, 640);
+  assert.equal(preferences._quizWidth, 640);
   assert.equal(f.doc.body.classList.contains('quiz-width-resizing'), false);
+  preferences.dispose();
 });
 
 test('marca-texto alterna touch/caneta e mouse por interação; mouse salva seleção mesmo soltando fora', async () => {

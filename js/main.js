@@ -4,21 +4,22 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261002-450b3';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-450b3';
+} from './store.js?v=20261002-450b4';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-450b4';
 import {
   shuffleArray,
   difficultyMap,
   questionTypeMap,
   questionTypes
-} from './utils.js?v=20261002-450b3';
+} from './utils.js?v=20261002-450b4';
 import {
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261002-450b3';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261002-450b3';
-import { QuizRenderer } from './renderer.js?v=20261002-450b3';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-450b3';
+} from './scoring.js?v=20261002-450b4';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261002-450b4';
+import { QuizRenderer } from './renderer.js?v=20261002-450b4';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261002-450b4';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-450b4';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -297,7 +298,7 @@ const App = {
 
     this.bindEvents();
     this.setupImageZoom();
-    this.initVisualSettings();
+    this.initPreferences();
     this.settingsShortcuts = new SettingsShortcuts({
       shell: this.elements.quizWidthShell,
       visualPanel: this.elements.visualSettingsPanel,
@@ -391,8 +392,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261002-450b3');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261002-450b3');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261002-450b4');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261002-450b4');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
@@ -568,6 +569,22 @@ const App = {
       this.handleFirebaseLogout()
     );
 
+    // Eventos do modal de editar sessão
+    this.elements.closeEditSession.addEventListener('click', () => {
+      this.elements.editSessionModal.classList.add('hidden');
+    });
+    this.elements.btnEditCancel.addEventListener('click', () => {
+      this.elements.editSessionModal.classList.add('hidden');
+    });
+    this.elements.btnEditSave.addEventListener('click', () => {
+      this.saveEditSession();
+    });
+    this.elements.editSessionModal.addEventListener('click', (e) => {
+      if (e.target === this.elements.editSessionModal) {
+        this.elements.editSessionModal.classList.add('hidden');
+      }
+    });
+
     // Configurações
     this.elements.chkShuffleQ.addEventListener('change', (e) => {
       this.state.config.shuffleQ = e.target.checked;
@@ -600,26 +617,6 @@ const App = {
     this.elements.chkShowFilterSummary.addEventListener('change', (e) => {
       this.state.config.showFilterSummary = e.target.checked;
       this.renderer.render(this.state);
-      this.save();
-    });
-
-    if (this.elements.chkShowDisregardCorrect) {
-      this.elements.chkShowDisregardCorrect.addEventListener('change', (e) => {
-        appStorage.setItem('gs_showDisregardCorrect', e.target.checked ? 'true' : 'false');
-        this.state.config.showDisregardCorrect = e.target.checked;
-        this.state.config.applyDisregardedCorrect = e.target.checked;
-        this.renderer.render(this.state);
-        this.applyCommentCollapseMode();
-        this.save();
-      });
-    }
-
-    this.elements.chkSimpleMvfCorrection.addEventListener('change', (e) => {
-      const enabled = e.target.checked;
-      appStorage.setItem('gs_simpleMvfCorrection', String(enabled));
-      this.state.config.simpleMvfCorrection = enabled;
-      this.renderer.render(this.state);
-      this.applyCommentCollapseMode();
       this.save();
     });
 
@@ -740,13 +737,13 @@ const App = {
     }
     if (this.state.config.showDisregardCorrect === undefined) {
       this.state.config.showDisregardCorrect =
-        appStorage.getItem('gs_showDisregardCorrect') !== 'false';
+        readGeneralPreferences().showDisregardCorrect;
     }
     if (this.state.config.applyDisregardedCorrect === undefined) {
       this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
     }
     this.state.config.simpleMvfCorrection =
-      appStorage.getItem('gs_simpleMvfCorrection') === 'true';
+      readGeneralPreferences().simpleMvfCorrection;
 
     if (this.state.mappings && Array.isArray(this.state.mappings.qOrder) && this.state.mappings.qOrder.length > 0) {
       this.recalculateSessionQuestionCount();
@@ -782,10 +779,10 @@ const App = {
     this.state.config.showDiff = this.elements.chkShowDiff.checked;
     this.state.config.showFilterSummary = this.elements.chkShowFilterSummary.checked;
     this.state.config.showDisregardCorrect =
-      appStorage.getItem('gs_showDisregardCorrect') !== 'false';
+      readGeneralPreferences().showDisregardCorrect;
     this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
     this.state.config.simpleMvfCorrection =
-      appStorage.getItem('gs_simpleMvfCorrection') === 'true';
+      readGeneralPreferences().simpleMvfCorrection;
 
     this.state.filters = {
       tags: [],
@@ -1607,7 +1604,7 @@ const App = {
     this.elements.filterSection.classList.add('hidden');
     this.elements.configBar.classList.remove('hidden');
     this.elements.footerBar.classList.remove('hidden');
-    this.applyFooterMode(this.getVisualSettings().footerFixed);
+    this.preferences.applyFooterMode(this.getVisualSettings().footerFixed);
   },
 
   handleSelection(originalQIdx, originalAltIdx, isCheckbox = false, checked = true) {
@@ -2194,7 +2191,7 @@ const App = {
       this.state.config.showFilterSummary;
     if (this.elements.chkShowDisregardCorrect) {
       this.state.config.showDisregardCorrect =
-        appStorage.getItem('gs_showDisregardCorrect') !== 'false';
+        readGeneralPreferences().showDisregardCorrect;
       this.elements.chkShowDisregardCorrect.checked =
         this.state.config.showDisregardCorrect !== false;
     }
@@ -3413,271 +3410,33 @@ const App = {
     await this.renderSessionList();
   },
 
-  // ===== Configurações Visuais =====
+  // ===== Preferências =====
   getVisualSettings() {
-    return {
-      footerFixed: appStorage.getItem('vs_footerFixed') !== 'false',
-      commentMode: appStorage.getItem('vs_commentMode') || 'all',
-      persistManualOpen: appStorage.getItem('vs_persistManualOpen') === 'true',
-      vfStacked: appStorage.getItem('vs_vfStacked') === 'true',
-      mqRenderMode: appStorage.getItem('vs_mqRenderMode') || 'arrows',
-      showPartialScore: appStorage.getItem('vs_showPartialScore') !== 'false',
-      fontSize: parseInt(appStorage.getItem('vs_fontSize')) || 16,
-      quizWidth: parseInt(appStorage.getItem('vs_quizWidth'), 10) || 900,
-      darkMode: appStorage.getItem('vs_darkMode')
-    };
+    return readVisualPreferences();
   },
 
-  initVisualSettings() {
-    const vs = this.getVisualSettings();
-
-    // Restaurar UI
-    this.elements.chkFooterFixed.checked = vs.footerFixed;
-    if (vs.commentMode === 'current') {
-      this.elements.commentModeCurrent.checked = true;
-      this.elements.commentSubOptions.classList.remove('hidden');
-    } else {
-      this.elements.commentModeAll.checked = true;
-    }
-    this.elements.chkPersistManualOpen.checked = vs.persistManualOpen;
-    this.elements.chkVfStacked.checked = vs.vfStacked;
-    if (this.elements.mqModeTable && this.elements.mqModeArrows) {
-      if (vs.mqRenderMode === 'table') {
-        this.elements.mqModeTable.checked = true;
-      } else {
-        this.elements.mqModeArrows.checked = true;
-      }
-    }
-    if (this.elements.chkShowPartialScore) {
-      this.elements.chkShowPartialScore.checked = vs.showPartialScore;
-    }
-    this.elements.rangeFontSize.value = vs.fontSize;
-    this.elements.fontSizeValue.textContent = vs.fontSize + 'px';
-    if (this.elements.chkShowDisregardCorrect) {
-      this.elements.chkShowDisregardCorrect.checked =
-        appStorage.getItem('gs_showDisregardCorrect') !== 'false';
-    }
-    this.elements.chkSimpleMvfCorrection.checked =
-      appStorage.getItem('gs_simpleMvfCorrection') === 'true';
-
-    // Dark mode: null = auto (segue o sistema), 'true'/'false' = manual
-    const isDark = vs.darkMode === 'true' ||
-      (vs.darkMode === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    this.elements.chkDarkMode.checked = isDark;
-
-    // Aplicar footer, VF stacked, font size e dark mode
-    this.applyFooterMode(vs.footerFixed);
-    this.applyVfStacked(vs.vfStacked);
-    this.applyFontSize(vs.fontSize);
-    this.applyQuizWidth(vs.quizWidth, false);
-    this.initQuizWidthControls();
-    this.applyDarkMode(isDark);
-
-    // Eventos
-    this.elements.btnVisualSettings.addEventListener('click', () => {
-      this.elements.visualSettingsPanel.classList.toggle('hidden');
-    });
-
-    if (this.elements.btnGeneralSettings && this.elements.generalSettingsPanel) {
-      this.elements.btnGeneralSettings.addEventListener('click', () => {
-        this.elements.generalSettingsPanel.classList.toggle('hidden');
-      });
-    }
-
-    this.elements.chkFooterFixed.addEventListener('change', (e) => {
-      appStorage.setItem('vs_footerFixed', e.target.checked);
-      this.applyFooterMode(e.target.checked);
-    });
-
-    this.elements.commentModeAll.addEventListener('change', () => {
-      appStorage.setItem('vs_commentMode', 'all');
-      this.elements.commentSubOptions.classList.add('hidden');
-      this.expandAllComments();
-    });
-
-    this.elements.commentModeCurrent.addEventListener('change', () => {
-      appStorage.setItem('vs_commentMode', 'current');
-      this.elements.commentSubOptions.classList.remove('hidden');
-    });
-
-    this.elements.chkPersistManualOpen.addEventListener('change', (e) => {
-      appStorage.setItem('vs_persistManualOpen', e.target.checked);
-    });
-
-    this.elements.chkVfStacked.addEventListener('change', (e) => {
-      appStorage.setItem('vs_vfStacked', e.target.checked);
-      this.applyVfStacked(e.target.checked);
-    });
-
-    const handleMqModeChange = (mode) => {
-      appStorage.setItem('vs_mqRenderMode', mode);
-      if (this.state.questions && this.state.questions.length > 0) {
-        this.renderer.render(this.state);
-      }
-    };
-    if (this.elements.mqModeArrows) {
-      this.elements.mqModeArrows.addEventListener('change', () => handleMqModeChange('arrows'));
-    }
-    if (this.elements.mqModeTable) {
-      this.elements.mqModeTable.addEventListener('change', () => handleMqModeChange('table'));
-    }
-
-    if (this.elements.chkShowPartialScore) {
-      this.elements.chkShowPartialScore.addEventListener('change', (e) => {
-        appStorage.setItem('vs_showPartialScore', e.target.checked ? 'true' : 'false');
+  initPreferences() {
+    this.preferences?.dispose();
+    this.preferences = new Preferences({
+      elements: this.elements,
+      onExpandComments: () => this.expandAllComments(),
+      onMqModeChange: () => {
+        if (this.state.questions && this.state.questions.length > 0) {
+          this.renderer.render(this.state);
+        }
+      },
+      onPartialScoreChange: () => {
         this.renderer.render(this.state);
         this.applyCommentCollapseMode();
-      });
-    }
-
-    this.elements.chkDarkMode.addEventListener('change', (e) => {
-      const enabled = e.target.checked;
-      appStorage.setItem('vs_darkMode', enabled);
-      this.applyDarkMode(enabled);
-    });
-
-    // Ouvir mudanças do tema do sistema (só aplica se o usuário nunca escolheu manualmente)
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (appStorage.getItem('vs_darkMode') === null) {
-        this.elements.chkDarkMode.checked = e.matches;
-        this.applyDarkMode(e.matches);
+      },
+      onGeneralChange: (settings) => {
+        Object.assign(this.state.config, settings);
+        this.renderer.render(this.state);
+        this.applyCommentCollapseMode();
+        this.save();
       }
     });
-
-    this.elements.rangeFontSize.addEventListener('input', (e) => {
-      const size = parseInt(e.target.value);
-      appStorage.setItem('vs_fontSize', size);
-      this.elements.fontSizeValue.textContent = size + 'px';
-      this.applyFontSize(size);
-    });
-
-    // Eventos do modal de editar sessão
-    this.elements.closeEditSession.addEventListener('click', () => {
-      this.elements.editSessionModal.classList.add('hidden');
-    });
-    this.elements.btnEditCancel.addEventListener('click', () => {
-      this.elements.editSessionModal.classList.add('hidden');
-    });
-    this.elements.btnEditSave.addEventListener('click', () => {
-      this.saveEditSession();
-    });
-    this.elements.editSessionModal.addEventListener('click', (e) => {
-      if (e.target === this.elements.editSessionModal) {
-        this.elements.editSessionModal.classList.add('hidden');
-      }
-    });
-  },
-
-  applyFooterMode(fixed) {
-    if (fixed) {
-      this.elements.footerBar.classList.remove('footer-inline');
-    } else {
-      this.elements.footerBar.classList.add('footer-inline');
-    }
-  },
-
-  applyVfStacked(stacked) {
-    document.getElementById('quizContainer').classList.toggle('ch-vf-stacked', !!stacked);
-  },
-
-  applyDarkMode(enabled) {
-    document.documentElement.classList.toggle('dark-mode', enabled);
-    if (this.elements.darkModeIcon) {
-      this.elements.darkModeIcon.textContent = enabled ? '☀️' : '🌙';
-    }
-  },
-
-  applyFontSize(size) {
-    document.body.style.fontSize = size + 'px';
-  },
-
-  applyQuizWidth(size, save = true) {
-    const width = Math.max(320, Math.min(1800, Math.round(Number(size) || 900)));
-    this._quizWidth = width;
-    this.elements.quizWidthShell.style.setProperty('--quiz-width', `${width}px`);
-    this.elements.rangeQuizWidth.value = width;
-    this.elements.quizWidthValue.textContent = `${width}px`;
-    this.elements.quizWidthShell.querySelectorAll('.quiz-resize-handle').forEach((handle) => {
-      handle.setAttribute('aria-valuenow', String(width));
-      handle.setAttribute('aria-valuetext', `${width} pixels`);
-    });
-    if (save) appStorage.setItem('vs_quizWidth', String(width));
-  },
-
-  initQuizWidthControls() {
-    const { quizWidthShell, rangeQuizWidth, btnResetQuizWidth } = this.elements;
-    rangeQuizWidth.addEventListener('input', (event) => {
-      this.applyQuizWidth(event.target.value);
-    });
-    btnResetQuizWidth.addEventListener('click', () => this.applyQuizWidth(900));
-
-    quizWidthShell.querySelectorAll('.quiz-resize-handle').forEach((handle) => {
-      let drag = null;
-      const finishDrag = (commit = true) => {
-        if (!drag) return;
-        const finished = drag;
-        drag = null;
-        if (finished.active) {
-          if (commit) appStorage.setItem('vs_quizWidth', String(this._quizWidth));
-          else this.applyQuizWidth(finished.preferredWidth, false);
-        }
-        handle.classList.remove('is-dragging');
-        document.body.classList.remove('quiz-width-resizing');
-        if (handle.hasPointerCapture(finished.pointerId)) handle.releasePointerCapture(finished.pointerId);
-      };
-      handle.addEventListener('pointerdown', (event) => {
-        if (!event.isPrimary || event.button !== 0) return;
-        const side = handle.classList.contains('quiz-resize-left') ? -1 : 1;
-        drag = {
-          pointerId: event.pointerId,
-          startX: event.clientX,
-          startY: event.clientY,
-          startWidth: quizWidthShell.getBoundingClientRect().width,
-          preferredWidth: this._quizWidth,
-          side,
-          active: false
-        };
-        handle.setPointerCapture(event.pointerId);
-      });
-      handle.addEventListener('pointermove', (event) => {
-        if (!drag || event.pointerId !== drag.pointerId) return;
-        const dx = Math.abs(event.clientX - drag.startX);
-        const dy = Math.abs(event.clientY - drag.startY);
-        if (!drag.active) {
-          if (dy > 8 && dy >= dx) {
-            finishDrag(false);
-            return;
-          }
-          if (dx < 8 || dx <= dy) return;
-          drag.active = true;
-          handle.classList.add('is-dragging');
-          document.body.classList.add('quiz-width-resizing');
-          const selection = window.getSelection();
-          if (selection) selection.removeAllRanges();
-        }
-        event.preventDefault();
-        const viewportWidth = window.innerWidth - (window.innerWidth <= 600 ? 16 : 40);
-        const maxWidth = Math.max(1, Math.min(1800, viewportWidth));
-        const minWidth = Math.min(320, maxWidth);
-        const width = drag.startWidth + 2 * drag.side * (event.clientX - drag.startX);
-        this.applyQuizWidth(Math.max(minWidth, Math.min(maxWidth, width)), false);
-      });
-      handle.addEventListener('pointerup', () => finishDrag());
-      handle.addEventListener('pointercancel', () => finishDrag(false));
-      handle.addEventListener('lostpointercapture', () => finishDrag(false));
-      document.addEventListener('pointerdown', (event) => {
-        if (drag && event.pointerType !== 'mouse' && !event.isPrimary) finishDrag(false);
-      }, { capture: true, passive: true });
-      handle.addEventListener('keydown', (event) => {
-        const current = this._quizWidth;
-        const next = event.key === 'ArrowRight' ? current + 10 :
-          event.key === 'ArrowLeft' ? current - 10 :
-          event.key === 'Home' ? 320 : event.key === 'End' ? 1800 : null;
-        if (next === null) return;
-        event.preventDefault();
-        this.applyQuizWidth(next);
-      });
-    });
+    this.preferences.init();
   },
 
   // ===== Colapso de Comentários =====

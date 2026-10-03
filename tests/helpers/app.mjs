@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from '../../js/preferences.js';
 import * as scoring from '../../js/scoring.js';
 import * as utils from '../../js/utils.js';
 import { appStorage, ALLOW_AUTOMATIC_SYNC } from '../../js/release-config.js';
@@ -22,7 +23,7 @@ export function loadApp(overrides = {}) {
     .replace(/import\('\.\/firebase-sync\.js\?v=[^']+'\)/g, 'Promise.resolve(firebaseSyncModule)')
     .replace(/App\.init\(\);\s*$/, 'App;');
   return vm.runInNewContext(source, {
-    ...utils, ...scoring, appStorage, ALLOW_AUTOMATIC_SYNC,
+    ...utils, ...scoring, appStorage, ALLOW_AUTOMATIC_SYNC, Preferences, readVisualPreferences, readGeneralPreferences,
     document: { getElementById: element, querySelector: element },
     window: { scrollTo() {} }, console,
     confirm: () => true, alert() {},

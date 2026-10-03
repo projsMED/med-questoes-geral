@@ -1,8 +1,16 @@
-# 🩺 Question Engine V4.5.0-beta.3 (med-questoes-geral)
+# 🩺 Question Engine V4.5.0-beta.4 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
 
-## Beta 4.5.0 — etapa 3 de 5
+## Beta 4.5.0 — etapa 4 de 5
+
+- `js/preferences.js` concentra a leitura das preferências visuais/gerais, a restauração dos controles e a aplicação de tema, fonte, largura, rodapé e disposição V/F.
+- O componente `Preferences` recebe elementos do DOM e callbacks para reconstruir questões, aplicar opções gerais e abrir comentários. As ações e o salvamento da sessão continuam no controlador. Renderer e associação usam os mesmos leitores de preferências.
+- As chaves e os valores padrão são preservados: configurações salvas nas betas anteriores continuam válidas e isoladas pelo prefixo `beta:`. O tema segue o sistema enquanto não houver escolha manual.
+- Reinicializar ou descartar o componente remove seus eventos, incluindo a observação do tema do sistema e os gestos de largura. Um arrasto pendente é cancelado sem salvar sua largura provisória.
+- Os mesmos controles continuam funcionando no topo e dentro do popup de atalhos. Tela cheia permanece no módulo de atalhos; os eventos do modal de editar sessão ficam no controlador.
+
+### Mantido da beta.3
 
 - `js/matching-questions.js` concentra as questões de associação (MQ): setas, tabela, conexões, gabarito visual, fonte, expansão, redimensionamento e menu de exclusão.
 - `QuizRenderer` delega a associação ao componente `MatchingQuestions`, passando o contêiner e o callback para salvar conexões. O módulo não recebe o controlador inteiro nem grava diretamente no IndexedDB ou Firebase.
@@ -23,19 +31,27 @@
 - Firebase permanece disponível apenas por ação manual nos botões de sincronização. Login, salvamento, entrega de respostas e exclusão de sessões não enviam nem baixam dados automaticamente. Exclusões locais ficam pendentes até a sincronização manual.
 - A sincronização manual usa a **mesma nuvem** da versão estável, incluindo sessões, pastas e exclusões. O isolamento local não cria outra conta ou banco Firebase.
 
-Testes: `node --test tests/*.test.mjs` (Node.js 20+). Os 49 testes cobrem interações, pontuação dos tipos e aliases, desconsideração, consistência entre resumo/retry, isolamento do canal e sincronização manual com Firebase simulado. Incluem persistência do marca-texto por callbacks, restauração dos campos, grupos, sobreposição, cor/opacidade e limpeza de recursos. Também cobrem conexões e gabarito embaralhados, respostas legadas, bloqueio após entrega, troca entre setas/tabela, controles da tabela e limpeza de recursos MQ. São testes com DOM e serviços simulados; geometria das setas, layout, seleção nativa, IndexedDB e Firebase reais devem também ser verificados no navegador.
+Testes: `node --test tests/*.test.mjs` (Node.js 20+). Os 57 testes cobrem interações, pontuação dos tipos e aliases, desconsideração, consistência entre resumo/retry, isolamento do canal e sincronização manual com Firebase simulado. Incluem persistência do marca-texto por callbacks, restauração dos campos, grupos, sobreposição, cor/opacidade e limpeza de recursos. Também cobrem conexões e gabarito embaralhados, respostas legadas, bloqueio após entrega, troca entre setas/tabela, controles da tabela e limpeza de recursos MQ. A beta.4 acrescenta restauração das preferências, isolamento de chaves, tema automático/manual, efeitos dos controles na sessão, uso no popup e descarte de eventos/arrastos. São testes com DOM e serviços simulados; geometria das setas, layout, seleção nativa, IndexedDB e Firebase reais devem também ser verificados no navegador.
 
 ### Próximas etapas — uma por atualização após avaliação
 
 1. **beta.1 — concluída:** pontuação compartilhada e preparação do canal beta.
 2. **beta.2 — concluída:** extrair marca-texto.
 3. **beta.3 — concluída:** extrair associação de colunas.
-4. **beta.4:** extrair preferências.
+4. **beta.4 — concluída:** extrair preferências.
 5. **beta.5:** extrair filtros e avaliar o resultado.
 
 A branch `main` continua estável. Criar a branch `beta` não configura automaticamente uma URL no GitHub Pages; a publicação de teste é uma configuração separada.
 
-### Teste manual da beta.3
+### Teste manual da beta.4
+
+- Reabrir uma sessão da beta.3 e conferir tema, fonte, largura, rodapé, disposição V/F, modo MQ, nota parcial e opções gerais já salvas. Recarregar e confirmar que as escolhas persistem.
+- Sem escolha manual de tema na beta, mudar o tema do sistema e conferir a atualização; depois escolher claro/escuro no site e confirmar que o sistema deixa de sobrescrever essa escolha.
+- Alterar largura pelo slider, alças (mouse e touch), teclado e botão Padrão; confirmar que toque duplo abre o popup e rolagem vertical/pinça não redimensionam.
+- No popup, alterar fonte, modo MQ, comentários e opções gerais, fechar e conferir que os mesmos controles funcionam no topo. Testar também os botões de tela cheia.
+- Conferir comentários no modo última questão, persistência dos abertos manualmente, nota parcial, desconsideração de acertos e correção simples MVF. Editar nome/descrição de uma sessão.
+
+### Teste manual da associação (beta.3)
 
 - Em questões MQ, criar e remover conexões nos modos setas e tabela, incluindo um item com vários destinos e outro sem associação (`nulo`).
 - Embaralhar as colunas e conferir se as respostas, letras/números e pontuação continuam correspondendo aos itens originais. Entregar respostas e verificar acertos, erros, omissões e bloqueio de edição.
@@ -126,6 +142,7 @@ med-questoes-geral/
 ├── js/
 │   ├── main.js                     # Controlador principal (App): eventos, ciclo de vida, filtros, sessões e UI
 │   ├── renderer.js                 # QuizRenderer: renderização de cards, gabaritos, avaliação e inputs
+│   ├── preferences.js             # Preferences: leitura, controles e aplicação das preferências visuais/gerais
 │   ├── matching-questions.js       # MatchingQuestions: associação por setas/tabela e limpeza de recursos
 │   ├── highlighter.js              # TextHighlighter: seleção, destaques, gestos, menus e limpeza de recursos
 │   ├── parser.js                   # Parser: linearização da árvore JSON, resolução de grupos, variantes e tipos
