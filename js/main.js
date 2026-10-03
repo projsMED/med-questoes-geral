@@ -4,19 +4,18 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261002-442';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261002-442';
+} from './store.js?v=20261003-450';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261003-450';
+import { shuffleArray } from './utils.js?v=20261003-450';
 import {
-  shuffleArray,
-  difficultyMap,
-  questionTypeMap,
-  questionTypes,
-  computeMeChScore,
-  computeMqScore,
-  computeMvfScore
-} from './utils.js?v=20261002-442';
-import { QuizRenderer } from './renderer.js?v=20261002-442';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261002-442';
+  computeQuestionScore, isObjectiveQuestion,
+  applyDisregardedCorrectToScore, isDisregardedCorrectMarked
+} from './scoring.js?v=20261003-450';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261003-450';
+import { QuizRenderer } from './renderer.js?v=20261003-450';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261003-450';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261003-450';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261003-450';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -80,20 +79,7 @@ const App = {
       applyDisregardedCorrect: true,
       simpleMvfCorrection: false
     },
-    filters: {
-      tags: [],
-      excludedTags: [],
-      diffs: [],
-      types: [...questionTypes],
-      folders: [],
-      allTags: [],
-      allDiffs: [],
-      allTypes: [...questionTypes],
-      allFolders: [],
-      counts: { tags: {}, diffs: {}, types: {}, folders: {} },
-      folderDescriptions: {},
-      step: 1
-    }
+    filters: createFilterState()
   },
 
   elements: {
@@ -293,9 +279,10 @@ const App = {
       onMqChange: (qIdx, connections) => this.handleMqChange(qIdx, connections)
     });
 
+    this.initFilters();
     this.bindEvents();
     this.setupImageZoom();
-    this.initVisualSettings();
+    this.initPreferences();
     this.settingsShortcuts = new SettingsShortcuts({
       shell: this.elements.quizWidthShell,
       visualPanel: this.elements.visualSettingsPanel,
@@ -311,11 +298,11 @@ const App = {
     const migrated = await migrateLegacyState();
     if (migrated) {
       this.activeSessionId = migrated.sessionId;
-      localStorage.setItem('activeSessionId', migrated.sessionId);
+      appStorage.setItem('activeSessionId', migrated.sessionId);
     }
 
     // Tentar restaurar sessão ativa
-    const savedSessionId = this.activeSessionId || localStorage.getItem('activeSessionId');
+    const savedSessionId = this.activeSessionId || appStorage.getItem('activeSessionId');
     if (savedSessionId) {
       const session = await loadSession(savedSessionId);
       if (session && session.state && session.state.quizJson) {
@@ -326,6 +313,7 @@ const App = {
         this._sourceFileName = session.sourceFileName || null;
         this._sessionFolderId = session.folderId || '';
         this._sessionDerivedFromErrors = !!(session.derivedFromErrors || session.state.retryDerivedFromErrors);
+        this.quizFilters?.clear();
         this.state = session.state;
         this.ensureStateIntegrity();
         this.restoreUI();
@@ -338,12 +326,12 @@ const App = {
           this.renderer.render(this.state);
           this.applyCommentCollapseMode();
         } else {
-          this.renderFilterDescription();
+          this.quizFilters.renderFilterDescription();
           if (this.state.filters.step === 2) {
-            this.prepareStep1();
-            this.prepareStep2();
+            this.quizFilters.prepareStep1();
+            this.quizFilters.prepareStep2();
           } else {
-            this.prepareStep1();
+            this.quizFilters.prepareStep1();
           }
           this.elements.uploadSection.classList.add('hidden');
           this.elements.filterSection.classList.remove('hidden');
@@ -360,6 +348,7 @@ const App = {
     // Fallback: sem sessão ativa, tenta estado legado
     const saved = await loadState();
     if (saved && saved.quizJson) {
+      this.quizFilters?.clear();
       this.state = saved;
       this.ensureStateIntegrity();
       this.restoreUI();
@@ -371,12 +360,12 @@ const App = {
         this.showQuizInterface();
         this.renderer.render(this.state);
       } else {
-        this.renderFilterDescription();
+        this.quizFilters.renderFilterDescription();
         if (this.state.filters.step === 2) {
-          this.prepareStep1();
-          this.prepareStep2();
+          this.quizFilters.prepareStep1();
+          this.quizFilters.prepareStep2();
         } else {
-          this.prepareStep1();
+          this.quizFilters.prepareStep1();
         }
         this.elements.uploadSection.classList.add('hidden');
         this.elements.filterSection.classList.remove('hidden');
@@ -389,17 +378,18 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261002-442');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261002-442');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261003-450');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261003-450');
 
-      this.firebaseState.autoSync = localStorage.getItem('firebaseAutoSync') === 'true';
-      this.firebaseState.lastSyncTime = localStorage.getItem('lastSyncTime') || null;
+      this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
+      this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
       this.elements.chkFirebaseAutoSync.checked = this.firebaseState.autoSync;
+      this.elements.chkFirebaseAutoSync.disabled = !ALLOW_AUTOMATIC_SYNC;
 
       this.firebaseConfig.onAuthChange((user) => {
         this.firebaseState.connected = !!user;
         this.updateFirebaseUI();
-        if (user && this.firebaseState.autoSync) {
+        if (ALLOW_AUTOMATIC_SYNC && user && this.firebaseState.autoSync) {
           this.syncNow();
         }
       });
@@ -440,35 +430,6 @@ const App = {
     this.elements.btnImport.addEventListener('click', () => this.elements.importInput.click());
     this.elements.btnImportStart.addEventListener('click', () => this.elements.importInput.click());
     this.elements.importInput.addEventListener('change', (e) => this.handleImport(e));
-
-    // Filtro em etapas
-    this.elements.btnGoToStep2.addEventListener('click', () => {
-      this.state.filters.step = 2;
-      this.prepareStep2();
-      this.save();
-    });
-
-    this.elements.btnBackToStep1.addEventListener('click', () => {
-      this.state.filters.step = 1;
-      this.showStep1();
-      this.save();
-    });
-
-    this.elements.btnToggleAllIncludedTags.addEventListener('click', () =>
-      this.toggleAllIncludedTags()
-    );
-    this.elements.btnToggleAllExcludedTags.addEventListener('click', () =>
-      this.toggleAllExcludedTags()
-    );
-    this.elements.btnExcludeNotIncludedTags.addEventListener('click', () =>
-      this.excludeAllTagsNotIncluded()
-    );
-
-    // IMPORTANTE: ao gerar pelo filtro, sai do modo retry
-    this.elements.btnGenerate.addEventListener('click', () => {
-      this.state.retryMode = false;
-      this.generateAndRender();
-    });
 
     // Info Modal
     this.elements.closeInfo.addEventListener('click', () =>
@@ -557,12 +518,29 @@ const App = {
       this.syncNow()
     );
     this.elements.chkFirebaseAutoSync.addEventListener('change', (e) => {
-      this.firebaseState.autoSync = e.target.checked;
-      localStorage.setItem('firebaseAutoSync', e.target.checked ? 'true' : 'false');
+      this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && e.target.checked;
+      e.target.checked = this.firebaseState.autoSync;
+      appStorage.setItem('firebaseAutoSync', this.firebaseState.autoSync ? 'true' : 'false');
     });
     this.elements.btnFirebaseDisconnect.addEventListener('click', () =>
       this.handleFirebaseLogout()
     );
+
+    // Eventos do modal de editar sessão
+    this.elements.closeEditSession.addEventListener('click', () => {
+      this.elements.editSessionModal.classList.add('hidden');
+    });
+    this.elements.btnEditCancel.addEventListener('click', () => {
+      this.elements.editSessionModal.classList.add('hidden');
+    });
+    this.elements.btnEditSave.addEventListener('click', () => {
+      this.saveEditSession();
+    });
+    this.elements.editSessionModal.addEventListener('click', (e) => {
+      if (e.target === this.elements.editSessionModal) {
+        this.elements.editSessionModal.classList.add('hidden');
+      }
+    });
 
     // Configurações
     this.elements.chkShuffleQ.addEventListener('change', (e) => {
@@ -599,26 +577,6 @@ const App = {
       this.save();
     });
 
-    if (this.elements.chkShowDisregardCorrect) {
-      this.elements.chkShowDisregardCorrect.addEventListener('change', (e) => {
-        localStorage.setItem('gs_showDisregardCorrect', e.target.checked ? 'true' : 'false');
-        this.state.config.showDisregardCorrect = e.target.checked;
-        this.state.config.applyDisregardedCorrect = e.target.checked;
-        this.renderer.render(this.state);
-        this.applyCommentCollapseMode();
-        this.save();
-      });
-    }
-
-    this.elements.chkSimpleMvfCorrection.addEventListener('change', (e) => {
-      const enabled = e.target.checked;
-      localStorage.setItem('gs_simpleMvfCorrection', String(enabled));
-      this.state.config.simpleMvfCorrection = enabled;
-      this.renderer.render(this.state);
-      this.applyCommentCollapseMode();
-      this.save();
-    });
-
     // Gerenciar questão (deletar/desativar/ativar)
     if (this.elements.deleteQuestionModal) {
       this.elements.closeDeleteQuestion.addEventListener('click', () =>
@@ -642,55 +600,7 @@ const App = {
   },
 
   ensureStateIntegrity() {
-    if (!this.state.filters) {
-      this.state.filters = {
-        tags: [],
-        excludedTags: [],
-        diffs: [],
-        types: [...questionTypes],
-        folders: [],
-        allTags: [],
-        allDiffs: [],
-        allTypes: [...questionTypes],
-        allFolders: [],
-        counts: { tags: {}, diffs: {}, types: {}, folders: {} },
-        folderDescriptions: {},
-        step: 1
-      };
-    }
-
-    if (!Array.isArray(this.state.filters.tags)) this.state.filters.tags = [];
-    if (!Array.isArray(this.state.filters.excludedTags)) {
-      this.state.filters.excludedTags = [];
-    }
-    const excludedTagSet = new Set(this.state.filters.excludedTags);
-    this.state.filters.tags = this.state.filters.tags.filter(
-      (tag) => !excludedTagSet.has(tag)
-    );
-    if (!Array.isArray(this.state.filters.diffs)) this.state.filters.diffs = [];
-    if (!Array.isArray(this.state.filters.types)) {
-      this.state.filters.types = [...questionTypes];
-    } else {
-      this.state.filters.types = this.state.filters.types.map((t) => {
-        if (t === 'ME-CH') return 'MEM';
-        if (t === 'CH') return 'MVF';
-        return t;
-      });
-    }
-    this.state.filters.types = [...new Set(this.state.filters.types.filter((type) =>
-      questionTypes.includes(type)
-    ))];
-    this.state.filters.allTypes = [...questionTypes];
-
-    if (!this.state.filters.counts) this.state.filters.counts = {};
-    if (!this.state.filters.counts.tags) this.state.filters.counts.tags = {};
-    if (!this.state.filters.counts.diffs) this.state.filters.counts.diffs = {};
-    if (!this.state.filters.counts.types) this.state.filters.counts.types = {};
-    if (!this.state.filters.counts.folders) this.state.filters.counts.folders = {};
-
-    if (!this.state.filters.folderDescriptions) {
-      this.state.filters.folderDescriptions = {};
-    }
+    ensureFilterState(this.state);
 
     if (!this.state.forcedIndices) this.state.forcedIndices = [];
     if (!this.state.eliminatedAlts) this.state.eliminatedAlts = {};
@@ -736,13 +646,13 @@ const App = {
     }
     if (this.state.config.showDisregardCorrect === undefined) {
       this.state.config.showDisregardCorrect =
-        localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+        readGeneralPreferences().showDisregardCorrect;
     }
     if (this.state.config.applyDisregardedCorrect === undefined) {
       this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
     }
     this.state.config.simpleMvfCorrection =
-      localStorage.getItem('gs_simpleMvfCorrection') === 'true';
+      readGeneralPreferences().simpleMvfCorrection;
 
     if (this.state.mappings && Array.isArray(this.state.mappings.qOrder) && this.state.mappings.qOrder.length > 0) {
       this.recalculateSessionQuestionCount();
@@ -770,6 +680,7 @@ const App = {
   },
 
   loadQuizJSON(json, sourceFileName = null) {
+    this.quizFilters?.clear();
     this.state.quizJson = json;
     this.state.config.shuffleQ = this.elements.chkShuffleQ.checked;
     this.state.config.shuffleA = this.elements.chkShuffleA.checked;
@@ -778,25 +689,12 @@ const App = {
     this.state.config.showDiff = this.elements.chkShowDiff.checked;
     this.state.config.showFilterSummary = this.elements.chkShowFilterSummary.checked;
     this.state.config.showDisregardCorrect =
-      localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+      readGeneralPreferences().showDisregardCorrect;
     this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
     this.state.config.simpleMvfCorrection =
-      localStorage.getItem('gs_simpleMvfCorrection') === 'true';
+      readGeneralPreferences().simpleMvfCorrection;
 
-    this.state.filters = {
-      tags: [],
-      excludedTags: [],
-      diffs: [],
-      types: [...questionTypes],
-      folders: [],
-      allTags: [],
-      allDiffs: [],
-      allTypes: [...questionTypes],
-      allFolders: [],
-      counts: { tags: {}, diffs: {}, types: {}, folders: {} },
-      folderDescriptions: {},
-      step: 1
-    };
+    this.state.filters = createFilterState();
     this.state.forcedIndices = [];
     this.state.eliminatedAlts = {};
     this.state.textHighlights = { questions: {}, groups: {} };
@@ -823,116 +721,36 @@ const App = {
     this._lastAccessedAt = now;
     this._sessionDerivedFromErrors = false;
     this._manuallyOpenedComments = new Set();
-    localStorage.setItem('activeSessionId', this.activeSessionId);
+    appStorage.setItem('activeSessionId', this.activeSessionId);
 
-    this.extractFiltersData();
-    this.renderFilterDescription();
-    this.prepareStep1();
+    this.quizFilters.extractFiltersData();
+    this.quizFilters.renderFilterDescription();
+    this.quizFilters.prepareStep1();
 
     this.elements.uploadSection.classList.add('hidden');
     this.elements.filterSection.classList.remove('hidden');
     this.elements.configBar.classList.add('hidden');
     this.elements.footerBar.classList.add('hidden');
-    this.renderer.container.innerHTML = '';
+    this.renderer.clear();
 
     this.save();
   },
 
   // --- Lógica de checagem de acerto e pontuação (ME / VF / CH / ESCRITA) ---
   isObjectiveQuestion(originalQIdx) {
-    const qData = this.state.questions[originalQIdx];
-    return ((qData && qData.tipo) || '').toUpperCase() !== 'ESCRITA';
+    return isObjectiveQuestion(this.state, originalQIdx);
   },
 
   applyDisregardedCorrectToScore(originalQIdx, score, options = {}) {
-    if (options.ignoreDisregard) return score;
-    const ans = this.state.userAnswers[originalQIdx];
-    const featureOn = this.state.config.showDisregardCorrect !== false;
-    const applyOn = this.state.config.applyDisregardedCorrect !== false;
-    if (
-      featureOn &&
-      applyOn &&
-      ans &&
-      ans.disregardCorrect &&
-      this.isObjectiveQuestion(originalQIdx) &&
-      score.total > 0 &&
-      score.hits > 0
-    ) {
-      return { hits: 0, total: score.total };
-    }
-    return score;
+    return applyDisregardedCorrectToScore(this.state, originalQIdx, score, options);
   },
 
   isDisregardedCorrectForRetry(originalQIdx) {
-    const ans = this.state.userAnswers[originalQIdx];
-    if (!ans || !ans.disregardCorrect || !this.isObjectiveQuestion(originalQIdx)) return false;
-    const raw = this.computeQuestionScore(originalQIdx, { ignoreDisregard: true });
-    return raw.total > 0 && raw.hits > 0;
+    return isDisregardedCorrectMarked(this.state, originalQIdx);
   },
 
-  /**
-   * Retorna { hits, total } para a questão originalQIdx.
-   * - ME / VF: total = 1, hits = 1 ou 0
-   * - MEM (ME-CH): total = 1, hits = pontuação proporcional entre 0 e 1
-   * - MVF (CH): total = número de assertivas, hits = acertos menos erros (mínimo 0), ou apenas acertos no modo simples
-   * - ESCRITA simples: total = 10, hits = selfEval (0–10)
-   * - ESCRITA itens: total = numItens × 10, hits = soma dos selfEvals
-   */
   computeQuestionScore(originalQIdx, options = {}) {
-    const qData = this.state.questions[originalQIdx];
-    const ans = this.state.userAnswers[originalQIdx];
-    if (!ans || !ans.submitted) return { hits: 0, total: 0 };
-
-    const tipo = (qData.tipo || '').toUpperCase();
-
-    if (tipo === 'ESCRITA') {
-      const isItemsType = qData.subtipo === 'itens' ||
-        (Array.isArray(qData.itens) && qData.itens.length > 0);
-
-      if (!isItemsType) {
-        const selfEval = typeof ans.selfEval === 'number' ? ans.selfEval : 0;
-        return { hits: selfEval, total: 10 };
-      } else {
-        const numItems = (qData.itens || []).length;
-        if (numItems === 0) return { hits: 0, total: 0 };
-        const items = Array.isArray(ans.items) ? ans.items : [];
-        let sumEvals = 0;
-        for (let i = 0; i < numItems; i++) {
-          const item = items[i] || {};
-          sumEvals += typeof item.selfEval === 'number' ? item.selfEval : 0;
-        }
-        return { hits: sumEvals, total: numItems * 10 };
-      }
-    }
-
-    if (tipo === 'CH' || tipo === 'MVF') {
-      const assertivas = Array.isArray(qData.assertivas) ? qData.assertivas : [];
-      const score = computeMvfScore(
-        assertivas, ans.assertivaAnswers || {}, this.state.config.simpleMvfCorrection === true
-      );
-      return this.applyDisregardedCorrectToScore(originalQIdx, score, options);
-    }
-
-    if (tipo === 'ME-CH' || tipo === 'MEM') {
-      const score = computeMeChScore(qData, ans.selectedOriginalIndices || []);
-      return this.applyDisregardedCorrectToScore(originalQIdx, { hits: score, total: 1 }, options);
-    }
-
-    if (tipo === 'MQ') {
-      const scoreData = computeMqScore(qData, ans.connections || []);
-      return this.applyDisregardedCorrectToScore(originalQIdx, { hits: scoreData.hits, total: 1 }, options);
-    }
-
-    // ME / VF – um único gabarito por letra
-    const gabaritoLetra = (qData.gabarito || '').trim().toUpperCase();
-    if (!gabaritoLetra) return { hits: 0, total: 0 };
-    const gabaritoIdx = gabaritoLetra.charCodeAt(0) - 65;
-    const isCorrect = ans.selectedOriginalIdx === gabaritoIdx;
-    return this.applyDisregardedCorrectToScore(
-      originalQIdx,
-      { hits: isCorrect ? 1 : 0, total: 1 },
-      options
-    );
+    return computeQuestionScore(this.state, originalQIdx, options);
   },
 
 // --- NOVA LÓGICA DE RETRY ---
@@ -969,11 +787,12 @@ const App = {
     const sourceState = JSON.parse(JSON.stringify(this.state));
     const now = new Date().toISOString();
     this.activeSessionId = generateId();
-    localStorage.setItem('activeSessionId', this.activeSessionId);
+    appStorage.setItem('activeSessionId', this.activeSessionId);
     this._sessionCreatedAt = now;
     this._lastAccessedAt = now;
     this._sessionDerivedFromErrors = true;
 
+    this.quizFilters?.clear();
     this.state = sourceState;
     this.state.retryMode = true;
     this.state.retryIndices = wrongIndices;
@@ -991,115 +810,9 @@ const App = {
 
   // --- GERADOR DE MAPAS (com suporte a retryMode, VF, CH/no_random) ---
   generateMappings() {
-    const deletedSet = new Set(this.state.deletedIndices || []);
-    let strictPassIndices = new Set();
-    const activeGroupIds = new Set();
-
-    if (this.state.retryMode) {
-      // No modo retry, só as questões salvas em retryIndices entram como "estritas"
-      this.state.retryIndices.forEach((idx) => {
-        if (deletedSet.has(idx)) return;
-        strictPassIndices.add(idx);
-        const q = this.state.questions[idx];
-        if (q._groupData) {
-          activeGroupIds.add(q._groupData.id);
-        }
-      });
-    } else {
-      // Modo normal: aplica filtros de pasta, tags, dificuldade e tipo.
-      const includedTags = new Set(this.state.filters.tags);
-      const excludedTags = new Set(this.state.filters.excludedTags || []);
-      const selDiffs = new Set(this.state.filters.diffs);
-      const rawTypes = this.state.filters.types || questionTypes;
-      const selTypes = new Set(rawTypes.map((t) => {
-        const up = String(t || '').toUpperCase();
-        if (up === 'ME-CH') return 'MEM';
-        if (up === 'CH') return 'MVF';
-        return up;
-      }));
-      const selFolders = new Set(this.state.filters.folders);
-
-      this.state.questions.forEach((q, idx) => {
-        if (deletedSet.has(idx)) return;
-        const qPathStr = q._path.join(' > ');
-        if (!selFolders.has(qPathStr)) return;
-
-        const qTags = q.tags && q.tags.length > 0 ? q.tags : ['__NO_TAG__'];
-        const hasIncludedTag = qTags.some((tag) => includedTags.has(tag));
-        const hasExcludedTag = qTags.some((tag) => excludedTags.has(tag));
-
-        let hasDiff = false;
-        const qDiff =
-          q.dificuldade !== undefined && q.dificuldade !== null
-            ? q.dificuldade
-            : '__NO_DIFF__';
-        hasDiff = selDiffs.has(qDiff);
-
-        let type = (q.tipo || '').toUpperCase();
-        if (type === 'ME-CH') type = 'MEM';
-        if (type === 'CH') type = 'MVF';
-        const hasType = selTypes.has(type);
-
-        if (hasIncludedTag && !hasExcludedTag && hasDiff && hasType) {
-          strictPassIndices.add(idx);
-          if (q._groupData) {
-            activeGroupIds.add(q._groupData.id);
-          }
-        }
-      });
-    }
-
-    let finalIndices = [];
-    this.state.forcedIndices = [];
-    let processedIndices = new Set();
-    const selectedFolders = new Set(this.state.filters.folders);
-
-    this.state.questions.forEach((q, idx) => {
-      if (processedIndices.has(idx)) return;
-      if (deletedSet.has(idx)) return;
-
-      // No modo normal, respeita filtro de pasta aqui também
-      if (!this.state.retryMode) {
-        const qPathStr = q._path.join(' > ');
-        if (!selectedFolders.has(qPathStr)) return;
-      }
-
-      if (q._groupData) {
-        const groupId = q._groupData.id;
-        if (activeGroupIds.has(groupId)) {
-          const groupIndices = [];
-
-          this.state.questions.forEach((innerQ, innerIdx) => {
-            if (deletedSet.has(innerIdx)) return;
-            if (innerQ._groupData && innerQ._groupData.id === groupId) {
-              let allowedByFolder = true;
-              if (!this.state.retryMode) {
-                allowedByFolder = selectedFolders.has(innerQ._path.join(' > '));
-              }
-
-              if (allowedByFolder) {
-                groupIndices.push(innerIdx);
-                processedIndices.add(innerIdx);
-
-                // Se não está na lista estrita, é questão "forçada" (contexto)
-                if (!strictPassIndices.has(innerIdx)) {
-                  this.state.forcedIndices.push(innerIdx);
-                }
-              }
-            }
-          });
-
-          if (groupIndices.length > 0) {
-            finalIndices.push(groupIndices);
-          }
-        }
-      } else {
-        if (strictPassIndices.has(idx)) {
-          finalIndices.push([idx]);
-          processedIndices.add(idx);
-        }
-      }
-    });
+    const { groups, forcedIndices } = selectQuestionGroups(this.state);
+    let finalIndices = groups;
+    this.state.forcedIndices = forcedIndices;
 
     if (this.state.config.shuffleQ) {
       finalIndices = shuffleArray(finalIndices);
@@ -1313,8 +1026,9 @@ const App = {
       await deleteSession(deletedId);
       await this._markSessionDeleted(deletedId);
     }
+    this.quizFilters?.clear();
     this.activeSessionId = null;
-    localStorage.removeItem('activeSessionId');
+    appStorage.removeItem('activeSessionId');
 
     this.state.quizJson = null;
     this.state.questions = [];
@@ -1323,48 +1037,19 @@ const App = {
     this.state.textHighlights = { questions: {}, groups: {} };
     this.state.deletedIndices = [];
     this.state.disabledIndices = [];
-    this.state.filters = {
-      tags: [],
-      excludedTags: [],
-      diffs: [],
-      types: [...questionTypes],
-      folders: [],
-      allTags: [],
-      allDiffs: [],
-      allTypes: [...questionTypes],
-      allFolders: [],
-      counts: { tags: {}, diffs: {}, types: {}, folders: {} },
-      folderDescriptions: {},
-      step: 1
-    };
+    this.state.filters = createFilterState();
 
     // Reset Retry
     this.state.retryMode = false;
     this.state.retryIndices = [];
 
     clearState();
-    this.renderer.container.innerHTML = '';
+    this.renderer.clear();
     this.elements.configBar.classList.add('hidden');
     this.elements.footerBar.classList.add('hidden');
     this.elements.filterSection.classList.add('hidden');
     this.elements.uploadSection.classList.remove('hidden');
     this.elements.fileInput.value = '';
-  },
-
-  renderFilterDescription() {
-    if (!this.state.quizJson) return;
-    const desc = this.state.quizJson.descricao || '';
-    const el = this.elements.filterDescription;
-    if (desc.trim()) {
-      el.innerHTML = `<strong>Sobre este Quiz:</strong><br>${desc.replace(
-        /\n/g,
-        '<br>'
-      )}`;
-      el.style.display = 'block';
-    } else {
-      el.innerHTML = '';
-      el.style.display = 'none';
-    }
   },
 
   setupImageZoom() {
@@ -1412,264 +1097,6 @@ const App = {
     this.elements.fileInput.click();
   },
 
-  extractFiltersData() {
-    if (!this.state.filters) {
-      this.state.filters = {
-        tags: [],
-        excludedTags: [],
-        diffs: [],
-        types: [...questionTypes],
-        folders: [],
-        allTags: [],
-        allDiffs: [],
-        allTypes: [...questionTypes],
-        allFolders: [],
-        counts: { tags: {}, diffs: {}, types: {}, folders: {} },
-        folderDescriptions: {},
-        step: 1
-      };
-    }
-
-    this.state.filters.counts = { tags: {}, diffs: {}, types: {}, folders: {} };
-
-    const tagsSet = new Set();
-    const diffsSet = new Set();
-
-    this.state.questions.forEach((q) => {
-      // tags
-      if (q.tags && q.tags.length > 0) {
-        q.tags.forEach((t) => {
-          tagsSet.add(t);
-          this.state.filters.counts.tags[t] =
-            (this.state.filters.counts.tags[t] || 0) + 1;
-        });
-      } else {
-        const noTagLabel = '__NO_TAG__';
-        tagsSet.add(noTagLabel);
-        this.state.filters.counts.tags[noTagLabel] =
-          (this.state.filters.counts.tags[noTagLabel] || 0) + 1;
-      }
-
-      // diffs
-      if (q.dificuldade !== undefined && q.dificuldade !== null) {
-        const d = q.dificuldade;
-        diffsSet.add(d);
-        this.state.filters.counts.diffs[d] =
-          (this.state.filters.counts.diffs[d] || 0) + 1;
-      } else {
-        const noDiffLabel = '__NO_DIFF__';
-        diffsSet.add(noDiffLabel);
-        this.state.filters.counts.diffs[noDiffLabel] =
-          (this.state.filters.counts.diffs[noDiffLabel] || 0) + 1;
-      }
-
-      let type = (q.tipo || '').toUpperCase();
-      if (type === 'ME-CH') type = 'MEM';
-      if (type === 'CH') type = 'MVF';
-      if (questionTypes.includes(type)) {
-        this.state.filters.counts.types[type] =
-          (this.state.filters.counts.types[type] || 0) + 1;
-      }
-    });
-
-    this.state.filters.allTags = Array.from(tagsSet).sort();
-    this.state.filters.allDiffs = Array.from(diffsSet).sort();
-    this.state.filters.allTypes = [...questionTypes];
-
-    if (!this.state.filters.tags || this.state.filters.tags.length === 0) {
-      this.state.filters.tags = [...this.state.filters.allTags];
-    }
-    if (!Array.isArray(this.state.filters.excludedTags)) {
-      this.state.filters.excludedTags = [];
-    }
-    if (!this.state.filters.diffs || this.state.filters.diffs.length === 0) {
-      this.state.filters.diffs = [...this.state.filters.allDiffs];
-    }
-    if (!Array.isArray(this.state.filters.types)) {
-      this.state.filters.types = [...this.state.filters.allTypes];
-    }
-  },
-
-  renderFilterUI() {
-    const createCheckbox = (
-      value,
-      labelBase,
-      container,
-      selectedList,
-      countDict,
-      onChange = null
-    ) => {
-      const item = document.createElement('label');
-      item.className = 'filter-item';
-
-      const count = countDict[value] || 0;
-      const labelText = `${labelBase} (${count})`;
-
-      const chk = document.createElement('input');
-      chk.type = 'checkbox';
-      chk.value = value;
-      chk.checked = selectedList.includes(value);
-
-      chk.addEventListener('change', () => {
-        if (onChange) {
-          onChange(chk.checked);
-        } else {
-          if (chk.checked) {
-            if (!selectedList.includes(value)) selectedList.push(value);
-          } else {
-            const idx = selectedList.indexOf(value);
-            if (idx > -1) selectedList.splice(idx, 1);
-          }
-          this.updateGenerateButton();
-          this.save();
-        }
-      });
-
-      item.appendChild(chk);
-      item.appendChild(document.createTextNode(labelText));
-      container.appendChild(item);
-    };
-
-    this.elements.tagList.innerHTML = '';
-    this.state.filters.allTags.forEach((tag) => {
-      const label = tag === '__NO_TAG__' ? 'Sem tag' : tag;
-      createCheckbox(
-        tag,
-        label,
-        this.elements.tagList,
-        this.state.filters.tags,
-        this.state.filters.counts.tags,
-        (checked) => {
-          this.setTagFilterValue('tags', tag, checked);
-          if (checked) this.setTagFilterValue('excludedTags', tag, false);
-          this.renderFilterUI();
-          this.save();
-        }
-      );
-    });
-
-    this.elements.excludedTagList.innerHTML = '';
-    this.state.filters.allTags.forEach((tag) => {
-      const label = tag === '__NO_TAG__' ? 'Sem tag' : tag;
-      createCheckbox(
-        tag,
-        label,
-        this.elements.excludedTagList,
-        this.state.filters.excludedTags,
-        this.state.filters.counts.tags,
-        (checked) => {
-          this.setTagFilterValue('excludedTags', tag, checked);
-          if (checked) this.setTagFilterValue('tags', tag, false);
-          this.renderFilterUI();
-          this.save();
-        }
-      );
-    });
-
-    this.elements.diffList.innerHTML = '';
-    this.state.filters.allDiffs.forEach((diff) => {
-      const label =
-        diff === '__NO_DIFF__'
-          ? 'Sem dificuldade'
-          : difficultyMap[diff] || `Nível ${diff}`;
-      createCheckbox(
-        diff,
-        label,
-        this.elements.diffList,
-        this.state.filters.diffs,
-        this.state.filters.counts.diffs
-      );
-    });
-
-    this.elements.typeList.innerHTML = '';
-    this.state.filters.allTypes.forEach((type) => {
-      createCheckbox(
-        type,
-        questionTypeMap[type] || type,
-        this.elements.typeList,
-        this.state.filters.types,
-        this.state.filters.counts.types
-      );
-    });
-
-    const allIncluded =
-      this.state.filters.allTags.length > 0 &&
-      this.state.filters.allTags.every((tag) => this.state.filters.tags.includes(tag));
-    const allExcluded =
-      this.state.filters.allTags.length > 0 &&
-      this.state.filters.allTags.every((tag) =>
-        this.state.filters.excludedTags.includes(tag)
-      );
-    this.elements.btnToggleAllIncludedTags.textContent = allIncluded
-      ? 'Desselecionar todas'
-      : 'Selecionar todas';
-    this.elements.btnToggleAllExcludedTags.textContent = allExcluded
-      ? 'Desselecionar todas'
-      : 'Selecionar todas';
-    const noTags = this.state.filters.allTags.length === 0;
-    this.elements.btnToggleAllIncludedTags.disabled = noTags;
-    this.elements.btnToggleAllExcludedTags.disabled = noTags;
-    this.elements.btnExcludeNotIncludedTags.disabled = noTags;
-
-    this.updateGenerateButton();
-  },
-
-  setTagFilterValue(filterKey, tag, selected) {
-    const list = this.state.filters[filterKey];
-    const index = list.indexOf(tag);
-    if (selected && index === -1) list.push(tag);
-    if (!selected && index !== -1) list.splice(index, 1);
-  },
-
-  toggleAllIncludedTags() {
-    const allTags = this.state.filters.allTags;
-    const allSelected =
-      allTags.length > 0 && allTags.every((tag) => this.state.filters.tags.includes(tag));
-    this.state.filters.tags = allSelected ? [] : [...allTags];
-    if (!allSelected) this.state.filters.excludedTags = [];
-    this.renderFilterUI();
-    this.save();
-  },
-
-  toggleAllExcludedTags() {
-    const allTags = this.state.filters.allTags;
-    const allSelected =
-      allTags.length > 0 &&
-      allTags.every((tag) => this.state.filters.excludedTags.includes(tag));
-    this.state.filters.excludedTags = allSelected ? [] : [...allTags];
-    if (!allSelected) this.state.filters.tags = [];
-    this.renderFilterUI();
-    this.save();
-  },
-
-  excludeAllTagsNotIncluded() {
-    const included = new Set(this.state.filters.tags);
-    this.state.filters.excludedTags = this.state.filters.allTags.filter(
-      (tag) => !included.has(tag)
-    );
-    this.renderFilterUI();
-    this.save();
-  },
-
-  updateGenerateButton() {
-    if (!this.state.filters || !this.state.filters.allTags) return;
-
-    const allTagsSel =
-      this.state.filters.tags.length === this.state.filters.allTags.length;
-    const allDiffsSel =
-      this.state.filters.diffs.length === this.state.filters.allDiffs.length;
-    const allTypesSel =
-      this.state.filters.types.length === this.state.filters.allTypes.length;
-
-    this.elements.btnGenerate.textContent =
-      !allTagsSel ||
-      this.state.filters.excludedTags.length > 0 ||
-      !allDiffsSel ||
-      !allTypesSel
-        ? 'Gerar quiz filtrado'
-        : 'Gerar quiz';
-  },
-
   generateAndRender() {
     this.generateMappings();
     this.showQuizInterface();
@@ -1683,7 +1110,7 @@ const App = {
     this.elements.filterSection.classList.add('hidden');
     this.elements.configBar.classList.remove('hidden');
     this.elements.footerBar.classList.remove('hidden');
-    this.applyFooterMode(this.getVisualSettings().footerFixed);
+    this.preferences.applyFooterMode(this.getVisualSettings().footerFixed);
   },
 
   handleSelection(originalQIdx, originalAltIdx, isCheckbox = false, checked = true) {
@@ -2062,7 +1489,7 @@ const App = {
     this.applyCommentCollapseMode();
 
     // Sync imediato após submeter todas (ação importante)
-    if (this.firebaseState.autoSync && this.firebaseState.connected) {
+    if (ALLOW_AUTOMATIC_SYNC && this.firebaseState.autoSync && this.firebaseState.connected) {
       clearTimeout(this.firebaseState.debounceTimer);
       this.syncNow();
     }
@@ -2245,7 +1672,7 @@ const App = {
 
         await saveSession(session);
         this.activeSessionId = session.sessionId;
-        localStorage.setItem('activeSessionId', session.sessionId);
+        appStorage.setItem('activeSessionId', session.sessionId);
         location.reload();
       } catch (err) {
         alert('Erro ao importar: ' + err.message);
@@ -2270,7 +1697,7 @@ const App = {
       this.state.config.showFilterSummary;
     if (this.elements.chkShowDisregardCorrect) {
       this.state.config.showDisregardCorrect =
-        localStorage.getItem('gs_showDisregardCorrect') !== 'false';
+        readGeneralPreferences().showDisregardCorrect;
       this.elements.chkShowDisregardCorrect.checked =
         this.state.config.showDisregardCorrect !== false;
     }
@@ -2348,7 +1775,7 @@ const App = {
     this.firebaseState.pendingChanges = true;
     this.updateSyncIndicator();
 
-    if (this.firebaseState.autoSync) {
+    if (ALLOW_AUTOMATIC_SYNC && this.firebaseState.autoSync) {
       clearTimeout(this.firebaseState.debounceTimer);
       this.firebaseState.debounceTimer = setTimeout(() => this.syncNow(), 30000);
     }
@@ -2410,7 +1837,7 @@ const App = {
 
   _getPendingDeleteTombstones() {
     try {
-      const raw = JSON.parse(localStorage.getItem('pendingDeletes') || '{}');
+      const raw = JSON.parse(appStorage.getItem('pendingDeletes') || '{}');
       if (Array.isArray(raw)) {
         const now = new Date().toISOString();
         return Object.fromEntries(raw.map(id => [id, now]));
@@ -2424,9 +1851,9 @@ const App = {
   _setPendingDeleteTombstones(tombstones) {
     const ids = Object.keys(tombstones || {});
     if (ids.length === 0) {
-      localStorage.removeItem('pendingDeletes');
+      appStorage.removeItem('pendingDeletes');
     } else {
-      localStorage.setItem('pendingDeletes', JSON.stringify(tombstones));
+      appStorage.setItem('pendingDeletes', JSON.stringify(tombstones));
     }
   },
 
@@ -2436,6 +1863,11 @@ const App = {
     const pending = this._getPendingDeleteTombstones();
     pending[sessionId] = pending[sessionId] || deletedAt;
     this._setPendingDeleteTombstones(pending);
+
+    if (!ALLOW_AUTOMATIC_SYNC) {
+      this.markSyncPending();
+      return; // Na beta, enviar exclusões somente em Sincronizar Agora.
+    }
 
     if (this.firebaseSync && this.firebaseState.connected) {
       const ok = await this.firebaseSync.recordDeletedSession(sessionId, pending[sessionId]);
@@ -2447,8 +1879,9 @@ const App = {
   },
 
   _clearActiveSessionUI() {
+    this.quizFilters?.clear();
     this.activeSessionId = null;
-    localStorage.removeItem('activeSessionId');
+    appStorage.removeItem('activeSessionId');
     this.state.quizJson = null;
     this.state.questions = [];
     this.state.mappings = { qOrder: [], altOrder: {} };
@@ -2458,7 +1891,7 @@ const App = {
     this.state.retryIndices = [];
     this.state.retryDerivedFromErrors = false;
     this._sessionDerivedFromErrors = false;
-    this.renderer.container.innerHTML = '';
+    this.renderer.clear();
     this.elements.configBar.classList.add('hidden');
     this.elements.footerBar.classList.add('hidden');
     this.elements.filterSection.classList.add('hidden');
@@ -2496,7 +1929,7 @@ const App = {
     try {
       await this.firebaseConfig.logout();
       this.firebaseState.autoSync = false;
-      localStorage.setItem('firebaseAutoSync', 'false');
+      appStorage.setItem('firebaseAutoSync', 'false');
       this.elements.chkFirebaseAutoSync.checked = false;
       this.elements.firebaseModal.classList.add('hidden');
     } catch (e) {
@@ -2625,7 +2058,7 @@ const App = {
 
       this.firebaseState.pendingChanges = false;
       this.firebaseState.lastSyncTime = new Date().toISOString();
-      localStorage.setItem('lastSyncTime', this.firebaseState.lastSyncTime);
+      appStorage.setItem('lastSyncTime', this.firebaseState.lastSyncTime);
 
     } catch (e) {
       console.error('Erro na sincronizacao:', e);
@@ -2951,9 +2384,10 @@ const App = {
     this._sessionTitle = session.title;
     this._sourceFileName = session.sourceFileName || null;
     this._sessionFolderId = session.folderId || '';
-    localStorage.setItem('activeSessionId', session.sessionId);
+    appStorage.setItem('activeSessionId', session.sessionId);
     this.elements.sessionListModal.classList.add('hidden');
 
+    this.quizFilters?.clear();
     this.state = session.state;
     this.ensureStateIntegrity();
     this.restoreUI();
@@ -2966,18 +2400,18 @@ const App = {
       this.renderer.render(this.state);
       this.applyCommentCollapseMode();
     } else if (this.state.quizJson) {
-      this.renderFilterDescription();
+      this.quizFilters.renderFilterDescription();
       if (this.state.filters.step === 2) {
-        this.prepareStep1();
-        this.prepareStep2();
+        this.quizFilters.prepareStep1();
+        this.quizFilters.prepareStep2();
       } else {
-        this.prepareStep1();
+        this.quizFilters.prepareStep1();
       }
       this.elements.uploadSection.classList.add('hidden');
       this.elements.filterSection.classList.remove('hidden');
       this.elements.configBar.classList.add('hidden');
       this.elements.footerBar.classList.add('hidden');
-      this.renderer.container.innerHTML = '';
+      this.renderer.clear();
     }
 
     this.save();
@@ -3165,274 +2599,10 @@ const App = {
     });
   },
 
-  // ===== Filtro por pasta (Step 1/2) =====
-  prepareStep1() {
-    this.elements.filterStep1.classList.remove('hidden');
-    this.elements.filterStep2.classList.add('hidden');
-
-    const folderSet = new Set();
-    this.state.filters.counts.folders = {};
-
-    this.state.questions.forEach((q) => {
-      const pathStr = q._path.join(' > ');
-      folderSet.add(pathStr);
-      this.state.filters.counts.folders[pathStr] =
-        (this.state.filters.counts.folders[pathStr] || 0) + 1;
-    });
-
-    this.state.filters.allFolders = Array.from(folderSet).sort();
-
-    if (this.state.filters.folders.length === 0) {
-      this.state.filters.folders = [...this.state.filters.allFolders];
-    }
-
-    if (
-      Object.keys(this.state.filters.folderDescriptions).length === 0 &&
-      this.state.quizJson
-    ) {
-      this.extractFolderDescriptions(this.state.quizJson.conteudo);
-    }
-
-    this.renderFolderUI();
-  },
-
-  showStep1() {
-    this.elements.filterStep1.classList.remove('hidden');
-    this.elements.filterStep2.classList.add('hidden');
-  },
-
-  prepareStep2() {
-    this.elements.filterStep1.classList.add('hidden');
-    this.elements.filterStep2.classList.remove('hidden');
-
-    const selFolders = new Set(this.state.filters.folders);
-    const tagsSet = new Set();
-    const diffsSet = new Set();
-
-    this.state.filters.counts.tags = {};
-    this.state.filters.counts.diffs = {};
-    this.state.filters.counts.types = {};
-
-    this.state.questions.forEach((q) => {
-      const pathStr = q._path.join(' > ');
-      if (!selFolders.has(pathStr)) return;
-
-      if (q.tags && q.tags.length > 0) {
-        q.tags.forEach((t) => {
-          tagsSet.add(t);
-          this.state.filters.counts.tags[t] =
-            (this.state.filters.counts.tags[t] || 0) + 1;
-        });
-      } else {
-        const noTag = '__NO_TAG__';
-        tagsSet.add(noTag);
-        this.state.filters.counts.tags[noTag] =
-          (this.state.filters.counts.tags[noTag] || 0) + 1;
-      }
-
-      if (q.dificuldade !== undefined && q.dificuldade !== null) {
-        const d = q.dificuldade;
-        diffsSet.add(d);
-        this.state.filters.counts.diffs[d] =
-          (this.state.filters.counts.diffs[d] || 0) + 1;
-      } else {
-        const noDiff = '__NO_DIFF__';
-        diffsSet.add(noDiff);
-        this.state.filters.counts.diffs[noDiff] =
-          (this.state.filters.counts.diffs[noDiff] || 0) + 1;
-      }
-
-      let type = (q.tipo || '').toUpperCase();
-      if (type === 'ME-CH') type = 'MEM';
-      if (type === 'CH') type = 'MVF';
-      if (questionTypes.includes(type)) {
-        this.state.filters.counts.types[type] =
-          (this.state.filters.counts.types[type] || 0) + 1;
-      }
-    });
-
-    this.state.filters.allTags = Array.from(tagsSet).sort();
-    this.state.filters.allDiffs = Array.from(diffsSet).sort();
-    this.state.filters.allTypes = [...questionTypes];
-
-    this.state.filters.tags = this.state.filters.tags.filter((t) =>
-      tagsSet.has(t)
-    );
-    this.state.filters.excludedTags = this.state.filters.excludedTags.filter((t) =>
-      tagsSet.has(t)
-    );
-    this.state.filters.diffs = this.state.filters.diffs.filter((d) =>
-      diffsSet.has(d)
-    );
-    this.state.filters.types = this.state.filters.types.map((t) => {
-      if (t === 'ME-CH') return 'MEM';
-      if (t === 'CH') return 'MVF';
-      return t;
-    });
-    this.state.filters.types = [...new Set(this.state.filters.types.filter((type) =>
-      questionTypes.includes(type)
-    ))];
-
-    if (
-      this.state.filters.diffs.length === 0 &&
-      this.state.filters.allDiffs.length > 0
-    ) {
-      this.state.filters.diffs = [...this.state.filters.allDiffs];
-    }
-
-    this.renderFilterUI();
-  },
-
-  renderFolderUI() {
-    const container = this.elements.folderTree;
-    container.innerHTML = '';
-
-    const tree = {};
-
-    this.state.filters.allFolders.forEach((pathStr) => {
-      const parts = pathStr.split(' > ');
-      let current = tree;
-
-      parts.forEach((part, idx) => {
-        if (!current[part]) {
-          current[part] = {
-            name: part,
-            fullPath: parts.slice(0, idx + 1).join(' > '),
-            children: {},
-            count: 0
-          };
-        }
-        if (idx === parts.length - 1) {
-          current[part].count =
-            this.state.filters.counts.folders[pathStr] || 0;
-        }
-        current = current[part].children;
-      });
-    });
-
-    const buildDom = (nodeChildren, parentUl) => {
-      Object.keys(nodeChildren)
-        .sort()
-        .forEach((key) => {
-          const node = nodeChildren[key];
-          const li = document.createElement('li');
-          li.className = 'ft-li';
-
-          const chk = document.createElement('input');
-          chk.type = 'checkbox';
-          chk.dataset.path = node.fullPath;
-
-          const relatedPaths = this.state.filters.allFolders.filter((p) =>
-            p.startsWith(node.fullPath)
-          );
-          const allSelected = relatedPaths.every((p) =>
-            this.state.filters.folders.includes(p)
-          );
-          const someSelected = relatedPaths.some((p) =>
-            this.state.filters.folders.includes(p)
-          );
-
-          chk.checked = allSelected;
-          chk.indeterminate = someSelected && !allSelected;
-
-          chk.addEventListener('change', () => {
-            const isChecked = chk.checked;
-            const pathsToToggle = this.state.filters.allFolders.filter((p) =>
-              p.startsWith(node.fullPath)
-            );
-
-            pathsToToggle.forEach((p) => {
-              if (isChecked) {
-                if (!this.state.filters.folders.includes(p)) {
-                  this.state.filters.folders.push(p);
-                }
-              } else {
-                const idx = this.state.filters.folders.indexOf(p);
-                if (idx > -1) this.state.filters.folders.splice(idx, 1);
-              }
-            });
-
-            this.renderFolderUI();
-            this.save();
-          });
-
-          const getTotalCount = (n) => {
-            let total = n.count;
-            Object.values(n.children).forEach((child) => {
-              total += getTotalCount(child);
-            });
-            return total;
-          };
-
-          const totalNodeQuestions = getTotalCount(node);
-
-          const label = document.createElement('label');
-          label.className = 'ft-label';
-          label.appendChild(chk);
-          label.appendChild(document.createTextNode(node.name));
-
-          const spanCount = document.createElement('span');
-          spanCount.className = 'ft-count';
-          spanCount.textContent = totalNodeQuestions;
-          label.appendChild(spanCount);
-
-          const desc = this.state.filters.folderDescriptions[node.fullPath];
-          if (desc) {
-            const btnDesc = document.createElement('span');
-            btnDesc.className = 'btn-desc';
-            btnDesc.textContent = '📝 Ver descrição';
-            btnDesc.title = 'Clique para ver a descrição';
-
-            btnDesc.addEventListener('click', (e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              this.showInfoModal(node.name, desc);
-            });
-
-            label.appendChild(btnDesc);
-          }
-
-          li.appendChild(label);
-
-          if (Object.keys(node.children).length > 0) {
-            const ul = document.createElement('ul');
-            ul.className = 'ft-ul';
-            buildDom(node.children, ul);
-            li.appendChild(ul);
-          }
-
-          parentUl.appendChild(li);
-        });
-    };
-
-    const rootUl = document.createElement('ul');
-    rootUl.className = 'ft-ul root';
-    buildDom(tree, rootUl);
-    container.appendChild(rootUl);
-  },
-
   showInfoModal(title, text) {
     this.elements.infoModalTitle.textContent = title;
     this.elements.infoModalBody.innerHTML = text.replace(/\n/g, '<br>');
     this.elements.infoModal.classList.remove('hidden');
-  },
-
-  extractFolderDescriptions(nodes, currentPath = []) {
-    if (!Array.isArray(nodes)) return;
-
-    nodes.forEach((node) => {
-      if (node.tipo && node.tipo.toUpperCase() === 'FOLDER') {
-        const folderName = node.nome || 'Sem Nome';
-        const newPath = [...currentPath, folderName];
-        const pathStr = newPath.join(' > ');
-
-        if (node.descricao) {
-          this.state.filters.folderDescriptions[pathStr] = node.descricao;
-        }
-
-        this.extractFolderDescriptions(node.conteudo, newPath);
-      }
-    });
   },
 
   // ===== Editar Sessão =====
@@ -3484,271 +2654,48 @@ const App = {
     await this.renderSessionList();
   },
 
-  // ===== Configurações Visuais =====
-  getVisualSettings() {
-    return {
-      footerFixed: localStorage.getItem('vs_footerFixed') !== 'false',
-      commentMode: localStorage.getItem('vs_commentMode') || 'all',
-      persistManualOpen: localStorage.getItem('vs_persistManualOpen') === 'true',
-      vfStacked: localStorage.getItem('vs_vfStacked') === 'true',
-      mqRenderMode: localStorage.getItem('vs_mqRenderMode') || 'arrows',
-      showPartialScore: localStorage.getItem('vs_showPartialScore') !== 'false',
-      fontSize: parseInt(localStorage.getItem('vs_fontSize')) || 16,
-      quizWidth: parseInt(localStorage.getItem('vs_quizWidth'), 10) || 900,
-      darkMode: localStorage.getItem('vs_darkMode')
-    };
+  initFilters() {
+    this.quizFilters?.dispose();
+    this.quizFilters = new QuizFilters({
+      elements: this.elements,
+      getState: () => this.state,
+      onChange: () => this.save(),
+      onGenerate: () => {
+        this.state.retryMode = false;
+        this.generateAndRender();
+      },
+      onInfo: (title, text) => this.showInfoModal(title, text)
+    });
+    this.quizFilters.init();
   },
 
-  initVisualSettings() {
-    const vs = this.getVisualSettings();
+  // ===== Preferências =====
+  getVisualSettings() {
+    return readVisualPreferences();
+  },
 
-    // Restaurar UI
-    this.elements.chkFooterFixed.checked = vs.footerFixed;
-    if (vs.commentMode === 'current') {
-      this.elements.commentModeCurrent.checked = true;
-      this.elements.commentSubOptions.classList.remove('hidden');
-    } else {
-      this.elements.commentModeAll.checked = true;
-    }
-    this.elements.chkPersistManualOpen.checked = vs.persistManualOpen;
-    this.elements.chkVfStacked.checked = vs.vfStacked;
-    if (this.elements.mqModeTable && this.elements.mqModeArrows) {
-      if (vs.mqRenderMode === 'table') {
-        this.elements.mqModeTable.checked = true;
-      } else {
-        this.elements.mqModeArrows.checked = true;
-      }
-    }
-    if (this.elements.chkShowPartialScore) {
-      this.elements.chkShowPartialScore.checked = vs.showPartialScore;
-    }
-    this.elements.rangeFontSize.value = vs.fontSize;
-    this.elements.fontSizeValue.textContent = vs.fontSize + 'px';
-    if (this.elements.chkShowDisregardCorrect) {
-      this.elements.chkShowDisregardCorrect.checked =
-        localStorage.getItem('gs_showDisregardCorrect') !== 'false';
-    }
-    this.elements.chkSimpleMvfCorrection.checked =
-      localStorage.getItem('gs_simpleMvfCorrection') === 'true';
-
-    // Dark mode: null = auto (segue o sistema), 'true'/'false' = manual
-    const isDark = vs.darkMode === 'true' ||
-      (vs.darkMode === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    this.elements.chkDarkMode.checked = isDark;
-
-    // Aplicar footer, VF stacked, font size e dark mode
-    this.applyFooterMode(vs.footerFixed);
-    this.applyVfStacked(vs.vfStacked);
-    this.applyFontSize(vs.fontSize);
-    this.applyQuizWidth(vs.quizWidth, false);
-    this.initQuizWidthControls();
-    this.applyDarkMode(isDark);
-
-    // Eventos
-    this.elements.btnVisualSettings.addEventListener('click', () => {
-      this.elements.visualSettingsPanel.classList.toggle('hidden');
-    });
-
-    if (this.elements.btnGeneralSettings && this.elements.generalSettingsPanel) {
-      this.elements.btnGeneralSettings.addEventListener('click', () => {
-        this.elements.generalSettingsPanel.classList.toggle('hidden');
-      });
-    }
-
-    this.elements.chkFooterFixed.addEventListener('change', (e) => {
-      localStorage.setItem('vs_footerFixed', e.target.checked);
-      this.applyFooterMode(e.target.checked);
-    });
-
-    this.elements.commentModeAll.addEventListener('change', () => {
-      localStorage.setItem('vs_commentMode', 'all');
-      this.elements.commentSubOptions.classList.add('hidden');
-      this.expandAllComments();
-    });
-
-    this.elements.commentModeCurrent.addEventListener('change', () => {
-      localStorage.setItem('vs_commentMode', 'current');
-      this.elements.commentSubOptions.classList.remove('hidden');
-    });
-
-    this.elements.chkPersistManualOpen.addEventListener('change', (e) => {
-      localStorage.setItem('vs_persistManualOpen', e.target.checked);
-    });
-
-    this.elements.chkVfStacked.addEventListener('change', (e) => {
-      localStorage.setItem('vs_vfStacked', e.target.checked);
-      this.applyVfStacked(e.target.checked);
-    });
-
-    const handleMqModeChange = (mode) => {
-      localStorage.setItem('vs_mqRenderMode', mode);
-      if (this.state.questions && this.state.questions.length > 0) {
-        this.renderer.render(this.state);
-      }
-    };
-    if (this.elements.mqModeArrows) {
-      this.elements.mqModeArrows.addEventListener('change', () => handleMqModeChange('arrows'));
-    }
-    if (this.elements.mqModeTable) {
-      this.elements.mqModeTable.addEventListener('change', () => handleMqModeChange('table'));
-    }
-
-    if (this.elements.chkShowPartialScore) {
-      this.elements.chkShowPartialScore.addEventListener('change', (e) => {
-        localStorage.setItem('vs_showPartialScore', e.target.checked ? 'true' : 'false');
+  initPreferences() {
+    this.preferences?.dispose();
+    this.preferences = new Preferences({
+      elements: this.elements,
+      onExpandComments: () => this.expandAllComments(),
+      onMqModeChange: () => {
+        if (this.state.questions && this.state.questions.length > 0) {
+          this.renderer.render(this.state);
+        }
+      },
+      onPartialScoreChange: () => {
         this.renderer.render(this.state);
         this.applyCommentCollapseMode();
-      });
-    }
-
-    this.elements.chkDarkMode.addEventListener('change', (e) => {
-      const enabled = e.target.checked;
-      localStorage.setItem('vs_darkMode', enabled);
-      this.applyDarkMode(enabled);
-    });
-
-    // Ouvir mudanças do tema do sistema (só aplica se o usuário nunca escolheu manualmente)
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (localStorage.getItem('vs_darkMode') === null) {
-        this.elements.chkDarkMode.checked = e.matches;
-        this.applyDarkMode(e.matches);
+      },
+      onGeneralChange: (settings) => {
+        Object.assign(this.state.config, settings);
+        this.renderer.render(this.state);
+        this.applyCommentCollapseMode();
+        this.save();
       }
     });
-
-    this.elements.rangeFontSize.addEventListener('input', (e) => {
-      const size = parseInt(e.target.value);
-      localStorage.setItem('vs_fontSize', size);
-      this.elements.fontSizeValue.textContent = size + 'px';
-      this.applyFontSize(size);
-    });
-
-    // Eventos do modal de editar sessão
-    this.elements.closeEditSession.addEventListener('click', () => {
-      this.elements.editSessionModal.classList.add('hidden');
-    });
-    this.elements.btnEditCancel.addEventListener('click', () => {
-      this.elements.editSessionModal.classList.add('hidden');
-    });
-    this.elements.btnEditSave.addEventListener('click', () => {
-      this.saveEditSession();
-    });
-    this.elements.editSessionModal.addEventListener('click', (e) => {
-      if (e.target === this.elements.editSessionModal) {
-        this.elements.editSessionModal.classList.add('hidden');
-      }
-    });
-  },
-
-  applyFooterMode(fixed) {
-    if (fixed) {
-      this.elements.footerBar.classList.remove('footer-inline');
-    } else {
-      this.elements.footerBar.classList.add('footer-inline');
-    }
-  },
-
-  applyVfStacked(stacked) {
-    document.getElementById('quizContainer').classList.toggle('ch-vf-stacked', !!stacked);
-  },
-
-  applyDarkMode(enabled) {
-    document.documentElement.classList.toggle('dark-mode', enabled);
-    if (this.elements.darkModeIcon) {
-      this.elements.darkModeIcon.textContent = enabled ? '☀️' : '🌙';
-    }
-  },
-
-  applyFontSize(size) {
-    document.body.style.fontSize = size + 'px';
-  },
-
-  applyQuizWidth(size, save = true) {
-    const width = Math.max(320, Math.min(1800, Math.round(Number(size) || 900)));
-    this._quizWidth = width;
-    this.elements.quizWidthShell.style.setProperty('--quiz-width', `${width}px`);
-    this.elements.rangeQuizWidth.value = width;
-    this.elements.quizWidthValue.textContent = `${width}px`;
-    this.elements.quizWidthShell.querySelectorAll('.quiz-resize-handle').forEach((handle) => {
-      handle.setAttribute('aria-valuenow', String(width));
-      handle.setAttribute('aria-valuetext', `${width} pixels`);
-    });
-    if (save) localStorage.setItem('vs_quizWidth', String(width));
-  },
-
-  initQuizWidthControls() {
-    const { quizWidthShell, rangeQuizWidth, btnResetQuizWidth } = this.elements;
-    rangeQuizWidth.addEventListener('input', (event) => {
-      this.applyQuizWidth(event.target.value);
-    });
-    btnResetQuizWidth.addEventListener('click', () => this.applyQuizWidth(900));
-
-    quizWidthShell.querySelectorAll('.quiz-resize-handle').forEach((handle) => {
-      let drag = null;
-      const finishDrag = (commit = true) => {
-        if (!drag) return;
-        const finished = drag;
-        drag = null;
-        if (finished.active) {
-          if (commit) localStorage.setItem('vs_quizWidth', String(this._quizWidth));
-          else this.applyQuizWidth(finished.preferredWidth, false);
-        }
-        handle.classList.remove('is-dragging');
-        document.body.classList.remove('quiz-width-resizing');
-        if (handle.hasPointerCapture(finished.pointerId)) handle.releasePointerCapture(finished.pointerId);
-      };
-      handle.addEventListener('pointerdown', (event) => {
-        if (!event.isPrimary || event.button !== 0) return;
-        const side = handle.classList.contains('quiz-resize-left') ? -1 : 1;
-        drag = {
-          pointerId: event.pointerId,
-          startX: event.clientX,
-          startY: event.clientY,
-          startWidth: quizWidthShell.getBoundingClientRect().width,
-          preferredWidth: this._quizWidth,
-          side,
-          active: false
-        };
-        handle.setPointerCapture(event.pointerId);
-      });
-      handle.addEventListener('pointermove', (event) => {
-        if (!drag || event.pointerId !== drag.pointerId) return;
-        const dx = Math.abs(event.clientX - drag.startX);
-        const dy = Math.abs(event.clientY - drag.startY);
-        if (!drag.active) {
-          if (dy > 8 && dy >= dx) {
-            finishDrag(false);
-            return;
-          }
-          if (dx < 8 || dx <= dy) return;
-          drag.active = true;
-          handle.classList.add('is-dragging');
-          document.body.classList.add('quiz-width-resizing');
-          const selection = window.getSelection();
-          if (selection) selection.removeAllRanges();
-        }
-        event.preventDefault();
-        const viewportWidth = window.innerWidth - (window.innerWidth <= 600 ? 16 : 40);
-        const maxWidth = Math.max(1, Math.min(1800, viewportWidth));
-        const minWidth = Math.min(320, maxWidth);
-        const width = drag.startWidth + 2 * drag.side * (event.clientX - drag.startX);
-        this.applyQuizWidth(Math.max(minWidth, Math.min(maxWidth, width)), false);
-      });
-      handle.addEventListener('pointerup', () => finishDrag());
-      handle.addEventListener('pointercancel', () => finishDrag(false));
-      handle.addEventListener('lostpointercapture', () => finishDrag(false));
-      document.addEventListener('pointerdown', (event) => {
-        if (drag && event.pointerType !== 'mouse' && !event.isPrimary) finishDrag(false);
-      }, { capture: true, passive: true });
-      handle.addEventListener('keydown', (event) => {
-        const current = this._quizWidth;
-        const next = event.key === 'ArrowRight' ? current + 10 :
-          event.key === 'ArrowLeft' ? current - 10 :
-          event.key === 'Home' ? 320 : event.key === 'End' ? 1800 : null;
-        if (next === null) return;
-        event.preventDefault();
-        this.applyQuizWidth(next);
-      });
-    });
+    this.preferences.init();
   },
 
   // ===== Colapso de Comentários =====
@@ -3959,12 +2906,12 @@ const App = {
     // Toggle entre visão de pastas e lista plana
     this.elements.btnToggleFolderView.addEventListener('click', () => {
       this._folderViewActive = !this._folderViewActive;
-      localStorage.setItem('folderViewActive', this._folderViewActive ? 'true' : 'false');
+      appStorage.setItem('folderViewActive', this._folderViewActive ? 'true' : 'false');
       this.renderSessionList();
     });
 
     // Restaurar preferência de visão
-    const savedView = localStorage.getItem('folderViewActive');
+    const savedView = appStorage.getItem('folderViewActive');
     if (savedView !== null) {
       this._folderViewActive = savedView !== 'false';
     }

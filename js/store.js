@@ -1,5 +1,6 @@
 /* ===== JS: js\store.js ===== */
-const DB_NAME = 'QuizEngineV3';
+import { DATABASE_NAME } from './release-config.js?v=20261003-450';
+const DB_NAME = DATABASE_NAME;
 const STORE_NAME = 'quizState';
 const SESSIONS_STORE = 'sessions';
 const DB_VERSION = 2;
@@ -379,3 +380,4 @@ function getEffectiveSessionTotal(session) {
   }
   return session.totalCount || (Array.isArray(state.questions) ? state.questions.length : 0);
 }
+

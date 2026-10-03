@@ -1,6 +1,37 @@
-# 🩺 Question Engine V4.4.2 (med-questoes-geral)
+# 🩺 Question Engine V4.5.0 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
+
+## Novidades da versão 4.5.0
+
+A versão estável reúne as cinco etapas de modularização testadas na branch `beta`:
+
+- `js/scoring.js`: gabaritos, pontuação e regras de desconsideração compartilhados pelo controlador e renderer. Os exports anteriores de `utils.js` continuam disponíveis.
+- `js/highlighter.js`: marca-texto por mouse/touch/caneta, seleção, destaques, menus, cores/opacidade e limpeza dos recursos de interação.
+- `js/matching-questions.js`: associação por setas/tabela, conexões, gabarito visual, fonte, expansão, redimensionamento e limpeza de eventos.
+- `js/preferences.js`: leitura e restauração de preferências visuais/gerais, aplicação no DOM e controles que continuam funcionando no topo ou no popup.
+- `js/filters.js`: esquema, normalização, contagens, árvore de pastas e seleção das questões com contexto dos grupos, preservando filtros, aliases e retry.
+
+O controlador mantém o ciclo de vida das sessões, Firebase, ações sobre respostas e geração de mapas. Os módulos recebem elementos, leitores do estado e callbacks pequenos. O formato dos dados e o esquema do banco são preservados; a aplicação continua com ES modules nativos.
+
+## Armazenamento e Firebase na versão estável
+
+- `RELEASE_CHANNEL` é `stable`. O IndexedDB volta a ser **QuizEngineV3**, versão de esquema **2**, reutilizando as sessões da versão principal anterior.
+- Sessão ativa, preferências e exclusões pendentes voltam às chaves originais de localStorage, incluindo `vs_darkMode` e `firebaseAutoSync`.
+- Firebase permite novamente sincronização automática conforme a preferência salva da versão principal. O checkbox está habilitado. Login, salvamento e entrega de respostas retomam os fluxos automáticos existentes; Sincronizar Agora continua disponível.
+- A promoção preserva o banco **QuizEngineV3Beta** e as chaves `beta:` nos dispositivos. Os dados de teste não são copiados automaticamente para o armazenamento estável. Sessões de teste podem ser transferidas pelos exports/imports existentes quando desejado.
+- O merge mantém o histórico das cinco betas. A branch `beta` continua como referência do canal de teste; a versão estável fica na `main`.
+
+## Validação da versão 4.5.0
+
+Execute `node --test tests/*.test.mjs` (Node.js 20+). Os **71 testes** cobrem interações, pontuação, marca-texto, associação, preferências, filtros, restauração, limpeza de recursos, uso do banco/chaves originais e sincronização automática/manual com serviços simulados. Na beta.5, 768 comparações com a beta.4 confirmaram a mesma seleção, contexto, mapas de alternativas e contagem.
+
+A validação de layout, seleção nativa, touch, IndexedDB e Firebase reais também deve ser feita no navegador/dispositivo:
+
+- Reabrir uma sessão da versão principal e conferir respostas, marcações, preferências e filtros. Salvar e recarregar.
+- Combinar pastas/subpastas, tags incluídas/excluídas, dificuldade e tipo; gerar, embaralhar e refazer erros de grupos.
+- Testar marca-texto com mouse/touch/caneta, associação por setas/tabela, popup de configurações, largura das questões e tela cheia.
+- Conferir sincronização manual e automática com a preferência desejada e reabrir a sessão em outro dispositivo.
 
 ## Novidades da versão 4.4.2
 
@@ -74,9 +105,16 @@ med-questoes-geral/
 ├── js/
 │   ├── main.js                     # Controlador principal (App): eventos, ciclo de vida, filtros, sessões e UI
 │   ├── renderer.js                 # QuizRenderer: renderização de cards, gabaritos, avaliação e inputs
+│   ├── filters.js                 # QuizFilters: esquema, seleção por grupos, contagens e controles
+│   ├── preferences.js             # Preferences: leitura, controles e aplicação das preferências visuais/gerais
+│   ├── matching-questions.js       # MatchingQuestions: associação por setas/tabela e limpeza de recursos
+│   ├── highlighter.js              # TextHighlighter: seleção, destaques, gestos, menus e limpeza de recursos
 │   ├── parser.js                   # Parser: linearização da árvore JSON, resolução de grupos, variantes e tipos
 │   ├── store.js                    # Camada de persistência IndexedDB (sessões, pastas e migrações)
-│   ├── utils.js                    # Utilitários: Fisher-Yates, mapa de dificuldades/tipos, scores (MEM, MVF, MQ) e formatters
+│   ├── utils.js                    # Utilitários: Fisher-Yates, mapas, formatters e reexports de compatibilidade
+│   ├── scoring.js                  # Gabaritos e pontuação compartilhados, sem dependências de DOM
+│   ├── release-config.js           # Canal, armazenamento local e política de sincronização automática
+│   ├── settings-shortcuts.js       # Menu de configurações, gestos e tela cheia
 │   ├── firebase-config.js          # Inicialização do Firebase v10 e métodos de autenticação
 │   └── firebase-sync.js            # Lógica de sincronização remota, chunking e compressão Gzip
 ├── quizes-da-nuvem/                # Repositório de questões pré-empacotadas
