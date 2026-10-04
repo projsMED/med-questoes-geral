@@ -1,5 +1,5 @@
 /* ===== JS: js\store.js ===== */
-import { DATABASE_NAME } from './release-config.js?v=20261004-451';
+import { DATABASE_NAME } from './release-config.js?v=20261004-452';
 const DB_NAME = DATABASE_NAME;
 const STORE_NAME = 'quizState';
 const SESSIONS_STORE = 'sessions';

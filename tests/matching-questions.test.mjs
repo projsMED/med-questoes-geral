@@ -151,7 +151,7 @@ test('renderer limpa recursos da associação ao sair da sessão', () => {
   renderer.highlighter.dispose(); renderer.matchingQuestions.dispose();
 });
 
-test('alinha topos com alturas distintas, avisos, cabeçalhos e recalcula após resize', () => {
+test('alinha topo dos primeiros e base dos últimos com alturas distintas, avisos e resize', () => {
   const f = setup('arrows', { connections: [{ leftOrigIdx: 0, rightOrigIdx: 2 }] }, true);
   appStorage.setItem('vs_mqAlignColumns', 'true');
   const view = f.mq.render(f.q, 0, f.app.state, false, true, f.app.state.userAnswers[0]);
@@ -164,15 +164,25 @@ test('alinha topos com alturas distintas, avisos, cabeçalhos e recalcula após 
   lists.forEach((list, side) => list.children.forEach((item, index) => {
     item.getBoundingClientRect = () => ({ height: heights[side][index] });
   }));
+  const lastLeft = lists[0].children.at(-1);
+  lastLeft.getBoundingClientRect = () => ({ height: 250 });
+  lastLeft.querySelector('.mq-item').getBoundingClientRect = () => ({ height: heights[0][1] });
   f.flush();
-  assert.equal(lists[0].style.rowGap, '10px');
+  assert.equal(lists[0].style.rowGap, '110px');
   assert.equal(lists[1].style.rowGap, '10px');
   assert.equal(lists[0].style.paddingTop, '0px');
   assert.equal(lists[1].style.paddingTop, '20px');
   heights[1][0] = 80;
   f.win.emit('resize'); f.flush();
-  assert.equal(lists[0].style.rowGap, '50px');
+  assert.equal(lists[0].style.rowGap, '150px');
   assert.equal(lists[1].style.rowGap, '10px');
+  // A última opção cresce (por exemplo, quebra de linha): a base continua alinhada.
+  heights[1][2] += 24;
+  f.observers.at(-1).callback(); f.flush();
+  assert.equal(lists[0].style.rowGap, '174px');
+  const bottom = (side) => heights[side].reduce((sum, height) => sum + height, 0)
+    + (heights[side].length - 1) * parseFloat(lists[side].style.rowGap);
+  assert.equal(bottom(0), bottom(1));
   assert.deepEqual(f.app.state.userAnswers[0].connections, [{ leftOrigIdx: 0, rightOrigIdx: 2 }]);
   appStorage.setItem('vs_mqAlignColumns', 'false');
   const normal = f.mq.render(f.q, 0, f.app.state, false, false, f.app.state.userAnswers[0]);
@@ -193,6 +203,9 @@ test('distribui três itens contra cinco e mantém item único no topo', () => {
     const lists = view.querySelectorAll('.mq-items-list');
     lists.forEach((list) => list.children.forEach((item) => {
       item.getBoundingClientRect = () => ({ height: 40 });
+      if (item.querySelector('.mq-item')) {
+        item.querySelector('.mq-item').getBoundingClientRect = () => ({ height: 40 });
+      }
     }));
     f.flush();
     assert.equal(lists[0].style.rowGap, count === 1 ? '10px' : '60px');

@@ -1,5 +1,5 @@
 // Preferências visuais e gerais: leitura, controles e aplicação no DOM.
-import { appStorage } from './release-config.js?v=20261004-451';
+import { appStorage } from './release-config.js?v=20261004-452';
 
 export function readVisualPreferences() {
   return {

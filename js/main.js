@@ -4,18 +4,18 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261004-451';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261004-451';
-import { shuffleArray } from './utils.js?v=20261004-451';
+} from './store.js?v=20261004-452';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261004-452';
+import { shuffleArray } from './utils.js?v=20261004-452';
 import {
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261004-451';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261004-451';
-import { QuizRenderer } from './renderer.js?v=20261004-451';
-import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261004-451';
-import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261004-451';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261004-451';
+} from './scoring.js?v=20261004-452';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261004-452';
+import { QuizRenderer } from './renderer.js?v=20261004-452';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261004-452';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261004-452';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261004-452';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -379,8 +379,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261004-451');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261004-451');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261004-452');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261004-452');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;

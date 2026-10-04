@@ -1,7 +1,7 @@
 // Questões de associação: setas, tabela, gabarito visual e recursos de interação.
-import { formatText } from './utils.js?v=20261004-451';
-import { parseMqGabarito } from './scoring.js?v=20261004-451';
-import { readVisualPreferences } from './preferences.js?v=20261004-451';
+import { formatText } from './utils.js?v=20261004-452';
+import { parseMqGabarito } from './scoring.js?v=20261004-452';
+import { readVisualPreferences } from './preferences.js?v=20261004-452';
 
 export class MatchingQuestions {
   constructor({ container, onChange }) {
@@ -496,18 +496,22 @@ export class MatchingQuestions {
       const headerHeight = Math.max(...headers);
       const measurements = lists.map((list) => {
         const items = Array.from(list.children);
-        // O último cartão pode ter outra altura: alinhar seu topo, não sua base.
-        // Os grupos da esquerda incluem os avisos de associações omitidas.
+        // Incluir a altura do último cartão para alinhar sua borda inferior.
+        // Avisos intermediários ocupam espaço; o aviso após o último cartão
+        // fica abaixo da área alinhada e não altera a borda de referência.
         const precedingHeight = items.slice(0, -1).reduce((sum, item) =>
           sum + item.getBoundingClientRect().height, 0);
+        const lastGroup = items.at(-1);
+        const lastItem = lastGroup?.querySelector('.mq-item') || lastGroup;
+        const contentHeight = precedingHeight + (lastItem?.getBoundingClientRect().height || 0);
         const intervals = Math.max(0, items.length - 1);
-        return { precedingHeight, intervals, span: precedingHeight + intervals * 10 };
+        return { contentHeight, intervals, span: contentHeight + intervals * 10 };
       });
       const span = Math.max(...measurements.map((measurement) => measurement.span));
       lists.forEach((list, index) => {
-        const { precedingHeight, intervals } = measurements[index];
+        const { contentHeight, intervals } = measurements[index];
         list.style.paddingTop = `${headerHeight - headers[index]}px`;
-        list.style.rowGap = `${intervals ? (span - precedingHeight) / intervals : 10}px`;
+        list.style.rowGap = `${intervals ? (span - contentHeight) / intervals : 10}px`;
       });
     };
     const scheduleDraw = () => {

@@ -1,6 +1,11 @@
-# 🩺 Question Engine V4.5.1 (med-questoes-geral)
+# 🩺 Question Engine V4.5.2 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
+
+## Novidades da versão 4.5.2
+
+- A opção **Alinhar início e fim das colunas (setas)** agora alinha o topo dos primeiros cartões e a borda inferior dos últimos, mesmo quando têm alturas diferentes.
+- O espaço extra continua distribuído entre os itens. Avisos de correção após o último cartão ficam abaixo da área alinhada; colunas com um único item permanecem alinhadas pelo topo.
 
 ## Novidades da versão 4.5.1
 
