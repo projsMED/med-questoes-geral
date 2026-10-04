@@ -3,16 +3,18 @@ import {
   formatText,
   difficultyMap,
   questionTypeMap
-} from './utils.js?v=20261004-452';
+} from './utils.js?v=20261004-461';
 
-import { readVisualPreferences } from './preferences.js?v=20261004-452';
+import { readVisualPreferences } from './preferences.js?v=20261004-461';
 import {
   parseMeChGabarito, parseMqGabarito, computeQuestionScore,
   isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261004-452';
+} from './scoring.js?v=20261004-461';
 
-import { MatchingQuestions } from './matching-questions.js?v=20261004-452';
-import { TextHighlighter } from './highlighter.js?v=20261004-452';
+import { MatchingQuestions } from './matching-questions.js?v=20261004-461';
+import { TextHighlighter } from './highlighter.js?v=20261004-461';
+import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261004-461';
+import { QuestionNavigation } from './question-navigation.js?v=20261004-461';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
@@ -20,6 +22,15 @@ export class QuizRenderer {
     this.btnSubmitAll = document.getElementById('btnSubmitAll');
     this.scoreDisplay = document.getElementById('scoreDisplay');
     this.callbacks = callbacks;
+    this.paginationNav = document.getElementById('quizPagination');
+    this.previousPageButton = document.getElementById('btnPreviousPage');
+    this.nextPageButton = document.getElementById('btnNextPage');
+    this.previousPageButton?.addEventListener('click', () => this.goToPage(this._pageIndex - 1));
+    this.nextPageButton?.addEventListener('click', () => this.goToPage(this._pageIndex + 1));
+    this.navigation = new QuestionNavigation({
+      onPage: (index) => this.goToPage(index),
+      onQuestion: (number) => this.jumpToQuestion(number)
+    });
     this.matchingQuestions = new MatchingQuestions({
       container: this.container,
       onChange: callbacks.onMqChange
@@ -58,6 +69,15 @@ export class QuizRenderer {
     this.highlighter.beginRender();
     this.matchingQuestions.clear();
     this._state = state;
+    this.callbacks.onPaginationSettingsRefresh?.();
+    this._pagination = effectivePagination(state);
+    this._pages = buildQuestionPages(state.questions, state.mappings.qOrder, this._pagination);
+    this._pageIndex = pageForQuestion(this._pages, state.mappings.qOrder, state.paginationAnchor);
+    const page = this._pages[this._pageIndex] || { start: 0, end: 0 };
+    if (this._pagination.enabled && page.end > page.start) {
+      state.paginationAnchor = state.mappings.qOrder[page.start];
+    }
+    this._updatePaginationNavigation();
     if (this._metadataQuizRef !== state.quizJson) {
       this._metadataQuizRef = state.quizJson;
       this._revealedMetadataQuestions.clear();
@@ -91,7 +111,7 @@ export class QuizRenderer {
       this.container.appendChild(retryBanner);
     }
 
-    for (let visualIdx = 0; visualIdx < state.mappings.qOrder.length;) {
+    for (let visualIdx = page.start; visualIdx < page.end;) {
       const originalIdx = state.mappings.qOrder[visualIdx];
       const qData = state.questions[originalIdx];
 
@@ -106,7 +126,7 @@ export class QuizRenderer {
       const currentGroupId = qData._groupData.id;
       const groupIndices = [];
       let nextVisualIdx = visualIdx;
-      while (nextVisualIdx < state.mappings.qOrder.length) {
+      while (nextVisualIdx < page.end) {
         const nextOriginalIdx = state.mappings.qOrder[nextVisualIdx];
         const nextQuestion = state.questions[nextOriginalIdx];
         if (!nextQuestion._groupData || nextQuestion._groupData.id !== currentGroupId) break;
@@ -189,7 +209,65 @@ export class QuizRenderer {
     this.highlighter.beginRender();
     this.highlighter.finishRender();
     this._state = null;
+    this._pages = [];
+    this._updatePaginationNavigation();
+    this.callbacks.onPaginationSettingsRefresh?.();
     this.container.innerHTML = '';
+  }
+
+  _updatePaginationNavigation() {
+    const visible = !!(this._state?.quizJson && this._pagination?.enabled && this._pages?.length);
+    this.paginationNav?.classList.toggle('hidden', !visible);
+    document.body.classList.toggle('quiz-paged', visible);
+    this.navigation.update(this._state, this._pages, this._pageIndex, visible);
+    if (!visible) return;
+    this.previousPageButton.disabled = this._pageIndex === 0;
+    this.nextPageButton.disabled = this._pageIndex === this._pages.length - 1;
+  }
+
+  captureReadingPosition() {
+    if (!this._state) return;
+    if (this._pagination?.enabled) return; // Preservar a primeira questão da página.
+    const cards = Array.from(this.container.querySelectorAll('.question-card'));
+    const card = cards.find((item) => item.getBoundingClientRect().bottom > 0) || cards.at(-1);
+    if (card) this._state.paginationAnchor = Number(card.dataset.originalIdx);
+  }
+
+  scrollToReadingPosition() {
+    const card = this.container.querySelector(`.question-card[data-original-idx="${this._state?.paginationAnchor}"]`);
+    const target = card?.closest('.question-group') || card;
+    target?.scrollIntoView({ behavior: 'instant', block: 'start' });
+  }
+
+  goToPage(index) {
+    if (!this._pagination?.enabled || !this._pages?.[index] || index === this._pageIndex) return false;
+    this.navigation.close();
+    this._state.paginationAnchor = this._state.mappings.qOrder[this._pages[index].start];
+    this.render(this._state);
+    this.callbacks.onPageChange?.();
+    this.scrollToReadingPosition();
+    return true;
+  }
+
+  revealQuestion(originalIdx) {
+    if (!this._pagination?.enabled) return;
+    this.goToPage(pageForQuestion(this._pages, this._state.mappings.qOrder, originalIdx));
+  }
+
+  jumpToQuestion(number) {
+    const order = this._state?.mappings.qOrder;
+    if (!this._pagination?.enabled || !Number.isSafeInteger(number) || number < 1 || number > order.length) return false;
+    this.navigation.close();
+    this.revealQuestion(order[number - 1]);
+    const card = this.container.querySelector(`.question-card[data-original-idx="${order[number - 1]}"]`);
+    if (!card) return false;
+    card.scrollIntoView({ behavior: 'instant', block: 'start' });
+    card.setAttribute('tabindex', '-1');
+    card.focus({ preventScroll: true });
+    if (!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+      card.animate?.([{ boxShadow: '0 0 0 3px var(--primary)' }, { boxShadow: '0 0 0 0 transparent' }], { duration: 1000 });
+    }
+    return true;
   }
 
   _scheduleGroupConnectorUpdate() {

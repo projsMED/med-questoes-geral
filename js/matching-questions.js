@@ -1,7 +1,7 @@
 // Questões de associação: setas, tabela, gabarito visual e recursos de interação.
-import { formatText } from './utils.js?v=20261004-452';
-import { parseMqGabarito } from './scoring.js?v=20261004-452';
-import { readVisualPreferences } from './preferences.js?v=20261004-452';
+import { formatText } from './utils.js?v=20261004-461';
+import { parseMqGabarito } from './scoring.js?v=20261004-461';
+import { readVisualPreferences } from './preferences.js?v=20261004-461';
 
 export class MatchingQuestions {
   constructor({ container, onChange }) {

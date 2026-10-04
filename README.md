@@ -1,6 +1,26 @@
-# 🩺 Question Engine V4.5.2 (med-questoes-geral)
+# 🩺 Question Engine V4.6.1 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
+
+## Novidades da versão 4.6.1
+
+- Números de páginas clicáveis e adaptados à largura disponível. Quando todas as páginas cabem, são mostradas juntas; caso contrário, aparecem extremos, página atual, reticências e opção de digitar um destino.
+- Clique em **Questão/Questões** no indicador para abrir o mapa de todas as questões. Clique no número ou intervalo para digitar o número de uma questão. Ambos os caminhos abrem a página correspondente e posicionam a tela no cartão escolhido, inclusive dentro de um grupo.
+- Mapa compacto com rolagem interna, grupos em molduras e destaque da página atual. Cores, símbolos e legenda distinguem questões não respondidas, rascunhos, corretas, erradas, parciais, pendentes de avaliação e questões de contexto/desativadas, usando as regras atuais de pontuação.
+- A navegação permanece fixa no modo por páginas, mesmo com **Responder Todas** em modo inline. O espaço inferior é medido para evitar sobreposição com o conteúdo e o atalho de próxima não respondida.
+- Grade e controles adaptados a dispositivos móveis e modo escuro, com alvos de toque, navegação por teclado, validação dos números e fechamento dos diálogos por Escape ou clique fora.
+
+## Novidades da versão 4.6.0
+
+- **Estudo por páginas**, opcional nas Configurações Gerais: escolha a quantidade de questões por página e se cada grupo deve ter uma página exclusiva. O padrão inicial continua sendo lista contínua.
+- Grupos nunca são divididos. Quando não cabem no espaço restante, começam na próxima página; grupos maiores que o limite são exibidos inteiros.
+- **Padrão global** salvo neste navegador e **configuração própria por sessão**, com opção de voltar a seguir o padrão. Sessões antigas e novas seguem o global até serem personalizadas; alterar o global não sobrescreve escolhas próprias.
+- A configuração própria e a questão de referência são salvas no estado da sessão, acompanhando exportação, importação e sincronização Firebase. A preferência global permanece local ao navegador. Sessões derivadas de erros mantêm a configuração da origem e começam na primeira página.
+- Navegação Anterior/Próxima no rodapé, intervalo de questões e contador de páginas quando diferente do total de questões. A numeração inclui os cartões de contexto dos grupos, como na lista contínua.
+- Só os cartões da página atual são montados. Respostas, textos e marcações permanecem no estado; “Responder Todas” e a pontuação continuam abrangendo o simulado completo. “Próxima não respondida” atravessa páginas.
+- Configurações gerais também acessíveis na tela inicial. Controles adaptados a telas estreitas, teclado e modo escuro.
+
+Validação: `node --test tests/*.test.mjs`. Os testes de paginação cobrem distribuição dos grupos, herança e restauração, controles, montagem da página atual e ida/volta do estado pelo fluxo de compressão Firebase com Firestore simulado. A conferência visual e a sincronização com o serviço real devem ser verificadas no navegador/dispositivo de destino.
 
 ## Novidades da versão 4.5.2
 

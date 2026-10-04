@@ -4,18 +4,19 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261004-452';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261004-452';
-import { shuffleArray } from './utils.js?v=20261004-452';
+} from './store.js?v=20261004-461';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261004-461';
+import { shuffleArray } from './utils.js?v=20261004-461';
 import {
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261004-452';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261004-452';
-import { QuizRenderer } from './renderer.js?v=20261004-452';
-import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261004-452';
-import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261004-452';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261004-452';
+} from './scoring.js?v=20261004-461';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261004-461';
+import { QuizRenderer } from './renderer.js?v=20261004-461';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261004-461';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261004-461';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261004-461';
+import { PaginationSettings } from './pagination.js?v=20261004-461';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -277,19 +278,30 @@ const App = {
       onToggleApplyDisregardedCorrect: (checked) =>
         this.handleToggleApplyDisregardedCorrect(checked),
       onManageQuestion: (originalIdx) => this.openDeleteQuestionModal(originalIdx),
-      onMqChange: (qIdx, connections) => this.handleMqChange(qIdx, connections)
+      onMqChange: (qIdx, connections) => this.handleMqChange(qIdx, connections),
+      onPageChange: () => {
+        this.applyCommentCollapseMode();
+        this.save(true);
+      },
+      onPaginationSettingsRefresh: () => this.paginationSettings?.refresh()
     });
 
     this.initFilters();
     this.bindEvents();
     this.setupImageZoom();
     this.initPreferences();
+    this.initPaginationSettings();
     this.settingsShortcuts = new SettingsShortcuts({
       shell: this.elements.quizWidthShell,
       visualPanel: this.elements.visualSettingsPanel,
       generalPanel: this.elements.generalSettingsPanel,
       fullscreenButton: document.getElementById('btnFullscreen'),
       fullscreenStatus: document.getElementById('fullscreenStatus')
+    });
+    document.getElementById('btnGeneralSettingsStart')?.addEventListener('click', () => {
+      this.paginationSettings.refresh();
+      this.settingsShortcuts.open();
+      this.settingsShortcuts.showSection('general');
     });
     this.setupNextUnansweredButton();
     this.setupCommentShortcuts();
@@ -379,8 +391,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261004-452');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261004-452');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261004-461');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261004-461');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
@@ -682,6 +694,8 @@ const App = {
 
   loadQuizJSON(json, sourceFileName = null) {
     this.quizFilters?.clear();
+    delete this.state.config.pagination;
+    delete this.state.paginationAnchor;
     this.state.quizJson = json;
     this.state.config.shuffleQ = this.elements.chkShuffleQ.checked;
     this.state.config.shuffleA = this.elements.chkShuffleA.checked;
@@ -795,6 +809,7 @@ const App = {
 
     this.quizFilters?.clear();
     this.state = sourceState;
+    delete this.state.paginationAnchor;
     this.state.retryMode = true;
     this.state.retryIndices = wrongIndices;
     this.state.retryDerivedFromErrors = true;
@@ -1689,6 +1704,7 @@ const App = {
   },
 
   restoreUI() {
+    this.paginationSettings?.refresh();
     this.elements.chkShuffleQ.checked = this.state.config.shuffleQ;
     this.elements.chkShuffleA.checked = this.state.config.shuffleA;
     this.elements.chkShowTags.checked = this.state.config.showTags;
@@ -2699,6 +2715,24 @@ const App = {
     this.preferences.init();
   },
 
+  initPaginationSettings() {
+    this.paginationSettings?.dispose();
+    this.paginationSettings = new PaginationSettings({
+      root: document.getElementById('paginationSettings'),
+      getState: () => this.state,
+      hasSession: () => !!(this.activeSessionId && this.state.quizJson),
+      onBeforeChange: () => this.renderer.captureReadingPosition?.(),
+      onChange: (sessionChange) => {
+        if (!sessionChange && this.state.config.pagination != null) return;
+        if (this.state.quizJson && this.state.mappings.qOrder.length) {
+          this.renderer.render(this.state);
+          this.applyCommentCollapseMode();
+        }
+        if (sessionChange) this.save(false);
+      }
+    });
+  },
+
   // ===== Colapso de Comentários =====
   handleToggleComments(qIdx, isOpen) {
     if (isOpen) {
@@ -3144,6 +3178,23 @@ const App = {
   },
 
   scrollToNextUnanswered() {
+    if (this.renderer._pagination?.enabled) {
+      const order = this.state.mappings.qOrder;
+      const page = this.renderer._pages[this.renderer._pageIndex];
+      if (!page) return;
+      const unanswered = (index) => !this.isQuestionExcluded(index) && !this.state.userAnswers[index]?.submitted;
+      const idx = order.slice(page.start).find((index, offset) => {
+        if (!unanswered(index)) return false;
+        if (page.start + offset >= page.end) return true;
+        const card = document.querySelector(`.question-card[data-original-idx="${index}"]`);
+        return card && card.getBoundingClientRect().top > window.innerHeight / 3;
+      }) ?? order.find(unanswered);
+      if (idx !== undefined) {
+        this.renderer.revealQuestion(idx);
+        document.querySelector(`.question-card[data-original-idx="${idx}"]`)?.scrollIntoView({ behavior: 'instant', block: 'center' });
+      }
+      return;
+    }
     const scrollY = window.scrollY + window.innerHeight / 3;
     const qOrder = this.state.mappings.qOrder;
     let targetCard = null;

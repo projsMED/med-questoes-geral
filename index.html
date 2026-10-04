@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V4.5.2 - Filtro em Etapas</title>
+  <title>Question Engine V4.6.1 - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('vs_darkMode');
@@ -12,14 +12,14 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20261004-452">
+  <link rel="stylesheet" href="css/styles.css?v=20261004-461">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V4.5.2</h2>
+    <h2 class="header-title">Question Engine V4.6.1</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -38,6 +38,7 @@
         <button class="btn btn-info" id="btnSessionListStart" title="Lista de sessões salvas">
           📋 Lista de Sessões
         </button>
+        <button class="btn btn-secondary" id="btnGeneralSettingsStart" type="button">⚙️ Configurações Gerais</button>
       </div>
     </div>
 
@@ -214,6 +215,7 @@
         <button class="btn btn-sm" id="btnGeneralSettings">⚙️ Configurações Gerais</button>
       </div>
       <div id="generalSettingsPanel" class="general-settings-panel hidden">
+        <div id="paginationSettings"></div>
         <div class="vs-option">
           <strong class="vs-label">Tela cheia:</strong>
           <button type="button" class="btn btn-sm" id="btnFullscreen" aria-pressed="false" aria-describedby="fullscreenStatus">⛶ Entrar em tela cheia</button>
@@ -257,10 +259,45 @@
 
 </div>
 
+<div class="pagination-dock hidden" id="paginationDock">
+  <nav id="quizPagination" class="quiz-pagination hidden" aria-label="Páginas das questões">
+    <button type="button" id="btnPreviousPage" class="pagination-button" aria-label="Página anterior">‹ <span>Anterior</span></button>
+    <div class="pagination-position" role="status" aria-live="polite" aria-atomic="true">
+      <strong id="paginationQuestionRange"></strong>
+      <span id="paginationPageCount"></span>
+    </div>
+    <button type="button" id="btnNextPage" class="pagination-button" aria-label="Próxima página"><span>Próxima</span> ›</button>
+    <div id="paginationPageRow" class="pagination-page-row">
+      <div id="paginationNumbers" class="pagination-numbers" aria-label="Escolher página"></div>
+      <button type="button" id="paginationPageJump" class="pagination-page-jump hidden" aria-label="Ir para uma página pelo número" aria-haspopup="dialog" aria-controls="paginationJumpDialog" title="Ir para uma página pelo número"><span>Ir para</span> #</button>
+    </div>
+  </nav>
+</div>
 <div class="footer-bar hidden" id="footerBar">
   <div class="score-display" id="scoreDisplay">Nota: <span>-</span></div>
   <button class="btn btn-submit" id="btnSubmitAll" style="padding: 10px 30px; font-size: 1.1em;">Responder Todas</button>
 </div>
+
+<dialog id="questionMapDialog" class="question-map-dialog" aria-labelledby="questionMapTitle">
+  <div class="question-map-header">
+    <div><h3 id="questionMapTitle">Mapa das questões</h3><p id="questionMapSummary"></p></div>
+    <button type="button" id="questionMapClose" class="navigation-dialog-close" aria-label="Fechar mapa">×</button>
+  </div>
+  <div id="questionMapLegend" class="question-map-legend"></div>
+  <p class="question-map-help">Toque em um número para ir à questão. O contorno destaca a página atual.</p>
+  <div id="questionMapList" class="question-map-list"></div>
+</dialog>
+
+<dialog id="paginationJumpDialog" class="pagination-jump-dialog" aria-labelledby="paginationJumpTitle">
+  <form id="paginationJumpForm" novalidate>
+    <h3 id="paginationJumpTitle">Ir para questão</h3>
+    <p id="paginationJumpHint"></p>
+    <label for="paginationJumpInput" class="sr-only">Número de destino</label>
+    <input type="number" id="paginationJumpInput" min="1" step="1" inputmode="numeric" required aria-describedby="paginationJumpHint paginationJumpError">
+    <p id="paginationJumpError" class="pagination-jump-error" role="alert"></p>
+    <div class="pagination-jump-actions"><button type="button" id="paginationJumpCancel" class="btn btn-secondary">Cancelar</button><button type="submit" class="btn btn-primary">Ir</button></div>
+  </form>
+</dialog>
 
 <button id="btnNextUnanswered" class="btn-next-unanswered hidden" title="Ir para a próxima questão não respondida">⏭️ Próxima</button>
 
@@ -472,7 +509,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20261004-452';
+  const APP_ASSET_VERSION = '20261004-461';
   const moduleAssets = [
     'main.js',
     'store.js',
@@ -483,6 +520,8 @@
     'renderer.js',
     'highlighter.js',
     'preferences.js',
+    'pagination.js',
+    'question-navigation.js',
     'filters.js',
     'matching-questions.js',
     'settings-shortcuts.js',

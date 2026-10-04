@@ -58,6 +58,7 @@ export class MatchingElement extends Element {
     if (deep) this.children.forEach((child) => copy.appendChild(child.cloneNode(true)));
     return copy;
   }
+  scrollIntoView(options) { this.lastScroll = options; }
 }
 
 export function matchingFixture() {
