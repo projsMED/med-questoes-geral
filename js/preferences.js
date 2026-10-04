@@ -1,5 +1,5 @@
 // Preferências visuais e gerais: leitura, controles e aplicação no DOM.
-import { appStorage } from './release-config.js?v=20261003-450';
+import { appStorage } from './release-config.js?v=20261004-451';
 
 export function readVisualPreferences() {
   return {
@@ -8,6 +8,7 @@ export function readVisualPreferences() {
     persistManualOpen: appStorage.getItem('vs_persistManualOpen') === 'true',
     vfStacked: appStorage.getItem('vs_vfStacked') === 'true',
     mqRenderMode: appStorage.getItem('vs_mqRenderMode') || 'arrows',
+    mqAlignColumns: appStorage.getItem('vs_mqAlignColumns') === 'true',
     showPartialScore: appStorage.getItem('vs_showPartialScore') !== 'false',
     fontSize: parseInt(appStorage.getItem('vs_fontSize')) || 16,
     quizWidth: parseInt(appStorage.getItem('vs_quizWidth'), 10) || 900,
@@ -58,6 +59,7 @@ export class Preferences {
     this.elements.commentSubOptions.classList.toggle('hidden', vs.commentMode !== 'current');
     this.elements.chkPersistManualOpen.checked = vs.persistManualOpen;
     this.elements.chkVfStacked.checked = vs.vfStacked;
+    if (this.elements.chkMqAlignColumns) this.elements.chkMqAlignColumns.checked = vs.mqAlignColumns;
     if (this.elements.mqModeTable && this.elements.mqModeArrows) {
       this.elements.mqModeTable.checked = vs.mqRenderMode === 'table';
       this.elements.mqModeArrows.checked = vs.mqRenderMode !== 'table';
@@ -127,6 +129,12 @@ export class Preferences {
       appStorage.setItem('vs_mqRenderMode', mode);
       this.onMqModeChange?.();
     };
+    if (this.elements.chkMqAlignColumns) {
+      this._listen(this.elements.chkMqAlignColumns, 'change', (event) => {
+        appStorage.setItem('vs_mqAlignColumns', String(event.target.checked));
+        this.onMqModeChange?.();
+      });
+    }
     if (this.elements.mqModeArrows) {
       this._listen(this.elements.mqModeArrows, 'change', () => handleMqModeChange('arrows'));
     }

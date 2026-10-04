@@ -150,3 +150,54 @@ test('renderer limpa recursos da associação ao sair da sessão', () => {
   assert.equal((f.win.listeners.get('keydown') || []).length, 0);
   renderer.highlighter.dispose(); renderer.matchingQuestions.dispose();
 });
+
+test('alinha topos com alturas distintas, avisos, cabeçalhos e recalcula após resize', () => {
+  const f = setup('arrows', { connections: [{ leftOrigIdx: 0, rightOrigIdx: 2 }] }, true);
+  appStorage.setItem('vs_mqAlignColumns', 'true');
+  const view = f.mq.render(f.q, 0, f.app.state, false, true, f.app.state.userAnswers[0]);
+  f.shell.appendChild(view);
+  const lists = view.querySelectorAll('.mq-items-list');
+  const headers = view.querySelectorAll('.mq-column-header');
+  headers[0].getBoundingClientRect = () => ({ height: 60 });
+  headers[1].getBoundingClientRect = () => ({ height: 40 });
+  const heights = [[100, 200], [40, 50, 300]];
+  lists.forEach((list, side) => list.children.forEach((item, index) => {
+    item.getBoundingClientRect = () => ({ height: heights[side][index] });
+  }));
+  f.flush();
+  assert.equal(lists[0].style.rowGap, '10px');
+  assert.equal(lists[1].style.rowGap, '10px');
+  assert.equal(lists[0].style.paddingTop, '0px');
+  assert.equal(lists[1].style.paddingTop, '20px');
+  heights[1][0] = 80;
+  f.win.emit('resize'); f.flush();
+  assert.equal(lists[0].style.rowGap, '50px');
+  assert.equal(lists[1].style.rowGap, '10px');
+  assert.deepEqual(f.app.state.userAnswers[0].connections, [{ leftOrigIdx: 0, rightOrigIdx: 2 }]);
+  appStorage.setItem('vs_mqAlignColumns', 'false');
+  const normal = f.mq.render(f.q, 0, f.app.state, false, false, f.app.state.userAnswers[0]);
+  f.shell.appendChild(normal); f.flush();
+  assert.equal(normal.querySelector('.mq-items-list').style.rowGap, undefined);
+  f.mq.dispose();
+});
+
+test('distribui três itens contra cinco e mantém item único no topo', () => {
+  for (const count of [1, 3]) {
+    const f = matchingFixture();
+    appStorage.setItem('vs_mqAlignColumns', 'true');
+    const q = { tipo: 'MQ', coluna_esquerda: { itens: Array.from({ length: count }, () => ({ texto: 'Item' })) },
+      coluna_direita: { itens: Array.from({ length: 5 }, () => ({ texto: 'Item' })) } };
+    const mq = new MatchingQuestions({ container: f.shell });
+    const view = mq.render(q, 0, { mappings: { altOrder: {} } }, false, false, {});
+    f.shell.appendChild(view);
+    const lists = view.querySelectorAll('.mq-items-list');
+    lists.forEach((list) => list.children.forEach((item) => {
+      item.getBoundingClientRect = () => ({ height: 40 });
+    }));
+    f.flush();
+    assert.equal(lists[0].style.rowGap, count === 1 ? '10px' : '60px');
+    assert.equal(lists[1].style.rowGap, '10px');
+    assert.equal(lists[0].style.paddingTop, '0px');
+    mq.dispose();
+  }
+});

@@ -19,7 +19,7 @@ export function loadApp(overrides = {}) {
     return elements.get(id);
   };
   const source = readFileSync(new URL('../../js/main.js', import.meta.url), 'utf8')
-    .replace(/^import[\s\S]*?from ['"][^'"]+['"];\n/gm, '')
+    .replace(/^import[\s\S]*?from ['"][^'"]+['"];\r?\n/gm, '')
     .replace(/import\('\.\/firebase-config\.js\?v=[^']+'\)/g, 'Promise.resolve(firebaseConfigModule)')
     .replace(/import\('\.\/firebase-sync\.js\?v=[^']+'\)/g, 'Promise.resolve(firebaseSyncModule)')
     .replace(/App\.init\(\);\s*$/, 'App;');

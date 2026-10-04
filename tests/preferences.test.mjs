@@ -8,7 +8,7 @@ import { Element, fixture } from './helpers/interactions-dom.mjs';
 const controlNames = [
   'btnVisualSettings', 'visualSettingsPanel', 'btnGeneralSettings', 'generalSettingsPanel',
   'chkFooterFixed', 'footerBar', 'commentModeCurrent', 'commentModeAll', 'commentSubOptions',
-  'chkPersistManualOpen', 'chkVfStacked', 'mqModeTable', 'mqModeArrows', 'chkShowPartialScore',
+  'chkPersistManualOpen', 'chkVfStacked', 'mqModeTable', 'mqModeArrows', 'chkMqAlignColumns', 'chkShowPartialScore',
   'rangeFontSize', 'fontSizeValue', 'chkShowDisregardCorrect', 'chkSimpleMvfCorrection',
   'chkDarkMode', 'darkModeIcon', 'quizWidthShell', 'rangeQuizWidth', 'quizWidthValue', 'btnResetQuizWidth'
 ];
@@ -36,7 +36,7 @@ function setup(saved = {}, systemDark = false) {
 
 const defaults = {
   footerFixed: true, commentMode: 'all', persistManualOpen: false, vfStacked: false,
-  mqRenderMode: 'arrows', showPartialScore: true, fontSize: 16, quizWidth: 900, darkMode: null
+  mqRenderMode: 'arrows', mqAlignColumns: false, showPartialScore: true, fontSize: 16, quizWidth: 900, darkMode: null
 };
 
 test('preferências estáveis mantêm padrões e preservam chaves de teste da beta', () => {
@@ -216,5 +216,20 @@ test('modal de editar sessão mantém eventos no controlador e fora do módulo d
   f.element('btnEditSave').emit('click'); assert.equal(saves, 1);
   modal.classList.remove('hidden'); modal.emit('click', { target: modal });
   assert.equal(modal.classList.contains('hidden'), true);
+  f.preferences.dispose();
+});
+
+test('alinhamento de colunas é opcional, persistido e restaura o controle', () => {
+  const f = setup();
+  assert.equal(f.elements.chkMqAlignColumns.checked, false);
+  f.app.state.questions = [{ tipo: 'MQ' }];
+  f.change('chkMqAlignColumns', true);
+  assert.equal(readVisualPreferences().mqAlignColumns, true);
+  assert.equal(f.effects.renders, 1);
+  f.preferences.init();
+  assert.equal(f.elements.chkMqAlignColumns.checked, true);
+  f.change('chkMqAlignColumns', false);
+  assert.equal(readVisualPreferences().mqAlignColumns, false);
+  assert.equal(f.effects.renders, 2);
   f.preferences.dispose();
 });

@@ -1,7 +1,7 @@
 // Questões de associação: setas, tabela, gabarito visual e recursos de interação.
-import { formatText } from './utils.js?v=20261003-450';
-import { parseMqGabarito } from './scoring.js?v=20261003-450';
-import { readVisualPreferences } from './preferences.js?v=20261003-450';
+import { formatText } from './utils.js?v=20261004-451';
+import { parseMqGabarito } from './scoring.js?v=20261004-451';
+import { readVisualPreferences } from './preferences.js?v=20261004-451';
 
 export class MatchingQuestions {
   constructor({ container, onChange }) {
@@ -487,12 +487,36 @@ export class MatchingQuestions {
     }
 
     let frame = null;
+    const alignColumns = readVisualPreferences().mqAlignColumns;
+    const updateColumnAlignment = () => {
+      if (!alignColumns) return;
+      const lists = [leftList, rightList];
+      const headers = [leftCol, rightCol].map((column) =>
+        column.querySelector('.mq-column-header').getBoundingClientRect().height);
+      const headerHeight = Math.max(...headers);
+      const measurements = lists.map((list) => {
+        const items = Array.from(list.children);
+        // O último cartão pode ter outra altura: alinhar seu topo, não sua base.
+        // Os grupos da esquerda incluem os avisos de associações omitidas.
+        const precedingHeight = items.slice(0, -1).reduce((sum, item) =>
+          sum + item.getBoundingClientRect().height, 0);
+        const intervals = Math.max(0, items.length - 1);
+        return { precedingHeight, intervals, span: precedingHeight + intervals * 10 };
+      });
+      const span = Math.max(...measurements.map((measurement) => measurement.span));
+      lists.forEach((list, index) => {
+        const { precedingHeight, intervals } = measurements[index];
+        list.style.paddingTop = `${headerHeight - headers[index]}px`;
+        list.style.rowGap = `${intervals ? (span - precedingHeight) / intervals : 10}px`;
+      });
+    };
     const scheduleDraw = () => {
       if (frame !== null) return;
       frame = requestAnimationFrame(() => {
         frame = null;
         if (container.isConnected) {
           updateFontControlsLayout();
+          updateColumnAlignment();
           drawArrows();
         }
       });
@@ -588,7 +612,8 @@ export class MatchingQuestions {
     };
 
     const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(scheduleDraw) : null;
-    [container, leftCol, rightCol, leftList, rightList, ...container.querySelectorAll('.mq-item')]
+    [container, leftCol, rightCol, leftList, rightList,
+      ...container.querySelectorAll('.mq-column-header, .mq-item-group, .mq-item')]
       .forEach((element) => observer?.observe(element));
     container.addEventListener('load', scheduleDraw, true);
     window.addEventListener('resize', scheduleDraw, { passive: true });

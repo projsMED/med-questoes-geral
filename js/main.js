@@ -4,18 +4,18 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261003-450';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261003-450';
-import { shuffleArray } from './utils.js?v=20261003-450';
+} from './store.js?v=20261004-451';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261004-451';
+import { shuffleArray } from './utils.js?v=20261004-451';
 import {
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261003-450';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261003-450';
-import { QuizRenderer } from './renderer.js?v=20261003-450';
-import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261003-450';
-import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261003-450';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261003-450';
+} from './scoring.js?v=20261004-451';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261004-451';
+import { QuizRenderer } from './renderer.js?v=20261004-451';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261004-451';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261004-451';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261004-451';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -187,6 +187,7 @@ const App = {
     chkPersistManualOpen: document.getElementById('chkPersistManualOpen'),
     chkVfStacked: document.getElementById('chkVfStacked'),
     mqModeArrows: document.getElementById('mqModeArrows'),
+    chkMqAlignColumns: document.getElementById('chkMqAlignColumns'),
     mqModeTable: document.getElementById('mqModeTable'),
     chkShowPartialScore: document.getElementById('chkShowPartialScore'),
     chkDarkMode: document.getElementById('chkDarkMode'),
@@ -378,8 +379,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261003-450');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261003-450');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261004-451');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261004-451');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;

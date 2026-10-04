@@ -3,16 +3,16 @@ import {
   formatText,
   difficultyMap,
   questionTypeMap
-} from './utils.js?v=20261003-450';
+} from './utils.js?v=20261004-451';
 
-import { readVisualPreferences } from './preferences.js?v=20261003-450';
+import { readVisualPreferences } from './preferences.js?v=20261004-451';
 import {
   parseMeChGabarito, parseMqGabarito, computeQuestionScore,
   isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261003-450';
+} from './scoring.js?v=20261004-451';
 
-import { MatchingQuestions } from './matching-questions.js?v=20261003-450';
-import { TextHighlighter } from './highlighter.js?v=20261003-450';
+import { MatchingQuestions } from './matching-questions.js?v=20261004-451';
+import { TextHighlighter } from './highlighter.js?v=20261004-451';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
