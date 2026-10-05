@@ -7,7 +7,7 @@ import { Element, fixture } from './helpers/interactions-dom.mjs';
 
 const controlNames = [
   'btnVisualSettings', 'visualSettingsPanel', 'btnGeneralSettings', 'generalSettingsPanel',
-  'chkFooterFixed', 'footerBar', 'commentModeCurrent', 'commentModeAll', 'commentSubOptions',
+  'chkFooterFixed', 'footerBar', 'paginationPosition', 'commentModeCurrent', 'commentModeAll', 'commentSubOptions',
   'chkPersistManualOpen', 'chkVfStacked', 'mqModeTable', 'mqModeArrows', 'chkMqAlignColumns', 'chkShowPartialScore',
   'rangeFontSize', 'fontSizeValue', 'chkShowDisregardCorrect', 'chkSimpleMvfCorrection',
   'chkDarkMode', 'darkModeIcon', 'quizWidthShell', 'rangeQuizWidth', 'quizWidthValue', 'btnResetQuizWidth'
@@ -35,9 +35,27 @@ function setup(saved = {}, systemDark = false) {
 }
 
 const defaults = {
+  paginationPosition: 'fixed',
   footerFixed: true, commentMode: 'all', persistManualOpen: false, vfStacked: false,
   mqRenderMode: 'arrows', mqAlignColumns: false, showPartialScore: true, fontSize: 16, quizWidth: 900, darkMode: null
 };
+
+test('posição da navegação restaura, persiste e aplica sem renderizar questões ou salvar sessão', () => {
+  const f = setup({ vs_paginationPosition: 'bottom' });
+  assert.equal(f.elements.paginationPosition.value, 'bottom');
+  let applied = 0;
+  f.app.renderer.navigation = { applyPosition: () => applied++ };
+  for (const position of ['top', 'fixed', 'bottom']) {
+    f.change('paginationPosition', position);
+    assert.equal(readVisualPreferences().paginationPosition, position);
+  }
+  assert.equal(applied, 3);
+  assert.equal(f.effects.renders, 0);
+  assert.equal(f.effects.saves, 0);
+  appStorage.setItem('vs_paginationPosition', 'invalid');
+  assert.equal(readVisualPreferences().paginationPosition, 'fixed');
+  f.preferences.dispose();
+});
 
 test('preferências estáveis mantêm padrões e preservam chaves de teste da beta', () => {
   const saved = { 'beta:vs_darkMode': 'true', 'beta:vs_fontSize': '22', 'beta:gs_showDisregardCorrect': 'false' };

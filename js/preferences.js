@@ -1,8 +1,10 @@
 // Preferências visuais e gerais: leitura, controles e aplicação no DOM.
-import { appStorage } from './release-config.js?v=20261004-461';
+import { appStorage } from './release-config.js?v=20261004-463';
 
 export function readVisualPreferences() {
+  const position = appStorage.getItem('vs_paginationPosition');
   return {
+    paginationPosition: ['fixed', 'bottom', 'top'].includes(position) ? position : 'fixed',
     footerFixed: appStorage.getItem('vs_footerFixed') !== 'false',
     commentMode: appStorage.getItem('vs_commentMode') || 'all',
     persistManualOpen: appStorage.getItem('vs_persistManualOpen') === 'true',
@@ -24,12 +26,13 @@ export function readGeneralPreferences() {
 }
 
 export class Preferences {
-  constructor({ elements, onExpandComments, onMqModeChange, onPartialScoreChange, onGeneralChange }) {
+  constructor({ elements, onExpandComments, onMqModeChange, onPartialScoreChange, onGeneralChange, onPaginationPositionChange }) {
     this.elements = elements;
     this.onExpandComments = onExpandComments;
     this.onMqModeChange = onMqModeChange;
     this.onPartialScoreChange = onPartialScoreChange;
     this.onGeneralChange = onGeneralChange;
+    this.onPaginationPositionChange = onPaginationPositionChange;
     this._listeners = [];
     this._dragCleanups = [];
     this._quizWidth = 900;
@@ -54,6 +57,7 @@ export class Preferences {
 
     // Restaurar UI
     this.elements.chkFooterFixed.checked = vs.footerFixed;
+    if (this.elements.paginationPosition) this.elements.paginationPosition.value = vs.paginationPosition;
     this.elements.commentModeCurrent.checked = vs.commentMode === 'current';
     this.elements.commentModeAll.checked = vs.commentMode !== 'current';
     this.elements.commentSubOptions.classList.toggle('hidden', vs.commentMode !== 'current');
@@ -103,6 +107,11 @@ export class Preferences {
     this._listen(this.elements.chkFooterFixed, 'change', (e) => {
       appStorage.setItem('vs_footerFixed', e.target.checked);
       this.applyFooterMode(e.target.checked);
+    });
+
+    if (this.elements.paginationPosition) this._listen(this.elements.paginationPosition, 'change', (e) => {
+      appStorage.setItem('vs_paginationPosition', e.target.value);
+      this.onPaginationPositionChange?.();
     });
 
     this._listen(this.elements.commentModeAll, 'change', () => {

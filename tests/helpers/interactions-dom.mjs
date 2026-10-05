@@ -78,7 +78,7 @@ export class Element {
   releasePointerCapture() { this.capture = null; }
 }
 
-export function fixture() {
+export function fixture({ onOpenQuestionMap } = {}) {
   const ids = new Map();
   const element = (id, classes = '') => {
     if (!ids.has(id)) ids.set(id, new Element(classes));
@@ -117,6 +117,7 @@ export function fixture() {
   const home = element('settingsShortcutHome');
   home.appendChild(element('btnQuickFullscreen'));
   home.appendChild(element('quickFullscreenStatus'));
+  home.appendChild(element('btnQuickQuestionMap'));
   for (const section of ['general', 'visual']) {
     const button = new Element(); button.dataset.settingsSection = section; home.appendChild(button);
   }
@@ -126,7 +127,7 @@ export function fixture() {
   top.appendChild(visualPanel); top.appendChild(generalPanel);
   const fullscreenButton = element('btnFullscreen');
   const fullscreenStatus = element('fullscreenStatus');
-  const settings = new SettingsShortcuts({ shell, visualPanel, generalPanel, fullscreenButton, fullscreenStatus });
+  const settings = new SettingsShortcuts({ shell, visualPanel, generalPanel, fullscreenButton, fullscreenStatus, onOpenQuestionMap });
   const flush = () => {
     for (let i = 0; frames.length && i < 100; i++) frames.shift()();
   };

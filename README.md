@@ -1,6 +1,27 @@
-# 🩺 Question Engine V4.6.1 (med-questoes-geral)
+# 🩺 Question Engine V4.6.3 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
+
+## Novidades da versão 4.6.3
+
+- **Mapa das questões** disponível na lista contínua e no modo por páginas, pelo menu de atalhos das laterais e dos espaços entre questões, abaixo de Entrar/Sair da tela cheia.
+- Na lista contínua, clicar em um número fecha o mapa e posiciona o cartão correspondente, seguindo a numeração visual da sessão e preservando respostas e marcações.
+- O mapa mantém estados das respostas, legenda e contornos dos grupos nos dois modos. Contagem de páginas, destaque da página atual e sua explicação aparecem somente no modo paginado.
+- O menu de atalhos fecha e conclui a restauração da leitura antes de abrir o mapa, evitando que a rolagem de origem desfaça o salto à questão escolhida.
+- O atalho fica desabilitado quando não há questões em exibição. Trocar de sessão, sair do simulado ou mudar o modo de exibição fecha o mapa anterior.
+
+Validação: `node --test tests/*.test.mjs`. Os testes incluem abertura nos dois modos, atualização do progresso, grupos, salto na ordem embaralhada sem reconstruir cartões, indisponibilidade sem questões e passagem do menu de atalhos ao mapa sem restauração tardia da rolagem.
+
+## Novidades da versão 4.6.2
+
+- Navegação de páginas em um painel compacto e centralizado, ajustado ao conteúdo e à largura da tela.
+- Setas **← / →** voltam e avançam páginas. O atalho respeita edição de respostas, controles que usam setas, diálogos abertos e os limites do simulado.
+- Nova preferência visual **Posição da navegação de páginas**: fixa na parte inferior (padrão), após a última questão ou antes da primeira. A escolha é salva neste navegador e independente do botão Responder Todas.
+- Mapa em uma grade contínua, com quantidade de colunas adaptada ao total de questões e à largura disponível. Grupos não forçam novas linhas nem deixam espaços vazios entre sequências.
+- Contornos dos grupos abertos à direita quando continuam na próxima linha e retomados abertos à esquerda. Trechos intermediários ficam abertos dos dois lados; somente o início e o fim do grupo fecham o contorno. O desenho acompanha o redimensionamento.
+- Identificação de grupos na legenda, sem títulos ocupando espaço no mapa. O intervalo permanece nas descrições acessíveis e ao passar o mouse. Estados das respostas e página atual continuam com destaques distintos.
+
+Validação: `node --test tests/*.test.mjs`. Os testes incluem continuidade dos contornos em três linhas, grupos vizinhos, redimensionamento, limites e conflitos de atalhos, persistência da preferência e movimentação do mesmo painel entre as três posições. A conferência visual em navegador/dispositivo real continua recomendada.
 
 ## Novidades da versão 4.6.1
 

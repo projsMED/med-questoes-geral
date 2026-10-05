@@ -4,19 +4,19 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261004-461';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261004-461';
-import { shuffleArray } from './utils.js?v=20261004-461';
+} from './store.js?v=20261004-463';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261004-463';
+import { shuffleArray } from './utils.js?v=20261004-463';
 import {
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261004-461';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261004-461';
-import { QuizRenderer } from './renderer.js?v=20261004-461';
-import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261004-461';
-import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261004-461';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261004-461';
-import { PaginationSettings } from './pagination.js?v=20261004-461';
+} from './scoring.js?v=20261004-463';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261004-463';
+import { QuizRenderer } from './renderer.js?v=20261004-463';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261004-463';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261004-463';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261004-463';
+import { PaginationSettings } from './pagination.js?v=20261004-463';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -182,6 +182,7 @@ const App = {
     btnVisualSettings: document.getElementById('btnVisualSettings'),
     visualSettingsPanel: document.getElementById('visualSettingsPanel'),
     chkFooterFixed: document.getElementById('chkFooterFixed'),
+    paginationPosition: document.getElementById('paginationPosition'),
     commentModeAll: document.getElementById('commentModeAll'),
     commentModeCurrent: document.getElementById('commentModeCurrent'),
     commentSubOptions: document.getElementById('commentSubOptions'),
@@ -295,6 +296,7 @@ const App = {
       shell: this.elements.quizWidthShell,
       visualPanel: this.elements.visualSettingsPanel,
       generalPanel: this.elements.generalSettingsPanel,
+      onOpenQuestionMap: () => this.renderer.navigation.openMap(),
       fullscreenButton: document.getElementById('btnFullscreen'),
       fullscreenStatus: document.getElementById('fullscreenStatus')
     });
@@ -391,8 +393,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261004-461');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261004-461');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261004-463');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261004-463');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
@@ -2696,6 +2698,7 @@ const App = {
     this.preferences = new Preferences({
       elements: this.elements,
       onExpandComments: () => this.expandAllComments(),
+      onPaginationPositionChange: () => this.renderer.navigation?.applyPosition(),
       onMqModeChange: () => {
         if (this.state.questions && this.state.questions.length > 0) {
           this.renderer.render(this.state);

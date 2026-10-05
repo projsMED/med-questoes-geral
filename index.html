@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V4.6.1 - Filtro em Etapas</title>
+  <title>Question Engine V4.6.3 - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('vs_darkMode');
@@ -12,14 +12,14 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20261004-461">
+  <link rel="stylesheet" href="css/styles.css?v=20261004-463">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V4.6.1</h2>
+    <h2 class="header-title">Question Engine V4.6.3</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -146,6 +146,14 @@
           </label>
         </div>
         <div class="vs-option">
+          <label class="vs-label" for="paginationPosition"><strong>Posição da navegação de páginas:</strong></label>
+          <select id="paginationPosition" class="vs-select">
+            <option value="fixed">Fixa na parte inferior</option>
+            <option value="bottom">Após a última questão</option>
+            <option value="top">Antes da primeira questão</option>
+          </select>
+        </div>
+        <div class="vs-option">
           <label class="toggle-label">
             <input type="checkbox" id="chkVfStacked">
             Empilhar botões V/F (vertical)
@@ -207,7 +215,7 @@
           </div>
         </div>
         <div class="vs-hint">
-          <small>Ctrl+B: Alternar todos os comentários | Mobile: 3 toques rápidos com 3 dedos</small>
+          <small>← / →: Página anterior / próxima | Ctrl+B: Alternar todos os comentários | Mobile: 3 toques rápidos com 3 dedos</small>
         </div>
       </div>
 
@@ -250,7 +258,9 @@
   </div>
 
   <div id="quizWidthShell" class="quiz-width-shell">
+    <div id="paginationTopSlot"></div>
     <div id="quizContainer"></div>
+    <div id="paginationBottomSlot"></div>
     <div class="quiz-resize-handle quiz-resize-left" role="slider" tabindex="0"
          aria-label="Ajustar largura das questões pela borda esquerda" aria-valuemin="320" aria-valuemax="1800" aria-valuenow="900"></div>
     <div class="quiz-resize-handle quiz-resize-right" role="slider" tabindex="0"
@@ -284,7 +294,7 @@
     <button type="button" id="questionMapClose" class="navigation-dialog-close" aria-label="Fechar mapa">×</button>
   </div>
   <div id="questionMapLegend" class="question-map-legend"></div>
-  <p class="question-map-help">Toque em um número para ir à questão. O contorno destaca a página atual.</p>
+  <p id="questionMapHelp" class="question-map-help">Toque em um número para ir à questão.</p>
   <div id="questionMapList" class="question-map-list"></div>
 </dialog>
 
@@ -500,6 +510,7 @@
   <div id="settingsShortcutHome" class="settings-shortcut-home">
     <button type="button" class="btn btn-sm" id="btnQuickFullscreen" aria-pressed="false" aria-describedby="quickFullscreenStatus">⛶ Entrar em tela cheia</button>
     <small id="quickFullscreenStatus" role="status" aria-live="polite"></small>
+    <button type="button" class="btn btn-sm" id="btnQuickQuestionMap" disabled aria-haspopup="dialog" aria-controls="questionMapDialog">▦ Mapa das questões</button>
     <button type="button" class="btn btn-sm" data-settings-section="general">⚙️ Configurações gerais</button>
     <button type="button" class="btn btn-sm" data-settings-section="visual">⚙️ Configurações visuais</button>
     <small>Nas laterais ou entre as questões: dois toques rápidos ou botão direito do mouse.</small>
@@ -509,7 +520,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20261004-461';
+  const APP_ASSET_VERSION = '20261004-463';
   const moduleAssets = [
     'main.js',
     'store.js',

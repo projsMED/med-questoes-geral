@@ -1,10 +1,11 @@
 /* Configurações acessíveis das laterais e dos espaços entre questões. */
 export class SettingsShortcuts {
-  constructor({ shell, visualPanel, generalPanel, fullscreenButton, fullscreenStatus }) {
+  constructor({ shell, visualPanel, generalPanel, fullscreenButton, fullscreenStatus, onOpenQuestionMap }) {
     this.shell = shell;
     this.panels = { visual: visualPanel, general: generalPanel };
     this.fullscreenButton = fullscreenButton;
     this.fullscreenStatus = fullscreenStatus;
+    this.onOpenQuestionMap = onOpenQuestionMap;
     this.fullscreenButtons = [fullscreenButton, document.getElementById('btnQuickFullscreen')].filter(Boolean);
     this.fullscreenStatuses = [fullscreenStatus, document.getElementById('quickFullscreenStatus')].filter(Boolean);
     this.pointers = new Map();
@@ -34,6 +35,17 @@ export class SettingsShortcuts {
       this.restoreAnchor();
       this.anchor = null;
       this.scheduleGutters();
+      if (this.mapAfterClose) {
+        this.mapAfterClose = false;
+        // Abrir só depois dos frames de restauração da leitura e do fechamento do diálogo.
+        requestAnimationFrame(() => this.onOpenQuestionMap?.());
+      }
+    });
+    const mapButton = document.getElementById('btnQuickQuestionMap');
+    mapButton?.addEventListener('click', () => {
+      if (mapButton.disabled || !this.onOpenQuestionMap || !this.dialog.open) return;
+      this.mapAfterClose = true;
+      this.dialog.close();
     });
     // Só fecha no fundo se tanto a pressão como a soltura ocorrerem fora do painel.
     this.dialog.addEventListener('pointerdown', (event) => {

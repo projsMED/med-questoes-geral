@@ -1,5 +1,5 @@
 // Filtros do quiz: esquema, seleção por grupos, contagens e controles em duas etapas.
-import { difficultyMap, questionTypeMap, questionTypes } from './utils.js?v=20261004-461';
+import { difficultyMap, questionTypeMap, questionTypes } from './utils.js?v=20261004-463';
 
 export function createFilterState() {
   return {

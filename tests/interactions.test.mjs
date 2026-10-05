@@ -131,6 +131,37 @@ test('popup reutiliza e devolve os controles, preserva a questão após reconstr
   assert.equal(f.settings.anchor, null);
 });
 
+test('atalho do mapa fecha o menu e conclui a restauração antes de abrir, sem desfazer o salto escolhido', () => {
+  let opened = 0;
+  const f = fixture({ onOpenQuestionMap: () => {
+    opened++;
+    assert.equal(f.settings.dialog.open, false);
+    assert.equal(f.settings.anchor, null);
+    assert.equal(f.win.scrollY, 1000, 'posição de origem restaurada antes da abertura');
+    // Simula a escolha do destino no mapa: nenhum frame antigo pode desfazer este salto.
+    f.win.scrollTo({ top: 3000 });
+  } });
+  const button = f.element('btnQuickQuestionMap');
+  f.settings.open();
+  f.settings.showSection('visual');
+  f.win.scrollY = 1300;
+  f.settings.dialog.emit('change');
+  button.emit('click');
+  // O clique borbulha pelo diálogo mesmo depois de close().
+  f.settings.dialog.emit('click', { target: button });
+  assert.equal(opened, 0);
+  f.flush();
+  assert.equal(opened, 1);
+  assert.equal(f.win.scrollY, 3000);
+  assert.equal(f.visualPanel.parentNode, f.top);
+  assert.equal(f.doc.documentElement.classList.contains('settings-shortcuts-open'), false);
+  f.flush(); assert.equal(f.win.scrollY, 3000);
+  f.settings.open(); button.disabled = true;
+  button.emit('click'); f.flush();
+  assert.equal(f.settings.dialog.open, true);
+  assert.equal(opened, 1);
+});
+
 test('tela cheia entra/sai pelo botão, atualiza estado e trata ausência de suporte e rejeição', async () => {
   const f = fixture(); let calls = 0;
   f.doc.documentElement.requestFullscreen = () => {

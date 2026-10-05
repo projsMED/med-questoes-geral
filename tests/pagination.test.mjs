@@ -285,6 +285,51 @@ test('associações e texto digitado continuam no estado ao navegar, e observado
   f.renderer.clear();
 });
 
+test('mapa na lista contínua encontra o cartão na ordem visual sem reconstruir respostas nem mudar páginas', () => {
+  const f = rendererFixture();
+  const { renderer, state } = f;
+  state.config.pagination = { enabled: false };
+  state.mappings.qOrder = [8, 2, 3, 4, 5, 1, 0, 6, 7];
+  state.userAnswers[4] = { text: 'Rascunho preservado' };
+  renderer.render(state); f.flush();
+  const card = f.shell.querySelector('.question-card[data-original-idx="4"]');
+  const cards = f.shell.querySelectorAll('.question-card');
+  renderer.navigation.openMap();
+  const list = f.doc.getElementById('questionMapList');
+  list.emit('click', { target: list.querySelector('[data-question="4"]') }); f.flush();
+  assert.equal(renderer.navigation.map.open, false);
+  assert.equal(f.doc.activeElement, card);
+  assert.deepEqual(card.lastScroll, { behavior: 'instant', block: 'start' });
+  assert.equal(card.attributes.tabindex, '-1');
+  assert.equal(f.changes(), 0);
+  assert.equal(f.shell.querySelectorAll('.question-card')[3], cards[3]);
+  assert.equal(state.userAnswers[4].text, 'Rascunho preservado');
+  for (const destination of [0, 10, 1.5, NaN]) assert.equal(renderer.jumpToQuestion(destination), false);
+  renderer.clear();
+  assert.equal(renderer.jumpToQuestion(1), false);
+  assert.equal(renderer.navigation.mapShortcut.disabled, true);
+  renderer.navigation.dispose();
+});
+
+test('setas passam pelo renderer, preservam respostas e mostram a navegação no modo topo', () => {
+  const f = rendererFixture();
+  const { renderer, state } = f;
+  renderer.scrollToReadingPosition = QuizRenderer.prototype.scrollToReadingPosition;
+  localStorage.setItem('vs_paginationPosition', 'top');
+  renderer.render(state); f.flush();
+  state.userAnswers[0] = { text: 'Rascunho preservado' };
+  f.doc.emit('keydown', { key: 'ArrowRight' }); f.flush();
+  assert.equal(renderer._pageIndex, 1);
+  assert.equal(state.paginationAnchor, 2);
+  assert.equal(f.changes(), 1);
+  assert.equal(renderer.navigation.dock.lastScroll.block, 'start');
+  f.doc.emit('keydown', { key: 'ArrowLeft' }); f.flush();
+  assert.equal(renderer._pageIndex, 0);
+  assert.equal(state.userAnswers[0].text, 'Rascunho preservado');
+  assert.equal(f.changes(), 2);
+  renderer.clear(); renderer.navigation.dispose();
+});
+
 test('salto distante vai à questão visual correta dentro de grupo, inclusive na página já aberta', () => {
   const f = rendererFixture();
   f.state.mappings.qOrder = [8, 7, 6, 5, 4, 3, 2, 1, 0];

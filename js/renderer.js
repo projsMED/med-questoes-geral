@@ -3,18 +3,18 @@ import {
   formatText,
   difficultyMap,
   questionTypeMap
-} from './utils.js?v=20261004-461';
+} from './utils.js?v=20261004-463';
 
-import { readVisualPreferences } from './preferences.js?v=20261004-461';
+import { readVisualPreferences } from './preferences.js?v=20261004-463';
 import {
   parseMeChGabarito, parseMqGabarito, computeQuestionScore,
   isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261004-461';
+} from './scoring.js?v=20261004-463';
 
-import { MatchingQuestions } from './matching-questions.js?v=20261004-461';
-import { TextHighlighter } from './highlighter.js?v=20261004-461';
-import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261004-461';
-import { QuestionNavigation } from './question-navigation.js?v=20261004-461';
+import { MatchingQuestions } from './matching-questions.js?v=20261004-463';
+import { TextHighlighter } from './highlighter.js?v=20261004-463';
+import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261004-463';
+import { QuestionNavigation } from './question-navigation.js?v=20261004-463';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
@@ -235,7 +235,8 @@ export class QuizRenderer {
 
   scrollToReadingPosition() {
     const card = this.container.querySelector(`.question-card[data-original-idx="${this._state?.paginationAnchor}"]`);
-    const target = card?.closest('.question-group') || card;
+    const target = this.navigation.visible && this.navigation.position === 'top'
+      ? this.navigation.dock : card?.closest('.question-group') || card;
     target?.scrollIntoView({ behavior: 'instant', block: 'start' });
   }
 
@@ -256,7 +257,7 @@ export class QuizRenderer {
 
   jumpToQuestion(number) {
     const order = this._state?.mappings.qOrder;
-    if (!this._pagination?.enabled || !Number.isSafeInteger(number) || number < 1 || number > order.length) return false;
+    if (!this._state?.quizJson || !order?.length || !Number.isSafeInteger(number) || number < 1 || number > order.length) return false;
     this.navigation.close();
     this.revealQuestion(order[number - 1]);
     const card = this.container.querySelector(`.question-card[data-original-idx="${order[number - 1]}"]`);
