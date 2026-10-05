@@ -1,6 +1,19 @@
-# 🩺 Question Engine V4.6.3 (med-questoes-geral)
+# 🩺 Question Engine V4.7.0 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
+
+## Novidades da versão 4.7.0
+
+- **Modularização completa da camada de estilos (CSS)**: divisão do antigo monólito em 6 módulos especializados e coesos no diretório `css/`:
+  - `css/variables.css`: tokens `:root`, modo escuro global, tipografia, container base e utilitários globais (`.hidden`, `.sr-only`).
+  - `css/layout.css`: estrutura, controles iniciais, filtros em etapas e em árvore, barra de configurações, botões globais, modais (sessões, zoom, edição), atalhos rápidos e rodapé.
+  - `css/questions.css`: grupos de questões, cartões, enunciados, alternativas, eliminação por tesoura, tipos ME/VF/CH/Escrita, feedbacks de correção, comentários e sumário de resultados.
+  - `css/highlighter.css`: barra de ferramentas, cores, opacidade, suporte a touch/caneta/mouse, menus de contexto e notificações do marca-texto (alinhado a `js/highlighter.js`).
+  - `css/matching-questions.css`: questões de associação por setas interativas, modo grade/tabela, modo expandir e redimensionamento de colunas (alinhado a `js/matching-questions.js`).
+  - `css/pagination.css`: painel dock de paginação, numeração adaptativa, salto direto e mapa visual de todas as questões (alinhado a `js/pagination.js`).
+- Preservação estrita da ordem de cascata e especificidade, com temas claro/escuro e regras responsivas agrupadas diretamente em seus módulos pertinentes.
+- Atualização do controle de cache (*cache-busting*) para o padrão `20261004-470` em folhas de estilo e módulos JavaScript.
+- Validação completa: 102 testes automatizados em `node --test tests/*.test.mjs` sem regressões.
 
 ## Novidades da versão 4.6.3
 
@@ -154,7 +167,13 @@ O sistema permite carregar simulados e bancos de questões estruturados em árvo
 ```text
 med-questoes-geral/
 ├── css/
-│   └── styles.css                  # Estilos globais, temas (claro/escuro), responsividade e componentes UI
+│   ├── variables.css               # Design tokens (:root), modo escuro global, container base e utilitários
+│   ├── layout.css                  # Estrutura geral, controles, filtros em etapas, botões, modais e rodapé
+│   ├── questions.css               # Cartões de questão, alternativas, tesoura, tipos ME/VF/CH/Escrita e feedbacks
+│   ├── highlighter.css             # Sistema de marca-texto v3.9 (alinhado a highlighter.js)
+│   ├── matching-questions.css      # Associação por setas, grade/tabela e overlays (alinhado a matching-questions.js)
+│   ├── pagination.css              # Dock de paginação, navegação e mapa de questões (alinhado a pagination.js)
+│   └── styles.css                  # Folha legada mantida para compatibilidade direta
 ├── js/
 │   ├── main.js                     # Controlador principal (App): eventos, ciclo de vida, filtros, sessões e UI
 │   ├── renderer.js                 # QuizRenderer: renderização de cards, gabaritos, avaliação e inputs

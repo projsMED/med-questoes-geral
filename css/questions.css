@@ -1,0 +1,1104 @@
+/* ===== CSS: css/questions.css (Question Engine V4.7.0) ===== */
+/* --- BLOCOS DE GRUPO --- */
+.group-container {
+  margin-bottom: 30px;
+  border-left: 4px solid var(--primary);
+  background: var(--group-bg);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.question-group {
+  --group-card-padding: 25px;
+  --group-rail-height: 0px;
+  position: relative;
+}
+
+.question-group::before {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: var(--group-rail-height);
+  border-radius: 4px 0 0 0;
+  background: var(--primary);
+  pointer-events: none;
+}
+
+.question-group > .group-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.question-group > .grouped-question {
+  z-index: 1;
+}
+
+.question-group > .grouped-question .q-enunciado {
+  position: relative;
+}
+
+.question-group > .grouped-question .q-enunciado::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0.68em;
+  left: calc(0px - var(--group-card-padding));
+  width: calc(var(--group-card-padding) - 0.35em);
+  border-top: 3px solid var(--primary);
+  pointer-events: none;
+}
+
+.group-header-row {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--border-medium);
+}
+
+.group-notice {
+  flex: 1;
+  background: var(--group-bg);
+  padding: 8px 15px;
+  font-size: 0.9em;
+  color: var(--group-header-color);
+  font-weight: 600;
+}
+
+.group-highlight-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: var(--group-bg);
+}
+
+.group-notice span {
+  color: var(--highlight-blue);
+  font-weight: 800;
+}
+
+.group-text-body {
+  padding: 20px;
+  color: var(--text);
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+
+/* --- CARDS DE QUESTÃO --- */
+.quiz-meta {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: var(--surface-inset);
+  border-radius: 8px;
+  border: 1px solid var(--border-strong);
+}
+
+.question-card {
+  background: var(--card);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px var(--shadow-color);
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.q-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  min-height: 24px;
+}
+
+.q-metadata {
+  min-width: 0;
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.q-card-actions {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tags span {
+  background: var(--tag-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.diff-badge {
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+.q-enunciado {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35em;
+  font-size: 1.15em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.q-number {
+  flex: 0 0 auto;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.question-stem-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: pre-line;
+}
+
+.question-stem-text b,
+.question-stem-text strong { font-weight: 700; }
+
+.question-stem-text > :first-child,
+.group-text-body > :first-child {
+  margin-top: 0;
+}
+
+.question-stem-text > :last-child,
+.group-text-body > :last-child {
+  margin-bottom: 0;
+}
+
+/* Caminho (Breadcrumb) */
+.q-breadcrumbs {
+  font-size: 0.8em;
+  color: var(--secondary);
+  background: var(--surface-raised);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: inline-block;
+  border: 1px solid var(--surface-inset);
+  margin-right: 10px;
+}
+.q-breadcrumbs span {
+  color: var(--text-body-alt);
+  font-weight: 500;
+}
+
+.q-metadata .q-breadcrumbs {
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+.btn-metadata-visibility {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 27px;
+  min-height: 25px;
+  padding: 2px 6px;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  color: var(--text-faint);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-metadata-visibility:hover,
+.btn-metadata-visibility.active {
+  border-color: var(--secondary);
+  background: var(--surface-sunken);
+}
+
+/* --- ALTERNATIVAS & TESOURA --- */
+.alternatives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alt-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrapper para alinhar o Label da alternativa e o Botão Tesoura */
+.alt-wrapper {
+  display: flex;
+  align-items: stretch; /* Mesma altura */
+  gap: 10px;
+}
+
+/* O Label ocupa o espaço restante */
+.alt-label {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding: 12px;
+  border: 2px solid var(--surface-inset);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--card);
+}
+
+.alt-label:hover {
+  background: var(--surface-raised);
+  border-color: var(--border-medium);
+}
+
+.alt-label.selected {
+  border-color: var(--primary);
+  background-color: var(--selected-bg);
+}
+
+/* --- ESTILO ELIMINADA (CORTADA) --- */
+.alt-wrapper.eliminated .alt-label {
+  opacity: 0.5;
+  text-decoration: line-through;
+  background-color: var(--card);
+  border-color: var(--border-light);
+  color: var(--text-placeholder);
+}
+
+.alt-wrapper.eliminated .alt-input {
+  pointer-events: none; 
+}
+
+/* --- BOTÃO TESOURA --- */
+.btn-cut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  background: var(--card);
+  border: 2px solid var(--surface-inset);
+  border-radius: 8px;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: var(--secondary);
+  transition: all 0.2s;
+}
+
+.btn-cut:hover {
+  background: var(--tag-bg);
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+/* Se estiver eliminada, destaca o botão tesoura */
+.alt-wrapper.eliminated .btn-cut {
+  background: var(--surface-inset);
+  color: #dc3545; 
+  border-color: #dc3545;
+}
+
+/* --- AJUSTES FINAIS DOS INPUTS --- */
+.alt-input {
+  margin-top: 5px;
+  margin-right: 12px;
+}
+
+.filter-group-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-group-header h3 {
+  margin-bottom: 0;
+}
+
+.filter-bulk-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filter-bulk-btn {
+  white-space: normal;
+  line-height: 1.2;
+}
+
+.question-card.type-me-ch .alt-input,
+.question-card.type-mem .alt-input {
+  accent-color: var(--primary);
+}
+
+.alt-letter {
+  font-weight: bold;
+  margin-right: 8px;
+  min-width: 20px;
+}
+
+.alt-letter.ch-roman {
+  min-width: 32px;
+  text-align: right;
+}
+
+/* --- CH: CONTROLES V/F POR ASSERTIVA --- */
+
+.ch-vf-wrapper {
+  align-items: stretch;
+}
+
+.ch-vf-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+/* Modo empilhado (V em cima, F embaixo) */
+.ch-vf-stacked .ch-vf-controls {
+  flex-direction: column;
+}
+
+.ch-vf-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1em;
+  border: 2px solid var(--border-medium);
+  background: var(--surface-raised);
+  color: var(--text);
+  transition: all 0.15s;
+  user-select: none;
+  box-sizing: border-box;
+  min-width: 44px;
+  min-height: 44px;
+  gap: 3px;
+}
+
+.ch-vf-btn:hover {
+  border-color: var(--border-strong);
+  background: var(--border-light);
+}
+
+.ch-vf-btn input[type="radio"] {
+  margin: 0;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+}
+
+/* V ou F selecionado (antes de submeter) — cor neutra */
+.ch-vf-btn.selected {
+  background: var(--tag-bg);
+  border-color: var(--secondary);
+  color: var(--text);
+}
+
+/* Assertiva label no modo CH — não é clicável como no ME */
+.ch-assertiva-label {
+  cursor: default;
+}
+
+.ch-assertiva-label.selected {
+  border-color: var(--primary);
+  background-color: var(--selected-bg);
+}
+
+/* --- Feedback V/F após submissão --- */
+
+/* Botão que é a resposta correta */
+.ch-vf-correct-answer {
+  background: var(--vf-correct-bg) !important;
+  border-color: var(--vf-correct-border) !important;
+  color: var(--success-text) !important;
+}
+
+/* Botão errado que o usuário marcou */
+.ch-vf-wrong-pick {
+  background: var(--vf-wrong-bg) !important;
+  border-color: var(--vf-wrong-border) !important;
+  color: var(--error-text) !important;
+}
+
+/* Desabilita hover nos V/F após submit */
+.question-card.submitted .ch-vf-btn,
+.question-forced .ch-vf-btn {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Texto do ::after para CH / MVF — sobrescreve o padrão ME/VF */
+.question-card.type-ch.submitted .alt-wrapper.correct .alt-label::after,
+.question-card.type-mvf.submitted .alt-wrapper.correct .alt-label::after {
+  content: '✔';
+}
+.question-card.type-ch.submitted .alt-wrapper.wrong .alt-label::after,
+.question-card.type-mvf.submitted .alt-wrapper.wrong .alt-label::after {
+  content: '✖';
+}
+
+/* Para questões forçadas CH */
+.question-forced .ch-vf-btn {
+  background: var(--surface-inset);
+  border-color: var(--border-strong);
+  color: var(--text-placeholder);
+}
+
+/* --- ESTADOS DE FEEDBACK (CORREÇÃO FUNDAMENTAL) --- */
+
+/* 1. Gabarito Correto (Verde) - Prioridade Máxima */
+.question-card.submitted .alt-wrapper.correct .alt-label {
+  background-color: var(--success-bg) !important;
+  border-color: var(--vf-correct-bg) !important;
+  color: var(--success-text) !important;
+  position: relative;
+  font-weight: 500;
+  padding-right: 35px;
+}
+
+/* Ícone de check */
+.question-card.submitted .alt-wrapper.correct .alt-label::after {
+  content: '✔';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--success-text);
+  opacity: 0.8;
+}
+
+/* 2. Resposta Errada do Usuário (Vermelho) */
+/* Só aplica se o wrapper tiver a classe .wrong */
+.question-card.submitted .alt-wrapper.wrong .alt-label {
+  background-color: var(--error-bg) !important;
+  border-color: var(--vf-wrong-bg) !important;
+  color: var(--error-text) !important;
+  position: relative;
+  padding-right: 35px;
+}
+
+/* Ícone de erro */
+.question-card.submitted .alt-wrapper.wrong .alt-label::after {
+  content: '✖';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--error-text);
+  opacity: 0.8;
+}
+
+.question-card.type-me-ch.submitted .alt-wrapper.missed-correct .alt-label,
+.question-card.type-mem.submitted .alt-wrapper.missed-correct .alt-label {
+  background-color: var(--comment-wrong-bg) !important;
+  border-color: #ffc107 !important;
+  color: var(--text) !important;
+  position: relative;
+  padding-right: 35px;
+}
+
+.question-card.type-me-ch.submitted .alt-wrapper.missed-correct .alt-label::after,
+.question-card.type-mem.submitted .alt-wrapper.missed-correct .alt-label::after {
+  content: '!';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #b58100;
+  opacity: 0.95;
+}
+
+.me-ch-score {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: var(--surface-raised);
+  border-left: 4px solid var(--primary);
+  color: var(--text);
+  font-size: 0.95em;
+}
+
+/* Desabilita interação */
+.question-card.submitted .alt-label {
+  cursor: default;
+}
+.question-card.submitted input {
+  pointer-events: none;
+}
+.question-card.submitted .btn-cut {
+  opacity: 0.75;
+}
+
+/* --- QUESTÃO FORÇADA (CINZA) --- */
+.question-forced {
+  background-color: var(--surface-sunken);
+  border-color: var(--border-strong);
+  opacity: 0.9;
+}
+
+.question-disabled {
+  background-color: var(--surface-sunken);
+  opacity: 0.75;
+}
+
+.forced-badge {
+  background: var(--secondary);
+  color: white;
+  font-size: 0.8em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.forced-badge.disabled-question-badge {
+  background: #dc3545;
+}
+
+.question-forced .alt-label {
+  background-color: var(--surface-inset);
+  border-color: var(--border-strong);
+  cursor: not-allowed;
+}
+
+/* Ajuste sutil para correta em forçada */
+.question-forced .alt-wrapper.correct .alt-label {
+  background-color: var(--forced-correct-bg) !important;
+  border-color: var(--forced-correct-border) !important;
+  color: var(--forced-correct-text) !important;
+}
+
+/* --- COMENTÁRIOS --- */
+.specific-comment {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  display: none;
+  background: var(--comment-bg);
+  border-left: 4px solid var(--border-strong);
+}
+
+.general-comment {
+  margin-top: 20px;
+  padding: 15px;
+  background: var(--tag-bg);
+  border-radius: 6px;
+  border-top: 4px solid var(--secondary);
+  display: none;
+  white-space: pre-line;
+}
+
+.question-card.submitted .specific-comment { display: block; }
+.question-card.submitted .general-comment { display: block; }
+
+.question-card.submitted .alt-wrapper.correct + .specific-comment {
+  background-color: var(--comment-correct-bg);
+  border-color: var(--vf-correct-border);
+}
+.question-card.submitted .alt-wrapper.wrong + .specific-comment {
+  background-color: var(--comment-wrong-bg);
+  border-color: #ffc107;
+}
+
+/* --- MARCAÇÃO DE PALAVRAS (VF / CH) --- */
+
+.markable-text {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.selection-mode .markable-text {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.selection-mode .markable-word {
+  cursor: text;
+}
+
+.btn-selection-mode {
+  background: none;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.78em;
+  color: var(--text-faint);
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-left: 8px;
+}
+
+.btn-selection-mode {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.btn-selection-mode:hover {
+  background: var(--surface-sunken);
+  border-color: var(--secondary);
+}
+
+.btn-selection-mode.active {
+  background: #e8f4fd;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-question-manage {
+  background: none;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.78em;
+  color: var(--text-faint);
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-left: 8px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.btn-question-manage:hover {
+  background: #fdeaea;
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.question-disabled .btn-question-manage {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.question-disabled .btn-question-manage:hover {
+  background: #e8f4fd;
+}
+
+.markable-word {
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.markable-word:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.word-marked {
+  color: #dc3545 !important;
+  font-weight: bold !important;
+}
+
+/* Preserva cor vermelha mesmo em wrappers com override de cor (correct/wrong) */
+.question-card.submitted .word-marked {
+  color: #dc3545 !important;
+}
+
+
+/* --- IMAGENS NO QUIZ --- */
+#quizContainer img, 
+.group-text-body img {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 4px;
+  cursor: zoom-in;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+#quizContainer img:hover {
+  transform: scale(1.01);
+}
+
+
+/* --- COLAPSAR COMENTÁRIOS --- */
+.question-card.submitted.comments-collapsed .specific-comment {
+  display: none !important;
+}
+.question-card.submitted.comments-collapsed .general-comment {
+  display: none !important;
+}
+
+.btn-toggle-comments {
+  display: none;
+  margin-top: 10px;
+  background: var(--surface-inset);
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 0.85em;
+  cursor: pointer;
+  color: var(--text-body-alt);
+  transition: background 0.2s;
+}
+.btn-toggle-comments:hover {
+  background: var(--border-medium);
+}
+
+.question-card.submitted .btn-toggle-comments {
+  display: inline-block;
+}
+
+.question-card.submitted .btn-toggle-comments.hidden {
+  display: none !important;
+}
+
+
+/* ===== QUESTÃO ESCRITA ===== */
+
+.type-escrita {
+  border-left: 4px solid #6f42c1;
+}
+
+.escrita-content {
+  margin-top: 10px;
+}
+
+/* Textarea auto-crescente */
+.escrita-textarea {
+  display: block;
+  width: 100%;
+  min-height: 96px; /* ~4 linhas */
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.95em;
+  line-height: 1.5;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  resize: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: var(--card);
+  color: var(--text);
+  margin: 8px 0 4px;
+}
+.escrita-textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.12);
+}
+
+/* Resposta enviada (texto do usuário) */
+.escrita-submitted-text {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-medium);
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 10px 0 6px;
+  font-size: 0.95em;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Gabarito da questão escrita */
+.escrita-gabarito {
+  background: var(--card);
+  border: 1px solid var(--vf-correct-bg);
+  border-left: 4px solid var(--vf-correct-border);
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 6px 0 10px;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.escrita-gabarito strong {
+  color: var(--success-text);
+}
+
+/* Seção de autoavaliação */
+.self-eval-section {
+  background: var(--comment-wrong-bg);
+  border: 1px solid var(--diff-pill-border);
+  border-left: 4px solid #ffc107;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 6px 0;
+}
+
+.self-eval-label {
+  font-size: 0.88em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.self-eval-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.self-eval-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  background: var(--card);
+  cursor: pointer;
+  font-size: 0.88em;
+  font-weight: 600;
+  color: var(--text);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  padding: 0;
+  line-height: 1;
+}
+.self-eval-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--selected-bg);
+}
+.self-eval-btn.selected {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* Comentário específico de item (dentro de ESCRITA com itens) */
+.escrita-item-comentario {
+  background: var(--tag-pill-bg);
+  border: 1px solid var(--tag-pill-border);
+  border-left: 4px solid #2196f3;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 6px 0 4px;
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: var(--tag-pill-text);
+}
+
+/* Itens de questão escrita com múltiplos sub-itens */
+.escrita-item {
+  border: 1px solid var(--border-medium);
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  background: var(--surface-raised);
+}
+.escrita-item-submitted {
+  background: var(--surface-sunken);
+}
+
+.escrita-item-header {
+  font-size: 0.95em;
+  margin-bottom: 8px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Indicador para questão forçada de tipo escrita */
+.escrita-forced-note {
+  font-style: italic;
+  color: var(--text-faint);
+  font-size: 0.9em;
+  padding: 8px 0;
+}
+
+/* ===== SEÇÃO DE RESULTADO ===== */
+
+.result-section {
+  background: var(--card);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-top: 30px;
+  box-shadow: 0 2px 10px rgba(0, 123, 255, 0.1);
+}
+
+.result-title {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--result-border-accent);
+}
+
+.result-row {
+  padding: 6px 0;
+  font-size: 0.95em;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text);
+}
+.result-row:last-of-type {
+  border-bottom: none;
+}
+
+.result-general {
+  font-size: 1.05em;
+  padding: 8px 0 10px;
+  margin-bottom: 4px;
+  border-bottom: 2px solid var(--result-border-accent) !important;
+}
+
+.result-actions {
+  margin-top: 14px;
+}
+
+/* --- CLASSES AUXILIARES (antes inline) --- */
+.upload-hint {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.move-session-info {
+  margin-bottom: 12px;
+  color: var(--text-muted);
+}
+
+.loading-hint {
+  text-align: center;
+  color: var(--text-placeholder);
+}
+
+.firebase-hint {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+/* --- BANNER RETRY --- */
+.retry-banner {
+  background: var(--comment-wrong-bg);
+  border: 1px solid var(--diff-pill-border);
+  color: var(--diff-pill-text);
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+
+/* --- MODO ESCURO (QUESTOES, FEEDBACKS & RESULTADOS) --- */
+html.dark-mode .group-notice {
+  border-bottom-color: var(--border-medium);
+}
+
+html.dark-mode .escrita-item-comentario {
+  color: #90caf9;
+}
+
+html.dark-mode .type-escrita {
+  border-left-color: #8b5cf6;
+}
+
+html.dark-mode .self-eval-section {
+  background: #2a2818;
+  border-color: #4a4020;
+}
+
+html.dark-mode .word-marked,
+html.dark-mode .question-card.submitted .word-marked {
+  color: #ff6b7a !important;
+}
+
+html.dark-mode .btn-selection-mode.active {
+  background: var(--selected-bg);
+}
+
+html.dark-mode .result-section {
+  box-shadow: 0 2px 10px rgba(77, 163, 255, 0.1);
+}
+
+/* --- RESPONSIVO MOBILE (QUESTOES & RESULTADOS) --- */
+@media (max-width: 600px) {
+  /* Question cards */
+  .question-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .question-group {
+    --group-card-padding: 15px;
+  }
+
+  .q-header-container {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .q-card-actions {
+    width: 100%;
+  }
+
+  .btn-selection-mode,
+  .btn-question-manage,
+  .btn-metadata-visibility {
+    min-height: 34px;
+  }
+
+  .q-enunciado {
+    font-size: 1.05em;
+    margin-bottom: 15px;
+  }
+
+  .group-header-row {
+    flex-direction: column;
+  }
+
+  /* Tags */
+  .tags span {
+    font-size: 0.78em;
+    padding: 2px 5px;
+  }
+
+  /* Alternativas */
+  .alt-label {
+    padding: 10px;
+  }
+
+  .alternatives-list {
+    gap: 10px;
+  }
+
+  /* Botao tesoura menor */
+  .btn-cut {
+    width: 36px;
+    font-size: 1em;
+  }
+
+  /* Breadcrumbs */
+  .q-breadcrumbs {
+    font-size: 0.72em;
+  }
+}

@@ -1,5 +1,5 @@
 // Preferências visuais e gerais: leitura, controles e aplicação no DOM.
-import { appStorage } from './release-config.js?v=20261004-463';
+import { appStorage } from './release-config.js?v=20261004-470';
 
 export function readVisualPreferences() {
   const position = appStorage.getItem('vs_paginationPosition');
