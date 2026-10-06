@@ -1,0 +1,44 @@
+name: Atualizar Índice de Quizes
+
+on:
+  # 1. Permite acionar manualmente pela aba Actions no GitHub
+  workflow_dispatch:
+
+  # 2. Executa automaticamente sempre que você adicionar/modificar arquivos em quizes-da-nuvem
+  push:
+    branches:
+      - main
+    paths:
+      - 'quizes-da-nuvem/**'
+      - '!quizes-da-nuvem/index.json'
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar-indice:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Executar script gerar_index.py
+        run: python gerar_index.py
+
+      - name: Commitar e enviar index.json se houver mudanças
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add quizes-da-nuvem/index.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: atualizar index.json automaticamente [skip ci]"
+            git push
+          else
+            echo "Nenhuma alteração detectada no index.json."
+          fi
