@@ -1,0 +1,523 @@
+titulo: Meningites - NotebookLM
+descricao: Cada pasta é um quiz individual do NotebookLM
+id_quiz: recorte-5f744766-d6a5-4a76-8faa-4a1aec07ebc3
+conteudo:
+  - tipo: folder
+    nome: Meningites - EMED RE
+    descricao: Questões feitas com base na apostila do EMED.
+    conteudo:
+      - tipo: ME
+        id: 061026-0046-1-9t9c8x
+        enunciado: Em um paciente adulto que apresenta a tríade clássica de meningite bacteriana associada a um déficit neurológico focal (paresia facial aguda), qual é a sequência de condutas recomendada segundo as diretrizes de abordagem inicial?
+        alternativas:
+          - id: alt_A
+            texto: Coletar hemoculturas, iniciar antibioticoterapia empírica com dexametasona e solicitar tomografia de crânio antes da punção lombar.
+            comentario: A presença de déficit neurológico focal indica risco de edema ou lesão expansiva com risco de herniação cerebral na punção lombar, exigindo tomografia prévia sem atrasar o início do tratamento antimicrobiano e corticoide.
+          - id: alt_B
+            texto: Realizar a punção lombar imediatamente no pronto-socorro e aguardar a análise do líquido cefalorraquidiano para iniciar o tratamento.
+            comentario: A realização imediata de punção lombar na presença de déficit neurológico focal cria um gradiente de pressão perigoso que pode precipitar a herniação cerebral.
+          - id: alt_C
+            texto: Encaminhar o paciente para tomografia de crânio e aguardar o laudo oficial para só então realizar hemoculturas e iniciar antimicrobianos.
+            comentario: Retardar a administração de antimicrobianos e corticoides enquanto se aguarda exames de imagem aumenta significativamente a mortalidade e o risco de sequelas neurológicas graves.
+          - id: alt_D
+            texto: Realizar a punção lombar de urgência, iniciar dexametasona isolada e postergar os antibióticos até a confirmação tomográfica.
+            comentario: Os antimicrobianos devem ser iniciados o mais rápido possível juntamente com a dexametasona, não havendo justificativa para postergar a antibioticoterapia.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-2-1qXkbo
+        enunciado: 'Durante a análise quimiocitológica do líquido cefalorraquidiano (LCR) de um adulto, encontram-se: pressão de abertura de 28 cmH2O, 1.500 leucócitos/mm³ com 85% de polimorfonucleares, glicose de 12 mg/dL (glicemia sérica de 100 mg/dL) e proteínas de 210 mg/dL. Qual é a principal hipótese etiológica para esse perfil liquórico?'
+        alternativas:
+          - id: alt_A
+            texto: Meningite bacteriana aguda, marcada por pleocitose neutrofílica, hiperproteinorraquia e intensa hipoglicorraquia.
+            comentario: A presença de celularidade elevada com predomínio de neutrófilos polimorfonucleares, acentuado consumo de glicose (relação LCR/sangue menor que 0,4) e proteínas muito elevadas define o padrão clássico da meningite bacteriana aguda.
+          - id: alt_B
+            texto: Meningite por enterovírus, que cursa tipicamente com consumo acentuado de glicose e predomínio neutrofílico persistente.
+            comentario: As meningites virais costumam apresentar perfil mais benigno, com glicorrequia normal, discreta elevação de proteínas e predomínio linfomonocitário após as primeiras 24 a 48 horas.
+          - id: alt_C
+            texto: Neurocriptococose, caracterizada por contagens leucocitárias rotineiramente superiores a 1.000 células/mm³ com neutrofilia.
+            comentario: A meningite criptocócica apresenta contagem celular moderada (geralmente entre 5 e 500 células/mm³) com nítido predomínio linfomonocitário.
+          - id: alt_D
+            texto: Meningite tuberculosa, uma vez que o infiltrado inflamatório agudo com acentuada neutrofilia é o achado definitivo desse patógeno.
+            comentario: A meningite por Mycobacterium tuberculosis caracteriza-se por um perfil citoquímico linfomonocitário de evolução subaguda ou crônica.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-3-PPE6Ls
+        enunciado: Um paciente de 68 anos, hipertenso e diabético, é admitido com febre, rebaixamento do nível de consciência e rigidez de nuca. Qual esquema antibiótico empírico deve ser instituído para este paciente?
+        alternativas:
+          - id: alt_A
+            texto: Ceftriaxona associada à ampicilina, garantindo cobertura adicional contra Listeria monocytogenes.
+            comentario: Pacientes idosos (>60 anos) ou imunossuprimidos têm risco aumentado de infecção por Listeria monocytogenes, bactéria intrinsecamente resistente às cefalosporinas que exige a adição de ampicilina ao esquema com ceftriaxona.
+          - id: alt_B
+            texto: Ceftriaxona em monoterapia, visto cobrir satisfatoriamente todos os patógenos frequentes nessa faixa etária.
+            comentario: A monoterapia com ceftriaxona deixa uma lacuna terapêutica importante ao não cobrir Listeria monocytogenes na população idosa.
+          - id: alt_C
+            texto: Vancomicina isolada por via endovenosa, por ser a droga de escolha para cobrir diplococos Gram-positivos resistentes.
+            comentario: A vancomicina isolada não fornece cobertura adequada contra bacilos Gram-negativos nem contra Listeria monocytogenes.
+          - id: alt_D
+            texto: Ampicilina associada a gentamicina, reservando as cefalosporinas de terceira geração apenas para falha terapêutica.
+            comentario: O esquema de ampicilina com aminoglicosídeo é indicado para neonatos com menos de 2 meses de vida, não sendo o esquema padrão para idosos com infecção comunitária.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-4-q3Uj4B
+        enunciado: O uso adjuvante de dexametasona é recomendado no manejo empírico da meningite bacteriana aguda em adultos. Qual é a recomendação adequada quanto à indicação e ao momento de administração dessa medicação?
+        alternativas:
+          - id: alt_A
+            texto: Deve ser administrada antes ou junto com a primeira dose do antimicrobiano, visando reduzir sequelas nas meningites por S. pneumoniae e H. influenzae.
+            comentario: A corticoterapia reduz a resposta inflamatória no espaço subaracnóideo induzida pela lise bacteriana promovida pelos antibióticos, devendo ser administrada antes ou simultaneamente à primeira dose antimicrobiana.
+          - id: alt_B
+            texto: Deve ser iniciada somente após 48 horas de antibioticoterapia, após a confirmação da sensibilidade no antibiograma.
+            comentario: Iniciar o corticoide horas após os antibióticos perde a janela de oportunidade de atenuar a cascata inflamatória inicial desencadeada pela lise bacteriana.
+          - id: alt_C
+            texto: Está indicada universalmente para todas as etiologias de meningite, devendo ser mantida pelo período fixo de 30 dias.
+            comentario: A indicação comprovada de dexametasona restringe-se às meningites por Streptococcus pneumoniae e Haemophilus influenzae, com duração recomendada de apenas 4 dias.
+          - id: alt_D
+            texto: Deve ser aplicada exclusivamente por via intratecal durante a punção lombar diagnóstica para otimizar sua ação local.
+            comentario: A dexametasona deve ser administrada por via endovenosa sistêmica, e não por via intratecal.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-5-y4RxFr
+        enunciado: A bacterioscopia pelo método de Gram no LCR é um exame rápido e crucial na meningite bacteriana. Se o laudo revelar a presença de diplococos Gram-negativos, qual é o agente etiológico e a medida de precaução indicada?
+        alternativas:
+          - id: alt_A
+            texto: Neisseria meningitidis, sendo necessário instituir precaução de gotículas para o paciente.
+            comentario: O achado de diplococos Gram-negativos identifica Neisseria meningitidis, patógeno transmissível por secreções respiratórias que exige isolamento por gotículas até 24 horas de antibioticoterapia eficaz.
+          - id: alt_B
+            texto: Streptococcus pneumoniae, devendo-se manter o paciente em isolamento de contato por 14 dias.
+            comentario: Streptococcus pneumoniae apresenta-se à microscopia como diplococo Gram-positivo (azulado/roxo) e não necessita de isolamento por ser colonizante natural.
+          - id: alt_C
+            texto: Haemophilus influenzae, recomendando-se o isolamento por aerossóis com máscara N95 para a equipe médica.
+            comentario: Haemophilus influenzae é um bacilo ou cocobacilo Gram-negativo e sua transmissão ocorre por gotículas, não por aerossóis.
+          - id: alt_D
+            texto: Listeria monocytogenes, não havendo necessidade de qualquer tipo de isolamento ou precaução de transmissão.
+            comentario: Listeria monocytogenes é um bacilo Gram-positivo, enquanto a descrição traz diplococos Gram-negativos.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-6-EZvHgk
+        enunciado: Um profissional de saúde realizou procedimentos geradores de gotículas sem EPI adequado em um paciente com meningite por Neisseria meningitidis. Qual é o fármaco preferencial para a quimioprofilaxia desse contactante e a alternativa indicada para gestantes?
+        alternativas:
+          - id: alt_A
+            texto: Rifampicina por via oral como esquema preferencial e ceftriaxona intramuscular como alternativa para gestantes.
+            comentario: A rifampicina oral (durante 2 dias) é a droga de escolha para quimioprofilaxia de contactantes de meningococo, enquanto a ceftriaxona em dose única IM é a alternativa preferencial e segura em gestantes.
+          - id: alt_B
+            texto: Ciprofloxacino por via oral como escolha universal única e ampicilina endovenosa para gestantes.
+            comentario: O ciprofloxacino é contraindicado em gestantes e crianças devido aos riscos de toxicidade articular, sendo uma alternativa apenas para adultos não grávidos.
+          - id: alt_C
+            texto: Azitromicina por via oral como esquema preferencial e ciprofloxacino por via oral para gestantes.
+            comentario: A azitromicina é uma opção secundária e o ciprofloxacino não deve ser prescrito para gestantes.
+          - id: alt_D
+            texto: Ceftriaxona intramuscular para todos os adultos e rifampicina via oral contraindicada em qualquer situação.
+            comentario: A rifampicina oral é o esquema de primeira escolha estipulado pelas diretrizes ministeriais para indivíduos não grávidos.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-7-pvfHd6
+        enunciado: Paciente com diagnóstico de infecção pelo HIV e meningite fúngica confirmada por Cryptococcus neoformans inicia tratamento. De acordo com as diretrizes de manejo da neurocriptococose, qual é o esquema preferencial recomendado para a fase de indução?
+        alternativas:
+          - id: alt_A
+            texto: Anfotericina B lipossomal associada à 5-flucitosina por um período mínimo de 14 dias.
+            comentario: A fase de indução da meningite criptocócica exige ação fungicida rápida no SNC com a combinação de Anfotericina B lipossomal (preferível pela menor nefrotoxicidade) e 5-flucitosina por pelo menos 14 dias.
+          - id: alt_B
+            texto: Fluconazol oral em alta dose como monoterapia isolada durante o período inicial de 8 semanas.
+            comentario: O fluconazol em monoterapia é reservado para a fase de consolidação/manutenção ou como alternativa na ausência de anfotericina, não sendo o esquema de indução preferencial.
+          - id: alt_C
+            texto: Anfotericina B desoxicolato em monoterapia associada a dexametasona em altas doses por 30 dias.
+            comentario: Os corticosteroides são contraindicados na meningite criptocócica pois reduzem o clareamento do fungo e aumentam a mortalidade.
+          - id: alt_D
+            texto: Voriconazol endovenoso associado ao fluconazol por via oral durante 14 dias seguidos de manutenção.
+            comentario: O voriconazol não faz parte do esquema padrão de indução recomendado para a neurocriptococose.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-8-K3qfRL
+        enunciado: Um paciente com meningite criptocócica em fase de indução apresenta pressão de abertura liquórica de 32 cmH2O e cefaleia holocraniana intensa refratária. Qual é a conduta terapêutica mais adequada para o controle dessa hipertensão intracraniana?
+        alternativas:
+          - id: alt_A
+            texto: Realizar punções lombares de alívio de forma sequencial até a normalização da pressão de abertura.
+            comentario: A hipertensão intracraniana na neurocriptococose deve ser manejada com punções lombares de alívio repetidas diariamente ou conforme necessário para aliviar os sintomas e reduzir a pressão a níveis seguros.
+          - id: alt_B
+            texto: Iniciar dexametasona endovenosa em altas doses para promover a redução rápida do edema cerebral.
+            comentario: O uso de corticosteroides na meningite criptocócica está formalmente contraindicado por retardar a eliminação do fungo e piorar o prognóstico.
+          - id: alt_C
+            texto: Administrar acetazolamida e manitol por via endovenosa como medida farmacológica de primeira linha.
+            comentario: Diuréticos como acetazolamida não são recomendados para o controle de hipertensão intracraniana na criptococose e podem causar distúrbios metabólicos severos.
+          - id: alt_D
+            texto: Suspender imediatamente o tratamento antifúngico para interromper a resposta inflamatória e a lise celular.
+            comentario: A suspensão do antifúngico permite a proliferação descontrolada do Cryptococcus, agravando a infecção e o quadro de hipertensão.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-9-Bi0Zwt
+        enunciado: Paciente com quadro de meningite de evolução subaguda (há 5 semanas) apresenta paralisia do VI par craniano (nervo abducente) e LCR com pleocitose linfomonocitária, proteinorraquia elevada e acentuada hipoglicorraquia. Qual é o teste diagnóstico considerado padrão-ouro no LCR e a duração do tratamento?
+        alternativas:
+          - id: alt_A
+            texto: RT-PCR para Mycobacterium tuberculosis no LCR; tratamento por 12 meses associado à corticoterapia.
+            comentario: O teste molecular por RT-PCR é o padrão-ouro para o diagnóstico rápido de neurotuberculose, cujo tratamento requer 12 meses (2 meses de RHZE + 10 meses de RH) e uso compulsório de corticoides.
+          - id: alt_B
+            texto: Baciloscopia direta (pesquisa de BAAR) no LCR; tratamento por 6 meses com esquema RHZE padrão.
+            comentario: A pesquisa de BAAR no LCR apresenta sensibilidade muito baixa (frequentemente negativa) e a duração do tratamento para o sistema nervoso central é de 12 meses, não 6.
+          - id: alt_C
+            texto: Dosagem isolada de ADA no LCR; tratamento por 9 meses com antibioticoterapia empírica de amplo espectro.
+            comentario: O ADA é um marcador inespecífico no LCR e o tratamento da tuberculose do SNC requer tuberculostáticos específicos por 12 meses.
+          - id: alt_D
+            texto: Cultura para micobactérias no LCR; tratamento por 3 meses com rifampicina e isoniazida exclusivamente.
+            comentario: A cultura demora semanas para crescer e não serve como teste rápido padrão-ouro inicial, além do tempo de tratamento de 3 meses ser totalmente inadequado.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-10-o8RfkY
+        enunciado: Paciente de 52 anos dá entrada na emergência com febre, alteração agudíssima do comportamento, afasia e convulsões. A ressonância magnética de crânio mostra hipersinal em sequências T2/FLAIR no lobo temporal de forma assimétrica. Qual é a conduta imediata e a droga de escolha?
+        alternativas:
+          - id: alt_A
+            texto: Iniciar aciclovir endovenoso imediatamente diante da forte suspeita de meningoencefalite por HSV-1.
+            comentario: A meningoencefalite herpética (causada por HSV-1) acomete tipicamente os lobos temporais e requer o início imediato de aciclovir endovenoso para evitar alta mortalidade e sequelas neurológicas graves.
+          - id: alt_B
+            texto: Aguardar o resultado do PCR no LCR para iniciar ganciclovir endovenoso, evitando riscos de nefrotoxicidade.
+            comentario: O tratamento empírico com aciclovir nunca deve ser atrasado à espera de resultados exames, e a droga de escolha para HSV-1 é o aciclovir, ficando o ganciclovir reservado para CMV.
+          - id: alt_C
+            texto: Prescrever ceftriaxona e ampicilina endovenosas para cobertura de abscessos bacterianos multifocais.
+            comentario: O quadro clínico e radiológico temporal assimétrico com alteração de comportamento é característico de encefalite viral por Herpes simplex tipo 1, não respondendo a antibióticos bacterianos.
+          - id: alt_D
+            texto: Iniciar pulso de metilprednisolona endovenosa considerando a hipótese primária de encefalite autoimune.
+            comentario: A imunossupressão sem cobertura antiviral em uma infecção herpética aguda ativa pode ser catastrófica e retardar a terapêutica antiviral curativa.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-11-q9RUE2
+        enunciado: Um recém-nascido de 18 dias de vida apresenta febre, hipotonia e recusa alimentar, sendo diagnosticado com meningite neonatal. Quais são os patógenos mais prevalentes nessa faixa etária e o esquema antimicrobiano empírico recomendado?
+        alternativas:
+          - id: alt_A
+            texto: Streptococcus agalactiae (Grupo B), Escherichia coli e Listeria monocytogenes; tratar com Cefotaxima + Ampicilina.
+            comentario: Em neonatos (<2 meses), os agentes principais provêm do canal de parto (S. agalactiae, E. coli, Listeria), sendo o esquema empírico composto por ampicilina (para Listeria/Enterococcus) associada à cefotaxima ou aminoglicosídeo.
+          - id: alt_B
+            texto: Neisseria meningitidis e Streptococcus pneumoniae; tratar com Ceftriaxona em monoterapia isolada.
+            comentario: Neisseria meningitidis é rara no primeiro mês de vida e a ceftriaxona é habitualmente evitada em neonatos jovens pelo risco de incrustação biliar e hiperbilirrubinemia.
+          - id: alt_C
+            texto: Staphylococcus aureus e Pseudomonas aeruginosa; tratar com Vancomicina + Cefepima de forma empírica.
+            comentario: Estafilococos e Pseudomonas são agentes associados a procedimentos neurocirúrgicos ou infecções hospitalares, não sendo a etiologia primária da meningite comunitária neonatal.
+          - id: alt_D
+            texto: Haemophilus influenzae tipo B e Enterococcus spp.; tratar com Ceftriaxona + Vancomicina endovenosas.
+            comentario: O Haemophilus influenzae tipo B é incomum na faixa neonatal imediata e o esquema empírico padrão exige ampicilina e cefotaxima.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-12-8JqPH9
+        enunciado: A duração do tratamento antimicrobiano nas meningites bacterianas varia conforme o agente isolado na cultura. Para um adulto com meningite por Neisseria meningitidis e outro com Streptococcus pneumoniae, quais são os tempos de tratamento recomendados, respectivamente?
+        alternativas:
+          - id: alt_A
+            texto: 7 dias para N. meningitidis e 10 a 14 dias para S. pneumoniae.
+            comentario: A meningite meningocócica apresenta resposta terapêutica rápida, exigindo 7 dias de tratamento em adultos, enquanto a meningite pneumocócica requer um curso mais prolongado de 10 a 14 dias.
+          - id: alt_B
+            texto: 14 dias para N. meningitidis e 21 dias para S. pneumoniae.
+            comentario: Prolongar o tratamento da meningite meningocócica sem complicações para 14 dias é desnecessário segundo as diretrizes.
+          - id: alt_C
+            texto: 21 dias para N. meningitidis e 7 dias para S. pneumoniae.
+            comentario: A Neisseria meningitidis requer menor tempo de tratamento em comparação ao Streptococcus pneumoniae, e não o contrário.
+          - id: alt_D
+            texto: 5 a 7 dias para N. meningitidis e 21 dias para S. pneumoniae.
+            comentario: O tempo de tratamento para S. pneumoniae é de 10 a 14 dias; prazos de 21 dias são reservados para bacilos Gram-negativos entéricos e Listeria monocytogenes.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-13-iWb6AA
+        enunciado: Em relação ao manejo dos abscessos cerebrais em adultos imunocompetentes, em qual das seguintes situações a abordagem cirúrgica é preferencialmente indicada em relação ao tratamento conservador exclusivo?
+        alternativas:
+          - id: alt_A
+            texto: Abscessos com diâmetro maior que 3 cm, encapsulados ou multiloculados.
+            comentario: Lesões volumosas (>3 cm), encapsuladas ou com múltiplos septos apresentam difícil penetração antimicrobiana e exercem importante efeito de massa, sendo de indicação cirúrgica preferencial.
+          - id: alt_B
+            texto: Lesões na fase inicial de cerebrite perilesional precoce sem evidência de necrose central.
+            comentario: A fase de cerebrite precoce sem necrose responde adequadamente à antibioticoterapia endovenosa e reavaliação por imagem, dispensando cirurgia.
+          - id: alt_C
+            texto: Abscessos profundos localizados em áreas cerebrais vitais e de difícil acesso cirúrgico.
+            comentario: Abscessos localizados em áreas vitais ou profundamente inacessíveis são mantidos em tratamento conservador e acompanhamento radiológico devido ao alto risco de sequelas cirúrgicas.
+          - id: alt_D
+            texto: Lesões únicas menores que 1 cm de diâmetro que apresentam redução progressiva com antibióticos.
+            comentario: Lesões pequenas (<2-3 cm) com boa evolução clínica e radiológica são candidatas ao tratamento conservador exclusivo.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-14-MJBFoB
+        enunciado: Durante o exame físico de um paciente com suspeita de meningite, o médico realiza a flexão passiva do pescoço em decúbito dorsal e observa uma flexão involuntária dos joelhos e quadris. Como é denominado esse sinal clínico de irritação meníngea?
+        alternativas:
+          - id: alt_A
+            texto: Sinal de Brudzinski.
+            comentario: O sinal de Brudzinski é considerado positivo quando a flexão passiva do pescoço provoca a flexão involuntária dos quadris e joelhos do paciente.
+          - id: alt_B
+            texto: Sinal de Kernig.
+            comentario: O sinal de Kernig é caracterizado pela dor e resistência à extensão da perna quando a coxa está fletida em 90 graus sobre o quadril.
+          - id: alt_C
+            texto: Tríade de Cushing.
+            comentario: A tríade de Cushing (bradipneia, hipertensão arterial e arritmia respiratória) reflete hipertensão intracraniana grave, e não irritação meningorradicular.
+          - id: alt_D
+            texto: Sinal de Lasègue.
+            comentario: O sinal de Lasègue é utilizado para avaliar a compressão radicular do nervo ciático na coluna lombar.
+        gabarito: A
+  - tipo: folder
+    nome: Meningites - Slides Professor
+    descricao: Questões feitas com base nos slides do professor.
+    conteudo:
+      - tipo: ME
+        id: 061026-0046-1-yy9fJ2
+        enunciado: |-
+          Um homem de 68 anos, portador de diabetes mellitus, é levado ao pronto-socorro com febre, rebaixamento do nível de consciência e rigidez nucal. A família relata que o paciente ingeriu queijos frescos não pasteurizados recentemente.
+
+          Qual o agente etiológico mais provável e a antibioticoterapia empírica adicional indicada para o caso?
+        alternativas:
+          - id: alt_A
+            texto: <i>Listeria monocytogenes</i> com ampicilina.
+            comentario: A idade avançada, a presença de diabetes e a ingestão de laticínios não pasteurizados são fatores de risco clássicos para a infecção por Listeria monocytogenes, que exige a adição de ampicilina ao esquema empírico.
+          - id: alt_B
+            texto: <i>Streptococcus pneumoniae</i> com vancomicina.
+            comentario: Embora o pneumococo seja frequente em idosos, a associação direta com a ingestão de alimentos refrigerados não pasteurizados aponta especificamente para a listeriose.
+          - id: alt_C
+            texto: <i>Neisseria meningitidis</i> com ciprofloxacino.
+            comentario: O meningococo é mais prevalente em adolescentes e adultos jovens em aglomerados, e o ciprofloxacino é utilizado na quimioprofilaxia de contatos, não no tratamento agudo.
+          - id: alt_D
+            texto: <i>Haemophilus influenzae</i> com rifampicina.
+            comentario: O <i>Haemophilus influenzae</i> afeta principalmente crianças não vacinadas ou imunossuprimidos, e a rifampicina é empregada na profilaxia de contatos próximos.
+          - id: alt_E
+            texto: <i>Cryptococcus neoformans</i> com fluconazol.
+            comentario: Infeções fúngicas criptocócicas são mais comuns em imunodeficiências graves como HIV com contagem de CD4 baixa, apresentando curso clínico tipicamente mais subagudo.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-2-l1bttn
+        enunciado: Qual achado microbiológico na bacterioscopia (Gram) do líquido cefalorraquidiano é característico do <i>Streptococcus pneumoniae</i>?
+        alternativas:
+          - id: alt_A
+            texto: Diplococo Gram-positivo.
+            comentario: O <i>Streptococcus pneumoniae</i> apresenta-se microscopicamente na forma de pares de cocos que retêm o corante cristal violeta, caracterizando diplococos Gram-positivos.
+          - id: alt_B
+            texto: Diplococo Gram-negativo.
+            comentario: Essa morfologia microscópica é típica da <i>Neisseria meningitidis</i>, e não do pneumococo.
+          - id: alt_C
+            texto: Cocobacilo Gram-negativo.
+            comentario: Os cocobacilos Gram-negativos são a apresentação microscópica característica do <i>Haemophilus influenzae</i>.
+          - id: alt_D
+            texto: Bacilo Gram-positivo.
+            comentario: A forma bacilar Gram-positiva à bacterioscopia identifica a <i>Listeria monocytogenes</i>.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-3-MPcsi4
+        enunciado: |-
+          Um estudante universitário de 19 anos, morador de alojamento estudantil, dá entrada na emergência com febre alta de início abrupto, cefaleia intensa, rigidez de nuca e lesões petequiais em membros inferiores.
+
+          Qual o principal agente etiológico associado a esse quadro e contexto epidemiológico?
+        alternativas:
+          - id: alt_A
+            texto: <i>Neisseria meningitidis</i>.
+            comentario: Adolescentes e adultos jovens vivendo em aglomerados urbanos ou dormitórios têm risco elevado para meningite meningocócica, frequentemente acompanhada de exantema purpúrico/petequial.
+          - id: alt_B
+            texto: <i>Streptococcus pneumoniae</i>.
+            comentario: Apesar de causar meningite grave, o pneumococo está tipicamente associado a otite/sinusite prévias, fraturas de base de crânio ou asplenia, e não ao surto em aglomerados jovens.
+          - id: alt_C
+            texto: <i>Haemophilus influenzae</i>.
+            comentario: A infecção por <i>H. influenzae</i> tipo b predomina em crianças menores de 5 anos não vacinadas.
+          - id: alt_D
+            texto: <i>Listeria monocytogenes</i>.
+            comentario: A listeriose incide preferencialmente em recém-nascidos, gestantes, idosos e imunossuprimidos.
+          - id: alt_E
+            texto: <i>Mycobacterium tuberculosis</i>.
+            comentario: A meningite tuberculosa apresenta evolução subaguda a crônica, diferindo do início hiperagudo e fulminante com petéquias observado na doença meningocócica.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-4-VEyIse
+        enunciado: Qual é o padrão clássico das alterações no líquido cefalorraquidiano (LCR) observado na meningite bacteriana aguda convencional?
+        alternativas:
+          - id: alt_A
+            texto: Pleocitose neutrofílica e hipoglicorraquia.
+            comentario: O processo infeccioso bacteriano purulento atrai predominantemente neutrófilos e consome glicose do LCR, resultando em contagem celular elevada à custa de polimorfonucleares e níveis baixos de glicose em relação à glicemia.
+          - id: alt_B
+            texto: Pleocitose linfocítica e glicose normal.
+            comentario: Esse padrão celular e bioquímico é característico de meningites de etiologia viral.
+          - id: alt_C
+            texto: Aspecto límpido e normoglicorraquia.
+            comentario: O LCR da meningite bacteriana aguda apresenta-se turvo ou purulento com consumo marcante de glicose.
+          - id: alt_D
+            texto: Proteínas normais e hiperglicorraquia.
+            comentario: A inflamação meníngea bacteriana leva ao aumento acentuado de proteínas por quebra da barreira hematoencefálica, associado à diminuição da glicose.
+          - id: alt_E
+            texto: Predomínio linfocítico com xantocromia.
+            comentario: Predomínio linfocítico é típico de etiologias virais, fúngicas ou tuberculosas, e a xantocromia decorre da degradação de hemácias após hemorragia subaracnóidea.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-5-404xju
+        enunciado: Em uma criança de 2 anos não vacinada diagnosticada com meningite por <i>Haemophilus influenzae</i> tipo b, qual a conduta profilática indicada para os contatos domiciliares próximos?
+        alternativas:
+          - id: alt_A
+            texto: Rifampicina por 4 dias.
+            comentario: A erradicação da nasofaringe para o <i>Haemophilus influenzae</i> tipo b requer a administração de rifampicina diária durante o período de 4 dias.
+          - id: alt_B
+            texto: Rifampicina por 2 dias.
+            comentario: O esquema profilático de rifampicina em 2 dias (a cada 12 horas) é o protocolo indicado para a prevenção da doença meningocócica, não do <i>Haemophilus</i>.
+          - id: alt_C
+            texto: Ciprofloxacino em dose única.
+            comentario: O ciprofloxacino em dose única é uma opção profilática utilizada exclusivamente para <i>Neisseria meningitidis</i> em maiores de 18 anos.
+          - id: alt_D
+            texto: Ceftriaxona em dose única.
+            comentario: A ceftriaxona em dose única intramuscular é alternativa profilática para a doença meningocócica, e não o tratamento padrão da profilaxia para Hib.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-6-i7mOzu
+        enunciado: |-
+          Um adulto de 42 anos com histórico de fratura de base de crânio e fístula liquórica recorrente evolui com quadro agudo de febre, cefaleia holocraniana e rigidez nucal intensa.
+
+          Qual o patógeno bacteriano mais frequentemente relacionado a esse fator de risco estrutural?
+        alternativas:
+          - id: alt_A
+            texto: <i>Streptococcus pneumoniae</i>.
+            comentario: A fístula de LCR e as fraturas da base do crânio estabelecem uma comunicação direta entre a nasofaringe e o espaço subaracnóideo, sendo o <i>Streptococcus pneumoniae</i> o agente mais comumente isolado nessas condições.
+          - id: alt_B
+            texto: <i>Neisseria meningitidis</i>.
+            comentario: A <i>Neisseria meningitidis</i> relaciona-se principalmente a aglomerados humanos, deficiências de complemento e asplenia, sem forte associação com traumas cranianos anatômicos.
+          - id: alt_C
+            texto: <i>Listeria monocytogenes</i>.
+            comentario: A <i>Listeria</i> associa-se a extremos de idade, imunossupressão e transmissão alimentar por laticínios não pasteurizados.
+          - id: alt_D
+            texto: <i>Pseudomonas aeruginosa</i>.
+            comentario: A <i>Pseudomonas</i> está associada a procedimentos neurocirúrgicos prévios ou traumatismos cranioencefálicos abertos graves, e não tipicamente a fístulas liquóricas comunitárias.
+          - id: alt_E
+            texto: <i>Enterococcus faecalis</i>.
+            comentario: Este agente não figura entre as causas primárias de meningite bacteriana comunitária associada a fístula liquórica.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-7-tmOG4J
+        enunciado: |-
+          Um paciente de 25 anos é admitido com forte suspeita clínica de meningite bacteriana aguda. A equipe médica planeja administrar dexametasona para reduzir a resposta inflamatória no SNC.
+
+          Qual o momento adequado para a administração da primeira dose deste corticoide?
+        alternativas:
+          - id: alt_A
+            texto: Dexametasona antes do antibiótico.
+            comentario: A dexametasona deve ser administrada antes ou simultaneamente à primeira dose de antimicrobiano para inibir a cascata inflamatória maciça desencadeada pela lise bacteriana.
+          - id: alt_B
+            texto: Dexametasona após 24 horas.
+            comentario: Iniciar a corticoterapia tardiamente perde o benefício de atenuação da resposta inflamatória inicial deflagrada pela morte das bactérias nas primeiras horas de antibiótico.
+          - id: alt_C
+            texto: Hidrocortisona após a punção.
+            comentario: O corticoide com evidência estabelecida no manejo adjuvante é a dexametasona, e seu início deve ser articulado à infusão do antibiótico.
+          - id: alt_D
+            texto: Prednisona junto com alta.
+            comentario: O uso de corticoide visa atenuar a fase inflamatória aguda grave do SNC e deve ser realizado na admissão hospitalar por via intravenosa durante 4 dias.
+          - id: alt_E
+            texto: Metilprednisolona após a cultura.
+            comentario: Aguardar o resultado das culturas atrasa a medicação adjuvante, cujo benefício máximo ocorre na fase prévia ou imediata à primeira dose empírica de antimicrobiano.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-8-gCxFEh
+        enunciado: |-
+          Durante a avaliação neurológica de um paciente com febre e cefaleia, o médico flete a coxa sobre a bacia em 90 graus e tenta realizar a extensão passiva da perna, provocando dor e resistência voluntária.
+
+          Como é denominado esse sinal de irritação meníngea?
+        alternativas:
+          - id: alt_A
+            texto: Sinal de Kernig.
+            comentario: O sinal de Kernig é caracterizado pela dor e limitação à extensão passiva do joelho quando a coxa está fletida em ângulo reto em relação ao quadril.
+          - id: alt_B
+            texto: Sinal de Brudzinski.
+            comentario: O sinal de Brudzinski ocorre quando a flexão passiva do pescoço induz uma flexão involuntária dos quadris e joelhos.
+          - id: alt_C
+            texto: Sinal de Lasègue.
+            comentario: O sinal de Lasègue consiste na elevação do membro inferior totalmente estendido com estiramento do nervo ciático, sendo pesquisado na suspeita de radiculopatias/hérnias discais.
+          - id: alt_D
+            texto: Sinal de Bragard.
+            comentario: O sinal de Bragard é a exacerbação da dor no membro inferior estendido mediante a realização de dorsiflexão passiva do pé.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-9-KdUWND
+        enunciado: Ao estruturar o tratamento antimicrobiano empírico inicial para meningite bacteriana aguda em um adulto, qual condição individual exige a adição de ampicilina ao esquema com ceftriaxona?
+        alternativas:
+          - id: alt_A
+            texto: Idade acima de 60 anos.
+            comentario: Pacientes idosos (> 60 anos) apresentam declínio da imunidade celular e maior suscetibilidade à <i>Listeria monocytogenes</i>, microrganismo intrinsecamente resistente às cefalosporinas de 3ª geração.
+          - id: alt_B
+            texto: História de tabagismo ativo.
+            comentario: O tabagismo é fator de risco para pneumococo e meningococo, cobertos adequadamente pela ceftriaxona sem necessidade de ampicilina.
+          - id: alt_C
+            texto: Presença de fístula liquórica.
+            comentario: A fístula liquórica predispõe principalmente à infecção por <i>S. pneumoniae</i>, tratada com ceftriaxona (associada ou não à vancomicina).
+          - id: alt_D
+            texto: Coabitação em quartéis militares.
+            comentario: O convívio em quartéis aumenta o risco de <i>Neisseria meningitidis</i>, a qual responde à ceftriaxona ou penicilina G.
+          - id: alt_E
+            texto: Otite média crônica ipsilateral.
+            comentario: Infecções do trato respiratório superior e ouvido associam-se ao <i>S. pneumoniae</i> e <i>H. influenzae</i>, ambos contemplados no esquema com ceftriaxona.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-10-JivFZJ
+        enunciado: |-
+          Um médico residente realiza procedimento de intubação orotraqueal de emergência em um paciente com diagnóstico posterior de doença meningocócica fulminante, sem ter utilizado máscara de proteção adequada.
+
+          Qual a indicação de profilaxia medicamentosa para esse profissional de saúde?
+        alternativas:
+          - id: alt_A
+            texto: Ciprofloxacino oral dose única.
+            comentario: Profissionais de saúde expostos a secreções respiratórias através de procedimentos invasivos da via aérea sem EPI adequado devem receber quimioprofilaxia imediata, sendo o ciprofloxacino 500 mg VO em dose única uma das opções de escolha.
+          - id: alt_B
+            texto: Amoxicilina oral por 7 dias.
+            comentario: A amoxicilina por 7 dias não é um esquema recomendado para erradicação da <i>Neisseria meningitidis</i> na nasofaringe.
+          - id: alt_C
+            texto: Apenas observação de sintomas.
+            comentario: Diante de exposição de alto risco por manobra invasiva da via aérea sem EPI, a quimioprofilaxia é formalmente indicada e não deve ser substituída por observação isolada.
+          - id: alt_D
+            texto: Vancomicina endovenosa dose única.
+            comentario: A vancomicina é um glicopeptídeo voltado para bactérias Gram-positivas e não apresenta ação na profilaxia da <i>Neisseria meningitidis</i>.
+          - id: alt_E
+            texto: Penicilina G benzatina intramuscular.
+            comentario: A penicilina benzatina não atinge concentrações ideais para erradicação do estado de portador de meningococo em nasofaringe para fins profiláticos rápidos.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-11-rnmsk7
+        enunciado: Qual morfologia e coloração à bacterioscopia pelo método de Gram identificam a <i>Listeria monocytogenes</i> na análise direta do líquido cefalorraquidiano?
+        alternativas:
+          - id: alt_A
+            texto: Bacilo Gram-positivo.
+            comentario: A <i>Listeria monocytogenes</i> é um bacilo Gram-positivo curto (por vezes parecido com cocobacilo) que retém o corante violeta no exame bacterioscópico.
+          - id: alt_B
+            texto: Diplococo Gram-positivo.
+            comentario: Esta descrição corresponde às características microbiológicas do <i>Streptococcus pneumoniae</i>.
+          - id: alt_C
+            texto: Diplococo Gram-negativo.
+            comentario: Esta morfologia é típica do meningococo (<i>Neisseria meningitidis</i>).
+          - id: alt_D
+            texto: Cocobacilo Gram-negativo.
+            comentario: Esta é a apresentação microbiológica clássica do <i>Haemophilus influenzae</i>.
+          - id: alt_E
+            texto: Bacilo Gram-negativo.
+            comentario: Bacilos Gram-negativos incluem enterobactérias como <i>E. coli</i> e <i>Pseudomonas</i>, diferindo da estrutura Gram-positiva da <i>Listeria</i>.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0046-12-gg7frB
+        enunciado: Qual é a medicação de primeira escolha para a quimioprofilaxia de contatos próximos de pacientes com doença meningocócica e o tempo total de seu uso?
+        alternativas:
+          - id: alt_A
+            texto: Rifampicina por 2 dias.
+            comentario: A rifampicina é a droga padrão para a quimioprofilaxia contra o meningococo, administrada a cada 12 horas durante o período de 2 dias.
+          - id: alt_B
+            texto: Rifampicina por 4 dias.
+            comentario: A duração de 4 dias de rifampicina é empregada na profilaxia de contatos para <i>Haemophilus influenzae</i> tipo b.
+          - id: alt_C
+            texto: Ceftriaxona por 3 dias.
+            comentario: A ceftriaxona, quando utilizada como profilaxia para meningococo, é administrada em dose única intramuscular.
+          - id: alt_D
+            texto: Ciprofloxacino por 5 dias.
+            comentario: O ciprofloxacino é prescrito em dose única oral para adultos, e não em regime estendido por 5 dias.
+          - id: alt_E
+            texto: Azitromicina por 1 dia.
+            comentario: A azitromicina não faz parte dos esquemas profiláticos de primeira linha indicados no material de referência.
+        gabarito: A

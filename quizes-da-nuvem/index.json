@@ -25,6 +25,11 @@
       },
       {
         "type": "file",
+        "name": "Dengue - NotebookLM",
+        "path": "quizes-da-nuvem/Infectologia/Dengue - NotebookLM.json"
+      },
+      {
+        "type": "file",
         "name": "Diagnóstico da Tuberculose - NotebookLM",
         "path": "quizes-da-nuvem/Infectologia/Diagnóstico da Tuberculose - NotebookLM.json"
       },
@@ -40,6 +45,11 @@
       },
       {
         "type": "file",
+        "name": "Malária - NotebookLM",
+        "path": "quizes-da-nuvem/Infectologia/Malária - NotebookLM.json"
+      },
+      {
+        "type": "file",
         "name": "Malária",
         "path": "quizes-da-nuvem/Infectologia/Malária.json"
       },
@@ -47,6 +57,11 @@
         "type": "file",
         "name": "Meningites - EMED RE",
         "path": "quizes-da-nuvem/Infectologia/Meningites - EMED RE.json"
+      },
+      {
+        "type": "file",
+        "name": "Meningites - NotebookLM",
+        "path": "quizes-da-nuvem/Infectologia/Meningites - NotebookLM.json"
       },
       {
         "type": "file",
@@ -72,6 +87,11 @@
         "type": "file",
         "name": "Tratamento da Tuberculose - NotebookLM",
         "path": "quizes-da-nuvem/Infectologia/Tratamento da Tuberculose - NotebookLM.json"
+      },
+      {
+        "type": "file",
+        "name": "Tuberculose - NotebookLM",
+        "path": "quizes-da-nuvem/Infectologia/Tuberculose - NotebookLM.json"
       }
     ]
   },

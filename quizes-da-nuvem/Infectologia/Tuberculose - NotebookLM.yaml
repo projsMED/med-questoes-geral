@@ -1,0 +1,1013 @@
+titulo: Tuberculose - NotebookLM
+descricao: Cada pasta é um quiz individual do NotebookLM
+id_quiz: recorte-e393e21e-1b02-4615-832d-52c467107a50
+conteudo:
+  - tipo: folder
+    nome: Diagnóstico da Tuberculose - NotebookLM
+    conteudo:
+      - tipo: ME
+        id: 061026-0048-1-M4GEm9
+        enunciado: Qual é o método bacteriológico considerado padrão-ouro para o diagnóstico de certeza da tuberculose?
+        alternativas:
+          - id: alt_A
+            texto: Cultura para micobactérias
+            comentario: A isolamento do bacilo em meio de cultura seguido da identificação da espécie é o único método capaz de fornecer a confirmação bacteriológica definitiva da doença.
+          - id: alt_B
+            texto: Baciloscopia direta de escarro
+            comentario: Apesar de ser o exame inicial mais utilizado para triagem e controle de tratamento, a pesquisa direta de BAAR apresenta menor sensibilidade e não confirma a espécie da micobactéria.
+          - id: alt_C
+            texto: Teste rápido molecular
+            comentario: Embora apresente alta sensibilidade e detecte resistência à rifampicina rapidamente, o teste molecular não substitui a cultura para a confirmação definitiva de certeza.
+          - id: alt_D
+            texto: Dosagem de adenosina deaminase
+            comentario: A dosagem enzimática serve como método auxiliar indireto em fluidos corporais, mas não isola o agente etiológico para fornecer certeza bacteriológica.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-2-qVE2LL
+        enunciado: Um homem de 35 anos apresenta tosse há quatro semanas, febre vespertina e emagrecimento. A baciloscopia direta de escarro revelou resultado positivo. Qual achado microscópico fundamenta essa classificação?
+        alternativas:
+          - id: alt_A
+            texto: Presença de BAAR
+            comentario: A técnica de Ziehl-Neelsen evidencia bacilos álcool-ácido resistentes na amostra, o que caracteriza o resultado positivo da baciloscopia.
+          - id: alt_B
+            texto: Ausência de microorganismos
+            comentario: A ausência de bacilos ao exame microscópico de 100 campos observados define um resultado negativo.
+          - id: alt_C
+            texto: Presença de cocos gram-positivos
+            comentario: A baciloscopia para tuberculose utiliza a coloração específica para micobactérias e não a taxonomia da coloração de Gram.
+          - id: alt_D
+            texto: Predomínio de leucócitos polimorfonucleares
+            comentario: A contagem de leucócitos polimorfonucleares é utilizada na diferenciação citológica de derrames e processos purulentos agudos, e não na baciloscopia de escarro.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-3-bhXuIk
+        enunciado: Qual é o volume ideal de amostra de escarro recomendado para assegurar a qualidade do exame bacteriológico de tuberculose?
+        alternativas:
+          - id: alt_A
+            texto: 5 a 10 ml
+            comentario: Este volume garante material proveniente da árvore brônquica em quantidade suficiente para o processamento das técnicas bacteriológicas.
+          - id: alt_B
+            texto: 1 a 2 ml
+            comentario: Volumes reduzidos costumam conter predominantemente saliva ou secreções nasofaríngeas, comprometendo o rendimento do exame.
+          - id: alt_C
+            texto: 15 a 20 ml
+            comentario: Volumes excessivamente altos não são necessários para o processamento laboratorial e podem dificultar a manipulação e o transporte adequado.
+          - id: alt_D
+            texto: 25 a 30 ml
+            comentario: Embora a capacidade do pote de coleta seja maior, a solicitação de um volume tão elevado é desnecessária para as análises padrão.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-4-DPDIZ6
+        enunciado: Após a aplicação intradérmica do PPD, em qual intervalo de tempo deve ser realizada a leitura da Prova Tuberculínica?
+        alternativas:
+          - id: alt_A
+            texto: 48 a 72 horas
+            comentario: Este período corresponde ao pico da resposta de hipersensibilidade tardia, permitindo a mensuração precisa do endurado palpável.
+          - id: alt_B
+            texto: 12 a 24 horas
+            comentario: Nesse intervalo inicial ocorrem reações inflamatórias inespecíficas que ainda não refletem a resposta imune celular específica.
+          - id: alt_C
+            texto: 24 a 36 horas
+            comentario: A leitura precoce antes de 48 horas pode subestimar o diâmetro da induração por não atingir o tempo adequado da reação imunológica.
+          - id: alt_D
+            texto: 5 a 7 dias
+            comentario: Após 96 horas a induração começa a regredir, invalidando a precisão da medida da resposta celular.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-5-tgPYbV
+        enunciado: Um adolescente de 14 anos com suspeita de tuberculose pulmonar realiza o Teste Rápido Molecular (TRM-TB). O resultado indica detecção de M. tuberculosis acompanhada de resistência à rifampicina. De acordo com os algoritmos oficiais para casos novos, qual conduta deve ser adotada?
+        alternativas:
+          - id: alt_A
+            texto: Repetir o TRM-TB em nova amostra e encaminhar para referência terciária.
+            comentario: A repetição do teste confirma a resistência à rifampicina e o encaminhamento à referência terciária garante o manejo especializado imediato.
+          - id: alt_B
+            texto: Iniciar imediatamente o tratamento para tuberculose utilizando o Esquema Básico.
+            comentario: O Esquema Básico é indicado apenas nos casos em que a resistência à rifampicina não é detectada pelo teste molecular.
+          - id: alt_C
+            texto: Solicitar apenas uma nova baciloscopia direta de escarro para acompanhamento.
+            comentario: A baciloscopia direta não avalia perfil de resistência genética, sendo insuficiente diante de uma detecção de resistência no TRM-TB.
+          - id: alt_D
+            texto: Descartar infecção por tuberculose e investigar outras doenças pulmonares crônicas.
+            comentario: A detecção do complexo M. tuberculosis confirma o diagnóstico da doença, necessitando de investigação de resistência e não do descarte do caso.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-6-wQVqiq
+        enunciado: Um paciente de 28 anos apresenta dor torácica pleurítica, febre e astenia. A punção pleural identifica exsudato com predomínio linfocítico. Qual biomarcador no líquido pleural auxilia no diagnóstico de pleurite tuberculosa nessa apresentação?
+        alternativas:
+          - id: alt_A
+            texto: Adenosina deaminase elevada
+            comentario: Níveis elevados desta enzima refletem a ativação da imunidade celular no espaço pleural, sendo aceitos como critério diagnóstico complementar.
+          - id: alt_B
+            texto: Pesquisa direta de fungos
+            comentario: A pesquisa de fungos direciona o diagnóstico para micoses profundas e não constitui o marcador primário para a forma pleural da tuberculose.
+          - id: alt_C
+            texto: Dosagem de glicose elevada
+            comentario: Derrames pleurais inflamatórios e infecciosos costumam apresentar níveis reduzidos de glicose, e não elevados.
+          - id: alt_D
+            texto: Baciloscopia com alto rendimento
+            comentario: A pesquisa direta de BAAR no líquido pleural da TB pleural típica apresenta baixo rendimento, inferior a 5%.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-7-sXgB9d
+        enunciado: Qual é a forma de tuberculose extrapulmonar mais frequente em pessoas vivendo com HIV e em crianças com idade inferior a 40 anos?
+        alternativas:
+          - id: alt_A
+            texto: Ganglionar periférica
+            comentario: O comprometimento dos linfonodos, principalmente nas cadeias cervicais, representa a manifestação extrapulmonar mais comum nesses grupos vulneráveis.
+          - id: alt_B
+            texto: Pleural exsudativa
+            comentario: A forma pleural é a mais frequente entre adultos imunocompetentes não infectados pelo HIV.
+          - id: alt_C
+            texto: Osteoarticular periférica
+            comentario: O acometimento ósseo e articular é menos prevalente e incide principalmente na coluna vertebral ou articulações de carga.
+          - id: alt_D
+            texto: Meningoencefálica basal
+            comentario: A tuberculose do sistema nervoso central é uma forma grave e menos frequente que a ganglionar em termos de prevalência absoluta.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-8-8mfLzc
+        enunciado: Uma criança de 4 anos apresenta tosse persistente, febre e perda de peso há três semanas, além de histórico de contato com adulto tratado para tuberculose. Diante de baciloscopia negativa ou impossibilidade de coleta, qual instrumento é preconizado no Brasil para orientar o diagnóstico pulmonar?
+        alternativas:
+          - id: alt_A
+            texto: Sistema de escore pontuado
+            comentario: O sistema de pontuação valida dados clínicos, radiológicos, epidemiológicos e nutricionais para diagnosticar a TB pulmonar paucibacilar na infância.
+          - id: alt_B
+            texto: Biópsia pulmonar aberta
+            comentario: Procedimentos cirúrgicos invasivos são reservados para casos atípicos complexos e não constituem a ferramenta primária de decisão na infância.
+          - id: alt_C
+            texto: Tomografia por emissão pósitrons
+            comentario: Exames de PET-CT possuem indicações restritas e não fazem parte do protocolo de investigação inicial de tuberculose infantil.
+          - id: alt_D
+            texto: Repetição mensal do PPD
+            comentario: Testes tuberculínicos seriados mensais não são recomendados e atrasariam o início do tratamento oportuno.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-9-GPzJRp
+        enunciado: Durante a investigação histopatológica de peças biópticas, qual achado microscópico é considerado altamente característico de tuberculose ativa?
+        alternativas:
+          - id: alt_A
+            texto: Presença de granuloma com necrose de caseificação no tecido analisado.
+            comentario: A formação granulomatosa acompanhada de necrose caseosa central é o padrão histológico clássico indicativo da infecção por M. tuberculosis.
+          - id: alt_B
+            texto: Identificação de infiltrado inflamatório purulento rico em neutrófilos segmentados.
+            comentario: Infiltrados piogênicos ricos em neutrófilos são característicos de infecções bacterianas agudas comuns, e não do padrão granulomatoso.
+          - id: alt_C
+            texto: Visualização de granulomas sem necrose acompanhados de fibrose difusa acentuada.
+            comentario: Granulomas sem necrose são típicos de condições como a sarcoidose, necessitando de cautela na diferenciação com a tuberculose.
+          - id: alt_D
+            texto: Presença exclusiva de hiperplasia folicular sem formação de granulomas estruturados.
+            comentario: A hiperplasia folicular isolada é uma resposta linfoides inespecífica que não confirma processos granulomatosos específicos.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-10-uoHG1w
+        enunciado: Na avaliação tomográfica do tórax, qual sinal radiológico é considerado fortemente sugestivo de atividade da tuberculose pulmonar por disseminação broncogênica?
+        alternativas:
+          - id: alt_A
+            texto: Árvore em brotamento
+            comentario: O padrão em árvore em brotamento traduz o preenchimento de bronquíolos centrolobulares por secreção e exsudato inflamatório em fase ativa.
+          - id: alt_B
+            texto: Bandas fibrosas residuais
+            comentario: Bandas parenquimatóseis e traves de fibrose representam alterações cicatriciais e sequelares de lesões prévias.
+          - id: alt_C
+            texto: Nódulos calcificados isolados
+            comentario: Nódulos densos e calcificados sem alterações periféricas indicam lesões antigas inativas ou estabilizadas.
+          - id: alt_D
+            texto: Bronquiectasias de tração
+            comentario: Bronquiectasias decorrentes de retração fibrosa parenquimatosa são achados típicos de sequela de processos inflamatórios curados.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-11-wALz0e
+        enunciado: Em contatos adultos de casos de tuberculose pulmonar, qual medida de induração na Prova Tuberculínica define a presença de infecção latente pelo M. tuberculosis (ILTB)?
+        alternativas:
+          - id: alt_A
+            texto: 5 mm ou mais
+            comentario: Nos indivíduos com histórico de contato recente ou vulnerabilidade, o ponto de corte igual ou superior a 5 mm é suficiente para indicar ILTB.
+          - id: alt_B
+            texto: 10 mm ou mais
+            comentario: Embora 10 mm confirme a infecção, o limite mínimo exigido para considerar o teste reativo em contatos de risco é mais baixo.
+          - id: alt_C
+            texto: 15 mm ou mais
+            comentario: Exigir uma induração deste porte causaria subdiagnóstico de infecção latente em pessoas expostas a fontes bacilíferas.
+          - id: alt_D
+            texto: 20 mm ou mais
+            comentario: Valores tão elevados não são necessários como ponto de corte inicial para rastreamento de contatos nas diretrizes de ILTB.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-12-PwrWMf
+        enunciado: Qual condição de conservação deve ser mantida durante o transporte das amostras de escarro da unidade de saúde para o laboratório de análise?
+        alternativas:
+          - id: alt_A
+            texto: Refrigeração contínua
+            comentario: O transporte refrigerado em caixas térmicas preserva a viabilidade dos bacilos e evita o supercrescimento de microbiota contaminante.
+          - id: alt_B
+            texto: Congelamento a vinte graus
+            comentario: O congelamento direto sem crioprotetores adequados pode lisar a parede celular das micobactérias e inviabilizar a cultura.
+          - id: alt_C
+            texto: Aquecimento em estufa
+            comentario: Temperaturas elevadas aceleram a degradação da amostra e favorecem a proliferação excessiva de bactérias e fungos saprófitas.
+          - id: alt_D
+            texto: Exposição à luz solar
+            comentario: A radiação ultravioleta contida na luz solar direta é bactericida para os bacilos e degrada o espécime clínico.
+        gabarito: A
+  - tipo: folder
+    nome: Tratamento da Tuberculose - NotebookLM
+    conteudo:
+      - tipo: ME
+        id: 061026-0048-1-H5AKkV
+        enunciado: Um homem de 34 anos recebe o diagnóstico de tuberculose pulmonar sem comorbidades associadas. Ele nunca realizou tratamento prévio para a doença. Qual é o esquema farmacológico indicado para a fase intensiva do tratamento?
+        alternativas:
+          - id: alt_A
+            texto: 2 RHZE
+            comentario: A fase intensiva do Esquema Básico para adultos combina quatro fármacos durante os dois primeiros meses de tratamento.
+          - id: alt_B
+            texto: 2 RHZ
+            comentario: Essa combinação de três fármacos é reservada para a fase intensiva em crianças com menos de 10 anos de idade.
+          - id: alt_C
+            texto: 2 RH
+            comentario: A associação dupla de rifampicina e isoniazida constitui a fase de manutenção do tratamento, não a intensiva.
+          - id: alt_D
+            texto: 2 RHE
+            comentario: A pirazinamida é um componente essencial na fase de ataque por sua ação bactericida e esterilizante intracelular.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-2-CLN5fv
+        enunciado: Qual é a duração total do tratamento padrão recomendado para a tuberculose meningoencefálica em pacientes adultos?
+        alternativas:
+          - id: alt_A
+            texto: 12 meses
+            comentario: O tratamento da tuberculose meningoencefálica compreende 2 meses de fase intensiva e 10 meses de fase de manutenção.
+          - id: alt_B
+            texto: 6 meses
+            comentario: A duração de seis meses é o padrão estipulado para a tuberculose pulmonar e para a maioria das formas extrapulmonares.
+          - id: alt_C
+            texto: 9 meses
+            comentario: Nove meses é uma duração utilizada em situações específicas de monorresistência à isoniazida.
+          - id: alt_D
+            texto: 18 meses
+            comentario: Durações de 18 meses ou mais são reservadas a esquemas de tuberculose multidrogarresistente ou extensivamente resistente.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-3-k5BqCZ
+        enunciado: Uma gestante no segundo trimestre é diagnosticada com tuberculose pulmonar sensível e iniciará o Esquema Básico. Qual suplementação deve ser associada para prevenir complicações fetais?
+        alternativas:
+          - id: alt_A
+            texto: Piridoxina
+            comentario: A vitamina B6 deve ser suplementada em gestantes para mitigar o risco de toxicidade neurológica fetal induzida pela isoniazida.
+          - id: alt_B
+            texto: Tiamina
+            comentario: A tiamina não é o suplemento específico indicado nos protocolos para prevenir os efeitos neurotóxicos dos tuberculostáticos.
+          - id: alt_C
+            texto: Ácido fólico
+            comentario: Embora rotineiro na gestação, o ácido fólico não é a indicação específica para conter a neurotoxicidade da isoniazida.
+          - id: alt_D
+            texto: Riboflavina
+            comentario: A riboflavina não apresenta indicação no protocolo de acompanhamento da tuberculose na gestação.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-4-OSjSPo
+        enunciado: Em qual situação laboratorial assintomática deve-se suspender temporariamente o Esquema Básico da tuberculose por hepatotoxicidade?
+        alternativas:
+          - id: alt_A
+            texto: TGO/TGP $\ge$ 5x LSN
+            comentario: Em pacientes assintomáticos, a interrupção é indicada quando as transaminases atingem cinco vezes o limite superior da normalidade.
+          - id: alt_B
+            texto: TGO/TGP $\ge$ 2x LSN
+            comentario: Elevações discretas de até duas vezes o limite normal podem ocorrer de forma transitória sem necessidade de suspensão.
+          - id: alt_C
+            texto: TGO/TGP $\ge$ 3x LSN
+            comentario: O valor de três vezes o limite superior só determina a suspensão imediata se acompanhado de sintomas digestivos ou icterícia.
+          - id: alt_D
+            texto: Bilirrubina $\ge$ 1,5x LSN
+            comentario: O critério objetivo para interrupção assintomática por enzimas hepáticas baseia-se prioritariamente nos níveis de transaminases.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-5-sbumkI
+        enunciado: Um paciente coinfectado por TB e HIV apresenta contagem de linfócitos T-CD4+ de $35\text{ céls/mm}^3$. Em quanto tempo após o início do tratamento antiTB deve ser introduzida a TARV?
+        alternativas:
+          - id: alt_A
+            texto: Até 2 semanas
+            comentario: Em pacientes com imunossupressão grave e contagem de CD4 inferior a $50\text{ céls/mm}^3$, a TARV deve ser iniciada em até 14 dias.
+          - id: alt_B
+            texto: Na 8ª semana
+            comentario: O início na oitava semana é recomendado para pacientes coinfectados com contagem de CD4 igual ou superior a $50\text{ céls/mm}^3$.
+          - id: alt_C
+            texto: Após 6 meses
+            comentario: Aguardar o término do tratamento da tuberculose para iniciar a TARV aumenta substancialmente a mortalidade em casos gravemente imunodeprimidos.
+          - id: alt_D
+            texto: Imediatamente e simultaneamente
+            comentario: O início simultâneo no mesmo dia é contraindicado pelo elevado risco de sobreposição de reações adversas e intolerância.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-6-SS7ezq
+        enunciado: Qual é a conduta imediata indicada para um recém-nascido coabitante de caso fonte com tuberculose pulmonar bacilífera?
+        alternativas:
+          - id: alt_A
+            texto: Iniciar quimioprofilaxia primária
+            comentario: O recém-nascido exposto deve iniciar prontamente a profilaxia com isoniazida ou rifampicina antes da vacinação.
+          - id: alt_B
+            texto: Aplicar a vacina BCG
+            comentario: A vacinação com BCG deve ser postergada para não interferir na resposta imune nem ser inativada pelo tratamento profilático.
+          - id: alt_C
+            texto: Fazer a prova tuberculínica
+            comentario: A prova tuberculínica é realizada apenas após três meses de profilaxia para definir se o tratamento prossegue ou é suspenso.
+          - id: alt_D
+            texto: Solicitar radiografia de tórax
+            comentario: O protocolo determina a introdução da prevenção primária assim que descartados os sinais clínicos de tuberculose ativa.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-7-037FfR
+        enunciado: Um paciente com tuberculose pulmonar tem monorresistência à isoniazida confirmada antes do início da terapêutica. Qual é o esquema preferencial indicado?
+        alternativas:
+          - id: alt_A
+            texto: 2 R Lfx Z E / 7 R Lfx E
+            comentario: O esquema preferencial para monorresistência à isoniazida substitui este medicamento pelo levofloxacino nas fases intensiva e de manutenção.
+          - id: alt_B
+            texto: 2 RHZE / 4 RH
+            comentario: O Esquema Básico convencional torna-se inadequado como conduta principal após a confirmação de resistência à isoniazida.
+          - id: alt_C
+            texto: 2 R Z E Lfx / 4 R E Lfx
+            comentario: A duração total da terapêutica utilizando fluoroquinolona para este padrão de resistência deve ser de nove meses.
+          - id: alt_D
+            texto: 8 Cm Lfx Trd E Z
+            comentario: Regimes contendo medicamentos injetáveis de segunda linha são indicados para quadros de multirresistência ou monorresistência à rifampicina.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-8-dTwO5s
+        enunciado: Quais são os dois medicamentos de primeira linha com maior atividade esterilizante no tratamento da tuberculose?
+        alternativas:
+          - id: alt_A
+            texto: Rifampicina e pirazinamida
+            comentario: A rifampicina e a pirazinamida apresentam o maior poder de eliminação dos bacilos latentes em lesões fechadas e meio intracelular.
+          - id: alt_B
+            texto: Isoniazida e etambutol
+            comentario: A isoniazida destaca-se pelo poder bactericida precoce, enquanto o etambutol atua prevenindo a emergência de resistência.
+          - id: alt_C
+            texto: Estreptomicina e pirazinamida
+            comentario: A estreptomicina possui forte ação bactericida em lesões cavitárias, mas apresenta baixo poder esterilizante.
+          - id: alt_D
+            texto: Isoniazida e rifampicina
+            comentario: Embora a isoniazida tenha elevada capacidade bactericida, seu poder esterilizante é inferior ao da pirazinamida.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-9-AYwvdB
+        enunciado: Um homem de 60 anos com insuficiência renal crônica ($clearance\text{ de creatinina} < 30\text{ mL/min}$) iniciará o Esquema Básico (RHZE). Como deve ser a administração na fase intensiva?
+        alternativas:
+          - id: alt_A
+            texto: RHZE em dias alternados
+            comentario: Para nefropatas graves, a dose fixa combinada RHZE é administrada três vezes por semana (alternados) na fase intensiva, completada com RH nos demais dias.
+          - id: alt_B
+            texto: RHZE diariamente em dose plena
+            comentario: A administração diária sem ajuste para fármacos de eliminação renal em insuficiência avançada gera acúmulo de toxicidade.
+          - id: alt_C
+            texto: RHZE uma vez por semana
+            comentario: O espaçamento semanal compromete a concentração bactericida necessária durante a fase inicial do tratamento.
+          - id: alt_D
+            texto: RHZE ajustado pós-diálise apenas
+            comentario: O protocolo estabelece um esquema de dias fixos alternados para o comprimido combinado durante a fase intensiva.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0048-10-oUL5HA
+        enunciado: Como é classificada a tuberculose que apresenta resistência comprovada pelo menos à rifampicina e à isoniazida simultaneamente?
+        alternativas:
+          - id: alt_A
+            texto: Multirresistente
+            comentario: A tuberculose multirresistente (TB MDR) é caracterizada pela resistência concomitante a pelo menos rifampicina e isoniazida.
+          - id: alt_B
+            texto: Monorresistente
+            comentario: A monorresistência é definida pela resistência isolada a apenas um fármaco do esquema antituberculose.
+          - id: alt_C
+            texto: Polirresistente
+            comentario: A polirresistência refere-se à resistência a dois ou mais fármacos, excluindo a associação simultânea de rifampicina e isoniazida.
+          - id: alt_D
+            texto: Extensivamente resistente
+            comentario: A resistência extensiva requer, além da multirresistência, resistência a fluoroquinolonas e injetáveis de segunda linha.
+        gabarito: A
+  - tipo: folder
+    nome: Tuberculose - Diagnóstico e Tratamento
+    descricao: Algumas com casos clínicos, outras sem
+    conteudo:
+      - tipo: ME
+        id: 061026-0050-1-JvO1qk
+        enunciado: Qual é a duração mínima do sintoma de tosse considerada para definir um indivíduo como sintomático respiratório na estratégia de busca ativa na população geral?
+        alternativas:
+          - id: alt_A
+            texto: Uma semana
+            comentario: Infecções respiratórias agudas comuns frequentemente duram até uma semana, não preenchendo o critério de suspeição para tuberculose na população geral.
+          - id: alt_B
+            texto: Duas semanas
+            comentario: Embora seja um ponto de corte importante para investigação clínica em algumas populações específicas, na busca ativa programática geral estabeleceu-se um tempo maior.
+          - id: alt_C
+            texto: Três semanas
+            comentario: A definição programática clássica de sintomático respiratório para busca ativa na população geral considera a presença de tosse por três semanas ou mais.
+          - id: alt_D
+            texto: Quatro semanas
+            comentario: Aguardar quatro semanas de tosse atrasaria desnecessariamente o diagnóstico e a interrupção da cadeia de transmissão da doença.
+        gabarito: C
+
+      - tipo: ME
+        id: 061026-0050-2-kJNOvs
+        enunciado: |-
+          Homem de 35 anos, sem comorbidades ou tratamentos prévios, é diagnosticado com tuberculose pulmonar bacilífera e inicia o esquema terapêutico básico preconizado.
+
+          Qual é a duração total do tratamento para esse paciente?
+        alternativas:
+          - id: alt_A
+            texto: Quatro meses
+            comentario: Quatro meses corresponde apenas à duração da fase de manutenção, sendo insuficiente para a eliminação bacteriana total se administrado isoladamente.
+          - id: alt_B
+            texto: Seis meses
+            comentario: O Esquema Básico para adultos consiste em dois meses de fase intensiva (RHZE) seguidos por quatro meses de fase de manutenção (RH), perfazendo seis meses no total.
+          - id: alt_C
+            texto: Nove meses
+            comentario: A duração de nove meses é reservada para situações de esquemas especiais ou situações clínicas específicas com resposta lenta.
+          - id: alt_D
+            texto: Doze meses
+            comentario: O tratamento de doze meses é indicado primariamente para formas específicas como a meningoencefálica e a osteoarticular.
+        gabarito: B
+
+      - tipo: ME
+        id: 061026-0050-3-nnF8Sm
+        enunciado: Qual enzima mensurada no líquido pleural é amplamente utilizada como critério diagnóstico auxiliar para a tuberculose pleural?
+        alternativas:
+          - id: alt_A
+            texto: Adenosina deaminase muito elevada
+            comentario: A adenosina deaminase (ADA) é produzida por linfócitos ativados e seus níveis elevados no líquido pleural indicam forte suspeita de pleurite tuberculosa em contexto clínico compatível.
+          - id: alt_B
+            texto: Lactato desidrogenase bastante reduzida
+            comentario: A LDH no líquido pleural tuberculoso comporta-se como exsudato e costuma estar elevada, não reduzida, refletindo o processo inflamatório.
+          - id: alt_C
+            texto: Glicose em concentração alta
+            comentario: Nos derrames pleurais inflamatórios e infecciosos como o tuberculoso, os níveis de glicose no líquido pleural tendem a estar reduzidos devido ao consumo metabólico celular.
+          - id: alt_D
+            texto: Amilase com atividade aumentada
+            comentario: A elevação da amilase no líquido pleural relaciona-se primariamente a afecções pancreáticas ou rotura esofágica, não sendo marcador de tuberculose.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-4-jyciKl
+        enunciado: |-
+          Gestante de 24 semanas é diagnosticada com tuberculose pulmonar sensível e iniciará o Esquema Básico (RHZE) nas doses habituais.
+
+          Qual suplementação medicamentosa preventiva deve ser associada durante a terapia?
+        alternativas:
+          - id: alt_A
+            texto: Piridoxina para prevenção de toxicidade no feto
+            comentario: O uso da isoniazida durante a gestação acarreta risco de neurotoxicidade fetal e periférica, recomendando-se a associação diária de piridoxina (vitamina B6).
+          - id: alt_B
+            texto: Ácido fólico em altas doses na gestação
+            comentario: O ácido fólico é indicado no início da gestação para prevenção de defeitos do tubo neural, mas não previne as complicações neurológicas específicas dos tuberculostáticos.
+          - id: alt_C
+            texto: Suplementação de ferro endovenoso semanal até parto
+            comentario: A reposição de ferro é voltada ao manejo da anemia ferropriva e não guarda relação direta com a prevenção da toxicidade dos antituberculosos.
+          - id: alt_D
+            texto: Vitamina C oral para potencializar ação bactericida
+            comentario: Não há recomendação técnica de suplementação de vitamina C para prevenção de toxicidade fetal ou aumento de eficácia do Esquema Básico.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-5-DJUtm3
+        enunciado: Qual fármaco componente do Esquema Básico de tratamento da tuberculose está associado à toxicidade ocular e neurite óptica?
+        alternativas:
+          - id: alt_A
+            texto: Etambutol
+            comentario: O etambutol pode causar neurite óptica retrobulbar como efeito adverso principal, manifestada por diminuição da acuidade visual e alteração na visão de cores.
+          - id: alt_B
+            texto: Isoniazida
+            comentario: O principal efeito adverso neurológico da isoniazida é a neuropatia periférica, e não a neurite óptica.
+          - id: alt_C
+            texto: Rifampicina
+            comentario: A rifampicina destaca-se por causar alteração de cor nas secreções orgânicas (suor/urina) e hepatotoxicidade, não sendo o causa primária de neurite óptica.
+          - id: alt_D
+            texto: Pirazinamida
+            comentario: A pirazinamida está associada principalmente à hiperuricemia, artralgia e hepatotoxicidade, sem efeito tóxico seletivo sobre o nervo óptico.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-6-GHUXWk
+        enunciado: |-
+          Paciente vivendo com HIV é diagnosticado com tuberculose pulmonar ativa e apresenta contagem de linfócitos T CD4+ de 30 cél/mm³. O tratamento para tuberculose é iniciado imediatamente.
+
+          Qual é o momento recomendado para o início da Terapia Antirretroviral (TARV)?
+        alternativas:
+          - id: alt_A
+            texto: Iniciar a TARV em até duas semanas
+            comentario: Em pacientes com imunodeficiência grave (CD4 < 50 cél/mm³), o início precoce da TARV em até duas semanas reduz significativamente a mortalidade global.
+          - id: alt_B
+            texto: Iniciar a TARV após término da tuberculose
+            comentario: Adiar a TARV até o fim do tratamento da tuberculose em pacientes gravemente imunossuprimidos resulta em elevada mortalidade por progressão do HIV.
+          - id: alt_C
+            texto: Iniciar a TARV no mesmo dia diagnóstico
+            comentario: O início simultâneo no mesmo dia é contraindicado devido ao alto risco de intolerância concomitante, sobreposição de efeitos adversos e adesão prejudicada.
+          - id: alt_D
+            texto: Aguardar a oitava semana do tratamento
+            comentario: Início na oitava semana é a conduta padrão para pacientes com CD4 maior ou igual a 50 cél/mm³, mas em imunodeficiência profunda esse atraso aumenta a mortalidade.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-7-yAfOth
+        enunciado: O Teste Rápido Molecular para Tuberculose (TRM-TB) realiza a triagem direta de resistência a qual medicamento antituberculose?
+        alternativas:
+          - id: alt_A
+            texto: Rifampicina
+            comentario: O TRM-TB detecta o DNA do complexo M. tuberculosis e identifica mutações no gene rpoB, que conferem resistência à rifampicina.
+          - id: alt_B
+            texto: Isoniazida
+            comentario: A detecção isolada de resistência à isoniazida exige testes moleculares específicos adicionais (como LPA) ou testes de sensibilidade fenotípicos.
+          - id: alt_C
+            texto: Etambutol
+            comentario: O ensaio automatizado do TRM-TB não avalia os genes associados à resistência ao etambutol.
+          - id: alt_D
+            texto: Pirazinamida
+            comentario: A resistência à pirazinamida não é avaliada no TRM-TB padronizado para diagnóstico rápido inicial.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-8-4dFpHR
+        enunciado: |-
+          Criança de 4 anos apresenta tosse e febre contínuas há três semanas, perda de peso e radiografia de tórax com condensação inalterada há mais de 14 dias. A avaliação pelo sistema de escore pontua 40 pontos.
+
+          Qual é a conduta recomendada para o manejo do caso?
+        alternativas:
+          - id: alt_A
+            texto: Iniciar o tratamento de tuberculose
+            comentario: Pontuações maiores ou iguais a 40 pontos no escore do Ministério da Saúde indicam diagnóstico muito provável de tuberculose, autorizando o início do tratamento.
+          - id: alt_B
+            texto: Manter apenas observação sem tratamento
+            comentario: Com pontuação indicando diagnóstico muito provável, a conduta de apenas observar traria riscos de complicação e progressão da doença na criança.
+          - id: alt_C
+            texto: Repetir os exames em três meses
+            comentario: O atraso no tratamento por três meses em uma criança com alta pontuação e sintomas persistentes é inadequado.
+          - id: alt_D
+            texto: Prescrever amoxicilina por dez dias
+            comentario: O escore já contempla falha ou ausência de resposta a antibióticos para germes comuns em lesão inalterada por mais de duas semanas.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-9-42HdyY
+        enunciado: Qual é a duração total padronizada do Esquema Básico de tratamento da tuberculose meningoencefálica em adultos?
+        alternativas:
+          - id: alt_A
+            texto: Doze meses
+            comentario: O tratamento da TB meningoencefálica consiste em 2 meses de fase intensiva (RHZE) e 10 meses de fase de manutenção (RH), totalizando 12 meses.
+          - id: alt_B
+            texto: Seis meses
+            comentario: Seis meses é a duração preconizada para a forma pulmonar e a maioria das formas extrapulmonares, mas é insuficiente para a gravidade da meningite.
+          - id: alt_C
+            texto: Três meses
+            comentario: Três meses é um período incompleto para qualquer esquema de tratamento da tuberculose ativa.
+          - id: alt_D
+            texto: Dezoito meses
+            comentario: Dezoito meses ou mais é a duração típica reservada para esquemas longos de tuberculose drogarresistente (TB MDR/XDR).
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-10-2Lqwe5
+        enunciado: |-
+          Paciente em tratamento da tuberculose com o Esquema Básico (RHZE) há um mês evolui com icterícia, colúria e níveis de TGO/TGP atingindo 6 vezes o limite superior da normalidade.
+
+          Qual é a conduta imediata indicada em relação ao esquema terapêutico?
+        alternativas:
+          - id: alt_A
+            texto: Interromper temporariamente todos os medicamentos
+            comentario: Elevação de transaminases acima de 5 vezes o limite normal em pacientes assintomáticos ou acima de 3 vezes na presença de sintomas exige a suspensão imediata de todo o esquema.
+          - id: alt_B
+            texto: Manter as medicações e observar
+            comentario: Manter o tratamento com hepatotoxicidade grave estabelecida pode levar a insuficiência hepática aguda e óbito.
+          - id: alt_C
+            texto: Substituir apenas a rifampicina oral
+            comentario: Não se deve alterar ou retirar apenas um fármaco isoladamente antes da normalização enzimática e identificação do agente causador.
+          - id: alt_D
+            texto: Reduzir dose de todos medicamentos
+            comentario: A redução da dose mantém o insulto tóxico ao fígado e favorece a seleção de cepas bacterianas resistentes.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-11-UEa19o
+        enunciado: Qual é o intervalo de tempo padronizado recomendado para a realização da leitura da Prova Tuberculínica (PT) após a aplicação?
+        alternativas:
+          - id: alt_A
+            texto: 48-72 horas
+            comentario: A leitura da PT pelo método de Mantoux deve ser feita entre 48 e 72 horas após a inoculação, medindo-se o maior diâmetro transverso da enduração.
+          - id: alt_B
+            texto: 12-24 horas
+            comentario: Em 12 a 24 horas a reação de hipersensibilidade tardia mediada por células ainda não atingiu seu pico de enduração.
+          - id: alt_C
+            texto: 24-36 horas
+            comentario: Com 24 a 36 horas a resposta inflamatória tecidual pode estar incompleta, gerando leituras falso-negativas ou subestimadas.
+          - id: alt_D
+            texto: 96-120 horas
+            comentario: Após 96 horas a enduração começa a involuir, embora em situações excepcionais de falta a leitura possa ser estendida no máximo até 96 horas.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-12-slsBql
+        enunciado: |-
+          Recém-nascido coabitante de mãe com tuberculose pulmonar bacilífera realiza quimioprofilaxia primária com isoniazida por três meses. A Prova Tuberculínica (PT) ao final do período resulta em 2 mm.
+
+          De acordo com as diretrizes, qual é a conduta indicada para o bebê?
+        alternativas:
+          - id: alt_A
+            texto: Suspender isoniazida e aplicar BCG
+            comentario: Com PT < 5 mm após três meses de quimioprofilaxia, afasta-se a infecção tuberculosa, devendo-se interromper a medicação e vacinar a criança com BCG.
+          - id: alt_B
+            texto: Manter a isoniazida por meses
+            comentario: A manutenção da medicação por mais três meses só estaria indicada se a PT após os primeiros três meses fosse reativa (≥ 5 mm).
+          - id: alt_C
+            texto: Iniciar o esquema básico completo
+            comentario: O Esquema Básico é indicado para doença ativa, e a PT não reativa confirma a ausência de viragem tuberculínica ou infecção no bebê.
+          - id: alt_D
+            texto: Repetir a prova tuberculínica imediatamente
+            comentario: Não há indicação de retestagem imediata quando o fluxo de prevenção primária foi seguido corretamente no prazo de três meses.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-13-76aXYb
+        enunciado: Qual é a duração padronizada do esquema de tratamento da Infecção Latente pelo M. tuberculosis (ILTB) quando utilizada a rifampicina?
+        alternativas:
+          - id: alt_A
+            texto: Quatro meses
+            comentario: O tratamento da ILTB com rifampicina consiste na administração diária por um período de quatro meses (mínimo de 120 doses).
+          - id: alt_B
+            texto: Seis meses
+            comentario: O período de seis meses é a duração mínima para a opção terapêutica com isoniazida (180 doses), não para o regime de rifampicina.
+          - id: alt_C
+            texto: Nove meses
+            comentario: Nove meses é a duração preferencial do esquema de isoniazida com 270 doses no tratamento da ILTB.
+          - id: alt_D
+            texto: Doze meses
+            comentario: Doze meses é o limite de tempo estipulado para que o paciente complete as 270 doses do esquema estendido com isoniazida.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-14-o18j1y
+        enunciado: |-
+          Paciente de 20 anos apresenta quadro de pleurite exsudativa linfocítica. É realizada toracocentese diagnóstica e enviado material para análise.
+
+          Qual achado é esperado na baciloscopia direta do líquido pleural na maioria dos casos de tuberculose pleural?
+        alternativas:
+          - id: alt_A
+            texto: Baixo rendimento da baciloscopia direta
+            comentario: Devido ao caráter paucibacilar e imunológico do derrame pleural tuberculoso, a baciloscopia direta no líquido pleural apresenta rendimento inferior a 5%.
+          - id: alt_B
+            texto: Pesquisa de BAAR sempre positiva
+            comentario: Ao contrário do empiema tuberculoso, a pleurite tuberculosa exsudativa apresenta contagem bacteriana extremamente baixa no fluido.
+          - id: alt_C
+            texto: Predomínio absoluto de neutrófilos polimorfonucleares
+            comentario: O derrame pleural tuberculoso típico é caracterizado por exsudato com nítido predomínio linfocítico (acima de 80%).
+          - id: alt_D
+            texto: Ausência completa de proteínas solúveis
+            comentario: Trata-se de um exsudato inflamatório denso com altos níveis de proteínas no líquido pleural.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-15-4G41W8
+        enunciado: Na tuberculose óssea (Mal de Pott), qual região da coluna vertebral é acometida com maior frequência?
+        alternativas:
+          - id: alt_A
+            texto: Torácica baixa
+            comentario: A tuberculose vertebral afeta preferencialmente a coluna torácica baixa e a coluna lombar, apresentando dor e alteração local.
+          - id: alt_B
+            texto: Cervical alta
+            comentario: A coluna cervical é um local de acometimento bem menos frequente no Mal de Pott quando comparada ao segmento toracolombar.
+          - id: alt_C
+            texto: Sacral distal
+            comentario: O segmento sacro-coccígeo é raramente atingido isoladamente nas formas primárias de tuberculose óssea.
+          - id: alt_D
+            texto: Cóccix terminal
+            comentario: Acometimentos do cóccix representam exceções extremas e não o padrão epidemiológico usual da doença de Pott.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-16-0fTc4B
+        enunciado: |-
+          Um profissional de saúde com sintomas respiratórios realiza TRM-TB + cultura + TS como investigação inicial. O TRM-TB identifica presença de Mycobacterium tuberculosis com detecção de resistência à rifampicina.
+
+          De acordo com o algoritmo para populações de maior vulnerabilidade, qual é a conduta imediata recomendada?
+        alternativas:
+          - id: alt_A
+            texto: Repetir o TRM-TB e encaminhar referência terciária
+            comentario: Em casos com resistência à rifampicina detectada no TRM-TB inicial, indica-se a coleta de nova amostra para repetir o TRM-TB e o encaminhamento imediato do paciente para a referência terciária.
+          - id: alt_B
+            texto: Iniciar o esquema básico padronizado seis meses
+            comentario: O Esquema Básico é inadequado quando há resistência identificada à rifampicina, sob risco de ampliação de resistência.
+          - id: alt_C
+            texto: Aguardar o resultado da cultura tomar conduta
+            comentario: O encaminhamento para o serviço de referência e a repetição do teste molecular não devem ser atrasados aguardando o resultado final da cultura.
+          - id: alt_D
+            texto: Dar alta e manter acompanhamento ambulatorial simples
+            comentario: Trata-se de um quadro confirmado de tuberculose com provável drogarresistência que demanda manejo especializado imediato.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-17-H7istv
+        enunciado: Qual é o principal objetivo bacteriológico da inclusão do etambutol na fase intensiva do Esquema Básico de tratamento da tuberculose?
+        alternativas:
+          - id: alt_A
+            texto: Prevenir emergência de mutantes bacilares resistentes
+            comentario: O etambutol atua como fármaco bacteriostático acompanhante na fase de ataque para proteger os fármacos mais potentes e impedir a seleção de cepas resistentes.
+          - id: alt_B
+            texto: Acelerar a esterilização das lesões caseosas
+            comentario: A ação esterilizante principal dentro dos granulomas e lesões caseosas é exercida precipuamente pela rifampicina e pirazinamida.
+          - id: alt_C
+            texto: Proporcionar ação bactericida potente em pH neutro
+            comentario: As propriedades bactericidas precoces de alta potência em pH neutro pertencem à isoniazida e à rifampicina.
+          - id: alt_D
+            texto: Reduzir ocorrência de reações adversas hepáticas
+            comentario: O etambutol não possui ação hepatoprotetora ou moduladora dos efeitos adversos das outras medicações.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-18-CNb9yd
+        enunciado: |-
+          Homem de 40 anos, contato assintomático de caso de tuberculose pulmonar bacilífera, realiza Prova Tuberculínica (PT) com leitura de 7 mm de enduração após 72 horas.
+
+          Qual é a interpretação do resultado e a classificação adequada para esse indivíduo?
+        alternativas:
+          - id: alt_A
+            texto: Resultado positivo indicativo de infecção latente
+            comentario: Em adultos contatos de casos bacilíferos, o ponto de corte para considerar a PT positiva é igual ou superior a 5 mm, confirmando a infecção latente (ILTB).
+          - id: alt_B
+            texto: Resultado negativo afastando qualquer contato prévio
+            comentario: Valores de PT a partir de 5 mm já são considerados reativos e positivos para rastreio de ILTB em contatos de tuberculose.
+          - id: alt_C
+            texto: Resultado inconclusivo necessitando obrigatoriamente nova aplicação
+            comentario: A leitura de 7 mm é precisa e milimetrada, não havendo caráter inconclusivo no valor medido.
+          - id: alt_D
+            texto: Diagnóstico definitivo de tuberculose pulmonar ativa
+            comentario: A PT isolada avalia apenas a resposta imune de exposição (infecção) e não é capaz de diagnosticar a tuberculose doença ativa.
+        gabarito: A
+  - tipo: folder
+    nome: Tuberculose - Diagnóstico e Tratamento - Clínicas
+    descricao: Apenas questões com caso clínico
+    conteudo:
+      - tipo: ME
+        id: 061026-0050-1-ZJhJJR
+        enunciado: |-
+          Paciente de 28 anos, sexo masculino, procura atendimento na Unidade Básica de Saúde que dispõe do Teste Rápido Molecular para Tuberculose (TRM-TB). Apresenta tosse produtiva há 3 semanas, febre baixa vespertina e emagrecimento de 4 kg no último mês. O resultado do TRM-TB revelou a presença do complexo <i>Mycobacterium tuberculosis</i> sem detecção de resistência à rifampicina.
+
+          De acordo com as recomendações do Ministério da Saúde para locais com acesso ao TRM-TB, qual conduta laboratorial complementar deve ser obrigatoriamente solicitada para esse caso novo?
+        alternativas:
+          - id: alt_A
+            texto: Cultura
+            comentario: Em locais com acesso ao TRM-TB, todo caso diagnosticado com tuberculose por esse teste deve realizar cultura com teste de sensibilidade para confirmação e monitoramento microbiológico.
+          - id: alt_B
+            texto: Baciloscopia
+            comentario: A baciloscopia direta não é o exame complementar indicado para confirmação após o TRM-TB positivo em casos novos, sendo reservada para o acompanhamento e controle mensal do tratamento.
+          - id: alt_C
+            texto: Histopatológico
+            comentario: O exame histopatológico é indicado prioritariamente para formas extrapulmonares ou lesões difusas que necessitem de biópsia tecidual, não sendo rotina para o diagnóstico pulmonar confirmado por TRM-TB.
+          - id: alt_D
+            texto: Sorologia
+            comentario: Sorologias genéricas não são utilizadas para o diagnóstico bacteriológico da tuberculose pulmonar ativa.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-2-eVjiJC
+        enunciado: |-
+          Paciente de 42 anos, sexo masculino, sem histórico conhecido de comorbidades, procura pronto atendimento por apresentar dor torácica ventilatório-dependente à direita há 2 semanas, acompanhada de febre baixa, astenia e inapetência. A radiografia de tórax evidencia derrame pleural de moderado volume à direita, sem lesões parenquimatosas visíveis. A toracocentese diagnóstica revela líquido pleural amarelado do tipo exsudato, com contagem celular mostrando predomínio de linfócitos e raros mesoteliócitos.
+
+          Qual marcador enzimático no líquido pleural é aceito como critério auxiliar de elevada sensibilidade e especificidade para o diagnóstico de pleurite tuberculosa?
+        alternativas:
+          - id: alt_A
+            texto: ADA
+            comentario: Níveis elevados de adenosina deaminase (ADA > 40 U/L) no líquido pleural, especialmente na presença de exsudato linfocítico, são indicadores clássicos de pleurite tuberculosa.
+          - id: alt_B
+            texto: PCR
+            comentario: A proteína C-reativa é um marcador inflamatório sistêmico inespecífico e não constitui o critério enzimático diagnóstico específico para o líquido pleural na TB.
+          - id: alt_C
+            texto: LDH
+            comentario: A desidrogenase lática (LDH) auxilia na diferenciação entre transudato e exsudato (critérios de Light), mas não confirma a etiologia tuberculosa da pleurisia.
+          - id: alt_D
+            texto: Procalcitonina
+            comentario: A dosagem de procalcitonina é utilizada no manejo de infecções bacterianas agudas e sepse, não sendo o marcador padrão para tuberculose pleural.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-3-pikdgk
+        enunciado: |-
+          Menino de 4 anos é levado à consulta pela mãe devido a quadro de tosse persistente há 3 semanas, febre vespertina diária e perda de peso acentuada. A mãe relata que o pai da criança reside no mesmo domicílio e iniciou tratamento para tuberculose pulmonar bacilífera há 1 mês. Ao exame radiológico de tórax da criança, observa-se condensação em lobo médio direito mantida há mais de 2 semanas, sem melhora após uso prévio de amoxicilina.
+
+          Considerando o sistema de pontuação (escore) preconizado pelo Ministério da Saúde para o diagnóstico de tuberculose pulmonar em crianças com baciloscopia negativa ou TRM-TB não detectado, qual é a pontuação a partir da qual o diagnóstico é considerado possível e orienta-se iniciar o tratamento a critério médico?
+        alternativas:
+          - id: alt_A
+            texto: 30 pontos
+            comentario: Uma pontuação entre 30 e 35 pontos no escore infantil indica diagnóstico possível de tuberculose, orientando o início da terapêutica a critério médico.
+          - id: alt_B
+            texto: 15 pontos
+            comentario: A pontuação de 15 pontos é insuficiente para indicar o tratamento da tuberculose na infância, exigindo continuidade da investigação.
+          - id: alt_C
+            texto: 40 pontos
+            comentario: A pontuação igual ou superior a 40 pontos classifica a doença como muito provável, enquanto a faixa de 30 a 35 pontos já permite a indicação a critério médico.
+          - id: alt_D
+            texto: 50 pontos
+            comentario: Essa pontuação excede o limiar de decisão clínica do escore, que estabelece 30 a 35 como possível e acima de 40 como muito provável.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-4-Lgcvy9
+        enunciado: |-
+          Homem de 38 anos, em acompanhamento por infecção pelo HIV com contagem recente de linfócitos T CD4+ de 180 céls/mm³, recebe o diagnóstico de tuberculose pulmonar ativa após investigação de tosse e febre vespertina. Ele é virgem de tratamento antirretroviral (TARV) e não tem antecedentes de tratamento para tuberculose.
+
+          Com relação às diretrizes de triagem diagnóstica para HIV em indivíduos recém-diagnosticados com tuberculose, qual modalidade de teste é prioritariamente recomendada para oferta imediata no próprio serviço de saúde?
+        alternativas:
+          - id: alt_A
+            texto: Teste rápido
+            comentario: O teste rápido para HIV por punção digital é prioritariamente recomendado para ser oferecido a todas as pessoas com diagnóstico de TB no momento do diagnóstico ou o mais rápido possível.
+          - id: alt_B
+            texto: Carga viral
+            comentario: A quantificação da carga viral do HIV é um exame de monitoramento terapêutico e acompanhamento, não sendo a abordagem de triagem e diagnóstico inicial preconizada.
+          - id: alt_C
+            texto: Western blot
+            comentario: O Western blot é um ensaio confirmatório laboratorial tradicional, porém os algoritmos atuais priorizam testes rápidos para diagnóstico célere no ponto de atenção.
+          - id: alt_D
+            texto: Imunoeletroforese
+            comentario: A imunoeletroforese não faz parte dos fluxogramas padronizados para o diagnóstico da infecção pelo HIV em pacientes com tuberculose.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-5-YrVeMU
+        enunciado: |-
+          Homem de 50 anos com diagnóstico de tuberculose pulmonar inicia o tratamento ambulatorial com o Esquema Básico (RHZE) em doses fixas combinadas. Durante o segundo mês da fase intensiva, o paciente comparece à Unidade Básica de Saúde queixando-se de dor articular moderada em joelhos e tornozelos. A avaliação laboratorial demonstra hiperuricemia isolada, sem alteração de função renal ou enzimas hepáticas.
+
+          Qual fármaco da fase intensiva do Esquema Básico é reconhecido como o principal indutor de hiperuricemia e artralgia?
+        alternativas:
+          - id: alt_A
+            texto: Pirazinamida
+            comentario: A pirazinamida inibe a excreção renal de ácido úrico, sendo o fármaco mais frequentemente associado à hiperuricemia e dores articulares no Esquema Básico.
+          - id: alt_B
+            texto: Rifampicina
+            comentario: A rifampicina está associada a reações como alteração da cor da urina, trombocitopenia e nefrite intersticial, mas não à hiperuricemia por inibição do ácido úrico.
+          - id: alt_C
+            texto: Isoniazida
+            comentario: A isoniazida causa comumente neuropatia periférica e hepatotoxicidade, não sendo a causa principal de hiperuricemia e artralgia associada.
+          - id: alt_D
+            texto: Etambutol
+            comentario: Embora o etambutol possa contribuir discretamente para alterações de ácido úrico, a pirazinamida é o agente clássico e de maior relevância para essa reação adversa.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-6-w4XOYh
+        enunciado: |-
+          Paciente feminina de 29 anos dá entrada no serviço hospitalar com quadro de febre, cefaleia holocraniana progressiva, alteração do comportamento e sonolência há 3 semanas. Ao exame físico, apresenta rigidez de nuca e paralisia do VI par craniano à esquerda. A análise do líquor e exames de imagem confirmam o diagnóstico de tuberculose meningoencefálica.
+
+          De acordo com o protocolo nacional para o tratamento da tuberculose meningoencefálica em adultos e adolescentes (≥ 10 anos de idade), qual é a duração recomendada da fase de manutenção com Rifampicina e Isoniazida (RH)?
+        alternativas:
+          - id: alt_A
+            texto: Dez meses de duração
+            comentario: O esquema padronizado para TB meningoencefálica é 2RHZE/10RH, perfazendo 2 meses de fase intensiva e 10 meses de fase de manutenção (total de 12 meses).
+          - id: alt_B
+            texto: Quatro meses de duração
+            comentario: A fase de manutenção de quatro meses (2RHZE/4RH) destina-se às formas pulmonares e extrapulmonares habituais, não sendo suficiente para formas neurológicas.
+          - id: alt_C
+            texto: Seis meses de duração
+            comentario: A duração de seis meses corresponde ao tempo total do tratamento padrão da tuberculose pulmonar, e não à fase de manutenção da TB meningoencefálica.
+          - id: alt_D
+            texto: Oito meses de duração
+            comentario: A fase de manutenção para formas meníngeas é estendida para dez meses a fim de garantir a esterilização no sistema nervoso central.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-7-ROqeH3
+        enunciado: |-
+          Homem de 35 anos, vivendo com HIV, é diagnosticado com tuberculose pulmonar bacilífera. Ele é virgem de Terapia Antirretroviral (TARV) e os exames laboratoriais iniciais mostram uma contagem de linfócitos T CD4+ de 30 céls/mm³, caracterizando imunodeficiência avançada. O tratamento antituberculose com o Esquema Básico é iniciado imediatamente.
+
+          Segundo as recomendações do Ministério da Saúde para pacientes coinfectados TB-HIV com contagem de LT-CD4+ < 50 céls/mm³, em quanto tempo após o início do tratamento da tuberculose deve ser introduzida a TARV?
+        alternativas:
+          - id: alt_A
+            texto: Em até duas semanas
+            comentario: Em pacientes com tuberculose e imunodeficiência grave (CD4 < 50 céls/mm³), a TARV deve ser iniciada precocemente, em até 2 semanas, para reduzir a mortalidade.
+          - id: alt_B
+            texto: Na oitava semana terapêutica
+            comentario: O início do TARV na 8ª semana (início da fase de manutenção) é indicado para pacientes com contagem de CD4 ≥ 50 céls/mm³ sem sinais de gravidade.
+          - id: alt_C
+            texto: Após seis meses completos
+            comentario: Aguardar o término do tratamento da tuberculose aumenta drasticamente a mortalidade por infecções oportunistas em pacientes graves.
+          - id: alt_D
+            texto: No mesmo dia inicial
+            comentario: O início simultâneo no mesmo dia é contraindicado devido ao elevado risco de sobreposição de reações adversas, interações e piora da adesão.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-8-x1OMpT
+        enunciado: |-
+          Mulher de 26 anos, primigesta na 14ª semana de gestação, com pré-natal em andamento, apresenta quadro confirmado de tuberculose pulmonar cavitária. É iniciado o tratamento com o Esquema Básico (RHZE) nas doses habituais, sem contraindicações identificadas.
+
+          Para prevenir a ocorrência de toxicidade neurológica no feto e neuropatia periférica na mãe devido ao uso do componente isoniazida do esquema básico, qual suplementação deve ser associada?
+        alternativas:
+          - id: alt_A
+            texto: Suplementação diária de piridoxina
+            comentario: A piridoxina (vitamina B6) na dose de 50 mg/dia deve ser administrada a gestantes em uso de isoniazida para prevenir neuropatia periférica e neurotoxicidade fetal.
+          - id: alt_B
+            texto: Administração semanal de ácido fólico
+            comentario: O ácido fólico é utilizado na prevenção de defeitos do tubo neural no início da gestação, mas não previne a neuropatia induzida pela isoniazida.
+          - id: alt_C
+            texto: Adição quinzenal de cianocobalamina
+            comentario: A cianocobalamina (vitamina B12) trata anemias megaloblásticas e neuropatias específicas, mas a vitamina antagonizada pela isoniazida é a B6.
+          - id: alt_D
+            texto: Suplementação contínua de tiamina
+            comentario: A tiamina (vitamina B1) previne a encefalopatia de Wernicke e beribéri, não interferindo no mecanismo toxicológico periférico da isoniazida.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-9-vE6tuM
+        enunciado: |-
+          Paciente masculino de 55 anos, portador de diabetes mellitus tipo 2, encontra-se no segundo mês de tratamento para tuberculose pulmonar com o Esquema Básico. Durante a consulta mensal, relata sensação de dormência, formigamento em 'bota e luva' e dores em queimação nas extremidades dos membros inferiores.
+
+          Qual medicamento do Esquema Básico é o principal responsável pelo desenvolvimento desta alteração neurológica periférica, cuja prevenção é feita com vitamina B6?
+        alternativas:
+          - id: alt_A
+            texto: Isoniazida usada no esquema
+            comentario: A isoniazida interfere no metabolismo da piridoxina, sendo a causa mais comum de neuropatia periférica entre os fármacos do Esquema Básico.
+          - id: alt_B
+            texto: Rifampicina contida no comprimido
+            comentario: A rifampicina associa-se a reações de hipersensibilidade e toxicidade hepática, mas raramente provoca neuropatia periférica direta.
+          - id: alt_C
+            texto: Pirazinamida presente na dose
+            comentario: A pirazinamida provoca dores articulares por hiperuricemia e hepatotoxicidade, sem relação direta com neuropatia sensotimoril periférica.
+          - id: alt_D
+            texto: Etambutol administrado na fase
+            comentario: O etambutol pode ocasionar neurite óptica como efeito adverso clássico, enquanto a neuropatia periférica por ele é incomum se comparada à isoniazida.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-10-4JhBGQ
+        enunciado: |-
+          Homem de 45 anos, sem histórico de tratamentos prévios, realiza tratamento regular para tuberculose pulmonar com o Esquema Básico (2RHZE/4RH). Na consulta do final do 2º mês, refere melhora completa dos sintomas sistêmicos e ganho ponderal. Contudo, a baciloscopia de controle de escarro do 2º mês resulta positiva (+).
+
+          Em um serviço com acesso ao Teste Rápido Molecular (TRM-TB), qual é a conduta correta indicada pelas diretrizes nacionais diante dessa baciloscopia positiva ao final da fase intensiva?
+        alternativas:
+          - id: alt_A
+            texto: Solicitar TRM-TB com cultura e prorrogar a fase intensiva.
+            comentario: Diante da baciloscopia positiva no 2º mês, deve-se solicitar o TRM-TB (para triagem rápida de resistência à rifampicina), cultura com TS e prorrogar o esquema RHZE por mais 30 dias.
+          - id: alt_B
+            texto: Suspender o tratamento atual e iniciar o esquema para multirresistência.
+            comentario: A alteração empírica imediata para o esquema de multirresistência não é indicada antes da confirmação ou triagem laboratorial de resistência mecânica.
+          - id: alt_C
+            texto: Manter o esquema básico sem alterações até o sexto mês.
+            comentario: Ignorar a positividade no 2º mês sem estender a fase intensiva nem investigar resistência coloca o paciente em risco de falência terapêutica.
+          - id: alt_D
+            texto: Substituir imediatamente a rifampicina por levofloxacino na fase atual.
+            comentario: A substituição pontual de fármacos isolados do esquema básico é contraindicada, devendo-se seguir o protocolo de investigação com TRM-TB e cultura.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-11-cu9dMo
+        enunciado: |-
+          Recém-nascido a termo, assintomático e com exame físico normal, é filho de mãe a quem foi diagnosticada tuberculose pulmonar bacilífera no momento do parto. O recém-nascido coabita na mesma residência.
+
+          De acordo com as orientações do Ministério da Saúde para a prevenção da infecção pelo <i>Mycobacterium tuberculosis</i> (quimioprofilaxia primária) em recém-nascidos expostos, qual é a conduta inicial correta em relação à vacinação com a BCG e ao tratamento preventivo?
+        alternativas:
+          - id: alt_A
+            texto: Não vacinar com BCG e iniciar quimioprofilaxia com isoniazida.
+            comentario: O recém-nascido exposto não deve receber a BCG ao nascer; deve-se iniciar a quimioprofilaxia primária (isoniazida por 3 meses) e realizar a Prova Tuberculínica após esse período.
+          - id: alt_B
+            texto: Aplicar a vacina BCG e iniciar isoniazida imediatamente.
+            comentario: Vacinar simultaneamente ao nascer reduz a eficácia da conduta e pode induzir resposta desordenada se o RN for mantido sob tratamento bactericida para TB.
+          - id: alt_C
+            texto: Realizar a prova tuberculínica antes de qualquer conduta.
+            comentario: A Prova Tuberculínica no recém-nascido ao nascer é anérgica e sem valor preditivo; deve ser realizada somente após 3 meses de profilaxia.
+          - id: alt_D
+            texto: Manter apenas acompanhamento clínico sem prescrever nenhuma medicação.
+            comentario: A omissão da quimioprofilaxia primária em recém-nascidos expostos a mães bacilíferas expõe a criança a um alto risco de desenvolvimento de formas graves de tuberculose.
+        gabarito: A
+
+      - tipo: ME
+        id: 061026-0050-12-1jpcAb
+        enunciado: |-
+          Homem de 48 anos, com histórico de etilismo crônico, em tratamento para tuberculose pulmonar com o Esquema Básico (RHZE) há 3 semanas, comparece à consulta com queixa de náuseas, vômitos e icterícia escleral manifestada há 2 dias. Os exames laboratoriais urgentes mostram aminotransferases (TGO e TGP) superiores a 6 vezes o limite superior da normalidade e elevação de bilirrubinas.
+
+          De acordo com as diretrizes nacionais para o manejo da hepatotoxicidade induzida pelos fármacos tuberculostáticos em pacientes sintomáticos/ictéricos, qual deve ser a conduta imediata?
+        alternativas:
+          - id: alt_A
+            texto: Suspender todo o tratamento até a resolução da alteração hepática.
+            comentario: A presença de icterícia ou elevação de transaminases acima de 3 a 5 vezes o limite normal exige a suspensão imediata de todo o tratamento até a normalização ou redução significativa das enzimas.
+          - id: alt_B
+            texto: Manter apenas isoniazida e pirazinamida até a normalização enzimática.
+            comentario: A isoniazida e a pirazinamida são os fármacos mais hepatotóxicos do esquema, e mantê-los durante hepatite medicamentosa aguda pode levar a insuficiência hepática grave.
+          - id: alt_C
+            texto: Reduzir as doses de todos os medicamentos pela metade.
+            comentario: A simples redução de doses não interrompe o dano hepatocelular em curso e pode ainda favorecer a seleção de cepas resistentes.
+          - id: alt_D
+            texto: Substituir a rifampicina por levofloxacino e continuar os demais.
+            comentario: Não se substitui apenas um fármaco diante de icterícia grave; o esquema completo deve ser paralisado até a resolução do quadro hepático.
+        gabarito: A
