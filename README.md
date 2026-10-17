@@ -1,6 +1,16 @@
-# 🩺 Question Engine V4.7.0 (med-questoes-geral)
+# 🩺 Question Engine V4.8.0 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
+
+## Novidades da versão 4.8.0
+
+- **Sorteio ponderado de variantes com suporte a `chance`**:
+  - Suporte ao atributo `"chance"` (número finito > 0; padrão `1` quando omitido) em nós `VARIANTES` e em assertivas variantes com mesmo `id` em questões `MVF` (antigo `CH`).
+  - Permite definir proporções relativas arbitrárias de sorteio (por exemplo, `chance: 2` na variante com gabarito V e duas variantes com gabarito F sem chance resulta exatamente em 50% de chance de V e 50% de F no sorteio).
+  - Preservação estrita ao reiniciar ou reembaralhar: a regra de peso é respeitada tanto na carga inicial (`parseContent`) quanto ao clicar em "Resetar Quiz" (`reshuffleVariants` e `reshuffleChVariants`), inclusive em sessões salvas no IndexedDB e sincronizadas pelo Firebase.
+  - Isolamento semântico estrito de `chance`: o parser aceita exclusivamente a propriedade `"chance"` para sorteio, garantindo total desacoplamento e prevenindo conflitos futuros com eventual suporte a pesos de pontuação/nota (`peso`).
+- Atualização do controle de cache (*cache-busting*) para o padrão `20261016-480` em folhas de estilo e módulos JavaScript.
+- Validação completa: 108 testes automatizados em `node --test tests/*.test.mjs` cobrindo distribuição estatística, sorteios determinísticos e ciclo de reinicialização.
 
 ## Novidades da versão 4.7.0
 
@@ -242,18 +252,36 @@ Agrupa questões que compartilham o mesmo enunciado/caso clínico base. Na inter
 ```
 
 ### 3. Variantes (`variantes`)
-Conjunto de questões equivalentes em que o sistema sorteia aleatoriamente **uma** para compor o quiz. O sistema suporta reembaralhamento posterior (`reshuffleVariants`).
+Conjunto de questões equivalentes em que o sistema sorteia **uma** para compor o quiz. O sistema suporta reembaralhamento posterior (`reshuffleVariants`) e ponderação de probabilidades via propriedade **`"chance"`** (padrão = `1` quando omitida).
+
 ```json
 {
   "tipo": "variantes",
-  "tags": ["Genética"],
-  "dificuldade": 2,
+  "tags": ["Gastroenterologia", "DRGE"],
+  "dificuldade": 1,
   "questoes": [
-    { "tipo": "ME", "enunciado": "Variação 1...", "alternativas": [...], "gabarito": "A" },
-    { "tipo": "ME", "enunciado": "Variação 2...", "alternativas": [...], "gabarito": "B" }
+    {
+      "tipo": "VF",
+      "chance": 2,
+      "enunciado": "Em um adulto jovem com sintomas típicos de DRGE e sem sinais de alarme, o diagnóstico inicial pode ser estabelecido pela avaliação clínica.",
+      "gabarito": "V"
+    },
+    {
+      "tipo": "VF",
+      "enunciado": "Em um adulto jovem com sintomas típicos de DRGE e sem sinais de alarme, o diagnóstico inicial pode ser estabelecido pela manometria esofágica.",
+      "gabarito": "F",
+      "comentario_geral": "Pela avaliação clínica."
+    },
+    {
+      "tipo": "VF",
+      "enunciado": "Em um adulto jovem com sintomas típicos de DRGE e sem sinais de alarme, o diagnóstico inicial pode ser estabelecido pela esofagografia contrastada.",
+      "gabarito": "F",
+      "comentario_geral": "Pela avaliação clínica."
+    }
   ]
 }
 ```
+*No exemplo acima, a primeira variante tem `chance: 2` e as outras duas têm `chance: 1` implícito (total = 4), resultando em 50% de chance para o gabarito V e 25% para cada alternativa de gabarito F.*
 
 ### 4. Múltipla Escolha Padrão (`ME`)
 Questão clássica de escolha única.
@@ -288,7 +316,7 @@ Item único para julgamento como V ou F.
 ```
 
 ### 6. Múltiplo Verdadeiro ou Falso (`MVF`)
-Apresenta múltiplas assertivas (I, II, III...) a serem julgadas individualmente como V ou F. Suporta **variantes internas** de assertivas (assertivas com mesmo `id` são sorteadas randomicamente).
+Apresenta múltiplas assertivas (I, II, III...) a serem julgadas individualmente como V ou F. Suporta **variantes internas** de assertivas (assertivas com mesmo `id` são sorteadas randomicamente, com suporte opcional a **`"chance"`** para sorteio ponderado por item).
 
 > **Nota de Retrocompatibilidade:** O identificador anterior `"tipo": "CH"` continua 100% suportado e aceito de forma transparente pelo sistema.
 
@@ -303,15 +331,21 @@ Apresenta múltiplas assertivas (I, II, III...) a serem julgadas individualmente
   "assertivas": [
     {
       "id": "ass_1",
+      "chance": 2,
       "texto": "A desfibrilação precoce é a intervenção prioritária.",
       "is_correct": true,
       "comentario": "Em FV/TVSP a prioridade é o choque imediato."
     },
     {
-      "id": "ass_2",
+      "id": "ass_1",
       "texto": "A administração de amiodarona deve ocorrer antes do primeiro choque.",
       "is_correct": false,
       "comentario": "A amiodarona é indicada após o 3º choque."
+    },
+    {
+      "id": "ass_2",
+      "texto": "As compressões torácicas devem ter frequência de 100 a 120 por minuto.",
+      "is_correct": true
     }
   ],
   "comentario_geral": "Ritmos chocáveis: FV e TV sem pulso."

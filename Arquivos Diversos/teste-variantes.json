@@ -32,6 +32,7 @@
       "questoes": [
         {
           "tipo": "VF",
+          "chance": 2,
           "enunciado": "[VARIANTE A - VF] O coração humano possui 4 câmaras.",
           "gabarito": "V"
         },

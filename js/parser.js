@@ -4,7 +4,47 @@
  * Identifica e processa GRUPO_JUNTAS, VARIANTES, VF, CH, ME-CH e ESCRITA.
  * Adiciona rastreamento de pastas (path).
  */
-export function parseContent(nodes, path = []) {
+/**
+ * Extrai o peso de chance de um item (padrão 1).
+ * Aceita estritamente a propriedade 'chance' (número finito > 0).
+ */
+export function getItemChance(item) {
+  if (!item || typeof item !== 'object') return 1;
+  const c = Number(item.chance);
+  return Number.isFinite(c) && c > 0 ? c : 1;
+}
+
+/**
+ * Sorteia um item de uma lista com base na propriedade 'chance' (sorteio ponderado).
+ * Se nenhum 'chance' for definido, todos têm chance 1 (sorteio uniforme).
+ */
+export function pickWeightedVariant(items, randomFn = Math.random) {
+  if (!Array.isArray(items) || items.length === 0) return null;
+  if (items.length === 1) return items[0];
+
+  let totalChance = 0;
+  for (let i = 0; i < items.length; i++) {
+    totalChance += getItemChance(items[i]);
+  }
+
+  if (totalChance <= 0) {
+    const idx = Math.floor(randomFn() * items.length);
+    return items[Math.min(items.length - 1, Math.max(0, idx))];
+  }
+
+  const threshold = randomFn() * totalChance;
+  let running = 0;
+  for (let i = 0; i < items.length; i++) {
+    running += getItemChance(items[i]);
+    if (threshold < running) {
+      return items[i];
+    }
+  }
+
+  return items[items.length - 1];
+}
+
+export function parseContent(nodes, path = [], randomFn = Math.random) {
   let list = [];
   if (!Array.isArray(nodes)) return list;
 
@@ -17,10 +57,10 @@ export function parseContent(nodes, path = []) {
     if (tipo === 'FOLDER') {
       // Adiciona o nome da pasta atual ao caminho e desce recursivamente
       const currentPath = [...path, node.nome || 'Sem Nome'];
-      list = list.concat(parseContent(node.conteudo, currentPath));
+      list = list.concat(parseContent(node.conteudo, currentPath, randomFn));
     } else if (tipo === 'GRUPO_JUNTAS') {
       // Questões dentro do grupo herdam o caminho atual
-      const groupQuestions = parseContent(node.questoes, path);
+      const groupQuestions = parseContent(node.questoes, path, randomFn);
 
       if (node.texto) {
         const groupId = 'grp_' + Math.random().toString(36).substr(2, 9);
@@ -41,8 +81,7 @@ export function parseContent(nodes, path = []) {
         const hasMultiple = node.questoes.length > 1;
         const savedNode = hasMultiple ? JSON.parse(JSON.stringify(node)) : null;
 
-        const idx = Math.floor(Math.random() * node.questoes.length);
-        const chosen = node.questoes[idx];
+        const chosen = pickWeightedVariant(node.questoes, randomFn);
 
         // Herança de propriedades
         if (!chosen.tags && node.tags) chosen.tags = [...node.tags];
@@ -51,7 +90,7 @@ export function parseContent(nodes, path = []) {
         }
 
         // Variantes herdam o caminho
-        const parsed = parseContent([chosen], path);
+        const parsed = parseContent([chosen], path, randomFn);
 
         // Salva nó original para re-sorteio (apenas se produz 1 questão na lista plana)
         if (savedNode && parsed.length === 1) {
@@ -90,8 +129,7 @@ export function parseContent(nodes, path = []) {
           if (variants.length === 1) {
             resolved.push(variants[0]);
           } else {
-            const randIdx = Math.floor(Math.random() * variants.length);
-            resolved.push(variants[randIdx]);
+            resolved.push({ ...pickWeightedVariant(variants, randomFn) });
           }
         });
 
@@ -194,7 +232,7 @@ export function parseContent(nodes, path = []) {
  * Re-sorteia variantes amplas (nós VARIANTES) a partir de _variantNode.
  * Substitui questões in-place no array.
  */
-export function reshuffleVariants(questions) {
+export function reshuffleVariants(questions, randomFn = Math.random) {
   for (let i = 0; i < questions.length; i++) {
     const q = questions[i];
     if (!q._variantNode) continue;
@@ -203,8 +241,7 @@ export function reshuffleVariants(questions) {
     const node = JSON.parse(JSON.stringify(q._variantNode));
     const path = q._variantPath || q._path || ['Raiz'];
 
-    const idx = Math.floor(Math.random() * node.questoes.length);
-    const chosen = node.questoes[idx];
+    const chosen = pickWeightedVariant(node.questoes, randomFn);
 
     // Herança de propriedades
     if (!chosen.tags && node.tags) chosen.tags = [...node.tags];
@@ -212,7 +249,7 @@ export function reshuffleVariants(questions) {
       chosen.dificuldade = node.dificuldade;
     }
 
-    const parsed = parseContent([chosen], path);
+    const parsed = parseContent([chosen], path, randomFn);
 
     if (parsed.length === 1) {
       // Preserva metadados de variante na nova questão
@@ -229,7 +266,7 @@ export function reshuffleVariants(questions) {
  * Re-sorteia variantes de assertivas CH a partir de _originalAssertivas.
  * Modifica state.questions in-place.
  */
-export function reshuffleChVariants(questions) {
+export function reshuffleChVariants(questions, randomFn = Math.random) {
   questions.forEach((q) => {
     const qTipo = (q.tipo || '').toUpperCase(); if (qTipo !== 'CH' && qTipo !== 'MVF') return;
     if (!Array.isArray(q._originalAssertivas)) return;
@@ -246,8 +283,7 @@ export function reshuffleChVariants(questions) {
       if (variants.length === 1) {
         resolved.push(variants[0]);
       } else {
-        const randIdx = Math.floor(Math.random() * variants.length);
-        resolved.push(variants[randIdx]);
+        resolved.push({ ...pickWeightedVariant(variants, randomFn) });
       }
     });
 

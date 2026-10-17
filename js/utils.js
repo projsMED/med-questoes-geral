@@ -96,4 +96,4 @@ export function formatText(text, originalQIdx, altMappings) {
 export {
   computeMvfScore, parseMemGabarito, computeMemScore,
   parseMeChGabarito, computeMeChScore, parseMqGabarito, computeMqScore
-} from './scoring.js?v=20261004-470';
+} from './scoring.js?v=20261016-480';

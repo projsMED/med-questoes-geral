@@ -1,5 +1,5 @@
-import { QUESTION_PROGRESS, questionProgress, visiblePageNumbers } from './pagination.js?v=20261004-470';
-import { readVisualPreferences } from './preferences.js?v=20261004-470';
+import { QUESTION_PROGRESS, questionProgress, visiblePageNumbers } from './pagination.js?v=20261016-480';
+import { readVisualPreferences } from './preferences.js?v=20261016-480';
 
 export class QuestionNavigation {
   constructor({ onPage, onQuestion }) {

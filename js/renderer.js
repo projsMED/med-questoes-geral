@@ -3,18 +3,18 @@ import {
   formatText,
   difficultyMap,
   questionTypeMap
-} from './utils.js?v=20261004-470';
+} from './utils.js?v=20261016-480';
 
-import { readVisualPreferences } from './preferences.js?v=20261004-470';
+import { readVisualPreferences } from './preferences.js?v=20261016-480';
 import {
   parseMeChGabarito, parseMqGabarito, computeQuestionScore,
   isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261004-470';
+} from './scoring.js?v=20261016-480';
 
-import { MatchingQuestions } from './matching-questions.js?v=20261004-470';
-import { TextHighlighter } from './highlighter.js?v=20261004-470';
-import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261004-470';
-import { QuestionNavigation } from './question-navigation.js?v=20261004-470';
+import { MatchingQuestions } from './matching-questions.js?v=20261016-480';
+import { TextHighlighter } from './highlighter.js?v=20261016-480';
+import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261016-480';
+import { QuestionNavigation } from './question-navigation.js?v=20261016-480';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
