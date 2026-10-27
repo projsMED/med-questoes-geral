@@ -1,21 +1,23 @@
+import { FolderDescriptions } from './folder-descriptions.js?v=20261027-folders-beta-2';
+import { availableFilterOptions } from './filters.js?v=20261027-folders-beta-2';
 /* ===== JS: js\renderer.js ===== */
 import {
   formatText,
   difficultyMap,
   questionTypeMap
-} from './utils.js?v=20261027-attempts-beta-1';
+} from './utils.js?v=20261027-folders-beta-2';
 
-import { readVisualPreferences } from './preferences.js?v=20261027-attempts-beta-1';
+import { readVisualPreferences } from './preferences.js?v=20261027-folders-beta-2';
 import {
   isAttemptQuestion, validAttemptQuestion, meAttemptStats,
   parseMeChGabarito, parseMqGabarito, computeQuestionScore,
   isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261027-attempts-beta-1';
+} from './scoring.js?v=20261027-folders-beta-2';
 
-import { MatchingQuestions } from './matching-questions.js?v=20261027-attempts-beta-1';
-import { TextHighlighter } from './highlighter.js?v=20261027-attempts-beta-1';
-import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261027-attempts-beta-1';
-import { QuestionNavigation } from './question-navigation.js?v=20261027-attempts-beta-1';
+import { MatchingQuestions } from './matching-questions.js?v=20261027-folders-beta-2';
+import { TextHighlighter } from './highlighter.js?v=20261027-folders-beta-2';
+import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261027-folders-beta-2';
+import { QuestionNavigation } from './question-navigation.js?v=20261027-folders-beta-2';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
@@ -23,6 +25,7 @@ export class QuizRenderer {
     this.btnSubmitAll = document.getElementById('btnSubmitAll');
     this.scoreDisplay = document.getElementById('scoreDisplay');
     this.callbacks = callbacks;
+    this.folderInfo = new FolderDescriptions();
     this.paginationNav = document.getElementById('quizPagination');
     this.previousPageButton = document.getElementById('btnPreviousPage');
     this.nextPageButton = document.getElementById('btnNextPage');
@@ -67,6 +70,7 @@ export class QuizRenderer {
   }
 
   render(state) {
+    this.folderInfo?.dismiss();
     this.highlighter.beginRender();
     this.matchingQuestions.clear();
     this._state = state;
@@ -206,6 +210,7 @@ export class QuizRenderer {
   }
 
   clear() {
+    this.folderInfo?.dismiss();
     this.matchingQuestions.clear();
     this.highlighter.beginRender();
     this.highlighter.finishRender();
@@ -302,7 +307,8 @@ export class QuizRenderer {
     const selDiffs = state.filters.diffs || [];
     const allDiffs = state.filters.allDiffs || [];
     const selTypes = state.filters.types || [];
-    const allTypes = state.filters.allTypes || Object.keys(questionTypeMap);
+    const allTypes = availableFilterOptions(state).types;
+    const selectedAvailableTypes = allTypes.filter(type => selTypes.includes(type));
     const selFolders = state.filters.folders || [];
     const allFolders = state.filters.allFolders || [];
 
@@ -310,7 +316,7 @@ export class QuizRenderer {
       selTags.length < allTags.length ||
       excludedTags.length > 0 ||
       selDiffs.length < allDiffs.length ||
-      selTypes.length < allTypes.length ||
+      selectedAvailableTypes.length < allTypes.length ||
       selFolders.length < allFolders.length;
 
     if (!isFiltered) return;
@@ -340,11 +346,11 @@ export class QuizRenderer {
       html += `<span class="filter-pill exclude-pill">Exclui: ${label}</span>`;
     });
 
-    if (selTypes.length < allTypes.length) {
-      if (selTypes.length === 0) {
+    if (selectedAvailableTypes.length < allTypes.length) {
+      if (selectedAvailableTypes.length === 0) {
         html += `<span class="filter-pill diff-pill">Nenhum tipo selecionado</span>`;
       } else {
-        selTypes.forEach((type) => {
+        selectedAvailableTypes.forEach((type) => {
           html += `<span class="filter-pill diff-pill">Tipo: ${questionTypeMap[type] || type}</span>`;
         });
       }
@@ -366,6 +372,7 @@ export class QuizRenderer {
   }
 
   createQuestionCard(qData, originalIdx, visualIdx, state) {
+    this.folderInfo?.hidePreview();
     this.matchingQuestions.clearQuestion(originalIdx);
     const wrapper = document.createElement('div');
     wrapper.className = 'question-card';
@@ -423,9 +430,7 @@ export class QuizRenderer {
 
     let foldersHtml = '';
     if (hasFolders) {
-      foldersHtml = `<div class="q-breadcrumbs${showFolders || metadataRevealed ? '' : ' hidden'}" data-metadata-kind="folders">📂 <span>${qData._path.join(
-        ' > '
-      )}</span></div>`;
+      foldersHtml = `<div class="q-breadcrumbs${showFolders || metadataRevealed ? '' : ' hidden'}" data-metadata-kind="folders"></div>`;
     }
 
     let tagsHtml = '';
@@ -485,6 +490,12 @@ export class QuizRenderer {
         <div class="${enunciadoClass}">${enunciadoTxt}</div>
       </div>
     `;
+
+    const breadcrumb = wrapper.querySelector('.q-breadcrumbs');
+    if (breadcrumb) {
+      if (!this.folderInfo) this.folderInfo = new FolderDescriptions();
+      this.folderInfo.populate(breadcrumb, qData._path, state);
+    }
 
     if (supportsHighlighter) {
       const questionTarget = { type: 'question', id: String(originalIdx) };

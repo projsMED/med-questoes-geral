@@ -12,12 +12,12 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/variables.css?v=20261027-attempts-beta-1">
-  <link rel="stylesheet" href="css/layout.css?v=20261027-attempts-beta-1">
-  <link rel="stylesheet" href="css/questions.css?v=20261027-attempts-beta-1">
-  <link rel="stylesheet" href="css/highlighter.css?v=20261027-attempts-beta-1">
-  <link rel="stylesheet" href="css/matching-questions.css?v=20261027-attempts-beta-1">
-  <link rel="stylesheet" href="css/pagination.css?v=20261027-attempts-beta-1">
+  <link rel="stylesheet" href="css/variables.css?v=20261027-folders-beta-2">
+  <link rel="stylesheet" href="css/layout.css?v=20261027-folders-beta-2">
+  <link rel="stylesheet" href="css/questions.css?v=20261027-folders-beta-2">
+  <link rel="stylesheet" href="css/highlighter.css?v=20261027-folders-beta-2">
+  <link rel="stylesheet" href="css/matching-questions.css?v=20261027-folders-beta-2">
+  <link rel="stylesheet" href="css/pagination.css?v=20261027-folders-beta-2">
 </head>
 <body>
 
@@ -66,7 +66,7 @@
           <span class="step-info">Filtrando questões das pastas selecionadas</span>
         </div>
 
-        <div class="filter-row">
+        <div class="filter-row filter-adaptive-grid">
           <div class="filter-group half">
             <div class="filter-group-header">
               <h3>Tags a incluir</h3>
@@ -85,9 +85,6 @@
             </div>
             <div id="excludedTagList" class="filter-grid"></div>
           </div>
-        </div>
-
-        <div class="filter-row">
           <div class="filter-group half">
             <h3>Filtrar por Dificuldade</h3>
             <div id="diffList" class="filter-grid"></div>
@@ -99,6 +96,7 @@
           </div>
         </div>
 
+        <p class="filter-empty-notice hidden" role="status"></p>
         <div class="generate-action">
           <button class="btn btn-submit" id="btnGenerate">Gerar Quiz</button>
           <button class="btn btn-danger btn-sm" id="btnDeleteFilter" style="margin-top:10px">Cancelar / Deletar</button>
@@ -538,7 +536,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20261027-attempts-beta-1';
+  const APP_ASSET_VERSION = '20261027-folders-beta-2';
   const moduleAssets = [
     'main.js',
     'store.js',
@@ -547,6 +545,7 @@
     'scoring.js',
     'release-config.js',
     'renderer.js',
+    'folder-descriptions.js',
     'highlighter.js',
     'preferences.js',
     'pagination.js',

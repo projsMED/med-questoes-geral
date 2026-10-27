@@ -209,3 +209,59 @@ test('quiz vazio mantém listas vazias e ações de tags desabilitadas', () => {
   assert.equal(f.element('tagList').children.length, 0);
   f.filters.dispose();
 });
+
+function adaptiveFixture(qs) {
+  const f = setup();
+  f.app.state.questions = qs;
+  f.app.state.filters = createFilterState();
+  f.app.state.filters.folders = [...new Set(qs.map(q => q._path.join(' > ')))];
+  for (const id of ['tagList', 'excludedTagList', 'diffList', 'typeList']) {
+    const group = new MatchingElement(); group.className = 'filter-group';
+    group.appendChild(f.element(id)); f.element('filterStep2').appendChild(group);
+  }
+  const empty = new MatchingElement(); empty.className = 'filter-empty-notice';
+  f.element('filterStep2').appendChild(empty);
+  f.filters.extractFiltersData(); f.filters.prepareStep2();
+  return f;
+}
+const plainQuestion = (tipo = 'ME', folder = 'A') => ({ tipo, _path: [folder] });
+test('filtros ocultam metadados uniformes e tipos ausentes; o restante ocupa os espaços', () => {
+  const f = adaptiveFixture([plainQuestion(), plainQuestion(), plainQuestion('MEM')]);
+  for (const id of ['tagList', 'excludedTagList', 'diffList']) {
+    assert.equal(f.element(id).closest('.filter-group').classList.contains('hidden'), true);
+  }
+  assert.equal(f.element('typeList').closest('.filter-group').classList.contains('hidden'), false);
+  assert.equal(f.element('typeList').querySelectorAll('input').length, 2);
+  assert.doesNotMatch(f.element('typeList').textContent, /\(0\)/);
+  assert.equal(f.element('btnGenerate').textContent, 'Gerar quiz');
+  f.filters.dispose();
+});
+test('filtro único sem restrição se oculta e mostra a quantidade disponível', () => {
+  const f = adaptiveFixture([plainQuestion(), plainQuestion()]);
+  assert.equal(f.element('typeList').closest('.filter-group').classList.contains('hidden'), true);
+  const notice = f.element('filterStep2').querySelector('.filter-empty-notice');
+  assert.equal(notice.classList.contains('hidden'), false);
+  assert.match(notice.textContent, /2 questões disponíveis/);
+  f.filters.dispose();
+});
+test('restrições salvas continuam visíveis mesmo com uma única opção', () => {
+  const f = adaptiveFixture([plainQuestion()]);
+  f.app.state.filters.tags = []; f.app.state.filters.diffs = []; f.app.state.filters.types = [];
+  f.filters.prepareStep2();
+  for (const id of ['tagList', 'diffList', 'typeList']) {
+    assert.equal(f.element(id).closest('.filter-group').classList.contains('hidden'), false);
+  }
+  assert.equal(f.element('btnGenerate').textContent, 'Gerar quiz filtrado');
+  f.filters.dispose();
+});
+test('disponibilidade segue as pastas e não desaparece ao desmarcar tipos', () => {
+  const f = adaptiveFixture([plainQuestion(), plainQuestion('MEM'), plainQuestion('VF', 'B')]);
+  f.app.state.filters.folders = ['A']; f.filters.prepareStep2();
+  assert.equal(f.element('typeList').querySelectorAll('input').length, 2);
+  f.check('typeList', 'MEM', false); f.check('typeList', 'ME', false);
+  assert.equal(f.element('typeList').querySelectorAll('input').length, 2);
+  f.app.state.filters.folders = ['B']; f.filters.prepareStep2();
+  assert.equal(f.element('typeList').querySelectorAll('input').length, 1);
+  assert.equal(f.element('typeList').querySelector('input').value, 'VF');
+  f.filters.dispose();
+});

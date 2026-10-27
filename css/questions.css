@@ -1115,3 +1115,16 @@ html.dark-mode .result-section {
 .attempt-results th, .attempt-results td { text-align: left; padding: 6px; border-bottom: 1px solid var(--border); }
 .alt-wrapper.attempt-wrong { flex-direction: column; gap: 0; border-radius: 8px; }
 .attempt-wrong .alt-label { background: var(--error-bg); border-color: var(--error-text); cursor: default; }
+
+.q-breadcrumbs { overflow-wrap: anywhere; }
+.folder-description-link { font: inherit; font-weight: 500; color: inherit; background: transparent; border: 0; padding: 0; cursor: pointer; text-align: left; }
+.folder-description-link:hover, .folder-description-link:focus-visible { color: var(--primary); text-decoration: underline; }
+.folder-description-link:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: 2px; }
+.folder-description-tooltip { position: fixed; z-index: 30000; box-sizing: border-box; max-width: min(420px, calc(100vw - 16px)); max-height: min(260px, 65vh); overflow: hidden; padding: 12px; color: var(--text); background: var(--card); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 4px 18px var(--shadow-color); white-space: pre-line; pointer-events: none; font-size: .9rem; }
+.folder-description-dialog { width: min(780px, calc(100vw - 32px)); max-width: none; max-height: 90vh; box-sizing: border-box; padding: 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); color: var(--text); box-shadow: 0 8px 32px var(--shadow-color); }
+.folder-description-dialog::backdrop { background: rgba(0,0,0,.5); }
+.folder-description-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.folder-description-header h3 { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.folder-description-header button { flex-shrink: 0; }
+.folder-description-path { color: var(--text-secondary); overflow-wrap: anywhere; font-size: .85rem; }
+.folder-description-dialog iframe { display: block; width: 100%; height: min(60vh, 600px); border: 0; background: var(--card); }

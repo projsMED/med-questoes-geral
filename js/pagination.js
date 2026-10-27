@@ -1,5 +1,5 @@
-import { appStorage } from './release-config.js?v=20261027-attempts-beta-1';
-import { computeQuestionScore } from './scoring.js?v=20261027-attempts-beta-1';
+import { appStorage } from './release-config.js?v=20261027-folders-beta-2';
+import { computeQuestionScore } from './scoring.js?v=20261027-folders-beta-2';
 
 export const QUESTION_PROGRESS = {
   empty: { label: 'Não respondida', symbol: '○' },

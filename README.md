@@ -1,3 +1,9 @@
+## Atualização beta — filtros e descrições de pastas
+
+- A segunda etapa oculta opções com zero questões e blocos que não distinguem o conjunto das pastas selecionadas. Restrições salvas permanecem acessíveis; desmarcar filtros não faz suas opções desaparecerem. O layout redistribui o espaço e, sem filtros úteis, mostra a quantidade disponível.
+- Cada segmento do caminho de uma questão com descrição oferece prévia textual por mouse/foco e modal por clique/toque. Pastas sem descrição continuam como texto. O modal preserva HTML/CSS em um iframe isolado, com fechamento pelo botão, Escape ou clique externo e suporte a telas pequenas.
+- Os caminhos completos distinguem pastas homônimas. Descrições ausentes em snapshots antigos são recuperadas do JSON original da sessão; exportação/importação não exige novo formato.
+
 ## V4.9.0 Beta — modo de tentativas
 
 Implementação na branch `beta-tentativas`, baseada na `main` em `4667b63`.

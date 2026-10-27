@@ -1,5 +1,5 @@
 // Filtros do quiz: esquema, seleção por grupos, contagens e controles em duas etapas.
-import { difficultyMap, questionTypeMap, questionTypes } from './utils.js?v=20261027-attempts-beta-1';
+import { difficultyMap, questionTypeMap, questionTypes } from './utils.js?v=20261027-folders-beta-2';
 
 export function createFilterState() {
   return {
@@ -170,6 +170,32 @@ export function selectQuestionGroups(state) {
   return { groups: finalIndices, forcedIndices };
 }
 
+// Disponibilidade é baseada nas pastas, nunca nas caixas que estão sendo editadas.
+export function availableFilterOptions(state) {
+  const f = state.filters;
+  const positive = (values, counts) => values.filter(value => (counts[value] || 0) > 0);
+  return {
+    tags: positive(f.allTags || [], f.counts?.tags || {}),
+    diffs: positive(f.allDiffs || [], f.counts?.diffs || {}),
+    types: positive(f.allTypes || questionTypes, f.counts?.types || {})
+  };
+}
+
+export function filterVisibility(state) {
+  const f = state.filters, options = availableFilterOptions(state);
+  const total = state.questions.filter((q, idx) => !state.deletedIndices?.includes(idx) &&
+    f.folders.includes((q._path || ['Raiz']).join(' > '))).length;
+  const tagsRestricted = options.tags.some(tag => !f.tags.includes(tag) || f.excludedTags.includes(tag));
+  const diffsRestricted = options.diffs.some(diff => !f.diffs.includes(diff));
+  const typesRestricted = options.types.some(type => !f.types.includes(type));
+  return {
+    tags: options.tags.length > 0 && (tagsRestricted || options.tags.some(tag => f.counts.tags[tag] < total)),
+    diffs: options.diffs.length > 0 && (options.diffs.length > 1 || diffsRestricted),
+    types: options.types.length > 0 && (options.types.length > 1 || typesRestricted),
+    total
+  };
+}
+
 export class QuizFilters {
   constructor({ elements, getState, onChange, onGenerate, onInfo }) {
     this.elements = elements;
@@ -317,6 +343,7 @@ export class QuizFilters {
 
   renderFilterUI() {
     this._clearListeners('options');
+    const options = availableFilterOptions(this.state);
     const createCheckbox = (
       value,
       labelBase,
@@ -357,7 +384,7 @@ export class QuizFilters {
     };
 
     this.elements.tagList.innerHTML = '';
-    this.state.filters.allTags.forEach((tag) => {
+    options.tags.forEach((tag) => {
       const label = tag === '__NO_TAG__' ? 'Sem tag' : tag;
       createCheckbox(
         tag,
@@ -375,7 +402,7 @@ export class QuizFilters {
     });
 
     this.elements.excludedTagList.innerHTML = '';
-    this.state.filters.allTags.forEach((tag) => {
+    options.tags.forEach((tag) => {
       const label = tag === '__NO_TAG__' ? 'Sem tag' : tag;
       createCheckbox(
         tag,
@@ -393,7 +420,7 @@ export class QuizFilters {
     });
 
     this.elements.diffList.innerHTML = '';
-    this.state.filters.allDiffs.forEach((diff) => {
+    options.diffs.forEach((diff) => {
       const label =
         diff === '__NO_DIFF__'
           ? 'Sem dificuldade'
@@ -408,7 +435,7 @@ export class QuizFilters {
     });
 
     this.elements.typeList.innerHTML = '';
-    this.state.filters.allTypes.forEach((type) => {
+    options.types.forEach((type) => {
       createCheckbox(
         type,
         questionTypeMap[type] || type,
@@ -437,6 +464,16 @@ export class QuizFilters {
     this.elements.btnToggleAllExcludedTags.disabled = noTags;
     this.elements.btnExcludeNotIncludedTags.disabled = noTags;
 
+    const visibility = filterVisibility(this.state);
+    for (const [list, visible] of [[this.elements.tagList, visibility.tags], [this.elements.excludedTagList, visibility.tags],
+        [this.elements.diffList, visibility.diffs], [this.elements.typeList, visibility.types]]) {
+      list.closest('.filter-group')?.classList.toggle('hidden', !visible);
+    }
+    const empty = this.elements.filterStep2.querySelector('.filter-empty-notice');
+    if (empty) {
+      empty.classList.toggle('hidden', visibility.tags || visibility.diffs || visibility.types);
+      empty.textContent = `${visibility.total} questões disponíveis nas pastas selecionadas.`;
+    }
     this.updateGenerateButton();
   }
 
@@ -484,8 +521,7 @@ export class QuizFilters {
       this.state.filters.tags.length === this.state.filters.allTags.length;
     const allDiffsSel =
       this.state.filters.diffs.length === this.state.filters.allDiffs.length;
-    const allTypesSel =
-      this.state.filters.types.length === this.state.filters.allTypes.length;
+    const allTypesSel = availableFilterOptions(this.state).types.every(type => this.state.filters.types.includes(type));
 
     this.elements.btnGenerate.textContent =
       !allTagsSel ||
@@ -505,7 +541,8 @@ export class QuizFilters {
     const folderSet = new Set();
     this.state.filters.counts.folders = {};
 
-    this.state.questions.forEach((q) => {
+    this.state.questions.forEach((q, idx) => {
+      if (this.state.deletedIndices?.includes(idx)) return;
       const pathStr = q._path.join(' > ');
       folderSet.add(pathStr);
       this.state.filters.counts.folders[pathStr] =
@@ -538,6 +575,7 @@ export class QuizFilters {
     this.elements.filterStep2.classList.remove('hidden');
 
     const selFolders = new Set(this.state.filters.folders);
+    const hadDiffRestriction = this.state.filters.allDiffs.some(diff => !this.state.filters.diffs.includes(diff));
     const tagsSet = new Set();
     const diffsSet = new Set();
 
@@ -545,7 +583,8 @@ export class QuizFilters {
     this.state.filters.counts.diffs = {};
     this.state.filters.counts.types = {};
 
-    this.state.questions.forEach((q) => {
+    this.state.questions.forEach((q, idx) => {
+      if (this.state.deletedIndices?.includes(idx)) return;
       const pathStr = q._path.join(' > ');
       if (!selFolders.has(pathStr)) return;
 
@@ -606,7 +645,7 @@ export class QuizFilters {
     ))];
 
     if (
-      this.state.filters.diffs.length === 0 &&
+      !hadDiffRestriction && this.state.filters.diffs.length === 0 &&
       this.state.filters.allDiffs.length > 0
     ) {
       this.state.filters.diffs = [...this.state.filters.allDiffs];

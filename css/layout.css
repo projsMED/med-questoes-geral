@@ -1222,3 +1222,7 @@ html.dark-mode .sync-indicator.syncing {
     padding: 10px;
   }
 }
+
+.filter-adaptive-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.filter-adaptive-grid .filter-group.half { min-width: 0; }
+.filter-empty-notice { padding: 14px; color: var(--text-secondary); background: var(--surface-raised); border-radius: 6px; }

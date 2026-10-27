@@ -4,20 +4,20 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261027-attempts-beta-1';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261027-attempts-beta-1';
-import { shuffleArray } from './utils.js?v=20261027-attempts-beta-1';
+} from './store.js?v=20261027-folders-beta-2';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261027-folders-beta-2';
+import { shuffleArray } from './utils.js?v=20261027-folders-beta-2';
 import {
   isAttemptQuestion, validAttemptQuestion, recordMeAttempt,
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261027-attempts-beta-1';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261027-attempts-beta-1';
-import { QuizRenderer } from './renderer.js?v=20261027-attempts-beta-1';
-import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261027-attempts-beta-1';
-import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261027-attempts-beta-1';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261027-attempts-beta-1';
-import { PaginationSettings } from './pagination.js?v=20261027-attempts-beta-1';
+} from './scoring.js?v=20261027-folders-beta-2';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261027-folders-beta-2';
+import { QuizRenderer } from './renderer.js?v=20261027-folders-beta-2';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261027-folders-beta-2';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261027-folders-beta-2';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261027-folders-beta-2';
+import { PaginationSettings } from './pagination.js?v=20261027-folders-beta-2';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -394,8 +394,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261027-attempts-beta-1');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261027-attempts-beta-1');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261027-folders-beta-2');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261027-folders-beta-2');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
