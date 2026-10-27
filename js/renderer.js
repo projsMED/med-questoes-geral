@@ -1905,14 +1905,20 @@ export class QuizRenderer {
         html += '<table><thead><tr><th>Desfecho</th><th>Questões</th><th>Percentual</th></tr></thead><tbody>';
         for (let k = 1; k <= stats.maxAttempts; k++) {
           const count = stats.buckets[k] || 0;
+          if (count === 0) continue;
           html += `<tr><td>Acerto na ${k}ª tentativa</td><td>${count} de ${stats.count}</td><td>${fmtPct(count / stats.count * 100)}%</td></tr>`;
         }
         for (const [label, count] of [['Tentativas esgotadas', stats.exhausted], ['Encerradas antecipadamente', stats.closed]]) {
+          if (count === 0) continue;
           html += `<tr><td>${label}</td><td>${count} de ${stats.count}</td><td>${fmtPct(count / stats.count * 100)}%</td></tr>`;
         }
         html += `</tbody></table><p>Pontuação total em ME: ${fmt(stats.sum)}/${stats.count} pontos<br>Pontuação média por questão respondida: ${fmt(stats.sum / stats.count)}/1 ponto</p>`;
       }
-      html += `<p>Em tentativa: ${stats.pending} · Sem resposta ao encerrar: ${stats.blank}</p></div>`;
+      const extraCounts = [];
+      if (stats.pending > 0) extraCounts.push(`Em tentativa: ${stats.pending}`);
+      if (stats.blank > 0) extraCounts.push(`Sem resposta ao encerrar: ${stats.blank}`);
+      if (extraCounts.length) html += `<p>${extraCounts.join(' · ')}</p>`;
+      html += '</div>';
     }
 
     if (
