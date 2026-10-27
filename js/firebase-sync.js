@@ -1,5 +1,5 @@
 /* ===== JS: js/firebase-sync.js ===== */
-import { db, isLoggedIn } from './firebase-config.js?v=20261016-480';
+import { db, isLoggedIn } from './firebase-config.js?v=20261027-attempts-beta-1';
 import {
   doc, setDoc, getDoc, getDocs, deleteDoc,
   collection, writeBatch

@@ -12,7 +12,7 @@ export function loadApp(overrides = {}) {
   const element = (id) => {
     if (!elements.has(id)) elements.set(id, {
       style: {}, checked: false, disabled: false,
-      classList: { add() {}, remove() {} },
+      classList: { add() {}, remove() {}, toggle() {} },
       listeners: new Map(),
       addEventListener(type, callback) { this.listeners.set(type, callback); }
     });

@@ -4,19 +4,20 @@ import {
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261016-480';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261016-480';
-import { shuffleArray } from './utils.js?v=20261016-480';
+} from './store.js?v=20261027-attempts-beta-1';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261027-attempts-beta-1';
+import { shuffleArray } from './utils.js?v=20261027-attempts-beta-1';
 import {
+  isAttemptQuestion, validAttemptQuestion, recordMeAttempt,
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261016-480';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261016-480';
-import { QuizRenderer } from './renderer.js?v=20261016-480';
-import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261016-480';
-import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261016-480';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261016-480';
-import { PaginationSettings } from './pagination.js?v=20261016-480';
+} from './scoring.js?v=20261027-attempts-beta-1';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261027-attempts-beta-1';
+import { QuizRenderer } from './renderer.js?v=20261027-attempts-beta-1';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261027-attempts-beta-1';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261027-attempts-beta-1';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261027-attempts-beta-1';
+import { PaginationSettings } from './pagination.js?v=20261027-attempts-beta-1';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -393,8 +394,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261016-480');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261016-480');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261027-attempts-beta-1');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261027-attempts-beta-1');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
@@ -416,6 +417,22 @@ const App = {
   },
 
   bindEvents() {
+    this.refreshAttemptSettings();
+    document.getElementById('chkMeAttempts')?.addEventListener('change', (e) => {
+      if (this.attemptSettingsLocked()) return this.refreshAttemptSettings();
+      this.state.config.meAttempts = e.target.checked;
+      this.renderer.render(this.state);
+      this.refreshAttemptSettings();
+      this.save(true);
+    });
+    for (const value of ['each', 'end']) {
+      document.getElementById(value === 'each' ? 'attemptFeedbackEach' : 'attemptFeedbackEnd')?.addEventListener('change', () => {
+        if (this.attemptSettingsLocked()) return this.refreshAttemptSettings();
+        this.state.config.meAttemptFeedback = value;
+        this.save(true);
+      });
+    }
+    document.getElementById('btnEndSession')?.addEventListener('click', () => this.endAttemptSession());
     // Upload local
     this.elements.fileInput.addEventListener('change', (e) =>
       this.handleFileUpload(e)
@@ -653,6 +670,8 @@ const App = {
     if (typeof this.state.retryMode !== 'boolean') this.state.retryMode = false;
     if (!Array.isArray(this.state.retryIndices)) this.state.retryIndices = [];
 
+    this.state.config.meAttempts = this.state.config.meAttempts === true;
+    if (!['each', 'end'].includes(this.state.config.meAttemptFeedback)) this.state.config.meAttemptFeedback = 'end';
     if (this.state.config.showTags === undefined) this.state.config.showTags = true;
     if (this.state.config.showFolders === undefined) this.state.config.showFolders = true;
     if (this.state.config.showDiff === undefined) this.state.config.showDiff = false;
@@ -699,6 +718,8 @@ const App = {
     delete this.state.config.pagination;
     delete this.state.paginationAnchor;
     this.state.quizJson = json;
+    this.state.config.meAttempts = false;
+    this.state.config.meAttemptFeedback = 'end';
     this.state.config.shuffleQ = this.elements.chkShuffleQ.checked;
     this.state.config.shuffleA = this.elements.chkShuffleA.checked;
     this.state.config.showTags = this.elements.chkShowTags.checked;
@@ -728,6 +749,7 @@ const App = {
 
     this.state.questions = parseContent(this.state.quizJson.conteudo);
     this.state.userAnswers = {};
+    this.refreshAttemptSettings();
 
     // Criar nova sessão
     this.activeSessionId = generateId();
@@ -817,6 +839,8 @@ const App = {
     this.state.retryDerivedFromErrors = true;
     this.state.retrySourceSessionId = sourceSessionId;
     this.state.userAnswers = {};
+    this.state.config.meAttempts = false;
+    this.state.config.meAttemptFeedback = 'end';
     this.state.eliminatedAlts = {};
     this.state.textHighlights = { questions: {}, groups: {} };
     this.state.mappings = { qOrder: [], altOrder: {} };
@@ -1097,6 +1121,7 @@ const App = {
     this.state.userAnswers = {};
     this.state.eliminatedAlts = {};
     this.state.textHighlights = { questions: {}, groups: {} };
+    this.refreshAttemptSettings();
     reshuffleVariants(this.state.questions);
     reshuffleChVariants(this.state.questions);
     this.generateMappings();
@@ -1124,6 +1149,7 @@ const App = {
   },
 
   showQuizInterface() {
+    this.refreshAttemptSettings();
     this.elements.uploadSection.classList.add('hidden');
     this.elements.filterSection.classList.add('hidden');
     this.elements.configBar.classList.remove('hidden');
@@ -1142,6 +1168,8 @@ const App = {
     }
     const ans = this.state.userAnswers[originalQIdx];
     if (ans.submitted) return;
+    if (isAttemptQuestion(this.state, originalQIdx) &&
+        (ans.attempts?.includes(originalAltIdx) || !validAttemptQuestion(qData))) return;
 
     if ((tipo === 'CH' || tipo === 'MVF') && isCheckbox) {
       if (!ans.assertivaAnswers) {
@@ -1212,6 +1240,8 @@ const App = {
   },
 
   handleElimination(originalQIdx, originalAltIdx) {
+    if (this.isQuestionExcluded(originalQIdx) || this.state.userAnswers[originalQIdx]?.submitted ||
+        this.state.userAnswers[originalQIdx]?.attempts?.includes(originalAltIdx)) return;
     if (!this.state.eliminatedAlts[originalQIdx]) {
       this.state.eliminatedAlts[originalQIdx] = [];
     }
@@ -1225,6 +1255,11 @@ const App = {
       list.push(originalAltIdx);
     }
 
+    if (isAttemptQuestion(this.state, originalQIdx) && index === -1 &&
+        this.state.userAnswers[originalQIdx]?.selectedOriginalIdx === originalAltIdx) {
+      delete this.state.userAnswers[originalQIdx].selectedOriginalIdx;
+      this.renderer.render(this.state);
+    }
     this.save(true);
 
     const card = document.querySelector(
@@ -1329,14 +1364,21 @@ const App = {
     this.save(true);
   },
 
-  submitQuestion(originalQIdx) {
+  submitQuestion(originalQIdx, batch = false) {
     if (this.isQuestionExcluded(originalQIdx)) return;
 
     if (!this.state.userAnswers[originalQIdx]) {
       this.state.userAnswers[originalQIdx] = {};
     }
 
-    this.state.userAnswers[originalQIdx].submitted = true;
+    const answer = this.state.userAnswers[originalQIdx];
+    if (answer.submitted) return;
+    if (isAttemptQuestion(this.state, originalQIdx)) {
+      if (!recordMeAttempt(this.state.questions[originalQIdx], answer,
+          this.state.eliminatedAlts[originalQIdx] || [])) return;
+    } else answer.submitted = true;
+    this.refreshAttemptSettings();
+    if (batch) return;
     this.save(true);
 
     const visualIdx = this.state.mappings.qOrder.indexOf(originalQIdx);
@@ -1349,7 +1391,7 @@ const App = {
       visualIdx,
       this.state
     );
-    card.replaceWith(newCard);
+    card?.replaceWith(newCard);
     this.renderer.updateFooter(this.state);
 
     // Aplicar modo de colapso de comentários após submissão
@@ -1386,7 +1428,7 @@ const App = {
   },
 
   updateQuestionScoreDisplay(originalQIdx, card) {
-    const scoreDiv = card.querySelector('.me-ch-score, .mq-score');
+    const scoreDiv = card.querySelector('.me-ch-score, .mq-score, .me-attempt-score');
     if (!scoreDiv) return;
     const { hits, total } = this.computeQuestionScore(originalQIdx);
     const score = total > 0 ? hits / total : 0;
@@ -1471,7 +1513,41 @@ const App = {
     });
   },
 
-  submitAll() {
+  endAttemptSession() {
+    const active = this.getActiveQuestionIndices();
+    const pending = active.filter(idx => !this.state.userAnswers[idx]?.submitted).length;
+    if (!confirm(`Encerrar a sessão? Há ${pending} questões pendentes. Seleções serão avaliadas uma vez; as restantes serão encerradas com zero e a correção será liberada.`)) return;
+    this.submitAll(true);
+  },
+
+  submitAll(ending = false) {
+    if (this.state.config.meAttempts === true) {
+      this.state.mappings.qOrder.forEach((idx) => {
+        if (this.isQuestionExcluded(idx) || this.state.userAnswers[idx]?.submitted) return;
+        const q = this.state.questions[idx];
+        const a = this.state.userAnswers[idx] ||= {};
+        if (isAttemptQuestion(this.state, idx)) {
+          this.submitQuestion(idx, true);
+          if (ending && !a.submitted) {
+            a.submitted = true;
+            a.attemptOutcome = a.attempts?.length ? 'closed' : 'blank';
+          }
+        } else if (ending || a.selectedOriginalIdx !== undefined || a.selectedOriginalIndices?.length ||
+                   a.connections?.length || Object.keys(a.assertivaAnswers || {}).length ||
+                   a.text?.trim() || a.items?.some(item => item?.text?.trim())) {
+          if ((q.tipo || '').toUpperCase() === 'ESCRITA' && Array.isArray(q.itens)) {
+            a.items ||= [];
+            q.itens.forEach((_, i) => { a.items[i] ||= {}; a.items[i].submitted = true; });
+          }
+          a.submitted = true;
+        }
+      });
+      this.save(true);
+      this.renderer.render(this.state);
+      this.refreshAttemptSettings();
+      this.applyCommentCollapseMode();
+      return;
+    }
     if (!confirm('Tem certeza que deseja entregar todas as questões?')) return;
 
     this.state.mappings.qOrder.forEach((idx) => {
@@ -1505,6 +1581,8 @@ const App = {
     this.save(true);
     this.renderer.render(this.state);
     this.applyCommentCollapseMode();
+
+    this.refreshAttemptSettings();
 
     // Sync imediato após submeter todas (ação importante)
     if (ALLOW_AUTOMATIC_SYNC && this.firebaseState.autoSync && this.firebaseState.connected) {
@@ -1587,7 +1665,7 @@ const App = {
       const newCard = this.renderer.createQuestionCard(
         this.state.questions[qIdx], qIdx, visualIdx, this.state
       );
-      card.replaceWith(newCard);
+      card?.replaceWith(newCard);
     }
 
     this.renderer.updateFooter(this.state);
@@ -1613,7 +1691,7 @@ const App = {
       const newCard = this.renderer.createQuestionCard(
         this.state.questions[qIdx], qIdx, visualIdx, this.state
       );
-      card.replaceWith(newCard);
+      card?.replaceWith(newCard);
     }
 
     // Atualiza pontuação em tempo real
@@ -1705,7 +1783,34 @@ const App = {
     clearState().then(() => location.reload());
   },
 
+  attemptSettingsLocked() {
+    return Object.entries(this.state.userAnswers).some(([idx, a]) =>
+      (this.state.questions[idx]?.tipo || '').toUpperCase() === 'ME' &&
+      (a?.submitted || a?.attempts?.length));
+  },
+
+  refreshAttemptSettings() {
+    const enabled = this.state.config.meAttempts === true;
+    const locked = this.attemptSettingsLocked() || !this.state.quizJson;
+    const toggle = document.getElementById('chkMeAttempts');
+    if (!toggle) return;
+    toggle.checked = enabled;
+    toggle.disabled = locked;
+    document.getElementById('attemptFeedbackOptions')?.classList.toggle('hidden', !enabled);
+    for (const value of ['each', 'end']) {
+      const radio = document.getElementById(value === 'each' ? 'attemptFeedbackEach' : 'attemptFeedbackEnd');
+      if (radio) {
+        radio.checked = (this.state.config.meAttemptFeedback || 'end') === value;
+        radio.disabled = locked;
+      }
+    }
+    const status = document.getElementById('attemptSettingsStatus');
+    if (status) status.textContent = !this.state.quizJson ? 'Abra uma sessão para configurar.' :
+      locked ? 'Configuração definida para esta resolução. Reinicie o quiz para alterá-la.' : '';
+  },
+
   restoreUI() {
+    this.refreshAttemptSettings();
     this.paginationSettings?.refresh();
     this.elements.chkShuffleQ.checked = this.state.config.shuffleQ;
     this.elements.chkShuffleA.checked = this.state.config.shuffleA;

@@ -141,3 +141,5 @@ body.quiz-paged .question-card, body.quiz-paged .question-group { scroll-margin-
   .question-map-dialog { padding: 12px; }
 }
 
+
+.progress-attempting { color: var(--primary); border-color: var(--primary); }
