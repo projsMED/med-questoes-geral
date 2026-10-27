@@ -540,6 +540,7 @@ No painel de configurações (⚙️) o usuário pode personalizar:
 
 ## 🛠️ Scripts e Ferramentas Auxiliares
 
+
 ### `gerar_index.py`
 Varre recursivamente a pasta `quizes-da-nuvem/` e gera o arquivo `quizes-da-nuvem/index.json`. Deve ser executado sempre que novos arquivos `.json` forem adicionados ou renomeados no repositório de quizes da nuvem.
 
