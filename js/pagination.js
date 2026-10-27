@@ -1,9 +1,10 @@
-import { appStorage } from './release-config.js?v=20261016-480';
-import { computeQuestionScore } from './scoring.js?v=20261016-480';
+import { appStorage } from './release-config.js?v=20261027-attempts-beta-1';
+import { computeQuestionScore } from './scoring.js?v=20261027-attempts-beta-1';
 
 export const QUESTION_PROGRESS = {
   empty: { label: 'Não respondida', symbol: '○' },
   draft: { label: 'Resposta não enviada', symbol: '●' },
+  attempting: { label: 'Em tentativa', symbol: '↻' },
   correct: { label: 'Correta', symbol: '✓' },
   wrong: { label: 'Errada', symbol: '×' },
   partial: { label: 'Acerto parcial', symbol: '◐' },
@@ -16,6 +17,7 @@ export function questionProgress(state, originalIdx) {
   const question = state.questions[originalIdx];
   const answer = state.userAnswers?.[originalIdx] || {};
   if (!answer.submitted) {
+    if (answer.attempts?.length) return 'attempting';
     const started = Number.isInteger(answer.selectedOriginalIdx)
       || answer.selectedOriginalIndices?.length > 0 || answer.connections?.length > 0
       || Object.values(answer.assertivaAnswers || {}).some((choice) => typeof choice === 'boolean')

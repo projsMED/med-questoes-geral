@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V4.8.0 - Filtro em Etapas</title>
+  <title>Question Engine V4.9.0 Beta - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('vs_darkMode');
@@ -12,19 +12,19 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/variables.css?v=20261016-480">
-  <link rel="stylesheet" href="css/layout.css?v=20261016-480">
-  <link rel="stylesheet" href="css/questions.css?v=20261016-480">
-  <link rel="stylesheet" href="css/highlighter.css?v=20261016-480">
-  <link rel="stylesheet" href="css/matching-questions.css?v=20261016-480">
-  <link rel="stylesheet" href="css/pagination.css?v=20261016-480">
+  <link rel="stylesheet" href="css/variables.css?v=20261027-attempts-beta-1">
+  <link rel="stylesheet" href="css/layout.css?v=20261027-attempts-beta-1">
+  <link rel="stylesheet" href="css/questions.css?v=20261027-attempts-beta-1">
+  <link rel="stylesheet" href="css/highlighter.css?v=20261027-attempts-beta-1">
+  <link rel="stylesheet" href="css/matching-questions.css?v=20261027-attempts-beta-1">
+  <link rel="stylesheet" href="css/pagination.css?v=20261027-attempts-beta-1">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V4.8.0</h2>
+    <h2 class="header-title">Question Engine V4.9.0 Beta</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -229,6 +229,18 @@
       </div>
       <div id="generalSettingsPanel" class="general-settings-panel hidden">
         <div id="paginationSettings"></div>
+        <fieldset id="attemptSettings" class="vs-option">
+          <legend>Nesta sessão</legend>
+          <label class="toggle-label"><input type="checkbox" id="chkMeAttempts"> Ativar modo de tentativas para ME</label>
+          <small>Ao errar, tente outra alternativa antes de ver o gabarito. A pontuação diminui a cada tentativa.</small>
+          <div id="attemptFeedbackOptions" class="hidden">
+            <label><input type="radio" name="attemptFeedback" value="each" id="attemptFeedbackEach"> Feedback a cada erro</label>
+            <small>Mostra o comentário da alternativa errada, quando disponível.</small>
+            <label><input type="radio" name="attemptFeedback" value="end" id="attemptFeedbackEnd" checked> Feedback ao concluir</label>
+            <small>Mostra os comentários somente ao concluir a questão.</small>
+          </div>
+          <small id="attemptSettingsStatus" role="status"></small>
+        </fieldset>
         <div class="vs-option">
           <strong class="vs-label">Tela cheia:</strong>
           <button type="button" class="btn btn-sm" id="btnFullscreen" aria-pressed="false" aria-describedby="fullscreenStatus">⛶ Entrar em tela cheia</button>
@@ -290,6 +302,7 @@
 </div>
 <div class="footer-bar hidden" id="footerBar">
   <div class="score-display" id="scoreDisplay">Nota: <span>-</span></div>
+  <button class="btn btn-secondary hidden" id="btnEndSession">Encerrar sessão</button>
   <button class="btn btn-submit" id="btnSubmitAll" style="padding: 10px 30px; font-size: 1.1em;">Responder Todas</button>
 </div>
 
@@ -525,7 +538,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20261016-480';
+  const APP_ASSET_VERSION = '20261027-attempts-beta-1';
   const moduleAssets = [
     'main.js',
     'store.js',

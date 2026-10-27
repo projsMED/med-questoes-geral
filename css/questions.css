@@ -1102,3 +1102,16 @@ html.dark-mode .result-section {
     font-size: 0.72em;
   }
 }
+
+/* Modo de tentativas: estados de erro e comentários liberados. */
+.alt-wrapper.attempt-wrong { background: var(--error-bg); border-color: var(--error-text); }
+.attempt-error-label { display: block; color: var(--error-text); font-size: .85em; padding: 4px 10px; }
+.attempt-comment .specific-comment { display: block; }
+.attempt-message { margin: 12px 0; padding: 10px; background: var(--surface-raised); border-left: 3px solid var(--primary); }
+#attemptSettings { border: 1px solid var(--border); border-radius: 6px; }
+#attemptSettings small, #attemptFeedbackOptions label { display: block; margin: 6px 0; }
+.attempt-results { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border); }
+.attempt-results table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.attempt-results th, .attempt-results td { text-align: left; padding: 6px; border-bottom: 1px solid var(--border); }
+.alt-wrapper.attempt-wrong { flex-direction: column; gap: 0; border-radius: 8px; }
+.attempt-wrong .alt-label { background: var(--error-bg); border-color: var(--error-text); cursor: default; }

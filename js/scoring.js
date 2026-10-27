@@ -1,3 +1,62 @@
+// Tentativas de ME usam índices originais, independentes das letras embaralhadas.
+export function isAttemptQuestion(state, idx) {
+  return state.config.meAttempts === true &&
+    (state.questions[idx]?.tipo || '').toUpperCase() === 'ME';
+}
+
+export function validAttemptQuestion(q) {
+  return Array.isArray(q.alternativas) && q.alternativas.length >= 2 &&
+    /^[A-Z]$/.test(String(q.gabarito || '').trim().toUpperCase()) &&
+    String(q.gabarito).trim().toUpperCase().charCodeAt(0) - 65 < q.alternativas.length;
+}
+
+// Um envio válido é registrado uma vez; erros intermediários não concluem a questão.
+export function recordMeAttempt(q, answer, eliminated = []) {
+  if (answer.submitted || !validAttemptQuestion(q)) return false;
+  const choice = answer.selectedOriginalIdx;
+  const attempts = answer.attempts || [];
+  if (!Number.isInteger(choice) || choice < 0 || choice >= q.alternativas.length ||
+      attempts.includes(choice) || eliminated.includes(choice)) return false;
+  answer.attempts = [...attempts, choice];
+  const correct = String(q.gabarito).trim().toUpperCase().charCodeAt(0) - 65;
+  if (choice === correct) {
+    answer.attemptOutcome = 'correct';
+    answer.submitted = true;
+  } else if (answer.attempts.length >= q.alternativas.length - 1) {
+    answer.attemptOutcome = 'exhausted';
+    answer.submitted = true;
+  } else {
+    delete answer.selectedOriginalIdx;
+  }
+  return true;
+}
+
+export function computeMeAttemptScore(q, answer) {
+  if (answer.attemptOutcome !== 'correct' || !answer.attempts?.length) return 0;
+  const k = answer.attempts.length;
+  return k === 1 ? 1 : Math.max(0, (q.alternativas.length - k) / q.alternativas.length);
+}
+
+export function meAttemptStats(state) {
+  const stats = { count: 0, sum: 0, buckets: {}, exhausted: 0, closed: 0, blank: 0, pending: 0, maxAttempts: 0 };
+  for (const idx of state.mappings.qOrder) {
+    if (!isAttemptQuestion(state, idx) || state.forcedIndices?.includes(idx) ||
+        state.disabledIndices?.includes(idx) || state.deletedIndices?.includes(idx)) continue;
+    stats.maxAttempts = Math.max(stats.maxAttempts, (state.questions[idx].alternativas?.length || 1) - 1);
+    const a = state.userAnswers[idx];
+    if (!a?.submitted) { if (a?.attempts?.length) stats.pending++; continue; }
+    if (!a.attempts?.length) { stats.blank++; continue; }
+    stats.count++;
+    stats.sum += computeQuestionScore(state, idx).hits;
+    if (a.attemptOutcome === 'correct') {
+      const k = a.attempts.length;
+      stats.buckets[k] = (stats.buckets[k] || 0) + 1;
+    } else if (a.attemptOutcome === 'exhausted') stats.exhausted++;
+    else stats.closed++;
+  }
+  return stats;
+}
+
 // Regras de gabarito e pontuação compartilhadas. Sem DOM ou efeitos colaterais.
 
 /** Cada assertiva incorreta ou não respondida anula um acerto no modo padrão. */
@@ -324,6 +383,12 @@ export function computeQuestionScore(state, originalQIdx, options = {}) {
   if (!ans || !ans.submitted) return { hits: 0, total: 0 };
 
   const tipo = (qData.tipo || '').toUpperCase();
+
+  if (isAttemptQuestion(state, originalQIdx)) {
+    if (!validAttemptQuestion(qData)) return { hits: 0, total: 0 };
+    return applyDisregardedCorrectToScore(state, originalQIdx,
+      { hits: computeMeAttemptScore(qData, ans), total: 1 }, options);
+  }
 
   if (tipo === 'ESCRITA') {
     const isItemsType = qData.subtipo === 'itens' ||

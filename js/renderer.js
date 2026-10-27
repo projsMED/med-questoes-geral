@@ -3,18 +3,19 @@ import {
   formatText,
   difficultyMap,
   questionTypeMap
-} from './utils.js?v=20261016-480';
+} from './utils.js?v=20261027-attempts-beta-1';
 
-import { readVisualPreferences } from './preferences.js?v=20261016-480';
+import { readVisualPreferences } from './preferences.js?v=20261027-attempts-beta-1';
 import {
+  isAttemptQuestion, validAttemptQuestion, meAttemptStats,
   parseMeChGabarito, parseMqGabarito, computeQuestionScore,
   isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261016-480';
+} from './scoring.js?v=20261027-attempts-beta-1';
 
-import { MatchingQuestions } from './matching-questions.js?v=20261016-480';
-import { TextHighlighter } from './highlighter.js?v=20261016-480';
-import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261016-480';
-import { QuestionNavigation } from './question-navigation.js?v=20261016-480';
+import { MatchingQuestions } from './matching-questions.js?v=20261027-attempts-beta-1';
+import { TextHighlighter } from './highlighter.js?v=20261027-attempts-beta-1';
+import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261027-attempts-beta-1';
+import { QuestionNavigation } from './question-navigation.js?v=20261027-attempts-beta-1';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
@@ -389,6 +390,9 @@ export class QuizRenderer {
     const isLocked = isForced || isDisabledQ;
     const isSubmitted = !!(userAnswer && userAnswer.submitted) && !isForced;
     const eliminatedList = state.eliminatedAlts[originalIdx] || [];
+    const attemptMode = isAttemptQuestion(state, originalIdx);
+    const attempts = attemptMode ? (userAnswer?.attempts || []) : [];
+    const invalidAttempt = attemptMode && !validAttemptQuestion(qData);
 
     if (isForced) {
       wrapper.classList.add('question-forced');
@@ -626,7 +630,7 @@ export class QuizRenderer {
         actionsDiv.className = 'action-bar';
         const btnAnswer = document.createElement('button');
         btnAnswer.className = 'btn btn-submit';
-        btnAnswer.innerText = 'Responder';
+        btnAnswer.innerText = attempts.length ? 'Enviar nova tentativa' : 'Responder';
 
         if (isSubmitted) {
           btnAnswer.style.display = 'none';
@@ -821,6 +825,7 @@ export class QuizRenderer {
         if (specificCommentHtml) {
           const commentDiv = document.createElement('div');
           commentDiv.innerHTML = specificCommentHtml;
+          if (attemptMode && !isSubmitted) commentDiv.className = 'attempt-comment';
           altItem.appendChild(commentDiv);
         }
 
@@ -886,6 +891,8 @@ export class QuizRenderer {
         const altWrapper = document.createElement('div');
         altWrapper.className = 'alt-wrapper';
         if (isEliminated) altWrapper.classList.add('eliminated');
+        const tried = attemptMode && attempts.includes(originalAltIdx);
+        if (tried && !isCorrectAlt) altWrapper.classList.add('attempt-wrong');
         if (isSubmitted) {
           if (isMECH) {
             if (isSelected && isCorrectAlt) altWrapper.classList.add('correct');
@@ -910,7 +917,8 @@ export class QuizRenderer {
           state.mappings.altOrder
         );
         let specificCommentHtml = '';
-        if (specificCommentTxt) {
+        if (specificCommentTxt && (!attemptMode || isSubmitted ||
+            (state.config.meAttemptFeedback === 'each' && tried))) {
           specificCommentHtml = `<div class="specific-comment">${specificCommentTxt}</div>`;
         }
 
@@ -925,12 +933,18 @@ export class QuizRenderer {
           <label class="alt-label ${isSelected ? 'selected' : ''}" for="${inputId}">
             <input type="${inputType}" name="q_${originalIdx}" id="${inputId}"
               class="alt-input" value="${originalAltIdx}" ${checked}
-              ${isSubmitted || isLocked ? 'disabled' : ''}>
+              ${isSubmitted || isLocked || invalidAttempt || tried ? 'disabled' : ''}>
             <span class="alt-letter">${visualLetter})</span>
             <span class="alt-text${isME || isMECH ? ' markable-text' : ''}">${altText}</span>
           </label>
         `;
-        altWrapper.innerHTML = labelHtml + scissorBtn;
+        altWrapper.innerHTML = labelHtml + (tried || invalidAttempt ? '' : scissorBtn);
+        if (tried && !isCorrectAlt) {
+          const badge = document.createElement('span');
+          badge.className = 'attempt-error-label';
+          badge.textContent = `✕ Incorreta — tentativa ${attempts.indexOf(originalAltIdx) + 1}`;
+          altWrapper.appendChild(badge);
+        }
 
         // Word marking for ME / ME-CH alternativas
         if (isME || isMECH) {
@@ -948,6 +962,7 @@ export class QuizRenderer {
         if (specificCommentHtml) {
           const commentDiv = document.createElement('div');
           commentDiv.innerHTML = specificCommentHtml;
+          if (attemptMode && !isSubmitted) commentDiv.className = 'attempt-comment';
           altItem.appendChild(commentDiv);
         }
 
@@ -985,13 +1000,35 @@ export class QuizRenderer {
     }
 
     wrapper.appendChild(altList);
+    if (attemptMode && !isForced) {
+      const message = document.createElement('div');
+      message.className = 'attempt-message';
+      message.setAttribute('role', 'status');
+      if (invalidAttempt) message.textContent = 'Questão inválida para tentativas: confira alternativas e gabarito. Desative ou exclua esta questão.';
+      else if (isSubmitted) {
+        if (userAnswer.attemptOutcome === 'correct') message.textContent = `Você acertou na ${attempts.length}ª tentativa.`;
+        else if (userAnswer.attemptOutcome === 'exhausted') message.textContent = 'Tentativas esgotadas.';
+        else message.textContent = attempts.length ? 'Questão encerrada antes de esgotar as tentativas.' : 'Questão encerrada sem resposta.';
+        if (userAnswer.attemptOutcome !== 'correct') {
+          const correctIdx = String(qData.gabarito).trim().toUpperCase().charCodeAt(0) - 65;
+          const visual = state.mappings.altOrder[originalIdx].indexOf(correctIdx);
+          message.textContent += ` A alternativa correta é ${String.fromCharCode(65 + visual)}.`;
+        }
+        const score = this.computeQuestionScore(state, originalIdx).hits;
+        const scoreText = document.createElement('div');
+        scoreText.className = 'me-attempt-score';
+        scoreText.textContent = `Pontuação: ${score.toLocaleString('pt-BR', { maximumFractionDigits: 2 })}/1 ponto.`;
+        message.appendChild(scoreText);
+      } else if (attempts.length) message.textContent = 'Essa alternativa está incorreta. Escolha outra e tente novamente.';
+      if (message.textContent) wrapper.appendChild(message);
+    }
 
     if (!isLocked) {
       const actionsDiv = document.createElement('div');
       actionsDiv.className = 'action-bar';
       const btnAnswer = document.createElement('button');
       btnAnswer.className = 'btn btn-submit';
-      btnAnswer.innerText = 'Responder';
+      btnAnswer.innerText = attempts.length ? 'Enviar nova tentativa' : 'Responder';
 
       if (isSubmitted) {
         btnAnswer.style.display = 'none';
@@ -1000,7 +1037,7 @@ export class QuizRenderer {
         btnAnswer.disabled = false;
       } else {
         btnAnswer.disabled =
-          userAnswer?.selectedOriginalIdx === undefined || isSubmitted;
+          userAnswer?.selectedOriginalIdx === undefined || isSubmitted || invalidAttempt;
       }
 
       btnAnswer.addEventListener('click', () => {
@@ -1715,6 +1752,10 @@ export class QuizRenderer {
   }
 
   updateFooter(state) {
+    const endButton = globalThis.document?.getElementById('btnEndSession');
+    endButton?.classList.toggle('hidden', !state.config.meAttempts || !state.mappings.qOrder.some(idx =>
+      !state.forcedIndices?.includes(idx) && !state.disabledIndices?.includes(idx) && !state.userAnswers[idx]?.submitted));
+    this.btnSubmitAll.textContent = state.config.meAttempts ? 'Responder marcadas' : 'Responder Todas';
     let totalQuestions = 0;
     let submittedQuestions = 0;
     let allSubmitted = true;
@@ -1839,7 +1880,7 @@ export class QuizRenderer {
 
     let html = `<div class="result-title">${title}</div>`;
     html += `<div class="result-row result-general">`;
-    html += `<strong>${scoreLabel}:</strong> ${fmt(sumHits)}/${totalQuestions} pontos | ${fmtPct(pct)}% de taxa de acerto`;
+    html += `<strong>${scoreLabel}:</strong> ${fmt(sumHits)}/${totalQuestions} pontos | ${fmtPct(pct)}% de aproveitamento`;
     html += `</div>`;
     if (options.isPartial) {
       html += `<div class="result-row result-remaining">`;
@@ -1852,9 +1893,27 @@ export class QuizRenderer {
       if (!stat || stat.count === 0) return;
       const typePct = stat.count > 0 ? (stat.sumScore / stat.count * 100) : 0;
       html += `<div class="result-row">`;
-      html += `${typeLabels[tipo]}: ${fmt(stat.sumScore)}/${stat.count} pontos | ${fmtPct(typePct)}% de taxa de acerto`;
+      html += `${typeLabels[tipo]}: ${fmt(stat.sumScore)}/${stat.count} pontos | ${fmtPct(typePct)}% de aproveitamento`;
       html += `</div>`;
     });
+
+    if (state.config.meAttempts) {
+      const stats = meAttemptStats(state);
+      html += '<div class="attempt-results"><strong>Múltipla escolha — tentativas</strong>';
+      if (!stats.count) html += '<p>Ainda não há questões ME respondidas.</p>';
+      else {
+        html += '<table><thead><tr><th>Desfecho</th><th>Questões</th><th>Percentual</th></tr></thead><tbody>';
+        for (let k = 1; k <= stats.maxAttempts; k++) {
+          const count = stats.buckets[k] || 0;
+          html += `<tr><td>Acerto na ${k}ª tentativa</td><td>${count} de ${stats.count}</td><td>${fmtPct(count / stats.count * 100)}%</td></tr>`;
+        }
+        for (const [label, count] of [['Tentativas esgotadas', stats.exhausted], ['Encerradas antecipadamente', stats.closed]]) {
+          html += `<tr><td>${label}</td><td>${count} de ${stats.count}</td><td>${fmtPct(count / stats.count * 100)}%</td></tr>`;
+        }
+        html += `</tbody></table><p>Pontuação total em ME: ${fmt(stats.sum)}/${stats.count} pontos<br>Pontuação média por questão respondida: ${fmt(stats.sum / stats.count)}/1 ponto</p>`;
+      }
+      html += `<p>Em tentativa: ${stats.pending} · Sem resposta ao encerrar: ${stats.blank}</p></div>`;
+    }
 
     if (
       state.config.showDisregardCorrect !== false &&
@@ -1869,7 +1928,7 @@ export class QuizRenderer {
 
     if (incorrectIndices.length > 0) {
       html += `<div class="result-actions">`;
-      html += `<button class="btn btn-sm btn-retry" id="btnRetryErrors">Repetir apenas questões que errou</button>`;
+      html += `<button class="btn btn-sm btn-retry" id="btnRetryErrors">Refazer questões para revisar</button>`;
       html += `</div>`;
     }
 

@@ -1,3 +1,17 @@
+## V4.9.0 Beta — modo de tentativas
+
+Implementação na branch `beta-tentativas`, baseada na `main` em `4667b63`.
+
+Em **Configurações Gerais → Nesta sessão**, ative o modo antes do primeiro envio de ME e escolha **Feedback a cada erro** ou **Feedback ao concluir**. Cada sessão nova, inclusive Refazer erros, começa com o modo desligado. Reabrir/importar uma sessão preserva sua configuração. Resetar limpa o histórico e libera os controles, mantendo a configuração da sessão.
+
+Um erro bloqueia a alternativa enviada e mantém a questão pendente. Não há indicador permanente de tentativa ou pontuação potencial. Comentários ausentes não produzem mensagens substitutas. No feedback imediato, somente comentários das alternativas já erradas são montados; gabarito e comentário geral ficam disponíveis ao concluir. Com N alternativas, há no máximo N−1 envios. Acerto inicial vale 1; acerto na tentativa k≥2 vale (N−k)/N; esgotamento ou encerramento sem acerto vale zero. A tesoura não consome tentativas.
+
+**Responder marcadas** envia uma seleção por questão pendente; **Encerrar sessão** confirma o encerramento, avalia seleções atuais uma vez e encerra as restantes. Resultados de ME incluem distribuição por tentativa, esgotamentos, encerramentos antecipados, questões sem resposta e média entre questões concluídas com pelo menos um envio. A nota parcial considera somente questões concluídas. Desativadas, excluídas e questões de contexto não integram os resultados. Desconsiderar acerto zera os pontos efetivos sem modificar o histórico.
+
+Validação: `node --test tests/*.test.mjs`, incluindo testes do controlador, DOM simulado, pontuação, mapa e persistência serializada. A validação visual em navegador real permanece pendente.
+
+---
+
 # 🩺 Question Engine V4.8.0 (med-questoes-geral)
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
