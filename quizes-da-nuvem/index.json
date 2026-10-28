@@ -11,6 +11,42 @@
   },
   {
     "type": "folder",
+    "name": "Gastroenterologia",
+    "children": [
+      {
+        "type": "file",
+        "name": "Esofagites - 2022 a 2026 - Qconcursos",
+        "path": "quizes-da-nuvem/Gastroenterologia/Esofagites - 2022 a 2026 - Qconcursos.json"
+      },
+      {
+        "type": "file",
+        "name": "Esofagites",
+        "path": "quizes-da-nuvem/Gastroenterologia/Esofagites.json"
+      },
+      {
+        "type": "file",
+        "name": "Gastrite - 2025 e 2026",
+        "path": "quizes-da-nuvem/Gastroenterologia/Gastrite - 2025 e 2026.json"
+      },
+      {
+        "type": "file",
+        "name": "Refluxo Gastroesofágico - Qconcursos - 2020 a 2025",
+        "path": "quizes-da-nuvem/Gastroenterologia/Refluxo Gastroesofágico - Qconcursos - 2020 a 2025.json"
+      },
+      {
+        "type": "file",
+        "name": "Retocolite e Doença de Crohn - ME",
+        "path": "quizes-da-nuvem/Gastroenterologia/Retocolite e Doença de Crohn - ME.json"
+      },
+      {
+        "type": "file",
+        "name": "Úlcera Péptica e Duodenal",
+        "path": "quizes-da-nuvem/Gastroenterologia/Úlcera Péptica e Duodenal.json"
+      }
+    ]
+  },
+  {
+    "type": "folder",
     "name": "Infectologia",
     "children": [
       {
