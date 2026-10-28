@@ -1,6 +1,7 @@
+import { writtenMode, writtenEvaluated } from './me-written.js?v=20261028-written-beta-1';
 // Tentativas de ME usam índices originais, independentes das letras embaralhadas.
 export function isAttemptQuestion(state, idx) {
-  return state.config.meAttempts === true &&
+  return writtenMode(state, idx) !== 'written' && state.config.meAttempts === true &&
     (state.questions[idx]?.tipo || '').toUpperCase() === 'ME';
 }
 
@@ -340,7 +341,7 @@ export function computeMqScore(qData, userConnections = []) {
 
 export function isObjectiveQuestion(state, originalQIdx) {
   const qData = state.questions[originalQIdx];
-  return ((qData && qData.tipo) || '').toUpperCase() !== 'ESCRITA';
+  return writtenMode(state, originalQIdx) !== 'written' && ((qData && qData.tipo) || '').toUpperCase() !== 'ESCRITA';
 }
 
 export function applyDisregardedCorrectToScore(state, originalQIdx, score, options = {}) {
@@ -383,6 +384,9 @@ export function computeQuestionScore(state, originalQIdx, options = {}) {
   if (!ans || !ans.submitted) return { hits: 0, total: 0 };
 
   const tipo = (qData.tipo || '').toUpperCase();
+  if (writtenMode(state, originalQIdx) === 'written') {
+    return writtenEvaluated(ans) ? { hits: ans.written.selfEval / 10, total: 1 } : { hits: 0, total: 0 };
+  }
 
   if (isAttemptQuestion(state, originalQIdx)) {
     if (!validAttemptQuestion(qData)) return { hits: 0, total: 0 };

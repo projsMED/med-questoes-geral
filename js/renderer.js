@@ -1,23 +1,25 @@
-import { FolderDescriptions } from './folder-descriptions.js?v=20261027-folders-beta-2';
-import { availableFilterOptions } from './filters.js?v=20261027-folders-beta-2';
+import { createWrittenContent, writtenResultsHtml } from './me-written-ui.js?v=20261028-written-beta-1';
+import { writtenMode, writtenStage, writtenEvaluated } from './me-written.js?v=20261028-written-beta-1';
+import { FolderDescriptions } from './folder-descriptions.js?v=20261028-written-beta-1';
+import { availableFilterOptions } from './filters.js?v=20261028-written-beta-1';
 /* ===== JS: js\renderer.js ===== */
 import {
   formatText,
   difficultyMap,
   questionTypeMap
-} from './utils.js?v=20261027-folders-beta-2';
+} from './utils.js?v=20261028-written-beta-1';
 
-import { readVisualPreferences } from './preferences.js?v=20261027-folders-beta-2';
+import { readVisualPreferences } from './preferences.js?v=20261028-written-beta-1';
 import {
   isAttemptQuestion, validAttemptQuestion, meAttemptStats,
   parseMeChGabarito, parseMqGabarito, computeQuestionScore,
   isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261027-folders-beta-2';
+} from './scoring.js?v=20261028-written-beta-1';
 
-import { MatchingQuestions } from './matching-questions.js?v=20261027-folders-beta-2';
-import { TextHighlighter } from './highlighter.js?v=20261027-folders-beta-2';
-import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261027-folders-beta-2';
-import { QuestionNavigation } from './question-navigation.js?v=20261027-folders-beta-2';
+import { MatchingQuestions } from './matching-questions.js?v=20261028-written-beta-1';
+import { TextHighlighter } from './highlighter.js?v=20261028-written-beta-1';
+import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261028-written-beta-1';
+import { QuestionNavigation } from './question-navigation.js?v=20261028-written-beta-1';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {
@@ -570,6 +572,19 @@ export class QuizRenderer {
       }
     }
 
+    const meWrittenMode = writtenMode(state, originalIdx);
+    if (meWrittenMode !== 'off' && (isLocked || meWrittenMode === 'written' || writtenStage(state, originalIdx) === 'writing')) {
+      wrapper.appendChild(createWrittenContent(this, qData, originalIdx, state, isLocked));
+      return wrapper;
+    }
+    if (userAnswer?.writtenFallback && userAnswer.written?.text) {
+      const draft = document.createElement('details'); draft.className = 'written-review';
+      const label = document.createElement('summary'); label.textContent = 'Ver rascunho escrito (sem pontuação)';
+      const text = document.createElement('textarea'); text.className = 'escrita-textarea'; text.readOnly = true; text.value = userAnswer.written.text;
+      draft.append(label, text); wrapper.appendChild(draft);
+    }
+    if (meWrittenMode === 'hybrid' && !isSubmitted) wrapper.appendChild(createWrittenContent(this, qData, originalIdx, state));
+
     // ===================== ESCRITA =====================
     if (isEscrita) {
       const escritaContent = this._createEscritaContent(
@@ -1113,6 +1128,7 @@ export class QuizRenderer {
 
     }
 
+    if (meWrittenMode === 'hybrid' && isSubmitted && !isLocked) wrapper.appendChild(createWrittenContent(this, qData, originalIdx, state));
     return wrapper;
   }
 
@@ -1652,6 +1668,16 @@ export class QuizRenderer {
 
     lines.push(`${visualIdx + 1}. ${strip(q.enunciado)}`);
 
+    const mode = writtenMode(s, originalIdx);
+    if (mode !== 'off' && (mode === 'written' || writtenStage(s, originalIdx) === 'writing')) {
+      if (ans?.written?.text) lines.push(`Sua resposta escrita: ${ans.written.text}`);
+      if (sub && mode === 'written') {
+        const correct = q.alternativas?.[String(q.gabarito).trim().toUpperCase().charCodeAt(0) - 65];
+        if (correct) lines.push(`Resposta de referência: ${strip(correct.texto)}`);
+        if (correct?.comentario) lines.push(`Comentário: ${strip(correct.comentario)}`);
+      }
+      return lines.join('\n');
+    }
     if (tipo === 'VF') {
       if (sub) {
         const gab = (q.gabarito || '').trim().toUpperCase();
@@ -1764,9 +1790,9 @@ export class QuizRenderer {
 
   updateFooter(state) {
     const endButton = globalThis.document?.getElementById('btnEndSession');
-    endButton?.classList.toggle('hidden', !state.config.meAttempts || !state.mappings.qOrder.some(idx =>
+    endButton?.classList.toggle('hidden', !(state.config.meAttempts || (state.config.meWritten && state.config.meWritten !== 'off')) || !state.mappings.qOrder.some(idx =>
       !state.forcedIndices?.includes(idx) && !state.disabledIndices?.includes(idx) && !state.userAnswers[idx]?.submitted));
-    this.btnSubmitAll.textContent = state.config.meAttempts ? 'Responder marcadas' : 'Responder Todas';
+    this.btnSubmitAll.textContent = (state.config.meAttempts || (state.config.meWritten && state.config.meWritten !== 'off')) ? 'Enviar respostas preenchidas' : 'Responder Todas';
     let totalQuestions = 0;
     let submittedQuestions = 0;
     let allSubmitted = true;
@@ -1775,9 +1801,11 @@ export class QuizRenderer {
     let disregardedCorrectCount = 0;
 
     // Rastreamento por tipo
-    const typeOrder = ['ME', 'MEM', 'VF', 'MVF', 'ESCRITA', 'MQ'];
+    const typeOrder = ['ME', 'ME_HYBRID', 'ME_WRITTEN', 'MEM', 'VF', 'MVF', 'ESCRITA', 'MQ'];
     const typeLabels = {
       ME: 'Múltipla Escolha',
+      ME_HYBRID: 'ME híbridas — etapa ME',
+      ME_WRITTEN: 'ME respondidas apenas por escrito',
       MEM: 'Múltipla Escolha Múltipla',
       VF: 'Verdadeiro ou Falso (simples)',
       MVF: 'Verdadeiro ou Falso (múltiplo)',
@@ -1790,17 +1818,19 @@ export class QuizRenderer {
     state.mappings.qOrder.forEach((idx) => {
       const isExcluded =
         (state.forcedIndices && state.forcedIndices.includes(idx)) ||
-        (state.disabledIndices && state.disabledIndices.includes(idx));
+        (state.disabledIndices && state.disabledIndices.includes(idx)) || state.deletedIndices?.includes(idx);
       if (isExcluded) return;
 
       const qData = state.questions[idx];
       let tipo = (qData.tipo || '').toUpperCase();
       if (tipo === 'ME-CH') tipo = 'MEM';
       if (tipo === 'CH') tipo = 'MVF';
+      const mode = writtenMode(state, idx);
+      if (mode !== 'off') tipo = mode === 'hybrid' ? 'ME_HYBRID' : 'ME_WRITTEN';
       totalQuestions++;
 
       const ans = state.userAnswers[idx];
-      if (!ans || !ans.submitted) {
+      if (!ans || !ans.submitted || (mode === 'written' && !writtenEvaluated(ans))) {
         allSubmitted = false;
         return;
       }
@@ -1812,7 +1842,7 @@ export class QuizRenderer {
       if (total > 0) {
         const questionScore = hits / total;
         sumHits += questionScore;
-        if (questionScore < 1 || isDisregarded) incorrectIndices.push(idx);
+        if (questionScore < 1 || isDisregarded || (mode === 'hybrid' && (!writtenEvaluated(ans) || ans.written.selfEval < 10))) incorrectIndices.push(idx);
         if (typeStats[tipo]) {
           typeStats[tipo].sumScore += questionScore;
           typeStats[tipo].count++;
@@ -1833,7 +1863,9 @@ export class QuizRenderer {
     }
 
     const showPartialScore = readVisualPreferences().showPartialScore;
-    if ((allSubmitted || (showPartialScore && submittedQuestions > 0)) && totalQuestions > 0) {
+    const writtenStarted = state.mappings.qOrder.some(idx => !state.disabledIndices?.includes(idx) &&
+      !state.deletedIndices?.includes(idx) && !state.forcedIndices?.includes(idx) && state.userAnswers[idx]?.written?.submitted);
+    if ((allSubmitted || (showPartialScore && (submittedQuestions > 0 || writtenStarted))) && totalQuestions > 0) {
       this.btnSubmitAll.style.display = allSubmitted ? 'none' : 'block';
       this.scoreDisplay.style.display = 'none';
       this._renderResultCard(
@@ -1891,7 +1923,7 @@ export class QuizRenderer {
 
     let html = `<div class="result-title">${title}</div>`;
     html += `<div class="result-row result-general">`;
-    html += `<strong>${scoreLabel}:</strong> ${fmt(sumHits)}/${totalQuestions} pontos | ${fmtPct(pct)}% de aproveitamento`;
+    html += totalQuestions ? `<strong>${scoreLabel}:</strong> ${fmt(sumHits)}/${totalQuestions} pontos | ${fmtPct(pct)}% de aproveitamento` : 'Aguardando conclusão das etapas para calcular a pontuação geral.';
     html += `</div>`;
     if (options.isPartial) {
       html += `<div class="result-row result-remaining">`;
@@ -1907,6 +1939,8 @@ export class QuizRenderer {
       html += `${typeLabels[tipo]}: ${fmt(stat.sumScore)}/${stat.count} pontos | ${fmtPct(typePct)}% de aproveitamento`;
       html += `</div>`;
     });
+
+    html += writtenResultsHtml(state, computeQuestionScore);
 
     if (state.config.meAttempts) {
       const stats = meAttemptStats(state);

@@ -1,7 +1,11 @@
-import { appStorage } from './release-config.js?v=20261027-folders-beta-2';
-import { computeQuestionScore } from './scoring.js?v=20261027-folders-beta-2';
+import { writtenStage, writtenEvaluated } from './me-written.js?v=20261028-written-beta-1';
+import { appStorage } from './release-config.js?v=20261028-written-beta-1';
+import { computeQuestionScore } from './scoring.js?v=20261028-written-beta-1';
 
 export const QUESTION_PROGRESS = {
+  writing: { label: 'Escrita pendente', symbol: '○' },
+  writtenDraft: { label: 'Escrita não enviada', symbol: '●' },
+  mePending: { label: 'Etapa ME pendente', symbol: '…' },
   empty: { label: 'Não respondida', symbol: '○' },
   draft: { label: 'Resposta não enviada', symbol: '●' },
   attempting: { label: 'Em tentativa', symbol: '↻' },
@@ -16,6 +20,10 @@ export function questionProgress(state, originalIdx) {
   if (state.forcedIndices?.includes(originalIdx) || state.disabledIndices?.includes(originalIdx)) return 'excluded';
   const question = state.questions[originalIdx];
   const answer = state.userAnswers?.[originalIdx] || {};
+  const stage = writtenStage(state, originalIdx);
+  if (stage === 'writing') return answer.written?.text?.trim() ? 'writtenDraft' : 'writing';
+  if (stage === 'me') return answer.attempts?.length ? 'attempting' : 'mePending';
+  if (stage === 'evaluation' && !writtenEvaluated(answer)) return 'pending';
   if (!answer.submitted) {
     if (answer.attempts?.length) return 'attempting';
     const started = Number.isInteger(answer.selectedOriginalIdx)

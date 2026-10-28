@@ -1,23 +1,25 @@
+import { renderWrittenSettings } from './me-written-ui.js?v=20261028-written-beta-1';
+import { writtenMode, writtenStage, writtenEvaluated, submitWritten, fallbackWritten, assessWritten } from './me-written.js?v=20261028-written-beta-1';
 /* ===== JS: js\main.js ===== */
 import {
   saveState, loadState, clearState, exportState, importState,
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261027-folders-beta-2';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261027-folders-beta-2';
-import { shuffleArray } from './utils.js?v=20261027-folders-beta-2';
+} from './store.js?v=20261028-written-beta-1';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261028-written-beta-1';
+import { shuffleArray } from './utils.js?v=20261028-written-beta-1';
 import {
   isAttemptQuestion, validAttemptQuestion, recordMeAttempt,
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261027-folders-beta-2';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261027-folders-beta-2';
-import { QuizRenderer } from './renderer.js?v=20261027-folders-beta-2';
-import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261027-folders-beta-2';
-import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261027-folders-beta-2';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261027-folders-beta-2';
-import { PaginationSettings } from './pagination.js?v=20261027-folders-beta-2';
+} from './scoring.js?v=20261028-written-beta-1';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261028-written-beta-1';
+import { QuizRenderer } from './renderer.js?v=20261028-written-beta-1';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261028-written-beta-1';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261028-written-beta-1';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261028-written-beta-1';
+import { PaginationSettings } from './pagination.js?v=20261028-written-beta-1';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -265,6 +267,9 @@ const App = {
         this.handleEscritaTextChange(qIdx, text, itemIdx),
       onEscritaItemSubmit: (qIdx, itemIdx, text) =>
         this.handleEscritaItemSubmit(qIdx, itemIdx, text),
+      onWrittenText: (idx, text) => this.handleWrittenText(idx, text),
+      onWrittenSubmit: (idx, text, skipped) => this.handleWrittenSubmit(idx, text, skipped),
+      onWrittenFallback: idx => this.handleWrittenFallback(idx),
       onSelfEval: (qIdx, score, itemIdx) =>
         this.handleSelfEval(qIdx, score, itemIdx),
       onMarkWords: (qIdx, markKey, wordIndices) =>
@@ -394,8 +399,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261027-folders-beta-2');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261027-folders-beta-2');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261028-written-beta-1');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261028-written-beta-1');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
@@ -670,6 +675,7 @@ const App = {
     if (typeof this.state.retryMode !== 'boolean') this.state.retryMode = false;
     if (!Array.isArray(this.state.retryIndices)) this.state.retryIndices = [];
 
+    if (!['off', 'hybrid', 'written'].includes(this.state.config.meWritten)) this.state.config.meWritten = 'off';
     this.state.config.meAttempts = this.state.config.meAttempts === true;
     if (!['each', 'end'].includes(this.state.config.meAttemptFeedback)) this.state.config.meAttemptFeedback = 'end';
     if (this.state.config.showTags === undefined) this.state.config.showTags = true;
@@ -718,6 +724,7 @@ const App = {
     delete this.state.config.pagination;
     delete this.state.paginationAnchor;
     this.state.quizJson = json;
+    this.state.config.meWritten = 'off';
     this.state.config.meAttempts = false;
     this.state.config.meAttemptFeedback = 'end';
     this.state.config.shuffleQ = this.elements.chkShuffleQ.checked;
@@ -747,7 +754,7 @@ const App = {
     this.state.retryDerivedFromErrors = false;
     this._sessionDerivedFromErrors = false;
 
-    this.state.questions = parseContent(this.state.quizJson.conteudo);
+    this.state.questions = parseContent(this.state.quizJson.conteudo, [], Math.random, this.state.quizJson.compativelEscrita);
     this.state.userAnswers = {};
     this.refreshAttemptSettings();
 
@@ -803,7 +810,7 @@ const App = {
       const { hits, total } = this.computeQuestionScore(idx);
 
       // Considera "errada" para retry se não tiver pontuação máxima
-      if (!ans || !ans.submitted || total === 0 || hits < total || this.isDisregardedCorrectForRetry(idx)) {
+      if (!ans || !ans.submitted || total === 0 || hits < total || (writtenMode(this.state, idx) === 'hybrid' && (!writtenEvaluated(ans) || ans.written.selfEval < 10)) || this.isDisregardedCorrectForRetry(idx)) {
         wrongIndices.push(idx);
       }
     });
@@ -839,6 +846,7 @@ const App = {
     this.state.retryDerivedFromErrors = true;
     this.state.retrySourceSessionId = sourceSessionId;
     this.state.userAnswers = {};
+    this.state.config.meWritten = 'off';
     this.state.config.meAttempts = false;
     this.state.config.meAttemptFeedback = 'end';
     this.state.eliminatedAlts = {};
@@ -1158,6 +1166,7 @@ const App = {
   },
 
   handleSelection(originalQIdx, originalAltIdx, isCheckbox = false, checked = true) {
+    if (['writing', 'evaluation'].includes(writtenStage(this.state, originalQIdx))) return;
     if (this.isQuestionExcluded(originalQIdx)) return;
 
     const qData = this.state.questions[originalQIdx];
@@ -1365,6 +1374,7 @@ const App = {
   },
 
   submitQuestion(originalQIdx, batch = false) {
+    if (writtenMode(this.state, originalQIdx) === 'written' || writtenStage(this.state, originalQIdx) === 'writing') return;
     if (this.isQuestionExcluded(originalQIdx)) return;
 
     if (!this.state.userAnswers[originalQIdx]) {
@@ -1516,16 +1526,23 @@ const App = {
   endAttemptSession() {
     const active = this.getActiveQuestionIndices();
     const pending = active.filter(idx => !this.state.userAnswers[idx]?.submitted).length;
-    if (!confirm(`Encerrar a sessão? Há ${pending} questões pendentes. Seleções serão avaliadas uma vez; as restantes serão encerradas com zero e a correção será liberada.`)) return;
+    if (!confirm(`Encerrar a sessão? Há ${pending} questões pendentes. Seleções serão avaliadas uma vez e respostas escritas serão enviadas. Etapas objetivas restantes serão encerradas com zero. Autoavaliações poderão ser preenchidas depois.`)) return;
     this.submitAll(true);
   },
 
   submitAll(ending = false) {
-    if (this.state.config.meAttempts === true) {
+    if (this.state.config.meAttempts === true || (this.state.config.meWritten && this.state.config.meWritten !== 'off')) {
       this.state.mappings.qOrder.forEach((idx) => {
         if (this.isQuestionExcluded(idx) || this.state.userAnswers[idx]?.submitted) return;
         const q = this.state.questions[idx];
         const a = this.state.userAnswers[idx] ||= {};
+        if (writtenStage(this.state, idx) === 'writing') {
+          if (ending || a.written?.text?.trim()) submitWritten(this.state, idx, a.written?.text || '', ending && !a.written?.text?.trim());
+          if (ending && writtenMode(this.state, idx) === 'hybrid') {
+            a.submitted = true; a.attemptOutcome = 'blank';
+          }
+          return; // Cada envio em lote avança somente uma etapa.
+        }
         if (isAttemptQuestion(this.state, idx)) {
           this.submitQuestion(idx, true);
           if (ending && !a.submitted) {
@@ -1600,6 +1617,34 @@ const App = {
     }, 150);
   },
 
+  handleWrittenText(idx, text) {
+    if (this.isQuestionExcluded(idx) || writtenStage(this.state, idx) !== 'writing') return;
+    const a = this.state.userAnswers[idx] ||= {};
+    (a.written ||= {}).text = text;
+    clearTimeout(this._escritaTextSaveTimer);
+    this._escritaTextSaveTimer = setTimeout(() => this.save(false), 400);
+  },
+
+  refreshWrittenCard(idx) {
+    this.save(true);
+    const card = document.querySelector(`.question-card[data-original-idx="${idx}"]`);
+    const visual = this.state.mappings.qOrder.indexOf(idx);
+    if (card) card.replaceWith(this.renderer.createQuestionCard(this.state.questions[idx], idx, visual, this.state));
+    this.renderer.updateFooter(this.state);
+    this.renderer._updatePaginationNavigation?.();
+    this.refreshAttemptSettings();
+  },
+
+  handleWrittenSubmit(idx, text, skipped = false) {
+    if (this.isQuestionExcluded(idx) || !submitWritten(this.state, idx, text, skipped)) return;
+    this.refreshWrittenCard(idx);
+  },
+
+  handleWrittenFallback(idx) {
+    if (this.isQuestionExcluded(idx) || !fallbackWritten(this.state, idx)) return;
+    this.refreshWrittenCard(idx);
+  },
+
   // ===================== ESCRITA handlers =====================
 
   handleEscritaTextChange(qIdx, text, itemIdx) {
@@ -1672,6 +1717,10 @@ const App = {
   },
 
   handleSelfEval(qIdx, score, itemIdx) {
+    if (writtenMode(this.state, qIdx) !== 'off') {
+      if (!this.isQuestionExcluded(qIdx) && assessWritten(this.state, qIdx, score)) this.refreshWrittenCard(qIdx);
+      return;
+    }
     if (!this.state.userAnswers[qIdx]) return;
     const ans = this.state.userAnswers[qIdx];
 
@@ -1786,10 +1835,18 @@ const App = {
   attemptSettingsLocked() {
     return Object.entries(this.state.userAnswers).some(([idx, a]) =>
       (this.state.questions[idx]?.tipo || '').toUpperCase() === 'ME' &&
-      (a?.submitted || a?.attempts?.length));
+      (a?.submitted || a?.attempts?.length || a?.written?.submitted));
   },
 
   refreshAttemptSettings() {
+    renderWrittenSettings(document.getElementById('sessionWrittenSettings'), this.state,
+      this.state.mappings.qOrder.length ? this.state.mappings.qOrder : this.state.questions.map((_, i) => i),
+      value => {
+        if (this.attemptSettingsLocked()) return this.refreshAttemptSettings();
+        if (value !== 'off' && this.state.mappings.qOrder.length && !confirm('As alternativas podem já ter sido vistas nesta sessão. Para começar sem essa exposição, ative o modo antes de gerar o quiz. Ativar agora?')) return this.refreshAttemptSettings();
+        this.state.config.meWritten = value;
+        this.renderer.render(this.state); this.refreshAttemptSettings(); this.save(true);
+      }, this.attemptSettingsLocked());
     const enabled = this.state.config.meAttempts === true;
     const locked = this.attemptSettingsLocked() || !this.state.quizJson;
     const toggle = document.getElementById('chkMeAttempts');
@@ -3015,7 +3072,7 @@ const App = {
       const hasUnanswered = this.state.mappings.qOrder.some(idx => {
         if (this.isQuestionExcluded(idx)) return false;
         const ans = this.state.userAnswers[idx];
-        return !ans || !ans.submitted;
+        return this.isQuestionPending(idx);
       });
 
       if (!hasUnanswered) {
@@ -3285,12 +3342,18 @@ const App = {
     await this.renderSessionList();
   },
 
+  isQuestionPending(idx) {
+    if (this.isQuestionExcluded(idx)) return false;
+    const a = this.state.userAnswers[idx];
+    return !a?.submitted || (writtenMode(this.state, idx) !== 'off' && !writtenEvaluated(a));
+  },
+
   scrollToNextUnanswered() {
     if (this.renderer._pagination?.enabled) {
       const order = this.state.mappings.qOrder;
       const page = this.renderer._pages[this.renderer._pageIndex];
       if (!page) return;
-      const unanswered = (index) => !this.isQuestionExcluded(index) && !this.state.userAnswers[index]?.submitted;
+      const unanswered = index => this.isQuestionPending(index);
       const idx = order.slice(page.start).find((index, offset) => {
         if (!unanswered(index)) return false;
         if (page.start + offset >= page.end) return true;
@@ -3311,7 +3374,7 @@ const App = {
     for (const idx of qOrder) {
       if (this.isQuestionExcluded(idx)) continue;
       const ans = this.state.userAnswers[idx];
-      if (ans && ans.submitted) continue;
+      if (!this.isQuestionPending(idx)) continue;
 
       const card = document.querySelector(`.question-card[data-original-idx="${idx}"]`);
       if (card && card.getBoundingClientRect().top + window.scrollY > scrollY) {
@@ -3325,7 +3388,7 @@ const App = {
       for (const idx of qOrder) {
         if (this.isQuestionExcluded(idx)) continue;
         const ans = this.state.userAnswers[idx];
-        if (ans && ans.submitted) continue;
+        if (!this.isQuestionPending(idx)) continue;
 
         const card = document.querySelector(`.question-card[data-original-idx="${idx}"]`);
         if (card) {

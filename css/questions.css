@@ -1128,3 +1128,22 @@ html.dark-mode .result-section {
 .folder-description-header button { flex-shrink: 0; }
 .folder-description-path { color: var(--text-secondary); overflow-wrap: anywhere; font-size: .85rem; }
 .folder-description-dialog iframe { display: block; width: 100%; height: min(60vh, 600px); border: 0; background: var(--card); }
+
+/* Resolução escrita opcional de ME */
+.me-written-content { margin-top: 20px; }
+.written-actions { flex-wrap: wrap; gap: 10px; }
+.btn-written-link { border: 0; background: transparent; color: var(--primary-color, #007bff); cursor: pointer; text-decoration: underline; padding: 6px; font: inherit; font-size: .85em; }
+.written-review, .written-original { margin: 14px 0; }
+.written-review summary, .written-original summary { cursor: pointer; color: var(--primary-color, #007bff); font-size: .9em; padding: 6px 0; }
+.written-readonly { margin-top: 8px; }
+.written-correct-comment, .written-original-content { margin-top: 14px; padding: 12px; border: 1px solid var(--border-color, #ddd); border-radius: 6px; }
+.written-original-alternative { margin: 12px 0; }
+.written-results { border-top: 1px solid var(--border-color, #ddd); padding-top: 14px; margin-top: 14px; }
+.written-results table { width: 100%; text-align: left; border-collapse: collapse; }
+.written-results td, .written-results th { padding: 7px 5px; }
+.written-setting-label { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.written-settings { padding: 12px; margin: 16px 0; border: 1px solid var(--border-color, #ddd); border-radius: 6px; }
+.written-settings small { display: block; margin-top: 8px; }
+.written-settings select { max-width: 100%; font: inherit; padding: 6px; }
+.written-unknown-notice { line-height: 1.5; }
+.written-original-content .specific-comment, .written-original-content .general-comment { display: block !important; }

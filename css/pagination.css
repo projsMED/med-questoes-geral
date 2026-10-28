@@ -143,3 +143,6 @@ body.quiz-paged .question-card, body.quiz-paged .question-group { scroll-margin-
 
 
 .progress-attempting { color: var(--primary); border-color: var(--primary); }
+.progress-writing { background: var(--progress-empty-bg); color: var(--progress-empty-text); }
+.progress-writtenDraft { background: var(--progress-draft-bg); color: var(--progress-draft-text); }
+.progress-mePending { background: var(--progress-pending-bg); color: var(--progress-pending-text); }

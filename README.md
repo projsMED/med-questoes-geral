@@ -1,3 +1,28 @@
+## V4.10.0 Beta — ME por escrito
+
+A opção **Responder ME por escrito** fica na criação do quiz (antes de exibir as questões) e nas configurações da sessão, junto ao modo de tentativas. Começa desativada em cada nova sessão; a modalidade é salva e não pode ser alterada após o primeiro envio de uma questão ME. Reiniciar apaga as respostas e permite mudar a configuração.
+
+- **Híbrido: escrita + alternativas:** envie o texto para liberar a ME. O texto fica somente para consulta. Ao concluir a ME, compare sua escrita com o gabarito e atribua a autoavaliação de 0 a 10. Funciona com tentativas e comentários a cada erro.
+- **Apenas escrita:** envie o texto, confira o conteúdo completo da alternativa correta e seu comentário específico, e faça a autoavaliação. O comentário geral fica disponível somente em **Ver questão ME original**, junto a todas as alternativas e comentários. Não há seleção ME nesta modalidade.
+- **Não sei responder:** registra zero explícito na escrita. Enviar um campo vazio por acidente não avança a questão.
+- Em questões indefinidas, **Responder com alternativas** converte individualmente para ME, preserva o rascunho para consulta e não atribui nota escrita. A conversão é definitiva até reiniciar.
+
+### Compatibilidade no banco JSON
+
+Use a propriedade opcional `compativelEscrita`, exclusivamente booleana, na raiz do arquivo, em `FOLDER`, em `GRUPO_JUNTAS` ou na própria ME. `true` permite a escrita; `false` mantém ME; ausência herda o valor mais próximo. Sem nenhuma definição, a questão é indefinida e oferece conversão manual. Uma definição na questão prevalece sobre os ancestrais. Variantes preservam a herança em cada sorteio.
+
+Exemplo: arquivo com `"compativelEscrita": true`, pasta com `"compativelEscrita": false` e ME dessa pasta com `"compativelEscrita": true`: somente a exceção explícita volta a participar do modo escrito. O atributo não transforma MEM ou outros tipos.
+
+### Notas e resultados
+
+Cada questão continua valendo no máximo um ponto geral: híbridas usam a nota ME; apenas escrita usa autoavaliação ÷ 10. A nota escrita das híbridas é um indicador separado. Falta de autoavaliação é pendência, não zero. Resultados mostram somas, médias, etapas pendentes e conversões; o comparativo usa exatamente as mesmas questões com ME concluída e escrita avaliada. Híbridas com tentativas têm distribuição própria, além do total geral de tentativas. Desfechos com quantidade zero são omitidos.
+
+Questões desativadas, excluídas ou de contexto são retiradas dos resultados. Desconsiderar acerto nas híbridas altera somente ME. A revisão inclui desempenho insuficiente em qualquer etapa. Envio em lote avança somente uma etapa; encerrar libera a correção sem inventar autoavaliação. Sessões, backups e sincronização preservam texto, modalidade, tentativas e notas.
+
+Validação: `node --test tests/*.test.mjs`. Os testes incluem herança, sorteio de variantes, cartão/cópia sem revelar alternativas, autoavaliação, integração de tentativas, encerramento, nota parcial, exclusões e restauração serializada. Validação visual em navegador real pendente neste ambiente.
+
+---
+
 ## Atualização beta — filtros e descrições de pastas
 
 - A segunda etapa oculta opções com zero questões e blocos que não distinguem o conjunto das pastas selecionadas. Restrições salvas permanecem acessíveis; desmarcar filtros não faz suas opções desaparecerem. O layout redistribui o espaço e, sem filtros úteis, mostra a quantidade disponível.

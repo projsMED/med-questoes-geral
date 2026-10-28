@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Question Engine V4.9.0 Beta - Filtro em Etapas</title>
+  <title>Question Engine V4.10.0 Beta - Filtro em Etapas</title>
   <script>
     (function() {
       var dm = localStorage.getItem('vs_darkMode');
@@ -12,19 +12,19 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/variables.css?v=20261027-folders-beta-2">
-  <link rel="stylesheet" href="css/layout.css?v=20261027-folders-beta-2">
-  <link rel="stylesheet" href="css/questions.css?v=20261027-folders-beta-2">
-  <link rel="stylesheet" href="css/highlighter.css?v=20261027-folders-beta-2">
-  <link rel="stylesheet" href="css/matching-questions.css?v=20261027-folders-beta-2">
-  <link rel="stylesheet" href="css/pagination.css?v=20261027-folders-beta-2">
+  <link rel="stylesheet" href="css/variables.css?v=20261028-written-beta-1">
+  <link rel="stylesheet" href="css/layout.css?v=20261028-written-beta-1">
+  <link rel="stylesheet" href="css/questions.css?v=20261028-written-beta-1">
+  <link rel="stylesheet" href="css/highlighter.css?v=20261028-written-beta-1">
+  <link rel="stylesheet" href="css/matching-questions.css?v=20261028-written-beta-1">
+  <link rel="stylesheet" href="css/pagination.css?v=20261028-written-beta-1">
 </head>
 <body>
 
 <div class="container">
   
   <div class="controls-card">
-    <h2 class="header-title">Question Engine V4.9.0 Beta</h2>
+    <h2 class="header-title">Question Engine V4.10.0 Beta</h2>
     
     <input type="file" id="fileInput" accept=".json,application/json" class="hidden">
 
@@ -96,6 +96,7 @@
           </div>
         </div>
 
+        <div id="filterWrittenSettings" class="written-settings hidden"></div>
         <p class="filter-empty-notice hidden" role="status"></p>
         <div class="generate-action">
           <button class="btn btn-submit" id="btnGenerate">Gerar Quiz</button>
@@ -227,6 +228,7 @@
       </div>
       <div id="generalSettingsPanel" class="general-settings-panel hidden">
         <div id="paginationSettings"></div>
+        <div id="sessionWrittenSettings" class="written-settings hidden"></div>
         <fieldset id="attemptSettings" class="vs-option">
           <legend>Nesta sessão</legend>
           <label class="toggle-label"><input type="checkbox" id="chkMeAttempts"> Ativar modo de tentativas para ME</label>
@@ -536,7 +538,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20261027-folders-beta-2';
+  const APP_ASSET_VERSION = '20261028-written-beta-1';
   const moduleAssets = [
     'main.js',
     'store.js',
@@ -546,6 +548,8 @@
     'release-config.js',
     'renderer.js',
     'folder-descriptions.js',
+    'me-written.js',
+    'me-written-ui.js',
     'highlighter.js',
     'preferences.js',
     'pagination.js',

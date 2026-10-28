@@ -1,5 +1,6 @@
+import { renderWrittenSettings } from './me-written-ui.js?v=20261028-written-beta-1';
 // Filtros do quiz: esquema, seleção por grupos, contagens e controles em duas etapas.
-import { difficultyMap, questionTypeMap, questionTypes } from './utils.js?v=20261027-folders-beta-2';
+import { difficultyMap, questionTypeMap, questionTypes } from './utils.js?v=20261028-written-beta-1';
 
 export function createFilterState() {
   return {
@@ -515,6 +516,11 @@ export class QuizFilters {
   }
 
   updateGenerateButton() {
+    const selected = selectQuestionGroups(this.state);
+    const eligible = selected.groups.flat().filter(idx => !selected.forcedIndices.includes(idx));
+    renderWrittenSettings(globalThis.document?.getElementById('filterWrittenSettings'), this.state, eligible,
+      value => { this.state.config.meWritten = value; this.updateGenerateButton(); this.onChange?.(); },
+      Object.entries(this.state.userAnswers || {}).some(([idx, a]) => this.state.questions[idx]?.tipo?.toUpperCase() === 'ME' && (a?.written?.submitted || a?.submitted || a?.attempts?.length)));
     if (!this.state.filters || !this.state.filters.allTags) return;
 
     const allTagsSel =

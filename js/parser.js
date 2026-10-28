@@ -44,11 +44,12 @@ export function pickWeightedVariant(items, randomFn = Math.random) {
   return items[items.length - 1];
 }
 
-export function parseContent(nodes, path = [], randomFn = Math.random) {
+export function parseContent(nodes, path = [], randomFn = Math.random, inheritedWritten) {
   let list = [];
   if (!Array.isArray(nodes)) return list;
 
   nodes.forEach((node) => {
+    const writtenCompatibility = typeof node.compativelEscrita === 'boolean' ? node.compativelEscrita : inheritedWritten;
     let tipo = (node.tipo || '').toUpperCase();
     // Normalização transparente: MEM substitui ME-CH e MVF substitui CH
     if (tipo === 'ME-CH') tipo = 'MEM';
@@ -57,10 +58,10 @@ export function parseContent(nodes, path = [], randomFn = Math.random) {
     if (tipo === 'FOLDER') {
       // Adiciona o nome da pasta atual ao caminho e desce recursivamente
       const currentPath = [...path, node.nome || 'Sem Nome'];
-      list = list.concat(parseContent(node.conteudo, currentPath, randomFn));
+      list = list.concat(parseContent(node.conteudo, currentPath, randomFn, writtenCompatibility));
     } else if (tipo === 'GRUPO_JUNTAS') {
       // Questões dentro do grupo herdam o caminho atual
-      const groupQuestions = parseContent(node.questoes, path, randomFn);
+      const groupQuestions = parseContent(node.questoes, path, randomFn, writtenCompatibility);
 
       if (node.texto) {
         const groupId = 'grp_' + Math.random().toString(36).substr(2, 9);
@@ -90,12 +91,13 @@ export function parseContent(nodes, path = [], randomFn = Math.random) {
         }
 
         // Variantes herdam o caminho
-        const parsed = parseContent([chosen], path, randomFn);
+        const parsed = parseContent([chosen], path, randomFn, writtenCompatibility);
 
         // Salva nó original para re-sorteio (apenas se produz 1 questão na lista plana)
         if (savedNode && parsed.length === 1) {
           parsed[0]._variantNode = savedNode;
           parsed[0]._variantPath = [...path];
+          parsed[0]._variantWrittenCompatibility = writtenCompatibility;
         }
 
         list = list.concat(parsed);
@@ -140,6 +142,7 @@ export function parseContent(nodes, path = [], randomFn = Math.random) {
 
       list.push(node);
     } else if (tipo === 'ME' || tipo === 'MEM' || tipo === 'ME-CH') {
+      node._writtenCompatibility = writtenCompatibility;
       if (tipo === 'ME-CH' || tipo === 'MEM') node.tipo = 'MEM';
       // Adiciona o caminho à questão
       node._path = path.length > 0 ? path : ['Raiz'];
@@ -249,12 +252,13 @@ export function reshuffleVariants(questions, randomFn = Math.random) {
       chosen.dificuldade = node.dificuldade;
     }
 
-    const parsed = parseContent([chosen], path, randomFn);
+    const parsed = parseContent([chosen], path, randomFn, q._variantWrittenCompatibility);
 
     if (parsed.length === 1) {
       // Preserva metadados de variante na nova questão
       parsed[0]._variantNode = q._variantNode;
       parsed[0]._variantPath = q._variantPath;
+      parsed[0]._variantWrittenCompatibility = q._variantWrittenCompatibility;
       // Preserva _groupData se existir
       if (q._groupData) parsed[0]._groupData = q._groupData;
       questions[i] = parsed[0];
