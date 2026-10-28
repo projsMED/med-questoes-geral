@@ -1,0 +1,679 @@
+{
+  "titulo": "Retocolite e Doença de Crohn - ME",
+  "id_quiz": "mescla-98a16d18-2e38-49a6-a256-df3d10fdb382",
+  "conteudo": [
+    {
+      "tipo": "ME",
+      "id": "201026-1127-1-sMOuNB",
+      "enunciado": "Qual segmento intestinal costuma ser o ponto inicial do acometimento na retocolite ulcerativa?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Íleo terminal",
+          "comentario": "O íleo terminal é frequentemente acometido na doença de Crohn. Na retocolite ulcerativa, o acometimento geralmente começa no reto."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Reto",
+          "comentario": "A retocolite ulcerativa geralmente começa no reto e se estende proximalmente, com inflamação contínua da mucosa colônica."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Cólon ascendente",
+          "comentario": "O cólon ascendente pode ser atingido na doença extensa, mas não constitui o ponto inicial habitual da retocolite ulcerativa."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Ceco",
+          "comentario": "O ceco pode apresentar inflamação na retocolite ulcerativa, inclusive como uma área periappendicular isolada, mas o início habitual ocorre no reto."
+        }
+      ],
+      "gabarito": "B"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-2-YHO5po",
+      "enunciado": "Como se denomina o padrão de inflamação da doença de Crohn que pode atingir todas as camadas da parede intestinal?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Mucoso",
+          "comentario": "O padrão mucoso predomina na retocolite ulcerativa. Na doença de Crohn, a inflamação pode atravessar toda a parede intestinal."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Submucoso",
+          "comentario": "A submucosa pode ser atingida na doença de Crohn, mas esse termo não expressa o comprometimento de todas as camadas."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Seroso",
+          "comentario": "A serosa pode ser acometida, mas o termo seroso descreve apenas a camada externa, sem abranger toda a parede."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Transmural",
+          "comentario": "A inflamação transmural pode envolver todas as camadas da parede intestinal e ajuda a explicar a formação de fístulas e abscessos."
+        }
+      ],
+      "gabarito": "D"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-3-8C76Uh",
+      "enunciado": "Homem de 24 anos apresenta diarreia há cinco meses, dor recorrente no quadrante inferior direito e perda de 7 kg. Ao exame, observa-se orifício perianal com drenagem de secreção. A ileocolonoscopia demonstra úlceras profundas no íleo terminal e no cólon ascendente, intercaladas com áreas de mucosa preservada, além de reto sem alterações.\n\nQual é o diagnóstico mais provável?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Doença de Crohn",
+          "comentario": "O acometimento ileal descontínuo, as úlceras profundas e a doença perianal são características da doença de Crohn."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Retocolite ulcerativa",
+          "comentario": "A retocolite ulcerativa geralmente apresenta inflamação contínua iniciada no reto. Acometimento ileal segmentar e fístula perianal favorecem Crohn."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Tuberculose intestinal",
+          "comentario": "A tuberculose pode acometer a região ileocecal, mas a associação de lesões descontínuas e doença perianal fistulizante favorece Crohn neste caso."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Síndrome do intestino irritável",
+          "comentario": "A síndrome do intestino irritável não explica úlceras intestinais profundas, fístula perianal ou perda ponderal associada à inflamação."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-4-uJEKLt",
+      "enunciado": "Qual camada da parede intestinal é predominantemente acometida na retocolite ulcerativa?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Serosa",
+          "comentario": "A serosa não é a camada predominantemente acometida. Seu envolvimento pode ocorrer em apresentações fulminantes, mas não caracteriza a doença habitual."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Muscular própria",
+          "comentario": "A muscular própria costuma ser poupada na apresentação habitual. A inflamação da retocolite ulcerativa predomina na mucosa."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Mucosa",
+          "comentario": "A inflamação predomina na mucosa e pode alcançar a submucosa superficial. O acometimento profundo pode ocorrer em formas fulminantes."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Submucosa profunda",
+          "comentario": "A submucosa profunda não é o principal local de inflamação na retocolite ulcerativa, que apresenta comprometimento predominantemente mucoso."
+        }
+      ],
+      "gabarito": "C"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-5-4tUKik",
+      "enunciado": "Qual achado granulomatoso é característico, embora não obrigatório, na histologia da doença de Crohn?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Granulomas caseosos",
+          "comentario": "Granulomas com necrose caseosa sugerem especialmente tuberculose intestinal. Os granulomas característicos de Crohn são não caseosos."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Granulomas não caseosos",
+          "comentario": "Granulomas não caseosos são um achado característico da doença de Crohn, mas sua ausência não exclui o diagnóstico."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Granulomas com ovos parasitários",
+          "comentario": "Granulomas ao redor de ovos parasitários sugerem infecção, como esquistossomose, e não o padrão granulomatoso característico de Crohn."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Granulomas com material exógeno",
+          "comentario": "Granulomas associados a material exógeno indicam reação a corpo estranho. Não correspondem ao achado granulomatoso característico de Crohn."
+        }
+      ],
+      "gabarito": "B"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-6-DzXSep",
+      "enunciado": "Mulher de 32 anos apresenta evacuações com sangue e muco, urgência evacuatória e tenesmo há três meses. A investigação de causas infecciosas é negativa. A colonoscopia evidencia mucosa friável, perda do padrão vascular e ulcerações superficiais, com comprometimento contínuo desde o reto até o cólon descendente. O íleo terminal está preservado.\n\nQual é o diagnóstico mais provável?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Colite microscópica",
+          "comentario": "A colite microscópica costuma causar diarreia aquosa sem sangue e apresentar colonoscopia macroscopicamente normal, diferentemente do caso."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Doença de Crohn",
+          "comentario": "Crohn costuma apresentar lesões descontínuas e pode poupar o reto. O padrão contínuo iniciado no reto favorece retocolite ulcerativa."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Colite isquêmica",
+          "comentario": "A colite isquêmica geralmente tem início agudo e distribuição segmentar, frequentemente com preservação retal, ao contrário do quadro apresentado."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Retocolite ulcerativa",
+          "comentario": "Diarreia sanguinolenta, tenesmo e inflamação superficial contínua desde o reto constituem uma apresentação típica de retocolite ulcerativa."
+        }
+      ],
+      "gabarito": "D"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-7-j7fADL",
+      "enunciado": "Como se denominam as coleções de neutrófilos nas criptas intestinais, características da retocolite ulcerativa?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Abscessos de cripta",
+          "comentario": "Abscessos de cripta são coleções de neutrófilos no lúmen das criptas. São característicos da retocolite ulcerativa, embora não exclusivos dela."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Granulomas epitelioides",
+          "comentario": "Granulomas epitelioides são agregados organizados de macrófagos, não coleções de neutrófilos no lúmen das criptas."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Agregados linfoides",
+          "comentario": "Agregados linfoides são agrupamentos de células linfoides e não correspondem ao acúmulo de neutrófilos dentro das criptas."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Pseudopólipos inflamatórios",
+          "comentario": "Pseudopólipos resultam da regeneração de mucosa previamente inflamada. Não são coleções de neutrófilos nas criptas."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-8-Xq4gbx",
+      "enunciado": "Qual vitamina pode apresentar deficiência por comprometimento ou ressecção do íleo distal?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Vitamina B1",
+          "comentario": "A vitamina B1 é absorvida principalmente em segmentos proximais do intestino delgado. Sua absorção não depende especificamente do íleo distal."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Vitamina B9",
+          "comentario": "A vitamina B9, ou folato, é absorvida predominantemente no intestino delgado proximal, especialmente no jejuno."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Vitamina B12",
+          "comentario": "A vitamina B12 ligada ao fator intrínseco é absorvida no íleo distal. Inflamação ou ressecção desse segmento pode causar deficiência."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Vitamina C",
+          "comentario": "A vitamina C é absorvida no intestino delgado, mas não apresenta a dependência específica do íleo distal observada para a vitamina B12."
+        }
+      ],
+      "gabarito": "C"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-9-q1rQPM",
+      "enunciado": "Mulher de 27 anos, com doença de Crohn, apresenta piora recente da diarreia e das dores abdominais. Simultaneamente, surgem nódulos avermelhados, quentes e dolorosos na face anterior de ambas as pernas. As lesões são elevadas, não apresentam ulceração e tornam a palpação local bastante desconfortável.\n\nQual é a manifestação cutânea mais provável?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Pioderma gangrenoso",
+          "comentario": "O pioderma gangrenoso costuma evoluir com úlceras dolorosas e bordas violáceas. Nódulos pretibiais não ulcerados favorecem eritema nodoso."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Eritema nodoso",
+          "comentario": "O eritema nodoso causa nódulos subcutâneos dolorosos, geralmente nas regiões pretibiais, e frequentemente acompanha a atividade inflamatória intestinal."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Doença de Crohn metastática",
+          "comentario": "A doença de Crohn metastática provoca lesões cutâneas granulomatosas afastadas do intestino. O padrão pretibial nodular doloroso descrito é típico de eritema nodoso."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Vasculite leucocitoclástica",
+          "comentario": "A vasculite leucocitoclástica costuma produzir púrpura palpável nos membros inferiores, em vez dos nódulos subcutâneos típicos do eritema nodoso."
+        }
+      ],
+      "gabarito": "B"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-10-fW5KEk",
+      "enunciado": "Qual marcador fecal de inflamação intestinal corresponde a uma proteína ligadora de cálcio e zinco?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Elastase fecal",
+          "comentario": "A elastase fecal é utilizada na avaliação da função pancreática exócrina. Não corresponde à proteína inflamatória ligadora de cálcio e zinco."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Lactoferrina fecal",
+          "comentario": "A lactoferrina também indica inflamação intestinal, mas é uma glicoproteína ligadora de ferro presente nos grânulos dos neutrófilos."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Alfa-1-antitripsina fecal",
+          "comentario": "A alfa-1-antitripsina fecal auxilia na investigação de perda intestinal de proteínas, não sendo a proteína ligadora de cálcio e zinco descrita."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Calprotectina fecal",
+          "comentario": "A calprotectina liga cálcio e zinco e está presente em abundância nos neutrófilos. Sua elevação fecal indica inflamação intestinal."
+        }
+      ],
+      "gabarito": "D"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-11-AZxuwr",
+      "enunciado": "Qual anticorpo anticitoplasma de neutrófilos apresenta maior associação com a retocolite ulcerativa?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "p-ANCA",
+          "comentario": "O p-ANCA apresenta maior associação com retocolite ulcerativa, mas sua presença isolada não confirma o diagnóstico."
+        },
+        {
+          "id": "alt_B",
+          "texto": "c-ANCA",
+          "comentario": "O c-ANCA é classicamente associado à granulomatose com poliangiite. O padrão mais associado à retocolite ulcerativa é o p-ANCA."
+        },
+        {
+          "id": "alt_C",
+          "texto": "ASCA",
+          "comentario": "O ASCA é um anticorpo contra Saccharomyces cerevisiae, mais associado à doença de Crohn, e não um anticorpo anticitoplasma de neutrófilos."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Anti-OmpC",
+          "comentario": "O anti-OmpC reconhece uma proteína bacteriana de membrana e foi estudado na doença de Crohn. Não corresponde a um ANCA."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-12-x6JlFM",
+      "enunciado": "Homem de 41 anos, com retocolite ulcerativa há dez anos, apresenta prurido persistente e fadiga. Os exames mostram elevação predominante de fosfatase alcalina e GGT. A colangiorressonância identifica múltiplas estenoses intercaladas com dilatações nas vias biliares intra e extra-hepáticas.\n\nQual é o diagnóstico hepatobiliar mais provável?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Colangite biliar primária",
+          "comentario": "A colangite biliar primária acomete principalmente pequenos ductos intra-hepáticos. Não costuma produzir o padrão de estenoses multifocais descrito."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Hepatite autoimune",
+          "comentario": "A hepatite autoimune geralmente apresenta elevação predominante de aminotransferases e inflamação hepatocelular, sem esse padrão de alterações ductais."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Colangite esclerosante primária",
+          "comentario": "A associação com retocolite ulcerativa e as estenoses multifocais intercaladas com dilatações biliares são características de colangite esclerosante primária."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Coledocolitíase obstrutiva",
+          "comentario": "A coledocolitíase causa obstrução por cálculos, geralmente com dilatação a montante, sem explicar as múltiplas estenoses intra e extra-hepáticas."
+        }
+      ],
+      "gabarito": "C"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-13-L1x8eC",
+      "enunciado": "Qual anticorpo contra Saccharomyces cerevisiae apresenta maior associação com a doença de Crohn?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "p-ANCA",
+          "comentario": "O p-ANCA reconhece componentes de neutrófilos e apresenta maior associação com retocolite ulcerativa, não com antígenos de Saccharomyces cerevisiae."
+        },
+        {
+          "id": "alt_B",
+          "texto": "ASCA",
+          "comentario": "ASCA é a sigla para anticorpos contra Saccharomyces cerevisiae. São mais associados à doença de Crohn, sem confirmar isoladamente o diagnóstico."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Anti-OmpC",
+          "comentario": "O anti-OmpC reconhece uma proteína de membrana de Escherichia coli. Embora estudado em Crohn, não é dirigido contra Saccharomyces cerevisiae."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Anti-CBir1",
+          "comentario": "O anti-CBir1 reconhece uma flagelina bacteriana. Seu alvo não é Saccharomyces cerevisiae, ao contrário do ASCA."
+        }
+      ],
+      "gabarito": "B"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-14-Sn7wl8",
+      "enunciado": "Como se chama o aspecto endoscópico da doença de Crohn formado por úlceras entremeadas por ilhas de mucosa preservada?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Mucosa em mosaico",
+          "comentario": "O aspecto em mosaico pode ser encontrado em outras condições digestivas. As ilhas de mucosa entre úlceras de Crohn formam pedras de calçamento."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Padrão vascular apagado",
+          "comentario": "O apagamento do padrão vascular indica inflamação mucosa, mas não descreve as ilhas de mucosa preservada delimitadas por úlceras."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Mucosa em lixa",
+          "comentario": "O aspecto em lixa descreve uma superfície granular. Não corresponde ao relevo formado por úlceras entremeadas por mucosa preservada."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Pedras de calçamento",
+          "comentario": "Úlceras longitudinais e transversais delimitam ilhas de mucosa, produzindo o aspecto em pedras de calçamento, também chamado de cobblestone."
+        }
+      ],
+      "gabarito": "D"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-15-TxR40l",
+      "enunciado": "Mulher de 36 anos, internada por exacerbação de retocolite ulcerativa, evolui com distensão abdominal importante, dor difusa e redução dos ruídos hidroaéreos. Apresenta temperatura de 39 °C, frequência cardíaca de 126 bpm, leucocitose e desidratação. A radiografia de abdome mostra dilatação do cólon transverso de 7,5 cm, sem evidência de obstrução mecânica.\n\nQual complicação explica esse quadro?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Megacólon tóxico",
+          "comentario": "A dilatação colônica não obstrutiva superior a 6 cm, associada à toxicidade sistêmica em paciente com colite, caracteriza megacólon tóxico."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Obstrução por estenose",
+          "comentario": "A obstrução por estenose pressupõe uma barreira mecânica ao trânsito, não identificada neste caso de dilatação associada à toxicidade sistêmica."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Pseudo-obstrução colônica aguda",
+          "comentario": "A pseudo-obstrução também causa dilatação sem barreira mecânica, mas a colite ativa com febre e toxicidade sistêmica favorece megacólon tóxico."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Perfuração intestinal livre",
+          "comentario": "A perfuração livre costuma causar peritonite e pode produzir pneumoperitônio. O achado central apresentado é dilatação colônica com toxicidade sistêmica."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-16-MChFqd",
+      "enunciado": "Como se denomina a inflamação leve do íleo distal que pode acompanhar a pancolite ulcerativa por refluxo do conteúdo colônico?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Ileíte por Crohn",
+          "comentario": "A ileíte por Crohn decorre da própria doença e pode apresentar lesões profundas e segmentares. O mecanismo descrito é a ileíte de refluxo."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Ileíte infecciosa",
+          "comentario": "A ileíte infecciosa decorre de agentes infecciosos, e não da continuidade inflamatória ou do refluxo associado à pancolite ulcerativa."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Ileíte de refluxo",
+          "comentario": "A ileíte de refluxo é uma inflamação geralmente leve do íleo distal que pode acompanhar a retocolite ulcerativa extensa."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Ileíte isquêmica",
+          "comentario": "A ileíte isquêmica decorre de redução da perfusão intestinal, não do refluxo de conteúdo colônico em pacientes com pancolite."
+        }
+      ],
+      "gabarito": "C"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-17-BxCknm",
+      "enunciado": "Qual exame endoscópico que utiliza um dispositivo ingerível deve ser evitado diante de estenose intestinal pelo risco de retenção?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Enteroscopia por balão",
+          "comentario": "A enteroscopia por balão utiliza um aparelho introduzido por via oral ou anal, sem cápsula ingerível sujeita ao mecanismo de retenção descrito."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Cápsula endoscópica",
+          "comentario": "A cápsula é ingerida e percorre o intestino. Uma estenose pode impedir sua passagem e provocar retenção, exigindo avaliação prévia da permeabilidade."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Ileocolonoscopia convencional",
+          "comentario": "A ileocolonoscopia utiliza um aparelho introduzido pelo ânus. Não depende da passagem espontânea de um dispositivo ingerível."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Endoscopia digestiva alta",
+          "comentario": "A endoscopia digestiva alta utiliza um aparelho introduzido pela boca e retirado ao final. Não envolve uma cápsula que possa ficar retida."
+        }
+      ],
+      "gabarito": "B"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-18-ULrxYf",
+      "enunciado": "Homem de 38 anos, com doença de Crohn ileal, apresenta infecções urinárias recorrentes há quatro meses. Relata saída de ar durante a micção e episódios de urina com resíduos de aspecto fecal. A tomografia demonstra alça ileal inflamada aderida à bexiga e gás intravesical, sem histórico recente de sondagem.\n\nQual complicação da doença de Crohn é a mais provável?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Fístula enterocutânea",
+          "comentario": "A fístula enterocutânea comunica o intestino com a pele e provoca drenagem externa. Não explica pneumaturia e fecalúria."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Fístula enteroentérica",
+          "comentario": "A fístula enteroentérica comunica duas alças intestinais. Sem comunicação com a bexiga, não explica os resíduos fecais na urina."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Fístula enterogástrica",
+          "comentario": "A fístula enterogástrica comunica o intestino com o estômago, sem justificar a associação de pneumaturia, fecalúria e infecções urinárias."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Fístula enterovesical",
+          "comentario": "A comunicação entre intestino e bexiga permite passagem de gás e conteúdo entérico para a urina, causando pneumaturia, fecalúria e infecções recorrentes."
+        }
+      ],
+      "gabarito": "D"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-19-6njraM",
+      "enunciado": "Qual classe de medicamentos pode induzir remissão, mas não deve ser utilizada para manutenção nas doenças inflamatórias intestinais?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Corticosteroides",
+          "comentario": "Corticosteroides podem controlar a atividade inflamatória e induzir remissão, mas não devem ser usados para manutenção devido à toxicidade e à inadequação para esse objetivo."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Aminossalicilatos",
+          "comentario": "Aminossalicilatos podem ser utilizados para manutenção da remissão na retocolite ulcerativa, especialmente nas formas leves."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Tiopurinas",
+          "comentario": "Tiopurinas, como a azatioprina, podem ser utilizadas para manutenção e redução da dependência de corticoides. Seu início de ação é lento."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Agentes anti-TNF",
+          "comentario": "Agentes anti-TNF podem ser utilizados tanto para indução quanto para manutenção da remissão, conforme a indicação clínica."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-20-OZtAYp",
+      "enunciado": "Segundo o material, qual corticoide é utilizado para induzir remissão na doença de Crohn ileal leve e de baixo risco?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Hidrocortisona",
+          "comentario": "A hidrocortisona sistêmica pode ser utilizada em situações graves que exigem tratamento hospitalar, mas não é a opção destacada para Crohn ileal leve."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Dexametasona",
+          "comentario": "A dexametasona não é o corticoide destacado para indução de remissão na doença de Crohn ileal leve."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Budesonida",
+          "comentario": "A budesonida em formulação de liberação ileal atua na região ileocecal e apresenta menor exposição sistêmica, sendo indicada nesse cenário."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Prednisona",
+          "comentario": "A prednisona pode ser uma alternativa, mas apresenta maior exposição sistêmica. Para o cenário descrito, o material destaca a budesonida."
+        }
+      ],
+      "gabarito": "C"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-21-OXyISR",
+      "enunciado": "Mulher de 29 anos apresenta retocolite ulcerativa limitada ao reto, confirmada por endoscopia e biópsias. Refere pequeno sangramento ao evacuar e urgência, sem febre, anemia ou perda ponderal. Ainda não recebeu tratamento, e a avaliação indica doença leve e de baixo risco.\n\nSegundo o material, qual medicamento e via constituem a primeira opção terapêutica?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Mesalazina por via oral",
+          "comentario": "A mesalazina oral pode ser uma alternativa ou complementar o tratamento, mas a via retal é preferida inicialmente na doença leve restrita ao reto."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Mesalazina por via retal",
+          "comentario": "A mesalazina retal trata diretamente a mucosa acometida e é a primeira opção para induzir remissão na proctite ulcerativa leve."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Prednisona por via oral",
+          "comentario": "A prednisona sistêmica não é a primeira opção na proctite leve sem tratamento prévio, pois a mesalazina retal oferece tratamento local com menor exposição sistêmica."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Hidrocortisona por via retal",
+          "comentario": "O corticoide retal pode ser uma alternativa em situações selecionadas, mas a mesalazina retal é a primeira opção indicada no material."
+        }
+      ],
+      "gabarito": "B"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-22-edmseQ",
+      "enunciado": "Qual é a principal indicação cirúrgica na doença de Crohn?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Hemorragia intestinal",
+          "comentario": "Hemorragia grave e não controlada pode exigir cirurgia, mas é uma indicação menos frequente do que a obstrução intestinal na doença de Crohn."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Perfuração intestinal",
+          "comentario": "A perfuração livre exige abordagem cirúrgica urgente, mas não é a principal indicação em frequência na doença de Crohn."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Neoplasia intestinal",
+          "comentario": "A neoplasia pode indicar ressecção oncológica, mas não representa a indicação cirúrgica mais frequente na doença de Crohn."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Obstrução intestinal",
+          "comentario": "A obstrução intestinal, frequentemente relacionada a estenoses, é a principal indicação cirúrgica. A cirurgia depende da gravidade e da resposta ao manejo clínico."
+        }
+      ],
+      "gabarito": "D"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-23-wqb862",
+      "enunciado": "Qual citocina é o alvo terapêutico do infliximabe e do adalimumabe?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "TNF-alfa",
+          "comentario": "Infliximabe e adalimumabe são anticorpos que neutralizam o TNF-alfa, reduzindo sua ação pró-inflamatória."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Interleucina 12",
+          "comentario": "A interleucina 12 participa de outra via inflamatória. O ustequinumabe atua na subunidade p40 compartilhada por IL-12 e IL-23."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Interleucina 23",
+          "comentario": "A interleucina 23 é alvo de outros tratamentos biológicos. Infliximabe e adalimumabe atuam sobre o TNF-alfa."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Interleucina 6",
+          "comentario": "A interleucina 6 também participa da inflamação, mas não é o alvo do infliximabe nem do adalimumabe."
+        }
+      ],
+      "gabarito": "A"
+    },
+    {
+      "tipo": "ME",
+      "id": "201026-1127-24-tehsJP",
+      "enunciado": "Homem de 45 anos, com doença de Crohn e duas ressecções prévias do intestino delgado, apresenta episódios recorrentes de distensão abdominal, cólicas e vômitos. A enterografia mostra múltiplas estenoses fibróticas curtas, sem abscessos ou fístulas. Após resposta insuficiente ao tratamento clínico, indica-se cirurgia, buscando preservar o comprimento intestinal remanescente.\n\nQual procedimento cirúrgico permite ampliar essas estenoses sem ressecar os segmentos envolvidos?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Enterectomia segmentar",
+          "comentario": "A enterectomia remove o segmento intestinal acometido. Embora possa tratar estenoses, reduz o comprimento intestinal e não atende ao objetivo de preservação descrito."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Derivação ileotransversa",
+          "comentario": "A derivação cria um desvio do trânsito, sem ampliar diretamente as estenoses. Não é a estratégia preferida para múltiplas estenoses curtas do delgado nesse contexto."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Estricturoplastia intestinal",
+          "comentario": "A estricturoplastia amplia o lúmen das áreas estenosadas sem ressecção, preservando o intestino e reduzindo o risco de síndrome do intestino curto."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Colectomia subtotal",
+          "comentario": "A colectomia subtotal remove grande parte do cólon, mas as estenoses descritas estão no intestino delgado."
+        }
+      ],
+      "gabarito": "C"
+    }
+  ],
+  "descricao": "Questões de múltipla escolha, baseadas na apostila EMED LD de Doença Inflamatória Intestinal."
+}

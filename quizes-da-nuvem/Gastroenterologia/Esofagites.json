@@ -1,0 +1,355 @@
+{
+  "titulo": "Esofagites",
+  "id_quiz": "mescla-6175ccc5-f4d7-44b0-a4bc-a2343c583a34",
+  "conteudo": [
+    {
+      "tipo": "ME",
+      "id": "131026-2238-1-ttMO0o",
+      "enunciado": "Um homem de 24 anos, com rinite e dermatite atópica, apresenta disfagia intermitente para sólidos e episódios de impactação alimentar. A endoscopia mostra anéis concêntricos e sulcos longitudinais no esôfago.\n\nQual é a principal hipótese diagnóstica?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Esofagite péptica",
+          "comentario": "A esofagite péptica decorre da exposição ao conteúdo refluído do estômago e costuma produzir erosões distais. Embora possa causar disfagia quando complicada por estenose, explica menos adequadamente a associação entre atopia, impactações recorrentes e anéis com sulcos longitudinais."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Esofagite herpética",
+          "comentario": "A infecção herpética costuma provocar odinofagia de início agudo e múltiplas pequenas úlceras. O padrão crônico de dificuldade com sólidos, associado aos achados endoscópicos descritos, não corresponde à apresentação mais característica dessa infecção."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Esofagite eosinofílica",
+          "comentario": "A associação de atopia, disfagia para sólidos e impactações alimentares recorrentes é característica dessa doença. Anéis e sulcos longitudinais reforçam a suspeita, que deve ser investigada com biópsias esofágicas e correlação clínica."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Esofagite cáustica",
+          "comentario": "A esofagite cáustica pressupõe exposição a substâncias corrosivas, com possível lesão aguda seguida de cicatrização estenosante. Sem essa exposição, ela não explica tão bem o conjunto de atopia, anéis e sulcos do caso."
+        }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "A esofagite eosinofílica é uma doença inflamatória crônica, imunomediada, frequentemente associada a outras manifestações atópicas. Em adultos, predominam disfagia para sólidos e impactação alimentar; crianças podem apresentar recusa alimentar e dificuldade de crescimento. A inflamação persistente favorece remodelamento, fibrose e redução do calibre esofágico. Os achados endoscópicos orientam a suspeita, mas não substituem as biópsias. É necessário integrar sintomas, histologia e avaliação de outras causas de inflamação esofágica."
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-2-6ReQTQ",
+      "enunciado": "Uma paciente em quimioterapia apresenta odinofagia. A endoscopia identifica múltiplas placas esbranquiçadas aderidas à mucosa esofágica. A análise das amostras demonstra leveduras e pseudohifas invadindo o epitélio.\n\nQual agente explica melhor esses achados?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Candida albicans",
+          "comentario": "Candida albicans é a principal causa de candidíase esofágica. As placas aderentes e a identificação de leveduras e pseudohifas com invasão epitelial sustentam a etiologia fúngica, em um contexto de imunossupressão."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Citomegalovírus",
+          "comentario": "O citomegalovírus provoca predominantemente lesões ulceradas e alterações citopáticas nas células infectadas. Não produz leveduras nem pseudohifas, estruturas que identificam a natureza fúngica do processo apresentado."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Herpes simples",
+          "comentario": "O herpes simples costuma produzir múltiplas pequenas úlceras e alterações citopáticas no epitélio escamoso. Embora também cause odinofagia em imunossuprimidos, não explica a invasão tecidual por estruturas fúngicas."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Papilomavírus humano",
+          "comentario": "O papilomavírus humano pode estar associado a lesões papilomatosas, com aspecto elevado ou verrucoso. Esse padrão difere de placas infecciosas aderentes com leveduras e pseudohifas no epitélio."
+        }
+      ],
+      "gabarito": "A",
+      "comentario_geral": "Na candidíase esofágica, a alteração das defesas do hospedeiro favorece a proliferação e a invasão da mucosa por Candida. Odinofagia, disfagia e dor retroesternal são manifestações possíveis. Placas brancas ou amareladas aderentes constituem o padrão endoscópico típico. A demonstração de invasão tecidual ajuda a distinguir infecção de simples colonização. A espécie mais frequente é Candida albicans, mas outras espécies também podem causar a doença; a morfologia descrita, isoladamente, não determina a espécie."
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-3-k8WYYT",
+      "enunciado": "Um transplantado renal desenvolve odinofagia intensa. A endoscopia mostra múltiplas úlceras esofágicas pequenas e bem delimitadas. Nas bordas das lesões, a biópsia identifica células escamosas multinucleadas, moldagem nuclear e marginação da cromatina.\n\nQual é a etiologia mais provável?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Candida albicans",
+          "comentario": "A candidíase costuma produzir placas aderentes e estruturas fúngicas no exame histológico. Multinucleação, moldagem nuclear e marginação da cromatina não correspondem ao padrão de invasão por Candida."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Citomegalovírus",
+          "comentario": "A infecção por citomegalovírus tende a produzir úlceras maiores e células aumentadas com inclusões características. O conjunto de alterações nucleares em células escamosas nas bordas favorece herpes simples."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Papilomavírus humano",
+          "comentario": "Lesões relacionadas ao papilomavírus apresentam padrão papilomatoso e podem mostrar coilocitose. Esse mecanismo não explica a esofagite ulcerativa aguda com o efeito citopático descrito."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Herpes simples",
+          "comentario": "Pequenas úlceras e alterações citopáticas herpéticas no epitélio escamoso sustentam essa etiologia. As bordas das úlceras são um local importante de amostragem porque contêm células epiteliais infectadas."
+        }
+      ],
+      "gabarito": "D",
+      "comentario_geral": "A esofagite herpética deve ser considerada diante de odinofagia aguda, especialmente em imunossuprimidos, embora também possa ocorrer em imunocompetentes. A endoscopia costuma revelar pequenas úlceras, por vezes confluentes. O diagnóstico combina apresentação clínica, aspecto endoscópico e demonstração da infecção nas amostras. A seleção do local da biópsia influencia o rendimento: no herpes, procura-se epitélio viável nas margens. O aciclovir é uma opção de tratamento dirigido, particularmente relevante nos pacientes imunossuprimidos."
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-4-YlhlPx",
+      "enunciado": "Um homem com HIV avançado e contagem de CD4 de 28 células/mm³ apresenta odinofagia. A endoscopia revela poucas úlceras extensas e longitudinais no esôfago distal. A biópsia do fundo identifica células aumentadas com inclusões intranucleares circundadas por halo claro, confirmadas por imuno-histoquímica.\n\nQual agente é o mais provável?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Herpes simples",
+          "comentario": "Herpes simples também pode causar esofagite ulcerativa, mas é mais associado a pequenas úlceras e alterações citopáticas no epitélio das bordas. Células aumentadas com inclusões características no fundo favorecem outra infecção viral."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Citomegalovírus",
+          "comentario": "A imunossupressão intensa, as úlceras extensas e longitudinais e as inclusões em células aumentadas sustentam citomegalovírus. A demonstração tecidual confirmada por imuno-histoquímica estabelece a etiologia no contexto apresentado."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Candida albicans",
+          "comentario": "A candidíase esofágica é comum na imunossupressão, porém seu padrão típico envolve placas aderentes com leveduras e pseudohifas. Inclusões intranucleares em células aumentadas não correspondem à invasão por esse fungo."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Papilomavírus humano",
+          "comentario": "O papilomavírus pode estar associado a proliferações epiteliais papilomatosas. Não é a explicação apropriada para úlceras longitudinais extensas com as inclusões citopáticas descritas."
+        }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "A esofagite por citomegalovírus ocorre principalmente em pessoas com comprometimento importante da imunidade celular. O aspecto ulcerado sugere a doença, mas a confirmação depende da identificação da infecção no tecido, pois a aparência endoscópica pode se sobrepor à de outras etiologias. A amostragem do fundo das úlceras favorece a identificação de células infectadas. O ganciclovir é um dos antivirais empregados no tratamento. A abordagem também deve considerar a condição responsável pela imunossupressão. genui{\"citation\":{\"ref\":\"turn1search1\"}}"
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-5-NwCXmb",
+      "enunciado": "Qual mecanismo de lesão tecidual caracteriza a agressão esofágica por bases fortes, como o hidróxido de sódio?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Necrose de coagulação",
+          "comentario": "A necrose de coagulação é classicamente associada à agressão por ácidos fortes, com desnaturação proteica e formação de escara. Não é o mecanismo predominante característico da lesão por bases fortes."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Inflamação eosinofílica",
+          "comentario": "A inflamação eosinofílica pertence a um processo imunomediado, relacionado à resposta inflamatória a antígenos. A lesão por hidróxido de sódio resulta de agressão química direta, sem depender desse mecanismo alérgico."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Necrose de liquefação",
+          "comentario": "Bases fortes provocam necrose de liquefação, com saponificação de lipídios e destruição tecidual. Esse mecanismo favorece a penetração do agente e pode comprometer camadas profundas da parede esofágica."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Invasão fúngica",
+          "comentario": "A invasão fúngica pressupõe proliferação de microrganismos e penetração no tecido, como na candidíase. Na exposição a uma base forte, a agressão inicial decorre das propriedades químicas do produto ingerido."
+        }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "Bases fortes e ácidos fortes provocam lesão corrosiva, mas apresentam mecanismos predominantes distintos: liquefação e saponificação nas bases, coagulação proteica nos ácidos. Essa distinção ajuda a compreender a lesão, porém não permite prever sua gravidade isoladamente. Concentração, volume, tempo de contato e características do produto também importam. A formação de escara após exposição ácida não garante proteção contra lesões profundas ou perfuração. A avaliação clínica deve considerar o agente e as manifestações do paciente. genui{\"citation\":{\"ref\":\"turn3view0\"}}"
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-6-f96y1D",
+      "enunciado": "Uma endoscopia realizada em paciente com refluxo gastroesofágico mostra rupturas da mucosa que se estendem continuamente entre os topos de duas ou mais pregas, comprometendo aproximadamente 60% da circunferência esofágica.\n\nQual é a classificação de Los Angeles dessa esofagite?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Grau A",
+          "comentario": "O grau A compreende rupturas da mucosa de até 5 mm, sem continuidade entre os topos de duas pregas. A extensão contínua entre pregas descrita no caso ultrapassa essa categoria."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Grau D",
+          "comentario": "O grau D exige comprometimento de pelo menos 75% da circunferência esofágica. A extensão de aproximadamente 60% não alcança esse limiar, apesar de representar esofagite extensa."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Grau B",
+          "comentario": "O grau B inclui rupturas maiores que 5 mm, mas sem continuidade entre os topos de duas pregas. A confluência entre pregas impede que o caso seja classificado nesse grau."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Grau C",
+          "comentario": "O grau C corresponde a rupturas contínuas entre os topos de duas ou mais pregas que envolvem menos de 75% da circunferência. Os dois critérios estão presentes na descrição."
+        }
+      ],
+      "gabarito": "D",
+      "comentario_geral": "A classificação de Los Angeles descreve a extensão endoscópica da esofagite erosiva por refluxo. Nos graus A e B, distingue-se principalmente o tamanho das rupturas, que não conectam os topos de pregas. Nos graus C e D, considera-se a confluência e o comprometimento circunferencial, com limiar de 75% para o grau D. A classificação não mede diretamente a intensidade dos sintomas e não deve ser aplicada como sistema de graduação de esofagites infecciosas, eosinofílicas ou cáusticas. genui{\"citation\":{\"ref\":\"turn3search0\"}}"
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-7-EIkY12",
+      "enunciado": "Uma paciente apresenta candidíase esofágica confirmada, sem exposição recente a azóis, contraindicações relevantes ou suspeita de resistência. Ela está clinicamente estável e consegue deglutir medicamentos.\n\nQual é o tratamento inicial preferencial entre as opções?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Fluconazol oral",
+          "comentario": "O fluconazol oral é o tratamento inicial recomendado para candidíase esofágica nessas condições. Sua ação sistêmica permite tratar a infecção esofágica, e a paciente apresenta condições para utilizar a via oral."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Nistatina tópica",
+          "comentario": "A nistatina tópica pode ser utilizada em formas de candidíase da cavidade oral. Para acometimento esofágico, essa abordagem não oferece tratamento adequado, pois é necessária terapia antifúngica sistêmica."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Aciclovir oral",
+          "comentario": "O aciclovir atua contra herpes simples e outros vírus sensíveis. Ele não trata Candida, de modo que sua escolha confundiria uma esofagite fúngica confirmada com uma infecção viral."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Ganciclovir intravenoso",
+          "comentario": "O ganciclovir é empregado no tratamento de infecção por citomegalovírus. A administração intravenosa não compensa a ausência de atividade antifúngica necessária para tratar a etiologia deste caso."
+        }
+      ],
+      "gabarito": "A",
+      "comentario_geral": "O tratamento da candidíase esofágica requer antifúngico sistêmico. O fluconazol oral é recomendado por 14 a 21 dias quando a via oral é viável e não há contraindicações ou suspeita relevante de resistência. A ausência de resposta exige reavaliação, incluindo adesão, resistência e diagnósticos alternativos. A escolha de outras drogas ou da via intravenosa depende das condições clínicas. Também é importante abordar fatores predisponentes, como imunossupressão. genui{\"citation\":{\"ref\":\"turn1view1\"}}"
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-8-bYCUWh",
+      "enunciado": "Oito semanas após uma lesão esofágica por ingestão de substância corrosiva, um paciente desenvolve disfagia progressiva para sólidos. O exame contrastado mostra um segmento de estreitamento fixo, e a investigação identifica cicatrização com fibrose da parede.\n\nQual complicação explica essa evolução?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Perfuração aguda",
+          "comentario": "Perfuração implica ruptura da parede e possível extravasamento para estruturas adjacentes, com risco de mediastinite e sepse. Não explica um estreitamento fixo cicatricial que se manifesta semanas depois."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Estenose cicatricial",
+          "comentario": "A cicatrização da lesão corrosiva pode produzir fibrose e retração da parede, reduzindo o calibre esofágico. A disfagia tardia para sólidos e o estreitamento fixo são compatíveis com essa complicação."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Metaplasia intestinal",
+          "comentario": "A metaplasia intestinal do esôfago caracteriza o esôfago de Barrett, associado principalmente ao refluxo crônico. Trata-se de alteração do revestimento epitelial, não da explicação para a retração fibrótica descrita."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Espasmo esofágico",
+          "comentario": "O espasmo esofágico é um distúrbio motor e pode causar disfagia e dor torácica. Ele não explica a demonstração de um segmento permanentemente estreitado por cicatrização e fibrose."
+        }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "A lesão cáustica pode produzir consequências imediatas e tardias. Na fase aguda, preocupam a necrose profunda e a perfuração. Durante a reparação, a deposição de colágeno e a retração cicatricial podem estreitar o lúmen, causando disfagia semanas ou meses depois. Estenoses podem exigir tratamento endoscópico e suporte nutricional, conforme extensão e gravidade. O antecedente de lesão corrosiva também tem implicações de longo prazo, incluindo aumento do risco de carcinoma escamoso esofágico."
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-9-DWs6vM",
+      "enunciado": "Um adulto apresenta disfagia recorrente para sólidos e suspeita clínica de esofagite eosinofílica. A endoscopia não mostra alterações macroscópicas relevantes.\n\nQual estratégia de amostragem é mais adequada para investigar essa hipótese?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Duas biópsias do esôfago distal",
+          "comentario": "A amostragem limitada ao segmento distal pode não detectar um infiltrado distribuído irregularmente. Duas amostras desse local não atendem à estratégia recomendada para melhorar a sensibilidade da investigação."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Seis biópsias do antro gástrico",
+          "comentario": "O antro gástrico não é o tecido necessário para demonstrar inflamação eosinofílica esofágica. A quantidade de fragmentos não corrige a escolha de um órgão inadequado para responder à hipótese proposta."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Duas biópsias do esôfago proximal",
+          "comentario": "Amostrar o segmento proximal pode ser útil, mas limitar a coleta a duas biópsias desse nível mantém risco de erro de amostragem. A investigação deve representar diferentes níveis esofágicos."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Seis biópsias em dois níveis",
+          "comentario": "Recomenda-se obter pelo menos seis biópsias de pelo menos dois níveis esofágicos. A distribuição irregular da inflamação justifica a coleta múltipla, inclusive quando a mucosa parece normal."
+        }
+      ],
+      "gabarito": "D",
+      "comentario_geral": "A aparência endoscópica normal não afasta esofagite eosinofílica. A doença pode apresentar alterações microscópicas sem sinais macroscópicos evidentes, e o infiltrado pode variar entre diferentes segmentos. Por isso, a coleta de múltiplos fragmentos em níveis distintos reduz falsos negativos. Quando existem sulcos ou exsudatos, essas áreas também devem ser amostradas. O diagnóstico resulta da integração entre disfunção esofágica, histologia e avaliação de outras causas de eosinofilia. genui{\"citation\":{\"ref\":\"turn2view1\"}}"
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-10-7SeUcO",
+      "enunciado": "Um paciente com esofagite eosinofílica mantém disfagia importante por estenose fibrótica, apesar de melhora da inflamação com tratamento medicamentoso. A equipe indica dilatação endoscópica.\n\nQual objetivo explica a indicação desse procedimento?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Reduzir a secreção ácida gástrica",
+          "comentario": "A redução da secreção ácida é obtida com medicamentos antissecretores, como os inibidores da bomba de prótons. A dilatação atua mecanicamente no segmento estreitado e não modifica diretamente a produção de ácido."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Ampliar o calibre esofágico reduzido",
+          "comentario": "A dilatação aumenta o diâmetro do segmento estenosado e pode aliviar a obstrução à passagem dos alimentos. Esse é seu objetivo no paciente com componente fibrótico e disfagia persistente."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Suprimir a resposta inflamatória eosinofílica",
+          "comentario": "A supressão da inflamação exige tratamento específico, como terapia medicamentosa ou dietética. A dilatação não controla adequadamente o mecanismo inflamatório responsável pela doença."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Eliminar a sensibilização alimentar subjacente",
+          "comentario": "A intervenção mecânica não elimina a resposta imunológica a antígenos alimentares. Confundir ampliação do lúmen com modificação da sensibilização levaria à interpretação equivocada de cura da doença."
+        }
+      ],
+      "gabarito": "B",
+      "comentario_geral": "A esofagite eosinofílica pode apresentar componentes inflamatório e fibroestenótico. A melhora da inflamação não garante reversão de um estreitamento já estabelecido. A dilatação trata a limitação mecânica, enquanto o tratamento anti-inflamatório deve ser mantido para controlar a doença de base. Assim, melhora da deglutição após dilatação não demonstra, por si, remissão histológica. O acompanhamento deve considerar sintomas, endoscopia e biópsias, pois cada avaliação informa uma dimensão diferente da doença. genui{\"citation\":{\"ref\":\"turn1view0\"}}"
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-11-7kuDxP",
+      "enunciado": "Após ingestão de substância corrosiva, um adulto apresenta dor torácica intensa, febre e hipotensão. A tomografia evidencia extravasamento esofágico e contaminação mediastinal. A reanimação inicial está em andamento.\n\nQual medida deve integrar imediatamente a condução do caso?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Acionar avaliação cirúrgica de urgência",
+          "comentario": "Perfuração com contaminação mediastinal e instabilidade exige avaliação cirúrgica urgente para controle do foco. Essa medida acompanha reanimação, jejum e antibioticoterapia intravenosa de amplo espectro."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Realizar endoscopia para graduar lesões",
+          "comentario": "A graduação endoscópica não é a prioridade quando já há perfuração demonstrada e instabilidade. A instrumentação pode agravar a situação e atrasar o controle da contaminação mediastinal."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Administrar neutralizante para corrigir pH",
+          "comentario": "A neutralização química não reverte a lesão estabelecida e pode gerar reação exotérmica, agravando a agressão. Também não trata a perfuração nem a contaminação mediastinal documentadas."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Induzir vômitos para remover corrosivo",
+          "comentario": "A indução de vômitos promove nova passagem da substância pelo esôfago e aumenta o risco de aspiração. No cenário de perfuração, acrescenta risco sem oferecer controle da lesão ou do foco infeccioso."
+        }
+      ],
+      "gabarito": "A",
+      "comentario_geral": "Perfuração esofágica com mediastinite é uma emergência. As prioridades incluem estabilização hemodinâmica, proteção das vias aéreas quando necessária, jejum, antibióticos intravenosos e controle urgente do foco. A modalidade de intervenção depende das características da perfuração e da avaliação especializada. Instabilidade e contaminação significativa tornam inadequado tratar o caso como simples investigação de esofagite. A endoscopia para classificar queimaduras não deve atrasar a abordagem de uma complicação já estabelecida. genui{\"citation\":{\"ref\":\"turn3view0\"}}"
+    },
+    {
+      "tipo": "ME",
+      "id": "131026-2238-12-XYRMJb",
+      "enunciado": "Um adulto com disfunção esofágica e pico de 32 eosinófilos por campo de grande aumento recebeu diagnóstico de esofagite eosinofílica após avaliação de causas alternativas. Após tratamento com inibidor da bomba de prótons, apresentou melhora clínica e histológica.\n\nQual interpretação é adequada para essa resposta terapêutica?",
+      "alternativas": [
+        {
+          "id": "alt_A",
+          "texto": "Comprova refluxo como causa exclusiva",
+          "comentario": "A resposta ao inibidor da bomba de prótons não é específica de doença do refluxo. Ela não demonstra que o refluxo explique integralmente a inflamação previamente diagnosticada."
+        },
+        {
+          "id": "alt_B",
+          "texto": "Determina cura definitiva da doença",
+          "comentario": "Melhora durante o tratamento indica controle, mas não demonstra desaparecimento permanente da predisposição inflamatória. O caráter crônico da doença exige planejamento de manutenção e acompanhamento."
+        },
+        {
+          "id": "alt_C",
+          "texto": "Permite manter o diagnóstico estabelecido",
+          "comentario": "Inibidores da bomba de prótons também podem tratar a esofagite eosinofílica. Portanto, uma resposta favorável é compatível com o diagnóstico estabelecido e não exige sua substituição por outra doença."
+        },
+        {
+          "id": "alt_D",
+          "texto": "Demonstra reversão da fibrose esofágica",
+          "comentario": "Melhora clínica e redução dos eosinófilos não comprovam desaparecimento de fibrose. O componente estrutural pode persistir e necessita de avaliação própria quando há suspeita de estreitamento."
+        }
+      ],
+      "gabarito": "C",
+      "comentario_geral": "O diagnóstico de esofagite eosinofílica exige sintomas de disfunção esofágica, pelo menos 15 eosinófilos por campo de grande aumento e avaliação de causas alternativas. Falha prévia ao inibidor da bomba de prótons não é requisito diagnóstico. Esses medicamentos integram as opções terapêuticas; a resposta não exclui a doença. O caso ilustra a distinção entre resposta ao tratamento, diagnóstico etiológico e cura definitiva. genui{\"citation\":{\"ref\":\"turn1view0\"}}"
+    }
+  ],
+  "descricao": "12 questões geradas por GPT Astra com base em materiais."
+}

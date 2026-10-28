@@ -1,0 +1,864 @@
+titulo: Gastrite - 2025 e 2026
+descricao: removidas não relevantes, com comentários.
+id_quiz: mescla-b74c2fff-91be-4402-97b8-26b10436f435
+conteudo:
+  - tipo: folder
+    nome: Gastrite - 2025 e 2026
+    conteudo:
+      - tipo: ME
+        id: 131026-0300-1-0JoE3b
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: |-
+          A gastrite crônica pode ter diferentes causas, embora algumas sejam mais frequentes.
+
+          Assinale a alternativa que apresenta corretamente a causa mais comum de gastrite crônica:
+        alternativas:
+          - id: alt_A
+            texto: Infecção por Helicobacter pylori.
+            comentario: A alternativa A está correta porque Helicobacter pylori coloniza a mucosa gástrica e induz inflamação crônica persistente, sendo a principal causa de gastrite crônica em patologia gastrointestinal e gastroenterologia clínica. O ponto decisivo é ser a etiologia predominante da gastrite crônica.
+          - id: alt_B
+            texto: Deficiência de ferro.
+            comentario: Deficiência de ferro não é etiologia principal de gastrite crônica. Pode coexistir com doença gastrointestinal ou decorrer de condições gástricas, mas não é reconhecida como a causa mais comum de inflamação crônica da mucosa gástrica.
+          - id: alt_C
+            texto: Fraturas ósseas.
+            comentario: Fraturas ósseas não têm nexo etiopatogênico com gastrite crônica. Mesmo que se pense indiretamente em uso de anti-inflamatórios após fratura, isso não transforma a fratura em causa de gastrite crônica.
+          - id: alt_D
+            texto: Diabetes mellitus.
+            comentario: Diabetes mellitus não constitui etiologia principal de gastrite crônica. Pode se associar a outras manifestações gastrointestinais, mas não corresponde à causa predominante de inflamação crônica da mucosa gástrica.
+          - id: alt_E
+            texto: Hipertensão arterial sistêmica.
+            comentario: Hipertensão arterial sistêmica não é causa de gastrite crônica. Não há mecanismo causal reconhecido que ligue a hipertensão em si à gastrite crônica.
+        gabarito: A
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: A</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> O critério que resolve a questão é a etiologia predominante da gastrite crônica: quando o enunciado pede a causa mais comum, a infecção crônica por Helicobacter pylori deve ser reconhecida como a principal etiologia da inflamação crônica da mucosa gástrica, tornando correta a alternativa A.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Etiologia da gastrite crônica</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A banca explora a confusão entre a etiologia verdadeira da gastrite crônica e condições que podem apenas coexistir, ser consequência de doença gastrointestinal ou gerar associação indireta por uso de medicamentos.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Se a pergunta trouxer 'causa mais comum' de gastrite crônica, pense primeiro em Helicobacter pylori.</li><li>Separe etiologia de consequência: deficiência de ferro pode ser efeito ou associação, não causa principal da gastrite crônica.</li><li>Não atribua gastrite crônica a comorbidades frequentes do adulto sem mecanismo causal reconhecido.</li><li>Quando houver alternativa com doença clássica da mucosa gástrica e outras com condições sistêmicas genéricas, priorize a que tem nexo fisiopatológico direto.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-2-hXDAL1
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: A gastrite granulomatosa é uma inflamação do estômago que se caracteriza pela presença de granulomas, que são agregados de células inflamatórias. É uma doença rara, que afeta entre 0,08% e 0,35% dos casos de gastrite. Quais são as causas mais frequentes desse tipo de gastrite?
+        alternativas:
+          - id: alt_A
+            texto: Vasculites como a Síndrome de Wegener e a Síndrome de Churg-Strauss.
+            comentario: Vasculites como granulomatose com poliangeíte e EGPA podem acometer o trato gastrointestinal, mas isso não as coloca entre as causas mais frequentes e clássicas de gastrite granulomatosa. O erro da alternativa é trocar possibilidade de acometimento sistêmico por prevalência etiológica do padrão granulomatoso gástrico.
+          - id: alt_B
+            texto: Tumores como o adenocarcinoma e o linfoma MALT.
+            comentario: Apesar de o gabarito oficial indicar B, a base técnica informa que adenocarcinoma e linfoma MALT não são as causas mais frequentes clássicas de gastrite granulomatosa. Assim, o comentário deve registrar a inconsistência entre a chave da banca e o critério anatomopatológico consolidado, que favorece a alternativa C.
+          - id: alt_C
+            texto: A doença de Crohn e a tuberculose.
+            comentario: 'Do ponto de vista anatomopatológico consolidado, esta é a alternativa que melhor corresponde ao que o enunciado pede: doença de Crohn e tuberculose estão entre as associações mais clássicas e frequentes da gastrite granulomatosa. Ela conflita com o gabarito oficial, mas é a opção melhor sustentada medicamente pela base fornecida.'
+          - id: alt_D
+            texto: Bebidas alcoólicas e anti-inflamatórios não esteroide.
+            comentario: 'Álcool e AINEs causam tipicamente gastropatia/gastrite química, erosiva ou hemorrágica, por lesão tóxica da mucosa e inibição de prostaglandinas, não por mecanismo granulomatoso. O critério que exclui essa alternativa é fisiopatológico: são causas comuns de gastrite em geral, mas não de gastrite granulomatosa.'
+        gabarito: B
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: B</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> A questão cobra as etiologias mais frequentes da gastrite granulomatosa, padrão histológico raro relacionado principalmente a doença de Crohn, tuberculose, sarcoidose, corpo estranho e outras infecções granulomatosas. Pela BASE DE DECISÃO MÉDICA, há conflito entre o gabarito oficial B e o conhecimento anatomopatológico consolidado, porque a alternativa C é a que melhor se sustenta medicamente.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Etiologia da gastrite granulomatosa</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A confusão real é misturar causas comuns de gastrite ou condições associadas a inflamação gástrica com as etiologias clássicas de um padrão histológico específico, a gastrite granulomatosa; além disso, a chave oficial conflita com esse critério patológico.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Quando a questão citar um padrão histológico específico, responda pela etiologia clássica desse padrão, não pelas causas comuns de gastrite em geral.</li><li>Em gastrite granulomatosa, lembre primeiro de Crohn, tuberculose, sarcoidose, infecções granulomatosas, corpo estranho e formas idiopáticas.</li><li>Neoplasias gástricas podem coexistir com inflamação ou reação granulomatosa ocasional, mas isso não as torna causas frequentes clássicas do padrão.</li><li>Se a alternativa trouxer álcool ou AINEs, confronte com o mecanismo de lesão: gastropatia química/erosiva não equivale a gastrite granulomatosa.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-3-QwrpRH
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: |-
+          A respeito da gastrite, analise as afirmativas a seguir:
+
+          I. A gastrite é um diagnóstico histológico que denota inflamação da mucosa gástrica, consequentemente, o diagnóstico da gastrite pode ser feito por endoscopia e biópsia.
+
+          II. A infecção pela bactéria Helicobacter pylori
+          representa a causa mais comum de gastrite.
+
+          III. O Helicobacter pylori é uma bactéria cocóide, Gram-positivo, que habita principalmente o intestino delgado humano.
+
+          Assinale a alternativa correta:
+        alternativas:
+          - id: alt_A
+            texto: Apenas o item I está correto.
+          - id: alt_B
+            texto: Apenas os itens I e II estão corretos.
+          - id: alt_C
+            texto: Apenas os itens I e III estão corretos.
+          - id: alt_D
+            texto: Apenas o item II está correto.
+          - id: alt_E
+            texto: Todos os itens estão corretos.
+        gabarito: B
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <p><b><span style="color:darkblue;">Gabarito: B – Apenas os itens I e II estão corretos.</span></b></p>
+
+          <p><b><span style="color:darkorange;">Tema central:</span></b> “Gastrite” é um <u>diagnóstico histológico</u> que indica inflamação da mucosa gástrica. Na prática, a endoscopia descreve achados <i>macroscópicos</i> (eritema, erosões), mas a confirmação de <b>gastrite</b> exige <b>biópsia</b>. A causa mais comum globalmente é a infecção por <i>Helicobacter pylori</i>.</p>
+
+          <p><b><span style="color:darkorange;">Justificativa da alternativa correta (B):</span></b></p>
+          <p><b>I. Correta.</b> Gastrite = inflamação comprovada ao microscópio. A endoscopia pode sugerir, porém o diagnóstico é pela <b>histologia</b> das biópsias (padrão de referência; Sistema de Sydney Atualizado). Fonte: Harrison’s; UpToDate.</p>
+          <p><b>II. Correta.</b> O <i>H. pylori</i> é a <u>principal causa de gastrite crônica</u> no mundo, associada a úlcera péptica e risco de adenocarcinoma/linfoma MALT. Diretrizes: Maastricht VI/Florence; ACG.</p>
+
+          <p><b>III. Incorreta.</b> O <i>H. pylori</i> é <b>Gram-negativo</b>, <b>bacilo curvo/espiralado</b>, microaerofílico, que coloniza a <b>mucosa gástrica</b> (principalmente o <u>antro</u>), não o intestino delgado. A forma “cocóide” é um estado degenerativo e não descreve sua morfologia típica. Portanto, a assertiva erra na <u>Gram</u>, <u>morfologia</u> e <u>habitat</u>.</p>
+
+          <p><b><span style="color:darkorange;">Análise das alternativas:</span></b></p>
+          <p><b>A.</b> Errada – II também é verdadeira. </p>
+          <p><b>B.</b> Correta – I e II corretas; III incorreta. </p>
+          <p><b>C.</b> Errada – III está errada. </p>
+          <p><b>D.</b> Errada – I também é verdadeira. </p>
+          <p><b>E.</b> Errada – III é falsa.</p>
+
+          <p><b><span style="color:darkorange;">Como interpretar em prova (dicas):</span></b></p>
+          <p>- “Gastrite” pede <b>biopsia</b>; sem histologia, use “gastropatia” para alterações endoscópicas. </p>
+          <p>- Lembre o perfil do <b><span style="color:darkblue;">H. pylori</span></b>: <u>Gram-negativo</u>, <u>bacilo curvo</u>, <u>mucosa gástrica</u>. </p>
+          <p>- Principais exames: histologia e teste rápido da urease na endoscopia; fora da endoscopia, teste respiratório da ureia e antígeno fecal (para diagnóstico e controle de cura). Evite IBP antes dos testes não invasivos. </p>
+
+          <p><b><span style="color:darkorange;">Referências essenciais:</span></b> Harrison’s Principles of Internal Medicine; UpToDate (Gastritis; H. pylori); Maastricht VI/Florence Consensus Report (2022); Diretriz ACG para H. pylori (2022).</p>
+
+          <p><i>Bônus prático:</i> Se o tema evoluir para tratamento, a primeira linha atual costuma ser <b>terapia quádrupla com bismuto</b> por 14 dias em áreas com alta resistência à claritromicina.</p>
+
+          <p><b>Conclusão:</b> Reconheça que a confirmação de gastrite é <b>histológica</b> e que o <i>H. pylori</i> é a causa mais comum; desconfie de descrições que o classifiquem como Gram-positivo, cocóide ou do intestino delgado.</p>
+
+          <p>Gostou do comentário? Deixe sua avaliação aqui embaixo!</p>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-4-ErxbZc
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: 'A gastrite crônica é uma condição inflamatória da mucosa gástrica que pode afetar diferentes regiões do estômago e exibir graus diferentes de lesão da mucosa. A gastrite não atrófica se associa à topografia de:'
+        alternativas:
+          - id: alt_A
+            texto: antro
+            comentario: A alternativa A está correta porque a gastrite crônica não atrófica corresponde ao padrão antral. Esse é o sítio clássico descrito para a forma sem atrofia glandular, em contraste com as gastrites atróficas, que se relacionam mais ao corpo/fundo ou a acometimento multifocal em fases avançadas.
+          - id: alt_B
+            texto: corpo
+            comentario: O corpo gástrico se relaciona mais às formas atróficas, especialmente à gastrite autoimune corporal/fúndica, e não ao padrão típico não atrófico. Por isso, não é a topografia clássica cobrada.
+          - id: alt_C
+            texto: piloro
+            comentario: Piloro não é a topografia clássica usada na classificação da gastrite crônica não atrófica. O padrão consagrado é antro, e não piloro como sítio isolado.
+          - id: alt_D
+            texto: todo o estômago
+            comentario: Todo o estômago sugere pangastrite ou gastrite multifocal, não a associação topográfica clássica da gastrite crônica não atrófica. A forma típica é antral, não difusa.
+        gabarito: A
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: A</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> O critério médico decisivo é a topografia típica da gastrite crônica não atrófica: ela é classicamente antral, sem perda glandular característica de atrofia. Como o enunciado pede a região associada a esse padrão, a resposta correta é o antro.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Topografia da gastrite crônica não atrófica</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A banca explora a confusão entre o padrão antral clássico da gastrite não atrófica e formas mais extensas, além da troca com gastrite atrófica do corpo/fundo.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Se a questão falar em gastrite crônica não atrófica, pense primeiro em padrão antral.</li><li>Se a topografia for corpo ou fundo, confronte com gastrite atrófica, especialmente a autoimune.</li><li>Não troque topografia clássica de classificação por estrutura anatômica próxima: o padrão consagrado é antro, não piloro isoladamente.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-5-WZNgjU
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2026'
+        enunciado: 'Na gastrite atrófica autoimune, a destruição das células parietais leva à hipergastrinemia e à deficiência de fator intrínseco. O marcador sorológico que confirma o diagnóstico diferencial com a gastrite atrófica ambiental (associada ao H. pylori), sendo altamente específico para a forma autoimune, é:'
+        alternativas:
+          - id: alt_A
+            texto: Pepsinogênio I sérico < 30 ng/mL.
+          - id: alt_B
+            texto: Gastrina-17 sérica < 1 pmol/L.
+          - id: alt_C
+            texto: Anticorpo anti-Saccharomyces cerevisiae (ASCA).
+          - id: alt_D
+            texto: Anticorpo anti-transglutaminase tecidual (tTg-IgA).
+          - id: alt_E
+            texto: Anticorpo anticélula parietal e antifator intrínseco.
+        gabarito: E
+
+      - tipo: ME
+        id: 131026-0300-6-jcTCxZ
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: |-
+          A gastrite é uma inflamação do revestimento interno do estômago. Pode ser aguda, quando aparece de repente e dura pouco, ou crônica, quando se instala aos poucos e leva muito tempo para ser controlada.
+
+          Assinale a alternativa que não corresponde a uma causa de gastrite:
+        alternativas:
+          - id: alt_A
+            texto: Uso prolongado de medicamentos como aspirina ou anti-inflamatórios.
+          - id: alt_B
+            texto: Consumo excessivo de álcool.
+          - id: alt_C
+            texto: Infecção pela bactéria Helicobacter pylori;
+          - id: alt_D
+            texto: Hábito de fumar.
+          - id: alt_E
+            texto: Consumo elevado de alimentos ricos em fibras.
+        gabarito: E
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <p><b><span style="color:#0b3d91;">Gabarito:</span> E – Consumo elevado de alimentos ricos em fibras.</b></p>
+
+          <p><b>Tema central:</b> <span style="color:#0b3d91;">Gastrite</span> é inflamação da mucosa gástrica por ruptura de mecanismos de defesa (muco-bicarbonato, prostaglandinas, fluxo sanguíneo). As causas clássicas incluem <u>H. pylori</u>, <u>AINEs/aspirina</u>, <u>álcool</u>, <u>estresse fisiológico grave</u>, refluxo biliar e condições autoimunes (Harrison’s; UpToDate; Diretrizes ACG/ESGE).</p>
+
+          <p><b>Por que a alternativa E é a correta (não causa):</b> alimentos ricos em <span style="color:#0b3d91;"><u>fibras</u></span> não são reconhecidos como etiologia de gastrite nas principais diretrizes. Ao contrário, a fibra pode ter efeito <i>não agressor</i> sobre a mucosa e até associar-se a menor risco de doença ulcerosa. Alimentos fibrosos podem causar <i>desconforto/dispepsia</i> em alguns indivíduos, mas <b>dispepsia ≠ gastrite</b> (inflamação histológica). Portanto, não corresponde a causa.</p>
+
+          <p><b>Análise das alternativas incorretas:</b></p>
+          <p><b>A – AINEs/aspirina:</b> causam <span style="color:#cc5500;"><u>gastrite erosiva</u></span> por efeito tópico e inibição de COX‑1, reduzindo prostaglandinas protetoras. Risco maior em idosos, uso concomitante de anticoagulantes/corticoides (Harrison’s; ACG 2022–2024).</p>
+          <p><b>B – Álcool:</b> irrita diretamente a mucosa, aumentando permeabilidade e levando a micro-hemorragias e gastrite aguda hemorrágica, sobretudo em consumo elevado (UpToDate).</p>
+          <p><b>C – Helicobacter pylori:</b> principal causa de <span style="color:#0b3d91;">gastrite crônica ativa</span>. Produz urease, inflamação antral/corporal e se associa a úlcera, linfoma MALT e adenocarcinoma. Diagnóstico: teste respiratório da ureia, antígeno fecal ou biópsia endoscópica. Tratamento: erradicação com terapias baseadas em PPI + múltiplos antibióticos (p. ex., quadripla com bismuto), conforme ACG/ESGE.</p>
+          <p><b>D – Tabagismo:</b> fator de risco que <u>predispõe e agrava</u> lesão de mucosa, reduz secreção de bicarbonato, compromete fluxo sanguíneo e atrasa cicatrização, além de aumentar falha de erradicação do H. pylori (Harrison’s; UpToDate).</p>
+
+          <p><b>Diagnóstico e conduta (resumo útil para prova):</b> Endoscopia com biópsia é o padrão-ouro para confirmar gastrite e investigar H. pylori. Conduta: retirar agente agressor (suspender AINE/álcool, cessar tabagismo), <u>inibidor de bomba de prótons</u>, e erradicação do H. pylori quando presente (ACG/ESGE/Consensos brasileiros).</p>
+
+          <p><b>Estratégia de prova:</b> Atenção à expressão “<span style="color:#cc5500;"><u>não corresponde</u></span>”. Diferencie <i>dispepsia alimentar</i> de <i>gastrite</i> histológica. Lembre a tríade clássica de causas: H. pylori, AINEs e álcool; tabagismo como fator contributivo; <b>fibras não entram na etiologia</b>.</p>
+
+          <p><i>Referências-chave:</i> Harrison’s Principles of Internal Medicine; UpToDate (Gastritis and gastropathy); ACG Clinical Guideline: Treatment of H. pylori Infection; ESGE/Mapas de cuidado nacionais.</p>
+
+          <p><b>Gostou do comentário? Deixe sua avaliação aqui embaixo!</b></p>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-7-paF18u
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: |-
+          Paciente do sexo masculino, 58 anos, tabagista, procura atendimento com queixa de dispepsia crônica. Nega perda ponderal significativa, disfagia ou vômitos persistentes. Foi submetido à endoscopia digestiva alta, que revelou gastrite atrófica multifocal leve, sem lesões ulceradas. A biópsia histológica evidenciou gastrite atrófica com metaplasia intestinal leve, escore OLGA II, associado a presença de Helicobacter pylori positivo.
+
+          A melhor conduta terapêutica para esse paciente é
+        alternativas:
+          - id: alt_A
+            texto: iniciar inibidor de bomba de prótons (IBP) contínuo por tempo indeterminado, sem necessidade de erradicação de H. pylori.
+            comentario: Errada porque propõe IBP contínuo e dispensa a erradicação do H. pylori. IBP pode aliviar sintomas, mas não trata a causa infecciosa nem afasta o risco ligado à gastrite atrófica/metaplásica.
+          - id: alt_B
+            texto: proceder à erradicação do H. pylori, seguida de vigilância endoscópica periódica.
+            comentario: 'A alternativa B é a melhor porque inclui a conduta etiológica obrigatória neste cenário: erradicar H. pylori em paciente com gastrite atrófica e metaplasia intestinal. Esse achado histológico integra a cascata de Correa e aumenta o risco de adenocarcinoma gástrico. A erradicação é indicada para reduzir esse risco. Quanto ao seguimento endoscópico, a base ressalta que sua indicação formal e periodicidade dependem da extensão topográfica, da gravidade histológica e de fatores adicionais de risco; portanto, a alternativa é correta por acertar a medida principal, sem que isso signifique vigilância universal em qualquer caso leve.'
+          - id: alt_C
+            texto: proceder à erradicação do H. pylori apenas se houver sintomas refratários ao uso de IBP.
+            comentario: Errada porque condiciona a erradicação à refratariedade ao IBP. Aqui, a indicação de tratar decorre da presença de H. pylori em condição gástrica pré-neoplásica já documentada, e não da falha sintomática.
+          - id: alt_D
+            texto: acompanhar clinicamente, sem necessidade de tratamento ou controle endoscópico.
+            comentario: Errada porque apenas acompanhar clinicamente ignora H. pylori positivo em mucosa atrófica com metaplasia intestinal. A ausência de sinais de alarme não elimina a necessidade de tratamento etiológico.
+          - id: alt_E
+            texto: proceder à gastrectomia subtotal profilática devido ao risco aumentado de adenocarcinoma gástrico.
+            comentario: Errada porque gastrectomia subtotal profilática não é indicada em gastrite atrófica/metaplasia intestinal leve, sem displasia, câncer ou síndrome hereditária específica de alto risco.
+        gabarito: B
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: B</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> O critério médico-chave é que gastrite atrófica com metaplasia intestinal, na presença de H. pylori positivo, configura condição gástrica pré-neoplásica e indica erradicação da infecção. A diretriz MAPS III 2025/MAPS II 2019 sustenta esse passo como obrigatório; a vigilância endoscópica depende de extensão, topografia e fatores de risco adicionais. Assim, entre as alternativas, B é a única que contempla a erradicação.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Gastrite atrófica e H. pylori</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A banca tenta desviar o raciocínio para a dispepsia e para a ausência de sinais de alarme, mas o dado decisivo é a histologia com H. pylori positivo em condição pré-neoplásica.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Quando houver gastrite atrófica ou metaplasia intestinal com H. pylori positivo, pense primeiro em erradicação.</li><li>Separe manejo de dispepsia do manejo de lesão pré-neoplásica gástrica.</li><li>Vigilância endoscópica em atrofia/metaplasia é estratificada por extensão, estágio e fatores de risco.</li><li>OLGA II não indica gastrectomia profilática.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-8-deqi6X
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2026'
+        enunciado: Sobre a infecção por Helicobacter pylori, qual é o mecanismo que explica a progressão para gastrite atrófica e subsequente risco aumentado de adenocarcinoma gástrico intestinal?
+        alternativas:
+          - id: alt_A
+            texto: Alterações na regulação da secreção ácida decorrentes de inflamação antral prolongada.
+            comentario: Está errada porque desloca o foco para regulação da secreção ácida por inflamação antral prolongada, mecanismo mais relacionado ao padrão antral com hipergastrinemia e hipercloridria, associado à úlcera duodenal. A questão exige o elo específico entre H. pylori, gastrite atrófica e adenocarcinoma gástrico intestinal, que depende de destruição glandular e metaplasia intestinal, não apenas de alteração funcional da acidez.
+          - id: alt_B
+            texto: Formação de áreas de metaplasia gástrica ectópica no duodeno em condições de hiperacidez.
+            comentario: Está errada porque descreve metaplasia gástrica ectópica no duodeno em ambiente de hiperacidez, fenômeno ligado à colonização duodenal por H. pylori e à fisiopatologia da úlcera duodenal. O enunciado pede progressão na mucosa gástrica para câncer gástrico intestinal. Além disso, há confusão entre metaplasia gástrica no duodeno e metaplasia intestinal gástrica, que é a lesão pré-neoplásica relevante aqui.
+          - id: alt_C
+            texto: Hipergastrinemia sustentada com aumento da massa de células parietais e da secreção ácida.
+            comentario: Está errada porque hipergastrinemia sustentada com aumento da massa de células parietais e da secreção ácida caracteriza um perfil de hipercloridria, mais compatível com doença ulcerosa duodenal. Na via carcinogênica associada ao H. pylori, o processo decisivo é atrofia glandular da mucosa gástrica; em fases avançadas, esse padrão se associa à perda glandular e não à expansão funcional de células parietais.
+          - id: alt_D
+            texto: Alcalinização microambiental pela urease, favorecendo colonização e persistência bacteriana.
+            comentario: Está errada porque a urease e a microalcalinização local explicam adaptação, colonização e persistência do H. pylori no estômago, mas não explicam, por si, a progressão para gastrite atrófica e adenocarcinoma intestinal. A questão não pergunta como a bactéria sobrevive; pergunta qual mecanismo leva à sequência atrófica-metaplásica-neoplásica.
+          - id: alt_E
+            texto: Inflamação crônica com destruição glandular, metaplasia intestinal e estresse oxidativo associado à instabilidade genômica.
+            comentario: 'A alternativa E está correta porque descreve o mecanismo patológico completo que liga a infecção crônica por H. pylori ao adenocarcinoma gástrico tipo intestinal. O ponto decisivo é a sequência lesional clássica: gastrite crônica persistente evolui com perda glandular da mucosa gástrica, configurando gastrite atrófica; depois surge metaplasia intestinal, que é lesão pré-neoplásica central; a inflamação contínua e o estresse oxidativo aumentam dano ao DNA, turnover epitelial e instabilidade genômica, sustentando a progressão neoplásica.'
+        gabarito: E
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: E</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> A questão cobra o mecanismo de progressão da infecção crônica por H. pylori para gastrite atrófica e adenocarcinoma gástrico intestinal; o critério decisivo é a cascata inflamação crônica da mucosa -&gt; destruição glandular/atrofia -&gt; metaplasia intestinal -&gt; displasia/instabilidade genômica por dano oxidativo, que corresponde à alternativa E.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Carcinogênese gástrica por H. pylori</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A banca misturou mecanismos verdadeiros do H. pylori ligados a hiperacidez, colonização e úlcera duodenal com o mecanismo específico da carcinogênese gástrica intestinal, que é a cascata inflamação crônica -&gt; atrofia glandular -&gt; metaplasia intestinal -&gt; instabilidade genômica.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Se a pergunta citar gastrite atrófica e adenocarcinoma gástrico intestinal, procure a sequência atrofia glandular + metaplasia intestinal + dano molecular por inflamação crônica.</li><li>Separe perfil ulceroso do perfil neoplásico: hipercloridria e predomínio antral apontam mais para úlcera duodenal; atrofia multifocal/corporal e metaplasia apontam para risco de câncer gástrico intestinal.</li><li>Não confunda fator de colonização bacteriana, como urease, com mecanismo de carcinogênese.</li><li>Diferencie metaplasia gástrica no duodeno de metaplasia intestinal na mucosa gástrica; só esta última entra na cascata pré-neoplásica pedida.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-9-rpNd8W
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: 'Um paciente com diagnóstico de gastrite apresenta dor epigástrica e náuseas. Assinale a alternativa que indica o cuidado de enfermagem essencial para o manejo desse quadro:'
+        alternativas:
+          - id: alt_A
+            texto: Manter o paciente em posição de decúbito dorsal após as refeições.
+          - id: alt_B
+            texto: Administrar medicamentos conforme prescrição e orientar dieta leve.
+          - id: alt_C
+            texto: Oferecer refeições volumosas e espaçadas.
+          - id: alt_D
+            texto: Estimular a ingestão de alimentos ácidos.
+        gabarito: B
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <p><span style="color: darkorange; font-weight: bold;">Alternativa correta: B - Administrar medicamentos conforme prescrição e orientar dieta leve.</span></p>
+
+          <p><span style="color: #003366; font-weight: bold;">1. Tema central:</span><br>
+          A questão aborda <b>gastrite</b>, uma inflamação da mucosa do estômago, focando no <u>manejo essencial de enfermagem</u> para alívio dos sintomas, especialmente dor epigástrica e náuseas. Esse tema é frequente em concursos, pois envolve conhecimentos de fisiopatologia, cuidados clínicos e <b>orientações dietéticas</b>, fundamentais para promover segurança e bem-estar ao paciente.</p>
+
+          <p><span style="color: #003366; font-weight: bold;">2. Resumo teórico:</span><br>
+          A <b>gastrite</b> pode ser causada por fatores como uso de anti-inflamatórios, álcool, infecções (como H. pylori) e estresse. Os sintomas incluem dor na região superior do abdome (epigástrio), náusea e sensação de queimação. O manejo envolve <b>medicações</b> (antiácidos, inibidores de bomba de prótons) e <span style="color: darkorange;"><b>orientação para alimentação leve e fracionada</b></span>, evitando alimentos irritantes. Essas condutas estão bem estabelecidas em guias como o <i>Manual de Enfermagem Clínica</i> e protocolos do Ministério da Saúde.</p>
+
+          <p><span style="color: #003366; font-weight: bold;">3. Justificativa da alternativa correta:</span><br>
+          A alternativa <b>B</b> está certa porque contempla dois pontos fundamentais: <span style="color: darkorange;"><b>administração de medicamentos prescritos</b></span> (que é atribuição segura do enfermeiro) e <span style="color: darkorange;"><b>orientação sobre dieta leve</b></span>, que reduz estímulos irritantes à mucosa gástrica, aliviando sintomas e prevenindo complicações. Essas ações integram a assistência eficaz e humanizada ao paciente com gastrite.</p>
+
+          <p><span style="color: #003366; font-weight: bold;">4. Análise das alternativas incorretas:</span></p>
+          <ul>
+            <li><span style="color: darkorange;"><b>A</b></span>: <u>Manter o paciente em decúbito dorsal após as refeições</u> pode aumentar o refluxo gástrico e piorar o desconforto. O ideal é manter o paciente em posição sentada ou semi-Fowler.</li>
+            <li><span style="color: darkorange;"><b>C</b></span>: <u>Oferecer refeições volumosas e espaçadas</u> está incorreto, pois grandes volumes sobrecarregam o estômago irritado. Recomenda-se <b>refeições pequenas e frequentes</b>.</li>
+            <li><span style="color: darkorange;"><b>D</b></span>: <u>Estimular alimentos ácidos</u> agrava a irritação gástrica, devendo ser evitado.</li>
+          </ul>
+
+          <p><span style="color: #003366; font-weight: bold;">5. Estratégias para interpretação:</span><br>
+          Procure <b>palavras-chave</b> como "essencial", que direcionam para <u>ações de maior impacto e relevância</u>. Desconfie de alternativas que contenham medidas contraindicadas ou pouco seguras. Lembre-se que em doenças gastrointestinais, <b>dieta leve e manejo medicamentoso</b> costumam ser condutas centrais.</p>
+
+          <p>Gostou do comentário? Deixe sua avaliação aqui embaixo!</p>
+          </div>
+
+          <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; margin-bottom: 12px; background: #fafafa;">
+            <b>Comentário 01 (1 like):</b>
+
+            A) Cabeceira elevada
+
+            B) Correta
+
+            C) Refeições leves
+
+            D) Alimentos ácidos irritam ainda mais a mucosa gástrica
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-10-D5Zhuv
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: A prevalência de gastrite está diretamente relacionada com a prevalência de infecção por Helicobacter pylori. Marque a opção correta em relação a sua evolução e tratamento.
+        alternativas:
+          - id: alt_A
+            texto: A gastrite ativa crônica persiste enquanto o indivíduo estiver infectado.
+            comentario: A alternativa A está correta porque a atividade inflamatória da gastrite associada ao H. pylori depende da permanência do agente na mucosa gástrica. A erradicação remove o estímulo antigênico, mas a regressão da inflamação não é instantânea; por isso, a afirmação de que a gastrite ativa crônica persiste enquanto o indivíduo estiver infectado é a adequada.
+          - id: alt_B
+            texto: O aumento da acidez gástrica contribui para eliminação mais rápida de H. pylori.
+            comentario: Está errada porque maior acidez gástrica não promove eliminação mais rápida do H. pylori. A bactéria é adaptada ao nicho gástrico e dispõe de mecanismos de sobrevivência nesse ambiente, como a urease e a colonização do muco. Portanto, a premissa fisiopatológica da alternativa contraria o mecanismo de persistência do agente.
+          - id: alt_C
+            texto: O processo inflamatório cessa logo depois que o tratamento etiológico é completado.
+            comentario: Está errada porque a cessação do processo inflamatório não ocorre logo após o término do tratamento etiológico. A erradicação remove o estímulo causal, mas a regressão da atividade inflamatória e a normalização histológica acontecem de forma progressiva ao longo do tempo, não de modo imediato.
+          - id: alt_D
+            texto: Doxiciclina e Nitazoxanida estão entre os antimicrobianos utilizados no tratamento padrão inicial.
+            comentario: Está errada porque doxiciclina e nitazoxanida não compõem esquema padrão inicial de erradicação do H. pylori. Os esquemas usuais envolvem inibidor de bomba de prótons associado a antibióticos como amoxicilina, claritromicina, metronidazol, tetraciclina e/ou bismuto, conforme o contexto. A alternativa explora a troca indevida de tetraciclina por doxiciclina e a inclusão de nitazoxanida sem respaldo como padrão inicial.
+        gabarito: A
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: A</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> O critério médico decisivo é que a gastrite crônica ativa por H. pylori persiste enquanto houver colonização da mucosa gástrica pela bactéria; essa persistência mantém o infiltrado inflamatório ativo. Isso confirma a alternativa A e afasta a ideia de resolução imediata após o tratamento.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Gastrite por Helicobacter pylori</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A banca explora três confusões reais: achar que a acidez gástrica eliminaria o H. pylori, confundir erradicação bacteriana com desaparecimento inflamatório imediato e aceitar doxiciclina/nitazoxanida como se fossem componentes de esquema padrão inicial.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Em H. pylori, pense primeiro no vínculo causal: infecção persistente mantém gastrite crônica ativa.</li><li>Não iguale fim do antibiótico a resolução histológica imediata; a inflamação regride com o tempo após erradicação.</li><li>Se a alternativa falar em acidez eliminando H. pylori, confronte com a adaptação da bactéria ao ambiente gástrico.</li><li>Em tratamento, confirme se o esquema citado corresponde aos componentes usuais de erradicação, sem trocar tetraciclina por doxiciclina.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-11-VKvsgK
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2026'
+        enunciado: |-
+          Em pacientes com gastrite atrófica, alterações na secreção gástrica podem interferir na absorção de diversos micronutrientes essenciais. A redução do ácido gástrico e a deficiência de fator intrínseco constituem fatores importantes na fisiopatologia dessas alterações nutricionais.
+
+          Com base nesse contexto, registre V para as afirmativas verdadeiras e F para as falsas.
+
+          (__) A deficiência de ácido gástrico favorece a absorção de ferro e cálcio ao aumentar a biodisponibilidade desses minerais.
+
+          (__) A gastrite atrófica está associada exclusivamente à má absorção de proteínas dietéticas.
+
+          (__) A gastrite atrófica pode comprometer a absorção da vitamina B12 devido à redução da produção de fator intrínseco e da secreção ácida gástrica.
+
+          Assinale a alternativa que apresenta a sequência correta de cima para baixo:
+        alternativas:
+          - id: alt_A
+            texto: V, V, F.
+            comentario: 'Incorreta porque depende de considerar verdadeiras a 1ª e a 2ª assertivas. Isso contraria o critério cobrado: hipocloridria não favorece a absorção de ferro e cálcio, e gastrite atrófica não está associada exclusivamente à má absorção de proteínas.'
+          - id: alt_B
+            texto: V, F, F.
+            comentario: Incorreta porque, embora acerte as duas primeiras como falsas, erra a 3ª. A redução de fator intrínseco associada à atrofia gástrica, somada à redução da secreção ácida, pode comprometer a absorção de vitamina B12.
+          - id: alt_C
+            texto: F, F, V.
+            comentario: A alternativa C está correta porque corresponde à sequência F, F, V. A primeira assertiva é falsa, já que a hipocloridria não aumenta a biodisponibilidade de ferro e cálcio; a redução da acidez gástrica tende a prejudicar, e não favorecer, a absorção desses minerais. A segunda também é falsa porque a gastrite atrófica não se associa exclusivamente à má absorção de proteínas. A terceira é verdadeira porque a atrofia gástrica pode comprometer a absorção de vitamina B12 pela redução da secreção ácida e do fator intrínseco.
+          - id: alt_D
+            texto: V, V, V.
+            comentario: Incorreta porque marca como verdadeiras assertivas que contradizem diretamente a fisiopatologia cobrada nas duas primeiras proposições. Nem a hipocloridria favorece a absorção de ferro e cálcio, nem a gastrite atrófica se limita exclusivamente à má absorção proteica.
+          - id: alt_E
+            texto: F, F, F.
+            comentario: Incorreta porque torna falsa a 3ª assertiva, que é verdadeira. A absorção de vitamina B12 pode ser comprometida na gastrite atrófica pela combinação de menor secreção ácida e menor produção de fator intrínseco.
+        gabarito: C
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: C</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> O ponto decisivo era verificar se a hipocloridria e a deficiência de fator intrínseco prejudicam, e não favorecem, a absorção de ferro, cálcio e vitamina B12.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Gastrite atrófica e absorção</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A questão explora três confusões reais: inverter o efeito da hipocloridria sobre ferro e cálcio, aceitar a palavra "exclusivamente" na segunda assertiva e reduzir o problema da vitamina B12 a apenas um dos fatores envolvidos.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Quando o enunciado trouxer hipocloridria, verifique se a alternativa atribui aumento de biodisponibilidade mineral; para ferro e cálcio, a redução de acidez não favorece absorção.</li><li>Em afirmações sobre gastrite atrófica, a presença de "exclusivamente" exige confronto com toda a fisiopatologia descrita; se o quadro envolve micronutrientes e fator intrínseco, a restrição a proteínas está errada.</li><li>Para vitamina B12, confira se a alternativa contempla as duas etapas destacadas na base: participação da secreção ácida na liberação da vitamina dos alimentos e necessidade de fator intrínseco para a absorção.</li></ul></div></div>
+          </div>
+
+          <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; margin-bottom: 12px; background: #fafafa;">
+            <b>Comentário 01 (0 likes):</b>
+
+            <strong style="color: red;">(FALSO) </strong>A deficiência de ácido gástrico favorece a absorção de ferro e cálcio ao aumentar a biodisponibilidade desses minerais.
+
+            <strong>Na verdade, a deficiência de ácido gástrico não favorece a absorção, pelo contrário, ela prejudica a absorção de certos micronutrientes. Um grande exemplo é a absorção do ferro. É necessária a presença do meio ácido para a conversão do ferro da forma férrica(Fe3+) para a forma ferrosa (Fe2+), que é melhor absorvida no intestino.</strong>
+
+            <strong style="color: red;">(FALSO) </strong>A gastrite atrófica está associada exclusivamente à má absorção de proteínas dietéticas.
+
+            <strong>A gastrite atrófica não está associada EXCLUSIVAMENTE à má absorção de proteínas... está associada à má absorção de proteínas, ferro, cálcio, vitamina b12.</strong>
+
+            <strong style="color: green;">(VERDADEIRO)</strong> A gastrite atrófica pode comprometer a absorção da vitamina B12 devido à redução da produção de fator intrínseco e da secreção ácida gástrica.
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-12-tLjy2H
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2026'
+        enunciado: |-
+          Paciente de 45 anos apresenta gastrite associada à infecção por Helicobacter pylori.
+          Foi prescrito tratamento com omeprazol 20 mg 2x/dia e amoxicilina 1 g 2x/dia, ambos por 14 dias.
+          Para completar o esquema de erradicação da bactéria, qual classe de medicamento deve ser associada?
+        alternativas:
+          - id: alt_A
+            texto: Fluoroquinolona.
+          - id: alt_B
+            texto: Macrolídeo.
+          - id: alt_C
+            texto: Tetraciclina.
+          - id: alt_D
+            texto: Sulfonamida.
+        gabarito: B
+
+      - tipo: ME
+        id: 131026-0300-13-EaM107
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2026'
+        enunciado: 'Um idoso de 72 anos apresenta gastrite crônica associada ao uso prolongado de anti-inflamatórios, com episódios de dor epigástrica e náuseas, além de leve perda ponderal. A avaliação nutricional foi realizada considerando estado clínico, sintomas e risco nutricional. Com base nessas informações, verifica-se que a:'
+        alternativas:
+          - id: alt_A
+            texto: adoção de ajustes dietéticos não influenciam o quadro clínico do paciente
+            comentario: Está errada porque nega o papel da dietoterapia no controle do quadro clínico. Pela base, ajustes dietéticos podem reduzir dor epigástrica, náuseas e desconforto, além de ajudar na adequação da ingestão.
+          - id: alt_B
+            texto: eliminação completa de líquidos durante as refeições é obrigatória para reduzir sintomas
+            comentario: Está errada por impor eliminação completa de líquidos durante as refeições como conduta obrigatória. A base afirma que não há obrigatoriedade geral de exclusão completa; a orientação deve ser individualizada conforme a tolerância.
+          - id: alt_C
+            texto: suplementação proteica é desnecessária, independentemente da perda ponderal
+            comentario: Está errada porque afirma que suplementação proteica é desnecessária independentemente da perda ponderal. Isso contraria o dado de perda de peso e risco nutricional, já que a necessidade de suplementação depende da avaliação clínica, nutricional e da ingestão habitual, não podendo ser descartada de forma absoluta.
+          - id: alt_D
+            texto: ingestão de café, condimentos e alimentos ácidos deve ser totalmente eliminada em todas as fases do tratamento
+            comentario: Está errada por transformar alimentos potencialmente irritantes em proibição total e permanente, em todas as fases do tratamento. Pela base, café, condimentos e alimentos ácidos devem ser modulados ou evitados conforme sintomas e tolerância individual, e não banidos universalmente.
+          - id: alt_E
+            texto: ingestão de pequenas refeições fracionadas, ajustadas à tolerância individual e aliadas à moderação de alimentos potencialmente irritantes, pode contribuir para o controle dos sintomas
+            comentario: 'A alternativa E está correta porque descreve a conduta compatível com o manejo de gastrite sintomática: pequenas refeições fracionadas, ajuste à tolerância individual e moderação de alimentos potencialmente irritantes. Esse é o critério técnico adequado ao quadro apresentado.'
+        gabarito: E
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: E</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> O ponto decisivo era a presença de gastrite crônica sintomática com risco nutricional, o que exige conduta dietoterápica individualizada e sem proibições absolutas.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Dietoterapia na gastrite</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A confusão explorada foi trocar conduta individualizada para controle de sintomas por regras absolutas de proibição, usando termos como "obrigatória", "completa", "independentemente" e "totalmente eliminada".</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Em gastrite sintomática, prefira a alternativa que proponha ajuste dietético conforme tolerância individual, e não proibições universais.</li><li>Termos absolutos em dietoterapia costumam sinalizar erro quando a conduta depende de sintomas, aceitação e avaliação nutricional.</li><li>Se há perda ponderal e risco nutricional, não se pode excluir suporte nutricional de forma categórica; a necessidade depende da avaliação.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-14-Xm8s94
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: |-
+          A Gastrite consiste na inflamação da mucosa gástrica e pode ser favorecida por medicamentos, como o ácido acetilsalicílico, ingestão de bebidas alcoólicas, fumo e em situações de estresse (queimaduras graves, politrauma etc.), estando associada ao desequilíbrio entre os fatores que agridem e os que protegem a mucosa.
+          Considerando as recomendações nutricionais da gastrite, analise as afirmativas a seguir e assinale (V) para a verdadeira e (F) para a falsa.
+
+          ( ) O fracionamento deve ser de 4 a 5 refeições/dia (evitar longos períodos em jejum).
+
+          ( ) Café do tipo descafeinado não resulta em irritação da mucosa, podendo ser consumido com moderação.
+
+          ( ) Pimenta vermelha possui capsaicina, substância irritante gastrintestinal, devendo ser evitada.
+
+          As afirmativas são, respectivamente,
+        alternativas:
+          - id: alt_A
+            texto: V – V – V.
+          - id: alt_B
+            texto: V – F – F.
+          - id: alt_C
+            texto: F – V – F.
+          - id: alt_D
+            texto: V – F – V.
+          - id: alt_E
+            texto: F – F – V.
+        gabarito: D
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            ```html
+          <p>A alternativa correta é a <strong style="color:darkorange;">D - V – F – V</strong>.</p>
+
+          <p>Vamos analisar cada uma das afirmativas:</p>
+
+          <p><strong style="color:darkblue;">( ) O fracionamento deve ser de 4 a 5 refeições/dia (evitar longos períodos em jejum).</strong></p>
+          <p><span style="color:darkorange;"><strong>Verdadeira</strong></span>. Uma das recomendações nutricionais para quem tem gastrite é <strong>evitar longos períodos em jejum</strong>. O fracionamento das refeições, ou seja, comer em pequenas porções de 4 a 5 vezes ao dia, ajuda a proteger a mucosa gástrica, pois mantém o estômago menos exposto às agressões dos ácidos gástricos. Essa prática também ajuda a evitar episódios de dor e desconforto.</p>
+
+          <p><strong style="color:darkblue;">( ) Café do tipo descafeinado não resulta em irritação da mucosa, podendo ser consumido com moderação.</strong></p>
+          <p><span style="color:darkorange;"><strong>Falsa</strong></span>. Embora o café descafeinado tenha menos cafeína, ele ainda pode conter compostos que estimulam a produção de ácido gástrico, o que pode agravar a irritação da mucosa. Portanto, mesmo em sua versão descafeinada, o café deve ser consumido com cautela por pessoas com gastrite.</p>
+
+          <p><strong style="color:darkblue;">( ) Pimenta vermelha possui capsaicina, substância irritante gastrintestinal, devendo ser evitada.</strong></p>
+          <p><span style="color:darkorange;"><strong>Verdadeira</strong></span>. A capsaicina, presente em pimentas como a pimenta vermelha, pode irritar a mucosa gástrica e piorar os sintomas da gastrite. Por isso, recomenda-se que pessoas com essa condição evitem o consumo de pimentas e alimentos muito condimentados.</p>
+
+          <p>Para resolver questões como esta, é importante compreender as <strong>recomendações dietoterápicas básicas</strong> para condições comuns, como a gastrite. Isso inclui saber quais alimentos são recomendados ou devem ser evitados e entender o impacto dessas práticas na saúde do paciente. Lembre-se de buscar sempre informações atualizadas em fontes confiáveis, como diretrizes nutricionais e estudos científicos.</p>
+
+          <p>Gostou do comentário? Deixe sua avaliação aqui embaixo!</p>
+          ```
+          </div>
+
+          <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; margin-bottom: 12px; background: #fafafa;">
+            <b>Comentário 01 (7 likes):</b>
+
+            Embora o café descafeinado tenha menos cafeína, ele ainda pode conter compostos que estimulam a produção de ácido gástrico, o que pode agravar a irritação da mucosa.
+          </div>
+
+          <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; margin-bottom: 12px; background: #fafafa;">
+            <b>Comentário 02 (2 likes):</b>
+
+            VFV
+          </div>
+
+          <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; margin-bottom: 12px; background: #fafafa;">
+            <b>Comentário 03 (0 likes):</b>
+
+            CUPPARI recomenda de 6-8 refeições
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-15-CKq3ia
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: A úlcera péptica é uma lesão da porção distal do estômago ou proximal do duodeno, enquanto que a inflamação crônica da mucosa gástrica, associada a condições ambientais ou autoimunes, é conhecida como gastrite crônica. A causa mais comum que leva a essas alterações fisiológicas ocorre por infecção com
+        alternativas:
+          - id: alt_A
+            texto: Staphylococcus aureus.
+          - id: alt_B
+            texto: Streptococcus pneumoniae.
+          - id: alt_C
+            texto: Salmonella.
+          - id: alt_D
+            texto: Escherichia coli.
+          - id: alt_E
+            texto: Helicobacter pylori.
+        gabarito: E
+
+      - tipo: ME
+        id: 131026-0300-16-9nDhi8
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: |-
+          Homem de 46 anos procura atendimento por apresentar dispepsia crônica. Há 6 meses, realizou endoscopia digestiva alta, que revelou gastrite crônica ativa, e a biópsia foi positiva para helicobacter pylori. Foi tratado, nessa ocasião, com claritromicina + amoxicilina + IBP por 14 dias, e realizou o teste respiratório com ureia 2 meses após o término, persistindo positivo mesmo após o tratamento. Retorna com manutenção de queixa de dor epigástrica leve, esporádica, sem outros sinais de alerta.
+          Nova endoscopia foi realizada, demonstrando apenas gastrite difusa, sem úlcera ou lesão suspeita para neoplasia. Antecedentes pessoais: nega tabagismo e etilismo, não faz uso crônico de AINEs. Alergias: anafilaxia à penicilina na adolescência.
+
+          Considere as diretrizes atuais sobre regimes de resgate e teste de erradicação e assinale a alternativa correta.
+        alternativas:
+          - id: alt_A
+            texto: Repetir esquema tríplice substituindo a amoxicilina por metronidazol, associado à claritromicina e IBP, e realizar novo teste respiratório 4 semanas após o tratamento.
+            comentario: Está errada porque repete claritromicina após falha prévia de esquema tríplice com claritromicina. A base afirma que, nessa situação, o resgate preferencial é o esquema quádruplo com bismuto por 14 dias, e não nova combinação contendo claritromicina. O prazo do teste respiratório não corrige o erro do regime terapêutico.
+          - id: alt_B
+            texto: Indicar esquema quádruplo (IBP + tetraciclina + metronidazol + bismuto), por 14 dias, e solicitar teste respiratório da ureia ou antígeno fecal após 4 semanas.
+            comentario: 'A alternativa B coincide integralmente com a diretriz técnica indicada na base: após falha de terapia tríplice com claritromicina, o regime preferencial de resgate é o quádruplo com bismuto por 14 dias. Além disso, a história de anafilaxia à penicilina reforça a adequação de um esquema sem amoxicilina. Também acerta o controle de cura, que deve ser feito por teste respiratório da ureia ou antígeno fecal, após pelo menos 4 semanas do término da terapia.'
+          - id: alt_C
+            texto: Repetir esquema tríplice substituindo a amoxicilina por metronidazol, associado à claritromicina e IBP, e realizar nova endoscopia 4 semanas após o tratamento.
+            comentario: 'Está errada por dois motivos concretos: repete claritromicina como resgate após falha do esquema com claritromicina, em desconformidade com a diretriz, e troca o método adequado de confirmação de erradicação por nova endoscopia. Na hipótese descrita, sem úlcera, lesão suspeita ou sinais de alarme, a base aponta teste respiratório da ureia ou antígeno fecal como método de controle de cura, não endoscopia de rotina.'
+          - id: alt_D
+            texto: Prescrever levofloxacino + amoxicilina + IBP por 14 dias, já que não envolve claritromicina, e verificar controle de cura com sorologia IgG anti-H. pylori.
+            comentario: Está errada porque inclui amoxicilina em paciente com antecedente de anafilaxia à penicilina, o que contraria o dado clínico decisivo do caso. Além disso, indica sorologia IgG anti-H. pylori para controle de cura, e a base é expressa em afirmar que a confirmação de erradicação deve ser feita por teste respiratório da ureia ou antígeno fecal, não por sorologia.
+        gabarito: B
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: B</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> ACG Guideline Highlights: Treatment of Helicobacter pylori (2024): "Optimized bismuth quadruple therapy for 14 days is the preferred regimen for treatment-experienced patients who failed PPI-clarithromycin triple therapy and treatment-naive patients with a penicillin allergy. (...) Complete test of cure at least four weeks after therapy with either: • Urea breath test • Fecal antigen test (...) To avoid false negatives in test of cure – hold PPI x 2 weeks; bismuth and antibiotics x 4 weeks." Como o paciente falhou ao esquema tríplice com claritromicina e tem anafilaxia à penicilina, a consequência é indicar esquema quádruplo com bismuto por 14 dias e confirmar erradicação com teste respiratório da ureia ou antígeno fecal após pelo menos 4 semanas.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Resgate do H. pylori</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A banca combinou duas confusões reais: induzir o candidato a manter claritromicina mesmo após falha prévia do esquema com claritromicina e trocar o teste de cura adequado por endoscopia ou sorologia.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Se houve falha de terapia tríplice com claritromicina, não trate como resgate com novo esquema contendo claritromicina.</li><li>Em alergia à penicilina com necessidade de resgate, procure o esquema quádruplo com bismuto por 14 dias.</li><li>Controle de erradicação de H. pylori, na base apresentada, é com teste respiratório da ureia ou antígeno fecal após pelo menos 4 semanas, não com sorologia.</li><li>Nova endoscopia não é teste de cura de rotina quando o caso não traz úlcera, suspeita de neoplasia ou sinais de alarme.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-17-DM3cOG
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: |-
+          Paciente de 45 anos, sem comorbidades, foi diagnosticado com gastrite associada a infecção por Helicobacter pylori, após endoscopia digestiva alta com teste da urease positivo e confirmação por histologia. O médico optou pelo tratamento padrão de primeira linha, baseado nas diretrizes atuais.
+          Dentre as opções terapêuticas, qual representa o regime mais adequado para o tratamento inicial da infecção por H. pylori?
+        alternativas:
+          - id: alt_A
+            texto: Omeprazol, metronidazol e sucralfato por 7 dias.
+          - id: alt_B
+            texto: Pantoprazol, claritromicina e amoxicilina por 14 dias.
+          - id: alt_C
+            texto: Lansoprazol, bismuto, metronidazol e amoxicilina por 5 dias.
+          - id: alt_D
+            texto: Esomeprazol, ciprofloxacino e tetraciclina por 14 dias.
+          - id: alt_E
+            texto: Ranitidina, claritromicina e metronidazol por 10 dias.
+        gabarito: B
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <p><strong><span style="color:#1f3b73;">Tema central:</span></strong> tratamento de erradicação do <em>Helicobacter pylori</em>. Em provas, reconheça o padrão: <strong><span style="color:#cc5500;">IBP + 2 antibióticos por 14 dias</span></strong>, com antibioticoterapia escolhida conforme resistência local.</p>
+
+          <p><strong><span style="color:#1f3b73;">Alternativa correta: B</span></strong> — <u>Pantoprazol + claritromicina + amoxicilina por 14 dias</u>. Este é o clássico regime tríplice quando a resistência à claritromicina é baixa e não há uso prévio de macrolídeos. O IBP (pantoprazol) eleva o pH gástrico, potencializando os antibióticos e cicatrização da mucosa; amoxicilina e claritromicina atuam sinergicamente contra o <em>H. pylori</em>. Duração de <strong>14 dias</strong> aumenta taxas de erradicação em comparação a 7–10 dias.</p>
+
+          <p><strong>Referências:</strong> ACG 2024/2022, Maastricht VI/Florence (2022) e UpToDate recomendam <u>14 dias</u>. Observação importante: em muitos cenários atuais, a <strong><span style="color:#cc5500;">terapia quádrupla com bismuto por 14 dias</span></strong> é preferida devido à resistência à claritromicina; porém, em exames, na ausência de dados de resistência, a terapia tríplice clássica ainda é aceita como primeira linha.</p>
+
+          <p><strong><span style="color:#1f3b73;">Por que as demais estão incorretas?</span></strong></p>
+          <p><strong>A)</strong> Omeprazol + metronidazol + sucralfato por 7 dias: falta um segundo antibiótico efetivo (sucralfato não erradica <em>H. pylori</em>) e a duração é insuficiente.</p>
+          <p><strong>C)</strong> Lansoprazol + bismuto + metronidazol + amoxicilina por 5 dias: a quádrupla com bismuto correta usa <u>tetraciclina</u> (e não amoxicilina) e deve durar <u>10–14 dias</u> (idealmente 14). Cinco dias têm baixa eficácia.</p>
+          <p><strong>D)</strong> Esomeprazol + ciprofloxacino + tetraciclina por 14 dias: fluoroquinolonas (ciprofloxacino) não são recomendadas em primeira linha; regimes com levofloxacino são <u>de resgate</u> e combinam com <u>amoxicilina</u>, não tetraciclina.</p>
+          <p><strong>E)</strong> Ranitidina + claritromicina + metronidazol por 10 dias: usa <u>bloqueador H2</u> no lugar de <u>IBP</u> (menos eficaz); além disso, falta amoxicilina ou bismuto. Esquema com claritromicina + metronidazol é opção em alergia à penicilina, mas exige <u>IBP</u> e idealmente 14 dias.</p>
+
+          <p><strong><span style="color:#1f3b73;">Dicas de prova:</span></strong> procure por <u>IBP + 2 antibióticos</u> e <u>14 dias</u>. Desconfie de sucralfato como “antibiótico”, de H2-bloqueadores no lugar de IBP e de durações curtas (5–7 dias).</p>
+
+          <p><strong>Diagnóstico (contexto):</strong> teste rápido da urease positivo e histologia confirmam infecção — padrão-ouro em muitos centros. Após o tratamento, realizar <u>teste de cura</u> (respiratório da ureia ou antígeno fecal) ≥4 semanas após finalizar antibióticos, suspendendo IBP por 1–2 semanas antes.</p>
+
+          <p><strong><span style="color:#cc5500;">Gabarito: B</span></strong></p>
+
+          <p>Gostou do comentário? Deixe sua avaliação aqui embaixo!</p>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-18-pVvbj0
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2026'
+        enunciado: |-
+          A terapia nutricional em pacientes com gastrite e úlceras gastroduodenais constitui estratégia relevante no manejo clínico dessas condições, especialmente quando integrada ao tratamento farmacológico, visando à proteção da mucosa, ao alívio dos sintomas e à manutenção do estado nutricional.
+          Fonte: Guia de nutrição: clínica no adulto / coordenação deste guia Lilian Cuppari.
+          − 3. ed. -- Barueri, SP: Manole, 2014
+
+          Nesse contexto, são objetivos da terapia nutricional em pacientes com gastrite e úlceras gastroduodenais:
+
+          I. Recuperar e proteger a mucosa gastrintestinal, por meio da adoção de condutas dietéticas que minimizem a agressão química e mecânica ao epitélio.
+
+          II. Facilitar os processos digestivos, por meio da seleção de alimentos de fácil digestão e adequada distribuição das refeições ao longo do dia.
+
+          III. Promover e manter adequado estado nutricional, assegurando o aporte de nutrientes necessários à recuperação e ao equilíbrio metabólico do indivíduo.
+
+          É CORRETO o que se afirma em:
+        alternativas:
+          - id: alt_A
+            texto: I e III, apenas.
+            comentario: Incorreta porque exclui a assertiva II. Facilitar os processos digestivos com ajuste qualitativo da dieta e fracionamento das refeições é, sim, objetivo compatível da terapia nutricional em gastrite e úlceras gastroduodenais.
+          - id: alt_B
+            texto: III, apenas.
+            comentario: Incorreta porque restringe os objetivos apenas à manutenção do estado nutricional. A base afirma também como objetivos a proteção da mucosa e a facilitação digestiva, de modo que I e II não podem ser descartadas.
+          - id: alt_C
+            texto: I, II e III.
+            comentario: A alternativa C está correta porque as três assertivas descrevem finalidades compatíveis da terapia nutricional nessas condições. A assertiva I se sustenta no objetivo de proteger e recuperar a mucosa gastrintestinal, com redução de agressões químicas e mecânicas ao epitélio. A assertiva II também é correta, porque facilitar a digestão e melhorar a tolerância por meio da seleção de alimentos e da adequada distribuição das refeições integra o manejo dietético dessas afecções. A assertiva III igualmente procede, já que manter ou recuperar o estado nutricional é objetivo próprio da terapia nutricional em doenças gastroduodenais.
+          - id: alt_D
+            texto: I e II, apenas.
+            comentario: Incorreta porque exclui a assertiva III. Manter ou recuperar o estado nutricional faz parte da finalidade da terapia nutricional nessas condições e não pode ser retirado do conjunto correto.
+          - id: alt_E
+            texto: II e III, apenas.
+            comentario: Incorreta porque exclui a assertiva I. A redução de agressões à mucosa e sua proteção/recuperação são objetivos pertinentes da dietoterapia em gastrite e úlceras gastroduodenais.
+        gabarito: C
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: C</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> A decisão dependia de reconhecer que, na gastrite e nas úlceras gastroduodenais, a terapia nutricional busca proteger a mucosa, favorecer a tolerância digestiva e preservar o estado nutricional. Por isso, as três assertivas são compatíveis com os objetivos clássicos da dietoterapia.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Objetivos da dietoterapia</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A confusão real era tratar a assertiva II como simples conduta prática, e não como objetivo operacional da terapia nutricional, ou supor que só a manutenção do estado nutricional seria objetivo legítimo.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Em questões sobre objetivos da dietoterapia em gastrite e úlcera, confira se a alternativa contempla proteção da mucosa, tolerância digestiva/sintomática e estado nutricional.</li><li>Não exclua uma assertiva apenas porque ela descreve medida prática de manejo; seleção alimentar e fracionamento podem expressar o próprio objetivo terapêutico de facilitar a digestão.</li><li>Se a afirmação estiver conceitualmente alinhada ao manejo dietético, não exija redação literal de manual para considerá-la correta.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-19-XKYKgG
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: 'É uma verminose que afeta o abomaso dos bovinos e o parasita é o principal causador de gastrite parasitária em ruminantes. O parasita é altamente patogênico, mesmo em cargas parasitárias pequenas, e pode causar grandes perdas produtivas. É mais comum em animais com mais de um ano de idade e ocorre geralmente no final do inverno ou na primavera. O parasita em questão é:'
+        alternativas:
+          - id: alt_A
+            texto: Ostertagia ostertagi.
+            comentario: 'Ostertagia ostertagi é o nematódeo clássico do abomaso de bovinos e o agente reconhecido de gastrite parasitária em ruminantes. A alternativa está correta porque reúne os elementos decisivos do caso: localização no abomaso, lesão típica gástrica, elevada patogenicidade com impacto produtivo importante e perfil epidemiológico compatível com a descrição do enunciado.'
+          - id: alt_B
+            texto: Nematodirus battus.
+            comentario: 'Nematodirus battus deve ser excluído pelo tropismo anatômico: não é o principal parasito do abomaso bovino nem o agente clássico de gastrite parasitária. Está mais relacionado a infecção intestinal, especialmente do intestino delgado, o que não corresponde ao quadro descrito.'
+          - id: alt_C
+            texto: Cooperia punctata.
+            comentario: Cooperia punctata é parasito de intestino delgado. Portanto, não explica uma verminose centrada no abomaso nem a gastrite parasitária típica da ostertagiose. A eliminação aqui é por localização do parasitismo e pela síndrome produzida, que não é a do enunciado.
+          - id: alt_D
+            texto: Bunostomum phlebotomum.
+            comentario: Bunostomum phlebotomum é um ancilostomídeo intestinal hematófago. Seu mecanismo de dano e seu sítio principal de parasitismo são intestinais, com associação a enteroparasitismo e anemia, não à gastrite parasitária abomasal. Por isso, é incompatível com o critério central da questão.
+        gabarito: A
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: A</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> O enunciado descreve um nematódeo do abomaso bovino, principal agente de gastrite parasitária em ruminantes, com alta patogenicidade mesmo em baixa carga parasitária e padrão epidemiológico compatível; esse conjunto aponta classicamente para Ostertagia ostertagi e define a alternativa A.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Ostertagiose bovina</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A banca explora a confusão entre helmintos frequentes de bovinos e o agente específico de gastrite do abomaso. O ponto que separa a correta das demais é observar que o enunciado não fala genericamente de verminose gastrointestinal, mas de parasita do abomaso e de gastrite parasitária.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Em helmintoses de ruminantes, identifique primeiro o segmento do trato digestório citado; aqui, abomaso direciona a Ostertagia ostertagi.</li><li>Quando o enunciado trouxer 'gastrite parasitária' em bovinos, pense no agente clássico do abomaso antes de considerar nematódeos intestinais.</li><li>Use o tropismo anatômico para eliminar alternativas: Nematodirus, Cooperia e Bunostomum não têm como sítio principal o abomaso bovino.</li><li>Não descarte O. ostertagi por carga parasitária pequena: a base destaca alta patogenicidade mesmo com baixa carga.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-20-Anj0rh
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: Uma criança de 6 anos passa em consulta devido a dor abdominal. Ela traz um resultado de endoscopia pedido pelo seu pediatra, que mostra uma gastrite nodular antral. Na biópsia há descrição de infiltrado linfomononuclear e neutrofílico em glândulas e fovéolas, associado à hiperplasia linfoide em centros germinativos e presença de bacilos espiralados corados por Giemsa. Diante do quadro apresentado, qual a conduta mais correta?
+        alternativas:
+          - id: alt_A
+            texto: Iniciar com teste terapêutico com inibidor de bomba de prótons.
+          - id: alt_B
+            texto: Não deveria ter sido realizada a endoscopia, deve-se orientar apenas ajustes dietéticos.
+          - id: alt_C
+            texto: Iniciar com claritromicina, amoxicilina e inibidor de bomba de prótons.
+          - id: alt_D
+            texto: Iniciar com inibidor de bomba de prótons e sucralfato.
+          - id: alt_E
+            texto: Repetir a endoscopia em centro especializado.
+        gabarito: C
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <p><span style="color:#0b3d91;"><b>Tema central:</b></span> dor abdominal em criança com endoscopia mostrando <b>gastrite nodular antral</b> e biópsia com <b>bacilos espiralados pela Giemsa</b>, <b>infiltrado linfomononuclear/neutrofílico</b> e <b>hiperplasia linfoide</b> — achados clássicos de <u><b>infecção por Helicobacter pylori</b></u> em pediatria.</p>
+
+          <p><span style="color:#cc5500;"><b>Alternativa correta: C – Claritromicina + Amoxicilina + IBP</b></span></p>
+          <p><b>Justificativa:</b> Diante de diagnóstico <u>confirmado</u> de H. pylori (histologia positiva com bacilos espiralados e gastrite nodular), a conduta é <b>erradicação</b> com terapia tripla por 14 dias: <b>IBP + amoxicilina + claritromicina</b>. Diretrizes ESPGHAN/NASPGHAN (2016 e atualização 2023) e UpToDate recomendam erradicar quando o H. pylori é identificado em endoscopia indicada, especialmente com gastrite nodular e folículos linfoides. Em provas, este é o esquema de 1ª linha clássico. Na prática, se resistência à claritromicina for alta ou houver uso prévio de macrolídeo, preferem-se esquemas guiados por teste de sensibilidade ou quadruplo com bismuto.</p>
+
+          <p><b>Doses pediátricas usuais (referência):</b> IBP (ex.: omeprazol 1 mg/kg/dia, 2x/dia), amoxicilina 50 mg/kg/dia (2x/dia), claritromicina 15 mg/kg/dia (2x/dia), por 14 dias. Confirmar erradicação com <b>teste do hálito 13C</b> ou <b>antígeno fecal</b> após 4–8 semanas (suspender IBP por 2 semanas e antibióticos por 4 semanas).</p>
+
+          <p><span style="color:#0b3d91;"><b>Análise das alternativas incorretas</b></span></p>
+          <p><b>A – “Teste terapêutico” com IBP:</b> apenas sintomático; <u>não</u> erradica H. pylori. Risco de mascarar sintomas e perpetuar infecção. Contraria diretrizes quando há confirmação histológica.</p>
+          <p><b>B – “Não deveria ter feito endoscopia; apenas dieta”:</b> uma vez que a endoscopia foi feita e demonstrou H. pylori com lesão típica, a <b>conduta é tratar</b>, não observar. Em crianças, não se trata H. pylori em dor funcional sem endoscopia, mas <u>este não é o caso</u>.</p>
+          <p><b>D – IBP + sucralfato:</b> alívio de mucosa, porém <b>sem ação bactericida</b>. Não promove erradicação nem reduz complicações associadas à infecção.</p>
+          <p><b>E – Repetir endoscopia:</b> desnecessário para confirmação; diagnóstico já estabelecido. Controle de cura é <b>não invasivo</b> (hálito/antígeno fecal). Nova endoscopia só se falha terapêutica ou complicações.</p>
+
+          <p><span style="color:#cc5500;"><b>Pegadinhas e estratégia de prova</b></span></p>
+          <p>- Palavras-chave que apontam para H. pylori em pediatria: <b style="color:#0b3d91;">gastrite nodular antral</b>, <b style="color:#0b3d91;">folículos linfoides</b>, <b style="color:#0b3d91;">bacilos espiralados (Giemsa)</b> → <u>indicam tratar</u>.</p>
+          <p>- Desconfie de opções apenas sintomáticas (IBP/sucralfato) quando há <b>etiologia definida</b>.</p>
+
+          <p><b>Referências essenciais:</b> ESPGHAN/NASPGHAN Guidelines for H. pylori in Children (2016; update 2023); UpToDate: Helicobacter pylori infection in children; SBP – Manual de Gastroenterologia Pediátrica.</p>
+
+          <p><b>Gabarito: C</b></p>
+
+          <p>Gostou do comentário? Deixe sua avaliação aqui embaixo!</p>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-21-OZ0DZ8
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2026'
+        enunciado: |-
+          Paciente de 67 anos, sexo masculino, portador de hipertensão arterial sistêmica, diabetes mellitus tipo 2, fibrilação atrial, dislipidemia, doença renal crônica estágio III e miastenia gravis, em acompanhamento ambulatorial regular, procura atendimento por dispepsia. A endoscopia digestiva alta evidencia gastrite enantematosa e as biópsias confirmam infecção por Helicobacter pylori. Não há história prévia de tratamento erradicador.
+
+          O esquema terapêutico mais adequado para esse paciente é
+        alternativas:
+          - id: alt_A
+            texto: inibidor da bomba de prótons, Amoxicilina e Claritromicina por 14 dias.
+          - id: alt_B
+            texto: inibidor da bomba de prótons, Subcitrato de Bismuto, Tetraciclina e Metronidazol por 14 dias.
+          - id: alt_C
+            texto: inibidor da bomba de prótons, Amoxicilina e Levofloxacino por 14 dias.
+          - id: alt_D
+            texto: inibidor da bomba de prótons, Claritromicina e Metronidazol por 14 dias.
+          - id: alt_E
+            texto: inibidor da bomba de prótons, Amoxicilina, Claritromicina e Metronidazol por 14 dias.
+        gabarito: B
+
+      - tipo: ME
+        id: 131026-0300-22-5uZz8c
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2026'
+        enunciado: |-
+          As gastrites e gastropatias compreendem um espectro de doenças inflamatórias ou lesivas da mucosa gástrica com etiologias variadas. Acerca do assunto, registre V, para as afirmativas verdadeiras, e F, para as falsas:
+
+          (__) A gastrite crônica atrófica associada à infecção pelo Helicobacter pylori é um fator de risco estabelecido para o desenvolvimento de adenocarcinoma gástrico e linfoma MALT.
+
+          (__) A gastropatia por anti-inflamatórios não esteroidais (AINEs) caracteriza-se por lesão direta da mucosa e inibição da síntese de prostaglandinas citoprotetoras, podendo resultar em erosões e hemorragias.
+
+          (__) O teste da urease realizado durante a endoscopia digestiva alta possui alta sensibilidade para o diagnóstico de Helicobacter pylori em pacientes que mantêm o uso de inibidores da bomba de prótons.
+
+          (__) A gastrite autoimune resulta da produção de anticorpos contra as células parietais e o fator intrínseco, levando à atrofia do corpo gástrico, hipocloridria e anemia perniciosa.
+
+          Após análise, assinale a alternativa que apresenta a sequência correta dos itens acima, de cima para baixo:
+        alternativas:
+          - id: alt_A
+            texto: V, V, V, F.
+            comentario: 'Incorreta porque marca a 3ª assertiva como verdadeira e a 4ª como falsa. Isso contraria dois critérios médicos objetivos: o teste rápido da urease sob uso de IBP tem sensibilidade reduzida, com mais falso-negativos, e a descrição da gastrite autoimune está correta ao apontar anticorpos anti-célula parietal/anti-fator intrínseco, atrofia de corpo/fundo, hipocloridria e anemia perniciosa.'
+          - id: alt_B
+            texto: F, V, F, V.
+            comentario: Incorreta porque marca a 1ª assertiva como falsa. Isso está em desacordo com o conhecimento consolidado de que H. pylori crônico se associa à gastrite atrófica e aumenta o risco de adenocarcinoma gástrico e linfoma MALT.
+          - id: alt_C
+            texto: F, F, V, V.
+            comentario: 'Incorreta porque erra três pontos centrais: considera falsa a associação entre H. pylori e neoplasias gástricas, nega o mecanismo clássico de lesão por AINEs e ainda considera verdadeira a alta sensibilidade do teste da urease durante uso de IBP. O correto é: H. pylori aumenta risco neoplásico, AINEs lesam por efeito tópico e queda de prostaglandinas, e IBP reduz a sensibilidade do teste da urease.'
+          - id: alt_D
+            texto: V, V, F, V.
+            comentario: 'A alternativa D está correta porque corresponde à sequência V, V, F, V. A 1ª assertiva é verdadeira: a infecção crônica por H. pylori pode evoluir para gastrite atrófica e aumenta o risco de adenocarcinoma gástrico, além de se relacionar ao linfoma MALT. A 2ª também é verdadeira: a gastropatia por AINEs decorre de dano mucoso tópico somado à inibição de prostaglandinas citoprotetoras, o que favorece erosões e hemorragia. A 3ª é falsa: o uso de IBP reduz a sensibilidade do teste rápido da urease, não a mantém alta. A 4ª é verdadeira: a gastrite autoimune envolve autoanticorpos contra células parietais e fator intrínseco, com atrofia predominante em corpo gástrico, hipocloridria e anemia perniciosa.'
+          - id: alt_E
+            texto: V, F, V, F.
+            comentario: Incorreta porque torna falsa a 2ª assertiva e falsa a 4ª, além de marcar a 3ª como verdadeira. A 2ª está correta pelo mecanismo farmacopatológico dos AINEs com dano tópico e inibição de prostaglandinas citoprotetoras. A 4ª está correta pela fisiopatologia da gastrite autoimune com acometimento predominante de corpo/fundo, hipocloridria e anemia perniciosa. Já a 3ª é falsa porque IBP reduz a acurácia do teste rápido da urease.
+        gabarito: D
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: D</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> A questão se resolve porque apenas a 3ª assertiva é falsa: em pacientes em uso de IBP, o teste rápido da urease tem sensibilidade reduzida e maior risco de falso-negativos. As demais assertivas estão corretas: H. pylori crônico se associa a gastrite atrófica, adenocarcinoma gástrico e linfoma MALT; AINEs causam lesão mucosa por dano tópico e inibição de prostaglandinas; e a gastrite autoimune envolve anticorpos anti-célula parietal e anti-fator intrínseco, com atrofia de corpo/fundo, hipocloridria e anemia perniciosa.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Gastrites e gastropatias</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A pegadinha real é sugerir que o teste rápido da urease, por ser feito na endoscopia, manteria alta sensibilidade mesmo com uso de IBP. Esse é o ponto falso: IBP diminui a carga bacteriana e aumenta falso-negativos. Outra confusão explorada é esquecer que a gastrite autoimune acomete classicamente corpo e fundo, não o antro.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Em questões sobre H. pylori, lembre a dupla associação neoplásica cobrada com frequência: adenocarcinoma gástrico e linfoma MALT.</li><li>Quando aparecer teste para H. pylori durante uso de IBP, pense primeiro em queda de sensibilidade e falso-negativo, especialmente nos testes dependentes da atividade bacteriana.</li><li>Na lesão gástrica por AINEs, não aceite explicação incompleta: o mecanismo correto combina efeito tópico e redução de prostaglandinas citoprotetoras.</li><li>Na gastrite autoimune, o padrão decisivo é anticorpo contra célula parietal/fator intrínseco com atrofia de corpo-fundo, hipocloridria e anemia perniciosa.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-23-QcLLpv
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: "Mulher de 48 anos procura atendimento por cansaço progressivo aos esforços há cerca de 1 ano. Nega dor abdominal, diarreia crônica ou alterações dos hábitos intestinais. Comorbidade conhecida: vitiligo.\n\nAo exame físico, apresenta mucosas descoradas, sem outras alterações.\n\nExames laboratoriais:\n\n• Hemoglobina: 9,5 g/dL • VCM: 114 fL • Leucócitos e plaquetas: normais • Reticulócitos corrigidos: <1% • Teste de Coombs direto: negativo • Cinética do ferro: normal • LDH: 360 U/L (VR até 240 U/L) • Bilirrubina total: 1,8 mg/dL (Direta 0,6 / Indireta 1,2) • Albumina: 4,3 g/dL (VR 3,5–5,0) • Globulina: 2,9 g/dL (VR 2,5–3,5) • Ácido fólico: normal • Homocisteína: 22 µmol/L (VR até 15 µmol/L) • Vitamina B12: 80 pg/mL (VR >200 pg/mL) • 25-OH-Vitamina D: 40 ng/mL (VR >30 ng/mL) • Sangue periférico: neutrófilos hipersegmentados • Pesquisa de sangue oculto nas fezes: negativa • EAF e EPF: sem alterações • Colonoscopia (1 ano antes): normal • Endoscopia digestiva alta: • Exame macroscópico: aspecto de gastrite atrófica de corpo e fundo gástrico. Antro gástrico e duodeno: sem alterações • Exame microscópico: Gastrite atrófica de corpo e fundo gástrico, sem displasia. Antro gástrico e duodeno sem alterações. Pesquisa de Helicobacter pylori: negativa.\_\n\nA causa mais provável da deficiência vitamínica apresentada e o exame que deve ser solicitado para confirmação diagnóstica são, respectivamente,"
+        alternativas:
+          - id: alt_A
+            texto: Pancreatite crônica; teste da elastase pancreática fecal.
+            comentario: 'Está errada porque a hipótese de pancreatite crônica exige aderência ao padrão de insuficiência pancreática exócrina, o que não aparece no caso: não há diarreia crônica, esteatorreia, perda ponderal ou outro dado clínico compatível. Além disso, ela não explica o achado dominante de gastrite atrófica de corpo e fundo com contexto autoimune. O exame proposto, elastase pancreática fecal, investigaria insuficiência pancreática exócrina, e não a causa mais provável da deficiência de B12 neste enunciado.'
+          - id: alt_B
+            texto: Síndrome carcinoide; dosagem urinária de ácido 5-hidroxiindolacético (5-HIAA).
+            comentario: Está errada por incompatibilidade entre a hipótese etiológica e os achados do caso. Síndrome carcinoide não é a causa provável de anemia megaloblástica por deficiência de vitamina B12 associada a gastrite atrófica autoimune. O 5-HIAA urinário é exame voltado à investigação de tumor carcinoide secretor de serotonina, sem pertinência com o padrão clínico, laboratorial e endoscópico apresentado.
+          - id: alt_C
+            texto: Anemia perniciosa; dosagem de anticorpos anti-células parietais e anti-fator intrínseco.
+            comentario: 'A alternativa C corresponde ao quadro descrito: há deficiência de vitamina B12 com anemia megaloblástica objetiva por VCM de 114 fL, neutrófilos hipersegmentados, homocisteína elevada e reticulocitopenia. A etiologia mais provável não é intestinal nem pancreática, porque o dado decisivo do caso é a gastrite atrófica em corpo e fundo gástrico com antro preservado, padrão compatível com gastrite autoimune, reforçado pela presença de vitiligo. Nesse contexto, a deficiência de fator intrínseco por destruição autoimune de células parietais caracteriza anemia perniciosa, e a confirmação etiológica se faz pela pesquisa de anticorpos anti-fator intrínseco e anti-células parietais.'
+          - id: alt_D
+            texto: Doença celíaca; dosagem sérica de IgA anti-transglutaminase.
+            comentario: Está errada porque a hipótese de doença celíaca não encontra suporte nos dados objetivos do enunciado. A base informa ausência de diarreia crônica, duodeno sem alterações e proteínas séricas normais, o que torna improvável uma enteropatia do intestino delgado como causa mais provável. A deficiência de vitamina B12 isoladamente não basta para deslocar a etiologia para doença celíaca quando o caso traz padrão típico de gastrite autoimune.
+          - id: alt_E
+            texto: Enteropatia perdedora de proteínas; dosagem de alfa-1- antitripsina fecal.
+            comentario: Está errada porque enteropatia perdedora de proteínas exige, como dado básico, perda proteica intestinal, o que conflita com albumina e globulina normais no caso. Além disso, essa hipótese não explica o conjunto dominante de gastrite atrófica autoimune com deficiência de B12. A alfa-1-antitripsina fecal investiga perda proteica intestinal, exame sem aderência ao padrão etiológico predominante descrito.
+        gabarito: C
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: C</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> O conjunto clínico-laboratorial descreve anemia megaloblástica por deficiência de vitamina B12, com gastrite atrófica de corpo e fundo gástrico, antro preservado, Helicobacter pylori negativo e associação com vitiligo, o que sustenta etiologia autoimune por anemia perniciosa; a confirmação diagnóstica se faz pela pesquisa de anticorpos anti-fator intrínseco e anti-células parietais.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Anemia perniciosa</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A banca explorou a confusão entre causa genérica de má absorção de vitamina B12 e a causa mais provável do caso. O ponto decisivo não era apenas reconhecer deficiência de B12, mas integrar o padrão de gastrite atrófica de corpo/fundo e o vitiligo para chegar à anemia perniciosa e ao exame etiológico específico.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Em deficiência de B12, não pare no diagnóstico sindrômico; procure o padrão etiológico dominante do enunciado.</li><li>Gastrite atrófica de corpo e fundo com antro preservado, somada a doença autoimune, favorece anemia perniciosa.</li><li>Afaste causas intestinais difusas quando faltarem diarreia crônica, alterações duodenais e alterações proteicas séricas.</li><li>Se a pergunta pedir confirmação etiológica de anemia perniciosa, priorize anticorpos anti-fator intrínseco e anti-células parietais.</li></ul></div></div>
+          </div>
+
+      - tipo: ME
+        id: 131026-0300-24-nduogL
+        tags:
+          - Comentário Oficial
+          - Gastrite
+          - '2025'
+        enunciado: |-
+          Maria, 52 anos, procurou atendimento com queixa de plenitude pós-prandial, saciedade precoce e náuseas há aproximadamente 6 meses. Relata que, nos últimos 10 anos, teve episódios recorrentes de anemia ferropriva sem sangramento gastrointestinal evidente, necessitando de suplementação oral. Há cerca de 3 anos, foi diagnosticada com hipotireoidismo autoimune, em uso de levotiroxina.
+          Ao exame físico, apresenta-se emagrecida, com palidez cutaneomucosa e dor leve à palpação epigástrica. Exames laboratoriais mostram hemoglobina de 10,5 g/dL com VCM de 102 fL. Uma endoscopia digestiva alta revelou mucosa gástrica do corpo e fundo com pregueado atenuado e vasos submucosos visíveis, sendo realizada biópsia mapeada.
+
+          Considerando o quadro clínico, as características clínicas ou laboratoriais que mais corroboram o diagnóstico de gastrite atrófica metaplásica autoimune são a presença de
+        alternativas:
+          - id: alt_A
+            texto: hipersecreção de ácido gástrico e infecção ativa por Helicobacter pylori, com atrofia gástrica predominante no antro.
+            comentario: 'Está errada porque descreve o padrão oposto ao da gastrite autoimune: hipersecreção ácida e atrofia predominante no antro. Na gastrite atrófica autoimune, o acometimento é da mucosa oxíntica de corpo e fundo, com hipocloridria/aclorridria. A menção a infecção ativa por Helicobacter pylori remete mais à gastrite crônica associada ao H. pylori, com topografia e fisiopatologia diferentes.'
+          - id: alt_B
+            texto: hipergastrinemia associada à hipocloridria e antecedente de anemia ferropriva sem sangramento há anos.
+            comentario: A alternativa B reúne a fisiopatologia e a pista clínica mais características da doença. A destruição autoimune das células parietais reduz a secreção ácida, produz hipocloridria e remove o feedback inibitório sobre a gastrina, gerando hipergastrinemia. Além disso, a anemia ferropriva recorrente sem sangramento digestivo aparente é achado clássico porque a baixa acidez prejudica a solubilização e a absorção do ferro, podendo anteceder por anos a deficiência de vitamina B12. Esse conjunto é compatível com o padrão corpo-fúndico descrito na endoscopia e com a associação autoimune do caso.
+          - id: alt_C
+            texto: hipogastrinemia e atrofia glandular concentrada principalmente no antro e na curvatura menor.
+            comentario: 'Está errada por dois motivos fisiopatológicos centrais: hipogastrinemia não é compatível com perda de células parietais e baixa acidez, porque nessa situação a gastrina sobe; além disso, atrofia glandular concentrada no antro não corresponde ao padrão típico corpo-fúndico da gastrite autoimune.'
+          - id: alt_D
+            texto: níveis séricos normais de vitamina B12 e ausência de história de doenças autoimunes concomitantes.
+            comentario: Está errada porque não traz elementos que corroborem mais fortemente o diagnóstico. Níveis normais de vitamina B12 não são marcador positivo da doença e podem ocorrer em fases iniciais; já a ausência de doenças autoimunes concomitantes contraria uma associação clássica. No caso, o antecedente de hipotireoidismo autoimune reforça a hipótese, não a enfraquece.
+          - id: alt_E
+            texto: histórico de dieta rica em sal e tabagismo, com atrofia gástrica difusa e baixa probabilidade de desenvolver neoplasias gástricas.
+            comentario: 'Está errada porque dieta rica em sal e tabagismo não são os achados que mais sustentam etiologia autoimune, estando mais ligados à cascata atrófica/inflamatória associada ao H. pylori. Além disso, é falsa a afirmação de baixa probabilidade de neoplasias gástricas: a gastrite atrófica autoimune aumenta risco de neoplasias gástricas, especialmente tumores neuroendócrinos tipo 1 e adenocarcinoma.'
+        gabarito: B
+        comentario_geral: |-
+          <div class="qc-gabarito-professor" style="border: 2px solid #3b82f6; border-radius: 8px; padding: 14px; margin-bottom: 16px; background: #ffffff;">
+            <div style="margin:0 auto;line-height:1.625"><h3 style="font-size:1.5rem;font-weight:700;color:rgb(249 112 21);margin-bottom:2.5rem">Gabarito: B</h3><div style="margin-bottom:2.5rem"><p style="margin-bottom:1rem"><strong>Fundamento decisivo:</strong> A gastrite atrófica metaplásica autoimune acomete predominantemente corpo e fundo gástricos, com destruição de células parietais, levando a hipocloridria/aclorridria e hipergastrinemia compensatória; no caso, a atrofia corpo-fúndica, a anemia ferropriva recorrente sem sangramento e a associação com hipotireoidismo autoimune sustentam o gabarito B.</p></div><div style="border-left:3px solid rgb(26 110 244);padding-left:1.25rem;margin-bottom:2.5rem;font-weight:500;color:rgb(26 110 244)"><strong>Tema central:</strong> Gastrite atrófica autoimune</div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Pegadinha da questão</div><div style="font-style:italic;">A banca explora a confusão entre gastrite autoimune e gastrite por H. pylori: troca corpo/fundo por antro e hipocloridria com hipergastrinemia por hiperacidez ou hipogastrinemia; também testa se o candidato lembra que anemia ferropriva pode preceder a deficiência de vitamina B12.</div></div><div style="margin-bottom:2.5rem"><div style="font-weight:600;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;color:rgb(100 106 120)">Dica para questões semelhantes</div><ul style="padding-left:1.25rem"><li>Se a atrofia é predominante em corpo e fundo, pense primeiro em perda de células parietais e pergunte qual seria o perfil funcional: baixa acidez e gastrina elevada.</li><li>Anemia ferropriva crônica sem sangramento aparente pode ser manifestação inicial da gastrite autoimune; não associe essa doença apenas à anemia perniciosa.</li><li>A presença de outra doença autoimune, especialmente tireoidiana, reforça a hipótese quando o padrão topográfico e laboratorial é compatível.</li><li>Em alternativas sobre gastrite autoimune, elimine descrições com predomínio antral, hipercloridria ou baixa chance de neoplasia, porque contradizem o mecanismo da doença.</li></ul></div></div>
+          </div>
