@@ -1,25 +1,25 @@
-import { createWrittenContent, writtenResultsHtml } from './me-written-ui.js?v=20261028-written-beta-2';
-import { writtenMode, writtenStage, writtenEvaluated } from './me-written.js?v=20261028-written-beta-2';
-import { FolderDescriptions } from './folder-descriptions.js?v=20261028-written-beta-2';
-import { availableFilterOptions } from './filters.js?v=20261028-written-beta-2';
+import { createWrittenContent, writtenResultsHtml } from './me-written-ui.js?v=20261028-500';
+import { writtenMode, writtenStage, writtenEvaluated } from './me-written.js?v=20261028-500';
+import { FolderDescriptions } from './folder-descriptions.js?v=20261028-500';
+import { availableFilterOptions } from './filters.js?v=20261028-500';
 /* ===== JS: js\renderer.js ===== */
 import {
   formatText,
   difficultyMap,
   questionTypeMap
-} from './utils.js?v=20261028-written-beta-2';
+} from './utils.js?v=20261028-500';
 
-import { readVisualPreferences } from './preferences.js?v=20261028-written-beta-2';
+import { readVisualPreferences } from './preferences.js?v=20261028-500';
 import {
   isAttemptQuestion, validAttemptQuestion, meAttemptStats,
   parseMeChGabarito, parseMqGabarito, computeQuestionScore,
   isObjectiveQuestion, applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261028-written-beta-2';
+} from './scoring.js?v=20261028-500';
 
-import { MatchingQuestions } from './matching-questions.js?v=20261028-written-beta-2';
-import { TextHighlighter } from './highlighter.js?v=20261028-written-beta-2';
-import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261028-written-beta-2';
-import { QuestionNavigation } from './question-navigation.js?v=20261028-written-beta-2';
+import { MatchingQuestions } from './matching-questions.js?v=20261028-500';
+import { TextHighlighter } from './highlighter.js?v=20261028-500';
+import { effectivePagination, buildQuestionPages, pageForQuestion } from './pagination.js?v=20261028-500';
+import { QuestionNavigation } from './question-navigation.js?v=20261028-500';
 
 export class QuizRenderer {
   constructor(containerId, footerId, callbacks) {

@@ -1,4 +1,4 @@
-import { writtenMode, writtenEvaluated } from './me-written.js?v=20261028-written-beta-2';
+import { writtenMode, writtenEvaluated } from './me-written.js?v=20261028-500';
 // Tentativas de ME usam índices originais, independentes das letras embaralhadas.
 export function isAttemptQuestion(state, idx) {
   return writtenMode(state, idx) !== 'written' && state.config.meAttempts === true &&

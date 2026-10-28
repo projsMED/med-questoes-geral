@@ -1,6 +1,6 @@
-import { writtenStage, writtenEvaluated } from './me-written.js?v=20261028-written-beta-2';
-import { appStorage } from './release-config.js?v=20261028-written-beta-2';
-import { computeQuestionScore } from './scoring.js?v=20261028-written-beta-2';
+import { writtenStage, writtenEvaluated } from './me-written.js?v=20261028-500';
+import { appStorage } from './release-config.js?v=20261028-500';
+import { computeQuestionScore } from './scoring.js?v=20261028-500';
 
 export const QUESTION_PROGRESS = {
   writing: { label: 'Escrita pendente', symbol: '○' },

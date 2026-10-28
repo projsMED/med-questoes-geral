@@ -1,5 +1,5 @@
-import { writtenMode, writtenStage, writtenCompatibility, writtenStats, canFallbackWritten } from './me-written.js?v=20261028-written-beta-2';
-import { formatText } from './utils.js?v=20261028-written-beta-2';
+import { writtenMode, writtenStage, writtenCompatibility, writtenStats, canFallbackWritten } from './me-written.js?v=20261028-500';
+import { formatText } from './utils.js?v=20261028-500';
 
 const el = (tag, className, text) => {
   const node = document.createElement(tag);

@@ -1,4 +1,10 @@
-## V4.10.0 Beta — ME por escrito
+# 🩺 Question Engine V5.0.0
+
+Versão estável promovida da branch `beta-tentativas`, com modos de tentativas para ME, resolução híbrida ou apenas escrita, compatibilidade por herança, resultados separados, filtros adaptativos e descrições interativas de pastas. A preferência geral permite oferecer alternativas também nas questões compatíveis com escrita.
+
+Validação automatizada: **154 testes aprovados**. A promoção preserva o banco e as preferências do canal estável.
+
+## ME por escrito
 
 A opção **Responder ME por escrito** fica na criação do quiz (antes de exibir as questões) e nas configurações da sessão, junto ao modo de tentativas. Começa desativada em cada nova sessão; a modalidade é salva e não pode ser alterada após o primeiro envio de uma questão ME. Reiniciar apaga as respostas e permite mudar a configuração.
 
@@ -44,7 +50,7 @@ Validação: `node --test tests/*.test.mjs`, incluindo testes do controlador, DO
 
 ---
 
-# 🩺 Question Engine V4.8.0 (med-questoes-geral)
+## Histórico — Question Engine V4.8.0
 
 > Plataforma web interativa para resolução, estudo, autocorreção e organização de bancos de questões médicas e gerais, com arquitetura 100% *client-side*, suporte offline via **IndexedDB**, filtros em etapas, modos avançados de estudo e sincronização em nuvem via **Firebase Firestore**.
 
