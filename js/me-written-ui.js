@@ -1,5 +1,5 @@
-import { writtenMode, writtenStage, writtenCompatibility, writtenStats } from './me-written.js?v=20261028-written-beta-1';
-import { formatText } from './utils.js?v=20261028-written-beta-1';
+import { writtenMode, writtenStage, writtenCompatibility, writtenStats, canFallbackWritten } from './me-written.js?v=20261028-written-beta-2';
+import { formatText } from './utils.js?v=20261028-written-beta-2';
 
 const el = (tag, className, text) => {
   const node = document.createElement(tag);
@@ -51,7 +51,7 @@ export function createWrittenContent(renderer, q, idx, state, locked = false) {
     textarea.addEventListener('input', () => { submit.disabled = !textarea.value.trim(); });
     actions.appendChild(submit);
     actions.appendChild(button('Não sei responder', () => renderer.callbacks.onWrittenSubmit?.(idx, textarea.value, true)));
-    if (typeof writtenCompatibility(q) !== 'boolean') actions.appendChild(button('Responder com alternativas',
+    if (canFallbackWritten(state, idx)) actions.appendChild(button('Responder com alternativas',
       () => renderer.callbacks.onWrittenFallback?.(idx), 'btn-written-link'));
     box.appendChild(actions); return box;
   }

@@ -12,12 +12,12 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/variables.css?v=20261028-written-beta-1">
-  <link rel="stylesheet" href="css/layout.css?v=20261028-written-beta-1">
-  <link rel="stylesheet" href="css/questions.css?v=20261028-written-beta-1">
-  <link rel="stylesheet" href="css/highlighter.css?v=20261028-written-beta-1">
-  <link rel="stylesheet" href="css/matching-questions.css?v=20261028-written-beta-1">
-  <link rel="stylesheet" href="css/pagination.css?v=20261028-written-beta-1">
+  <link rel="stylesheet" href="css/variables.css?v=20261028-written-beta-2">
+  <link rel="stylesheet" href="css/layout.css?v=20261028-written-beta-2">
+  <link rel="stylesheet" href="css/questions.css?v=20261028-written-beta-2">
+  <link rel="stylesheet" href="css/highlighter.css?v=20261028-written-beta-2">
+  <link rel="stylesheet" href="css/matching-questions.css?v=20261028-written-beta-2">
+  <link rel="stylesheet" href="css/pagination.css?v=20261028-written-beta-2">
 </head>
 <body>
 
@@ -228,6 +228,13 @@
       </div>
       <div id="generalSettingsPanel" class="general-settings-panel hidden">
         <div id="paginationSettings"></div>
+        <div class="vs-option">
+          <label class="toggle-label">
+            <input type="checkbox" id="chkAllowWrittenFallback">
+            Permitir responder com alternativas mesmo em questões compatíveis com escrita
+          </label>
+          <small>No modo híbrido ou apenas escrita, permite voltar para ME antes de enviar a resposta escrita. Preferência geral, aplicada a todas as sessões.</small>
+        </div>
         <div id="sessionWrittenSettings" class="written-settings hidden"></div>
         <fieldset id="attemptSettings" class="vs-option">
           <legend>Nesta sessão</legend>
@@ -538,7 +545,7 @@
 
 <script type="module">
   // Deve coincidir com o parâmetro ?v= das importações locais em js/.
-  const APP_ASSET_VERSION = '20261028-written-beta-1';
+  const APP_ASSET_VERSION = '20261028-written-beta-2';
   const moduleAssets = [
     'main.js',
     'store.js',

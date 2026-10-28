@@ -1,5 +1,5 @@
 // Preferências visuais e gerais: leitura, controles e aplicação no DOM.
-import { appStorage } from './release-config.js?v=20261028-written-beta-1';
+import { appStorage } from './release-config.js?v=20261028-written-beta-2';
 
 export function readVisualPreferences() {
   const position = appStorage.getItem('vs_paginationPosition');
@@ -21,6 +21,7 @@ export function readVisualPreferences() {
 export function readGeneralPreferences() {
   return {
     showDisregardCorrect: appStorage.getItem('gs_showDisregardCorrect') !== 'false',
+    allowWrittenFallback: appStorage.getItem('gs_allowWrittenFallback') === 'true',
     simpleMvfCorrection: appStorage.getItem('gs_simpleMvfCorrection') === 'true'
   };
 }
@@ -77,6 +78,7 @@ export class Preferences {
       this.elements.chkShowDisregardCorrect.checked =
         readGeneralPreferences().showDisregardCorrect;
     }
+    if (this.elements.chkAllowWrittenFallback) this.elements.chkAllowWrittenFallback.checked = readGeneralPreferences().allowWrittenFallback;
     this.elements.chkSimpleMvfCorrection.checked =
       readGeneralPreferences().simpleMvfCorrection;
 
@@ -171,6 +173,14 @@ export class Preferences {
           showDisregardCorrect: e.target.checked,
           applyDisregardedCorrect: e.target.checked
         });
+      });
+    }
+
+    if (this.elements.chkAllowWrittenFallback) {
+      this._listen(this.elements.chkAllowWrittenFallback, 'change', (e) => {
+        const enabled = e.target.checked;
+        appStorage.setItem('gs_allowWrittenFallback', String(enabled));
+        this.onGeneralChange?.({ allowWrittenFallback: enabled });
       });
     }
 

@@ -9,7 +9,7 @@ const controlNames = [
   'btnVisualSettings', 'visualSettingsPanel', 'btnGeneralSettings', 'generalSettingsPanel',
   'chkFooterFixed', 'footerBar', 'paginationPosition', 'commentModeCurrent', 'commentModeAll', 'commentSubOptions',
   'chkPersistManualOpen', 'chkVfStacked', 'mqModeTable', 'mqModeArrows', 'chkMqAlignColumns', 'chkShowPartialScore',
-  'rangeFontSize', 'fontSizeValue', 'chkShowDisregardCorrect', 'chkSimpleMvfCorrection',
+  'rangeFontSize', 'fontSizeValue', 'chkShowDisregardCorrect', 'chkSimpleMvfCorrection', 'chkAllowWrittenFallback',
   'chkDarkMode', 'darkModeIcon', 'quizWidthShell', 'rangeQuizWidth', 'quizWidthValue', 'btnResetQuizWidth'
 ];
 
@@ -61,7 +61,7 @@ test('preferências estáveis mantêm padrões e preservam chaves de teste da be
   const saved = { 'beta:vs_darkMode': 'true', 'beta:vs_fontSize': '22', 'beta:gs_showDisregardCorrect': 'false' };
   const f = setup(saved);
   assert.deepEqual(readVisualPreferences(), defaults);
-  assert.deepEqual(readGeneralPreferences(), { showDisregardCorrect: true, simpleMvfCorrection: false });
+  assert.deepEqual(readGeneralPreferences(), { showDisregardCorrect: true, simpleMvfCorrection: false, allowWrittenFallback: false });
   assert.equal(f.doc.documentElement.classList.contains('dark-mode'), false);
   assert.equal(f.doc.body.style.fontSize, '16px');
   assert.equal(f.shell.style['--quiz-width'], '900px');
@@ -250,4 +250,23 @@ test('alinhamento de colunas é opcional, persistido e restaura o controle', () 
   assert.equal(readVisualPreferences().mqAlignColumns, false);
   assert.equal(f.effects.renders, 2);
   f.preferences.dispose();
+});
+
+test('conversão de escrita compatível é preferência geral, persiste e prevalece ao retomar sessão', () => {
+  const f = setup();
+  assert.equal(f.elements.chkAllowWrittenFallback.checked, false);
+  f.change('chkAllowWrittenFallback', true);
+  assert.equal(readGeneralPreferences().allowWrittenFallback, true);
+  assert.equal(f.app.state.config.allowWrittenFallback, true);
+  assert.equal(f.effects.renders, 1);
+  f.app.state.config.allowWrittenFallback = false;
+  f.app.restoreUI();
+  assert.equal(f.app.state.config.allowWrittenFallback, true);
+  f.preferences.dispose();
+  const resumed = setup({ gs_allowWrittenFallback: 'true' });
+  assert.equal(resumed.elements.chkAllowWrittenFallback.checked, true);
+  resumed.change('chkAllowWrittenFallback', false);
+  assert.equal(readGeneralPreferences().allowWrittenFallback, false);
+  assert.equal(resumed.app.state.config.allowWrittenFallback, false);
+  resumed.preferences.dispose();
 });

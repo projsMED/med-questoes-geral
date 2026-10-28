@@ -26,8 +26,12 @@ export function submitWritten(state, idx, text, skipped = false) {
   if (writtenMode(state, idx) === 'written') a.submitted = true;
   return true;
 }
+export function canFallbackWritten(state, idx) {
+  return writtenStage(state, idx) === 'writing' &&
+    (typeof writtenCompatibility(state.questions[idx]) !== 'boolean' || state.config.allowWrittenFallback === true);
+}
 export function fallbackWritten(state, idx) {
-  if (writtenStage(state, idx) !== 'writing' || typeof writtenCompatibility(state.questions[idx]) === 'boolean') return false;
+  if (!canFallbackWritten(state, idx)) return false;
   (state.userAnswers[idx] ||= {}).writtenFallback = true;
   return true;
 }

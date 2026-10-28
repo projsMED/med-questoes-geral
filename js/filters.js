@@ -1,6 +1,6 @@
-import { renderWrittenSettings } from './me-written-ui.js?v=20261028-written-beta-1';
+import { renderWrittenSettings } from './me-written-ui.js?v=20261028-written-beta-2';
 // Filtros do quiz: esquema, seleção por grupos, contagens e controles em duas etapas.
-import { difficultyMap, questionTypeMap, questionTypes } from './utils.js?v=20261028-written-beta-1';
+import { difficultyMap, questionTypeMap, questionTypes } from './utils.js?v=20261028-written-beta-2';
 
 export function createFilterState() {
   return {

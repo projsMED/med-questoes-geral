@@ -5,6 +5,7 @@ A opção **Responder ME por escrito** fica na criação do quiz (antes de exibi
 - **Híbrido: escrita + alternativas:** envie o texto para liberar a ME. O texto fica somente para consulta. Ao concluir a ME, compare sua escrita com o gabarito e atribua a autoavaliação de 0 a 10. Funciona com tentativas e comentários a cada erro.
 - **Apenas escrita:** envie o texto, confira o conteúdo completo da alternativa correta e seu comentário específico, e faça a autoavaliação. O comentário geral fica disponível somente em **Ver questão ME original**, junto a todas as alternativas e comentários. Não há seleção ME nesta modalidade.
 - **Não sei responder:** registra zero explícito na escrita. Enviar um campo vazio por acidente não avança a questão.
+- A preferência geral **Permitir responder com alternativas mesmo em questões compatíveis com escrita** começa desativada e é salva neste navegador para todas as sessões. Quando ativada, também permite a conversão nas questões compatíveis, inclusive por herança, antes do envio escrito. Desativá-la não desfaz conversões já realizadas.
 - Em questões indefinidas, **Responder com alternativas** converte individualmente para ME, preserva o rascunho para consulta e não atribui nota escrita. A conversão é definitiva até reiniciar.
 
 ### Compatibilidade no banco JSON

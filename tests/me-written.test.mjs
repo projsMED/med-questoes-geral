@@ -193,3 +193,27 @@ test('avanço para próxima pendente inclui híbrida com ME pronta mas sem autoa
   assert.equal(app.isQuestionPending(0), true);
   assessWritten(app.state, 0, 10); assert.equal(app.isQuestionPending(0), false);
 });
+
+test('preferência libera botão e conversão de compatíveis explícitas ou herdadas nos dois modos', () => {
+  for (const mode of ['hybrid', 'written']) for (const property of ['compativelEscrita', '_writtenCompatibility']) {
+    const { s, card } = cardFixture(mode, true); s.questions[0][property] = true;
+    assert.equal(card().querySelectorAll('.btn-written-link').length, 0);
+    assert.equal(fallbackWritten(s, 0), false);
+    s.config.allowWrittenFallback = true;
+    assert.equal(card().querySelectorAll('.btn-written-link').length, 1);
+    s.userAnswers[0] = { written: { text: 'Rascunho preservado' } };
+    assert.equal(fallbackWritten(s, 0), true);
+    s.config.allowWrittenFallback = false;
+    assert.equal(writtenMode(s, 0), 'off');
+    assert.equal(s.userAnswers[0].written.text, 'Rascunho preservado');
+    assert.equal(isAttemptQuestion(s, 0), true);
+  }
+});
+test('preferência não libera conversão após enviar escrita nem adapta questões incompatíveis', () => {
+  const { s, card } = cardFixture('written'); s.config.allowWrittenFallback = true;
+  s.questions[0].compativelEscrita = true; submitWritten(s, 0, 'Resposta enviada');
+  assert.equal(fallbackWritten(s, 0), false);
+  assert.equal(card().querySelectorAll('.btn-written-link').length, 0);
+  s.questions[0].compativelEscrita = false; s.userAnswers = {};
+  assert.equal(writtenMode(s, 0), 'off'); assert.equal(fallbackWritten(s, 0), false);
+});

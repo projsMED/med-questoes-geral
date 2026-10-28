@@ -1,25 +1,25 @@
-import { renderWrittenSettings } from './me-written-ui.js?v=20261028-written-beta-1';
-import { writtenMode, writtenStage, writtenEvaluated, submitWritten, fallbackWritten, assessWritten } from './me-written.js?v=20261028-written-beta-1';
+import { renderWrittenSettings } from './me-written-ui.js?v=20261028-written-beta-2';
+import { writtenMode, writtenStage, writtenEvaluated, submitWritten, fallbackWritten, assessWritten } from './me-written.js?v=20261028-written-beta-2';
 /* ===== JS: js\main.js ===== */
 import {
   saveState, loadState, clearState, exportState, importState,
   saveSession, loadSession, deleteSession, getAllSessions,
   exportAllSessions, importAllSessions, migrateLegacyState, generateId,
   saveSessionFolders, loadSessionFolders, updateSessionFolder
-} from './store.js?v=20261028-written-beta-1';
-import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261028-written-beta-1';
-import { shuffleArray } from './utils.js?v=20261028-written-beta-1';
+} from './store.js?v=20261028-written-beta-2';
+import { parseContent, reshuffleVariants, reshuffleChVariants } from './parser.js?v=20261028-written-beta-2';
+import { shuffleArray } from './utils.js?v=20261028-written-beta-2';
 import {
   isAttemptQuestion, validAttemptQuestion, recordMeAttempt,
   computeQuestionScore, isObjectiveQuestion,
   applyDisregardedCorrectToScore, isDisregardedCorrectMarked
-} from './scoring.js?v=20261028-written-beta-1';
-import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261028-written-beta-1';
-import { QuizRenderer } from './renderer.js?v=20261028-written-beta-1';
-import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261028-written-beta-1';
-import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261028-written-beta-1';
-import { SettingsShortcuts } from './settings-shortcuts.js?v=20261028-written-beta-1';
-import { PaginationSettings } from './pagination.js?v=20261028-written-beta-1';
+} from './scoring.js?v=20261028-written-beta-2';
+import { appStorage, ALLOW_AUTOMATIC_SYNC } from './release-config.js?v=20261028-written-beta-2';
+import { QuizRenderer } from './renderer.js?v=20261028-written-beta-2';
+import { Preferences, readVisualPreferences, readGeneralPreferences } from './preferences.js?v=20261028-written-beta-2';
+import { QuizFilters, createFilterState, ensureFilterState, selectQuestionGroups } from './filters.js?v=20261028-written-beta-2';
+import { SettingsShortcuts } from './settings-shortcuts.js?v=20261028-written-beta-2';
+import { PaginationSettings } from './pagination.js?v=20261028-written-beta-2';
 
 const HIGHLIGHT_COLOR_KEYS = new Set([
   'yellow', 'orange', 'red', 'pink', 'purple', 'violet',
@@ -206,6 +206,7 @@ const App = {
     btnGeneralSettings: document.getElementById('btnGeneralSettings'),
     generalSettingsPanel: document.getElementById('generalSettingsPanel'),
     chkShowDisregardCorrect: document.getElementById('chkShowDisregardCorrect'),
+    chkAllowWrittenFallback: document.getElementById('chkAllowWrittenFallback'),
     chkSimpleMvfCorrection: document.getElementById('chkSimpleMvfCorrection'),
 
     // Próxima não respondida
@@ -399,8 +400,8 @@ const App = {
 
   async initFirebaseAsync() {
     try {
-      this.firebaseConfig = await import('./firebase-config.js?v=20261028-written-beta-1');
-      this.firebaseSync = await import('./firebase-sync.js?v=20261028-written-beta-1');
+      this.firebaseConfig = await import('./firebase-config.js?v=20261028-written-beta-2');
+      this.firebaseSync = await import('./firebase-sync.js?v=20261028-written-beta-2');
 
       this.firebaseState.autoSync = ALLOW_AUTOMATIC_SYNC && appStorage.getItem('firebaseAutoSync') === 'true';
       this.firebaseState.lastSyncTime = appStorage.getItem('lastSyncTime') || null;
@@ -691,6 +692,7 @@ const App = {
     if (this.state.config.applyDisregardedCorrect === undefined) {
       this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
     }
+    this.state.config.allowWrittenFallback = readGeneralPreferences().allowWrittenFallback;
     this.state.config.simpleMvfCorrection =
       readGeneralPreferences().simpleMvfCorrection;
 
@@ -736,6 +738,7 @@ const App = {
     this.state.config.showDisregardCorrect =
       readGeneralPreferences().showDisregardCorrect;
     this.state.config.applyDisregardedCorrect = this.state.config.showDisregardCorrect !== false;
+    this.state.config.allowWrittenFallback = readGeneralPreferences().allowWrittenFallback;
     this.state.config.simpleMvfCorrection =
       readGeneralPreferences().simpleMvfCorrection;
 
@@ -1882,6 +1885,8 @@ const App = {
       this.elements.chkShowDisregardCorrect.checked =
         this.state.config.showDisregardCorrect !== false;
     }
+    this.state.config.allowWrittenFallback = readGeneralPreferences().allowWrittenFallback;
+    if (this.elements.chkAllowWrittenFallback) this.elements.chkAllowWrittenFallback.checked = this.state.config.allowWrittenFallback;
     this.elements.chkSimpleMvfCorrection.checked =
       this.state.config.simpleMvfCorrection === true;
   },
