@@ -73,7 +73,7 @@ export class FolderDescriptions {
     this.hidePreview();
     this.previewTrigger = trigger;
     trigger.setAttribute('aria-describedby', this.tooltip.id);
-    this.tooltip.textContent = `${text.length > 500 ? text.slice(0, 500) + '…' : text}\nClique para ver a descrição completa.`;
+    this.tooltip.textContent = `${text.length > 500 ? text.slice(0, 500) + '…' : text}`;
     this.tooltip.classList.remove('hidden');
     const rect = trigger.getBoundingClientRect();
     const width = this.tooltip.getBoundingClientRect().width;
